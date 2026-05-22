@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Economically important oil and protein rich crop (Arachis hypogaea L.)",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "OIL CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of oil contained in the seeds, approximately 48%",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "PROTEIN CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of protein contained in the seeds, approximately 25%",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "Region where groundnut has a significant impact",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "BIOTIC AND ABIOTIC CONSTRAINTS",
+      "type": "CONDITION",
+      "description": "Factors that affect the productivity of groundnut and cause economical losses",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "INDIAN PEANUT CLUMP VIRUS",
+      "type": "ORGANISM",
+      "description": "A soil-borne and seed-borne virus that affects groundnut",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "SOIL-BORNE AND SEED-BORNE",
+      "type": "CONDITION",
+      "description": "The mode of transmission for the Indian peanut clump virus",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "POLYMYXA GRAMINIS",
+      "type": "ORGANISM",
+      "description": "Fungus that transmits the Indian peanut clump virus",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand the Indian peanut clump virus",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "The genetic resources of the crop used for breeding",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "AGROBACTERIUM TUMEFACIENS-MEDIATED GENETIC TRANSFORMATION",
+      "type": "METHOD",
+      "description": "Protocol used to develop transgenic peanuts",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "AGROBACTERIUM TUMEFACIENS",
+      "type": "ORGANISM",
+      "description": "Bacterium used to mediate genetic transformation",
+      "source_id": "paper_3272"
+    },
+    {
+      "name": "COTYLEDON",
+      "type": "CONCEPT",
+      "description": "Plant part used in the genetic transformation protocol",
+      "source_id": "paper_3272"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "OIL CONTENT",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "PROTEIN CONTENT",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEMI-ARID TROPICS",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "BIOTIC AND ABIOTIC CONSTRAINTS",
+      "target": "GROUNDNUT",
+      "description": "affect productivity of",
+      "weight": "9",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "INDIAN PEANUT CLUMP VIRUS",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "SOIL-BORNE AND SEED-BORNE",
+      "target": "INDIAN PEANUT CLUMP VIRUS",
+      "description": "describes transmission mode of",
+      "weight": "9",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "POLYMYXA GRAMINIS",
+      "target": "INDIAN PEANUT CLUMP VIRUS",
+      "description": "transmits",
+      "weight": "10",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "INDIAN PEANUT CLUMP VIRUS",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "GERMPLASM",
+      "description": "is unavailable in",
+      "weight": "8",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "AGROBACTERIUM TUMEFACIENS-MEDIATED GENETIC TRANSFORMATION",
+      "target": "GROUNDNUT",
+      "description": "is used to modify",
+      "weight": "10",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "AGROBACTERIUM TUMEFACIENS",
+      "target": "AGROBACTERIUM TUMEFACIENS-MEDIATED GENETIC TRANSFORMATION",
+      "description": "mediates",
+      "weight": "10",
+      "source_id": "paper_3272"
+    },
+    {
+      "source": "COTYLEDON",
+      "target": "AGROBACTERIUM TUMEFACIENS-MEDIATED GENETIC TRANSFORMATION",
+      "description": "is used in",
+      "weight": "9",
+      "source_id": "paper_3272"
+    }
+  ]
+}

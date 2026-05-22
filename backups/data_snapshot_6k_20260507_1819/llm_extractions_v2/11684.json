@@ -1,0 +1,151 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The second most grown cereal crop in Niger, subject of the study for productivity and resistance.",
+      "source_id": "paper_11684"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where sorghum production is dominated by indigenous cultivars.",
+      "source_id": "paper_11684"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "A productivity measure evaluated in sorghum hybrids.",
+      "source_id": "paper_11684"
+    },
+    {
+      "name": "SORGHUM MIDGE",
+      "type": "ORGANISM",
+      "description": "A pest that affects sorghum production.",
+      "source_id": "paper_11684"
+    },
+    {
+      "name": "MIDGE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum hybrids to resist the sorghum midge.",
+      "source_id": "paper_11684"
+    },
+    {
+      "name": "HYBRID VIGOR",
+      "type": "CONCEPT",
+      "description": "The phenomenon where hybrid offspring exhibit superior qualities compared to parents.",
+      "source_id": "paper_11684"
+    },
+    {
+      "name": "F1 HYBRIDS",
+      "type": "CONCEPT",
+      "description": "First-generation hybrids evaluated for grain yield and midge resistance.",
+      "source_id": "paper_11684"
+    },
+    {
+      "name": "FLOWERING TIME",
+      "type": "TRAIT",
+      "description": "A trait observed for variation among sorghum hybrids.",
+      "source_id": "paper_11684"
+    },
+    {
+      "name": "BETTER PARENT HETEROSIS",
+      "type": "CONCEPT",
+      "description": "A measure of heterosis relative to the superior parent.",
+      "source_id": "paper_11684"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "NIGER",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN YIELD",
+      "description": "has trait",
+      "weight": "9",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MIDGE RESISTANCE",
+      "description": "has trait",
+      "weight": "9",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "FLOWERING TIME",
+      "description": "has trait",
+      "weight": "8",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SORGHUM MIDGE",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "SORGHUM",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "GRAIN YIELD",
+      "description": "evaluated for",
+      "weight": "9",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "MIDGE RESISTANCE",
+      "description": "evaluated for",
+      "weight": "9",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "FLOWERING TIME",
+      "description": "evaluated for",
+      "weight": "8",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "HYBRID VIGOR",
+      "target": "F1 HYBRIDS",
+      "description": "manifested in",
+      "weight": "9",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "BETTER PARENT HETEROSIS",
+      "target": "GRAIN YIELD",
+      "description": "measured for",
+      "weight": "9",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "BETTER PARENT HETEROSIS",
+      "target": "MIDGE RESISTANCE",
+      "description": "measured for",
+      "weight": "9",
+      "source_id": "paper_11684"
+    },
+    {
+      "source": "SORGHUM MIDGE",
+      "target": "MIDGE RESISTANCE",
+      "description": "target of",
+      "weight": "10",
+      "source_id": "paper_11684"
+    }
+  ]
+}

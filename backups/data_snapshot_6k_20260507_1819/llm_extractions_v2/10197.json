@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "The 20 crops analyzed in the study between 2009 and 2011",
+      "source_id": "paper_10197"
+    },
+    {
+      "name": "CROSS-SECTIONAL ANALYSIS",
+      "type": "METHOD",
+      "description": "An analysis conducted across the 20 crops in the 2009-2011 period",
+      "source_id": "paper_10197"
+    },
+    {
+      "name": "BEFORE-AND-AFTER COMPARISON",
+      "type": "METHOD",
+      "description": "A comparison between the 1998 benchmark and the 2009-2011 data",
+      "source_id": "paper_10197"
+    },
+    {
+      "name": "EVALUATION FRAMEWORK OF INPUTS AND OUTPUTS",
+      "type": "CONCEPT",
+      "description": "A framework used to organize findings based on inputs and outputs",
+      "source_id": "paper_10197"
+    },
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "A region used to provide a spatial benchmark for results",
+      "source_id": "paper_10197"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The primary region where data analysis outputs are focused",
+      "source_id": "paper_10197"
+    },
+    {
+      "name": "DATA ANALYSIS",
+      "type": "METHOD",
+      "description": "The process of analyzing data to produce outputs for sub-Saharan Africa",
+      "source_id": "paper_10197"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROSS-SECTIONAL ANALYSIS",
+      "target": "CROPS",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_10197"
+    },
+    {
+      "source": "BEFORE-AND-AFTER COMPARISON",
+      "target": "CROPS",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_10197"
+    },
+    {
+      "source": "DATA ANALYSIS",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_10197"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "provides a spatial benchmark for",
+      "weight": "7",
+      "source_id": "paper_10197"
+    }
+  ]
+}

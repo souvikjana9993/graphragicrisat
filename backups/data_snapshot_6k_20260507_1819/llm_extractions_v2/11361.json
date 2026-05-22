@@ -1,0 +1,240 @@
+{
+  "entities": [
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "Region comprising India, Pakistan, Bangladesh, Nepal, Sri Lanka, and Bhutan",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country in South Asia",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "PAKISTAN",
+      "type": "LOCATION",
+      "description": "Country in South Asia",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "BANGLADESH",
+      "type": "LOCATION",
+      "description": "Country in South Asia",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "NEPAL",
+      "type": "LOCATION",
+      "description": "Country in South Asia",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "SRI LANKA",
+      "type": "LOCATION",
+      "description": "Country in South Asia",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "BHUTAN",
+      "type": "LOCATION",
+      "description": "Country in South Asia",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "FOOD INSECURITY",
+      "type": "CONDITION",
+      "description": "Lack of consistent access to enough food for an active, healthy life",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "FOOD INSECURITY EXPERIENCE SCALE",
+      "type": "CONCEPT",
+      "description": "A tool used by FAO to measure the experience of food insecurity",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "CROPLAND EXTENT",
+      "type": "CONCEPT",
+      "description": "The total area of land used for agricultural crop production",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "LANDSAT SATELLITE TIME-SERIES BIG-DATA",
+      "type": "METHOD",
+      "description": "Use of multi-temporal satellite imagery from Landsat 7 and 8 for analysis",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "MACHINE LEARNING ALGORITHMS",
+      "type": "METHOD",
+      "description": "Computational methods used for image classification and pattern recognition",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "A cloud-based platform for geospatial analysis and big data processing",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "A specific machine learning algorithm used for cropland classification",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "IMAGE CLASSIFICATION",
+      "type": "METHOD",
+      "description": "The process of categorizing pixels in an image into specific classes",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "GLOBAL DIGITAL ELEVATION MODEL",
+      "type": "METHOD",
+      "description": "A digital representation of the Earth's surface topography",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "AGRO-ECOLOGICAL ZONES",
+      "type": "CONCEPT",
+      "description": "Land units defined by common environmental and climatic characteristics",
+      "source_id": "paper_11361"
+    },
+    {
+      "name": "MAP ACCURACY",
+      "type": "CONCEPT",
+      "description": "The degree to which a map represents the real-world features accurately",
+      "source_id": "paper_11361"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOUTH ASIA",
+      "target": "INDIA",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "PAKISTAN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "BANGLADESH",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "NEPAL",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "SRI LANKA",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "BHUTAN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "FOOD INSECURITY",
+      "target": "SOUTH ASIA",
+      "description": "prevalent in",
+      "weight": "8",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "FOOD INSECURITY EXPERIENCE SCALE",
+      "target": "FOOD INSECURITY",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "SOUTH ASIA",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "LANDSAT SATELLITE TIME-SERIES BIG-DATA",
+      "target": "CROPLAND EXTENT",
+      "description": "used to derive",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "MACHINE LEARNING ALGORITHMS",
+      "target": "CROPLAND EXTENT",
+      "description": "used to derive",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "MACHINE LEARNING ALGORITHMS",
+      "description": "platform for",
+      "weight": "9",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "MACHINE LEARNING ALGORITHMS",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "CROPLAND EXTENT",
+      "description": "used to map",
+      "weight": "10",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "IMAGE CLASSIFICATION",
+      "target": "CROPLAND EXTENT",
+      "description": "process to determine",
+      "weight": "9",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "GLOBAL DIGITAL ELEVATION MODEL",
+      "target": "CROPLAND EXTENT",
+      "description": "used as input for mapping",
+      "weight": "7",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "AGRO-ECOLOGICAL ZONES",
+      "target": "SOUTH ASIA",
+      "description": "divisions of",
+      "weight": "9",
+      "source_id": "paper_11361"
+    },
+    {
+      "source": "MAP ACCURACY",
+      "target": "CROPLAND EXTENT",
+      "description": "evaluates quality of",
+      "weight": "9",
+      "source_id": "paper_11361"
+    }
+  ]
+}

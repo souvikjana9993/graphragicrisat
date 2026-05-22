@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan, specifically cultivar ICPL 227",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "RHIZOBIUM SP. STRAIN IC 3024",
+      "type": "ORGANISM",
+      "description": "A rhizobial strain that forms a symbiotic relationship with pigeonpea",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "ATYLOSIA PLATYCARPA",
+      "type": "CROP",
+      "description": "A wild relative of pigeonpea",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "RHIZOBIUM SP. STRAIN IC 3087",
+      "type": "ORGANISM",
+      "description": "A rhizobial strain that forms a symbiotic relationship with Atylosia platycarpa",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "The presence of salt in the growth media, measured in dS m-1",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "SYMBIOSIS",
+      "type": "CONCEPT",
+      "description": "The mutually beneficial relationship between legumes and rhizobia",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The process of converting atmospheric N2 into a usable form for the plant",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "SALINITY TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to maintain growth and function under saline conditions",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "NODULE DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The formation and functioning of root nodules for nitrogen fixation",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "NITROGEN FED",
+      "type": "CONDITION",
+      "description": "Plants supplied with nitrogen fertilizer",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "PHOSPHORUS LEVELS",
+      "type": "TRAIT",
+      "description": "The concentration of phosphorus in the leaves",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "SODIUM LEVELS",
+      "type": "TRAIT",
+      "description": "The concentration of sodium in the leaves",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "CHLORIDE LEVELS",
+      "type": "TRAIT",
+      "description": "The concentration of chloride in the leaves",
+      "source_id": "paper_4980"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The overall development and biomass of the plant",
+      "source_id": "paper_4980"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "RHIZOBIUM SP. STRAIN IC 3024",
+      "description": "forms a symbiotic relationship for nitrogen fixation",
+      "weight": "10",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "ATYLOSIA PLATYCARPA",
+      "target": "RHIZOBIUM SP. STRAIN IC 3087",
+      "description": "forms a symbiotic relationship for nitrogen fixation",
+      "weight": "10",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "SALINITY",
+      "target": "PIGEONPEA",
+      "description": "affects the early stages of symbiotic establishment and nodule number",
+      "weight": "8",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "SALINITY",
+      "target": "ATYLOSIA PLATYCARPA",
+      "description": "tolerated during symbiotic establishment up to 12 dS m-1",
+      "weight": "8",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "SYMBIOSIS",
+      "target": "NITROGEN FIXATION",
+      "description": "is the mechanism that enables",
+      "weight": "10",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "SALINITY",
+      "target": "SALINITY TOLERANCE",
+      "description": "is the condition used to evaluate",
+      "weight": "9",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "SALINITY",
+      "target": "NODULE DEVELOPMENT",
+      "description": "reduces the number of nodules in pigeonpea",
+      "weight": "7",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "NITROGEN FED",
+      "target": "GROWTH",
+      "description": "provides a baseline for comparing symbiotic growth under salinity",
+      "weight": "7",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "SALINITY",
+      "target": "PHOSPHORUS LEVELS",
+      "description": "increases P levels in leaves of both N-fed and N2-fixing plants",
+      "weight": "6",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "SALINITY",
+      "target": "SODIUM LEVELS",
+      "description": "shows no consistent difference between N-fed and N2-fixing plants",
+      "weight": "5",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "SALINITY",
+      "target": "CHLORIDE LEVELS",
+      "description": "shows no consistent difference between N-fed and N2-fixing plants",
+      "weight": "5",
+      "source_id": "paper_4980"
+    },
+    {
+      "source": "SYMBIOSIS",
+      "target": "SALINITY TOLERANCE",
+      "description": "may not be a necessary factor for initial screening",
+      "weight": "6",
+      "source_id": "paper_4980"
+    }
+  ]
+}

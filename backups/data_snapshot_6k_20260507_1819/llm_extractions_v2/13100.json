@@ -1,0 +1,228 @@
+{
+  "entities": [
+    {
+      "name": "COCONUT",
+      "type": "CROP",
+      "description": "The plant species being studied for genetic diversity and population structure.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "GENOTYPING-BY-SEQUENCING",
+      "type": "METHOD",
+      "description": "A cost-effective approach for genome-wide discovery of SNP markers and high-throughput genotyping.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "SINGLE-NUCLEOTIDE POLYMORPHISM",
+      "type": "GENE_MARKER",
+      "description": "Markers used to assess genetic diversity, population structure, and linkage disequilibrium.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The level of genetic variation within coconut accessions.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "POPULATION STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The grouping of coconut genotypes into clusters based on genetic similarity.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "LINKAGE DISEQUILIBRIUM",
+      "type": "CONCEPT",
+      "description": "The non-random association of alleles at different loci in the coconut genome.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "POLYMORPHISM INFORMATION CONTENT",
+      "type": "CONCEPT",
+      "description": "A metric used to evaluate the informativeness of SNP markers.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "EXPECTED HETEROZYGOSITY",
+      "type": "CONCEPT",
+      "description": "A measure of genetic diversity represented by the He value.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "UNWEIGHTED NEIGHBOR-JOINING PHYLOGENETIC TREE",
+      "type": "METHOD",
+      "description": "A method used to group coconut genotypes into clusters.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "BAYESIAN-BASED MODEL",
+      "type": "METHOD",
+      "description": "A model used to analyze and group coconut population structure.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "HEIGHT",
+      "type": "TRAIT",
+      "description": "A physical characteristic (tall or dwarf) used to cluster coconut accessions.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "GEOGRAPHICAL ORIGINS",
+      "type": "LOCATION",
+      "description": "The diverse global origins from which coconut accessions were sourced.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "LD DECAY",
+      "type": "CONCEPT",
+      "description": "The rate and range over which linkage disequilibrium decreases.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "GENOME-WIDE ASSOCIATION STUDIES",
+      "type": "METHOD",
+      "description": "A genomic study approach to link traits to genetic markers for improvement.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "A method used to accelerate the efficiency and speed of genetic improvement.",
+      "source_id": "paper_13100"
+    },
+    {
+      "name": "GENETIC IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The process of enhancing coconut traits using genetic diversity and genomic studies.",
+      "source_id": "paper_13100"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "COCONUT",
+      "description": "used to genotype",
+      "weight": "10",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "SINGLE-NUCLEOTIDE POLYMORPHISM",
+      "description": "used to discover",
+      "weight": "10",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "SINGLE-NUCLEOTIDE POLYMORPHISM",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "SINGLE-NUCLEOTIDE POLYMORPHISM",
+      "target": "POPULATION STRUCTURE",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "SINGLE-NUCLEOTIDE POLYMORPHISM",
+      "target": "LINKAGE DISEQUILIBRIUM",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "SINGLE-NUCLEOTIDE POLYMORPHISM",
+      "target": "POLYMORPHISM INFORMATION CONTENT",
+      "description": "measured by",
+      "weight": "10",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "COCONUT",
+      "description": "analyzed in",
+      "weight": "10",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "POPULATION STRUCTURE",
+      "target": "COCONUT",
+      "description": "analyzed in",
+      "weight": "10",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "LINKAGE DISEQUILIBRIUM",
+      "target": "COCONUT",
+      "description": "analyzed in",
+      "weight": "10",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "EXPECTED HETEROZYGOSITY",
+      "target": "GENETIC DIVERSITY",
+      "description": "measure of",
+      "weight": "10",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "UNWEIGHTED NEIGHBOR-JOINING PHYLOGENETIC TREE",
+      "target": "POPULATION STRUCTURE",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "BAYESIAN-BASED MODEL",
+      "target": "POPULATION STRUCTURE",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "HEIGHT",
+      "target": "POPULATION STRUCTURE",
+      "description": "basis for clustering",
+      "weight": "8",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "GEOGRAPHICAL ORIGINS",
+      "target": "POPULATION STRUCTURE",
+      "description": "basis for clustering",
+      "weight": "7",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "LD DECAY",
+      "target": "LINKAGE DISEQUILIBRIUM",
+      "description": "characteristic of",
+      "weight": "10",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "GENOME-WIDE ASSOCIATION STUDIES",
+      "target": "GENETIC IMPROVEMENT",
+      "description": "used to accelerate",
+      "weight": "8",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GENETIC IMPROVEMENT",
+      "description": "used to accelerate",
+      "weight": "8",
+      "source_id": "paper_13100"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "GENETIC IMPROVEMENT",
+      "description": "utilized for",
+      "weight": "9",
+      "source_id": "paper_13100"
+    }
+  ]
+}

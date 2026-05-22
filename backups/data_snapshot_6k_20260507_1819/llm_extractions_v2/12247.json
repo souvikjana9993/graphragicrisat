@@ -1,0 +1,230 @@
+{
+  "entities": [
+    {
+      "name": "GAMBIA",
+      "type": "LOCATION",
+      "description": "The country where the dietary assessment was conducted",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "EAT-LANCET GUIDELINES",
+      "type": "CONCEPT",
+      "description": "Guidelines for healthy and sustainable diets used as a reference for assessment",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "POPULATION HEALTH",
+      "type": "CONCEPT",
+      "description": "The overall health of the population",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "FOOD SYSTEM RESILIENCE",
+      "type": "CONCEPT",
+      "description": "The capacity of food systems to withstand and recover from shocks",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "ENVIRONMENTAL IMPACT",
+      "type": "CONCEPT",
+      "description": "The adverse effects of dietary patterns on the environment",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "GAMBIAN INTEGRATED HOUSEHOLD SURVEY",
+      "type": "METHOD",
+      "description": "The dataset comprising food consumption data from 12,713 households",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "type": "CONCEPT",
+      "description": "An index computed based on the deviation of food groups from EAT-Lancet recommendations",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "MULTIVARIABLE MIXED EFFECTS REGRESSION",
+      "type": "METHOD",
+      "description": "The statistical method used to model socio-economic and geographic determinants of SHDI scores",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "REFINED GRAINS",
+      "type": "CROP",
+      "description": "Processed grains that were consumed in excess of recommendations",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "WHOLEGRAINS",
+      "type": "CROP",
+      "description": "Unprocessed grains suggested as a substitute for refined grains",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "ADDED SUGARS",
+      "type": "CONCEPT",
+      "description": "Sweeteners consumed in excess of recommendations",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "FRUITS",
+      "type": "CROP",
+      "description": "Nutritionally important food group with low adherence to recommendations",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "VEGETABLES",
+      "type": "CROP",
+      "description": "Nutritionally important food group with low adherence to recommendations",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "NUTS",
+      "type": "CROP",
+      "description": "Nutritionally important food group with low adherence to recommendations",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "DAIRY",
+      "type": "CONCEPT",
+      "description": "Nutritionally important food group with low adherence to recommendations",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "POULTRY",
+      "type": "ORGANISM",
+      "description": "Nutritionally important food group with low adherence to recommendations",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "BEEF AND LAMB",
+      "type": "ORGANISM",
+      "description": "Nutritionally important food group with low adherence to recommendations",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "SOCIO-ECONOMIC DETERMINANTS",
+      "type": "CONCEPT",
+      "description": "Factors such as household head gender, size, education, and wealth index",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "GEOGRAPHIC DETERMINANTS",
+      "type": "CONCEPT",
+      "description": "Factors such as urban or rural settlement",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "The seasonal period associated with increased adherence to dietary targets",
+      "source_id": "paper_12247"
+    },
+    {
+      "name": "CROP PRODUCTION DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variety of crops produced by households, associated with increased adherence",
+      "source_id": "paper_12247"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GAMBIA",
+      "target": "EAT-LANCET GUIDELINES",
+      "description": "Dietary adherence was assessed against these guidelines in this location",
+      "weight": "8",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "EAT-LANCET GUIDELINES",
+      "target": "POPULATION HEALTH",
+      "description": "Guidelines are designed to improve this",
+      "weight": "9",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "EAT-LANCET GUIDELINES",
+      "target": "ENVIRONMENTAL IMPACT",
+      "description": "Guidelines are designed to minimize this",
+      "weight": "9",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "GAMBIAN INTEGRATED HOUSEHOLD SURVEY",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Data from this survey was used to compute the index",
+      "weight": "10",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "MULTIVARIABLE MIXED EFFECTS REGRESSION",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Used to model the determinants of the index scores",
+      "weight": "9",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "SOCIO-ECONOMIC DETERMINANTS",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Associated with higher scores on the index",
+      "weight": "8",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "GEOGRAPHIC DETERMINANTS",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Associated with higher scores on the index",
+      "weight": "8",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "DRY SEASON",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Associated with increased adherence to targets",
+      "weight": "7",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "CROP PRODUCTION DIVERSITY",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Associated with increased adherence to targets",
+      "weight": "8",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "REFINED GRAINS",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Excessive consumption contributes to low adherence/scores",
+      "weight": "8",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "WHOLEGRAINS",
+      "target": "REFINED GRAINS",
+      "description": "Suggested as a substitute to improve diet",
+      "weight": "7",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "FRUITS",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Low consumption contributes to low scores",
+      "weight": "8",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "VEGETABLES",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Low consumption contributes to low scores",
+      "weight": "8",
+      "source_id": "paper_12247"
+    },
+    {
+      "source": "ADDED SUGARS",
+      "target": "SUSTAINABLE AND HEALTHY DIET INDEX (SHDI)",
+      "description": "Excessive consumption contributes to low adherence/scores",
+      "weight": "8",
+      "source_id": "paper_12247"
+    }
+  ]
+}

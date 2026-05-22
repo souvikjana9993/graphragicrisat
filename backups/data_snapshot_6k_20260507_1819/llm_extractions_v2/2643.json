@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The agricultural crop being studied for its response to moisture stress",
+      "source_id": "paper_2643"
+    },
+    {
+      "name": "MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "The environmental condition of limited water availability affecting the plant",
+      "source_id": "paper_2643"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development and increase in size of the groundnut plant",
+      "source_id": "paper_2643"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of agricultural product harvested per unit area",
+      "source_id": "paper_2643"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The efficiency of the crop in producing biomass or yield in the current season",
+      "source_id": "paper_2643"
+    },
+    {
+      "name": "SOIL AND PLANT-WATER RELATIONS",
+      "type": "CONCEPT",
+      "description": "The study of how water moves from the soil into the plant",
+      "source_id": "paper_2643"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MOISTURE STRESS",
+      "target": "GROUNDNUT",
+      "description": "affects the productivity and growth of",
+      "weight": "9",
+      "source_id": "paper_2643"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "GROWTH",
+      "description": "negatively impacts",
+      "weight": "8",
+      "source_id": "paper_2643"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "YIELD",
+      "description": "negatively impacts",
+      "weight": "8",
+      "source_id": "paper_2643"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "PRODUCTIVITY",
+      "description": "affects current season",
+      "weight": "8",
+      "source_id": "paper_2643"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "GROWTH",
+      "description": "exhibits",
+      "weight": "7",
+      "source_id": "paper_2643"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "YIELD",
+      "description": "produces",
+      "weight": "7",
+      "source_id": "paper_2643"
+    },
+    {
+      "source": "SOIL AND PLANT-WATER RELATIONS",
+      "target": "GROUNDNUT",
+      "description": "studied in the context of",
+      "weight": "7",
+      "source_id": "paper_2643"
+    },
+    {
+      "source": "SOIL AND PLANT-WATER RELATIONS",
+      "target": "MOISTURE STRESS",
+      "description": "influenced by",
+      "weight": "8",
+      "source_id": "paper_2643"
+    }
+  ]
+}

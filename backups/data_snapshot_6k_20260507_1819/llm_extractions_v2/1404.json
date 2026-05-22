@@ -1,0 +1,164 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "Glycine max L. cv. Akishirome, the crop studied for carbon and nitrogen translocation.",
+      "source_id": "paper_1404"
+    },
+    {
+      "name": "CARBON TRANSLOCATION",
+      "type": "CONCEPT",
+      "description": "The movement of carbon (13C) from source to sink within the plant.",
+      "source_id": "paper_1404"
+    },
+    {
+      "name": "NITROGEN TRANSLOCATION",
+      "type": "CONCEPT",
+      "description": "The movement of nitrogen (15N) from source to sink within the plant.",
+      "source_id": "paper_1404"
+    },
+    {
+      "name": "13CO2 FEEDING",
+      "type": "METHOD",
+      "description": "The process of feeding the plant with 13C-labeled carbon dioxide to track carbon movement.",
+      "source_id": "paper_1404"
+    },
+    {
+      "name": "15NO3 FEEDING",
+      "type": "METHOD",
+      "description": "The process of feeding the plant with 15N-labeled nitrate to track nitrogen movement.",
+      "source_id": "paper_1404"
+    },
+    {
+      "name": "NITROGEN APPLICATION",
+      "type": "CONDITION",
+      "description": "The application of nitrogen at low (2 g N m-2) and high (35 g N m-2) levels in the basal medium.",
+      "source_id": "paper_1404"
+    },
+    {
+      "name": "DEPODDING",
+      "type": "METHOD",
+      "description": "The removal of all pods from the plant except the pod of the source-sink unit.",
+      "source_id": "paper_1404"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total weight of the plant organs.",
+      "source_id": "paper_1404"
+    },
+    {
+      "name": "SINK DEMAND",
+      "type": "CONCEPT",
+      "description": "The requirement for nutrients by sink organs which influences partitioning.",
+      "source_id": "paper_1404"
+    },
+    {
+      "name": "SOURCE-SINK UNIT",
+      "type": "CONCEPT",
+      "description": "A unit consisting of a trifoliated leaf, the axillary pod, and the subtending internode.",
+      "source_id": "paper_1404"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN",
+      "target": "CARBON TRANSLOCATION",
+      "description": "is the subject of study for",
+      "weight": "10",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "NITROGEN TRANSLOCATION",
+      "description": "is the subject of study for",
+      "weight": "10",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "13CO2 FEEDING",
+      "target": "CARBON TRANSLOCATION",
+      "description": "is used to examine",
+      "weight": "9",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "15NO3 FEEDING",
+      "target": "NITROGEN TRANSLOCATION",
+      "description": "is used to examine",
+      "weight": "9",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "BIOMASS",
+      "description": "high levels increase",
+      "weight": "8",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "DEPODDING",
+      "target": "BIOMASS",
+      "description": "increases weight of vegetative organs",
+      "weight": "7",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "DEPODDING",
+      "target": "CARBON TRANSLOCATION",
+      "description": "decreases 13C export at high-N",
+      "weight": "7",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "CARBON TRANSLOCATION",
+      "description": "affects the export of 13C",
+      "weight": "7",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "NITROGEN TRANSLOCATION",
+      "description": "affects the partitioning of 15N",
+      "weight": "7",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "SINK DEMAND",
+      "target": "CARBON TRANSLOCATION",
+      "description": "influences the partitioning of",
+      "weight": "8",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "SINK DEMAND",
+      "target": "NITROGEN TRANSLOCATION",
+      "description": "influences the partitioning of",
+      "weight": "8",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "DEPODDING",
+      "target": "NITROGEN TRANSLOCATION",
+      "description": "nullifies partitioning outside the unit at low-N",
+      "weight": "7",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "SOURCE-SINK UNIT",
+      "target": "CARBON TRANSLOCATION",
+      "description": "is the site of",
+      "weight": "9",
+      "source_id": "paper_1404"
+    },
+    {
+      "source": "SOURCE-SINK UNIT",
+      "target": "NITROGEN TRANSLOCATION",
+      "description": "is the site of",
+      "weight": "9",
+      "source_id": "paper_1404"
+    }
+  ]
+}

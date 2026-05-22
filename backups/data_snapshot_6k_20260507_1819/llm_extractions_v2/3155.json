@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "LAND TREATMENTS",
+      "type": "METHOD",
+      "description": "Agricultural interventions applied to the land to improve soil properties and crop productivity",
+      "source_id": "paper_3155"
+    },
+    {
+      "name": "INFILTRATION",
+      "type": "TRAIT",
+      "description": "The process by which water on the ground surface enters the soil",
+      "source_id": "paper_3155"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area of land",
+      "source_id": "paper_3155"
+    },
+    {
+      "name": "VERTIC INCEPTISOL",
+      "type": "CONDITION",
+      "description": "A type of shallow vertic soil characterized by specific mineralogical and morphological properties",
+      "source_id": "paper_3155"
+    },
+    {
+      "name": "CHEVELLA WATERSHED",
+      "type": "LOCATION",
+      "description": "The specific site where the on-farm experiment was conducted",
+      "source_id": "paper_3155"
+    },
+    {
+      "name": "MEDAK DISTRICT",
+      "type": "LOCATION",
+      "description": "The administrative district where the study site is located",
+      "source_id": "paper_3155"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the study was conducted",
+      "source_id": "paper_3155"
+    },
+    {
+      "name": "GRADED CONTOUR CULTIVATION",
+      "type": "METHOD",
+      "description": "A specific land treatment involving cultivation along contours with a slight gradient to manage water runoff",
+      "source_id": "paper_3155"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LAND TREATMENTS",
+      "target": "INFILTRATION",
+      "description": "aims to increase",
+      "weight": "8",
+      "source_id": "paper_3155"
+    },
+    {
+      "source": "LAND TREATMENTS",
+      "target": "CROP YIELD",
+      "description": "aims to increase",
+      "weight": "8",
+      "source_id": "paper_3155"
+    },
+    {
+      "source": "LAND TREATMENTS",
+      "target": "VERTIC INCEPTISOL",
+      "description": "evaluated on",
+      "weight": "7",
+      "source_id": "paper_3155"
+    },
+    {
+      "source": "GRADED CONTOUR CULTIVATION",
+      "target": "LAND TREATMENTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3155"
+    },
+    {
+      "source": "CHEVELLA WATERSHED",
+      "target": "MEDAK DISTRICT",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3155"
+    },
+    {
+      "source": "MEDAK DISTRICT",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3155"
+    },
+    {
+      "source": "VERTIC INCEPTISOL",
+      "target": "CHEVELLA WATERSHED",
+      "description": "present at",
+      "weight": "7",
+      "source_id": "paper_3155"
+    }
+  ]
+}

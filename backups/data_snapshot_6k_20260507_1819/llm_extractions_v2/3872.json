@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used to estimate nitrogenase activity in pot-grown plants.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "A cereal crop used to estimate nitrogenase activity in pot-grown plants.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "NITROGENASE ACTIVITY",
+      "type": "TRAIT",
+      "description": "The biological activity of the nitrogenase enzyme, measured by C2H2 reduction.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development and growth of the plants.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "INTACT PLANT ASSAY",
+      "type": "METHOD",
+      "description": "A non-destructive assay for estimating nitrogenase activity in pot-grown plants.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "C2H2 REDUCTION",
+      "type": "METHOD",
+      "description": "The chemical reduction of acetylene used as a proxy for nitrogenase activity.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "INCUBATION",
+      "type": "METHOD",
+      "description": "The process of maintaining plants under specific conditions for a set time to measure activity.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "FARMYARD MANURE",
+      "type": "CONDITION",
+      "description": "An organic amendment used in the growth medium to improve nitrogenase activity and growth.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "SAND",
+      "type": "CONDITION",
+      "description": "A growth medium component used alone or in combination with other materials.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "VERMICULITE",
+      "type": "CONDITION",
+      "description": "A growth medium used for comparison in the study.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONDITION",
+      "description": "A growth medium used for comparison in the study.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The environmental temperature during incubation, affecting nitrogenase activity.",
+      "source_id": "paper_3872"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The amount of water in the growth medium, which influences nitrogenase activity.",
+      "source_id": "paper_3872"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTACT PLANT ASSAY",
+      "target": "NITROGENASE ACTIVITY",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "C2H2 REDUCTION",
+      "target": "NITROGENASE ACTIVITY",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "INTACT PLANT ASSAY",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "INTACT PLANT ASSAY",
+      "target": "MILLET",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "NITROGENASE ACTIVITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "PLANT GROWTH",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "NITROGENASE ACTIVITY",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "NITROGENASE ACTIVITY",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "C2H2 REDUCTION",
+      "target": "INTACT PLANT ASSAY",
+      "description": "is the mechanism of",
+      "weight": "10",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "SAND",
+      "target": "FARMYARD MANURE",
+      "description": "mixed with",
+      "weight": "6",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "VERMICULITE",
+      "target": "NITROGENASE ACTIVITY",
+      "description": "compared for",
+      "weight": "5",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "SOIL",
+      "target": "NITROGENASE ACTIVITY",
+      "description": "compared for",
+      "weight": "5",
+      "source_id": "paper_3872"
+    },
+    {
+      "source": "INCUBATION",
+      "target": "C2H2 REDUCTION",
+      "description": "is required for",
+      "weight": "8",
+      "source_id": "paper_3872"
+    }
+  ]
+}

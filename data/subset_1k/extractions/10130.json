@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cultivated pigeon pea (Cajanus cajan), an important protein source for marginal and vegetarian populations",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "STERILITY MOSAIC DISEASE",
+      "type": "CONDITION",
+      "description": "Also known as green plague of pigeonpea, a severe threat causing yield loss",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "SMD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pigeonpea cultivars to resist Sterility Mosaic Disease",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The production output of pigeonpea, which is severely reduced by Sterility Mosaic Disease",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "RILS",
+      "type": "CONCEPT",
+      "description": "Recombinant Inbred Lines used to study the inheritance of SMD resistance",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "LEAF STAPLING TECHNIQUE",
+      "type": "METHOD",
+      "description": "A technique used to screen RILs for SMD resistance",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "PJTSAU",
+      "type": "LOCATION",
+      "description": "The location (Green house, IBT, PJTSAU) where the screening was conducted",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "KHARIF SEASON",
+      "type": "CONDITION",
+      "description": "The agricultural season during 2012 and 2013 when screening took place",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "DIGENIC RATIO",
+      "type": "CONCEPT",
+      "description": "The 9S:7R ratio observed for SMD resistance in RILs",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "COMPLEMENTARY GENE ACTION",
+      "type": "CONCEPT",
+      "description": "The genetic mechanism indicated by the digenic ratio for SMD resistance",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "PERCENT DISEASE INCIDENCE",
+      "type": "METHOD",
+      "description": "A metric used to classify RILs as resistant or susceptible based on a 20% threshold",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "ICP 8863",
+      "type": "CONCEPT",
+      "description": "A susceptible parent cultivar of pigeonpea",
+      "source_id": "paper_10130"
+    },
+    {
+      "name": "ICPL 20097",
+      "type": "CONCEPT",
+      "description": "A resistant parent cultivar of pigeonpea",
+      "source_id": "paper_10130"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "STERILITY MOSAIC DISEASE",
+      "target": "YIELD",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SMD RESISTANCE",
+      "description": "possesses the trait of",
+      "weight": "8",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "RILS",
+      "target": "SMD RESISTANCE",
+      "description": "were screened for",
+      "weight": "10",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "LEAF STAPLING TECHNIQUE",
+      "target": "SMD RESISTANCE",
+      "description": "is used to evaluate",
+      "weight": "9",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "LEAF STAPLING TECHNIQUE",
+      "target": "RILS",
+      "description": "was applied to",
+      "weight": "9",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "PJTSAU",
+      "target": "RILS",
+      "description": "was the location for screening",
+      "weight": "7",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "RILS",
+      "description": "was the time period for screening",
+      "weight": "7",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "RILS",
+      "target": "DIGENIC RATIO",
+      "description": "showed a",
+      "weight": "9",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "DIGENIC RATIO",
+      "target": "COMPLEMENTARY GENE ACTION",
+      "description": "indicates",
+      "weight": "10",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "PERCENT DISEASE INCIDENCE",
+      "target": "SMD RESISTANCE",
+      "description": "is used to measure",
+      "weight": "10",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "ICP 8863",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "ICPL 20097",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "is resistant to",
+      "weight": "10",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "ICP 8863",
+      "target": "RILS",
+      "description": "is a parent of",
+      "weight": "10",
+      "source_id": "paper_10130"
+    },
+    {
+      "source": "ICPL 20097",
+      "target": "RILS",
+      "description": "is a parent of",
+      "weight": "10",
+      "source_id": "paper_10130"
+    }
+  ]
+}

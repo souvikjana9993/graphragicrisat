@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop used to produce the flours for dough preparation",
+      "source_id": "paper_5677"
+    },
+    {
+      "name": "TEXTURAL PROPERTIES",
+      "type": "TRAIT",
+      "description": "The physical characteristics of the sorghum dough being evaluated",
+      "source_id": "paper_5677"
+    },
+    {
+      "name": "DOUGH",
+      "type": "CONCEPT",
+      "description": "The mixture prepared from sorghum flours and water",
+      "source_id": "paper_5677"
+    },
+    {
+      "name": "BACK-EXTRUSION CELL",
+      "type": "METHOD",
+      "description": "A tool used to measure the textural properties of the dough",
+      "source_id": "paper_5677"
+    },
+    {
+      "name": "INSTRON FOOD TESTING INSTRUMENT",
+      "type": "METHOD",
+      "description": "The equipment containing the back-extrusion cell used for measurement",
+      "source_id": "paper_5677"
+    },
+    {
+      "name": "FORCE",
+      "type": "TRAIT",
+      "description": "The amount of effort required for the extrusion of the dough",
+      "source_id": "paper_5677"
+    },
+    {
+      "name": "ENERGY",
+      "type": "TRAIT",
+      "description": "The energy required for the extrusion of the dough",
+      "source_id": "paper_5677"
+    },
+    {
+      "name": "COHESIVENESS",
+      "type": "TRAIT",
+      "description": "The property of the dough to stick together, influencing its quality",
+      "source_id": "paper_5677"
+    },
+    {
+      "name": "FLOUR-WATER-SOLUBLE COMPONENTS",
+      "type": "CONCEPT",
+      "description": "Components in the flour that affect the cohesiveness of the dough",
+      "source_id": "paper_5677"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "DOUGH",
+      "description": "Sorghum flours are used to prepare the dough",
+      "weight": "10",
+      "source_id": "paper_5677"
+    },
+    {
+      "source": "DOUGH",
+      "target": "TEXTURAL PROPERTIES",
+      "description": "Dough is evaluated for its textural properties",
+      "weight": "10",
+      "source_id": "paper_5677"
+    },
+    {
+      "source": "BACK-EXTRUSION CELL",
+      "target": "TEXTURAL PROPERTIES",
+      "description": "Used to measure the textural properties of the dough",
+      "weight": "9",
+      "source_id": "paper_5677"
+    },
+    {
+      "source": "INSTRON FOOD TESTING INSTRUMENT",
+      "target": "BACK-EXTRUSION CELL",
+      "description": "The instrument that houses the back-extrusion cell",
+      "weight": "10",
+      "source_id": "paper_5677"
+    },
+    {
+      "source": "FORCE",
+      "target": "TEXTURAL PROPERTIES",
+      "description": "Force is a measured parameter of textural properties",
+      "weight": "8",
+      "source_id": "paper_5677"
+    },
+    {
+      "source": "ENERGY",
+      "target": "TEXTURAL PROPERTIES",
+      "description": "Energy is a measured parameter of textural properties",
+      "weight": "8",
+      "source_id": "paper_5677"
+    },
+    {
+      "source": "COHESIVENESS",
+      "target": "TEXTURAL PROPERTIES",
+      "description": "Cohesiveness is a specific textural property of the dough",
+      "weight": "9",
+      "source_id": "paper_5677"
+    },
+    {
+      "source": "FLOUR-WATER-SOLUBLE COMPONENTS",
+      "target": "COHESIVENESS",
+      "description": "These components influence the cohesiveness of the dough",
+      "weight": "8",
+      "source_id": "paper_5677"
+    }
+  ]
+}

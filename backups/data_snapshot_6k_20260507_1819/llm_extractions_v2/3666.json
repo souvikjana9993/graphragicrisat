@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cajanus cajan) studied for nitrogen remobilization and leaf abscission patterns across different maturity groups.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A key nutrient remobilized from senescing leaves to seeds during the reproductive stage of the plant.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "NITROGEN REMOBILIZATION",
+      "type": "TRAIT",
+      "description": "The physiological process of redistributing nitrogen from leaves to seeds during the seed filling stage.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "SEED FILLING STAGE",
+      "type": "CONDITION",
+      "description": "The reproductive phase of the plant when seeds are developing and nutrients are redistributed from vegetative organs.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "LEAF ABSCISSION",
+      "type": "TRAIT",
+      "description": "The natural shedding of leaves, the pattern of which is related to the efficiency of nitrogen remobilization.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "MATURITY DURATION",
+      "type": "TRAIT",
+      "description": "The length of time a genotype takes to reach maturity, categorized into extra-short, short, and medium groups.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "EXTRA-SHORT MATURITY",
+      "type": "CONCEPT",
+      "description": "A maturity group (ESD) characterized by slower leaf abscission and lower nitrogen remobilization efficiency.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "SHORT MATURITY",
+      "type": "CONCEPT",
+      "description": "A maturity group (SD) that remobilizes leaf nitrogen more efficiently than extra-short and medium maturity groups.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "MEDIUM MATURITY",
+      "type": "CONCEPT",
+      "description": "A maturity group (MD) used as a comparison for nitrogen remobilization and leaf abscission patterns.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "PLANT BUDGET FOR N",
+      "type": "METHOD",
+      "description": "An above-ground plant budget approach used to determine the net remobilization of nitrogen from leaves.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to calculate the rate of nitrogen loss in terms of half-life from leaf layers.",
+      "source_id": "paper_3666"
+    },
+    {
+      "name": "SEED DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The biological process of seed growth that depends on the remobilization of nitrogen from senescing leaves.",
+      "source_id": "paper_3666"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "NITROGEN REMOBILIZATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "LEAF ABSCISSION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "MATURITY DURATION",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "NITROGEN REMOBILIZATION",
+      "target": "SEED FILLING STAGE",
+      "description": "occurs during",
+      "weight": "9",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "NITROGEN REMOBILIZATION",
+      "target": "LEAF ABSCISSION",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "NITROGEN REMOBILIZATION",
+      "target": "SEED DEVELOPMENT",
+      "description": "supports",
+      "weight": "9",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "MATURITY DURATION",
+      "target": "EXTRA-SHORT MATURITY",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "MATURITY DURATION",
+      "target": "SHORT MATURITY",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "MATURITY DURATION",
+      "target": "MEDIUM MATURITY",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "SHORT MATURITY",
+      "target": "NITROGEN REMOBILIZATION",
+      "description": "shows higher efficiency in",
+      "weight": "8",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "EXTRA-SHORT MATURITY",
+      "target": "NITROGEN REMOBILIZATION",
+      "description": "shows lower efficiency in",
+      "weight": "8",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "PLANT BUDGET FOR N",
+      "target": "NITROGEN REMOBILIZATION",
+      "description": "is used to measure",
+      "weight": "9",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "REGRESSION ANALYSIS",
+      "target": "NITROGEN REMOBILIZATION",
+      "description": "is used to calculate rate of",
+      "weight": "9",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "LEAF ABSCISSION",
+      "target": "SHORT MATURITY",
+      "description": "is faster in",
+      "weight": "7",
+      "source_id": "paper_3666"
+    },
+    {
+      "source": "LEAF ABSCISSION",
+      "target": "EXTRA-SHORT MATURITY",
+      "description": "is slower in",
+      "weight": "7",
+      "source_id": "paper_3666"
+    }
+  ]
+}

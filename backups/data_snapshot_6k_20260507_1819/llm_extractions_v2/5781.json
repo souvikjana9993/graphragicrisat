@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop (Zea mays L.) studied for yield responses to tillage and mulching",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop (Vigna unguiculata (Walp) L.) used in rotation and studied for yield",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop (Sorghum bicolor L. (Moench)) used in rotation and studied for yield",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "SEMI-ARID CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions characterized by low and irregular rainfall",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "CONSERVATION AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "An approach to increase productivity in smallholder agro-ecosystems through sustainable soil and crop management",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "REDUCED TILLAGE",
+      "type": "METHOD",
+      "description": "A farming practice that minimizes soil disturbance to improve soil health",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "MULCHING",
+      "type": "METHOD",
+      "description": "The application of organic material to the soil surface to conserve moisture and suppress weeds",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "CROP ROTATION",
+      "type": "METHOD",
+      "description": "The practice of growing different crops in succession on the same land to improve soil fertility and break pest cycles",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "RIPPING",
+      "type": "METHOD",
+      "description": "A specific conservation tillage method involving deep soil loosening",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "PLANTING BASINS",
+      "type": "METHOD",
+      "description": "A specific conservation tillage method involving the creation of basins for planting",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "CONVENTIONAL MOULDBOARD PLOUGHING",
+      "type": "METHOD",
+      "description": "A traditional tillage method used as a control in the study",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation, which significantly influences crop yield in semi-arid regions",
+      "source_id": "paper_5781"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The water content of the soil, which affects the response of crops to tillage and mulching",
+      "source_id": "paper_5781"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REDUCED TILLAGE",
+      "target": "MAIZE",
+      "description": "Affects the grain yield of maize",
+      "weight": "5",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "MULCHING",
+      "target": "MAIZE",
+      "description": "Increases grain yield of maize during below average rainfall seasons",
+      "weight": "8",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "CROP ROTATION",
+      "target": "MAIZE",
+      "description": "Increases grain yield of maize compared to monocropping",
+      "weight": "9",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "REDUCED TILLAGE",
+      "target": "COWPEA",
+      "description": "Affects the grain yield of cowpea",
+      "weight": "6",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "MULCHING",
+      "target": "COWPEA",
+      "description": "Affects the grain yield of cowpea",
+      "weight": "5",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "REDUCED TILLAGE",
+      "target": "SORGHUM",
+      "description": "Affects the grain yield of sorghum",
+      "weight": "6",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "RIPPING",
+      "target": "REDUCED TILLAGE",
+      "description": "Is a specific type of reduced tillage method",
+      "weight": "10",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "PLANTING BASINS",
+      "target": "REDUCED TILLAGE",
+      "description": "Is a specific type of reduced tillage method",
+      "weight": "10",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "YIELD",
+      "description": "Influences the effectiveness of mulching and tillage on crop yield",
+      "weight": "8",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "YIELD",
+      "description": "Influences the response of cowpea yield to tillage and mulching",
+      "weight": "7",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "REDUCED TILLAGE",
+      "description": "Includes reduced tillage as a core component",
+      "weight": "9",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "MULCHING",
+      "description": "Includes mulching as a core component",
+      "weight": "9",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "CROP ROTATION",
+      "description": "Includes crop rotation as a core component",
+      "weight": "9",
+      "source_id": "paper_5781"
+    },
+    {
+      "source": "SEMI-ARID CONDITIONS",
+      "target": "YIELD",
+      "description": "Provides the environmental context for the observed yield responses",
+      "weight": "7",
+      "source_id": "paper_5781"
+    }
+  ]
+}

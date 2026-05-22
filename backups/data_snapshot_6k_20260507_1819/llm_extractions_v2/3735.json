@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum hybrid CSH 6 used in the study",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "CHARCOAL STALK ROT",
+      "type": "TRAIT",
+      "description": "A disease of sorghum caused by Macrophomina phaseolina",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "MOISTURE DEFICIT STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by lack of water, created by withholding irrigation",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "PLANT POPULATION DENSITY",
+      "type": "CONDITION",
+      "description": "The number of plants per unit area, specifically tested at 266,700 plants ha-1",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "PATHOGEN INOCULATION",
+      "type": "METHOD",
+      "description": "The technique of introducing a pathogen into the plant",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The location where the research was conducted",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "MACROPHOMINA PHASEOLINA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes charcoal stalk rot",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "WITHHOLDING IRRIGATION",
+      "type": "METHOD",
+      "description": "The process of stopping water supply to induce moisture stress",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "NATURAL INFECTION",
+      "type": "METHOD",
+      "description": "Infection of the plant occurring naturally in the environment",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "ARTIFICIAL INOCULATION",
+      "type": "METHOD",
+      "description": "The deliberate introduction of M. phaseolina into the plant",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "LODGING",
+      "type": "TRAIT",
+      "description": "The first external symptom of charcoal rot",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "SOFT STALK",
+      "type": "TRAIT",
+      "description": "A symptom used to measure the severity of charcoal rot",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "ROOT DAMAGE",
+      "type": "TRAIT",
+      "description": "A symptom used to measure the severity of charcoal rot",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "PLANT SENESCENCE",
+      "type": "TRAIT",
+      "description": "A symptom used to measure the severity of charcoal rot",
+      "source_id": "paper_3735"
+    },
+    {
+      "name": "FLAG LEAF VISIBLE IN THE WHORL",
+      "type": "CONCEPT",
+      "description": "A specific plant growth stage where moisture stress significantly induces lodging",
+      "source_id": "paper_3735"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "CHARCOAL STALK ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "MOISTURE DEFICIT STRESS",
+      "target": "CHARCOAL STALK ROT",
+      "description": "affects incidence and severity of",
+      "weight": "8",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "CHARCOAL STALK ROT",
+      "description": "affects incidence and severity of",
+      "weight": "8",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "PATHOGEN INOCULATION",
+      "target": "CHARCOAL STALK ROT",
+      "description": "used to study the development of",
+      "weight": "7",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CHARCOAL STALK ROT",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "INDIA",
+      "target": "SORGHUM",
+      "description": "location where the study on sorghum was conducted",
+      "weight": "5",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "WITHHOLDING IRRIGATION",
+      "target": "MOISTURE DEFICIT STRESS",
+      "description": "is the method used to create",
+      "weight": "10",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "LODGING",
+      "target": "CHARCOAL STALK ROT",
+      "description": "is the first external symptom of",
+      "weight": "9",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "SOFT STALK",
+      "target": "CHARCOAL STALK ROT",
+      "description": "is a symptom used to measure",
+      "weight": "9",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "ROOT DAMAGE",
+      "target": "CHARCOAL STALK ROT",
+      "description": "is a symptom used to measure",
+      "weight": "9",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "PLANT SENESCENCE",
+      "target": "CHARCOAL STALK ROT",
+      "description": "is a symptom used to measure",
+      "weight": "9",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "FLAG LEAF VISIBLE IN THE WHORL",
+      "target": "LODGING",
+      "description": "growth stage where moisture stress induces highest incidence of",
+      "weight": "8",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "LODGING",
+      "description": "highest density correlates with maximum number of lodged plants",
+      "weight": "7",
+      "source_id": "paper_3735"
+    },
+    {
+      "source": "ARTIFICIAL INOCULATION",
+      "target": "NATURAL INFECTION",
+      "description": "compared to determine differences in disease development",
+      "weight": "8",
+      "source_id": "paper_3735"
+    }
+  ]
+}

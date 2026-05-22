@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "Predominant crop in the target region of India used in a sequential system.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Crop that can follow soybean in the postrainy season in a sequential system.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Target country for the study of soybean-chickpea sequential systems.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "THAILAND",
+      "type": "LOCATION",
+      "description": "Target country for the project on sustainable rainfed agriculture.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "VIETNAM",
+      "type": "LOCATION",
+      "description": "Target country for the project on sustainable rainfed agriculture.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "CROPGRO MODELS",
+      "type": "METHOD",
+      "description": "Simulation models used to examine potential yields, yield gap, and water balance of crops.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "POTENTIAL PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The maximum possible yield of the crop system under optimal conditions.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "YIELD GAP",
+      "type": "TRAIT",
+      "description": "The difference between potential productivity and current productivity.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "WATER BALANCE",
+      "type": "CONCEPT",
+      "description": "The analysis of water input and output, including evapotranspiration and runoff, in the crop system.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "SOYBEAN-CHICKPEA SEQUENTIAL SYSTEM",
+      "type": "CONCEPT",
+      "description": "A cropping system where soybean is followed by chickpea in the postrainy season.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "RAINFED SITUATION",
+      "type": "CONDITION",
+      "description": "Agricultural conditions relying solely on rainfall without irrigation.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "SUPPLEMENTAL IRRIGATION",
+      "type": "METHOD",
+      "description": "The application of additional water to crops to supplement rainfall to increase yields.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "WATER HARVESTING",
+      "type": "METHOD",
+      "description": "The process of collecting and storing rainwater for supplemental irrigation or groundwater recharge.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "EVAPOTRANSPIRATION",
+      "type": "CONCEPT",
+      "description": "The combined process of water evaporation from the soil and transpiration from plants.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "SURFACE RUNOFF",
+      "type": "CONCEPT",
+      "description": "Water from precipitation that flows over the land surface instead of infiltrating.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "WATER-HOLDING CAPACITY SOILS",
+      "type": "CONDITION",
+      "description": "Soils characterized by medium and high ability to retain water.",
+      "source_id": "paper_3680"
+    },
+    {
+      "name": "INTERMEDIATE RAINFALL ECOREGION",
+      "type": "CONDITION",
+      "description": "An ecoregion characterized by intermediate levels of rainfall.",
+      "source_id": "paper_3680"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN-CHICKPEA SEQUENTIAL SYSTEM",
+      "target": "SOYBEAN",
+      "description": "consists of",
+      "weight": "10",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "SOYBEAN-CHICKPEA SEQUENTIAL SYSTEM",
+      "target": "CHICKPEA",
+      "description": "consists of",
+      "weight": "10",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "CROPGRO MODELS",
+      "target": "SOYBEAN-CHICKPEA SEQUENTIAL SYSTEM",
+      "description": "used to simulate",
+      "weight": "9",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "CROPGRO MODELS",
+      "target": "POTENTIAL PRODUCTIVITY",
+      "description": "used to examine",
+      "weight": "8",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "CROPGRO MODELS",
+      "target": "YIELD GAP",
+      "description": "used to examine",
+      "weight": "8",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "CROPGRO MODELS",
+      "target": "WATER BALANCE",
+      "description": "used to examine",
+      "weight": "8",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "SOYBEAN-CHICKPEA SEQUENTIAL SYSTEM",
+      "target": "INDIA",
+      "description": "studied in",
+      "weight": "9",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "SOYBEAN-CHICKPEA SEQUENTIAL SYSTEM",
+      "target": "RAINFED SITUATION",
+      "description": "evaluated under",
+      "weight": "9",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "YIELD GAP",
+      "target": "POTENTIAL PRODUCTIVITY",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "SUPPLEMENTAL IRRIGATION",
+      "target": "YIELD GAP",
+      "description": "can reduce",
+      "weight": "7",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "WATER HARVESTING",
+      "target": "SUPPLEMENTAL IRRIGATION",
+      "description": "provides water for",
+      "weight": "8",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "WATER BALANCE",
+      "target": "EVAPOTRANSPIRATION",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "WATER BALANCE",
+      "target": "SURFACE RUNOFF",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "SOYBEAN-CHICKPEA SEQUENTIAL SYSTEM",
+      "target": "WATER-HOLDING CAPACITY SOILS",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_3680"
+    },
+    {
+      "source": "SOYBEAN-CHICKPEA SEQUENTIAL SYSTEM",
+      "target": "INTERMEDIATE RAINFALL ECOREGION",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_3680"
+    }
+  ]
+}

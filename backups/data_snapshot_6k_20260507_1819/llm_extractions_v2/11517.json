@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "AGRICULTURAL SIMULATION",
+      "type": "CONCEPT",
+      "description": "The process of simulating agricultural systems to predict outcomes and analyze performance.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "APSIM",
+      "type": "METHOD",
+      "description": "Agricultural Production Systems sIMulator, a software framework used for agricultural simulation.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "METEOROLOGICAL DATA",
+      "type": "CONCEPT",
+      "description": "Weather-related input data required to run agricultural simulations.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "DATA ACQUISITION",
+      "type": "METHOD",
+      "description": "The process of collecting necessary input data for simulations.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "DATA TRANSFORMATION",
+      "type": "METHOD",
+      "description": "The process of converting raw data into a specific format required by simulation software.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "DATA PREPARATION",
+      "type": "METHOD",
+      "description": "The overall process of preparing input and settings files before simulation processing.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "INITIAL TESTING",
+      "type": "METHOD",
+      "description": "The process of verifying simulation setups before full-scale execution.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "COMPUTING TIME ESTIMATIONS",
+      "type": "METHOD",
+      "description": "The process of predicting the time required to run a set of simulations.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "SCHEDULING",
+      "type": "METHOD",
+      "description": "The organization of simulation tasks to optimize computing resources.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "PARALLEL PROCESSING",
+      "type": "METHOD",
+      "description": "The simultaneous execution of multiple simulations to reduce total computing time.",
+      "source_id": "paper_11517"
+    },
+    {
+      "name": "SIMULATION OPTIMIZATION",
+      "type": "METHOD",
+      "description": "General methods used to improve the efficiency and speed of agricultural simulations.",
+      "source_id": "paper_11517"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "APSIM",
+      "target": "AGRICULTURAL SIMULATION",
+      "description": "is used to perform",
+      "weight": "10",
+      "source_id": "paper_11517"
+    },
+    {
+      "source": "AGRICULTURAL SIMULATION",
+      "target": "METEOROLOGICAL DATA",
+      "description": "requires",
+      "weight": "9",
+      "source_id": "paper_11517"
+    },
+    {
+      "source": "DATA ACQUISITION",
+      "target": "AGRICULTURAL SIMULATION",
+      "description": "is a pre-processing step for",
+      "weight": "8",
+      "source_id": "paper_11517"
+    },
+    {
+      "source": "DATA TRANSFORMATION",
+      "target": "AGRICULTURAL SIMULATION",
+      "description": "is a pre-processing step for",
+      "weight": "8",
+      "source_id": "paper_11517"
+    },
+    {
+      "source": "DATA PREPARATION",
+      "target": "AGRICULTURAL SIMULATION",
+      "description": "is a pre-processing step for",
+      "weight": "8",
+      "source_id": "paper_11517"
+    },
+    {
+      "source": "INITIAL TESTING",
+      "target": "AGRICULTURAL SIMULATION",
+      "description": "is used to validate",
+      "weight": "7",
+      "source_id": "paper_11517"
+    },
+    {
+      "source": "COMPUTING TIME ESTIMATIONS",
+      "target": "AGRICULTURAL SIMULATION",
+      "description": "is used to plan",
+      "weight": "7",
+      "source_id": "paper_11517"
+    },
+    {
+      "source": "SCHEDULING",
+      "target": "SIMULATION OPTIMIZATION",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_11517"
+    },
+    {
+      "source": "PARALLEL PROCESSING",
+      "target": "SIMULATION OPTIMIZATION",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_11517"
+    },
+    {
+      "source": "SIMULATION OPTIMIZATION",
+      "target": "AGRICULTURAL SIMULATION",
+      "description": "improves the efficiency of",
+      "weight": "8",
+      "source_id": "paper_11517"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A botanical model crop used for comparative genomic analysis",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The target crop for which genetic linkage maps are being enriched",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "EST-SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple sequence repeat markers derived from expressed sequence tags",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "COMPARATIVE GENOMICS",
+      "type": "CONCEPT",
+      "description": "The analysis of genomic structures and functions across different species",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "ANGIOSPERMS",
+      "type": "ORGANISM",
+      "description": "Flowering plants, the broader group including rice and sorghum",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "ORPHAN CROPS",
+      "type": "CONCEPT",
+      "description": "Underutilized crops that lack sufficient genomic tools",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "RICE-SORGHUM SYNTENY",
+      "type": "CONCEPT",
+      "description": "The conserved order of genomic sequences between rice and sorghum",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "STRIGA RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist infection by the parasitic weed Striga",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "STAY-GREEN",
+      "type": "TRAIT",
+      "description": "A trait associated with the ability of a plant to remain green during the grain-filling stage",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "TERMINAL DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand drought conditions at the end of the growing season",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "RECOMBINANT INBRED POPULATION",
+      "type": "METHOD",
+      "description": "A genetic population used for mapping markers to specific genomic regions",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "IN SILICO MAPPING",
+      "type": "METHOD",
+      "description": "The computational process of mapping sequences onto a reference genome",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "LINKAGE MAP",
+      "type": "CONCEPT",
+      "description": "A representation of the relative positions of genes or markers on a chromosome",
+      "source_id": "paper_6410"
+    },
+    {
+      "name": "POLYMORPHISM DETECTION",
+      "type": "METHOD",
+      "description": "The method of identifying genetic variations between different plant entries",
+      "source_id": "paper_6410"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COMPARATIVE GENOMICS",
+      "target": "RICE",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "COMPARATIVE GENOMICS",
+      "target": "SORGHUM",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "RICE-SORGHUM SYNTENY",
+      "target": "EST-SSR MARKERS",
+      "description": "used for targeted development of",
+      "weight": "9",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "EST-SSR MARKERS",
+      "target": "SORGHUM",
+      "description": "developed for",
+      "weight": "10",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "EST-SSR MARKERS",
+      "target": "LINKAGE MAP",
+      "description": "used to enrich",
+      "weight": "9",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "RECOMBINANT INBRED POPULATION",
+      "target": "STRIGA RESISTANCE",
+      "description": "segregating for",
+      "weight": "7",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "RECOMBINANT INBRED POPULATION",
+      "target": "STAY-GREEN",
+      "description": "segregating for",
+      "weight": "7",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "STAY-GREEN",
+      "target": "TERMINAL DROUGHT TOLERANCE",
+      "description": "component of",
+      "weight": "9",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "EST-SSR MARKERS",
+      "target": "RECOMBINANT INBRED POPULATION",
+      "description": "mapped onto",
+      "weight": "8",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "IN SILICO MAPPING",
+      "target": "SORGHUM",
+      "description": "used to map ESTs on",
+      "weight": "8",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "RICE",
+      "target": "RICE-SORGHUM SYNTENY",
+      "description": "part of",
+      "weight": "10",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "RICE-SORGHUM SYNTENY",
+      "description": "part of",
+      "weight": "10",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "ANGIOSPERMS",
+      "target": "COMPARATIVE GENOMICS",
+      "description": "subject of",
+      "weight": "7",
+      "source_id": "paper_6410"
+    },
+    {
+      "source": "ORPHAN CROPS",
+      "target": "COMPARATIVE GENOMICS",
+      "description": "benefits from",
+      "weight": "7",
+      "source_id": "paper_6410"
+    }
+  ]
+}

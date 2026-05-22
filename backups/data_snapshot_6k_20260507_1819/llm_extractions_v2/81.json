@@ -1,0 +1,219 @@
+{
+  "entities": [
+    {
+      "name": "SOIL",
+      "type": "<CROP>",
+      "description": "The upper layer of earth comprising mineral particles, organic matter, water, and air, supporting plant life.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "WATER",
+      "type": "<CROP>",
+      "description": "A transparent, odorless, tasteless liquid essential for most plant and animal life.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "PRODUCTION SYSTEMS",
+      "type": "<CONCEPT>",
+      "description": "The complete process of inputs, transformations, and outputs involved in producing agricultural commodities.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "WATERSHED",
+      "type": "<LOCATION>",
+      "description": "An area of land where all water that falls in it drains to a common outlet.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "RAINFED AGRO-ECOSYSTEM",
+      "type": "<CONDITION>",
+      "description": "An agricultural system relying primarily on rainfall for crop production.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "<CONCEPT>",
+      "description": "The surroundings or conditions in which a person, animal, or plant lives or operates.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "NATURAL RESOURCE MANAGEMENT PRACTICES",
+      "type": "<METHOD>",
+      "description": "Strategies for the sustainable use and protection of natural resources.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "SOIL QUALITY",
+      "type": "<TRAIT>",
+      "description": "The condition of soil, including its physical, chemical, and biological characteristics, affecting its ability to support plant growth.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "WATER QUALITY",
+      "type": "<TRAIT>",
+      "description": "The characteristics of water, including its physical, chemical, and biological properties, determining its suitability for various uses.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "SEMI-ARID TROPICAL REGIONS",
+      "type": "<LOCATION>",
+      "description": "Geographical areas with moderate rainfall and warm temperatures.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "INDIA",
+      "type": "<LOCATION>",
+      "description": "A country in South Asia.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "SOIL AND WATER CONSERVATION PRACTICES",
+      "type": "<METHOD>",
+      "description": "Techniques used to prevent soil erosion and conserve water resources.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "PLANT NUTRITION",
+      "type": "<CONCEPT>",
+      "description": "The supply of essential elements required for plant growth and development.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "<TRAIT>",
+      "description": "The rate at which crops are produced.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "CATCHMENT",
+      "type": "<LOCATION>",
+      "description": "An area of land where rainfall collects and drains into a common outlet, similar to a watershed.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "SURFACE WATER",
+      "type": "<CROP>",
+      "description": "Water found in rivers, lakes, and streams.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "GROUNDWATER",
+      "type": "<CROP>",
+      "description": "Water held underground in the soil or in pores and crevices in rock.",
+      "source_id": "paper_81"
+    },
+    {
+      "name": "CORRECTIVE MANAGEMENT PRACTICES",
+      "type": "<METHOD>",
+      "description": "Actions taken to address and improve issues identified through monitoring and assessment.",
+      "source_id": "paper_81"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "IMPACTS",
+      "target": "NATURAL RESOURCE MANAGEMENT PRACTICES",
+      "description": "SOIL QUALITY",
+      "weight": "8",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "IMPACTS",
+      "target": "NATURAL RESOURCE MANAGEMENT PRACTICES",
+      "description": "WATER QUALITY",
+      "weight": "8",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "CONSTITUTES",
+      "target": "SOIL",
+      "description": "PRODUCTION SYSTEMS",
+      "weight": "7",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "CONSTITUTES",
+      "target": "WATER",
+      "description": "PRODUCTION SYSTEMS",
+      "weight": "7",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "LOCATED_IN",
+      "target": "WATERSHED",
+      "description": "SEMI-ARID TROPICAL REGIONS",
+      "weight": "6",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "LOCATED_IN",
+      "target": "SEMI-ARID TROPICAL REGIONS",
+      "description": "INDIA",
+      "weight": "9",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "IMPROVES",
+      "target": "SOIL AND WATER CONSERVATION PRACTICES",
+      "description": "SOIL QUALITY",
+      "weight": "7",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "IMPROVES",
+      "target": "SOIL AND WATER CONSERVATION PRACTICES",
+      "description": "WATER QUALITY",
+      "weight": "7",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "ENHANCES",
+      "target": "PLANT NUTRITION",
+      "description": "PRODUCTIVITY",
+      "weight": "7",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "MONITORED_BY",
+      "target": "NATURAL RESOURCE MANAGEMENT PRACTICES",
+      "description": "SOIL QUALITY",
+      "weight": "6",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "MONITORED_BY",
+      "target": "NATURAL RESOURCE MANAGEMENT PRACTICES",
+      "description": "WATER QUALITY",
+      "weight": "6",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "SURFACE WATER",
+      "description": "WATER QUALITY",
+      "weight": "6",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "GROUNDWATER",
+      "description": "WATER QUALITY",
+      "weight": "6",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "REQUIRES",
+      "target": "PRODUCTION SYSTEMS",
+      "description": "ENVIRONMENT",
+      "weight": "7",
+      "source_id": "paper_81"
+    },
+    {
+      "source": "IMPLEMENTED_BY",
+      "target": "CORRECTIVE MANAGEMENT PRACTICES",
+      "description": "NATURAL RESOURCE MANAGEMENT PRACTICES",
+      "weight": "6",
+      "source_id": "paper_81"
+    }
+  ]
+}

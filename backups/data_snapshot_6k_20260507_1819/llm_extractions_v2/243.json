@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "MALE STERILITY",
+      "type": "TRAIT",
+      "description": "The inability of a plant to produce functional pollen, found to be partial and without clear-cut segregation in the F2 population.",
+      "source_id": "paper_243"
+    },
+    {
+      "name": "ANNIGERI",
+      "type": "ORGANISM",
+      "description": "A plant line used as a parent in the cross to produce an F2 population.",
+      "source_id": "paper_243"
+    },
+    {
+      "name": "PM-L550",
+      "type": "ORGANISM",
+      "description": "A plant line used as a parent in the cross to produce an F2 population.",
+      "source_id": "paper_243"
+    },
+    {
+      "name": "F2 POPULATION",
+      "type": "CONCEPT",
+      "description": "The second filial generation resulting from genetic crosses.",
+      "source_id": "paper_243"
+    },
+    {
+      "name": "F1 POPULATION",
+      "type": "CONCEPT",
+      "description": "The first filial generation resulting from the cross between male-sterile plants and G130.",
+      "source_id": "paper_243"
+    },
+    {
+      "name": "G130",
+      "type": "ORGANISM",
+      "description": "A plant line used in crosses with male-sterile plants.",
+      "source_id": "paper_243"
+    },
+    {
+      "name": "MEIOSIS",
+      "type": "CONCEPT",
+      "description": "The process of cell division that was observed to be normal in the F1 population.",
+      "source_id": "paper_243"
+    },
+    {
+      "name": "FERTILITY",
+      "type": "TRAIT",
+      "description": "The ability to produce offspring, which was fully present in the F1 population.",
+      "source_id": "paper_243"
+    },
+    {
+      "name": "SEGREGATION",
+      "type": "CONCEPT",
+      "description": "The genetic process of allele separation, which was not clear-cut for male sterility in the F2 population.",
+      "source_id": "paper_243"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ANNIGERI",
+      "target": "F2 POPULATION",
+      "description": "Parent of the F2 population",
+      "weight": "10",
+      "source_id": "paper_243"
+    },
+    {
+      "source": "PM-L550",
+      "target": "F2 POPULATION",
+      "description": "Parent of the F2 population",
+      "weight": "10",
+      "source_id": "paper_243"
+    },
+    {
+      "source": "F2 POPULATION",
+      "target": "MALE STERILITY",
+      "description": "Exhibited partial male sterility",
+      "weight": "8",
+      "source_id": "paper_243"
+    },
+    {
+      "source": "G130",
+      "target": "F1 POPULATION",
+      "description": "Parent of the F1 population",
+      "weight": "10",
+      "source_id": "paper_243"
+    },
+    {
+      "source": "F1 POPULATION",
+      "target": "MEIOSIS",
+      "description": "Exhibited normal meiosis",
+      "weight": "7",
+      "source_id": "paper_243"
+    },
+    {
+      "source": "F1 POPULATION",
+      "target": "FERTILITY",
+      "description": "Exhibited full fertility",
+      "weight": "9",
+      "source_id": "paper_243"
+    },
+    {
+      "source": "MALE STERILITY",
+      "target": "SEGREGATION",
+      "description": "Lacked clear-cut segregation in the F2 population",
+      "weight": "7",
+      "source_id": "paper_243"
+    }
+  ]
+}

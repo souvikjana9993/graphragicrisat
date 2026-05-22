@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species whose cultivars' impact on genetic diversity and yield stability is being studied",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variety of genetic characteristics within a crop species, essential for improvement and survival",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "YIELD STABILITY",
+      "type": "TRAIT",
+      "description": "The consistency of crop yield over time and across environments",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "PESTS",
+      "type": "ORGANISM",
+      "description": "Organisms that cause production losses in crops",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "DISEASES",
+      "type": "CONDITION",
+      "description": "Pathological conditions that cause production losses in crops",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "NUCLEAR GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "Genetic variation found in the nucleus of a cell",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "CYTOPLASMIC GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "Genetic variation found in the cytoplasm of a cell",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "BLIGHT",
+      "type": "CONDITION",
+      "description": "A plant disease causing rapid tissue death, specifically mentioned regarding potatoes",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "POTATOES",
+      "type": "CROP",
+      "description": "The crop affected by blight in the northern hemisphere in the 1840s",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "NORTHERN HEMISPHERE",
+      "type": "LOCATION",
+      "description": "The geographic region where temperate potatoes were affected by blight",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "SOUTHERN CORN LEAF BLIGHT",
+      "type": "CONDITION",
+      "description": "A specific disease epidemic that affected maize in the USA in 1970",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop affected by the southern corn leaf blight epidemic",
+      "source_id": "paper_4812"
+    },
+    {
+      "name": "USA",
+      "type": "LOCATION",
+      "description": "The country where the southern corn leaf blight epidemic occurred",
+      "source_id": "paper_4812"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "GENETIC DIVERSITY",
+      "description": "Improved cultivars impact the genetic diversity of the crop",
+      "weight": "8",
+      "source_id": "paper_4812"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "YIELD STABILITY",
+      "description": "Improved cultivars impact the yield stability of the crop",
+      "weight": "8",
+      "source_id": "paper_4812"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "PESTS",
+      "description": "Low levels of genetic diversity render crops vulnerable to pests",
+      "weight": "9",
+      "source_id": "paper_4812"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "DISEASES",
+      "description": "Low levels of genetic diversity render crops vulnerable to diseases",
+      "weight": "9",
+      "source_id": "paper_4812"
+    },
+    {
+      "source": "NUCLEAR GENETIC DIVERSITY",
+      "target": "GENETIC DIVERSITY",
+      "description": "A component of overall genetic diversity",
+      "weight": "10",
+      "source_id": "paper_4812"
+    },
+    {
+      "source": "CYTOPLASMIC GENETIC DIVERSITY",
+      "target": "GENETIC DIVERSITY",
+      "description": "A component of overall genetic diversity",
+      "weight": "10",
+      "source_id": "paper_4812"
+    },
+    {
+      "source": "BLIGHT",
+      "target": "POTATOES",
+      "description": "Blight affected temperate potatoes",
+      "weight": "10",
+      "source_id": "paper_4812"
+    },
+    {
+      "source": "POTATOES",
+      "target": "NORTHERN HEMISPHERE",
+      "description": "Potatoes were affected in the northern hemisphere",
+      "weight": "7",
+      "source_id": "paper_4812"
+    },
+    {
+      "source": "SOUTHERN CORN LEAF BLIGHT",
+      "target": "MAIZE",
+      "description": "Southern corn leaf blight caused an epidemic in maize",
+      "weight": "10",
+      "source_id": "paper_4812"
+    },
+    {
+      "source": "MAIZE",
+      "target": "USA",
+      "description": "The maize epidemic occurred in the USA",
+      "weight": "7",
+      "source_id": "paper_4812"
+    }
+  ]
+}

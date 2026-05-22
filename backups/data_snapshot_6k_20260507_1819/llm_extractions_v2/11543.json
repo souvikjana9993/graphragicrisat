@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "BANGLADESH",
+      "type": "LOCATION",
+      "description": "A country in South Asia where land use and land cover changes were analyzed at a national scale",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "LAND USE AND LAND COVER CHANGES",
+      "type": "CONCEPT",
+      "description": "The modification of the Earth's terrestrial surface, analyzed quantitatively at the national scale in Bangladesh",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "LANDSAT SATELLITE DATA",
+      "type": "METHOD",
+      "description": "Satellite imagery used to interpret land use and land cover changes from 2000 to 2010",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "GLOBAL SURFACEWATER DATASET",
+      "type": "METHOD",
+      "description": "A dataset employed to account for the influences of water seasonality on land cover changes",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "WATER SEASONALITY",
+      "type": "CONDITION",
+      "description": "The seasonal variation in water presence that affects the accuracy of land use and land cover change analysis",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "AGRICULTURAL LAND",
+      "type": "CONCEPT",
+      "description": "A land cover type that experienced significant gross gain and loss on a local scale",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "WATERBODIES",
+      "type": "CONCEPT",
+      "description": "A land cover type that saw conversion from agricultural land, particularly in the southwest region",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "FOREST",
+      "type": "CONCEPT",
+      "description": "A land cover type that underwent changes to shrubland in the southeast region",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "SHRUBLAND",
+      "type": "CONCEPT",
+      "description": "A land cover type resulting from the conversion of forest land",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "CLIMATE DYNAMICS",
+      "type": "CONDITION",
+      "description": "A biophysical driver contributing to the change from forest to shrubland",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "EXTREME EVENTS",
+      "type": "CONDITION",
+      "description": "Environmental events that drive the conversion of forest to shrubland",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "URBAN AND RURAL HOUSEHOLDS",
+      "type": "CONCEPT",
+      "description": "Socioeconomic factors driving land cover changes in both the southeast and southwest regions",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "SOUTHEAST REGION",
+      "type": "LOCATION",
+      "description": "A region in Bangladesh where forest to shrubland changes were driven by climate and household dynamics",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "SOUTHWEST REGION",
+      "type": "LOCATION",
+      "description": "A region in Bangladesh where agricultural land converted to waterbodies due to socioeconomic and precipitation drivers",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "POPULATION GROWTH",
+      "type": "CONCEPT",
+      "description": "A socioeconomic driver of the conversion from agricultural land to standing waterbodies",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "DISTANCE TO CITIES AND MAJOR ROADS",
+      "type": "CONCEPT",
+      "description": "A spatial socioeconomic driver of the conversion from agricultural land to waterbodies",
+      "source_id": "paper_11543"
+    },
+    {
+      "name": "PRECIPITATION DYNAMICS",
+      "type": "CONDITION",
+      "description": "A biophysical driver of the conversion from agricultural land to standing waterbodies",
+      "source_id": "paper_11543"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LAND USE AND LAND COVER CHANGES",
+      "target": "BANGLADESH",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "LANDSAT SATELLITE DATA",
+      "target": "LAND USE AND LAND COVER CHANGES",
+      "description": "used to interpret",
+      "weight": "9",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "GLOBAL SURFACEWATER DATASET",
+      "target": "WATER SEASONALITY",
+      "description": "used to account for",
+      "weight": "9",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "WATER SEASONALITY",
+      "target": "LAND USE AND LAND COVER CHANGES",
+      "description": "influences accuracy of analysis",
+      "weight": "8",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "AGRICULTURAL LAND",
+      "target": "WATERBODIES",
+      "description": "undergoes conversion to",
+      "weight": "8",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "FOREST",
+      "target": "SHRUBLAND",
+      "description": "undergoes conversion to",
+      "weight": "8",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "CLIMATE DYNAMICS",
+      "target": "SHRUBLAND",
+      "description": "drives change from forest to",
+      "weight": "7",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "EXTREME EVENTS",
+      "target": "SHRUBLAND",
+      "description": "drives change from forest to",
+      "weight": "7",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "URBAN AND RURAL HOUSEHOLDS",
+      "target": "SHRUBLAND",
+      "description": "drives change from forest to",
+      "weight": "7",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "SOUTHEAST REGION",
+      "target": "SHRUBLAND",
+      "description": "location of change from forest to",
+      "weight": "8",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "URBAN AND RURAL HOUSEHOLDS",
+      "target": "WATERBODIES",
+      "description": "drives conversion from agricultural land to",
+      "weight": "7",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "POPULATION GROWTH",
+      "target": "WATERBODIES",
+      "description": "drives conversion from agricultural land to",
+      "weight": "7",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "DISTANCE TO CITIES AND MAJOR ROADS",
+      "target": "WATERBODIES",
+      "description": "drives conversion from agricultural land to",
+      "weight": "7",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "PRECIPITATION DYNAMICS",
+      "target": "WATERBODIES",
+      "description": "drives conversion from agricultural land to",
+      "weight": "7",
+      "source_id": "paper_11543"
+    },
+    {
+      "source": "SOUTHWEST REGION",
+      "target": "WATERBODIES",
+      "description": "location of conversion from agricultural land to",
+      "weight": "8",
+      "source_id": "paper_11543"
+    }
+  ]
+}

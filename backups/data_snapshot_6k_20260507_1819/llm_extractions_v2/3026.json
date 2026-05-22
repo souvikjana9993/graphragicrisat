@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "RYE",
+      "type": "CROP",
+      "description": "The primary crop studied, Secale cereale L.",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "Crop used for EST primer pairs and map position comparison",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "SINGLE NUCLEOTIDE POLYMORPHISM",
+      "type": "GENE_MARKER",
+      "description": "Markers used for discovery, frequency analysis, and genome mapping in rye",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "INDEL",
+      "type": "GENE_MARKER",
+      "description": "Insertion-deletion markers identified in the rye transcriptome",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "EXPRESSED SEQUENCE TAG",
+      "type": "GENE_MARKER",
+      "description": "Sequence tags used as primer pairs to amplify DNA",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "CLEAVED AMPLIFIED POLYMORPHIC SEQUENCE",
+      "type": "METHOD",
+      "description": "A format used to convert SNPs to improve assay cost-effectiveness",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "SIMPLE SEQUENCE REPEAT",
+      "type": "GENE_MARKER",
+      "description": "Genomic markers used to compare genetic diversity data",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "EST-DERIVED SSR",
+      "type": "GENE_MARKER",
+      "description": "SSR markers derived from expressed sequence tags used for diversity comparison",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "GENOME MAPPING",
+      "type": "METHOD",
+      "description": "The process of identifying the location of genes or markers on a chromosome",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "TRAIT",
+      "description": "The total number of genetic characteristics in the genetic makeup of a species",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "EXPECTED HETEROZYGOSITY",
+      "type": "TRAIT",
+      "description": "A measure of genetic variation within a population",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "NUCLEOTIDE DIVERSITY INDEX",
+      "type": "TRAIT",
+      "description": "A measure of the degree of polymorphism within a population",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "RYE TRANSCRIPTOME",
+      "type": "CONCEPT",
+      "description": "The complete set of RNA transcripts produced by the genome of rye",
+      "source_id": "paper_3026"
+    },
+    {
+      "name": "CHROMOSOMES 1R-7R",
+      "type": "LOCATION",
+      "description": "The specific genomic locations in rye where SNP loci were mapped",
+      "source_id": "paper_3026"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISM",
+      "target": "RYE",
+      "description": "identified in",
+      "weight": "10",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "INDEL",
+      "target": "RYE",
+      "description": "identified in",
+      "weight": "10",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "EXPRESSED SEQUENCE TAG",
+      "target": "BARLEY",
+      "description": "derived from",
+      "weight": "9",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "EXPRESSED SEQUENCE TAG",
+      "target": "RYE",
+      "description": "used to amplify DNA from",
+      "weight": "8",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISM",
+      "target": "CLEAVED AMPLIFIED POLYMORPHIC SEQUENCE",
+      "description": "converted to",
+      "weight": "9",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISM",
+      "target": "CHROMOSOMES 1R-7R",
+      "description": "mapped to",
+      "weight": "10",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISM",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "SIMPLE SEQUENCE REPEAT",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "EST-DERIVED SSR",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISM",
+      "target": "GENOME MAPPING",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "RYE",
+      "target": "RYE TRANSCRIPTOME",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISM",
+      "target": "RYE TRANSCRIPTOME",
+      "description": "defined from",
+      "weight": "9",
+      "source_id": "paper_3026"
+    },
+    {
+      "source": "INDEL",
+      "target": "RYE TRANSCRIPTOME",
+      "description": "defined from",
+      "weight": "9",
+      "source_id": "paper_3026"
+    }
+  ]
+}

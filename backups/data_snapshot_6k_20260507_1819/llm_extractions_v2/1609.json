@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop affected by groundnut rosette disease",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE DISEASE",
+      "type": "CONDITION",
+      "description": "A disease of groundnut caused by multiple viral agents",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "type": "ORGANISM",
+      "description": "One of the causal agents of groundnut rosette disease",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE VIRUS",
+      "type": "ORGANISM",
+      "description": "One of the causal agents of groundnut rosette disease",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "SATELLITE RNA",
+      "type": "CONCEPT",
+      "description": "A genetic element that acts as a causal agent of groundnut rosette disease",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "APHIDS",
+      "type": "ORGANISM",
+      "description": "The insect vectors that transmit groundnut rosette disease",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "APHIS CRACCIVORA",
+      "type": "ORGANISM",
+      "description": "The specific species of aphid vector for groundnut rosette disease",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "RT-PCR",
+      "type": "METHOD",
+      "description": "Reverse transcription-polymerase chain reaction used for detecting viral agents",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "TOTAL RNA EXTRACTION",
+      "type": "METHOD",
+      "description": "The process of extracting RNA from plants or aphids for analysis",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "QIAGEN TOTAL RNA EXTRACTION KIT",
+      "type": "METHOD",
+      "description": "A specific commercial kit used for versatile RNA extraction from aphids",
+      "source_id": "paper_1609"
+    },
+    {
+      "name": "ROSETTE DISEASE EPIDEMIOLOGY",
+      "type": "CONCEPT",
+      "description": "The study of the patterns and causes of groundnut rosette disease in populations",
+      "source_id": "paper_1609"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "is a causal agent of",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE VIRUS",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "is a causal agent of",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "SATELLITE RNA",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "is a causal agent of",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "APHIDS",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "acts as a vector for",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "APHIS CRACCIVORA",
+      "target": "APHIDS",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "RT-PCR",
+      "target": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "description": "is used to detect",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "RT-PCR",
+      "target": "GROUNDNUT ROSETTE VIRUS",
+      "description": "is used to detect",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "RT-PCR",
+      "target": "SATELLITE RNA",
+      "description": "is used to detect",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "TOTAL RNA EXTRACTION",
+      "target": "RT-PCR",
+      "description": "is a required step for",
+      "weight": "9",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "QIAGEN TOTAL RNA EXTRACTION KIT",
+      "target": "TOTAL RNA EXTRACTION",
+      "description": "is a specific tool for",
+      "weight": "10",
+      "source_id": "paper_1609"
+    },
+    {
+      "source": "RT-PCR",
+      "target": "ROSETTE DISEASE EPIDEMIOLOGY",
+      "description": "is used to study",
+      "weight": "8",
+      "source_id": "paper_1609"
+    }
+  ]
+}

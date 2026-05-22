@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Legume crop studied for aflatoxin contamination in Niger",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "TRAIT",
+      "description": "Presence of toxic metabolites produced by Aspergillus flavus in peanut seeds",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "Region where aflatoxin contamination is a major threat to consumers",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "Country where the field trials were conducted",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "Fungus that causes seed infection and produces aflatoxins",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition caused by drought or irrigation frequency",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "PLANTING DATE",
+      "type": "METHOD",
+      "description": "Agricultural practice used to manipulate the level of water stress",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "IRRIGATION INTERVAL",
+      "type": "METHOD",
+      "description": "Frequency of water application used to manipulate water stress",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "CULTIVAR",
+      "type": "CONCEPT",
+      "description": "Genetic variety of peanut with differing levels of resistance to infection",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "28-206",
+      "type": "CONCEPT",
+      "description": "A specific peanut cultivar found to be susceptible to infection under water stress",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "JL 24",
+      "type": "CONCEPT",
+      "description": "A specific peanut cultivar found to be susceptible to infection",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "SOIL TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental factor that may influence the rate of aflatoxin contamination",
+      "source_id": "paper_3022"
+    },
+    {
+      "name": "SANDY SOIL",
+      "type": "CONDITION",
+      "description": "The soil type used in the field trials in Niger",
+      "source_id": "paper_3022"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "PEANUT",
+      "description": "infects",
+      "weight": "9",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "increases infection of",
+      "weight": "8",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "WATER STRESS",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "IRRIGATION INTERVAL",
+      "target": "WATER STRESS",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "CULTIVAR",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "affects susceptibility to",
+      "weight": "8",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "28-206",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is susceptible to",
+      "weight": "9",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "JL 24",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is susceptible to",
+      "weight": "9",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "influences",
+      "weight": "6",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "PEANUT",
+      "target": "NIGER",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "PEANUT",
+      "target": "SANDY SOIL",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_3022"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "WEST AFRICA",
+      "description": "prevalent in",
+      "weight": "8",
+      "source_id": "paper_3022"
+    }
+  ]
+}

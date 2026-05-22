@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for nodulation mutants.",
+      "source_id": "paper_2136"
+    },
+    {
+      "name": "NON-NODULATING MUTANT",
+      "type": "TRAIT",
+      "description": "A spontaneous mutant plant that fails to form nodules.",
+      "source_id": "paper_2136"
+    },
+    {
+      "name": "ICC435",
+      "type": "CONCEPT",
+      "description": "The specific chickpea accession in which the non-nodulating mutant was discovered.",
+      "source_id": "paper_2136"
+    },
+    {
+      "name": "NODULE FORMATION",
+      "type": "TRAIT",
+      "description": "The biological process of forming root nodules.",
+      "source_id": "paper_2136"
+    },
+    {
+      "name": "RHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "The genus of bacteria used for inoculation to induce nodulation.",
+      "source_id": "paper_2136"
+    },
+    {
+      "name": "RHIZOBIUM STRAINS F75, H45, IC59, IC76",
+      "type": "ORGANISM",
+      "description": "Specific strains of Rhizobium used to test the nodulation capability of the mutant.",
+      "source_id": "paper_2136"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NON-NODULATING MUTANT",
+      "target": "CHICKPEA",
+      "description": "is a mutant found in",
+      "weight": "10",
+      "source_id": "paper_2136"
+    },
+    {
+      "source": "NON-NODULATING MUTANT",
+      "target": "ICC435",
+      "description": "was discovered in",
+      "weight": "10",
+      "source_id": "paper_2136"
+    },
+    {
+      "source": "ICC435",
+      "target": "CHICKPEA",
+      "description": "is an accession of",
+      "weight": "10",
+      "source_id": "paper_2136"
+    },
+    {
+      "source": "NON-NODULATING MUTANT",
+      "target": "NODULE FORMATION",
+      "description": "fails to exhibit",
+      "weight": "10",
+      "source_id": "paper_2136"
+    },
+    {
+      "source": "RHIZOBIUM",
+      "target": "NODULE FORMATION",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_2136"
+    },
+    {
+      "source": "RHIZOBIUM STRAINS F75, H45, IC59, IC76",
+      "target": "RHIZOBIUM",
+      "description": "are specific strains of",
+      "weight": "10",
+      "source_id": "paper_2136"
+    },
+    {
+      "source": "NON-NODULATING MUTANT",
+      "target": "RHIZOBIUM STRAINS F75, H45, IC59, IC76",
+      "description": "failed to form nodules when inoculated with",
+      "weight": "10",
+      "source_id": "paper_2136"
+    }
+  ]
+}

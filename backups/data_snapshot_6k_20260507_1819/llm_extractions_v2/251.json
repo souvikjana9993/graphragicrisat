@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop affected by pod borers like Maruca vitrata",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop affected by pod borers like Maruca vitrata",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "MARUCA VITRATA",
+      "type": "ORGANISM",
+      "description": "A pod borer pest that affects cowpea and pigeonpea",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "INSECTICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents used to control insect pests",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "RESISTANCE TO INSECTICIDES",
+      "type": "TRAIT",
+      "description": "The developed ability of pests to withstand the effects of insecticides",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "SAFER CHEMICALS",
+      "type": "METHOD",
+      "description": "Chemicals used for pest management with reduced toxicity",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "MICROBIAL PESTICIDES",
+      "type": "METHOD",
+      "description": "Pesticides derived from microorganisms used for pest management",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "INDOXACARB",
+      "type": "METHOD",
+      "description": "A new insecticide molecule tested against polyphagous pests",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "SPINOSAD",
+      "type": "METHOD",
+      "description": "A new insecticide molecule tested against polyphagous pests",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A key polyphagous pest",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "SPODOPTERA LITURA",
+      "type": "ORGANISM",
+      "description": "A key polyphagous pest",
+      "source_id": "paper_251"
+    },
+    {
+      "name": "MANAGEMENT STRATEGIES",
+      "type": "CONCEPT",
+      "description": "Effective approaches developed for the control of Maruca vitrata",
+      "source_id": "paper_251"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MARUCA VITRATA",
+      "target": "PIGEONPEA",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "MARUCA VITRATA",
+      "target": "COWPEA",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "INSECTICIDES",
+      "target": "MARUCA VITRATA",
+      "description": "used to control",
+      "weight": "8",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "INSECTICIDES",
+      "target": "RESISTANCE TO INSECTICIDES",
+      "description": "leads to development of",
+      "weight": "9",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "SAFER CHEMICALS",
+      "target": "MARUCA VITRATA",
+      "description": "used for management",
+      "weight": "7",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "MICROBIAL PESTICIDES",
+      "target": "MARUCA VITRATA",
+      "description": "used for management",
+      "weight": "7",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "INDOXACARB",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "effective against",
+      "weight": "9",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "INDOXACARB",
+      "target": "SPODOPTERA LITURA",
+      "description": "effective against",
+      "weight": "9",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "SPINOSAD",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "effective against",
+      "weight": "9",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "SPINOSAD",
+      "target": "SPODOPTERA LITURA",
+      "description": "effective against",
+      "weight": "9",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "INDOXACARB",
+      "target": "MARUCA VITRATA",
+      "description": "effect is inconclusive",
+      "weight": "5",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "SPINOSAD",
+      "target": "MARUCA VITRATA",
+      "description": "effect is inconclusive",
+      "weight": "5",
+      "source_id": "paper_251"
+    },
+    {
+      "source": "MANAGEMENT STRATEGIES",
+      "target": "MARUCA VITRATA",
+      "description": "developed to control",
+      "weight": "10",
+      "source_id": "paper_251"
+    }
+  ]
+}

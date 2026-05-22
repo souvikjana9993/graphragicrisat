@@ -1,0 +1,240 @@
+{
+  "entities": [
+    {
+      "name": "SENEGAL",
+      "type": "LOCATION",
+      "description": "The country where the dryland cropping study was conducted",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "DRYLAND",
+      "type": "CONDITION",
+      "description": "Rainfed and dryland agricultural areas characterized by specific water availability",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "SMALLHOLDER FARMS",
+      "type": "CONCEPT",
+      "description": "Agricultural farms with a size of less than 2 hectares",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "CROP DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variety of crops grown in a specific area, influenced by farmer decisions and climate",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "CLIMATIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "Local weather and climate factors affecting crop distribution",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "AGRICULTURAL SUPPORT PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Government or organizational initiatives to provide assistance to farmers",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "SENTINEL-2",
+      "type": "METHOD",
+      "description": "Satellite imagery used for monitoring and mapping crop types",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "GROUND REFERENCE DATA",
+      "type": "CONCEPT",
+      "description": "Field-collected data used to train and validate classification algorithms",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "SUPERVISED CLASSIFICATION",
+      "type": "METHOD",
+      "description": "Machine learning algorithms that require labeled ground reference data for training",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "UNSUPERVISED CLASSIFICATION",
+      "type": "METHOD",
+      "description": "Machine learning algorithms that do not require labeled training data",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "CART",
+      "type": "METHOD",
+      "description": "Classification and Regression Trees, a supervised machine learning algorithm",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "An ensemble supervised machine learning algorithm",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "SVM",
+      "type": "METHOD",
+      "description": "Support Vector Machine, a supervised machine learning algorithm",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "A cloud-based platform used for geospatial analysis and machine learning",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "ISO-CLUSTERING",
+      "type": "METHOD",
+      "description": "An unsupervised classification algorithm",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Techniques used to improve the performance of unsupervised classification with limited data",
+      "source_id": "paper_12793"
+    },
+    {
+      "name": "CROP TYPES",
+      "type": "CONCEPT",
+      "description": "The different species or varieties of crops being mapped",
+      "source_id": "paper_12793"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SENTINEL-2",
+      "target": "CROP TYPES",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "SUPERVISED CLASSIFICATION",
+      "target": "CROP TYPES",
+      "description": "used to classify",
+      "weight": "8",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "UNSUPERVISED CLASSIFICATION",
+      "target": "CROP TYPES",
+      "description": "used to classify",
+      "weight": "8",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "CART",
+      "target": "SUPERVISED CLASSIFICATION",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "SUPERVISED CLASSIFICATION",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "SVM",
+      "target": "SUPERVISED CLASSIFICATION",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "ISO-CLUSTERING",
+      "target": "UNSUPERVISED CLASSIFICATION",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "UNSUPERVISED CLASSIFICATION",
+      "description": "used in conjunction with",
+      "weight": "9",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "SUPERVISED CLASSIFICATION",
+      "target": "GROUND REFERENCE DATA",
+      "description": "performance depends on quantity of",
+      "weight": "9",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "GROUND REFERENCE DATA",
+      "description": "performs well with limited",
+      "weight": "8",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "SUPERVISED CLASSIFICATION",
+      "description": "platform used to implement",
+      "weight": "7",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "DRYLAND",
+      "target": "SENEGAL",
+      "description": "agricultural areas located in",
+      "weight": "8",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "SMALLHOLDER FARMS",
+      "target": "DRYLAND",
+      "description": "prevalent in",
+      "weight": "7",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "CROP DIVERSITY",
+      "target": "SMALLHOLDER FARMS",
+      "description": "high in",
+      "weight": "7",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "CROP DIVERSITY",
+      "target": "CLIMATIC CONDITIONS",
+      "description": "influenced by",
+      "weight": "7",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "CROP TYPES",
+      "target": "FOOD SECURITY",
+      "description": "monitoring is crucial for",
+      "weight": "6",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "CROP TYPES",
+      "target": "AGRICULTURAL SUPPORT PROGRAMS",
+      "description": "monitoring is crucial for",
+      "weight": "6",
+      "source_id": "paper_12793"
+    },
+    {
+      "source": "SENTINEL-2",
+      "target": "SENEGAL",
+      "description": "used for mapping in",
+      "weight": "9",
+      "source_id": "paper_12793"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop whose seed survival is being studied under different storage conditions",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "SEED LONGEVITY",
+      "type": "TRAIT",
+      "description": "The duration for which stored seeds remain viable",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "ENVIRONMENTAL FACTORS",
+      "type": "CONCEPT",
+      "description": "External variables that affect the longevity of stored seeds",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "SEED MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "The amount of water present in the seed, which significantly influences longevity",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The thermal state of the storage environment affecting seed survival",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "OXYGEN CONCENTRATION",
+      "type": "CONDITION",
+      "description": "The level of oxygen in the storage environment affecting seed survival",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "Genetic resources preserved in seed storage facilities",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "SEED STORAGE FACILITIES",
+      "type": "LOCATION",
+      "description": "Facilities used for the conservation of germplasm",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "ORTHODOX SEEDS",
+      "type": "CONCEPT",
+      "description": "Seeds that can tolerate significant desiccation and wide ranges of conditions",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "DESICCATION",
+      "type": "CONDITION",
+      "description": "The process of extreme drying that orthodox seeds can tolerate",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "OILY SEEDS",
+      "type": "CONCEPT",
+      "description": "Seeds with high oil content that typically exhibit poorer longevity",
+      "source_id": "paper_2763"
+    },
+    {
+      "name": "STARCHY SEEDS",
+      "type": "CONCEPT",
+      "description": "Seeds with high starch content that typically exhibit better longevity",
+      "source_id": "paper_2763"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ENVIRONMENTAL FACTORS",
+      "target": "SEED LONGEVITY",
+      "description": "affect",
+      "weight": "10",
+      "source_id": "paper_2763"
+    },
+    {
+      "source": "SEED MOISTURE CONTENT",
+      "target": "SEED LONGEVITY",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2763"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "SEED LONGEVITY",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2763"
+    },
+    {
+      "source": "OXYGEN CONCENTRATION",
+      "target": "SEED LONGEVITY",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2763"
+    },
+    {
+      "source": "SEED STORAGE FACILITIES",
+      "target": "GERMPLASM",
+      "description": "used for conservation of",
+      "weight": "8",
+      "source_id": "paper_2763"
+    },
+    {
+      "source": "ORTHODOX SEEDS",
+      "target": "DESICCATION",
+      "description": "tolerate",
+      "weight": "9",
+      "source_id": "paper_2763"
+    },
+    {
+      "source": "OILY SEEDS",
+      "target": "SEED LONGEVITY",
+      "description": "show poorer",
+      "weight": "8",
+      "source_id": "paper_2763"
+    },
+    {
+      "source": "STARCHY SEEDS",
+      "target": "SEED LONGEVITY",
+      "description": "show better",
+      "weight": "8",
+      "source_id": "paper_2763"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEED LONGEVITY",
+      "description": "studied for",
+      "weight": "10",
+      "source_id": "paper_2763"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "PANGENOME",
+      "type": "CONCEPT",
+      "description": "The complete set of genes found within all individuals of a species, providing genomic variations in the cultivated gene pool",
+      "source_id": "paper_11487"
+    },
+    {
+      "name": "GENOMIC VARIATIONS",
+      "type": "CONCEPT",
+      "description": "Differences in the DNA sequences among individuals or species",
+      "source_id": "paper_11487"
+    },
+    {
+      "name": "CULTIVATED GENE POOL",
+      "type": "CONCEPT",
+      "description": "The total genetic diversity available within cultivated crop species",
+      "source_id": "paper_11487"
+    },
+    {
+      "name": "SPECIES",
+      "type": "ORGANISM",
+      "description": "A group of living organisms consisting of similar individuals capable of exchanging genes",
+      "source_id": "paper_11487"
+    },
+    {
+      "name": "WILD RELATIVES",
+      "type": "ORGANISM",
+      "description": "Non-domesticated species that are genetically related to cultivated crops and possess diverse genetic stock",
+      "source_id": "paper_11487"
+    },
+    {
+      "name": "GENETIC STOCK",
+      "type": "CONCEPT",
+      "description": "The available genetic diversity and hereditary material within a population or species",
+      "source_id": "paper_11487"
+    },
+    {
+      "name": "GENUS",
+      "type": "ORGANISM",
+      "description": "A taxonomic rank used in the biological classification of species",
+      "source_id": "paper_11487"
+    },
+    {
+      "name": "SUPER-PANGENOME",
+      "type": "CONCEPT",
+      "description": "A comprehensive pangenome developed by integrating accessions from all available species of a given genus",
+      "source_id": "paper_11487"
+    },
+    {
+      "name": "CROP IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The process of enhancing the genetic makeup of crops to improve yield, quality, or resilience",
+      "source_id": "paper_11487"
+    },
+    {
+      "name": "CROP PANGENOMICS",
+      "type": "METHOD",
+      "description": "The study and application of pangenomes for the improvement of crops",
+      "source_id": "paper_11487"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PANGENOME",
+      "target": "GENOMIC VARIATIONS",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_11487"
+    },
+    {
+      "source": "PANGENOME",
+      "target": "CULTIVATED GENE POOL",
+      "description": "represents",
+      "weight": "8",
+      "source_id": "paper_11487"
+    },
+    {
+      "source": "CULTIVATED GENE POOL",
+      "target": "SPECIES",
+      "description": "is part of",
+      "weight": "7",
+      "source_id": "paper_11487"
+    },
+    {
+      "source": "SPECIES",
+      "target": "WILD RELATIVES",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_11487"
+    },
+    {
+      "source": "WILD RELATIVES",
+      "target": "GENETIC STOCK",
+      "description": "possess",
+      "weight": "8",
+      "source_id": "paper_11487"
+    },
+    {
+      "source": "GENUS",
+      "target": "SPECIES",
+      "description": "comprises",
+      "weight": "9",
+      "source_id": "paper_11487"
+    },
+    {
+      "source": "SUPER-PANGENOME",
+      "target": "GENUS",
+      "description": "integrates species from",
+      "weight": "9",
+      "source_id": "paper_11487"
+    },
+    {
+      "source": "SUPER-PANGENOME",
+      "target": "GENOMIC VARIATIONS",
+      "description": "provides a complete repertoire of",
+      "weight": "9",
+      "source_id": "paper_11487"
+    },
+    {
+      "source": "SUPER-PANGENOME",
+      "target": "CROP IMPROVEMENT",
+      "description": "offers opportunities for",
+      "weight": "10",
+      "source_id": "paper_11487"
+    },
+    {
+      "source": "CROP PANGENOMICS",
+      "target": "PANGENOME",
+      "description": "studies",
+      "weight": "9",
+      "source_id": "paper_11487"
+    }
+  ]
+}

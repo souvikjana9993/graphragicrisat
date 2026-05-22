@@ -1,0 +1,229 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop studied for yield and yield attributes.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Crop used in sequential cropping with maize.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Crop used in intercropping with maize.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total production of the crop per unit area.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "YIELD ATTRIBUTES",
+      "type": "TRAIT",
+      "description": "Measurable characteristics that contribute to the overall yield.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "COB GIRTH",
+      "type": "TRAIT",
+      "description": "A specific yield attribute of maize.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "NUMBER OF GRAIN ROWS",
+      "type": "TRAIT",
+      "description": "A specific yield attribute of maize.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "TEST WEIGHT",
+      "type": "TRAIT",
+      "description": "A specific yield attribute of maize.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "MINIMUM TILLAGE",
+      "type": "METHOD",
+      "description": "A tillage practice aimed at reducing soil disturbance.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "CONVENTIONAL TILLAGE",
+      "type": "METHOD",
+      "description": "A standard tillage practice involving more intensive soil disturbance.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "RESIDUE ADDITION",
+      "type": "METHOD",
+      "description": "The practice of adding crop residue back into the soil.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "NO-RESIDUE ADDITION",
+      "type": "METHOD",
+      "description": "The practice of not adding crop residue back into the soil.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "MAIZE-CHICKPEA SEQUENTIAL CROPPING",
+      "type": "METHOD",
+      "description": "A cropping system where maize and chickpea are grown in sequence.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "MAIZE-PIGEONPEA INTERCROPPING",
+      "type": "METHOD",
+      "description": "A cropping system where maize and pigeonpea are grown simultaneously.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "BROAD-BEDS AND FURROWS",
+      "type": "METHOD",
+      "description": "A field layout used for water management and planting.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "SPLIT-SPLIT DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used for the field experiment.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "CONDITION",
+      "description": "The climatic region where the experiment was conducted.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Conditions where crop growth depends solely on rainfall.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONDITION",
+      "description": "The monsoon cropping season.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "RABI",
+      "type": "CONDITION",
+      "description": "The winter cropping season.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "HYDERABAD",
+      "type": "LOCATION",
+      "description": "The city where the research was conducted.",
+      "source_id": "paper_11397"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research institute where the experiment took place.",
+      "source_id": "paper_11397"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MINIMUM TILLAGE",
+      "target": "MAIZE",
+      "description": "Influences yield and yield attributes",
+      "weight": "5",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "CONVENTIONAL TILLAGE",
+      "target": "MAIZE",
+      "description": "Influences yield and yield attributes",
+      "weight": "5",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "RESIDUE ADDITION",
+      "target": "MAIZE",
+      "description": "Significantly increases yield and yield attributes",
+      "weight": "9",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "NO-RESIDUE ADDITION",
+      "target": "MAIZE",
+      "description": "Used as a control for residue addition effects",
+      "weight": "7",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "MAIZE-CHICKPEA SEQUENTIAL CROPPING",
+      "target": "MAIZE",
+      "description": "A cropping system involving maize",
+      "weight": "8",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "MAIZE-PIGEONPEA INTERCROPPING",
+      "target": "MAIZE",
+      "description": "A cropping system involving maize",
+      "weight": "8",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "YIELD ATTRIBUTES",
+      "target": "YIELD",
+      "description": "Components that determine the final yield",
+      "weight": "9",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "COB GIRTH",
+      "target": "YIELD ATTRIBUTES",
+      "description": "A specific component of yield attributes",
+      "weight": "10",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "NUMBER OF GRAIN ROWS",
+      "target": "YIELD ATTRIBUTES",
+      "description": "A specific component of yield attributes",
+      "weight": "10",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "TEST WEIGHT",
+      "target": "YIELD ATTRIBUTES",
+      "description": "A specific component of yield attributes",
+      "weight": "10",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "MAIZE",
+      "target": "SEMI-ARID TROPICS",
+      "description": "Grown under the conditions of semi-arid tropics",
+      "weight": "8",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "MAIZE",
+      "target": "RAINFED CONDITIONS",
+      "description": "Grown under rainfed conditions",
+      "weight": "8",
+      "source_id": "paper_11397"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "HYDERABAD",
+      "description": "Located in Hyderabad",
+      "weight": "10",
+      "source_id": "paper_11397"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "AFAR, ETHIOPIA",
+      "type": "LOCATION",
+      "description": "Dry lowlands region in Ethiopia characterized by drought and flash floods",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental state characterized by low rainfall and high temperature",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "FLASH FLOOD",
+      "type": "CONDITION",
+      "description": "Sudden floods emerging from adjacent mountains",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "WATER SPREADING WEIRS",
+      "type": "METHOD",
+      "description": "Flood barriers used to convert floods into productive use by spreading water and sediments",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "SEDIMENT DEPOSITION",
+      "type": "CONCEPT",
+      "description": "The accumulation of sand, silt, and clay in farming fields",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "VOLUMETRIC WATER CONTENT",
+      "type": "CONCEPT",
+      "description": "A measure of soil moisture gradient across farming fields",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "BIOMASS PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The total biological material produced by crops",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop grown in the WSW-based farming zones",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "BELG SEASON",
+      "type": "CONDITION",
+      "description": "The short growing season in Ethiopia",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "MEHER SEASON",
+      "type": "CONDITION",
+      "description": "The long growing season in Ethiopia",
+      "source_id": "paper_11363"
+    },
+    {
+      "name": "DEGRADED RANGELANDS",
+      "type": "CONDITION",
+      "description": "Rangelands that have lost productivity and require recovery",
+      "source_id": "paper_11363"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER SPREADING WEIRS",
+      "target": "FLASH FLOOD",
+      "description": "converts floods to productive use",
+      "weight": "9",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "WATER SPREADING WEIRS",
+      "target": "SEDIMENT DEPOSITION",
+      "description": "results in deposition of sand, silt, and clay",
+      "weight": "8",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "WATER SPREADING WEIRS",
+      "target": "VOLUMETRIC WATER CONTENT",
+      "description": "creates moisture gradient across farming fields",
+      "weight": "9",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "VOLUMETRIC WATER CONTENT",
+      "target": "YIELD",
+      "description": "positively correlates with grain yield",
+      "weight": "10",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "VOLUMETRIC WATER CONTENT",
+      "target": "BIOMASS PRODUCTIVITY",
+      "description": "positively correlates with biomass productivity",
+      "weight": "8",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "WATER SPREADING WEIRS",
+      "target": "MAIZE",
+      "description": "enables production of grain and biomass",
+      "weight": "9",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "MAIZE",
+      "target": "YIELD",
+      "description": "measured by grain yield",
+      "weight": "10",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "MAIZE",
+      "target": "BIOMASS PRODUCTIVITY",
+      "description": "measured by biomass productivity",
+      "weight": "10",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "WATER SPREADING WEIRS",
+      "target": "DEGRADED RANGELANDS",
+      "description": "ensures recovery of",
+      "weight": "8",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "AFAR, ETHIOPIA",
+      "target": "DROUGHT",
+      "description": "is a drought prone area",
+      "weight": "9",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "AFAR, ETHIOPIA",
+      "target": "FLASH FLOOD",
+      "description": "suffers from flash floods",
+      "weight": "9",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "BELG SEASON",
+      "target": "MAIZE",
+      "description": "is a growing season for",
+      "weight": "7",
+      "source_id": "paper_11363"
+    },
+    {
+      "source": "MEHER SEASON",
+      "target": "MAIZE",
+      "description": "is a growing season for",
+      "weight": "7",
+      "source_id": "paper_11363"
+    }
+  ]
+}

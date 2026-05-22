@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "General agricultural crops mentioned in the context of nutrient response",
+      "source_id": "paper_4580"
+    },
+    {
+      "name": "PHOSPHATE",
+      "type": "CONCEPT",
+      "description": "The chemical element phosphorus (P) used as a nutrient",
+      "source_id": "paper_4580"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "A type of clay-rich soil characterized by shrink-swell properties",
+      "source_id": "paper_4580"
+    },
+    {
+      "name": "ALFISOLS",
+      "type": "CONDITION",
+      "description": "A type of soil characterized by a clay-enriched subsoil",
+      "source_id": "paper_4580"
+    },
+    {
+      "name": "AGROCLIMATIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "The combination of climate and soil factors affecting agriculture",
+      "source_id": "paper_4580"
+    },
+    {
+      "name": "PHOSPHATE SORPTION",
+      "type": "CONCEPT",
+      "description": "The process by which phosphate ions are bound to soil particles",
+      "source_id": "paper_4580"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the Vertisols studied are located",
+      "source_id": "paper_4580"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROP",
+      "target": "PHOSPHATE",
+      "description": "Response of crops to added phosphate",
+      "weight": "8",
+      "source_id": "paper_4580"
+    },
+    {
+      "source": "CROP",
+      "target": "VERTISOLS",
+      "description": "Crops show less predictable responses to P on Vertisols",
+      "weight": "7",
+      "source_id": "paper_4580"
+    },
+    {
+      "source": "CROP",
+      "target": "ALFISOLS",
+      "description": "Crops show more predictable responses to P on Alfisols",
+      "weight": "7",
+      "source_id": "paper_4580"
+    },
+    {
+      "source": "PHOSPHATE SORPTION",
+      "target": "VERTISOLS",
+      "description": "Sorption of phosphate is attributed to low P responses in Vertisols",
+      "weight": "9",
+      "source_id": "paper_4580"
+    },
+    {
+      "source": "PHOSPHATE",
+      "target": "PHOSPHATE SORPTION",
+      "description": "Phosphate is the subject of the sorption process",
+      "weight": "10",
+      "source_id": "paper_4580"
+    },
+    {
+      "source": "VERTISOLS",
+      "target": "INDIA",
+      "description": "Vertisols are studied within the context of India",
+      "weight": "8",
+      "source_id": "paper_4580"
+    }
+  ]
+}

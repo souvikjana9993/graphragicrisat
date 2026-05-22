@@ -1,0 +1,209 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Short-duration pigeonpea crop",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "WATERLOGGING",
+      "type": "CONDITION",
+      "description": "Short-term waterlogging caused by heavy rainfall",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "LOCATION",
+      "description": "Soil type with high clay content",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "NITROGEN APPLICATION",
+      "type": "METHOD",
+      "description": "Top-dressing of nitrogen fertilizer",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "SHOOT GROWTH",
+      "type": "TRAIT",
+      "description": "Growth of the shoot system",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "ROOT GROWTH",
+      "type": "TRAIT",
+      "description": "Growth of the root system, including adventitious roots",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "LEAF CHLOROPHYLL",
+      "type": "TRAIT",
+      "description": "Chlorophyll content in the leaves",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "SENESCENCE",
+      "type": "TRAIT",
+      "description": "Aging and deterioration of leaf tissues",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "LEAF ABSCISSION",
+      "type": "TRAIT",
+      "description": "Shedding of lower leaves",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "SYMBIOTIC N2 FIXATION",
+      "type": "TRAIT",
+      "description": "Process of nitrogen fixation by symbiotic bacteria",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "Total seed production of the crop",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "NODULE ACTIVITY",
+      "type": "TRAIT",
+      "description": "Activity of root nodules",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "PRE-FLOWERING STAGE",
+      "type": "CONCEPT",
+      "description": "Growth stage before flowering",
+      "source_id": "paper_3244"
+    },
+    {
+      "name": "POD-FILLING STAGE",
+      "type": "CONCEPT",
+      "description": "Growth stage where pods are filled with seeds",
+      "source_id": "paper_3244"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "WATERLOGGING",
+      "description": "suffers damage from",
+      "weight": "10",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "VERTISOL",
+      "description": "occurs on",
+      "weight": "8",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "SHOOT GROWTH",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "ROOT GROWTH",
+      "description": "impairs",
+      "weight": "9",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "LEAF CHLOROPHYLL",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "SENESCENCE",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "LEAF ABSCISSION",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "SYMBIOTIC N2 FIXATION",
+      "description": "impairs",
+      "weight": "9",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "WATERLOGGING",
+      "description": "alleviates damage from",
+      "weight": "10",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "LEAF CHLOROPHYLL",
+      "description": "promotes recovery of",
+      "weight": "8",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "SHOOT GROWTH",
+      "description": "promotes recovery of",
+      "weight": "8",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "ROOT GROWTH",
+      "description": "promotes",
+      "weight": "8",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "NODULE ACTIVITY",
+      "description": "modulates depending on dose",
+      "weight": "7",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "YIELD",
+      "description": "compensates reduction in",
+      "weight": "9",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "PRE-FLOWERING STAGE",
+      "description": "is vulnerable during",
+      "weight": "7",
+      "source_id": "paper_3244"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "POD-FILLING STAGE",
+      "description": "is evaluated during",
+      "weight": "7",
+      "source_id": "paper_3244"
+    }
+  ]
+}

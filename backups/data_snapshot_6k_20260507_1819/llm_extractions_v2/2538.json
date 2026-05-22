@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop studied for susceptibility to leaf blight",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "LEAF BLIGHT",
+      "type": "CONDITION",
+      "description": "A disease affecting the leaves of sorghum and maize",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "EXCEROHILUM TURCICUM",
+      "type": "ORGANISM",
+      "description": "A fungus that incites leaf blight",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "ICRISAT CENTER",
+      "type": "LOCATION",
+      "description": "The research facility where the laboratory and greenhouse experiments were conducted",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "PATHOGENICITY TESTS",
+      "type": "METHOD",
+      "description": "Experiments used to determine the ability of the fungus to cause disease",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "INOCULATION METHODS",
+      "type": "METHOD",
+      "description": "Techniques used to introduce the fungus into the host plant",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An environmental factor affecting fungal growth and sporulation",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "MEDIA",
+      "type": "CONDITION",
+      "description": "The growth medium used for the fungus",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The development and increase in size of the fungus",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "SPORULATION PRODUCTION",
+      "type": "TRAIT",
+      "description": "The process of spore formation by the fungus",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "IS 8283",
+      "type": "CROP",
+      "description": "A leaf blight resistant cultivar of sorghum",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "FRAMIDA",
+      "type": "CROP",
+      "description": "A leaf blight susceptible cultivar of sorghum",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "GROWTH STAGES",
+      "type": "CONDITION",
+      "description": "Different developmental phases of the sorghum plant",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A crop affected by isolates of Excerohilum turcicum",
+      "source_id": "paper_2538"
+    },
+    {
+      "name": "PATHOGENICITY",
+      "type": "CONCEPT",
+      "description": "The capacity of the fungus to cause disease in host genotypes",
+      "source_id": "paper_2538"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "EXCEROHILUM TURCICUM",
+      "target": "LEAF BLIGHT",
+      "description": "incites",
+      "weight": "10",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "EXCEROHILUM TURCICUM",
+      "target": "SORGHUM",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "EXCEROHILUM TURCICUM",
+      "target": "MAIZE",
+      "description": "infects",
+      "weight": "9",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "PATHOGENICITY TESTS",
+      "target": "EXCEROHILUM TURCICUM",
+      "description": "studies pathogenicity of",
+      "weight": "8",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "INOCULATION METHODS",
+      "target": "EXCEROHILUM TURCICUM",
+      "description": "used for infecting",
+      "weight": "8",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "GROWTH",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "SPORULATION PRODUCTION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "MEDIA",
+      "target": "GROWTH",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "MEDIA",
+      "target": "SPORULATION PRODUCTION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "IS 8283",
+      "target": "SORGHUM",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "IS 8283",
+      "target": "LEAF BLIGHT",
+      "description": "is resistant to",
+      "weight": "9",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "FRAMIDA",
+      "target": "SORGHUM",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "FRAMIDA",
+      "target": "LEAF BLIGHT",
+      "description": "is susceptible to",
+      "weight": "9",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "GROWTH STAGES",
+      "target": "LEAF BLIGHT",
+      "description": "influences susceptibility to",
+      "weight": "7",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "ICRISAT CENTER",
+      "target": "PATHOGENICITY TESTS",
+      "description": "location of",
+      "weight": "8",
+      "source_id": "paper_2538"
+    },
+    {
+      "source": "PATHOGENICITY",
+      "target": "EXCEROHILUM TURCICUM",
+      "description": "is a characteristic of",
+      "weight": "9",
+      "source_id": "paper_2538"
+    }
+  ]
+}

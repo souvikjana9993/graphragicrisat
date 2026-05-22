@@ -1,0 +1,226 @@
+{
+  "entities": [
+    {
+      "name": "BRASSICA NAPUS",
+      "type": "CROP",
+      "description": "The target plant species for transformation",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "AGROBACTERIUM",
+      "type": "ORGANISM",
+      "description": "The bacterium used for transferring DNA into the plant",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "AGROBACTERIUM BINARY VECTORS",
+      "type": "METHOD",
+      "description": "The tool used for the transformation of B. napus",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "COTYLEDONARY PETIOLES",
+      "type": "CONCEPT",
+      "description": "The target tissue used for transformation",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "REGENERATION FREQUENCY",
+      "type": "TRAIT",
+      "description": "The rate at which plants regenerate from the target tissue",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "ORGANOGENESIS",
+      "type": "CONCEPT",
+      "description": "The process of organ formation from the cut surface of the tissue",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "TOPICAL INFECTION",
+      "type": "METHOD",
+      "description": "The method of applying Agrobacterium to the target tissue",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "BINARY PLASMID",
+      "type": "CONCEPT",
+      "description": "The plasmid used to carry the NPT II gene",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "NPT II",
+      "type": "GENE_MARKER",
+      "description": "Neomycin phosphotransferase, used as a selectable marker",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "SELECTIVE REGENERATION MEDIUM",
+      "type": "CONCEPT",
+      "description": "Medium used to select for transgenic plantlets",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "KANAMYCIN",
+      "type": "CONDITION",
+      "description": "The antibiotic used for selection in the regeneration medium",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "DOT BLOTS",
+      "type": "METHOD",
+      "description": "Assay used to detect NPT II activity in leaves",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "SOUTHERN BLOTTING",
+      "type": "METHOD",
+      "description": "Method used to analyze the integration of T-DNA",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "T-DNA",
+      "type": "CONCEPT",
+      "description": "The DNA segment transferred into the plant genome",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "GENOME",
+      "type": "CONCEPT",
+      "description": "The complete set of genetic material of B. napus",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "FERTILITY",
+      "type": "TRAIT",
+      "description": "The ability of transgenic plants to develop fertile flowers",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "SINGLE EMBRYO NPT II ASSAY",
+      "type": "METHOD",
+      "description": "Assay performed on developing seeds to study progeny",
+      "source_id": "paper_4791"
+    },
+    {
+      "name": "LEAF BLEACHING ASSAY",
+      "type": "METHOD",
+      "description": "Assay performed on germinating seedlings to study progeny",
+      "source_id": "paper_4791"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AGROBACTERIUM BINARY VECTORS",
+      "target": "BRASSICA NAPUS",
+      "description": "used to transform",
+      "weight": "10",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "AGROBACTERIUM",
+      "target": "BRASSICA NAPUS",
+      "description": "infects",
+      "weight": "9",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "COTYLEDONARY PETIOLES",
+      "target": "BRASSICA NAPUS",
+      "description": "is a tissue of",
+      "weight": "10",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "TOPICAL INFECTION",
+      "target": "COTYLEDONARY PETIOLES",
+      "description": "is applied to",
+      "weight": "9",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "AGROBACTERIUM",
+      "target": "TOPICAL INFECTION",
+      "description": "is used in",
+      "weight": "8",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "BINARY PLASMID",
+      "target": "NPT II",
+      "description": "encodes",
+      "weight": "10",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "NPT II",
+      "target": "BRASSICA NAPUS",
+      "description": "is integrated into",
+      "weight": "9",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "KANAMYCIN",
+      "target": "SELECTIVE REGENERATION MEDIUM",
+      "description": "is used in",
+      "weight": "10",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "SELECTIVE REGENERATION MEDIUM",
+      "target": "BRASSICA NAPUS",
+      "description": "is used to grow",
+      "weight": "8",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "DOT BLOTS",
+      "target": "NPT II",
+      "description": "assays activity of",
+      "weight": "9",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "SOUTHERN BLOTTING",
+      "target": "T-DNA",
+      "description": "reveals integration of",
+      "weight": "10",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "T-DNA",
+      "target": "GENOME",
+      "description": "integrates into",
+      "weight": "10",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "GENOME",
+      "target": "BRASSICA NAPUS",
+      "description": "is the genetic material of",
+      "weight": "10",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "BRASSICA NAPUS",
+      "target": "FERTILITY",
+      "description": "exhibits",
+      "weight": "7",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "SINGLE EMBRYO NPT II ASSAY",
+      "target": "NPT II",
+      "description": "assays",
+      "weight": "9",
+      "source_id": "paper_4791"
+    },
+    {
+      "source": "LEAF BLEACHING ASSAY",
+      "target": "NPT II",
+      "description": "assays",
+      "weight": "9",
+      "source_id": "paper_4791"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "INDIAN PEANUT CLUMP VIRUS-H",
+      "type": "ORGANISM",
+      "description": "A strain of the Indian peanut clump virus used as the source of the coat protein gene.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "COAT PROTEIN GENE",
+      "type": "GENE_MARKER",
+      "description": "The gene encoding the coat protein (CP) of the virus, responsible for the assembly of virus-like particles.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "NICOTIANA BENTHAMIANA",
+      "type": "ORGANISM",
+      "description": "A plant species used as a host for expressing the coat protein gene.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "ESCHERICHIA COLI",
+      "type": "ORGANISM",
+      "description": "A bacterial species used as a host for expressing the coat protein gene.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "TRANSFORMATION",
+      "type": "METHOD",
+      "description": "The process of introducing foreign genetic material into a cell using vectors.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "PROKII",
+      "type": "GENE_MARKER",
+      "description": "A vector used for transformation into plant cells.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "PET",
+      "type": "GENE_MARKER",
+      "description": "A vector used for transformation into bacterial cells.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "VIRUS-LIKE PARTICLES",
+      "type": "CONCEPT",
+      "description": "Protein shells that mimic the structure of a virus, formed by the assembly of the coat protein.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "IMMUNOCAPTURE RT-PCR",
+      "type": "METHOD",
+      "description": "A technique used to detect and amplify specific RNA sequences within captured particles.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "ENCAPSIDATION",
+      "type": "CONCEPT",
+      "description": "The process by which a viral genome or RNA is enclosed within a protein shell.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "5′-TERMINAL UNTRANSLATED SEQUENCE",
+      "type": "GENE_MARKER",
+      "description": "A non-coding sequence at the 5' end of the viral RNA.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "ORIGIN OF ASSEMBLY MOTIF",
+      "type": "GENE_MARKER",
+      "description": "A specific sequence or motif that triggers the assembly of the viral capsid.",
+      "source_id": "paper_1891"
+    },
+    {
+      "name": "INDIAN PEANUT CLUMP VIRUS-L",
+      "type": "ORGANISM",
+      "description": "A serologically distinct strain of the Indian peanut clump virus used for inoculation.",
+      "source_id": "paper_1891"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INDIAN PEANUT CLUMP VIRUS-H",
+      "target": "COAT PROTEIN GENE",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "COAT PROTEIN GENE",
+      "target": "NICOTIANA BENTHAMIANA",
+      "description": "expressed in",
+      "weight": "8",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "COAT PROTEIN GENE",
+      "target": "ESCHERICHIA COLI",
+      "description": "expressed in",
+      "weight": "8",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "TRANSFORMATION",
+      "target": "NICOTIANA BENTHAMIANA",
+      "description": "used to introduce gene into",
+      "weight": "9",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "TRANSFORMATION",
+      "target": "ESCHERICHIA COLI",
+      "description": "used to introduce gene into",
+      "weight": "9",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "TRANSFORMATION",
+      "target": "PROKII",
+      "description": "utilizes",
+      "weight": "7",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "TRANSFORMATION",
+      "target": "PET",
+      "description": "utilizes",
+      "weight": "7",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "COAT PROTEIN GENE",
+      "target": "VIRUS-LIKE PARTICLES",
+      "description": "assembles into",
+      "weight": "10",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "VIRUS-LIKE PARTICLES",
+      "target": "NICOTIANA BENTHAMIANA",
+      "description": "formed in",
+      "weight": "8",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "VIRUS-LIKE PARTICLES",
+      "target": "ESCHERICHIA COLI",
+      "description": "formed in",
+      "weight": "8",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "IMMUNOCAPTURE RT-PCR",
+      "target": "VIRUS-LIKE PARTICLES",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "IMMUNOCAPTURE RT-PCR",
+      "target": "COAT PROTEIN GENE",
+      "description": "used to amplify",
+      "weight": "9",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "ENCAPSIDATION",
+      "target": "5′-TERMINAL UNTRANSLATED SEQUENCE",
+      "description": "does not require",
+      "weight": "7",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "ORIGIN OF ASSEMBLY MOTIF",
+      "target": "COAT PROTEIN GENE",
+      "description": "located within",
+      "weight": "8",
+      "source_id": "paper_1891"
+    },
+    {
+      "source": "INDIAN PEANUT CLUMP VIRUS-L",
+      "target": "NICOTIANA BENTHAMIANA",
+      "description": "inoculated into",
+      "weight": "7",
+      "source_id": "paper_1891"
+    }
+  ]
+}

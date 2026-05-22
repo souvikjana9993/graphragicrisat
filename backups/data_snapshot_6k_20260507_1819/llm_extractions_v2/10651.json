@@ -1,0 +1,260 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Improved maize varieties Katumani and Makueni used in the study",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of maize production used to evaluate the effectiveness of treatments",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "SCENARIO ANALYSIS",
+      "type": "METHOD",
+      "description": "The analytical approach used to investigate the effects of conservation practices and fertilizers",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "APSIM MODEL",
+      "type": "METHOD",
+      "description": "The agricultural production system simulation model used to generate data",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "SOIL AND WATER CONSERVATION",
+      "type": "METHOD",
+      "description": "Practices aimed at preserving soil and water to improve crop yield",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "TIED RIDGES",
+      "type": "METHOD",
+      "description": "A specific soil and water conservation practice involving the creation of ridges to trap water",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "MULCHING",
+      "type": "METHOD",
+      "description": "A specific soil and water conservation practice involving covering the soil surface",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "NITROGEN FERTILIZATION",
+      "type": "METHOD",
+      "description": "The application of N fertilizers to enhance crop growth",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "BELOW NORMAL SEASON",
+      "type": "CONDITION",
+      "description": "Seasons characterized by rainfall less than 250 mm",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "NORMAL SEASON",
+      "type": "CONDITION",
+      "description": "Seasons characterized by rainfall between 250 and 350 mm",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "ABOVE NORMAL SEASON",
+      "type": "CONDITION",
+      "description": "Seasons characterized by rainfall of 350 mm or more",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "KATUMANI",
+      "type": "LOCATION",
+      "description": "A research site located in Machakos county, Eastern Kenya",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "MAKINDU",
+      "type": "LOCATION",
+      "description": "A research site located in Makueni county, Eastern Kenya",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "MACHAKOS COUNTY",
+      "type": "LOCATION",
+      "description": "A county in Eastern Kenya where Katumani is located",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "MAKUENI COUNTY",
+      "type": "LOCATION",
+      "description": "A county in Eastern Kenya where Makindu is located",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "EASTERN KENYA",
+      "type": "LOCATION",
+      "description": "The broader geographical region where the study was conducted",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "SEMI-ARID CLIMATE",
+      "type": "CONDITION",
+      "description": "The climatic condition of the study area characterized by variable rainfall",
+      "source_id": "paper_10651"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation which defines the seasonal categories",
+      "source_id": "paper_10651"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCENARIO ANALYSIS",
+      "target": "APSIM MODEL",
+      "description": "uses data generated from",
+      "weight": "9",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "SCENARIO ANALYSIS",
+      "target": "GRAIN YIELD",
+      "description": "investigates the effect on",
+      "weight": "8",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "TIED RIDGES",
+      "target": "SOIL AND WATER CONSERVATION",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "MULCHING",
+      "target": "SOIL AND WATER CONSERVATION",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "NITROGEN FERTILIZATION",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "MAIZE",
+      "target": "GRAIN YIELD",
+      "description": "is measured by",
+      "weight": "10",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "BELOW NORMAL SEASON",
+      "target": "GRAIN YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "NORMAL SEASON",
+      "target": "GRAIN YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "ABOVE NORMAL SEASON",
+      "target": "GRAIN YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "KATUMANI",
+      "target": "MACHAKOS COUNTY",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "MAKINDU",
+      "target": "MAKUENI COUNTY",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "MACHAKOS COUNTY",
+      "target": "EASTERN KENYA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "MAKUENI COUNTY",
+      "target": "EASTERN KENYA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION",
+      "target": "FOOD SECURITY",
+      "description": "is indispensable for ensuring",
+      "weight": "7",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "NITROGEN FERTILIZATION",
+      "target": "FOOD SECURITY",
+      "description": "is indispensable for ensuring",
+      "weight": "7",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "SEMI-ARID CLIMATE",
+      "target": "RAINFALL",
+      "description": "is characterized by variable",
+      "weight": "9",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "BELOW NORMAL SEASON",
+      "description": "defines",
+      "weight": "10",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "NORMAL SEASON",
+      "description": "defines",
+      "weight": "10",
+      "source_id": "paper_10651"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "ABOVE NORMAL SEASON",
+      "description": "defines",
+      "weight": "10",
+      "source_id": "paper_10651"
+    }
+  ]
+}

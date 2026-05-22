@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "CHILLI",
+      "type": "CROP",
+      "description": "The crop being analyzed for aflatoxin contamination",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONCEPT",
+      "description": "Toxins produced by moulds in food commodities",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "MOULDS",
+      "type": "ORGANISM",
+      "description": "Fungi that produce aflatoxins in food commodities",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "DRYING",
+      "type": "METHOD",
+      "description": "The process of removing moisture from chilli fruits to prevent mould growth",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "STORAGE PERIOD",
+      "type": "CONDITION",
+      "description": "The duration of time chilli is kept in storage",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "AFLATOXIN CONTENT",
+      "type": "TRAIT",
+      "description": "The measured quantity of aflatoxin in chilli samples",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "BYADAGI DABBI",
+      "type": "CROP",
+      "description": "A cultivar of chilli analyzed for aflatoxin variation",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "SUPER 10",
+      "type": "CROP",
+      "description": "A cultivar of chilli analyzed for aflatoxin variation",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "INDAF 9",
+      "type": "CROP",
+      "description": "A cultivar of chilli analyzed for aflatoxin variation",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "INDAF 5",
+      "type": "CROP",
+      "description": "A cultivar of chilli analyzed for aflatoxin variation",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "RAICHUR MARKET",
+      "type": "LOCATION",
+      "description": "A market in Karnataka where chilli samples were collected",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "BYADAGI MARKET",
+      "type": "LOCATION",
+      "description": "A market in Haveri district where chilli samples were collected",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "HAVERI DISTRICT",
+      "type": "LOCATION",
+      "description": "A district in Karnataka",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "KARNATAKA",
+      "type": "LOCATION",
+      "description": "A state in India",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "AFLATOXIN B1",
+      "type": "CONCEPT",
+      "description": "A specific type of aflatoxin analyzed in the samples",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "ELISA TECHNIQUE",
+      "type": "METHOD",
+      "description": "An immunological technique used to detect and quantify aflatoxin B1",
+      "source_id": "paper_10525"
+    },
+    {
+      "name": "PERMISSIBLE LIMIT",
+      "type": "CONCEPT",
+      "description": "The maximum allowable concentration of aflatoxin in food",
+      "source_id": "paper_10525"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MOULDS",
+      "target": "AFLATOXIN",
+      "description": "produce",
+      "weight": "10",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "CHILLI",
+      "target": "MOULDS",
+      "description": "susceptible to growth of",
+      "weight": "8",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "DRYING",
+      "target": "MOULDS",
+      "description": "prevents growth of",
+      "weight": "9",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "STORAGE PERIOD",
+      "target": "AFLATOXIN CONTENT",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "BYADAGI DABBI",
+      "target": "CHILLI",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "SUPER 10",
+      "target": "CHILLI",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "INDAF 9",
+      "target": "CHILLI",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "INDAF 5",
+      "target": "CHILLI",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "RAICHUR MARKET",
+      "target": "CHILLI",
+      "description": "source of samples",
+      "weight": "9",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "BYADAGI MARKET",
+      "target": "CHILLI",
+      "description": "source of samples",
+      "weight": "9",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "BYADAGI MARKET",
+      "target": "HAVERI DISTRICT",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "HAVERI DISTRICT",
+      "target": "KARNATAKA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "ELISA TECHNIQUE",
+      "target": "AFLATOXIN B1",
+      "description": "used to analyze",
+      "weight": "10",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "AFLATOXIN B1",
+      "target": "AFLATOXIN",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10525"
+    },
+    {
+      "source": "AFLATOXIN CONTENT",
+      "target": "PERMISSIBLE LIMIT",
+      "description": "compared against",
+      "weight": "8",
+      "source_id": "paper_10525"
+    }
+  ]
+}

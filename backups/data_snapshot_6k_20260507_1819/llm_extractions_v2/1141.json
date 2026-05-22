@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop [Pennisetum glaucum (L.) R. Br.] used for grain and stover",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "STOVER QUALITY",
+      "type": "TRAIT",
+      "description": "The nutritional and physical characteristics of the crop residue used as fodder",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "QTL",
+      "type": "GENE_MARKER",
+      "description": "Quantitative Trait Loci controlling specific traits in the plant",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "LIVESTOCK",
+      "type": "ORGANISM",
+      "description": "Domesticated animals kept in a farm",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "DRY-SEASON MAINTENANCE RATIONS",
+      "type": "CONCEPT",
+      "description": "Feed provided to livestock during the dry season to maintain body condition",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "SMALLHOLDER CROP-LIVESTOCK PRODUCTION SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Traditional farming systems integrating crop cultivation and animal husbandry",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "SEMI-ARID MARGINS",
+      "type": "CONDITION",
+      "description": "Regions characterized by low and irregular rainfall",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "THAR DESERT",
+      "type": "LOCATION",
+      "description": "A large arid region in South Asia",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "A southern region of Asia",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "SAHELIAN REGION",
+      "type": "LOCATION",
+      "description": "A transition zone in Africa between the Sahara Desert and the Sudanian savanna",
+      "source_id": "paper_1141"
+    },
+    {
+      "name": "WEST AND CENTRAL AFRICA",
+      "type": "LOCATION",
+      "description": "Regions in the western and central parts of the African continent",
+      "source_id": "paper_1141"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "QTL",
+      "target": "YIELD",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "QTL",
+      "target": "STOVER QUALITY",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "YIELD",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "STOVER QUALITY",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "DRY-SEASON MAINTENANCE RATIONS",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "DRY-SEASON MAINTENANCE RATIONS",
+      "target": "LIVESTOCK",
+      "description": "serves as feed for",
+      "weight": "10",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "LIVESTOCK",
+      "target": "SMALLHOLDER CROP-LIVESTOCK PRODUCTION SYSTEMS",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SMALLHOLDER CROP-LIVESTOCK PRODUCTION SYSTEMS",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "SMALLHOLDER CROP-LIVESTOCK PRODUCTION SYSTEMS",
+      "target": "SEMI-ARID MARGINS",
+      "description": "exists in",
+      "weight": "8",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "SEMI-ARID MARGINS",
+      "target": "THAR DESERT",
+      "description": "characterizes",
+      "weight": "9",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "THAR DESERT",
+      "target": "SOUTH ASIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "SMALLHOLDER CROP-LIVESTOCK PRODUCTION SYSTEMS",
+      "target": "SAHELIAN REGION",
+      "description": "exists in",
+      "weight": "8",
+      "source_id": "paper_1141"
+    },
+    {
+      "source": "SAHELIAN REGION",
+      "target": "WEST AND CENTRAL AFRICA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1141"
+    }
+  ]
+}

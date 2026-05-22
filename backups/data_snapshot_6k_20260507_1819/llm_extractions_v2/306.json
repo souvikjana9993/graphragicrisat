@@ -1,0 +1,225 @@
+{
+  "entities": [
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Technology used for spatial and temporal evaluation of groundwater levels",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "GEOGRAPHIC INFORMATION SYSTEM",
+      "type": "METHOD",
+      "description": "Tool used to prepare the database and composite map for groundwater prospect zones",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "GROUNDWATER LEVELS",
+      "type": "CONCEPT",
+      "description": "The depth and availability of water underground being evaluated",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "GROUNDWATER PROSPECT ZONES",
+      "type": "CONCEPT",
+      "description": "Areas categorized by their potential for groundwater availability",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "MALLEBOINPALLI",
+      "type": "LOCATION",
+      "description": "The specific area where the case study was conducted",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "MAHABOOB NAGAR DISTRICT",
+      "type": "LOCATION",
+      "description": "The district where Malleboinpalli is located",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state where the study area is located",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "GEOLOGY",
+      "type": "CONCEPT",
+      "description": "One of the integrated factors used to prepare the groundwater prospect map",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "LAND USE/LAND COVER",
+      "type": "CONCEPT",
+      "description": "One of the integrated factors used to prepare the groundwater prospect map",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "SLOPE",
+      "type": "CONCEPT",
+      "description": "One of the integrated factors used to prepare the groundwater prospect map",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "GEOMORPHOLOGY",
+      "type": "CONCEPT",
+      "description": "The basis used to delineate six categories of groundwater prospect zones",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "PEDIPLANE",
+      "type": "CONCEPT",
+      "description": "A geomorphological feature that indicates varying levels of groundwater prospect zones",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "RESIDUAL HILLS",
+      "type": "CONCEPT",
+      "description": "A geomorphological feature indicating poor groundwater prospect zones",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "INSELBERGS",
+      "type": "CONCEPT",
+      "description": "A geomorphological feature indicating very poor groundwater prospect zones",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "GROUNDWATER RECHARGE STRUCTURES",
+      "type": "CONCEPT",
+      "description": "Recommended structures to improve groundwater levels",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "MODERATE WEATHERING",
+      "type": "CONDITION",
+      "description": "A state of the pediplain that indicates good groundwater prospect zones",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "SHALLOW WEATHERING",
+      "type": "CONDITION",
+      "description": "A state of the pediplain that indicates moderate groundwater prospect zones",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "YIELD RANGE",
+      "type": "TRAIT",
+      "description": "A characteristic of wells used to form the database for favorable zones",
+      "source_id": "paper_306"
+    },
+    {
+      "name": "DEPTH RANGE",
+      "type": "TRAIT",
+      "description": "A characteristic of wells used to form the database for favorable zones",
+      "source_id": "paper_306"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REMOTE SENSING",
+      "target": "GROUNDWATER LEVELS",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "GEOGRAPHIC INFORMATION SYSTEM",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "used to delineate",
+      "weight": "9",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "GEOLOGY",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "integrated to prepare map",
+      "weight": "8",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "LAND USE/LAND COVER",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "integrated to prepare map",
+      "weight": "8",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "SLOPE",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "integrated to prepare map",
+      "weight": "8",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "GEOMORPHOLOGY",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "basis for delineation",
+      "weight": "9",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "PEDIPLANE",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "indicates prospect levels",
+      "weight": "7",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "RESIDUAL HILLS",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "indicates poor prospect",
+      "weight": "7",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "INSELBERGS",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "indicates very poor prospect",
+      "weight": "7",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "MALLEBOINPALLI",
+      "target": "MAHABOOB NAGAR DISTRICT",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "MAHABOOB NAGAR DISTRICT",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "MODERATE WEATHERING",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "indicates good prospect",
+      "weight": "7",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "SHALLOW WEATHERING",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "indicates moderate prospect",
+      "weight": "7",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "YIELD RANGE",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "used to identify favorable zones",
+      "weight": "6",
+      "source_id": "paper_306"
+    },
+    {
+      "source": "DEPTH RANGE",
+      "target": "GROUNDWATER PROSPECT ZONES",
+      "description": "used to identify favorable zones",
+      "weight": "6",
+      "source_id": "paper_306"
+    }
+  ]
+}

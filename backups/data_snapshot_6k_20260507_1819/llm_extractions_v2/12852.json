@@ -1,0 +1,254 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop grown in semi-arid tropical areas.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "SEMI-ARID TROPICAL AREAS",
+      "type": "LOCATION",
+      "description": "Regions characterized by low and irregular rainfall and high temperatures.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "SOWING DENSITY",
+      "type": "CONDITION",
+      "description": "The number of plants sown per unit area, tested at high and low levels.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "HIGH DENSITY",
+      "type": "CONDITION",
+      "description": "A sowing density of 22 plants per square meter.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "LOW DENSITY",
+      "type": "CONDITION",
+      "description": "A sowing density of 11 plants per square meter.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Agricultural conditions where water is supplied only by precipitation.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Research conducted in actual field conditions to test crop response.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "LYSIMETER EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Experiments using lysimeters to precisely measure water use and efficiency.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The weight of the grain produced per unit area.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "BIOMASS YIELD",
+      "type": "TRAIT",
+      "description": "The total biological mass produced by the plant per unit area.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "WATER USE",
+      "type": "TRAIT",
+      "description": "The total amount of water consumed by the crop.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The ratio of biomass or grain yield to the amount of water used.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "TILLERING CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of the plant to produce side shoots or tillers.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of total upper leaf surface of a crop to the surface area of the land.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "The period of the year with minimal rainfall.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "WET SEASON",
+      "type": "CONDITION",
+      "description": "The period of the year with maximum rainfall.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The science of changing the traits of plants to produce desired characteristics.",
+      "source_id": "paper_12852"
+    },
+    {
+      "name": "ELITE CULTIVARS",
+      "type": "CONCEPT",
+      "description": "High-performing sorghum varieties selected for testing.",
+      "source_id": "paper_12852"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SEMI-ARID TROPICAL AREAS",
+      "description": "Sorghum is typically sown in semi-arid tropical areas",
+      "weight": "8",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "SOWING DENSITY",
+      "target": "GRAIN YIELD",
+      "description": "Increasing sowing density increases grain yield",
+      "weight": "9",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "SOWING DENSITY",
+      "target": "BIOMASS YIELD",
+      "description": "Increasing sowing density increases biomass yield",
+      "weight": "9",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "SOWING DENSITY",
+      "target": "WATER USE",
+      "description": "Increasing sowing density increases water use",
+      "weight": "9",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "SOWING DENSITY",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Increasing sowing density affects water use efficiency",
+      "weight": "9",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "HIGH DENSITY",
+      "target": "BIOMASS YIELD",
+      "description": "High density significantly increases biomass yield",
+      "weight": "10",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "HIGH DENSITY",
+      "target": "GRAIN YIELD",
+      "description": "High density significantly increases grain yield",
+      "weight": "10",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "HIGH DENSITY",
+      "target": "WATER USE",
+      "description": "High density increases water use by 38%",
+      "weight": "10",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "HIGH DENSITY",
+      "target": "WATER USE EFFICIENCY",
+      "description": "High density increases water use efficiency by 17%",
+      "weight": "10",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "BIOMASS YIELD",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Tight positive link between biomass response to density and WUE increase in dry season",
+      "weight": "10",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "BIOMASS YIELD",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Negative link between biomass response to density and WUE increase in wet season",
+      "weight": "6",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "SOWING DENSITY",
+      "description": "Leaf area index increase explains the response to high density",
+      "weight": "6",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "TILLERING CAPACITY",
+      "target": "SOWING DENSITY",
+      "description": "No link found between tillering capacity and response to density",
+      "weight": "1",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "DRY SEASON",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Context for the tight positive link between biomass response and WUE",
+      "weight": "8",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "WET SEASON",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Context for the negative link between biomass response and WUE",
+      "weight": "8",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "BREEDING",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Targeting traits that increase WUE for high-density adaptation",
+      "weight": "9",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "BREEDING",
+      "target": "SOWING DENSITY",
+      "description": "Developing cultivars adapted to high sowing density",
+      "weight": "9",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "SORGHUM",
+      "description": "Used to test elite cultivars of sorghum",
+      "weight": "8",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "LYSIMETER EXPERIMENTS",
+      "target": "SORGHUM",
+      "description": "Used to test water use of sorghum cultivars",
+      "weight": "8",
+      "source_id": "paper_12852"
+    },
+    {
+      "source": "ELITE CULTIVARS",
+      "target": "SORGHUM",
+      "description": "Elite cultivars are specific varieties of sorghum",
+      "weight": "10",
+      "source_id": "paper_12852"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, the primary crop studied for disease prevalence",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease caused by Sclerospora graminicola affecting pearl millet",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew in pearl millet",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "ICMV 221",
+      "type": "CROP",
+      "description": "An improved, resistant variety of pearl millet developed by ICRISAT",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "ERITREA",
+      "type": "LOCATION",
+      "description": "The country where the systematic survey of downy mildew was conducted",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "KEREN",
+      "type": "LOCATION",
+      "description": "A subzone in Eritrea where downy mildew incidence was 40-78%",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "MOGOLO",
+      "type": "LOCATION",
+      "description": "A subzone in Eritrea where downy mildew incidence was less than 1%",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "DGHE",
+      "type": "LOCATION",
+      "description": "A subzone in Eritrea where downy mildew incidence was less than 1%",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "SYSTEMATIC SURVEY",
+      "type": "METHOD",
+      "description": "The research method used to assess the prevalence and severity of downy mildew",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "DOWNY MILDEW INCIDENCE",
+      "type": "TRAIT",
+      "description": "The ratio of diseased to total plants in a given area, expressed as a percentage",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "PATHOGENICITY",
+      "type": "TRAIT",
+      "description": "The ability of the pathogen to cause disease, assessed via leaf samples",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "TOTAL RAINFALL",
+      "type": "CONDITION",
+      "description": "The cumulative amount of rainfall from sowing to the soft dough stage",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "NUMBER OF RAINY DAYS",
+      "type": "CONDITION",
+      "description": "The total count of days with rain from sowing to the soft dough stage",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "PATHOGEN VIRULENCE",
+      "type": "TRAIT",
+      "description": "The degree of pathogenicity of the pathogen within a region",
+      "source_id": "paper_1642"
+    },
+    {
+      "name": "ROTATIONAL CROPPING SEQUENCE",
+      "type": "METHOD",
+      "description": "The practice of alternating crops in a field to manage disease",
+      "source_id": "paper_1642"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "ICMV 221",
+      "target": "PEARL MILLET",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "SYSTEMATIC SURVEY",
+      "target": "ERITREA",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "SYSTEMATIC SURVEY",
+      "target": "DOWNY MILDEW INCIDENCE",
+      "description": "measured",
+      "weight": "9",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "DOWNY MILDEW INCIDENCE",
+      "target": "KEREN",
+      "description": "varied by location",
+      "weight": "8",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "DOWNY MILDEW INCIDENCE",
+      "target": "MOGOLO",
+      "description": "varied by location",
+      "weight": "8",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "DOWNY MILDEW INCIDENCE",
+      "target": "DGHE",
+      "description": "varied by location",
+      "weight": "8",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "DOWNY MILDEW INCIDENCE",
+      "target": "ICMV 221",
+      "description": "observed in",
+      "weight": "8",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "DOWNY MILDEW INCIDENCE",
+      "target": "TOTAL RAINFALL",
+      "description": "no direct relation to",
+      "weight": "7",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "DOWNY MILDEW INCIDENCE",
+      "target": "NUMBER OF RAINY DAYS",
+      "description": "no direct relation to",
+      "weight": "7",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "DOWNY MILDEW INCIDENCE",
+      "target": "PATHOGEN VIRULENCE",
+      "description": "probably related to",
+      "weight": "8",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "ROTATIONAL CROPPING SEQUENCE",
+      "target": "DOWNY MILDEW INCIDENCE",
+      "description": "no consistent effect on",
+      "weight": "7",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "KEREN",
+      "target": "ERITREA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "MOGOLO",
+      "target": "ERITREA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1642"
+    },
+    {
+      "source": "DGHE",
+      "target": "ERITREA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1642"
+    }
+  ]
+}

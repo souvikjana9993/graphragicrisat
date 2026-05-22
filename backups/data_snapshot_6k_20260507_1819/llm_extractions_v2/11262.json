@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for disease resistance",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "SORGHUM MINI CORE COLLECTION",
+      "type": "CONCEPT",
+      "description": "A specific subset of sorghum lines used for genetic analysis",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "COLLETRICHUM SUBLINEOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes anthracnose",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "PERONOSCLEROSPORA SORGHI",
+      "type": "ORGANISM",
+      "description": "The pathogen that causes downy mildew",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "SPORISORIUM REILIANUM",
+      "type": "ORGANISM",
+      "description": "The pathogen that causes head smut",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "ANTHRACNOSE",
+      "type": "CONDITION",
+      "description": "A disease in sorghum caused by Colletotrichum sublineola",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease in sorghum caused by Peronosclerospora sorghi",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "HEAD SMUT",
+      "type": "CONDITION",
+      "description": "A disease in sorghum caused by Sporisorium reilianum",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "SNP",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphic loci used as genetic markers for mapping",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "GBS",
+      "type": "METHOD",
+      "description": "Genotype by sequencing used to generate SNP data",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "GAPIT",
+      "type": "METHOD",
+      "description": "Genome Association and Prediction Integrated Tool R package used to identify chromosomal locations",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "GWAS",
+      "type": "METHOD",
+      "description": "Genome wide association analysis used to identify chromosomal locations that differ in disease response",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "SORGHUM GENOME",
+      "type": "CONCEPT",
+      "description": "The published reference genome of sorghum used for mapping SNPs",
+      "source_id": "paper_11262"
+    },
+    {
+      "name": "HOST DEFENSE",
+      "type": "TRAIT",
+      "description": "The biological role of genes in protecting the plant from pathogens",
+      "source_id": "paper_11262"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GWAS",
+      "target": "SORGHUM MINI CORE COLLECTION",
+      "description": "performed on",
+      "weight": "10",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "GWAS",
+      "target": "ANTHRACNOSE",
+      "description": "analyzed response to",
+      "weight": "9",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "GWAS",
+      "target": "DOWNY MILDEW",
+      "description": "analyzed response to",
+      "weight": "9",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "GWAS",
+      "target": "HEAD SMUT",
+      "description": "analyzed response to",
+      "weight": "9",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "COLLETRICHUM SUBLINEOLA",
+      "target": "ANTHRACNOSE",
+      "description": "causal agent of",
+      "weight": "10",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "PERONOSCLEROSPORA SORGHI",
+      "target": "DOWNY MILDEW",
+      "description": "causal agent of",
+      "weight": "10",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "SPORISORIUM REILIANUM",
+      "target": "HEAD SMUT",
+      "description": "causal agent of",
+      "weight": "10",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "GBS",
+      "target": "SNP",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "GAPIT",
+      "target": "GWAS",
+      "description": "tool used for",
+      "weight": "10",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "SNP",
+      "target": "SORGHUM GENOME",
+      "description": "mapped to",
+      "weight": "9",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "SNP",
+      "target": "HOST DEFENSE",
+      "description": "associated with genes for",
+      "weight": "8",
+      "source_id": "paper_11262"
+    },
+    {
+      "source": "SORGHUM MINI CORE COLLECTION",
+      "target": "SORGHUM",
+      "description": "subset of",
+      "weight": "10",
+      "source_id": "paper_11262"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor L. Moench, the crop studied for its response to drought and fertilization",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "TERMINAL DROUGHT",
+      "type": "CONDITION",
+      "description": "Drought stress occurring during the reproductive stage of the crop",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "NORTH-EASTERN ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the field experiments were conducted",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONCEPT",
+      "description": "A nutrient input (K) used to modulate the crop's response to drought",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "NPSBZN-BLENDED FERTILIZER",
+      "type": "CONCEPT",
+      "description": "A blended fertilizer input (BF) containing Nitrogen, Phosphorus, Sulfur, Boron, and Zinc",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "GAS EXCHANGE",
+      "type": "TRAIT",
+      "description": "The process of CO2 and O2 exchange in leaves, used as a physiological indicator",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "DRY MATTER ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The increase in biomass of the plant over time",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "GROWTH PARAMETERS",
+      "type": "TRAIT",
+      "description": "Various measurements used to assess the growth of the sorghum crop",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "NET PHOTOSYNTHETIC RATE",
+      "type": "TRAIT",
+      "description": "The rate of CO2 assimilation (AN) by the plant",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "TOTAL DRY MATTER YIELD",
+      "type": "TRAIT",
+      "description": "The total biomass recorded at physiological maturity",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "LEAF K CONTENT",
+      "type": "TRAIT",
+      "description": "The concentration of potassium within the leaves of the plant",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "INTERCELLULAR CO2 CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of CO2 within the leaf intercellular spaces",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The ratio of biomass produced to the amount of water used (WUE)",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "CROP GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate at which the sorghum crop increases in size or mass",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "NET ASSIMILATION RATE",
+      "type": "TRAIT",
+      "description": "The rate of increase in dry weight per unit of leaf area (NAR)",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "NORMAL RAINFALL",
+      "type": "CONDITION",
+      "description": "The control environmental condition without drought stress",
+      "source_id": "paper_12906"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The research method involving controlled trials in the field over two years",
+      "source_id": "paper_12906"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POTASSIUM",
+      "target": "SORGHUM",
+      "description": "applied to improve growth and drought response",
+      "weight": "9",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NPSBZN-BLENDED FERTILIZER",
+      "target": "SORGHUM",
+      "description": "applied to improve growth and drought response",
+      "weight": "9",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "TERMINAL DROUGHT",
+      "target": "SORGHUM",
+      "description": "constrains production of",
+      "weight": "10",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NORTH-EASTERN ETHIOPIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "POTASSIUM",
+      "target": "TERMINAL DROUGHT",
+      "description": "modulates the response of sorghum to",
+      "weight": "7",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NPSBZN-BLENDED FERTILIZER",
+      "target": "TERMINAL DROUGHT",
+      "description": "modulates the response of sorghum to",
+      "weight": "7",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "POTASSIUM",
+      "target": "GAS EXCHANGE",
+      "description": "affects leaf properties",
+      "weight": "8",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NPSBZN-BLENDED FERTILIZER",
+      "target": "GAS EXCHANGE",
+      "description": "affects leaf properties",
+      "weight": "8",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NPSBZN-BLENDED FERTILIZER",
+      "target": "NET PHOTOSYNTHETIC RATE",
+      "description": "reduces rate under drought conditions",
+      "weight": "7",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "POTASSIUM",
+      "target": "TOTAL DRY MATTER YIELD",
+      "description": "increases yield at maturity",
+      "weight": "8",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NPSBZN-BLENDED FERTILIZER",
+      "target": "TOTAL DRY MATTER YIELD",
+      "description": "increases yield at maturity",
+      "weight": "8",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NPSBZN-BLENDED FERTILIZER",
+      "target": "LEAF K CONTENT",
+      "description": "associated with declining content",
+      "weight": "7",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NPSBZN-BLENDED FERTILIZER",
+      "target": "INTERCELLULAR CO2 CONCENTRATION",
+      "description": "associated with increasing concentration",
+      "weight": "7",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NPSBZN-BLENDED FERTILIZER",
+      "target": "WATER USE EFFICIENCY",
+      "description": "associated with increasing efficiency",
+      "weight": "7",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "POTASSIUM",
+      "target": "NET ASSIMILATION RATE",
+      "description": "increases rate under drought and normal rainfall",
+      "weight": "8",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NPSBZN-BLENDED FERTILIZER",
+      "target": "NET ASSIMILATION RATE",
+      "description": "increases rate under drought and normal rainfall",
+      "weight": "8",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "POTASSIUM",
+      "target": "NPSBZN-BLENDED FERTILIZER",
+      "description": "modulates the response of sorghum to",
+      "weight": "6",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "SORGHUM",
+      "description": "used to investigate effects on",
+      "weight": "9",
+      "source_id": "paper_12906"
+    },
+    {
+      "source": "NORMAL RAINFALL",
+      "target": "SORGHUM",
+      "description": "environmental condition for growth",
+      "weight": "8",
+      "source_id": "paper_12906"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Zea mays L., the primary crop studied for its response to flooding",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "WEST AFRICAN SAHEL",
+      "type": "LOCATION",
+      "description": "The geographical region characterized by changing rainfall regimes",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "TEMPORARY FLOODING",
+      "type": "CONDITION",
+      "description": "A condition where land is covered by water for a short period, affecting crop growth",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "SURFACE WATER STAGNATION",
+      "type": "CONDITION",
+      "description": "A condition where water remains on the surface without draining",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development of the maize plant",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The overall output or yield capacity of the crop",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "SPLIT-SPLIT PLOT DESIGN",
+      "type": "METHOD",
+      "description": "An experimental layout used to test multiple factors",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "SIX-LEAF STAGE",
+      "type": "CONCEPT",
+      "description": "A growth stage of maize denoted as V6",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "TASSELING STAGE",
+      "type": "CONCEPT",
+      "description": "A growth stage of maize denoted as VT",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "MILKY STAGE",
+      "type": "CONCEPT",
+      "description": "A growth stage of maize denoted as R3",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "OBATANPA",
+      "type": "CROP",
+      "description": "A specific cultivar of maize used in the experiments",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "STRESS DAY INDEX",
+      "type": "METHOD",
+      "description": "A metric used to quantify the penalty on yield under flooding conditions",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "GLOBAL WARMING",
+      "type": "CONCEPT",
+      "description": "The long-term heating of Earth's climate system",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "HEAVY RAIN EVENTS",
+      "type": "CONDITION",
+      "description": "Intense precipitation events that lead to flooding",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "EXCESS WATER STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by too much water in the soil or environment",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "FOOD INSECURITY",
+      "type": "CONCEPT",
+      "description": "The state of being without reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "OUAGADOUGOU",
+      "type": "LOCATION",
+      "description": "The city in Burkina Faso where the field experiments were conducted",
+      "source_id": "paper_12575"
+    },
+    {
+      "name": "BURKINA FASO",
+      "type": "LOCATION",
+      "description": "The country in the West African Sahel where the study took place",
+      "source_id": "paper_12575"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPORARY FLOODING",
+      "target": "MAIZE",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "SURFACE WATER STAGNATION",
+      "target": "MAIZE",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "TEMPORARY FLOODING",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "SURFACE WATER STAGNATION",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "TASSELING STAGE",
+      "target": "GRAIN YIELD",
+      "description": "critical stage for flooding impact",
+      "weight": "8",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "SIX-LEAF STAGE",
+      "target": "GRAIN YIELD",
+      "description": "stage for flooding impact",
+      "weight": "7",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "STRESS DAY INDEX",
+      "target": "GRAIN YIELD",
+      "description": "measures penalty on",
+      "weight": "9",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "GLOBAL WARMING",
+      "target": "HEAVY RAIN EVENTS",
+      "description": "increases frequency of",
+      "weight": "8",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "HEAVY RAIN EVENTS",
+      "target": "TEMPORARY FLOODING",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "OBATANPA",
+      "target": "MAIZE",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "EXCESS WATER STRESS",
+      "target": "FOOD INSECURITY",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "OUAGADOUGOU",
+      "target": "BURKINA FASO",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "BURKINA FASO",
+      "target": "WEST AFRICAN SAHEL",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "SPLIT-SPLIT PLOT DESIGN",
+      "target": "MAIZE",
+      "description": "used to test effects on",
+      "weight": "7",
+      "source_id": "paper_12575"
+    },
+    {
+      "source": "MAIZE",
+      "target": "WEST AFRICAN SAHEL",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_12575"
+    }
+  ]
+}

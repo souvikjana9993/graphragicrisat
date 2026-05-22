@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop grown in hybrids in farmers fields and surveyed for disease incidence.",
+      "source_id": "paper_1305"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease affecting pearl millet caused by the pathogen Sclerospora graminicola.",
+      "source_id": "paper_1305"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing downy mildew in pearl millet.",
+      "source_id": "paper_1305"
+    },
+    {
+      "name": "MAHARASHTRA",
+      "type": "LOCATION",
+      "description": "A state in India where the survey was conducted across 8 districts.",
+      "source_id": "paper_1305"
+    },
+    {
+      "name": "RAJASTHAN",
+      "type": "LOCATION",
+      "description": "A state in India where the survey was conducted across 6 districts.",
+      "source_id": "paper_1305"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research study was conducted.",
+      "source_id": "paper_1305"
+    },
+    {
+      "name": "OOSPORE PRODUCTION",
+      "type": "TRAIT",
+      "description": "The production of oospores by Sclerospora graminicola on pearl millet hybrids.",
+      "source_id": "paper_1305"
+    },
+    {
+      "name": "INCIDENCE",
+      "type": "TRAIT",
+      "description": "The mean occurrence rate of downy mildew in pearl millet hybrids.",
+      "source_id": "paper_1305"
+    },
+    {
+      "name": "SURVEY",
+      "type": "METHOD",
+      "description": "The experimental process of examining farmers fields to record disease presence and oospore production.",
+      "source_id": "paper_1305"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1305"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1305"
+    },
+    {
+      "source": "SURVEY",
+      "target": "PEARL MILLET",
+      "description": "conducted on",
+      "weight": "8",
+      "source_id": "paper_1305"
+    },
+    {
+      "source": "SURVEY",
+      "target": "MAHARASHTRA",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_1305"
+    },
+    {
+      "source": "SURVEY",
+      "target": "RAJASTHAN",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_1305"
+    },
+    {
+      "source": "MAHARASHTRA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1305"
+    },
+    {
+      "source": "RAJASTHAN",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1305"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "INCIDENCE",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_1305"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "OOSPORE PRODUCTION",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_1305"
+    },
+    {
+      "source": "INCIDENCE",
+      "target": "OOSPORE PRODUCTION",
+      "description": "no significant correlation",
+      "weight": "2",
+      "source_id": "paper_1305"
+    }
+  ]
+}

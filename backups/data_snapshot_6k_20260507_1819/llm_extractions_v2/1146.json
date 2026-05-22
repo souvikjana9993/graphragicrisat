@@ -1,0 +1,193 @@
+{
+  "entities": [
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "A fiber crop mentioned in the context of crop area estimation error.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "Grain crops mentioned in the context of crop area estimation error.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "SOUTHERN MALI",
+      "type": "LOCATION",
+      "description": "The region where the methodological study was conducted.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "DIRECT CROP AREA MEASUREMENT",
+      "type": "METHOD",
+      "description": "A technique for measuring crop area directly, compared with farmers' estimates.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "FARMERS' ESTIMATES AFTER VISUAL INSPECTION",
+      "type": "METHOD",
+      "description": "A technique where farmers estimate crop area based on visual inspection.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "PHYSICAL MEASUREMENT",
+      "type": "METHOD",
+      "description": "The process of physically measuring plots to determine area.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "SURVEY DESIGN",
+      "type": "METHOD",
+      "description": "The planning of a survey to optimize accuracy, sample size, and cost.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "OBSERVATIONAL ERROR",
+      "type": "CONCEPT",
+      "description": "The difference between the area measured and the area estimated.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "PLOT SIZE",
+      "type": "CONCEPT",
+      "description": "The physical size of the crop plot, which influences observational error.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "RELATIVE TOTAL ERROR",
+      "type": "CONCEPT",
+      "description": "A metric calculated as the square root of the mean square error divided by the mean, used to measure accuracy.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "COEFFICIENT OF VARIATION",
+      "type": "CONCEPT",
+      "description": "A statistical measure of the dispersion of surface variables.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "RELATIVE BIAS",
+      "type": "CONCEPT",
+      "description": "The average observational error divided by the mean area.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "CROP AREA PER FARM",
+      "type": "CONCEPT",
+      "description": "The total area of crops on a single farm.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "SAMPLE SIZE",
+      "type": "CONCEPT",
+      "description": "The number of farmers or farms included in the survey.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "COST",
+      "type": "CONCEPT",
+      "description": "The financial expenditure associated with different measurement techniques.",
+      "source_id": "paper_1146"
+    },
+    {
+      "name": "ACCURACY",
+      "type": "CONCEPT",
+      "description": "The degree of closeness of an estimate to the actual measured value.",
+      "source_id": "paper_1146"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DIRECT CROP AREA MEASUREMENT",
+      "target": "FARMERS' ESTIMATES AFTER VISUAL INSPECTION",
+      "description": "Compared for accuracy and cost",
+      "weight": "8",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "OBSERVATIONAL ERROR",
+      "target": "PLOT SIZE",
+      "description": "Strongly related with a negative linear relationship",
+      "weight": "9",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "OBSERVATIONAL ERROR",
+      "target": "COTTON",
+      "description": "Smaller for cotton fields",
+      "weight": "7",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "OBSERVATIONAL ERROR",
+      "target": "CEREALS",
+      "description": "Larger for cereal fields",
+      "weight": "7",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "RELATIVE TOTAL ERROR",
+      "target": "ACCURACY",
+      "description": "Used to calculate accuracy",
+      "weight": "9",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "PHYSICAL MEASUREMENT",
+      "target": "FARMERS' ESTIMATES AFTER VISUAL INSPECTION",
+      "description": "Compared for accuracy and cost",
+      "weight": "8",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "PHYSICAL MEASUREMENT",
+      "target": "CROP AREA PER FARM",
+      "description": "Used to measure crop area per farm",
+      "weight": "8",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "FARMERS' ESTIMATES AFTER VISUAL INSPECTION",
+      "target": "CROP AREA PER FARM",
+      "description": "Used to estimate crop area per farm",
+      "weight": "8",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "SURVEY DESIGN",
+      "target": "ACCURACY",
+      "description": "Optimized based on acceptable error",
+      "weight": "8",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "SURVEY DESIGN",
+      "target": "SAMPLE SIZE",
+      "description": "Optimized based on sample size",
+      "weight": "8",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "SURVEY DESIGN",
+      "target": "COST",
+      "description": "Optimized based on cost",
+      "weight": "8",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "OBSERVATIONAL ERROR",
+      "target": "DIRECT CROP AREA MEASUREMENT",
+      "description": "Calculated as the difference between measured and estimated area",
+      "weight": "9",
+      "source_id": "paper_1146"
+    },
+    {
+      "source": "OBSERVATIONAL ERROR",
+      "target": "FARMERS' ESTIMATES AFTER VISUAL INSPECTION",
+      "description": "Calculated as the difference between measured and estimated area",
+      "weight": "9",
+      "source_id": "paper_1146"
+    }
+  ]
+}

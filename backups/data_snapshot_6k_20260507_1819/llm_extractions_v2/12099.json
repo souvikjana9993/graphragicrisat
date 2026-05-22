@@ -1,0 +1,148 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop grown in India during the post-rainy season.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the climate change impact on sorghum yields is being studied.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "MULTI-CLIMATE MODEL MEAN (MMM)",
+      "type": "METHOD",
+      "description": "A model mean used for impact assessment studies to simulate rainfall and surface air temperatures.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "COUPLED MODEL INTERCOMPARISON PROJECT PHASE 5 (CMIP5)",
+      "type": "METHOD",
+      "description": "A project used to simulate features of Indian summer monsoons and post-rainy seasons.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The environmental shift being studied for its potential impacts on crop yields.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The specific agricultural season being analyzed for sorghum yields.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "INDIAN SUMMER MONSOONS",
+      "type": "CONDITION",
+      "description": "The seasonal weather pattern simulated by CMIP5.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "SORGHUM YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the sorghum crop being estimated under future climate scenarios.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "A climatic variable simulated by the MMM simulations.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "SURFACE AIR TEMPERATURES",
+      "type": "CONDITION",
+      "description": "A climatic variable simulated by the MMM simulations.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "CROP ENVIRONMENT RESOURCE SYNTHESIS (CERES)-SORGHUM MODEL",
+      "type": "METHOD",
+      "description": "A model used to estimate the potential impacts of future climate change on sorghum yield values.",
+      "source_id": "paper_12099"
+    },
+    {
+      "name": "PRECIPITATION",
+      "type": "CONDITION",
+      "description": "A climatic variable observed to have bias in MMM simulations.",
+      "source_id": "paper_12099"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MULTI-CLIMATE MODEL MEAN (MMM)",
+      "target": "RAINFALL",
+      "description": "simulates spatial patterns and annual cycles of",
+      "weight": "8",
+      "source_id": "paper_12099"
+    },
+    {
+      "source": "MULTI-CLIMATE MODEL MEAN (MMM)",
+      "target": "SURFACE AIR TEMPERATURES",
+      "description": "simulates spatial patterns and annual cycles of",
+      "weight": "8",
+      "source_id": "paper_12099"
+    },
+    {
+      "source": "COUPLED MODEL INTERCOMPARISON PROJECT PHASE 5 (CMIP5)",
+      "target": "INDIAN SUMMER MONSOONS",
+      "description": "simulates features of",
+      "weight": "7",
+      "source_id": "paper_12099"
+    },
+    {
+      "source": "COUPLED MODEL INTERCOMPARISON PROJECT PHASE 5 (CMIP5)",
+      "target": "POST-RAINY SEASON",
+      "description": "simulates features of",
+      "weight": "7",
+      "source_id": "paper_12099"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "SORGHUM YIELD",
+      "description": "potentially impacts",
+      "weight": "9",
+      "source_id": "paper_12099"
+    },
+    {
+      "source": "CROP ENVIRONMENT RESOURCE SYNTHESIS (CERES)-SORGHUM MODEL",
+      "target": "CLIMATE CHANGE",
+      "description": "used to estimate impacts of",
+      "weight": "9",
+      "source_id": "paper_12099"
+    },
+    {
+      "source": "CROP ENVIRONMENT RESOURCE SYNTHESIS (CERES)-SORGHUM MODEL",
+      "target": "SORGHUM YIELD",
+      "description": "used to estimate values of",
+      "weight": "9",
+      "source_id": "paper_12099"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_12099"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SORGHUM YIELD",
+      "description": "has the trait of",
+      "weight": "10",
+      "source_id": "paper_12099"
+    },
+    {
+      "source": "POST-RAINY SEASON",
+      "target": "SORGHUM YIELD",
+      "description": "is the period for",
+      "weight": "8",
+      "source_id": "paper_12099"
+    }
+  ]
+}

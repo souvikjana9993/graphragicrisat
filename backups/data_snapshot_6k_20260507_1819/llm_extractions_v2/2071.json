@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "HETERODERA CAJANI",
+      "type": "ORGANISM",
+      "description": "A species of cyst nematode that parasitizes pigeonpea roots.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The host legume plant, specifically cultivar ICPL 87, used in the study.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The level of water in the soil, tested at 16%, 24%, 32%, and 40%.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The thermal environment, tested at 20 C, 25 C, and fluctuating between 25 and 32 C.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "PENETRATION",
+      "type": "TRAIT",
+      "description": "The ability of second-stage nematode juveniles to enter the roots of the host plant.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The growth and maturation process of the nematode within the host plant.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "REPRODUCTION",
+      "type": "TRAIT",
+      "description": "The ability of the nematode to produce offspring, measured by the number of females per root system.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development and growth of the pigeonpea plant.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "REPRODUCTIVE FACTOR",
+      "type": "CONCEPT",
+      "description": "A numerical value used to quantify the reproductive success of the nematode.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "GROWTH CHAMBERS",
+      "type": "METHOD",
+      "description": "Controlled environmental systems used to maintain specific temperature and moisture levels.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "METHOD",
+      "description": "A controlled environment where temperature fluctuated between 25 and 32 C.",
+      "source_id": "paper_2071"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where pigeonpea is grown and H. cajani densities are predicted.",
+      "source_id": "paper_2071"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HETERODERA CAJANI",
+      "target": "PIGEONPEA",
+      "description": "infects and reproduces on",
+      "weight": "10",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "PENETRATION",
+      "description": "influences the percentage of juveniles that penetrate roots",
+      "weight": "9",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "DEVELOPMENT",
+      "description": "influences the development of the nematode",
+      "weight": "9",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "REPRODUCTION",
+      "description": "influences the number of females and reproductive factor",
+      "weight": "9",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PENETRATION",
+      "description": "influences the ability of juveniles to penetrate roots",
+      "weight": "9",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DEVELOPMENT",
+      "description": "influences the development of the nematode",
+      "weight": "9",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "REPRODUCTION",
+      "description": "influences the reproduction of the nematode",
+      "weight": "9",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "PLANT GROWTH",
+      "description": "retards plant growth at 40% moisture level",
+      "weight": "8",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PLANT GROWTH",
+      "description": "retards plant growth at 20 C",
+      "weight": "8",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "REPRODUCTIVE FACTOR",
+      "target": "REPRODUCTION",
+      "description": "is a measure of",
+      "weight": "10",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "GROWTH CHAMBERS",
+      "target": "HETERODERA CAJANI",
+      "description": "used to investigate the effects of moisture and temperature on",
+      "weight": "7",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "HETERODERA CAJANI",
+      "description": "used to investigate the effects of fluctuating temperature on",
+      "weight": "7",
+      "source_id": "paper_2071"
+    },
+    {
+      "source": "HETERODERA CAJANI",
+      "target": "SEMI-ARID TROPICS",
+      "description": "densities are predicted in this region",
+      "weight": "8",
+      "source_id": "paper_2071"
+    }
+  ]
+}

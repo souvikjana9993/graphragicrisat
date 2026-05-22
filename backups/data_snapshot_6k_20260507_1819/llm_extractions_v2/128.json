@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pest insect whose larval growth and gut zymogen activation are inhibited by plant protease inhibitors",
+      "source_id": "paper_128"
+    },
+    {
+      "name": "PLANT PROTEASE INHIBITORS",
+      "type": "CONCEPT",
+      "description": "Proteins from plants that inhibit protease enzymes, used to reduce larval growth of pests",
+      "source_id": "paper_128"
+    },
+    {
+      "name": "ISOPROTEINASES",
+      "type": "CONCEPT",
+      "description": "Protease enzymes in the gut of H. armigera that are inhibited by plant PIs",
+      "source_id": "paper_128"
+    },
+    {
+      "name": "LARVAL GROWTH",
+      "type": "TRAIT",
+      "description": "The growth and development of H. armigera larvae, which is stunted by plant PIs",
+      "source_id": "paper_128"
+    },
+    {
+      "name": "DATURA ALBA",
+      "type": "ORGANISM",
+      "description": "A non-host plant whose protease inhibitors cause significant stunted growth in H. armigera",
+      "source_id": "paper_128"
+    },
+    {
+      "name": "ARTIFICIAL DIET",
+      "type": "METHOD",
+      "description": "A medium used to feed H. armigera larvae with non-host plant PIs to study growth effects",
+      "source_id": "paper_128"
+    },
+    {
+      "name": "INSECT-RESISTANT TRANSGENIC PLANTS",
+      "type": "CONCEPT",
+      "description": "Plants genetically modified to express protease inhibitors for protection against pests",
+      "source_id": "paper_128"
+    },
+    {
+      "name": "GUT ZYMOGEN ACTIVATION",
+      "type": "CONCEPT",
+      "description": "The process of activating zymogens in the gut of H. armigera, inhibited by plant PIs",
+      "source_id": "paper_128"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PLANT PROTEASE INHIBITORS",
+      "target": "GUT ZYMOGEN ACTIVATION",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_128"
+    },
+    {
+      "source": "PLANT PROTEASE INHIBITORS",
+      "target": "ISOPROTEINASES",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_128"
+    },
+    {
+      "source": "PLANT PROTEASE INHIBITORS",
+      "target": "LARVAL GROWTH",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_128"
+    },
+    {
+      "source": "DATURA ALBA",
+      "target": "LARVAL GROWTH",
+      "description": "stunts",
+      "weight": "10",
+      "source_id": "paper_128"
+    },
+    {
+      "source": "PLANT PROTEASE INHIBITORS",
+      "target": "INSECT-RESISTANT TRANSGENIC PLANTS",
+      "description": "deployed in",
+      "weight": "8",
+      "source_id": "paper_128"
+    },
+    {
+      "source": "INSECT-RESISTANT TRANSGENIC PLANTS",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "provides protection against",
+      "weight": "9",
+      "source_id": "paper_128"
+    },
+    {
+      "source": "PLANT PROTEASE INHIBITORS",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "inhibits growth of",
+      "weight": "9",
+      "source_id": "paper_128"
+    },
+    {
+      "source": "ARTIFICIAL DIET",
+      "target": "LARVAL GROWTH",
+      "description": "used to assess the effect of PIs on",
+      "weight": "7",
+      "source_id": "paper_128"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A major food legume and oilseed crop in many Asian countries.",
+      "source_id": "paper_2508"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "Region where groundnut is a major crop and aflatoxin contamination is a problem.",
+      "source_id": "paper_2508"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "A major problem in groundnut-producing countries affecting trade and utilization.",
+      "source_id": "paper_2508"
+    },
+    {
+      "name": "AFLATOXINS",
+      "type": "CONCEPT",
+      "description": "Highly toxic, cancer-causing substances produced by Aspergillus flavus.",
+      "source_id": "paper_2508"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A fungus that produces aflatoxins and infects groundnut pods and seeds.",
+      "source_id": "paper_2508"
+    },
+    {
+      "name": "INTEGRATED AFLATOXIN MANAGEMENT",
+      "type": "METHOD",
+      "description": "Strategies developed to manage and reduce aflatoxin contamination.",
+      "source_id": "paper_2508"
+    },
+    {
+      "name": "INTERNATIONAL GROUNDNUT WORKSHOP",
+      "type": "CONCEPT",
+      "description": "A meeting held at ICRISAT in 1991 that recommended the formation of a Working Group.",
+      "source_id": "paper_2508"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The institution where the International Groundnut Workshop was held.",
+      "source_id": "paper_2508"
+    },
+    {
+      "name": "WORKING GROUP ON AFLATOXIN MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "A group formed to assist and enhance research collaboration and outcomes regarding aflatoxin management.",
+      "source_id": "paper_2508"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "ASIA",
+      "description": "is a major crop in",
+      "weight": "8",
+      "source_id": "paper_2508"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "GROUNDNUT",
+      "description": "is a major problem in",
+      "weight": "10",
+      "source_id": "paper_2508"
+    },
+    {
+      "source": "AFLATOXINS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2508"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXINS",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_2508"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "GROUNDNUT",
+      "description": "infects pods and seeds of",
+      "weight": "9",
+      "source_id": "paper_2508"
+    },
+    {
+      "source": "INTEGRATED AFLATOXIN MANAGEMENT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is used to manage",
+      "weight": "9",
+      "source_id": "paper_2508"
+    },
+    {
+      "source": "INTERNATIONAL GROUNDNUT WORKSHOP",
+      "target": "WORKING GROUP ON AFLATOXIN MANAGEMENT",
+      "description": "recommended the formation of",
+      "weight": "10",
+      "source_id": "paper_2508"
+    },
+    {
+      "source": "INTERNATIONAL GROUNDNUT WORKSHOP",
+      "target": "ICRISAT",
+      "description": "was held at",
+      "weight": "10",
+      "source_id": "paper_2508"
+    },
+    {
+      "source": "WORKING GROUP ON AFLATOXIN MANAGEMENT",
+      "target": "INTEGRATED AFLATOXIN MANAGEMENT",
+      "description": "assists in the development of",
+      "weight": "8",
+      "source_id": "paper_2508"
+    }
+  ]
+}

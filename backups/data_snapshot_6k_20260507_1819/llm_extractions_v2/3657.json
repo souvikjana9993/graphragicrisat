@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop species Pennisetum americanum studied for spacing variation",
+      "source_id": "paper_3657"
+    },
+    {
+      "name": "PLANT SPACING VARIANCE",
+      "type": "CONCEPT",
+      "description": "The variance of spacing (Vs) between plants in a row",
+      "source_id": "paper_3657"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_3657"
+    },
+    {
+      "name": "PLANT POPULATION",
+      "type": "CONCEPT",
+      "description": "The number of plants per unit area",
+      "source_id": "paper_3657"
+    },
+    {
+      "name": "FERTILITY",
+      "type": "CONDITION",
+      "description": "The nutrient level or fertility of the soil/cropping situation",
+      "source_id": "paper_3657"
+    },
+    {
+      "name": "SEASON",
+      "type": "CONDITION",
+      "description": "The time of year or specific growing season",
+      "source_id": "paper_3657"
+    },
+    {
+      "name": "PANICLE NUMBER",
+      "type": "TRAIT",
+      "description": "The number of panicles produced per plant",
+      "source_id": "paper_3657"
+    },
+    {
+      "name": "TILLERING CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of the plant to produce tillers to adjust to population changes",
+      "source_id": "paper_3657"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PLANT SPACING VARIANCE",
+      "target": "GRAIN YIELD",
+      "description": "Increase in spacing variance leads to a decline in grain yield",
+      "weight": "9",
+      "source_id": "paper_3657"
+    },
+    {
+      "source": "PLANT SPACING VARIANCE",
+      "target": "PANICLE NUMBER",
+      "description": "Reduction in grain yield due to spacing variance is attributed to a reduction in panicle number per plant",
+      "weight": "8",
+      "source_id": "paper_3657"
+    },
+    {
+      "source": "FERTILITY",
+      "target": "GRAIN YIELD",
+      "description": "Yield reduction caused by spacing variance does not depend on fertility level",
+      "weight": "2",
+      "source_id": "paper_3657"
+    },
+    {
+      "source": "SEASON",
+      "target": "GRAIN YIELD",
+      "description": "Yield reduction caused by spacing variance does not depend on the season",
+      "weight": "2",
+      "source_id": "paper_3657"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "GRAIN YIELD",
+      "description": "Yield reduction caused by spacing variance does not depend on plant population",
+      "weight": "2",
+      "source_id": "paper_3657"
+    },
+    {
+      "source": "TILLERING CAPACITY",
+      "target": "PLANT POPULATION",
+      "description": "Tillering capacity provides the ability to adjust to a wide range of plant populations",
+      "weight": "7",
+      "source_id": "paper_3657"
+    },
+    {
+      "source": "TILLERING CAPACITY",
+      "target": "PLANT SPACING VARIANCE",
+      "description": "Tillering capacity does not provide adjustment to major changes in spacing variance",
+      "weight": "8",
+      "source_id": "paper_3657"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GRAIN YIELD",
+      "description": "The crop whose grain yield is measured in the study",
+      "weight": "10",
+      "source_id": "paper_3657"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "TILLERING CAPACITY",
+      "description": "The crop that possesses tillering capacity",
+      "weight": "10",
+      "source_id": "paper_3657"
+    }
+  ]
+}

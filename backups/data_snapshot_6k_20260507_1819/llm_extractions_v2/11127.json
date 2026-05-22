@@ -1,0 +1,161 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop studied for production and drought tolerance in Zimbabwe",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of maize varieties to maintain production under mild drought conditions",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A significant limiting factor in maize production in rain-fed agriculture",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The broad geographical region where rain-fed agriculture is prevalent",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "SOUTHEASTERN ZIMBABWE",
+      "type": "LOCATION",
+      "description": "The specific region where the study on maize production was conducted",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "CHIREDZI",
+      "type": "LOCATION",
+      "description": "One of the two districts in southeastern Zimbabwe sampled for the study",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "CHIPINGE",
+      "type": "LOCATION",
+      "description": "One of the two districts in southeastern Zimbabwe sampled for the study",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "RAIN-FED AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "Agricultural system relying on rainfall for water supply",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "TOTAL MAIZE PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The total yield of maize measured in kg/ha",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "CONTROL FUNCTION APPROACH",
+      "type": "METHOD",
+      "description": "A statistical method used to control for endogeneity of the adoption variable",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "COBB–DOUGLAS MODEL",
+      "type": "METHOD",
+      "description": "An economic model used to estimate total maize production",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "FOOD INSECURITY",
+      "type": "CONDITION",
+      "description": "A state of lacking consistent access to enough food for an active, healthy life",
+      "source_id": "paper_11127"
+    },
+    {
+      "name": "SMALLHOLDER FARMERS",
+      "type": "CONCEPT",
+      "description": "Farmers who manage small plots of land and adopted DT maize varieties",
+      "source_id": "paper_11127"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT",
+      "target": "MAIZE",
+      "description": "limits production of",
+      "weight": "9",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "TOTAL MAIZE PRODUCTION",
+      "description": "increases",
+      "weight": "10",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "MAIZE",
+      "target": "DROUGHT TOLERANCE",
+      "description": "can be developed for",
+      "weight": "8",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "RAIN-FED AGRICULTURE",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "is common in",
+      "weight": "7",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "SOUTHEASTERN ZIMBABWE",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "CHIREDZI",
+      "target": "SOUTHEASTERN ZIMBABWE",
+      "description": "is a district in",
+      "weight": "10",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "CHIPINGE",
+      "target": "SOUTHEASTERN ZIMBABWE",
+      "description": "is a district in",
+      "weight": "10",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "SMALLHOLDER FARMERS",
+      "target": "MAIZE",
+      "description": "adopt improved varieties of",
+      "weight": "8",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "CONTROL FUNCTION APPROACH",
+      "target": "COBB–DOUGLAS MODEL",
+      "description": "is used to estimate variables within",
+      "weight": "9",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "COBB–DOUGLAS MODEL",
+      "target": "TOTAL MAIZE PRODUCTION",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_11127"
+    },
+    {
+      "source": "TOTAL MAIZE PRODUCTION",
+      "target": "FOOD INSECURITY",
+      "description": "helps curb",
+      "weight": "9",
+      "source_id": "paper_11127"
+    }
+  ]
+}

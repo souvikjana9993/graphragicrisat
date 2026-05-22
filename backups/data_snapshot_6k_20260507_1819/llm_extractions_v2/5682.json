@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "CARBON SEQUESTRATION",
+      "type": "CONCEPT",
+      "description": "The process of capturing and storing atmospheric carbon dioxide to mitigate global warming",
+      "source_id": "paper_5682"
+    },
+    {
+      "name": "CARBON TRADING",
+      "type": "CONCEPT",
+      "description": "A market-based system to reduce greenhouse gas emissions by trading emission permits",
+      "source_id": "paper_5682"
+    },
+    {
+      "name": "RURAL POOR",
+      "type": "CONCEPT",
+      "description": "Socio-economically disadvantaged populations living in rural areas",
+      "source_id": "paper_5682"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperatures and weather patterns, often caused by human activity",
+      "source_id": "paper_5682"
+    },
+    {
+      "name": "GLOBAL WARMING",
+      "type": "CONDITION",
+      "description": "The long-term heating of Earth's climate system observed since the pre-industrial period",
+      "source_id": "paper_5682"
+    },
+    {
+      "name": "GREENHOUSE GASES",
+      "type": "CONCEPT",
+      "description": "Gases in Earth's atmosphere that trap heat, contributing to the greenhouse effect",
+      "source_id": "paper_5682"
+    },
+    {
+      "name": "CO2",
+      "type": "CONCEPT",
+      "description": "Carbon dioxide, a primary greenhouse gas contributing to global warming",
+      "source_id": "paper_5682"
+    },
+    {
+      "name": "ATMOSPHERE",
+      "type": "LOCATION",
+      "description": "The layer of gases surrounding the Earth",
+      "source_id": "paper_5682"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CARBON SEQUESTRATION",
+      "target": "RURAL POOR",
+      "description": "intended to benefit",
+      "weight": "7",
+      "source_id": "paper_5682"
+    },
+    {
+      "source": "CARBON TRADING",
+      "target": "RURAL POOR",
+      "description": "intended to benefit",
+      "weight": "7",
+      "source_id": "paper_5682"
+    },
+    {
+      "source": "GLOBAL WARMING",
+      "target": "CLIMATE CHANGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5682"
+    },
+    {
+      "source": "GREENHOUSE GASES",
+      "target": "GLOBAL WARMING",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5682"
+    },
+    {
+      "source": "CO2",
+      "target": "GREENHOUSE GASES",
+      "description": "is a specific type of",
+      "weight": "10",
+      "source_id": "paper_5682"
+    },
+    {
+      "source": "GREENHOUSE GASES",
+      "target": "ATMOSPHERE",
+      "description": "concentrated in",
+      "weight": "9",
+      "source_id": "paper_5682"
+    }
+  ]
+}

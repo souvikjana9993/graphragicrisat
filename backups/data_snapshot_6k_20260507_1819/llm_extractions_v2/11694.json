@@ -1,0 +1,199 @@
+{
+  "entities": [
+    {
+      "name": "FOOD-BORNE DISEASES",
+      "type": "CONDITION",
+      "description": "Diseases caused by consuming contaminated food, often resulting from poor hygiene and handling practices",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "FOOD HYGIENE AND HANDLING PRACTICES",
+      "type": "CONCEPT",
+      "description": "The set of behaviors and procedures used to maintain food safety and cleanliness at home",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "HYDERABAD",
+      "type": "LOCATION",
+      "description": "The urban and peri-urban area in India where the study was conducted",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study took place",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "REFRIGERATOR",
+      "type": "CONCEPT",
+      "description": "An appliance used for the cold storage of food to prevent spoilage",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONCEPT",
+      "description": "The thermal state of the refrigerator used to assess food storage quality",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "EDIBILITY",
+      "type": "CONCEPT",
+      "description": "The criteria used by residents, such as smell and appearance, to determine if food is fit for consumption",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "NON-VEGETARIAN FOOD",
+      "type": "CONCEPT",
+      "description": "Animal-source foods requiring specific handling and storage indicators",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "LATENT CLASS ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical technique used to identify unobserved subgroups within a population based on heterogeneity of traits",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "LATENT CLASS MODELLING",
+      "type": "METHOD",
+      "description": "A method used to analyze the relationship between covariates and latent class membership",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "SOCIO-DEMOGRAPHIC VARIABLES",
+      "type": "CONCEPT",
+      "description": "Characteristics such as education, age, and income",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "SOCIO-ECONOMIC VARIABLES",
+      "type": "CONCEPT",
+      "description": "Factors related to social class and economic status",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "SOCIO-SPATIAL VARIABLES",
+      "type": "CONCEPT",
+      "description": "Factors related to the geographic and social environment",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "HEALTH OUTCOMES",
+      "type": "CONCEPT",
+      "description": "Physical health results used as covariates in the study",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "DIETARY OUTCOMES",
+      "type": "CONCEPT",
+      "description": "Results related to food consumption and nutrition used as covariates",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "FOOD SAFETY PRACTICES",
+      "type": "CONCEPT",
+      "description": "Broad interventions and behaviors aimed at reducing food-borne illness in developing countries",
+      "source_id": "paper_11694"
+    },
+    {
+      "name": "OBESITY",
+      "type": "CONDITION",
+      "description": "A health condition used as a covariate to distinguish latent classes in households without refrigerators",
+      "source_id": "paper_11694"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FOOD HYGIENE AND HANDLING PRACTICES",
+      "target": "FOOD-BORNE DISEASES",
+      "description": "Lack of or inappropriate practices lead to an increase in diseases",
+      "weight": "9",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "LATENT CLASS ANALYSIS",
+      "target": "FOOD HYGIENE AND HANDLING PRACTICES",
+      "description": "Used to identify subgroups based on hygiene and handling traits",
+      "weight": "10",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "HYDERABAD",
+      "target": "INDIA",
+      "description": "Located within",
+      "weight": "10",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "REFRIGERATOR",
+      "target": "FOOD HYGIENE AND HANDLING PRACTICES",
+      "description": "Used as a key tool for food storage and hygiene",
+      "weight": "8",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "REFRIGERATOR",
+      "description": "The setting and actual heat level of the appliance",
+      "weight": "9",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "LATENT CLASS MODELLING",
+      "target": "FOOD HYGIENE AND HANDLING PRACTICES",
+      "description": "Used to identify predictors of adequate practices",
+      "weight": "9",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "SOCIO-DEMOGRAPHIC VARIABLES",
+      "target": "LATENT CLASS MODELLING",
+      "description": "Used as covariates in the modelling process",
+      "weight": "8",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "SOCIO-ECONOMIC VARIABLES",
+      "target": "LATENT CLASS MODELLING",
+      "description": "Used as covariates in the modelling process",
+      "weight": "8",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "SOCIO-SPATIAL VARIABLES",
+      "target": "LATENT CLASS MODELLING",
+      "description": "Used as covariates in the modelling process",
+      "weight": "8",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "HEALTH OUTCOMES",
+      "target": "LATENT CLASS MODELLING",
+      "description": "Used as covariates in the modelling process",
+      "weight": "8",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "DIETARY OUTCOMES",
+      "target": "LATENT CLASS MODELLING",
+      "description": "Used as covariates in the modelling process",
+      "weight": "8",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "OBESITY",
+      "target": "HEALTH OUTCOMES",
+      "description": "An example of a health outcome used in the study",
+      "weight": "9",
+      "source_id": "paper_11694"
+    },
+    {
+      "source": "FOOD HYGIENE AND HANDLING PRACTICES",
+      "target": "FOOD SAFETY PRACTICES",
+      "description": "Specific behaviors that contribute to overall food safety",
+      "weight": "10",
+      "source_id": "paper_11694"
+    }
+  ]
+}

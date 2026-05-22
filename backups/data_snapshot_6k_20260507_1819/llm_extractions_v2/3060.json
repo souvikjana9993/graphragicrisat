@@ -1,0 +1,202 @@
+{
+  "entities": [
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "A cereal crop (Pennisetum glaucum) used in relay and intercrop systems",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop (Vigna unguiculata) used in relay and intercrop systems",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "RELAY CROPPING",
+      "type": "METHOD",
+      "description": "A cropping system where a second crop is planted into a standing first crop to exploit a long growing season",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously on the same field",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "SAHELIAN ZONE",
+      "type": "LOCATION",
+      "description": "The semi-arid region of Africa where the study was conducted",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the field trials were conducted",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "EARLY ONSET OF RAINS",
+      "type": "CONDITION",
+      "description": "Rainy season starting 15-20 days earlier than average, extending the growing season",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "GROWING SEASON",
+      "type": "CONCEPT",
+      "description": "The period of time during which a crop grows, ranging from 139 to 150 days in this study",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "DRY MATTER",
+      "type": "TRAIT",
+      "description": "The mass of the plant excluding water",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "LEAF AREA",
+      "type": "TRAIT",
+      "description": "The total surface area of the leaves of a plant",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of agricultural production harvested per unit area",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "COMPETITIVE EFFECTS",
+      "type": "CONCEPT",
+      "description": "Negative interactions between crops competing for resources in intercropping systems",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "CEREALS",
+      "type": "CONCEPT",
+      "description": "A group of grass crops grown for their edible seeds",
+      "source_id": "paper_3060"
+    },
+    {
+      "name": "LEGUMES",
+      "type": "CONCEPT",
+      "description": "A group of plants that produce seeds in pods",
+      "source_id": "paper_3060"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RELAY CROPPING",
+      "target": "MILLET",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "COWPEA",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "MILLET",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "COWPEA",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "EARLY ONSET OF RAINS",
+      "target": "RELAY CROPPING",
+      "description": "makes it a better option",
+      "weight": "9",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "DRY MATTER",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "LEAF AREA",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "COMPETITIVE EFFECTS",
+      "description": "induces",
+      "weight": "8",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "COMPETITIVE EFFECTS",
+      "description": "avoids",
+      "weight": "9",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "CEREALS",
+      "description": "rotates",
+      "weight": "9",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "LEGUMES",
+      "description": "rotates",
+      "weight": "9",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "MILLET",
+      "target": "CEREALS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "COWPEA",
+      "target": "LEGUMES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "NIGER",
+      "target": "SAHELIAN ZONE",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_3060"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "INTERCROPPING",
+      "description": "is compared with",
+      "weight": "10",
+      "source_id": "paper_3060"
+    }
+  ]
+}

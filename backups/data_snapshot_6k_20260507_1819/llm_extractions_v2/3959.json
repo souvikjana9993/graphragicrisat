@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "UREA HYDROLYSIS",
+      "type": "CONCEPT",
+      "description": "The chemical process where urea is broken down into ammonia and carbon dioxide in the soil",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting ammonia to nitrite and then to nitrate",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "SOIL",
+      "type": "LOCATION",
+      "description": "The medium where urea hydrolysis and nitrification processes occur",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "CHEMICALS",
+      "type": "METHOD",
+      "description": "Synthetic substances used to retard urea hydrolysis and nitrification",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "NITROGEN TRANSFORMATIONS",
+      "type": "CONCEPT",
+      "description": "The various processes by which nitrogen changes form in the soil environment",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "FERTILIZER NITROGEN EFFICIENCY",
+      "type": "CONCEPT",
+      "description": "The effectiveness with which plants utilize nitrogen from applied fertilizers",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "CROP PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The agricultural process of growing crops for harvest",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "N METABOLISM",
+      "type": "CONCEPT",
+      "description": "The biochemical processes by which plants absorb and utilize nitrogen",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "PLANTS",
+      "type": "ORGANISM",
+      "description": "Biological organisms that absorb nitrogen for growth and development",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "INDIGENOUS MATERIALS",
+      "type": "METHOD",
+      "description": "Locally sourced, cost-effective materials used to control nitrogen processes in soil",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "UREASE INHIBITORS",
+      "type": "METHOD",
+      "description": "Specific chemicals that inhibit the enzyme urease to reduce urea hydrolysis",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "AMMONIA VOLATILIZATION",
+      "type": "CONDITION",
+      "description": "The loss of nitrogen from the soil surface into the atmosphere as ammonia gas",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "LEACHING",
+      "type": "CONDITION",
+      "description": "The downward movement of dissolved nutrients, such as urea or nitrates, through the soil profile",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "DENITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The microbial process of reducing nitrate to gaseous nitrogen",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "NH4-N",
+      "type": "CONCEPT",
+      "description": "Nitrogen in the form of ammonium ions",
+      "source_id": "paper_3959"
+    },
+    {
+      "name": "UREA",
+      "type": "CONCEPT",
+      "description": "A nitrogenous organic compound used widely as a fertilizer",
+      "source_id": "paper_3959"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHEMICALS",
+      "target": "UREA HYDROLYSIS",
+      "description": "retards",
+      "weight": "8",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "CHEMICALS",
+      "target": "NITRIFICATION",
+      "description": "retards",
+      "weight": "8",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "UREA HYDROLYSIS",
+      "target": "SOIL",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "NITRIFICATION",
+      "target": "SOIL",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "NITROGEN TRANSFORMATIONS",
+      "target": "FERTILIZER NITROGEN EFFICIENCY",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "FERTILIZER NITROGEN EFFICIENCY",
+      "target": "CROP PRODUCTION",
+      "description": "enhances",
+      "weight": "9",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "N METABOLISM",
+      "target": "PLANTS",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "INDIGENOUS MATERIALS",
+      "target": "UREA HYDROLYSIS",
+      "description": "controls",
+      "weight": "7",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "INDIGENOUS MATERIALS",
+      "target": "NITRIFICATION",
+      "description": "controls",
+      "weight": "7",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "UREASE INHIBITORS",
+      "target": "AMMONIA VOLATILIZATION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "UREASE INHIBITORS",
+      "target": "UREA HYDROLYSIS",
+      "description": "inhibits",
+      "weight": "10",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "LEACHING",
+      "target": "UREA",
+      "description": "causes loss of",
+      "weight": "9",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "NITRIFICATION",
+      "target": "LEACHING",
+      "description": "leads to",
+      "weight": "8",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "NITRIFICATION",
+      "target": "DENITRIFICATION",
+      "description": "leads to",
+      "weight": "8",
+      "source_id": "paper_3959"
+    },
+    {
+      "source": "NH4-N",
+      "target": "N METABOLISM",
+      "description": "utilized in",
+      "weight": "9",
+      "source_id": "paper_3959"
+    }
+  ]
+}

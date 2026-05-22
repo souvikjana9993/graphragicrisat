@@ -1,0 +1,234 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop studied for grain yield and response to tillage systems",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of maize grain produced per unit area",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "SOIL ORGANIC CARBON",
+      "type": "TRAIT",
+      "description": "A measure of carbon stored in the soil, critical for fertility and sustainability",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "CONSERVATION AGRICULTURE",
+      "type": "METHOD",
+      "description": "A farming method focusing on minimum soil disturbance, permanent soil cover, and crop rotations",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "CONVENTIONAL TILLAGE",
+      "type": "METHOD",
+      "description": "A traditional farming method involving intensive soil cultivation",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "MANURE APPLICATION",
+      "type": "METHOD",
+      "description": "The practice of adding animal manure to soil to improve fertility",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "CROP RESIDUE RETENTION",
+      "type": "METHOD",
+      "description": "The practice of leaving crop residues on the soil surface",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "REDUCED TILLAGE",
+      "type": "METHOD",
+      "description": "A method of minimizing soil disturbance to increase organic carbon",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "SOUTHERN AFRICA",
+      "type": "LOCATION",
+      "description": "The geographical region where the farming systems are analyzed",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "TRAIT",
+      "description": "The capacity of soil to provide essential nutrients for plant growth",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "CROP RESIDUES",
+      "type": "CONCEPT",
+      "description": "Plant materials remaining after harvest, used for livestock feed or soil mulch",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "LIVESTOCK",
+      "type": "ORGANISM",
+      "description": "Farm animals integrated into the cropping system",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "A climatic condition where water and feed availability are limited",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to sufficient food",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "INCOME",
+      "type": "CONCEPT",
+      "description": "Financial returns derived from crop production",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The efficiency of the soil in producing crop yields",
+      "source_id": "paper_3159"
+    },
+    {
+      "name": "SUSTAINABILITY",
+      "type": "CONCEPT",
+      "description": "The ability of the farming system to maintain productivity over the long term",
+      "source_id": "paper_3159"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "MAIZE",
+      "description": "affects grain yield",
+      "weight": "8",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "MANURE APPLICATION",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "MANURE APPLICATION",
+      "target": "SOIL FERTILITY",
+      "description": "restores",
+      "weight": "10",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "CONVENTIONAL TILLAGE",
+      "target": "MAIZE",
+      "description": "compared for grain yield",
+      "weight": "7",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "CROP RESIDUE RETENTION",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "REDUCED TILLAGE",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "MAIZE",
+      "target": "GRAIN YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON",
+      "target": "SOIL FERTILITY",
+      "description": "determines",
+      "weight": "10",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON",
+      "target": "PRODUCTIVITY",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON",
+      "target": "SUSTAINABILITY",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "FOOD SECURITY",
+      "description": "ensures",
+      "weight": "9",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "INCOME",
+      "description": "ensures",
+      "weight": "9",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "CROP RESIDUES",
+      "target": "LIVESTOCK",
+      "description": "used as feed for",
+      "weight": "8",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "CROP RESIDUES",
+      "target": "CONSERVATION AGRICULTURE",
+      "description": "used as mulch in",
+      "weight": "8",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "LIVESTOCK",
+      "target": "MANURE APPLICATION",
+      "description": "provides source for",
+      "weight": "9",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "SOUTHERN AFRICA",
+      "target": "CONSERVATION AGRICULTURE",
+      "description": "location of study",
+      "weight": "7",
+      "source_id": "paper_3159"
+    },
+    {
+      "source": "DRY SEASON",
+      "target": "LIVESTOCK",
+      "description": "affects feed availability for",
+      "weight": "7",
+      "source_id": "paper_3159"
+    }
+  ]
+}

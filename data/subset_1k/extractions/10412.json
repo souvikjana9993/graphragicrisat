@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "Grains that are a primary part of human diet and nutrition in South Asia",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "GRAIN LEGUMES",
+      "type": "CROP",
+      "description": "Leguminous crops used for nutritional security and soil nitrogen fixation",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Cereal crop cultivated during the rainy season (kharif) in South Asia",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the study on rice-fallows was conducted",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "RICE-FALLOWS",
+      "type": "CONCEPT",
+      "description": "Land left uncultivated after rice harvest, identified as target domains for intensification",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Moderate-resolution imaging Spectroradiometer used for temporal data collection",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Analytical techniques applied to MODIS data to map fallow lands",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used at 250m spatial resolution to map rice systems",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "GROUND SURVEY DATA",
+      "type": "METHOD",
+      "description": "Intensive field data used for mapping and validating rice systems and fallows",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "SUB-NATIONAL STATISTICS",
+      "type": "METHOD",
+      "description": "Regional statistics used to validate derived physical and irrigated rice areas",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "DRY LAND AREAS",
+      "type": "CONDITION",
+      "description": "Low income rural environments in South Asia dependent on staples",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "RESIDUAL MOISTURE",
+      "type": "CONDITION",
+      "description": "Moisture remaining in rice-fallows that allows for the growth of short duration legumes",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "SOIL NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nutrient in the soil that is fixed by the cultivation of grain legumes",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "NUTRITIONAL SECURITY",
+      "type": "CONCEPT",
+      "description": "The goal of increasing grain legume productivity for the growing population",
+      "source_id": "paper_10412"
+    },
+    {
+      "name": "INTENSIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of increasing agricultural productivity, specifically in rice-fallow areas",
+      "source_id": "paper_10412"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CEREALS",
+      "target": "SOUTH ASIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "SOUTH ASIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "RICE",
+      "target": "SOUTH ASIA",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "RICE-FALLOWS",
+      "target": "RICE",
+      "description": "follows cultivation of",
+      "weight": "10",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "RICE-FALLOWS",
+      "target": "RESIDUAL MOISTURE",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "RICE-FALLOWS",
+      "target": "GRAIN LEGUMES",
+      "description": "suitable area for",
+      "weight": "9",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "MODIS",
+      "target": "RICE-FALLOWS",
+      "description": "used to map",
+      "weight": "10",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "MODIS",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "NDVI",
+      "target": "RICE-FALLOWS",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "GROUND SURVEY DATA",
+      "target": "RICE-FALLOWS",
+      "description": "used to map and validate",
+      "weight": "10",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "SUB-NATIONAL STATISTICS",
+      "target": "RICE",
+      "description": "used to validate",
+      "weight": "8",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "SOIL NITROGEN",
+      "description": "fixes",
+      "weight": "10",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "NUTRITIONAL SECURITY",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_10412"
+    },
+    {
+      "source": "RICE-FALLOWS",
+      "target": "INTENSIFICATION",
+      "description": "target for",
+      "weight": "9",
+      "source_id": "paper_10412"
+    }
+  ]
+}

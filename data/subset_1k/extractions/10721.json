@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The primary crop studied, Sorghum bicolor L. moench, focused on for grain production in drylands",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area, used as a measure of crop performance",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "RATIO OF YIELD TO EVAPOTRANSPIRATION",
+      "type": "TRAIT",
+      "description": "A measure of water-use efficiency calculating the grain yield relative to water lost through evapotranspiration",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "SYSTEM ANALYSIS",
+      "type": "METHOD",
+      "description": "An analytical approach used to identify plant traits that can be altered to improve yield",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "MOISTURE-LIMITED ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "Environments characterized by limited available water resources affecting crop growth",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "APSIM MODEL",
+      "type": "METHOD",
+      "description": "A crop simulation model used to simulate sorghum growth and development over time",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "KANO, NIGERIA",
+      "type": "LOCATION",
+      "description": "A study location in Nigeria characterized by high rainfall variability",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "BAMAKO, MALI",
+      "type": "LOCATION",
+      "description": "A study location in Mali characterized by high rainfall variability",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "SUDANO-SAHELIAN REGION",
+      "type": "LOCATION",
+      "description": "The geographical region in West Africa where the study was conducted",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The broader region encompassing the Sudano-Sahelian area",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "LEAF SIZE",
+      "type": "TRAIT",
+      "description": "A plant morphological trait adjusted in the APSIM model to observe effects on yield",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "SEED GROWTH",
+      "type": "TRAIT",
+      "description": "A plant developmental trait adjusted in the APSIM model to observe effects on yield",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "CLIMATE VARIABILITY",
+      "type": "CONDITION",
+      "description": "Fluctuations in climate patterns that necessitate adaptation strategies for crop varieties",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "SOIL QUALITY",
+      "type": "CONDITION",
+      "description": "The health and nutrient status of the soil, which needs to be maintained for crop improvement",
+      "source_id": "paper_10721"
+    },
+    {
+      "name": "SEMIARID ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Regions with low rainfall where dryland crops are typically grown",
+      "source_id": "paper_10721"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "APSIM MODEL",
+      "target": "SORGHUM",
+      "description": "used to simulate the growth and development of",
+      "weight": "10",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "KANO, NIGERIA",
+      "description": "used to simulate sorghum growth at this location",
+      "weight": "8",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "BAMAKO, MALI",
+      "description": "used to simulate sorghum growth at this location",
+      "weight": "8",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MOISTURE-LIMITED ENVIRONMENT",
+      "description": "grown and studied within",
+      "weight": "9",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEMIARID ENVIRONMENTS",
+      "description": "grown and studied within",
+      "weight": "9",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "SYSTEM ANALYSIS",
+      "target": "LEAF SIZE",
+      "description": "used to identify as a trait for alteration",
+      "weight": "7",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "SYSTEM ANALYSIS",
+      "target": "SEED GROWTH",
+      "description": "used to identify as a trait for alteration",
+      "weight": "7",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "LEAF SIZE",
+      "target": "GRAIN YIELD",
+      "description": "decreasing this trait resulted in decreased yield",
+      "weight": "8",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "SEED GROWTH",
+      "target": "GRAIN YIELD",
+      "description": "increasing this trait resulted in decreased yield",
+      "weight": "8",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "LEAF SIZE",
+      "target": "RATIO OF YIELD TO EVAPOTRANSPIRATION",
+      "description": "decreasing this trait resulted in a decrease of this ratio",
+      "weight": "8",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "SEED GROWTH",
+      "target": "RATIO OF YIELD TO EVAPOTRANSPIRATION",
+      "description": "increasing this trait resulted in a decrease of this ratio",
+      "weight": "8",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "KANO, NIGERIA",
+      "target": "SUDANO-SAHELIAN REGION",
+      "description": "located within",
+      "weight": "10",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "BAMAKO, MALI",
+      "target": "SUDANO-SAHELIAN REGION",
+      "description": "located within",
+      "weight": "10",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "SUDANO-SAHELIAN REGION",
+      "target": "WEST AFRICA",
+      "description": "located within",
+      "weight": "10",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "CLIMATE VARIABILITY",
+      "target": "SORGHUM",
+      "description": "requires adaptation strategies for crop varieties",
+      "weight": "8",
+      "source_id": "paper_10721"
+    },
+    {
+      "source": "SOIL QUALITY",
+      "target": "SORGHUM",
+      "description": "needs to be maintained to improve crop performance",
+      "weight": "7",
+      "source_id": "paper_10721"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop studied for drought tolerance",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "INTERMITTENT DROUGHT",
+      "type": "CONDITION",
+      "description": "A stress condition that varies in intensity and limits groundnut yields",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The weight of pods produced, which is negatively affected by drought stress",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "ROOT DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The growth and structural development of the root system",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "WATER UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of water absorbed by the plant from the soil",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency of water use during transpiration",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "YIELD COMPONENTS",
+      "type": "CONCEPT",
+      "description": "The various physiological and morphological factors that contribute to overall pod yield",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "WELL WATERED",
+      "type": "CONDITION",
+      "description": "Control condition where plants receive sufficient water",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "MILD STRESS",
+      "type": "CONDITION",
+      "description": "Low intensity intermittent drought stress denoted as DS-1",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "MEDIUM STRESS",
+      "type": "CONDITION",
+      "description": "Moderate intensity intermittent drought stress denoted as DS-2",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "SEVERE STRESS",
+      "type": "CONDITION",
+      "description": "High intensity intermittent drought stress denoted as DS-3",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "ROOT LENGTH DENSITY",
+      "type": "TRAIT",
+      "description": "A measure of the length of roots per unit volume of soil",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "WATER EXTRACTION",
+      "type": "TRAIT",
+      "description": "The process of removing water from the soil profile",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "RELATIVE HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of the harvest index under stress to the harvest index under well-watered conditions",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "STRESS TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a genotype to maintain productivity under stress conditions",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "PLANT LEAF WEIGHT",
+      "type": "TRAIT",
+      "description": "The total weight of the plant's leaves",
+      "source_id": "paper_5331"
+    },
+    {
+      "name": "LEAF AREA",
+      "type": "TRAIT",
+      "description": "The total surface area of the plant's leaves",
+      "source_id": "paper_5331"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTERMITTENT DROUGHT",
+      "target": "GROUNDNUT",
+      "description": "severely limits yields of",
+      "weight": "10",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "INTERMITTENT DROUGHT",
+      "target": "POD YIELD",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "POD YIELD",
+      "description": "genotypes vary in",
+      "weight": "8",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "MILD STRESS",
+      "target": "POD YIELD",
+      "description": "decreases by 35%",
+      "weight": "8",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "MEDIUM STRESS",
+      "target": "POD YIELD",
+      "description": "decreases by 55%",
+      "weight": "8",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "SEVERE STRESS",
+      "target": "POD YIELD",
+      "description": "decreases by 70%",
+      "weight": "8",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "ROOT LENGTH DENSITY",
+      "target": "STRESS TOLERANCE",
+      "description": "did not discriminate tolerant from sensitive lines",
+      "weight": "4",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "WATER UPTAKE",
+      "target": "ROOT LENGTH DENSITY",
+      "description": "weakly significant relationship under water stress",
+      "weight": "3",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "WATER UPTAKE",
+      "target": "POD YIELD",
+      "description": "correlated under well watered conditions",
+      "weight": "6",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "RELATIVE HARVEST INDEX",
+      "target": "POD YIELD",
+      "description": "closely related in all three intermittent stresses",
+      "weight": "9",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "RELATIVE HARVEST INDEX",
+      "target": "STRESS TOLERANCE",
+      "description": "used as an index of",
+      "weight": "10",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "RELATIVE HARVEST INDEX",
+      "target": "PLANT LEAF WEIGHT",
+      "description": "negatively related under medium and severe stresses",
+      "weight": "8",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "LEAF AREA",
+      "target": "WATER UPTAKE",
+      "description": "lower leaf area may use water more sparingly",
+      "weight": "7",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "LEAF AREA",
+      "target": "POD YIELD",
+      "description": "lower leaf area has less damaging consequences for",
+      "weight": "7",
+      "source_id": "paper_5331"
+    },
+    {
+      "source": "SEVERE STRESS",
+      "target": "WATER EXTRACTION",
+      "description": "highest water extraction occurs under",
+      "weight": "8",
+      "source_id": "paper_5331"
+    }
+  ]
+}

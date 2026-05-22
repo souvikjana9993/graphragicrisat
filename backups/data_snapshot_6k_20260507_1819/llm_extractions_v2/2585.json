@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "WATER",
+      "type": "CONDITION",
+      "description": "A limiting factor in agriculture due to unpredictable rainfall and competition from human and industrial uses",
+      "source_id": "paper_2585"
+    },
+    {
+      "name": "AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "The sector where water is a limiting factor for productivity",
+      "source_id": "paper_2585"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "An unpredictable natural factor affecting water availability",
+      "source_id": "paper_2585"
+    },
+    {
+      "name": "AGRICULTURAL PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The output of farming that needs to be sustained through efficient systems",
+      "source_id": "paper_2585"
+    },
+    {
+      "name": "WATER-USE-EFFICIENT SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Systems required to sustain agricultural productivity under water limitations",
+      "source_id": "paper_2585"
+    },
+    {
+      "name": "TRANSPIRATION-EFFICIENT CULTIVARS",
+      "type": "CROP",
+      "description": "Plant varieties that serve as a key component of water-use-efficient systems",
+      "source_id": "paper_2585"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER",
+      "target": "AGRICULTURE",
+      "description": "is a limiting factor in",
+      "weight": "9",
+      "source_id": "paper_2585"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "WATER",
+      "description": "affects the availability of",
+      "weight": "8",
+      "source_id": "paper_2585"
+    },
+    {
+      "source": "WATER-USE-EFFICIENT SYSTEMS",
+      "target": "AGRICULTURAL PRODUCTIVITY",
+      "description": "are required to sustain",
+      "weight": "9",
+      "source_id": "paper_2585"
+    },
+    {
+      "source": "TRANSPIRATION-EFFICIENT CULTIVARS",
+      "target": "WATER-USE-EFFICIENT SYSTEMS",
+      "description": "are an important component of",
+      "weight": "10",
+      "source_id": "paper_2585"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, the crop species being studied for grain mold resistance.",
+      "source_id": "paper_2826"
+    },
+    {
+      "name": "GRAIN MOLD",
+      "type": "CONDITION",
+      "description": "A disease complex that affects sorghum plants.",
+      "source_id": "paper_2826"
+    },
+    {
+      "name": "GRAIN MOLD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of sorghum germ plasm accessions to resist the grain mold complex.",
+      "source_id": "paper_2826"
+    },
+    {
+      "name": "FLAVAN-4-OLS",
+      "type": "CONCEPT",
+      "description": "Chemical compounds found in sorghum leaf tissues whose concentration correlates with grain mold resistance.",
+      "source_id": "paper_2826"
+    },
+    {
+      "name": "METHANOL EXTRACTION",
+      "type": "METHOD",
+      "description": "The process of using methanol and acidified methanol to extract compounds from leaf tissues for analysis.",
+      "source_id": "paper_2826"
+    },
+    {
+      "name": "DAYS AFTER EMERGENCE",
+      "type": "CONCEPT",
+      "description": "The measurement of time from plant emergence used to track leaf development and compound concentration.",
+      "source_id": "paper_2826"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN MOLD",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_2826"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN MOLD RESISTANCE",
+      "description": "exhibits varying levels of",
+      "weight": "10",
+      "source_id": "paper_2826"
+    },
+    {
+      "source": "GRAIN MOLD RESISTANCE",
+      "target": "FLAVAN-4-OLS",
+      "description": "is associated with higher concentrations of",
+      "weight": "9",
+      "source_id": "paper_2826"
+    },
+    {
+      "source": "METHANOL EXTRACTION",
+      "target": "FLAVAN-4-OLS",
+      "description": "is used to analyze",
+      "weight": "10",
+      "source_id": "paper_2826"
+    },
+    {
+      "source": "FLAVAN-4-OLS",
+      "target": "GRAIN MOLD RESISTANCE",
+      "description": "serves as a marker for screening",
+      "weight": "8",
+      "source_id": "paper_2826"
+    },
+    {
+      "source": "DAYS AFTER EMERGENCE",
+      "target": "FLAVAN-4-OLS",
+      "description": "influences the concentration of",
+      "weight": "7",
+      "source_id": "paper_2826"
+    }
+  ]
+}

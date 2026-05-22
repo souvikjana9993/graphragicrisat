@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop assessed for yield impacts under different warming scenarios",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop assessed for yield impacts under different warming scenarios",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop assessed for yield impacts under different warming scenarios",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "YIELD VARIABILITY",
+      "type": "TRAIT",
+      "description": "The fluctuation in crop yields over time or space",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "1.5 °C WARMING",
+      "type": "CONDITION",
+      "description": "A global temperature rise scenario of 1.5 degrees Celsius above pre-industrial levels",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "2.0 °C WARMING",
+      "type": "CONDITION",
+      "description": "A global temperature rise scenario of 2.0 degrees Celsius above pre-industrial levels",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "WEST AFRICAN SUDAN SAVANNA",
+      "type": "LOCATION",
+      "description": "The geographic region where the study was conducted",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "CROP MODELS",
+      "type": "METHOD",
+      "description": "Computational tools used to simulate crop yields under various conditions",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "SUSTAINABLE INTENSIFICATION",
+      "type": "CONCEPT",
+      "description": "An approach to increasing agricultural productivity while reducing environmental impact",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "FERTILIZER USE",
+      "type": "CONDITION",
+      "description": "The application of nutrients to crops to improve growth and yield",
+      "source_id": "paper_10554"
+    },
+    {
+      "name": "RISK AND MARKET ANALYSIS",
+      "type": "METHOD",
+      "description": "Analytical methods used to understand the economic and risk implications of yield changes",
+      "source_id": "paper_10554"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "1.5 °C WARMING",
+      "target": "CROP YIELD",
+      "description": "affects yield levels",
+      "weight": "8",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "2.0 °C WARMING",
+      "target": "CROP YIELD",
+      "description": "affects yield levels",
+      "weight": "8",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "CROP YIELD",
+      "description": "used to simulate",
+      "weight": "9",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "MAIZE",
+      "description": "used to simulate",
+      "weight": "9",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "PEARL MILLET",
+      "description": "used to simulate",
+      "weight": "9",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "SORGHUM",
+      "description": "used to simulate",
+      "weight": "9",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "WEST AFRICAN SUDAN SAVANNA",
+      "target": "MAIZE",
+      "description": "location of growth",
+      "weight": "10",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "WEST AFRICAN SUDAN SAVANNA",
+      "target": "PEARL MILLET",
+      "description": "location of growth",
+      "weight": "10",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "WEST AFRICAN SUDAN SAVANNA",
+      "target": "SORGHUM",
+      "description": "location of growth",
+      "weight": "10",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "FERTILIZER USE",
+      "target": "CROP YIELD",
+      "description": "influences yield levels",
+      "weight": "9",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "SUSTAINABLE INTENSIFICATION",
+      "target": "FOOD SECURITY",
+      "description": "promoted for improving",
+      "weight": "8",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "CROP YIELD",
+      "target": "FOOD SECURITY",
+      "description": "impacts",
+      "weight": "9",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "YIELD VARIABILITY",
+      "target": "FOOD SECURITY",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_10554"
+    },
+    {
+      "source": "RISK AND MARKET ANALYSIS",
+      "target": "FOOD SECURITY",
+      "description": "used to understand implications for",
+      "weight": "8",
+      "source_id": "paper_10554"
+    }
+  ]
+}

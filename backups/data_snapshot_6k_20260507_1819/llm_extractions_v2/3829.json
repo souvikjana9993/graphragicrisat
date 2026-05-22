@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "MARIGOLD",
+      "type": "CROP",
+      "description": "A flower used as a diagnostic tool for Botrytis grey mold",
+      "source_id": "paper_3829"
+    },
+    {
+      "name": "BOTRYTIS GREY MOLD",
+      "type": "CONDITION",
+      "description": "A disease caused by the fungus Botrytis cinerea that attacks reproductive structures of plants",
+      "source_id": "paper_3829"
+    },
+    {
+      "name": "BOTRYTIS CINEREA",
+      "type": "ORGANISM",
+      "description": "The fungus that causes Botrytis grey mold",
+      "source_id": "paper_3829"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A plant mainly attacked by Botrytis grey mold",
+      "source_id": "paper_3829"
+    },
+    {
+      "name": "FLOWER ABORTION",
+      "type": "TRAIT",
+      "description": "A common symptom of Botrytis grey mold",
+      "source_id": "paper_3829"
+    },
+    {
+      "name": "FUNGICIDES",
+      "type": "METHOD",
+      "description": "Chemicals used to control Botrytis grey mold",
+      "source_id": "paper_3829"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MARIGOLD",
+      "target": "BOTRYTIS GREY MOLD",
+      "description": "used as a diagnostic tool for",
+      "weight": "7",
+      "source_id": "paper_3829"
+    },
+    {
+      "source": "BOTRYTIS CINEREA",
+      "target": "BOTRYTIS GREY MOLD",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3829"
+    },
+    {
+      "source": "BOTRYTIS GREY MOLD",
+      "target": "CHICKPEA",
+      "description": "attacks",
+      "weight": "9",
+      "source_id": "paper_3829"
+    },
+    {
+      "source": "BOTRYTIS GREY MOLD",
+      "target": "FLOWER ABORTION",
+      "description": "causes symptom of",
+      "weight": "8",
+      "source_id": "paper_3829"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "BOTRYTIS GREY MOLD",
+      "description": "used to control",
+      "weight": "8",
+      "source_id": "paper_3829"
+    }
+  ]
+}

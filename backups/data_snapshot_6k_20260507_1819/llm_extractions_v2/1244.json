@@ -1,0 +1,219 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, the target crop for rapid generation advancement",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "HOMOZYGOUS LINES",
+      "type": "CONCEPT",
+      "description": "Lines developed from segregating populations following hybridization",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "HYBRIDIZATION",
+      "type": "METHOD",
+      "description": "The process of crossing different varieties to create segregating populations",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "GENERATION TURNOVER",
+      "type": "CONCEPT",
+      "description": "The rate at which plant generations are produced in a breeding program",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "OFF-SEASON NURSERY",
+      "type": "METHOD",
+      "description": "A facility used to grow crops outside their normal growing season to accelerate breeding",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "METHOD",
+      "description": "A controlled environment used for off-season crop production",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where chickpea is grown during the winter season",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "WINTER SEASON",
+      "type": "CONDITION",
+      "description": "The primary growing season for chickpea in India",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "LATITUDE",
+      "type": "CONDITION",
+      "description": "Geographic coordinate that influences crop season length and off-season suitability",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "ALTITUDE",
+      "type": "CONDITION",
+      "description": "Height above sea level that influences crop season length and off-season suitability",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "SOIL TYPE",
+      "type": "CONDITION",
+      "description": "A growing condition that affects the length of the crop season",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "A growing condition that affects the length of the crop season",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "SUMMER",
+      "type": "CONDITION",
+      "description": "The season used for off-season crop production in high latitude areas",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "LAHAUL AND SPITI",
+      "type": "LOCATION",
+      "description": "High latitude area in the Himalayas used for off-season nurseries",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "HIMALAYAS",
+      "type": "LOCATION",
+      "description": "Mountain range containing the Lahaul and Spiti region",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "TERBOL",
+      "type": "LOCATION",
+      "description": "A location in the Beqaa valley of Lebanon with off-season nurseries",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "BEQAA VALLEY",
+      "type": "LOCATION",
+      "description": "A valley in Lebanon containing Terbol",
+      "source_id": "paper_1244"
+    },
+    {
+      "name": "LEBANON",
+      "type": "LOCATION",
+      "description": "Country with available off-season nurseries",
+      "source_id": "paper_1244"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HYBRIDIZATION",
+      "target": "HOMOZYGOUS LINES",
+      "description": "used to develop",
+      "weight": "8",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "OFF-SEASON NURSERY",
+      "target": "GENERATION TURNOVER",
+      "description": "accelerates",
+      "weight": "9",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "GENERATION TURNOVER",
+      "description": "accelerates",
+      "weight": "9",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "INDIA",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "WINTER SEASON",
+      "description": "is grown during",
+      "weight": "9",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "LATITUDE",
+      "target": "GENERATION TURNOVER",
+      "description": "influences the length of crop season and off-season suitability",
+      "weight": "6",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "ALTITUDE",
+      "target": "GENERATION TURNOVER",
+      "description": "influences the length of crop season and off-season suitability",
+      "weight": "6",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "SOIL TYPE",
+      "target": "GENERATION TURNOVER",
+      "description": "influences the length of crop season",
+      "weight": "5",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "GENERATION TURNOVER",
+      "description": "influences the length of crop season",
+      "weight": "5",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "SUMMER",
+      "target": "OFF-SEASON NURSERY",
+      "description": "is the season used for",
+      "weight": "8",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "LAHAUL AND SPITI",
+      "target": "HIMALAYAS",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "LAHAUL AND SPITI",
+      "target": "OFF-SEASON NURSERY",
+      "description": "is a site for",
+      "weight": "9",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "TERBOL",
+      "target": "BEQAA VALLEY",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "BEQAA VALLEY",
+      "target": "LEBANON",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_1244"
+    },
+    {
+      "source": "TERBOL",
+      "target": "OFF-SEASON NURSERY",
+      "description": "is a site for",
+      "weight": "9",
+      "source_id": "paper_1244"
+    }
+  ]
+}

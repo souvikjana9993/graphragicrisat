@@ -1,0 +1,260 @@
+{
+  "entities": [
+    {
+      "name": "SAFFLOWER",
+      "type": "CROP",
+      "description": "Edible oilseed crop (Carthamus tinctorius L.) cultivated in marginal lands",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "CROP WATER REQUIREMENTS",
+      "type": "TRAIT",
+      "description": "The amount of water needed by the safflower crop for growth and yield",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "RAINFED ECOSYSTEM",
+      "type": "CONDITION",
+      "description": "An agricultural system relying solely on rainfall for water",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "FIELD EXPERIMENT",
+      "type": "METHOD",
+      "description": "A study conducted in a field setting to evaluate crop performance",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "ICRISAT RESEARCH FARM, INDIA",
+      "type": "LOCATION",
+      "description": "The site where the field experiment was conducted",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "A type of clay-rich soil characterized by high shrink-swell capacity",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "SOIL DEPTH",
+      "type": "CONDITION",
+      "description": "The depth of the soil profile, categorized as shallow, medium, and deep",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation received, categorized as wet, normal, and deficit",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "TRAIT",
+      "description": "The water content of the soil",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced per unit area",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "GROWTH PARAMETERS",
+      "type": "TRAIT",
+      "description": "Measurable characteristics of plant growth",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "ONE-DIMENSIONAL WATER BALANCE MODEL",
+      "type": "METHOD",
+      "description": "A calibrated model used to capture field-scale hydrology",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "RESIDUAL SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "Water remaining in the soil from previous rainfall",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "NARI-H-15",
+      "type": "CONCEPT",
+      "description": "A specific spiny cultivar of safflower",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "CROP INTENSIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of increasing crop productivity per unit area",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "SPINY CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Safflower varieties characterized by the presence of spines",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "NON-SPINY CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Safflower varieties characterized by the absence of spines",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "FIELD-SCALE HYDROLOGY",
+      "type": "CONCEPT",
+      "description": "The movement and distribution of water across a field",
+      "source_id": "paper_12791"
+    },
+    {
+      "name": "MARGINAL LANDS",
+      "type": "CONDITION",
+      "description": "Lands with low productivity or poor soil quality",
+      "source_id": "paper_12791"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SAFFLOWER",
+      "target": "RAINFED ECOSYSTEM",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "SAFFLOWER",
+      "target": "VERTISOLS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "SAFFLOWER",
+      "target": "CROP WATER REQUIREMENTS",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "SAFFLOWER",
+      "description": "evaluates",
+      "weight": "10",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "ICRISAT RESEARCH FARM, INDIA",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "VERTISOLS",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "SOIL DEPTH",
+      "description": "evaluated across",
+      "weight": "9",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "RAINFALL",
+      "description": "conducted during",
+      "weight": "9",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "CROP YIELD",
+      "target": "SOIL DEPTH",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "CROP YIELD",
+      "target": "RAINFALL",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "CROP YIELD",
+      "target": "SPINY CULTIVARS",
+      "description": "higher in",
+      "weight": "8",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "CROP YIELD",
+      "target": "NON-SPINY CULTIVARS",
+      "description": "lower in",
+      "weight": "8",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "ONE-DIMENSIONAL WATER BALANCE MODEL",
+      "target": "FIELD-SCALE HYDROLOGY",
+      "description": "captures",
+      "weight": "10",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "CROP WATER REQUIREMENTS",
+      "target": "RESIDUAL SOIL MOISTURE",
+      "description": "met by",
+      "weight": "9",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "RESIDUAL SOIL MOISTURE",
+      "target": "SOIL DEPTH",
+      "description": "varies with",
+      "weight": "9",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "RESIDUAL SOIL MOISTURE",
+      "target": "RAINFALL",
+      "description": "varies with",
+      "weight": "9",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "NARI-H-15",
+      "target": "CROP YIELD",
+      "description": "recorded maximum",
+      "weight": "8",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "NARI-H-15",
+      "target": "SPINY CULTIVARS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "VERTISOLS",
+      "target": "CROP INTENSIFICATION",
+      "description": "provides opportunities for",
+      "weight": "7",
+      "source_id": "paper_12791"
+    },
+    {
+      "source": "SAFFLOWER",
+      "target": "MARGINAL LANDS",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_12791"
+    }
+  ]
+}

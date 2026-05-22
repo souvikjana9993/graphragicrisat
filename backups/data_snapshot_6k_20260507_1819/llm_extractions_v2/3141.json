@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for resistance to shoot fly.",
+      "source_id": "paper_3141"
+    },
+    {
+      "name": "SHOOT FLY",
+      "type": "ORGANISM",
+      "description": "The pest Atherigona soccata that causes damage to sorghum.",
+      "source_id": "paper_3141"
+    },
+    {
+      "name": "LEAF SURFACE WETNESS",
+      "type": "TRAIT",
+      "description": "The production of water droplets on the folded central whorl leaf of sorghum seedlings.",
+      "source_id": "paper_3141"
+    },
+    {
+      "name": "RESISTANCE TO SHOOT FLY",
+      "type": "TRAIT",
+      "description": "The ability of sorghum genotypes to withstand damage from Atherigona soccata.",
+      "source_id": "paper_3141"
+    },
+    {
+      "name": "SOIL MATRIC POTENTIAL",
+      "type": "CONCEPT",
+      "description": "The measure of the energy state of water in the soil.",
+      "source_id": "paper_3141"
+    },
+    {
+      "name": "PLANT WATER POTENTIAL",
+      "type": "CONCEPT",
+      "description": "The measure of the water status within the plant.",
+      "source_id": "paper_3141"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of selecting and developing sorghum genotypes for improved traits.",
+      "source_id": "paper_3141"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "RESISTANCE TO SHOOT FLY",
+      "description": "exhibits varying levels of",
+      "weight": "10",
+      "source_id": "paper_3141"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "exhibits varying levels of",
+      "weight": "10",
+      "source_id": "paper_3141"
+    },
+    {
+      "source": "SHOOT FLY",
+      "target": "RESISTANCE TO SHOOT FLY",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_3141"
+    },
+    {
+      "source": "SOIL MATRIC POTENTIAL",
+      "target": "PLANT WATER POTENTIAL",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3141"
+    },
+    {
+      "source": "PLANT WATER POTENTIAL",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3141"
+    },
+    {
+      "source": "LEAF SURFACE WETNESS",
+      "target": "RESISTANCE TO SHOOT FLY",
+      "description": "is genetically linked to",
+      "weight": "6",
+      "source_id": "paper_3141"
+    },
+    {
+      "source": "BREEDING",
+      "target": "RESISTANCE TO SHOOT FLY",
+      "description": "is used to enhance",
+      "weight": "9",
+      "source_id": "paper_3141"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "CATTLE",
+      "type": "ORGANISM",
+      "description": "Bovine animals used in livestock production systems.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "Physiological stress caused by high temperature and humidity that reduces feed intake.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "DRY MATTER INTAKE",
+      "type": "TRAIT",
+      "description": "The amount of feed consumed by an animal, excluding water, used as a measure of feed intake.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "TEMPERATURE-HUMIDITY INDEX",
+      "type": "CONCEPT",
+      "description": "A reliable variable used for the measurement of heat stress in cattle.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "META-ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to assess the relationship between dry matter intake and the temperature-humidity index globally.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "SYSTEMATIC LITERATURE REVIEW",
+      "type": "METHOD",
+      "description": "A structured method used to gather data for the meta-analysis.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "PHYSICAL COOLING INTERVENTIONS",
+      "type": "METHOD",
+      "description": "Interventions such as shade or sprinklers used to alleviate heat stress.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "PASSIVE COOLING",
+      "type": "METHOD",
+      "description": "Cooling interventions such as shading.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "ACTIVE COOLING",
+      "type": "METHOD",
+      "description": "Cooling interventions such as sprinklers.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The driver of increased frequency and severity of heat waves.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "ANIMAL GENOTYPES",
+      "type": "CONCEPT",
+      "description": "The genetic variation among cattle that influences the effect of heat stress.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "LACTATION STAGE",
+      "type": "CONCEPT",
+      "description": "The stage of milk production which affects the relationship between THI and DMI.",
+      "source_id": "paper_13121"
+    },
+    {
+      "name": "PARITY",
+      "type": "CONCEPT",
+      "description": "The number of times a cow has given birth, used as a covariation factor in the analysis.",
+      "source_id": "paper_13121"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HEAT STRESS",
+      "target": "CATTLE",
+      "description": "reduces feed intake in",
+      "weight": "9",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "DRY MATTER INTAKE",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "TEMPERATURE-HUMIDITY INDEX",
+      "target": "HEAT STRESS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "TEMPERATURE-HUMIDITY INDEX",
+      "target": "DRY MATTER INTAKE",
+      "description": "has a significant negative correlation with",
+      "weight": "10",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "META-ANALYSIS",
+      "target": "DRY MATTER INTAKE",
+      "description": "assesses the relationship of",
+      "weight": "8",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "META-ANALYSIS",
+      "target": "TEMPERATURE-HUMIDITY INDEX",
+      "description": "assesses the relationship of",
+      "weight": "8",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "PHYSICAL COOLING INTERVENTIONS",
+      "target": "HEAT STRESS",
+      "description": "alleviates",
+      "weight": "8",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "PASSIVE COOLING",
+      "target": "HEAT STRESS",
+      "description": "alleviates",
+      "weight": "7",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "ACTIVE COOLING",
+      "target": "HEAT STRESS",
+      "description": "alleviates",
+      "weight": "7",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "HEAT STRESS",
+      "description": "increases frequency and severity of",
+      "weight": "8",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "ANIMAL GENOTYPES",
+      "target": "DRY MATTER INTAKE",
+      "description": "influences the effect of heat stress on",
+      "weight": "6",
+      "source_id": "paper_13121"
+    },
+    {
+      "source": "LACTATION STAGE",
+      "target": "DRY MATTER INTAKE",
+      "description": "varies the effect of THI on",
+      "weight": "6",
+      "source_id": "paper_13121"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A traditional grain legume crop and important dietary component in Nepal",
+      "source_id": "paper_1103"
+    },
+    {
+      "name": "NEPAL",
+      "type": "LOCATION",
+      "description": "The country where chickpea is grown and IPM is being implemented",
+      "source_id": "paper_1103"
+    },
+    {
+      "name": "BOTRYTIS GRAY MOLD",
+      "type": "CONDITION",
+      "description": "A disease that has caused a decreasing trend in chickpea area",
+      "source_id": "paper_1103"
+    },
+    {
+      "name": "POD BORER",
+      "type": "ORGANISM",
+      "description": "An insect pest that has caused a decreasing trend in chickpea area",
+      "source_id": "paper_1103"
+    },
+    {
+      "name": "ABIOTIC CONSTRAINTS",
+      "type": "CONDITION",
+      "description": "Non-living factors causing low and unstable yields of chickpea",
+      "source_id": "paper_1103"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of chickpea, noted as low and unstable at the national level",
+      "source_id": "paper_1103"
+    },
+    {
+      "name": "INTEGRATED PEST MANAGEMENT",
+      "type": "METHOD",
+      "description": "An on-farm approach for managing pests and diseases in chickpea",
+      "source_id": "paper_1103"
+    },
+    {
+      "name": "AGRONOMICAL PRACTICES",
+      "type": "METHOD",
+      "description": "Improved farming techniques integrated with IPM for sustainable production",
+      "source_id": "paper_1103"
+    },
+    {
+      "name": "SUSTAINABLE PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The goal of maintaining chickpea cultivation through integrated management",
+      "source_id": "paper_1103"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "NEPAL",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_1103"
+    },
+    {
+      "source": "BOTRYTIS GRAY MOLD",
+      "target": "CHICKPEA",
+      "description": "disease affecting",
+      "weight": "9",
+      "source_id": "paper_1103"
+    },
+    {
+      "source": "POD BORER",
+      "target": "CHICKPEA",
+      "description": "pest affecting",
+      "weight": "9",
+      "source_id": "paper_1103"
+    },
+    {
+      "source": "ABIOTIC CONSTRAINTS",
+      "target": "YIELD",
+      "description": "causes low and unstable",
+      "weight": "8",
+      "source_id": "paper_1103"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "manages",
+      "weight": "9",
+      "source_id": "paper_1103"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "POD BORER",
+      "description": "manages",
+      "weight": "9",
+      "source_id": "paper_1103"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_1103"
+    },
+    {
+      "source": "AGRONOMICAL PRACTICES",
+      "target": "SUSTAINABLE PRODUCTION",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_1103"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "SUSTAINABLE PRODUCTION",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_1103"
+    },
+    {
+      "source": "AGRONOMICAL PRACTICES",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_1103"
+    }
+  ]
+}

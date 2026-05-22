@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A key commodity crop (Arachis hypogaea L.) essential for the livelihoods of the rural poor in semi-arid tropics",
+      "source_id": "paper_5501"
+    },
+    {
+      "name": "GENETIC ENGINEERING",
+      "type": "METHOD",
+      "description": "A technique used for the improvement of crops",
+      "source_id": "paper_5501"
+    },
+    {
+      "name": "CROP IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The process of enhancing crop characteristics for better productivity or quality",
+      "source_id": "paper_5501"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where groundnut is a key commodity",
+      "source_id": "paper_5501"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENETIC ENGINEERING",
+      "target": "CROP IMPROVEMENT",
+      "description": "is a method used for",
+      "weight": "10",
+      "source_id": "paper_5501"
+    },
+    {
+      "source": "GENETIC ENGINEERING",
+      "target": "GROUNDNUT",
+      "description": "is applied to",
+      "weight": "9",
+      "source_id": "paper_5501"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEMI-ARID TROPICS",
+      "description": "is a key commodity in",
+      "weight": "8",
+      "source_id": "paper_5501"
+    },
+    {
+      "source": "CROP IMPROVEMENT",
+      "target": "GROUNDNUT",
+      "description": "is the objective for",
+      "weight": "9",
+      "source_id": "paper_5501"
+    }
+  ]
+}

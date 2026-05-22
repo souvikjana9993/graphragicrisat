@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the host plant in the pathosystem",
+      "source_id": "paper_4368"
+    },
+    {
+      "name": "GROUNDNUT RUST",
+      "type": "ORGANISM",
+      "description": "Puccinia arachidis Speg., the pathogen causing rust disease",
+      "source_id": "paper_4368"
+    },
+    {
+      "name": "PERU",
+      "type": "LOCATION",
+      "description": "Country in South America where the groundnut-rust pathosystem coevolved",
+      "source_id": "paper_4368"
+    },
+    {
+      "name": "SOUTH AMERICA",
+      "type": "LOCATION",
+      "description": "Continent where the groundnut-rust pathosystem coevolved and spread from",
+      "source_id": "paper_4368"
+    },
+    {
+      "name": "RUST",
+      "type": "CONDITION",
+      "description": "An economically important disease on groundnut causing significant yield losses",
+      "source_id": "paper_4368"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of groundnut, which is reduced by rust",
+      "source_id": "paper_4368"
+    },
+    {
+      "name": "RUST RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut genotypes to resist rust, characterized as quantitative and intermediate",
+      "source_id": "paper_4368"
+    },
+    {
+      "name": "QUANTITATIVE INHERITANCE",
+      "type": "CONCEPT",
+      "description": "The complex, non-simple inheritance pattern of rust resistance",
+      "source_id": "paper_4368"
+    },
+    {
+      "name": "RACE-SPECIFIC RESISTANCE",
+      "type": "CONCEPT",
+      "description": "A pattern of resistance based on specific pathogen races",
+      "source_id": "paper_4368"
+    },
+    {
+      "name": "RACE-NON-SPECIFIC RESISTANCE",
+      "type": "CONCEPT",
+      "description": "A pattern of resistance that is not dependent on specific pathogen races",
+      "source_id": "paper_4368"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "GROUNDNUT RUST",
+      "description": "Host plant for the pathogen",
+      "weight": "10",
+      "source_id": "paper_4368"
+    },
+    {
+      "source": "GROUNDNUT RUST",
+      "target": "PERU",
+      "description": "Coevolved in this location",
+      "weight": "9",
+      "source_id": "paper_4368"
+    },
+    {
+      "source": "GROUNDNUT RUST",
+      "target": "SOUTH AMERICA",
+      "description": "Coevolved in this continent",
+      "weight": "9",
+      "source_id": "paper_4368"
+    },
+    {
+      "source": "GROUNDNUT RUST",
+      "target": "RUST",
+      "description": "Pathogen that causes the disease",
+      "weight": "10",
+      "source_id": "paper_4368"
+    },
+    {
+      "source": "RUST",
+      "target": "GROUNDNUT",
+      "description": "Disease that affects the crop",
+      "weight": "10",
+      "source_id": "paper_4368"
+    },
+    {
+      "source": "RUST",
+      "target": "YIELD",
+      "description": "Causes significant losses in",
+      "weight": "9",
+      "source_id": "paper_4368"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RUST RESISTANCE",
+      "description": "Crop that possesses the resistance trait",
+      "weight": "10",
+      "source_id": "paper_4368"
+    },
+    {
+      "source": "RUST RESISTANCE",
+      "target": "QUANTITATIVE INHERITANCE",
+      "description": "Inheritance pattern of the resistance",
+      "weight": "8",
+      "source_id": "paper_4368"
+    },
+    {
+      "source": "RUST RESISTANCE",
+      "target": "RACE-SPECIFIC RESISTANCE",
+      "description": "Does not fit this typical pattern",
+      "weight": "7",
+      "source_id": "paper_4368"
+    },
+    {
+      "source": "RUST RESISTANCE",
+      "target": "RACE-NON-SPECIFIC RESISTANCE",
+      "description": "Does not fit this typical pattern",
+      "weight": "7",
+      "source_id": "paper_4368"
+    }
+  ]
+}

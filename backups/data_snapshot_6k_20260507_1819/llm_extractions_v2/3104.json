@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, the crop studied for grain hardness and mold resistance",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "GRAM MOLD COMPLEX",
+      "type": "ORGANISM",
+      "description": "A complex of fungi causing mold in sorghum",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The location in India where the sorghum cultivars were grown",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "POSTRAINY SEASON",
+      "type": "CONDITION",
+      "description": "The weather season from 1988-1989 during the study",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The weather seasons in 1989 and 1990 during the study",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "GRAIN HARDNESS",
+      "type": "TRAIT",
+      "description": "The physical hardness of sorghum grains measured by various methods",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "STENVERT HARDNESS TESTER",
+      "type": "METHOD",
+      "description": "A method measuring the grinding time required to obtain a fixed volume of flour",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "KIYA AND INSTRON FOOD TESTERS",
+      "type": "METHOD",
+      "description": "Methods measuring the force required to break sorghum grains",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "DENSITY GRADING",
+      "type": "METHOD",
+      "description": "A method using sodium nitrate solution to measure the percentage of floating grains",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "ERGOSTEROL CONCENTRATION",
+      "type": "TRAIT",
+      "description": "A chemical measure used to assess the extent of mold damage in grains",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "MOLD DAMAGE",
+      "type": "CONDITION",
+      "description": "The state of sorghum grains being attacked by mold",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "MOLD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum cultivars to resist the gram mold complex",
+      "source_id": "paper_3104"
+    },
+    {
+      "name": "MOLD SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The tendency of sorghum cultivars to be affected by the gram mold complex",
+      "source_id": "paper_3104"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "PATANCHERU",
+      "description": "grown at",
+      "weight": "5",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAM MOLD COMPLEX",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "GRAIN HARDNESS",
+      "target": "STENVERT HARDNESS TESTER",
+      "description": "measured by",
+      "weight": "10",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "GRAIN HARDNESS",
+      "target": "KIYA AND INSTRON FOOD TESTERS",
+      "description": "measured by",
+      "weight": "10",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "GRAIN HARDNESS",
+      "target": "DENSITY GRADING",
+      "description": "measured by",
+      "weight": "10",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "ERGOSTEROL CONCENTRATION",
+      "target": "MOLD DAMAGE",
+      "description": "assesses",
+      "weight": "10",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "STENVERT HARDNESS TESTER",
+      "target": "ERGOSTEROL CONCENTRATION",
+      "description": "negatively correlated with",
+      "weight": "9",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "POSTRAINY SEASON",
+      "target": "GRAIN HARDNESS",
+      "description": "associated with higher",
+      "weight": "7",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "GRAIN HARDNESS",
+      "description": "associated with lower",
+      "weight": "7",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "MOLD RESISTANCE",
+      "target": "GRAIN HARDNESS",
+      "description": "associated with greater",
+      "weight": "9",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "MOLD SUSCEPTIBILITY",
+      "target": "GRAIN HARDNESS",
+      "description": "associated with lower",
+      "weight": "9",
+      "source_id": "paper_3104"
+    },
+    {
+      "source": "ERGOSTEROL CONCENTRATION",
+      "target": "STENVERT HARDNESS TESTER",
+      "description": "negatively correlated with in white sorghum grains",
+      "weight": "9",
+      "source_id": "paper_3104"
+    }
+  ]
+}

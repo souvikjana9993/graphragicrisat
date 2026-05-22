@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop for which submerged soil fertility is being assessed",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "SOIL FERTILITY INDEX",
+      "type": "CONCEPT",
+      "description": "A measure used to assess the fertility status of wetland soils",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "SUBMERGED SOILS",
+      "type": "CONDITION",
+      "description": "Soils that are flooded or submerged, characteristic of wetlands",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "WETLANDS",
+      "type": "LOCATION",
+      "description": "Areas of land where the soil is saturated with water",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "SOIL SOLUTION ELECTRICAL CONDUCTIVITY",
+      "type": "METHOD",
+      "description": "A measurement of the electrical conductivity of the soil solution used as a fertility index",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "NUTRIENT ELEMENTS",
+      "type": "CONCEPT",
+      "description": "Macro- and micronutrient elements mobilized in the soil solution",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The geographic region from which the 15 diverse rice soils were sourced",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "PH",
+      "type": "CONCEPT",
+      "description": "The measure of acidity or alkalinity of the soil solution",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "EH",
+      "type": "CONCEPT",
+      "description": "The redox potential of the soil solution",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "ORGANIC C",
+      "type": "CONCEPT",
+      "description": "Organic carbon present in the soil",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "IRON",
+      "type": "CONCEPT",
+      "description": "Iron element extracted from the soil",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "EDTA",
+      "type": "METHOD",
+      "description": "Ethylenediaminetetraacetic acid used for extracting iron from soil",
+      "source_id": "paper_4874"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "The salt content of the soil which can interfere with the EC-based fertility index",
+      "source_id": "paper_4874"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL SOLUTION ELECTRICAL CONDUCTIVITY",
+      "target": "SOIL FERTILITY INDEX",
+      "description": "used as an index for",
+      "weight": "10",
+      "source_id": "paper_4874"
+    },
+    {
+      "source": "SOIL SOLUTION ELECTRICAL CONDUCTIVITY",
+      "target": "NUTRIENT ELEMENTS",
+      "description": "measures the concentration of",
+      "weight": "9",
+      "source_id": "paper_4874"
+    },
+    {
+      "source": "SOIL SOLUTION ELECTRICAL CONDUCTIVITY",
+      "target": "ORGANIC C",
+      "description": "significantly correlated to",
+      "weight": "7",
+      "source_id": "paper_4874"
+    },
+    {
+      "source": "SOIL SOLUTION ELECTRICAL CONDUCTIVITY",
+      "target": "IRON",
+      "description": "significantly correlated to",
+      "weight": "7",
+      "source_id": "paper_4874"
+    },
+    {
+      "source": "PH",
+      "target": "EH",
+      "description": "quantitatively associated with a decrease in",
+      "weight": "8",
+      "source_id": "paper_4874"
+    },
+    {
+      "source": "SOIL FERTILITY INDEX",
+      "target": "SUBMERGED SOILS",
+      "description": "used for assessing the fertility status of",
+      "weight": "9",
+      "source_id": "paper_4874"
+    },
+    {
+      "source": "RICE",
+      "target": "SUBMERGED SOILS",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_4874"
+    },
+    {
+      "source": "WEST AFRICA",
+      "target": "SUBMERGED SOILS",
+      "description": "location of the studied soils",
+      "weight": "7",
+      "source_id": "paper_4874"
+    },
+    {
+      "source": "EDTA",
+      "target": "IRON",
+      "description": "used to extract",
+      "weight": "9",
+      "source_id": "paper_4874"
+    },
+    {
+      "source": "SALINITY",
+      "target": "SOIL SOLUTION ELECTRICAL CONDUCTIVITY",
+      "description": "affects the use of EC as a fertility index",
+      "weight": "8",
+      "source_id": "paper_4874"
+    }
+  ]
+}

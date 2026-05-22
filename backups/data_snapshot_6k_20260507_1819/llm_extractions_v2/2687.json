@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being evaluated for resistance to grain mold.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "GRAIN MOLD",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting the grains of sorghum.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "GRAIN MOLD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum accessions to resist grain mold infection.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The environmental period during which the sorghum accessions were reevaluated.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research institution where the grain mold nursery was located.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The specific location of the ICRISAT center.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "PHYSIO-MORPHOLOGICAL TRAITS",
+      "type": "CONCEPT",
+      "description": "The set of physical and physiological characteristics used to characterize the sorghum accessions.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "PANICLE GRAIN MOLD RATING",
+      "type": "METHOD",
+      "description": "A visual scoring system used to evaluate the level of grain mold resistance.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "TIME TO 50% FLOWERING",
+      "type": "TRAIT",
+      "description": "The number of days required for 50% of the plants to flower.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "The vertical measurement of the sorghum plants.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "PANICLE TYPE",
+      "type": "TRAIT",
+      "description": "The structural classification of the sorghum panicle, ranging from loose to compact.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "GLUMES COVERAGE OF GRAINS",
+      "type": "TRAIT",
+      "description": "The percentage of the grain covered by glumes.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "GLUMES COLOR",
+      "type": "TRAIT",
+      "description": "The color of the glumes, ranging from straw to black.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "GRAIN COLOR",
+      "type": "TRAIT",
+      "description": "The color of the sorghum grains, ranging from white to dark brown.",
+      "source_id": "paper_2687"
+    },
+    {
+      "name": "GRAIN MOLD RESISTANCE BREEDING",
+      "type": "METHOD",
+      "description": "The process of developing sorghum varieties with resistance to grain mold.",
+      "source_id": "paper_2687"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN MOLD",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN MOLD RESISTANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "GRAIN MOLD RESISTANCE",
+      "target": "PANICLE GRAIN MOLD RATING",
+      "description": "is measured by",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PHYSIO-MORPHOLOGICAL TRAITS",
+      "description": "is characterized by",
+      "weight": "9",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "PHYSIO-MORPHOLOGICAL TRAITS",
+      "target": "TIME TO 50% FLOWERING",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "PHYSIO-MORPHOLOGICAL TRAITS",
+      "target": "PLANT HEIGHT",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "PHYSIO-MORPHOLOGICAL TRAITS",
+      "target": "PANICLE TYPE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "PHYSIO-MORPHOLOGICAL TRAITS",
+      "target": "GLUMES COVERAGE OF GRAINS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "PHYSIO-MORPHOLOGICAL TRAITS",
+      "target": "GLUMES COLOR",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "PHYSIO-MORPHOLOGICAL TRAITS",
+      "target": "GRAIN COLOR",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ICRISAT",
+      "description": "was evaluated at",
+      "weight": "8",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "PATANCHERU",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "RAINY SEASON",
+      "description": "was evaluated during",
+      "weight": "7",
+      "source_id": "paper_2687"
+    },
+    {
+      "source": "GRAIN MOLD RESISTANCE",
+      "target": "GRAIN MOLD RESISTANCE BREEDING",
+      "description": "is the goal of",
+      "weight": "10",
+      "source_id": "paper_2687"
+    }
+  ]
+}

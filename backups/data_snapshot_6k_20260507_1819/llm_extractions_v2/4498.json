@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "LETTUCE",
+      "type": "CROP",
+      "description": "Lactuca sativa L., the crop being studied for seed viability and chromosome damage",
+      "source_id": "paper_4498"
+    },
+    {
+      "name": "SEED MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "The amount of water in the seeds, which influences the rate of chromosome damage and loss of viability",
+      "source_id": "paper_4498"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The thermal environment affecting the rate of chromosome damage and loss of seed viability",
+      "source_id": "paper_4498"
+    },
+    {
+      "name": "CHROMOSOME DAMAGE",
+      "type": "TRAIT",
+      "description": "The accumulation of cells containing chromosome aberrations in seeds",
+      "source_id": "paper_4498"
+    },
+    {
+      "name": "SEED VIABILITY",
+      "type": "TRAIT",
+      "description": "The ability of the seed to germinate and grow, the loss of which is studied in relation to environmental factors",
+      "source_id": "paper_4498"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "CHROMOSOME DAMAGE",
+      "description": "positively affects the rate of accumulation of",
+      "weight": "8",
+      "source_id": "paper_4498"
+    },
+    {
+      "source": "SEED MOISTURE CONTENT",
+      "target": "CHROMOSOME DAMAGE",
+      "description": "positively affects the rate of accumulation of",
+      "weight": "8",
+      "source_id": "paper_4498"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "SEED VIABILITY",
+      "description": "affects the rate of loss of",
+      "weight": "8",
+      "source_id": "paper_4498"
+    },
+    {
+      "source": "SEED MOISTURE CONTENT",
+      "target": "SEED VIABILITY",
+      "description": "affects the rate of loss of",
+      "weight": "9",
+      "source_id": "paper_4498"
+    },
+    {
+      "source": "LETTUCE",
+      "target": "CHROMOSOME DAMAGE",
+      "description": "is the crop in which chromosome damage is measured",
+      "weight": "10",
+      "source_id": "paper_4498"
+    },
+    {
+      "source": "LETTUCE",
+      "target": "SEED VIABILITY",
+      "description": "is the crop in which seed viability is measured",
+      "weight": "10",
+      "source_id": "paper_4498"
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.), the target crop of the study",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "QUANTITATIVE REAL-TIME PCR",
+      "type": "METHOD",
+      "description": "A technique used for measuring gene expression levels, also known as qPCR",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "GENE EXPRESSION",
+      "type": "CONCEPT",
+      "description": "The process by which information from a gene is used in the synthesis of a functional gene product",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "REFERENCE GENES",
+      "type": "CONCEPT",
+      "description": "Genes used as internal controls for the normalization of qPCR data",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Non-living environmental factors that cause stress to plants",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "SALT STRESS",
+      "type": "CONDITION",
+      "description": "Stress induced by high salinity in the environment",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "COLD STRESS",
+      "type": "CONDITION",
+      "description": "Stress induced by low temperatures",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "Stress induced by lack of water availability",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "Stress induced by high temperatures",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "ABSCISIC ACID",
+      "type": "CONDITION",
+      "description": "A plant hormone used to simulate abiotic stress conditions",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "LEAVES",
+      "type": "CONCEPT",
+      "description": "Vegetative tissue of the sorghum plant",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "ROOTS",
+      "type": "CONCEPT",
+      "description": "Underground tissue of the sorghum plant",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "SEEDLINGS",
+      "type": "CONCEPT",
+      "description": "Young sorghum plants",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "PANICLE",
+      "type": "CONCEPT",
+      "description": "The branched flowering part of the sorghum plant",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "MATURE SEEDS",
+      "type": "CONCEPT",
+      "description": "The final reproductive stage of the sorghum plant",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "GENORM",
+      "type": "METHOD",
+      "description": "A statistical tool used to determine the most stable reference genes",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "NORMFINDER",
+      "type": "METHOD",
+      "description": "A statistical tool used to determine the most stable reference genes",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "REFFINDER",
+      "type": "METHOD",
+      "description": "A statistical tool used to determine the most stable reference genes",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "PP2A",
+      "type": "GENE_MARKER",
+      "description": "A reference gene identified as highly stable across various conditions",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "CYP",
+      "type": "GENE_MARKER",
+      "description": "A reference gene identified as stable under abiotic stress",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "EIF4Α",
+      "type": "GENE_MARKER",
+      "description": "A reference gene identified as stable in tissue samples",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "GAPDH",
+      "type": "GENE_MARKER",
+      "description": "A reference gene identified as least stably expressed",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "UBC1",
+      "type": "GENE_MARKER",
+      "description": "A reference gene identified as least stably expressed",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "SBHSF5",
+      "type": "GENE_MARKER",
+      "description": "A sorghum gene used to verify the suitability of reference genes",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "SBHSF13",
+      "type": "GENE_MARKER",
+      "description": "A sorghum gene used to verify the suitability of reference genes",
+      "source_id": "paper_10001"
+    },
+    {
+      "name": "NORMALIZATION",
+      "type": "CONCEPT",
+      "description": "The process of adjusting qPCR data to ensure accuracy and reliability",
+      "source_id": "paper_10001"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "QUANTITATIVE REAL-TIME PCR",
+      "description": "is the subject of analysis using",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "QUANTITATIVE REAL-TIME PCR",
+      "target": "GENE EXPRESSION",
+      "description": "is used to measure",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "QUANTITATIVE REAL-TIME PCR",
+      "target": "NORMALIZATION",
+      "description": "requires",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "NORMALIZATION",
+      "target": "REFERENCE GENES",
+      "description": "is performed using",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "REFERENCE GENES",
+      "target": "GENORM",
+      "description": "are analyzed by",
+      "weight": "9",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "REFERENCE GENES",
+      "target": "NORMFINDER",
+      "description": "are analyzed by",
+      "weight": "9",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "REFERENCE GENES",
+      "target": "REFFINDER",
+      "description": "are analyzed by",
+      "weight": "9",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ABIOTIC STRESS",
+      "description": "is subjected to",
+      "weight": "8",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "SALT STRESS",
+      "target": "ABIOTIC STRESS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "COLD STRESS",
+      "target": "ABIOTIC STRESS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "ABIOTIC STRESS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "ABIOTIC STRESS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "ABSCISIC ACID",
+      "target": "ABIOTIC STRESS",
+      "description": "is used to simulate",
+      "weight": "8",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "LEAVES",
+      "target": "SORGHUM",
+      "description": "is a tissue of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "ROOTS",
+      "target": "SORGHUM",
+      "description": "is a tissue of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "SEEDLINGS",
+      "target": "SORGHUM",
+      "description": "is a growth stage of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "PANICLE",
+      "target": "SORGHUM",
+      "description": "is a tissue of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "MATURE SEEDS",
+      "target": "SORGHUM",
+      "description": "is a part of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "PP2A",
+      "target": "REFERENCE GENES",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "CYP",
+      "target": "REFERENCE GENES",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "EIF4Α",
+      "target": "REFERENCE GENES",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "GAPDH",
+      "target": "REFERENCE GENES",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "UBC1",
+      "target": "REFERENCE GENES",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "PP2A",
+      "target": "ABIOTIC STRESS",
+      "description": "is stable under",
+      "weight": "9",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "CYP",
+      "target": "ABIOTIC STRESS",
+      "description": "is stable under",
+      "weight": "9",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "EIF4Α",
+      "target": "LEAVES",
+      "description": "is stable in",
+      "weight": "8",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "SBHSF5",
+      "target": "NORMALIZATION",
+      "description": "is normalized through",
+      "weight": "9",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "SBHSF13",
+      "target": "NORMALIZATION",
+      "description": "is normalized through",
+      "weight": "9",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "SBHSF5",
+      "target": "SORGHUM",
+      "description": "is a gene of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    },
+    {
+      "source": "SBHSF13",
+      "target": "SORGHUM",
+      "description": "is a gene of",
+      "weight": "10",
+      "source_id": "paper_10001"
+    }
+  ]
+}

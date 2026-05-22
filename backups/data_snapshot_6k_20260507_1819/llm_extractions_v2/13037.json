@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor L., a potential commercial feedstock crop being evaluated for cultivation in Pennsylvania",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "PENNSYLVANIA",
+      "type": "LOCATION",
+      "description": "A US state where sorghum performance and disease response are being evaluated",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Zea mays L., a crop that can be grown in rotation with or alongside sorghum",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "COLLETRICHUM SUBLINEOLA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes anthracnose leaf blight in sorghum",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "ANTHRACNOSE LEAF BLIGHT",
+      "type": "CONDITION",
+      "description": "A disease caused by Colletotrichum sublineola that results in leaf lesions and diminished yield",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the crop, which is negatively impacted by anthracnose leaf blight",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "FIELD SURVEYS",
+      "type": "METHOD",
+      "description": "Monitoring the presence of C. sublineola in commercial sorghum fields conducted in 2011, 2012, and 2016",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "FIELD AND GREENHOUSE TESTS",
+      "type": "METHOD",
+      "description": "Evaluation of performance of 158 experimental lines and commercial hybrids of sorghum",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "RESISTANCE TO ALB",
+      "type": "TRAIT",
+      "description": "The ability of certain sorghum lines to resist anthracnose leaf blight",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "FOLIAR DISEASES",
+      "type": "CONDITION",
+      "description": "Diseases affecting the foliage of the plant, for which resistance sources were sought",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "BREEDING PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Efforts to develop crop varieties targeted for Pennsylvania and northeastern U.S. climatic conditions",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "NORTHEASTERN U.S. CLIMATIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "The specific environmental and weather conditions of the northeastern United States",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "CONCEPT",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics, which provided high-resistance sorghum lines",
+      "source_id": "paper_13037"
+    },
+    {
+      "name": "ICSB94",
+      "type": "CONCEPT",
+      "description": "A specific sorghum line provided by ICRISAT that exhibited the highest level of resistance to ALB in the field",
+      "source_id": "paper_13037"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "PENNSYLVANIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MAIZE",
+      "description": "grown in rotation or alongside",
+      "weight": "6",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "COLLETRICHUM SUBLINEOLA",
+      "target": "SORGHUM",
+      "description": "attacks",
+      "weight": "9",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "COLLETRICHUM SUBLINEOLA",
+      "target": "ANTHRACNOSE LEAF BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "ANTHRACNOSE LEAF BLIGHT",
+      "target": "YIELD",
+      "description": "diminishes",
+      "weight": "9",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "FIELD SURVEYS",
+      "target": "COLLETRICHUM SUBLINEOLA",
+      "description": "monitors presence of",
+      "weight": "8",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "FIELD AND GREENHOUSE TESTS",
+      "target": "SORGHUM",
+      "description": "evaluates performance of",
+      "weight": "8",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "RESISTANCE TO ALB",
+      "target": "ANTHRACNOSE LEAF BLIGHT",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "RESISTANCE TO ALB",
+      "target": "FOLIAR DISEASES",
+      "description": "provides protection against",
+      "weight": "8",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "BREEDING PROGRAMS",
+      "target": "PENNSYLVANIA",
+      "description": "targeted for",
+      "weight": "7",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "BREEDING PROGRAMS",
+      "target": "NORTHEASTERN U.S. CLIMATIC CONDITIONS",
+      "description": "targeted for",
+      "weight": "7",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "ICSB94",
+      "description": "provided",
+      "weight": "10",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "ICSB94",
+      "target": "RESISTANCE TO ALB",
+      "description": "shows high level of",
+      "weight": "9",
+      "source_id": "paper_13037"
+    },
+    {
+      "source": "ICSB94",
+      "target": "SORGHUM",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_13037"
+    }
+  ]
+}

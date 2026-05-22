@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop species being studied for yield prediction under salinity stress",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "ORYZA SATIVA L.",
+      "type": "ORGANISM",
+      "description": "The scientific name of the rice plant",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the crop",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "SALINITY STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress caused by high salt concentration in soil",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "SOIL ELECTRICAL CONDUCTIVITY",
+      "type": "CONCEPT",
+      "description": "A measure used to estimate yield reduction caused by salinity stress",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress caused by lack of available water",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "ION TOXICITY",
+      "type": "CONCEPT",
+      "description": "The toxic effect of excessive ion accumulation in plants due to salinity",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "NUTRITIONAL IMBALANCE",
+      "type": "CONCEPT",
+      "description": "The disruption of nutrient uptake and balance in plants due to salinity",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "K/NA RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of potassium to sodium concentration in rice leaves used as a predictor for yield",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "SENEGAL",
+      "type": "LOCATION",
+      "description": "The country where the field experiments were conducted",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "AFRICA RICE CENTER",
+      "type": "LOCATION",
+      "description": "The specific experimental farm in Senegal where data were collected",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "REGRESSION ANALYSES",
+      "type": "METHOD",
+      "description": "Statistical method used to determine the best fitting function for yield prediction",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "F-TEST",
+      "type": "METHOD",
+      "description": "Statistical test used to determine the best fitting function for yield prediction",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "EXPONENTIAL FUNCTION",
+      "type": "METHOD",
+      "description": "The mathematical model used to predict relative yield based on the K/Na ratio",
+      "source_id": "paper_11247"
+    },
+    {
+      "name": "RELATIVE YIELD",
+      "type": "TRAIT",
+      "description": "The ratio of yield under salinity stress to the potential yield",
+      "source_id": "paper_11247"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "ORYZA SATIVA L.",
+      "description": "is the common name for",
+      "weight": "10",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "SALINITY STRESS",
+      "target": "YIELD",
+      "description": "causes reduction in",
+      "weight": "9",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "SALINITY STRESS",
+      "target": "ION TOXICITY",
+      "description": "leads to",
+      "weight": "8",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "SALINITY STRESS",
+      "target": "NUTRITIONAL IMBALANCE",
+      "description": "leads to",
+      "weight": "8",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "K/NA RATIO",
+      "target": "YIELD",
+      "description": "is used to predict",
+      "weight": "9",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "REGRESSION ANALYSES",
+      "target": "EXPONENTIAL FUNCTION",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "F-TEST",
+      "target": "EXPONENTIAL FUNCTION",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "AFRICA RICE CENTER",
+      "target": "SENEGAL",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "AFRICA RICE CENTER",
+      "target": "RICE",
+      "description": "site of field experiment for",
+      "weight": "8",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "RELATIVE YIELD",
+      "target": "YIELD",
+      "description": "is a specific measure of",
+      "weight": "10",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "SOIL ELECTRICAL CONDUCTIVITY",
+      "target": "SALINITY STRESS",
+      "description": "is used to estimate",
+      "weight": "8",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "YIELD",
+      "description": "causes reduction in",
+      "weight": "7",
+      "source_id": "paper_11247"
+    },
+    {
+      "source": "K/NA RATIO",
+      "target": "RELATIVE YIELD",
+      "description": "is the independent variable for predicting",
+      "weight": "9",
+      "source_id": "paper_11247"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "The geographic region of focus for land cover and cropland mapping.",
+      "source_id": "paper_10788"
+    },
+    {
+      "name": "LAND COVER MAPS",
+      "type": "CONCEPT",
+      "description": "Maps that represent the physical material on the earth's surface.",
+      "source_id": "paper_10788"
+    },
+    {
+      "name": "CROPLAND MAPS",
+      "type": "CONCEPT",
+      "description": "Maps specifically identifying areas used for agricultural crop production.",
+      "source_id": "paper_10788"
+    },
+    {
+      "name": "CLASSIFICATION",
+      "type": "METHOD",
+      "description": "The systematic process of categorizing land cover and cropland categories.",
+      "source_id": "paper_10788"
+    },
+    {
+      "name": "HIGH-RESOLUTION",
+      "type": "CONCEPT",
+      "description": "The level of detail and precision required for accurate mapping.",
+      "source_id": "paper_10788"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The goal of ensuring reliable access to sufficient and nutritious food for the population.",
+      "source_id": "paper_10788"
+    },
+    {
+      "name": "MARKET INSTABILITY",
+      "type": "CONDITION",
+      "description": "Economic fluctuations that impact the availability and cost of food.",
+      "source_id": "paper_10788"
+    },
+    {
+      "name": "GLOBAL CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The changing global climate patterns affecting agriculture.",
+      "source_id": "paper_10788"
+    },
+    {
+      "name": "SPATIAL DISTRIBUTION",
+      "type": "CONCEPT",
+      "description": "The geographic arrangement and spread of various crop types.",
+      "source_id": "paper_10788"
+    },
+    {
+      "name": "CROP TYPES",
+      "type": "CROP",
+      "description": "The different varieties of agricultural crops grown within a region.",
+      "source_id": "paper_10788"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROPLAND MAPS",
+      "target": "SOUTH ASIA",
+      "description": "are developed for",
+      "weight": "9",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "LAND COVER MAPS",
+      "target": "SOUTH ASIA",
+      "description": "are developed for",
+      "weight": "9",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "CLASSIFICATION",
+      "target": "CROPLAND MAPS",
+      "description": "is used to create",
+      "weight": "8",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "CLASSIFICATION",
+      "target": "LAND COVER MAPS",
+      "description": "is used to create",
+      "weight": "8",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "HIGH-RESOLUTION",
+      "target": "CROPLAND MAPS",
+      "description": "is a desired attribute of",
+      "weight": "7",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "HIGH-RESOLUTION",
+      "target": "LAND COVER MAPS",
+      "description": "is a desired attribute of",
+      "weight": "7",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "SPATIAL DISTRIBUTION",
+      "target": "CROP TYPES",
+      "description": "describes the arrangement of",
+      "weight": "8",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "SPATIAL DISTRIBUTION",
+      "target": "SOUTH ASIA",
+      "description": "occurs within",
+      "weight": "7",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "CROPLAND MAPS",
+      "target": "FOOD SECURITY",
+      "description": "help improve",
+      "weight": "6",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "MARKET INSTABILITY",
+      "target": "FOOD SECURITY",
+      "description": "hinders",
+      "weight": "7",
+      "source_id": "paper_10788"
+    },
+    {
+      "source": "GLOBAL CLIMATE CHANGE",
+      "target": "FOOD SECURITY",
+      "description": "hinders",
+      "weight": "7",
+      "source_id": "paper_10788"
+    }
+  ]
+}

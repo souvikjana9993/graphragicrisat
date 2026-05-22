@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the crop studied for root length density and seed yield under drought stress",
+      "source_id": "paper_2530"
+    },
+    {
+      "name": "ROOT LENGTH DENSITY",
+      "type": "TRAIT",
+      "description": "A measure of root system variability used to acquire water, specifically evaluated in the vegetative growth stage",
+      "source_id": "paper_2530"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced by the chickpea plant",
+      "source_id": "paper_2530"
+    },
+    {
+      "name": "TERMINAL DROUGHT",
+      "type": "CONDITION",
+      "description": "Water stress occurring during the terminal stage of crop growth",
+      "source_id": "paper_2530"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "Conditions characterized by a lack of available soil water",
+      "source_id": "paper_2530"
+    },
+    {
+      "name": "PVC CYLINDER SCREENING",
+      "type": "METHOD",
+      "description": "A procedure using tall PVC cylinders to facilitate the screening of genotypes with large root length density",
+      "source_id": "paper_2530"
+    },
+    {
+      "name": "FIELD TRIALS",
+      "type": "METHOD",
+      "description": "Experiments conducted in the field to evaluate genotypes under water deficit conditions",
+      "source_id": "paper_2530"
+    },
+    {
+      "name": "VEGETATIVE GROWTH STAGE",
+      "type": "CONCEPT",
+      "description": "The period of plant growth before flowering",
+      "source_id": "paper_2530"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "The outdoor environment where the chickpea genotypes were grown",
+      "source_id": "paper_2530"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ROOT LENGTH DENSITY",
+      "target": "SEED YIELD",
+      "description": "Significant positive correlation and contribution to yield under drought",
+      "weight": "9",
+      "source_id": "paper_2530"
+    },
+    {
+      "source": "ROOT LENGTH DENSITY",
+      "target": "TERMINAL DROUGHT",
+      "description": "Helps the plant cope with water stress",
+      "weight": "8",
+      "source_id": "paper_2530"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ROOT LENGTH DENSITY",
+      "description": "The crop for which root length density is measured",
+      "weight": "10",
+      "source_id": "paper_2530"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED YIELD",
+      "description": "The crop for which seed yield is measured",
+      "weight": "10",
+      "source_id": "paper_2530"
+    },
+    {
+      "source": "TERMINAL DROUGHT",
+      "target": "SEED YIELD",
+      "description": "Negatively impacts seed yield",
+      "weight": "8",
+      "source_id": "paper_2530"
+    },
+    {
+      "source": "PVC CYLINDER SCREENING",
+      "target": "ROOT LENGTH DENSITY",
+      "description": "Used as a method to screen for genotypes with large RLD",
+      "weight": "9",
+      "source_id": "paper_2530"
+    },
+    {
+      "source": "PVC CYLINDER SCREENING",
+      "target": "FIELD TRIALS",
+      "description": "Results from cylinder trials correlate with field trial RLD",
+      "weight": "7",
+      "source_id": "paper_2530"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "TERMINAL DROUGHT",
+      "description": "The crop subjected to terminal drought stress",
+      "weight": "9",
+      "source_id": "paper_2530"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "SEED YIELD",
+      "description": "Affects the seed yield of the crop",
+      "weight": "7",
+      "source_id": "paper_2530"
+    }
+  ]
+}

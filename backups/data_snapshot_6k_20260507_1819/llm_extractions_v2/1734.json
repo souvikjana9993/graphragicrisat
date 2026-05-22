@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor cv. SPH-280 grown post-rainy season",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A type of clay-rich soil used as the growth medium",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "ICRISAT CENTRE",
+      "type": "LOCATION",
+      "description": "The research facility where the study was conducted",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "UNIRRIGATED",
+      "type": "CONDITION",
+      "description": "A growth condition where no irrigation was provided throughout growth",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "IRRIGATED",
+      "type": "CONDITION",
+      "description": "A growth condition where irrigation was provided for 7 weeks after emergence",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "AMMONIUM SULPHATE",
+      "type": "CONCEPT",
+      "description": "A nitrogen fertilizer applied at rates from 0 to 150 kg/ha N",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "The nutrient element provided to the crop to study its effect on biomass and water extraction",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total dry matter of the plant, measured as a function of depth",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "ROOT LENGTH DENSITY",
+      "type": "TRAIT",
+      "description": "The length of roots per unit volume of soil",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "SOIL WATER CONTENT",
+      "type": "CONCEPT",
+      "description": "The amount of water present in the soil, measured at various depths",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "GRAVIMETRIC MEASUREMENT",
+      "type": "METHOD",
+      "description": "A method used to measure soil water content to a depth of 0.23 m",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "NEUTRON PROBE",
+      "type": "METHOD",
+      "description": "A method used to measure soil water content from 0.3 to 1.5 m",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "VOLUMETRIC WATER CONTENT",
+      "type": "CONCEPT",
+      "description": "The volume of water per unit volume of soil, described as a negative exponential function of time",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "WATER EXTRACTION",
+      "type": "CONCEPT",
+      "description": "The process of water uptake by roots from the soil",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "VAPOUR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "The difference between the saturation vapor pressure and the actual vapor pressure, used for normalization",
+      "source_id": "paper_1734"
+    },
+    {
+      "name": "BIOMASS:WATER RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of dry matter biomass to the amount of water extracted",
+      "source_id": "paper_1734"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "VERTISOL",
+      "description": "grown on",
+      "weight": "10",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ICRISAT CENTRE",
+      "description": "grown at",
+      "weight": "10",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "UNIRRIGATED",
+      "description": "subjected to",
+      "weight": "9",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "IRRIGATED",
+      "description": "subjected to",
+      "weight": "9",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "AMMONIUM SULPHATE",
+      "description": "treated with",
+      "weight": "9",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "AMMONIUM SULPHATE",
+      "target": "NITROGEN",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "BIOMASS",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ROOT LENGTH DENSITY",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "SOIL WATER CONTENT",
+      "target": "GRAVIMETRIC MEASUREMENT",
+      "description": "measured by",
+      "weight": "10",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "SOIL WATER CONTENT",
+      "target": "NEUTRON PROBE",
+      "description": "measured by",
+      "weight": "10",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "ROOT LENGTH DENSITY",
+      "target": "WATER EXTRACTION",
+      "description": "inversely related to the time constant of",
+      "weight": "8",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "WATER EXTRACTION",
+      "description": "delayed the descent of the extraction front",
+      "weight": "8",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "BIOMASS",
+      "target": "BIOMASS:WATER RATIO",
+      "description": "component of",
+      "weight": "10",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "WATER EXTRACTION",
+      "target": "BIOMASS:WATER RATIO",
+      "description": "component of",
+      "weight": "10",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "BIOMASS:WATER RATIO",
+      "description": "increased the ratio",
+      "weight": "7",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "BIOMASS:WATER RATIO",
+      "description": "almost independent of",
+      "weight": "5",
+      "source_id": "paper_1734"
+    },
+    {
+      "source": "VAPOUR PRESSURE DEFICIT",
+      "target": "BIOMASS:WATER RATIO",
+      "description": "used to normalize",
+      "weight": "7",
+      "source_id": "paper_1734"
+    }
+  ]
+}

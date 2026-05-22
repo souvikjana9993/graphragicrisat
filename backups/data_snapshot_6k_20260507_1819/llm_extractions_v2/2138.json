@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "TRIBULUS TERRESTRIS",
+      "type": "ORGANISM",
+      "description": "A perennial weed that serves as a host for Aphis craccivora and a reservoir for bean leaf roll luteovirus",
+      "source_id": "paper_2138"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the survey was conducted",
+      "source_id": "paper_2138"
+    },
+    {
+      "name": "APHIS CRACCIVORA",
+      "type": "ORGANISM",
+      "description": "An aphid vector of bean leaf roll luteovirus",
+      "source_id": "paper_2138"
+    },
+    {
+      "name": "BEAN LEAF ROLL LUTEOVIRUS",
+      "type": "ORGANISM",
+      "description": "A virus (BLRV) that causes stunt in chickpea",
+      "source_id": "paper_2138"
+    },
+    {
+      "name": "STUNT",
+      "type": "TRAIT",
+      "description": "A symptom caused by bean leaf roll luteovirus in chickpea",
+      "source_id": "paper_2138"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop affected by bean leaf roll luteovirus and Aphis craccivora",
+      "source_id": "paper_2138"
+    },
+    {
+      "name": "SURVEY",
+      "type": "METHOD",
+      "description": "The research approach used to identify hosts of Aphis craccivora",
+      "source_id": "paper_2138"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SURVEY",
+      "target": "INDIA",
+      "description": "conducted in",
+      "weight": "8",
+      "source_id": "paper_2138"
+    },
+    {
+      "source": "SURVEY",
+      "target": "APHIS CRACCIVORA",
+      "description": "carried out to identify hosts of",
+      "weight": "9",
+      "source_id": "paper_2138"
+    },
+    {
+      "source": "APHIS CRACCIVORA",
+      "target": "BEAN LEAF ROLL LUTEOVIRUS",
+      "description": "is a vector of",
+      "weight": "10",
+      "source_id": "paper_2138"
+    },
+    {
+      "source": "BEAN LEAF ROLL LUTEOVIRUS",
+      "target": "STUNT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2138"
+    },
+    {
+      "source": "STUNT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2138"
+    },
+    {
+      "source": "BEAN LEAF ROLL LUTEOVIRUS",
+      "target": "CHICKPEA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_2138"
+    },
+    {
+      "source": "TRIBULUS TERRESTRIS",
+      "target": "APHIS CRACCIVORA",
+      "description": "is colonized by",
+      "weight": "9",
+      "source_id": "paper_2138"
+    },
+    {
+      "source": "TRIBULUS TERRESTRIS",
+      "target": "BEAN LEAF ROLL LUTEOVIRUS",
+      "description": "serves as a reservoir for",
+      "weight": "10",
+      "source_id": "paper_2138"
+    }
+  ]
+}

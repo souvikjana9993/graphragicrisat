@@ -1,0 +1,209 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A large multi-parental back cross nested association mapping population used as the case study for phenomic prediction",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "GENOMIC PREDICTION",
+      "type": "METHOD",
+      "description": "A method used to increase plant breeding efficiency by predicting traits based on genomic data",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "PHENOMIC PREDICTION",
+      "type": "METHOD",
+      "description": "A complementary approach to genomic prediction that uses phenomic data to predict traits",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "NEAR INFRARED REFLECTANCE SPECTROSCOPY",
+      "type": "METHOD",
+      "description": "A technique used to acquire spectral features for phenomic prediction",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "type": "GENE_MARKER",
+      "description": "Genetic markers used as features for genomic prediction",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "SPECTRA PREPROCESSING",
+      "type": "METHOD",
+      "description": "The process of preparing spectral data before it is used in prediction models",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "POPULATION STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The genetic organization of the population which can influence the accuracy of predictions",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "TRAINING SET SIZE",
+      "type": "CONCEPT",
+      "description": "The number of samples used to train the prediction models",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "ACQUISITION ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "The environment in which NIRS data is collected, which can impact prediction",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "WAVELENGTH SELECTION",
+      "type": "METHOD",
+      "description": "The process of selecting specific wavelengths from NIRS spectra for prediction",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "STATISTICAL METHODS",
+      "type": "METHOD",
+      "description": "The mathematical approaches used to perform trait predictions",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "An environmental challenge that plant breeding aims to address",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "PLANT BREEDING",
+      "type": "CONCEPT",
+      "description": "The process of developing crop varieties to support food and feed value chains",
+      "source_id": "paper_13508"
+    },
+    {
+      "name": "PREDICTIVE ABILITIES",
+      "type": "CONCEPT",
+      "description": "The measure of the accuracy and performance of prediction methods",
+      "source_id": "paper_13508"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHENOMIC PREDICTION",
+      "target": "SORGHUM",
+      "description": "is applied to",
+      "weight": "10",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "GENOMIC PREDICTION",
+      "target": "SORGHUM",
+      "description": "is applied to",
+      "weight": "10",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "NEAR INFRARED REFLECTANCE SPECTROSCOPY",
+      "target": "PHENOMIC PREDICTION",
+      "description": "is used to acquire data for",
+      "weight": "10",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "target": "GENOMIC PREDICTION",
+      "description": "are used as markers for",
+      "weight": "10",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "SPECTRA PREPROCESSING",
+      "target": "PHENOMIC PREDICTION",
+      "description": "impacts the performance of",
+      "weight": "7",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "POPULATION STRUCTURE",
+      "target": "PHENOMIC PREDICTION",
+      "description": "impacts the performance of",
+      "weight": "6",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "POPULATION STRUCTURE",
+      "target": "GENOMIC PREDICTION",
+      "description": "impacts the performance of",
+      "weight": "8",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "TRAINING SET SIZE",
+      "target": "PHENOMIC PREDICTION",
+      "description": "impacts the performance of",
+      "weight": "7",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "TRAINING SET SIZE",
+      "target": "GENOMIC PREDICTION",
+      "description": "impacts the performance of",
+      "weight": "7",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "ACQUISITION ENVIRONMENT",
+      "target": "PHENOMIC PREDICTION",
+      "description": "impacts the performance of",
+      "weight": "7",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "WAVELENGTH SELECTION",
+      "target": "PHENOMIC PREDICTION",
+      "description": "impacts the performance of",
+      "weight": "7",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "STATISTICAL METHODS",
+      "target": "PHENOMIC PREDICTION",
+      "description": "impacts the performance of",
+      "weight": "7",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "PHENOMIC PREDICTION",
+      "target": "PREDICTIVE ABILITIES",
+      "description": "is evaluated by",
+      "weight": "9",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "GENOMIC PREDICTION",
+      "target": "PREDICTIVE ABILITIES",
+      "description": "is evaluated by",
+      "weight": "9",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "PLANT BREEDING",
+      "target": "CLIMATE CHANGE",
+      "description": "aims to develop varieties to cope with",
+      "weight": "8",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "PHENOMIC PREDICTION",
+      "target": "PLANT BREEDING",
+      "description": "is used to optimize",
+      "weight": "8",
+      "source_id": "paper_13508"
+    },
+    {
+      "source": "GENOMIC PREDICTION",
+      "target": "PLANT BREEDING",
+      "description": "is used to optimize",
+      "weight": "8",
+      "source_id": "paper_13508"
+    }
+  ]
+}

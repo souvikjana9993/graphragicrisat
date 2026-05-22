@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "ENZYME-LINKED IMMUNOSORBENT ASSAY (ELISA)",
+      "type": "METHOD",
+      "description": "A widely employed serological test used for detecting various antigens",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "DOUBLE ANTIBODY SANDWICH ELISA (DAS-ELISA)",
+      "type": "METHOD",
+      "description": "An ELISA technique used for the detection of rhizobia and assessment of inoculum quality",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "DIRECT ANTIGEN COATING ELISA (DAC-ELISA)",
+      "type": "METHOD",
+      "description": "A simple ELISA tool used for virus detection in field surveys and seed samples",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "PROTEIN A COATING ELISA (PAC-ELISA)",
+      "type": "METHOD",
+      "description": "An ELISA procedure used for the detection and assay of viruses",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "COMPETITIVE ELISA",
+      "type": "METHOD",
+      "description": "An ELISA procedure developed to detect aflatoxin B in seed samples",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "RHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "Soil bacteria used for detection and quality assessment, including the ability to distinguish between different strains",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "VIRUSES",
+      "type": "ORGANISM",
+      "description": "Pathogenic agents detected in crops using various ELISA techniques",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "An agricultural crop used for virus and aflatoxin detection studies",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "AFLATOXIN B",
+      "type": "CONCEPT",
+      "description": "A mycotoxin detected in groundnut seed samples",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "INOCULUM",
+      "type": "CONCEPT",
+      "description": "The material used for inoculation, whose quality is assessed via DAS-ELISA",
+      "source_id": "paper_4447"
+    },
+    {
+      "name": "SOIL",
+      "type": "LOCATION",
+      "description": "The medium where the establishment of inoculated rhizobial strains is assessed",
+      "source_id": "paper_4447"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DOUBLE ANTIBODY SANDWICH ELISA (DAS-ELISA)",
+      "target": "RHIZOBIUM",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "DOUBLE ANTIBODY SANDWICH ELISA (DAS-ELISA)",
+      "target": "INOCULUM",
+      "description": "used to assess quality of",
+      "weight": "9",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "DOUBLE ANTIBODY SANDWICH ELISA (DAS-ELISA)",
+      "target": "RHIZOBIUM",
+      "description": "used to distinguish strains of",
+      "weight": "9",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "DOUBLE ANTIBODY SANDWICH ELISA (DAS-ELISA)",
+      "target": "SOIL",
+      "description": "used to assess establishment of strains in",
+      "weight": "8",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "DIRECT ANTIGEN COATING ELISA (DAC-ELISA)",
+      "target": "VIRUSES",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "PROTEIN A COATING ELISA (PAC-ELISA)",
+      "target": "VIRUSES",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "VIRUSES",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "9",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "COMPETITIVE ELISA",
+      "target": "AFLATOXIN B",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "AFLATOXIN B",
+      "target": "GROUNDNUT",
+      "description": "found in seed samples of",
+      "weight": "9",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "DOUBLE ANTIBODY SANDWICH ELISA (DAS-ELISA)",
+      "target": "ENZYME-LINKED IMMUNOSORBENT ASSAY (ELISA)",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "DIRECT ANTIGEN COATING ELISA (DAC-ELISA)",
+      "target": "ENZYME-LINKED IMMUNOSORBENT ASSAY (ELISA)",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "PROTEIN A COATING ELISA (PAC-ELISA)",
+      "target": "ENZYME-LINKED IMMUNOSORBENT ASSAY (ELISA)",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4447"
+    },
+    {
+      "source": "COMPETITIVE ELISA",
+      "target": "ENZYME-LINKED IMMUNOSORBENT ASSAY (ELISA)",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4447"
+    }
+  ]
+}

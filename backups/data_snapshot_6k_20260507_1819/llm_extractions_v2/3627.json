@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "GLADIOLUS",
+      "type": "CROP",
+      "description": "A flowering plant whose corms are susceptible to rot caused by Fusarium.",
+      "source_id": "paper_3627"
+    },
+    {
+      "name": "FUSARIUM",
+      "type": "ORGANISM",
+      "description": "A genus of fungi responsible for causing rot in gladiolus corms.",
+      "source_id": "paper_3627"
+    },
+    {
+      "name": "ROT OF GLADIOLUS CORMS",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting the corms of gladiolus plants.",
+      "source_id": "paper_3627"
+    },
+    {
+      "name": "ANTIBIOTIC CUP ASSAY METHOD",
+      "type": "METHOD",
+      "description": "An in-vitro screening technique used to evaluate the efficacy of fungicides.",
+      "source_id": "paper_3627"
+    },
+    {
+      "name": "BENLATE",
+      "type": "CONCEPT",
+      "description": "A fungicide containing benomyl, identified as one of the most effective against Fusarium.",
+      "source_id": "paper_3627"
+    },
+    {
+      "name": "MANEB",
+      "type": "CONCEPT",
+      "description": "A fungicide identified as one of the most effective against Fusarium.",
+      "source_id": "paper_3627"
+    },
+    {
+      "name": "BAVISTIN",
+      "type": "CONCEPT",
+      "description": "A fungicide containing carbendazim, most effective when combined with Difolatan.",
+      "source_id": "paper_3627"
+    },
+    {
+      "name": "DIFOLATAN",
+      "type": "CONCEPT",
+      "description": "A fungicide containing captafol, effective when combined with Bavistin or Maneb.",
+      "source_id": "paper_3627"
+    },
+    {
+      "name": "FUNGICIDES",
+      "type": "CONCEPT",
+      "description": "Chemical agents used to control fungal growth and diseases.",
+      "source_id": "paper_3627"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM",
+      "target": "ROT OF GLADIOLUS CORMS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "ROT OF GLADIOLUS CORMS",
+      "target": "GLADIOLUS",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "ANTIBIOTIC CUP ASSAY METHOD",
+      "target": "FUNGICIDES",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "BENLATE",
+      "target": "FUNGICIDES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "MANEB",
+      "target": "FUNGICIDES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "BAVISTIN",
+      "target": "FUNGICIDES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "DIFOLATAN",
+      "target": "FUNGICIDES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "BENLATE",
+      "target": "FUSARIUM",
+      "description": "inhibits",
+      "weight": "8",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "MANEB",
+      "target": "FUSARIUM",
+      "description": "inhibits",
+      "weight": "8",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "BAVISTIN",
+      "target": "FUSARIUM",
+      "description": "inhibits in combination",
+      "weight": "7",
+      "source_id": "paper_3627"
+    },
+    {
+      "source": "DIFOLATAN",
+      "target": "FUSARIUM",
+      "description": "inhibits in combination",
+      "weight": "7",
+      "source_id": "paper_3627"
+    }
+  ]
+}

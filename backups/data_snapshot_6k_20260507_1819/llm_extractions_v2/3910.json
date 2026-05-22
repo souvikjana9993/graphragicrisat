@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "WATER",
+      "type": "CONDITION",
+      "description": "A scarce resource essential for increasing food output in rainfed agriculture",
+      "source_id": "paper_3910"
+    },
+    {
+      "name": "IMPOVERISHED FARMERS",
+      "type": "CONCEPT",
+      "description": "Agricultural producers facing resource scarcity and constraints",
+      "source_id": "paper_3910"
+    },
+    {
+      "name": "FOOD OUTPUT",
+      "type": "TRAIT",
+      "description": "The amount of food produced, which can be increased with water",
+      "source_id": "paper_3910"
+    },
+    {
+      "name": "RAINFED AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "Agricultural practice relying on rainfall for water supply",
+      "source_id": "paper_3910"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER",
+      "target": "FOOD OUTPUT",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3910"
+    },
+    {
+      "source": "WATER",
+      "target": "IMPOVERISHED FARMERS",
+      "description": "is a scarce resource for",
+      "weight": "9",
+      "source_id": "paper_3910"
+    },
+    {
+      "source": "IMPOVERISHED FARMERS",
+      "target": "FOOD OUTPUT",
+      "description": "seek to increase",
+      "weight": "7",
+      "source_id": "paper_3910"
+    },
+    {
+      "source": "WATER",
+      "target": "RAINFED AGRICULTURE",
+      "description": "is the primary input for",
+      "weight": "10",
+      "source_id": "paper_3910"
+    }
+  ]
+}

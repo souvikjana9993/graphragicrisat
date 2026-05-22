@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "POLLEN",
+      "type": "CONCEPT",
+      "description": "Preserved pollen used as a medium for the international transfer of germplasm",
+      "source_id": "paper_2213"
+    },
+    {
+      "name": "GERMPLASM TRANSFER",
+      "type": "CONCEPT",
+      "description": "The international movement of genetic resources",
+      "source_id": "paper_2213"
+    },
+    {
+      "name": "SEED TRANSFER",
+      "type": "METHOD",
+      "description": "The transfer of germplasm via seeds",
+      "source_id": "paper_2213"
+    },
+    {
+      "name": "ENVIRONMENTAL CONDITIONS",
+      "type": "CONDITION",
+      "description": "External factors that can prevent flowering in certain species",
+      "source_id": "paper_2213"
+    },
+    {
+      "name": "CICER",
+      "type": "CROP",
+      "description": "Perennial species of the Cicer genus",
+      "source_id": "paper_2213"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_2213"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POLLEN",
+      "target": "GERMPLASM TRANSFER",
+      "description": "used as a means for",
+      "weight": "10",
+      "source_id": "paper_2213"
+    },
+    {
+      "source": "SEED TRANSFER",
+      "target": "GERMPLASM TRANSFER",
+      "description": "is a method of",
+      "weight": "10",
+      "source_id": "paper_2213"
+    },
+    {
+      "source": "ENVIRONMENTAL CONDITIONS",
+      "target": "SEED TRANSFER",
+      "description": "can hinder the possibility of",
+      "weight": "8",
+      "source_id": "paper_2213"
+    },
+    {
+      "source": "CICER",
+      "target": "ENVIRONMENTAL CONDITIONS",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_2213"
+    },
+    {
+      "source": "CICER",
+      "target": "ICRISAT",
+      "description": "observed at",
+      "weight": "10",
+      "source_id": "paper_2213"
+    },
+    {
+      "source": "POLLEN",
+      "target": "SEED TRANSFER",
+      "description": "serves as an alternative to",
+      "weight": "9",
+      "source_id": "paper_2213"
+    }
+  ]
+}

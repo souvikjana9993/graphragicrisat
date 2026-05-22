@@ -1,0 +1,280 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop studied in the case study in Kenya",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "KITALE",
+      "type": "LOCATION",
+      "description": "A high potential maize production area in Kenya",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the case study was conducted",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The region where rainfed agriculture is the dominant source of food production",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "RAINFED AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "Agriculture that relies solely on rainfall for water",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The primary weather variable affecting rainfed agriculture",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "WEATHER VARIABILITY",
+      "type": "CONDITION",
+      "description": "The seasonal and long-term fluctuations in weather patterns",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "CROP GROWTH SIMULATION MODELS",
+      "type": "METHOD",
+      "description": "Computational tools used to simulate crop growth and response to management and weather",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "AGRICULTURAL PRODUCTION SYSTEMS SIMULATOR",
+      "type": "METHOD",
+      "description": "A specific crop growth simulation model known as APSIM",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "WEATHER GENERATORS",
+      "type": "METHOD",
+      "description": "Tools used to create synthetic weather data when long-term records are unavailable",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "MARKSIM",
+      "type": "METHOD",
+      "description": "A specific weather generator used to approximate recorded weather data",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "CLIMATE RISK ASSESSMENT",
+      "type": "METHOD",
+      "description": "The analysis of weather-induced risks to crop production and investment returns",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "MAIZE YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of maize measured as a response to management and weather",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "PLANT POPULATION",
+      "type": "METHOD",
+      "description": "The density of plants per unit area used as a management innovation",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "WEED CONTROL",
+      "type": "METHOD",
+      "description": "The practice of managing weeds to improve crop performance",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "NITROGEN FERTILIZER USE",
+      "type": "METHOD",
+      "description": "The application of nitrogen fertilizer to enhance crop growth",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "RATES OF RETURN",
+      "type": "CONCEPT",
+      "description": "The financial return per dollar invested in agricultural innovations",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A weather variable contributing to weather-induced risk",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "RADIATION",
+      "type": "CONDITION",
+      "description": "A weather variable contributing to weather-induced risk",
+      "source_id": "paper_43"
+    },
+    {
+      "name": "WATER AVAILABILITY",
+      "type": "CONDITION",
+      "description": "A weather variable contributing to weather-induced risk",
+      "source_id": "paper_43"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "KITALE",
+      "description": "is produced in",
+      "weight": "10",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "KITALE",
+      "target": "KENYA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "KENYA",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "RAINFED AGRICULTURE",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "is the dominant source of food production in",
+      "weight": "9",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "RAINFED AGRICULTURE",
+      "description": "is the primary water source for",
+      "weight": "10",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "WEATHER VARIABILITY",
+      "target": "RAINFED AGRICULTURE",
+      "description": "affects the outcomes of research in",
+      "weight": "8",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "CROP GROWTH SIMULATION MODELS",
+      "target": "WEATHER VARIABILITY",
+      "description": "are used to provide risk estimates for",
+      "weight": "9",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "AGRICULTURAL PRODUCTION SYSTEMS SIMULATOR",
+      "target": "CROP GROWTH SIMULATION MODELS",
+      "description": "is an example of",
+      "weight": "10",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "WEATHER GENERATORS",
+      "target": "WEATHER VARIABILITY",
+      "description": "are used to simulate",
+      "weight": "8",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "MARKSIM",
+      "target": "WEATHER GENERATORS",
+      "description": "is an example of",
+      "weight": "10",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "CLIMATE RISK ASSESSMENT",
+      "target": "MAIZE",
+      "description": "is applied to the production of",
+      "weight": "9",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "AGRICULTURAL PRODUCTION SYSTEMS SIMULATOR",
+      "target": "MAIZE YIELD",
+      "description": "simulates responses of",
+      "weight": "9",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "MAIZE YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "WEED CONTROL",
+      "target": "MAIZE YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "NITROGEN FERTILIZER USE",
+      "target": "MAIZE YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "WEATHER VARIABILITY",
+      "target": "RATES OF RETURN",
+      "description": "has important effects on",
+      "weight": "9",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "NITROGEN FERTILIZER USE",
+      "target": "RATES OF RETURN",
+      "description": "has associated",
+      "weight": "8",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "WEED CONTROL",
+      "target": "RATES OF RETURN",
+      "description": "has associated",
+      "weight": "8",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "RATES OF RETURN",
+      "description": "has associated",
+      "weight": "8",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "CLIMATE RISK ASSESSMENT",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "RADIATION",
+      "target": "CLIMATE RISK ASSESSMENT",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_43"
+    },
+    {
+      "source": "WATER AVAILABILITY",
+      "target": "CLIMATE RISK ASSESSMENT",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_43"
+    }
+  ]
+}

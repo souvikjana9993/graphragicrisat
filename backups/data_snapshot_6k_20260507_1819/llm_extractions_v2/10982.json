@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "GFSAD CROP DOMINANCE DATASET",
+      "type": "CONCEPT",
+      "description": "A global 1 km resolution dataset providing information on crop dominance for the year 2010.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "AVHRR",
+      "type": "METHOD",
+      "description": "Advanced Very High Resolution Radiometer used for remote sensing data input.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "SPOT VEGETATION",
+      "type": "METHOD",
+      "description": "Satellite Probatoire d'Observation de la Terre vegetation remote sensing data input.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Moderate Resolution Imaging Spectrometer remote sensing data input.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "CROP TYPE DATA",
+      "type": "CONCEPT",
+      "description": "Data regarding the types of crops used as input for the dataset.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "SECONDARY ELEVATION DATA",
+      "type": "CONCEPT",
+      "description": "Elevation data used as a secondary input for the dataset.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "PRECIPITATION",
+      "type": "CONDITION",
+      "description": "50-year precipitation data used as an environmental input.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "20-year temperature data used as an environmental input.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "GROUND DATA",
+      "type": "CONCEPT",
+      "description": "Reference sub-meter to 5-meter resolution ground data used for validation or input.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "COUNTRY STATISTIC DATA",
+      "type": "CONCEPT",
+      "description": "Statistical data at the country level used as input.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "DOMINANT CROPS",
+      "type": "CROP",
+      "description": "The five dominant crops of the world used to produce the dominance data.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "IRRIGATED AND RAINFED CROPLAND AREA MAP",
+      "type": "CONCEPT",
+      "description": "A remote sensing derived global map of irrigated and rainfed cropland area.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "INTERNATIONAL WATER MANAGEMENT INSTITUTE",
+      "type": "LOCATION",
+      "description": "The organization (IWMI) that produced the global irrigated and rainfed cropland area map.",
+      "source_id": "paper_10982"
+    },
+    {
+      "name": "CROP DOMINANCE CLASSES",
+      "type": "CONCEPT",
+      "description": "The eight classes of crop dominance created as the final output of the GFSAD1KCD.",
+      "source_id": "paper_10982"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AVHRR",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "used as input data for",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "SPOT VEGETATION",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "used as input data for",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "MODIS",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "used as input data for",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "CROP TYPE DATA",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "used as input data for",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "SECONDARY ELEVATION DATA",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "used as input data for",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "PRECIPITATION",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "used as input data for",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "used as input data for",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "GROUND DATA",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "used as input data for",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "COUNTRY STATISTIC DATA",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "used as input data for",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "DOMINANT CROPS",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "overlaid to produce",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "IRRIGATED AND RAINFED CROPLAND AREA MAP",
+      "target": "GFSAD CROP DOMINANCE DATASET",
+      "description": "overlaid to produce",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "INTERNATIONAL WATER MANAGEMENT INSTITUTE",
+      "target": "IRRIGATED AND RAINFED CROPLAND AREA MAP",
+      "description": "produced",
+      "weight": "10",
+      "source_id": "paper_10982"
+    },
+    {
+      "source": "GFSAD CROP DOMINANCE DATASET",
+      "target": "CROP DOMINANCE CLASSES",
+      "description": "creates",
+      "weight": "10",
+      "source_id": "paper_10982"
+    }
+  ]
+}

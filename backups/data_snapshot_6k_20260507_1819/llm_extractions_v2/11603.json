@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "LEGUME",
+      "type": "CROP",
+      "description": "A group of plants for which improved seed varieties are developed for smallholder farmers",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "SMALLHOLDER FARMERS",
+      "type": "CONCEPT",
+      "description": "Farmers in developing countries who rely on non-improved and improved seed varieties",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "A region where smallholder farmers heavily rely on non-improved and auto-saved variety seeds",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "A region where smallholder farmers have a relatively higher rate of improved seed use, up to 70%",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "A region showing the lowest rate of improved seed use, below 20%",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "NON-IMPROVED SEED",
+      "type": "CONCEPT",
+      "description": "Auto-saved variety seeds that account for about 80% of planting material for many smallholder farmers",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "IMPROVED SEED",
+      "type": "CONCEPT",
+      "description": "Seeds developed through breeding programs to meet specific demands and preferences",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "BREEDING PROGRAMS",
+      "type": "METHOD",
+      "description": "Programs that create breakthroughs in crop varieties and develop new traits",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "TRAITS",
+      "type": "TRAIT",
+      "description": "Characteristics of recently developed crop varieties targeted to consumers and farmers",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "CONSUMER DEMANDS",
+      "type": "CONCEPT",
+      "description": "Market requirements that influence the development of traits in new crop varieties",
+      "source_id": "paper_11603"
+    },
+    {
+      "name": "FARMER PREFERENCES",
+      "type": "CONCEPT",
+      "description": "Preferences of farmers that influence the development of traits in new crop varieties",
+      "source_id": "paper_11603"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SMALLHOLDER FARMERS",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "operate in",
+      "weight": "8",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "SMALLHOLDER FARMERS",
+      "target": "SOUTH ASIA",
+      "description": "operate in",
+      "weight": "8",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "SMALLHOLDER FARMERS",
+      "target": "NON-IMPROVED SEED",
+      "description": "rely on",
+      "weight": "9",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "SMALLHOLDER FARMERS",
+      "target": "IMPROVED SEED",
+      "description": "access and use",
+      "weight": "7",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "IMPROVED SEED",
+      "target": "WEST AFRICA",
+      "description": "has low usage rate in",
+      "weight": "8",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "IMPROVED SEED",
+      "target": "SOUTH ASIA",
+      "description": "has higher usage rate in",
+      "weight": "8",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "BREEDING PROGRAMS",
+      "target": "IMPROVED SEED",
+      "description": "produce",
+      "weight": "10",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "BREEDING PROGRAMS",
+      "target": "TRAITS",
+      "description": "develop",
+      "weight": "9",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "TRAITS",
+      "target": "CONSUMER DEMANDS",
+      "description": "targeted to",
+      "weight": "8",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "TRAITS",
+      "target": "FARMER PREFERENCES",
+      "description": "targeted to",
+      "weight": "8",
+      "source_id": "paper_11603"
+    },
+    {
+      "source": "LEGUME",
+      "target": "IMPROVED SEED",
+      "description": "is the crop type for",
+      "weight": "9",
+      "source_id": "paper_11603"
+    }
+  ]
+}

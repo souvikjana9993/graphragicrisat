@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop Arachis hypogaea L. studied for iron deficiency diagnosis",
+      "source_id": "paper_3400"
+    },
+    {
+      "name": "IRON DEFICIENCY",
+      "type": "CONDITION",
+      "description": "A nutritional deficiency in groundnut characterized by chlorotic leaves and buds",
+      "source_id": "paper_3400"
+    },
+    {
+      "name": "DIAGNOSTIC TISSUE TEST",
+      "type": "METHOD",
+      "description": "A test used to identify the iron status of plant tissue",
+      "source_id": "paper_3400"
+    },
+    {
+      "name": "TOTAL IRON CONTENT",
+      "type": "CONCEPT",
+      "description": "The total amount of iron in plant tissue, noted as an unreliable index of iron status",
+      "source_id": "paper_3400"
+    },
+    {
+      "name": "IRON STATUS",
+      "type": "CONCEPT",
+      "description": "The physiological state of iron availability within the plant tissue",
+      "source_id": "paper_3400"
+    },
+    {
+      "name": "FERROUS IRON CONTENT",
+      "type": "CONCEPT",
+      "description": "The amount of iron in the ferrous state, used for better assessment of iron status",
+      "source_id": "paper_3400"
+    },
+    {
+      "name": "O-PHENANTHROLINE EXTRACTION",
+      "type": "METHOD",
+      "description": "A chemical extraction method using o-phenanthroline to measure ferrous iron",
+      "source_id": "paper_3400"
+    },
+    {
+      "name": "EXTRACTABLE IRON CONTENT",
+      "type": "CONCEPT",
+      "description": "The amount of iron that can be extracted from fresh leaf materials",
+      "source_id": "paper_3400"
+    },
+    {
+      "name": "LEAF AGE",
+      "type": "TRAIT",
+      "description": "The developmental age of the leaf, which affects extractable iron content",
+      "source_id": "paper_3400"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "IRON DEFICIENCY",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3400"
+    },
+    {
+      "source": "DIAGNOSTIC TISSUE TEST",
+      "target": "IRON DEFICIENCY",
+      "description": "used to diagnose",
+      "weight": "9",
+      "source_id": "paper_3400"
+    },
+    {
+      "source": "TOTAL IRON CONTENT",
+      "target": "IRON STATUS",
+      "description": "unreliable index of",
+      "weight": "8",
+      "source_id": "paper_3400"
+    },
+    {
+      "source": "FERROUS IRON CONTENT",
+      "target": "IRON STATUS",
+      "description": "better assessment of",
+      "weight": "9",
+      "source_id": "paper_3400"
+    },
+    {
+      "source": "O-PHENANTHROLINE EXTRACTION",
+      "target": "FERROUS IRON CONTENT",
+      "description": "used to estimate",
+      "weight": "10",
+      "source_id": "paper_3400"
+    },
+    {
+      "source": "EXTRACTABLE IRON CONTENT",
+      "target": "LEAF AGE",
+      "description": "increases with",
+      "weight": "8",
+      "source_id": "paper_3400"
+    },
+    {
+      "source": "EXTRACTABLE IRON CONTENT",
+      "target": "IRON STATUS",
+      "description": "indicates",
+      "weight": "7",
+      "source_id": "paper_3400"
+    }
+  ]
+}

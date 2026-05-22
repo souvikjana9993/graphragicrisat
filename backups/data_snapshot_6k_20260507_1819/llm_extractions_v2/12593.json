@@ -1,0 +1,215 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop species being improved for yield and adaptability under specific cultivation conditions",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area, a key productivity metric",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "ADAPTABILITY",
+      "type": "TRAIT",
+      "description": "The ability of the crop to perform and survive under specific environmental conditions",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "DIRECT-SEEDED CULTIVATION",
+      "type": "CONDITION",
+      "description": "A farming method where seeds are sown directly into the field rather than transplanted",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "KASP",
+      "type": "METHOD",
+      "description": "Kompetitive Allele-Specific PCR, a genotyping method used to develop molecular markers",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "KASP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Molecular markers developed using the KASP method to identify specific traits or genes",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "GENOMICS-ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "A breeding approach that utilizes genomic information and molecular markers to select desired traits",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "PYRAMIDING",
+      "type": "CONCEPT",
+      "description": "The process of combining multiple favorable genes into a single genotype",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "BIOTIC RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist biological stressors such as pests and diseases",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "ANAEROBIC GERMINATION",
+      "type": "TRAIT",
+      "description": "The ability of seeds to germinate successfully in low-oxygen or flooded conditions",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "ROOT TRAITS",
+      "type": "TRAIT",
+      "description": "Physical and functional characteristics of the plant root system",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "LODGING RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to remain upright and resist falling over",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "EARLY-UNIFORM EMERGENCE",
+      "type": "TRAIT",
+      "description": "The trait of seeds emerging from the soil simultaneously and at an early stage",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat markers used for genetic validation and comparison",
+      "source_id": "paper_12593"
+    },
+    {
+      "name": "QTL",
+      "type": "GENE_MARKER",
+      "description": "Quantitative Trait Loci, regions of DNA associated with a particular phenotypic trait",
+      "source_id": "paper_12593"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "KASP MARKERS",
+      "target": "RICE",
+      "description": "used for genetic improvement of",
+      "weight": "10",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "GRAIN YIELD",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "ADAPTABILITY",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "BIOTIC RESISTANCE",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "ANAEROBIC GERMINATION",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "ROOT TRAITS",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "LODGING RESISTANCE",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "EARLY-UNIFORM EMERGENCE",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "KASP",
+      "target": "KASP MARKERS",
+      "description": "used to develop",
+      "weight": "10",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "GENOMICS-ASSISTED BREEDING",
+      "target": "KASP MARKERS",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "PYRAMIDING",
+      "target": "GENOMICS-ASSISTED BREEDING",
+      "description": "is a strategy within",
+      "weight": "8",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "RICE",
+      "target": "DIRECT-SEEDED CULTIVATION",
+      "description": "grown under",
+      "weight": "10",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "DIRECT-SEEDED CULTIVATION",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "ADAPTABILITY",
+      "target": "DIRECT-SEEDED CULTIVATION",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "SSR MARKERS",
+      "description": "validated against",
+      "weight": "7",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "QTL",
+      "target": "GRAIN YIELD",
+      "description": "provides genetic basis for",
+      "weight": "9",
+      "source_id": "paper_12593"
+    },
+    {
+      "source": "QTL",
+      "target": "ADAPTABILITY",
+      "description": "provides genetic basis for",
+      "weight": "9",
+      "source_id": "paper_12593"
+    }
+  ]
+}

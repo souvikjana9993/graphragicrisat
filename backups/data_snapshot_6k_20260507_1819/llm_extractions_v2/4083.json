@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The cereal crop being analyzed for consumer preference characteristics.",
+      "source_id": "paper_4083"
+    },
+    {
+      "name": "CONSUMER PREFERENCES",
+      "type": "CONCEPT",
+      "description": "The preferences of consumers for sorghum based on quality characteristics.",
+      "source_id": "paper_4083"
+    },
+    {
+      "name": "QUALITY CHARACTERISTICS",
+      "type": "TRAIT",
+      "description": "The evident and cryptic attributes of sorghum that determine consumer preference.",
+      "source_id": "paper_4083"
+    },
+    {
+      "name": "EVIDENT QUALITY CHARACTERISTICS",
+      "type": "TRAIT",
+      "description": "Visible quality traits of sorghum that affect consumer preferences.",
+      "source_id": "paper_4083"
+    },
+    {
+      "name": "CRYPTIC QUALITY CHARACTERISTICS",
+      "type": "TRAIT",
+      "description": "Non-visible quality traits of sorghum that affect consumer preferences.",
+      "source_id": "paper_4083"
+    },
+    {
+      "name": "MARKET PRICES",
+      "type": "CONCEPT",
+      "description": "Daily prices used as a reflection of consumer preferences for sorghum.",
+      "source_id": "paper_4083"
+    },
+    {
+      "name": "SORGHUM PREFERENCE INDEX",
+      "type": "METHOD",
+      "description": "A selection index (SPI) developed to predict consumer preferences based on quality characteristics.",
+      "source_id": "paper_4083"
+    },
+    {
+      "name": "TIME SERIES DATA",
+      "type": "METHOD",
+      "description": "Data collected over a period of time used to derive the SPI.",
+      "source_id": "paper_4083"
+    },
+    {
+      "name": "CROSS-SECTIONAL DATA",
+      "type": "METHOD",
+      "description": "Data collected from multiple sources at a single point in time used to derive the SPI.",
+      "source_id": "paper_4083"
+    },
+    {
+      "name": "LARGE-SCALE SCREENING",
+      "type": "METHOD",
+      "description": "The application of the SPI for evaluating many sorghum samples.",
+      "source_id": "paper_4083"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "QUALITY CHARACTERISTICS",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "QUALITY CHARACTERISTICS",
+      "target": "CONSUMER PREFERENCES",
+      "description": "determine",
+      "weight": "10",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "EVIDENT QUALITY CHARACTERISTICS",
+      "target": "CONSUMER PREFERENCES",
+      "description": "affect",
+      "weight": "8",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "CRYPTIC QUALITY CHARACTERISTICS",
+      "target": "CONSUMER PREFERENCES",
+      "description": "affect",
+      "weight": "8",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "CONSUMER PREFERENCES",
+      "target": "MARKET PRICES",
+      "description": "reflected in",
+      "weight": "9",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "QUALITY CHARACTERISTICS",
+      "target": "SORGHUM PREFERENCE INDEX",
+      "description": "used as weights for",
+      "weight": "9",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "SORGHUM PREFERENCE INDEX",
+      "target": "CONSUMER PREFERENCES",
+      "description": "predicts",
+      "weight": "10",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "SORGHUM PREFERENCE INDEX",
+      "target": "SORGHUM",
+      "description": "ranks samples of",
+      "weight": "8",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "TIME SERIES DATA",
+      "target": "SORGHUM PREFERENCE INDEX",
+      "description": "used to derive",
+      "weight": "7",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "CROSS-SECTIONAL DATA",
+      "target": "SORGHUM PREFERENCE INDEX",
+      "description": "used to derive",
+      "weight": "7",
+      "source_id": "paper_4083"
+    },
+    {
+      "source": "SORGHUM PREFERENCE INDEX",
+      "target": "LARGE-SCALE SCREENING",
+      "description": "applicable for",
+      "weight": "8",
+      "source_id": "paper_4083"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Cultivated groundnut, specifically subspecies fastigiata",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "FRESH SEED DORMANCY",
+      "type": "TRAIT",
+      "description": "A trait where seeds do not germinate immediately after harvest",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "DOMESTICATION",
+      "type": "CONCEPT",
+      "description": "The process of adapting wild plants for human use",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "HUMAN-MADE SELECTION",
+      "type": "CONCEPT",
+      "description": "Artificial selection for specific desired traits",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "PRECOCIOUS SEED GERMINATION",
+      "type": "TRAIT",
+      "description": "Early seed germination during harvest leading to losses",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "MOLECULAR BREEDING",
+      "type": "METHOD",
+      "description": "Breeding approach utilizing genetic markers for selection",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINES",
+      "type": "METHOD",
+      "description": "A population used for genetic mapping and segregating traits",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "QTL-SEQ",
+      "type": "METHOD",
+      "description": "A sequencing-based approach for identifying quantitative trait loci",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "WHOLE-GENOME SEQUENCING",
+      "type": "METHOD",
+      "description": "The process of determining the complete DNA sequence of an organism's genome",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "DELTA-SNP INDEX",
+      "type": "METHOD",
+      "description": "A calculation used to identify genomic regions associated with a trait",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms used as high-confidence genetic markers",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "B05 PSEUDOMOLECULE",
+      "type": "LOCATION",
+      "description": "A specific genomic region on the B05 pseudomolecule of groundnut",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "A09 PSEUDOMOLECULE",
+      "type": "LOCATION",
+      "description": "A specific genomic region on the A09 pseudomolecule of groundnut",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "RING-H2 FINGER PROTEIN",
+      "type": "GENE_MARKER",
+      "description": "A candidate gene identified to control fresh seed dormancy",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "ZEAXANTHIN EPOXIDASE",
+      "type": "GENE_MARKER",
+      "description": "A candidate gene identified to control fresh seed dormancy",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "ABSCISIC ACID",
+      "type": "CONCEPT",
+      "description": "A plant hormone involved in the regulation of seed dormancy",
+      "source_id": "paper_11331"
+    },
+    {
+      "name": "GMFSD1",
+      "type": "GENE_MARKER",
+      "description": "A validated molecular marker used to improve dormancy in groundnut",
+      "source_id": "paper_11331"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "FRESH SEED DORMANCY",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "DOMESTICATION",
+      "target": "FRESH SEED DORMANCY",
+      "description": "led to the loss of",
+      "weight": "8",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "HUMAN-MADE SELECTION",
+      "target": "FRESH SEED DORMANCY",
+      "description": "led to the loss of",
+      "weight": "8",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "FRESH SEED DORMANCY",
+      "target": "PRECOCIOUS SEED GERMINATION",
+      "description": "lack of this trait causes",
+      "weight": "9",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "QTL-SEQ",
+      "target": "FRESH SEED DORMANCY",
+      "description": "used to identify genomic regions for",
+      "weight": "10",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "WHOLE-GENOME SEQUENCING",
+      "target": "QTL-SEQ",
+      "description": "provides data for",
+      "weight": "9",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "DELTA-SNP INDEX",
+      "target": "QTL-SEQ",
+      "description": "is a calculation used in",
+      "weight": "9",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "QTL-SEQ",
+      "target": "SNPS",
+      "description": "identified",
+      "weight": "8",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "QTL-SEQ",
+      "target": "B05 PSEUDOMOLECULE",
+      "description": "identified candidate region on",
+      "weight": "9",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "QTL-SEQ",
+      "target": "A09 PSEUDOMOLECULE",
+      "description": "identified candidate region on",
+      "weight": "9",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "B05 PSEUDOMOLECULE",
+      "target": "RING-H2 FINGER PROTEIN",
+      "description": "contains the gene",
+      "weight": "10",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "A09 PSEUDOMOLECULE",
+      "target": "ZEAXANTHIN EPOXIDASE",
+      "description": "contains the gene",
+      "weight": "10",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "RING-H2 FINGER PROTEIN",
+      "target": "FRESH SEED DORMANCY",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "ZEAXANTHIN EPOXIDASE",
+      "target": "FRESH SEED DORMANCY",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "RING-H2 FINGER PROTEIN",
+      "target": "ABSCISIC ACID",
+      "description": "controls accumulation of",
+      "weight": "8",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "ZEAXANTHIN EPOXIDASE",
+      "target": "ABSCISIC ACID",
+      "description": "controls accumulation of",
+      "weight": "8",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "GMFSD1",
+      "target": "FRESH SEED DORMANCY",
+      "description": "is a molecular marker for",
+      "weight": "10",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "GMFSD1",
+      "target": "MOLECULAR BREEDING",
+      "description": "is used in",
+      "weight": "9",
+      "source_id": "paper_11331"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "QTL-SEQ",
+      "description": "used as the population for",
+      "weight": "9",
+      "source_id": "paper_11331"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop (Pennisetum glaucum) used in intercropping systems",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop (Vigna unguiculata) used in intercropping systems",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops together, specifically cereal-legume",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "SOLE CROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing a single crop species alone",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "APSIM",
+      "type": "METHOD",
+      "description": "A crop simulation model used to evaluate crop dynamics and yields",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of grain production per unit area",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "TOTAL BIOMASS",
+      "type": "TRAIT",
+      "description": "The total biological mass produced by the crops",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A measure of the leaf area per unit ground surface area",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "The vertical growth measurement of the crops",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A condition of prolonged water shortage affecting plant growth",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "WATER SCARCITY",
+      "type": "CONDITION",
+      "description": "The lack of sufficient water resources for crop needs",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "WATER DEFICIT STRESS",
+      "type": "CONDITION",
+      "description": "The physiological stress caused by insufficient water availability",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "LOW PLANTING DENSITY",
+      "type": "CONDITION",
+      "description": "A lower number of plants per unit area",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "HIGH PLANTING DENSITY",
+      "type": "CONDITION",
+      "description": "A higher number of plants per unit area",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "SEMI-ARID ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "An environment characterized by low and irregular rainfall",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The site of the field experiment in India",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "ADAPTATION STRATEGY",
+      "type": "CONCEPT",
+      "description": "A method used to mitigate the effects of environmental stress like drought",
+      "source_id": "paper_11889"
+    },
+    {
+      "name": "FOOD PRODUCTION DIVERSIFICATION",
+      "type": "CONCEPT",
+      "description": "The integration of various crops to diversify food sources",
+      "source_id": "paper_11889"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTERCROPPING",
+      "target": "PEARL MILLET",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "COWPEA",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "APSIM",
+      "target": "INTERCROPPING",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "APSIM",
+      "target": "GRAIN YIELD",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "APSIM",
+      "target": "TOTAL BIOMASS",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "APSIM",
+      "target": "LEAF AREA INDEX",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "APSIM",
+      "target": "PLANT HEIGHT",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "DROUGHT",
+      "description": "is proposed as an adaptation to",
+      "weight": "7",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "WATER SCARCITY",
+      "target": "DROUGHT",
+      "description": "is associated with",
+      "weight": "10",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "WATER DEFICIT STRESS",
+      "target": "GRAIN YIELD",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "LOW PLANTING DENSITY",
+      "target": "GRAIN YIELD",
+      "description": "is suitable for maintaining yield under water scarcity",
+      "weight": "7",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "HIGH PLANTING DENSITY",
+      "target": "GRAIN YIELD",
+      "description": "increases yield only under high water supply",
+      "weight": "7",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "FOOD PRODUCTION DIVERSIFICATION",
+      "description": "enables",
+      "weight": "8",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "COWPEA",
+      "target": "FOOD PRODUCTION DIVERSIFICATION",
+      "description": "contributes to by providing protein",
+      "weight": "8",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "ADAPTATION STRATEGY",
+      "description": "is promoted as an",
+      "weight": "9",
+      "source_id": "paper_11889"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "SEMI-ARID ENVIRONMENT",
+      "description": "is characterized as",
+      "weight": "9",
+      "source_id": "paper_11889"
+    }
+  ]
+}

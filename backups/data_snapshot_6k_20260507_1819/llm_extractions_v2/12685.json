@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "SOIL ACIDITY",
+      "type": "CONDITION",
+      "description": "A major crop production constraint characterized by low soil pH in the highlands of Ethiopia",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "SOUTHERN HIGHLANDS OF ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the on-farm liming experiment was conducted",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "LIMING",
+      "type": "METHOD",
+      "description": "The practice of applying lime to amend soil acidity and improve soil properties",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "SOIL PROPERTIES",
+      "type": "CONCEPT",
+      "description": "The physical and chemical characteristics of the soil, including pH and nutrient availability",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The measure of agricultural productivity, specifically the amount of crop harvested per unit area",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "FARM INCOME",
+      "type": "CONCEPT",
+      "description": "The economic return generated from crop production",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "ACIDIC NITISOLS",
+      "type": "CONDITION",
+      "description": "A specific type of acidic soil with pH less than 5.5 found in Southern Ethiopia",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "The experimental layout used to test different liming rates with three replications",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "SOIL PH",
+      "type": "TRAIT",
+      "description": "A measure of the acidity or alkalinity of the soil",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "EXCHANGEABLE ACIDITY",
+      "type": "TRAIT",
+      "description": "A measure of the acidity in the soil that can be exchanged with other ions",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "AVAILABLE PHOSPHORUS",
+      "type": "TRAIT",
+      "description": "The amount of phosphorus in the soil that is readily available for plant uptake",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "The cereal crop used in the study to evaluate the effects of liming",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "TOTAL BIOMASS",
+      "type": "TRAIT",
+      "description": "The total organic matter produced by the barley plant",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The weight of the harvested barley grains per unit area",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "MARGINAL RATE OF RETURN",
+      "type": "CONCEPT",
+      "description": "An economic indicator used to determine the profitability of the lime application",
+      "source_id": "paper_12685"
+    },
+    {
+      "name": "GROSS MARGIN",
+      "type": "CONCEPT",
+      "description": "The total revenue minus the variable costs of production",
+      "source_id": "paper_12685"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LIMING",
+      "target": "SOIL ACIDITY",
+      "description": "amends and reduces",
+      "weight": "10",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "LIMING",
+      "target": "SOIL PH",
+      "description": "increases",
+      "weight": "10",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "LIMING",
+      "target": "EXCHANGEABLE ACIDITY",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "LIMING",
+      "target": "AVAILABLE PHOSPHORUS",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "LIMING",
+      "target": "CROP YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "LIMING",
+      "target": "FARM INCOME",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "LIMING",
+      "target": "BARLEY",
+      "description": "improves production of",
+      "weight": "9",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "BARLEY",
+      "target": "TOTAL BIOMASS",
+      "description": "has measured",
+      "weight": "10",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "BARLEY",
+      "target": "GRAIN YIELD",
+      "description": "has measured",
+      "weight": "10",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "BARLEY",
+      "target": "FARM INCOME",
+      "description": "generates",
+      "weight": "10",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "SOIL ACIDITY",
+      "target": "ACIDIC NITISOLS",
+      "description": "is a characteristic of",
+      "weight": "10",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "ACIDIC NITISOLS",
+      "target": "SOUTHERN HIGHLANDS OF ETHIOPIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "target": "LIMING",
+      "description": "was used to evaluate",
+      "weight": "8",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "MARGINAL RATE OF RETURN",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_12685"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "GROSS MARGIN",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_12685"
+    }
+  ]
+}

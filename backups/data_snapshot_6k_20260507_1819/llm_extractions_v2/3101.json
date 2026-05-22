@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "A legume crop (Arachis hypogaea L.) affected by bud necrosis disease in India",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "BUD NECROSIS DISEASE",
+      "type": "CONDITION",
+      "description": "A disease of peanut caused by a tospovirus",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "TOSPOVIRUS",
+      "type": "ORGANISM",
+      "description": "A genus of viruses that includes the cause of bud necrosis disease",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the bud necrosis disease of peanut was studied",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "PURIFICATION",
+      "type": "METHOD",
+      "description": "The process of isolating the tospovirus from the infected plant",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "ELISA",
+      "type": "METHOD",
+      "description": "Enzyme-linked immunosorbent assay used for serological testing of the virus",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "TOMATO SPOTTED WILT VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus used for comparative serological testing against the peanut virus",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "IMPATIENS NECROTIC SPOT VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus used for comparative serological testing against the peanut virus",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "ELECTRO-BLOT IMMUNOASSAY",
+      "type": "METHOD",
+      "description": "An immunoassay used to detect specific viral polypeptides",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "BUD NECROSIS VIRUS",
+      "type": "ORGANISM",
+      "description": "The specific tospovirus identified as the cause of bud necrosis disease in India",
+      "source_id": "paper_3101"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "The geographic region where bud necrosis virus appears to be restricted",
+      "source_id": "paper_3101"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BUD NECROSIS VIRUS",
+      "target": "BUD NECROSIS DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3101"
+    },
+    {
+      "source": "BUD NECROSIS DISEASE",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3101"
+    },
+    {
+      "source": "BUD NECROSIS DISEASE",
+      "target": "INDIA",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_3101"
+    },
+    {
+      "source": "BUD NECROSIS VIRUS",
+      "target": "TOSPOVIRUS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3101"
+    },
+    {
+      "source": "PURIFICATION",
+      "target": "BUD NECROSIS VIRUS",
+      "description": "used to isolate",
+      "weight": "9",
+      "source_id": "paper_3101"
+    },
+    {
+      "source": "ELISA",
+      "target": "BUD NECROSIS VIRUS",
+      "description": "used to test",
+      "weight": "9",
+      "source_id": "paper_3101"
+    },
+    {
+      "source": "ELECTRO-BLOT IMMUNOASSAY",
+      "target": "BUD NECROSIS VIRUS",
+      "description": "used to test",
+      "weight": "9",
+      "source_id": "paper_3101"
+    },
+    {
+      "source": "BUD NECROSIS VIRUS",
+      "target": "TOMATO SPOTTED WILT VIRUS",
+      "description": "is serologically distinct from",
+      "weight": "10",
+      "source_id": "paper_3101"
+    },
+    {
+      "source": "BUD NECROSIS VIRUS",
+      "target": "IMPATIENS NECROTIC SPOT VIRUS",
+      "description": "is serologically distinct from",
+      "weight": "10",
+      "source_id": "paper_3101"
+    },
+    {
+      "source": "BUD NECROSIS VIRUS",
+      "target": "ASIA",
+      "description": "is restricted to",
+      "weight": "8",
+      "source_id": "paper_3101"
+    }
+  ]
+}

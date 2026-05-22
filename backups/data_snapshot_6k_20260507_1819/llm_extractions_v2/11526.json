@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "Essential plant nutrient that is a major factor limiting crop productivity",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The measure of agricultural output, limited by nutrient availability",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "SUSTAINABLE AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "Agricultural practices that meet current needs without compromising future generations",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The process of converting atmospheric nitrogen into ammonia by certain organisms",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "Plant family capable of establishing root nodule symbiosis with rhizobia",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "ROOT NODULE SYMBIOSIS",
+      "type": "CONCEPT",
+      "description": "Mutualistic association between legumes and nitrogen-fixing soil bacteria",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "RHIZOBIA",
+      "type": "ORGANISM",
+      "description": "Collectively named nitrogen-fixing soil bacteria that interact with legumes",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "BRADYRHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "A specific genus of rhizobia that forms symbiotic relationships with groundnut",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., a legume characterized by the crack-entry bacterial invasion strategy",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "CRACK-ENTRY MECHANISM",
+      "type": "CONCEPT",
+      "description": "A specific bacterial invasion strategy used by approximately 25% of legumes, including groundnut",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "MOLECULAR SIGNALLING",
+      "type": "CONCEPT",
+      "description": "Complex communication between plants and rhizobia during the nodulation process",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "ABIOTIC STRESSES",
+      "type": "CONDITION",
+      "description": "Non-living environmental factors that affect root nodule symbiosis",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "PHYTOHORMONE HOMEOSTASIS",
+      "type": "CONCEPT",
+      "description": "The balance of plant hormones related to the regulation of root nodule symbiosis",
+      "source_id": "paper_11526"
+    },
+    {
+      "name": "GENE EXPRESSION",
+      "type": "CONCEPT",
+      "description": "The process by which genetic information is utilized, adjusted in response to symbiotic regulations",
+      "source_id": "paper_11526"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN",
+      "target": "CROP PRODUCTIVITY",
+      "description": "limits",
+      "weight": "8",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION",
+      "target": "SUSTAINABLE AGRICULTURE",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "ROOT NODULE SYMBIOSIS",
+      "description": "establish",
+      "weight": "10",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "RHIZOBIA",
+      "target": "ROOT NODULE SYMBIOSIS",
+      "description": "establish",
+      "weight": "10",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "RHIZOBIA",
+      "description": "interact with",
+      "weight": "9",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "LEGUMES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "ROOT NODULE SYMBIOSIS",
+      "description": "undergoes",
+      "weight": "10",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "RHIZOBIA",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "GROUNDNUT",
+      "description": "establishes symbiosis with",
+      "weight": "10",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "CRACK-ENTRY MECHANISM",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "ROOT NODULE SYMBIOSIS",
+      "target": "MOLECULAR SIGNALLING",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "ROOT NODULE SYMBIOSIS",
+      "target": "ABIOTIC STRESSES",
+      "description": "affected by",
+      "weight": "7",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "ROOT NODULE SYMBIOSIS",
+      "target": "PHYTOHORMONE HOMEOSTASIS",
+      "description": "related to",
+      "weight": "7",
+      "source_id": "paper_11526"
+    },
+    {
+      "source": "ROOT NODULE SYMBIOSIS",
+      "target": "GENE EXPRESSION",
+      "description": "adjusts",
+      "weight": "8",
+      "source_id": "paper_11526"
+    }
+  ]
+}

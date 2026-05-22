@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop studied for pest management in southern India",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A lepidopteran pest that attacks chickpea plants",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "SOUTHERN INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the study was conducted",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced per unit area of chickpea",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "ECONOMIC INJURY LEVELS",
+      "type": "CONCEPT",
+      "description": "The pest density at which the cost of control equals the value of yield loss",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "ACTION THRESHOLDS",
+      "type": "CONCEPT",
+      "description": "The pest density at which control measures should be initiated to prevent economic loss",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "INSECTICIDE APPLICATION",
+      "type": "METHOD",
+      "description": "The use of chemical agents to control pest populations",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of a plant variety to resist pest attack",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "ANNIGERI",
+      "type": "CROP",
+      "description": "An insect-susceptible landrace of chickpea",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "ICCC 37",
+      "type": "CROP",
+      "description": "A recently released variety of chickpea",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "ICC 506",
+      "type": "CROP",
+      "description": "An insect-resistant landrace of chickpea",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "LARVAL DENSITY",
+      "type": "CONDITION",
+      "description": "The number of larvae per plant, used to determine thresholds",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "FLOWERING STAGE",
+      "type": "CONDITION",
+      "description": "The growth phase of the chickpea plant during which larval feeding occurs",
+      "source_id": "paper_3265"
+    },
+    {
+      "name": "INSECT DAY SUMMATIONS",
+      "type": "METHOD",
+      "description": "Integrals of population curves for eggs and larvae used to indicate insecticide application timing",
+      "source_id": "paper_3265"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "attacks and causes damage to",
+      "weight": "10",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "SEED YIELD",
+      "description": "reduces the amount of",
+      "weight": "9",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SOUTHERN INDIA",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "LARVAL DENSITY",
+      "target": "ECONOMIC INJURY LEVELS",
+      "description": "is used to determine",
+      "weight": "9",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "LARVAL DENSITY",
+      "target": "ACTION THRESHOLDS",
+      "description": "is used to set",
+      "weight": "9",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "INSECTICIDE APPLICATION",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "is used to control",
+      "weight": "10",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "INSECTICIDE APPLICATION",
+      "target": "SEED YIELD",
+      "description": "helps maximize",
+      "weight": "8",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "provides a defense against",
+      "weight": "9",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "ICCC 37",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "ICC 506",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "ICC 506",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "lacks",
+      "weight": "10",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "INSECT DAY SUMMATIONS",
+      "target": "INSECTICIDE APPLICATION",
+      "description": "indicates the timing for",
+      "weight": "8",
+      "source_id": "paper_3265"
+    },
+    {
+      "source": "FLOWERING STAGE",
+      "target": "SEED YIELD",
+      "description": "is a period where larval feeding affects",
+      "weight": "7",
+      "source_id": "paper_3265"
+    }
+  ]
+}

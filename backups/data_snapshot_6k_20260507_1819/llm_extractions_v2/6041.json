@@ -1,0 +1,186 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Cereal crop used in rotation with sunflower in rainfed semi-arid tropical Alfisols",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "SUNFLOWER",
+      "type": "CROP",
+      "description": "Oilseed crop used in rotation with sorghum in rainfed semi-arid tropical Alfisols",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "HORSE GRAM",
+      "type": "CROP",
+      "description": "Legume used for biomass incorporation to assess effects on soil carbon dioxide emissions and quality",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "CARBON DIOXIDE EMISSION",
+      "type": "CONCEPT",
+      "description": "The release of CO2 from soil, used as an indicator of soil respiration and greenhouse gas emissions",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "SOIL QUALITY",
+      "type": "CONCEPT",
+      "description": "The capacity of soil to function within ecosystem boundaries to sustain plant and animal productivity",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "CONDITION",
+      "description": "A type of soil characterized by high base saturation and an argillic horizon, found in dryland semi-arid tropics",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "NITROGEN FERTILIZER",
+      "type": "METHOD",
+      "description": "Application of nitrogen-based nutrients to improve soil fertility",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "PHOSPHORUS FERTILIZER",
+      "type": "METHOD",
+      "description": "Application of phosphorus-based nutrients to improve soil fertility",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "LEGUME BIOMASS INCORPORATION",
+      "type": "METHOD",
+      "description": "The practice of adding legume plant matter into the soil to improve organic content and fertility",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "TRAIT",
+      "description": "The amount of water held in the soil",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "SOIL TEMPERATURE",
+      "type": "TRAIT",
+      "description": "The temperature of the soil at a specific depth",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "SOIL DEHYDROGENASES",
+      "type": "TRAIT",
+      "description": "Enzymes that serve as indicators of microbial activity in the soil",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "MICROBIAL BIOMASS CARBON",
+      "type": "TRAIT",
+      "description": "The carbon contained within the living microbial biomass of the soil",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "KHARIF PERIOD",
+      "type": "CONDITION",
+      "description": "The monsoon cropping season in South Asia",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "A climatic region characterized by low and irregular rainfall and high temperatures",
+      "source_id": "paper_6041"
+    },
+    {
+      "name": "GREENHOUSE GAS EMISSIONS",
+      "type": "CONCEPT",
+      "description": "Gases that trap heat in the atmosphere, including carbon dioxide",
+      "source_id": "paper_6041"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LEGUME BIOMASS INCORPORATION",
+      "target": "CARBON DIOXIDE EMISSION",
+      "description": "Increases rates of emission over fallow conditions during Kharif and legume periods",
+      "weight": "8",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "NITROGEN FERTILIZER",
+      "target": "CARBON DIOXIDE EMISSION",
+      "description": "Significantly increases soil CO2 flux",
+      "weight": "7",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "PHOSPHORUS FERTILIZER",
+      "target": "CARBON DIOXIDE EMISSION",
+      "description": "Significantly increases soil CO2 flux",
+      "weight": "7",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "LEGUME BIOMASS INCORPORATION",
+      "target": "SOIL MOISTURE",
+      "description": "Increases soil moisture content",
+      "weight": "8",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "LEGUME BIOMASS INCORPORATION",
+      "target": "SOIL TEMPERATURE",
+      "description": "Decreases soil temperature",
+      "weight": "8",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "LEGUME BIOMASS INCORPORATION",
+      "target": "MICROBIAL BIOMASS CARBON",
+      "description": "Increases the content of microbial biomass carbon",
+      "weight": "9",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "MICROBIAL BIOMASS CARBON",
+      "target": "CARBON DIOXIDE EMISSION",
+      "description": "Found to be the greatest significant variable correlated with CO2 emission",
+      "weight": "10",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "CARBON DIOXIDE EMISSION",
+      "target": "GREENHOUSE GAS EMISSIONS",
+      "description": "Is a component of greenhouse gas emissions",
+      "weight": "10",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "SEMI-ARID TROPICS",
+      "description": "Soil type found in semi-arid tropical regions",
+      "weight": "9",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ALFISOL",
+      "description": "Cultivated in dryland Alfisols",
+      "weight": "7",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "SUNFLOWER",
+      "target": "ALFISOL",
+      "description": "Cultivated in dryland Alfisols",
+      "weight": "7",
+      "source_id": "paper_6041"
+    },
+    {
+      "source": "HORSE GRAM",
+      "target": "ALFISOL",
+      "description": "Biomass incorporated into dryland Alfisols",
+      "weight": "8",
+      "source_id": "paper_6041"
+    }
+  ]
+}

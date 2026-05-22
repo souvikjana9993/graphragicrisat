@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop affected by stalk and top rot disease",
+      "source_id": "paper_4866"
+    },
+    {
+      "name": "STALK AND TOP ROT",
+      "type": "CONDITION",
+      "description": "A disease characterized by wilting, yellowing, and rotting of stalks and top parts of the plant",
+      "source_id": "paper_4866"
+    },
+    {
+      "name": "PANTNAGAR",
+      "type": "LOCATION",
+      "description": "A location in India where the disease was observed",
+      "source_id": "paper_4866"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the disease report originated",
+      "source_id": "paper_4866"
+    },
+    {
+      "name": "WILTING OF APICAL LEAVES",
+      "type": "TRAIT",
+      "description": "A symptom of stalk and top rot disease",
+      "source_id": "paper_4866"
+    },
+    {
+      "name": "YELLOWING OF LOWER LEAVES",
+      "type": "TRAIT",
+      "description": "A symptom of stalk and top rot disease",
+      "source_id": "paper_4866"
+    },
+    {
+      "name": "BROWN STALKS",
+      "type": "TRAIT",
+      "description": "A symptom of stalk and top rot disease",
+      "source_id": "paper_4866"
+    },
+    {
+      "name": "ROTTEN INTERNODES",
+      "type": "TRAIT",
+      "description": "A symptom of stalk and top rot disease",
+      "source_id": "paper_4866"
+    },
+    {
+      "name": "BACTERIAL EXUDATE",
+      "type": "CONCEPT",
+      "description": "A substance produced by bacteria found in the stalks of infected plants",
+      "source_id": "paper_4866"
+    },
+    {
+      "name": "ERWINIA CHRYSANTHEMI PV. ZEAE",
+      "type": "ORGANISM",
+      "description": "The bacterium identified as the cause of stalk and top rot in sorghum",
+      "source_id": "paper_4866"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STALK AND TOP ROT",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4866"
+    },
+    {
+      "source": "STALK AND TOP ROT",
+      "target": "PANTNAGAR",
+      "description": "observed in",
+      "weight": "10",
+      "source_id": "paper_4866"
+    },
+    {
+      "source": "PANTNAGAR",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4866"
+    },
+    {
+      "source": "ERWINIA CHRYSANTHEMI PV. ZEAE",
+      "target": "STALK AND TOP ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4866"
+    },
+    {
+      "source": "STALK AND TOP ROT",
+      "target": "WILTING OF APICAL LEAVES",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_4866"
+    },
+    {
+      "source": "STALK AND TOP ROT",
+      "target": "YELLOWING OF LOWER LEAVES",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_4866"
+    },
+    {
+      "source": "STALK AND TOP ROT",
+      "target": "BROWN STALKS",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_4866"
+    },
+    {
+      "source": "STALK AND TOP ROT",
+      "target": "ROTTEN INTERNODES",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_4866"
+    },
+    {
+      "source": "STALK AND TOP ROT",
+      "target": "BACTERIAL EXUDATE",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_4866"
+    },
+    {
+      "source": "ERWINIA CHRYSANTHEMI PV. ZEAE",
+      "target": "SORGHUM",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_4866"
+    }
+  ]
+}

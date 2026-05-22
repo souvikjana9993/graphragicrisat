@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop studied for seed infection and aflatoxin contamination",
+      "source_id": "paper_3522"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A fungus that colonizes peanut seeds and produces aflatoxin",
+      "source_id": "paper_3522"
+    },
+    {
+      "name": "IVSCAF",
+      "type": "METHOD",
+      "description": "In vitro colonization of rehydrated, mature, stored, undamaged seed by Aspergillus flavus",
+      "source_id": "paper_3522"
+    },
+    {
+      "name": "SEED INFECTION",
+      "type": "TRAIT",
+      "description": "The occurrence and level of fungal colonization in peanut seeds",
+      "source_id": "paper_3522"
+    },
+    {
+      "name": "FUNGI",
+      "type": "ORGANISM",
+      "description": "General group of fungal organisms that infect peanut seeds",
+      "source_id": "paper_3522"
+    },
+    {
+      "name": "ICRISAT CENTER PATANCHERU",
+      "type": "LOCATION",
+      "description": "The research facility in India where field trials were conducted",
+      "source_id": "paper_3522"
+    },
+    {
+      "name": "MATURITY",
+      "type": "CONDITION",
+      "description": "The developmental stage of peanut pods, including optimum and over-mature stages",
+      "source_id": "paper_3522"
+    },
+    {
+      "name": "AFLATOXIN CONTENT",
+      "type": "TRAIT",
+      "description": "The level of aflatoxin contamination present in peanut seeds",
+      "source_id": "paper_3522"
+    },
+    {
+      "name": "J11",
+      "type": "CONCEPT",
+      "description": "A peanut cultivar identified as resistant to seed infection and aflatoxin",
+      "source_id": "paper_3522"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental water deficit that increases susceptibility to fungal infection",
+      "source_id": "paper_3522"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "PEANUT",
+      "description": "infects the seeds of",
+      "weight": "10",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "SEED INFECTION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTENT",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "IVSCAF",
+      "target": "SEED INFECTION",
+      "description": "is used to screen for resistance to",
+      "weight": "8",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "ICRISAT CENTER PATANCHERU",
+      "target": "PEANUT",
+      "description": "is the location where trials on were conducted",
+      "weight": "7",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "MATURITY",
+      "target": "SEED INFECTION",
+      "description": "increases the level of as it progresses beyond optimum",
+      "weight": "8",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "MATURITY",
+      "target": "AFLATOXIN CONTENT",
+      "description": "increases the level of as it progresses beyond optimum",
+      "weight": "8",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "J11",
+      "target": "PEANUT",
+      "description": "is a specific cultivar of",
+      "weight": "10",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "J11",
+      "target": "SEED INFECTION",
+      "description": "exhibits significantly lower levels of",
+      "weight": "9",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "J11",
+      "target": "AFLATOXIN CONTENT",
+      "description": "exhibits significantly lower levels of",
+      "weight": "9",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "SEED INFECTION",
+      "description": "increases susceptibility to",
+      "weight": "8",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "AFLATOXIN CONTENT",
+      "description": "increases contamination of",
+      "weight": "8",
+      "source_id": "paper_3522"
+    },
+    {
+      "source": "FUNGI",
+      "target": "SEED INFECTION",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_3522"
+    }
+  ]
+}

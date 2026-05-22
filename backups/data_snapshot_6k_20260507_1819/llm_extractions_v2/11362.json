@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Principal food crop grown extensively in India.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country with the largest area under rice cultivation.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "RICE-FALLOW CROPLANDS",
+      "type": "CONCEPT",
+      "description": "Areas where rice is grown during the Kharif season followed by fallow during the Rabi season.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "KHARIF GROWING SEASON",
+      "type": "CONDITION",
+      "description": "Growing season from June to October.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "RABI SEASON",
+      "type": "CONDITION",
+      "description": "Growing season from November to February.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "CENTRAL AND WESTERN STATES OF INDIA",
+      "type": "LOCATION",
+      "description": "Region in India where rice areas are increasing and the study was conducted.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Moderate Resolution Imaging Spectroradiometer used for time series data.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used at 250m spatial resolution for monitoring.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "GROUND SURVEY DATA",
+      "type": "METHOD",
+      "description": "Season-wise intensive data used for mapping rice areas.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "HIERARCHICAL CLASSIFICATION",
+      "type": "METHOD",
+      "description": "Technique applied to map rice areas and fallows.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Technique applied to map rice areas and fallows.",
+      "source_id": "paper_11362"
+    },
+    {
+      "name": "CHANGE DETECTION",
+      "type": "METHOD",
+      "description": "Process used to monitor the expansion of rice areas between 2000-2015 and 2010-2015.",
+      "source_id": "paper_11362"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "RICE-FALLOW CROPLANDS",
+      "target": "RICE",
+      "description": "associated with",
+      "weight": "10",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "RICE-FALLOW CROPLANDS",
+      "target": "KHARIF GROWING SEASON",
+      "description": "rice grown during",
+      "weight": "9",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "RICE-FALLOW CROPLANDS",
+      "target": "RABI SEASON",
+      "description": "fallow during",
+      "weight": "9",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "RICE",
+      "target": "CENTRAL AND WESTERN STATES OF INDIA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "MODIS",
+      "target": "NDVI",
+      "description": "provides data for",
+      "weight": "9",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "NDVI",
+      "target": "RICE",
+      "description": "used to monitor",
+      "weight": "8",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "GROUND SURVEY DATA",
+      "target": "RICE",
+      "description": "used to monitor",
+      "weight": "8",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "HIERARCHICAL CLASSIFICATION",
+      "target": "RICE",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "RICE",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "CHANGE DETECTION",
+      "target": "RICE",
+      "description": "used to monitor expansion of",
+      "weight": "8",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "HIERARCHICAL CLASSIFICATION",
+      "target": "RICE-FALLOW CROPLANDS",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_11362"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "RICE-FALLOW CROPLANDS",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_11362"
+    }
+  ]
+}

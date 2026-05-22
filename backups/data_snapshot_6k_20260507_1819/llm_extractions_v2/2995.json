@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The legume crop Cajanus cajan studied for pod borer infestation",
+      "source_id": "paper_2995"
+    },
+    {
+      "name": "SOWING TIME",
+      "type": "CONCEPT",
+      "description": "The timing of planting the crop, varied between early May, mid-May, and mid-June",
+      "source_id": "paper_2995"
+    },
+    {
+      "name": "POD BORER",
+      "type": "ORGANISM",
+      "description": "The pest Helicoverpa armigera that causes damage to pigeonpea pods",
+      "source_id": "paper_2995"
+    },
+    {
+      "name": "POD BORER INFESTATION",
+      "type": "CONDITION",
+      "description": "The occurrence and extent of damage caused by Helicoverpa armigera on the crop",
+      "source_id": "paper_2995"
+    },
+    {
+      "name": "SONIPAT DISTRICT, HARYANA",
+      "type": "LOCATION",
+      "description": "The geographical area where the field trials were conducted",
+      "source_id": "paper_2995"
+    },
+    {
+      "name": "ON-FARM FIELD TRIALS",
+      "type": "METHOD",
+      "description": "The experimental approach used to test sowing dates and record infestation and yield",
+      "source_id": "paper_2995"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_2995"
+    },
+    {
+      "name": "EARLY SOWING",
+      "type": "CONCEPT",
+      "description": "Planting the crop in the first week of May",
+      "source_id": "paper_2995"
+    },
+    {
+      "name": "LATE SOWING",
+      "type": "CONCEPT",
+      "description": "Planting the crop in mid-June",
+      "source_id": "paper_2995"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOWING TIME",
+      "target": "POD BORER INFESTATION",
+      "description": "Sowing time affects the level of pod borer infestation",
+      "weight": "9",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "SOWING TIME",
+      "target": "GRAIN YIELD",
+      "description": "Sowing time affects the final grain yield",
+      "weight": "9",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "POD BORER",
+      "target": "POD BORER INFESTATION",
+      "description": "Pod borer causes the infestation and damage",
+      "weight": "10",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "POD BORER INFESTATION",
+      "target": "GRAIN YIELD",
+      "description": "Pod borer infestation leads to a decrease in grain yield",
+      "weight": "8",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "ON-FARM FIELD TRIALS",
+      "target": "SONIPAT DISTRICT, HARYANA",
+      "description": "Field trials were conducted in this location",
+      "weight": "10",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "ON-FARM FIELD TRIALS",
+      "target": "PIGEONPEA",
+      "description": "Field trials were performed on this crop",
+      "weight": "10",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "EARLY SOWING",
+      "target": "POD BORER INFESTATION",
+      "description": "Early sowing reduces the level of pod borer infestation",
+      "weight": "9",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "LATE SOWING",
+      "target": "POD BORER INFESTATION",
+      "description": "Late sowing increases the level of pod borer infestation",
+      "weight": "9",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "EARLY SOWING",
+      "target": "GRAIN YIELD",
+      "description": "Early sowing results in higher grain yield",
+      "weight": "9",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "LATE SOWING",
+      "target": "GRAIN YIELD",
+      "description": "Late sowing results in lower grain yield",
+      "weight": "9",
+      "source_id": "paper_2995"
+    },
+    {
+      "source": "POD BORER",
+      "target": "PIGEONPEA",
+      "description": "Pod borer is a pest that infests pigeonpea",
+      "weight": "10",
+      "source_id": "paper_2995"
+    }
+  ]
+}

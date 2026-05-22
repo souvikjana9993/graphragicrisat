@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A legume crop (Cajanus cajan) affected by Phytophthora blight",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the blighted pigeon-pea plants were collected",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "PHYTOPHTHORA",
+      "type": "ORGANISM",
+      "description": "A genus of oomycetes identified as the causal organism of the disease",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "PHYTOPHTHORA BLIGHT",
+      "type": "CONDITION",
+      "description": "A disease affecting pigeon pea plants",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "SPORANGIUM SHAPE AND SIZE",
+      "type": "TRAIT",
+      "description": "Morphological characteristics used for classification of the isolates",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "OOGONIUM AND OOSPORE FORMATION",
+      "type": "TRAIT",
+      "description": "Morphological characteristics used for classification of the isolates",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "TEMPERATURE REQUIREMENTS",
+      "type": "TRAIT",
+      "description": "Environmental growth requirements used for classification of the isolates",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "PATHOGENICITY TESTS",
+      "type": "METHOD",
+      "description": "Tests used to determine the ability of the organism to cause disease",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "P. DRECHSLERI F. SP. CAJANI",
+      "type": "ORGANISM",
+      "description": "The specific forma specialis of Phytophthora identified as the causal agent",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "FORMAE SPECIALES",
+      "type": "CONCEPT",
+      "description": "A taxonomic rank used to classify fungi/oomycetes based on host specificity",
+      "source_id": "paper_5126"
+    },
+    {
+      "name": "ATYLOSIA SPP.",
+      "type": "ORGANISM",
+      "description": "Wild relatives of the pigeon pea that are also susceptible to the isolates",
+      "source_id": "paper_5126"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHYTOPHTHORA BLIGHT",
+      "target": "PIGEON PEA",
+      "description": "Affects the crop",
+      "weight": "10",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "PHYTOPHTHORA",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "Causal organism of the disease",
+      "weight": "10",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "P. DRECHSLERI F. SP. CAJANI",
+      "target": "PHYTOPHTHORA",
+      "description": "Is a specific species/form of the genus",
+      "weight": "10",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "P. DRECHSLERI F. SP. CAJANI",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "Causal agent of the disease",
+      "weight": "10",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "P. DRECHSLERI F. SP. CAJANI",
+      "target": "PIGEON PEA",
+      "description": "Shows specificity to this host",
+      "weight": "10",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "P. DRECHSLERI F. SP. CAJANI",
+      "target": "ATYLOSIA SPP.",
+      "description": "Shows specificity to this host",
+      "weight": "10",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "SPORANGIUM SHAPE AND SIZE",
+      "target": "P. DRECHSLERI F. SP. CAJANI",
+      "description": "Used for classification of the isolate",
+      "weight": "8",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "OOGONIUM AND OOSPORE FORMATION",
+      "target": "P. DRECHSLERI F. SP. CAJANI",
+      "description": "Used for classification of the isolate",
+      "weight": "8",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "TEMPERATURE REQUIREMENTS",
+      "target": "P. DRECHSLERI F. SP. CAJANI",
+      "description": "Used for classification of the isolate",
+      "weight": "8",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "PATHOGENICITY TESTS",
+      "target": "P. DRECHSLERI F. SP. CAJANI",
+      "description": "Used for classification of the isolate",
+      "weight": "8",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "FORMAE SPECIALES",
+      "target": "P. DRECHSLERI F. SP. CAJANI",
+      "description": "Taxonomic classification used for the isolate",
+      "weight": "7",
+      "source_id": "paper_5126"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "INDIA",
+      "description": "Collected from different locations in",
+      "weight": "5",
+      "source_id": "paper_5126"
+    }
+  ]
+}

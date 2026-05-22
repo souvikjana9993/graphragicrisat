@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop studied for shoot fly resistance",
+      "source_id": "paper_1498"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "The height of the sorghum plant, where tall genotypes showed more resistance",
+      "source_id": "paper_1498"
+    },
+    {
+      "name": "DAYS TO FLOWERING",
+      "type": "TRAIT",
+      "description": "The time from planting to flowering, where late-maturing genotypes showed more resistance",
+      "source_id": "paper_1498"
+    },
+    {
+      "name": "ATHERIGONA SOCCATA",
+      "type": "ORGANISM",
+      "description": "The shoot fly pest that affects sorghum",
+      "source_id": "paper_1498"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum lines to resist infestation by Atherigona soccata",
+      "source_id": "paper_1498"
+    },
+    {
+      "name": "LEAF SURFACE GLOSSINESS",
+      "type": "TRAIT",
+      "description": "The intensity of glossiness on the leaf surface, where high gloss intensity correlates with resistance",
+      "source_id": "paper_1498"
+    },
+    {
+      "name": "CORRELATION STUDIES",
+      "type": "METHOD",
+      "description": "The research approach used to investigate the effect of plant height and days to flower on pest incidence",
+      "source_id": "paper_1498"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CORRELATION STUDIES",
+      "target": "SORGHUM",
+      "description": "Used to study traits in",
+      "weight": "8",
+      "source_id": "paper_1498"
+    },
+    {
+      "source": "PLANT HEIGHT",
+      "target": "RESISTANCE",
+      "description": "Tall plant height is associated with higher resistance to A. soccata",
+      "weight": "7",
+      "source_id": "paper_1498"
+    },
+    {
+      "source": "DAYS TO FLOWERING",
+      "target": "RESISTANCE",
+      "description": "Late flowering is associated with higher resistance to A. soccata",
+      "weight": "7",
+      "source_id": "paper_1498"
+    },
+    {
+      "source": "LEAF SURFACE GLOSSINESS",
+      "target": "RESISTANCE",
+      "description": "High gloss intensity is associated with higher resistance to A. soccata",
+      "weight": "9",
+      "source_id": "paper_1498"
+    },
+    {
+      "source": "ATHERIGONA SOCCATA",
+      "target": "RESISTANCE",
+      "description": "The target pest for which resistance is measured",
+      "weight": "10",
+      "source_id": "paper_1498"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PLANT HEIGHT",
+      "description": "Possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_1498"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "DAYS TO FLOWERING",
+      "description": "Possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_1498"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "LEAF SURFACE GLOSSINESS",
+      "description": "Possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_1498"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "RESISTANCE",
+      "description": "Exhibits varying levels of resistance to A. soccata",
+      "weight": "10",
+      "source_id": "paper_1498"
+    }
+  ]
+}

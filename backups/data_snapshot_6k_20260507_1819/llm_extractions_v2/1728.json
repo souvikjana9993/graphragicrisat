@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop (Pennisetum glaucum) studied for yield loss due to pest damage.",
+      "source_id": "paper_1728"
+    },
+    {
+      "name": "YIELD LOSS",
+      "type": "TRAIT",
+      "description": "The reduction in crop productivity resulting from damage by pests.",
+      "source_id": "paper_1728"
+    },
+    {
+      "name": "HELIOCHEILUS ALBIPUNCTELLA",
+      "type": "ORGANISM",
+      "description": "The millet head miner, a noctuid pest that causes panicle damage in pearl millet.",
+      "source_id": "paper_1728"
+    },
+    {
+      "name": "DAMAGE RATING SCALE",
+      "type": "METHOD",
+      "description": "A tool used to quantify panicle damage for the assessment of yield loss.",
+      "source_id": "paper_1728"
+    },
+    {
+      "name": "REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to establish linear equations for predicting yield loss.",
+      "source_id": "paper_1728"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the research and field assessments were conducted.",
+      "source_id": "paper_1728"
+    },
+    {
+      "name": "SADORE LOCAL",
+      "type": "CROP",
+      "description": "A local variety of pearl millet used in the field assessment of yield loss.",
+      "source_id": "paper_1728"
+    },
+    {
+      "name": "LINEAR EQUATIONS",
+      "type": "CONCEPT",
+      "description": "Mathematical models established to relate damage ratings to percentage yield loss.",
+      "source_id": "paper_1728"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELIOCHEILUS ALBIPUNCTELLA",
+      "target": "YIELD LOSS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1728"
+    },
+    {
+      "source": "HELIOCHEILUS ALBIPUNCTELLA",
+      "target": "PEARL MILLET",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_1728"
+    },
+    {
+      "source": "DAMAGE RATING SCALE",
+      "target": "YIELD LOSS",
+      "description": "estimates",
+      "weight": "9",
+      "source_id": "paper_1728"
+    },
+    {
+      "source": "REGRESSION ANALYSIS",
+      "target": "LINEAR EQUATIONS",
+      "description": "establishes",
+      "weight": "9",
+      "source_id": "paper_1728"
+    },
+    {
+      "source": "LINEAR EQUATIONS",
+      "target": "YIELD LOSS",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_1728"
+    },
+    {
+      "source": "SADORE LOCAL",
+      "target": "PEARL MILLET",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1728"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "NIGER",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_1728"
+    },
+    {
+      "source": "DAMAGE RATING SCALE",
+      "target": "PEARL MILLET",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_1728"
+    }
+  ]
+}

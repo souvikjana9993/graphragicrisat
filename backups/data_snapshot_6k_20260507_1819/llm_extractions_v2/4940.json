@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species studied for its response to anthracnose infection",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "PHENOL CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of phenolic compounds measured in sorghum lines",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "COLLETOTRICHUM GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The causal fungus of anthracnose in sorghum",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "ANTHRACNOSE",
+      "type": "CONDITION",
+      "description": "A disease of sorghum caused by Colletotrichum graminicola",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "PHENOLIC COMPOUNDS",
+      "type": "CONCEPT",
+      "description": "Chemical compounds that accumulate in plants following infection and can be toxic to fungi",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "PLANT PATHOGENS",
+      "type": "ORGANISM",
+      "description": "Organisms that cause disease in plants",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "FUNGI",
+      "type": "ORGANISM",
+      "description": "A group of organisms including pathogenic and non-pathogenic species",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "INDUCED RESISTANCE",
+      "type": "TRAIT",
+      "description": "A plant's defense mechanism triggered by infection",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "One of the regions where the International Sorghum Anthracnose Virulence Nursery was conducted",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "One of the regions where the International Sorghum Anthracnose Virulence Nursery was conducted",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "ICRISAT-PATANCHERU",
+      "type": "LOCATION",
+      "description": "The location of the greenhouse where sorghum plants were grown",
+      "source_id": "paper_4940"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "The type of soil mix used for growing the sorghum plants",
+      "source_id": "paper_4940"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COLLETOTRICHUM GRAMINICOLA",
+      "target": "ANTHRACNOSE",
+      "description": "is the causal agent of",
+      "weight": "10",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "COLLETOTRICHUM GRAMINICOLA",
+      "target": "SORGHUM",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "ANTHRACNOSE",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "PHENOL CONTENT",
+      "target": "SORGHUM",
+      "description": "is measured in",
+      "weight": "9",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "PHENOLIC COMPOUNDS",
+      "target": "FUNGI",
+      "description": "are toxic to",
+      "weight": "8",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "PHENOLIC COMPOUNDS",
+      "target": "INDUCED RESISTANCE",
+      "description": "contribute to",
+      "weight": "8",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "COLLETOTRICHUM GRAMINICOLA",
+      "target": "FUNGI",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "PLANT PATHOGENS",
+      "target": "FUNGI",
+      "description": "includes",
+      "weight": "7",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INDIA",
+      "description": "was tested in",
+      "weight": "6",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "AFRICA",
+      "description": "was tested in",
+      "weight": "6",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ICRISAT-PATANCHERU",
+      "description": "was grown at",
+      "weight": "7",
+      "source_id": "paper_4940"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "VERTISOL",
+      "description": "was grown in",
+      "weight": "7",
+      "source_id": "paper_4940"
+    }
+  ]
+}

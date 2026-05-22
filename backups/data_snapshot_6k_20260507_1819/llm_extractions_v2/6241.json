@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop studied for seedborne infection by Rhizoctonia bataticola",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing seedborne infection, damping-off, and seed rot in groundnut",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "SEEDBORNE INFECTION",
+      "type": "CONDITION",
+      "description": "Infection of groundnut seeds caused by Rhizoctonia bataticola",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "COMPONENT-PLATING METHOD",
+      "type": "METHOD",
+      "description": "A method used to determine the location of the pathogen on the seed coat, endosperm, and embryo",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "PRE-EMERGENCE DAMPING-OFF",
+      "type": "CONDITION",
+      "description": "A disease symptom occurring before seedling emergence, often manifesting as seed rot",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "SEED ROT",
+      "type": "CONDITION",
+      "description": "A specific form of pre-emergence damping-off",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "POST-EMERGENCE DAMPING-OFF",
+      "type": "CONDITION",
+      "description": "A disease symptom occurring after seedling emergence",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "LATENT INFECTION",
+      "type": "CONDITION",
+      "description": "Infection where the pathogen is present without apparent symptoms on the plant",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "POTATO CARROT AGAR MEDIUM",
+      "type": "METHOD",
+      "description": "A medium used to prove the presence of latent infection from healthy seedlings",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "SEED TRANSMISSION",
+      "type": "CONCEPT",
+      "description": "The process by which the pathogen is passed from one generation to the next via seeds",
+      "source_id": "paper_6241"
+    },
+    {
+      "name": "CARBENDAZIM + TIN RAM",
+      "type": "METHOD",
+      "description": "A chemical treatment used to eliminate Rhizoctonia bataticola from groundnut seeds",
+      "source_id": "paper_6241"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "GROUNDNUT",
+      "description": "causes seedborne infection in",
+      "weight": "10",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "SEEDBORNE INFECTION",
+      "description": "is the causative agent of",
+      "weight": "10",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "COMPONENT-PLATING METHOD",
+      "target": "RHIZOCTONIA BATATICOLA",
+      "description": "used to locate the position of",
+      "weight": "8",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "PRE-EMERGENCE DAMPING-OFF",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "PRE-EMERGENCE DAMPING-OFF",
+      "target": "SEED ROT",
+      "description": "manifests as",
+      "weight": "10",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "POST-EMERGENCE DAMPING-OFF",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "LATENT INFECTION",
+      "description": "can exist as",
+      "weight": "8",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "POTATO CARROT AGAR MEDIUM",
+      "target": "LATENT INFECTION",
+      "description": "used to prove",
+      "weight": "8",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "SEED TRANSMISSION",
+      "description": "demonstrates",
+      "weight": "10",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "CARBENDAZIM + TIN RAM",
+      "target": "RHIZOCTONIA BATATICOLA",
+      "description": "eliminates",
+      "weight": "9",
+      "source_id": "paper_6241"
+    },
+    {
+      "source": "CARBENDAZIM + TIN RAM",
+      "target": "GROUNDNUT",
+      "description": "applied to seeds of",
+      "weight": "7",
+      "source_id": "paper_6241"
+    }
+  ]
+}

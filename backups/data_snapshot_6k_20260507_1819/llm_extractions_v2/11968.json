@@ -1,0 +1,161 @@
+{
+  "entities": [
+    {
+      "name": "DOMESTIC WASTEWATER",
+      "type": "CONDITION",
+      "description": "Untreated wastewater that acts as a source of non-point source pollutants",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "AGRICULTURAL RUNOFF",
+      "type": "CONDITION",
+      "description": "Runoff from agricultural lands that contributes to non-point source pollutants",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "NON-POINT SOURCE POLLUTANTS",
+      "type": "CONCEPT",
+      "description": "Pollutants from diffuse sources that threaten aquatic ecosystems",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "AQUATIC ECOSYSTEMS",
+      "type": "LOCATION",
+      "description": "Water-based environments threatened by non-point source pollutants",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "PERIPHYTON BIOFILM-BASED TECHNOLOGIES",
+      "type": "METHOD",
+      "description": "Technologies utilizing periphyton biofilms for nutrient pollution control",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "NUTRIENT POLLUTION",
+      "type": "CONDITION",
+      "description": "Excess nutrients in agricultural systems that need controlling",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "AGRICULTURAL SYSTEMS",
+      "type": "LOCATION",
+      "description": "Agricultural environments where nutrient pollution occurs",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "PERIPHYTON FLOWAY",
+      "type": "METHOD",
+      "description": "A system employing periphyton to treat non-point source pollution",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "AGRICULTURAL WATERSHED",
+      "type": "LOCATION",
+      "description": "The geographical area from which non-point source pollution is treated",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "ALGAE FLOWAY",
+      "type": "METHOD",
+      "description": "An outdoor single pass system used to evaluate the treatment of NPS pollution",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "PERIPHYTON",
+      "type": "ORGANISM",
+      "description": "The organism used to create biofilms for pollution treatment",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "CONCEPT",
+      "description": "The biological material whose concentration is measured in the floway system",
+      "source_id": "paper_11968"
+    },
+    {
+      "name": "BIOMASS VOLARIZATION",
+      "type": "METHOD",
+      "description": "The process of utilizing biomass for pollutant treatment or recovery",
+      "source_id": "paper_11968"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DOMESTIC WASTEWATER",
+      "target": "NON-POINT SOURCE POLLUTANTS",
+      "description": "is a cause of",
+      "weight": "9",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "AGRICULTURAL RUNOFF",
+      "target": "NON-POINT SOURCE POLLUTANTS",
+      "description": "is a cause of",
+      "weight": "9",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "NON-POINT SOURCE POLLUTANTS",
+      "target": "AQUATIC ECOSYSTEMS",
+      "description": "threatens",
+      "weight": "8",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "PERIPHYTON BIOFILM-BASED TECHNOLOGIES",
+      "target": "NUTRIENT POLLUTION",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "NUTRIENT POLLUTION",
+      "target": "AGRICULTURAL SYSTEMS",
+      "description": "occurs in",
+      "weight": "7",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "PERIPHYTON FLOWAY",
+      "target": "NON-POINT SOURCE POLLUTANTS",
+      "description": "treats",
+      "weight": "9",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "PERIPHYTON FLOWAY",
+      "target": "AGRICULTURAL WATERSHED",
+      "description": "treats pollution from",
+      "weight": "8",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "ALGAE FLOWAY",
+      "target": "PERIPHYTON FLOWAY",
+      "description": "is a specific implementation of",
+      "weight": "8",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "PERIPHYTON",
+      "target": "PERIPHYTON BIOFILM-BASED TECHNOLOGIES",
+      "description": "is the biological basis for",
+      "weight": "10",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "ALGAE FLOWAY",
+      "target": "BIOMASS",
+      "description": "measures concentration of",
+      "weight": "7",
+      "source_id": "paper_11968"
+    },
+    {
+      "source": "BIOMASS VOLARIZATION",
+      "target": "NON-POINT SOURCE POLLUTANTS",
+      "description": "treats",
+      "weight": "7",
+      "source_id": "paper_11968"
+    }
+  ]
+}

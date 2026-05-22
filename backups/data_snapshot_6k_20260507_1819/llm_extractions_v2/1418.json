@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan (L). Millsp., a legume crop.",
+      "source_id": "paper_1418"
+    },
+    {
+      "name": "MALE STERILITY",
+      "type": "TRAIT",
+      "description": "The condition where a plant is unable to produce functional pollen.",
+      "source_id": "paper_1418"
+    },
+    {
+      "name": "FEMALE FERTILITY",
+      "type": "TRAIT",
+      "description": "The condition where a plant is able to produce functional ovules and seeds.",
+      "source_id": "paper_1418"
+    },
+    {
+      "name": "TRANSLUCENT ANTHER TYPE",
+      "type": "TRAIT",
+      "description": "A specific phenotype of male sterility characterized by non-separation of tetrads and a persistent tapetum.",
+      "source_id": "paper_1418"
+    },
+    {
+      "name": "NON-SEPARATION OF TETRADS",
+      "type": "TRAIT",
+      "description": "A cellular failure in pollen development where tetrads do not separate, seen in translucent anther male sterility.",
+      "source_id": "paper_1418"
+    },
+    {
+      "name": "PERSISTENT TAPETUM",
+      "type": "TRAIT",
+      "description": "The continued presence of the tapetum layer in the anther, associated with translucent anther male sterility.",
+      "source_id": "paper_1418"
+    },
+    {
+      "name": "MS1",
+      "type": "GENE_MARKER",
+      "description": "A single recessive gene responsible for the translucent anther type of male sterility in pigeonpea.",
+      "source_id": "paper_1418"
+    },
+    {
+      "name": "B15B",
+      "type": "CONCEPT",
+      "description": "A specific breeding line of pigeonpea exhibiting a distinct male sterile character.",
+      "source_id": "paper_1418"
+    },
+    {
+      "name": "B15B MALE STERILE CHARACTER",
+      "type": "TRAIT",
+      "description": "A male sterile phenotype in breeding line B15B characterized by shrivelled, arrowhead-shaped, non-dehiscent, brown-coloured anthers and early tetrad stage degeneration of pollen mother cells.",
+      "source_id": "paper_1418"
+    },
+    {
+      "name": "POLLEN MOTHER CELL DEGENERATION",
+      "type": "TRAIT",
+      "description": "The breakdown of pollen mother cells at the early tetrad stage, a characteristic of the B15B male sterile character.",
+      "source_id": "paper_1418"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "MALE STERILITY",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_1418"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "FEMALE FERTILITY",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_1418"
+    },
+    {
+      "source": "MALE STERILITY",
+      "target": "TRANSLUCENT ANTHER TYPE",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_1418"
+    },
+    {
+      "source": "TRANSLUCENT ANTHER TYPE",
+      "target": "NON-SEPARATION OF TETRADS",
+      "description": "characterized by",
+      "weight": "10",
+      "source_id": "paper_1418"
+    },
+    {
+      "source": "TRANSLUCENT ANTHER TYPE",
+      "target": "PERSISTENT TAPETUM",
+      "description": "associated with",
+      "weight": "10",
+      "source_id": "paper_1418"
+    },
+    {
+      "source": "MS1",
+      "target": "TRANSLUCENT ANTHER TYPE",
+      "description": "conditions",
+      "weight": "10",
+      "source_id": "paper_1418"
+    },
+    {
+      "source": "B15B",
+      "target": "B15B MALE STERILE CHARACTER",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_1418"
+    },
+    {
+      "source": "B15B MALE STERILE CHARACTER",
+      "target": "POLLEN MOTHER CELL DEGENERATION",
+      "description": "characterized by",
+      "weight": "10",
+      "source_id": "paper_1418"
+    },
+    {
+      "source": "B15B MALE STERILE CHARACTER",
+      "target": "MALE STERILITY",
+      "description": "is a form of",
+      "weight": "9",
+      "source_id": "paper_1418"
+    },
+    {
+      "source": "B15B MALE STERILE CHARACTER",
+      "target": "TRANSLUCENT ANTHER TYPE",
+      "description": "has an allelic relationship with",
+      "weight": "7",
+      "source_id": "paper_1418"
+    }
+  ]
+}

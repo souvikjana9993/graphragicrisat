@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "name": "GRASSLANDS",
+      "type": "CONCEPT",
+      "description": "Ecosystems dominated by grasses experiencing land-cover change due to woody plant encroachment",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "SAVANNAS",
+      "type": "CONCEPT",
+      "description": "Mixed woodland-grassland ecosystems experiencing land-cover change due to woody plant encroachment",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "WOODY PLANT ENCROACHMENT",
+      "type": "CONDITION",
+      "description": "The process of woody plants invading and increasing in cover within grasslands and savannas",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "SOIL ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "Carbon stored in the soil organic matter, which fluctuates based on land cover and precipitation",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "SOIL NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nitrogen stored in the soil, which fluctuates based on land cover and precipitation",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "MEAN ANNUAL PRECIPITATION",
+      "type": "CONDITION",
+      "description": "The average yearly precipitation, used as a gradient to study soil carbon and nitrogen changes",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "DELTA 13C",
+      "type": "CONCEPT",
+      "description": "Stable carbon isotope ratio used to quantify changes in carbon pools",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "DELTA 15N",
+      "type": "CONCEPT",
+      "description": "Stable nitrogen isotope ratio used to quantify changes in nitrogen pools",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "SOUTH AFRICA",
+      "type": "LOCATION",
+      "description": "The geographic region where the study on woody plant encroachment was conducted",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "NORTH AMERICA",
+      "type": "LOCATION",
+      "description": "A geographic region used for comparison of precipitation threshold values",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "SEMI-ARID REGIONS",
+      "type": "CONDITION",
+      "description": "Low precipitation areas where soil organic carbon increases due to woody plant encroachment",
+      "source_id": "paper_10940"
+    },
+    {
+      "name": "HUMID REGIONS",
+      "type": "CONDITION",
+      "description": "High precipitation areas where soil organic carbon decreases due to woody plant encroachment",
+      "source_id": "paper_10940"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WOODY PLANT ENCROACHMENT",
+      "target": "GRASSLANDS",
+      "description": "causes land-cover change in",
+      "weight": "10",
+      "source_id": "paper_10940"
+    },
+    {
+      "source": "WOODY PLANT ENCROACHMENT",
+      "target": "SAVANNAS",
+      "description": "causes land-cover change in",
+      "weight": "10",
+      "source_id": "paper_10940"
+    },
+    {
+      "source": "WOODY PLANT ENCROACHMENT",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "alters storage of",
+      "weight": "9",
+      "source_id": "paper_10940"
+    },
+    {
+      "source": "WOODY PLANT ENCROACHMENT",
+      "target": "SOIL NITROGEN",
+      "description": "alters storage of",
+      "weight": "9",
+      "source_id": "paper_10940"
+    },
+    {
+      "source": "MEAN ANNUAL PRECIPITATION",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "negatively correlates with changes in stocks",
+      "weight": "8",
+      "source_id": "paper_10940"
+    },
+    {
+      "source": "SOUTH AFRICA",
+      "target": "MEAN ANNUAL PRECIPITATION",
+      "description": "study conducted along a gradient of 300 to 1500 mm",
+      "weight": "7",
+      "source_id": "paper_10940"
+    },
+    {
+      "source": "SEMI-ARID REGIONS",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "shows gains in due to woody plant encroachment",
+      "weight": "8",
+      "source_id": "paper_10940"
+    },
+    {
+      "source": "HUMID REGIONS",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "shows decreases in due to woody plant encroachment",
+      "weight": "8",
+      "source_id": "paper_10940"
+    },
+    {
+      "source": "NORTH AMERICA",
+      "target": "MEAN ANNUAL PRECIPITATION",
+      "description": "has a different threshold value for carbon changes",
+      "weight": "6",
+      "source_id": "paper_10940"
+    }
+  ]
+}

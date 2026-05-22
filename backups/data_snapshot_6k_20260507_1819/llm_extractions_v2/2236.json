@@ -1,0 +1,273 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for diseases in India",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "COLLAR ROT",
+      "type": "CONDITION",
+      "description": "A disease detected on groundnuts caused by Aspergillus niger",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "ASPERGILLUS NIGER",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes collar rot in groundnuts",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "STEM ROT",
+      "type": "CONDITION",
+      "description": "A disease detected on groundnuts caused by Sclerotium rolfsii",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes stem rot in groundnuts",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "CORTICIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "A synonym for the fungal pathogen Sclerotium rolfsii",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "BUD NECROSIS DISEASE",
+      "type": "CONDITION",
+      "description": "A disease detected on groundnuts caused by groundnut bud necrosis virus",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "GROUNDNUT BUD NECROSIS VIRUS",
+      "type": "ORGANISM",
+      "description": "The viral pathogen that causes bud necrosis disease in groundnuts",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "EARLY LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A disease detected on groundnuts caused by Cercospora arachidicola",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "CERCOSPORA ARACHIDICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes early leaf spot in groundnuts",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "MYCOSPHAERELLA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "A synonym for the fungal pathogen Cercospora arachidicola",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A disease detected on groundnuts caused by Phaeoisariopsis personata",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "PHAEOISARIOPSIS PERSONATA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes late leaf spot in groundnuts",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "RUST",
+      "type": "CONDITION",
+      "description": "A disease detected on groundnuts caused by Puccinia arachidis",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes rust in groundnuts",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where groundnut diseases were surveyed",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "KARNATAKA",
+      "type": "LOCATION",
+      "description": "A state in India where groundnut diseases were surveyed",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "TAMIL NADU",
+      "type": "LOCATION",
+      "description": "A state in India where groundnut diseases were surveyed",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the groundnut disease surveys were conducted",
+      "source_id": "paper_2236"
+    },
+    {
+      "name": "FIELD SURVEYS",
+      "type": "METHOD",
+      "description": "The method used to detect groundnut diseases in 1999",
+      "source_id": "paper_2236"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COLLAR ROT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "ASPERGILLUS NIGER",
+      "target": "COLLAR ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "STEM ROT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "STEM ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "CORTICIUM ROLFSII",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "is a synonym of",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "BUD NECROSIS DISEASE",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "GROUNDNUT BUD NECROSIS VIRUS",
+      "target": "BUD NECROSIS DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "EARLY LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "CERCOSPORA ARACHIDICOLA",
+      "target": "EARLY LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "MYCOSPHAERELLA ARACHIDIS",
+      "target": "CERCOSPORA ARACHIDICOLA",
+      "description": "is a synonym of",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "PHAEOISARIOPSIS PERSONATA",
+      "target": "LATE LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "RUST",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "PUCCINIA ARACHIDIS",
+      "target": "RUST",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "FIELD SURVEYS",
+      "target": "GROUNDNUT",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "FIELD SURVEYS",
+      "target": "ANDHRA PRADESH",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "FIELD SURVEYS",
+      "target": "KARNATAKA",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "FIELD SURVEYS",
+      "target": "TAMIL NADU",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "KARNATAKA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2236"
+    },
+    {
+      "source": "TAMIL NADU",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2236"
+    }
+  ]
+}

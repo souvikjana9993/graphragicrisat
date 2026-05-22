@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea, the crop affected by rosette disease",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE DISEASE",
+      "type": "CONDITION",
+      "description": "A virus disease of groundnut transmitted by aphids that reduces yield",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "APHIS CRACCIVORA",
+      "type": "ORGANISM",
+      "description": "The aphid species that transmits groundnut rosette disease",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural output of the groundnut crop",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut lines to withstand groundnut rosette disease",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "FIELD SCREENING TRIALS",
+      "type": "METHOD",
+      "description": "The process used to evaluate groundnut lines for resistance in the field",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the field screening trials were conducted",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the field screening trials were conducted",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "INFECTOR ROW TECHNIQUE",
+      "type": "METHOD",
+      "description": "The specific method used during field screening trials to evaluate resistance",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus to which the rosette disease resistant lines were found to be susceptible",
+      "source_id": "paper_1759"
+    },
+    {
+      "name": "INTEGRATED MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "A holistic approach to managing groundnut rosette disease",
+      "source_id": "paper_1759"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT ROSETTE DISEASE",
+      "target": "GROUNDNUT",
+      "description": "causes disease in",
+      "weight": "10",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "APHIS CRACCIVORA",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "transmits",
+      "weight": "10",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE DISEASE",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "FIELD SCREENING TRIALS",
+      "target": "RESISTANCE",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "FIELD SCREENING TRIALS",
+      "target": "ANDHRA PRADESH",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "INFECTOR ROW TECHNIQUE",
+      "target": "FIELD SCREENING TRIALS",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "8",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "description": "does not protect against",
+      "weight": "8",
+      "source_id": "paper_1759"
+    },
+    {
+      "source": "INTEGRATED MANAGEMENT",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "manages",
+      "weight": "9",
+      "source_id": "paper_1759"
+    }
+  ]
+}

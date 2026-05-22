@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being screened for resistance to aphids and rosette virus",
+      "source_id": "paper_2987"
+    },
+    {
+      "name": "APHID RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist infestation by Aphis craccivora",
+      "source_id": "paper_2987"
+    },
+    {
+      "name": "APHIS CRACCIVORA",
+      "type": "ORGANISM",
+      "description": "The aphid vector that transmits the rosette virus and feeds on groundnut",
+      "source_id": "paper_2987"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE UMBRAVIRUS",
+      "type": "ORGANISM",
+      "description": "The virus causing rosette disease in groundnut",
+      "source_id": "paper_2987"
+    },
+    {
+      "name": "ROSETTE VIRUS RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist the groundnut rosette umbravirus",
+      "source_id": "paper_2987"
+    },
+    {
+      "name": "SCREENHOUSE STUDY",
+      "type": "METHOD",
+      "description": "The controlled environment used to compare breeding populations and control varieties",
+      "source_id": "paper_2987"
+    },
+    {
+      "name": "ARTIFICIAL INFESTATION",
+      "type": "METHOD",
+      "description": "The process of intentionally introducing aphids to the plants for screening",
+      "source_id": "paper_2987"
+    },
+    {
+      "name": "ICG 12991",
+      "type": "CONCEPT",
+      "description": "A specific groundnut genotype that exhibited low aphid nymph development and fecundity",
+      "source_id": "paper_2987"
+    },
+    {
+      "name": "NYMPH DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The rate of growth and development of aphid nymphs on the host plant",
+      "source_id": "paper_2987"
+    },
+    {
+      "name": "FECUNDITY",
+      "type": "TRAIT",
+      "description": "The reproductive capacity of the aphid population on the host plant",
+      "source_id": "paper_2987"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "APHID RESISTANCE",
+      "description": "is screened for",
+      "weight": "10",
+      "source_id": "paper_2987"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "ROSETTE VIRUS RESISTANCE",
+      "description": "is screened for",
+      "weight": "10",
+      "source_id": "paper_2987"
+    },
+    {
+      "source": "APHID RESISTANCE",
+      "target": "APHIS CRACCIVORA",
+      "description": "is resistance against",
+      "weight": "10",
+      "source_id": "paper_2987"
+    },
+    {
+      "source": "ROSETTE VIRUS RESISTANCE",
+      "target": "GROUNDNUT ROSETTE UMBRAVIRUS",
+      "description": "is resistance against",
+      "weight": "10",
+      "source_id": "paper_2987"
+    },
+    {
+      "source": "APHIS CRACCIVORA",
+      "target": "GROUNDNUT ROSETTE UMBRAVIRUS",
+      "description": "acts as a vector for",
+      "weight": "9",
+      "source_id": "paper_2987"
+    },
+    {
+      "source": "SCREENHOUSE STUDY",
+      "target": "GROUNDNUT",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_2987"
+    },
+    {
+      "source": "ARTIFICIAL INFESTATION",
+      "target": "APHIS CRACCIVORA",
+      "description": "used to introduce",
+      "weight": "9",
+      "source_id": "paper_2987"
+    },
+    {
+      "source": "ICG 12991",
+      "target": "GROUNDNUT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_2987"
+    },
+    {
+      "source": "ICG 12991",
+      "target": "NYMPH DEVELOPMENT",
+      "description": "showed lowest rate of",
+      "weight": "8",
+      "source_id": "paper_2987"
+    },
+    {
+      "source": "ICG 12991",
+      "target": "FECUNDITY",
+      "description": "showed low",
+      "weight": "8",
+      "source_id": "paper_2987"
+    }
+  ]
+}

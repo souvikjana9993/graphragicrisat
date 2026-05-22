@@ -1,0 +1,239 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop affected by bacterial blight and the target for resistance breeding",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "ORYZA SATIVA",
+      "type": "CROP",
+      "description": "The cultivated rice species into which the resistance gene was introgressed",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "ORYZA RUFIPOGON ACC. CR100098A",
+      "type": "ORGANISM",
+      "description": "A wild rice accession that serves as the source of the novel bacterial blight resistance gene xa49(t)",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "XANTHOMONAS ORYZAE PV. ORYZAE",
+      "type": "ORGANISM",
+      "description": "The bacterial pathogen responsible for causing bacterial blight in rice",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "BACTERIAL BLIGHT",
+      "type": "CONDITION",
+      "description": "An epidemic disease in rice caused by the pathogen Xanthomonas oryzae pv. oryzae",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "BACTERIAL BLIGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The trait that allows rice plants to resist infection by Xanthomonas oryzae pv. oryzae",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "XA49(T)",
+      "type": "GENE_MARKER",
+      "description": "A novel recessive resistance gene identified from Oryza rufipogon acc. CR100098A that confers resistance to bacterial blight",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "BULKED SEGREGANT ANALYSIS",
+      "type": "METHOD",
+      "description": "A genetic mapping method used to localize the BB resistance gene",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "SIMPLE SEQUENCE REPEAT MARKERS",
+      "type": "GENE_MARKER",
+      "description": "A type of molecular marker used for the localization and mapping of the resistance gene",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "KASP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Kompetitive Allele Specific PCR markers designed for bulked segregant analysis",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "GENOTYPING BY SEQUENCING",
+      "type": "METHOD",
+      "description": "A method used to generate data for the design of KASP markers",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "CHROMOSOME 11",
+      "type": "CONCEPT",
+      "description": "The specific chromosome in the rice genome where the xa49(t) gene is located",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "RM27235",
+      "type": "GENE_MARKER",
+      "description": "An SSR marker that brackets the BB resistance gene on chromosome 11",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "RM2136",
+      "type": "GENE_MARKER",
+      "description": "An SSR marker that brackets the BB resistance gene on chromosome 11",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "PAU11_65",
+      "type": "GENE_MARKER",
+      "description": "An SSR marker that flanks the xa49(t) gene within a 2.8 cM interval",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "PAU11_44",
+      "type": "GENE_MARKER",
+      "description": "An SSR marker that flanks the xa49(t) gene within a 2.8 cM interval",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "PUSA44",
+      "type": "CROP",
+      "description": "A rice cultivar used as a parent in the crossing population",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "PR114",
+      "type": "CROP",
+      "description": "A rice cultivar used as a parent in the crossing population",
+      "source_id": "paper_13061"
+    },
+    {
+      "name": "BIOTIC STRESS RESISTANCE",
+      "type": "TRAIT",
+      "description": "A general trait associated with the candidate genes identified within the xa49(t) region",
+      "source_id": "paper_13061"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "XANTHOMONAS ORYZAE PV. ORYZAE",
+      "target": "BACTERIAL BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "BACTERIAL BLIGHT",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "XA49(T)",
+      "target": "BACTERIAL BLIGHT RESISTANCE",
+      "description": "confers",
+      "weight": "10",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "ORYZA RUFIPOGON ACC. CR100098A",
+      "target": "XA49(T)",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "XA49(T)",
+      "target": "CHROMOSOME 11",
+      "description": "located on",
+      "weight": "10",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "BULKED SEGREGANT ANALYSIS",
+      "target": "XA49(T)",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "SIMPLE SEQUENCE REPEAT MARKERS",
+      "target": "BULKED SEGREGANT ANALYSIS",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "BULKED SEGREGANT ANALYSIS",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "GENOTYPING BY SEQUENCING",
+      "target": "KASP MARKERS",
+      "description": "used to design",
+      "weight": "9",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "RM27235",
+      "target": "XA49(T)",
+      "description": "brackets",
+      "weight": "8",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "RM2136",
+      "target": "XA49(T)",
+      "description": "brackets",
+      "weight": "8",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "PAU11_65",
+      "target": "XA49(T)",
+      "description": "flanks",
+      "weight": "9",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "PAU11_44",
+      "target": "XA49(T)",
+      "description": "flanks",
+      "weight": "9",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "PUSA44",
+      "target": "ORYZA RUFIPOGON ACC. CR100098A",
+      "description": "crossed with",
+      "weight": "7",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "PR114",
+      "target": "XA49(T)",
+      "description": "used for introgression of",
+      "weight": "7",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "XA49(T)",
+      "target": "BIOTIC STRESS RESISTANCE",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_13061"
+    },
+    {
+      "source": "ORYZA SATIVA",
+      "target": "XA49(T)",
+      "description": "target for introgression of",
+      "weight": "8",
+      "source_id": "paper_13061"
+    }
+  ]
+}

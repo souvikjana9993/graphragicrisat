@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A rainfed crop grown in diverse environments and management in India, subject to production fluctuations.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "GENOTYPE BY ENVIRONMENT BY MANAGEMENT INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "GxExM interactions that pose a serious challenge for production and crop improvement efforts.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country used as a case study for rainfed groundnut production.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "YIELD GAP ANALYSIS",
+      "type": "METHOD",
+      "description": "A method used to understand GxExM interactions and estimate potential yields and yield gaps.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "GEO-BIOPHYSICAL CHARACTERS",
+      "type": "CONCEPT",
+      "description": "Characteristics of the production region used to understand and deal with GxExM interactions.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "WEATHER AND SOIL DATA",
+      "type": "CONDITION",
+      "description": "Environmental data collected to simulate groundnut production at the district scale.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "CROP PARAMETERS",
+      "type": "TRAIT",
+      "description": "Specific parameters of the groundnut crop used for production simulation.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "MANAGEMENT INFORMATION DATA",
+      "type": "CONCEPT",
+      "description": "Data regarding agricultural management practices used for production simulation.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "POTENTIAL YIELDS",
+      "type": "TRAIT",
+      "description": "The maximum possible yield of a crop under optimal conditions.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "YIELD GAPS",
+      "type": "TRAIT",
+      "description": "The difference between potential yields and actual yields observed in production.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "AGRONOMIC PRACTICES",
+      "type": "METHOD",
+      "description": "Recommended agricultural practices that can be used to bridge the production gap.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "An environmental constraint that limited yield potential by an average of 40%.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "PRINCIPAL COMPONENT ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to resolve unexplained variation in agronomic model output.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to group districts into homogeneous production units.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "HOMOGENEOUS PRODUCTION UNITS",
+      "type": "CONCEPT",
+      "description": "Region-specific units with well-defined production-limiting constraints used to design GxM products.",
+      "source_id": "paper_11881"
+    },
+    {
+      "name": "PRODUCTION-LIMITING CONSTRAINTS",
+      "type": "CONDITION",
+      "description": "Specific factors that limit crop productivity within a given Homogeneous Production Unit.",
+      "source_id": "paper_11881"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOTYPE BY ENVIRONMENT BY MANAGEMENT INTERACTIONS",
+      "target": "GROUNDNUT",
+      "description": "is a serious challenge for production and crop improvement of",
+      "weight": "9",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "INDIA",
+      "description": "is grown as a rainfed crop in",
+      "weight": "10",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "YIELD GAP ANALYSIS",
+      "target": "GENOTYPE BY ENVIRONMENT BY MANAGEMENT INTERACTIONS",
+      "description": "is used to understand and deal with",
+      "weight": "8",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "YIELD GAP ANALYSIS",
+      "target": "GROUNDNUT",
+      "description": "is applied to analyze production of",
+      "weight": "8",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "GEO-BIOPHYSICAL CHARACTERS",
+      "target": "GENOTYPE BY ENVIRONMENT BY MANAGEMENT INTERACTIONS",
+      "description": "is used to understand and deal with",
+      "weight": "7",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "WEATHER AND SOIL DATA",
+      "target": "GROUNDNUT",
+      "description": "is used to simulate production of",
+      "weight": "8",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "CROP PARAMETERS",
+      "target": "GROUNDNUT",
+      "description": "is used to simulate production of",
+      "weight": "8",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "MANAGEMENT INFORMATION DATA",
+      "target": "GROUNDNUT",
+      "description": "is used to simulate production of",
+      "weight": "8",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "YIELD GAP ANALYSIS",
+      "target": "POTENTIAL YIELDS",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "YIELD GAP ANALYSIS",
+      "target": "YIELD GAPS",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "AGRONOMIC PRACTICES",
+      "target": "YIELD GAPS",
+      "description": "can be used to bridge",
+      "weight": "8",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "POTENTIAL YIELDS",
+      "description": "limited the",
+      "weight": "9",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "PRINCIPAL COMPONENT ANALYSIS",
+      "target": "HOMOGENEOUS PRODUCTION UNITS",
+      "description": "was used to identify",
+      "weight": "8",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "HOMOGENEOUS PRODUCTION UNITS",
+      "description": "was used to identify",
+      "weight": "8",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "HOMOGENEOUS PRODUCTION UNITS",
+      "target": "PRODUCTION-LIMITING CONSTRAINTS",
+      "description": "have well-defined",
+      "weight": "9",
+      "source_id": "paper_11881"
+    },
+    {
+      "source": "HOMOGENEOUS PRODUCTION UNITS",
+      "target": "GROUNDNUT",
+      "description": "delimited precise geographic regions for breeding targets of",
+      "weight": "8",
+      "source_id": "paper_11881"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop studied, specifically the hybrid 841A×J104",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "PLANT POPULATION DENSITY",
+      "type": "CONDITION",
+      "description": "The number of plants per square meter, ranging from 2 to 20",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "PHOTOPERIOD",
+      "type": "CONDITION",
+      "description": "The duration of light exposure, 13.5 or 15.5 hours, during the vegetative phase",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "CROP DURATION",
+      "type": "CONDITION",
+      "description": "The length of the crop life-cycle, categorized as short (75-day) or long (90-day)",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "TILLER PRODUCTION",
+      "type": "TRAIT",
+      "description": "The production of tillers in the plant",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "LEAF-AREA PRODUCTION",
+      "type": "TRAIT",
+      "description": "The production of leaf area in the plant",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "DRY-MATTER ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The accumulation of dry matter in the plant",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "GRAIN-YIELD",
+      "type": "TRAIT",
+      "description": "The realized yield of grains",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "RADIATION INTERCEPTION",
+      "type": "CONCEPT",
+      "description": "The amount of radiation intercepted (Qi) during the GS2 phase",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "NUMBER OF GRAINS",
+      "type": "TRAIT",
+      "description": "The number of grains per unit area, representing yield potential",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "GRAIN-SIZE",
+      "type": "TRAIT",
+      "description": "The size of the grains produced",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "VEGETATIVE PHASE",
+      "type": "CONCEPT",
+      "description": "The growth phase from emergence to floral initiation",
+      "source_id": "paper_4970"
+    },
+    {
+      "name": "GS2",
+      "type": "CONCEPT",
+      "description": "The growth phase from floral initiation to flowering",
+      "source_id": "paper_4970"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "PEARL MILLET",
+      "description": "influences growth and yield",
+      "weight": "8",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "PEARL MILLET",
+      "description": "influences crop duration",
+      "weight": "8",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "CROP DURATION",
+      "target": "PEARL MILLET",
+      "description": "influences growth and yield",
+      "weight": "8",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "TILLER PRODUCTION",
+      "description": "causes significant variation in",
+      "weight": "7",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "LEAF-AREA PRODUCTION",
+      "description": "causes significant variation in",
+      "weight": "7",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "RADIATION INTERCEPTION",
+      "description": "causes significant variation in",
+      "weight": "7",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "NUMBER OF GRAINS",
+      "description": "causes significant variation in",
+      "weight": "7",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "CROP DURATION",
+      "target": "TILLER PRODUCTION",
+      "description": "causes significant variation in",
+      "weight": "7",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "CROP DURATION",
+      "target": "LEAF-AREA PRODUCTION",
+      "description": "causes significant variation in",
+      "weight": "7",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "CROP DURATION",
+      "target": "RADIATION INTERCEPTION",
+      "description": "causes significant variation in",
+      "weight": "7",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "CROP DURATION",
+      "target": "NUMBER OF GRAINS",
+      "description": "causes significant variation in",
+      "weight": "7",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "RADIATION INTERCEPTION",
+      "target": "NUMBER OF GRAINS",
+      "description": "strongly correlated with (r2=0.83)",
+      "weight": "9",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "RADIATION INTERCEPTION",
+      "target": "GRAIN-YIELD",
+      "description": "correlated with (r2=0.63)",
+      "weight": "6",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "NUMBER OF GRAINS",
+      "target": "GRAIN-SIZE",
+      "description": "reduces grain size when high",
+      "weight": "7",
+      "source_id": "paper_4970"
+    },
+    {
+      "source": "RADIATION INTERCEPTION",
+      "target": "GS2",
+      "description": "measured during",
+      "weight": "10",
+      "source_id": "paper_4970"
+    }
+  ]
+}

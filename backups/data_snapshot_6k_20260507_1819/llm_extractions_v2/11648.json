@@ -1,0 +1,238 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop used in the study for phenotyping and genotypic discretization.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "TRANSPIRATION RESTRICTION",
+      "type": "TRAIT",
+      "description": "The ability of a plant to limit water loss under high vapor pressure deficit.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "VAPOR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "The difference between the amount of moisture in the air and how much moisture the air can hold when it is saturated.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "WATER-SAVING TRAIT",
+      "type": "TRAIT",
+      "description": "A trait that allows plants to conserve water, essential for drought adaptation.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "DROUGHT ADAPTATION",
+      "type": "CONCEPT",
+      "description": "The process by which a plant adjusts to survive and function under water-limited conditions.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "HIGH-THROUGHPUT PHENOTYPING",
+      "type": "METHOD",
+      "description": "A method for rapidly measuring many traits across a large population of plants.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "MAXIMUM TRANSPIRATION RATE",
+      "type": "TRAIT",
+      "description": "The highest rate at which a plant loses water through transpiration.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "VPD BREAKPOINTS",
+      "type": "CONCEPT",
+      "description": "The specific vapor pressure deficit levels at which genotypes begin to restrict transpiration.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "TRANSPIRATION PROFILES",
+      "type": "CONCEPT",
+      "description": "Smooth representations of transpiration rates over time derived from high-frequency data.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "LOAD CELLS",
+      "type": "METHOD",
+      "description": "Sensors used to measure the weight of plants to derive transpiration rate profiles.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "UNSUPERVISED RANDOM FOREST",
+      "type": "METHOD",
+      "description": "A machine learning algorithm used for feature selection and clustering of genotypes.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "WILD RELATIVES",
+      "type": "ORGANISM",
+      "description": "Non-cultivated ancestors or relatives of the chickpea crop.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The ratio of carbon gain to water loss.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "MULTI-OUTPUT NEURAL NETWORK",
+      "type": "METHOD",
+      "description": "A deep learning model used for sensitivity analysis of water saving ability.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "WATER SAVING ABILITY",
+      "type": "TRAIT",
+      "description": "The capacity of a genotype to restrict transpiration and conserve water.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "LIGHT",
+      "type": "CONDITION",
+      "description": "Environmental factor that had little to no effect on transpiration response independently.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental factor that had little to no effect on transpiration response independently.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "RELATIVE HUMIDITY",
+      "type": "CONDITION",
+      "description": "Environmental factor that had little to no effect on transpiration response independently.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to maintain growth and yield under drought stress.",
+      "source_id": "paper_11648"
+    },
+    {
+      "name": "PRESCRIPTIVE BREEDING",
+      "type": "METHOD",
+      "description": "An approach to breeding that uses precise data to select for specific traits.",
+      "source_id": "paper_11648"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "TRANSPIRATION RESTRICTION",
+      "description": "studied for",
+      "weight": "9",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "TRANSPIRATION RESTRICTION",
+      "target": "VAPOR PRESSURE DEFICIT",
+      "description": "response to",
+      "weight": "10",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "TRANSPIRATION RESTRICTION",
+      "target": "WATER-SAVING TRAIT",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "WATER-SAVING TRAIT",
+      "target": "DROUGHT ADAPTATION",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "HIGH-THROUGHPUT PHENOTYPING",
+      "target": "CHICKPEA",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "HIGH-THROUGHPUT PHENOTYPING",
+      "target": "TRANSPIRATION PROFILES",
+      "description": "generates",
+      "weight": "7",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "LOAD CELLS",
+      "target": "TRANSPIRATION PROFILES",
+      "description": "used to derive",
+      "weight": "9",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "UNSUPERVISED RANDOM FOREST",
+      "target": "TRANSPIRATION PROFILES",
+      "description": "used to extract features from",
+      "weight": "8",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "MULTI-OUTPUT NEURAL NETWORK",
+      "target": "WATER SAVING ABILITY",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "VAPOR PRESSURE DEFICIT",
+      "target": "TRANSPIRATION RESTRICTION",
+      "description": "influences",
+      "weight": "10",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "LIGHT",
+      "target": "TRANSPIRATION RESTRICTION",
+      "description": "has little effect on",
+      "weight": "4",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "TRANSPIRATION RESTRICTION",
+      "description": "has little effect on",
+      "weight": "4",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "RELATIVE HUMIDITY",
+      "target": "TRANSPIRATION RESTRICTION",
+      "description": "has little effect on",
+      "weight": "4",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "WILD RELATIVES",
+      "target": "WATER SAVING ABILITY",
+      "description": "exhibit higher",
+      "weight": "9",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "WATER-SAVING TRAIT",
+      "target": "DROUGHT TOLERANCE",
+      "description": "is a proxy for",
+      "weight": "8",
+      "source_id": "paper_11648"
+    },
+    {
+      "source": "PRESCRIPTIVE BREEDING",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "7",
+      "source_id": "paper_11648"
+    }
+  ]
+}

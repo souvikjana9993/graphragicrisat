@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "Leguminous plants used in cropping systems to improve soil fertility",
+      "source_id": "paper_492"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A cereal crop grown in the Indo-Gangetic plain",
+      "source_id": "paper_492"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal crop grown in the Indo-Gangetic plain",
+      "source_id": "paper_492"
+    },
+    {
+      "name": "INDO-GANGETIC PLAIN",
+      "type": "LOCATION",
+      "description": "The geographic region where the cropping systems are studied",
+      "source_id": "paper_492"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The process of converting atmospheric nitrogen into ammonia by legumes",
+      "source_id": "paper_492"
+    },
+    {
+      "name": "RESIDUAL EFFECTS",
+      "type": "CONCEPT",
+      "description": "The remaining benefits of legume cultivation for subsequent crops",
+      "source_id": "paper_492"
+    },
+    {
+      "name": "CROPPING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The sequence and management of crops grown on a specific area",
+      "source_id": "paper_492"
+    },
+    {
+      "name": "MANAGEMENT",
+      "type": "METHOD",
+      "description": "The practices and techniques used for the cultivation of legumes",
+      "source_id": "paper_492"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LEGUMES",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_492"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "RESIDUAL EFFECTS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_492"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "CROPPING SYSTEMS",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_492"
+    },
+    {
+      "source": "RICE",
+      "target": "CROPPING SYSTEMS",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_492"
+    },
+    {
+      "source": "WHEAT",
+      "target": "CROPPING SYSTEMS",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_492"
+    },
+    {
+      "source": "CROPPING SYSTEMS",
+      "target": "INDO-GANGETIC PLAIN",
+      "description": "located in",
+      "weight": "9",
+      "source_id": "paper_492"
+    },
+    {
+      "source": "MANAGEMENT",
+      "target": "LEGUMES",
+      "description": "applied to",
+      "weight": "7",
+      "source_id": "paper_492"
+    }
+  ]
+}

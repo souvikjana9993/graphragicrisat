@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "BIURET",
+      "type": "CONCEPT",
+      "description": "A chemical impurity found in urea fertilizer that affects nitrogen transformation in soil",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "UREA NITROGEN",
+      "type": "CONCEPT",
+      "description": "The nitrogen component of urea that undergoes various transformations in the soil",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "SANDY LOAM",
+      "type": "CONDITION",
+      "description": "A type of soil with a pH of 7.7 used in the study",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "UREA HYDROLYSIS",
+      "type": "CONCEPT",
+      "description": "The process of urea breaking down into ammonia and carbon dioxide",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "NH+4",
+      "type": "CONCEPT",
+      "description": "Ammonium, a form of nitrogen resulting from urea hydrolysis",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "NO-2",
+      "type": "CONCEPT",
+      "description": "Nitrite, an intermediate form of nitrogen in the nitrification process",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "NO-3",
+      "type": "CONCEPT",
+      "description": "Nitrate, the final oxidized form of nitrogen in the nitrification process",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "NITRITE TOXICITY",
+      "type": "CONCEPT",
+      "description": "The toxic effect caused by the accumulation of nitrite in the soil",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "UREA FERTILIZER",
+      "type": "CONCEPT",
+      "description": "A nitrogen-rich fertilizer that may contain biuret as an impurity",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "PHILIPPINES",
+      "type": "LOCATION",
+      "description": "The country where the International Rice Research Institute is located",
+      "source_id": "paper_4532"
+    },
+    {
+      "name": "INTERNATIONAL RICE RESEARCH INSTITUTE",
+      "type": "LOCATION",
+      "description": "The research institution where the author is currently based",
+      "source_id": "paper_4532"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIURET",
+      "target": "UREA NITROGEN",
+      "description": "affects the transformation of",
+      "weight": "8",
+      "source_id": "paper_4532"
+    },
+    {
+      "source": "BIURET",
+      "target": "UREA HYDROLYSIS",
+      "description": "does not affect",
+      "weight": "5",
+      "source_id": "paper_4532"
+    },
+    {
+      "source": "BIURET",
+      "target": "NH+4",
+      "description": "inhibits the conversion of NH+4 to NO-2",
+      "weight": "9",
+      "source_id": "paper_4532"
+    },
+    {
+      "source": "BIURET",
+      "target": "NO-2",
+      "description": "inhibits the oxidation of NO-2 to NO-3",
+      "weight": "9",
+      "source_id": "paper_4532"
+    },
+    {
+      "source": "BIURET",
+      "target": "NITRITE TOXICITY",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_4532"
+    },
+    {
+      "source": "UREA NITROGEN",
+      "target": "SANDY LOAM",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_4532"
+    },
+    {
+      "source": "NH+4",
+      "target": "NO-2",
+      "description": "is converted to",
+      "weight": "10",
+      "source_id": "paper_4532"
+    },
+    {
+      "source": "NO-2",
+      "target": "NO-3",
+      "description": "is oxidized to",
+      "weight": "10",
+      "source_id": "paper_4532"
+    },
+    {
+      "source": "UREA FERTILIZER",
+      "target": "BIURET",
+      "description": "contains as an impurity",
+      "weight": "9",
+      "source_id": "paper_4532"
+    },
+    {
+      "source": "INTERNATIONAL RICE RESEARCH INSTITUTE",
+      "target": "PHILIPPINES",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4532"
+    }
+  ]
+}

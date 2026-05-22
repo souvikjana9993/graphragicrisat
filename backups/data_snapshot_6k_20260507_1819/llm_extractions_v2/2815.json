@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "PHAEIOISARIOPSIS PERSONATA",
+      "type": "ORGANISM",
+      "description": "Causal agent of late leaf spot disease of groundnut",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The host crop affected by late leaf spot disease",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "LATE LEAF SPOT DISEASE",
+      "type": "CONDITION",
+      "description": "Disease caused by P. personata in groundnut",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "INTERMITTENT WETNESS",
+      "type": "CONDITION",
+      "description": "Alternate wet and dry periods that enhance infection efficiency",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "CONTINUOUS WETNESS",
+      "type": "CONDITION",
+      "description": "Constant wetness that results in fewer stomatal penetrations",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "GERM-TUBE GROWTH",
+      "type": "TRAIT",
+      "description": "The growth and branching of germ tubes from conidia",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "TROPIC GROWTH",
+      "type": "TRAIT",
+      "description": "Directional growth of germ tubes and branches towards stomata",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "STOMATA",
+      "type": "CONCEPT",
+      "description": "Leaf pores used by the pathogen for penetration",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "PENETRATION",
+      "type": "CONCEPT",
+      "description": "The process of the pathogen entering the leaf through stomata",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "LESIONS",
+      "type": "TRAIT",
+      "description": "Resultant marks on the leaf following successful penetration",
+      "source_id": "paper_2815"
+    },
+    {
+      "name": "SPORE LOAD",
+      "type": "CONDITION",
+      "description": "The concentration of conidia per unit area of the leaf",
+      "source_id": "paper_2815"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHAEIOISARIOPSIS PERSONATA",
+      "target": "LATE LEAF SPOT DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "PHAEIOISARIOPSIS PERSONATA",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "LATE LEAF SPOT DISEASE",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "INTERMITTENT WETNESS",
+      "target": "PENETRATION",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "INTERMITTENT WETNESS",
+      "target": "GERM-TUBE GROWTH",
+      "description": "increases branching and number",
+      "weight": "8",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "INTERMITTENT WETNESS",
+      "target": "TROPIC GROWTH",
+      "description": "promotes",
+      "weight": "9",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "CONTINUOUS WETNESS",
+      "target": "PENETRATION",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "TROPIC GROWTH",
+      "target": "STOMATA",
+      "description": "directs growth towards",
+      "weight": "9",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "GERM-TUBE GROWTH",
+      "target": "STOMATA",
+      "description": "targets for penetration",
+      "weight": "9",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "PENETRATION",
+      "target": "LESIONS",
+      "description": "leads to",
+      "weight": "10",
+      "source_id": "paper_2815"
+    },
+    {
+      "source": "SPORE LOAD",
+      "target": "PENETRATION",
+      "description": "influences efficiency",
+      "weight": "7",
+      "source_id": "paper_2815"
+    }
+  ]
+}

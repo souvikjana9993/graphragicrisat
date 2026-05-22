@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop affected by dry root rot",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "DRY ROOT ROT",
+      "type": "CONDITION",
+      "description": "A disease caused by Rhizoctonia bataticola that threatens chickpea production",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing dry root rot",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A climatic factor that, when high, increases the aggressiveness of dry root rot",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "SOIL MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "A soil factor that, when low, increases the aggressiveness of dry root rot",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "DISEASE SEVERITY",
+      "type": "TRAIT",
+      "description": "The extent of the disease impact on the plant",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "PERCENT SUSCEPTIBILITY INDEX",
+      "type": "METHOD",
+      "description": "A metric used to quantify disease severity derived from a rating scale",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "MODIFIED 0-9 RATING SCALE",
+      "type": "METHOD",
+      "description": "A scale used to assess disease symptoms to calculate the susceptibility index",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "PERCENT LOSS IN ROOT BIOMASS",
+      "type": "TRAIT",
+      "description": "A measure of the reduction in root mass due to disease infection",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "REAL-TIME QPCR",
+      "type": "METHOD",
+      "description": "A molecular technique used for the absolute quantification of fungal propagules",
+      "source_id": "paper_11469"
+    },
+    {
+      "name": "FUNGAL PROPAGULES",
+      "type": "ORGANISM",
+      "description": "The reproductive units of the fungus present in root tissues",
+      "source_id": "paper_11469"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "DRY ROOT ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DRY ROOT ROT",
+      "description": "influences aggressiveness of",
+      "weight": "8",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "SOIL MOISTURE CONTENT",
+      "target": "DRY ROOT ROT",
+      "description": "influences aggressiveness of",
+      "weight": "8",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "CHICKPEA",
+      "description": "acts as combined stress to cause infection",
+      "weight": "9",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "SOIL MOISTURE CONTENT",
+      "target": "CHICKPEA",
+      "description": "acts as combined stress to cause infection",
+      "weight": "9",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "PERCENT SUSCEPTIBILITY INDEX",
+      "target": "DISEASE SEVERITY",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "MODIFIED 0-9 RATING SCALE",
+      "target": "PERCENT SUSCEPTIBILITY INDEX",
+      "description": "is used to derive",
+      "weight": "10",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "PERCENT LOSS IN ROOT BIOMASS",
+      "target": "DISEASE SEVERITY",
+      "description": "provides insight into",
+      "weight": "9",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "REAL-TIME QPCR",
+      "target": "FUNGAL PROPAGULES",
+      "description": "quantifies",
+      "weight": "10",
+      "source_id": "paper_11469"
+    },
+    {
+      "source": "FUNGAL PROPAGULES",
+      "target": "DRY ROOT ROT",
+      "description": "corroborates the presence of",
+      "weight": "9",
+      "source_id": "paper_11469"
+    }
+  ]
+}

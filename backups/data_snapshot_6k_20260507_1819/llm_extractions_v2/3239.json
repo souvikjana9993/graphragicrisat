@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop studied for resistance to shoot fly",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "SHOOT FLY",
+      "type": "ORGANISM",
+      "description": "A pest, Atherigona soccata, that attacks sorghum seedlings",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "LEAF SURFACE WETNESS",
+      "type": "TRAIT",
+      "description": "The presence of water on the central whorl leaf of sorghum seedlings",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum to resist attack by the shoot fly",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "TRICHOMES",
+      "type": "TRAIT",
+      "description": "Hair-like morphological structures on the leaf surface",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "STOMATA",
+      "type": "TRAIT",
+      "description": "Microscopic pores on the leaf surface",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "LEAF CUTICLE",
+      "type": "TRAIT",
+      "description": "The protective waxy layer covering the leaf epidermis",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "SURFACE WAX",
+      "type": "TRAIT",
+      "description": "The quantity of wax present on the leaf surface",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "ATMOSPHERIC CONDENSATION",
+      "type": "CONDITION",
+      "description": "The process of water vapor condensing from the air onto the leaf",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "STOMATAL DENSITY",
+      "type": "TRAIT",
+      "description": "The number of stomata per unit area of the leaf",
+      "source_id": "paper_3239"
+    },
+    {
+      "name": "CUTICULAR THICKNESS",
+      "type": "TRAIT",
+      "description": "The thickness of the leaf's cuticular layer",
+      "source_id": "paper_3239"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LEAF SURFACE WETNESS",
+      "target": "RESISTANCE",
+      "description": "Associated with resistance to shoot fly",
+      "weight": "8",
+      "source_id": "paper_3239"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SHOOT FLY",
+      "description": "Sorghum is the host plant for the shoot fly",
+      "weight": "10",
+      "source_id": "paper_3239"
+    },
+    {
+      "source": "TRICHOMES",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "Indirectly associated with the production of leaf surface wetness",
+      "weight": "6",
+      "source_id": "paper_3239"
+    },
+    {
+      "source": "TRICHOMES",
+      "target": "RESISTANCE",
+      "description": "Indirectly associated with resistance to shoot fly",
+      "weight": "6",
+      "source_id": "paper_3239"
+    },
+    {
+      "source": "STOMATAL DENSITY",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "Not associated with the production of leaf surface wetness",
+      "weight": "2",
+      "source_id": "paper_3239"
+    },
+    {
+      "source": "SURFACE WAX",
+      "target": "RESISTANCE",
+      "description": "Higher amounts found in susceptible genotypes compared to resistant ones",
+      "weight": "7",
+      "source_id": "paper_3239"
+    },
+    {
+      "source": "CUTICULAR THICKNESS",
+      "target": "RESISTANCE",
+      "description": "Not associated with resistance to shoot fly",
+      "weight": "2",
+      "source_id": "paper_3239"
+    },
+    {
+      "source": "LEAF CUTICLE",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "Suggested as the mechanism for water movement to the leaf surface",
+      "weight": "7",
+      "source_id": "paper_3239"
+    },
+    {
+      "source": "ATMOSPHERIC CONDENSATION",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "Ruled out as the origin of leaf surface wetness",
+      "weight": "3",
+      "source_id": "paper_3239"
+    }
+  ]
+}

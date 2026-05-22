@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_10045"
+    },
+    {
+      "name": "NON-LINEAR REGRESSION MODELLING",
+      "type": "METHOD",
+      "description": "A statistical technique used for forecasting crop yield",
+      "source_id": "paper_10045"
+    },
+    {
+      "name": "PRE-HARVEST FORECASTING",
+      "type": "METHOD",
+      "description": "The process of estimating crop production before the actual harvest",
+      "source_id": "paper_10045"
+    },
+    {
+      "name": "FOOD PROCUREMENT",
+      "type": "CONCEPT",
+      "description": "The process of acquiring food for distribution and storage",
+      "source_id": "paper_10045"
+    },
+    {
+      "name": "FOOD SUPPLY INFORMATION SYSTEM",
+      "type": "CONCEPT",
+      "description": "A system for managing and providing information on food supply at district and state levels",
+      "source_id": "paper_10045"
+    },
+    {
+      "name": "CROP-CUTTING EXPERIMENTS",
+      "type": "METHOD",
+      "description": "An objective method used for final crop production estimates",
+      "source_id": "paper_10045"
+    },
+    {
+      "name": "DISTRICT",
+      "type": "LOCATION",
+      "description": "Administrative level for food supply information systems",
+      "source_id": "paper_10045"
+    },
+    {
+      "name": "STATE",
+      "type": "LOCATION",
+      "description": "Administrative level for food supply information systems",
+      "source_id": "paper_10045"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NON-LINEAR REGRESSION MODELLING",
+      "target": "PRE-HARVEST FORECASTING",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_10045"
+    },
+    {
+      "source": "PRE-HARVEST FORECASTING",
+      "target": "CROP YIELD",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_10045"
+    },
+    {
+      "source": "PRE-HARVEST FORECASTING",
+      "target": "FOOD PROCUREMENT",
+      "description": "supports",
+      "weight": "8",
+      "source_id": "paper_10045"
+    },
+    {
+      "source": "PRE-HARVEST FORECASTING",
+      "target": "FOOD SUPPLY INFORMATION SYSTEM",
+      "description": "is a pre-requisite for",
+      "weight": "9",
+      "source_id": "paper_10045"
+    },
+    {
+      "source": "FOOD SUPPLY INFORMATION SYSTEM",
+      "target": "DISTRICT",
+      "description": "operates at",
+      "weight": "7",
+      "source_id": "paper_10045"
+    },
+    {
+      "source": "FOOD SUPPLY INFORMATION SYSTEM",
+      "target": "STATE",
+      "description": "operates at",
+      "weight": "7",
+      "source_id": "paper_10045"
+    },
+    {
+      "source": "CROP-CUTTING EXPERIMENTS",
+      "target": "CROP YIELD",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_10045"
+    }
+  ]
+}

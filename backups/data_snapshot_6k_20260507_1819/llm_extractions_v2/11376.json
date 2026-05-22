@@ -1,0 +1,212 @@
+{
+  "entities": [
+    {
+      "name": "AFAR REGION",
+      "type": "LOCATION",
+      "description": "A region in Ethiopia used as a case study for flood-based farming",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The country where the study is conducted",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "AMHARA HIGHLANDS",
+      "type": "LOCATION",
+      "description": "Highlands where rainfall coincides with lowland floods",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Use of satellite imagery to identify potential sites for flood-based farming",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "GEOGRAPHICAL INFORMATION SYSTEM",
+      "type": "METHOD",
+      "description": "Tools used to identify potential sites for flood spreading weirs",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "LAND USE LAND COVER MAPS",
+      "type": "METHOD",
+      "description": "Maps developed using Landsat-8 and MODIS data to analyze land use",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "LANDSAT-8",
+      "type": "METHOD",
+      "description": "Satellite data used for developing land use land cover maps",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Temporal data used for developing land use land cover maps",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "SENTINEL-1",
+      "type": "METHOD",
+      "description": "Satellite data used to determine flood prone areas",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "SHUTTLE RADAR TOPOGRAPHY MISSION DIGITAL ELEVATION MODEL",
+      "type": "METHOD",
+      "description": "Used to derive slope and drainage maps for flood analysis",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "GROUND SURVEY DATA",
+      "type": "METHOD",
+      "description": "Used for accuracy assessment of land use/land cover classes",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "FLOOD-BASED FARMING",
+      "type": "CONCEPT",
+      "description": "Farming systems developed using seasonal flood waters",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "FLOOD SPREADING WEIRS",
+      "type": "CONCEPT",
+      "description": "Structures installed to convert storm generated floods into productive use",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "FOOD AND FODDER",
+      "type": "CROP",
+      "description": "Agricultural products produced for poor rural communities via flood-based farming",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "BELG SEASON",
+      "type": "CONDITION",
+      "description": "Short growing season with flood events in March and April",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "MEHER SEASON",
+      "type": "CONDITION",
+      "description": "Major growing season with flood events in June, July, and August",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "FLOODING",
+      "type": "CONDITION",
+      "description": "Seasonal occurrence of flood waters in the lowlands",
+      "source_id": "paper_11376"
+    },
+    {
+      "name": "LOW RAINFALL",
+      "type": "CONDITION",
+      "description": "Seasonal condition affecting the dry lowlands of Ethiopia",
+      "source_id": "paper_11376"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REMOTE SENSING",
+      "target": "FLOOD-BASED FARMING",
+      "description": "used to identify locations for",
+      "weight": "9",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "GEOGRAPHICAL INFORMATION SYSTEM",
+      "target": "FLOOD-BASED FARMING",
+      "description": "used to identify locations for",
+      "weight": "9",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "LANDSAT-8",
+      "target": "LAND USE LAND COVER MAPS",
+      "description": "used to develop",
+      "weight": "10",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "MODIS",
+      "target": "LAND USE LAND COVER MAPS",
+      "description": "used to develop",
+      "weight": "10",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "SENTINEL-1",
+      "target": "FLOODING",
+      "description": "used to determine prone areas",
+      "weight": "9",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "SHUTTLE RADAR TOPOGRAPHY MISSION DIGITAL ELEVATION MODEL",
+      "target": "FLOODING",
+      "description": "used to derive slope and drainage maps",
+      "weight": "8",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "GROUND SURVEY DATA",
+      "target": "LAND USE LAND COVER MAPS",
+      "description": "used for accuracy assessment",
+      "weight": "10",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "FLOOD SPREADING WEIRS",
+      "target": "FLOOD-BASED FARMING",
+      "description": "used to implement",
+      "weight": "9",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "FLOOD-BASED FARMING",
+      "target": "FOOD AND FODDER",
+      "description": "produces",
+      "weight": "8",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "AFAR REGION",
+      "target": "ETHIOPIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "AFAR REGION",
+      "target": "FLOOD-BASED FARMING",
+      "description": "potential location for",
+      "weight": "9",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "BELG SEASON",
+      "target": "FLOODING",
+      "description": "period of flood events",
+      "weight": "10",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "MEHER SEASON",
+      "target": "FLOODING",
+      "description": "period of flood events",
+      "weight": "10",
+      "source_id": "paper_11376"
+    },
+    {
+      "source": "AMHARA HIGHLANDS",
+      "target": "FLOODING",
+      "description": "rainfall here causes lowland floods",
+      "weight": "8",
+      "source_id": "paper_11376"
+    }
+  ]
+}

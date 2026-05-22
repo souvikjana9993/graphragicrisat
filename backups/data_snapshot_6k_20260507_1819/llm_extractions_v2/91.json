@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogea L., the crop studied for its transpiration response to vapor pressure deficit",
+      "source_id": "paper_91"
+    },
+    {
+      "name": "TRANSPIRATION RATE",
+      "type": "TRAIT",
+      "description": "The rate of water loss from the plant, which varies among peanut genotypes in response to VPD",
+      "source_id": "paper_91"
+    },
+    {
+      "name": "VAPOR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "Atmospheric condition that influences stomata conductance and transpiration rates",
+      "source_id": "paper_91"
+    },
+    {
+      "name": "STOMATA CONDUCTANCE",
+      "type": "TRAIT",
+      "description": "The rate of gas exchange through stomata, which decreases under high VPD",
+      "source_id": "paper_91"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "A state of insufficient soil water available for the plant",
+      "source_id": "paper_91"
+    },
+    {
+      "name": "WATER DEFICIT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a crop to maintain productivity or survive under water deficit conditions",
+      "source_id": "paper_91"
+    },
+    {
+      "name": "SOIL WATER CONSERVATION",
+      "type": "CONCEPT",
+      "description": "The reduction of soil water loss to enhance crop tolerance to water deficit",
+      "source_id": "paper_91"
+    },
+    {
+      "name": "SANDY SOILS",
+      "type": "CONDITION",
+      "description": "Soil type characterized by low water-holding capacity",
+      "source_id": "paper_91"
+    },
+    {
+      "name": "WATER-HOLDING CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of soil to retain water, which is low in sandy soils",
+      "source_id": "paper_91"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "TRANSPIRATION RATE",
+      "description": "genotypes of peanut exhibit variation in their transpiration rates",
+      "weight": "10",
+      "source_id": "paper_91"
+    },
+    {
+      "source": "TRANSPIRATION RATE",
+      "target": "VAPOR PRESSURE DEFICIT",
+      "description": "transpiration rates respond to changes in vapor pressure deficit",
+      "weight": "10",
+      "source_id": "paper_91"
+    },
+    {
+      "source": "STOMATA CONDUCTANCE",
+      "target": "VAPOR PRESSURE DEFICIT",
+      "description": "stomata conductance decreases under high vapor pressure deficit",
+      "weight": "9",
+      "source_id": "paper_91"
+    },
+    {
+      "source": "STOMATA CONDUCTANCE",
+      "target": "SOIL WATER CONSERVATION",
+      "description": "decreased stomata conductance leads to soil water conservation",
+      "weight": "8",
+      "source_id": "paper_91"
+    },
+    {
+      "source": "SOIL WATER CONSERVATION",
+      "target": "WATER DEFICIT TOLERANCE",
+      "description": "soil water conservation is an approach for enhanced water deficit tolerance",
+      "weight": "8",
+      "source_id": "paper_91"
+    },
+    {
+      "source": "PEANUT",
+      "target": "WATER DEFICIT",
+      "description": "peanut is frequently affected by water deficit",
+      "weight": "7",
+      "source_id": "paper_91"
+    },
+    {
+      "source": "PEANUT",
+      "target": "SANDY SOILS",
+      "description": "peanut is frequently grown on sandy soils",
+      "weight": "7",
+      "source_id": "paper_91"
+    },
+    {
+      "source": "SANDY SOILS",
+      "target": "WATER-HOLDING CAPACITY",
+      "description": "sandy soils are characterized by low water-holding capacity",
+      "weight": "9",
+      "source_id": "paper_91"
+    },
+    {
+      "source": "WATER-HOLDING CAPACITY",
+      "target": "WATER DEFICIT",
+      "description": "low water-holding capacity contributes to water deficit",
+      "weight": "8",
+      "source_id": "paper_91"
+    }
+  ]
+}

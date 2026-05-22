@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for disease resistance.",
+      "source_id": "paper_2547"
+    },
+    {
+      "name": "FIELD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut genotypes to resist peanut bud necrosis disease in the field.",
+      "source_id": "paper_2547"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS DISEASE",
+      "type": "CONDITION",
+      "description": "The disease affecting groundnut genotypes.",
+      "source_id": "paper_2547"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the testing was conducted.",
+      "source_id": "paper_2547"
+    },
+    {
+      "name": "AVERAGE LINKAGE CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "The statistical method used to group genotypes into clusters.",
+      "source_id": "paper_2547"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "The different genetic varieties of groundnut tested.",
+      "source_id": "paper_2547"
+    },
+    {
+      "name": "GENOTYPE X ENVIRONMENT INTERACTION VARIANCE",
+      "type": "CONCEPT",
+      "description": "The variance resulting from the interaction between genotypes and their environments.",
+      "source_id": "paper_2547"
+    },
+    {
+      "name": "ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "The different locations/settings where the genotypes were tested.",
+      "source_id": "paper_2547"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "PEANUT BUD NECROSIS DISEASE",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_2547"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "GROUNDNUT",
+      "description": "are varieties of",
+      "weight": "10",
+      "source_id": "paper_2547"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "FIELD RESISTANCE",
+      "description": "were tested for",
+      "weight": "9",
+      "source_id": "paper_2547"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "PEANUT BUD NECROSIS DISEASE",
+      "description": "show varying levels of resistance to",
+      "weight": "9",
+      "source_id": "paper_2547"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "AVERAGE LINKAGE CLUSTER ANALYSIS",
+      "description": "were grouped using",
+      "weight": "8",
+      "source_id": "paper_2547"
+    },
+    {
+      "source": "FIELD RESISTANCE",
+      "target": "PEANUT BUD NECROSIS DISEASE",
+      "description": "is the ability to resist",
+      "weight": "10",
+      "source_id": "paper_2547"
+    },
+    {
+      "source": "INDIA",
+      "target": "ENVIRONMENTS",
+      "description": "is the location of",
+      "weight": "8",
+      "source_id": "paper_2547"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "ENVIRONMENTS",
+      "description": "were tested across",
+      "weight": "8",
+      "source_id": "paper_2547"
+    },
+    {
+      "source": "GENOTYPE X ENVIRONMENT INTERACTION VARIANCE",
+      "target": "GENOTYPES",
+      "description": "measures the interaction of",
+      "weight": "7",
+      "source_id": "paper_2547"
+    },
+    {
+      "source": "GENOTYPE X ENVIRONMENT INTERACTION VARIANCE",
+      "target": "ENVIRONMENTS",
+      "description": "measures the interaction of",
+      "weight": "7",
+      "source_id": "paper_2547"
+    }
+  ]
+}

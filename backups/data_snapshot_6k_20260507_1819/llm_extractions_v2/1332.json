@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "LEGUMES",
+      "type": "ORGANISM",
+      "description": "Plants capable of symbiotic nitrogen fixation",
+      "source_id": "paper_1332"
+    },
+    {
+      "name": "SYMBIOTIC NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The process of converting atmospheric N2 into ammonia",
+      "source_id": "paper_1332"
+    },
+    {
+      "name": "GLOBAL CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperatures and weather patterns",
+      "source_id": "paper_1332"
+    },
+    {
+      "name": "ATMOSPHERIC CO2",
+      "type": "CONDITION",
+      "description": "Carbon dioxide present in the atmosphere",
+      "source_id": "paper_1332"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Prolonged period of abnormally low rainfall leading to water shortage",
+      "source_id": "paper_1332"
+    },
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A specific legume species used to study N2 fixation sensitivity to soil drying",
+      "source_id": "paper_1332"
+    },
+    {
+      "name": "SOIL DRYING",
+      "type": "CONDITION",
+      "description": "The process of soil losing moisture",
+      "source_id": "paper_1332"
+    },
+    {
+      "name": "NONSTRUCTURAL CARBOHYDRATES",
+      "type": "CONCEPT",
+      "description": "Soluble sugars and starches in plant leaves",
+      "source_id": "paper_1332"
+    },
+    {
+      "name": "UREIDES",
+      "type": "CONCEPT",
+      "description": "Nitrogen-rich compounds used for nitrogen transport in leaves",
+      "source_id": "paper_1332"
+    },
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "Grasses cultivated for their edible grains",
+      "source_id": "paper_1332"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LEGUMES",
+      "target": "SYMBIOTIC NITROGEN FIXATION",
+      "description": "perform",
+      "weight": "10",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "ATMOSPHERIC CO2",
+      "target": "SYMBIOTIC NITROGEN FIXATION",
+      "description": "increases rates of",
+      "weight": "8",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "GLOBAL CLIMATE CHANGE",
+      "target": "ATMOSPHERIC CO2",
+      "description": "increases levels of",
+      "weight": "9",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "GLOBAL CLIMATE CHANGE",
+      "target": "DROUGHT",
+      "description": "increases frequency and duration of",
+      "weight": "9",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "SYMBIOTIC NITROGEN FIXATION",
+      "description": "inhibits",
+      "weight": "8",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "LEGUMES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "SYMBIOTIC NITROGEN FIXATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "SOIL DRYING",
+      "target": "SYMBIOTIC NITROGEN FIXATION",
+      "description": "makes it sensitive",
+      "weight": "8",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "ATMOSPHERIC CO2",
+      "target": "SYMBIOTIC NITROGEN FIXATION",
+      "description": "makes it drought-tolerant",
+      "weight": "8",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "SYMBIOTIC NITROGEN FIXATION",
+      "target": "NONSTRUCTURAL CARBOHYDRATES",
+      "description": "reduced susceptibility associated with increase in",
+      "weight": "7",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "SYMBIOTIC NITROGEN FIXATION",
+      "target": "UREIDES",
+      "description": "reduced susceptibility associated with decrease in",
+      "weight": "7",
+      "source_id": "paper_1332"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "CEREALS",
+      "description": "have comparative advantage over under climate change",
+      "weight": "7",
+      "source_id": "paper_1332"
+    }
+  ]
+}

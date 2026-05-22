@@ -1,0 +1,223 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for collar rot susceptibility.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "COLLAR ROT",
+      "type": "TRAIT",
+      "description": "A disease caused by Sclerotium rolfsii Sacc. affecting the collar region of the plant.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII SACC",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing collar rot in chickpea.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "SOIL MOISTURE CONDITION",
+      "type": "CONDITION",
+      "description": "The abiotic factor involving different levels of soil moisture (40%, 60%, 80%, 100%).",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "ANNIGERI",
+      "type": "CROP",
+      "description": "A chickpea cultivar that is susceptible to collar rot.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "ICCV 05530",
+      "type": "CROP",
+      "description": "A chickpea cultivar that is moderately resistant to collar rot.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "QPCR ANALYSIS",
+      "type": "METHOD",
+      "description": "Quantitative polymerase chain reaction used to analyze the expression of genes.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "ENDOPOLYGALACTURONASE-2",
+      "type": "GENE_MARKER",
+      "description": "A gene associated with host cell wall degradation during collar rot development.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "ENDOGLUCOSIDASE",
+      "type": "GENE_MARKER",
+      "description": "A gene associated with host cell wall degradation during collar rot development.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "CELLOBIOHYDROLASE",
+      "type": "GENE_MARKER",
+      "description": "A gene associated with host cell wall degradation during collar rot development.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "DEFENSE RESPONSE GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes in chickpea seedlings that are up-regulated in response to combined stress.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONCEPT",
+      "description": "Non-living environmental stressors, such as soil moisture.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "BIOTIC STRESS",
+      "type": "CONCEPT",
+      "description": "Living environmental stressors, such as pathogens.",
+      "source_id": "paper_10830"
+    },
+    {
+      "name": "COMBINED STRESS",
+      "type": "CONCEPT",
+      "description": "The simultaneous occurrence of both abiotic and biotic stress factors.",
+      "source_id": "paper_10830"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROTIUM ROLFSII SACC",
+      "target": "COLLAR ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "COLLAR ROT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "SOIL MOISTURE CONDITION",
+      "target": "COLLAR ROT",
+      "description": "influences development of",
+      "weight": "8",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "ICCV 05530",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "COLLAR ROT",
+      "description": "is susceptible to",
+      "weight": "9",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "ICCV 05530",
+      "target": "COLLAR ROT",
+      "description": "is moderately resistant to",
+      "weight": "8",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "QPCR ANALYSIS",
+      "target": "ENDOPOLYGALACTURONASE-2",
+      "description": "measures expression of",
+      "weight": "9",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "QPCR ANALYSIS",
+      "target": "ENDOGLUCOSIDASE",
+      "description": "measures expression of",
+      "weight": "9",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "QPCR ANALYSIS",
+      "target": "CELLOBIOHYDROLASE",
+      "description": "measures expression of",
+      "weight": "9",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "QPCR ANALYSIS",
+      "target": "DEFENSE RESPONSE GENES",
+      "description": "measures expression of",
+      "weight": "9",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "SOIL MOISTURE CONDITION",
+      "target": "ENDOPOLYGALACTURONASE-2",
+      "description": "affects expression of",
+      "weight": "7",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "SOIL MOISTURE CONDITION",
+      "target": "ENDOGLUCOSIDASE",
+      "description": "affects expression of",
+      "weight": "7",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "SOIL MOISTURE CONDITION",
+      "target": "CELLOBIOHYDROLASE",
+      "description": "affects expression of",
+      "weight": "7",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "COMBINED STRESS",
+      "target": "DEFENSE RESPONSE GENES",
+      "description": "up-regulates",
+      "weight": "8",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII SACC",
+      "target": "BIOTIC STRESS",
+      "description": "is an example of",
+      "weight": "10",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "SOIL MOISTURE CONDITION",
+      "target": "ABIOTIC STRESS",
+      "description": "is an example of",
+      "weight": "10",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "COMBINED STRESS",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_10830"
+    },
+    {
+      "source": "BIOTIC STRESS",
+      "target": "COMBINED STRESS",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_10830"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "entities": [
+    {
+      "name": "MACHINE LEARNING",
+      "type": "METHOD",
+      "description": "Models employed for precise streamflow prediction that can suffer from overfitting and low accuracy on unseen data",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "STREAMFLOW PREDICTION",
+      "type": "CONCEPT",
+      "description": "The objective of predicting the flow of water in streams, particularly in data-scarce basins",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "OVERFITTING",
+      "type": "CONDITION",
+      "description": "A limitation of ML models where they fail to generalize to unseen data",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "SPATIOTEMPORAL VARIABILITY",
+      "type": "CONDITION",
+      "description": "High variability and heterogeneity across space and time in streamflow data",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "WAVELET ENSEMBLING",
+      "type": "METHOD",
+      "description": "A novel ensembling method used to develop a generalised streamflow model to overcome ML limitations",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "TRANSFER LEARNING-BASED LEAVE-ONE-OUT CROSS-VALIDATION",
+      "type": "METHOD",
+      "description": "A validation technique used to test the generalisability of the employed models",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "GENETIC ALGORITHM",
+      "type": "METHOD",
+      "description": "An optimization algorithm used to enhance the RF-based WE model",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "WE-RF-GA",
+      "type": "METHOD",
+      "description": "A genetic algorithm optimised RF-based Wavelet Ensembling model found to be the most efficient",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "TRIBUTARIES",
+      "type": "CONDITION",
+      "description": "A specific terrain condition where standalone and ensemble models showed higher accuracy",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "PLAIN TOPOGRAPHY",
+      "type": "CONDITION",
+      "description": "A specific terrain condition where standalone and ensemble models showed higher accuracy",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "LOW-FLOW CONDITIONS",
+      "type": "CONDITION",
+      "description": "A specific flow condition where standalone and ensemble models showed higher accuracy",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "MAINSTREAM FLOW",
+      "type": "CONDITION",
+      "description": "A flow condition where WE models reduced the performance gap compared to standalone models",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "HILLY TERRAIN",
+      "type": "CONDITION",
+      "description": "A terrain condition where WE models reduced the performance gap compared to standalone models",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "HIGH-FLOW VALUES",
+      "type": "CONDITION",
+      "description": "A flow condition where WE models reduced the performance gap compared to standalone models",
+      "source_id": "paper_13077"
+    },
+    {
+      "name": "DATA-SCARCE AND UNGAUGED BASINS",
+      "type": "CONDITION",
+      "description": "Basins lacking sufficient data where effective streamflow prediction is required",
+      "source_id": "paper_13077"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MACHINE LEARNING",
+      "target": "STREAMFLOW PREDICTION",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "MACHINE LEARNING",
+      "target": "OVERFITTING",
+      "description": "suffers from",
+      "weight": "8",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "WAVELET ENSEMBLING",
+      "target": "STREAMFLOW PREDICTION",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "WAVELET ENSEMBLING",
+      "target": "MACHINE LEARNING",
+      "description": "improves upon",
+      "weight": "9",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "TRANSFER LEARNING-BASED LEAVE-ONE-OUT CROSS-VALIDATION",
+      "target": "WAVELET ENSEMBLING",
+      "description": "used to test generalisability of",
+      "weight": "8",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "GENETIC ALGORITHM",
+      "target": "WE-RF-GA",
+      "description": "optimises",
+      "weight": "10",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "WE-RF-GA",
+      "target": "WAVELET ENSEMBLING",
+      "description": "is a specific implementation of",
+      "weight": "10",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "WE-RF-GA",
+      "target": "STREAMFLOW PREDICTION",
+      "description": "most efficient model for",
+      "weight": "10",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "WAVELET ENSEMBLING",
+      "target": "MAINSTREAM FLOW",
+      "description": "reduces performance gap in",
+      "weight": "8",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "WAVELET ENSEMBLING",
+      "target": "HILLY TERRAIN",
+      "description": "reduces performance gap in",
+      "weight": "8",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "WAVELET ENSEMBLING",
+      "target": "HIGH-FLOW VALUES",
+      "description": "reduces performance gap in",
+      "weight": "8",
+      "source_id": "paper_13077"
+    },
+    {
+      "source": "WAVELET ENSEMBLING",
+      "target": "DATA-SCARCE AND UNGAUGED BASINS",
+      "description": "helps predict streamflow for",
+      "weight": "9",
+      "source_id": "paper_13077"
+    }
+  ]
+}

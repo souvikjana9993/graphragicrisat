@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "MILLETS",
+      "type": "CROP",
+      "description": "Cereal crops grown globally under rainfed conditions with minimal inputs",
+      "source_id": "paper_12527"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions where crops rely on rainfall for moisture",
+      "source_id": "paper_12527"
+    },
+    {
+      "name": "FERTILIZERS",
+      "type": "CONCEPT",
+      "description": "Substances added to soil to increase fertility",
+      "source_id": "paper_12527"
+    },
+    {
+      "name": "PESTICIDES",
+      "type": "CONCEPT",
+      "description": "Substances used for destroying organisms harmful to cultivated plants",
+      "source_id": "paper_12527"
+    },
+    {
+      "name": "VIRUS DISEASES",
+      "type": "CONDITION",
+      "description": "Diseases caused by viruses that adversely affect millet production",
+      "source_id": "paper_12527"
+    },
+    {
+      "name": "VIRUSES",
+      "type": "ORGANISM",
+      "description": "Pathogenic agents that infect major millet crops",
+      "source_id": "paper_12527"
+    },
+    {
+      "name": "BIOLOGICAL AND GENOMIC PROPERTIES",
+      "type": "TRAIT",
+      "description": "The biological and genetic characteristics of viruses infecting millets",
+      "source_id": "paper_12527"
+    },
+    {
+      "name": "DIAGNOSTICS",
+      "type": "METHOD",
+      "description": "Techniques used to identify and detect viruses",
+      "source_id": "paper_12527"
+    },
+    {
+      "name": "EPIDEMIOLOGY",
+      "type": "CONCEPT",
+      "description": "The study of the distribution and determinants of virus diseases in millet populations",
+      "source_id": "paper_12527"
+    },
+    {
+      "name": "MANAGEMENT",
+      "type": "METHOD",
+      "description": "Strategies used to control and manage virus diseases in millets",
+      "source_id": "paper_12527"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MILLETS",
+      "target": "RAINFED CONDITIONS",
+      "description": "grown under",
+      "weight": "8",
+      "source_id": "paper_12527"
+    },
+    {
+      "source": "MILLETS",
+      "target": "FERTILIZERS",
+      "description": "minimal inputs of",
+      "weight": "5",
+      "source_id": "paper_12527"
+    },
+    {
+      "source": "MILLETS",
+      "target": "PESTICIDES",
+      "description": "minimal inputs of",
+      "weight": "5",
+      "source_id": "paper_12527"
+    },
+    {
+      "source": "VIRUS DISEASES",
+      "target": "MILLETS",
+      "description": "adversely affect production of",
+      "weight": "9",
+      "source_id": "paper_12527"
+    },
+    {
+      "source": "VIRUSES",
+      "target": "MILLETS",
+      "description": "infect",
+      "weight": "9",
+      "source_id": "paper_12527"
+    },
+    {
+      "source": "VIRUSES",
+      "target": "VIRUS DISEASES",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_12527"
+    },
+    {
+      "source": "VIRUSES",
+      "target": "BIOLOGICAL AND GENOMIC PROPERTIES",
+      "description": "possess",
+      "weight": "8",
+      "source_id": "paper_12527"
+    },
+    {
+      "source": "VIRUSES",
+      "target": "DIAGNOSTICS",
+      "description": "identified by",
+      "weight": "8",
+      "source_id": "paper_12527"
+    },
+    {
+      "source": "VIRUSES",
+      "target": "EPIDEMIOLOGY",
+      "description": "studied via",
+      "weight": "8",
+      "source_id": "paper_12527"
+    },
+    {
+      "source": "VIRUS DISEASES",
+      "target": "MANAGEMENT",
+      "description": "controlled by",
+      "weight": "8",
+      "source_id": "paper_12527"
+    }
+  ]
+}

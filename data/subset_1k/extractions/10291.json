@@ -1,0 +1,240 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The target crop for breeding drought tolerance, Arachis hypogaea L.",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The measure of productivity of the groundnut pods",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "WATER-DEFICIT STRESS",
+      "type": "CONDITION",
+      "description": "A condition of limited water availability causing plant stress",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which the plant utilizes water for growth",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "WATER-LIMITED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions where water is scarce",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "SPAD CHLOROPHYLL METER READING",
+      "type": "METHOD",
+      "description": "A non-destructive method used to measure chlorophyll density and as a surrogate for water use efficiency",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "SPECIFIC LEAF AREA",
+      "type": "TRAIT",
+      "description": "A leaf trait associated with water use efficiency",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "CHLOROPHYLL DENSITY",
+      "type": "TRAIT",
+      "description": "The concentration of chlorophyll in the plant leaves",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "Stress experienced by plants due to lack of water",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "RIL POPULATION",
+      "type": "CONCEPT",
+      "description": "A population of 280 recombinant inbred lines used for evaluation",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "WELL-WATERED",
+      "type": "CONDITION",
+      "description": "A control condition where plants receive optimal water",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "YIELD PARAMETERS",
+      "type": "TRAIT",
+      "description": "Various measurements used to assess the yield of the crop",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "A continent where groundnut is primarily a rainfed crop",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "A continent where groundnut is primarily a rainfed crop",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "RAINFED",
+      "type": "CONDITION",
+      "description": "A farming condition where crops depend on rainfall",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A period of deficient rainfall leading to water stress",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "POD YIELD PENALTY",
+      "type": "TRAIT",
+      "description": "The reduction in pod yield under water-deficit stress compared to well-watered conditions",
+      "source_id": "paper_10291"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_10291"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "POD YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "WATER USE EFFICIENCY",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "POD YIELD",
+      "target": "WATER-DEFICIT STRESS",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "WATER USE EFFICIENCY",
+      "target": "WATER-LIMITED CONDITIONS",
+      "description": "is critical in",
+      "weight": "8",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "SPAD CHLOROPHYLL METER READING",
+      "target": "WATER USE EFFICIENCY",
+      "description": "is a surrogate for",
+      "weight": "9",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "SPECIFIC LEAF AREA",
+      "target": "WATER USE EFFICIENCY",
+      "description": "is associated with",
+      "weight": "7",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "SPAD CHLOROPHYLL METER READING",
+      "target": "CHLOROPHYLL DENSITY",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "CHLOROPHYLL DENSITY",
+      "target": "WATER USE EFFICIENCY",
+      "description": "is associated with",
+      "weight": "8",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "CHLOROPHYLL DENSITY",
+      "target": "WATER STRESS",
+      "description": "is maintained under",
+      "weight": "7",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "RIL POPULATION",
+      "target": "POD YIELD",
+      "description": "was evaluated for",
+      "weight": "9",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "RIL POPULATION",
+      "target": "SPAD CHLOROPHYLL METER READING",
+      "description": "was evaluated for",
+      "weight": "9",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "POD YIELD",
+      "target": "SPAD CHLOROPHYLL METER READING",
+      "description": "is independent of",
+      "weight": "8",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "AFRICA",
+      "description": "is grown in",
+      "weight": "9",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "ASIA",
+      "description": "is grown in",
+      "weight": "9",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RAINFED",
+      "description": "is grown as",
+      "weight": "8",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "POD YIELD PENALTY",
+      "target": "WATER-DEFICIT STRESS",
+      "description": "is measured under",
+      "weight": "9",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "POD YIELD PENALTY",
+      "target": "WELL-WATERED",
+      "description": "is compared to",
+      "weight": "9",
+      "source_id": "paper_10291"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "GROUNDNUT",
+      "description": "conducts breeding for",
+      "weight": "10",
+      "source_id": "paper_10291"
+    }
+  ]
+}

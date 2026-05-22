@@ -1,0 +1,249 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop species Cicer arietmum L. being studied for wilt resistance and yield.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "BHEEMA",
+      "type": "CROP",
+      "description": "A high yielding and late wilter variety of chickpea.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "ICCV-10",
+      "type": "CROP",
+      "description": "A high yielding and highly-resistant variety of chickpea.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A disease that causes wilting in chickpea plants.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "FUSARIUM WILT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist infection by fusarium wilt.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "HIGH YIELD",
+      "type": "TRAIT",
+      "description": "The characteristic of producing a high amount of crop output.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "LATE WILTING",
+      "type": "TRAIT",
+      "description": "The characteristic of exhibiting wilt symptoms later in the growth cycle.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "HYBRIDIZATION",
+      "type": "METHOD",
+      "description": "The process of crossing two different varieties, Bheema and ICCV-10.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "INDUCED MUTAGENESIS",
+      "type": "METHOD",
+      "description": "The process of creating genetic mutations using external agents like irradiation.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "GAMMA IRRADIATION",
+      "type": "METHOD",
+      "description": "A specific method of induced mutagenesis using gamma rays.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "RESISTANCE GENE",
+      "type": "GENE_MARKER",
+      "description": "A single gene that governs the resistance to fusarium wilt.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "F2 POPULATION",
+      "type": "CONCEPT",
+      "description": "The second filial generation resulting from the cross between Bheema and ICCV-10.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "F3 POPULATION",
+      "type": "CONCEPT",
+      "description": "The third filial generation resulting from the selfing of F2 seeds.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "F2M1 POPULATION",
+      "type": "CONCEPT",
+      "description": "The population derived from gamma irradiation of F2 seeds.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "M2 POPULATION",
+      "type": "CONCEPT",
+      "description": "The second mutant generation resulting from induced mutagenesis.",
+      "source_id": "paper_5189"
+    },
+    {
+      "name": "TRAIT VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The variation in traits resulting from hybridization and mutagenesis.",
+      "source_id": "paper_5189"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HYBRIDIZATION",
+      "target": "CHICKPEA",
+      "description": "used to improve traits in",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "INDUCED MUTAGENESIS",
+      "target": "CHICKPEA",
+      "description": "used to create mutants in",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "BHEEMA",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "ICCV-10",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "BHEEMA",
+      "target": "HIGH YIELD",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "BHEEMA",
+      "target": "LATE WILTING",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "ICCV-10",
+      "target": "HIGH YIELD",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "ICCV-10",
+      "target": "FUSARIUM WILT RESISTANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "FUSARIUM WILT RESISTANCE",
+      "target": "FUSARIUM WILT",
+      "description": "provides resistance against",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "RESISTANCE GENE",
+      "target": "FUSARIUM WILT RESISTANCE",
+      "description": "governs",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "GAMMA IRRADIATION",
+      "target": "INDUCED MUTAGENESIS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "GAMMA IRRADIATION",
+      "target": "BHEEMA",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "GAMMA IRRADIATION",
+      "target": "F2 POPULATION",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "HYBRIDIZATION",
+      "target": "F2 POPULATION",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "F2 POPULATION",
+      "target": "F3 POPULATION",
+      "description": "advances to",
+      "weight": "9",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "F2 POPULATION",
+      "target": "F2M1 POPULATION",
+      "description": "produces via irradiation",
+      "weight": "10",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "INDUCED MUTAGENESIS",
+      "target": "M2 POPULATION",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "F2M1 POPULATION",
+      "target": "HIGH YIELD",
+      "description": "recovers higher frequency of",
+      "weight": "8",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "F2M1 POPULATION",
+      "target": "FUSARIUM WILT RESISTANCE",
+      "description": "recovers higher frequency of",
+      "weight": "8",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "HYBRIDIZATION",
+      "target": "TRAIT VARIABILITY",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_5189"
+    },
+    {
+      "source": "INDUCED MUTAGENESIS",
+      "target": "TRAIT VARIABILITY",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_5189"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species whose landraces were studied for genetic variability",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "TANZANIA",
+      "type": "LOCATION",
+      "description": "The country from which 40 sorghum landraces were collected",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "ZAMBIA",
+      "type": "LOCATION",
+      "description": "The country from which two sorghum landraces were collected",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "MORPHOLOGICAL MARKERS",
+      "type": "METHOD",
+      "description": "Markers based on physical characteristics used to study genetic variability and agronomic traits",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "MOLECULAR MARKERS",
+      "type": "METHOD",
+      "description": "Markers based on DNA sequences used to study genetic variability",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "SIMPLE SEQUENCE REPEATS (SSRS)",
+      "type": "METHOD",
+      "description": "A specific type of molecular marker used to determine genetic relationships",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "GENETIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The degree of genetic difference among the sorghum landraces",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "An agronomic trait showing positive correlation with inflorescence width",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "INFLORESCENCE WIDTH",
+      "type": "TRAIT",
+      "description": "An agronomic trait positively correlated with yield",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "PANICLES AVERAGES",
+      "type": "TRAIT",
+      "description": "An agronomic trait positively correlated with plot yields",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "PLOT YIELDS",
+      "type": "TRAIT",
+      "description": "An agronomic trait positively correlated with panicles averages",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "LEAF SENESCENCE",
+      "type": "TRAIT",
+      "description": "An agronomic trait positively correlated with inflorescence length",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "INFLORESCENCE LENGTH",
+      "type": "TRAIT",
+      "description": "An agronomic trait positively correlated with leaf senescence and negatively correlated with tiller numbers",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "TILLER NUMBERS",
+      "type": "TRAIT",
+      "description": "An agronomic trait negatively correlated with inflorescence length",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "PRINCIPAL COMPONENTS ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to account for the total variability in the data",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "A method used to group landraces into distinct clusters based on markers",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "XGAP84",
+      "type": "GENE_MARKER",
+      "description": "A molecular marker exhibiting a high number of alleles",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "XTXP320",
+      "type": "GENE_MARKER",
+      "description": "A molecular marker exhibiting a high number of alleles",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "GENETIC RELATIONSHIPS",
+      "type": "CONCEPT",
+      "description": "The ancestral or genetic connections among the sorghum landraces",
+      "source_id": "paper_302"
+    },
+    {
+      "name": "GENOTYPE SPECIFIC MARKERS",
+      "type": "CONCEPT",
+      "description": "Markers that are unique to a specific genotype",
+      "source_id": "paper_302"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "TANZANIA",
+      "description": "collected from",
+      "weight": "8",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ZAMBIA",
+      "description": "collected from",
+      "weight": "8",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "MORPHOLOGICAL MARKERS",
+      "target": "GENETIC VARIABILITY",
+      "description": "used to study",
+      "weight": "9",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "MOLECULAR MARKERS",
+      "target": "GENETIC VARIABILITY",
+      "description": "used to study",
+      "weight": "9",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "SIMPLE SEQUENCE REPEATS (SSRS)",
+      "target": "MOLECULAR MARKERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "MORPHOLOGICAL MARKERS",
+      "target": "YIELD",
+      "description": "used to assess",
+      "weight": "7",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "YIELD",
+      "target": "INFLORESCENCE WIDTH",
+      "description": "positive correlation",
+      "weight": "6",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "PANICLES AVERAGES",
+      "target": "PLOT YIELDS",
+      "description": "positive correlation",
+      "weight": "6",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "LEAF SENESCENCE",
+      "target": "INFLORESCENCE LENGTH",
+      "description": "positive correlation",
+      "weight": "6",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "TILLER NUMBERS",
+      "target": "INFLORESCENCE LENGTH",
+      "description": "negative correlation",
+      "weight": "6",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "MORPHOLOGICAL MARKERS",
+      "description": "based on",
+      "weight": "8",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "MOLECULAR MARKERS",
+      "description": "based on",
+      "weight": "8",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "XGAP84",
+      "target": "MOLECULAR MARKERS",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "XTXP320",
+      "target": "MOLECULAR MARKERS",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "PRINCIPAL COMPONENTS ANALYSIS",
+      "target": "GENETIC VARIABILITY",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "SIMPLE SEQUENCE REPEATS (SSRS)",
+      "target": "GENETIC RELATIONSHIPS",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_302"
+    },
+    {
+      "source": "MOLECULAR MARKERS",
+      "target": "GENOTYPE SPECIFIC MARKERS",
+      "description": "can be",
+      "weight": "7",
+      "source_id": "paper_302"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Spanish peanut (Arachis hypogae L.), the crop being studied for seed dormancy characteristics.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "FRESH SEED DORMANCY",
+      "type": "TRAIT",
+      "description": "The ability of seeds to remain dormant immediately after harvest to prevent premature germination.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The quantity of pods produced, which can be reduced by in situ germination.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "SEED QUALITY",
+      "type": "TRAIT",
+      "description": "The overall quality of the seeds, which can be compromised by in situ germination.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "IN SITU GERMINATION",
+      "type": "CONCEPT",
+      "description": "The process of seeds germinating while still in the pod or on the plant in the field.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "UNPREDICTABLE RAINFALL ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Environmental conditions with irregular rainfall that trigger in situ germination.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "INHERITANCE",
+      "type": "CONCEPT",
+      "description": "The genetic transmission of traits from parents to offspring, specifically regarding seed dormancy.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "ICGV 86158",
+      "type": "ORGANISM",
+      "description": "A dormant Spanish peanut genotype used in the study.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "ICGV 87378",
+      "type": "ORGANISM",
+      "description": "A dormant Spanish peanut genotype used in the study.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "JL 24",
+      "type": "ORGANISM",
+      "description": "A non-dormant Spanish peanut genotype used in the study.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "GERMINATION TEST",
+      "type": "METHOD",
+      "description": "A laboratory evaluation conducted at 35 ± 2°C in the dark to determine seed dormancy.",
+      "source_id": "paper_1250"
+    },
+    {
+      "name": "DOMINANT ALLELE",
+      "type": "GENE_MARKER",
+      "description": "A single gene allele that controls the expression of fresh seed dormancy.",
+      "source_id": "paper_1250"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "FRESH SEED DORMANCY",
+      "description": "exhibits the trait of",
+      "weight": "10",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "FRESH SEED DORMANCY",
+      "target": "POD YIELD",
+      "description": "prevents loss in",
+      "weight": "8",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "FRESH SEED DORMANCY",
+      "target": "SEED QUALITY",
+      "description": "prevents loss in",
+      "weight": "8",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "IN SITU GERMINATION",
+      "target": "POD YIELD",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "IN SITU GERMINATION",
+      "target": "SEED QUALITY",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "UNPREDICTABLE RAINFALL ENVIRONMENTS",
+      "target": "IN SITU GERMINATION",
+      "description": "triggers",
+      "weight": "9",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "INHERITANCE",
+      "target": "FRESH SEED DORMANCY",
+      "description": "is the process by which the trait is passed",
+      "weight": "10",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "ICGV 86158",
+      "target": "FRESH SEED DORMANCY",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "ICGV 87378",
+      "target": "FRESH SEED DORMANCY",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "JL 24",
+      "target": "FRESH SEED DORMANCY",
+      "description": "lacks the trait of",
+      "weight": "10",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "GERMINATION TEST",
+      "target": "FRESH SEED DORMANCY",
+      "description": "is used to evaluate",
+      "weight": "10",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "DOMINANT ALLELE",
+      "target": "FRESH SEED DORMANCY",
+      "description": "controls the expression of",
+      "weight": "10",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "ICGV 86158",
+      "target": "DOMINANT ALLELE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_1250"
+    },
+    {
+      "source": "ICGV 87378",
+      "target": "DOMINANT ALLELE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_1250"
+    }
+  ]
+}

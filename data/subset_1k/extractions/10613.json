@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The changing global climate that puts increasing strain on agriculture production",
+      "source_id": "paper_10613"
+    },
+    {
+      "name": "AGRICULTURE PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The overall output and productivity of farming activities",
+      "source_id": "paper_10613"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A climatic factor that triggers complex effects and can be addressed through adaptation",
+      "source_id": "paper_10613"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "A climatic factor that is difficult to predict and manage",
+      "source_id": "paper_10613"
+    },
+    {
+      "name": "TEMPERATURE ADAPTATION MECHANISM",
+      "type": "TRAIT",
+      "description": "A biological mechanism that allows crops to adapt to changes in temperature",
+      "source_id": "paper_10613"
+    },
+    {
+      "name": "PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of measuring phenotypic traits at a high rate and precision",
+      "source_id": "paper_10613"
+    },
+    {
+      "name": "CROP SIMULATION",
+      "type": "METHOD",
+      "description": "A computational approach used to predict the effect of traits on crop yield",
+      "source_id": "paper_10613"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of agricultural productivity affected by adaptation traits",
+      "source_id": "paper_10613"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "AGRICULTURE PRODUCTION",
+      "description": "puts increasing strain on",
+      "weight": "9",
+      "source_id": "paper_10613"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "TEMPERATURE",
+      "description": "manifests as changes in",
+      "weight": "8",
+      "source_id": "paper_10613"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "RAINFALL",
+      "description": "manifests as changes in",
+      "weight": "8",
+      "source_id": "paper_10613"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "TEMPERATURE ADAPTATION MECHANISM",
+      "description": "is the driver for the need for",
+      "weight": "10",
+      "source_id": "paper_10613"
+    },
+    {
+      "source": "PHENOTYPING",
+      "target": "TEMPERATURE ADAPTATION MECHANISM",
+      "description": "is used to measure",
+      "weight": "9",
+      "source_id": "paper_10613"
+    },
+    {
+      "source": "CROP SIMULATION",
+      "target": "YIELD",
+      "description": "is used to predict",
+      "weight": "8",
+      "source_id": "paper_10613"
+    },
+    {
+      "source": "TEMPERATURE ADAPTATION MECHANISM",
+      "target": "YIELD",
+      "description": "has an effect on",
+      "weight": "7",
+      "source_id": "paper_10613"
+    },
+    {
+      "source": "CROP SIMULATION",
+      "target": "TEMPERATURE ADAPTATION MECHANISM",
+      "description": "is used to predict the effect of",
+      "weight": "8",
+      "source_id": "paper_10613"
+    }
+  ]
+}

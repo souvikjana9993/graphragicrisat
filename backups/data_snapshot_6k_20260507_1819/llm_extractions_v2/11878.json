@@ -1,0 +1,197 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for its response to dry root rot.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "DRY ROOT ROT",
+      "type": "CONCEPT",
+      "description": "A disease caused by Rhizoctonia bataticola affecting chickpea production.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "A necrotrophic phytopathogenic fungus that causes dry root rot.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where dry root rot is an emerging threat to chickpea.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An environmental factor that modulates the host defense response and disease progression.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "SOIL MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "An environmental factor that modulates the host defense response and disease progression.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "DISEASE SUSCEPTIBILITY INDEX",
+      "type": "METHOD",
+      "description": "A metric used to quantify the susceptibility of chickpea to dry root rot.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "PATHOGEN COLONIZATION",
+      "type": "CONCEPT",
+      "description": "The process of the fungus establishing itself within the root tissue of the host.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "DIFFERENTIAL EXPRESSION STUDY",
+      "type": "METHOD",
+      "description": "A method used to analyze the expression of genes during infection.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "ENDOCHITINASE",
+      "type": "GENE_MARKER",
+      "description": "A host defense-related gene involved in delaying dry root rot progression.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "PR-3-TYPE CHITINASE",
+      "type": "GENE_MARKER",
+      "description": "A host defense-related gene (CHI III) involved in delaying dry root rot progression.",
+      "source_id": "paper_11878"
+    },
+    {
+      "name": "HOST DEFENSE RESPONSE",
+      "type": "CONCEPT",
+      "description": "The biological reaction of the chickpea plant to combat the pathogen.",
+      "source_id": "paper_11878"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "DRY ROOT ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "INDIA",
+      "description": "emerging threat in",
+      "weight": "8",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DRY ROOT ROT",
+      "description": "modulates",
+      "weight": "9",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "SOIL MOISTURE CONTENT",
+      "target": "DRY ROOT ROT",
+      "description": "modulates",
+      "weight": "9",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "DISEASE SUSCEPTIBILITY INDEX",
+      "target": "DRY ROOT ROT",
+      "description": "quantifies",
+      "weight": "9",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DISEASE SUSCEPTIBILITY INDEX",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "SOIL MOISTURE CONTENT",
+      "target": "DISEASE SUSCEPTIBILITY INDEX",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "PATHOGEN COLONIZATION",
+      "target": "CHICKPEA",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "DIFFERENTIAL EXPRESSION STUDY",
+      "target": "ENDOCHITINASE",
+      "description": "reveals involvement of",
+      "weight": "9",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "DIFFERENTIAL EXPRESSION STUDY",
+      "target": "PR-3-TYPE CHITINASE",
+      "description": "reveals involvement of",
+      "weight": "9",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "ENDOCHITINASE",
+      "target": "DRY ROOT ROT",
+      "description": "delays progression of",
+      "weight": "8",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "PR-3-TYPE CHITINASE",
+      "target": "DRY ROOT ROT",
+      "description": "delays progression of",
+      "weight": "8",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "ENDOCHITINASE",
+      "target": "HOST DEFENSE RESPONSE",
+      "description": "part of",
+      "weight": "9",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "PR-3-TYPE CHITINASE",
+      "target": "HOST DEFENSE RESPONSE",
+      "description": "part of",
+      "weight": "9",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "SOIL MOISTURE CONTENT",
+      "target": "ENDOCHITINASE",
+      "description": "influences activity of",
+      "weight": "7",
+      "source_id": "paper_11878"
+    },
+    {
+      "source": "SOIL MOISTURE CONTENT",
+      "target": "PR-3-TYPE CHITINASE",
+      "description": "influences activity of",
+      "weight": "7",
+      "source_id": "paper_11878"
+    }
+  ]
+}

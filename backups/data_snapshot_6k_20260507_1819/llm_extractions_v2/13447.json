@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "SOIL MICROBIAL BIOMASS CARBON (SMBC)",
+      "type": "CONCEPT",
+      "description": "A key determinant of nutrient cycling and carbon turnover, estimated using the fumigation-extraction method.",
+      "source_id": "paper_13447"
+    },
+    {
+      "name": "NUTRIENT CYCLING",
+      "type": "CONCEPT",
+      "description": "The process of nutrient movement and exchange within the soil.",
+      "source_id": "paper_13447"
+    },
+    {
+      "name": "CARBON TURNOVER",
+      "type": "CONCEPT",
+      "description": "The rate at which carbon is exchanged between different soil pools.",
+      "source_id": "paper_13447"
+    },
+    {
+      "name": "FUMIGATION-EXTRACTION METHOD",
+      "type": "METHOD",
+      "description": "A technique used to estimate SMBC by measuring the difference in organic carbon between fumigated and non-fumigated soil.",
+      "source_id": "paper_13447"
+    },
+    {
+      "name": "ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "Carbon found in organic compounds, the difference of which reflects living microbial biomass.",
+      "source_id": "paper_13447"
+    },
+    {
+      "name": "LIVING MICROBIAL BIOMASS",
+      "type": "ORGANISM",
+      "description": "The total mass of living microorganisms in the soil.",
+      "source_id": "paper_13447"
+    },
+    {
+      "name": "SOIL BIOLOGICAL ACTIVITY",
+      "type": "CONCEPT",
+      "description": "The collective biological processes in the soil that sustain ecosystem productivity.",
+      "source_id": "paper_13447"
+    },
+    {
+      "name": "ECOSYSTEM PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The rate of biomass production in an ecosystem, sustained by soil biological activity.",
+      "source_id": "paper_13447"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL MICROBIAL BIOMASS CARBON (SMBC)",
+      "target": "NUTRIENT CYCLING",
+      "description": "is a key determinant of",
+      "weight": "8",
+      "source_id": "paper_13447"
+    },
+    {
+      "source": "SOIL MICROBIAL BIOMASS CARBON (SMBC)",
+      "target": "CARBON TURNOVER",
+      "description": "is a key determinant of",
+      "weight": "8",
+      "source_id": "paper_13447"
+    },
+    {
+      "source": "FUMIGATION-EXTRACTION METHOD",
+      "target": "SOIL MICROBIAL BIOMASS CARBON (SMBC)",
+      "description": "is used to estimate",
+      "weight": "10",
+      "source_id": "paper_13447"
+    },
+    {
+      "source": "FUMIGATION-EXTRACTION METHOD",
+      "target": "ORGANIC CARBON",
+      "description": "measures the difference in",
+      "weight": "9",
+      "source_id": "paper_13447"
+    },
+    {
+      "source": "ORGANIC CARBON",
+      "target": "LIVING MICROBIAL BIOMASS",
+      "description": "reflects",
+      "weight": "9",
+      "source_id": "paper_13447"
+    },
+    {
+      "source": "SOIL MICROBIAL BIOMASS CARBON (SMBC)",
+      "target": "SOIL BIOLOGICAL ACTIVITY",
+      "description": "provides insights into",
+      "weight": "8",
+      "source_id": "paper_13447"
+    },
+    {
+      "source": "SOIL BIOLOGICAL ACTIVITY",
+      "target": "ECOSYSTEM PRODUCTIVITY",
+      "description": "plays a role in sustaining",
+      "weight": "8",
+      "source_id": "paper_13447"
+    }
+  ]
+}

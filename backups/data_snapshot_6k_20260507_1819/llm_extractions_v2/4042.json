@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Groundnut or peanut (Arachis hypogaea L.), a crop susceptible to aflatoxin contamination",
+      "source_id": "paper_4042"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONCEPT",
+      "description": "The contamination of groundnuts by aflatoxins, a widespread serious problem in producing countries",
+      "source_id": "paper_4042"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Agricultural conditions where the crop is grown relying on rainfall",
+      "source_id": "paper_4042"
+    },
+    {
+      "name": "SEMI-ARID TROPICAL ENVIRONMENT",
+      "type": "LOCATION",
+      "description": "A specific environmental location conducive to preharvest aflatoxin contamination",
+      "source_id": "paper_4042"
+    },
+    {
+      "name": "PREHARVEST CONTAMINATION",
+      "type": "CONCEPT",
+      "description": "Aflatoxin contamination that occurs in the crop before it is harvested",
+      "source_id": "paper_4042"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A condition of water deficiency experienced by the crop before harvest",
+      "source_id": "paper_4042"
+    },
+    {
+      "name": "WET AND HUMID AREAS",
+      "type": "LOCATION",
+      "description": "Locations where postharvest aflatoxin contamination is more prevalent",
+      "source_id": "paper_4042"
+    },
+    {
+      "name": "POSTHARVEST CONTAMINATION",
+      "type": "CONCEPT",
+      "description": "Aflatoxin contamination that occurs after the crop has been harvested",
+      "source_id": "paper_4042"
+    },
+    {
+      "name": "CONVENTIONAL BREEDING",
+      "type": "METHOD",
+      "description": "A method of crop improvement used to develop resistance to aflatoxin contamination",
+      "source_id": "paper_4042"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The trait of being able to withstand or prevent aflatoxin contamination",
+      "source_id": "paper_4042"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_4042"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RAINFED CONDITIONS",
+      "description": "is grown under",
+      "weight": "8",
+      "source_id": "paper_4042"
+    },
+    {
+      "source": "SEMI-ARID TROPICAL ENVIRONMENT",
+      "target": "PREHARVEST CONTAMINATION",
+      "description": "is conducive to",
+      "weight": "9",
+      "source_id": "paper_4042"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "PREHARVEST CONTAMINATION",
+      "description": "increases risk of",
+      "weight": "9",
+      "source_id": "paper_4042"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "DROUGHT",
+      "description": "experiences",
+      "weight": "8",
+      "source_id": "paper_4042"
+    },
+    {
+      "source": "WET AND HUMID AREAS",
+      "target": "POSTHARVEST CONTAMINATION",
+      "description": "is more prevalent in",
+      "weight": "9",
+      "source_id": "paper_4042"
+    },
+    {
+      "source": "CONVENTIONAL BREEDING",
+      "target": "RESISTANCE",
+      "description": "is used to develop",
+      "weight": "10",
+      "source_id": "paper_4042"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_4042"
+    },
+    {
+      "source": "PREHARVEST CONTAMINATION",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is a form of",
+      "weight": "10",
+      "source_id": "paper_4042"
+    },
+    {
+      "source": "POSTHARVEST CONTAMINATION",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is a form of",
+      "weight": "10",
+      "source_id": "paper_4042"
+    }
+  ]
+}

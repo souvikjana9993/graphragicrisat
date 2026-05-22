@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, the host plant for nodulating bacteria",
+      "source_id": "paper_2770"
+    },
+    {
+      "name": "BRADYRHIZOBIUM SP. (CICER)",
+      "type": "ORGANISM",
+      "description": "Bacteria that nodulate chickpea and are specific to it",
+      "source_id": "paper_2770"
+    },
+    {
+      "name": "CROSS INOCULATION AFFINITY",
+      "type": "CONCEPT",
+      "description": "The ability of bacteria to inoculate members of different cross-inoculation groups",
+      "source_id": "paper_2770"
+    },
+    {
+      "name": "CHICKPEA GENOTYPES",
+      "type": "CROP",
+      "description": "Specific chickpea varieties including ICC 4918, ICC 196, and ICC 5003",
+      "source_id": "paper_2770"
+    },
+    {
+      "name": "YEAST-EXTRACT MANNITOL AGAR",
+      "type": "METHOD",
+      "description": "A growth medium containing bromothymol blue used to observe bacterial acidity",
+      "source_id": "paper_2770"
+    },
+    {
+      "name": "ACIDITY",
+      "type": "TRAIT",
+      "description": "The pH characteristic of bacteria, described as acidic or neutral",
+      "source_id": "paper_2770"
+    },
+    {
+      "name": "ANTIBIOTIC RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent tolerance of bacterial strains to low levels of antibiotics and antimetabolites",
+      "source_id": "paper_2770"
+    },
+    {
+      "name": "ANTISERA PRODUCTION",
+      "type": "METHOD",
+      "description": "The process of attempting to produce antisera from bacterial strains",
+      "source_id": "paper_2770"
+    },
+    {
+      "name": "ANTIBODY TITER",
+      "type": "TRAIT",
+      "description": "The level of antibody concentration resulting from antisera production",
+      "source_id": "paper_2770"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BRADYRHIZOBIUM SP. (CICER)",
+      "target": "CHICKPEA",
+      "description": "nodulates",
+      "weight": "10",
+      "source_id": "paper_2770"
+    },
+    {
+      "source": "BRADYRHIZOBIUM SP. (CICER)",
+      "target": "CROSS INOCULATION AFFINITY",
+      "description": "does not show",
+      "weight": "8",
+      "source_id": "paper_2770"
+    },
+    {
+      "source": "BRADYRHIZOBIUM SP. (CICER)",
+      "target": "CHICKPEA GENOTYPES",
+      "description": "is effective to highly-effective on",
+      "weight": "9",
+      "source_id": "paper_2770"
+    },
+    {
+      "source": "BRADYRHIZOBIUM SP. (CICER)",
+      "target": "ACIDITY",
+      "description": "exhibits",
+      "weight": "7",
+      "source_id": "paper_2770"
+    },
+    {
+      "source": "YEAST-EXTRACT MANNITOL AGAR",
+      "target": "ACIDITY",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_2770"
+    },
+    {
+      "source": "BRADYRHIZOBIUM SP. (CICER)",
+      "target": "ANTIBIOTIC RESISTANCE",
+      "description": "shows tolerance",
+      "weight": "7",
+      "source_id": "paper_2770"
+    },
+    {
+      "source": "BRADYRHIZOBIUM SP. (CICER)",
+      "target": "ANTISERA PRODUCTION",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_2770"
+    },
+    {
+      "source": "ANTISERA PRODUCTION",
+      "target": "ANTIBODY TITER",
+      "description": "results in",
+      "weight": "9",
+      "source_id": "paper_2770"
+    }
+  ]
+}

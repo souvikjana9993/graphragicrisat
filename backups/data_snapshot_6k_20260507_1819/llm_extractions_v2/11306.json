@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the primary crop affected by leaf miner",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "LEAF MINER",
+      "type": "ORGANISM",
+      "description": "Liriomyza cicerina, an insect pest that causes yield losses in chickpea",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist infestation by the leaf miner",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "C. RETICULATUM",
+      "type": "CROP",
+      "description": "A wild relative of chickpea used as the source for the mutant line AWC 612M",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "GAMMA RAYS",
+      "type": "METHOD",
+      "description": "Radiation used to induce mutations in C. reticulatum",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "MUTATION",
+      "type": "METHOD",
+      "description": "The process of inducing genetic variation to develop resistant lines",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "AWC 612M",
+      "type": "CROP",
+      "description": "A mutant germplasm line developed from C. reticulatum that is resistant to leaf miner",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "MULTIPINNATE LEAF TYPE",
+      "type": "TRAIT",
+      "description": "A specific leaf morphology characteristic of the AWC 612M line",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "NATURAL EPIDEMIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environmental state of pest prevalence used for testing resistance",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "The physical site where the resistance of AWC 612M was evaluated",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "ILC 3397",
+      "type": "CROP",
+      "description": "A susceptible chickpea line used as a control in resistance trials",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "LEAF DROP",
+      "type": "CONDITION",
+      "description": "A symptom of leaf miner infestation observed in susceptible lines",
+      "source_id": "paper_11306"
+    },
+    {
+      "name": "BREEDING PROGRAMS",
+      "type": "CONCEPT",
+      "description": "The systematic process of developing improved crop varieties using resistant sources",
+      "source_id": "paper_11306"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LEAF MINER",
+      "target": "CHICKPEA",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "LEAF MINER",
+      "description": "is a control option for",
+      "weight": "9",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "C. RETICULATUM",
+      "target": "AWC 612M",
+      "description": "is the source for",
+      "weight": "10",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "GAMMA RAYS",
+      "target": "MUTATION",
+      "description": "is used to induce",
+      "weight": "10",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "MUTATION",
+      "target": "AWC 612M",
+      "description": "was used to develop",
+      "weight": "10",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "AWC 612M",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "AWC 612M",
+      "target": "MULTIPINNATE LEAF TYPE",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "AWC 612M",
+      "target": "NATURAL EPIDEMIC CONDITIONS",
+      "description": "was tested under",
+      "weight": "9",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "AWC 612M",
+      "target": "FIELD",
+      "description": "was tested in",
+      "weight": "9",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "ILC 3397",
+      "target": "LEAF MINER",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "LEAF MINER",
+      "target": "LEAF DROP",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_11306"
+    },
+    {
+      "source": "AWC 612M",
+      "target": "BREEDING PROGRAMS",
+      "description": "serves as a source for",
+      "weight": "10",
+      "source_id": "paper_11306"
+    }
+  ]
+}

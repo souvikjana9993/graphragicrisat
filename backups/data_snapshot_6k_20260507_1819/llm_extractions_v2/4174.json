@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "BACKCROSS BREEDING",
+      "type": "METHOD",
+      "description": "A breeding method used for improvement of a pure line by addition of favorable alleles from a donor line",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "PURE LINE",
+      "type": "CONCEPT",
+      "description": "A homozygous line used as the recipient in backcross breeding",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "FAVORABLE ALLELES",
+      "type": "GENE_MARKER",
+      "description": "Specific versions of genes from a donor line that are desired for improvement",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "DONOR LINE",
+      "type": "CONCEPT",
+      "description": "The source of favorable alleles in a backcross breeding program",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "COMPUTER SIMULATION",
+      "type": "METHOD",
+      "description": "A technique used to investigate the potential of backcross breeding coupled with quantitative genetics theory",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "QUANTITATIVE GENETICS THEORY",
+      "type": "CONCEPT",
+      "description": "The theoretical framework used in conjunction with computer simulation to study breeding",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "HERITABILITY",
+      "type": "CONCEPT",
+      "description": "The proportion of phenotypic variation due to genetic factors, specifically among individual F2 plants",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "NUMBER OF GENES",
+      "type": "CONCEPT",
+      "description": "The count of genes for which the donor line has a more favorable allele than the recipient",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "RECIPIENT",
+      "type": "CONCEPT",
+      "description": "The line into which favorable alleles from a donor line are introduced",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "POLLINATIONS",
+      "type": "METHOD",
+      "description": "The process of transferring pollen, with a minimum of 1,000 per backcross generation in the studied programs",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "SELECTION AMONG FAMILIES",
+      "type": "METHOD",
+      "description": "The process of choosing specific families over three or more generations",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "PROBABILITY OF FIXATION",
+      "type": "CONCEPT",
+      "description": "The criterion used to measure the effectiveness of the breeding program",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "SELECTED TRAIT",
+      "type": "TRAIT",
+      "description": "The specific characteristic being improved through the breeding program",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "ADDITIVE EFFECTS",
+      "type": "CONCEPT",
+      "description": "The assumption that the effects of alleles add up to produce the phenotype",
+      "source_id": "paper_4174"
+    },
+    {
+      "name": "INDEPENDENT ASSORTMENT",
+      "type": "CONCEPT",
+      "description": "The assumption that genes segregate independently during gamete formation",
+      "source_id": "paper_4174"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BACKCROSS BREEDING",
+      "target": "PURE LINE",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "BACKCROSS BREEDING",
+      "target": "FAVORABLE ALLELES",
+      "description": "adds",
+      "weight": "9",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "BACKCROSS BREEDING",
+      "target": "DONOR LINE",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "BACKCROSS BREEDING",
+      "target": "RECIPIENT",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "COMPUTER SIMULATION",
+      "target": "BACKCROSS BREEDING",
+      "description": "investigates",
+      "weight": "10",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "COMPUTER SIMULATION",
+      "target": "QUANTITATIVE GENETICS THEORY",
+      "description": "coupled with",
+      "weight": "9",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "HERITABILITY",
+      "target": "PROBABILITY OF FIXATION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "NUMBER OF GENES",
+      "target": "PROBABILITY OF FIXATION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "HERITABILITY",
+      "target": "SELECTED TRAIT",
+      "description": "affects improvement of",
+      "weight": "7",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "NUMBER OF GENES",
+      "target": "SELECTED TRAIT",
+      "description": "affects improvement of",
+      "weight": "8",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "BACKCROSS BREEDING",
+      "target": "POLLINATIONS",
+      "description": "involves",
+      "weight": "7",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "BACKCROSS BREEDING",
+      "target": "SELECTION AMONG FAMILIES",
+      "description": "involves",
+      "weight": "7",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "PROBABILITY OF FIXATION",
+      "target": "BACKCROSS BREEDING",
+      "description": "measures effectiveness of",
+      "weight": "9",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "ADDITIVE EFFECTS",
+      "target": "BACKCROSS BREEDING",
+      "description": "assumed for simulation",
+      "weight": "6",
+      "source_id": "paper_4174"
+    },
+    {
+      "source": "INDEPENDENT ASSORTMENT",
+      "target": "BACKCROSS BREEDING",
+      "description": "assumed for simulation",
+      "weight": "6",
+      "source_id": "paper_4174"
+    }
+  ]
+}

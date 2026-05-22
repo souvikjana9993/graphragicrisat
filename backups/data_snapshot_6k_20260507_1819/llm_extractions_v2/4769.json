@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used in intercropping systems",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used in intercropping systems",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A critical nutrient applied as fertilizer or fixed biologically",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The process by which legumes convert atmospheric nitrogen into ammonia",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously in the same field",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "N-USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant utilizes applied nitrogen",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "A climatic region characterized by low and irregular rainfall",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period of the year when most rainfall occurs",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "WATER DEFICITS",
+      "type": "CONDITION",
+      "description": "A state where water availability is insufficient for plant needs",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "SOIL MINERAL NITROGEN",
+      "type": "CONCEPT",
+      "description": "The inorganic nitrogen available in the soil",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "ROOT SYSTEM ARCHITECTURE",
+      "type": "TRAIT",
+      "description": "The spatial configuration of a plant's root system",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "WATER",
+      "type": "CONCEPT",
+      "description": "A vital resource for plant growth",
+      "source_id": "paper_4769"
+    },
+    {
+      "name": "SPLIT APPLICATION",
+      "type": "METHOD",
+      "description": "The strategy of applying nitrogen fertilizer in multiple smaller doses",
+      "source_id": "paper_4769"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTERCROPPING",
+      "target": "SORGHUM",
+      "description": "Increases grain yield of",
+      "weight": "8",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PIGEONPEA",
+      "description": "Enhances biological nitrogen fixation of",
+      "weight": "8",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "Performs",
+      "weight": "10",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "NITROGEN",
+      "description": "Reduces fertilization needs of sorghum",
+      "weight": "7",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "SOIL MINERAL NITROGEN",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "Suppresses",
+      "weight": "9",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "SOIL MINERAL NITROGEN",
+      "description": "Reduces inhibitory effects on BNF",
+      "weight": "7",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "WATER DEFICITS",
+      "description": "Prone to",
+      "weight": "8",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "ROOT SYSTEM ARCHITECTURE",
+      "target": "WATER",
+      "description": "Prevents competition for",
+      "weight": "7",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "ROOT SYSTEM ARCHITECTURE",
+      "target": "NITROGEN",
+      "description": "Prevents competition for",
+      "weight": "7",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PIGEONPEA",
+      "description": "Intercropped together",
+      "weight": "10",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "SPLIT APPLICATION",
+      "target": "N-USE EFFICIENCY",
+      "description": "Increases",
+      "weight": "8",
+      "source_id": "paper_4769"
+    },
+    {
+      "source": "SPLIT APPLICATION",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "Enhances",
+      "weight": "7",
+      "source_id": "paper_4769"
+    }
+  ]
+}

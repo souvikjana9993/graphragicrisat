@@ -1,0 +1,222 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The host plant used in the study to evaluate midge resistance and parasitization.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "STENODIPLOSIS SORGHICOLA",
+      "type": "ORGANISM",
+      "description": "The sorghum midge, a pest that infests sorghum genotypes.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "APROSTOCETUS SPP",
+      "type": "ORGANISM",
+      "description": "Parasitoids that target the larvae of the sorghum midge.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The location in Andhra Pradesh, India, where the research was conducted.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "MIDGE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of certain sorghum genotypes to resist infestation by Stenodiplosis sorghicola.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "MIDGE SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The lack of resistance to Stenodiplosis sorghicola in certain sorghum genotypes.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The seasonal period (1992/93) during which studies were conducted.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The seasonal period (1993) during which studies were conducted.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "APROSTOCETUS COIMBATORENSIS",
+      "type": "ORGANISM",
+      "description": "A specific parasitoid species predominant during the post-rainy season.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "APROSTOCETUS GALA",
+      "type": "ORGANISM",
+      "description": "A specific parasitoid species predominant during the rainy season.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "BIOLOGICAL CONTROL",
+      "type": "CONCEPT",
+      "description": "The use of parasitoids to manage and reduce sorghum midge populations.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "PARASITIZATION LEVEL",
+      "type": "TRAIT",
+      "description": "The degree to which midge larvae are parasitized by Aprostocetus spp.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "MIDGE INFESTATION",
+      "type": "CONDITION",
+      "description": "The occurrence and density of sorghum midge on the host plant.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The genetic resistance of the sorghum plant to the midge pest.",
+      "source_id": "paper_1699"
+    },
+    {
+      "name": "PEST MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The integrated approach using host plant resistance and biological control to manage pests.",
+      "source_id": "paper_1699"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "STENODIPLOSIS SORGHICOLA",
+      "description": "acts as a host plant for",
+      "weight": "10",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "STENODIPLOSIS SORGHICOLA",
+      "target": "APROSTOCETUS SPP",
+      "description": "acts as a host for",
+      "weight": "10",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "APROSTOCETUS SPP",
+      "target": "STENODIPLOSIS SORGHICOLA",
+      "description": "parasitizes",
+      "weight": "10",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MIDGE RESISTANCE",
+      "description": "can exhibit",
+      "weight": "9",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MIDGE SUSCEPTIBILITY",
+      "description": "can exhibit",
+      "weight": "9",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "APROSTOCETUS COIMBATORENSIS",
+      "target": "APROSTOCETUS SPP",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "APROSTOCETUS GALA",
+      "target": "APROSTOCETUS SPP",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "APROSTOCETUS COIMBATORENSIS",
+      "target": "POST-RAINY SEASON",
+      "description": "is predominant during",
+      "weight": "8",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "APROSTOCETUS GALA",
+      "target": "RAINY SEASON",
+      "description": "is predominant during",
+      "weight": "8",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "MIDGE RESISTANCE",
+      "target": "MIDGE INFESTATION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "MIDGE SUSCEPTIBILITY",
+      "target": "MIDGE INFESTATION",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "MIDGE INFESTATION",
+      "target": "APROSTOCETUS SPP",
+      "description": "attracts higher densities of",
+      "weight": "8",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "MIDGE RESISTANCE",
+      "target": "PARASITIZATION LEVEL",
+      "description": "is associated with lower",
+      "weight": "7",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "MIDGE SUSCEPTIBILITY",
+      "target": "PARASITIZATION LEVEL",
+      "description": "is associated with higher",
+      "weight": "7",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "APROSTOCETUS SPP",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "PEST MANAGEMENT",
+      "description": "is a tactic of",
+      "weight": "9",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "APROSTOCETUS SPP",
+      "target": "PEST MANAGEMENT",
+      "description": "is a tactic of",
+      "weight": "9",
+      "source_id": "paper_1699"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "APROSTOCETUS SPP",
+      "description": "interacts synergistically with",
+      "weight": "8",
+      "source_id": "paper_1699"
+    }
+  ]
+}

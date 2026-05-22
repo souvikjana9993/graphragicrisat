@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The cereal crop under investigation for yield improvement",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The total weight of grains produced per unit area",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "GRAIN NUMBER PER SQUARE METER",
+      "type": "TRAIT",
+      "description": "The total number of grains produced per square meter",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "GRAIN NUMBER PER PANICLE",
+      "type": "TRAIT",
+      "description": "The number of grains found on a single panicle",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "LEAF AREA",
+      "type": "TRAIT",
+      "description": "The total surface area of the leaves",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "LIGHT INTERCEPTION",
+      "type": "TRAIT",
+      "description": "The amount of solar radiation captured by the plant canopy",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "EXTENDED VEGETATIVE DEVELOPMENT",
+      "type": "METHOD",
+      "description": "The process of increasing the duration of the vegetative growth phase",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "NON-INDUCTIVE LONG PHOTOPERIOD",
+      "type": "CONDITION",
+      "description": "A lighting condition used to delay the transition to reproductive growth",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "D2 DWARFING GENE",
+      "type": "GENE_MARKER",
+      "description": "A gene that reduces plant height and alters the distribution of assimilates",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "ASSIMILATE PARTITIONING",
+      "type": "CONCEPT",
+      "description": "The allocation of photosynthates to different plant organs",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "PANICLE INITIATION",
+      "type": "TRAIT",
+      "description": "The stage when the plant begins to form the panicle",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "TRAIT",
+      "description": "The reproductive stage of the plant",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of total upper leaf surface area to the surface area of the land on which the crop grows",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "ASSIMILATE PRODUCTION",
+      "type": "TRAIT",
+      "description": "The total amount of organic matter produced through photosynthesis",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "PANICLE NUMBER",
+      "type": "TRAIT",
+      "description": "The number of panicles produced per plant",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "GRAIN DENSITY",
+      "type": "TRAIT",
+      "description": "The number of grains per unit surface area of the panicle",
+      "source_id": "paper_3496"
+    },
+    {
+      "name": "GRAIN SIZE",
+      "type": "TRAIT",
+      "description": "The physical dimensions or weight of individual grains",
+      "source_id": "paper_3496"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GRAIN YIELD",
+      "target": "GRAIN NUMBER PER SQUARE METER",
+      "description": "directly related",
+      "weight": "10",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "EXTENDED VEGETATIVE DEVELOPMENT",
+      "target": "GRAIN NUMBER PER PANICLE",
+      "description": "intended to increase",
+      "weight": "7",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "EXTENDED VEGETATIVE DEVELOPMENT",
+      "target": "LEAF AREA",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "EXTENDED VEGETATIVE DEVELOPMENT",
+      "target": "LIGHT INTERCEPTION",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "NON-INDUCTIVE LONG PHOTOPERIOD",
+      "target": "EXTENDED VEGETATIVE DEVELOPMENT",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "D2 DWARFING GENE",
+      "target": "ASSIMILATE PARTITIONING",
+      "description": "varies partitioning between panicle and stem",
+      "weight": "9",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "D2 DWARFING GENE",
+      "target": "GRAIN NUMBER PER PANICLE",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "NON-INDUCTIVE LONG PHOTOPERIOD",
+      "target": "PANICLE INITIATION",
+      "description": "delays",
+      "weight": "9",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "NON-INDUCTIVE LONG PHOTOPERIOD",
+      "target": "FLOWERING",
+      "description": "delays",
+      "weight": "9",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "NON-INDUCTIVE LONG PHOTOPERIOD",
+      "target": "LEAF AREA INDEX",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "NON-INDUCTIVE LONG PHOTOPERIOD",
+      "target": "ASSIMILATE PRODUCTION",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "FLOWERING",
+      "target": "GRAIN NUMBER PER PANICLE",
+      "description": "directly related",
+      "weight": "7",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "PANICLE INITIATION",
+      "target": "PANICLE NUMBER",
+      "description": "delayed initiation reduces number",
+      "weight": "8",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "D2 DWARFING GENE",
+      "target": "GRAIN DENSITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "GRAIN DENSITY",
+      "target": "GRAIN SIZE",
+      "description": "increased density leads to smaller grains",
+      "weight": "9",
+      "source_id": "paper_3496"
+    },
+    {
+      "source": "GRAIN NUMBER PER PANICLE",
+      "target": "GRAIN YIELD",
+      "description": "offset by panicle number",
+      "weight": "6",
+      "source_id": "paper_3496"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop affected by Botrytis gray mould",
+      "source_id": "paper_1819"
+    },
+    {
+      "name": "BOTRYTIS CINEREA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes gray mould",
+      "source_id": "paper_1819"
+    },
+    {
+      "name": "BOTRYTIS GRAY MOULD",
+      "type": "CONDITION",
+      "description": "The disease caused by B. cinerea on chickpeas",
+      "source_id": "paper_1819"
+    },
+    {
+      "name": "TRICHODERMA VIRIDE",
+      "type": "ORGANISM",
+      "description": "A biological control agent used to manage B. cinerea",
+      "source_id": "paper_1819"
+    },
+    {
+      "name": "VINCLOZOLIN",
+      "type": "METHOD",
+      "description": "A chemical fungicide used for the control of B. cinerea",
+      "source_id": "paper_1819"
+    },
+    {
+      "name": "INTEGRATED BIOLOGICAL-CHEMICAL CONTROL",
+      "type": "METHOD",
+      "description": "A combined approach using both biological and chemical agents for disease management",
+      "source_id": "paper_1819"
+    },
+    {
+      "name": "PANTNAGAR, UTTAR PRADESH, INDIA",
+      "type": "LOCATION",
+      "description": "The location where the research was conducted",
+      "source_id": "paper_1819"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTEGRATED BIOLOGICAL-CHEMICAL CONTROL",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_1819"
+    },
+    {
+      "source": "INTEGRATED BIOLOGICAL-CHEMICAL CONTROL",
+      "target": "BOTRYTIS GRAY MOULD",
+      "description": "used to control",
+      "weight": "10",
+      "source_id": "paper_1819"
+    },
+    {
+      "source": "TRICHODERMA VIRIDE",
+      "target": "INTEGRATED BIOLOGICAL-CHEMICAL CONTROL",
+      "description": "component of",
+      "weight": "9",
+      "source_id": "paper_1819"
+    },
+    {
+      "source": "VINCLOZOLIN",
+      "target": "INTEGRATED BIOLOGICAL-CHEMICAL CONTROL",
+      "description": "component of",
+      "weight": "9",
+      "source_id": "paper_1819"
+    },
+    {
+      "source": "BOTRYTIS CINEREA",
+      "target": "BOTRYTIS GRAY MOULD",
+      "description": "causal agent of",
+      "weight": "10",
+      "source_id": "paper_1819"
+    },
+    {
+      "source": "BOTRYTIS CINEREA",
+      "target": "CHICKPEA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_1819"
+    },
+    {
+      "source": "INTEGRATED BIOLOGICAL-CHEMICAL CONTROL",
+      "target": "PANTNAGAR, UTTAR PRADESH, INDIA",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_1819"
+    }
+  ]
+}

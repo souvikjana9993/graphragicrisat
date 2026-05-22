@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "LAND USE",
+      "type": "CONCEPT",
+      "description": "The surface utilization of all developed and vacant land on a specific location, defining human activities related to land resources",
+      "source_id": "paper_11024"
+    },
+    {
+      "name": "HUMAN ACTIVITIES",
+      "type": "CONCEPT",
+      "description": "Activities directly related to land, making use of its resources, or having an impact on them",
+      "source_id": "paper_11024"
+    },
+    {
+      "name": "MANAGEMENT OF LAND",
+      "type": "CONCEPT",
+      "description": "The management of land to meet human needs",
+      "source_id": "paper_11024"
+    },
+    {
+      "name": "DETAILED MAPPING",
+      "type": "METHOD",
+      "description": "The process of creating detailed maps to define land use",
+      "source_id": "paper_11024"
+    },
+    {
+      "name": "FIELD AUTHENTICATION",
+      "type": "METHOD",
+      "description": "The process of verifying land use data in the field",
+      "source_id": "paper_11024"
+    },
+    {
+      "name": "GEOSPATIAL TOOLS",
+      "type": "METHOD",
+      "description": "Tools used for detailed mapping and field authentication",
+      "source_id": "paper_11024"
+    },
+    {
+      "name": "KHATIJAPURA",
+      "type": "LOCATION",
+      "description": "A village where land use was analyzed, with 92.5% net sown area",
+      "source_id": "paper_11024"
+    },
+    {
+      "name": "DALIPARRU",
+      "type": "LOCATION",
+      "description": "A village where land use was analyzed, with 84.47% net sown area",
+      "source_id": "paper_11024"
+    },
+    {
+      "name": "JARASINGHA",
+      "type": "LOCATION",
+      "description": "A village where land use was analyzed, with less than 50% net sown area",
+      "source_id": "paper_11024"
+    },
+    {
+      "name": "NET SOWN AREA",
+      "type": "CONCEPT",
+      "description": "The portion of land used for sowing crops",
+      "source_id": "paper_11024"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LAND USE",
+      "target": "HUMAN ACTIVITIES",
+      "description": "defines",
+      "weight": "8",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "LAND USE",
+      "target": "MANAGEMENT OF LAND",
+      "description": "emphasizes",
+      "weight": "7",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "GEOSPATIAL TOOLS",
+      "target": "DETAILED MAPPING",
+      "description": "enables",
+      "weight": "9",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "GEOSPATIAL TOOLS",
+      "target": "FIELD AUTHENTICATION",
+      "description": "enables",
+      "weight": "9",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "DETAILED MAPPING",
+      "target": "LAND USE",
+      "description": "defines",
+      "weight": "8",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "FIELD AUTHENTICATION",
+      "target": "LAND USE",
+      "description": "defines",
+      "weight": "8",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "KHATIJAPURA",
+      "target": "NET SOWN AREA",
+      "description": "has a value of 92.5%",
+      "weight": "10",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "DALIPARRU",
+      "target": "NET SOWN AREA",
+      "description": "has a value of 84.47%",
+      "weight": "10",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "JARASINGHA",
+      "target": "NET SOWN AREA",
+      "description": "has a value of less than 50%",
+      "weight": "10",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "KHATIJAPURA",
+      "target": "LAND USE",
+      "description": "is a location for analysis of",
+      "weight": "8",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "DALIPARRU",
+      "target": "LAND USE",
+      "description": "is a location for analysis of",
+      "weight": "8",
+      "source_id": "paper_11024"
+    },
+    {
+      "source": "JARASINGHA",
+      "target": "LAND USE",
+      "description": "is a location for analysis of",
+      "weight": "8",
+      "source_id": "paper_11024"
+    }
+  ]
+}

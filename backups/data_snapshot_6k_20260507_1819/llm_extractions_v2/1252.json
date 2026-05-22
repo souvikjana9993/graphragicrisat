@@ -1,0 +1,273 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop grown in wetland fields",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "METHANE",
+      "type": "CONCEPT",
+      "description": "A greenhouse gas produced in anaerobic soils",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "METHANE EMISSION",
+      "type": "TRAIT",
+      "description": "The release of methane from submerged rice soils into the atmosphere",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "METHANE PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The biological process of methane formation by methanogens",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "METHANOGENS",
+      "type": "ORGANISM",
+      "description": "Microorganisms that produce methane under reduced conditions",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "ANAEROBIC SOILS",
+      "type": "CONDITION",
+      "description": "Soils characterized by the absence of free oxygen",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "REDUCED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Chemical environment with low redox potential",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "TERMINAL ELECTRON ACCEPTORS",
+      "type": "CONCEPT",
+      "description": "Substances that accept electrons to inhibit methanogenesis",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "FERRIC IRON",
+      "type": "CONCEPT",
+      "description": "An iron-based terminal electron acceptor used to control methane",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "SULFATE",
+      "type": "CONCEPT",
+      "description": "A sulfur-based terminal electron acceptor used to control methane",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "IRON REDUCERS",
+      "type": "ORGANISM",
+      "description": "Microbes that use ferric iron as an electron acceptor",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "SULFATE REDUCERS",
+      "type": "ORGANISM",
+      "description": "Microbes that use sulfate as an electron acceptor",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "HYDROGEN",
+      "type": "CONCEPT",
+      "description": "A substrate used by methanogens and electron reducers",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "ACETATE",
+      "type": "CONCEPT",
+      "description": "A substrate used by methanogens and electron reducers",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "CARBON DIOXIDE",
+      "type": "CONCEPT",
+      "description": "A substrate reduced by hydrogen to form methane",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "FREE OXYGEN",
+      "type": "CONCEPT",
+      "description": "A substance whose presence prevents methane production",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "SOIL AND WATER MANAGEMENT",
+      "type": "METHOD",
+      "description": "Technique used to manipulate redox potential in rice fields",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "REDOX POTENTIAL",
+      "type": "CONCEPT",
+      "description": "The electrochemical potential that determines the availability of electron acceptors",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "WETLAND RICE FIELDS",
+      "type": "LOCATION",
+      "description": "The environment where rice is grown under submerged conditions",
+      "source_id": "paper_1252"
+    },
+    {
+      "name": "TROPICAL RICE SOILS",
+      "type": "LOCATION",
+      "description": "Rice soils in tropical regions, typically rich in iron",
+      "source_id": "paper_1252"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "METHANOGENS",
+      "target": "METHANE PRODUCTION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "METHANE PRODUCTION",
+      "target": "METHANE",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "METHANE PRODUCTION",
+      "target": "ANAEROBIC SOILS",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "METHANE PRODUCTION",
+      "target": "REDUCED CONDITIONS",
+      "description": "occurs under",
+      "weight": "9",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "METHANE PRODUCTION",
+      "target": "HYDROGEN",
+      "description": "requires",
+      "weight": "8",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "METHANE PRODUCTION",
+      "target": "ACETATE",
+      "description": "requires",
+      "weight": "8",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "METHANE PRODUCTION",
+      "target": "CARBON DIOXIDE",
+      "description": "requires",
+      "weight": "8",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "FREE OXYGEN",
+      "target": "METHANE PRODUCTION",
+      "description": "inhibits",
+      "weight": "10",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "TERMINAL ELECTRON ACCEPTORS",
+      "target": "METHANE PRODUCTION",
+      "description": "stops",
+      "weight": "9",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "FERRIC IRON",
+      "target": "TERMINAL ELECTRON ACCEPTORS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "SULFATE",
+      "target": "TERMINAL ELECTRON ACCEPTORS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "IRON REDUCERS",
+      "target": "FERRIC IRON",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "SULFATE REDUCERS",
+      "target": "SULFATE",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "IRON REDUCERS",
+      "target": "METHANOGENS",
+      "description": "competes with for substrates",
+      "weight": "8",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "SULFATE REDUCERS",
+      "target": "METHANOGENS",
+      "description": "competes with for substrates",
+      "weight": "8",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "TERMINAL ELECTRON ACCEPTORS",
+      "target": "METHANE EMISSION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "SOIL AND WATER MANAGEMENT",
+      "target": "REDOX POTENTIAL",
+      "description": "manipulates",
+      "weight": "9",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "REDOX POTENTIAL",
+      "target": "FERRIC IRON",
+      "description": "regenerates",
+      "weight": "7",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "WETLAND RICE FIELDS",
+      "target": "METHANE EMISSION",
+      "description": "is a source of",
+      "weight": "10",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "TROPICAL RICE SOILS",
+      "target": "FERRIC IRON",
+      "description": "is rich in",
+      "weight": "8",
+      "source_id": "paper_1252"
+    },
+    {
+      "source": "WETLAND RICE FIELDS",
+      "target": "RICE",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_1252"
+    }
+  ]
+}

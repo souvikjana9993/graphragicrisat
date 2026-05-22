@@ -1,0 +1,241 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Oryza sativa L., the crop being studied for starch properties",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "STARCH",
+      "type": "CONCEPT",
+      "description": "Complex carbohydrate composed of amylose and amylopectin that influences rice quality",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "AMYLOSE",
+      "type": "CONCEPT",
+      "description": "A linear polymer of glucose and a component of starch",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "AMYLOPECTIN",
+      "type": "CONCEPT",
+      "description": "A branched polymer of glucose and a component of starch",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "COOKING QUALITY",
+      "type": "TRAIT",
+      "description": "The quality of rice during and after cooking, influenced by starch structure",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "TEXTURAL QUALITY",
+      "type": "TRAIT",
+      "description": "The physical texture of rice, influenced by starch composition",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "STARCH SYNTHESIZING ENZYMES",
+      "type": "CONCEPT",
+      "description": "Enzymes whose isoforms control the synthesis and structure of starch",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "STARCH STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The arrangement of amylopectin chains, including length and distribution",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "PHYSICOCHEMICAL PROPERTIES",
+      "type": "TRAIT",
+      "description": "Physical and chemical characteristics of rice grain influenced by starch synthesis",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "EATING QUALITY",
+      "type": "TRAIT",
+      "description": "The sensory quality of rice when consumed",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "GENE MAPPING",
+      "type": "METHOD",
+      "description": "The process of identifying the location of genes responsible for specific enzymes",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "QTL MAPPING",
+      "type": "METHOD",
+      "description": "The process of identifying quantitative trait loci associated with starch properties",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "MARKER-ASSISTED SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method using markers to select cultivars with desired traits",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "ENDOSPERM",
+      "type": "LOCATION",
+      "description": "The tissue in the rice grain where starch synthesis occurs",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "AMYLOSE CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of amylose present in rice starch",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "GELATINIZATION TEMPERATURE",
+      "type": "TRAIT",
+      "description": "The temperature at which starch granules swell and lose their crystallinity",
+      "source_id": "paper_6116"
+    },
+    {
+      "name": "ALLELIC PATTERN",
+      "type": "CONCEPT",
+      "description": "The specific combination of alleles that can be modified to regulate enzyme activity",
+      "source_id": "paper_6116"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STARCH SYNTHESIZING ENZYMES",
+      "target": "STARCH",
+      "description": "controls the synthesis of",
+      "weight": "10",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "STARCH",
+      "target": "COOKING QUALITY",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "STARCH",
+      "target": "TEXTURAL QUALITY",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "STARCH SYNTHESIZING ENZYMES",
+      "target": "STARCH STRUCTURE",
+      "description": "determines the form of",
+      "weight": "9",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "STARCH STRUCTURE",
+      "target": "PHYSICOCHEMICAL PROPERTIES",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "STARCH STRUCTURE",
+      "target": "COOKING QUALITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "PHYSICOCHEMICAL PROPERTIES",
+      "target": "EATING QUALITY",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "PHYSICOCHEMICAL PROPERTIES",
+      "target": "COOKING QUALITY",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "GENE MAPPING",
+      "target": "STARCH SYNTHESIZING ENZYMES",
+      "description": "identifies regions responsible for",
+      "weight": "9",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "QTL MAPPING",
+      "target": "STARCH SYNTHESIZING ENZYMES",
+      "description": "identifies regions responsible for",
+      "weight": "9",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "GENE MAPPING",
+      "target": "MARKER-ASSISTED SELECTION",
+      "description": "is used for",
+      "weight": "8",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "QTL MAPPING",
+      "target": "MARKER-ASSISTED SELECTION",
+      "description": "is used for",
+      "weight": "8",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "MARKER-ASSISTED SELECTION",
+      "target": "RICE",
+      "description": "is used to improve cultivars of",
+      "weight": "9",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "STARCH SYNTHESIZING ENZYMES",
+      "target": "ENDOSPERM",
+      "description": "operates in",
+      "weight": "7",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "STARCH SYNTHESIZING ENZYMES",
+      "target": "AMYLOSE CONTENT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "STARCH SYNTHESIZING ENZYMES",
+      "target": "GELATINIZATION TEMPERATURE",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "ALLELIC PATTERN",
+      "target": "STARCH SYNTHESIZING ENZYMES",
+      "description": "modifying it regulates",
+      "weight": "8",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "AMYLOSE",
+      "target": "STARCH",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_6116"
+    },
+    {
+      "source": "AMYLOPECTIN",
+      "target": "STARCH",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_6116"
+    }
+  ]
+}

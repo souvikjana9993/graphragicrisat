@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "The crop affected by the millet head miner in Niger",
+      "source_id": "paper_10520"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural output of millet that is reduced by pest infestation",
+      "source_id": "paper_10520"
+    },
+    {
+      "name": "HELIOCHEILUS ALBIPUNCTELLA",
+      "type": "ORGANISM",
+      "description": "The millet head miner pest that causes yield losses",
+      "source_id": "paper_10520"
+    },
+    {
+      "name": "HABROBRACON HEBETOR",
+      "type": "ORGANISM",
+      "description": "The biological control agent used to limit millet yield losses",
+      "source_id": "paper_10520"
+    },
+    {
+      "name": "AUGMENTATIVE BIOLOGICAL CONTROL",
+      "type": "METHOD",
+      "description": "The procedure to multiply and spread biological control agents",
+      "source_id": "paper_10520"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the study on biological control industry is conducted",
+      "source_id": "paper_10520"
+    },
+    {
+      "name": "ECONOMIC VIABILITY",
+      "type": "CONCEPT",
+      "description": "The feasibility of small businesses to produce and sell biological control agents",
+      "source_id": "paper_10520"
+    },
+    {
+      "name": "PROFITABILITY",
+      "type": "CONCEPT",
+      "description": "The ability of biological control businesses to generate profit under various pricing regimes",
+      "source_id": "paper_10520"
+    },
+    {
+      "name": "BUDGET ANALYSIS",
+      "type": "METHOD",
+      "description": "The method used to provide economic assessment for potential businesses",
+      "source_id": "paper_10520"
+    },
+    {
+      "name": "COMMERCIALIZATION",
+      "type": "CONCEPT",
+      "description": "The process of bringing H. hebetor to market for sustainable distribution",
+      "source_id": "paper_10520"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELIOCHEILUS ALBIPUNCTELLA",
+      "target": "MILLET",
+      "description": "causes yield losses in",
+      "weight": "10",
+      "source_id": "paper_10520"
+    },
+    {
+      "source": "HELIOCHEILUS ALBIPUNCTELLA",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10520"
+    },
+    {
+      "source": "HABROBRACON HEBETOR",
+      "target": "HELIOCHEILUS ALBIPUNCTELLA",
+      "description": "limits the population of",
+      "weight": "10",
+      "source_id": "paper_10520"
+    },
+    {
+      "source": "AUGMENTATIVE BIOLOGICAL CONTROL",
+      "target": "HABROBRACON HEBETOR",
+      "description": "is the method used to multiply and spread",
+      "weight": "9",
+      "source_id": "paper_10520"
+    },
+    {
+      "source": "ECONOMIC VIABILITY",
+      "target": "HABROBRACON HEBETOR",
+      "description": "assesses the business of producing",
+      "weight": "8",
+      "source_id": "paper_10520"
+    },
+    {
+      "source": "PROFITABILITY",
+      "target": "ECONOMIC VIABILITY",
+      "description": "is a key component of",
+      "weight": "9",
+      "source_id": "paper_10520"
+    },
+    {
+      "source": "BUDGET ANALYSIS",
+      "target": "ECONOMIC VIABILITY",
+      "description": "is used to determine",
+      "weight": "8",
+      "source_id": "paper_10520"
+    },
+    {
+      "source": "COMMERCIALIZATION",
+      "target": "HABROBRACON HEBETOR",
+      "description": "enables the sustainable distribution of",
+      "weight": "9",
+      "source_id": "paper_10520"
+    },
+    {
+      "source": "NIGER",
+      "target": "MILLET",
+      "description": "is the location where the crop is grown",
+      "weight": "7",
+      "source_id": "paper_10520"
+    },
+    {
+      "source": "NIGER",
+      "target": "HABROBRACON HEBETOR",
+      "description": "is the location for the proposed industry",
+      "weight": "8",
+      "source_id": "paper_10520"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "YESTECH",
+      "type": "METHOD",
+      "description": "A technology system implemented for crop yield estimation in Kharif rice in Andhra Pradesh",
+      "source_id": "paper_13462"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop for which YESTECH is implemented",
+      "source_id": "paper_13462"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The region where YESTECH is implemented for Kharif rice",
+      "source_id": "paper_13462"
+    },
+    {
+      "name": "CROP YIELD ESTIMATION",
+      "type": "CONCEPT",
+      "description": "The process of estimating crop yield to determine loss assessment and indemnity payouts",
+      "source_id": "paper_13462"
+    },
+    {
+      "name": "INSURANCE UNITS",
+      "type": "CONCEPT",
+      "description": "The administrative units for which crop yield estimates are calculated",
+      "source_id": "paper_13462"
+    },
+    {
+      "name": "CROP LOSS ASSESSMENT",
+      "type": "CONCEPT",
+      "description": "The evaluation of crop loss based on yield estimates",
+      "source_id": "paper_13462"
+    },
+    {
+      "name": "INDEMNITY PAYOUT",
+      "type": "CONCEPT",
+      "description": "The payment resulting from crop loss assessment",
+      "source_id": "paper_13462"
+    },
+    {
+      "name": "CROP CUTTING EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The traditional manual system used for crop yield estimation",
+      "source_id": "paper_13462"
+    },
+    {
+      "name": "MANUAL YIELD MEASUREMENTS",
+      "type": "METHOD",
+      "description": "The process of measuring yield in randomly selected field plots",
+      "source_id": "paper_13462"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "YESTECH",
+      "target": "RICE",
+      "description": "implemented for",
+      "weight": "8",
+      "source_id": "paper_13462"
+    },
+    {
+      "source": "YESTECH",
+      "target": "ANDHRA PRADESH",
+      "description": "implemented in",
+      "weight": "8",
+      "source_id": "paper_13462"
+    },
+    {
+      "source": "YESTECH",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_13462"
+    },
+    {
+      "source": "CROP YIELD ESTIMATION",
+      "target": "INSURANCE UNITS",
+      "description": "calculated for",
+      "weight": "9",
+      "source_id": "paper_13462"
+    },
+    {
+      "source": "CROP YIELD ESTIMATION",
+      "target": "CROP LOSS ASSESSMENT",
+      "description": "basis for",
+      "weight": "10",
+      "source_id": "paper_13462"
+    },
+    {
+      "source": "CROP YIELD ESTIMATION",
+      "target": "INDEMNITY PAYOUT",
+      "description": "basis for",
+      "weight": "10",
+      "source_id": "paper_13462"
+    },
+    {
+      "source": "CROP CUTTING EXPERIMENTS",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "method for",
+      "weight": "10",
+      "source_id": "paper_13462"
+    },
+    {
+      "source": "CROP CUTTING EXPERIMENTS",
+      "target": "MANUAL YIELD MEASUREMENTS",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_13462"
+    }
+  ]
+}

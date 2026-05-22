@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "WEST AFRICAN SAVANNA",
+      "type": "LOCATION",
+      "description": "The region in Africa characterized by savanna vegetation where agricultural changes are studied",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "POPULATION GROWTH",
+      "type": "CONDITION",
+      "description": "The increase in human population acting as a driver for changes in farming systems",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "LOW RAINFALL",
+      "type": "CONDITION",
+      "description": "Continuing lack of sufficient precipitation affecting agricultural productivity",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "VILLAGE FARMING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The local agricultural practices and structures in rural areas",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "AGRO-ECOLOGICAL ZONES",
+      "type": "CONCEPT",
+      "description": "The three main ecological divisions used to categorize farming in Burkina Faso",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "BURKINA FASO",
+      "type": "LOCATION",
+      "description": "The West African country where the farming systems were described",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "TOPOSEQUENTIAL LANDUSE",
+      "type": "CONCEPT",
+      "description": "The pattern of land use based on the topographical sequence of the landscape",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "CROPPING PATTERNS",
+      "type": "CONCEPT",
+      "description": "The specific arrangements and sequences of crops grown in the farming systems",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "MODEL",
+      "type": "METHOD",
+      "description": "A tool used to describe long-term ecological degradation based on landuse and cropping patterns",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "ECOLOGICAL DEGRADATION",
+      "type": "CONDITION",
+      "description": "The long-term decline in the quality of the environment due to farming practices",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "FALLOW LAND",
+      "type": "CONCEPT",
+      "description": "Land left uncultivated to restore its fertility",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "OVER-CROPPING",
+      "type": "CONDITION",
+      "description": "The practice of cropping land too intensively without adequate fallow periods",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "LAND TENURE SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The rules and customs governing the ownership and use of land",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONDITION",
+      "description": "The current environmental problem characterized by the decline of land productivity in the West African savanna",
+      "source_id": "paper_3706"
+    },
+    {
+      "name": "AGRICULTURAL RESEARCH",
+      "type": "CONCEPT",
+      "description": "The scientific study aimed at finding solutions for land degradation and improving farming",
+      "source_id": "paper_3706"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POPULATION GROWTH",
+      "target": "VILLAGE FARMING SYSTEMS",
+      "description": "causes changes in",
+      "weight": "8",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "LOW RAINFALL",
+      "target": "VILLAGE FARMING SYSTEMS",
+      "description": "causes changes in",
+      "weight": "8",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "VILLAGE FARMING SYSTEMS",
+      "target": "BURKINA FASO",
+      "description": "located in",
+      "weight": "9",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "AGRO-ECOLOGICAL ZONES",
+      "target": "BURKINA FASO",
+      "description": "located in",
+      "weight": "9",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "TOPOSEQUENTIAL LANDUSE",
+      "target": "MODEL",
+      "description": "serves as basis for",
+      "weight": "7",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "CROPPING PATTERNS",
+      "target": "MODEL",
+      "description": "serves as basis for",
+      "weight": "7",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "MODEL",
+      "target": "ECOLOGICAL DEGRADATION",
+      "description": "describes",
+      "weight": "8",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "FALLOW LAND",
+      "target": "ECOLOGICAL DEGRADATION",
+      "description": "declining proportions lead to",
+      "weight": "7",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "OVER-CROPPING",
+      "target": "ECOLOGICAL DEGRADATION",
+      "description": "leads to",
+      "weight": "8",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "VILLAGE FARMING SYSTEMS",
+      "target": "LAND TENURE SYSTEMS",
+      "description": "has implications for",
+      "weight": "6",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "LAND DEGRADATION",
+      "target": "WEST AFRICAN SAVANNA",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "ECOLOGICAL DEGRADATION",
+      "target": "LAND DEGRADATION",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_3706"
+    },
+    {
+      "source": "LAND DEGRADATION",
+      "target": "AGRICULTURAL RESEARCH",
+      "description": "indicates priorities for",
+      "weight": "7",
+      "source_id": "paper_3706"
+    }
+  ]
+}

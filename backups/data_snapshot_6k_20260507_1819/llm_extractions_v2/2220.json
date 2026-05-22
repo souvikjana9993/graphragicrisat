@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "TANAOSTIGMODES CAJANINAE",
+      "type": "ORGANISM",
+      "description": "An insect that infests pigeonpea and promotes pod growth.",
+      "source_id": "paper_2220"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop affected by T. cajaninae infestation.",
+      "source_id": "paper_2220"
+    },
+    {
+      "name": "POD GROWTH",
+      "type": "TRAIT",
+      "description": "The development and growth of pods in pigeonpea.",
+      "source_id": "paper_2220"
+    },
+    {
+      "name": "INFESTATION",
+      "type": "CONDITION",
+      "description": "The state of being infested by Tanaostigmodes cajaninae.",
+      "source_id": "paper_2220"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TANAOSTIGMODES CAJANINAE",
+      "target": "PIGEONPEA",
+      "description": "infests",
+      "weight": "9",
+      "source_id": "paper_2220"
+    },
+    {
+      "source": "TANAOSTIGMODES CAJANINAE",
+      "target": "POD GROWTH",
+      "description": "promotes",
+      "weight": "8",
+      "source_id": "paper_2220"
+    },
+    {
+      "source": "INFESTATION",
+      "target": "POD GROWTH",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_2220"
+    },
+    {
+      "source": "INFESTATION",
+      "target": "PIGEONPEA",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_2220"
+    }
+  ]
+}

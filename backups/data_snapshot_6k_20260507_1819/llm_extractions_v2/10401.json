@@ -1,0 +1,272 @@
+{
+  "entities": [
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by a deficiency of precipitation over an extended period, affecting agricultural practices",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "The salt content in the soil, which acts as a challenge to agricultural practices",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "FLOODING",
+      "type": "CONDITION",
+      "description": "An overflow of water that submerges land, acting as a challenge to agricultural practices",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Natural precipitation serving as a water source for crop growth",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "Artificial application of water to land to assist in the production of crops",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "CROP ESTABLISHMENT METHODS",
+      "type": "METHOD",
+      "description": "Techniques used to plant and establish crops in the field",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "CROPPING INTENSITY",
+      "type": "CONCEPT",
+      "description": "A measure of the number of crops planted annually in an area, used as an indicator of food security",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "MODIS NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index derived from MODIS satellite data used to investigate crop intensity",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "A continent and study region where smallholder farms make current cropping intensity quantification inaccurate",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "A region and study area where smallholder farms make current cropping intensity quantification inaccurate",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "LANDSAT 8",
+      "type": "METHOD",
+      "description": "A satellite providing 30-m resolution data used in combination with Sentinel-2 for crop intensity mapping",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "SENTINEL-2",
+      "type": "METHOD",
+      "description": "A satellite providing 10 to 20-m resolution data used in combination with Landsat 8 for crop intensity mapping",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "type": "METHOD",
+      "description": "An algorithm (ACIA) developed to produce 30-m crop intensity maps using multi-source time-series data",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "A cloud computing platform used for the implementation and scaling of the ACIA algorithm",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "NDVI TIME-SERIES",
+      "type": "METHOD",
+      "description": "Temporal sequences of Normalized Difference Vegetation Index data used to identify crop intensity classes",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "SINGLE CROP",
+      "type": "CONCEPT",
+      "description": "A crop intensity classification where only one crop is grown in a specific season",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "DOUBLE CROP",
+      "type": "CONCEPT",
+      "description": "A crop intensity classification where two crops are grown annually in the same area",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "CONTINUOUS CROP",
+      "type": "CONCEPT",
+      "description": "A crop intensity classification where crops are grown continuously throughout the year",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "SAGE CROP CALENDAR DATASET",
+      "type": "METHOD",
+      "description": "A global crop seasonality map used as a reference for cropping intensity mapping",
+      "source_id": "paper_10401"
+    },
+    {
+      "name": "SURVEY-BASED STATISTICS",
+      "type": "METHOD",
+      "description": "Statistical data derived from surveys used to evaluate the accuracy of the ACIA crop intensity map",
+      "source_id": "paper_10401"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT",
+      "target": "CROPPING INTENSITY",
+      "description": "affects agricultural practices and thus intensity",
+      "weight": "5",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "SALINITY",
+      "target": "CROPPING INTENSITY",
+      "description": "affects agricultural practices and thus intensity",
+      "weight": "5",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "FLOODING",
+      "target": "CROPPING INTENSITY",
+      "description": "affects agricultural practices and thus intensity",
+      "weight": "5",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "CROPPING INTENSITY",
+      "description": "serves as a water source affecting intensity",
+      "weight": "5",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "CROPPING INTENSITY",
+      "description": "serves as a water source affecting intensity",
+      "weight": "5",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "CROPPING INTENSITY",
+      "target": "FOOD SECURITY",
+      "description": "serves as a measure of",
+      "weight": "8",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "MODIS NDVI",
+      "target": "CROPPING INTENSITY",
+      "description": "used to investigate",
+      "weight": "7",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "target": "CROPPING INTENSITY",
+      "description": "used to map",
+      "weight": "10",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "target": "GOOGLE EARTH ENGINE",
+      "description": "implemented through",
+      "weight": "9",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "target": "LANDSAT 8",
+      "description": "uses data from",
+      "weight": "9",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "target": "SENTINEL-2",
+      "description": "uses data from",
+      "weight": "9",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "target": "NDVI TIME-SERIES",
+      "description": "processes",
+      "weight": "9",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "target": "SAGE CROP CALENDAR DATASET",
+      "description": "uses as reference",
+      "weight": "8",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "NDVI TIME-SERIES",
+      "target": "SINGLE CROP",
+      "description": "classified into",
+      "weight": "7",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "NDVI TIME-SERIES",
+      "target": "DOUBLE CROP",
+      "description": "classified into",
+      "weight": "7",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "NDVI TIME-SERIES",
+      "target": "CONTINUOUS CROP",
+      "description": "classified into",
+      "weight": "7",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "target": "AFRICA",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "target": "SOUTH ASIA",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "SURVEY-BASED STATISTICS",
+      "target": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "description": "used to evaluate",
+      "weight": "7",
+      "source_id": "paper_10401"
+    },
+    {
+      "source": "MODIS NDVI",
+      "target": "AUTOMATED CROP INTENSITY ALGORITHM",
+      "description": "used to evaluate",
+      "weight": "7",
+      "source_id": "paper_10401"
+    }
+  ]
+}

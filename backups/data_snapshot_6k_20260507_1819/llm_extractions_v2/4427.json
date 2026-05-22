@@ -1,0 +1,161 @@
+{
+  "entities": [
+    {
+      "name": "ALFISOLS",
+      "type": "CONDITION",
+      "description": "A type of soil characterized by specific properties that require timely and precise field operations for crop establishment.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The climatic period during which crops are established in SAT Alfisols.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "WHEELED TOOL CARRIERS",
+      "type": "METHOD",
+      "description": "Animal-drawn, multipurpose machinery used for various tillage and sowing operations in Alfisols.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "TILLAGE OPERATIONS",
+      "type": "METHOD",
+      "description": "Agricultural activities involving soil preparation, performed using wheeled tool carriers.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "OXEN",
+      "type": "ORGANISM",
+      "description": "Average-sized animals used as the draft power for wheeled tool carriers.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "PLANTER-AND-FERTILIZER APPLICATOR",
+      "type": "METHOD",
+      "description": "A specific attachment for wheeled tool carriers used for seed metering and fertilizer application.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "SOWING",
+      "type": "METHOD",
+      "description": "The agricultural process of planting seeds, facilitated by a planter-and-fertilizer applicator.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "ROLLING CRUST BREAKER",
+      "type": "METHOD",
+      "description": "A mechanical tool designed to break the surface crust of the soil to improve seedling emergence.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "SEEDLING EMERGENCE",
+      "type": "TRAIT",
+      "description": "The process of a young plant breaking through the soil surface, which can be enhanced by a rolling crust breaker.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "SURFACE CRUST",
+      "type": "CONDITION",
+      "description": "A hardened layer on the soil surface that can impede the emergence of seedlings.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "PRIMARY TILLAGE",
+      "type": "METHOD",
+      "description": "Intensive initial soil preparation that can provide advantages for early crop growth in Alfisols.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "CROP GROWTH",
+      "type": "TRAIT",
+      "description": "The developmental process of the crop, which is influenced by the intensity of primary tillage.",
+      "source_id": "paper_4427"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "The agricultural plants being established and grown in Alfisols.",
+      "source_id": "paper_4427"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WHEELED TOOL CARRIERS",
+      "target": "ALFISOLS",
+      "description": "used for field operations in",
+      "weight": "9",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "WHEELED TOOL CARRIERS",
+      "target": "TILLAGE OPERATIONS",
+      "description": "used to perform",
+      "weight": "9",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "OXEN",
+      "target": "WHEELED TOOL CARRIERS",
+      "description": "used to draw",
+      "weight": "10",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "PLANTER-AND-FERTILIZER APPLICATOR",
+      "target": "WHEELED TOOL CARRIERS",
+      "description": "is an attachment for",
+      "weight": "8",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "PLANTER-AND-FERTILIZER APPLICATOR",
+      "target": "SOWING",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "SOWING",
+      "target": "CROP",
+      "description": "used to establish",
+      "weight": "9",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "ROLLING CRUST BREAKER",
+      "target": "SEEDLING EMERGENCE",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "ROLLING CRUST BREAKER",
+      "target": "SURFACE CRUST",
+      "description": "breaks",
+      "weight": "9",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "PRIMARY TILLAGE",
+      "target": "ALFISOLS",
+      "description": "performed on",
+      "weight": "8",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "PRIMARY TILLAGE",
+      "target": "CROP GROWTH",
+      "description": "shows advantages in early stages of",
+      "weight": "7",
+      "source_id": "paper_4427"
+    },
+    {
+      "source": "CROP",
+      "target": "RAINY SEASON",
+      "description": "established during",
+      "weight": "8",
+      "source_id": "paper_4427"
+    }
+  ]
+}

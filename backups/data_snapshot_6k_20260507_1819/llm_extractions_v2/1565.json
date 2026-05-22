@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop targeted by the groundnut leafminer pest.",
+      "source_id": "paper_1565"
+    },
+    {
+      "name": "APROAEREMA MODICELLA",
+      "type": "ORGANISM",
+      "description": "The groundnut leafminer pest whose eggs and larvae were studied.",
+      "source_id": "paper_1565"
+    },
+    {
+      "name": "SIMULATED RAINFALL",
+      "type": "CONDITION",
+      "description": "50 mm of rainfall produced by a mechanical simulator to test its effect on pest survival.",
+      "source_id": "paper_1565"
+    },
+    {
+      "name": "MECHANICAL SIMULATOR",
+      "type": "METHOD",
+      "description": "The device used to generate simulated rainfall.",
+      "source_id": "paper_1565"
+    },
+    {
+      "name": "SURVIVAL",
+      "type": "TRAIT",
+      "description": "The survival rate of the eggs and larvae of Aproaerema modicella.",
+      "source_id": "paper_1565"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "GROUNDNUT",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_1565"
+    },
+    {
+      "source": "SIMULATED RAINFALL",
+      "target": "APROAEREMA MODICELLA",
+      "description": "affects the survival of",
+      "weight": "8",
+      "source_id": "paper_1565"
+    },
+    {
+      "source": "MECHANICAL SIMULATOR",
+      "target": "SIMULATED RAINFALL",
+      "description": "is used to produce",
+      "weight": "10",
+      "source_id": "paper_1565"
+    },
+    {
+      "source": "SIMULATED RAINFALL",
+      "target": "SURVIVAL",
+      "description": "has a small effect on",
+      "weight": "7",
+      "source_id": "paper_1565"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "MTP2 PROTEIN",
+      "type": "GENE_MARKER",
+      "description": "A protein whose spatio-temporal and phytohormonal expression patterns and characterization are studied across different plant species",
+      "source_id": "paper_11976"
+    },
+    {
+      "name": "ZINC",
+      "type": "CONCEPT",
+      "description": "An essential micronutrient involved in physiological processes of plants, available in oxidized form Zn2+",
+      "source_id": "paper_11976"
+    },
+    {
+      "name": "PLANTS",
+      "type": "ORGANISM",
+      "description": "The biological organisms in which zinc uptake, toxicity, and MTP2 protein expression are analyzed",
+      "source_id": "paper_11976"
+    },
+    {
+      "name": "ZINC TOXICITY",
+      "type": "CONDITION",
+      "description": "The toxic effects caused by an excess accumulation of zinc in plants",
+      "source_id": "paper_11976"
+    },
+    {
+      "name": "IRON DEFICIENCY",
+      "type": "CONDITION",
+      "description": "A condition that induces the uptake of zinc, leading to its excess accumulation in the plant cytoplasm",
+      "source_id": "paper_11976"
+    },
+    {
+      "name": "VACUOLES",
+      "type": "CONCEPT",
+      "description": "Organelles that act as the main storage and detoxifying sites for excess zinc in the cytoplasm",
+      "source_id": "paper_11976"
+    },
+    {
+      "name": "SOIL",
+      "type": "LOCATION",
+      "description": "The medium from which plants obtain zinc through mass flow and diffusion",
+      "source_id": "paper_11976"
+    },
+    {
+      "name": "LOW ACIDIC PH",
+      "type": "CONDITION",
+      "description": "A soil condition that increases the availability of zinc to plants",
+      "source_id": "paper_11976"
+    },
+    {
+      "name": "HIGH PH",
+      "type": "CONDITION",
+      "description": "A soil condition that reduces the availability of zinc to plants",
+      "source_id": "paper_11976"
+    },
+    {
+      "name": "ROOT PLASMA MEMBRANE TRANSPORTERS",
+      "type": "CONCEPT",
+      "description": "Proteins in the root plasma membrane responsible for the major uptake of zinc from the soil",
+      "source_id": "paper_11976"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ZINC",
+      "target": "PLANTS",
+      "description": "essential micronutrient for",
+      "weight": "10",
+      "source_id": "paper_11976"
+    },
+    {
+      "source": "ZINC",
+      "target": "ZINC TOXICITY",
+      "description": "excess amount causes",
+      "weight": "9",
+      "source_id": "paper_11976"
+    },
+    {
+      "source": "IRON DEFICIENCY",
+      "target": "ZINC",
+      "description": "induces uptake of",
+      "weight": "8",
+      "source_id": "paper_11976"
+    },
+    {
+      "source": "IRON DEFICIENCY",
+      "target": "ZINC TOXICITY",
+      "description": "leads to accumulation of excess zinc",
+      "weight": "8",
+      "source_id": "paper_11976"
+    },
+    {
+      "source": "VACUOLES",
+      "target": "ZINC",
+      "description": "storage and detoxifying organelles for",
+      "weight": "9",
+      "source_id": "paper_11976"
+    },
+    {
+      "source": "ZINC",
+      "target": "SOIL",
+      "description": "available in",
+      "weight": "7",
+      "source_id": "paper_11976"
+    },
+    {
+      "source": "LOW ACIDIC PH",
+      "target": "ZINC",
+      "description": "increases availability of",
+      "weight": "8",
+      "source_id": "paper_11976"
+    },
+    {
+      "source": "HIGH PH",
+      "target": "ZINC",
+      "description": "reduces availability of",
+      "weight": "8",
+      "source_id": "paper_11976"
+    },
+    {
+      "source": "ROOT PLASMA MEMBRANE TRANSPORTERS",
+      "target": "ZINC",
+      "description": "responsible for uptake of",
+      "weight": "9",
+      "source_id": "paper_11976"
+    },
+    {
+      "source": "MTP2 PROTEIN",
+      "target": "PLANTS",
+      "description": "expressed in",
+      "weight": "7",
+      "source_id": "paper_11976"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop studied, specifically Arachis hypogaea",
+      "source_id": "paper_3520"
+    },
+    {
+      "name": "SOWING DEPTH",
+      "type": "CONDITION",
+      "description": "The depth at which seeds are planted, categorized as shallow or deep",
+      "source_id": "paper_3520"
+    },
+    {
+      "name": "HYPOCOTYL GROWTH",
+      "type": "TRAIT",
+      "description": "The length and mass of the hypocotyl",
+      "source_id": "paper_3520"
+    },
+    {
+      "name": "ROOT GROWTH",
+      "type": "TRAIT",
+      "description": "The mass and development of the root system",
+      "source_id": "paper_3520"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The total yield of pods produced by the groundnut plant",
+      "source_id": "paper_3520"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The formation of nodules on the hypocotyl and roots",
+      "source_id": "paper_3520"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The biological process of converting atmospheric nitrogen into ammonia",
+      "source_id": "paper_3520"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The experimental approach used to observe the effects of sowing depth",
+      "source_id": "paper_3520"
+    },
+    {
+      "name": "VIRGINIA TYPES",
+      "type": "CONCEPT",
+      "description": "Specific varieties of groundnut that show different nodulation patterns",
+      "source_id": "paper_3520"
+    },
+    {
+      "name": "NITROGENASE ACTIVITY",
+      "type": "TRAIT",
+      "description": "The enzymatic activity responsible for nitrogen fixation",
+      "source_id": "paper_3520"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOWING DEPTH",
+      "target": "HYPOCOTYL GROWTH",
+      "description": "Deep sowing increases hypocotyl mass and length is a function of depth",
+      "weight": "9",
+      "source_id": "paper_3520"
+    },
+    {
+      "source": "SOWING DEPTH",
+      "target": "ROOT GROWTH",
+      "description": "Deep sowing decreases root mass",
+      "weight": "9",
+      "source_id": "paper_3520"
+    },
+    {
+      "source": "SOWING DEPTH",
+      "target": "POD YIELD",
+      "description": "Deep sowing results in decreased pod yields",
+      "weight": "9",
+      "source_id": "paper_3520"
+    },
+    {
+      "source": "SOWING DEPTH",
+      "target": "NODULATION",
+      "description": "Deep sowing increases hypocotyl nodules but decreases root nodules",
+      "weight": "8",
+      "source_id": "paper_3520"
+    },
+    {
+      "source": "SOWING DEPTH",
+      "target": "NITROGENASE ACTIVITY",
+      "description": "Deep sowing leads to a loss in nitrogenase activity",
+      "weight": "8",
+      "source_id": "paper_3520"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SOWING DEPTH",
+      "description": "Sowing depth is an experimental variable applied to groundnut",
+      "weight": "10",
+      "source_id": "paper_3520"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "SOWING DEPTH",
+      "description": "Field experiments were used to test the effect of sowing depth",
+      "weight": "10",
+      "source_id": "paper_3520"
+    },
+    {
+      "source": "VIRGINIA TYPES",
+      "target": "GROUNDNUT",
+      "description": "Virginia types are a specific variety of groundnut",
+      "weight": "10",
+      "source_id": "paper_3520"
+    },
+    {
+      "source": "NODULATION",
+      "target": "NITROGEN FIXATION",
+      "description": "Nodules are the sites where nitrogen fixation occurs",
+      "weight": "10",
+      "source_id": "paper_3520"
+    },
+    {
+      "source": "NITROGENASE ACTIVITY",
+      "target": "NITROGEN FIXATION",
+      "description": "Nitrogenase activity is the mechanism for nitrogen fixation",
+      "weight": "10",
+      "source_id": "paper_3520"
+    }
+  ]
+}

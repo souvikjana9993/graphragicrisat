@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "A region in Africa characterized by semiarid areas and recurring droughts affecting agricultural productivity",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "DRY SPELLS",
+      "type": "CONDITION",
+      "description": "Periods of time without precipitation that can affect agricultural productivity and crop growth",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "DROUGHTS",
+      "type": "CONDITION",
+      "description": "Prolonged periods of abnormally low rainfall leading to water shortages in agricultural regions",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "AGRICULTURAL PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The measure of agricultural output per unit of input, which decreases during recurring droughts",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "CONCEPT",
+      "description": "The date on which seeds are planted, which varies annually in semiarid West African regions",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "ONSET OF RAINS",
+      "type": "CONDITION",
+      "description": "The beginning of the rainy season used as the specific definition for the sowing date in each year",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "CEREAL CROPS",
+      "type": "CROP",
+      "description": "A group of grass crops grown for their edible seeds, subject to drought risk during specific growth phases",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "PANICLE INITIATION PHASE",
+      "type": "CONCEPT",
+      "description": "A specific growth stage of cereal crops occurring around 20 days after sowing",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "DROUGHT RISK",
+      "type": "CONDITION",
+      "description": "The probability or likelihood of a crop suffering from water stress, which drops significantly after the panicle initiation phase",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "MEAN ANNUAL RAINFALL",
+      "type": "CONCEPT",
+      "description": "The average amount of precipitation received in a year, used to predict the frequency of dry spells",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "SUPPLEMENTAL IRRIGATION",
+      "type": "METHOD",
+      "description": "The application of water to crops to supplement rainfall during dry spells to maintain productivity",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "CROP WATER REQUIREMENTS",
+      "type": "TRAIT",
+      "description": "The amount of water a crop needs to achieve maximum yield, informed by dry-spell analysis",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "DRY-SPELL ANALYSIS",
+      "type": "METHOD",
+      "description": "The computation of probabilities and frequencies of dry spells to assess agricultural risk and inform crop management",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "HISTORICAL RAINFALL DATA",
+      "type": "CONCEPT",
+      "description": "Past records of precipitation used to calculate the length of dry spells",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "PROBABILITY DISTRIBUTION OF TIME TO THE NEXT WET DAY",
+      "type": "METHOD",
+      "description": "A statistical method used to compute the likelihood of the duration until the next rainfall event",
+      "source_id": "paper_3054"
+    },
+    {
+      "name": "PERCENTAGE FREQUENCIES OF DRY SPELLS",
+      "type": "METHOD",
+      "description": "A calculation of how often dry spells of various lengths occur over a period",
+      "source_id": "paper_3054"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DRY SPELLS",
+      "target": "WEST AFRICA",
+      "description": "occur in",
+      "weight": "8",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DROUGHTS",
+      "target": "WEST AFRICA",
+      "description": "occur in",
+      "weight": "8",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DRY SPELLS",
+      "target": "AGRICULTURAL PRODUCTIVITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "ONSET OF RAINS",
+      "description": "determined by",
+      "weight": "10",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DRY-SPELL ANALYSIS",
+      "target": "DRY SPELLS",
+      "description": "analyzes",
+      "weight": "10",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DRY-SPELL ANALYSIS",
+      "target": "CEREAL CROPS",
+      "description": "applied to",
+      "weight": "7",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "PANICLE INITIATION PHASE",
+      "target": "CEREAL CROPS",
+      "description": "growth stage of",
+      "weight": "9",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DROUGHT RISK",
+      "target": "CEREAL CROPS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DROUGHT RISK",
+      "target": "PANICLE INITIATION PHASE",
+      "description": "varies by",
+      "weight": "7",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "MEAN ANNUAL RAINFALL",
+      "target": "DRY SPELLS",
+      "description": "predicts frequency of",
+      "weight": "8",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DRY-SPELL ANALYSIS",
+      "target": "SUPPLEMENTAL IRRIGATION",
+      "description": "informs",
+      "weight": "7",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DRY-SPELL ANALYSIS",
+      "target": "CROP WATER REQUIREMENTS",
+      "description": "informs",
+      "weight": "7",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DRY-SPELL ANALYSIS",
+      "target": "HISTORICAL RAINFALL DATA",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DRY-SPELL ANALYSIS",
+      "target": "PROBABILITY DISTRIBUTION OF TIME TO THE NEXT WET DAY",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_3054"
+    },
+    {
+      "source": "DRY-SPELL ANALYSIS",
+      "target": "PERCENTAGE FREQUENCIES OF DRY SPELLS",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_3054"
+    }
+  ]
+}

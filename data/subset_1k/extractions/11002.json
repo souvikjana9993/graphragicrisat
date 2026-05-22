@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop being studied in the cropping systems of Southern Africa",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "SOUTHERN AFRICA",
+      "type": "LOCATION",
+      "description": "The geographic region where the study is focused",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The primary output measure of the maize cropping system",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "CROP FAILURE",
+      "type": "TRAIT",
+      "description": "The occurrence of complete loss of crop",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "EARLY PLANTING",
+      "type": "METHOD",
+      "description": "Planting at the start of the season or with the first rains",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "TILLAGE",
+      "type": "METHOD",
+      "description": "Soil preparation methods used in the cropping system",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "PLOUGHING",
+      "type": "METHOD",
+      "description": "A specific type of tillage involving turning the soil",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "RIPPING",
+      "type": "METHOD",
+      "description": "A specific type of tillage involving deep soil breaking",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "MULCHING",
+      "type": "METHOD",
+      "description": "The application of mulch to the soil surface",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "FERTILITY AMENDMENTS",
+      "type": "METHOD",
+      "description": "The application of nutrients to improve soil fertility",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A key chemical nutrient used in fertility amendments",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "MANURE",
+      "type": "CONCEPT",
+      "description": "An organic material used as a fertility amendment",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "APSIM MODEL",
+      "type": "METHOD",
+      "description": "A simulation tool used to predict crop yields over time",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "DROUGHTS",
+      "type": "CONDITION",
+      "description": "Frequent periods of deficient rainfall",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "DRY SPELLS",
+      "type": "CONDITION",
+      "description": "Short-term periods of no rainfall during the growing season",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "MINERAL N FLUSH",
+      "type": "CONDITION",
+      "description": "A surge of available mineral nitrogen at the start of the season",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "FALSE START",
+      "type": "CONDITION",
+      "description": "Initial rains followed by a dry period, leading to crop failure",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "FOOD SELF-SUFFICIENCY THRESHOLD",
+      "type": "CONCEPT",
+      "description": "The minimum yield required for food security, defined as 1080 kg ha-1",
+      "source_id": "paper_11002"
+    },
+    {
+      "name": "SEMI-ARID AREAS",
+      "type": "CONDITION",
+      "description": "Regions characterized by low and erratic rainfall",
+      "source_id": "paper_11002"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "SOUTHERN AFRICA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "EARLY PLANTING",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "EARLY PLANTING",
+      "target": "CROP FAILURE",
+      "description": "reduces risk of",
+      "weight": "7",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "MINERAL N FLUSH",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "FALSE START",
+      "target": "CROP FAILURE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "TILLAGE",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "MULCHING",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "FERTILITY AMENDMENTS",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "FERTILITY AMENDMENTS",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "MANURE",
+      "target": "FERTILITY AMENDMENTS",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "GRAIN YIELD",
+      "description": "simulates",
+      "weight": "10",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "DROUGHTS",
+      "target": "GRAIN YIELD",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "DRY SPELLS",
+      "target": "GRAIN YIELD",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "SEMI-ARID AREAS",
+      "target": "DROUGHTS",
+      "description": "characterized by",
+      "weight": "10",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "EARLY PLANTING",
+      "target": "FOOD SELF-SUFFICIENCY THRESHOLD",
+      "description": "helps exceed",
+      "weight": "8",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "FERTILITY AMENDMENTS",
+      "target": "FOOD SELF-SUFFICIENCY THRESHOLD",
+      "description": "helps exceed",
+      "weight": "8",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "PLOUGHING",
+      "target": "TILLAGE",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11002"
+    },
+    {
+      "source": "RIPPING",
+      "target": "TILLAGE",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11002"
+    }
+  ]
+}

@@ -1,0 +1,998 @@
+{
+  "abstract": "Climate change is expected to alter a multitude of factors important to agricultural\r\nsystems, including pests, diseases, weeds, extreme climate events, water resources,\r\nsoil degradation, and socio-economic pressures. Changes to carbon dioxide concentration\r\n([CO2]), temperature, andwater (CTW) will be the primary drivers of change\r\nin crop growth and agricultural systems. Therefore, establishing the CTW-change\r\nsensitivity of crop yields is an urgent research need and warrants diverse methods\r\nof investigation. Crop models provide a biophysical, process-based tool to investigate crop\r\nresponses across varying environmental conditions and farm management techniques,\r\nand have been applied in climate impact assessment by using a variety of\r\nmethods (White et al., 2011, and references therein). However, there is a significant\r\namount of divergence between various crop models’ responses to CTW changes\r\n(R¨otter et al., 2011). While the application of a site-based crop model is relatively\r\nsimple, the coordination of such agricultural impact assessments on larger scales\r\nrequires consistent and timely contributions from a large number of crop modelers,\r\neach time a new global climate model (GCM) scenario or downscaling technique\r\nis created. A coordinated, global effort to rapidly examine CTW sensitivity across\r\nmultiple crops, crop models, and sites is needed to aid model development and\r\nenhance the assessment of climate impacts (Deser et al., 2012)...",
+  "eprint_status": "archive",
+  "creators": [
+    {
+      "name": {
+        "given": "S P",
+        "family": "McDermid",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "A C",
+        "family": "Ruane",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "C",
+        "family": "Rosenzweig",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "N I",
+        "family": "Hudson",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M D",
+        "family": "Morales",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "P",
+        "family": "Agalawatte",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "S",
+        "family": "Ahmad",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "L R",
+        "family": "Ahuja",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "I",
+        "family": "Amien",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "S S",
+        "family": "Anapalli",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "J",
+        "family": "Anothai",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "S",
+        "family": "Asseng",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "J",
+        "family": "Biggs",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "F",
+        "family": "Bert",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "P",
+        "family": "Bertuzzi",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "V S",
+        "family": "Bhatia",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M",
+        "family": "Bindi",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "I",
+        "family": "Broad",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "D",
+        "family": "Cammarano",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "R",
+        "family": "Carretero",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "A A",
+        "family": "Chattha",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "U",
+        "family": "Chung",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "S",
+        "family": "Debats",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "P",
+        "family": "Deligios",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "G",
+        "family": "De Sanctis",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "T",
+        "family": "Dhliwayo",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "B",
+        "family": "Dumont",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "L",
+        "family": "Estes",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "F",
+        "family": "Ewert",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "R",
+        "family": "Ferrise",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "T",
+        "family": "Gaiser",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "G",
+        "family": "Garcia",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "S",
+        "family": "Gbegbelegbe",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "V",
+        "family": "Geethalakshmi",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "E",
+        "family": "Gerardeaux",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "R",
+        "family": "Goldberg",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "B",
+        "family": "Grant",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "E",
+        "family": "Guevara",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "J",
+        "family": "Hickman",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "H",
+        "family": "Hoffmann",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "H",
+        "family": "Huang",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "J",
+        "family": "Hussain",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "F B",
+        "family": "Justino",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "A S",
+        "family": "Karunaratne",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "A K",
+        "family": "Koehler",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "P K",
+        "family": "Kouakou",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "S N",
+        "family": "Kumar",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "A",
+        "family": "Lakshmanan",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M",
+        "family": "Lieffering",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "X",
+        "family": "Lin",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "Q",
+        "family": "Luo",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "G",
+        "family": "Magrin",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M",
+        "family": "Mancini",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M R",
+        "family": "Marin",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "A D",
+        "family": "Marta",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "Y",
+        "family": "Masutomi",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "T",
+        "family": "Mavromatis",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "G",
+        "family": "McLean",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "S",
+        "family": "Meira",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M",
+        "family": "Mohanty",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M",
+        "family": "Moriondo",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "W",
+        "family": "Nasim",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "L",
+        "family": "Negm",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "F",
+        "family": "Orlando",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "S",
+        "family": "Orlandini",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "I",
+        "family": "Ozturk",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "H M",
+        "family": "Soares Pinto",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "G",
+        "family": "Podesta",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "Z",
+        "family": "Qi",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "J",
+        "family": "Ramarohetra",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M H",
+        "family": "ur Rahman",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "H",
+        "family": "Raynal",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "G",
+        "family": "Rodriguez",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "R",
+        "family": "Rötter",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "V",
+        "family": "Sharda",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "L",
+        "family": "Shuo",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "W",
+        "family": "Smith",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "V",
+        "family": "Snow",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "A",
+        "family": "Soltani",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "K",
+        "family": "Srinivas",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "B",
+        "family": "Sultan",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "D K",
+        "family": "Swain",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "F",
+        "family": "Tao",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "K",
+        "family": "Tesfaye",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M I",
+        "family": "Travasso",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "G",
+        "family": "Trombi",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "A",
+        "family": "Topaj",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "E",
+        "family": "Vanuytrecht",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "F E",
+        "family": "Viscarra",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "S",
+        "family": "Aftab Wajid",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "E",
+        "family": "Wang",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "H",
+        "family": "Wang",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "J",
+        "family": "Wang",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "E",
+        "family": "Wijekoon",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "L",
+        "family": "Byun-Woo",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "Y",
+        "family": "Xiaoguang",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "B H",
+        "family": "Young",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "J I",
+        "family": "Yun",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "Z",
+        "family": "Zhao",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "L",
+        "family": "Zubair",
+        "lineage": null,
+        "honourific": null
+      }
+    }
+  ],
+  "editors": [
+    {
+      "name": {
+        "given": "C",
+        "family": "Rosenzweig",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "D",
+        "family": "Hillel",
+        "lineage": null,
+        "honourific": null
+      }
+    }
+  ],
+  "full_text_status": "public",
+  "date_type": "published",
+  "dir": "disk0/00/01/07/50",
+  "rev_number": 39,
+  "book_title": "Handbook of Climate Change and Agroecosystems: The Agricultural Model Intercomparison and Improvement Project (AgMIP) Integrated Crop and Economic Assessments, Part 2",
+  "issn": "2045-0311",
+  "documents": [
+    {
+      "content": "published",
+      "security": "public",
+      "format": "application/pdf",
+      "language": "en",
+      "placement": 1,
+      "mime_type": "application/pdf",
+      "main": "9781783265640_0008.pdf",
+      "uri": "http://oar.icrisat.org/id/document/51736",
+      "docid": 51736,
+      "files": [
+        {
+          "mtime": "2018-06-15 07:42:33",
+          "hash": "ca6cb16e63db6dc1bf3ed56012a5b1b2",
+          "objectid": 51736,
+          "fileid": 165329,
+          "datasetid": "document",
+          "mime_type": "application/pdf",
+          "uri": "http://oar.icrisat.org/id/file/165329",
+          "filename": "9781783265640_0008.pdf",
+          "hash_type": "MD5",
+          "filesize": 4894804
+        }
+      ],
+      "pos": 1,
+      "eprintid": 10750,
+      "rev_number": 2
+    }
+  ],
+  "icrisatcreators": [
+    {
+      "name": {
+        "given": "K",
+        "family": "Srinivas",
+        "lineage": null,
+        "honourific": null
+      }
+    }
+  ],
+  "datestamp": "2018-06-15 08:47:53",
+  "lastmod": "2018-06-15 08:47:53",
+  "pagerange": "191-220",
+  "metadata_visibility": "show",
+  "userid": 1305,
+  "type": "book_section",
+  "place_of_pub": "London",
+  "uri": "http://oar.icrisat.org/id/eprint/10750",
+  "eprintid": 10750,
+  "series": "ICP Series on Climate Change Impacts, Adaptation, and Mitigation: Volume 3",
+  "subjects": [
+    "s2.8"
+  ],
+  "related_url": [
+    {
+      "url": "https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&q=The+AgMIP+Coordinated+Climate-Crop+Modeling+Project+%28C3MP%29%3A+Methods+and+Protocols&btnG=#d=gs_cit&p=&u=%2Fscholar%3Fq%3Dinfo%3AhkIQ0Au9IOEJ%3Ascholar.google.com%2F%26output%3Dcite%26scirp%3D0%",
+      "type": "pub"
+    }
+  ],
+  "refereed": "TRUE",
+  "isbn": "978-1-78326-563-3",
+  "affiliation": [
+    "New York University (New York)",
+    "NASA Goddard Institute for Space Studies (New York)",
+    "Columbia University Center for Climate Systems Research (New York)",
+    "United States Department of Agriculture, Agricultural Research Service (Ames)",
+    "Prince of Songkla University (Hat Yai)",
+    "University of Florida (Gainesville)",
+    "Université de Liège (Liège)",
+    "Universidad de Buenos Aires (Buenos Aires)",
+    "INRA (Avignon)",
+    "National Research Centre for Soybean (Indore)",
+    "University of Florence (Florence)",
+    "University of Queensland (Queensland)",
+    "James Hutton Institute (Dundee)",
+    "CIMMYT (Texcoco)",
+    "European Commission, Joint Research Center (Ispra)",
+    "University of Bonn (Bonn)",
+    "CIMMYT (Nairobi)",
+    "Tamil Nadu Agricultural University (Coimbatore)",
+    "CIRAD (Paris)",
+    "Agriculture and Agri-Food (Ontario)",
+    "National Agricultural Technology Institute (INTA) (Pergamino)",
+    "Agriculture and Food Security Center, Columbia University (New York)",
+    "Chinese Academy of Agricultural Sciences (Beijing)",
+    "Universidade Federal de Viçosa (Viçosa)",
+    "Sabaragamuwa University of Sri Lanka (Belihuloya)",
+    "Univesity of Leeds (Leeds)",
+    "IARI (New Delhi)",
+    "Kansas State University (Manhattan)",
+    "University of Technology (Sydney)",
+    "College of Agriculture, Ibaraki University (Ibaraki)",
+    "Aristotle University of Thessaloniki (Thessaloniki)",
+    "Queensland Dept of Agriculture, Fisheries and Forestry (Queensland)",
+    "Indian Institute of Soil Science (Bhopal)",
+    "NC State University (Raleigh)",
+    "Aarhus University (Tjele)",
+    "McGill University (Sainte-Anne-de-Bellevue)",
+    "L'Institut de recherche pour le développement (IRD) (Paris)",
+    "National Institute of Agronomic Research (INRA) (Toulouse)",
+    "College of Agronomy and Biotechnology, China Agricultural University (Beijing)",
+    "Gorgan University of Agricultural Sciences & Natural Resources (Gorgan)",
+    "ICRISAT (Patancheru)",
+    "Indian Institute of Technology Kharagpur (Kharagpur)",
+    "Chinese Academy of Sciences, Institute of Geographical Sciences and Natural Resources Research (Beijing)",
+    "CIMMYT (Addis Ababa)",
+    "Fundacion Amigos de la Naturaleza (FAN) (Santa Cruz)",
+    "Commonwealth Scientific and Industrial Research Organisation Land and Water (Canberra)",
+    "SPARC/AAFC (Swift Current)",
+    "Seoul National University (Seoul)",
+    "Kyung Hee University (Yongin)",
+    "University of Agriculture (Faisalabad)",
+    "KU Leuven (Leuven)",
+    "University of São Paulo, ESALQ (Piracicaba)",
+    "University of Miami (Miami)",
+    "Agro-climatology and Hydrology Research Institute (Bogor)",
+    "Foundation for Environment Climate and Technology (Kandy)",
+    "Princeton University (Princeton)",
+    "AgResearch New Zealand (Palmerston North)",
+    "MTT Agrifood Research Finland (Mikkeli)",
+    "AgResearch Limited (Christchurch)",
+    "COMSATS-Institute of Information Technology (CIIT) (Vehari)",
+    "Centre d'Etude Régional pour l'Amélioration de l'Adaptation à la Sécheresse (CERAAS) (Thiès)",
+    "Bahauddin Zakariya University (Multan)",
+    "CSIRO Ecosystem Sciences (Brisbane)",
+    "University of Sassari (Sassari)",
+    "Agrophysical Research Institute (Saint Petersburg)",
+    "Sorbonne Universités (Paris)"
+  ],
+  "country": [
+    "USA",
+    "Thailand",
+    "Belgium",
+    "Argentina",
+    "France",
+    "India",
+    "Italy",
+    "Australia",
+    "UK",
+    "Mexico",
+    "Italy",
+    "Germany",
+    "Kenya",
+    "Canada",
+    "China",
+    "Brazil",
+    "Sri Lanka",
+    "Japan",
+    "Greece",
+    "Denmark",
+    "Iran",
+    "Ethiopia",
+    "Bolivia",
+    "Republic of Korea",
+    "Pakistan",
+    "Indonesia",
+    "New Zealand",
+    "Finland",
+    "Senegal",
+    "Russia"
+  ],
+  "publisher": "Imperial College Press",
+  "keywords": "AgMIP, Climate-Crop Modeling, Crop Modeling",
+  "ispublished": "pub",
+  "date": "2015-04",
+  "volume": 1,
+  "title": "The AgMIP Coordinated Climate-Crop Modeling Project (C3MP): Methods and Protocols",
+  "status_changed": "2018-06-15 08:47:53"
+}

@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "CROP PLANTS",
+      "type": "CROP",
+      "description": "Cultivated plants used for agricultural production.",
+      "source_id": "paper_4144"
+    },
+    {
+      "name": "WILD SPECIES",
+      "type": "ORGANISM",
+      "description": "Non-cultivated relatives of crop plants serving as a gene pool.",
+      "source_id": "paper_4144"
+    },
+    {
+      "name": "GENE POOL",
+      "type": "CONCEPT",
+      "description": "The total set of genes available within a population or species.",
+      "source_id": "paper_4144"
+    },
+    {
+      "name": "WIDE CROSSES",
+      "type": "METHOD",
+      "description": "The process of crossing wild taxa with cultivated crop plants.",
+      "source_id": "paper_4144"
+    },
+    {
+      "name": "SEXUAL GENE TRANSFER",
+      "type": "CONCEPT",
+      "description": "The movement of genetic material between organisms via sexual reproduction.",
+      "source_id": "paper_4144"
+    },
+    {
+      "name": "INCOMPATIBILITY",
+      "type": "CONDITION",
+      "description": "Barriers that prevent successful interspecific hybridization and hybrid production.",
+      "source_id": "paper_4144"
+    },
+    {
+      "name": "INTERSPECIFIC HYBRIDIZATION",
+      "type": "METHOD",
+      "description": "The process of crossing two different species to create a hybrid.",
+      "source_id": "paper_4144"
+    },
+    {
+      "name": "HYBRID PRODUCTION",
+      "type": "METHOD",
+      "description": "The creation of hybrid offspring from different taxa.",
+      "source_id": "paper_4144"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WILD SPECIES",
+      "target": "GENE POOL",
+      "description": "WILD SPECIES serve as a valuable GENE POOL",
+      "weight": "9",
+      "source_id": "paper_4144"
+    },
+    {
+      "source": "WIDE CROSSES",
+      "target": "CROP PLANTS",
+      "description": "WIDE CROSSES are used to improve CROP PLANTS",
+      "weight": "8",
+      "source_id": "paper_4144"
+    },
+    {
+      "source": "WIDE CROSSES",
+      "target": "WILD SPECIES",
+      "description": "WIDE CROSSES involve crossing WILD SPECIES with cultivated ones",
+      "weight": "9",
+      "source_id": "paper_4144"
+    },
+    {
+      "source": "INCOMPATIBILITY",
+      "target": "INTERSPECIFIC HYBRIDIZATION",
+      "description": "INCOMPATIBILITY acts as a barrier to INTERSPECIFIC HYBRIDIZATION",
+      "weight": "10",
+      "source_id": "paper_4144"
+    },
+    {
+      "source": "INCOMPATIBILITY",
+      "target": "HYBRID PRODUCTION",
+      "description": "INCOMPATIBILITY acts as a barrier to HYBRID PRODUCTION",
+      "weight": "10",
+      "source_id": "paper_4144"
+    },
+    {
+      "source": "INCOMPATIBILITY",
+      "target": "SEXUAL GENE TRANSFER",
+      "description": "INCOMPATIBILITY makes taxa unavailable for SEXUAL GENE TRANSFER",
+      "weight": "9",
+      "source_id": "paper_4144"
+    },
+    {
+      "source": "INTERSPECIFIC HYBRIDIZATION",
+      "target": "HYBRID PRODUCTION",
+      "description": "INTERSPECIFIC HYBRIDIZATION is a method for HYBRID PRODUCTION",
+      "weight": "8",
+      "source_id": "paper_4144"
+    }
+  ]
+}

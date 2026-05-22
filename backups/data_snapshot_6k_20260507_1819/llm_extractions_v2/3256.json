@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop affected by peanut bud necrosis disease",
+      "source_id": "paper_3256"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS DISEASE",
+      "type": "CONDITION",
+      "description": "An economically important virus disease of groundnut",
+      "source_id": "paper_3256"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS VIRUS",
+      "type": "ORGANISM",
+      "description": "The virus (PBNV) that causes peanut bud necrosis disease",
+      "source_id": "paper_3256"
+    },
+    {
+      "name": "TOSPOVIRUS",
+      "type": "ORGANISM",
+      "description": "The genus of viruses to which the peanut bud necrosis virus belongs",
+      "source_id": "paper_3256"
+    },
+    {
+      "name": "DURABLE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist a disease over time, which has not been found in available germplasm for PBND",
+      "source_id": "paper_3256"
+    },
+    {
+      "name": "GERMPLASM ACCESSIONS",
+      "type": "CONCEPT",
+      "description": "Available genetic resources used to search for resistance traits",
+      "source_id": "paper_3256"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "Controlled environment used for the evaluation of transgenic peanut plants",
+      "source_id": "paper_3256"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "LOCATION",
+      "description": "Natural environment used for the evaluation of transgenic peanut plants",
+      "source_id": "paper_3256"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT BUD NECROSIS DISEASE",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3256"
+    },
+    {
+      "source": "PEANUT BUD NECROSIS VIRUS",
+      "target": "PEANUT BUD NECROSIS DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3256"
+    },
+    {
+      "source": "PEANUT BUD NECROSIS VIRUS",
+      "target": "TOSPOVIRUS",
+      "description": "is a member of",
+      "weight": "10",
+      "source_id": "paper_3256"
+    },
+    {
+      "source": "DURABLE RESISTANCE",
+      "target": "PEANUT BUD NECROSIS DISEASE",
+      "description": "provides protection against",
+      "weight": "9",
+      "source_id": "paper_3256"
+    },
+    {
+      "source": "DURABLE RESISTANCE",
+      "target": "GERMPLASM ACCESSIONS",
+      "description": "searched for within",
+      "weight": "8",
+      "source_id": "paper_3256"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "GREENHOUSE",
+      "description": "evaluated in",
+      "weight": "7",
+      "source_id": "paper_3256"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "FIELD CONDITIONS",
+      "description": "evaluated in",
+      "weight": "7",
+      "source_id": "paper_3256"
+    }
+  ]
+}

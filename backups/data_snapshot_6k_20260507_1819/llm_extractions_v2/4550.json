@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop subject to stem borer infestation",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop subject to stem borer infestation",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "STEM BORER",
+      "type": "ORGANISM",
+      "description": "Insect species that infest sorghum and pearl millet",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "ICRISAT CENTER IN INDIA",
+      "type": "LOCATION",
+      "description": "Research facility where sorghum yield loss was estimated",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of grain production used to assess loss",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "CHILO PARTELLUS",
+      "type": "ORGANISM",
+      "description": "A stem borer species that causes grain yield loss in sorghum",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "PHASED USE OF CARBOFURAN",
+      "type": "METHOD",
+      "description": "A method used to estimate grain yield loss in sorghum",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "ARTIFICIAL INFESTATION",
+      "type": "METHOD",
+      "description": "A method using laboratory-reared larvae to estimate grain yield loss",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "CROP EMERGENCE",
+      "type": "CONCEPT",
+      "description": "The growth stage used to determine the timing of infestation",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "DEADHEARTS",
+      "type": "TRAIT",
+      "description": "A symptom of stem borer damage in sorghum",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "STEM TUNNELING",
+      "type": "TRAIT",
+      "description": "A symptom of stem borer damage in sorghum",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "ICRISAT SAHELIAN CENTER IN NIGER",
+      "type": "LOCATION",
+      "description": "Research facility where pearl millet studies were conducted",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "CONIESTA IGNEFUSALIS",
+      "type": "ORGANISM",
+      "description": "A stem borer species that infests pearl millet",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "INSECTICIDE",
+      "type": "CONCEPT",
+      "description": "A chemical agent used to protect crops from borer infestation",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "DATE OF SOWING",
+      "type": "CONDITION",
+      "description": "A condition that influences the severity of yield loss in millet",
+      "source_id": "paper_4550"
+    },
+    {
+      "name": "NONPRODUCTIVE TILLERS",
+      "type": "TRAIT",
+      "description": "A trait associated with borer infestation in late-sown millet",
+      "source_id": "paper_4550"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STEM BORER",
+      "target": "SORGHUM",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "STEM BORER",
+      "target": "PEARL MILLET",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "CHILO PARTELLUS",
+      "target": "SORGHUM",
+      "description": "causes damage to",
+      "weight": "10",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "CHILO PARTELLUS",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "PHASED USE OF CARBOFURAN",
+      "target": "GRAIN YIELD",
+      "description": "used to estimate loss of",
+      "weight": "8",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "ARTIFICIAL INFESTATION",
+      "target": "GRAIN YIELD",
+      "description": "used to estimate loss of",
+      "weight": "8",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "CROP EMERGENCE",
+      "target": "GRAIN YIELD",
+      "description": "timing relative to this affects loss",
+      "weight": "7",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "CHILO PARTELLUS",
+      "target": "DEADHEARTS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "CHILO PARTELLUS",
+      "target": "STEM TUNNELING",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "CONIESTA IGNEFUSALIS",
+      "target": "PEARL MILLET",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "CONIESTA IGNEFUSALIS",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "INSECTICIDE",
+      "target": "PEARL MILLET",
+      "description": "protects",
+      "weight": "8",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "DATE OF SOWING",
+      "target": "GRAIN YIELD",
+      "description": "affects loss",
+      "weight": "7",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "DATE OF SOWING",
+      "target": "NONPRODUCTIVE TILLERS",
+      "description": "affects proportion of",
+      "weight": "7",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "ICRISAT CENTER IN INDIA",
+      "target": "SORGHUM",
+      "description": "location of study",
+      "weight": "8",
+      "source_id": "paper_4550"
+    },
+    {
+      "source": "ICRISAT SAHELIAN CENTER IN NIGER",
+      "target": "PEARL MILLET",
+      "description": "location of study",
+      "weight": "8",
+      "source_id": "paper_4550"
+    }
+  ]
+}

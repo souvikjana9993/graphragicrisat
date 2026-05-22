@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "The primary crop studied, including wild and cultivated accessions",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "GENOMIC RE-SEQUENCING",
+      "type": "METHOD",
+      "description": "The technique used to analyze the genetic diversity and structure of soybean accessions",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "GLYCINE SOJA",
+      "type": "ORGANISM",
+      "description": "Wild soybean selections used in the study",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "GLYCINE MAX",
+      "type": "ORGANISM",
+      "description": "Cultivated soybean varieties, including landraces and elites",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "SNP",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphisms identified to analyze genetic variation",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variation in genetic characteristics among the soybean accessions",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "GENETIC STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The distribution of genetic variation within and between populations of soybean",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "LINKAGE DISEQUILIBRIUM",
+      "type": "CONCEPT",
+      "description": "The non-random association of alleles at different loci",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "GEOGRAPHIC LOCATION",
+      "type": "LOCATION",
+      "description": "The spatial factor influencing the selection of lineages",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "DOMESTICATION",
+      "type": "CONCEPT",
+      "description": "The process of adapting wild plants for human use, leading to conserved regions in cultivated varieties",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "SOYSNP50K ISELECT BEADCHIP",
+      "type": "METHOD",
+      "description": "A genotyping tool used for comparison with the resequenced accessions",
+      "source_id": "paper_11806"
+    },
+    {
+      "name": "U.S.",
+      "type": "LOCATION",
+      "description": "The geographic region associated with the germplasm used for comparison",
+      "source_id": "paper_11806"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOMIC RE-SEQUENCING",
+      "target": "SOYBEAN",
+      "description": "used to analyze genetic characteristics of",
+      "weight": "10",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "GENOMIC RE-SEQUENCING",
+      "target": "SNP",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "GENOMIC RE-SEQUENCING",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to report",
+      "weight": "9",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "GENOMIC RE-SEQUENCING",
+      "target": "GENETIC STRUCTURE",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "GENOMIC RE-SEQUENCING",
+      "target": "LINKAGE DISEQUILIBRIUM",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "GLYCINE SOJA",
+      "description": "includes wild selections of",
+      "weight": "10",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "GLYCINE MAX",
+      "description": "includes cultivated varieties of",
+      "weight": "10",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "SNP",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to measure",
+      "weight": "8",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "GEOGRAPHIC LOCATION",
+      "target": "GENETIC STRUCTURE",
+      "description": "influences the selection of lineages",
+      "weight": "8",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "DOMESTICATION",
+      "target": "GLYCINE MAX",
+      "description": "process that led to conserved regions in",
+      "weight": "9",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "SOYSNP50K ISELECT BEADCHIP",
+      "target": "SOYBEAN",
+      "description": "used to genotype germplasm of",
+      "weight": "9",
+      "source_id": "paper_11806"
+    },
+    {
+      "source": "U.S.",
+      "target": "SOYSNP50K ISELECT BEADCHIP",
+      "description": "location of germplasm genotyped with",
+      "weight": "7",
+      "source_id": "paper_11806"
+    }
+  ]
+}

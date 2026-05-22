@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop for which a reference set was developed",
+      "source_id": "paper_4195"
+    },
+    {
+      "name": "PIGEONPEA COLLECTION",
+      "type": "CONCEPT",
+      "description": "The overall collection of pigeonpea accessions",
+      "source_id": "paper_4195"
+    },
+    {
+      "name": "REFERENCE SET",
+      "type": "CONCEPT",
+      "description": "A subset of 300 accessions developed for exploitation",
+      "source_id": "paper_4195"
+    },
+    {
+      "name": "GENOTYPIC DATA",
+      "type": "CONCEPT",
+      "description": "Data used to develop the reference set",
+      "source_id": "paper_4195"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "PIGEONPEA COLLECTION",
+      "description": "is the subject of",
+      "weight": "10",
+      "source_id": "paper_4195"
+    },
+    {
+      "source": "PIGEONPEA COLLECTION",
+      "target": "REFERENCE SET",
+      "description": "is the source of the subset",
+      "weight": "9",
+      "source_id": "paper_4195"
+    },
+    {
+      "source": "GENOTYPIC DATA",
+      "target": "REFERENCE SET",
+      "description": "was used to develop",
+      "weight": "8",
+      "source_id": "paper_4195"
+    }
+  ]
+}

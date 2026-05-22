@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Medium-duration pigeonpea (Cajanus cajan) hybrid",
+      "source_id": "paper_2036"
+    },
+    {
+      "name": "ICPH 2671",
+      "type": "CROP",
+      "description": "A specific pigeonpea hybrid evaluated for productivity and economic returns",
+      "source_id": "paper_2036"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the hybrid pigeonpea",
+      "source_id": "paper_2036"
+    },
+    {
+      "name": "ECONOMIC RETURNS",
+      "type": "CONCEPT",
+      "description": "The financial benefits including net returns and cost-benefit ratio of seed production",
+      "source_id": "paper_2036"
+    },
+    {
+      "name": "SEED PRODUCTION",
+      "type": "METHOD",
+      "description": "The process of producing hybrid seeds using AxR",
+      "source_id": "paper_2036"
+    },
+    {
+      "name": "ROW RATIO",
+      "type": "CONDITION",
+      "description": "The ratio of rows used in planting, specifically 4:1 and 3:1",
+      "source_id": "paper_2036"
+    },
+    {
+      "name": "PLANTING DISTANCE",
+      "type": "CONDITION",
+      "description": "The spacing between plants and rows, such as 75 cm x 30 cm",
+      "source_id": "paper_2036"
+    },
+    {
+      "name": "ICRISAT PATANCHERU",
+      "type": "LOCATION",
+      "description": "The research site located in Patancheru, A.R, India",
+      "source_id": "paper_2036"
+    },
+    {
+      "name": "CMS",
+      "type": "CONCEPT",
+      "description": "Cytoplasmic Male Sterility used in the development of the hybrid",
+      "source_id": "paper_2036"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICPH 2671",
+      "target": "PIGEONPEA",
+      "description": "is a hybrid of",
+      "weight": "10",
+      "source_id": "paper_2036"
+    },
+    {
+      "source": "SEED PRODUCTION",
+      "target": "ICPH 2671",
+      "description": "is the process used to produce",
+      "weight": "9",
+      "source_id": "paper_2036"
+    },
+    {
+      "source": "ROW RATIO",
+      "target": "YIELD",
+      "description": "influences the",
+      "weight": "8",
+      "source_id": "paper_2036"
+    },
+    {
+      "source": "PLANTING DISTANCE",
+      "target": "YIELD",
+      "description": "influences the",
+      "weight": "8",
+      "source_id": "paper_2036"
+    },
+    {
+      "source": "ROW RATIO",
+      "target": "ECONOMIC RETURNS",
+      "description": "influences the",
+      "weight": "8",
+      "source_id": "paper_2036"
+    },
+    {
+      "source": "PLANTING DISTANCE",
+      "target": "ECONOMIC RETURNS",
+      "description": "influences the",
+      "weight": "8",
+      "source_id": "paper_2036"
+    },
+    {
+      "source": "ICPH 2671",
+      "target": "ICRISAT PATANCHERU",
+      "description": "was studied at",
+      "weight": "7",
+      "source_id": "paper_2036"
+    },
+    {
+      "source": "CMS",
+      "target": "PIGEONPEA",
+      "description": "is the basis for the hybrid",
+      "weight": "7",
+      "source_id": "paper_2036"
+    }
+  ]
+}

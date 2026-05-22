@@ -1,0 +1,225 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A cereal crop grown in sole and intercropping systems in upland conditions",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A legume crop grown in sole and intercropping systems in upland conditions",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop grown in sole and intercropping systems in upland conditions",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "TOTAL DRY MATTER",
+      "type": "TRAIT",
+      "description": "The overall biomass production of the crop, including leaf and stem",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "LAI",
+      "type": "TRAIT",
+      "description": "Leaf Area Index, which influences light interception and dry matter production",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "LIGHT INTERCEPTION",
+      "type": "TRAIT",
+      "description": "The process of capturing light for photosynthesis",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of agricultural production harvested per unit area",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "LER",
+      "type": "CONCEPT",
+      "description": "Land Equivalent Ratio, a measure of the efficiency of intercropping systems",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "ROOT LENGTH",
+      "type": "TRAIT",
+      "description": "The physical length of the crop's root system",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously on the same piece of land",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "SOLE CROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing a single crop on a piece of land",
+      "source_id": "paper_2529"
+    },
+    {
+      "name": "UPLAND",
+      "type": "CONDITION",
+      "description": "The environmental condition of the land where the crops are grown",
+      "source_id": "paper_2529"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "INTERCROPPING",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "INTERCROPPING",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "INTERCROPPING",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "RICE",
+      "target": "SOLE CROPPING",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "SOLE CROPPING",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SOLE CROPPING",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "RICE",
+      "target": "TOTAL DRY MATTER",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "TOTAL DRY MATTER",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "TOTAL DRY MATTER",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "LAI",
+      "description": "influenced by",
+      "weight": "9",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "LAI",
+      "description": "influenced by",
+      "weight": "9",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "LAI",
+      "target": "LIGHT INTERCEPTION",
+      "description": "leads to",
+      "weight": "10",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "RICE",
+      "target": "YIELD",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "YIELD",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "YIELD",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "LER",
+      "description": "evaluated by",
+      "weight": "10",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "RICE",
+      "target": "ROOT LENGTH",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "ROOT LENGTH",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "UPLAND",
+      "target": "RICE",
+      "description": "environmental condition for",
+      "weight": "9",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "UPLAND",
+      "target": "SOYBEAN",
+      "description": "environmental condition for",
+      "weight": "9",
+      "source_id": "paper_2529"
+    },
+    {
+      "source": "UPLAND",
+      "target": "PIGEONPEA",
+      "description": "environmental condition for",
+      "weight": "9",
+      "source_id": "paper_2529"
+    }
+  ]
+}

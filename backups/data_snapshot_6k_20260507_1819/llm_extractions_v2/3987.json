@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The plant species used in the study",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "IR 26",
+      "type": "CROP",
+      "description": "The specific variety of rice used in the greenhouse experiment",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "NITROGEN PERCENT",
+      "type": "TRAIT",
+      "description": "The percentage of nitrogen content in the rice plant",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "NITROGEN UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of nitrogen absorbed by the rice plant",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "DRY-MATTER YIELD",
+      "type": "TRAIT",
+      "description": "The total dry weight of the rice plant",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "ANAEROBIC INCUBATION",
+      "type": "METHOD",
+      "description": "A method to determine available nitrogen using specific temperatures and durations",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "CHEMICAL INDEXES",
+      "type": "METHOD",
+      "description": "Seven chemical indicators including Organic C and total N used to assess nitrogen availability",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "SOIL NITROGEN AVAILABILITY",
+      "type": "CONCEPT",
+      "description": "The capacity of wetland rice soils to supply nitrogen to plants",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "SUBMERGED CONDITIONS",
+      "type": "CONDITION",
+      "description": "The water-saturated state of the pots in which rice was grown",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "UNFERTILIZED SOILS",
+      "type": "CONDITION",
+      "description": "Soils that have not been treated with nitrogen fertilizer",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "CONDITION",
+      "description": "The controlled environment where the rice plants were grown",
+      "source_id": "paper_3987"
+    },
+    {
+      "name": "PHILIPPINES",
+      "type": "LOCATION",
+      "description": "The origin of the 39 wetland rice soils used in the study",
+      "source_id": "paper_3987"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ANAEROBIC INCUBATION",
+      "target": "SOIL NITROGEN AVAILABILITY",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "CHEMICAL INDEXES",
+      "target": "SOIL NITROGEN AVAILABILITY",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "SOIL NITROGEN AVAILABILITY",
+      "target": "NITROGEN UPTAKE",
+      "description": "positively correlated with",
+      "weight": "10",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "SOIL NITROGEN AVAILABILITY",
+      "target": "NITROGEN PERCENT",
+      "description": "positively correlated with",
+      "weight": "8",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "SOIL NITROGEN AVAILABILITY",
+      "target": "DRY-MATTER YIELD",
+      "description": "positively correlated with",
+      "weight": "6",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "RICE",
+      "target": "SUBMERGED CONDITIONS",
+      "description": "grown under",
+      "weight": "9",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "RICE",
+      "target": "GREENHOUSE",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "IR 26",
+      "target": "RICE",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "PHILIPPINES",
+      "target": "RICE",
+      "description": "source of soils for",
+      "weight": "8",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "NITROGEN UPTAKE",
+      "target": "SOIL NITROGEN AVAILABILITY",
+      "description": "better criterion for evaluating performance in",
+      "weight": "9",
+      "source_id": "paper_3987"
+    },
+    {
+      "source": "UNFERTILIZED SOILS",
+      "target": "NITROGEN UPTAKE",
+      "description": "context for evaluating nitrogen availability",
+      "weight": "8",
+      "source_id": "paper_3987"
+    }
+  ]
+}

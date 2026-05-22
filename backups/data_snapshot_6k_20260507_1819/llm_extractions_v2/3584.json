@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Unshelled groundnuts stored in sacks for study",
+      "source_id": "paper_3584"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "State in India where the study was conducted",
+      "source_id": "paper_3584"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where the study was conducted",
+      "source_id": "paper_3584"
+    },
+    {
+      "name": "WAREHOUSE STORAGE",
+      "type": "CONDITION",
+      "description": "Storage of groundnuts in an oil mill warehouse",
+      "source_id": "paper_3584"
+    },
+    {
+      "name": "INSECTS",
+      "type": "ORGANISM",
+      "description": "Insect populations monitored in the groundnut samples",
+      "source_id": "paper_3584"
+    },
+    {
+      "name": "WEIGHT LOSS",
+      "type": "TRAIT",
+      "description": "Total dry weight loss of the groundnut kernels",
+      "source_id": "paper_3584"
+    },
+    {
+      "name": "CARYEDON SERRATUS",
+      "type": "ORGANISM",
+      "description": "Bruchid insect species responsible for nearly all the damage to groundnuts",
+      "source_id": "paper_3584"
+    },
+    {
+      "name": "LOSS MEASUREMENT",
+      "type": "METHOD",
+      "description": "The process of assessing damage and calculating dry weight loss",
+      "source_id": "paper_3584"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "ANDHRA PRADESH",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_3584"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3584"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "WAREHOUSE STORAGE",
+      "description": "stored in",
+      "weight": "9",
+      "source_id": "paper_3584"
+    },
+    {
+      "source": "INSECTS",
+      "target": "GROUNDNUT",
+      "description": "infest and damage",
+      "weight": "9",
+      "source_id": "paper_3584"
+    },
+    {
+      "source": "CARYEDON SERRATUS",
+      "target": "INSECTS",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_3584"
+    },
+    {
+      "source": "CARYEDON SERRATUS",
+      "target": "WEIGHT LOSS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3584"
+    },
+    {
+      "source": "LOSS MEASUREMENT",
+      "target": "WEIGHT LOSS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3584"
+    },
+    {
+      "source": "LOSS MEASUREMENT",
+      "target": "GROUNDNUT",
+      "description": "assesses damage to",
+      "weight": "8",
+      "source_id": "paper_3584"
+    }
+  ]
+}

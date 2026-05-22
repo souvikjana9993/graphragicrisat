@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cultivated chickpea (C. arietinum) used for genome analysis and breeding",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "CICER SPECIES",
+      "type": "ORGANISM",
+      "description": "Various species of the genus Cicer used to generate ESTs",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "EST",
+      "type": "GENE_MARKER",
+      "description": "Expressed Sequence Tags used for in silico identification of SNPs",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "SNP",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphisms identified for genotyping and breeding",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "BIOINFORMATIC TOOLS",
+      "type": "METHOD",
+      "description": "Tools developed at ICRISAT for the identification of SNPs",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "Method used to group sequences into clusters",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "CONTIGS",
+      "type": "CONCEPT",
+      "description": "Assembled sequences used to identify putative SNPs",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "CAPS ASSAYS",
+      "type": "METHOD",
+      "description": "Cleaved Amplified Polymorphic Sequence assays for SNP genotyping",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "SNP2CAPS PROGRAM",
+      "type": "METHOD",
+      "description": "Program used to identify restriction enzyme sites for CAPS assays",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "PRIMER PAIRS",
+      "type": "METHOD",
+      "description": "Designed sequences used to amplify specific contigs containing SNPs",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "RESTRICTION ENZYMES",
+      "type": "METHOD",
+      "description": "Enzymes used to create recognition sites in CAPS assays",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "HPC",
+      "type": "CONCEPT",
+      "description": "High Performance Computer used for bioinformatics analysis pipelines",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "SNP GENOTYPING",
+      "type": "METHOD",
+      "description": "The process of determining the genetic makeup of an organism using SNPs",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "GENOME ANALYSIS",
+      "type": "CONCEPT",
+      "description": "The study of the complete set of DNA in an organism",
+      "source_id": "paper_2491"
+    },
+    {
+      "name": "BREEDING",
+      "type": "CONCEPT",
+      "description": "The process of improving crop traits through genetic selection",
+      "source_id": "paper_2491"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CICER SPECIES",
+      "target": "EST",
+      "description": "Source of",
+      "weight": "10",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "EST",
+      "target": "SNP",
+      "description": "Used for in silico identification of",
+      "weight": "9",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "BIOINFORMATIC TOOLS",
+      "target": "SNP",
+      "description": "Used to identify",
+      "weight": "9",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "BIOINFORMATIC TOOLS",
+      "description": "Developed",
+      "weight": "10",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "SNP",
+      "description": "Used to identify",
+      "weight": "7",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "CONTIGS",
+      "target": "SNP",
+      "description": "Contain",
+      "weight": "8",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "SNP",
+      "target": "CAPS ASSAYS",
+      "description": "Used to develop",
+      "weight": "9",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "SNP2CAPS PROGRAM",
+      "target": "CAPS ASSAYS",
+      "description": "Used to identify restriction sites for",
+      "weight": "9",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "RESTRICTION ENZYMES",
+      "target": "CAPS ASSAYS",
+      "description": "Required for",
+      "weight": "10",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "HPC",
+      "target": "BIOINFORMATIC TOOLS",
+      "description": "Hosts the analysis pipelines",
+      "weight": "8",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "HPC",
+      "description": "Houses the",
+      "weight": "10",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "CAPS ASSAYS",
+      "target": "SNP GENOTYPING",
+      "description": "Method for",
+      "weight": "10",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "SNP",
+      "target": "GENOME ANALYSIS",
+      "description": "Used for",
+      "weight": "9",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "SNP",
+      "target": "BREEDING",
+      "description": "Used for",
+      "weight": "9",
+      "source_id": "paper_2491"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SNP",
+      "description": "Target for SNP development",
+      "weight": "10",
+      "source_id": "paper_2491"
+    }
+  ]
+}

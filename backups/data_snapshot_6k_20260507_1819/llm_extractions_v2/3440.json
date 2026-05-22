@@ -1,0 +1,235 @@
+{
+  "entities": [
+    {
+      "name": "MUNGBEAN",
+      "type": "CROP",
+      "description": "A short-season legume crop (Vigna radiata) used in sequential and relay cropping systems.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "CASTOR",
+      "type": "CROP",
+      "description": "A crop grown after mungbean or as a sole crop in the study.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "HORSEGRAM",
+      "type": "CROP",
+      "description": "A crop (Macrotyloma uniflorum) produced after an early pearl millet crop.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A crop used in sole cropping and intercropping systems.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A crop used in ratoon and intercropping systems.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A crop used in intercropping systems.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A crop used in intercropping systems.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "SEQUENTIAL CROPPING",
+      "type": "METHOD",
+      "description": "A cropping system where crops are grown one after another in sequence.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "RELAY CROPPING",
+      "type": "METHOD",
+      "description": "A cropping system where a second crop is sown before the first crop is harvested.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "RATOONING",
+      "type": "METHOD",
+      "description": "A cropping system where a crop is harvested and the regrowth from the stubble is used for a second crop.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "A cropping system where two or more crops are grown simultaneously on the same field.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "ALFISOLS",
+      "type": "CONDITION",
+      "description": "Medium-deep red soils characteristic of the Indian Semi-arid Tropics.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "CROPPING INTENSITY",
+      "type": "CONCEPT",
+      "description": "The number of crops grown per unit area in a year.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "PROFIT",
+      "type": "TRAIT",
+      "description": "The economic gain derived from different cropping systems.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of agricultural production per unit area.",
+      "source_id": "paper_3440"
+    },
+    {
+      "name": "INDIAN SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted.",
+      "source_id": "paper_3440"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SEQUENTIAL CROPPING",
+      "target": "MUNGBEAN",
+      "description": "used to grow",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "SEQUENTIAL CROPPING",
+      "target": "CASTOR",
+      "description": "used to grow",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "MUNGBEAN",
+      "description": "used to grow",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "CASTOR",
+      "description": "used to grow",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "RATOONING",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PEARL MILLET",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "GROUNDNUT",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "SORGHUM",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PIGEONPEA",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "ALFISOLS",
+      "target": "CROPPING INTENSITY",
+      "description": "is the soil context for increasing",
+      "weight": "7",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "INDIAN SEMI-ARID TROPICS",
+      "target": "ALFISOLS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PROFIT",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "RELAY CROPPING",
+      "target": "PROFIT",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "SEQUENTIAL CROPPING",
+      "target": "PROFIT",
+      "description": "decreases",
+      "weight": "7",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "RATOONING",
+      "target": "YIELD",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "HORSEGRAM",
+      "target": "PEARL MILLET",
+      "description": "grown after",
+      "weight": "8",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "ALFISOLS",
+      "target": "INTERCROPPING",
+      "description": "best suited for",
+      "weight": "9",
+      "source_id": "paper_3440"
+    },
+    {
+      "source": "ALFISOLS",
+      "target": "RATOONING",
+      "description": "not suitable for",
+      "weight": "9",
+      "source_id": "paper_3440"
+    }
+  ]
+}

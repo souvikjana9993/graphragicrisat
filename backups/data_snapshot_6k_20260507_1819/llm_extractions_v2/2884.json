@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "EVAPORATION",
+      "type": "CONCEPT",
+      "description": "The process of water transferring from the land surface to the atmosphere as vapor",
+      "source_id": "paper_2884"
+    },
+    {
+      "name": "MICROMETEOROLOGICAL MEASUREMENTS",
+      "type": "METHOD",
+      "description": "Techniques used to measure atmospheric and surface exchange processes",
+      "source_id": "paper_2884"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "The period of the year characterized by little to no rainfall",
+      "source_id": "paper_2884"
+    },
+    {
+      "name": "FALLOW SAVANNAH",
+      "type": "CONCEPT",
+      "description": "Uncultivated grassland land cover",
+      "source_id": "paper_2884"
+    },
+    {
+      "name": "SAHEL",
+      "type": "LOCATION",
+      "description": "A biogeographic zone of transition in Africa",
+      "source_id": "paper_2884"
+    },
+    {
+      "name": "SURFACE CONDUCTANCE",
+      "type": "CONCEPT",
+      "description": "A measure of the ease with which water vapor moves from the soil or vegetation to the atmosphere",
+      "source_id": "paper_2884"
+    },
+    {
+      "name": "EMPIRICAL FUNCTIONS",
+      "type": "METHOD",
+      "description": "Mathematical models based on observed data",
+      "source_id": "paper_2884"
+    },
+    {
+      "name": "SOLAR RADIATION",
+      "type": "CONDITION",
+      "description": "The energy emitted by the sun reaching the surface",
+      "source_id": "paper_2884"
+    },
+    {
+      "name": "HUMIDITY DEFICIT",
+      "type": "CONDITION",
+      "description": "The difference between the actual vapor pressure and the saturation vapor pressure",
+      "source_id": "paper_2884"
+    },
+    {
+      "name": "STANDARD CLIMATE STATION",
+      "type": "METHOD",
+      "description": "A facility used for collecting standardized meteorological data",
+      "source_id": "paper_2884"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MICROMETEOROLOGICAL MEASUREMENTS",
+      "target": "EVAPORATION",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_2884"
+    },
+    {
+      "source": "EVAPORATION",
+      "target": "DRY SEASON",
+      "description": "measured during",
+      "weight": "9",
+      "source_id": "paper_2884"
+    },
+    {
+      "source": "EVAPORATION",
+      "target": "FALLOW SAVANNAH",
+      "description": "measured from",
+      "weight": "9",
+      "source_id": "paper_2884"
+    },
+    {
+      "source": "FALLOW SAVANNAH",
+      "target": "SAHEL",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2884"
+    },
+    {
+      "source": "SURFACE CONDUCTANCE",
+      "target": "EMPIRICAL FUNCTIONS",
+      "description": "modelled using",
+      "weight": "8",
+      "source_id": "paper_2884"
+    },
+    {
+      "source": "SURFACE CONDUCTANCE",
+      "target": "SOLAR RADIATION",
+      "description": "no significant correlation with",
+      "weight": "4",
+      "source_id": "paper_2884"
+    },
+    {
+      "source": "SURFACE CONDUCTANCE",
+      "target": "HUMIDITY DEFICIT",
+      "description": "weak correlation with",
+      "weight": "3",
+      "source_id": "paper_2884"
+    },
+    {
+      "source": "SURFACE CONDUCTANCE",
+      "target": "EVAPORATION",
+      "description": "used to estimate",
+      "weight": "8",
+      "source_id": "paper_2884"
+    },
+    {
+      "source": "STANDARD CLIMATE STATION",
+      "target": "EVAPORATION",
+      "description": "provided data to estimate",
+      "weight": "7",
+      "source_id": "paper_2884"
+    }
+  ]
+}

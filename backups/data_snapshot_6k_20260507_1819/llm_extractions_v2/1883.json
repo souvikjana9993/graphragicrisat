@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop studied for production costs and profitability in Malawi",
+      "source_id": "paper_1883"
+    },
+    {
+      "name": "CHITEDZE AGRICULTURAL RESEARCH STATION",
+      "type": "LOCATION",
+      "description": "The research station where the experiment was conducted",
+      "source_id": "paper_1883"
+    },
+    {
+      "name": "LILONGWE",
+      "type": "LOCATION",
+      "description": "The city near the research station in Malawi",
+      "source_id": "paper_1883"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "The country where the groundnut production study was conducted",
+      "source_id": "paper_1883"
+    },
+    {
+      "name": "PRODUCTION COSTS",
+      "type": "CONCEPT",
+      "description": "The expenses associated with groundnut production at different input levels",
+      "source_id": "paper_1883"
+    },
+    {
+      "name": "PROFITABILITY",
+      "type": "CONCEPT",
+      "description": "The measure of financial gain from groundnut production",
+      "source_id": "paper_1883"
+    },
+    {
+      "name": "INPUT LEVELS",
+      "type": "CONDITION",
+      "description": "The three levels of inputs (low, medium, and high) used in the experiment",
+      "source_id": "paper_1883"
+    },
+    {
+      "name": "NET OUTPUT",
+      "type": "TRAIT",
+      "description": "The amount of groundnut produced per hectare",
+      "source_id": "paper_1883"
+    },
+    {
+      "name": "NET BENEFITS",
+      "type": "CONCEPT",
+      "description": "The financial return per hectare after costs",
+      "source_id": "paper_1883"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "MALAWI",
+      "description": "produced in",
+      "weight": "10",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "CHITEDZE AGRICULTURAL RESEARCH STATION",
+      "description": "experimented at",
+      "weight": "10",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "CHITEDZE AGRICULTURAL RESEARCH STATION",
+      "target": "LILONGWE",
+      "description": "located near",
+      "weight": "9",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "LILONGWE",
+      "target": "MALAWI",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "PRODUCTION COSTS",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "PROFITABILITY",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "INPUT LEVELS",
+      "target": "PRODUCTION COSTS",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "INPUT LEVELS",
+      "target": "NET OUTPUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "INPUT LEVELS",
+      "target": "NET BENEFITS",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "PRODUCTION COSTS",
+      "target": "PROFITABILITY",
+      "description": "determines",
+      "weight": "10",
+      "source_id": "paper_1883"
+    },
+    {
+      "source": "NET OUTPUT",
+      "target": "NET BENEFITS",
+      "description": "determines",
+      "weight": "10",
+      "source_id": "paper_1883"
+    }
+  ]
+}

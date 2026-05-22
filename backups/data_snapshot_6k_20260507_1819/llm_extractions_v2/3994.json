@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "WALKLEY-BLACK METHOD",
+      "type": "METHOD",
+      "description": "A modified chemical method used for the simultaneous determination of organic carbon and potentially mineralizable nitrogen in soils",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "The carbon content of organic matter in soil, determined via oxidation",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "POTENTIALLY MINERALIZABLE NITROGEN",
+      "type": "CONCEPT",
+      "description": "The nitrogen in soil that can be converted to ammonium through oxidative action",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop associated with the tropical soils analyzed in the study",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "TROPICAL",
+      "type": "LOCATION",
+      "description": "The climatic region characterizing the soils used in the study",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONCEPT",
+      "description": "The medium analyzed for organic carbon and nitrogen content",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "ACID DICHROMATE REAGENT",
+      "type": "METHOD",
+      "description": "A reagent used to oxidize organic matter in soil by heat of dilution",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "FERROUS SULFATE SOLUTION",
+      "type": "METHOD",
+      "description": "A standard solution used for titration to avoid ammonium contamination",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "AMMONIUM",
+      "type": "CONCEPT",
+      "description": "The NH4+ released during the oxidative action of acid dichromate",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "NAOH SOLUTION",
+      "type": "METHOD",
+      "description": "A 50% solution used for distilling ammonium from the soil aliquot",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "TOTAL NITROGEN",
+      "type": "CONCEPT",
+      "description": "The total nitrogen content in the soil, showing high correlation with potentially mineralizable nitrogen",
+      "source_id": "paper_3994"
+    },
+    {
+      "name": "WATERLOGGED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions under which ammonium production is compared",
+      "source_id": "paper_3994"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WALKLEY-BLACK METHOD",
+      "target": "ORGANIC CARBON",
+      "description": "determines",
+      "weight": "10",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "WALKLEY-BLACK METHOD",
+      "target": "POTENTIALLY MINERALIZABLE NITROGEN",
+      "description": "determines",
+      "weight": "10",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "WALKLEY-BLACK METHOD",
+      "target": "SOIL",
+      "description": "is applied to",
+      "weight": "9",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "ACID DICHROMATE REAGENT",
+      "target": "ORGANIC CARBON",
+      "description": "oxidizes",
+      "weight": "10",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "ACID DICHROMATE REAGENT",
+      "target": "AMMONIUM",
+      "description": "releases",
+      "weight": "10",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "FERROUS SULFATE SOLUTION",
+      "target": "WALKLEY-BLACK METHOD",
+      "description": "used for titration in",
+      "weight": "8",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "NAOH SOLUTION",
+      "target": "AMMONIUM",
+      "description": "used for distillation of",
+      "weight": "9",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "POTENTIALLY MINERALIZABLE NITROGEN",
+      "target": "ORGANIC CARBON",
+      "description": "positively correlated with",
+      "weight": "10",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "POTENTIALLY MINERALIZABLE NITROGEN",
+      "target": "TOTAL NITROGEN",
+      "description": "positively correlated with",
+      "weight": "10",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "POTENTIALLY MINERALIZABLE NITROGEN",
+      "target": "WATERLOGGED CONDITIONS",
+      "description": "correlated with ammonium produced under",
+      "weight": "9",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "RICE",
+      "target": "SOIL",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_3994"
+    },
+    {
+      "source": "TROPICAL",
+      "target": "SOIL",
+      "description": "describes the location of",
+      "weight": "8",
+      "source_id": "paper_3994"
+    }
+  ]
+}

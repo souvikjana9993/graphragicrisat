@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "ACACIA ALBIDA",
+      "type": "ORGANISM",
+      "description": "A tree species studied for its effects on the growth and yield of cereal crops",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal crop evaluated for yield and growth in relation to distance from Acacia albida",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop evaluated for yield and growth in relation to distance from Acacia albida",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "TEFF",
+      "type": "CROP",
+      "description": "A cereal crop evaluated for yield and growth in relation to distance from Acacia albida",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the crops, measured as a response to tree distance and shading",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The developmental progress of the cereal crops",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "DISTANCE FROM TREES",
+      "type": "CONDITION",
+      "description": "The radial distance from Acacia albida trees, ranging from 1.5m to 12.5m",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "SHADING EFFECT",
+      "type": "CONDITION",
+      "description": "The reduction of sunlight reaching crops due to the canopy of Acacia albida",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "Soil components that may contribute to increased crop yields near tree canopies",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "SOIL NUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Nutrients in the soil that may contribute to increased crop yields near tree canopies",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "LOPPING",
+      "type": "METHOD",
+      "description": "The practice of pruning tree branches to reduce shading effects before sowing",
+      "source_id": "paper_12914"
+    },
+    {
+      "name": "COMPATIBILITY",
+      "type": "CONCEPT",
+      "description": "The degree to which a crop can be successfully integrated with Acacia albida under shade conditions",
+      "source_id": "paper_12914"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ACACIA ALBIDA",
+      "target": "WHEAT",
+      "description": "Affects growth and yield based on distance and shading",
+      "weight": "8",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "ACACIA ALBIDA",
+      "target": "MAIZE",
+      "description": "Affects growth and yield based on distance and shading",
+      "weight": "8",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "ACACIA ALBIDA",
+      "target": "TEFF",
+      "description": "Affects growth and yield based on distance and shading",
+      "weight": "8",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "DISTANCE FROM TREES",
+      "target": "YIELD",
+      "description": "Determines the level of yield increments or reductions",
+      "weight": "9",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "SHADING EFFECT",
+      "target": "YIELD",
+      "description": "Causes yield reduction as distance from the tree decreases",
+      "weight": "8",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "ORGANIC MATTER",
+      "target": "YIELD",
+      "description": "Associated with yield gains near tree canopies",
+      "weight": "7",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "SOIL NUTRIENTS",
+      "target": "YIELD",
+      "description": "Associated with yield gains near tree canopies",
+      "weight": "7",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "LOPPING",
+      "target": "SHADING EFFECT",
+      "description": "Used to minimize the negative impact of shading",
+      "weight": "9",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "LOPPING",
+      "target": "TEFF",
+      "description": "Required before sowing to minimize shading effects",
+      "weight": "8",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "LOPPING",
+      "target": "MAIZE",
+      "description": "Required before sowing to minimize shading effects",
+      "weight": "8",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "WHEAT",
+      "target": "COMPATIBILITY",
+      "description": "Identified as the most compatible crop with Acacia albida",
+      "weight": "7",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "MAIZE",
+      "target": "COMPATIBILITY",
+      "description": "Identified as compatible with Acacia albida, following wheat",
+      "weight": "6",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "TEFF",
+      "target": "COMPATIBILITY",
+      "description": "Identified as highly susceptible to shading and less compatible",
+      "weight": "6",
+      "source_id": "paper_12914"
+    },
+    {
+      "source": "ETHIOPIA",
+      "target": "ACACIA ALBIDA",
+      "description": "Location where the study on Acacia albida was performed",
+      "weight": "5",
+      "source_id": "paper_12914"
+    }
+  ]
+}

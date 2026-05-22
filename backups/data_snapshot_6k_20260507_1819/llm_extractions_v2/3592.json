@@ -1,0 +1,170 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop [Cajanus cajan (L.) Millsp.] evaluated for its ability to fix atmospheric nitrogen.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "N2-FIXATION",
+      "type": "TRAIT",
+      "description": "The biological process of converting atmospheric nitrogen (N2) into a form usable by plants.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "15N ISOTOPE DILUTION TECHNIQUE",
+      "type": "METHOD",
+      "description": "A method using 15N-labelled fertilizer to measure the proportion of nitrogen derived from the atmosphere.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A type of clay-rich soil used as the field environment for the experiments.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "ICRISAT CENTER, PATANCHERU, INDIA",
+      "type": "LOCATION",
+      "description": "The geographical location where the field experiments were conducted.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "NODULE-EATING INSECT",
+      "type": "ORGANISM",
+      "description": "An organism that feeds on root nodules, potentially impacting the nitrogen fixation process.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "CONCEPT",
+      "description": "The agricultural practice of growing two or more crops in the same field simultaneously.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "Grain crops used in intercropping with pigeonpea and as subsequent crops to measure residual nitrogen.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A non-nitrogen-fixing cereal crop [Sorghum bicolor (L.) Moench] used as a control in the fixation experiments.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "DIFFERENCE METHOD",
+      "type": "METHOD",
+      "description": "A calculation approach used to estimate nitrogen fixation by comparing the target crop with a non-fixing control.",
+      "source_id": "paper_3592"
+    },
+    {
+      "name": "RESIDUAL EFFECT",
+      "type": "CONCEPT",
+      "description": "The benefit of nitrogen fixed by a previous crop that remains available for a succeeding crop.",
+      "source_id": "paper_3592"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "N2-FIXATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "15N ISOTOPE DILUTION TECHNIQUE",
+      "target": "N2-FIXATION",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "15N ISOTOPE DILUTION TECHNIQUE",
+      "target": "PIGEONPEA",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "PIGEONPEA",
+      "description": "growth medium for",
+      "weight": "7",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "ICRISAT CENTER, PATANCHERU, INDIA",
+      "target": "PIGEONPEA",
+      "description": "location of growth for",
+      "weight": "8",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "NODULE-EATING INSECT",
+      "target": "N2-FIXATION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "N2-FIXATION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PIGEONPEA",
+      "description": "involves",
+      "weight": "9",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "CEREALS",
+      "description": "involves",
+      "weight": "9",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "N2-FIXATION",
+      "description": "used as control for",
+      "weight": "8",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "DIFFERENCE METHOD",
+      "target": "N2-FIXATION",
+      "description": "calculates",
+      "weight": "9",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "CEREALS",
+      "description": "provides residual nitrogen to",
+      "weight": "8",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "RESIDUAL EFFECT",
+      "target": "CEREALS",
+      "description": "benefits",
+      "weight": "9",
+      "source_id": "paper_3592"
+    },
+    {
+      "source": "RESIDUAL EFFECT",
+      "target": "PIGEONPEA",
+      "description": "originates from",
+      "weight": "9",
+      "source_id": "paper_3592"
+    }
+  ]
+}

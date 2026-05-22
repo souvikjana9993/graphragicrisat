@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "NITROGEN TRANSFORMATIONS",
+      "type": "CONCEPT",
+      "description": "The overall process of nitrogen cycling including mineralization, nitrification, and nitrous oxide production",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The process of converting organic nitrogen to inorganic forms",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological oxidation of ammonia to nitrite and then to nitrate",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "NITROUS OXIDE PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of generating N2O gas from nitrogen transformations",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "ACID FOREST FLOOR SOILS",
+      "type": "CONDITION",
+      "description": "Soils collected from climax forest sites characterized by low pH",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "BLACKHAWK ISLAND",
+      "type": "LOCATION",
+      "description": "The specific site in Wisconsin where soil samples were collected",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "WISCONSIN",
+      "type": "LOCATION",
+      "description": "The US state where the study sites are located",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "SOIL ACIDITY",
+      "type": "CONDITION",
+      "description": "The pH level of the soil, ranging from 3.9 to 5.1",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "ORGANIC MATTER CONCENTRATIONS",
+      "type": "CONDITION",
+      "description": "The percentage of organic matter in the soil, ranging from 2.4 to 59.0 percent",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "AEROBIC INCUBATION",
+      "type": "METHOD",
+      "description": "The process of incubating soil samples aerobically for 4 weeks at 30°C",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONDITION",
+      "description": "A chemical treatment added to the soil as KH2PO4",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "CALCIUM CARBONATE",
+      "type": "CONDITION",
+      "description": "A chemical treatment used for liming the soil",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "AMMONIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of converting organic nitrogen into ammonia",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "SM ALFISOL",
+      "type": "CONDITION",
+      "description": "A specific type of soil where nitrification was nearly complete",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "HISTOSOL",
+      "type": "CONDITION",
+      "description": "A specific type of soil where nitrification was almost nonexistent",
+      "source_id": "paper_4884"
+    },
+    {
+      "name": "NITROUS OXIDE EMISSION RATES",
+      "type": "CONCEPT",
+      "description": "The rate at which N2O is released from the soil",
+      "source_id": "paper_4884"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN TRANSFORMATIONS",
+      "target": "MINERALIZATION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "NITROGEN TRANSFORMATIONS",
+      "target": "NITRIFICATION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "NITROGEN TRANSFORMATIONS",
+      "target": "NITROUS OXIDE PRODUCTION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "ACID FOREST FLOOR SOILS",
+      "target": "BLACKHAWK ISLAND",
+      "description": "collected from",
+      "weight": "9",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "BLACKHAWK ISLAND",
+      "target": "WISCONSIN",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "AEROBIC INCUBATION",
+      "target": "NITROGEN TRANSFORMATIONS",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "AMMONIFICATION",
+      "description": "had little effect on",
+      "weight": "3",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "NITRIFICATION",
+      "description": "had little effect on",
+      "weight": "3",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "CALCIUM CARBONATE",
+      "target": "AMMONIFICATION",
+      "description": "enhanced",
+      "weight": "8",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "CALCIUM CARBONATE",
+      "target": "NITRIFICATION",
+      "description": "enhanced",
+      "weight": "8",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "NITROUS OXIDE EMISSION RATES",
+      "target": "NITRIFICATION",
+      "description": "related to",
+      "weight": "7",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "CALCIUM CARBONATE",
+      "target": "NITROUS OXIDE EMISSION RATES",
+      "description": "increased",
+      "weight": "8",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "NITRIFICATION",
+      "target": "SM ALFISOL",
+      "description": "nearly complete in",
+      "weight": "7",
+      "source_id": "paper_4884"
+    },
+    {
+      "source": "NITRIFICATION",
+      "target": "HISTOSOL",
+      "description": "almost nonexistent in",
+      "weight": "7",
+      "source_id": "paper_4884"
+    }
+  ]
+}

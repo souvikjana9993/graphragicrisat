@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The wearing away of topsoil by water or wind, identified as a primary problem in the central highlands of Ethiopia",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "A condition of water deficiency in soil that affects plant growth and productivity",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "SOIL AND WATER CONSERVATION",
+      "type": "METHOD",
+      "description": "A set of practices implemented by the Ethiopian government and communities to reduce soil loss and enhance water availability",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "WATER HARVESTING",
+      "type": "METHOD",
+      "description": "The process of collecting and storing rainwater for later use to mitigate moisture stress",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "RUNOFF",
+      "type": "CONCEPT",
+      "description": "The portion of precipitation that flows over the land surface, measured at plot and watershed scales",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "SEDIMENT YIELD",
+      "type": "CONCEPT",
+      "description": "The total amount of soil and organic matter transported from a land area, which is reduced by conservation practices",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "SUSPENDED SEDIMENT YIELD",
+      "type": "CONCEPT",
+      "description": "The specific measurement of sediment carried in suspension within runoff water",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "CENTRAL HIGHLANDS OF ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The specific geographic region where the land use and conservation study was conducted",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "EROSION PLOT EXPERIMENTS",
+      "type": "METHOD",
+      "description": "A monitoring method used to collect daily data on water and sediment yield at a small scale",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "HYDROLOGICAL STATIONS",
+      "type": "METHOD",
+      "description": "Facilities used to monitor water and sediment yield at a larger watershed scale",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "LAND USE",
+      "type": "CONCEPT",
+      "description": "The management and modification of land for various purposes, which impacts runoff and sediment yield",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "PLOT SCALE",
+      "type": "CONCEPT",
+      "description": "A small-scale spatial unit used for detailed monitoring of erosion and runoff",
+      "source_id": "paper_12125"
+    },
+    {
+      "name": "WATERSHED SCALE",
+      "type": "CONCEPT",
+      "description": "A large-scale spatial unit encompassing a drainage basin used to assess the overall impact of conservation measures",
+      "source_id": "paper_12125"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL AND WATER CONSERVATION",
+      "target": "SOIL EROSION",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION",
+      "target": "RUNOFF",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION",
+      "target": "SEDIMENT YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "WATER HARVESTING",
+      "target": "SOIL EROSION",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "WATER HARVESTING",
+      "target": "MOISTURE STRESS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "LAND USE",
+      "target": "RUNOFF",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "LAND USE",
+      "target": "SEDIMENT YIELD",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "EROSION PLOT EXPERIMENTS",
+      "target": "RUNOFF",
+      "description": "monitors",
+      "weight": "9",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "EROSION PLOT EXPERIMENTS",
+      "target": "SUSPENDED SEDIMENT YIELD",
+      "description": "monitors",
+      "weight": "9",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "HYDROLOGICAL STATIONS",
+      "target": "RUNOFF",
+      "description": "monitors",
+      "weight": "9",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "HYDROLOGICAL STATIONS",
+      "target": "SUSPENDED SEDIMENT YIELD",
+      "description": "monitors",
+      "weight": "9",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "CENTRAL HIGHLANDS OF ETHIOPIA",
+      "target": "SOIL EROSION",
+      "description": "location of",
+      "weight": "10",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION",
+      "target": "CENTRAL HIGHLANDS OF ETHIOPIA",
+      "description": "implemented in",
+      "weight": "10",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "PLOT SCALE",
+      "target": "EROSION PLOT EXPERIMENTS",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_12125"
+    },
+    {
+      "source": "WATERSHED SCALE",
+      "target": "HYDROLOGICAL STATIONS",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_12125"
+    }
+  ]
+}

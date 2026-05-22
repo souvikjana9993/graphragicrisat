@@ -1,0 +1,258 @@
+{
+  "entities": [
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant uses water to produce biomass or yield",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of agricultural produce harvested per unit area",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "PLANT PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The rate at which plants produce organic matter",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A prolonged period of abnormally low rainfall leading to water shortage",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "DRYLAND CEREALS",
+      "type": "CROP",
+      "description": "Cereal crops grown in regions with limited rainfall",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "Tropical regions characterized by low and irregular precipitation",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "TRANSPIRATION DYNAMICS",
+      "type": "TRAIT",
+      "description": "The temporal and spatial patterns of water loss through plant leaves",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "MAXIMUM TRANSPIRATION RATE",
+      "type": "TRAIT",
+      "description": "The highest possible rate of water loss through transpiration",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "CROP FAILURE",
+      "type": "CONDITION",
+      "description": "The total or partial loss of a crop due to adverse environmental conditions",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "GRAIN FILLING",
+      "type": "TRAIT",
+      "description": "The process of accumulating dry matter in the developing grain",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "CROSS-ORGAN COORDINATION",
+      "type": "CONCEPT",
+      "description": "The synchronized functioning of different plant organs to regulate physiological processes",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "AQUAPORINS",
+      "type": "GENE_MARKER",
+      "description": "Membrane proteins that act as channels for water transport",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "PHENOLOGY",
+      "type": "TRAIT",
+      "description": "The timing of biological events in a plant's life cycle",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "RELATIVE ROOT AND SHOOT GROWTH",
+      "type": "TRAIT",
+      "description": "The ratio of biomass allocation between the root system and the shoot system",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "SHOOT ARCHITECTURE",
+      "type": "TRAIT",
+      "description": "The spatial arrangement and organization of the plant's above-ground parts",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "ROOT LENGTH DISTRIBUTION PROFILE",
+      "type": "TRAIT",
+      "description": "The spatial distribution of root length within the soil volume",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "GRAVIMETRIC PHENOTYPING",
+      "type": "METHOD",
+      "description": "A method of measuring plant water use by weighing the soil-plant system",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "BREEDING STRATEGY",
+      "type": "METHOD",
+      "description": "A planned approach to develop improved crop varieties through selection",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "DIRECT SELECTION APPROACH",
+      "type": "METHOD",
+      "description": "A selection method focusing on the specific trait of interest rather than a proxy",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "YIELD-BASED SELECTION",
+      "type": "METHOD",
+      "description": "A selection method based on the final yield of the plant",
+      "source_id": "paper_12454"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in global temperatures and weather patterns",
+      "source_id": "paper_12454"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER USE EFFICIENCY",
+      "target": "YIELD",
+      "description": "co-optimized to promote productivity",
+      "weight": "8",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "WATER USE EFFICIENCY",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "fundamentally involves",
+      "weight": "9",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "YIELD",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "fundamentally involves",
+      "weight": "9",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "MAXIMUM TRANSPIRATION RATE",
+      "target": "CROP FAILURE",
+      "description": "restriction helps to avoid",
+      "weight": "7",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "MAXIMUM TRANSPIRATION RATE",
+      "target": "GRAIN FILLING",
+      "description": "restriction helps to maximize",
+      "weight": "7",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "TRANSPIRATION DYNAMICS",
+      "target": "CROSS-ORGAN COORDINATION",
+      "description": "involves",
+      "weight": "8",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "AQUAPORINS",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "has a direct effect on",
+      "weight": "9",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "PHENOLOGY",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "involved in coordination pathways for",
+      "weight": "7",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "RELATIVE ROOT AND SHOOT GROWTH",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "involved in coordination pathways for",
+      "weight": "7",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "SHOOT ARCHITECTURE",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "involved in coordination pathways for",
+      "weight": "7",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "ROOT LENGTH DISTRIBUTION PROFILE",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "involved in coordination pathways for",
+      "weight": "7",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "GRAVIMETRIC PHENOTYPING",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "used as a solution to understand",
+      "weight": "9",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "BREEDING STRATEGY",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "maintains focus on",
+      "weight": "8",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "DIRECT SELECTION APPROACH",
+      "target": "TRANSPIRATION DYNAMICS",
+      "description": "more precise selection for",
+      "weight": "9",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "DIRECT SELECTION APPROACH",
+      "target": "YIELD-BASED SELECTION",
+      "description": "more precise than",
+      "weight": "6",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "DRYLAND CEREALS",
+      "target": "DROUGHT",
+      "description": "affected by challenging scenarios",
+      "weight": "8",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "DRYLAND CEREALS",
+      "target": "SEMI-ARID TROPICS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_12454"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "CLIMATE CHANGE",
+      "description": "adaptation required for",
+      "weight": "8",
+      "source_id": "paper_12454"
+    }
+  ]
+}

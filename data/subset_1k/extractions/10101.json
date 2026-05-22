@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop affected by Fusarium wilt.",
+      "source_id": "paper_10101"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A disease in chickpea caused by the fungal pathogen Fusarium oxysporum f. sp. ciceris.",
+      "source_id": "paper_10101"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "type": "ORGANISM",
+      "description": "A major fungal pathogen that causes Fusarium wilt in chickpea.",
+      "source_id": "paper_10101"
+    },
+    {
+      "name": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "type": "METHOD",
+      "description": "A rapid and inexpensive isothermal nucleic acid amplification technique used for the diagnosis of Fusarium wilt.",
+      "source_id": "paper_10101"
+    },
+    {
+      "name": "EF1Á",
+      "type": "GENE_MARKER",
+      "description": "A gene sequence targeted by the LAMP assay for the detection of Fusarium oxysporum f. sp. ciceris.",
+      "source_id": "paper_10101"
+    },
+    {
+      "name": "HYDROXYNAPHTHOL BLUE DYE",
+      "type": "METHOD",
+      "description": "A dye used in the LAMP assay to provide a visual color change for positive reactions.",
+      "source_id": "paper_10101"
+    },
+    {
+      "name": "AGAROSE GEL",
+      "type": "METHOD",
+      "description": "A medium used for electrophoresis to visualize ladder-like bands of LAMP products.",
+      "source_id": "paper_10101"
+    },
+    {
+      "name": "ECONOMIC LOSSES",
+      "type": "CONCEPT",
+      "description": "The financial impact resulting from Fusarium wilt infections in chickpea fields.",
+      "source_id": "paper_10101"
+    },
+    {
+      "name": "SOIL BORNE PATHOGENS",
+      "type": "ORGANISM",
+      "description": "Pathogens in the soil that produce symptoms similar to Fusarium wilt in chickpea.",
+      "source_id": "paper_10101"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10101"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10101"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "ECONOMIC LOSSES",
+      "description": "results in",
+      "weight": "8",
+      "source_id": "paper_10101"
+    },
+    {
+      "source": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "target": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "description": "detects",
+      "weight": "10",
+      "source_id": "paper_10101"
+    },
+    {
+      "source": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "target": "EF1Á",
+      "description": "targets",
+      "weight": "10",
+      "source_id": "paper_10101"
+    },
+    {
+      "source": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "target": "HYDROXYNAPHTHOL BLUE DYE",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_10101"
+    },
+    {
+      "source": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "target": "AGAROSE GEL",
+      "description": "visualized by",
+      "weight": "8",
+      "source_id": "paper_10101"
+    },
+    {
+      "source": "SOIL BORNE PATHOGENS",
+      "target": "FUSARIUM WILT",
+      "description": "mimics symptoms of",
+      "weight": "7",
+      "source_id": "paper_10101"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "WATER HYACINTH",
+      "type": "ORGANISM",
+      "description": "An aquatic plant used as biomass for biochar production",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "BIOCHAR",
+      "type": "CONCEPT",
+      "description": "A carbon-rich material produced from biomass via pyrolysis used for soil amendment",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The test crop used to evaluate the impact of biochar",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "PYROLYSIS TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature at which biomass is converted to biochar, affecting its properties",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "APPLICATION RATE",
+      "type": "CONDITION",
+      "description": "The amount of biochar applied to the soil",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "POT EXPERIMENT",
+      "type": "METHOD",
+      "description": "The experimental setup used to test the effects of biochar on maize and soil",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "SOIL AMENDMENT",
+      "type": "METHOD",
+      "description": "The process of adding materials to soil to improve its properties",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "SHOOT DRY BIOMASS",
+      "type": "TRAIT",
+      "description": "A measure of maize growth above ground",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "ROOT DRY BIOMASS",
+      "type": "TRAIT",
+      "description": "A measure of maize growth below ground",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "SOIL TOTAL NITROGEN",
+      "type": "TRAIT",
+      "description": "A soil nutrient property improved by biochar application",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "CATION EXCHANGE CAPACITY",
+      "type": "TRAIT",
+      "description": "A soil property indicating the ability to hold exchangeable cations",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "AMMONIUM-NITROGEN",
+      "type": "TRAIT",
+      "description": "A form of nitrogen in the soil improved by biochar",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "SOIL CARBON",
+      "type": "TRAIT",
+      "description": "The amount of carbon stored in the soil",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "SOIL PH",
+      "type": "TRAIT",
+      "description": "The acidity or alkalinity of the soil",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "ELECTRICAL CONDUCTIVITY",
+      "type": "TRAIT",
+      "description": "A measure of the salt concentration in the soil",
+      "source_id": "paper_12826"
+    },
+    {
+      "name": "AVAILABLE PHOSPHORUS",
+      "type": "TRAIT",
+      "description": "The amount of phosphorus available for plant uptake",
+      "source_id": "paper_12826"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER HYACINTH",
+      "target": "BIOCHAR",
+      "description": "used as biomass source for production",
+      "weight": "10",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "PYROLYSIS TEMPERATURE",
+      "target": "BIOCHAR",
+      "description": "governs the effectiveness and properties of",
+      "weight": "10",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "MAIZE",
+      "description": "increases growth",
+      "weight": "9",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SOIL AMENDMENT",
+      "description": "used as a material for",
+      "weight": "9",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "APPLICATION RATE",
+      "target": "MAIZE",
+      "description": "positive effect on growth",
+      "weight": "8",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "PYROLYSIS TEMPERATURE",
+      "target": "MAIZE",
+      "description": "higher temperatures decrease growth",
+      "weight": "8",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SHOOT DRY BIOMASS",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "ROOT DRY BIOMASS",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SOIL TOTAL NITROGEN",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "CATION EXCHANGE CAPACITY",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "AMMONIUM-NITROGEN",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SOIL CARBON",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SOIL PH",
+      "description": "increases at 750C",
+      "weight": "8",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "ELECTRICAL CONDUCTIVITY",
+      "description": "increases at 750C",
+      "weight": "8",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "AVAILABLE PHOSPHORUS",
+      "description": "increases at 750C",
+      "weight": "8",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "POT EXPERIMENT",
+      "target": "MAIZE",
+      "description": "used to grow and test",
+      "weight": "10",
+      "source_id": "paper_12826"
+    },
+    {
+      "source": "POT EXPERIMENT",
+      "target": "BIOCHAR",
+      "description": "used to test the impact of",
+      "weight": "10",
+      "source_id": "paper_12826"
+    }
+  ]
+}

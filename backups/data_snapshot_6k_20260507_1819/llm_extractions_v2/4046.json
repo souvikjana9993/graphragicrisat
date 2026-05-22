@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "HELIOTHIS ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A major pest insect with a wide geographical distribution causing significant crop losses.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "HELIOTHIS ZEA",
+      "type": "ORGANISM",
+      "description": "A major pest insect contributing to agricultural crop losses.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "HELIOTHIS VIRESCENS",
+      "type": "ORGANISM",
+      "description": "A major pest insect contributing to agricultural crop losses.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "HELIOTHIS SPP",
+      "type": "ORGANISM",
+      "description": "The collective species of the Heliothis genus that act as agricultural pests.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "CROP LOSSES",
+      "type": "CONCEPT",
+      "description": "The reduction in agricultural productivity and yield caused by pest damage.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "NATURAL ENEMIES",
+      "type": "ORGANISM",
+      "description": "Biological organisms that naturally prey upon or parasitize pest insects.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "PESTICIDE USE",
+      "type": "METHOD",
+      "description": "The application of chemical pesticides for pest control, which can impact non-target organisms.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "CROPPING PATTERNS",
+      "type": "CONCEPT",
+      "description": "The spatial and temporal arrangement of crops in agricultural systems.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "MANAGEMENT",
+      "type": "METHOD",
+      "description": "The overall approach to agricultural and pest control practices.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "TRADITIONAL AGRICULTURE",
+      "type": "METHOD",
+      "description": "Agricultural practices that do not rely on modern chemical pesticides.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of developing new crop varieties, which may inadvertently increase susceptibility to pests.",
+      "source_id": "paper_4046"
+    },
+    {
+      "name": "SUSCEPTIBLE CROPS",
+      "type": "CROP",
+      "description": "Crop varieties that are more prone to damage by pests like Heliothis spp.",
+      "source_id": "paper_4046"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "CROP LOSSES",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "HELIOTHIS ZEA",
+      "target": "CROP LOSSES",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "HELIOTHIS VIRESCENS",
+      "target": "CROP LOSSES",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "HELIOTHIS SPP",
+      "target": "CROP LOSSES",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "PESTICIDE USE",
+      "target": "NATURAL ENEMIES",
+      "description": "destroys",
+      "weight": "9",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "CROPPING PATTERNS",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "promotes pest status of",
+      "weight": "7",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "MANAGEMENT",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "promotes pest status of",
+      "weight": "7",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "TRADITIONAL AGRICULTURE",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "associated with presence of",
+      "weight": "6",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "BREEDING",
+      "target": "SUSCEPTIBLE CROPS",
+      "description": "creates",
+      "weight": "8",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "SUSCEPTIBLE CROPS",
+      "target": "CROP LOSSES",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_4046"
+    },
+    {
+      "source": "BREEDING",
+      "target": "CROP LOSSES",
+      "description": "increases via susceptible crops",
+      "weight": "8",
+      "source_id": "paper_4046"
+    }
+  ]
+}

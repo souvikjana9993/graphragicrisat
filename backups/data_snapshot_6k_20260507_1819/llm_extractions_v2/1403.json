@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A legume (Cajanus cajan) production of which is constrained by sterility mosaic disease in the Indian subcontinent",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "STERILITY MOSAIC DISEASE",
+      "type": "CONDITION",
+      "description": "A disease that is a major constraint on pigeon pea production, characterized by sterility",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "INDIAN SUBCONTINENT",
+      "type": "LOCATION",
+      "description": "The geographic region where sterility mosaic disease is a major constraint on pigeon pea production",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "ACERIA CAJANI",
+      "type": "ORGANISM",
+      "description": "An eriophyid mite that transmits the agent of sterility mosaic disease",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "VIRUS-LIKE PARTICLES",
+      "type": "CONCEPT",
+      "description": "Highly flexuous filamentous particles of 3 to 10 nm in width isolated from SMD-affected pigeon pea plants",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "NICOTIANA BENTHAMIANA",
+      "type": "CROP",
+      "description": "A plant species used to purify virus-like particle preparations",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "RT-PCR",
+      "type": "METHOD",
+      "description": "Reverse transcriptase-polymerase chain reaction used to amplify a 321 bp product specifically from SMD-affected pigeon pea plants",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "ELISA",
+      "type": "METHOD",
+      "description": "Enzyme-linked immunosorbent assay used to detect the virus in infected plants",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "WESTERN IMMUNOBLOTTING",
+      "type": "METHOD",
+      "description": "A technique used to detect the virus-specific 32-kDa protein in infected plants",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where SMD-affected pigeon pea plant samples were collected and tested",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "type": "ORGANISM",
+      "description": "A novel virus (PPSMV) identified as the agent of sterility mosaic disease in pigeon pea",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "TOSPOVIRUS",
+      "type": "ORGANISM",
+      "description": "A genus of viruses with properties similar to PPSMV",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "TENUIVIRUS",
+      "type": "ORGANISM",
+      "description": "A genus of viruses with properties similar to PPSMV",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "HIGH PLAINS VIRUS",
+      "type": "ORGANISM",
+      "description": "An eriophyid mite-transmitted virus (HPV) with properties similar to PPSMV",
+      "source_id": "paper_1403"
+    },
+    {
+      "name": "GRAFT-INOCULATION",
+      "type": "METHOD",
+      "description": "A method of transmitting the virus using SMD-affected tissue to infect healthy pigeon pea plants",
+      "source_id": "paper_1403"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEON PEA",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "STERILITY MOSAIC DISEASE",
+      "target": "INDIAN SUBCONTINENT",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "ACERIA CAJANI",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "transmits agent of",
+      "weight": "10",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "is the agent of",
+      "weight": "10",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "target": "ACERIA CAJANI",
+      "description": "transmitted by",
+      "weight": "10",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "target": "PIGEON PEA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "RT-PCR",
+      "target": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "description": "used to detect",
+      "weight": "9",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "ELISA",
+      "target": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "description": "used to detect",
+      "weight": "9",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "WESTERN IMMUNOBLOTTING",
+      "target": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "description": "used to detect protein of",
+      "weight": "9",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "target": "INDIA",
+      "description": "detected in samples from",
+      "weight": "8",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "GRAFT-INOCULATION",
+      "target": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "description": "used to transmit",
+      "weight": "9",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "target": "TOSPOVIRUS",
+      "description": "similar properties to",
+      "weight": "7",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "target": "TENUIVIRUS",
+      "description": "similar properties to",
+      "weight": "7",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "target": "HIGH PLAINS VIRUS",
+      "description": "similar properties to",
+      "weight": "8",
+      "source_id": "paper_1403"
+    },
+    {
+      "source": "NICOTIANA BENTHAMIANA",
+      "target": "PIGEON PEA STERILITY MOSAIC VIRUS",
+      "description": "used for VLP purification",
+      "weight": "7",
+      "source_id": "paper_1403"
+    }
+  ]
+}

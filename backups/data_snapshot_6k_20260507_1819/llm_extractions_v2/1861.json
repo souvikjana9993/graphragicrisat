@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., a rich source of oil, protein, minerals, and vitamins",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "SEED QUALITY",
+      "type": "CONCEPT",
+      "description": "Chemical and physical aspects of seeds used as food",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "PHOTOPERIOD",
+      "type": "CONDITION",
+      "description": "The duration of light exposure, tested as Normal, Short, and Long days",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "NORMAL DAY",
+      "type": "CONDITION",
+      "description": "Photoperiod of 12 hours",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "SHORT DAY",
+      "type": "CONDITION",
+      "description": "Photoperiod of 8 hours",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "LONG DAY",
+      "type": "CONDITION",
+      "description": "Photoperiod of 16 hours",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "SEASON",
+      "type": "CONDITION",
+      "description": "Environmental variable across three seasons",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "GENOTYPE",
+      "type": "CONCEPT",
+      "description": "Genetic variations of peanut tested in the study",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "SPLIT-PLOT RANDOMIZED COMPLETE BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "Experimental design used for the study",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "POOLED ANALYSIS OF VARIANCE",
+      "type": "METHOD",
+      "description": "Statistical method used to analyze data across seasons",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "MIXED LINEAR MODEL",
+      "type": "METHOD",
+      "description": "Statistical model used for analysis of variance",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "SHELLING PERCENTAGE",
+      "type": "TRAIT",
+      "description": "A seed quality trait affected by photoperiod",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "PALMITIC ACID",
+      "type": "TRAIT",
+      "description": "A fatty acid trait affected by photoperiod",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "EICOSENOIC ACID",
+      "type": "TRAIT",
+      "description": "A fatty acid trait affected by photoperiod",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "OIL CONTENT",
+      "type": "TRAIT",
+      "description": "A seed quality trait not significantly affected by photoperiod",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "OLEIC ACID",
+      "type": "TRAIT",
+      "description": "A fatty acid trait not significantly affected by photoperiod",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "LINOLENIC ACID",
+      "type": "TRAIT",
+      "description": "A fatty acid trait not significantly affected by photoperiod",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "OLEIC TO LINOLENIC ACID RATIO",
+      "type": "TRAIT",
+      "description": "Ratio of oleic to linolenic acids, not affected by photoperiod",
+      "source_id": "paper_1861"
+    },
+    {
+      "name": "BREEDING PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Efforts to develop high yielding genotypes with improved seed quality",
+      "source_id": "paper_1861"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHOTOPERIOD",
+      "target": "PEANUT",
+      "description": "affects seed quality traits",
+      "weight": "8",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "SHELLING PERCENTAGE",
+      "description": "significantly affects",
+      "weight": "7",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "PALMITIC ACID",
+      "description": "significantly affects",
+      "weight": "7",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "EICOSENOIC ACID",
+      "description": "significantly affects",
+      "weight": "7",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "SHORT DAY",
+      "target": "SHELLING PERCENTAGE",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "SHORT DAY",
+      "target": "PALMITIC ACID",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "SHORT DAY",
+      "target": "EICOSENOIC ACID",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "OIL CONTENT",
+      "description": "does not significantly affect",
+      "weight": "4",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "OLEIC ACID",
+      "description": "does not significantly affect",
+      "weight": "4",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "LINOLENIC ACID",
+      "description": "does not significantly affect",
+      "weight": "4",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "OLEIC TO LINOLENIC ACID RATIO",
+      "description": "does not significantly affect",
+      "weight": "4",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "SEASON",
+      "target": "SHELLING PERCENTAGE",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "SHELLING PERCENTAGE",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "SPLIT-PLOT RANDOMIZED COMPLETE BLOCK DESIGN",
+      "target": "PEANUT",
+      "description": "used to study",
+      "weight": "9",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "POOLED ANALYSIS OF VARIANCE",
+      "target": "SEED QUALITY",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "MIXED LINEAR MODEL",
+      "target": "POOLED ANALYSIS OF VARIANCE",
+      "description": "used as basis for",
+      "weight": "10",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "BREEDING PROGRAMS",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_1861"
+    },
+    {
+      "source": "SEED QUALITY",
+      "target": "BREEDING PROGRAMS",
+      "description": "objective of",
+      "weight": "9",
+      "source_id": "paper_1861"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop affected by peanut bud necrosis in North Eastern Karnataka",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS",
+      "type": "CONDITION",
+      "description": "A disease characterized by bud necrosis in groundnut and tomato",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "NORTH EASTERN KARNATAKA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "DAC-ELISA",
+      "type": "METHOD",
+      "description": "A serodiagnostic technique used for detecting viruses using polyclonal antiserum",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "PBNV",
+      "type": "ORGANISM",
+      "description": "Peanut Bud Necrosis Virus, the causal agent of bud necrosis in groundnut and tomato",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "TSWV",
+      "type": "ORGANISM",
+      "description": "Tomato Spotted Wilt Virus, a virus tested against the samples",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "WEEDS",
+      "type": "ORGANISM",
+      "description": "Plants prevailing in the groundnut ecosystem tested for PBNV infection",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "GROUNDNUT ECOSYSTEM",
+      "type": "CONCEPT",
+      "description": "The environmental system surrounding groundnut cultivation",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "VIRUS CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The level of virus present in symptomatic groundnut plants",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "VIRUS TITRE",
+      "type": "TRAIT",
+      "description": "The concentration of virus measured in infected leaves",
+      "source_id": "paper_6004"
+    },
+    {
+      "name": "TOMATO",
+      "type": "CROP",
+      "description": "A crop affected by bud necrosis caused by PBNV in North Eastern Karnataka",
+      "source_id": "paper_6004"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PBNV",
+      "target": "PEANUT BUD NECROSIS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "PBNV",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "PBNV",
+      "target": "TOMATO",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "PEANUT BUD NECROSIS",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "TOMATO",
+      "target": "PEANUT BUD NECROSIS",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "DAC-ELISA",
+      "target": "PBNV",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "DAC-ELISA",
+      "target": "TSWV",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "NORTH EASTERN KARNATAKA",
+      "target": "GROUNDNUT",
+      "description": "location of samples",
+      "weight": "8",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "WEEDS",
+      "target": "GROUNDNUT ECOSYSTEM",
+      "description": "prevail in",
+      "weight": "7",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "DAC-ELISA",
+      "target": "WEEDS",
+      "description": "used to test",
+      "weight": "8",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "PBNV",
+      "target": "WEEDS",
+      "description": "no natural infection found in",
+      "weight": "9",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "PEANUT BUD NECROSIS",
+      "target": "VIRUS CONCENTRATION",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_6004"
+    },
+    {
+      "source": "PEANUT BUD NECROSIS",
+      "target": "VIRUS TITRE",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_6004"
+    }
+  ]
+}

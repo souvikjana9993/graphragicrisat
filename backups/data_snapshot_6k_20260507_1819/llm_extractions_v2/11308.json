@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop species being evaluated for quality traits",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "KERNEL QUALITY",
+      "type": "TRAIT",
+      "description": "The quality characteristics of the peanut kernel",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "OIL QUALITY",
+      "type": "TRAIT",
+      "description": "The quality characteristics of the peanut oil",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "QUALITY TRAITS",
+      "type": "TRAIT",
+      "description": "A set of 21 characteristics used to evaluate peanut varieties",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "CRUDE FAT",
+      "type": "TRAIT",
+      "description": "The content of crude fat in peanut varieties",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "PROTEIN",
+      "type": "TRAIT",
+      "description": "The content of protein in peanut varieties",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "FATTY ACIDS",
+      "type": "TRAIT",
+      "description": "The content of fatty acids in peanut varieties",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "AMINO ACIDS",
+      "type": "TRAIT",
+      "description": "The content of amino acids in peanut varieties",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "OLEIC ACID",
+      "type": "TRAIT",
+      "description": "A specific fatty acid measured in peanut varieties",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "LINOLEIC ACID",
+      "type": "TRAIT",
+      "description": "A specific fatty acid measured in peanut varieties",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "UNSATURATED FATTY ACID",
+      "type": "TRAIT",
+      "description": "A category of fatty acids analyzed via PCA",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "NEAR INFRA-RED SPECTROSCOPY",
+      "type": "METHOD",
+      "description": "Technology used to phenotype quality traits",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "PRINCIPAL COMPONENT ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to identify component factors of quality traits",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to divide peanut varieties into groups",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "NATIONAL OFFICIAL FIELD TESTS",
+      "type": "METHOD",
+      "description": "The framework under which peanut varieties were phenotyped",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "SOUTH CHINA",
+      "type": "LOCATION",
+      "description": "The geographic region where field tests were conducted",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "BREEDING PROGRAM",
+      "type": "CONCEPT",
+      "description": "The application of identified quality sources for crop improvement",
+      "source_id": "paper_11308"
+    },
+    {
+      "name": "QUALITY BREEDING",
+      "type": "CONCEPT",
+      "description": "The process of breeding for improved quality traits",
+      "source_id": "paper_11308"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "KERNEL QUALITY",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "PEANUT",
+      "target": "OIL QUALITY",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "PEANUT",
+      "target": "QUALITY TRAITS",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "QUALITY TRAITS",
+      "target": "CRUDE FAT",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "QUALITY TRAITS",
+      "target": "PROTEIN",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "QUALITY TRAITS",
+      "target": "FATTY ACIDS",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "QUALITY TRAITS",
+      "target": "AMINO ACIDS",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "FATTY ACIDS",
+      "target": "OLEIC ACID",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "FATTY ACIDS",
+      "target": "LINOLEIC ACID",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "FATTY ACIDS",
+      "target": "UNSATURATED FATTY ACID",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "NEAR INFRA-RED SPECTROSCOPY",
+      "target": "QUALITY TRAITS",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "PRINCIPAL COMPONENT ANALYSIS",
+      "target": "QUALITY TRAITS",
+      "description": "analyzes",
+      "weight": "9",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "PEANUT",
+      "description": "groups varieties of",
+      "weight": "8",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "NATIONAL OFFICIAL FIELD TESTS",
+      "target": "PEANUT",
+      "description": "evaluates",
+      "weight": "8",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "NATIONAL OFFICIAL FIELD TESTS",
+      "target": "SOUTH CHINA",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "QUALITY TRAITS",
+      "target": "BREEDING PROGRAM",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_11308"
+    },
+    {
+      "source": "QUALITY TRAITS",
+      "target": "QUALITY BREEDING",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_11308"
+    }
+  ]
+}

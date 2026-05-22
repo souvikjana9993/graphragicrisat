@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "SWEETPOTATO",
+      "type": "CROP",
+      "description": "Ipomoea batatas L., the crop studied for carotenoid composition in tuberous roots",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "CAROTENOID COLORATION",
+      "type": "TRAIT",
+      "description": "The depth of yellow color in sweetpotato tuberous roots",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "CAROTENOIDS",
+      "type": "CONCEPT",
+      "description": "Beneficial metabolites found in sweetpotato tuberous roots",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "METABOLOMIC ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis used to identify and quantify carotenoid metabolites",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "TRANSCRIPTOMIC ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis used to identify genes involved in carotenoid coloration",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "BETA-CAROTENE",
+      "type": "CONCEPT",
+      "description": "A carotenoid dominant in orange-red and orange sweetpotato cultivars",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "BETA-CRYPTOXANTHIN",
+      "type": "CONCEPT",
+      "description": "A carotenoid found in high amounts in yellow sweetpotato cultivars",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "ZEAXANTHIN",
+      "type": "CONCEPT",
+      "description": "A carotenoid rich in light-yellow sweetpotato cultivars",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "LUTEIN",
+      "type": "CONCEPT",
+      "description": "The main carotenoid found in white sweetpotato cultivars",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes identified via comparative transcriptome involved in carotenoid metabolism",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "CAROTENOID METABOLISM",
+      "type": "CONCEPT",
+      "description": "The biological process controlling the composition and content of carotenoids",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "WEIGHTED GENE CO-EXPRESSION NETWORK ANALYSIS",
+      "type": "METHOD",
+      "description": "A method used to identify transcription factors associated with carotenoid content",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "TRANSCRIPTION FACTORS",
+      "type": "GENE_MARKER",
+      "description": "Genes that regulate the expression of other genes associated with carotenoid content",
+      "source_id": "paper_12218"
+    },
+    {
+      "name": "CAROTENOID CONTENT",
+      "type": "TRAIT",
+      "description": "The total amount of carotenoids present in sweetpotato tuberous roots",
+      "source_id": "paper_12218"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SWEETPOTATO",
+      "target": "CAROTENOID COLORATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "SWEETPOTATO",
+      "target": "CAROTENOIDS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "METABOLOMIC ANALYSIS",
+      "target": "CAROTENOIDS",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "TRANSCRIPTOMIC ANALYSIS",
+      "target": "DIFFERENTIALLY EXPRESSED GENES",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "CAROTENOIDS",
+      "target": "BETA-CAROTENE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "CAROTENOIDS",
+      "target": "BETA-CRYPTOXANTHIN",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "CAROTENOIDS",
+      "target": "ZEAXANTHIN",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "CAROTENOIDS",
+      "target": "LUTEIN",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "CAROTENOID METABOLISM",
+      "description": "involved in",
+      "weight": "9",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "WEIGHTED GENE CO-EXPRESSION NETWORK ANALYSIS",
+      "target": "TRANSCRIPTION FACTORS",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "TRANSCRIPTION FACTORS",
+      "target": "CAROTENOID CONTENT",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "CAROTENOID CONTENT",
+      "target": "SWEETPOTATO",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_12218"
+    },
+    {
+      "source": "CAROTENOID METABOLISM",
+      "target": "CAROTENOID COLORATION",
+      "description": "regulates",
+      "weight": "8",
+      "source_id": "paper_12218"
+    }
+  ]
+}

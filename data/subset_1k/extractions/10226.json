@@ -1,0 +1,239 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cultivated chickpea varieties used as susceptible checks in the study",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "WILD RELATIVES OF CHICKPEA",
+      "type": "CROP",
+      "description": "Wild species of Cicer including C. bijugum, C. reticulatum, C. cuneatum, C. chrossanicum, C. judaicum, and C. microphyllum",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A lepidopteran pest that causes damage to chickpea pods and leaves",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to withstand or repel attack by H. armigera",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "ANTIXENOSIS",
+      "type": "TRAIT",
+      "description": "The non-preference of H. armigera for oviposition on certain chickpea genotypes",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "ANTIBIOSIS",
+      "type": "TRAIT",
+      "description": "The adverse effect of host plant genotypes on the survival, development, and fecundity of H. armigera",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "LEAF DAMAGE RATING",
+      "type": "TRAIT",
+      "description": "A measure of the visual damage caused by H. armigera larvae on leaves",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "POD DAMAGE",
+      "type": "TRAIT",
+      "description": "A measure of the percentage of pods damaged by H. armigera larvae",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "LARVAL SURVIVAL",
+      "type": "TRAIT",
+      "description": "The percentage of H. armigera larvae that survive on a host plant",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "PUPATION",
+      "type": "TRAIT",
+      "description": "The rate of larval transformation into pupae",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "ADULT EMERGENCE",
+      "type": "TRAIT",
+      "description": "The rate of pupal transformation into adult moths",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "FECUNDITY",
+      "type": "TRAIT",
+      "description": "The number of eggs produced by adult H. armigera",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "METHOD",
+      "description": "Evaluation of pest damage and resistance under natural field environments",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "DETACHED LEAF ASSAY",
+      "type": "METHOD",
+      "description": "A laboratory method to evaluate larval damage and weight on separated leaves",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "DETACHED POD ASSAY",
+      "type": "METHOD",
+      "description": "A laboratory method to evaluate larval damage and weight on separated pods",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "ARTIFICIAL DIET ASSAY",
+      "type": "METHOD",
+      "description": "A method using artificial diet impregnated with lyophilized leaf powders to study antibiosis",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics, Patancheru",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "BIOCHEMICAL MECHANISMS",
+      "type": "CONCEPT",
+      "description": "Chemical processes within the plant that contribute to pest resistance",
+      "source_id": "paper_10226"
+    },
+    {
+      "name": "MOLECULAR MECHANISMS",
+      "type": "CONCEPT",
+      "description": "Genetic and molecular processes within the plant that contribute to pest resistance",
+      "source_id": "paper_10226"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WILD RELATIVES OF CHICKPEA",
+      "target": "RESISTANCE",
+      "description": "Exhibit higher levels of resistance compared to cultivated chickpea",
+      "weight": "10",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "RESISTANCE",
+      "description": "Exhibit lower levels of resistance compared to wild relatives",
+      "weight": "6",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "Infests and causes damage to cultivated chickpea",
+      "weight": "10",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "WILD RELATIVES OF CHICKPEA",
+      "description": "Infests wild relatives but with reduced success",
+      "weight": "8",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "WILD RELATIVES OF CHICKPEA",
+      "target": "ANTIXENOSIS",
+      "description": "Show high levels of antixenosis for oviposition",
+      "weight": "9",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "WILD RELATIVES OF CHICKPEA",
+      "target": "ANTIBIOSIS",
+      "description": "Show high levels of antibiosis affecting pest development",
+      "weight": "9",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "ANTIBIOSIS",
+      "target": "LARVAL SURVIVAL",
+      "description": "Reduces the survival rate of larvae",
+      "weight": "10",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "ANTIBIOSIS",
+      "target": "PUPATION",
+      "description": "Reduces the percentage of pupation",
+      "weight": "10",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "ANTIBIOSIS",
+      "target": "ADULT EMERGENCE",
+      "description": "Reduces the percentage of adult emergence",
+      "weight": "10",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "ANTIBIOSIS",
+      "target": "FECUNDITY",
+      "description": "Reduces the fecundity of adult insects",
+      "weight": "10",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "FIELD CONDITIONS",
+      "target": "RESISTANCE",
+      "description": "Used to evaluate resistance via leaf and pod damage",
+      "weight": "8",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "DETACHED LEAF ASSAY",
+      "target": "RESISTANCE",
+      "description": "Used to evaluate resistance via larval weight and damage",
+      "weight": "8",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "DETACHED POD ASSAY",
+      "target": "RESISTANCE",
+      "description": "Used to evaluate resistance via pod damage and larval weight",
+      "weight": "8",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "ARTIFICIAL DIET ASSAY",
+      "target": "ANTIBIOSIS",
+      "description": "Used to evaluate antibiosis effects on pest life cycle",
+      "weight": "9",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "RESISTANCE",
+      "description": "Site where the resistance studies were conducted",
+      "weight": "7",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "BIOCHEMICAL MECHANISMS",
+      "target": "RESISTANCE",
+      "description": "Underlie the resistance to H. armigera",
+      "weight": "9",
+      "source_id": "paper_10226"
+    },
+    {
+      "source": "MOLECULAR MECHANISMS",
+      "target": "RESISTANCE",
+      "description": "Underlie the resistance to H. armigera",
+      "weight": "9",
+      "source_id": "paper_10226"
+    }
+  ]
+}

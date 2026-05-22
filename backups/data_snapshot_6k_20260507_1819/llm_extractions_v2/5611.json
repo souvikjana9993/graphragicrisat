@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop targeted for transgenic resistance to Tobacco streak virus",
+      "source_id": "paper_5611"
+    },
+    {
+      "name": "TSV RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist infection by the Tobacco streak virus",
+      "source_id": "paper_5611"
+    },
+    {
+      "name": "TOBACCO STREAK VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus that causes stem necrosis disease in groundnut and other annual crops",
+      "source_id": "paper_5611"
+    },
+    {
+      "name": "STEM NECROSIS DISEASE",
+      "type": "CONDITION",
+      "description": "A disease caused by Tobacco streak virus that leads to significant crop loss",
+      "source_id": "paper_5611"
+    },
+    {
+      "name": "ILARVIRUS",
+      "type": "ORGANISM",
+      "description": "The genus of viruses to which the Tobacco streak virus belongs",
+      "source_id": "paper_5611"
+    },
+    {
+      "name": "ANANTAPUR",
+      "type": "LOCATION",
+      "description": "A district in Andhra Pradesh, India, severely affected by stem necrosis disease",
+      "source_id": "paper_5611"
+    },
+    {
+      "name": "KURNOOL",
+      "type": "LOCATION",
+      "description": "A district in Andhra Pradesh, India, severely affected by stem necrosis disease",
+      "source_id": "paper_5611"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where TSV caused significant groundnut harvest loss",
+      "source_id": "paper_5611"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research and disease outbreaks are located",
+      "source_id": "paper_5611"
+    },
+    {
+      "name": "PENINSULAR INDIA",
+      "type": "LOCATION",
+      "description": "A region in India where Tobacco streak virus is a major problem for annual crops",
+      "source_id": "paper_5611"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TOBACCO STREAK VIRUS",
+      "target": "STEM NECROSIS DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "TOBACCO STREAK VIRUS",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "TOBACCO STREAK VIRUS",
+      "target": "ILARVIRUS",
+      "description": "belongs to genus",
+      "weight": "10",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "TSV RESISTANCE",
+      "description": "is the target for",
+      "weight": "9",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "STEM NECROSIS DISEASE",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "STEM NECROSIS DISEASE",
+      "target": "ANANTAPUR",
+      "description": "occurred in",
+      "weight": "9",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "STEM NECROSIS DISEASE",
+      "target": "KURNOOL",
+      "description": "occurred in",
+      "weight": "9",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "ANANTAPUR",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "KURNOOL",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "TOBACCO STREAK VIRUS",
+      "target": "PENINSULAR INDIA",
+      "description": "is a major problem in",
+      "weight": "9",
+      "source_id": "paper_5611"
+    },
+    {
+      "source": "PENINSULAR INDIA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5611"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A C4 cereal grown in tropical regions",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A C4 cereal grown in tropical regions",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A C4 cereal grown in tropical regions",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "HIGH EVAPORATIVE DEMAND",
+      "type": "CONDITION",
+      "description": "Environmental state characterized by high vapor pressure deficit",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "VPD",
+      "type": "CONCEPT",
+      "description": "Vapor Pressure Deficit, a measure of the drying power of the air",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "MODERATE VPD",
+      "type": "CONDITION",
+      "description": "VPD levels ranging from 2.2 to 2.8 kPa",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "HIGH VPD",
+      "type": "CONDITION",
+      "description": "VPD levels ranging from 3.9 to 4.5 kPa",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "TRANSPIRATION",
+      "type": "TRAIT",
+      "description": "The process of water loss from plant leaves",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "LEAF AREA",
+      "type": "TRAIT",
+      "description": "The total surface area of plant leaves",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "WATER CONSERVATION",
+      "type": "CONCEPT",
+      "description": "The ability of a crop to minimize water loss",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "Condition where soil moisture is limiting for the plant",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "TE",
+      "type": "TRAIT",
+      "description": "Transpiration Efficiency, the ratio of biomass produced to water transpired",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "BIOMASS ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The growth and accumulation of organic matter in the plant",
+      "source_id": "paper_10701"
+    },
+    {
+      "name": "TROPICAL REGIONS",
+      "type": "LOCATION",
+      "description": "Geographic areas where C4 cereals are predominantly grown",
+      "source_id": "paper_10701"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "HIGH EVAPORATIVE DEMAND",
+      "description": "Shows specific transpirational sensitivity to",
+      "weight": "8",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HIGH EVAPORATIVE DEMAND",
+      "description": "Shows specific transpirational sensitivity to",
+      "weight": "8",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "HIGH EVAPORATIVE DEMAND",
+      "description": "Shows specific transpirational sensitivity to",
+      "weight": "8",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "MAIZE",
+      "target": "TRANSPIRATION",
+      "description": "Restricts water use during pre-flowering stages under high VPD",
+      "weight": "9",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "TRANSPIRATION",
+      "description": "Reduces transpiration under high VPD",
+      "weight": "9",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "TRANSPIRATION",
+      "description": "Reduces transpiration under high VPD",
+      "weight": "9",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "MAIZE",
+      "target": "LEAF AREA",
+      "description": "Shows trivial differences across VPD conditions",
+      "weight": "7",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "LEAF AREA",
+      "description": "Shows significant reduction under high VPD",
+      "weight": "9",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "LEAF AREA",
+      "description": "Shows significant reduction under high VPD",
+      "weight": "9",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "MAIZE",
+      "target": "TE",
+      "description": "Has higher TE than sorghum and millet in high VPD conditions",
+      "weight": "9",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "TRANSPIRATION",
+      "target": "WATER CONSERVATION",
+      "description": "Restricting transpiration leads to water conservation",
+      "weight": "10",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "WATER CONSERVATION",
+      "target": "BIOMASS ACCUMULATION",
+      "description": "Sustains biomass accumulation during water stress period",
+      "weight": "8",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "VPD",
+      "target": "TRANSPIRATION",
+      "description": "Influences the rate and restriction of transpiration",
+      "weight": "10",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "TRANSPIRATION",
+      "description": "Causes transpiration to decline upon imposition",
+      "weight": "9",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "MAIZE",
+      "target": "TROPICAL REGIONS",
+      "description": "Leading C4 cereal for these regions",
+      "weight": "7",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "TROPICAL REGIONS",
+      "description": "Leading C4 cereal for these regions",
+      "weight": "7",
+      "source_id": "paper_10701"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "TROPICAL REGIONS",
+      "description": "Leading C4 cereal for these regions",
+      "weight": "7",
+      "source_id": "paper_10701"
+    }
+  ]
+}

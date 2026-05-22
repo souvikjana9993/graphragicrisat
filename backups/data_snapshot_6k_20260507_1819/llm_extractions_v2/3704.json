@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, the crop studied for resistance to dry root rot.",
+      "source_id": "paper_3704"
+    },
+    {
+      "name": "DRY ROOT ROT",
+      "type": "CONDITION",
+      "description": "A root disease in chickpea caused by Rhizoctonia bataticola.",
+      "source_id": "paper_3704"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing dry root rot.",
+      "source_id": "paper_3704"
+    },
+    {
+      "name": "DRY ROOT ROT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The genetic ability of chickpea to resist dry root rot.",
+      "source_id": "paper_3704"
+    },
+    {
+      "name": "BLOTTING-PAPER TECHNIQUE",
+      "type": "METHOD",
+      "description": "A laboratory technique used to assess the reaction of plants to dry root rot.",
+      "source_id": "paper_3704"
+    },
+    {
+      "name": "MONOGENIC INHERITANCE",
+      "type": "CONCEPT",
+      "description": "A pattern of inheritance where a trait is controlled by a single gene.",
+      "source_id": "paper_3704"
+    },
+    {
+      "name": "DOMINANCE",
+      "type": "CONCEPT",
+      "description": "The genetic state where the resistance allele masks the susceptibility allele.",
+      "source_id": "paper_3704"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "DRY ROOT ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3704"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3704"
+    },
+    {
+      "source": "DRY ROOT ROT RESISTANCE",
+      "target": "CHICKPEA",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_3704"
+    },
+    {
+      "source": "BLOTTING-PAPER TECHNIQUE",
+      "target": "DRY ROOT ROT RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_3704"
+    },
+    {
+      "source": "DRY ROOT ROT RESISTANCE",
+      "target": "MONOGENIC INHERITANCE",
+      "description": "follows",
+      "weight": "9",
+      "source_id": "paper_3704"
+    },
+    {
+      "source": "DRY ROOT ROT RESISTANCE",
+      "target": "DOMINANCE",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_3704"
+    }
+  ]
+}

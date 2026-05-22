@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Lowland or wetland rice grown in submerged soils",
+      "source_id": "paper_83"
+    },
+    {
+      "name": "NITROGEN MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The process of converting organic nitrogen to inorganic forms such as ammonium",
+      "source_id": "paper_83"
+    },
+    {
+      "name": "NITROGEN AVAILABILITY",
+      "type": "CONCEPT",
+      "description": "The amount of nitrogen accessible for plant uptake in the soil",
+      "source_id": "paper_83"
+    },
+    {
+      "name": "WETLAND PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of biological production in wetland ecosystems",
+      "source_id": "paper_83"
+    },
+    {
+      "name": "ENVIRONMENTAL QUALITY",
+      "type": "CONCEPT",
+      "description": "The state of the environment, impacted by nitrogen processes",
+      "source_id": "paper_83"
+    },
+    {
+      "name": "ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "The organic component of soil, characterized by its quantity and quality",
+      "source_id": "paper_83"
+    },
+    {
+      "name": "MINERALIZABLE NITROGEN",
+      "type": "CONCEPT",
+      "description": "The portion of organic nitrogen that can be converted to inorganic forms",
+      "source_id": "paper_83"
+    },
+    {
+      "name": "PROLONGED SUBMERGENCE",
+      "type": "CONDITION",
+      "description": "The state of soil being underwater for an extended period",
+      "source_id": "paper_83"
+    },
+    {
+      "name": "WETLAND SOILS",
+      "type": "LOCATION",
+      "description": "Soils found in wetland environments, often used for rice production",
+      "source_id": "paper_83"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN MINERALIZATION",
+      "target": "NITROGEN AVAILABILITY",
+      "description": "impacts",
+      "weight": "9",
+      "source_id": "paper_83"
+    },
+    {
+      "source": "NITROGEN MINERALIZATION",
+      "target": "WETLAND PRODUCTIVITY",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_83"
+    },
+    {
+      "source": "NITROGEN MINERALIZATION",
+      "target": "ENVIRONMENTAL QUALITY",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_83"
+    },
+    {
+      "source": "ORGANIC MATTER",
+      "target": "MINERALIZABLE NITROGEN",
+      "description": "has a significant relationship with",
+      "weight": "8",
+      "source_id": "paper_83"
+    },
+    {
+      "source": "PROLONGED SUBMERGENCE",
+      "target": "ORGANIC MATTER",
+      "description": "influences quantity and quality of",
+      "weight": "9",
+      "source_id": "paper_83"
+    },
+    {
+      "source": "PROLONGED SUBMERGENCE",
+      "target": "NITROGEN MINERALIZATION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_83"
+    },
+    {
+      "source": "ORGANIC MATTER",
+      "target": "NITROGEN MINERALIZATION",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_83"
+    },
+    {
+      "source": "RICE",
+      "target": "WETLAND SOILS",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_83"
+    }
+  ]
+}

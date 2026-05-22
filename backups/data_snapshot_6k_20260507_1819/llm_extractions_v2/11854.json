@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "VEGETATION",
+      "type": "ORGANISM",
+      "description": "Plant life in the forest reserve of Fina, sensitive to climate fluctuations",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Precipitation levels that influence vegetation growth and response",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "AIR TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Atmospheric temperature fluctuations affecting vegetation",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "CLIMATE FLUCTUATION",
+      "type": "CONDITION",
+      "description": "Variations in precipitation and temperature in the semi-arid zone",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "AFRICAN SAHEL",
+      "type": "LOCATION",
+      "description": "The semi-arid region of Africa where the study is contextualized",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "FOREST RESERVE OF FINA",
+      "type": "LOCATION",
+      "description": "The specific forest reserve in Mali used as a case study",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used to estimate vegetation response",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "LAG-CORRELATIONS ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to estimate time lags between climate variables and vegetation response",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Period of severe rainfall deficiency, specifically noted in the 1980s",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "AGRICULTURALLY DOMINATED LAND",
+      "type": "CONCEPT",
+      "description": "Land cover type characterized by agricultural activity",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "BARE-DOMINATED LAND",
+      "type": "CONCEPT",
+      "description": "Land cover type characterized by bare soil",
+      "source_id": "paper_11854"
+    },
+    {
+      "name": "LAND-USE/COVER DYNAMICS",
+      "type": "CONCEPT",
+      "description": "The patterns and changes in land use and cover that modulate vegetation response",
+      "source_id": "paper_11854"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "VEGETATION",
+      "target": "RAINFALL",
+      "description": "responds to fluctuations in",
+      "weight": "9",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "VEGETATION",
+      "target": "AIR TEMPERATURE",
+      "description": "responds to fluctuations in",
+      "weight": "8",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "VEGETATION",
+      "target": "CLIMATE FLUCTUATION",
+      "description": "is sensitive to",
+      "weight": "9",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "FOREST RESERVE OF FINA",
+      "target": "AFRICAN SAHEL",
+      "description": "is located within",
+      "weight": "10",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "NDVI",
+      "target": "VEGETATION",
+      "description": "is used to measure the response of",
+      "weight": "9",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "LAG-CORRELATIONS ANALYSIS",
+      "target": "VEGETATION",
+      "description": "is used to analyze the response of",
+      "weight": "8",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "LAG-CORRELATIONS ANALYSIS",
+      "target": "RAINFALL",
+      "description": "is used to analyze the effect of",
+      "weight": "8",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "LAG-CORRELATIONS ANALYSIS",
+      "target": "AIR TEMPERATURE",
+      "description": "is used to analyze the effect of",
+      "weight": "8",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "RAINFALL",
+      "description": "is characterized by a lack of",
+      "weight": "10",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "VEGETATION",
+      "description": "negatively impacts",
+      "weight": "8",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "LAND-USE/COVER DYNAMICS",
+      "target": "VEGETATION",
+      "description": "modulates the response of",
+      "weight": "7",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "AGRICULTURALLY DOMINATED LAND",
+      "target": "VEGETATION",
+      "description": "shows more pronounced response at shorter time lags",
+      "weight": "7",
+      "source_id": "paper_11854"
+    },
+    {
+      "source": "BARE-DOMINATED LAND",
+      "target": "VEGETATION",
+      "description": "shows stronger response at longer time lags",
+      "weight": "7",
+      "source_id": "paper_11854"
+    }
+  ]
+}

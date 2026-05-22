@@ -1,0 +1,167 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop grown in sandy soils of Niger",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A crop grown in the dry season following groundnut",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "GROUNDNUT YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of groundnut crops",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "CROP GROWTH VARIABILITY",
+      "type": "TRAIT",
+      "description": "Variability in the growth of crops, acting as a constraint to production",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "SOIL PH",
+      "type": "TRAIT",
+      "description": "The measure of acidity or alkalinity in the soil",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "ALUMINUM TOXICITY",
+      "type": "CONDITION",
+      "description": "Toxic levels of aluminum in the soil affecting plant growth",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "EXCHANGEABLE ALUMINUM",
+      "type": "CONDITION",
+      "description": "Al+++ ions present in the soil",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "NEMATODES",
+      "type": "ORGANISM",
+      "description": "Soil-borne pests whose population affects crop yield",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "LIMING",
+      "type": "METHOD",
+      "description": "The application of lime to soil to improve pH and reduce toxicity",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "CARBOFURAN",
+      "type": "METHOD",
+      "description": "The application of a chemical pesticide to control nematodes and increase yield",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "SANDY SOILS",
+      "type": "CONDITION",
+      "description": "The soil type characterized by high sand content in Niger",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period of high precipitation during which crops are sown",
+      "source_id": "paper_3025"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "The period of low precipitation during which crops are sown",
+      "source_id": "paper_3025"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LIMING",
+      "target": "GROUNDNUT YIELD",
+      "description": "Increases yield in specific seasons",
+      "weight": "7",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "GROUNDNUT YIELD",
+      "description": "Increases pod yield",
+      "weight": "8",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "LIMING",
+      "target": "SOIL PH",
+      "description": "Increases soil pH",
+      "weight": "9",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "LIMING",
+      "target": "EXCHANGEABLE ALUMINUM",
+      "description": "Decreases exchangeable Al+++",
+      "weight": "9",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "NEMATODES",
+      "description": "Reduces nematode population",
+      "weight": "9",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "SANDY SOILS",
+      "target": "CROP GROWTH VARIABILITY",
+      "description": "Contributes to crop growth variability",
+      "weight": "7",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "CROP GROWTH VARIABILITY",
+      "target": "GROUNDNUT",
+      "description": "Acts as a constraint to production",
+      "weight": "8",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "NIGER",
+      "target": "SANDY SOILS",
+      "description": "Location where sandy soils are found",
+      "weight": "10",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RAINY SEASON",
+      "description": "Sown during the rainy season",
+      "weight": "8",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "DRY SEASON",
+      "description": "Sown during the dry season",
+      "weight": "8",
+      "source_id": "paper_3025"
+    },
+    {
+      "source": "EXCHANGEABLE ALUMINUM",
+      "target": "ALUMINUM TOXICITY",
+      "description": "Causes aluminum toxicity",
+      "weight": "10",
+      "source_id": "paper_3025"
+    }
+  ]
+}

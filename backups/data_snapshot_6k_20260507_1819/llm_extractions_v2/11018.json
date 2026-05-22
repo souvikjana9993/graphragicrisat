@@ -1,0 +1,193 @@
+{
+  "entities": [
+    {
+      "name": "CROP AREA STATISTICS",
+      "type": "CONCEPT",
+      "description": "The generation and analysis of data regarding the area occupied by crops in India",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where crop statistics are generated and analyzed",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "LAND REVENUE SYSTEM",
+      "type": "METHOD",
+      "description": "A system used to generate crop statistics for major food and non-food crops",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "FOOD CROPS",
+      "type": "CROP",
+      "description": "Major crops grown primarily for human consumption",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "NON-FOOD CROPS",
+      "type": "CROP",
+      "description": "Crops grown for industrial or other non-consumption purposes",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "SAMPLING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Various techniques used for the estimation of crop areas",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Technology used to obtain information about crop areas from a distance",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "GPS",
+      "type": "METHOD",
+      "description": "Global Positioning System used for precise location and crop area estimation",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "GIS",
+      "type": "METHOD",
+      "description": "Geographic Information System used for capturing and analyzing spatial crop data",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "CROP AREA ESTIMATION",
+      "type": "CONCEPT",
+      "description": "The process of calculating the total land area under specific crop cultivation",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "SMALL AREA ESTIMATION",
+      "type": "METHOD",
+      "description": "The process of estimating crop area for small, specific geographic regions",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "SATELLITE IMAGES",
+      "type": "METHOD",
+      "description": "The use of imagery from satellites to estimate crop area",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "GROUND TRUTHS",
+      "type": "METHOD",
+      "description": "Field-verified data used as a reference to validate satellite-based estimations",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "MIXED CROPPING PATTERN",
+      "type": "CONDITION",
+      "description": "A farming system where multiple crops are grown on the same piece of land, often in fragmented holdings",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "FIELD INVENTORY",
+      "type": "METHOD",
+      "description": "The process of recording actual crop details through field visits",
+      "source_id": "paper_11018"
+    },
+    {
+      "name": "INTEGRATED APPROACH",
+      "type": "METHOD",
+      "description": "A combined methodology used to conduct field inventories",
+      "source_id": "paper_11018"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROP AREA STATISTICS",
+      "target": "INDIA",
+      "description": "generated in",
+      "weight": "8",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "LAND REVENUE SYSTEM",
+      "target": "CROP AREA STATISTICS",
+      "description": "used to generate",
+      "weight": "9",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "LAND REVENUE SYSTEM",
+      "target": "FOOD CROPS",
+      "description": "used for",
+      "weight": "7",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "LAND REVENUE SYSTEM",
+      "target": "NON-FOOD CROPS",
+      "description": "used for",
+      "weight": "7",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "SAMPLING TECHNIQUES",
+      "target": "CROP AREA ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "REMOTE SENSING",
+      "target": "CROP AREA ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "GPS",
+      "target": "CROP AREA ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "GIS",
+      "target": "CROP AREA ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "SATELLITE IMAGES",
+      "target": "CROP AREA ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "SATELLITE IMAGES",
+      "target": "GROUND TRUTHS",
+      "description": "requires reference of",
+      "weight": "10",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "MIXED CROPPING PATTERN",
+      "target": "GROUND TRUTHS",
+      "description": "makes inadequate",
+      "weight": "8",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "FIELD INVENTORY",
+      "target": "INTEGRATED APPROACH",
+      "description": "done adopting",
+      "weight": "8",
+      "source_id": "paper_11018"
+    },
+    {
+      "source": "SMALL AREA ESTIMATION",
+      "target": "CROP AREA ESTIMATION",
+      "description": "type of",
+      "weight": "8",
+      "source_id": "paper_11018"
+    }
+  ]
+}

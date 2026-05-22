@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop species Cajanus cajan, specifically germplasm accession 1CP 102",
+      "source_id": "paper_3713"
+    },
+    {
+      "name": "PROSTRATE GROWTH",
+      "type": "TRAIT",
+      "description": "A spontaneous mutant trait where the plant grows horizontally on the ground",
+      "source_id": "paper_3713"
+    },
+    {
+      "name": "INHERITANCE STUDIES",
+      "type": "METHOD",
+      "description": "Genetic analysis conducted in F1, F2, and testcross generations to determine trait control",
+      "source_id": "paper_3713"
+    },
+    {
+      "name": "RECESSIVE GENE",
+      "type": "GENE_MARKER",
+      "description": "A single recessive gene identified as the controlling factor for the prostrate growth trait",
+      "source_id": "paper_3713"
+    },
+    {
+      "name": "TESTCROSS",
+      "type": "METHOD",
+      "description": "A specific breeding method used within inheritance studies to determine the genotype of the mutant",
+      "source_id": "paper_3713"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "PROSTRATE GROWTH",
+      "description": "possesses the mutant trait of",
+      "weight": "10",
+      "source_id": "paper_3713"
+    },
+    {
+      "source": "INHERITANCE STUDIES",
+      "target": "PROSTRATE GROWTH",
+      "description": "investigated the inheritance of",
+      "weight": "9",
+      "source_id": "paper_3713"
+    },
+    {
+      "source": "RECESSIVE GENE",
+      "target": "PROSTRATE GROWTH",
+      "description": "controls the expression of",
+      "weight": "10",
+      "source_id": "paper_3713"
+    },
+    {
+      "source": "INHERITANCE STUDIES",
+      "target": "RECESSIVE GENE",
+      "description": "determined the trait is controlled by",
+      "weight": "9",
+      "source_id": "paper_3713"
+    },
+    {
+      "source": "TESTCROSS",
+      "target": "INHERITANCE STUDIES",
+      "description": "employed as a method in",
+      "weight": "8",
+      "source_id": "paper_3713"
+    }
+  ]
+}

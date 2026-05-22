@@ -1,0 +1,105 @@
+{
+  "entities": [
+    {
+      "name": "WOMEN'S EMPOWERMENT",
+      "type": "CONCEPT",
+      "description": "The degree of agency, decision-making power, and autonomy held by women in rural households.",
+      "source_id": "paper_11579"
+    },
+    {
+      "name": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "type": "CONCEPT",
+      "description": "The process of incorporating new agricultural technologies into farming practices to improve productivity.",
+      "source_id": "paper_11579"
+    },
+    {
+      "name": "DIETARY DIVERSITY",
+      "type": "CONCEPT",
+      "description": "A measure of the variety of foods consumed, used as an indicator of nutritional status and food security.",
+      "source_id": "paper_11579"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the survey data was collected and the study was conducted.",
+      "source_id": "paper_11579"
+    },
+    {
+      "name": "MULTIPLE TREATMENT ENDOGENOUS SWITCHING REGRESSION",
+      "type": "METHOD",
+      "description": "A statistical framework used to control for potential endogeneity in the relationship between empowerment, technology adoption, and dietary diversity.",
+      "source_id": "paper_11579"
+    },
+    {
+      "name": "HOUSEHOLD WELFARE",
+      "type": "CONCEPT",
+      "description": "The overall well-being and socio-economic status of individuals and households.",
+      "source_id": "paper_11579"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WOMEN'S EMPOWERMENT",
+      "target": "DIETARY DIVERSITY",
+      "description": "has a positive and significant effect on",
+      "weight": "9",
+      "source_id": "paper_11579"
+    },
+    {
+      "source": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "target": "DIETARY DIVERSITY",
+      "description": "has a positive impact on",
+      "weight": "8",
+      "source_id": "paper_11579"
+    },
+    {
+      "source": "WOMEN'S EMPOWERMENT",
+      "target": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "description": "moderates the positive effect of technology adoption on dietary diversity",
+      "weight": "7",
+      "source_id": "paper_11579"
+    },
+    {
+      "source": "MULTIPLE TREATMENT ENDOGENOUS SWITCHING REGRESSION",
+      "target": "WOMEN'S EMPOWERMENT",
+      "description": "used to control for potential endogeneity of",
+      "weight": "6",
+      "source_id": "paper_11579"
+    },
+    {
+      "source": "MULTIPLE TREATMENT ENDOGENOUS SWITCHING REGRESSION",
+      "target": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "description": "used to control for potential endogeneity of",
+      "weight": "6",
+      "source_id": "paper_11579"
+    },
+    {
+      "source": "WOMEN'S EMPOWERMENT",
+      "target": "HOUSEHOLD WELFARE",
+      "description": "promotes the enhancement of",
+      "weight": "8",
+      "source_id": "paper_11579"
+    },
+    {
+      "source": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "target": "HOUSEHOLD WELFARE",
+      "description": "promotes the enhancement of",
+      "weight": "8",
+      "source_id": "paper_11579"
+    },
+    {
+      "source": "KENYA",
+      "target": "WOMEN'S EMPOWERMENT",
+      "description": "location where women's empowerment was assessed",
+      "weight": "5",
+      "source_id": "paper_11579"
+    },
+    {
+      "source": "KENYA",
+      "target": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "description": "location where technology adoption was assessed",
+      "weight": "5",
+      "source_id": "paper_11579"
+    }
+  ]
+}

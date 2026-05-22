@@ -1,0 +1,166 @@
+{
+  "entities": [
+    {
+      "name": "LAND AND WATER",
+      "type": "CONCEPT",
+      "description": "Vital natural resources requiring proper planning and management",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "HYDROLOGICAL CYCLE",
+      "type": "CONCEPT",
+      "description": "The continuous movement of water on, above, and below the surface of the Earth",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "HYDROLOGICAL PARAMETERS",
+      "type": "CONCEPT",
+      "description": "Measurable characteristics of the hydrological cycle, such as runoff",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "SWAT",
+      "type": "METHOD",
+      "description": "Soil and Water Assessment Tool, a physical based semi distributed hydrologic model",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "ARCGIS",
+      "type": "METHOD",
+      "description": "GIS software used as an interface for the SWAT model",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "MUSI BASIN",
+      "type": "LOCATION",
+      "description": "A sub-basin of river Krishna covering an area of 11268.54 sq.km",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "RIVER KRISHNA",
+      "type": "LOCATION",
+      "description": "The river system that contains the Musi Basin",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "LAND USE/LAND COVER",
+      "type": "CONCEPT",
+      "description": "The classification of land based on its use or cover, which impacts surface flow",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "SURFACE RUNOFF",
+      "type": "CONCEPT",
+      "description": "The flow of water that occurs when excess precipitation flows over the Earth's surface",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONDITION",
+      "description": "A specific crop period/season used for simulations",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "IRRIGATED LAND",
+      "type": "CONCEPT",
+      "description": "Land that is artificially watered to support crop growth",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "URBAN LAND",
+      "type": "CONCEPT",
+      "description": "Land developed for urban purposes",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "PRECIPITATION",
+      "type": "CONDITION",
+      "description": "Rainfall used as an input for hydrological simulations",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "IRRIGATION OPERATION",
+      "type": "METHOD",
+      "description": "The practice of applying water to land for agricultural purposes",
+      "source_id": "paper_10403"
+    },
+    {
+      "name": "AGRICULTURAL MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Human-led activities used to manage land and crops",
+      "source_id": "paper_10403"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SWAT",
+      "target": "MUSI BASIN",
+      "description": "applied to model hydrological components of",
+      "weight": "10",
+      "source_id": "paper_10403"
+    },
+    {
+      "source": "ARCGIS",
+      "target": "SWAT",
+      "description": "serves as an interface for",
+      "weight": "9",
+      "source_id": "paper_10403"
+    },
+    {
+      "source": "MUSI BASIN",
+      "target": "RIVER KRISHNA",
+      "description": "is a sub-basin of",
+      "weight": "10",
+      "source_id": "paper_10403"
+    },
+    {
+      "source": "LAND USE/LAND COVER",
+      "target": "SURFACE RUNOFF",
+      "description": "has an impact on",
+      "weight": "9",
+      "source_id": "paper_10403"
+    },
+    {
+      "source": "IRRIGATED LAND",
+      "target": "SURFACE RUNOFF",
+      "description": "increases the amount of",
+      "weight": "8",
+      "source_id": "paper_10403"
+    },
+    {
+      "source": "URBAN LAND",
+      "target": "SURFACE RUNOFF",
+      "description": "increases the amount of",
+      "weight": "8",
+      "source_id": "paper_10403"
+    },
+    {
+      "source": "IRRIGATION OPERATION",
+      "target": "SURFACE RUNOFF",
+      "description": "increases the amount of",
+      "weight": "8",
+      "source_id": "paper_10403"
+    },
+    {
+      "source": "AGRICULTURAL MANAGEMENT PRACTICES",
+      "target": "HYDROLOGICAL PARAMETERS",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_10403"
+    },
+    {
+      "source": "PRECIPITATION",
+      "target": "SURFACE RUNOFF",
+      "description": "is the source of",
+      "weight": "10",
+      "source_id": "paper_10403"
+    },
+    {
+      "source": "KHARIF",
+      "target": "LAND USE/LAND COVER",
+      "description": "is the period during which land use was studied",
+      "weight": "7",
+      "source_id": "paper_10403"
+    }
+  ]
+}

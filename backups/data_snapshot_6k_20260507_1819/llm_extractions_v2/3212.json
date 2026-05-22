@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The target crop of the study, specifically cultivar JL 24",
+      "source_id": "paper_3212"
+    },
+    {
+      "name": "MADS-BOX GENE",
+      "type": "GENE_MARKER",
+      "description": "A gene related to flower development targeted for cloning and amplification",
+      "source_id": "paper_3212"
+    },
+    {
+      "name": "FLOWER DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The biological process associated with the MADS-box gene",
+      "source_id": "paper_3212"
+    },
+    {
+      "name": "DEGENERATE PRIMERS",
+      "type": "METHOD",
+      "description": "Primers designed based on the conserved region of the MADS box to amplify genomic DNA",
+      "source_id": "paper_3212"
+    },
+    {
+      "name": "CLONING",
+      "type": "METHOD",
+      "description": "The process used to obtain partial and full-length MADS-box genes",
+      "source_id": "paper_3212"
+    },
+    {
+      "name": "ARABIDOPSIS THALIANA",
+      "type": "ORGANISM",
+      "description": "A model plant used for homology comparison of the MADS-box protein",
+      "source_id": "paper_3212"
+    },
+    {
+      "name": "JL 24",
+      "type": "CROP",
+      "description": "The specific cultivar of groundnut used in the study",
+      "source_id": "paper_3212"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MADS-BOX GENE",
+      "target": "FLOWER DEVELOPMENT",
+      "description": "is related to",
+      "weight": "9",
+      "source_id": "paper_3212"
+    },
+    {
+      "source": "MADS-BOX GENE",
+      "target": "GROUNDNUT",
+      "description": "is present in",
+      "weight": "10",
+      "source_id": "paper_3212"
+    },
+    {
+      "source": "DEGENERATE PRIMERS",
+      "target": "MADS-BOX GENE",
+      "description": "used to amplify",
+      "weight": "8",
+      "source_id": "paper_3212"
+    },
+    {
+      "source": "CLONING",
+      "target": "MADS-BOX GENE",
+      "description": "used to obtain",
+      "weight": "8",
+      "source_id": "paper_3212"
+    },
+    {
+      "source": "MADS-BOX GENE",
+      "target": "ARABIDOPSIS THALIANA",
+      "description": "shows high homology to protein in",
+      "weight": "7",
+      "source_id": "paper_3212"
+    },
+    {
+      "source": "JL 24",
+      "target": "GROUNDNUT",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3212"
+    }
+  ]
+}

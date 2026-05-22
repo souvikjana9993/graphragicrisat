@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop studied for yield reduction due to soil erosion in the Sahel region.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of productivity for pearl millet affected by topsoil loss and fertilization.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The process of soil degradation leading to topsoil loss in the Sahel.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "SOIL DEGRADATION",
+      "type": "CONCEPT",
+      "description": "The broader process of soil quality decline, of which soil erosion is a major contributor.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "SAHEL",
+      "type": "LOCATION",
+      "description": "The semi-arid region where soil erosion and pearl millet productivity were studied.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "TOPSOIL LOSS",
+      "type": "CONDITION",
+      "description": "The removal of the upper layer of soil, which negatively impacts crop productivity.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "SIMULATED EROSION",
+      "type": "METHOD",
+      "description": "The experimental technique of removing specific depths of topsoil to study its effects.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "ARENOSOL",
+      "type": "CONCEPT",
+      "description": "The specific type of sandy soil on which the field experiments were conducted.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country in the Sahel where the field experiments took place.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "FERTILIZATION",
+      "type": "METHOD",
+      "description": "The application of fertilizers to mitigate the loss of grain yield caused by topsoil removal.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "RAINFALL CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental moisture levels that influence the impact of topsoil removal on yield.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The broader geographic region mentioned in comparison to the Sahel's yield reduction values.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "AP HORIZON",
+      "type": "CONCEPT",
+      "description": "The thin surface soil layer whose loss reduces water and nutrient availability.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "PLANT-AVAILABLE WATER",
+      "type": "CONCEPT",
+      "description": "The amount of water in the soil accessible to plants, reduced by the loss of the Ap horizon.",
+      "source_id": "paper_13174"
+    },
+    {
+      "name": "NUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Essential soil elements reduced by the loss of the Ap horizon, leading to decreased yield.",
+      "source_id": "paper_13174"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL EROSION",
+      "target": "SOIL DEGRADATION",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "TOPSOIL LOSS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "TOPSOIL LOSS",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "SIMULATED EROSION",
+      "target": "GRAIN YIELD",
+      "description": "used to investigate effects on",
+      "weight": "8",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "FERTILIZATION",
+      "target": "GRAIN YIELD",
+      "description": "compensates for loss in",
+      "weight": "8",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GRAIN YIELD",
+      "description": "has a specific",
+      "weight": "10",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "SAHEL",
+      "target": "SOIL EROSION",
+      "description": "prevalent in",
+      "weight": "8",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "NIGER",
+      "target": "SAHEL",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "ARENOSOL",
+      "target": "NIGER",
+      "description": "soil type found in",
+      "weight": "7",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "AP HORIZON",
+      "target": "PLANT-AVAILABLE WATER",
+      "description": "loss reduces",
+      "weight": "9",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "AP HORIZON",
+      "target": "NUTRIENTS",
+      "description": "loss reduces",
+      "weight": "9",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "PLANT-AVAILABLE WATER",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "NUTRIENTS",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_13174"
+    },
+    {
+      "source": "RAINFALL CONDITIONS",
+      "target": "GRAIN YIELD",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_13174"
+    }
+  ]
+}

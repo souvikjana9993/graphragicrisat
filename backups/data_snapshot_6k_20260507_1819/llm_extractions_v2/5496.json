@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop affected by sheath blight and targeted for yield enhancement",
+      "source_id": "paper_5496"
+    },
+    {
+      "name": "SHEATH BLIGHT",
+      "type": "CONDITION",
+      "description": "An economically significant disease affecting rice",
+      "source_id": "paper_5496"
+    },
+    {
+      "name": "PLANT GROWTH-PROMOTING RHIZOBACTERIA",
+      "type": "ORGANISM",
+      "description": "A type of microbial inoculant used for disease management and growth promotion",
+      "source_id": "paper_5496"
+    },
+    {
+      "name": "MICROBIAL INOCULANTS",
+      "type": "CONCEPT",
+      "description": "Biological agents used to improve plant growth and manage diseases",
+      "source_id": "paper_5496"
+    },
+    {
+      "name": "YIELD ENHANCEMENT",
+      "type": "TRAIT",
+      "description": "The improvement of crop productivity",
+      "source_id": "paper_5496"
+    },
+    {
+      "name": "CHEMICAL FUNGICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents used to control fungal diseases",
+      "source_id": "paper_5496"
+    },
+    {
+      "name": "INTEGRAL",
+      "type": "CONCEPT",
+      "description": "A commercial product containing the strain Bacillus subtilis MBI600",
+      "source_id": "paper_5496"
+    },
+    {
+      "name": "BACILLUS SUBTILIS MBI600",
+      "type": "ORGANISM",
+      "description": "A specific strain of PGPR used in the commercial product Integral",
+      "source_id": "paper_5496"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PLANT GROWTH-PROMOTING RHIZOBACTERIA",
+      "target": "MICROBIAL INOCULANTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_5496"
+    },
+    {
+      "source": "PLANT GROWTH-PROMOTING RHIZOBACTERIA",
+      "target": "SHEATH BLIGHT",
+      "description": "used for management of",
+      "weight": "9",
+      "source_id": "paper_5496"
+    },
+    {
+      "source": "PLANT GROWTH-PROMOTING RHIZOBACTERIA",
+      "target": "RICE",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_5496"
+    },
+    {
+      "source": "PLANT GROWTH-PROMOTING RHIZOBACTERIA",
+      "target": "YIELD ENHANCEMENT",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_5496"
+    },
+    {
+      "source": "SHEATH BLIGHT",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5496"
+    },
+    {
+      "source": "CHEMICAL FUNGICIDES",
+      "target": "SHEATH BLIGHT",
+      "description": "used for management of",
+      "weight": "8",
+      "source_id": "paper_5496"
+    },
+    {
+      "source": "INTEGRAL",
+      "target": "BACILLUS SUBTILIS MBI600",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_5496"
+    },
+    {
+      "source": "INTEGRAL",
+      "target": "SHEATH BLIGHT",
+      "description": "used for management of",
+      "weight": "9",
+      "source_id": "paper_5496"
+    },
+    {
+      "source": "BACILLUS SUBTILIS MBI600",
+      "target": "PLANT GROWTH-PROMOTING RHIZOBACTERIA",
+      "description": "is a strain of",
+      "weight": "10",
+      "source_id": "paper_5496"
+    }
+  ]
+}

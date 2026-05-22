@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for infection by rust",
+      "source_id": "paper_1467"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental factor affecting the infection process and lesion density",
+      "source_id": "paper_1467"
+    },
+    {
+      "name": "LEAF WETNESS",
+      "type": "CONDITION",
+      "description": "Duration of moisture on leaves required for infection",
+      "source_id": "paper_1467"
+    },
+    {
+      "name": "INFECTION",
+      "type": "CONCEPT",
+      "description": "The process of the pathogen establishing itself in the host plant",
+      "source_id": "paper_1467"
+    },
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "The rust fungus that infects groundnut",
+      "source_id": "paper_1467"
+    },
+    {
+      "name": "LESION DENSITY",
+      "type": "TRAIT",
+      "description": "A measure of the severity of infection, represented by Dmax",
+      "source_id": "paper_1467"
+    },
+    {
+      "name": "INFECTION INDEX",
+      "type": "CONCEPT",
+      "description": "A metric relating infection to leaf wetness and temperature",
+      "source_id": "paper_1467"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The specific site in southern India where climate implications are discussed",
+      "source_id": "paper_1467"
+    },
+    {
+      "name": "SOUTHERN INDIA",
+      "type": "LOCATION",
+      "description": "The broader geographic region containing Patancheru",
+      "source_id": "paper_1467"
+    },
+    {
+      "name": "INOCULATION",
+      "type": "METHOD",
+      "description": "The process of introducing the pathogen to the plant",
+      "source_id": "paper_1467"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PUCCINIA ARACHIDIS",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "INFECTION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "LEAF WETNESS",
+      "target": "INFECTION",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "LEAF WETNESS",
+      "description": "affects the minimum duration required for infection",
+      "weight": "8",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "LESION DENSITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "LEAF WETNESS",
+      "target": "LESION DENSITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "INFECTION",
+      "description": "initiates",
+      "weight": "8",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "INFECTION INDEX",
+      "target": "LEAF WETNESS",
+      "description": "relates to",
+      "weight": "7",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "INFECTION INDEX",
+      "target": "TEMPERATURE",
+      "description": "relates to",
+      "weight": "7",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "SOUTHERN INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1467"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "INFECTION",
+      "description": "climate affects infection of groundnut crops here",
+      "weight": "7",
+      "source_id": "paper_1467"
+    }
+  ]
+}

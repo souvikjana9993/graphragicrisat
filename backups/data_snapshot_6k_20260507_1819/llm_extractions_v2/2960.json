@@ -1,0 +1,180 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used as a host for the shoot fly Atherigona soccata",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "ATHERIGONA SOCCATA",
+      "type": "ORGANISM",
+      "description": "A shoot fly pest that oviposits on sorghum seedlings",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "OVIPOSITION",
+      "type": "CONCEPT",
+      "description": "The process of laying eggs by the female shoot fly on host plants",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum genotypes like IS 18551 to resist shoot fly infestation",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The vulnerability of sorghum genotypes like CSH 5 to shoot fly infestation",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "VOLATILES",
+      "type": "CONCEPT",
+      "description": "Chemical compounds emitted by sorghum seedlings that influence pest behavior",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "GREENHOUSE CONDITIONS",
+      "type": "CONDITION",
+      "description": "The controlled environment where the oviposition experiments were conducted",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "SEEDLING AGE",
+      "type": "CONDITION",
+      "description": "The age of sorghum seedlings, categorized as younger (5-10 DAE) or older (14-21 DAE)",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "HOST PLANT ODOUR",
+      "type": "CONCEPT",
+      "description": "The scent emitted by the sorghum plant that attracts the pest",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "FISHMEAL",
+      "type": "CONCEPT",
+      "description": "A substance used in treatments to compare its effect on pest response against host plant odour",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "TRANSPARENT TRAP",
+      "type": "METHOD",
+      "description": "A type of trap used to attract and capture adult A. soccata",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "LIVE FLY TRAP",
+      "type": "METHOD",
+      "description": "A type of trap used for comparison in adult attraction experiments",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "BLACK TRAP",
+      "type": "METHOD",
+      "description": "A type of trap used for comparison in adult attraction experiments",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "ADULT ATTRACTION",
+      "type": "CONCEPT",
+      "description": "The process by which adult A. soccata are drawn to specific stimuli",
+      "source_id": "paper_2960"
+    },
+    {
+      "name": "PHOTOTACTIC STIMULI",
+      "type": "CONCEPT",
+      "description": "Optical stimuli that facilitate the orientation of the pest to its host",
+      "source_id": "paper_2960"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ATHERIGONA SOCCATA",
+      "target": "SORGHUM",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "ATHERIGONA SOCCATA",
+      "target": "OVIPOSITION",
+      "description": "performs",
+      "weight": "9",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "VOLATILES",
+      "description": "emits",
+      "weight": "9",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "VOLATILES",
+      "target": "OVIPOSITION",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "8",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "SUSCEPTIBILITY",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "8",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "SEEDLING AGE",
+      "target": "VOLATILES",
+      "description": "affects emission of",
+      "weight": "7",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "ATHERIGONA SOCCATA",
+      "target": "ADULT ATTRACTION",
+      "description": "is the subject of",
+      "weight": "9",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "VOLATILES",
+      "target": "ADULT ATTRACTION",
+      "description": "triggers",
+      "weight": "8",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "PHOTOTACTIC STIMULI",
+      "target": "ADULT ATTRACTION",
+      "description": "facilitates",
+      "weight": "7",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "TRANSPARENT TRAP",
+      "target": "ADULT ATTRACTION",
+      "description": "measures",
+      "weight": "8",
+      "source_id": "paper_2960"
+    },
+    {
+      "source": "GREENHOUSE CONDITIONS",
+      "target": "OVIPOSITION",
+      "description": "is the setting for",
+      "weight": "7",
+      "source_id": "paper_2960"
+    }
+  ]
+}

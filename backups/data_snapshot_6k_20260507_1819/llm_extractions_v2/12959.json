@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop studied for yield and response to soil conservation measures.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "SOUTHWEST ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The region in Ethiopia where the study was conducted.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "BOKOLE-KARETHA WATERSHED",
+      "type": "LOCATION",
+      "description": "The specific watershed in southwest Ethiopia where field experiments were performed.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "SOIL DEGRADATION",
+      "type": "CONDITION",
+      "description": "The decline in soil quality due to erosion, challenging crop production.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "WATER EROSION",
+      "type": "CONDITION",
+      "description": "The process of soil removal by water, leading to soil degradation.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "SURFACE RUNOFF",
+      "type": "CONDITION",
+      "description": "The flow of water that occurs when excess stormwater runs off the land surface.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "SOIL BUNDS",
+      "type": "METHOD",
+      "description": "Conservation structures constructed along contour lines to limit surface runoff and soil erosion.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "TRENCHES",
+      "type": "METHOD",
+      "description": "Structures often used in combination with soil bunds to manage water runoff.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "AQUACROP",
+      "type": "METHOD",
+      "description": "An FAO crop simulation model used to evaluate the effects of soil bunds on runoff and yield.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "MAIZE YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area of maize.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "INFILTRATION CAPACITY",
+      "type": "TRAIT",
+      "description": "The maximum rate at which soil can absorb water, related to the curve number in AquaCrop.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "WATER PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a crop uses water to produce biomass or grain.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "TRAIT",
+      "description": "The ability of the soil to provide essential nutrients for plant growth.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "FERTILIZATION",
+      "type": "METHOD",
+      "description": "The application of nutrients to the soil to prevent degradation and nutrient stress.",
+      "source_id": "paper_12959"
+    },
+    {
+      "name": "NUTRIENT STRESS",
+      "type": "CONDITION",
+      "description": "A state where plants lack sufficient nutrients for optimal growth.",
+      "source_id": "paper_12959"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL BUNDS",
+      "target": "SURFACE RUNOFF",
+      "description": "significantly reduces",
+      "weight": "9",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "SOIL BUNDS",
+      "target": "MAIZE YIELD",
+      "description": "has no significant short-term effect on",
+      "weight": "5",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "WATER EROSION",
+      "target": "SOIL DEGRADATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "SOIL BUNDS",
+      "target": "SOIL DEGRADATION",
+      "description": "limits",
+      "weight": "8",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "AQUACROP",
+      "target": "SURFACE RUNOFF",
+      "description": "models",
+      "weight": "9",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "AQUACROP",
+      "target": "MAIZE YIELD",
+      "description": "models",
+      "weight": "9",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "MAIZE",
+      "target": "SOUTHWEST ETHIOPIA",
+      "description": "is cultivated in",
+      "weight": "10",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "BOKOLE-KARETHA WATERSHED",
+      "target": "SOUTHWEST ETHIOPIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "TRENCHES",
+      "target": "SURFACE RUNOFF",
+      "description": "limits",
+      "weight": "7",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "FERTILIZATION",
+      "target": "NUTRIENT STRESS",
+      "description": "prevents",
+      "weight": "9",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "FERTILIZATION",
+      "target": "SOIL DEGRADATION",
+      "description": "prevents",
+      "weight": "8",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "SOIL FERTILITY",
+      "target": "MAIZE YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "WATER PRODUCTIVITY",
+      "target": "MAIZE YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12959"
+    },
+    {
+      "source": "INFILTRATION CAPACITY",
+      "target": "SURFACE RUNOFF",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12959"
+    }
+  ]
+}

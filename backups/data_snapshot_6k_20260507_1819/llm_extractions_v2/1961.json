@@ -1,0 +1,225 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bi-color (L.) Moench landrace collection maintained by ICRISAT",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "CORE COLLECTION",
+      "type": "CONCEPT",
+      "description": "A representative subset of a larger landrace collection",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "RANDOM SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling procedure used after stratification to establish a subset",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "STRATIFICATION",
+      "type": "METHOD",
+      "description": "A process of dividing the collection into subgroups before random sampling",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "SELECTIVE SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling procedure based on quantitative characters",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "QUANTITATIVE CHARACTERS",
+      "type": "TRAIT",
+      "description": "Measurable phenotypic traits used for selective sampling",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "GEOGRAPHICAL ORIGIN",
+      "type": "CONCEPT",
+      "description": "The location of origin of landraces used as a selection criterion",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "FARMERS' SELECTION",
+      "type": "CONCEPT",
+      "description": "Traits selected by farmers used as a selection criterion",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variety of genetic characteristics within the sorghum subsets",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "MICROSATELLITE LOCI",
+      "type": "GENE_MARKER",
+      "description": "15 loci used to assess genetic diversity through polymorphisms",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "MULTIPLEX POLYMERASE CHAIN REACTIONS",
+      "type": "METHOD",
+      "description": "PCRs used to genotype landraces using fluorescent primer-pairs",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "FLUORESCENT PRIMER-PAIRS",
+      "type": "GENE_MARKER",
+      "description": "Primer-pairs used in multiplex PCRs for allele sizing",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "SEMI-AUTOMATED ALLELE SIZING",
+      "type": "METHOD",
+      "description": "A method used to determine the size of alleles from PCR products",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "ALLELIC RICHNESS",
+      "type": "CONCEPT",
+      "description": "The average number of alleles per locus, used as a measure of genetic diversity",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "ALLELIC FREQUENCY DISTRIBUTION",
+      "type": "CONCEPT",
+      "description": "The distribution of alleles within each subset compared using statistical tests",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "CHI-SQUARE TEST",
+      "type": "METHOD",
+      "description": "A statistical test used to compare allelic frequency distributions",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "RARE ALLELES",
+      "type": "GENE_MARKER",
+      "description": "Alleles with low frequency maintained in the subsets",
+      "source_id": "paper_1961"
+    },
+    {
+      "name": "PHENOTYPIC CHARACTERS",
+      "type": "TRAIT",
+      "description": "Observable characteristics used in sampling procedures",
+      "source_id": "paper_1961"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RANDOM SAMPLING",
+      "target": "SORGHUM",
+      "description": "used to establish subsets of",
+      "weight": "8",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "SELECTIVE SAMPLING",
+      "target": "SORGHUM",
+      "description": "used to establish subsets of",
+      "weight": "8",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "QUANTITATIVE CHARACTERS",
+      "target": "SELECTIVE SAMPLING",
+      "description": "basis for",
+      "weight": "10",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "GEOGRAPHICAL ORIGIN",
+      "target": "SORGHUM",
+      "description": "used for selection of",
+      "weight": "7",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "FARMERS' SELECTION",
+      "target": "SORGHUM",
+      "description": "used for selection of",
+      "weight": "7",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "MICROSATELLITE LOCI",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to assess",
+      "weight": "10",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "MULTIPLEX POLYMERASE CHAIN REACTIONS",
+      "target": "MICROSATELLITE LOCI",
+      "description": "used to genotype",
+      "weight": "9",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "FLUORESCENT PRIMER-PAIRS",
+      "target": "MULTIPLEX POLYMERASE CHAIN REACTIONS",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "SEMI-AUTOMATED ALLELE SIZING",
+      "target": "MULTIPLEX POLYMERASE CHAIN REACTIONS",
+      "description": "used for sizing alleles in",
+      "weight": "9",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "CHI-SQUARE TEST",
+      "target": "ALLELIC FREQUENCY DISTRIBUTION",
+      "description": "used to compare",
+      "weight": "10",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "PHENOTYPIC CHARACTERS",
+      "target": "GENETIC DIVERSITY",
+      "description": "sampling based on these did not affect",
+      "weight": "6",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "SORGHUM",
+      "description": "maintains the collection of",
+      "weight": "10",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "STRATIFICATION",
+      "target": "RANDOM SAMPLING",
+      "description": "precedes",
+      "weight": "9",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "CORE COLLECTION",
+      "target": "SORGHUM",
+      "description": "established from",
+      "weight": "9",
+      "source_id": "paper_1961"
+    },
+    {
+      "source": "ALLELIC RICHNESS",
+      "target": "GENETIC DIVERSITY",
+      "description": "measure of",
+      "weight": "9",
+      "source_id": "paper_1961"
+    }
+  ]
+}

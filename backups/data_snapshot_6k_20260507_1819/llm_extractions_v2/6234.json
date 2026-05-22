@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop being studied for virus transmission.",
+      "source_id": "paper_6234"
+    },
+    {
+      "name": "PEANUT MOTTLE VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus that infects peanut plants and can be transmitted through seeds.",
+      "source_id": "paper_6234"
+    },
+    {
+      "name": "ENZYME-LINKED IMMUNOSORBENT ASSAY",
+      "type": "METHOD",
+      "description": "A biochemical technique used to detect the presence of the peanut mottle virus in seed extracts.",
+      "source_id": "paper_6234"
+    },
+    {
+      "name": "SEED TRANSMISSION",
+      "type": "TRAIT",
+      "description": "The ability of a virus to be passed from the parent plant to the offspring via the seed.",
+      "source_id": "paper_6234"
+    },
+    {
+      "name": "INFECTIVITY ASSAYS",
+      "type": "METHOD",
+      "description": "Tests used to determine the ability of a virus to cause infection.",
+      "source_id": "paper_6234"
+    },
+    {
+      "name": "GROWING-OUT TESTS",
+      "type": "METHOD",
+      "description": "Tests where seeds are grown to observe the manifestation of viral symptoms.",
+      "source_id": "paper_6234"
+    },
+    {
+      "name": "PEANUT GERM PLASM LINES",
+      "type": "CONCEPT",
+      "description": "A collection of genetic resources of peanut used for screening for virus transmission.",
+      "source_id": "paper_6234"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ENZYME-LINKED IMMUNOSORBENT ASSAY",
+      "target": "PEANUT MOTTLE VIRUS",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_6234"
+    },
+    {
+      "source": "PEANUT MOTTLE VIRUS",
+      "target": "PEANUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_6234"
+    },
+    {
+      "source": "PEANUT MOTTLE VIRUS",
+      "target": "SEED TRANSMISSION",
+      "description": "is capable of",
+      "weight": "9",
+      "source_id": "paper_6234"
+    },
+    {
+      "source": "ENZYME-LINKED IMMUNOSORBENT ASSAY",
+      "target": "PEANUT GERM PLASM LINES",
+      "description": "used to screen",
+      "weight": "8",
+      "source_id": "paper_6234"
+    },
+    {
+      "source": "INFECTIVITY ASSAYS",
+      "target": "PEANUT MOTTLE VIRUS",
+      "description": "used to detect",
+      "weight": "9",
+      "source_id": "paper_6234"
+    },
+    {
+      "source": "GROWING-OUT TESTS",
+      "target": "PEANUT MOTTLE VIRUS",
+      "description": "used to detect",
+      "weight": "9",
+      "source_id": "paper_6234"
+    },
+    {
+      "source": "ENZYME-LINKED IMMUNOSORBENT ASSAY",
+      "target": "INFECTIVITY ASSAYS",
+      "description": "shows complete correlation",
+      "weight": "10",
+      "source_id": "paper_6234"
+    },
+    {
+      "source": "ENZYME-LINKED IMMUNOSORBENT ASSAY",
+      "target": "GROWING-OUT TESTS",
+      "description": "shows complete correlation",
+      "weight": "10",
+      "source_id": "paper_6234"
+    },
+    {
+      "source": "INFECTIVITY ASSAYS",
+      "target": "GROWING-OUT TESTS",
+      "description": "shows complete correlation",
+      "weight": "10",
+      "source_id": "paper_6234"
+    }
+  ]
+}

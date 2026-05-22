@@ -1,0 +1,170 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop studied, Arachis hypogaea L., evaluated for water-use efficiency under drought conditions.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "WATER-USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency of water use (W), measured as g kg−1, which varies among genotypes.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "CARBON ISOTOPE DISCRIMINATION",
+      "type": "TRAIT",
+      "description": "The discrimination of carbon isotopes in leaves (Δ), used as a proxy for identifying genotypes with greater water-use efficiency.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "Drought regimes, including intermittent and prolonged water deficit conditions.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "MINI-LYSIMETERS",
+      "type": "METHOD",
+      "description": "Tools embedded in soil used for accurate measurement of water use and total dry matter in a canopy environment.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "TOTAL DRY MATTER",
+      "type": "TRAIT",
+      "description": "The total dry mass of the plant, including roots, which influences water-use efficiency.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "TIFTON-8",
+      "type": "CONCEPT",
+      "description": "A peanut genotype that exhibited the highest water-use efficiency.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "CHICO",
+      "type": "CONCEPT",
+      "description": "A peanut genotype that exhibited the lowest water-use efficiency.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "SPECIFIC LEAF AREA",
+      "type": "TRAIT",
+      "description": "SLA, a measure of leaf thickness that is negatively correlated with water-use efficiency.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "MASS SPECTROMETRY",
+      "type": "METHOD",
+      "description": "Analytical technique used to measure carbon isotope discrimination.",
+      "source_id": "paper_3129"
+    },
+    {
+      "name": "RAIN-OUT SHELTERS",
+      "type": "METHOD",
+      "description": "Automated shelters used to prevent rain from reaching experimental plots to maintain drought conditions.",
+      "source_id": "paper_3129"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER-USE EFFICIENCY",
+      "target": "CARBON ISOTOPE DISCRIMINATION",
+      "description": "Negatively correlated, making carbon isotope discrimination a useful trait for selecting genotypes with improved water-use efficiency",
+      "weight": "9",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "PEANUT",
+      "target": "WATER-USE EFFICIENCY",
+      "description": "The crop in which water-use efficiency was measured",
+      "weight": "10",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "PEANUT",
+      "target": "CARBON ISOTOPE DISCRIMINATION",
+      "description": "The crop in which carbon isotope discrimination was measured",
+      "weight": "10",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "PEANUT",
+      "target": "WATER DEFICIT",
+      "description": "The crop subjected to intermittent and prolonged water deficit conditions",
+      "weight": "10",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "WATER-USE EFFICIENCY",
+      "target": "WATER DEFICIT",
+      "description": "Trait evaluated under drought conditions in the field",
+      "weight": "8",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "MINI-LYSIMETERS",
+      "target": "WATER-USE EFFICIENCY",
+      "description": "Used to accurately measure water use for calculating water-use efficiency",
+      "weight": "8",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "MINI-LYSIMETERS",
+      "target": "TOTAL DRY MATTER",
+      "description": "Used to accurately measure total dry matter including roots",
+      "weight": "8",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "WATER-USE EFFICIENCY",
+      "target": "TOTAL DRY MATTER",
+      "description": "Variation in water-use efficiency arose mainly from genotypic differences in total dry matter production",
+      "weight": "7",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "TIFTON-8",
+      "target": "WATER-USE EFFICIENCY",
+      "description": "Genotype with the highest recorded water-use efficiency",
+      "weight": "9",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "CHICO",
+      "target": "WATER-USE EFFICIENCY",
+      "description": "Genotype with the lowest recorded water-use efficiency",
+      "weight": "9",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "WATER-USE EFFICIENCY",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "Strong negative relationship where genotypes with thicker leaves had greater water-use efficiency",
+      "weight": "9",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "CARBON ISOTOPE DISCRIMINATION",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "Relationship exists between carbon isotope discrimination and specific leaf area",
+      "weight": "7",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "MASS SPECTROMETRY",
+      "target": "CARBON ISOTOPE DISCRIMINATION",
+      "description": "Facility/method used to measure carbon isotope discrimination",
+      "weight": "10",
+      "source_id": "paper_3129"
+    },
+    {
+      "source": "RAIN-OUT SHELTERS",
+      "target": "WATER DEFICIT",
+      "description": "Used to prevent rain from reaching plots to ensure water deficit conditions",
+      "weight": "8",
+      "source_id": "paper_3129"
+    }
+  ]
+}

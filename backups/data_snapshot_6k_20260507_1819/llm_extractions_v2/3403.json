@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species studied for its ability to emerge through soil crusts",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "SEEDLING EMERGENCE",
+      "type": "TRAIT",
+      "description": "The ability of a seedling to break through the soil surface and emerge",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "SOIL CRUSTING",
+      "type": "CONDITION",
+      "description": "The formation of a hard surface layer on the soil that can impede seedling emergence",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "ARIDOSOLS",
+      "type": "CONCEPT",
+      "description": "A specific soil type studied at Hisar that is susceptible to surface crusting",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "HISAR",
+      "type": "LOCATION",
+      "description": "The geographical location where Aridosols were studied",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "ALFISOLS",
+      "type": "CONCEPT",
+      "description": "A specific soil type studied at Patancheru that is susceptible to surface crusting and soil hardening",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The geographical location where Alfisols were studied",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "SOIL HARDENING",
+      "type": "CONDITION",
+      "description": "The process of soil becoming hard upon drying, observed in Alfisols",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "CRUST STRENGTH",
+      "type": "CONCEPT",
+      "description": "The physical strength of the soil crust, which increases as moisture decreases and temperature increases",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONCEPT",
+      "description": "The water content in the soil seed zone, which decreases as crust strength increases",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "SOIL TEMPERATURE",
+      "type": "CONCEPT",
+      "description": "The temperature of the soil in the seed zone, which increases as crust strength increases",
+      "source_id": "paper_3403"
+    },
+    {
+      "name": "GENETIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The genetic differences among sorghum lines that affect their ability to emerge through soil crusts",
+      "source_id": "paper_3403"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL CRUSTING",
+      "target": "SEEDLING EMERGENCE",
+      "description": "Impairs the process of seedling emergence",
+      "weight": "9",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEEDLING EMERGENCE",
+      "description": "The crop that exhibits the trait of seedling emergence",
+      "weight": "10",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "ARIDOSOLS",
+      "target": "HISAR",
+      "description": "The soil type studied at this location",
+      "weight": "10",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "ALFISOLS",
+      "target": "PATANCHERU",
+      "description": "The soil type studied at this location",
+      "weight": "10",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "ARIDOSOLS",
+      "target": "SOIL CRUSTING",
+      "description": "Susceptible to the formation of surface crusts",
+      "weight": "8",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "ALFISOLS",
+      "target": "SOIL CRUSTING",
+      "description": "Susceptible to the formation of surface crusts",
+      "weight": "8",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "ALFISOLS",
+      "target": "SOIL HARDENING",
+      "description": "Prone to hardening upon drying",
+      "weight": "8",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "CRUST STRENGTH",
+      "target": "SOIL MOISTURE",
+      "description": "Inversely related; strength increases as moisture decreases",
+      "weight": "7",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "CRUST STRENGTH",
+      "target": "SOIL TEMPERATURE",
+      "description": "Positively related; strength increases as temperature increases",
+      "weight": "7",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GENETIC VARIABILITY",
+      "description": "Exhibits genetic variability in its ability to emerge through crusts",
+      "weight": "8",
+      "source_id": "paper_3403"
+    },
+    {
+      "source": "GENETIC VARIABILITY",
+      "target": "SEEDLING EMERGENCE",
+      "description": "Determines the variation in seedling emergence ability across genotypes",
+      "weight": "9",
+      "source_id": "paper_3403"
+    }
+  ]
+}

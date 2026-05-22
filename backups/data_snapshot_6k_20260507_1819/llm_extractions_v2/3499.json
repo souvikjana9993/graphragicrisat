@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor genotypes used to study root exudation and bacterial utilization",
+      "source_id": "paper_3499"
+    },
+    {
+      "name": "ROOT EXUDATION",
+      "type": "CONCEPT",
+      "description": "The release of soluble exudates from the roots of seedlings",
+      "source_id": "paper_3499"
+    },
+    {
+      "name": "DIAZOTROPHIC BACTERIA",
+      "type": "ORGANISM",
+      "description": "Nitrogen-fixing bacteria that can utilize root exudates for growth",
+      "source_id": "paper_3499"
+    },
+    {
+      "name": "SOLUBLE ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "The organic carbon compounds released as part of root exudates",
+      "source_id": "paper_3499"
+    },
+    {
+      "name": "ACETYLENE REDUCTION ACTIVITY",
+      "type": "METHOD",
+      "description": "A technique used to measure the nitrogen-fixing activity of plant-associated bacteria",
+      "source_id": "paper_3499"
+    },
+    {
+      "name": "AZOSPIRILLUM LIPOFERUM 4ABL",
+      "type": "ORGANISM",
+      "description": "A specific strain of diazotrophic bacteria used in the study",
+      "source_id": "paper_3499"
+    },
+    {
+      "name": "AXENIC GROWTH",
+      "type": "CONDITION",
+      "description": "The growth of seedlings in a sterile environment to ensure no other organisms are present",
+      "source_id": "paper_3499"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "ROOT EXUDATION",
+      "description": "Sorghum seedlings produce soluble root exudates",
+      "weight": "10",
+      "source_id": "paper_3499"
+    },
+    {
+      "source": "ROOT EXUDATION",
+      "target": "DIAZOTROPHIC BACTERIA",
+      "description": "Diazotrophic bacteria utilize root exudates for growth",
+      "weight": "9",
+      "source_id": "paper_3499"
+    },
+    {
+      "source": "ROOT EXUDATION",
+      "target": "SOLUBLE ORGANIC CARBON",
+      "description": "Root exudates consist of soluble organic carbon",
+      "weight": "10",
+      "source_id": "paper_3499"
+    },
+    {
+      "source": "DIAZOTROPHIC BACTERIA",
+      "target": "AZOSPIRILLUM LIPOFERUM 4ABL",
+      "description": "Azospirillum lipoferum 4ABL is a specific strain of diazotrophic bacteria",
+      "weight": "10",
+      "source_id": "paper_3499"
+    },
+    {
+      "source": "AZOSPIRILLUM LIPOFERUM 4ABL",
+      "target": "ACETYLENE REDUCTION ACTIVITY",
+      "description": "The nitrogen-fixing activity of Azospirillum lipoferum 4ABL was measured using acetylene reduction activity",
+      "weight": "8",
+      "source_id": "paper_3499"
+    },
+    {
+      "source": "AZOSPIRILLUM LIPOFERUM 4ABL",
+      "target": "ROOT EXUDATION",
+      "description": "The ability of Azospirillum lipoferum 4ABL to utilize root exudates was evaluated",
+      "weight": "8",
+      "source_id": "paper_3499"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "AXENIC GROWTH",
+      "description": "Sorghum seedlings were grown under axenic conditions",
+      "weight": "7",
+      "source_id": "paper_3499"
+    },
+    {
+      "source": "AXENIC GROWTH",
+      "target": "SOLUBLE ORGANIC CARBON",
+      "description": "Axenic growth was used to measure the amount of soluble organic carbon exuded by seedlings",
+      "weight": "8",
+      "source_id": "paper_3499"
+    }
+  ]
+}

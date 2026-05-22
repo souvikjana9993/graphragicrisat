@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Grain sorghum grown in environments of highly variable water supply.",
+      "source_id": "paper_10041"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by water deficits and variable water supply.",
+      "source_id": "paper_10041"
+    },
+    {
+      "name": "GENOTYPE-BY-ENVIRONMENT INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "Interactions between genotype and environment that complicate the definition of target environments and traits.",
+      "source_id": "paper_10041"
+    },
+    {
+      "name": "DROUGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the crop to withstand water deficits, serving as a target for breeding improvement.",
+      "source_id": "paper_10041"
+    },
+    {
+      "name": "SORGHUM SIMULATION MODELS",
+      "type": "METHOD",
+      "description": "Tools used to characterize environmental challenges and assess the value and action of traits.",
+      "source_id": "paper_10041"
+    },
+    {
+      "name": "INTEGRATED SYSTEMS ANALYSIS",
+      "type": "METHOD",
+      "description": "A multidisciplinary approach involving physiologists, agronomists, and plant breeders to improve selection efficiency.",
+      "source_id": "paper_10041"
+    },
+    {
+      "name": "SELECTION CRITERIA",
+      "type": "CONCEPT",
+      "description": "Traits used as a basis for selecting plants during the breeding process.",
+      "source_id": "paper_10041"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "DROUGHT",
+      "description": "is grown in environments characterized by",
+      "weight": "9",
+      "source_id": "paper_10041"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "DROUGHT RESISTANCE",
+      "description": "is the target for improvement of",
+      "weight": "10",
+      "source_id": "paper_10041"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "GENOTYPE-BY-ENVIRONMENT INTERACTIONS",
+      "description": "contributes to the occurrence of",
+      "weight": "7",
+      "source_id": "paper_10041"
+    },
+    {
+      "source": "GENOTYPE-BY-ENVIRONMENT INTERACTIONS",
+      "target": "SELECTION CRITERIA",
+      "description": "makes the definition of",
+      "weight": "8",
+      "source_id": "paper_10041"
+    },
+    {
+      "source": "SORGHUM SIMULATION MODELS",
+      "target": "DROUGHT",
+      "description": "is used to characterize the challenges of",
+      "weight": "9",
+      "source_id": "paper_10041"
+    },
+    {
+      "source": "SORGHUM SIMULATION MODELS",
+      "target": "DROUGHT RESISTANCE",
+      "description": "is used to assess the value of traits for",
+      "weight": "8",
+      "source_id": "paper_10041"
+    },
+    {
+      "source": "INTEGRATED SYSTEMS ANALYSIS",
+      "target": "DROUGHT RESISTANCE",
+      "description": "is used to improve the efficiency of selection for",
+      "weight": "8",
+      "source_id": "paper_10041"
+    },
+    {
+      "source": "SELECTION CRITERIA",
+      "target": "DROUGHT RESISTANCE",
+      "description": "are used to identify plants with",
+      "weight": "9",
+      "source_id": "paper_10041"
+    }
+  ]
+}

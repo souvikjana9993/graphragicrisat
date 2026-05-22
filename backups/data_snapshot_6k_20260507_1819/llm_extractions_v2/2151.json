@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop species Cicer arietinum, whose seeds were infected by X. campestris",
+      "source_id": "paper_2151"
+    },
+    {
+      "name": "XANTHOMONAS CAMPESTRIS",
+      "type": "ORGANISM",
+      "description": "The bacterial pathogen causing bacterial wilt in chickpea",
+      "source_id": "paper_2151"
+    },
+    {
+      "name": "BACTERIAL WILT",
+      "type": "CONDITION",
+      "description": "A seedborne infection that kills seeds before germination, seedlings after emergence, or causes progressive wilt in older plants",
+      "source_id": "paper_2151"
+    },
+    {
+      "name": "HYDROGEN PEROXIDE",
+      "type": "METHOD",
+      "description": "A 30% solution used as a seed dipping treatment to control seedborne infection",
+      "source_id": "paper_2151"
+    },
+    {
+      "name": "STREPTOCYCLINE",
+      "type": "METHOD",
+      "description": "An antibiotic (1000 p.p.m.) used in seed dipping to control seedborne infection",
+      "source_id": "paper_2151"
+    },
+    {
+      "name": "GERMINATION",
+      "type": "TRAIT",
+      "description": "The biological process of seed growth, which is negatively impacted by X. campestris but not by the treatments",
+      "source_id": "paper_2151"
+    },
+    {
+      "name": "PLANT QUARANTINE UNIT",
+      "type": "LOCATION",
+      "description": "The facility where the infected chickpea seeds were received for export",
+      "source_id": "paper_2151"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "XANTHOMONAS CAMPESTRIS",
+      "target": "BACTERIAL WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2151"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2151"
+    },
+    {
+      "source": "HYDROGEN PEROXIDE",
+      "target": "BACTERIAL WILT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_2151"
+    },
+    {
+      "source": "STREPTOCYCLINE",
+      "target": "BACTERIAL WILT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_2151"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "GERMINATION",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_2151"
+    },
+    {
+      "source": "HYDROGEN PEROXIDE",
+      "target": "GERMINATION",
+      "description": "does not reduce",
+      "weight": "7",
+      "source_id": "paper_2151"
+    },
+    {
+      "source": "STREPTOCYCLINE",
+      "target": "GERMINATION",
+      "description": "does not reduce",
+      "weight": "7",
+      "source_id": "paper_2151"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "PLANT QUARANTINE UNIT",
+      "description": "received at",
+      "weight": "5",
+      "source_id": "paper_2151"
+    }
+  ]
+}

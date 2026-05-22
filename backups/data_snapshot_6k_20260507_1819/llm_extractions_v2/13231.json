@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The legume crop studied for aflatoxin contamination and drought tolerance.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "AFLATOXIN B1 CONTAMINATION",
+      "type": "CONCEPT",
+      "description": "The contamination of peanuts by Aflatoxin B1 produced by Aspergillus flavus.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by lack of water available to the plant.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of peanut genotypes to maintain yield and resist contamination under water-stressed conditions.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The fungus responsible for colonization and aflatoxin production in peanuts.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The general geographic region where the research is applicable.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "ICRISAT SAHELIAN CENTER",
+      "type": "LOCATION",
+      "description": "The specific location where the experiments were conducted.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "INTERMITTENT WATER-STRESSED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Water-stressed conditions imposed from the 60th day after sowing to maturity.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "WELL-WATERED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Control conditions where plants received adequate water.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "ALPHA LATTICE DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to assess the genotypes.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of pod, seed, and haulm production of the peanut plant.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "SEED COAT TOTAL POLYPHENOL",
+      "type": "GENE_MARKER",
+      "description": "A biochemical marker in the seed coat associated with resistance to aflatoxin contamination.",
+      "source_id": "paper_13231"
+    },
+    {
+      "name": "IMMATURE PODS PER PLANT",
+      "type": "TRAIT",
+      "description": "The number of pods that fail to mature, often increasing under drought stress.",
+      "source_id": "paper_13231"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT STRESS",
+      "target": "AFLATOXIN B1 CONTAMINATION",
+      "description": "Increases the severity of contamination",
+      "weight": "8",
+      "source_id": "paper_13231"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN B1 CONTAMINATION",
+      "description": "Causes contamination through colonization and infection",
+      "weight": "10",
+      "source_id": "paper_13231"
+    },
+    {
+      "source": "PEANUT",
+      "target": "DROUGHT TOLERANCE",
+      "description": "Genotypes of this crop are evaluated for this trait",
+      "weight": "9",
+      "source_id": "paper_13231"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "AFLATOXIN B1 CONTAMINATION",
+      "description": "Drought-tolerant genotypes show resistance to contamination",
+      "weight": "7",
+      "source_id": "paper_13231"
+    },
+    {
+      "source": "SEED COAT TOTAL POLYPHENOL",
+      "target": "AFLATOXIN B1 CONTAMINATION",
+      "description": "Significant relationship between this marker and aflatoxin resistance",
+      "weight": "9",
+      "source_id": "paper_13231"
+    },
+    {
+      "source": "INTERMITTENT WATER-STRESSED CONDITIONS",
+      "target": "YIELD",
+      "description": "Reduces pod, seed, and haulm yield",
+      "weight": "8",
+      "source_id": "paper_13231"
+    },
+    {
+      "source": "INTERMITTENT WATER-STRESSED CONDITIONS",
+      "target": "IMMATURE PODS PER PLANT",
+      "description": "Increases the number of immature pods",
+      "weight": "8",
+      "source_id": "paper_13231"
+    },
+    {
+      "source": "INTERMITTENT WATER-STRESSED CONDITIONS",
+      "target": "AFLATOXIN B1 CONTAMINATION",
+      "description": "Increases the level of contamination",
+      "weight": "8",
+      "source_id": "paper_13231"
+    },
+    {
+      "source": "ALPHA LATTICE DESIGN",
+      "target": "PEANUT",
+      "description": "Used as the experimental framework to assess peanut genotypes",
+      "weight": "7",
+      "source_id": "paper_13231"
+    },
+    {
+      "source": "ICRISAT SAHELIAN CENTER",
+      "target": "PEANUT",
+      "description": "Location where peanut experiments were carried out",
+      "weight": "7",
+      "source_id": "paper_13231"
+    }
+  ]
+}

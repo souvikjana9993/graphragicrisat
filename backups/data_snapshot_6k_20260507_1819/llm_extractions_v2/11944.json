@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "COVID-19",
+      "type": "CONDITION",
+      "description": "The pandemic caused by the SARS-CoV-2 virus affecting food security",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "LOCUST ATTACKS",
+      "type": "CONDITION",
+      "description": "Infestations of locusts that damage crops and threaten food security",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "INSURANCE",
+      "type": "CONCEPT",
+      "description": "Financial mechanism to protect against crop loss",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "TECHNOLOGY",
+      "type": "CONCEPT",
+      "description": "Application of scientific knowledge for practical purposes in agriculture",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "ENVIRONMENTAL DATA",
+      "type": "CONCEPT",
+      "description": "Information regarding the surrounding environment",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "WEATHER DATA",
+      "type": "CONCEPT",
+      "description": "Information regarding atmospheric conditions",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "MANAGEMENT DATA",
+      "type": "CONCEPT",
+      "description": "Information regarding agricultural management practices",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "SATELLITE DERIVED CROP SPATIAL DATA",
+      "type": "CONCEPT",
+      "description": "Data about crop distribution and health obtained via satellites",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "CROP MODELS",
+      "type": "METHOD",
+      "description": "Mathematical representations of crop growth and development",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "GRAM PANCHAYAT",
+      "type": "LOCATION",
+      "description": "The smallest administrative division in India",
+      "source_id": "paper_11944"
+    },
+    {
+      "name": "HIGH RESOLUTION SATELLITE IMAGES",
+      "type": "METHOD",
+      "description": "Detailed imagery captured by satellites for spatial analysis",
+      "source_id": "paper_11944"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COVID-19",
+      "target": "FOOD SECURITY",
+      "description": "Affects food security post-pandemic",
+      "weight": "8",
+      "source_id": "paper_11944"
+    },
+    {
+      "source": "LOCUST ATTACKS",
+      "target": "FOOD SECURITY",
+      "description": "Threatens food security through crop destruction",
+      "weight": "8",
+      "source_id": "paper_11944"
+    },
+    {
+      "source": "INSURANCE",
+      "target": "TECHNOLOGY",
+      "description": "Linked to improve efficiency and delivery",
+      "weight": "9",
+      "source_id": "paper_11944"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "ENVIRONMENTAL DATA",
+      "description": "Uses environmental data for modeling",
+      "weight": "7",
+      "source_id": "paper_11944"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "WEATHER DATA",
+      "description": "Uses weather data for modeling",
+      "weight": "7",
+      "source_id": "paper_11944"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "MANAGEMENT DATA",
+      "description": "Uses management data for modeling",
+      "weight": "7",
+      "source_id": "paper_11944"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "SATELLITE DERIVED CROP SPATIAL DATA",
+      "description": "Uses spatial data for modeling",
+      "weight": "7",
+      "source_id": "paper_11944"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "CROP YIELD",
+      "description": "Used to assess crop yield",
+      "weight": "9",
+      "source_id": "paper_11944"
+    },
+    {
+      "source": "CROP YIELD",
+      "target": "GRAM PANCHAYAT",
+      "description": "Assessed at the gram panchayat level",
+      "weight": "8",
+      "source_id": "paper_11944"
+    },
+    {
+      "source": "HIGH RESOLUTION SATELLITE IMAGES",
+      "target": "SATELLITE DERIVED CROP SPATIAL DATA",
+      "description": "Used to generate spatial information",
+      "weight": "9",
+      "source_id": "paper_11944"
+    }
+  ]
+}

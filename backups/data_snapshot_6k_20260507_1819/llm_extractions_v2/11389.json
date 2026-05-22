@@ -1,0 +1,151 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop studied, Arachis hypogaea L., produced in Zambia",
+      "source_id": "paper_11389"
+    },
+    {
+      "name": "ZAMBIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_11389"
+    },
+    {
+      "name": "CHONGWE DISTRICT",
+      "type": "LOCATION",
+      "description": "The specific district in Zambia where the field experiment took place",
+      "source_id": "paper_11389"
+    },
+    {
+      "name": "COMPOST MANURE",
+      "type": "CONCEPT",
+      "description": "Soil amendment derived from composted cattle manure used to improve soil properties",
+      "source_id": "paper_11389"
+    },
+    {
+      "name": "SOIL MICROBIAL RESPIRATION",
+      "type": "TRAIT",
+      "description": "A measure of soil microbial activity affected by compost manure",
+      "source_id": "paper_11389"
+    },
+    {
+      "name": "PLANT-AVAILABLE WATER",
+      "type": "TRAIT",
+      "description": "The amount of water available for plant uptake in the soil, also known as PAW",
+      "source_id": "paper_11389"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of peanut kernels and pods",
+      "source_id": "paper_11389"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "Pre-harvest contamination of peanut kernels by aflatoxins",
+      "source_id": "paper_11389"
+    },
+    {
+      "name": "FIELD EXPERIMENT",
+      "type": "METHOD",
+      "description": "The research method involving rain-fed cropping seasons to evaluate compost effects",
+      "source_id": "paper_11389"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COMPOST MANURE",
+      "target": "SOIL MICROBIAL RESPIRATION",
+      "description": "Strong positive relationship (R2=0.84)",
+      "weight": "9",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "COMPOST MANURE",
+      "target": "PLANT-AVAILABLE WATER",
+      "description": "Strong positive relationship (R2=0.86)",
+      "weight": "9",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "COMPOST MANURE",
+      "target": "YIELD",
+      "description": "Positive association with increase in pod and kernel yield",
+      "weight": "7",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "COMPOST MANURE",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "Reduction in total aflatoxin levels with increasing levels of compost (R2=0.85)",
+      "weight": "9",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "PLANT-AVAILABLE WATER",
+      "target": "YIELD",
+      "description": "Improvement in soil moisture retention capacity contributes to increased peanut yield",
+      "weight": "7",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "SOIL MICROBIAL RESPIRATION",
+      "target": "YIELD",
+      "description": "Improvement in soil microbial activity contributes to increased peanut yield",
+      "weight": "7",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "PLANT-AVAILABLE WATER",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "Improvement in soil moisture retention capacity contributes to decreased aflatoxin concentrations",
+      "weight": "7",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "SOIL MICROBIAL RESPIRATION",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "Improvement in soil microbial activity contributes to decreased aflatoxin concentrations",
+      "weight": "7",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "PEANUT",
+      "target": "YIELD",
+      "description": "Yield is the measured productivity of the peanut crop",
+      "weight": "10",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "PEANUT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "Aflatoxin contamination occurs in the kernels of the peanut crop",
+      "weight": "10",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "PEANUT",
+      "description": "The experiment was conducted to evaluate effects on peanut production",
+      "weight": "8",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "ZAMBIA",
+      "description": "The experiment was conducted in Zambia",
+      "weight": "10",
+      "source_id": "paper_11389"
+    },
+    {
+      "source": "CHONGWE DISTRICT",
+      "target": "ZAMBIA",
+      "description": "Chongwe District is located within Zambia",
+      "weight": "10",
+      "source_id": "paper_11389"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "KARNATAKA",
+      "type": "LOCATION",
+      "description": "A state in India where crop area statistics are generated through a collaborative process involving various departments.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where land utilization and crop statistics are collected by Village Revenue Officers.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "ODISHA",
+      "type": "LOCATION",
+      "description": "A state in India where the Directorate of Economics and Statistics is responsible for collecting land utilization and crop statistics.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "CROP AREA STATISTICS",
+      "type": "CONCEPT",
+      "description": "Data regarding the area of land used for growing specific crops.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "LAND USE",
+      "type": "CONCEPT",
+      "description": "Statistics regarding how land is utilized in Karnataka.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "CROPS IRRIGATED",
+      "type": "CONCEPT",
+      "description": "Statistics regarding the extent of irrigation for crops in Karnataka.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "LAND UTILIZATION",
+      "type": "CONCEPT",
+      "description": "Statistics regarding the use of land in Andhra Pradesh and Odisha.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "JOINT FIELD INSPECTION",
+      "type": "METHOD",
+      "description": "A collaborative data collection process in Karnataka involving Village Accountants, Agricultural Assistants, and Work Inspectors.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "VILLAGE-LEVEL SURVEYS",
+      "type": "METHOD",
+      "description": "Surveys conducted in Odisha by District Planning and Monitoring Units to collect agricultural data.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "EARAS",
+      "type": "METHOD",
+      "description": "Establishment of an Agency for Reporting Agricultural Statistics, a framework in Odisha defining village coverage for reporting.",
+      "source_id": "paper_11019"
+    },
+    {
+      "name": "RANDOMIZED SAMPLING FRAMEWORK",
+      "type": "METHOD",
+      "description": "A sampling approach used within the EARAS framework in Odisha to cover all villages over five years.",
+      "source_id": "paper_11019"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "KARNATAKA",
+      "target": "CROP AREA STATISTICS",
+      "description": "generates",
+      "weight": "9",
+      "source_id": "paper_11019"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "CROP AREA STATISTICS",
+      "description": "generates",
+      "weight": "9",
+      "source_id": "paper_11019"
+    },
+    {
+      "source": "ODISHA",
+      "target": "CROP AREA STATISTICS",
+      "description": "generates",
+      "weight": "9",
+      "source_id": "paper_11019"
+    },
+    {
+      "source": "JOINT FIELD INSPECTION",
+      "target": "CROP AREA STATISTICS",
+      "description": "collects",
+      "weight": "10",
+      "source_id": "paper_11019"
+    },
+    {
+      "source": "JOINT FIELD INSPECTION",
+      "target": "LAND USE",
+      "description": "collects",
+      "weight": "10",
+      "source_id": "paper_11019"
+    },
+    {
+      "source": "JOINT FIELD INSPECTION",
+      "target": "CROPS IRRIGATED",
+      "description": "collects",
+      "weight": "10",
+      "source_id": "paper_11019"
+    },
+    {
+      "source": "VILLAGE-LEVEL SURVEYS",
+      "target": "LAND UTILIZATION",
+      "description": "collects",
+      "weight": "10",
+      "source_id": "paper_11019"
+    },
+    {
+      "source": "VILLAGE-LEVEL SURVEYS",
+      "target": "CROP AREA STATISTICS",
+      "description": "collects",
+      "weight": "10",
+      "source_id": "paper_11019"
+    },
+    {
+      "source": "EARAS",
+      "target": "VILLAGE-LEVEL SURVEYS",
+      "description": "defines coverage for",
+      "weight": "8",
+      "source_id": "paper_11019"
+    },
+    {
+      "source": "EARAS",
+      "target": "RANDOMIZED SAMPLING FRAMEWORK",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_11019"
+    }
+  ]
+}

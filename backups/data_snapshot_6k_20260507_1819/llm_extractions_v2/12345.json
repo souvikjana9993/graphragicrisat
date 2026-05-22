@@ -1,0 +1,273 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The cereal crop being studied for rust resistance in India",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "STRIPE RUST",
+      "type": "CONDITION",
+      "description": "A fungal disease of wheat caused by Puccinia striiformis",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "LEAF RUST",
+      "type": "CONDITION",
+      "description": "A fungal disease of wheat caused by Puccinia triticina",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of grain harvested per unit area",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "YIELD COMPONENTS",
+      "type": "TRAIT",
+      "description": "The individual factors that contribute to the overall grain yield",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "HOST-PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of a plant to resist attack by a pathogen",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "NON-RACE-SPECIFIC RESISTANCE",
+      "type": "CONCEPT",
+      "description": "Resistance that is effective against all races of a pathogen",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "RACE-SPECIFIC RESISTANCE",
+      "type": "CONCEPT",
+      "description": "Resistance that is effective only against certain races of a pathogen",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "PUCCINIA STRIIFORMIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes stripe rust in wheat",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "PUCCINIA TRITICINA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes leaf rust in wheat",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "FUNGICIDES",
+      "type": "METHOD",
+      "description": "Chemical substances used to kill or inhibit the growth of fungi",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "ARTIFICIAL EPIPHYTOTIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "Controlled environmental conditions used to induce disease outbreaks",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "ADULT PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "Resistance that is expressed in the adult stage of the plant",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "EPIDEMIOLOGICAL PARAMETERS",
+      "type": "CONCEPT",
+      "description": "Quantitative measures used to describe the progress of a disease in a population",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "APR GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes associated with adult plant resistance",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "SLOW RUSTING RESISTANCE",
+      "type": "TRAIT",
+      "description": "A form of resistance that slows the rate of disease development",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "VARIETAL DEVELOPMENT PROGRAMS",
+      "type": "METHOD",
+      "description": "Systematic efforts to create improved crop varieties",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "DURABLE RESISTANCE",
+      "type": "TRAIT",
+      "description": "Resistance that remains effective over a long period and across different environments",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "VIRULENT RACES",
+      "type": "CONCEPT",
+      "description": "Strains of a pathogen capable of overcoming host resistance",
+      "source_id": "paper_12345"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the wheat cultivars were studied",
+      "source_id": "paper_12345"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STRIPE RUST",
+      "target": "WHEAT",
+      "description": "causes economic losses to",
+      "weight": "10",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "LEAF RUST",
+      "target": "WHEAT",
+      "description": "causes economic losses to",
+      "weight": "10",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "PUCCINIA STRIIFORMIS",
+      "target": "STRIPE RUST",
+      "description": "is the causal agent of",
+      "weight": "10",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "PUCCINIA TRITICINA",
+      "target": "LEAF RUST",
+      "description": "is the causal agent of",
+      "weight": "10",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "STRIPE RUST",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "LEAF RUST",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "STRIPE RUST",
+      "target": "YIELD COMPONENTS",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "LEAF RUST",
+      "target": "YIELD COMPONENTS",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "STRIPE RUST",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "LEAF RUST",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "NON-RACE-SPECIFIC RESISTANCE",
+      "target": "HOST-PLANT RESISTANCE",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "RACE-SPECIFIC RESISTANCE",
+      "target": "HOST-PLANT RESISTANCE",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "STRIPE RUST",
+      "description": "controls",
+      "weight": "7",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "LEAF RUST",
+      "description": "controls",
+      "weight": "7",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "ADULT PLANT RESISTANCE",
+      "target": "HOST-PLANT RESISTANCE",
+      "description": "is a type of",
+      "weight": "8",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "APR GENES",
+      "target": "ADULT PLANT RESISTANCE",
+      "description": "confer",
+      "weight": "10",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "SLOW RUSTING RESISTANCE",
+      "target": "HOST-PLANT RESISTANCE",
+      "description": "is a type of",
+      "weight": "8",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "SLOW RUSTING RESISTANCE",
+      "target": "EPIDEMIOLOGICAL PARAMETERS",
+      "description": "results in low values of",
+      "weight": "8",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "VARIETAL DEVELOPMENT PROGRAMS",
+      "target": "DURABLE RESISTANCE",
+      "description": "aim to achieve",
+      "weight": "9",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "DURABLE RESISTANCE",
+      "target": "VIRULENT RACES",
+      "description": "provides protection against",
+      "weight": "9",
+      "source_id": "paper_12345"
+    },
+    {
+      "source": "WHEAT",
+      "target": "INDIA",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_12345"
+    }
+  ]
+}

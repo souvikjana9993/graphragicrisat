@@ -1,0 +1,148 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop species Cicer arietinum L. studied for salinity response.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "The environmental stress condition affecting the growth and yield of the crop.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity measure of the chickpea RILs.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "PHYSIOLOGICAL PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process used to identify salt tolerant recombinant inbred lines.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINES",
+      "type": "CONCEPT",
+      "description": "A population of 232 F8 lines derived from ICCV 10 x DCP 92-3 used in the study.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "RELATIVE WATER CONTENT",
+      "type": "TRAIT",
+      "description": "A physiological measure that decreased under high salt stress.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "CHLOROPHYLL CONTENT",
+      "type": "TRAIT",
+      "description": "A physiological measure that decreased under high salt stress.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "SODIUM ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The accumulation of Na+ ions in the shoot, where lower levels indicate tolerance.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "POTASSIUM ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The accumulation of K+ ions in the shoot, where higher levels indicate tolerance.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "LEAF PROLINE CONTENT",
+      "type": "TRAIT",
+      "description": "A biochemical marker that increases in tolerant genotypes under stress.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "ION LEAKAGE",
+      "type": "TRAIT",
+      "description": "The leakage of ions from cells, where less leakage indicates tolerance.",
+      "source_id": "paper_12947"
+    },
+    {
+      "name": "SALT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to maintain growth and yield under salinity stress.",
+      "source_id": "paper_12947"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SALINITY",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_12947"
+    },
+    {
+      "source": "SALINITY",
+      "target": "RELATIVE WATER CONTENT",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12947"
+    },
+    {
+      "source": "SALINITY",
+      "target": "CHLOROPHYLL CONTENT",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12947"
+    },
+    {
+      "source": "PHYSIOLOGICAL PHENOTYPING",
+      "target": "SALT TOLERANCE",
+      "description": "used to identify",
+      "weight": "7",
+      "source_id": "paper_12947"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "CHICKPEA",
+      "description": "is a population of",
+      "weight": "10",
+      "source_id": "paper_12947"
+    },
+    {
+      "source": "SODIUM ACCUMULATION",
+      "target": "SALT TOLERANCE",
+      "description": "lower levels contribute to",
+      "weight": "9",
+      "source_id": "paper_12947"
+    },
+    {
+      "source": "POTASSIUM ACCUMULATION",
+      "target": "SALT TOLERANCE",
+      "description": "higher levels contribute to",
+      "weight": "9",
+      "source_id": "paper_12947"
+    },
+    {
+      "source": "LEAF PROLINE CONTENT",
+      "target": "SALT TOLERANCE",
+      "description": "increase contributes to",
+      "weight": "8",
+      "source_id": "paper_12947"
+    },
+    {
+      "source": "ION LEAKAGE",
+      "target": "SALT TOLERANCE",
+      "description": "lower levels contribute to",
+      "weight": "8",
+      "source_id": "paper_12947"
+    },
+    {
+      "source": "SALINITY",
+      "target": "RECOMBINANT INBRED LINES",
+      "description": "applied as stress to",
+      "weight": "9",
+      "source_id": "paper_12947"
+    }
+  ]
+}

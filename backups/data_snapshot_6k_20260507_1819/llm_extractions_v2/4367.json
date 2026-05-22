@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop exported by ICRISAT and susceptible to seed-borne diseases",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "An oilseed crop exported by ICRISAT and susceptible to seed-borne diseases",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "SEED-BORNE DISEASES",
+      "type": "CONDITION",
+      "description": "Diseases transmitted through seeds of economic importance",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "IARC",
+      "type": "CONCEPT",
+      "description": "International Agricultural Research Centers involved in the exchange of seeds",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "CONCEPT",
+      "description": "International Center for Research in the Semi-Arid Tropics that exports crop samples",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "PATHOGENS",
+      "type": "ORGANISM",
+      "description": "Biological agents that can be transmitted by seed and cause disease",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "FUNGI",
+      "type": "ORGANISM",
+      "description": "Seed-borne organisms that cause yield losses and other negative effects",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "BACTERIA",
+      "type": "ORGANISM",
+      "description": "Seed-borne organisms that cause yield losses and other negative effects",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "VIRUSES",
+      "type": "ORGANISM",
+      "description": "Seed-borne organisms that cause yield losses and other negative effects",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "YIELD LOSSES",
+      "type": "TRAIT",
+      "description": "Reduction in crop productivity caused by seed-borne pathogens",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "SEED GERMINATION",
+      "type": "TRAIT",
+      "description": "The process of seed sprouting, which can be reduced by pathogens",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "DETERIORATION IN STORAGE",
+      "type": "CONDITION",
+      "description": "The degradation of seed quality during storage increased by pathogens",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "HUMANS",
+      "type": "ORGANISM",
+      "description": "Living beings affected by toxic metabolites of mold fungi",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "ANIMALS",
+      "type": "ORGANISM",
+      "description": "Living beings affected by toxic metabolites of mold fungi",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "TOXIC METABOLITES",
+      "type": "CONCEPT",
+      "description": "Harmful substances produced by certain mold fungi",
+      "source_id": "paper_4367"
+    },
+    {
+      "name": "MOLD FUNGI",
+      "type": "ORGANISM",
+      "description": "Specific types of fungi that produce toxic metabolites",
+      "source_id": "paper_4367"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "SEED-BORNE DISEASES",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEED-BORNE DISEASES",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "PATHOGENS",
+      "target": "SEED-BORNE DISEASES",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "FUNGI",
+      "target": "PATHOGENS",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "BACTERIA",
+      "target": "PATHOGENS",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "VIRUSES",
+      "target": "PATHOGENS",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "PATHOGENS",
+      "target": "YIELD LOSSES",
+      "description": "cause",
+      "weight": "8",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "PATHOGENS",
+      "target": "SEED GERMINATION",
+      "description": "reduce",
+      "weight": "8",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "PATHOGENS",
+      "target": "DETERIORATION IN STORAGE",
+      "description": "increase risk of",
+      "weight": "8",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "MOLD FUNGI",
+      "target": "TOXIC METABOLITES",
+      "description": "produce",
+      "weight": "9",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "TOXIC METABOLITES",
+      "target": "HUMANS",
+      "description": "harmful effects on",
+      "weight": "9",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "TOXIC METABOLITES",
+      "target": "ANIMALS",
+      "description": "harmful effects on",
+      "weight": "9",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "CHICKPEA",
+      "description": "exported seeds of",
+      "weight": "7",
+      "source_id": "paper_4367"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "GROUNDNUT",
+      "description": "exported seeds of",
+      "weight": "7",
+      "source_id": "paper_4367"
+    }
+  ]
+}

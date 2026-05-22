@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species evaluated for resistance to rust and leaf blight.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "PUCCINIA PURPUREA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes rust in sorghum.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "RUST RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum accessions to resist infection by Puccinia purpurea.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The approach used to evaluate sorghum accessions for disease reaction in a natural environment.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "PATANCHERU, INDIA",
+      "type": "LOCATION",
+      "description": "The geographical location where the field experiments were conducted.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The specific seasonal timing of the initial sorghum evaluations.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "HIGH HUMIDITY",
+      "type": "CONDITION",
+      "description": "Environmental condition maintained to facilitate pathogen infection during reassessment.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "SPRINKLER IRRIGATION",
+      "type": "METHOD",
+      "description": "The technique used to maintain high humidity in the field experiments.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "EXSEROHILUM TURCICUM",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing leaf blight in sorghum.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "SETOSPHAERIA TURCICA",
+      "type": "ORGANISM",
+      "description": "A synonym for the fungal pathogen Exserohilum turcicum.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "LEAF BLIGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum accessions to resist infection by Exserohilum turcicum.",
+      "source_id": "paper_1493"
+    },
+    {
+      "name": "PURPLE PIGMENTATION",
+      "type": "TRAIT",
+      "description": "The presence of purple color in sorghum, typically associated with rust susceptibility.",
+      "source_id": "paper_1493"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "PUCCINIA PURPUREA",
+      "description": "is infected by",
+      "weight": "8",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "RUST RESISTANCE",
+      "description": "possesses the trait of",
+      "weight": "9",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PURPLE PIGMENTATION",
+      "description": "possesses the trait of",
+      "weight": "9",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "PUCCINIA PURPUREA",
+      "target": "RUST RESISTANCE",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "SORGHUM",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "PATANCHERU, INDIA",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "POST-RAINY SEASON",
+      "description": "conducted during",
+      "weight": "8",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "SPRINKLER IRRIGATION",
+      "target": "HIGH HUMIDITY",
+      "description": "used to maintain",
+      "weight": "10",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "HIGH HUMIDITY",
+      "target": "FIELD EXPERIMENTS",
+      "description": "condition during",
+      "weight": "7",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "EXSEROHILUM TURCICUM",
+      "description": "is infected by",
+      "weight": "8",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "EXSEROHILUM TURCICUM",
+      "target": "LEAF BLIGHT RESISTANCE",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_1493"
+    },
+    {
+      "source": "PURPLE PIGMENTATION",
+      "target": "RUST RESISTANCE",
+      "description": "generally associated with susceptibility to",
+      "weight": "7",
+      "source_id": "paper_1493"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum L. (R.) Br., the crop studied for heterosis prediction",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "HETEROSIS",
+      "type": "CONCEPT",
+      "description": "The superiority of hybrid offspring over their parents in terms of specific traits",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced by the pearl millet hybrids",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "STOVER YIELD",
+      "type": "TRAIT",
+      "description": "The amount of stover produced by the pearl millet hybrids",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "PHENOTYPIC TRAITS",
+      "type": "CONCEPT",
+      "description": "Observable physical characteristics used to calculate genetic distance",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "MOLECULAR MARKERS",
+      "type": "CONCEPT",
+      "description": "DNA-based markers used to assess genetic diversity",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "GENETIC DISTANCE",
+      "type": "CONCEPT",
+      "description": "The measure of genetic divergence between hybrid parents",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "EUCLIDEAN DISTANCE",
+      "type": "METHOD",
+      "description": "A method used to calculate phenotypic distance (ED)",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "SIMPLE MATCHING DISTANCE",
+      "type": "METHOD",
+      "description": "A method used to calculate molecular distance (SM)",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "SSR",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeats used as molecular markers to evaluate genetic distance",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "PHENOTYPIC DISTANCE",
+      "type": "CONCEPT",
+      "description": "Distance between parents based on phenotypic traits",
+      "source_id": "paper_10546"
+    },
+    {
+      "name": "MOLECULAR DISTANCE",
+      "type": "CONCEPT",
+      "description": "Distance between parents based on molecular markers",
+      "source_id": "paper_10546"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "HETEROSIS",
+      "description": "Study focuses on predicting heterosis in pearl millet",
+      "weight": "10",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GRAIN YIELD",
+      "description": "Grain yield is a trait evaluated in pearl millet",
+      "weight": "10",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "STOVER YIELD",
+      "description": "Stover yield is a trait evaluated in pearl millet",
+      "weight": "10",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "PHENOTYPIC TRAITS",
+      "target": "PHENOTYPIC DISTANCE",
+      "description": "Phenotypic distance is derived from phenotypic traits",
+      "weight": "10",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "MOLECULAR MARKERS",
+      "target": "MOLECULAR DISTANCE",
+      "description": "Molecular distance is derived from molecular markers",
+      "weight": "10",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "SSR",
+      "target": "MOLECULAR MARKERS",
+      "description": "SSRs are used as molecular markers",
+      "weight": "10",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "EUCLIDEAN DISTANCE",
+      "target": "PHENOTYPIC DISTANCE",
+      "description": "Euclidean distance is the method used to calculate phenotypic distance",
+      "weight": "10",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "SIMPLE MATCHING DISTANCE",
+      "target": "MOLECULAR DISTANCE",
+      "description": "Simple matching distance is the method used to calculate molecular distance",
+      "weight": "10",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "PHENOTYPIC DISTANCE",
+      "target": "HETEROSIS",
+      "description": "Phenotypic distance is a predictor of heterosis",
+      "weight": "7",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "MOLECULAR DISTANCE",
+      "target": "HETEROSIS",
+      "description": "Molecular distance was investigated as a predictor of heterosis but showed low correlation",
+      "weight": "4",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "PHENOTYPIC DISTANCE",
+      "target": "MOLECULAR DISTANCE",
+      "description": "Correlation was investigated between phenotypic and molecular distance",
+      "weight": "3",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "HETEROSIS",
+      "description": "Heterosis is measured for grain yield",
+      "weight": "10",
+      "source_id": "paper_10546"
+    },
+    {
+      "source": "STOVER YIELD",
+      "target": "HETEROSIS",
+      "description": "Heterosis is measured for stover yield",
+      "weight": "10",
+      "source_id": "paper_10546"
+    }
+  ]
+}

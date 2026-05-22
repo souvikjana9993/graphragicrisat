@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, the crop being improved for yield and blight resistance",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONDITION",
+      "description": "A destructive disease caused by Ascochyta rabiei affecting chickpea",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "ASCOCHYTA RABIEI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for ascochyta blight",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "BLIGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea cultivars to resist ascochyta blight",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of chickpea measured in seed yield",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "BREEDING PROGRAMME",
+      "type": "METHOD",
+      "description": "A systematic effort to develop high-yielding, blight-resistant chickpea cultivars",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "ICARDA",
+      "type": "LOCATION",
+      "description": "International Center for Agricultural Research in the Dry Areas, the institution where the breeding program started",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "SYRIA",
+      "type": "LOCATION",
+      "description": "The country where ICARDA and Tel Hadya are located",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "TEL HADYA",
+      "type": "LOCATION",
+      "description": "A location in Syria used for making crosses",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "TERBOL",
+      "type": "LOCATION",
+      "description": "A location in Lebanon used for growing F1 generations",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "LEBANON",
+      "type": "LOCATION",
+      "description": "The country where Terbol is located",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "PEDIGREE METHOD",
+      "type": "METHOD",
+      "description": "An initial breeding method used in the program",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "F4-DERIVED FAMILY METHOD",
+      "type": "METHOD",
+      "description": "A breeding method that replaced the pedigree method",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "MATURITY",
+      "type": "TRAIT",
+      "description": "An agronomic trait referring to the time to reach maturity",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "An agronomic trait referring to the height of the plant",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "An agronomic trait referring to the size of the seeds",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "MEDITERRANEAN REGION",
+      "type": "LOCATION",
+      "description": "The geographical area where ascochyta blight is endemic and new cultivars were introduced",
+      "source_id": "paper_4986"
+    },
+    {
+      "name": "WINTER SOWING",
+      "type": "METHOD",
+      "description": "The practice of sowing crops in winter, made possible by blight resistance",
+      "source_id": "paper_4986"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BREEDING PROGRAMME",
+      "target": "CHICKPEA",
+      "description": "used to improve",
+      "weight": "10",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "ASCOCHYTA BLIGHT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "BREEDING PROGRAMME",
+      "target": "BLIGHT RESISTANCE",
+      "description": "aims to incorporate",
+      "weight": "10",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "BREEDING PROGRAMME",
+      "target": "YIELD",
+      "description": "aims to increase",
+      "weight": "10",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "BREEDING PROGRAMME",
+      "target": "ICARDA",
+      "description": "conducted at",
+      "weight": "9",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "ICARDA",
+      "target": "SYRIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "TEL HADYA",
+      "target": "SYRIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "TERBOL",
+      "target": "LEBANON",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "PEDIGREE METHOD",
+      "target": "BREEDING PROGRAMME",
+      "description": "used as a method in",
+      "weight": "8",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "F4-DERIVED FAMILY METHOD",
+      "target": "BREEDING PROGRAMME",
+      "description": "used as a method in",
+      "weight": "8",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "BLIGHT RESISTANCE",
+      "target": "WINTER SOWING",
+      "description": "enables",
+      "weight": "9",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "WINTER SOWING",
+      "target": "MEDITERRANEAN REGION",
+      "description": "practiced in",
+      "weight": "8",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "ASCOCHYTA BLIGHT",
+      "target": "MEDITERRANEAN REGION",
+      "description": "endemic in",
+      "weight": "9",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "MATURITY",
+      "description": "has trait",
+      "weight": "7",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "PLANT HEIGHT",
+      "description": "has trait",
+      "weight": "7",
+      "source_id": "paper_4986"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED SIZE",
+      "description": "has trait",
+      "weight": "7",
+      "source_id": "paper_4986"
+    }
+  ]
+}

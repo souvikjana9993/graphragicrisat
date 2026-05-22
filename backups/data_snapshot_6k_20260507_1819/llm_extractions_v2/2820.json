@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the host plant affected by the chlorotic vein banding disease",
+      "source_id": "paper_2820"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the virus strain was identified",
+      "source_id": "paper_2820"
+    },
+    {
+      "name": "CHLOROTIC VEIN BANDING DISEASE",
+      "type": "CONDITION",
+      "description": "A disease of groundnut caused by a specific strain of peanut chlorotic streak virus",
+      "source_id": "paper_2820"
+    },
+    {
+      "name": "PEANUT CHLOROTIC STREAK VIRUS",
+      "type": "ORGANISM",
+      "description": "A caulimovirus that causes disease in groundnuts, also referred to as PCLSV",
+      "source_id": "paper_2820"
+    },
+    {
+      "name": "PCLSV-CVB",
+      "type": "ORGANISM",
+      "description": "A specific isolate/strain of peanut chlorotic streak caulimovirus causing chlorotic vein banding",
+      "source_id": "paper_2820"
+    },
+    {
+      "name": "DOUBLE-STRANDED DNA",
+      "type": "CONCEPT",
+      "description": "The genetic material of the PCLSV-CVB virus, consisting of circular and linear molecules",
+      "source_id": "paper_2820"
+    },
+    {
+      "name": "PHYSICAL MAP",
+      "type": "METHOD",
+      "description": "A technique used to determine the structure, size, and restriction sites of the viral DNA",
+      "source_id": "paper_2820"
+    },
+    {
+      "name": "BAM HI",
+      "type": "METHOD",
+      "description": "A restriction enzyme used to cleave the PCLSV-CVB DNA for cloning",
+      "source_id": "paper_2820"
+    },
+    {
+      "name": "PUC 118",
+      "type": "CONCEPT",
+      "description": "A cloning vector used to clone the PCLSV-CVB DNA",
+      "source_id": "paper_2820"
+    },
+    {
+      "name": "COWPEAS",
+      "type": "CROP",
+      "description": "Vigna unguiculata, used as a host plant to test the infectivity of the cloned viral DNA",
+      "source_id": "paper_2820"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PCLSV-CVB",
+      "target": "CHLOROTIC VEIN BANDING DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2820"
+    },
+    {
+      "source": "CHLOROTIC VEIN BANDING DISEASE",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2820"
+    },
+    {
+      "source": "PCLSV-CVB",
+      "target": "PEANUT CHLOROTIC STREAK VIRUS",
+      "description": "is a strain of",
+      "weight": "9",
+      "source_id": "paper_2820"
+    },
+    {
+      "source": "PCLSV-CVB",
+      "target": "INDIA",
+      "description": "isolated in",
+      "weight": "8",
+      "source_id": "paper_2820"
+    },
+    {
+      "source": "PHYSICAL MAP",
+      "target": "PCLSV-CVB",
+      "description": "used to characterize",
+      "weight": "8",
+      "source_id": "paper_2820"
+    },
+    {
+      "source": "BAM HI",
+      "target": "PCLSV-CVB",
+      "description": "used to cleave DNA of",
+      "weight": "7",
+      "source_id": "paper_2820"
+    },
+    {
+      "source": "PCLSV-CVB",
+      "target": "PUC 118",
+      "description": "cloned into",
+      "weight": "7",
+      "source_id": "paper_2820"
+    },
+    {
+      "source": "PCLSV-CVB",
+      "target": "COWPEAS",
+      "description": "infects",
+      "weight": "8",
+      "source_id": "paper_2820"
+    },
+    {
+      "source": "PCLSV-CVB",
+      "target": "DOUBLE-STRANDED DNA",
+      "description": "composed of",
+      "weight": "9",
+      "source_id": "paper_2820"
+    }
+  ]
+}

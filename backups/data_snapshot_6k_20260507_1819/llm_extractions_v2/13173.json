@@ -1,0 +1,253 @@
+{
+  "entities": [
+    {
+      "name": "ALUMINIUM TOXICITY",
+      "type": "CONDITION",
+      "description": "Toxicity caused by high levels of aluminium in soil",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "PHOSPHORUS DEFICIENCY",
+      "type": "CONDITION",
+      "description": "Lack of sufficient phosphorus in soil",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "LOW PH STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress caused by acidic soil conditions",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "INDIAN SOILS",
+      "type": "LOCATION",
+      "description": "Soils found in India characterized by increasing acidity",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "LENTIL",
+      "type": "CROP",
+      "description": "Lens culinaris, a widely consumed pulse crop",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand adverse environmental conditions",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "GENOMICS",
+      "type": "METHOD",
+      "description": "The study of the complete set of DNA within an organism",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "TRANSCRIPTOMICS",
+      "type": "METHOD",
+      "description": "The study of the complete set of RNA transcripts",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "PROTEOMICS",
+      "type": "METHOD",
+      "description": "The large-scale study of proteins",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "METABOLOMICS",
+      "type": "METHOD",
+      "description": "The study of chemical processes involving metabolites",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "MULTI-OMICS",
+      "type": "METHOD",
+      "description": "An integrated approach combining genomics, transcriptomics, proteomics, and metabolomics",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "CELLULAR HOMEOSTASIS",
+      "type": "CONCEPT",
+      "description": "The process by which biological systems maintain stability while adjusting to conditions",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "SOIL ACIDITY TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a crop to tolerate acidic soil conditions",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "IN SILICO GENOTYPING",
+      "type": "METHOD",
+      "description": "Computer-based analysis of genetic variants",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "NONSYNONYMOUS VARIANTS",
+      "type": "GENE_MARKER",
+      "description": "Genetic variations that change the amino acid sequence of a protein",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "SYNONYMOUS VARIANTS",
+      "type": "GENE_MARKER",
+      "description": "Genetic variations that do not change the amino acid sequence of a protein",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "MARKER-TRAIT ASSOCIATION STUDIES",
+      "type": "METHOD",
+      "description": "Research to identify correlations between genetic markers and specific traits",
+      "source_id": "paper_13173"
+    },
+    {
+      "name": "BIOMARKERS",
+      "type": "GENE_MARKER",
+      "description": "Biological molecules that serve as indicators of a biological state or condition",
+      "source_id": "paper_13173"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ALUMINIUM TOXICITY",
+      "target": "LOW PH STRESS",
+      "description": "is a characteristic of",
+      "weight": "9",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "PHOSPHORUS DEFICIENCY",
+      "target": "LOW PH STRESS",
+      "description": "is a characteristic of",
+      "weight": "9",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "LOW PH STRESS",
+      "target": "GRAIN YIELD",
+      "description": "significantly affects",
+      "weight": "8",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "INDIAN SOILS",
+      "target": "LENTIL",
+      "description": "limits the cultivable area for",
+      "weight": "7",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "LENTIL",
+      "target": "TOLERANCE",
+      "description": "is the target for breeding",
+      "weight": "8",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "MULTI-OMICS",
+      "target": "TOLERANCE",
+      "description": "used to provide insights into mechanisms of",
+      "weight": "9",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "GENOMICS",
+      "target": "MULTI-OMICS",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "TRANSCRIPTOMICS",
+      "target": "MULTI-OMICS",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "PROTEOMICS",
+      "target": "MULTI-OMICS",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "METABOLOMICS",
+      "target": "MULTI-OMICS",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "MULTI-OMICS",
+      "target": "CELLULAR HOMEOSTASIS",
+      "description": "identifies candidates crucial for",
+      "weight": "7",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "SOIL ACIDITY TOLERANCE",
+      "target": "LENTIL",
+      "description": "is a trait of interest in",
+      "weight": "8",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "IN SILICO GENOTYPING",
+      "target": "LENTIL",
+      "description": "was performed on genotypes of",
+      "weight": "9",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "IN SILICO GENOTYPING",
+      "target": "NONSYNONYMOUS VARIANTS",
+      "description": "yielded",
+      "weight": "9",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "IN SILICO GENOTYPING",
+      "target": "SYNONYMOUS VARIANTS",
+      "description": "yielded",
+      "weight": "9",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "NONSYNONYMOUS VARIANTS",
+      "target": "TOLERANCE",
+      "description": "likely associated with differential response to stress",
+      "weight": "8",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "SYNONYMOUS VARIANTS",
+      "target": "TOLERANCE",
+      "description": "likely associated with differential response to stress",
+      "weight": "8",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "BIOMARKERS",
+      "target": "MARKER-TRAIT ASSOCIATION STUDIES",
+      "description": "serve as targets for",
+      "weight": "9",
+      "source_id": "paper_13173"
+    },
+    {
+      "source": "BIOMARKERS",
+      "target": "TOLERANCE",
+      "description": "used for genetically improving",
+      "weight": "8",
+      "source_id": "paper_13173"
+    }
+  ]
+}

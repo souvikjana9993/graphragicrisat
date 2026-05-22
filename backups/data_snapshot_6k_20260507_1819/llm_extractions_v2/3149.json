@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM MIDGE",
+      "type": "ORGANISM",
+      "description": "A pest of grain sorghum, scientifically known as Contarinia sorghicola",
+      "source_id": "paper_3149"
+    },
+    {
+      "name": "GRAIN SORGHUM",
+      "type": "CROP",
+      "description": "The host plant affected by the sorghum midge",
+      "source_id": "paper_3149"
+    },
+    {
+      "name": "MIDGE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum cultivars to resist damage from the sorghum midge",
+      "source_id": "paper_3149"
+    },
+    {
+      "name": "ECONOMIC INJURY LEVELS",
+      "type": "CONCEPT",
+      "description": "The pest density at which the cost of control equals the value of the crop saved",
+      "source_id": "paper_3149"
+    },
+    {
+      "name": "MIDGE DENSITY",
+      "type": "CONDITION",
+      "description": "The number of midges per panicle",
+      "source_id": "paper_3149"
+    },
+    {
+      "name": "PERCENTAGE LOSS OF GRAIN",
+      "type": "TRAIT",
+      "description": "The amount of grain yield lost due to midge infestation",
+      "source_id": "paper_3149"
+    },
+    {
+      "name": "NUMBER OF INFESTATIONS",
+      "type": "CONDITION",
+      "description": "The frequency of midge infestations on the panicles",
+      "source_id": "paper_3149"
+    },
+    {
+      "name": "REGRESSION COEFFICIENT",
+      "type": "METHOD",
+      "description": "A statistical measure (b-value) used to analyze the relationship between midge density and damage",
+      "source_id": "paper_3149"
+    },
+    {
+      "name": "COEFFICIENT OF DETERMINATION",
+      "type": "METHOD",
+      "description": "A statistical measure (R2%) indicating the proportion of variance in damage explained by midge density",
+      "source_id": "paper_3149"
+    },
+    {
+      "name": "PEST MANAGEMENT DECISIONS",
+      "type": "CONCEPT",
+      "description": "Decisions made regarding the control of pests based on EILs",
+      "source_id": "paper_3149"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM MIDGE",
+      "target": "GRAIN SORGHUM",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_3149"
+    },
+    {
+      "source": "MIDGE RESISTANCE",
+      "target": "GRAIN SORGHUM",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_3149"
+    },
+    {
+      "source": "MIDGE RESISTANCE",
+      "target": "ECONOMIC INJURY LEVELS",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3149"
+    },
+    {
+      "source": "MIDGE DENSITY",
+      "target": "PERCENTAGE LOSS OF GRAIN",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_3149"
+    },
+    {
+      "source": "MIDGE DENSITY",
+      "target": "ECONOMIC INJURY LEVELS",
+      "description": "is used to determine",
+      "weight": "9",
+      "source_id": "paper_3149"
+    },
+    {
+      "source": "NUMBER OF INFESTATIONS",
+      "target": "ECONOMIC INJURY LEVELS",
+      "description": "affects the estimate of",
+      "weight": "8",
+      "source_id": "paper_3149"
+    },
+    {
+      "source": "NUMBER OF INFESTATIONS",
+      "target": "REGRESSION COEFFICIENT",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3149"
+    },
+    {
+      "source": "NUMBER OF INFESTATIONS",
+      "target": "COEFFICIENT OF DETERMINATION",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3149"
+    },
+    {
+      "source": "ECONOMIC INJURY LEVELS",
+      "target": "PEST MANAGEMENT DECISIONS",
+      "description": "informs",
+      "weight": "10",
+      "source_id": "paper_3149"
+    },
+    {
+      "source": "MIDGE RESISTANCE",
+      "target": "PERCENTAGE LOSS OF GRAIN",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3149"
+    }
+  ]
+}

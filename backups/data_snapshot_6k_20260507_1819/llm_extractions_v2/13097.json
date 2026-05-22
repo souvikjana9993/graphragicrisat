@@ -1,0 +1,253 @@
+{
+  "entities": [
+    {
+      "name": "AMMONIA VOLATILISATION",
+      "type": "CONCEPT",
+      "description": "The process of ammonia gas escaping from various sources into the atmosphere, leading to nitrogen loss.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "NITROGEN LOSS",
+      "type": "CONCEPT",
+      "description": "The reduction of nitrogen in a farming system, often through volatilisation.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "LIVESTOCK FARMING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Agricultural systems focused on raising livestock, specifically dairy farming in this context.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "GRAZING",
+      "type": "CONCEPT",
+      "description": "The practice of livestock feeding on pasture.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "FERTILISERS",
+      "type": "CONCEPT",
+      "description": "Substances added to soil to provide nutrients for plant growth.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "SOILS",
+      "type": "CONCEPT",
+      "description": "The upper layer of earth in which plants grow, acting as a source of ammonia volatilisation.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "ANIMAL EXCRETA",
+      "type": "CONCEPT",
+      "description": "Waste products from livestock that contribute to ammonia volatilisation.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "FARM SYSTEMS MODELLING",
+      "type": "METHOD",
+      "description": "The use of mathematical models to simulate and understand farm-scale processes.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "DAIRYMOD",
+      "type": "METHOD",
+      "description": "A specific systems model used to simulate daily water, energy, and nitrogen cycles in dairy farming.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "AUSTRALIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the dairy industry systems were studied.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "PASTURES",
+      "type": "CONCEPT",
+      "description": "Land covered with grass and other low plants suitable for grazing.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "FEED",
+      "type": "CONCEPT",
+      "description": "Food given to livestock, including silage and pasture.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "ANIMALS",
+      "type": "ORGANISM",
+      "description": "Livestock within the dairy farming system.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "GRASS SILAGE",
+      "type": "CROP",
+      "description": "Fermented grass used as livestock feed.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "MAIZE SILAGE",
+      "type": "CROP",
+      "description": "Fermented maize used as livestock feed.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "DIET N CONCENTRATION",
+      "type": "CONCEPT",
+      "description": "The concentration of nitrogen within the livestock's diet.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "NITROGEN USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A measure of how effectively nitrogen is utilized in the farm system to produce output.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "MILK PRODUCTION",
+      "type": "TRAIT",
+      "description": "The amount of milk produced by the dairy animals.",
+      "source_id": "paper_13097"
+    },
+    {
+      "name": "ENVIRONMENTAL AIR QUALITY",
+      "type": "CONCEPT",
+      "description": "The state of the air surrounding the farm, affected by ammonia emissions.",
+      "source_id": "paper_13097"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AMMONIA VOLATILISATION",
+      "target": "NITROGEN LOSS",
+      "description": "is a key pathway for",
+      "weight": "10",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "AMMONIA VOLATILISATION",
+      "target": "FERTILISERS",
+      "description": "occurs from",
+      "weight": "8",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "AMMONIA VOLATILISATION",
+      "target": "SOILS",
+      "description": "occurs from",
+      "weight": "8",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "AMMONIA VOLATILISATION",
+      "target": "ANIMAL EXCRETA",
+      "description": "occurs from",
+      "weight": "8",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "FARM SYSTEMS MODELLING",
+      "target": "AMMONIA VOLATILISATION",
+      "description": "used to understand losses of",
+      "weight": "9",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "DAIRYMOD",
+      "target": "FARM SYSTEMS MODELLING",
+      "description": "is an implementation of",
+      "weight": "10",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "DAIRYMOD",
+      "target": "LIVESTOCK FARMING SYSTEMS",
+      "description": "simulates flows within",
+      "weight": "9",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "LIVESTOCK FARMING SYSTEMS",
+      "target": "AUSTRALIA",
+      "description": "are located in",
+      "weight": "10",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "DAIRYMOD",
+      "target": "SOILS",
+      "description": "simulates nitrogen flows through",
+      "weight": "8",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "DAIRYMOD",
+      "target": "PASTURES",
+      "description": "simulates nitrogen flows through",
+      "weight": "8",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "DAIRYMOD",
+      "target": "FEED",
+      "description": "simulates nitrogen flows through",
+      "weight": "8",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "DAIRYMOD",
+      "target": "ANIMALS",
+      "description": "simulates nitrogen flows through",
+      "weight": "8",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "GRASS SILAGE",
+      "target": "FEED",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "MAIZE SILAGE",
+      "target": "FEED",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "MAIZE SILAGE",
+      "target": "DIET N CONCENTRATION",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "DIET N CONCENTRATION",
+      "target": "AMMONIA VOLATILISATION",
+      "description": "influences the rate of",
+      "weight": "9",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "AMMONIA VOLATILISATION",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "AMMONIA VOLATILISATION",
+      "target": "ENVIRONMENTAL AIR QUALITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_13097"
+    },
+    {
+      "source": "NITROGEN USE EFFICIENCY",
+      "target": "MILK PRODUCTION",
+      "description": "is measured relative to",
+      "weight": "7",
+      "source_id": "paper_13097"
+    }
+  ]
+}

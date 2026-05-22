@@ -1,0 +1,250 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The cereal crop studied for productivity and growth improvements",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The measure of agricultural production per unit area",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "SOIL QUALITY",
+      "type": "CONCEPT",
+      "description": "The overall health and functional capacity of the soil",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "BIOCHAR",
+      "type": "CONCEPT",
+      "description": "A carbon-rich material produced from biomass used as a soil amendment",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "CHEMICAL FERTILIZERS",
+      "type": "CONCEPT",
+      "description": "Synthetic nutrient supplements applied to soil to enhance plant growth",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "INFERTILE SOILS",
+      "type": "CONDITION",
+      "description": "Soils lacking sufficient nutrients to support optimal crop growth",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "FERTILE SOILS",
+      "type": "CONDITION",
+      "description": "Soils containing adequate nutrients for crop production",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "NUTRIENT BIOCHAR",
+      "type": "CONCEPT",
+      "description": "Biochar produced from nutrient-rich feedstocks like manure",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "STRUCTURAL BIOCHAR",
+      "type": "CONCEPT",
+      "description": "Biochar produced from structural feedstocks like wood chips",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "TRAIT",
+      "description": "The ability of the soil to provide essential nutrients to plants",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "CROP PERFORMANCE",
+      "type": "TRAIT",
+      "description": "The overall growth, health, and productivity of the crop",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "SOIL STRUCTURAL PROPERTIES",
+      "type": "TRAIT",
+      "description": "The physical arrangement and stability of soil particles",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "POULTRY MANURE BIOCHAR",
+      "type": "CONCEPT",
+      "description": "Biochar derived specifically from poultry manure",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "FARMYARD MANURE BIOCHAR",
+      "type": "CONCEPT",
+      "description": "Biochar derived specifically from farmyard manure",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "WOOD CHIPS BIOCHAR",
+      "type": "CONCEPT",
+      "description": "Biochar derived specifically from wood chips",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "KITCHEN WASTE BIOCHAR",
+      "type": "CONCEPT",
+      "description": "Biochar derived specifically from kitchen waste",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "CLAY LOAM SOIL",
+      "type": "CONDITION",
+      "description": "A specific soil texture consisting of a mixture of clay and loam",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "NITROGEN UPTAKE",
+      "type": "TRAIT",
+      "description": "The process and amount of nitrogen absorbed by the plant",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "TOTAL CARBON",
+      "type": "TRAIT",
+      "description": "The total amount of carbon sequestered in the soil",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "MINERAL NITROGEN CONTENT",
+      "type": "TRAIT",
+      "description": "The concentration of inorganic nitrogen available in the soil",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The weight of the harvested grain produced by the crop",
+      "source_id": "paper_10180"
+    },
+    {
+      "name": "BIOLOGICAL YIELD",
+      "type": "TRAIT",
+      "description": "The total biomass produced by the crop",
+      "source_id": "paper_10180"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOCHAR",
+      "target": "CROP YIELD",
+      "description": "Increases yield in infertile soils but not always in fertile soils",
+      "weight": "7",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "NUTRIENT BIOCHAR",
+      "target": "CROP YIELD",
+      "description": "Enhances yield more effectively than structural biochar",
+      "weight": "8",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "STRUCTURAL BIOCHAR",
+      "target": "SOIL STRUCTURAL PROPERTIES",
+      "description": "Improves the physical properties of the soil",
+      "weight": "7",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "CHEMICAL FERTILIZERS",
+      "target": "CROP PERFORMANCE",
+      "description": "Exerts a positive effect on crop performance",
+      "weight": "8",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "CHEMICAL FERTILIZERS",
+      "description": "Co-application increases crop biological yield",
+      "weight": "9",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "POULTRY MANURE BIOCHAR",
+      "target": "CROP YIELD",
+      "description": "Increases biological yield and nitrogen uptake",
+      "weight": "8",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "FARMYARD MANURE BIOCHAR",
+      "target": "CROP YIELD",
+      "description": "Increases biological yield",
+      "weight": "7",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "WOOD CHIPS BIOCHAR",
+      "target": "GRAIN YIELD",
+      "description": "Causes a decrease in grain yield compared to control",
+      "weight": "6",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "FARMYARD MANURE BIOCHAR",
+      "target": "GRAIN YIELD",
+      "description": "Causes a decrease in grain yield compared to control",
+      "weight": "6",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "NUTRIENT BIOCHAR",
+      "target": "SOIL FERTILITY",
+      "description": "Benefits soil fertility more than structural biochar",
+      "weight": "8",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "TOTAL CARBON",
+      "description": "Increases the total carbon content in the soil",
+      "weight": "9",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "MINERAL NITROGEN CONTENT",
+      "description": "Increases the mineral nitrogen content in the soil",
+      "weight": "9",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "WHEAT",
+      "target": "CROP YIELD",
+      "description": "The productivity of wheat is measured by its yield",
+      "weight": "10",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "WHEAT",
+      "target": "NITROGEN UPTAKE",
+      "description": "The nitrogen uptake of wheat is measured",
+      "weight": "10",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "CLAY LOAM SOIL",
+      "target": "WHEAT",
+      "description": "The environment in which wheat growth was investigated",
+      "weight": "8",
+      "source_id": "paper_10180"
+    },
+    {
+      "source": "NUTRIENT BIOCHAR",
+      "target": "NITROGEN UPTAKE",
+      "description": "Results in significantly higher nitrogen uptake than structural biochars",
+      "weight": "8",
+      "source_id": "paper_10180"
+    }
+  ]
+}

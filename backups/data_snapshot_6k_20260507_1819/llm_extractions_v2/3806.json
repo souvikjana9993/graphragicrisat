@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop (Pennisetum glaucum) affected by brown leaf spot",
+      "source_id": "paper_3806"
+    },
+    {
+      "name": "BROWN LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A leaf spot disease characterized by variable symptoms ranging from small dots to large rectangular or spindle-shaped spots",
+      "source_id": "paper_3806"
+    },
+    {
+      "name": "BIPOLARIS UROCHLOAE",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes brown leaf spot in pearl millet",
+      "source_id": "paper_3806"
+    },
+    {
+      "name": "ZIMBABWE",
+      "type": "LOCATION",
+      "description": "The country where the disease was observed during 1985-87",
+      "source_id": "paper_3806"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIPOLARIS UROCHLOAE",
+      "target": "BROWN LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3806"
+    },
+    {
+      "source": "BROWN LEAF SPOT",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3806"
+    },
+    {
+      "source": "BIPOLARIS UROCHLOAE",
+      "target": "PEARL MILLET",
+      "description": "attacks",
+      "weight": "10",
+      "source_id": "paper_3806"
+    },
+    {
+      "source": "BROWN LEAF SPOT",
+      "target": "ZIMBABWE",
+      "description": "observed in",
+      "weight": "8",
+      "source_id": "paper_3806"
+    }
+  ]
+}

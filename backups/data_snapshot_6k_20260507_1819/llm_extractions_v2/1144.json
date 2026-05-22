@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop studied for photoperiod response",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "PHOTOPERIOD INSENSITIVITY",
+      "type": "TRAIT",
+      "description": "The ability of peanut genotypes to adapt across environments regardless of day length",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "RESPONSE TO PHOTOPERIOD",
+      "type": "TRAIT",
+      "description": "The difference in harvest index between short and long day treatments",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "COMBINING ABILITY",
+      "type": "CONCEPT",
+      "description": "The capacity of parents to pass on specific traits to their offspring",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "DIALLEL CROSS",
+      "type": "METHOD",
+      "description": "A mating design involving a six-parent cross used to study genetic control",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "SHORT DAY CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental condition with shorter daylight hours used in the experiment",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "LONG DAY CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental condition with longer daylight hours used in the experiment",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "SPLIT PLOT DESIGN",
+      "type": "METHOD",
+      "description": "Experimental design with photoperiod as main plots and genotype as subplots",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of adjusted pod weight to adjusted biomass",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "POD WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of the pods, used to calculate harvest index",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total plant mass, used to calculate harvest index",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "GENERAL COMBINING ABILITY",
+      "type": "CONCEPT",
+      "description": "The average performance of a parent in a series of crosses, associated with response to photoperiod",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "ICG2 405",
+      "type": "ORGANISM",
+      "description": "A peanut genotype identified as a good general combiner for photoperiod insensitivity",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "ICGV8 6031",
+      "type": "ORGANISM",
+      "description": "A peanut genotype identified as a good general combiner for photoperiod insensitivity",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "ADDITIVE GENE ACTION",
+      "type": "CONCEPT",
+      "description": "A genetic interaction where the effect of alleles adds up, suggested in some crosses",
+      "source_id": "paper_1144"
+    },
+    {
+      "name": "DOMINANCE",
+      "type": "CONCEPT",
+      "description": "A genetic interaction where one allele masks another, suggested in some crosses",
+      "source_id": "paper_1144"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "PHOTOPERIOD INSENSITIVITY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "PEANUT",
+      "target": "RESPONSE TO PHOTOPERIOD",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "RESPONSE TO PHOTOPERIOD",
+      "target": "HARVEST INDEX",
+      "description": "computed using",
+      "weight": "9",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "HARVEST INDEX",
+      "target": "POD WEIGHT",
+      "description": "calculated from",
+      "weight": "10",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "HARVEST INDEX",
+      "target": "BIOMASS",
+      "description": "calculated from",
+      "weight": "10",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "DIALLEL CROSS",
+      "target": "COMBINING ABILITY",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "RESPONSE TO PHOTOPERIOD",
+      "target": "SHORT DAY CONDITIONS",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "RESPONSE TO PHOTOPERIOD",
+      "target": "LONG DAY CONDITIONS",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "SPLIT PLOT DESIGN",
+      "target": "RESPONSE TO PHOTOPERIOD",
+      "description": "used to study",
+      "weight": "7",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "RESPONSE TO PHOTOPERIOD",
+      "target": "GENERAL COMBINING ABILITY",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "ICG2 405",
+      "target": "PHOTOPERIOD INSENSITIVITY",
+      "description": "is a good general combiner for",
+      "weight": "9",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "ICGV8 6031",
+      "target": "PHOTOPERIOD INSENSITIVITY",
+      "description": "is a good general combiner for",
+      "weight": "9",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "RESPONSE TO PHOTOPERIOD",
+      "target": "ADDITIVE GENE ACTION",
+      "description": "suggests",
+      "weight": "7",
+      "source_id": "paper_1144"
+    },
+    {
+      "source": "RESPONSE TO PHOTOPERIOD",
+      "target": "DOMINANCE",
+      "description": "suggests",
+      "weight": "7",
+      "source_id": "paper_1144"
+    }
+  ]
+}

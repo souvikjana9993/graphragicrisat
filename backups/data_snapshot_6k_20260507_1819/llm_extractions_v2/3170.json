@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the primary crop studied for seed longevity",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "ICRISAT GENEBANK",
+      "type": "LOCATION",
+      "description": "The facility where peanut germplasm accessions are conserved",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "MEDIUM-TERM STORAGE",
+      "type": "CONDITION",
+      "description": "Storage conditions characterized by 4 C and 30% RH",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "SHORT-TERM STORAGE",
+      "type": "CONDITION",
+      "description": "Storage conditions characterized by 23-25 C and 40-50% RH",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "AMBIENT STORAGE",
+      "type": "CONDITION",
+      "description": "Storage conditions characterized by 20-40 C and 30-80% RH",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "SEED LONGEVITY",
+      "type": "TRAIT",
+      "description": "The duration for which peanut seeds remain viable and capable of germination",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "IN-SHELL SEEDS",
+      "type": "CONCEPT",
+      "description": "Peanut seeds conserved within their pods",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "SHELLED SEEDS",
+      "type": "CONCEPT",
+      "description": "Peanut seeds conserved without their pods",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "ICGS 76",
+      "type": "CROP",
+      "description": "A virginia bunch peanut cultivar used in the study",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "JL24",
+      "type": "CROP",
+      "description": "A spanish peanut cultivar used in the study",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "LOW MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "Moisture levels below 4%, specifically 3.6%, used to extend seed life",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "HERMETIC SEALING",
+      "type": "METHOD",
+      "description": "A method of sealing seeds to maintain low moisture content",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "GERMINATION",
+      "type": "TRAIT",
+      "description": "The ability of peanut seeds to sprout, used as a measure of viability",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "REGENERATION",
+      "type": "CONCEPT",
+      "description": "The process of growing out stored seeds to replenish stocks",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "POD STORAGE",
+      "type": "CONCEPT",
+      "description": "The practice of conserving peanut seeds as pods",
+      "source_id": "paper_3170"
+    },
+    {
+      "name": "SEED STORAGE",
+      "type": "CONCEPT",
+      "description": "The practice of conserving peanut seeds without pods",
+      "source_id": "paper_3170"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "ICGS 76",
+      "description": "is the species of cultivar",
+      "weight": "10",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "PEANUT",
+      "target": "JL24",
+      "description": "is the species of cultivar",
+      "weight": "10",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "ICRISAT GENEBANK",
+      "target": "PEANUT",
+      "description": "conserves germplasm of",
+      "weight": "9",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "MEDIUM-TERM STORAGE",
+      "target": "SEED LONGEVITY",
+      "description": "affects the duration of",
+      "weight": "8",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "SHORT-TERM STORAGE",
+      "target": "SEED LONGEVITY",
+      "description": "affects the duration of",
+      "weight": "8",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "AMBIENT STORAGE",
+      "target": "SEED LONGEVITY",
+      "description": "affects the duration of",
+      "weight": "8",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "IN-SHELL SEEDS",
+      "target": "SEED LONGEVITY",
+      "description": "exhibits marginally greater",
+      "weight": "7",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "SHELLED SEEDS",
+      "target": "SEED LONGEVITY",
+      "description": "exhibits lower",
+      "weight": "7",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "LOW MOISTURE CONTENT",
+      "target": "SEED LONGEVITY",
+      "description": "increases the duration of",
+      "weight": "9",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "HERMETIC SEALING",
+      "target": "LOW MOISTURE CONTENT",
+      "description": "maintains",
+      "weight": "9",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "LOW MOISTURE CONTENT",
+      "target": "GERMINATION",
+      "description": "maintains high rates of",
+      "weight": "9",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "POD STORAGE",
+      "target": "IN-SHELL SEEDS",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "SEED STORAGE",
+      "target": "SHELLED SEEDS",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "REGENERATION",
+      "target": "SHELLED SEEDS",
+      "description": "is compared between in-shell and shelled seeds",
+      "weight": "7",
+      "source_id": "paper_3170"
+    },
+    {
+      "source": "REGENERATION",
+      "target": "IN-SHELL SEEDS",
+      "description": "is compared between in-shell and shelled seeds",
+      "weight": "7",
+      "source_id": "paper_3170"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for resistance to wilt disease",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes chickpea wilt",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "CHICKPEA WILT",
+      "type": "CONDITION",
+      "description": "A disease in chickpea incited by Fusarium oxysporum f. sp. ciceris",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to withstand chickpea wilt",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "STABILITY",
+      "type": "CONCEPT",
+      "description": "The consistency of disease resistance across different environments",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The location of ICRISAT in India",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research and multi-location experiments were conducted",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "SICK PLOT",
+      "type": "METHOD",
+      "description": "A screening method used to evaluate plants for wilt resistance",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "MULTI-LOCATION EXPERIMENT",
+      "type": "METHOD",
+      "description": "An experimental approach to validate resistance stability across various environments",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between genetic differences and environmental factors affecting phenotypic expression",
+      "source_id": "paper_6052"
+    },
+    {
+      "name": "GGE BIPLOT ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical analysis used to select stable and resistant breeding lines",
+      "source_id": "paper_6052"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "CHICKPEA WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "CHICKPEA WILT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "CHICKPEA WILT",
+      "description": "manages",
+      "weight": "9",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "CHICKPEA",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "STABILITY",
+      "target": "RESISTANCE",
+      "description": "describes the consistency of",
+      "weight": "8",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "SICK PLOT",
+      "target": "RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "MULTI-LOCATION EXPERIMENT",
+      "target": "STABILITY",
+      "description": "used to validate",
+      "weight": "9",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "GGE BIPLOT ANALYSIS",
+      "target": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "target": "RESISTANCE",
+      "description": "affects the expression of",
+      "weight": "7",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "PATANCHERU",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_6052"
+    },
+    {
+      "source": "MULTI-LOCATION EXPERIMENT",
+      "target": "INDIA",
+      "description": "conducted in",
+      "weight": "8",
+      "source_id": "paper_6052"
+    }
+  ]
+}

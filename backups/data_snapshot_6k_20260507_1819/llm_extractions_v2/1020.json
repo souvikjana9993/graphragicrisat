@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop affected by peanut bud necrosis disease",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS DISEASE",
+      "type": "CONDITION",
+      "description": "A disease affecting groundnuts caused by a virus and transmitted by thrips",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS VIRUS",
+      "type": "ORGANISM",
+      "description": "The virus that causes peanut bud necrosis disease",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "THRIPS PALMI",
+      "type": "ORGANISM",
+      "description": "The insect vector that transmits the peanut bud necrosis virus",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "TOSPOVIRUSES",
+      "type": "ORGANISM",
+      "description": "A group of viruses to which the peanut bud necrosis virus belongs",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "GENOME STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The organization of the genetic material within tospoviruses",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "HOST RANGE",
+      "type": "CONCEPT",
+      "description": "The variety of species that a virus can infect",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "TRANSMISSION",
+      "type": "CONCEPT",
+      "description": "The process by which the virus is spread from one host to another",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "SPREAD",
+      "type": "CONCEPT",
+      "description": "The distribution and expansion of the virus in a population",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "EPIDEMIOLOGY",
+      "type": "CONCEPT",
+      "description": "The study of the patterns, causes, and effects of the disease in populations",
+      "source_id": "paper_1020"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a variety to withstand the vector or the virus",
+      "source_id": "paper_1020"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT BUD NECROSIS VIRUS",
+      "target": "PEANUT BUD NECROSIS DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "THRIPS PALMI",
+      "target": "PEANUT BUD NECROSIS DISEASE",
+      "description": "transmits",
+      "weight": "9",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "PEANUT BUD NECROSIS VIRUS",
+      "target": "TOSPOVIRUSES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "THRIPS PALMI",
+      "target": "PEANUT BUD NECROSIS VIRUS",
+      "description": "transmits",
+      "weight": "10",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "PEANUT BUD NECROSIS DISEASE",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "PEANUT BUD NECROSIS VIRUS",
+      "description": "provides protection against",
+      "weight": "8",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "THRIPS PALMI",
+      "description": "provides protection against",
+      "weight": "8",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "TOSPOVIRUSES",
+      "target": "GENOME STRUCTURE",
+      "description": "has",
+      "weight": "7",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "TOSPOVIRUSES",
+      "target": "HOST RANGE",
+      "description": "has",
+      "weight": "7",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "TOSPOVIRUSES",
+      "target": "TRANSMISSION",
+      "description": "has",
+      "weight": "7",
+      "source_id": "paper_1020"
+    },
+    {
+      "source": "TOSPOVIRUSES",
+      "target": "SPREAD",
+      "description": "has",
+      "weight": "7",
+      "source_id": "paper_1020"
+    }
+  ]
+}

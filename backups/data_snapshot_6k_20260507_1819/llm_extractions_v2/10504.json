@@ -1,0 +1,337 @@
+{
+  "entities": [
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "A major crop grown in the study area in Mali",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A major crop grown in the study area in Mali",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A major crop grown in the study area in Mali",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "A major crop grown in the study area in Mali",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A major crop grown in the study area in Mali, referred to as peanuts",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "YIELD RESPONSE TO FERTILIZER",
+      "type": "TRAIT",
+      "description": "The change in crop yield resulting from fertilizer application",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "GROUND COVER",
+      "type": "TRAIT",
+      "description": "The proportion of the ground surface covered by vegetation",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "LIGHT INTERCEPTION",
+      "type": "TRAIT",
+      "description": "The amount of solar radiation captured by the crop canopy",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "SATELLITE IMAGERY",
+      "type": "METHOD",
+      "description": "High-resolution images used to assess spatial variability and mask trees",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "UAV IMAGERY",
+      "type": "METHOD",
+      "description": "Unmanned aerial vehicle images used to assess spatial variability of yield and fertilizer response",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "VEGETATION INDEX",
+      "type": "METHOD",
+      "description": "Indices calculated from imagery to assess crop health and growth",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "GENERAL LINEAR MODELS",
+      "type": "METHOD",
+      "description": "Statistical models used to assess the predictability of yield and fertilizer response",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "LEAVE-FIELD-OUT PROCEDURE",
+      "type": "METHOD",
+      "description": "A validation method used to test the generalizability of the models",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "CROP GROWTH MODELS",
+      "type": "METHOD",
+      "description": "Models used to account for spatial variability and improve yield assessments",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "FERTILIZER APPLICATION",
+      "type": "CONDITION",
+      "description": "The process of applying fertilizer to crops to improve growth",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "SHALLOW SOILS",
+      "type": "CONDITION",
+      "description": "Soil type that may limit root growth and nutrient availability",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "POOR GROWING CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental factors that negatively impact crop growth",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "CROP STRESS",
+      "type": "CONDITION",
+      "description": "Physiological stress experienced by crops due to environmental or management factors",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "MANAGEMENT",
+      "type": "CONDITION",
+      "description": "Agricultural practices applied to the crops",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "HETEROGENEOUS SMALLHOLDER CONDITIONS",
+      "type": "CONDITION",
+      "description": "Diverse and variable conditions found on small-scale farms",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "KOUTIALA",
+      "type": "LOCATION",
+      "description": "The region in Mali where the study was conducted",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "AGRICULTURAL INTENSIFICATION",
+      "type": "CONCEPT",
+      "description": "Increasing the intensity of agricultural production",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_10504"
+    },
+    {
+      "name": "SPATIAL VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The variation of a property across a geographic area",
+      "source_id": "paper_10504"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SATELLITE IMAGERY",
+      "target": "YIELD",
+      "description": "used to assess spatial variability of",
+      "weight": "7",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "UAV IMAGERY",
+      "target": "YIELD",
+      "description": "used to assess spatial variability of",
+      "weight": "8",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "UAV IMAGERY",
+      "target": "YIELD RESPONSE TO FERTILIZER",
+      "description": "used to assess spatial variability of",
+      "weight": "8",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "VEGETATION INDEX",
+      "target": "YIELD",
+      "description": "related to",
+      "weight": "7",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "VEGETATION INDEX",
+      "target": "YIELD RESPONSE TO FERTILIZER",
+      "description": "related to",
+      "weight": "7",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "VEGETATION INDEX",
+      "target": "GROUND COVER",
+      "description": "strongly related to",
+      "weight": "9",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "VEGETATION INDEX",
+      "target": "LIGHT INTERCEPTION",
+      "description": "strongly related to",
+      "weight": "9",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "SATELLITE IMAGERY",
+      "target": "VEGETATION INDEX",
+      "description": "used to derive",
+      "weight": "9",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "UAV IMAGERY",
+      "target": "VEGETATION INDEX",
+      "description": "used to derive",
+      "weight": "9",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "GENERAL LINEAR MODELS",
+      "target": "YIELD",
+      "description": "used to predict relative differences in",
+      "weight": "8",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "GENERAL LINEAR MODELS",
+      "target": "YIELD RESPONSE TO FERTILIZER",
+      "description": "used to predict relative differences in",
+      "weight": "8",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "LIGHT INTERCEPTION",
+      "target": "YIELD",
+      "description": "explains variation in",
+      "weight": "8",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "LIGHT INTERCEPTION",
+      "target": "YIELD RESPONSE TO FERTILIZER",
+      "description": "explains variation in",
+      "weight": "8",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "SHALLOW SOILS",
+      "target": "VEGETATION INDEX",
+      "description": "associated with larger within-plot variability of",
+      "weight": "7",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "POOR GROWING CONDITIONS",
+      "target": "VEGETATION INDEX",
+      "description": "associated with larger within-plot variability of",
+      "weight": "7",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "CROP GROWTH MODELS",
+      "target": "YIELD",
+      "description": "improves accuracy of assessment of",
+      "weight": "8",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "CROP GROWTH MODELS",
+      "target": "SPATIAL VARIABILITY",
+      "description": "allows to explicitly account for",
+      "weight": "8",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "FERTILIZER APPLICATION",
+      "target": "YIELD RESPONSE TO FERTILIZER",
+      "description": "determines",
+      "weight": "10",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "KOUTIALA",
+      "target": "MALI",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "COTTON",
+      "target": "KOUTIALA",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "MAIZE",
+      "target": "KOUTIALA",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "KOUTIALA",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "MILLET",
+      "target": "KOUTIALA",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "KOUTIALA",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_10504"
+    },
+    {
+      "source": "AGRICULTURAL INTENSIFICATION",
+      "target": "FOOD SECURITY",
+      "description": "key to sustainably improve",
+      "weight": "8",
+      "source_id": "paper_10504"
+    }
+  ]
+}

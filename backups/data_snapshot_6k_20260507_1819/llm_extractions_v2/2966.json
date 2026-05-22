@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for drought tolerance improvement",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where field studies were conducted",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research took place",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "THERMAL IMAGERY SYSTEMS",
+      "type": "METHOD",
+      "description": "Systems used to capture genotypic differences in canopy temperature for screening",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "CANOPY TEMPERATURE",
+      "type": "TRAIT",
+      "description": "The temperature of the plant canopy used as an indicator for drought tolerance",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand water-deficit conditions",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "TRANSPIRATION",
+      "type": "TRAIT",
+      "description": "The process of water movement through a plant and its evaporation from aerial parts",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced per unit area",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "INFRARED CAMERA",
+      "type": "METHOD",
+      "description": "The device used to capture thermal images of plant canopies",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "The vertical measurement of the chickpea plant",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "RELATIVELY COOL TEMPERATURE RANGES",
+      "type": "CONCEPT",
+      "description": "The RC spectrum used to rank genotypes based on canopy temperature",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "RELATIVELY HOT TEMPERATURE RANGES",
+      "type": "CONCEPT",
+      "description": "The RH spectrum observed in plant canopy areas",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "STOMATAL CONDUCTANCE",
+      "type": "TRAIT",
+      "description": "The measure of the rate of passage of carbon dioxide entering, or water vapor exiting through the stomata of a leaf",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "ROOT SYSTEM",
+      "type": "TRAIT",
+      "description": "The network of roots, specifically prolific and deeper systems in certain genotypes",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions where water is supplied only by precipitation",
+      "source_id": "paper_2966"
+    },
+    {
+      "name": "ICC 4958",
+      "type": "ORGANISM",
+      "description": "A specific chickpea genotype known for its prolific and deeper root system",
+      "source_id": "paper_2966"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "THERMAL IMAGERY SYSTEMS",
+      "target": "CANOPY TEMPERATURE",
+      "description": "used to capture genotypic differences in",
+      "weight": "10",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "THERMAL IMAGERY SYSTEMS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "used as a screening method for",
+      "weight": "8",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "CANOPY TEMPERATURE",
+      "target": "DROUGHT TOLERANCE",
+      "description": "relevant for the improvement of",
+      "weight": "9",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "TRANSPIRATION",
+      "target": "DROUGHT TOLERANCE",
+      "description": "basis for screening drought tolerance",
+      "weight": "8",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "INFRARED CAMERA",
+      "target": "THERMAL IMAGERY SYSTEMS",
+      "description": "used to capture images for",
+      "weight": "10",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "RELATIVELY COOL TEMPERATURE RANGES",
+      "target": "CANOPY TEMPERATURE",
+      "description": "represents a specific temperature range of",
+      "weight": "9",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "RELATIVELY HOT TEMPERATURE RANGES",
+      "target": "CANOPY TEMPERATURE",
+      "description": "represents a specific temperature range of",
+      "weight": "9",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "RELATIVELY COOL TEMPERATURE RANGES",
+      "target": "SEED YIELD",
+      "description": "shows a significant positive correlation with",
+      "weight": "8",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "STOMATAL CONDUCTANCE",
+      "target": "RELATIVELY COOL TEMPERATURE RANGES",
+      "description": "better control leads to larger RC area",
+      "weight": "7",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "ROOT SYSTEM",
+      "target": "DROUGHT TOLERANCE",
+      "description": "contributes to the ability of the plant to withstand drought",
+      "weight": "9",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "ROOT SYSTEM",
+      "target": "STOMATAL CONDUCTANCE",
+      "description": "enables better control of",
+      "weight": "7",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ANDHRA PRADESH",
+      "description": "field studies conducted in",
+      "weight": "6",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "RAINFED CONDITIONS",
+      "target": "SEED YIELD",
+      "description": "condition under which yield was measured",
+      "weight": "8",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "ICC 4958",
+      "target": "CHICKPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "ICC 4958",
+      "target": "ROOT SYSTEM",
+      "description": "possesses a prolific and deeper",
+      "weight": "9",
+      "source_id": "paper_2966"
+    },
+    {
+      "source": "ICC 4958",
+      "target": "RELATIVELY COOL TEMPERATURE RANGES",
+      "description": "ranked fourth largest in RC area",
+      "weight": "7",
+      "source_id": "paper_2966"
+    }
+  ]
+}

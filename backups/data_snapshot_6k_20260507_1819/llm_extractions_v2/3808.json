@@ -1,0 +1,170 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The agricultural crop targeted for the management of stem rot disease.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "STEM ROT",
+      "type": "CONDITION",
+      "description": "A fungal disease caused by Sclerotium rolfsii that affects groundnut seedlings.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "The soil-borne fungal pathogen that causes stem rot in groundnut.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "PSEUDOMONAS FLUORESCENS",
+      "type": "ORGANISM",
+      "description": "A bacterial antagonist used for the biocontrol of Sclerotium rolfsii.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "TRICHODERMA VIRIDE",
+      "type": "ORGANISM",
+      "description": "A fungal antagonist that produces chitinase and parasitizes Sclerotium rolfsii.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "THIRAM",
+      "type": "CONCEPT",
+      "description": "A systemic fungicide used as a chemical control agent against stem rot.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "BIOCONTROL",
+      "type": "CONCEPT",
+      "description": "The use of biological agents like Pseudomonas fluorescens and Trichoderma viride to manage plant diseases.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "EXTRACELLULAR CHITINASE",
+      "type": "CONCEPT",
+      "description": "An enzyme produced by Trichoderma viride to degrade the mycelium of Sclerotium rolfsii.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "ANTAGONISTIC ACTIVITY",
+      "type": "TRAIT",
+      "description": "The ability of biological isolates to inhibit the growth of a pathogen.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "CONTROLLED ENVIRONMENT CONDITIONS",
+      "type": "CONDITION",
+      "description": "The experimental settings used to evaluate the efficacy of biocontrol agents and fungicides.",
+      "source_id": "paper_3808"
+    },
+    {
+      "name": "MORTALITY",
+      "type": "TRAIT",
+      "description": "The death rate of groundnut seedlings following inoculation with Sclerotium rolfsii.",
+      "source_id": "paper_3808"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "STEM ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "PSEUDOMONAS FLUORESCENS",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "inhibits growth of",
+      "weight": "8",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "TRICHODERMA VIRIDE",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "inhibits growth of",
+      "weight": "8",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "TRICHODERMA VIRIDE",
+      "target": "EXTRACELLULAR CHITINASE",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "EXTRACELLULAR CHITINASE",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "parasitizes mycelium of",
+      "weight": "9",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "PSEUDOMONAS FLUORESCENS",
+      "target": "STEM ROT",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "TRICHODERMA VIRIDE",
+      "target": "STEM ROT",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "THIRAM",
+      "target": "STEM ROT",
+      "description": "manages",
+      "weight": "6",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "PSEUDOMONAS FLUORESCENS",
+      "target": "TRICHODERMA VIRIDE",
+      "description": "compatible for combined application",
+      "weight": "8",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "PSEUDOMONAS FLUORESCENS",
+      "target": "MORTALITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "TRICHODERMA VIRIDE",
+      "target": "MORTALITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "THIRAM",
+      "target": "MORTALITY",
+      "description": "reduces",
+      "weight": "6",
+      "source_id": "paper_3808"
+    },
+    {
+      "source": "CONTROLLED ENVIRONMENT CONDITIONS",
+      "target": "MORTALITY",
+      "description": "context for measurement",
+      "weight": "5",
+      "source_id": "paper_3808"
+    }
+  ]
+}

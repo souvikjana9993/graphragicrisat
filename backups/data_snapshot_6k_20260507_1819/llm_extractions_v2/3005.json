@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "GENOMIC MODELS",
+      "type": "CONCEPT",
+      "description": "Models developed for the analysis and application of large-crop plant genomes",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "PLANT GENOME",
+      "type": "CONCEPT",
+      "description": "The total genetic material of a plant, which varies significantly in size across different species",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "POLYPLOIDY",
+      "type": "CONCEPT",
+      "description": "A condition of having multiple sets of chromosomes, which contributes to variation in plant genome size",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "DIPLOIDY",
+      "type": "CONCEPT",
+      "description": "A condition of having two complete sets of chromosomes",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A crop species with a DNA content of 0.50 pg, equivalent to 450 Mbp",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "A crop species with a DNA content of 5.55 pg, equivalent to 5300 Mbp",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "GENE CONTENT",
+      "type": "TRAIT",
+      "description": "The number of genes present in a genome, estimated to be under 40,000 for rice and barley",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "GENE PREDICTION PROGRAM",
+      "type": "METHOD",
+      "description": "A computational tool used to estimate the number of genes in a genome",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "DNA CONTENT",
+      "type": "TRAIT",
+      "description": "The total amount of DNA in a genome, which varies by orders of magnitude between species",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "NONGENIC DNA",
+      "type": "CONCEPT",
+      "description": "DNA sequences that do not code for proteins, making up much of the difference in DNA content between species",
+      "source_id": "paper_3005"
+    },
+    {
+      "name": "RETROTRANSPOSONS",
+      "type": "CONCEPT",
+      "description": "A specific type of nongenic DNA that contributes to the variation in DNA content",
+      "source_id": "paper_3005"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOMIC MODELS",
+      "target": "PLANT GENOME",
+      "description": "developed for the application to large-crop plant genomes",
+      "weight": "8",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "POLYPLOIDY",
+      "target": "PLANT GENOME",
+      "description": "generates variation in genome size",
+      "weight": "8",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "DIPLOIDY",
+      "target": "PLANT GENOME",
+      "description": "variation in genome size occurs even between diploid species",
+      "weight": "7",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "RICE",
+      "target": "DNA CONTENT",
+      "description": "has a DNA content of 0.50 pg",
+      "weight": "10",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "BARLEY",
+      "target": "DNA CONTENT",
+      "description": "has a DNA content of 5.55 pg",
+      "weight": "10",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "RICE",
+      "target": "GENE CONTENT",
+      "description": "has a gene content of under 40,000",
+      "weight": "9",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "BARLEY",
+      "target": "GENE CONTENT",
+      "description": "has a gene content of under 40,000",
+      "weight": "9",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "GENE PREDICTION PROGRAM",
+      "target": "GENE CONTENT",
+      "description": "is used to predict the number of genes",
+      "weight": "9",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "NONGENIC DNA",
+      "target": "DNA CONTENT",
+      "description": "makes up much of the difference in DNA content",
+      "weight": "9",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "RETROTRANSPOSONS",
+      "target": "NONGENIC DNA",
+      "description": "is a specific type of nongenic DNA",
+      "weight": "10",
+      "source_id": "paper_3005"
+    },
+    {
+      "source": "RETROTRANSPOSONS",
+      "target": "DNA CONTENT",
+      "description": "contributes to the difference in DNA content",
+      "weight": "8",
+      "source_id": "paper_3005"
+    }
+  ]
+}

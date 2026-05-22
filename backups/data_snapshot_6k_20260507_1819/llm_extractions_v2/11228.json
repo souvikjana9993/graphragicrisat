@@ -1,0 +1,335 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary cereal crop studied for production intensification.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "MASSONGO",
+      "type": "CROP",
+      "description": "A specific variety of maize used in the yield prediction study.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of agricultural production per unit area.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "TOTAL ABOVEGROUND BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the plant parts above the soil surface.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperatures and weather patterns affecting agriculture.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "POOR SOIL FERTILITY",
+      "type": "CONDITION",
+      "description": "The lack of essential nutrients in the soil hindering crop growth.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "VARIABILITY",
+      "type": "CONDITION",
+      "description": "Year-to-year fluctuations in climate conditions.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation during the maize growing period.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "RCP4.5",
+      "type": "CONDITION",
+      "description": "A representative concentration pathway scenario for moderate climate change projections.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "RCP8.5",
+      "type": "CONDITION",
+      "description": "A representative concentration pathway scenario for high-emission climate change projections.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "NITROGEN LEACHING",
+      "type": "CONDITION",
+      "description": "The loss of nitrogen from the soil due to water movement.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "CENTRAL WEST BURKINA FASO",
+      "type": "LOCATION",
+      "description": "The specific geographic region where the study was conducted.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The broader geographic region facing agricultural productivity obstacles.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "SUDANO-SAHELIAN ZONE",
+      "type": "LOCATION",
+      "description": "The ecological zone in Burkina Faso where on-farm data was collected.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "DSSAT 4.6",
+      "type": "METHOD",
+      "description": "A crop simulation model used to evaluate maize performance and predict yield.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "CERES-DSSAT MODEL",
+      "type": "METHOD",
+      "description": "The specific crop growth model used for maize simulations.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "GCM ICHEC-EC-EARTH",
+      "type": "METHOD",
+      "description": "A regional climate model used to predict rainfall changes.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "AGRONOMIC TRIALS",
+      "type": "METHOD",
+      "description": "Field experiments used to disaggregate effects of soil fertility and climate variability.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "FERTILIZER INPUT RATES",
+      "type": "METHOD",
+      "description": "The application of specific amounts of nitrogen, phosphorus, and potassium.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "ROOT-MEAN-SQUARE ERROR",
+      "type": "METHOD",
+      "description": "A statistical metric used to evaluate the efficiency of the crop model simulations.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "SOIL FERTILITY IMPROVEMENT",
+      "type": "METHOD",
+      "description": "Practices aimed at increasing the nutrient content of the soil.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "SPLITTING OF FERTILIZER APPLICATIONS",
+      "type": "METHOD",
+      "description": "The practice of applying fertilizer in multiple doses to improve uptake.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "LOW-RELEASE NITROGEN FERTILIZERS",
+      "type": "METHOD",
+      "description": "Fertilizers designed to release nitrogen slowly to reduce loss.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "AGROFORESTRY",
+      "type": "METHOD",
+      "description": "The integration of trees into agricultural landscapes to improve soil and water.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "SOIL AND WATER CONSERVATION PRACTICES",
+      "type": "METHOD",
+      "description": "Techniques used to prevent soil erosion and retain moisture.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "AGRICULTURAL PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The efficiency and output of agricultural production.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "CLIMATE RISK ADAPTATION STRATEGIES",
+      "type": "CONCEPT",
+      "description": "Plans and practices devised to reduce vulnerability to climate change.",
+      "source_id": "paper_11228"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A critical nutrient for maize growth and development.",
+      "source_id": "paper_11228"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "MAIZE",
+      "target": "TOTAL ABOVEGROUND BIOMASS",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "MAIZE",
+      "description": "affects production of",
+      "weight": "9",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "POOR SOIL FERTILITY",
+      "target": "MAIZE",
+      "description": "affects production of",
+      "weight": "9",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "DSSAT 4.6",
+      "target": "MAIZE",
+      "description": "simulates growth of",
+      "weight": "10",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "DSSAT 4.6",
+      "target": "YIELD",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "DSSAT 4.6",
+      "target": "TOTAL ABOVEGROUND BIOMASS",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "GCM ICHEC-EC-EARTH",
+      "target": "RAINFALL",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "RCP4.5",
+      "target": "RAINFALL",
+      "description": "defines scenario for",
+      "weight": "8",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "RCP8.5",
+      "target": "RAINFALL",
+      "description": "defines scenario for",
+      "weight": "8",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "FERTILIZER INPUT RATES",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "CENTRAL WEST BURKINA FASO",
+      "target": "MAIZE",
+      "description": "is location for production of",
+      "weight": "10",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "SUDANO-SAHELIAN ZONE",
+      "target": "CENTRAL WEST BURKINA FASO",
+      "description": "is a zone within",
+      "weight": "10",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "SOIL FERTILITY IMPROVEMENT",
+      "target": "POOR SOIL FERTILITY",
+      "description": "mitigates",
+      "weight": "9",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "SPLITTING OF FERTILIZER APPLICATIONS",
+      "target": "NITROGEN LEACHING",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "LOW-RELEASE NITROGEN FERTILIZERS",
+      "target": "NITROGEN LEACHING",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "AGROFORESTRY",
+      "target": "NITROGEN LEACHING",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION PRACTICES",
+      "target": "NITROGEN LEACHING",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "MAIZE",
+      "description": "is essential nutrient for",
+      "weight": "10",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "MASSONGO",
+      "target": "MAIZE",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "CERES-DSSAT MODEL",
+      "target": "MAIZE",
+      "description": "simulates growth of",
+      "weight": "10",
+      "source_id": "paper_11228"
+    },
+    {
+      "source": "ROOT-MEAN-SQUARE ERROR",
+      "target": "DSSAT 4.6",
+      "description": "evaluates efficiency of",
+      "weight": "9",
+      "source_id": "paper_11228"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being investigated for Striga resistance.",
+      "source_id": "paper_2049"
+    },
+    {
+      "name": "STRIGA SEED-GERMINATION STIMULANT",
+      "type": "TRAIT",
+      "description": "A chemical signal produced by sorghum that triggers the germination of Striga seeds.",
+      "source_id": "paper_2049"
+    },
+    {
+      "name": "STRIGA ASIATICA",
+      "type": "ORGANISM",
+      "description": "A parasitic weed whose seed germination is stimulated by sorghum.",
+      "source_id": "paper_2049"
+    },
+    {
+      "name": "ICRISAT CENTRE",
+      "type": "LOCATION",
+      "description": "The facility where S. asiatica seeds were collected.",
+      "source_id": "paper_2049"
+    },
+    {
+      "name": "LOW STIMULANT PRODUCTION",
+      "type": "TRAIT",
+      "description": "A resistance characteristic in sorghum cultivars associated with reduced production of the germination stimulant.",
+      "source_id": "paper_2049"
+    },
+    {
+      "name": "HIGH STIMULANT PRODUCTION",
+      "type": "TRAIT",
+      "description": "A susceptibility characteristic in sorghum cultivars associated with high production of the germination stimulant.",
+      "source_id": "paper_2049"
+    },
+    {
+      "name": "GENETIC CROSSING",
+      "type": "METHOD",
+      "description": "The process of creating F1, F2, and backcross progenies to study trait inheritance.",
+      "source_id": "paper_2049"
+    },
+    {
+      "name": "SINGLE RECESSIVE ALLELE",
+      "type": "GENE_MARKER",
+      "description": "The genetic unit identified as controlling the low stimulant production trait.",
+      "source_id": "paper_2049"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "STRIGA SEED-GERMINATION STIMULANT",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_2049"
+    },
+    {
+      "source": "STRIGA ASIATICA",
+      "target": "STRIGA SEED-GERMINATION STIMULANT",
+      "description": "responds to",
+      "weight": "10",
+      "source_id": "paper_2049"
+    },
+    {
+      "source": "ICRISAT CENTRE",
+      "target": "STRIGA ASIATICA",
+      "description": "source of seeds",
+      "weight": "7",
+      "source_id": "paper_2049"
+    },
+    {
+      "source": "LOW STIMULANT PRODUCTION",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_2049"
+    },
+    {
+      "source": "HIGH STIMULANT PRODUCTION",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_2049"
+    },
+    {
+      "source": "GENETIC CROSSING",
+      "target": "LOW STIMULANT PRODUCTION",
+      "description": "used to study inheritance of",
+      "weight": "8",
+      "source_id": "paper_2049"
+    },
+    {
+      "source": "SINGLE RECESSIVE ALLELE",
+      "target": "LOW STIMULANT PRODUCTION",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_2049"
+    }
+  ]
+}

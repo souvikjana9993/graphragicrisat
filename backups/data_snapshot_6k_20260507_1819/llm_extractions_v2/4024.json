@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan (L) Millsp., the crop species being studied",
+      "source_id": "paper_4024"
+    },
+    {
+      "name": "CORKY-STEM",
+      "type": "TRAIT",
+      "description": "A mutant trait characterized by cork formation on stems and branches",
+      "source_id": "paper_4024"
+    },
+    {
+      "name": "INHERITANCE STUDY",
+      "type": "METHOD",
+      "description": "Analysis of trait inheritance using F1, F2, and BC1F1 generations of two crosses",
+      "source_id": "paper_4024"
+    },
+    {
+      "name": "SM",
+      "type": "GENE_MARKER",
+      "description": "A recessive allele that governs the corky-stem character",
+      "source_id": "paper_4024"
+    },
+    {
+      "name": "CK",
+      "type": "GENE_MARKER",
+      "description": "A dominant allele that governs the corky-stem character",
+      "source_id": "paper_4024"
+    },
+    {
+      "name": "SMOOTH STEM SURFACE",
+      "type": "TRAIT",
+      "description": "The phenotype resulting from the dominant form of the sm allele masking the Ck allele",
+      "source_id": "paper_4024"
+    },
+    {
+      "name": "PERIDERM LAYER",
+      "type": "CONCEPT",
+      "description": "A biological layer whose development leads to cork formation and is typically absent in pigeonpea stems",
+      "source_id": "paper_4024"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "CORKY-STEM",
+      "description": "Exhibits the mutant trait",
+      "weight": "10",
+      "source_id": "paper_4024"
+    },
+    {
+      "source": "INHERITANCE STUDY",
+      "target": "CORKY-STEM",
+      "description": "Used to study the inheritance of the trait",
+      "weight": "10",
+      "source_id": "paper_4024"
+    },
+    {
+      "source": "SM",
+      "target": "CORKY-STEM",
+      "description": "Governs the expression of the trait",
+      "weight": "9",
+      "source_id": "paper_4024"
+    },
+    {
+      "source": "CK",
+      "target": "CORKY-STEM",
+      "description": "Governs the expression of the trait",
+      "weight": "9",
+      "source_id": "paper_4024"
+    },
+    {
+      "source": "SM",
+      "target": "CK",
+      "description": "Dominant form of sm allele masks the expression of the Ck allele",
+      "weight": "8",
+      "source_id": "paper_4024"
+    },
+    {
+      "source": "SM",
+      "target": "SMOOTH STEM SURFACE",
+      "description": "Dominant form results in this phenotype",
+      "weight": "9",
+      "source_id": "paper_4024"
+    },
+    {
+      "source": "PERIDERM LAYER",
+      "target": "CORKY-STEM",
+      "description": "Development of this layer causes cork formation",
+      "weight": "10",
+      "source_id": "paper_4024"
+    },
+    {
+      "source": "PERIDERM LAYER",
+      "target": "PIGEONPEA",
+      "description": "Normally absent in the stem of this crop",
+      "weight": "7",
+      "source_id": "paper_4024"
+    }
+  ]
+}

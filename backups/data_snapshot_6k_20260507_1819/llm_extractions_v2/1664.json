@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The causal fungus of downy mildew in pearl millet, specifically the virulent pathotype path-6",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease caused by Sclerospora graminicola in pearl millet",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The host plant Pennisetum glaucum affected by downy mildew",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "GENOMIC LIBRARY",
+      "type": "METHOD",
+      "description": "A collection of cloned DNA fragments from S. graminicola constructed in a vector",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "LAMBDA GT11 VECTOR",
+      "type": "METHOD",
+      "description": "The vector used to construct the genomic library of S. graminicola",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "REPETITIVE DNA CONTENT",
+      "type": "TRAIT",
+      "description": "The proportion of repetitive DNA sequences in the genome, estimated at approximately 8%",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "COLONY HYBRIDIZATION",
+      "type": "METHOD",
+      "description": "A technique used to estimate repetitive DNA content by hybridizing total fungal DNA with a genomic library",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "RESTRICTION ENZYMES",
+      "type": "METHOD",
+      "description": "Isoschizomeric methylation-sensitive enzymes used to reveal DNA methylation patterns",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "METHYLATION",
+      "type": "CONCEPT",
+      "description": "The chemical modification of DNA, specifically partial methylation of GATC and CCGG sequences",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "GATC AND CCGG SEQUENCES",
+      "type": "GENE_MARKER",
+      "description": "Specific DNA sequences in the genome that showed partial methylation",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "RETROTRANSPOSABLE ELEMENTS",
+      "type": "CONCEPT",
+      "description": "Genetic elements detected in the S. graminicola genome",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "REVERSE TRANSCRIPTASE GENE",
+      "type": "GENE_MARKER",
+      "description": "A gene amplified to detect the presence of retrotransposable elements",
+      "source_id": "paper_1664"
+    },
+    {
+      "name": "PCR",
+      "type": "METHOD",
+      "description": "Polymerase Chain Reaction used to amplify the reverse transcriptase gene",
+      "source_id": "paper_1664"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "is the causal fungus of",
+      "weight": "10",
+      "source_id": "paper_1664"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "PEARL MILLET",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_1664"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1664"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "GENOMIC LIBRARY",
+      "description": "is the source of DNA for",
+      "weight": "9",
+      "source_id": "paper_1664"
+    },
+    {
+      "source": "LAMBDA GT11 VECTOR",
+      "target": "GENOMIC LIBRARY",
+      "description": "is used to construct",
+      "weight": "9",
+      "source_id": "paper_1664"
+    },
+    {
+      "source": "COLONY HYBRIDIZATION",
+      "target": "REPETITIVE DNA CONTENT",
+      "description": "is used to estimate",
+      "weight": "8",
+      "source_id": "paper_1664"
+    },
+    {
+      "source": "RESTRICTION ENZYMES",
+      "target": "METHYLATION",
+      "description": "are used to reveal",
+      "weight": "8",
+      "source_id": "paper_1664"
+    },
+    {
+      "source": "METHYLATION",
+      "target": "GATC AND CCGG SEQUENCES",
+      "description": "occurs at",
+      "weight": "9",
+      "source_id": "paper_1664"
+    },
+    {
+      "source": "PCR",
+      "target": "REVERSE TRANSCRIPTASE GENE",
+      "description": "is used to amplify",
+      "weight": "9",
+      "source_id": "paper_1664"
+    },
+    {
+      "source": "REVERSE TRANSCRIPTASE GENE",
+      "target": "RETROTRANSPOSABLE ELEMENTS",
+      "description": "is a marker for",
+      "weight": "9",
+      "source_id": "paper_1664"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Semi-arid legume crop grown in India",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where pigeonpea is an important crop",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "KARNATAKA",
+      "type": "LOCATION",
+      "description": "State in India where pigeonpea is largely grown",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "GULBARGA",
+      "type": "LOCATION",
+      "description": "District in Karnataka known as the Pulse Bowl of Karnataka",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Major challenge facing agriculture in the Semi-Arid Tropics",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "Region of India facing climate change challenges",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Weather factor whose amount and distribution affect pigeonpea productivity",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Weather factor whose increase affects pigeonpea productivity and yield",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "SOIL PRODUCTIVITY",
+      "type": "CONDITION",
+      "description": "Factor whose depletion affects pigeonpea productivity",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "WATER BALANCE",
+      "type": "CONDITION",
+      "description": "Factor whose disturbance affects pigeonpea productivity",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "APSIM",
+      "type": "METHOD",
+      "description": "Agricultural Production Systems Simulator used for crop assessment",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "PIGEONPEA MODEL",
+      "type": "METHOD",
+      "description": "Model within APSIM used to assess productivity and water use of pigeonpea",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "Productivity measure of pigeonpea affected by temperature and rainfall",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "CROP DURATION",
+      "type": "TRAIT",
+      "description": "Length of the growth cycle of pigeonpea",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "WATER USE",
+      "type": "TRAIT",
+      "description": "Amount of water used by the pigeonpea crop",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "TEMPERATURE TOLERANCE",
+      "type": "TRAIT",
+      "description": "Ability of pigeonpea varieties to withstand higher temperatures",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "Process of developing varieties tolerant to higher temperature",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "WATER MANAGEMENT",
+      "type": "METHOD",
+      "description": "Practices used to sustain pigeonpea productivity",
+      "source_id": "paper_10548"
+    },
+    {
+      "name": "INTEGRATED WATERSHED APPROACH",
+      "type": "METHOD",
+      "description": "Approach used to achieve better water management practices",
+      "source_id": "paper_10548"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "KARNATAKA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "GULBARGA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "GULBARGA",
+      "target": "KARNATAKA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "KARNATAKA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "SEMI-ARID TROPICS",
+      "description": "affects agriculture in",
+      "weight": "9",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "PIGEONPEA",
+      "description": "affects productivity",
+      "weight": "8",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PIGEONPEA",
+      "description": "affects productivity",
+      "weight": "8",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "SOIL PRODUCTIVITY",
+      "target": "PIGEONPEA",
+      "description": "affects productivity",
+      "weight": "8",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "WATER BALANCE",
+      "target": "PIGEONPEA",
+      "description": "affects productivity",
+      "weight": "8",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "APSIM",
+      "target": "PIGEONPEA MODEL",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "PIGEONPEA MODEL",
+      "target": "PIGEONPEA",
+      "description": "simulates productivity and water use",
+      "weight": "10",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "YIELD",
+      "description": "reduces when decreased",
+      "weight": "9",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "CROP DURATION",
+      "description": "shortens",
+      "weight": "8",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "WATER USE",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "BREEDING",
+      "target": "TEMPERATURE TOLERANCE",
+      "description": "develops",
+      "weight": "9",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "TEMPERATURE TOLERANCE",
+      "target": "PIGEONPEA",
+      "description": "sustains productivity",
+      "weight": "8",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "WATER MANAGEMENT",
+      "target": "PIGEONPEA",
+      "description": "sustains productivity",
+      "weight": "8",
+      "source_id": "paper_10548"
+    },
+    {
+      "source": "INTEGRATED WATERSHED APPROACH",
+      "target": "WATER MANAGEMENT",
+      "description": "achieves",
+      "weight": "9",
+      "source_id": "paper_10548"
+    }
+  ]
+}

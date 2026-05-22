@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM A-LINES",
+      "type": "CROP",
+      "description": "Male-sterile sorghum lines used in field trials to study disease spread",
+      "source_id": "paper_1483"
+    },
+    {
+      "name": "CLAVICEPS AFRICANA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes ergot disease",
+      "source_id": "paper_1483"
+    },
+    {
+      "name": "ERGOT DISEASE",
+      "type": "CONDITION",
+      "description": "A disease caused by C. africana that spreads via windborne spores",
+      "source_id": "paper_1483"
+    },
+    {
+      "name": "ZIMBABWE",
+      "type": "LOCATION",
+      "description": "The country where the field trials were conducted",
+      "source_id": "paper_1483"
+    },
+    {
+      "name": "SOUTHERN AFRICA",
+      "type": "LOCATION",
+      "description": "The region where ergot spread has significant epidemiological and economic implications",
+      "source_id": "paper_1483"
+    },
+    {
+      "name": "BURKARD CONTINUOUS SPORE TRAP",
+      "type": "METHOD",
+      "description": "A device used to trap airborne spores for analysis",
+      "source_id": "paper_1483"
+    },
+    {
+      "name": "SECONDARY CONIDIA",
+      "type": "CONCEPT",
+      "description": "Airborne spores of C. africana that act as the principal disease agents",
+      "source_id": "paper_1483"
+    },
+    {
+      "name": "SORGHUM HYBRID BREEDING",
+      "type": "CONCEPT",
+      "description": "The agricultural process of breeding sorghum hybrids",
+      "source_id": "paper_1483"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLAVICEPS AFRICANA",
+      "target": "ERGOT DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1483"
+    },
+    {
+      "source": "ERGOT DISEASE",
+      "target": "SORGHUM A-LINES",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_1483"
+    },
+    {
+      "source": "CLAVICEPS AFRICANA",
+      "target": "ZIMBABWE",
+      "description": "spreads in",
+      "weight": "8",
+      "source_id": "paper_1483"
+    },
+    {
+      "source": "CLAVICEPS AFRICANA",
+      "target": "SECONDARY CONIDIA",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_1483"
+    },
+    {
+      "source": "SECONDARY CONIDIA",
+      "target": "BURKARD CONTINUOUS SPORE TRAP",
+      "description": "captured by",
+      "weight": "9",
+      "source_id": "paper_1483"
+    },
+    {
+      "source": "ERGOT DISEASE",
+      "target": "SORGHUM HYBRID BREEDING",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_1483"
+    },
+    {
+      "source": "SORGHUM HYBRID BREEDING",
+      "target": "SOUTHERN AFRICA",
+      "description": "practiced in",
+      "weight": "7",
+      "source_id": "paper_1483"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "MARKER-ASSISTED SELECTION (MAS)",
+      "type": "METHOD",
+      "description": "A selection method that exploits markers associated with traits of interest to select lines with superior alleles.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Genetic markers associated with traits of interest used for selecting superior alleles.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "SIMPLE TRAITS",
+      "type": "TRAIT",
+      "description": "Traits that can be effectively handled by marker-assisted selection.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "COMPLEX TRAITS",
+      "type": "TRAIT",
+      "description": "Traits that are difficult to handle with MAS but can be addressed by genomic selection.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "GENOMICS TECHNOLOGIES",
+      "type": "METHOD",
+      "description": "Technologies that reduce the cost of genotyping and enable the use of genome-wide marker data.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "GENOTYPING",
+      "type": "METHOD",
+      "description": "The process of determining the genetic makeup of an organism.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "GENOME-WIDE MARKER DATA",
+      "type": "GENE_MARKER",
+      "description": "Large-scale genetic marker data used to estimate breeding values in genomic selection.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "BREEDING VALUE",
+      "type": "CONCEPT",
+      "description": "The genetic value of an individual that can be passed to its offspring.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "GENOMIC SELECTION (GS)",
+      "type": "METHOD",
+      "description": "A modern breeding approach that uses genome-wide marker data to estimate breeding value and address complex traits.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "PHENOTYPING DATA",
+      "type": "CONCEPT",
+      "description": "Data regarding the observable characteristics of a training population.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "TRAINING POPULATION",
+      "type": "CONCEPT",
+      "description": "A group of individuals used to train prediction models in genomic selection.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "PREDICTION MODELS",
+      "type": "METHOD",
+      "description": "Models trained using genotyping and phenotyping data to calculate the genomic estimated breeding value.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "GENOMIC ESTIMATED BREEDING VALUE (GEBV)",
+      "type": "CONCEPT",
+      "description": "The breeding value estimated using genomic selection and prediction models.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "GENETIC GAINS",
+      "type": "TRAIT",
+      "description": "The increase in the average performance of a population over time, enhanced by GS.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "GENOTYPING PLATFORMS",
+      "type": "METHOD",
+      "description": "Cost-effective tools used to generate large-scale genotyping data.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "CROP SPECIES",
+      "type": "CROP",
+      "description": "Various types of crops where genomic selection is deployed for improvement.",
+      "source_id": "paper_10356"
+    },
+    {
+      "name": "CROP IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The overall goal of enhancing crop traits through breeding methods like GS.",
+      "source_id": "paper_10356"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MARKER-ASSISTED SELECTION (MAS)",
+      "target": "MARKERS",
+      "description": "exploits",
+      "weight": "10",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "MARKER-ASSISTED SELECTION (MAS)",
+      "target": "SIMPLE TRAITS",
+      "description": "is restricted to",
+      "weight": "9",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOMICS TECHNOLOGIES",
+      "target": "GENOTYPING",
+      "description": "reduces the cost of",
+      "weight": "8",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOTYPING",
+      "target": "GENOME-WIDE MARKER DATA",
+      "description": "enables the use of",
+      "weight": "9",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOMIC SELECTION (GS)",
+      "target": "GENOME-WIDE MARKER DATA",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOMIC SELECTION (GS)",
+      "target": "BREEDING VALUE",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOMIC SELECTION (GS)",
+      "target": "COMPLEX TRAITS",
+      "description": "addresses",
+      "weight": "9",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOMIC SELECTION (GS)",
+      "target": "GENETIC GAINS",
+      "description": "enhances the rate of",
+      "weight": "8",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOMIC SELECTION (GS)",
+      "target": "PREDICTION MODELS",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "PREDICTION MODELS",
+      "target": "GENOMIC ESTIMATED BREEDING VALUE (GEBV)",
+      "description": "calculate",
+      "weight": "10",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "PREDICTION MODELS",
+      "target": "TRAINING POPULATION",
+      "description": "trained on",
+      "weight": "9",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "PREDICTION MODELS",
+      "target": "PHENOTYPING DATA",
+      "description": "uses",
+      "weight": "8",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOTYPING PLATFORMS",
+      "target": "GENOME-WIDE MARKER DATA",
+      "description": "facilitates the generation of",
+      "weight": "9",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOMIC SELECTION (GS)",
+      "target": "CROP SPECIES",
+      "description": "deployed in",
+      "weight": "8",
+      "source_id": "paper_10356"
+    },
+    {
+      "source": "GENOMIC SELECTION (GS)",
+      "target": "CROP IMPROVEMENT",
+      "description": "application for",
+      "weight": "9",
+      "source_id": "paper_10356"
+    }
+  ]
+}

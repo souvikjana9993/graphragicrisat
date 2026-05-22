@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A legume crop used in a rotation system with chickpea",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used in a rotation system with soybean",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "VERTIC INCEPTISOL",
+      "type": "CONDITION",
+      "description": "A specific type of soil characterized by shrink-swell properties",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "ICRISAT CENTRE, PATANCHERU, INDIA",
+      "type": "LOCATION",
+      "description": "The site where the field study was conducted",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "BROADBED-AND-FURROW",
+      "type": "METHOD",
+      "description": "A landform management practice designed to improve water infiltration and reduce runoff",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "FLAT LANDFORM",
+      "type": "METHOD",
+      "description": "A standard landform used as a control in the study",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "SOIL DEPTH",
+      "type": "CONDITION",
+      "description": "The vertical extent of the soil, categorized as shallow or medium-deep",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the crops measured in tonnes per hectare",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "WATER BALANCE",
+      "type": "CONCEPT",
+      "description": "The balance between water input and output in the soil-plant system",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "SOYBEAN-CHICKPEA ROTATION",
+      "type": "CONCEPT",
+      "description": "A cropping system where soybean and chickpea are grown in sequence",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "SOYBEAN-CHICKPEA SEQUENCING MODEL",
+      "type": "METHOD",
+      "description": "A simulation model used to extrapolate crop yields and water balance over historical weather records",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "RUNOFF",
+      "type": "CONCEPT",
+      "description": "The portion of rainfall that flows over the land surface",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "DEEP DRAINAGE",
+      "type": "CONCEPT",
+      "description": "The movement of water below the root zone of the crops",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "RAINFALL INFILTRATION",
+      "type": "CONCEPT",
+      "description": "The process of water entering the soil from the surface",
+      "source_id": "paper_1814"
+    },
+    {
+      "name": "RAIN WATER MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Practices used to exploit surface runoff and deep drainage for supplemental irrigation",
+      "source_id": "paper_1814"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN-CHICKPEA ROTATION",
+      "target": "SOYBEAN",
+      "description": "consists of",
+      "weight": "10",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "SOYBEAN-CHICKPEA ROTATION",
+      "target": "CHICKPEA",
+      "description": "consists of",
+      "weight": "10",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "BROADBED-AND-FURROW",
+      "target": "CROP YIELD",
+      "description": "has marginal effect on",
+      "weight": "4",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "BROADBED-AND-FURROW",
+      "target": "WATER BALANCE",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "SOIL DEPTH",
+      "target": "CROP YIELD",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "SOIL DEPTH",
+      "target": "WATER BALANCE",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "SOYBEAN-CHICKPEA SEQUENCING MODEL",
+      "target": "SOYBEAN-CHICKPEA ROTATION",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "BROADBED-AND-FURROW",
+      "target": "RUNOFF",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "BROADBED-AND-FURROW",
+      "target": "DEEP DRAINAGE",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "BROADBED-AND-FURROW",
+      "target": "RAINFALL INFILTRATION",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "VERTIC INCEPTISOL",
+      "target": "SOYBEAN-CHICKPEA ROTATION",
+      "description": "is the soil environment for",
+      "weight": "9",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "ICRISAT CENTRE, PATANCHERU, INDIA",
+      "target": "SOYBEAN-CHICKPEA ROTATION",
+      "description": "is the location for",
+      "weight": "10",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "RAIN WATER MANAGEMENT PRACTICES",
+      "target": "CROP YIELD",
+      "description": "can increase and sustain",
+      "weight": "7",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "RUNOFF",
+      "target": "WATER BALANCE",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_1814"
+    },
+    {
+      "source": "DEEP DRAINAGE",
+      "target": "WATER BALANCE",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_1814"
+    }
+  ]
+}

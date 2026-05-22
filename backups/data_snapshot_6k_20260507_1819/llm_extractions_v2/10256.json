@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., an important legume crop adversely affected by abiotic stresses",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONCEPT",
+      "description": "Environmental stresses including heat, drought, and salinity",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "An abiotic stress that adversely impacts plant development, growth, reproduction, and yield",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "An abiotic stress that adversely affects chickpea",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "An abiotic stress that adversely affects chickpea",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "HEAT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea varieties to withstand heat stress",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "RNA-SEQ",
+      "type": "METHOD",
+      "description": "A transcriptome analysis technique used to identify gene expression patterns",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "GENE EXPRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "The analysis of gene expression to identify differentially expressed genes",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "GENOME ASSEMBLY",
+      "type": "CONCEPT",
+      "description": "The available chickpea genome sequence used for mapping RNA-Seq reads",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED GENES",
+      "type": "CONCEPT",
+      "description": "Genes showing significant expression differences between heat-tolerant and heat-sensitive genotypes",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "AP2/ERF",
+      "type": "GENE_MARKER",
+      "description": "APETALA2/Ethylene Responsive Factor gene family",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "HSP",
+      "type": "GENE_MARKER",
+      "description": "Heat Shock Protein gene family",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "QUANTITATIVE REAL TIME PCR",
+      "type": "METHOD",
+      "description": "A method used for the validation of stress responsive genes",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "SNPS/INDELS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms and insertions/deletions identified between parental genotypes",
+      "source_id": "paper_10256"
+    },
+    {
+      "name": "MAPPING POPULATIONS",
+      "type": "CONCEPT",
+      "description": "Genetic populations used for mapping, such as ICC15614 x ICC 4567 and ICC 1356 x ICC 4567",
+      "source_id": "paper_10256"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "ABIOTIC STRESS",
+      "description": "is adversely affected by",
+      "weight": "8",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "HEAT STRESS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "DROUGHT",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "SALINITY",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "CHICKPEA",
+      "description": "adversely impacts development, growth, reproduction and yield of",
+      "weight": "9",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "HEAT TOLERANCE",
+      "target": "CHICKPEA",
+      "description": "is a desired trait for developing improved varieties of",
+      "weight": "9",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "RNA-SEQ",
+      "target": "CHICKPEA",
+      "description": "was performed on tissues of",
+      "weight": "8",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "GENE EXPRESSION ANALYSIS",
+      "target": "RNA-SEQ",
+      "description": "is based on",
+      "weight": "9",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "GENE EXPRESSION ANALYSIS",
+      "target": "DIFFERENTIALLY EXPRESSED GENES",
+      "description": "resulted in the identification of",
+      "weight": "10",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "AP2/ERF",
+      "description": "includes genes belonging to",
+      "weight": "7",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "HSP",
+      "description": "includes genes belonging to",
+      "weight": "7",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "QUANTITATIVE REAL TIME PCR",
+      "target": "DIFFERENTIALLY EXPRESSED GENES",
+      "description": "used for validation of",
+      "weight": "9",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "SNPS/INDELS",
+      "target": "CHICKPEA",
+      "description": "were identified in",
+      "weight": "7",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "SNPS/INDELS",
+      "target": "MAPPING POPULATIONS",
+      "description": "were identified between parental genotypes of",
+      "weight": "8",
+      "source_id": "paper_10256"
+    },
+    {
+      "source": "GENOME ASSEMBLY",
+      "target": "RNA-SEQ",
+      "description": "used for alignment of reads from",
+      "weight": "9",
+      "source_id": "paper_10256"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "GENOME ANNOTATION",
+      "type": "CONCEPT",
+      "description": "The process of identifying the locations of genes and coding regions in a genome.",
+      "source_id": "paper_12338"
+    },
+    {
+      "name": "GENE MODEL",
+      "type": "CONCEPT",
+      "description": "A representation of the structure of a gene, including exons and introns.",
+      "source_id": "paper_12338"
+    },
+    {
+      "name": "PHYLOGENETIC AND COMPARATIVE STUDIES",
+      "type": "METHOD",
+      "description": "Research methods used to analyze evolutionary relationships among biological entities.",
+      "source_id": "paper_12338"
+    },
+    {
+      "name": "EVOLUTIONARY CONSERVATION-BASED GENE MODEL PREDICTION",
+      "type": "METHOD",
+      "description": "A proposed method to support gene model prediction and identify erroneous annotations based on evolutionary conservation.",
+      "source_id": "paper_12338"
+    },
+    {
+      "name": "EVOLUTIONARY CONSERVATION",
+      "type": "CONCEPT",
+      "description": "The preservation of nucleotide sequences or protein structures across different species over time.",
+      "source_id": "paper_12338"
+    },
+    {
+      "name": "LEGUME",
+      "type": "CROP",
+      "description": "A family of plants used as a source of food and fodder.",
+      "source_id": "paper_12338"
+    },
+    {
+      "name": "LEGUME ASSEMBLIES",
+      "type": "CONCEPT",
+      "description": "The reconstructed genomic sequences of various legume species.",
+      "source_id": "paper_12338"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOME ANNOTATION",
+      "target": "GENE MODEL",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_12338"
+    },
+    {
+      "source": "GENE MODEL",
+      "target": "PHYLOGENETIC AND COMPARATIVE STUDIES",
+      "description": "impacts accuracy of",
+      "weight": "7",
+      "source_id": "paper_12338"
+    },
+    {
+      "source": "EVOLUTIONARY CONSERVATION-BASED GENE MODEL PREDICTION",
+      "target": "GENOME ANNOTATION",
+      "description": "supports",
+      "weight": "9",
+      "source_id": "paper_12338"
+    },
+    {
+      "source": "EVOLUTIONARY CONSERVATION-BASED GENE MODEL PREDICTION",
+      "target": "EVOLUTIONARY CONSERVATION",
+      "description": "is based on",
+      "weight": "10",
+      "source_id": "paper_12338"
+    },
+    {
+      "source": "EVOLUTIONARY CONSERVATION-BASED GENE MODEL PREDICTION",
+      "target": "GENE MODEL",
+      "description": "predicts",
+      "weight": "8",
+      "source_id": "paper_12338"
+    },
+    {
+      "source": "LEGUME ASSEMBLIES",
+      "target": "GENE MODEL",
+      "description": "source of representative models",
+      "weight": "9",
+      "source_id": "paper_12338"
+    },
+    {
+      "source": "GENE MODEL",
+      "target": "LEGUME",
+      "description": "used to support annotations for",
+      "weight": "8",
+      "source_id": "paper_12338"
+    }
+  ]
+}

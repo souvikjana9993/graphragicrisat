@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used in the study for nodulation assessment",
+      "source_id": "paper_2198"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The process of forming nodules on the roots of a plant",
+      "source_id": "paper_2198"
+    },
+    {
+      "name": "VISUAL RATING SYSTEM",
+      "type": "METHOD",
+      "description": "A system based on reference photographs using a 1-5 scale to estimate nodulation",
+      "source_id": "paper_2198"
+    },
+    {
+      "name": "REFERENCE PHOTOGRAPHS",
+      "type": "METHOD",
+      "description": "Images used as a standard for the visual rating system to represent nodulation extent",
+      "source_id": "paper_2198"
+    },
+    {
+      "name": "NODULE NUMBER",
+      "type": "TRAIT",
+      "description": "The count of nodules on the roots used to validate the visual rating system",
+      "source_id": "paper_2198"
+    },
+    {
+      "name": "NODULE MASS",
+      "type": "TRAIT",
+      "description": "The weight of nodules on the roots used to validate the visual rating system",
+      "source_id": "paper_2198"
+    },
+    {
+      "name": "HISAR",
+      "type": "LOCATION",
+      "description": "One of the locations where chickpea genotypes were evaluated",
+      "source_id": "paper_2198"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "One of the locations where chickpea genotypes were evaluated",
+      "source_id": "paper_2198"
+    },
+    {
+      "name": "SOIL CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental factors that may influence the timing and estimation of nodulation",
+      "source_id": "paper_2198"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "VISUAL RATING SYSTEM",
+      "target": "NODULATION",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_2198"
+    },
+    {
+      "source": "VISUAL RATING SYSTEM",
+      "target": "REFERENCE PHOTOGRAPHS",
+      "description": "based on",
+      "weight": "10",
+      "source_id": "paper_2198"
+    },
+    {
+      "source": "VISUAL RATING SYSTEM",
+      "target": "NODULE NUMBER",
+      "description": "positively correlated with",
+      "weight": "8",
+      "source_id": "paper_2198"
+    },
+    {
+      "source": "VISUAL RATING SYSTEM",
+      "target": "NODULE MASS",
+      "description": "positively correlated with",
+      "weight": "8",
+      "source_id": "paper_2198"
+    },
+    {
+      "source": "NODULATION",
+      "target": "CHICKPEA",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_2198"
+    },
+    {
+      "source": "NODULE NUMBER",
+      "target": "NODULATION",
+      "description": "is a measure of",
+      "weight": "9",
+      "source_id": "paper_2198"
+    },
+    {
+      "source": "NODULE MASS",
+      "target": "NODULATION",
+      "description": "is a measure of",
+      "weight": "9",
+      "source_id": "paper_2198"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "HISAR",
+      "description": "evaluated at",
+      "weight": "7",
+      "source_id": "paper_2198"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ICRISAT",
+      "description": "evaluated at",
+      "weight": "7",
+      "source_id": "paper_2198"
+    },
+    {
+      "source": "SOIL CONDITIONS",
+      "target": "NODULATION",
+      "description": "influences estimation of",
+      "weight": "6",
+      "source_id": "paper_2198"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop studied for genetic variability and competition effects.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop studied for genetic variability and competition effects.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "HY 8",
+      "type": "CROP",
+      "description": "A specific variety of pigeonpea used in the intercropping experiments.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "DEVELOPMENTAL CHARACTERS",
+      "type": "TRAIT",
+      "description": "Growth-related attributes recorded at three stages of growth.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "YIELD CHARACTERS",
+      "type": "TRAIT",
+      "description": "Productivity-related attributes recorded at maturity.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "CANOPY STRUCTURE",
+      "type": "TRAIT",
+      "description": "The physical arrangement of leaves and branches in sorghum genotypes.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "GENETIC BACKGROUND",
+      "type": "CONCEPT",
+      "description": "The inherited genetic makeup of the sorghum genotypes.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously on the same piece of land.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "SOLECROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing a single crop on a piece of land.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "INTER-SPECIES COMPETITION",
+      "type": "CONDITION",
+      "description": "Competition for resources between different plant species, such as sorghum and pigeonpea.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "INTRA-SPECIES COMPETITION",
+      "type": "CONDITION",
+      "description": "Competition for resources between individuals of the same plant species.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "PLANT TYPE CONCEPT",
+      "type": "CONCEPT",
+      "description": "A theoretical framework used to study the effect of competition on plant growth.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "RBD",
+      "type": "METHOD",
+      "description": "Randomized Block Design, the experimental layout used for the studies.",
+      "source_id": "paper_2556"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONDITION",
+      "description": "The autumn/monsoon cropping season in India.",
+      "source_id": "paper_2556"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "INTER-SPECIES COMPETITION",
+      "description": "Sorghum is subject to inter-species competition when intercropped with pigeonpea",
+      "weight": "9",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "INTER-SPECIES COMPETITION",
+      "description": "Pigeonpea is subject to inter-species competition when intercropped with sorghum",
+      "weight": "9",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INTRA-SPECIES COMPETITION",
+      "description": "Sorghum is subject to intra-species competition during sole cropping",
+      "weight": "8",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "INTRA-SPECIES COMPETITION",
+      "description": "Pigeonpea is subject to intra-species competition during sole cropping",
+      "weight": "8",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "INTER-SPECIES COMPETITION",
+      "description": "Intercropping is used to represent inter-species competition",
+      "weight": "10",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "SOLECROPPING",
+      "target": "INTRA-SPECIES COMPETITION",
+      "description": "Sole cropping is used to represent intra-species competition",
+      "weight": "10",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CANOPY STRUCTURE",
+      "description": "Sorghum genotypes were selected based on differences in canopy structure",
+      "weight": "7",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "DEVELOPMENTAL CHARACTERS",
+      "description": "Developmental characters of sorghum were recorded during the study",
+      "weight": "8",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "YIELD CHARACTERS",
+      "description": "Yield characters of sorghum were recorded at maturity",
+      "weight": "8",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "DEVELOPMENTAL CHARACTERS",
+      "description": "Developmental characters of pigeonpea were recorded during the study",
+      "weight": "8",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "YIELD CHARACTERS",
+      "description": "Yield characters of pigeonpea were recorded at maturity",
+      "weight": "8",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "HY 8",
+      "target": "PIGEONPEA",
+      "description": "HY 8 is a specific variety of pigeonpea",
+      "weight": "10",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "RBD",
+      "target": "SORGHUM",
+      "description": "RBD was the experimental design used for sorghum trials",
+      "weight": "6",
+      "source_id": "paper_2556"
+    },
+    {
+      "source": "RBD",
+      "target": "PIGEONPEA",
+      "description": "RBD was the experimental design used for pigeonpea trials",
+      "weight": "6",
+      "source_id": "paper_2556"
+    }
+  ]
+}

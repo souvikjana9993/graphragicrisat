@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan, the crop species",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "ICPH 8",
+      "type": "CROP",
+      "description": "The first commercial Cajanus cajan hybrid",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "MS PRABHAT",
+      "type": "CROP",
+      "description": "A genetic male-sterile line used as a parent for ICPH 8",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "ICPL161",
+      "type": "CROP",
+      "description": "A male-fertile inbred line used as a parent for ICPH 8",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "UPAS120",
+      "type": "CROP",
+      "description": "A pigeonpea variety used for yield comparison",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "MALE STERILITY",
+      "type": "TRAIT",
+      "description": "The inability of a plant to produce functional pollen",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "MALE FERTILITY",
+      "type": "TRAIT",
+      "description": "The ability of a plant to produce functional pollen",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "VIGOR",
+      "type": "TRAIT",
+      "description": "The strength and health of the plant growth",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "EARLY MATURITY",
+      "type": "TRAIT",
+      "description": "The characteristic of reaching maturity in a shorter timeframe, specifically 115-135 days",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting pigeonpea",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "PIGEONPEA STERILITY MOSAIC VIRUS",
+      "type": "CONDITION",
+      "description": "A viral disease affecting pigeonpea",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "CROSSING",
+      "type": "METHOD",
+      "description": "The process of breeding two different genetic lines",
+      "source_id": "paper_561"
+    },
+    {
+      "name": "CENTRAL INDIA",
+      "type": "LOCATION",
+      "description": "The region where trials were conducted",
+      "source_id": "paper_561"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICPH 8",
+      "target": "PIGEONPEA",
+      "description": "is a hybrid of",
+      "weight": "10",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "ICPH 8",
+      "target": "CROSSING",
+      "description": "is derived from",
+      "weight": "10",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "CROSSING",
+      "target": "MS PRABHAT",
+      "description": "involved parent",
+      "weight": "10",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "CROSSING",
+      "target": "ICPL161",
+      "description": "involved parent",
+      "weight": "10",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "MS PRABHAT",
+      "target": "MALE STERILITY",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "ICPL161",
+      "target": "MALE FERTILITY",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "ICPH 8",
+      "target": "VIGOR",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "ICPH 8",
+      "target": "EARLY MATURITY",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "EARLY MATURITY",
+      "target": "FUSARIUM WILT",
+      "description": "allows escape from",
+      "weight": "8",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "EARLY MATURITY",
+      "target": "PIGEONPEA STERILITY MOSAIC VIRUS",
+      "description": "allows escape from",
+      "weight": "8",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "ICPH 8",
+      "target": "CENTRAL INDIA",
+      "description": "was trialed in",
+      "weight": "9",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "ICPH 8",
+      "target": "YIELD",
+      "description": "has higher",
+      "weight": "9",
+      "source_id": "paper_561"
+    },
+    {
+      "source": "UPAS120",
+      "target": "YIELD",
+      "description": "has lower",
+      "weight": "9",
+      "source_id": "paper_561"
+    }
+  ]
+}

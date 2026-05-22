@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum cv. CSH 6 used in the field experiment",
+      "source_id": "paper_1822"
+    },
+    {
+      "name": "PATANCHERU, ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The location where the field experiment was conducted",
+      "source_id": "paper_1822"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "The nutrient applied as fertilizer and measured in leaves and grains",
+      "source_id": "paper_1822"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "The soil type used in the experiment, characterized by low extractable phosphorus",
+      "source_id": "paper_1822"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period from June to September during which the crop was grown",
+      "source_id": "paper_1822"
+    },
+    {
+      "name": "LEAF P CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of phosphorus in the newest, fully-developed leaf at 50% flowering stage",
+      "source_id": "paper_1822"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of sorghum grain produced",
+      "source_id": "paper_1822"
+    },
+    {
+      "name": "FIELD EXPERIMENT",
+      "type": "METHOD",
+      "description": "The research method used to study the response of sorghum to phosphorus fertilizer",
+      "source_id": "paper_1822"
+    },
+    {
+      "name": "GRAIN PHOSPHORUS CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of phosphorus present in the sorghum grain",
+      "source_id": "paper_1822"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "PATANCHERU, ANDHRA PRADESH",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_1822"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "SORGHUM",
+      "description": "studied the response of",
+      "weight": "10",
+      "source_id": "paper_1822"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "VERTISOL",
+      "description": "grown on",
+      "weight": "9",
+      "source_id": "paper_1822"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "RAINY SEASON",
+      "description": "grown during",
+      "weight": "9",
+      "source_id": "paper_1822"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "SORGHUM",
+      "description": "applied as fertilizer to",
+      "weight": "10",
+      "source_id": "paper_1822"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "LEAF P CONCENTRATION",
+      "description": "increases",
+      "weight": "10",
+      "source_id": "paper_1822"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "10",
+      "source_id": "paper_1822"
+    },
+    {
+      "source": "LEAF P CONCENTRATION",
+      "target": "GRAIN YIELD",
+      "description": "linearly related to",
+      "weight": "10",
+      "source_id": "paper_1822"
+    },
+    {
+      "source": "GRAIN PHOSPHORUS CONTENT",
+      "target": "GRAIN YIELD",
+      "description": "not significantly correlated to",
+      "weight": "5",
+      "source_id": "paper_1822"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "PHOSPHORUS",
+      "description": "low in extractable",
+      "weight": "8",
+      "source_id": "paper_1822"
+    }
+  ]
+}

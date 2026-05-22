@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A short day plant requiring short photoperiods to flower.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "PANICLE INITIATION",
+      "type": "TRAIT",
+      "description": "The stage of floral induction in sorghum.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "PHOTOPERIOD",
+      "type": "CONDITION",
+      "description": "The length of day/night cycle affecting plant growth.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "The country where field experiments were conducted.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "SARIASO 10",
+      "type": "CROP",
+      "description": "A tropical sorghum variety showing a gradual response to photoperiod.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "CSM 335",
+      "type": "CROP",
+      "description": "A tropical sorghum variety showing a threshold-type response to photoperiod.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "IRAT 174",
+      "type": "CROP",
+      "description": "A tropical sorghum variety showing a threshold-type response to photoperiod.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "PHOTOPERIOD SENSITIVITY",
+      "type": "TRAIT",
+      "description": "The degree to which a plant's flowering is affected by day length.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "PHOTOPERIOD-INDUCED PHASE",
+      "type": "CONCEPT",
+      "description": "The phase of growth induced by photoperiod.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "RATE OF CHANGE OF DAY LENGTH",
+      "type": "CONDITION",
+      "description": "The daily variation in photoperiod.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "ADDITIVE MODEL",
+      "type": "METHOD",
+      "description": "A modeling approach combining absolute photoperiod and rate of change to explain panicle initiation.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "FLORAL INDUCTION",
+      "type": "TRAIT",
+      "description": "The process of transitioning to the flowering stage.",
+      "source_id": "paper_1273"
+    },
+    {
+      "name": "CONTROLLED ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Experimental settings used to test photoperiod treatments.",
+      "source_id": "paper_1273"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "PANICLE INITIATION",
+      "description": "undergoes",
+      "weight": "10",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PHOTOPERIOD",
+      "description": "is sensitive to",
+      "weight": "10",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MALI",
+      "description": "was planted in",
+      "weight": "8",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "SARIASO 10",
+      "target": "SORGHUM",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "CSM 335",
+      "target": "SORGHUM",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "IRAT 174",
+      "target": "SORGHUM",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "PANICLE INITIATION",
+      "target": "PHOTOPERIOD",
+      "description": "is influenced by",
+      "weight": "9",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "PANICLE INITIATION",
+      "target": "RATE OF CHANGE OF DAY LENGTH",
+      "description": "is associated with",
+      "weight": "9",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "FLORAL INDUCTION",
+      "target": "RATE OF CHANGE OF DAY LENGTH",
+      "description": "is strongly associated with a negative",
+      "weight": "9",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "ADDITIVE MODEL",
+      "target": "PANICLE INITIATION",
+      "description": "explains variation in duration to",
+      "weight": "8",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "ADDITIVE MODEL",
+      "target": "PHOTOPERIOD",
+      "description": "incorporates",
+      "weight": "7",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "ADDITIVE MODEL",
+      "target": "RATE OF CHANGE OF DAY LENGTH",
+      "description": "incorporates",
+      "weight": "7",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "SARIASO 10",
+      "target": "PHOTOPERIOD SENSITIVITY",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "CSM 335",
+      "target": "PHOTOPERIOD SENSITIVITY",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_1273"
+    },
+    {
+      "source": "IRAT 174",
+      "target": "PHOTOPERIOD SENSITIVITY",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_1273"
+    }
+  ]
+}

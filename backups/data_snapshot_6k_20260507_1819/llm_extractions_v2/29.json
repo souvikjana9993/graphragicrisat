@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "METALAXYL",
+      "type": "METHOD",
+      "description": "Fungicide used as a seed treatment to control downy mildew in pearl millet",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease caused by Sclerospora graminicola that affects pearl millet",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The organism that causes downy mildew in pearl millet",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop being treated with metalaxyl to control downy mildew",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The location where metalaxyl has been used extensively to control downy mildew in pearl millet",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "FUNGICIDE DOSAGE",
+      "type": "CONCEPT",
+      "description": "The amount of metalaxyl applied per kilogram of seed, which affects disease incidence",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "STORAGE TIME",
+      "type": "CONCEPT",
+      "description": "The duration for which metalaxyl-treated seeds are stored, potentially affecting fungicide efficacy",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "STORAGE TEMPERATURE",
+      "type": "CONCEPT",
+      "description": "The temperature at which metalaxyl-treated seeds are stored, affecting efficacy and phytotoxicity",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "DISEASE INCIDENCE",
+      "type": "TRAIT",
+      "description": "The occurrence of downy mildew in pearl millet lines, influenced by fungicide dosage and resistance",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The varying levels of ability in pearl millet lines to resist downy mildew",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "7042S",
+      "type": "CROP",
+      "description": "A highly susceptible pearl millet line",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "4042R",
+      "type": "CROP",
+      "description": "A moderately susceptible pearl millet line",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "ICMP 451",
+      "type": "CROP",
+      "description": "A moderately resistant pearl millet line",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "843B",
+      "type": "CROP",
+      "description": "A pearl millet line that showed significant downy mildew incidence and phytotoxic effects",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "SEED GERMINATION",
+      "type": "TRAIT",
+      "description": "The process of seed sprouting, which can be inhibited by phytotoxic effects",
+      "source_id": "paper_29"
+    },
+    {
+      "name": "PHYTOTOXIC EFFECTS",
+      "type": "CONDITION",
+      "description": "Harmful effects caused by metalaxyl treatment, especially at high storage temperatures",
+      "source_id": "paper_29"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "METALAXYL",
+      "target": "DOWNY MILDEW",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "FUNGICIDE DOSAGE",
+      "target": "DISEASE INCIDENCE",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "STORAGE TIME",
+      "target": "METALAXYL",
+      "description": "affects efficacy of",
+      "weight": "6",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "STORAGE TEMPERATURE",
+      "target": "METALAXYL",
+      "description": "affects efficacy of",
+      "weight": "6",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "DISEASE INCIDENCE",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "7042S",
+      "target": "PEARL MILLET",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "4042R",
+      "target": "PEARL MILLET",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "ICMP 451",
+      "target": "PEARL MILLET",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "843B",
+      "target": "PEARL MILLET",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "METALAXYL",
+      "target": "PHYTOTOXIC EFFECTS",
+      "description": "causes",
+      "weight": "7",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "PHYTOTOXIC EFFECTS",
+      "target": "SEED GERMINATION",
+      "description": "inhibits",
+      "weight": "8",
+      "source_id": "paper_29"
+    },
+    {
+      "source": "STORAGE TEMPERATURE",
+      "target": "PHYTOTOXIC EFFECTS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_29"
+    }
+  ]
+}

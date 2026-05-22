@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop Cicer arietinum Linn. being studied for resistance to H. armigera",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A moth pest that affects chickpea crops",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "ANTIXENOSIS",
+      "type": "CONCEPT",
+      "description": "A mechanism of resistance where the pest is deterred from the host plant",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to resist infestation by H. armigera",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "OVIPOSITION PREFERENCE",
+      "type": "TRAIT",
+      "description": "The tendency of H. armigera moths to lay eggs on specific chickpea genotypes",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "NO CHOICE CONDITION",
+      "type": "CONDITION",
+      "description": "A laboratory test condition where the moth has only one genotype option for oviposition",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "DUAL-CHOICE CONDITION",
+      "type": "CONDITION",
+      "description": "A laboratory test condition where the moth chooses between two genotypes for oviposition",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "MULTI-CHOICE CONDITION",
+      "type": "CONDITION",
+      "description": "A laboratory test condition where the moth chooses among multiple genotypes for oviposition",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics, where the study was conducted",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "DESI TYPE GENOTYPES",
+      "type": "CONCEPT",
+      "description": "A group of chickpea genotypes including ICC 12475, ICC 12476, ICC 12477, ICC 12478, ICC 12479, ICC 12490 and ICC 14876",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "KABULI TYPE GENOTYPES",
+      "type": "CONCEPT",
+      "description": "A group of chickpea genotypes including ICC 12491, ICC 12493, ICC 12494, ICC 12495, ICC 12968, ICC 4973 and ICC 4962",
+      "source_id": "paper_10501"
+    },
+    {
+      "name": "CHICKPEA IMPROVEMENT PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Programs aimed at developing improved chickpea varieties",
+      "source_id": "paper_10501"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ANTIXENOSIS",
+      "target": "RESISTANCE",
+      "description": "is a mechanism of",
+      "weight": "9",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "CHICKPEA",
+      "description": "is a trait of",
+      "weight": "8",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "OVIPOSITION PREFERENCE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "is a behavior of",
+      "weight": "9",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "OVIPOSITION PREFERENCE",
+      "target": "CHICKPEA",
+      "description": "is measured on",
+      "weight": "8",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "DESI TYPE GENOTYPES",
+      "target": "OVIPOSITION PREFERENCE",
+      "description": "showed lower preference for",
+      "weight": "9",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "KABULI TYPE GENOTYPES",
+      "target": "OVIPOSITION PREFERENCE",
+      "description": "showed higher preference for",
+      "weight": "9",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "NO CHOICE CONDITION",
+      "target": "OVIPOSITION PREFERENCE",
+      "description": "is a condition used to study",
+      "weight": "7",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "DUAL-CHOICE CONDITION",
+      "target": "OVIPOSITION PREFERENCE",
+      "description": "is a condition used to study",
+      "weight": "7",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "MULTI-CHOICE CONDITION",
+      "target": "OVIPOSITION PREFERENCE",
+      "description": "is a condition used to study",
+      "weight": "7",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "CHICKPEA IMPROVEMENT PROGRAMS",
+      "description": "is used in",
+      "weight": "8",
+      "source_id": "paper_10501"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ICRISAT",
+      "description": "was studied at",
+      "weight": "7",
+      "source_id": "paper_10501"
+    }
+  ]
+}

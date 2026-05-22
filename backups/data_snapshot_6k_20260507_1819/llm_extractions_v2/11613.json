@@ -1,0 +1,247 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The target crop of the study for yield improvement",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Single-nucleotide polymorphism markers used to identify associations with traits",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "YIELD-RELATED TRAITS",
+      "type": "TRAIT",
+      "description": "Agricultural characteristics associated with the productivity of the crop",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "BACKCROSS POPULATIONS",
+      "type": "CONCEPT",
+      "description": "Populations developed through interspecific crosses for genetic analysis",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "INTERSPECIFIC CROSSES",
+      "type": "METHOD",
+      "description": "The process of crossing different species to develop backcross populations",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "QTL MAPPING MIXED MODEL",
+      "type": "METHOD",
+      "description": "A statistical model used to detect quantitative trait loci while accounting for segregation distortion",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "QTL",
+      "type": "CONCEPT",
+      "description": "Quantitative trait loci that explain phenotypic variation in traits",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "BP-1",
+      "type": "CONCEPT",
+      "description": "The first of two interspecific backcross populations evaluated",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "BP-2",
+      "type": "CONCEPT",
+      "description": "The second of two interspecific backcross populations evaluated",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "DAYS TO 50% FLOWERING",
+      "type": "TRAIT",
+      "description": "A specific yield-related trait measuring the time to reach 50% flowering",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "DAYS TO 75% MATURITY",
+      "type": "TRAIT",
+      "description": "A specific yield-related trait measuring the time to reach 75% maturity",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "CCLG07",
+      "type": "GENE_MARKER",
+      "description": "The specific chromosome location where several QTLs were mapped",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "S7_14185076",
+      "type": "GENE_MARKER",
+      "description": "A specific SNP marker associated with multiple yield-related traits",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "PRIMARY BRANCHES PER PLANT",
+      "type": "TRAIT",
+      "description": "A specific yield-related trait measuring the number of primary branches",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "SECONDARY BRANCHES PER PLANT",
+      "type": "TRAIT",
+      "description": "A specific yield-related trait measuring the number of secondary branches",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "WILD SPECIES",
+      "type": "ORGANISM",
+      "description": "The source of novel alleles used for trait improvement",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "GENOMICS-ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "A breeding approach using genomic information to improve crop traits",
+      "source_id": "paper_11613"
+    },
+    {
+      "name": "GENOTYPING-BY-SEQUENCING",
+      "type": "METHOD",
+      "description": "A high-throughput method used for genotyping the populations",
+      "source_id": "paper_11613"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "PIGEONPEA",
+      "description": "used to genotype populations of",
+      "weight": "8",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "YIELD-RELATED TRAITS",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "INTERSPECIFIC CROSSES",
+      "target": "BACKCROSS POPULATIONS",
+      "description": "used to develop",
+      "weight": "10",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "BACKCROSS POPULATIONS",
+      "target": "PIGEONPEA",
+      "description": "derived from",
+      "weight": "9",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "QTL MAPPING MIXED MODEL",
+      "target": "QTL",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "QTL",
+      "target": "YIELD-RELATED TRAITS",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "BP-1",
+      "target": "QTL",
+      "description": "contained 86 detected",
+      "weight": "8",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "BP-2",
+      "target": "QTL",
+      "description": "contained 107 detected",
+      "weight": "8",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "DAYS TO 50% FLOWERING",
+      "target": "YIELD-RELATED TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "DAYS TO 75% MATURITY",
+      "target": "YIELD-RELATED TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "PRIMARY BRANCHES PER PLANT",
+      "target": "YIELD-RELATED TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "SECONDARY BRANCHES PER PLANT",
+      "target": "YIELD-RELATED TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "QTL",
+      "target": "CCLG07",
+      "description": "located on",
+      "weight": "9",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "S7_14185076",
+      "target": "DAYS TO 50% FLOWERING",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "S7_14185076",
+      "target": "DAYS TO 75% MATURITY",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "S7_14185076",
+      "target": "PRIMARY BRANCHES PER PLANT",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "S7_14185076",
+      "target": "SECONDARY BRANCHES PER PLANT",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "WILD SPECIES",
+      "target": "GENOMICS-ASSISTED BREEDING",
+      "description": "source of novel alleles for",
+      "weight": "8",
+      "source_id": "paper_11613"
+    },
+    {
+      "source": "GENOMICS-ASSISTED BREEDING",
+      "target": "YIELD-RELATED TRAITS",
+      "description": "used for improvement of",
+      "weight": "9",
+      "source_id": "paper_11613"
+    }
+  ]
+}

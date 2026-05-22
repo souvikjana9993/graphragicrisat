@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop grown using a broadbed and furrow system",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "BROADBED AND FURROW SYSTEM",
+      "type": "METHOD",
+      "description": "A growing system for groundnut involving broadbeds and furrows",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "BULLOCK-DRAWN IMPLEMENTS",
+      "type": "METHOD",
+      "description": "Low-cost agricultural tools pulled by bullocks",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "BULLOCK",
+      "type": "ORGANISM",
+      "description": "Animal used to draw the implements",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "BROADBED FORMER",
+      "type": "METHOD",
+      "description": "An implement used to create broadbeds",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "BROADBED FORMER WITH FERTILIZER APPLICATION ATTACHMENT",
+      "type": "METHOD",
+      "description": "An implement that forms broadbeds and applies fertilizer",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "INTERROW WEEDER",
+      "type": "METHOD",
+      "description": "An implement used for weeding between rows",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "PLANTER",
+      "type": "METHOD",
+      "description": "An implement used for planting seeds",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "IRON T-BAR",
+      "type": "CONCEPT",
+      "description": "The structural base of the implements",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "C-CLAMPS",
+      "type": "CONCEPT",
+      "description": "Standard clamps used to attach implements to the T-bar",
+      "source_id": "paper_2145"
+    },
+    {
+      "name": "FIELD CAPACITY",
+      "type": "CONCEPT",
+      "description": "The average area covered per hour by the implements, approximately 0.2 ha/h",
+      "source_id": "paper_2145"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BULLOCK-DRAWN IMPLEMENTS",
+      "target": "BROADBED AND FURROW SYSTEM",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_2145"
+    },
+    {
+      "source": "BULLOCK",
+      "target": "BULLOCK-DRAWN IMPLEMENTS",
+      "description": "draws",
+      "weight": "10",
+      "source_id": "paper_2145"
+    },
+    {
+      "source": "BROADBED FORMER",
+      "target": "BULLOCK-DRAWN IMPLEMENTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2145"
+    },
+    {
+      "source": "BROADBED FORMER WITH FERTILIZER APPLICATION ATTACHMENT",
+      "target": "BULLOCK-DRAWN IMPLEMENTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2145"
+    },
+    {
+      "source": "INTERROW WEEDER",
+      "target": "BULLOCK-DRAWN IMPLEMENTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2145"
+    },
+    {
+      "source": "PLANTER",
+      "target": "BULLOCK-DRAWN IMPLEMENTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2145"
+    },
+    {
+      "source": "BROADBED AND FURROW SYSTEM",
+      "target": "GROUNDNUT",
+      "description": "used for growing",
+      "weight": "10",
+      "source_id": "paper_2145"
+    },
+    {
+      "source": "BULLOCK-DRAWN IMPLEMENTS",
+      "target": "IRON T-BAR",
+      "description": "based on",
+      "weight": "9",
+      "source_id": "paper_2145"
+    },
+    {
+      "source": "BULLOCK-DRAWN IMPLEMENTS",
+      "target": "C-CLAMPS",
+      "description": "attached by",
+      "weight": "9",
+      "source_id": "paper_2145"
+    },
+    {
+      "source": "BULLOCK-DRAWN IMPLEMENTS",
+      "target": "FIELD CAPACITY",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_2145"
+    }
+  ]
+}

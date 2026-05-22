@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal grain crop grown in the maize-wheat system",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal grain crop grown in the maize-wheat system",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "IRRIGATION WATER PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The efficiency of water use in irrigation, measured as WPi",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "NITROGEN USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant utilizes nitrogen, measured as NUE",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "PROFITABILITY",
+      "type": "TRAIT",
+      "description": "The financial gain and economic viability of the agricultural system",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "NET RETURNS",
+      "type": "TRAIT",
+      "description": "The profit remaining after subtracting production costs",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "SUBSURFACE DRIP IRRIGATION",
+      "type": "METHOD",
+      "description": "An irrigation system that delivers water directly to the root zone below the soil surface",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "NITROGEN MANAGEMENT",
+      "type": "METHOD",
+      "description": "The practice of optimizing the application and use of nitrogen fertilizer",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "CONSERVATION AGRICULTURE",
+      "type": "METHOD",
+      "description": "A farming approach based on minimum soil disturbance, permanent soil organic cover, and crop rotations",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "CONVENTIONAL FURROW/FLOOD IRRIGATION",
+      "type": "METHOD",
+      "description": "A traditional irrigation method where water is applied to the surface of the field",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "MAIZE-WHEAT SYSTEM",
+      "type": "CONCEPT",
+      "description": "A cropping system involving the rotation of maize and wheat",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "UNDERGROUND WATER DEPLETION",
+      "type": "CONDITION",
+      "description": "The reduction of water levels in underground aquifers",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "SUSTAINABILITY OF AGRIFOOD SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The ability of food production systems to maintain productivity and environmental health over time",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "NITROGEN FERTILIZER",
+      "type": "CONCEPT",
+      "description": "Nitrogen-based nutrients applied to crops to enhance growth",
+      "source_id": "paper_12181"
+    },
+    {
+      "name": "TRANS-IGP OF SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "The Trans-Indo-Gangetic Plain region in South Asia",
+      "source_id": "paper_12181"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SUBSURFACE DRIP IRRIGATION",
+      "target": "MAIZE-WHEAT SYSTEM",
+      "description": "implemented in",
+      "weight": "10",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "NITROGEN MANAGEMENT",
+      "target": "MAIZE-WHEAT SYSTEM",
+      "description": "implemented in",
+      "weight": "10",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "MAIZE-WHEAT SYSTEM",
+      "description": "serves as the basis for",
+      "weight": "10",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "SUBSURFACE DRIP IRRIGATION",
+      "target": "CROP YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "SUBSURFACE DRIP IRRIGATION",
+      "target": "IRRIGATION WATER PRODUCTIVITY",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "SUBSURFACE DRIP IRRIGATION",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "SUBSURFACE DRIP IRRIGATION",
+      "target": "PROFITABILITY",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "NITROGEN MANAGEMENT",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "MAIZE-WHEAT SYSTEM",
+      "target": "MAIZE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "MAIZE-WHEAT SYSTEM",
+      "target": "WHEAT",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "SUBSURFACE DRIP IRRIGATION",
+      "target": "CONVENTIONAL FURROW/FLOOD IRRIGATION",
+      "description": "compared with",
+      "weight": "10",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "MAIZE-WHEAT SYSTEM",
+      "target": "TRANS-IGP OF SOUTH ASIA",
+      "description": "located in",
+      "weight": "8",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "SUBSURFACE DRIP IRRIGATION",
+      "target": "NET RETURNS",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "NITROGEN FERTILIZER",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "SUBSURFACE DRIP IRRIGATION",
+      "target": "UNDERGROUND WATER DEPLETION",
+      "description": "addresses",
+      "weight": "8",
+      "source_id": "paper_12181"
+    },
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "SUSTAINABILITY OF AGRIFOOD SYSTEMS",
+      "description": "promotes",
+      "weight": "8",
+      "source_id": "paper_12181"
+    }
+  ]
+}

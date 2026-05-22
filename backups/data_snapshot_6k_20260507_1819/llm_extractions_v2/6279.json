@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, the crop under study",
+      "source_id": "paper_6279"
+    },
+    {
+      "name": "DISEASE DAMAGE",
+      "type": "TRAIT",
+      "description": "Parameters related to overall disease damage and leaf diseases",
+      "source_id": "paper_6279"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "Characters contributing to the yield of the crop",
+      "source_id": "paper_6279"
+    },
+    {
+      "name": "COEFFICIENTS OF VARIABILITY",
+      "type": "METHOD",
+      "description": "Statistical measure used to assess variability in traits",
+      "source_id": "paper_6279"
+    },
+    {
+      "name": "HERITABILITY",
+      "type": "CONCEPT",
+      "description": "The proportion of phenotypic variation attributable to genetic factors",
+      "source_id": "paper_6279"
+    },
+    {
+      "name": "GENETIC GAIN",
+      "type": "CONCEPT",
+      "description": "The expected improvement in a trait through selection",
+      "source_id": "paper_6279"
+    },
+    {
+      "name": "NON-ADDITIVE GENE ACTION",
+      "type": "CONCEPT",
+      "description": "Genetic interaction where the effect of alleles is not simply additive",
+      "source_id": "paper_6279"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "External factors influencing the expression of traits",
+      "source_id": "paper_6279"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "The genetic constitution of individual plants",
+      "source_id": "paper_6279"
+    },
+    {
+      "name": "MULTIPLE CROSSING",
+      "type": "METHOD",
+      "description": "A breeding method used to accumulate favorable genes into a single genotype",
+      "source_id": "paper_6279"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COEFFICIENTS OF VARIABILITY",
+      "target": "DISEASE DAMAGE",
+      "description": "Used to measure variability in disease damage",
+      "weight": "9",
+      "source_id": "paper_6279"
+    },
+    {
+      "source": "COEFFICIENTS OF VARIABILITY",
+      "target": "YIELD",
+      "description": "Used to measure variability in yield contributing characters",
+      "weight": "9",
+      "source_id": "paper_6279"
+    },
+    {
+      "source": "HERITABILITY",
+      "target": "DISEASE DAMAGE",
+      "description": "Reported for overall disease damage",
+      "weight": "9",
+      "source_id": "paper_6279"
+    },
+    {
+      "source": "GENETIC GAIN",
+      "target": "DISEASE DAMAGE",
+      "description": "Reported for overall disease damage",
+      "weight": "9",
+      "source_id": "paper_6279"
+    },
+    {
+      "source": "DISEASE DAMAGE",
+      "target": "NON-ADDITIVE GENE ACTION",
+      "description": "Inheritance of disease damage indicates non-additive gene action",
+      "weight": "8",
+      "source_id": "paper_6279"
+    },
+    {
+      "source": "HERITABILITY",
+      "target": "ENVIRONMENT",
+      "description": "High heritability influenced by favorable environment",
+      "weight": "8",
+      "source_id": "paper_6279"
+    },
+    {
+      "source": "MULTIPLE CROSSING",
+      "target": "GENOTYPES",
+      "description": "Suggested to accumulate favorable genes into one genotype",
+      "weight": "8",
+      "source_id": "paper_6279"
+    },
+    {
+      "source": "MULTIPLE CROSSING",
+      "target": "DISEASE DAMAGE",
+      "description": "Suggested to accumulate favorable genes for leaf disease parameters",
+      "weight": "7",
+      "source_id": "paper_6279"
+    },
+    {
+      "source": "DISEASE DAMAGE",
+      "target": "SORGHUM",
+      "description": "Disease damage parameters studied in sorghum",
+      "weight": "10",
+      "source_id": "paper_6279"
+    },
+    {
+      "source": "YIELD",
+      "target": "SORGHUM",
+      "description": "Yield contributing characters studied in sorghum",
+      "weight": "10",
+      "source_id": "paper_6279"
+    }
+  ]
+}

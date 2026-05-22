@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop whose germplasm status and collections in China are discussed",
+      "source_id": "paper_4903"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "Genetic resources maintained in collections for breeding and research",
+      "source_id": "paper_4903"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "The country where the pigeonpea germplasm collections are located",
+      "source_id": "paper_4903"
+    },
+    {
+      "name": "TRAITS",
+      "type": "TRAIT",
+      "description": "Important characteristics associated with the pigeonpea germplasm collections",
+      "source_id": "paper_4903"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "GERMPLASM",
+      "description": "is the subject of the germplasm collections",
+      "weight": "10",
+      "source_id": "paper_4903"
+    },
+    {
+      "source": "GERMPLASM",
+      "target": "CHINA",
+      "description": "is collected and maintained in",
+      "weight": "10",
+      "source_id": "paper_4903"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "TRAITS",
+      "description": "possesses important characteristics",
+      "weight": "8",
+      "source_id": "paper_4903"
+    }
+  ]
+}

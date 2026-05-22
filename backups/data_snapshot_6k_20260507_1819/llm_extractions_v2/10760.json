@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop cultivated by farmers in the study area.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "BOHOL",
+      "type": "LOCATION",
+      "description": "The Central Visayan island in the Philippines where the study was conducted.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "PHILIPPINES",
+      "type": "LOCATION",
+      "description": "The country where the study took place.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "SPATIAL DEPENDENCY",
+      "type": "CONCEPT",
+      "description": "The correlation between observations based on their geographical proximity.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "TECHNICAL EFFICIENCY",
+      "type": "CONCEPT",
+      "description": "A measure of the ability of a farm to produce the maximum possible output from a given set of inputs.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "BAYESIAN STOCHASTIC FRONTIER MODEL",
+      "type": "METHOD",
+      "description": "A statistical approach used to estimate technical efficiency while incorporating spatial dependency.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "IRRIGATED AGRO-ECOSYSTEMS",
+      "type": "CONDITION",
+      "description": "Farming environments where water is supplied through irrigation systems.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "RAINFED AGRO-ECOSYSTEMS",
+      "type": "CONDITION",
+      "description": "Farming environments where water is supplied primarily by rainfall.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "NEIGHBORHOOD STRUCTURES",
+      "type": "CONCEPT",
+      "description": "The geographical organization of residential and farm-plot neighbors used to analyze spatial effects.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "SPATIAL WEIGHT MATRIX",
+      "type": "METHOD",
+      "description": "A mathematical tool used to define the spatial relationship and distance between farmers.",
+      "source_id": "paper_10760"
+    },
+    {
+      "name": "TECHNICAL INEFFICIENCY",
+      "type": "CONCEPT",
+      "description": "The difference between the actual output of a farm and the maximum potential output.",
+      "source_id": "paper_10760"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BAYESIAN STOCHASTIC FRONTIER MODEL",
+      "target": "SPATIAL DEPENDENCY",
+      "description": "integrates spatial dependency to address neighborhood effects",
+      "weight": "9",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "BAYESIAN STOCHASTIC FRONTIER MODEL",
+      "target": "TECHNICAL EFFICIENCY",
+      "description": "used to estimate technical efficiency",
+      "weight": "9",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "SPATIAL DEPENDENCY",
+      "target": "TECHNICAL EFFICIENCY",
+      "description": "investigated for its role in technical efficiency estimates",
+      "weight": "8",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "SPATIAL DEPENDENCY",
+      "target": "IRRIGATED AGRO-ECOSYSTEMS",
+      "description": "found to be stronger in irrigated farms",
+      "weight": "7",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "SPATIAL DEPENDENCY",
+      "target": "RAINFED AGRO-ECOSYSTEMS",
+      "description": "found to be present but weaker than in irrigated farms",
+      "weight": "6",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "SPATIAL WEIGHT MATRIX",
+      "target": "NEIGHBORHOOD STRUCTURES",
+      "description": "used to define the residence and plot level neighborhood structures",
+      "weight": "9",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "TECHNICAL INEFFICIENCY",
+      "target": "SPATIAL DEPENDENCY",
+      "description": "decreases as spatial effects are more taken into account",
+      "weight": "8",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "RICE",
+      "target": "BOHOL",
+      "description": "the crop grown by farmers in the Bohol region",
+      "weight": "10",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "BOHOL",
+      "target": "PHILIPPINES",
+      "description": "Bohol is an island located in the Philippines",
+      "weight": "10",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "RICE",
+      "target": "IRRIGATED AGRO-ECOSYSTEMS",
+      "description": "grown within irrigated agro-ecosystems",
+      "weight": "9",
+      "source_id": "paper_10760"
+    },
+    {
+      "source": "RICE",
+      "target": "RAINFED AGRO-ECOSYSTEMS",
+      "description": "grown within rainfed agro-ecosystems",
+      "weight": "9",
+      "source_id": "paper_10760"
+    }
+  ]
+}

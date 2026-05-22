@@ -1,0 +1,271 @@
+{
+  "entities": [
+    {
+      "name": "UNDERNOURISHMENT",
+      "type": "CONCEPT",
+      "description": "The state of not having enough food to maintain a healthy life, affecting nearly one billion people)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "FOOD DEMAND",
+      "type": "CONCEPT",
+      "description": "The requirement for food to sustain the global population, expected to double by 2050)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "BIOFUEL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The production of fuels from biological sources, creating competition for land and water resources)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "A world region primarily in developing countries characterized by rainfed agriculture and smallholder farms)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "DEVELOPING COUNTRIES",
+      "type": "LOCATION",
+      "description": "Countries where the Semi-Arid Tropics are primarily located)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "RAINFED AGRICULTURE",
+      "type": "CONDITION",
+      "description": "Agricultural systems that rely solely on rainfall for water)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "CLIMATIC VARIABILITY",
+      "type": "CONDITION",
+      "description": "High variability in climate over time and space that hinders agricultural production)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "POVERTY",
+      "type": "CONDITION",
+      "description": "Lack of financial resources that prevents areas from reaching potential agricultural production)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "POOR EDUCATION",
+      "type": "CONDITION",
+      "description": "Lack of educational resources that prevents areas from reaching potential agricultural production)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "POOR POLICY AND INSTITUTIONAL SUPPORT",
+      "type": "CONDITION",
+      "description": "Lack of government and institutional backing that prevents areas from reaching potential agricultural production)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "POLITICAL INSTABILITY",
+      "type": "CONDITION",
+      "description": "Unstable political environments that prevent areas from reaching potential agricultural production)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "AGRICULTURAL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The total output of agricultural activities in a given region)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "AEZ METHODOLOGY",
+      "type": "METHOD",
+      "description": "IIASA’s Agro-Ecological Zones methodology used to assess agricultural potential and model impacts)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of agricultural product produced per unit area)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "HIGH INPUTS",
+      "type": "CONDITION",
+      "description": "The application of significant resources to maximize agricultural output)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "ADVANCED MANAGEMENT",
+      "type": "CONDITION",
+      "description": "Sophisticated farming practices used to improve agricultural yields)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "WATER MANAGEMENT TECHNIQUES",
+      "type": "METHOD",
+      "description": "Methods used to control and optimize water use in agriculture)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "RAINWATER HARVESTING",
+      "type": "METHOD",
+      "description": "A water management technique used to collect and store rainwater to improve yields)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "SOIL MOISTURE MANAGEMENT",
+      "type": "METHOD",
+      "description": "A water management technique used to maintain optimal soil moisture to improve yields)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "BIO-PHYSICAL CONSTRAINTS",
+      "type": "CONDITION",
+      "description": "Natural limitations that restrict agricultural productivity)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperatures and weather patterns affecting agricultural yields)",
+      "source_id": "paper_198"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "Agricultural plants whose yields vary based on region and climate change impacts)",
+      "source_id": "paper_198"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AEZ METHODOLOGY",
+      "target": "AGRICULTURAL PRODUCTION",
+      "description": "used to assess potential of",
+      "weight": "9)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "AEZ METHODOLOGY",
+      "target": "YIELD",
+      "description": "used to calculate potential",
+      "weight": "9)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "HIGH INPUTS",
+      "target": "YIELD",
+      "description": "increases potential",
+      "weight": "8)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "ADVANCED MANAGEMENT",
+      "target": "YIELD",
+      "description": "increases potential",
+      "weight": "8)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "WATER MANAGEMENT TECHNIQUES",
+      "target": "YIELD",
+      "description": "impacts potential",
+      "weight": "7)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "RAINWATER HARVESTING",
+      "target": "WATER MANAGEMENT TECHNIQUES",
+      "description": "is a type of",
+      "weight": "10)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "SOIL MOISTURE MANAGEMENT",
+      "target": "WATER MANAGEMENT TECHNIQUES",
+      "description": "is a type of",
+      "weight": "10)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "RAINWATER HARVESTING",
+      "target": "YIELD",
+      "description": "increases potential",
+      "weight": "7)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "SOIL MOISTURE MANAGEMENT",
+      "target": "YIELD",
+      "description": "increases potential",
+      "weight": "7)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "YIELD",
+      "description": "impacts",
+      "weight": "6)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "SEMI-ARID TROPICS",
+      "description": "affects",
+      "weight": "7)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "BIO-PHYSICAL CONSTRAINTS",
+      "target": "AGRICULTURAL PRODUCTION",
+      "description": "restricts",
+      "weight": "8)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "DEVELOPING COUNTRIES",
+      "description": "located in",
+      "weight": "10)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "RAINFED AGRICULTURE",
+      "target": "SEMI-ARID TROPICS",
+      "description": "characteristic of",
+      "weight": "9)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "CLIMATIC VARIABILITY",
+      "target": "AGRICULTURAL PRODUCTION",
+      "description": "hinders",
+      "weight": "7)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "POVERTY",
+      "target": "AGRICULTURAL PRODUCTION",
+      "description": "hinders",
+      "weight": "7)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "POOR EDUCATION",
+      "target": "AGRICULTURAL PRODUCTION",
+      "description": "hinders",
+      "weight": "7)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "POOR POLICY AND INSTITUTIONAL SUPPORT",
+      "target": "AGRICULTURAL PRODUCTION",
+      "description": "hinders",
+      "weight": "7)",
+      "source_id": "paper_198"
+    },
+    {
+      "source": "POLITICAL INSTABILITY",
+      "target": "AGRICULTURAL PRODUCTION",
+      "description": "hinders",
+      "weight": "7",
+      "source_id": "paper_198"
+    }
+  ]
+}

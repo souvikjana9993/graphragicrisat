@@ -1,0 +1,160 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop species Arachis hypogaea L.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "NONNODULATION",
+      "type": "TRAIT",
+      "description": "The failure of a plant to form nodules on its roots.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The process of forming nodules on roots.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "INTENSITY OF NODULATION",
+      "type": "TRAIT",
+      "description": "The quantitative degree of nodule formation.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "DUPLICATE RECESSIVE GENES",
+      "type": "CONCEPT",
+      "description": "A genetic mechanism where two recessive genes control a trait.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "SINGLE RECESSIVE GENE",
+      "type": "CONCEPT",
+      "description": "A genetic mechanism where one recessive gene controls a trait.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "F2 POPULATIONS",
+      "type": "CONCEPT",
+      "description": "The second filial generation used for genetic analysis.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "F3 PROGENIES",
+      "type": "CONCEPT",
+      "description": "The third filial generation used for genetic analysis.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "TRIGENIC RATIO",
+      "type": "CONCEPT",
+      "description": "A segregation ratio involving three genes, specifically 61 nodulating to 3 nonnodulating.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "DUPLICATE DIGENIC RATIO",
+      "type": "CONCEPT",
+      "description": "A segregation ratio involving two duplicate genes, specifically 15 nodulating to 1 nonnodulating.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "DUPLICATE FACTOR MODEL",
+      "type": "CONCEPT",
+      "description": "A genetic model based on duplicate gene action.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "GENETIC MODEL",
+      "type": "CONCEPT",
+      "description": "A proposed model involving three genes to explain the inheritance of nonnodulation.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "MAJOR GENES",
+      "type": "CONCEPT",
+      "description": "Genes that have a significant effect on the occurrence of a trait.",
+      "source_id": "paper_3703"
+    },
+    {
+      "name": "DIFFERENTIAL HETEROZYGOSITY",
+      "type": "CONCEPT",
+      "description": "The state of having different alleles at various loci in the parents.",
+      "source_id": "paper_3703"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "NONNODULATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3703"
+    },
+    {
+      "source": "PEANUT",
+      "target": "NODULATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3703"
+    },
+    {
+      "source": "NONNODULATION",
+      "target": "DUPLICATE RECESSIVE GENES",
+      "description": "controlled by",
+      "weight": "8",
+      "source_id": "paper_3703"
+    },
+    {
+      "source": "NONNODULATION",
+      "target": "SINGLE RECESSIVE GENE",
+      "description": "controlled by",
+      "weight": "8",
+      "source_id": "paper_3703"
+    },
+    {
+      "source": "NONNODULATION",
+      "target": "GENETIC MODEL",
+      "description": "inheritance explained by",
+      "weight": "9",
+      "source_id": "paper_3703"
+    },
+    {
+      "source": "GENETIC MODEL",
+      "target": "TRIGENIC RATIO",
+      "description": "supported by",
+      "weight": "9",
+      "source_id": "paper_3703"
+    },
+    {
+      "source": "GENETIC MODEL",
+      "target": "DUPLICATE FACTOR MODEL",
+      "description": "explains",
+      "weight": "7",
+      "source_id": "paper_3703"
+    },
+    {
+      "source": "NONNODULATION",
+      "target": "MAJOR GENES",
+      "description": "governed by",
+      "weight": "9",
+      "source_id": "paper_3703"
+    },
+    {
+      "source": "NODULATION",
+      "target": "MAJOR GENES",
+      "description": "governed by",
+      "weight": "9",
+      "source_id": "paper_3703"
+    },
+    {
+      "source": "GENETIC MODEL",
+      "target": "DIFFERENTIAL HETEROZYGOSITY",
+      "description": "assumes",
+      "weight": "7",
+      "source_id": "paper_3703"
+    }
+  ]
+}

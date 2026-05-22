@@ -1,0 +1,170 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop studied for wilt susceptibility",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing chickpea wilt, specifically races 1 and 2",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "CHICKPEA WILT",
+      "type": "TRAIT",
+      "description": "The disease caused by F. oxysporum f. sp. ciceris characterized by plant mortality and xylem browning",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "INOCULUM DENSITY",
+      "type": "CONCEPT",
+      "description": "The concentration of pathogen propagules per gram of soil",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "JG 62",
+      "type": "CROP",
+      "description": "A highly susceptible chickpea cultivar",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "WR 315",
+      "type": "CROP",
+      "description": "A resistant chickpea cultivar",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "K 850",
+      "type": "CROP",
+      "description": "A moderately susceptible chickpea cultivar",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "XYLEM BROWNING",
+      "type": "TRAIT",
+      "description": "Discoloration of the xylem in the root and collar region",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "MULTIPLICATION RATIO",
+      "type": "CONCEPT",
+      "description": "The ratio of increase in the pathogen population over time",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "GLASSHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where the experiments were conducted",
+      "source_id": "paper_3346"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The environmental temperature maintained at 25°C during the study",
+      "source_id": "paper_3346"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "CHICKPEA WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "CHICKPEA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "INOCULUM DENSITY",
+      "target": "CHICKPEA WILT",
+      "description": "influences the severity and timing of",
+      "weight": "9",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "JG 62",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "WR 315",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "K 850",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "JG 62",
+      "target": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "description": "is highly susceptible to",
+      "weight": "10",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "WR 315",
+      "target": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "description": "is resistant to",
+      "weight": "10",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "K 850",
+      "target": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "description": "is moderately susceptible to",
+      "weight": "10",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "K 850",
+      "target": "XYLEM BROWNING",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "INOCULUM DENSITY",
+      "target": "MULTIPLICATION RATIO",
+      "description": "inversely affects",
+      "weight": "9",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "MULTIPLICATION RATIO",
+      "description": "is measured by",
+      "weight": "8",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "GLASSHOUSE",
+      "description": "was grown in",
+      "weight": "7",
+      "source_id": "paper_3346"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "TEMPERATURE",
+      "description": "was exposed to",
+      "weight": "7",
+      "source_id": "paper_3346"
+    }
+  ]
+}

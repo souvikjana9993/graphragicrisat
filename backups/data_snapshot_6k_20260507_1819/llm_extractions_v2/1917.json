@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "Fiber crop grown in India",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where cotton production and pest management are studied",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "Method of artificial water application to cotton crops",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "PESTICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents used to control cotton pests",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "COTTON PESTS",
+      "type": "ORGANISM",
+      "description": "Insects that damage cotton crops and evolve resistance to chemicals",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "Ability of cotton pests to survive pesticide application",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "PYRETHROIDS",
+      "type": "METHOD",
+      "description": "Specific chemical insecticides used for bollworm control",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "BOLLWORM",
+      "type": "ORGANISM",
+      "description": "A major insect pest affecting cotton",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "PESTICIDE TREADMILL",
+      "type": "CONCEPT",
+      "description": "A cycle where increasing pesticide use leads to higher resistance and further increased use",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "SOUTHERN INDIA",
+      "type": "LOCATION",
+      "description": "Region in India where IPM packages were tested",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "PUNJAB",
+      "type": "LOCATION",
+      "description": "Region in India with irrigated cotton-growing systems where IPM was tested",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "INTEGRATED PEST MANAGEMENT",
+      "type": "METHOD",
+      "description": "A sustainable approach to pest control reducing insecticide reliance",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "NATURAL PREDATORS",
+      "type": "ORGANISM",
+      "description": "Organisms that naturally prey on bollworms",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of cotton harvested per unit area",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "COST OF PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The financial expenditure required to grow cotton",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "CONCEPT",
+      "description": "The natural surroundings affected by pesticide use",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "HUMAN HEALTH",
+      "type": "CONCEPT",
+      "description": "The physical well-being of people affected by pesticide exposure",
+      "source_id": "paper_1917"
+    },
+    {
+      "name": "LIVELIHOODS",
+      "type": "CONCEPT",
+      "description": "The means of securing the necessities of life for small-scale farmers",
+      "source_id": "paper_1917"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COTTON",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "COTTON PESTS",
+      "target": "COTTON",
+      "description": "attack",
+      "weight": "10",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "COTTON PESTS",
+      "target": "RESISTANCE",
+      "description": "develop",
+      "weight": "9",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "PESTICIDES",
+      "target": "COTTON PESTS",
+      "description": "control",
+      "weight": "9",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "PYRETHROIDS",
+      "target": "BOLLWORM",
+      "description": "control",
+      "weight": "9",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "BOLLWORM",
+      "target": "COTTON PESTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "PESTICIDES",
+      "target": "PESTICIDE TREADMILL",
+      "description": "cause",
+      "weight": "8",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "COTTON PESTS",
+      "description": "manage",
+      "weight": "10",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "NATURAL PREDATORS",
+      "description": "encourage",
+      "weight": "8",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "YIELD",
+      "description": "increase",
+      "weight": "8",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "COST OF PRODUCTION",
+      "description": "reduce",
+      "weight": "8",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "ENVIRONMENT",
+      "description": "protect",
+      "weight": "7",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "HUMAN HEALTH",
+      "description": "protect",
+      "weight": "7",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "LIVELIHOODS",
+      "description": "improve",
+      "weight": "8",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "SOUTHERN INDIA",
+      "target": "INDIA",
+      "description": "part of",
+      "weight": "10",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "PUNJAB",
+      "target": "INDIA",
+      "description": "part of",
+      "weight": "10",
+      "source_id": "paper_1917"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "COTTON",
+      "description": "used for",
+      "weight": "7",
+      "source_id": "paper_1917"
+    }
+  ]
+}

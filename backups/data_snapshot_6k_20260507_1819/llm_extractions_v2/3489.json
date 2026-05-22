@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop that is the primary host for the wilt pathogen Fusarium udum",
+      "source_id": "paper_3489"
+    },
+    {
+      "name": "WILT",
+      "type": "TRAIT",
+      "description": "A disease symptom characterized by the loss of turgidity and drooping of the plant",
+      "source_id": "paper_3489"
+    },
+    {
+      "name": "FUSARIUM UDUM",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen known to cause wilt in pigeonpea",
+      "source_id": "paper_3489"
+    },
+    {
+      "name": "WEED SPECIES",
+      "type": "ORGANISM",
+      "description": "Various non-crop plant species collected and tested for the presence of Fusarium udum",
+      "source_id": "paper_3489"
+    },
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "A fiber crop that exhibited leaf drying and defoliation when grown in wilt-sick plots",
+      "source_id": "paper_3489"
+    },
+    {
+      "name": "LEAF DRYING",
+      "type": "TRAIT",
+      "description": "A symptom of plant stress or disease observed on cotton plants",
+      "source_id": "paper_3489"
+    },
+    {
+      "name": "DEFOLIATION",
+      "type": "TRAIT",
+      "description": "The premature loss of leaves observed on cotton plants",
+      "source_id": "paper_3489"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM UDUM",
+      "target": "WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3489"
+    },
+    {
+      "source": "FUSARIUM UDUM",
+      "target": "PIGEONPEA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3489"
+    },
+    {
+      "source": "WEED SPECIES",
+      "target": "FUSARIUM UDUM",
+      "description": "tested for",
+      "weight": "7",
+      "source_id": "paper_3489"
+    },
+    {
+      "source": "WEED SPECIES",
+      "target": "WILT",
+      "description": "did not show",
+      "weight": "8",
+      "source_id": "paper_3489"
+    },
+    {
+      "source": "COTTON",
+      "target": "LEAF DRYING",
+      "description": "exhibited",
+      "weight": "9",
+      "source_id": "paper_3489"
+    },
+    {
+      "source": "COTTON",
+      "target": "DEFOLIATION",
+      "description": "exhibited",
+      "weight": "9",
+      "source_id": "paper_3489"
+    },
+    {
+      "source": "FUSARIUM UDUM",
+      "target": "COTTON",
+      "description": "isolated from",
+      "weight": "8",
+      "source_id": "paper_3489"
+    }
+  ]
+}

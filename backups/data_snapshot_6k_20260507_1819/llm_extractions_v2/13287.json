@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "GENEBANK",
+      "type": "CONCEPT",
+      "description": "Collections of large germplasm that serve as the base foundation for plant breeding and crop improvement",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "Genetic resources stored in genebanks that are challenging to manage, preserve, and assess",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "PLANT BREEDING",
+      "type": "METHOD",
+      "description": "The process of using genetic resources to improve plant characteristics",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "CROP IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The overall goal of enhancing agricultural crops through genetic resources and breeding",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "SUBSAMPLING",
+      "type": "METHOD",
+      "description": "The process of reducing a large germplasm collection into core and mini-core collections to reduce complexity",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "CORE COLLECTION",
+      "type": "CONCEPT",
+      "description": "A representative subset of a large germplasm collection used for efficient management and research",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "MINI-CORE COLLECTION",
+      "type": "CONCEPT",
+      "description": "A further reduced subset of a core collection used to enhance crop improvement",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "CHARACTERIZATION",
+      "type": "METHOD",
+      "description": "The process of describing the traits of a large gene pool in a gene bank",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "EVALUATION",
+      "type": "METHOD",
+      "description": "The process of assessing the quality and utility of a large gene pool in a gene bank",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "GENE POOL",
+      "type": "CONCEPT",
+      "description": "The total genetic diversity available within a gene bank for different crops",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "BIOINFORMATICS",
+      "type": "METHOD",
+      "description": "The application of computational tools and software to analyze biological data for core collection development",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "SOFTWARE TOOLS",
+      "type": "METHOD",
+      "description": "Computational applications used within bioinformatics to analyze genetic data",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "GENETIC MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Molecular tools used to identify representative accessions for the development of core collections",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "HETEROZYGOSITY",
+      "type": "TRAIT",
+      "description": "A genetic trait measuring the presence of different alleles at a locus, used in core collection development",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "K-MER ANALYSIS",
+      "type": "METHOD",
+      "description": "A sequence analysis method used to identify representative accessions for core collections",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "TRAIT",
+      "description": "The total variety of genetic characteristics within a population, used to develop core collections",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "RELATEDNESS",
+      "type": "TRAIT",
+      "description": "The degree of genetic similarity between accessions, used to develop core collections",
+      "source_id": "paper_13287"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "Agricultural plants whose genetic resources are managed in genebanks for improvement",
+      "source_id": "paper_13287"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENEBANK",
+      "target": "GERMPLASM",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "GERMPLASM",
+      "target": "PLANT BREEDING",
+      "description": "provides foundation for",
+      "weight": "9",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "GERMPLASM",
+      "target": "CROP IMPROVEMENT",
+      "description": "provides foundation for",
+      "weight": "9",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "SUBSAMPLING",
+      "target": "CORE COLLECTION",
+      "description": "creates",
+      "weight": "10",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "SUBSAMPLING",
+      "target": "MINI-CORE COLLECTION",
+      "description": "creates",
+      "weight": "10",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "CORE COLLECTION",
+      "target": "MINI-CORE COLLECTION",
+      "description": "used to develop",
+      "weight": "9",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "CHARACTERIZATION",
+      "target": "GENE POOL",
+      "description": "assesses",
+      "weight": "8",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "EVALUATION",
+      "target": "GENE POOL",
+      "description": "assesses",
+      "weight": "8",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "BIOINFORMATICS",
+      "target": "CORE COLLECTION",
+      "description": "used for developing",
+      "weight": "8",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "SOFTWARE TOOLS",
+      "target": "BIOINFORMATICS",
+      "description": "part of",
+      "weight": "10",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "GENETIC MARKERS",
+      "target": "CORE COLLECTION",
+      "description": "used for identifying accessions for",
+      "weight": "8",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "HETEROZYGOSITY",
+      "target": "CORE COLLECTION",
+      "description": "used for developing",
+      "weight": "7",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "K-MER ANALYSIS",
+      "target": "CORE COLLECTION",
+      "description": "used for developing",
+      "weight": "7",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "CORE COLLECTION",
+      "description": "used for developing",
+      "weight": "7",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "RELATEDNESS",
+      "target": "CORE COLLECTION",
+      "description": "used for developing",
+      "weight": "7",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "MINI-CORE COLLECTION",
+      "target": "CROP IMPROVEMENT",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_13287"
+    },
+    {
+      "source": "CORE COLLECTION",
+      "target": "CROP",
+      "description": "developed for",
+      "weight": "9",
+      "source_id": "paper_13287"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The cereal crop being studied for rust resistance",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "LEAF RUST",
+      "type": "ORGANISM",
+      "description": "A fungal disease causing biotic constraints and economic losses in wheat",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "YELLOW RUST",
+      "type": "ORGANISM",
+      "description": "Also known as stripe rust, a fungal disease affecting wheat",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "HOST RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of wheat to resist rust diseases",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "NEW DELHI",
+      "type": "LOCATION",
+      "description": "Location of ICAR-IARI facilities where experiments were conducted",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "SHIMLA",
+      "type": "LOCATION",
+      "description": "Location of ICAR-IIWBR Regional Station where experiments were conducted",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "MULTI-ENVIRONMENT PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of characterizing traits across different environments",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "SEEDLING STAGE",
+      "type": "CONDITION",
+      "description": "The early growth stage used for resistance characterization",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "ADULT PLANT STAGE",
+      "type": "CONDITION",
+      "description": "The mature growth stage used for resistance characterization",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "GENE-MATCHING TECHNIQUE",
+      "type": "METHOD",
+      "description": "A method using multi-pathotypes data to identify specific resistance genes",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "MULTI-PATHOTYPES DATA",
+      "type": "CONCEPT",
+      "description": "Data used in gene-matching to identify resistance genes",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "YR GENES",
+      "type": "GENE_MARKER",
+      "description": "Yellow rust resistance genes including YrA, Yr2, Yr9, Yr18, and Yr27",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "LR GENES",
+      "type": "GENE_MARKER",
+      "description": "Leaf rust resistance genes including Lr1, Lr3, Lr10, Lr13, Lr19, Lr23, Lr26, and Lr34",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "EXOTIC WHEAT GENOTYPES",
+      "type": "CONCEPT",
+      "description": "Genetic materials including PG, GS, and CIMCOG panels",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "SLOW RUSTING RESISTANCE",
+      "type": "TRAIT",
+      "description": "A type of resistance observed at the adult plant stage",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "HOST RESPONSE",
+      "type": "METHOD",
+      "description": "Parameter used to assess adult plant slow rusting resistance",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "EPIDEMIOLOGICAL PARAMETERS",
+      "type": "METHOD",
+      "description": "Parameters used to assess adult plant slow rusting resistance",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "NON-RACE-SPECIFIC RESISTANCE GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that provide resistance to multiple pathotypes",
+      "source_id": "paper_12215"
+    },
+    {
+      "name": "HYBRIDIZATION PROGRAMS",
+      "type": "METHOD",
+      "description": "Breeding programs aimed at enhancing rust resistance",
+      "source_id": "paper_12215"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WHEAT",
+      "target": "LEAF RUST",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "WHEAT",
+      "target": "YELLOW RUST",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "HOST RESISTANCE",
+      "target": "LEAF RUST",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "HOST RESISTANCE",
+      "target": "YELLOW RUST",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "MULTI-ENVIRONMENT PHENOTYPING",
+      "target": "WHEAT",
+      "description": "used to characterize",
+      "weight": "8",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "GENE-MATCHING TECHNIQUE",
+      "target": "MULTI-PATHOTYPES DATA",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "GENE-MATCHING TECHNIQUE",
+      "target": "YR GENES",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "GENE-MATCHING TECHNIQUE",
+      "target": "LR GENES",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "YR GENES",
+      "target": "YELLOW RUST",
+      "description": "provides resistance to",
+      "weight": "10",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "LR GENES",
+      "target": "LEAF RUST",
+      "description": "provides resistance to",
+      "weight": "10",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "EXOTIC WHEAT GENOTYPES",
+      "target": "YR GENES",
+      "description": "contain",
+      "weight": "8",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "EXOTIC WHEAT GENOTYPES",
+      "target": "LR GENES",
+      "description": "contain",
+      "weight": "8",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "SLOW RUSTING RESISTANCE",
+      "target": "ADULT PLANT STAGE",
+      "description": "observed at",
+      "weight": "9",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "SLOW RUSTING RESISTANCE",
+      "target": "HOST RESPONSE",
+      "description": "assessed through",
+      "weight": "9",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "SLOW RUSTING RESISTANCE",
+      "target": "EPIDEMIOLOGICAL PARAMETERS",
+      "description": "assessed through",
+      "weight": "9",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "NON-RACE-SPECIFIC RESISTANCE GENES",
+      "target": "ADULT PLANT STAGE",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12215"
+    },
+    {
+      "source": "HYBRIDIZATION PROGRAMS",
+      "target": "HOST RESISTANCE",
+      "description": "aims to enhance",
+      "weight": "9",
+      "source_id": "paper_12215"
+    }
+  ]
+}

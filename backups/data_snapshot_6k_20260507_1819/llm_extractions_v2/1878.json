@@ -1,0 +1,210 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The target crop (Arachis hypogaea) affected by foliar diseases.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A major foliar disease of groundnut caused by Phaeoisariopsis personata.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "PHAEOISARIOPSIS PERSONATA",
+      "type": "ORGANISM",
+      "description": "The pathogenic fungus that causes late leaf spot.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "RUST",
+      "type": "CONDITION",
+      "description": "A major foliar disease of groundnut caused by Puccinia arachidis.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "The pathogenic fungus that causes rust.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the groundnut crop, which is reduced by LLS and rust.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the groundnut plant to resist LLS and rust.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "FUNGICIDAL CONTROL",
+      "type": "METHOD",
+      "description": "The use of fungicides to manage LLS and rust.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "INORGANIC AND METAL SALTS",
+      "type": "CONCEPT",
+      "description": "Chemicals used to control foliar diseases and elicit plant defense mechanisms.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "ANTIFUNGAL ACTIVITY",
+      "type": "CONCEPT",
+      "description": "The ability of inorganic and metal salts to inhibit fungal growth.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "PLANT DEFENSE MECHANISMS",
+      "type": "CONCEPT",
+      "description": "Biological responses of the plant elicited by inorganic and metal salts to fight fungal invasion.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "IN VITRO CONDITIONS",
+      "type": "METHOD",
+      "description": "Laboratory conditions used to study the effect of salts on spore germination.",
+      "source_id": "paper_1878"
+    },
+    {
+      "name": "DETACHED LEAF BIOASSAY",
+      "type": "METHOD",
+      "description": "A method used to evaluate the efficacy of salts in reducing disease incidence.",
+      "source_id": "paper_1878"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "PHAEOISARIOPSIS PERSONATA",
+      "target": "LATE LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "RUST",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "PUCCINIA ARACHIDIS",
+      "target": "RUST",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "CROP YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "RUST",
+      "target": "CROP YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "LATE LEAF SPOT",
+      "description": "resists",
+      "weight": "8",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "RUST",
+      "description": "resists",
+      "weight": "8",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "FUNGICIDAL CONTROL",
+      "target": "LATE LEAF SPOT",
+      "description": "manages",
+      "weight": "8",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "FUNGICIDAL CONTROL",
+      "target": "RUST",
+      "description": "manages",
+      "weight": "8",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "INORGANIC AND METAL SALTS",
+      "target": "LATE LEAF SPOT",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "INORGANIC AND METAL SALTS",
+      "target": "RUST",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "INORGANIC AND METAL SALTS",
+      "target": "ANTIFUNGAL ACTIVITY",
+      "description": "possess",
+      "weight": "9",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "INORGANIC AND METAL SALTS",
+      "target": "PLANT DEFENSE MECHANISMS",
+      "description": "elicit",
+      "weight": "9",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "IN VITRO CONDITIONS",
+      "target": "PHAEOISARIOPSIS PERSONATA",
+      "description": "used to study",
+      "weight": "7",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "IN VITRO CONDITIONS",
+      "target": "PUCCINIA ARACHIDIS",
+      "description": "used to study",
+      "weight": "7",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "DETACHED LEAF BIOASSAY",
+      "target": "LATE LEAF SPOT",
+      "description": "used to reduce incidence",
+      "weight": "7",
+      "source_id": "paper_1878"
+    },
+    {
+      "source": "DETACHED LEAF BIOASSAY",
+      "target": "RUST",
+      "description": "used to reduce incidence",
+      "weight": "7",
+      "source_id": "paper_1878"
+    }
+  ]
+}

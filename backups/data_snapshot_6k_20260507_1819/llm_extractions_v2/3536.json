@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes disease in pearl millet",
+      "source_id": "paper_3536"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The host crop Pennisetum glaucum",
+      "source_id": "paper_3536"
+    },
+    {
+      "name": "VIRULENCE",
+      "type": "TRAIT",
+      "description": "A qualitative measure of the relative capacity of an isolate to infect a host genotype",
+      "source_id": "paper_3536"
+    },
+    {
+      "name": "AGGRESSIVENESS",
+      "type": "TRAIT",
+      "description": "A quantitative measure of the infection causing potential of an isolate, calculated as disease incidence",
+      "source_id": "paper_3536"
+    },
+    {
+      "name": "VIRULENCE INDEX",
+      "type": "TRAIT",
+      "description": "A quantitative measure of virulence, measured as disease incidence multiplied by the inverse of the latent period",
+      "source_id": "paper_3536"
+    },
+    {
+      "name": "PATHOTYPES",
+      "type": "CONCEPT",
+      "description": "Distinct groups of Sclerospora graminicola isolates with specific virulence patterns on host genotypes",
+      "source_id": "paper_3536"
+    },
+    {
+      "name": "HOST-PATHOGEN SPECIFICITY",
+      "type": "CONCEPT",
+      "description": "The specific interaction between a pathogen pathotype and a host genotype",
+      "source_id": "paper_3536"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pearl millet genotypes to resist infection by Sclerospora graminicola",
+      "source_id": "paper_3536"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where the virulence and aggressiveness evaluations were conducted",
+      "source_id": "paper_3536"
+    },
+    {
+      "name": "ASEXUAL GENERATIONS",
+      "type": "METHOD",
+      "description": "The process of successive reproduction used to select specific pathotypes from a field population",
+      "source_id": "paper_3536"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "PEARL MILLET",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3536"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "PATHOTYPES",
+      "description": "is categorized into",
+      "weight": "9",
+      "source_id": "paper_3536"
+    },
+    {
+      "source": "PATHOTYPES",
+      "target": "VIRULENCE",
+      "description": "evaluated for",
+      "weight": "10",
+      "source_id": "paper_3536"
+    },
+    {
+      "source": "PATHOTYPES",
+      "target": "AGGRESSIVENESS",
+      "description": "evaluated for",
+      "weight": "10",
+      "source_id": "paper_3536"
+    },
+    {
+      "source": "PATHOTYPES",
+      "target": "VIRULENCE INDEX",
+      "description": "evaluated for",
+      "weight": "10",
+      "source_id": "paper_3536"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "HOST-PATHOGEN SPECIFICITY",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_3536"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "HOST-PATHOGEN SPECIFICITY",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_3536"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "RESISTANCE",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_3536"
+    },
+    {
+      "source": "ASEXUAL GENERATIONS",
+      "target": "PATHOTYPES",
+      "description": "used to select",
+      "weight": "8",
+      "source_id": "paper_3536"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "PATHOTYPES",
+      "description": "used to evaluate",
+      "weight": "7",
+      "source_id": "paper_3536"
+    }
+  ]
+}

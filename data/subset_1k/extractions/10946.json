@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "WATER",
+      "type": "CONCEPT",
+      "description": "Essential resource for addressing scarcity and productivity in semi-arid regions",
+      "source_id": "paper_10946"
+    },
+    {
+      "name": "SEMI-ARID TROPICAL REGION",
+      "type": "LOCATION",
+      "description": "Geographic area characterized by limited rainfall and specific agricultural challenges",
+      "source_id": "paper_10946"
+    },
+    {
+      "name": "WATER SCARCITY",
+      "type": "CONDITION",
+      "description": "Lack of sufficient water resources to meet demands",
+      "source_id": "paper_10946"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONDITION",
+      "description": "Decline in land quality and productivity",
+      "source_id": "paper_10946"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of agricultural output per unit area",
+      "source_id": "paper_10946"
+    },
+    {
+      "name": "LIVESTOCK PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of output from livestock animals",
+      "source_id": "paper_10946"
+    },
+    {
+      "name": "RURAL LIVELIHOOD SYSTEM",
+      "type": "CONCEPT",
+      "description": "The set of assets and activities that sustain rural populations",
+      "source_id": "paper_10946"
+    },
+    {
+      "name": "WATERSHED INTERVENTIONS",
+      "type": "METHOD",
+      "description": "Management practices aimed at improving water and land resources",
+      "source_id": "paper_10946"
+    },
+    {
+      "name": "SABMILLER INDIA PROJECT",
+      "type": "CONCEPT",
+      "description": "A specific project implementing watershed interventions in India",
+      "source_id": "paper_10946"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATERSHED INTERVENTIONS",
+      "target": "WATER SCARCITY",
+      "description": "addresses",
+      "weight": "9",
+      "source_id": "paper_10946"
+    },
+    {
+      "source": "WATERSHED INTERVENTIONS",
+      "target": "LAND DEGRADATION",
+      "description": "addresses",
+      "weight": "9",
+      "source_id": "paper_10946"
+    },
+    {
+      "source": "WATERSHED INTERVENTIONS",
+      "target": "CROP PRODUCTIVITY",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_10946"
+    },
+    {
+      "source": "WATERSHED INTERVENTIONS",
+      "target": "LIVESTOCK PRODUCTIVITY",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_10946"
+    },
+    {
+      "source": "CROP PRODUCTIVITY",
+      "target": "RURAL LIVELIHOOD SYSTEM",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_10946"
+    },
+    {
+      "source": "LIVESTOCK PRODUCTIVITY",
+      "target": "RURAL LIVELIHOOD SYSTEM",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_10946"
+    },
+    {
+      "source": "WATER",
+      "target": "SEMI-ARID TROPICAL REGION",
+      "description": "plays an important role in",
+      "weight": "10",
+      "source_id": "paper_10946"
+    },
+    {
+      "source": "SABMILLER INDIA PROJECT",
+      "target": "WATERSHED INTERVENTIONS",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_10946"
+    }
+  ]
+}

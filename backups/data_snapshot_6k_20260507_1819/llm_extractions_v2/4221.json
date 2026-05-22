@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop studied for drought avoidance root traits",
+      "source_id": "paper_4221"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental stress characterized by lack of water",
+      "source_id": "paper_4221"
+    },
+    {
+      "name": "ROOT SYSTEMS",
+      "type": "TRAIT",
+      "description": "The underground organ system of the plant",
+      "source_id": "paper_4221"
+    },
+    {
+      "name": "YIELD REDUCTION",
+      "type": "TRAIT",
+      "description": "The decrease in crop productivity due to stress",
+      "source_id": "paper_4221"
+    },
+    {
+      "name": "ROOTING PROFILE",
+      "type": "TRAIT",
+      "description": "The spatial distribution of roots in the soil",
+      "source_id": "paper_4221"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced by the plant",
+      "source_id": "paper_4221"
+    },
+    {
+      "name": "TERMINAL DROUGHT",
+      "type": "CONDITION",
+      "description": "Drought stress occurring during the reproductive stage",
+      "source_id": "paper_4221"
+    },
+    {
+      "name": "ROOT LENGTH DENSITY",
+      "type": "TRAIT",
+      "description": "The length of root per unit volume of soil",
+      "source_id": "paper_4221"
+    },
+    {
+      "name": "DEEPER ROOT SYSTEMS",
+      "type": "TRAIT",
+      "description": "Root systems that penetrate deeper into the soil profile",
+      "source_id": "paper_4221"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ROOT SYSTEMS",
+      "target": "YIELD REDUCTION",
+      "description": "Improving root systems alleviates yield reduction",
+      "weight": "8",
+      "source_id": "paper_4221"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "YIELD REDUCTION",
+      "description": "Drought environments cause yield reduction",
+      "weight": "9",
+      "source_id": "paper_4221"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ROOTING PROFILE",
+      "description": "Chickpea has a rooting profile that influences yield",
+      "weight": "7",
+      "source_id": "paper_4221"
+    },
+    {
+      "source": "ROOTING PROFILE",
+      "target": "SEED YIELD",
+      "description": "Rooting profile influences seed yield under terminal drought",
+      "weight": "8",
+      "source_id": "paper_4221"
+    },
+    {
+      "source": "TERMINAL DROUGHT",
+      "target": "SEED YIELD",
+      "description": "Terminal drought environments affect seed yield",
+      "weight": "9",
+      "source_id": "paper_4221"
+    },
+    {
+      "source": "ROOT LENGTH DENSITY",
+      "target": "SEED YIELD",
+      "description": "Root length density in 15-30 cm plays an important role in seed yield",
+      "weight": "8",
+      "source_id": "paper_4221"
+    },
+    {
+      "source": "DEEPER ROOT SYSTEMS",
+      "target": "SEED YIELD",
+      "description": "Deeper root systems have positive effects on seed yield when drought is severe",
+      "weight": "9",
+      "source_id": "paper_4221"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "DROUGHT",
+      "description": "Chickpea is subjected to drought environments",
+      "weight": "7",
+      "source_id": "paper_4221"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop (Sorghum bicolor) whose productivity is analyzed in rainy seasons",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A grain legume (Cajanus cajan) used in intercropping and rotation systems",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A grain legume used in intercropping systems",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A grain legume (Cicer arietinum) used in rotation systems",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "SAFFLOWER",
+      "type": "CROP",
+      "description": "A non-legume crop (Carthamus tinctorius) used in a comparison system",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "A group of nitrogen-fixing crops used to benefit succeeding crops",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "SOIL TOTAL NITROGEN",
+      "type": "TRAIT",
+      "description": "The total amount of nitrogen present in the soil",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously on the same field",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "SEQUENTIAL CROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops in sequence on the same field",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "VERTISOL MANAGEMENT TECHNOLOGY",
+      "type": "METHOD",
+      "description": "Techniques used to manage Vertisols for consecutive cropping",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "CROP ROTATION",
+      "type": "METHOD",
+      "description": "The practice of growing different crops in succession on the same land",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "LONG-TERM TRIAL",
+      "type": "METHOD",
+      "description": "An extended research study established in 1983 to intensify cropping",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "A type of clay-rich soil found in southern and central India",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period of high rainfall affecting land management and crop growth",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period following the rainy season used for cropping",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "SEMI-ARID TROPICAL",
+      "type": "CONDITION",
+      "description": "The climatic zone characterizing the study area",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "SOIL-BORNE FUNGI",
+      "type": "ORGANISM",
+      "description": "Fungi living in the soil that cause yield decline in pigeonpea",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "NEMATODES",
+      "type": "ORGANISM",
+      "description": "Microscopic worms in the soil that cause yield decline in pigeonpea",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A critical plant nutrient provided by legumes or fertilizers",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "NON-LEGUME SYSTEM",
+      "type": "CONCEPT",
+      "description": "A cropping system consisting of sorghum and safflower without legumes",
+      "source_id": "paper_1870"
+    },
+    {
+      "name": "SOUTHERN AND CENTRAL INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the study was conducted",
+      "source_id": "paper_1870"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LEGUMES",
+      "target": "SORGHUM",
+      "description": "provide benefits to succeeding crops",
+      "weight": "8",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SORGHUM",
+      "description": "sustains grain yield through intercropping",
+      "weight": "9",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "COWPEA",
+      "target": "SORGHUM",
+      "description": "provides nitrogen benefit to succeeding crops",
+      "weight": "8",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SORGHUM",
+      "description": "provides less marked benefits than pigeonpea",
+      "weight": "6",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SOIL TOTAL NITROGEN",
+      "description": "causes a 12-year build up of soil total N",
+      "weight": "9",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "SOIL-BORNE FUNGI",
+      "target": "PIGEONPEA",
+      "description": "cause yield decline over time",
+      "weight": "8",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "NEMATODES",
+      "target": "PIGEONPEA",
+      "description": "cause yield decline over time",
+      "weight": "8",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "CROP ROTATION",
+      "target": "PIGEONPEA",
+      "description": "helps overcome soil-borne fungi and nematode problems",
+      "weight": "7",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "CROP ROTATION",
+      "target": "SORGHUM",
+      "description": "helps sustain production",
+      "weight": "7",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN YIELD",
+      "description": "is measured by",
+      "weight": "10",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "VERTISOLS",
+      "target": "RAINY SEASON",
+      "description": "present land management problems during",
+      "weight": "7",
+      "source_id": "paper_1870"
+    },
+    {
+      "source": "SOUTHERN AND CENTRAL INDIA",
+      "target": "VERTISOLS",
+      "description": "is the location where Vertisols are cropped",
+      "weight": "8",
+      "source_id": "paper_1870"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The legume species Cajanus cajan used in the study",
+      "source_id": "paper_3394"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_3394"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The physical dimensions of the seeds",
+      "source_id": "paper_3394"
+    },
+    {
+      "name": "SEEDS PER POD",
+      "type": "TRAIT",
+      "description": "The number of seeds contained within a single pod",
+      "source_id": "paper_3394"
+    },
+    {
+      "name": "DAYS TO FLOWER",
+      "type": "TRAIT",
+      "description": "The time taken from planting to the onset of flowering",
+      "source_id": "paper_3394"
+    },
+    {
+      "name": "EARLY GENERATION TESTING",
+      "type": "METHOD",
+      "description": "The process of evaluating plant crosses in early filial generations to predict later performance",
+      "source_id": "paper_3394"
+    },
+    {
+      "name": "F1 GENERATION",
+      "type": "CONCEPT",
+      "description": "The first filial generation resulting from a cross",
+      "source_id": "paper_3394"
+    },
+    {
+      "name": "F2 GENERATION",
+      "type": "CONCEPT",
+      "description": "The second filial generation resulting from selfing the F1",
+      "source_id": "paper_3394"
+    },
+    {
+      "name": "F5 GENERATION",
+      "type": "CONCEPT",
+      "description": "The fifth filial generation",
+      "source_id": "paper_3394"
+    },
+    {
+      "name": "MATURITY",
+      "type": "TRAIT",
+      "description": "The time taken for the plant to reach physiological maturity",
+      "source_id": "paper_3394"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "EARLY GENERATION TESTING",
+      "target": "PIGEONPEA",
+      "description": "is applied to",
+      "weight": "10",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "EARLY GENERATION TESTING",
+      "target": "GRAIN YIELD",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "EARLY GENERATION TESTING",
+      "target": "SEED SIZE",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "EARLY GENERATION TESTING",
+      "target": "SEEDS PER POD",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "EARLY GENERATION TESTING",
+      "target": "DAYS TO FLOWER",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "EARLY GENERATION TESTING",
+      "target": "F1 GENERATION",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "EARLY GENERATION TESTING",
+      "target": "F2 GENERATION",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "EARLY GENERATION TESTING",
+      "target": "F5 GENERATION",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "F1 GENERATION",
+      "target": "GRAIN YIELD",
+      "description": "is used to assess",
+      "weight": "8",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "F2 GENERATION",
+      "target": "GRAIN YIELD",
+      "description": "is used to assess",
+      "weight": "8",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "F1 GENERATION",
+      "target": "F2 GENERATION",
+      "description": "precedes",
+      "weight": "10",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "F2 GENERATION",
+      "target": "F5 GENERATION",
+      "description": "precedes",
+      "weight": "10",
+      "source_id": "paper_3394"
+    },
+    {
+      "source": "MATURITY",
+      "target": "PIGEONPEA",
+      "description": "is a characteristic of",
+      "weight": "8",
+      "source_id": "paper_3394"
+    }
+  ]
+}

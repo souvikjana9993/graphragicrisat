@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop species used in the study to analyze mitochondrial DNA RFLP patterns.",
+      "source_id": "paper_1851"
+    },
+    {
+      "name": "RFLP",
+      "type": "METHOD",
+      "description": "Restriction Fragment Length Polymorphism used to analyze DNA banding patterns.",
+      "source_id": "paper_1851"
+    },
+    {
+      "name": "MITOCHONDRIAL DNA",
+      "type": "GENE_MARKER",
+      "description": "The mitochondrial DNA (mtDNA) used as a source for RFLP analysis.",
+      "source_id": "paper_1851"
+    },
+    {
+      "name": "OPEN-POLLINATED SEED",
+      "type": "CONCEPT",
+      "description": "Seeds produced by open pollination used as a source for mtDNA-RFLP analysis.",
+      "source_id": "paper_1851"
+    },
+    {
+      "name": "SIBBED SEED",
+      "type": "CONCEPT",
+      "description": "Seeds produced from siblings used as a source for mtDNA-RFLP analysis.",
+      "source_id": "paper_1851"
+    },
+    {
+      "name": "TOTAL DNA",
+      "type": "GENE_MARKER",
+      "description": "The total genomic DNA (tDNA) used as a source for RFLP analysis.",
+      "source_id": "paper_1851"
+    },
+    {
+      "name": "SOUTHERN BLOT",
+      "type": "METHOD",
+      "description": "The technique used to detect specific DNA sequences in RFLP analysis.",
+      "source_id": "paper_1851"
+    },
+    {
+      "name": "ENZYME-PROBE COMBINATIONS",
+      "type": "METHOD",
+      "description": "The specific combinations of restriction enzymes and probes used to generate RFLP patterns.",
+      "source_id": "paper_1851"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RFLP",
+      "target": "MITOCHONDRIAL DNA",
+      "description": "used to analyze",
+      "weight": "10",
+      "source_id": "paper_1851"
+    },
+    {
+      "source": "RFLP",
+      "target": "TOTAL DNA",
+      "description": "used to analyze",
+      "weight": "10",
+      "source_id": "paper_1851"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "RFLP",
+      "description": "subject of analysis",
+      "weight": "10",
+      "source_id": "paper_1851"
+    },
+    {
+      "source": "OPEN-POLLINATED SEED",
+      "target": "MITOCHONDRIAL DNA",
+      "description": "source of",
+      "weight": "9",
+      "source_id": "paper_1851"
+    },
+    {
+      "source": "SIBBED SEED",
+      "target": "MITOCHONDRIAL DNA",
+      "description": "source of",
+      "weight": "9",
+      "source_id": "paper_1851"
+    },
+    {
+      "source": "SOUTHERN BLOT",
+      "target": "RFLP",
+      "description": "used to visualize",
+      "weight": "10",
+      "source_id": "paper_1851"
+    },
+    {
+      "source": "ENZYME-PROBE COMBINATIONS",
+      "target": "RFLP",
+      "description": "used to generate patterns in",
+      "weight": "10",
+      "source_id": "paper_1851"
+    },
+    {
+      "source": "MITOCHONDRIAL DNA",
+      "target": "TOTAL DNA",
+      "description": "compared for RFLP pattern reliability",
+      "weight": "9",
+      "source_id": "paper_1851"
+    }
+  ]
+}

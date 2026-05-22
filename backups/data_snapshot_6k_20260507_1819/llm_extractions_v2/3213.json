@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A major abiotic stress that affects the yield and quality of rainfed groundnut worldwide",
+      "source_id": "paper_3213"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The agricultural crop being evaluated for drought tolerance",
+      "source_id": "paper_3213"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The quantity of crop produced, which is reduced by drought",
+      "source_id": "paper_3213"
+    },
+    {
+      "name": "QUALITY",
+      "type": "TRAIT",
+      "description": "The standard or grade of the crop, affected by drought",
+      "source_id": "paper_3213"
+    },
+    {
+      "name": "IRRADIANCE",
+      "type": "CONDITION",
+      "description": "A location-specific environmental factor that influences yield losses due to drought",
+      "source_id": "paper_3213"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A location-specific environmental factor that influences yield losses due to drought",
+      "source_id": "paper_3213"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "A physiological process in groundnut affected by water deficits",
+      "source_id": "paper_3213"
+    },
+    {
+      "name": "PHOTOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "A physiological process in groundnut affected by water deficits",
+      "source_id": "paper_3213"
+    },
+    {
+      "name": "CALCIUM UPTAKE",
+      "type": "CONCEPT",
+      "description": "A physiological process in groundnut affected by water deficits",
+      "source_id": "paper_3213"
+    },
+    {
+      "name": "FIELD SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating groundnut for drought tolerance in the field",
+      "source_id": "paper_3213"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3213"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_3213"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "QUALITY",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3213"
+    },
+    {
+      "source": "IRRADIANCE",
+      "target": "YIELD",
+      "description": "influences losses",
+      "weight": "7",
+      "source_id": "paper_3213"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "YIELD",
+      "description": "influences losses",
+      "weight": "7",
+      "source_id": "paper_3213"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "NITROGEN FIXATION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3213"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "PHOTOSYNTHESIS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3213"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "CALCIUM UPTAKE",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3213"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "GROUNDNUT",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_3213"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "DROUGHT",
+      "description": "used to screen for tolerance to",
+      "weight": "9",
+      "source_id": "paper_3213"
+    }
+  ]
+}

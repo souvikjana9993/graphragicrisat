@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop used to establish a reference set of diverse accessions",
+      "source_id": "paper_4197"
+    },
+    {
+      "name": "GENOTYPIC DATA",
+      "type": "CONCEPT",
+      "description": "Data used as the basis for selecting a subset of diverse accessions",
+      "source_id": "paper_4197"
+    },
+    {
+      "name": "MAX LENGTH SUB TREE",
+      "type": "METHOD",
+      "description": "The specific option or algorithm used to select diverse accessions from the collection",
+      "source_id": "paper_4197"
+    },
+    {
+      "name": "COMPOSITE COLLECTION",
+      "type": "CONCEPT",
+      "description": "The overall collection from which a subset of accessions was chosen",
+      "source_id": "paper_4197"
+    },
+    {
+      "name": "ACCESSIONS",
+      "type": "CONCEPT",
+      "description": "The individual genetic samples chosen to form the reference set",
+      "source_id": "paper_4197"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOTYPIC DATA",
+      "target": "ACCESSIONS",
+      "description": "used to select",
+      "weight": "8",
+      "source_id": "paper_4197"
+    },
+    {
+      "source": "MAX LENGTH SUB TREE",
+      "target": "ACCESSIONS",
+      "description": "used to select",
+      "weight": "9",
+      "source_id": "paper_4197"
+    },
+    {
+      "source": "COMPOSITE COLLECTION",
+      "target": "ACCESSIONS",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_4197"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "ACCESSIONS",
+      "description": "crop species of",
+      "weight": "10",
+      "source_id": "paper_4197"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "COMPOSITE COLLECTION",
+      "description": "crop species of",
+      "weight": "10",
+      "source_id": "paper_4197"
+    }
+  ]
+}

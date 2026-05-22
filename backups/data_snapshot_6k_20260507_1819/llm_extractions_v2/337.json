@@ -1,0 +1,193 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop for which planting and fertilizer management decisions are analyzed.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "GCM-BASED SEASONAL RAINFALL FORECASTS",
+      "type": "METHOD",
+      "description": "General circulation model-based predictions of precipitation used to inform agricultural management.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "KATUMANI",
+      "type": "LOCATION",
+      "description": "A semi-arid location in Southern Kenya used for the study.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "MAKINDU",
+      "type": "LOCATION",
+      "description": "A semi-arid location in Southern Kenya used for the study.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "SOUTHERN KENYA",
+      "type": "LOCATION",
+      "description": "The broader geographic region where the study was conducted.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "CROP YIELD SIMULATION",
+      "type": "METHOD",
+      "description": "A technique used to estimate the yield of maize based on various inputs and weather conditions.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "STOCHASTIC ENTERPRISE BUDGETING",
+      "type": "METHOD",
+      "description": "An economic analysis method used to identify profit-maximizing rates and densities.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "STOCHASTIC DOMINANCE ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to evaluate the preference of risk-averse farmers for specific management strategies.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "FERTILIZER N RATES",
+      "type": "CONCEPT",
+      "description": "The amount of nitrogen fertilizer applied to the crop.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "STAND DENSITIES",
+      "type": "CONCEPT",
+      "description": "The density of plants per unit area in the field.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced, influenced by rainfall, nitrogen supply, and stand density.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "PROFIT",
+      "type": "CONCEPT",
+      "description": "The financial gain from maize production, measured by gross margins and gross value of production.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "SEA SURFACE TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Boundary conditions used in GCMs to determine the predictability of rainfall forecasts.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "GRAIN PRICE",
+      "type": "CONCEPT",
+      "description": "The market price of maize, which significantly affects the value of forecasts.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "INPUT COSTS",
+      "type": "CONCEPT",
+      "description": "The costs associated with production inputs like fertilizer.",
+      "source_id": "paper_337"
+    },
+    {
+      "name": "RISK AVERSION",
+      "type": "CONCEPT",
+      "description": "The degree to which farmers avoid uncertainty in their management decisions.",
+      "source_id": "paper_337"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GCM-BASED SEASONAL RAINFALL FORECASTS",
+      "target": "MAIZE",
+      "description": "used to inform management decisions for",
+      "weight": "9",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "GCM-BASED SEASONAL RAINFALL FORECASTS",
+      "target": "KATUMANI",
+      "description": "evaluated at this location",
+      "weight": "8",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "GCM-BASED SEASONAL RAINFALL FORECASTS",
+      "target": "MAKINDU",
+      "description": "evaluated at this location",
+      "weight": "8",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "CROP YIELD SIMULATION",
+      "target": "MAIZE",
+      "description": "used to simulate the yield of",
+      "weight": "9",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "STOCHASTIC ENTERPRISE BUDGETING",
+      "target": "PROFIT",
+      "description": "used to estimate and maximize",
+      "weight": "8",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "FERTILIZER N RATES",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "STAND DENSITIES",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "SEA SURFACE TEMPERATURE",
+      "target": "GCM-BASED SEASONAL RAINFALL FORECASTS",
+      "description": "serves as boundary conditions for",
+      "weight": "10",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "GRAIN PRICE",
+      "target": "PROFIT",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "INPUT COSTS",
+      "target": "PROFIT",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "STOCHASTIC DOMINANCE ANALYSIS",
+      "target": "RISK AVERSION",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "KATUMANI",
+      "target": "SOUTHERN KENYA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_337"
+    },
+    {
+      "source": "MAKINDU",
+      "target": "SOUTHERN KENYA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_337"
+    }
+  ]
+}

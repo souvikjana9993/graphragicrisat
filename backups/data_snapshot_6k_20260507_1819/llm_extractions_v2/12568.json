@@ -1,0 +1,241 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop species being evaluated for DUS testing",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "High-density single nucleotide polymorphisms used for molecular distance analysis",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "DUS TESTING",
+      "type": "CONCEPT",
+      "description": "Distinctness, uniformity, and stability testing for plant variety protection",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "WHOLE-GENOME RESEQUENCING",
+      "type": "METHOD",
+      "description": "Technique used to identify SNP loci across the rice genome",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "UPOV OPTION 2",
+      "type": "CONCEPT",
+      "description": "A regulatory option for DUS testing based on the correlation between molecular and phenotypic distances",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "MOLECULAR DISTANCE",
+      "type": "CONCEPT",
+      "description": "The genetic distance between varieties based on SNP loci",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "PHENOTYPIC DISTANCE",
+      "type": "CONCEPT",
+      "description": "The morphological distance between varieties based on phenotypic traits",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "STATISTICAL ALGORITHMS",
+      "type": "METHOD",
+      "description": "Computational methods used to analyze the correlation between molecular and phenotypic distances",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "JACCARD SIMILARITY ALGORITHM",
+      "type": "METHOD",
+      "description": "A specific statistical algorithm that showed the highest correlation in the study",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "PHENOTYPIC TRAITS",
+      "type": "TRAIT",
+      "description": "Morphological characteristics used to evaluate rice varieties",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "GENOME-WIDE PREDICTION METHOD",
+      "type": "METHOD",
+      "description": "A method used to predict phenotypic traits from genomic data",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "BASAL SHEATH ANTHOCYANIN COLOR",
+      "type": "TRAIT",
+      "description": "A specific phenotypic trait of rice with low prediction accuracy",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "GLUME LENGTH",
+      "type": "TRAIT",
+      "description": "A specific phenotypic trait of rice with low prediction accuracy",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "LEAF BLADE GREEN COLOR INTENSITY",
+      "type": "TRAIT",
+      "description": "A specific phenotypic trait of rice with low prediction accuracy",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "GROUP COMPARISON ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis used to identify the key to overcoming the ceiling effect of correlation",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "GENOTYPE ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis of genetic data to increase DUS testing efficiency",
+      "source_id": "paper_12568"
+    },
+    {
+      "name": "PHENOTYPE ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis of morphological data to increase DUS testing efficiency",
+      "source_id": "paper_12568"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WHOLE-GENOME RESEQUENCING",
+      "target": "SNPS",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "SNPS",
+      "target": "MOLECULAR DISTANCE",
+      "description": "used to calculate",
+      "weight": "10",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "PHENOTYPIC TRAITS",
+      "target": "PHENOTYPIC DISTANCE",
+      "description": "used to calculate",
+      "weight": "10",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "UPOV OPTION 2",
+      "target": "DUS TESTING",
+      "description": "is an option for",
+      "weight": "9",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "UPOV OPTION 2",
+      "target": "MOLECULAR DISTANCE",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "UPOV OPTION 2",
+      "target": "PHENOTYPIC DISTANCE",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "STATISTICAL ALGORITHMS",
+      "target": "MOLECULAR DISTANCE",
+      "description": "analyzes correlation of",
+      "weight": "7",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "STATISTICAL ALGORITHMS",
+      "target": "PHENOTYPIC DISTANCE",
+      "description": "analyzes correlation of",
+      "weight": "7",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "JACCARD SIMILARITY ALGORITHM",
+      "target": "STATISTICAL ALGORITHMS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "GENOME-WIDE PREDICTION METHOD",
+      "target": "PHENOTYPIC TRAITS",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "BASAL SHEATH ANTHOCYANIN COLOR",
+      "target": "PHENOTYPIC TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "GLUME LENGTH",
+      "target": "PHENOTYPIC TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "LEAF BLADE GREEN COLOR INTENSITY",
+      "target": "PHENOTYPIC TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "GROUP COMPARISON ANALYSIS",
+      "target": "PHENOTYPIC TRAITS",
+      "description": "evaluates resolution of",
+      "weight": "7",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "GENOTYPE ANALYSIS",
+      "target": "DUS TESTING",
+      "description": "increases efficiency of",
+      "weight": "8",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "PHENOTYPE ANALYSIS",
+      "target": "DUS TESTING",
+      "description": "increases efficiency of",
+      "weight": "8",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "RICE",
+      "target": "DUS TESTING",
+      "description": "is the subject of",
+      "weight": "10",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "RICE",
+      "target": "SNPS",
+      "description": "is the source of",
+      "weight": "10",
+      "source_id": "paper_12568"
+    },
+    {
+      "source": "RICE",
+      "target": "PHENOTYPIC TRAITS",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_12568"
+    }
+  ]
+}

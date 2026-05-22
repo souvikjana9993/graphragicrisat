@@ -1,0 +1,305 @@
+{
+  "entities": [
+    {
+      "name": "CROP YIELD ESTIMATION",
+      "type": "CONCEPT",
+      "description": "The process of predicting the amount of crop produced per unit area to inform logistics and insurance.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "ABIOTIC AND BIOTIC STRESSES",
+      "type": "CONDITION",
+      "description": "Environmental or biological factors that cause crop loss and necessitate yield estimation.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "REMOTE SENSING TECHNOLOGY",
+      "type": "METHOD",
+      "description": "The use of satellite imagery and sensors to gather data on crop extent, growth stages, and leaf area index.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "CROP MODELING",
+      "type": "METHOD",
+      "description": "The use of mathematical simulations to assess and predict crop yields.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "An Indian state where the yield estimation study was conducted.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "An Indian state where the yield estimation study was conducted.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "ODISHA",
+      "type": "LOCATION",
+      "description": "An Indian state where the yield estimation study was conducted.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "SENTINEL-2",
+      "type": "METHOD",
+      "description": "A satellite providing time series data used for crop classification and remote sensing.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "LANDSAT 8",
+      "type": "METHOD",
+      "description": "A satellite providing time series data used for deriving leaf area index and remote sensing.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "CROP EXTENT",
+      "type": "TRAIT",
+      "description": "The spatial area covered by a specific crop, used to identify locations for yield experiments.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "CROP GROWTH STAGES",
+      "type": "TRAIT",
+      "description": "The developmental phases of a crop used in yield assessment.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A measure of leaf area per unit ground surface, crucial for yield assessment and model re-parametrization.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "CROP CLASSIFICATION",
+      "type": "METHOD",
+      "description": "The process of identifying crop types using spectral matching and field data.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Techniques used to perform crop classification based on spectral signatures from satellite data.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "CROP CUTTING EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Field-based experiments used to determine observed crop yields for validation.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "SAVI",
+      "type": "METHOD",
+      "description": "Soil-adjusted vegetation index used to derive the leaf area index from satellite data.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "RE-PARAMETRIZATION",
+      "type": "METHOD",
+      "description": "The process of adjusting crop simulation model parameters using remote sensing data.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "DATA ASSIMILATION",
+      "type": "METHOD",
+      "description": "The approach of integrating remotely sensed observations into a crop growth model to improve simulation accuracy.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "CROP GROWTH MODEL",
+      "type": "METHOD",
+      "description": "A simulation tool used to predict crop yields at harvest.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The actual amount of agricultural production harvested per unit area.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "CROP MANAGEMENT INFORMATION",
+      "type": "CONCEPT",
+      "description": "Data collected from field surveys regarding crop handling and management.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "FIELD SURVEYS",
+      "type": "METHOD",
+      "description": "The process of collecting ground-level crop management information and data.",
+      "source_id": "paper_11765"
+    },
+    {
+      "name": "GROUND DATA",
+      "type": "CONCEPT",
+      "description": "Field-collected data used to calibrate remote sensing products and perform crop classification.",
+      "source_id": "paper_11765"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REMOTE SENSING TECHNOLOGY",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "CROP MODELING",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "SENTINEL-2",
+      "target": "REMOTE SENSING TECHNOLOGY",
+      "description": "is a source of data for",
+      "weight": "10",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "LANDSAT 8",
+      "target": "REMOTE SENSING TECHNOLOGY",
+      "description": "is a source of data for",
+      "weight": "10",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "SENTINEL-2",
+      "target": "CROP CLASSIFICATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "CROP CLASSIFICATION",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "LANDSAT 8",
+      "target": "LEAF AREA INDEX",
+      "description": "used to derive",
+      "weight": "9",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "SAVI",
+      "target": "LEAF AREA INDEX",
+      "description": "used to derive",
+      "weight": "10",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "crucial for",
+      "weight": "8",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "CROP EXTENT",
+      "target": "CROP CUTTING EXPERIMENTS",
+      "description": "used to identify locations for",
+      "weight": "8",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "DATA ASSIMILATION",
+      "target": "CROP GROWTH MODEL",
+      "description": "used to fine-tune",
+      "weight": "10",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "REMOTE SENSING TECHNOLOGY",
+      "target": "DATA ASSIMILATION",
+      "description": "provides observations for",
+      "weight": "9",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "CROP GROWTH MODEL",
+      "target": "CROP YIELD",
+      "description": "used to predict",
+      "weight": "10",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "RE-PARAMETRIZATION",
+      "target": "CROP GROWTH MODEL",
+      "description": "used to adjust",
+      "weight": "9",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "RE-PARAMETRIZATION",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "TELANGANA",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "location of study",
+      "weight": "7",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "location of study",
+      "weight": "7",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "ODISHA",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "location of study",
+      "weight": "7",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "ABIOTIC AND BIOTIC STRESSES",
+      "target": "CROP YIELD",
+      "description": "causes loss in",
+      "weight": "8",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "CROP MANAGEMENT INFORMATION",
+      "target": "CROP CLASSIFICATION",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "FIELD SURVEYS",
+      "target": "CROP MANAGEMENT INFORMATION",
+      "description": "used to collect",
+      "weight": "9",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "GROUND DATA",
+      "target": "CROP CLASSIFICATION",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11765"
+    },
+    {
+      "source": "GROUND DATA",
+      "target": "REMOTE SENSING TECHNOLOGY",
+      "description": "used to calibrate",
+      "weight": "9",
+      "source_id": "paper_11765"
+    }
+  ]
+}

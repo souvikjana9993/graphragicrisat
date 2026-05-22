@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "Country where the study on flood risks and farming is conducted",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Recurrent weather condition causing food insecurity in Ethiopia",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "FOOD INSECURITY",
+      "type": "CONCEPT",
+      "description": "Severe lack of food access resulting from drought",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "FLOODS",
+      "type": "CONDITION",
+      "description": "Torrential water events that increase in frequency in Ethiopia's drylands",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "FLOOD-RECESSION FARMING",
+      "type": "CONCEPT",
+      "description": "Agricultural practice that utilizes moisture from receding floodwaters",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "SMAP",
+      "type": "METHOD",
+      "description": "Soil Moisture Active Passive satellite imaging used for surface soil moisture analysis",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "OMO GIBE BASIN",
+      "type": "LOCATION",
+      "description": "A basin in Ethiopia analyzed for flood recession opportunities",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "MILE SUB-BASIN",
+      "type": "LOCATION",
+      "description": "A sub-basin in Ethiopia analyzed for flood recession opportunities",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "MULTI-CRITERIA SUITABILITY ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis used to determine the suitability of lowlands for flood-based farming",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "LOWLANDS",
+      "type": "LOCATION",
+      "description": "Dry lowland areas of Ethiopia assessed for flood-based farming suitability",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "CHANGE DETECTION APPROACH",
+      "type": "METHOD",
+      "description": "Approach used for mapping flood-recession zones",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "REMOTE SENSING TECHNOLOGY",
+      "type": "METHOD",
+      "description": "Technology used to identify potential flood-prone areas",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "FLOOD RISK MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "Strategies and decision-making processes to manage flood-related risks",
+      "source_id": "paper_12547"
+    },
+    {
+      "name": "RAINFED SYSTEM",
+      "type": "CONCEPT",
+      "description": "Agricultural system dependent on rainfall for food production",
+      "source_id": "paper_12547"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RAINFED SYSTEM",
+      "target": "ETHIOPIA",
+      "description": "is the primary food production system in",
+      "weight": "10",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "FOOD INSECURITY",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "FLOODS",
+      "target": "ETHIOPIA",
+      "description": "occur in the drylands of",
+      "weight": "10",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "FLOODS",
+      "target": "FLOOD-RECESSION FARMING",
+      "description": "provides the opportunity for",
+      "weight": "8",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "SMAP",
+      "target": "OMO GIBE BASIN",
+      "description": "used to analyze soil moisture in",
+      "weight": "7",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "SMAP",
+      "target": "MILE SUB-BASIN",
+      "description": "used to analyze soil moisture in",
+      "weight": "7",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "MULTI-CRITERIA SUITABILITY ANALYSIS",
+      "target": "LOWLANDS",
+      "description": "assesses the suitability of",
+      "weight": "9",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "LOWLANDS",
+      "target": "FLOOD-RECESSION FARMING",
+      "description": "are suitable for",
+      "weight": "9",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "CHANGE DETECTION APPROACH",
+      "target": "OMO GIBE BASIN",
+      "description": "used for flood-recession zone mapping in",
+      "weight": "8",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "CHANGE DETECTION APPROACH",
+      "target": "MILE SUB-BASIN",
+      "description": "used for flood-recession zone mapping in",
+      "weight": "8",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "REMOTE SENSING TECHNOLOGY",
+      "target": "FLOODS",
+      "description": "identifies areas prone to",
+      "weight": "9",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "REMOTE SENSING TECHNOLOGY",
+      "target": "FLOOD-RECESSION FARMING",
+      "description": "aids in demonstrating",
+      "weight": "7",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "FLOOD RISK MANAGEMENT",
+      "target": "FLOODS",
+      "description": "manages the risks associated with",
+      "weight": "9",
+      "source_id": "paper_12547"
+    },
+    {
+      "source": "FLOOD-RECESSION FARMING",
+      "target": "FLOOD RISK MANAGEMENT",
+      "description": "serves as an alternative strategy for",
+      "weight": "8",
+      "source_id": "paper_12547"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being studied for leaf blight resistance",
+      "source_id": "paper_1499"
+    },
+    {
+      "name": "PATANCHERU, HYDERABAD, INDIA",
+      "type": "LOCATION",
+      "description": "The location where the experiment was conducted",
+      "source_id": "paper_1499"
+    },
+    {
+      "name": "LEAF BLIGHT",
+      "type": "CONDITION",
+      "description": "The disease affecting the sorghum genotypes",
+      "source_id": "paper_1499"
+    },
+    {
+      "name": "EXSEROHILUM TURCICUM",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing leaf blight",
+      "source_id": "paper_1499"
+    },
+    {
+      "name": "SETOSPHAERIA TURCICA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing leaf blight",
+      "source_id": "paper_1499"
+    },
+    {
+      "name": "DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum genotypes to resist leaf blight",
+      "source_id": "paper_1499"
+    },
+    {
+      "name": "DISEASE DAMAGE SCORE",
+      "type": "METHOD",
+      "description": "The metric used to evaluate the extent of disease damage",
+      "source_id": "paper_1499"
+    },
+    {
+      "name": "CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "The statistical method used to group genotypes based on disease reaction",
+      "source_id": "paper_1499"
+    },
+    {
+      "name": "HYPERSENSITIVE REACTION",
+      "type": "TRAIT",
+      "description": "A specific type of resistance response exhibited by certain hybrids",
+      "source_id": "paper_1499"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "LEAF BLIGHT",
+      "description": "Sorghum is affected by leaf blight",
+      "weight": "10",
+      "source_id": "paper_1499"
+    },
+    {
+      "source": "EXSEROHILUM TURCICUM",
+      "target": "LEAF BLIGHT",
+      "description": "Exserohilum turcicum causes leaf blight",
+      "weight": "10",
+      "source_id": "paper_1499"
+    },
+    {
+      "source": "SETOSPHAERIA TURCICA",
+      "target": "LEAF BLIGHT",
+      "description": "Setosphaeria turcica causes leaf blight",
+      "weight": "10",
+      "source_id": "paper_1499"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "DISEASE RESISTANCE",
+      "description": "Sorghum genotypes are evaluated for disease resistance",
+      "weight": "9",
+      "source_id": "paper_1499"
+    },
+    {
+      "source": "DISEASE RESISTANCE",
+      "target": "LEAF BLIGHT",
+      "description": "Disease resistance is measured against leaf blight",
+      "weight": "10",
+      "source_id": "paper_1499"
+    },
+    {
+      "source": "DISEASE DAMAGE SCORE",
+      "target": "DISEASE RESISTANCE",
+      "description": "Disease damage score is used to evaluate disease resistance",
+      "weight": "8",
+      "source_id": "paper_1499"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "DISEASE RESISTANCE",
+      "description": "Cluster analysis is used to classify genotypes based on disease resistance",
+      "weight": "8",
+      "source_id": "paper_1499"
+    },
+    {
+      "source": "HYPERSENSITIVE REACTION",
+      "target": "DISEASE RESISTANCE",
+      "description": "Hypersensitive reaction is a form of disease resistance",
+      "weight": "9",
+      "source_id": "paper_1499"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PATANCHERU, HYDERABAD, INDIA",
+      "description": "Sorghum experiment conducted in this location",
+      "weight": "7",
+      "source_id": "paper_1499"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop associated with Bradyrhizobium rhizobia.",
+      "source_id": "paper_3082"
+    },
+    {
+      "name": "BRADYRHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "Rhizobia associated with cowpea that differ in their ability to produce siderophores.",
+      "source_id": "paper_3082"
+    },
+    {
+      "name": "SIDEROPHORE",
+      "type": "CONCEPT",
+      "description": "Catechol-type iron-chelating compounds produced by rhizobia.",
+      "source_id": "paper_3082"
+    },
+    {
+      "name": "SIDEROPHORE DETECTION AND ASSAY",
+      "type": "METHOD",
+      "description": "A method for the detection and assay of siderophores using radioactive 59Fe.",
+      "source_id": "paper_3082"
+    },
+    {
+      "name": "RADIOACTIVE 59FE",
+      "type": "CONCEPT",
+      "description": "A radioactive isotope of iron used in the detection and assay of siderophores.",
+      "source_id": "paper_3082"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SIDEROPHORE DETECTION AND ASSAY",
+      "target": "RADIOACTIVE 59FE",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_3082"
+    },
+    {
+      "source": "SIDEROPHORE DETECTION AND ASSAY",
+      "target": "SIDEROPHORE",
+      "description": "detects and assays",
+      "weight": "10",
+      "source_id": "paper_3082"
+    },
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "SIDEROPHORE",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_3082"
+    },
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "COWPEA",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_3082"
+    }
+  ]
+}

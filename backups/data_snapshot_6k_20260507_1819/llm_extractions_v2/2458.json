@@ -1,0 +1,158 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for pod and seed traits.",
+      "source_id": "paper_2458"
+    },
+    {
+      "name": "POD VOLUME",
+      "type": "TRAIT",
+      "description": "The volume of the pod, measured by water displacement.",
+      "source_id": "paper_2458"
+    },
+    {
+      "name": "POD FILLING PERCENTAGE",
+      "type": "TRAIT",
+      "description": "The percentage of the pod volume occupied by seeds.",
+      "source_id": "paper_2458"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The physical dimensions of the seeds.",
+      "source_id": "paper_2458"
+    },
+    {
+      "name": "EQUIVALENT WATER VOLUME DISPLACEMENT",
+      "type": "METHOD",
+      "description": "The measurement principle used to determine pod and seed sizes and pod filling percentage.",
+      "source_id": "paper_2458"
+    },
+    {
+      "name": "SEED MASS",
+      "type": "TRAIT",
+      "description": "The weight of the seeds.",
+      "source_id": "paper_2458"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The total seed production potential.",
+      "source_id": "paper_2458"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The agricultural process used to improve specific traits for higher yield.",
+      "source_id": "paper_2458"
+    },
+    {
+      "name": "ICRISAT GENE BANK",
+      "type": "LOCATION",
+      "description": "The repository from which chickpea accessions were selected.",
+      "source_id": "paper_2458"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "POD VOLUME",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "POD FILLING PERCENTAGE",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED SIZE",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED MASS",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED YIELD",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "EQUIVALENT WATER VOLUME DISPLACEMENT",
+      "target": "POD VOLUME",
+      "description": "used to measure",
+      "weight": "9",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "EQUIVALENT WATER VOLUME DISPLACEMENT",
+      "target": "POD FILLING PERCENTAGE",
+      "description": "used to measure",
+      "weight": "9",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "EQUIVALENT WATER VOLUME DISPLACEMENT",
+      "target": "SEED SIZE",
+      "description": "used to measure",
+      "weight": "9",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "POD VOLUME",
+      "target": "SEED SIZE",
+      "description": "strong positive correlation",
+      "weight": "9",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "POD FILLING PERCENTAGE",
+      "target": "POD VOLUME",
+      "description": "generally negative trend",
+      "weight": "7",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "POD FILLING PERCENTAGE",
+      "target": "SEED MASS",
+      "description": "generally negative trend",
+      "weight": "7",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "BREEDING",
+      "target": "POD FILLING PERCENTAGE",
+      "description": "targets for improvement",
+      "weight": "8",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "POD FILLING PERCENTAGE",
+      "target": "SEED YIELD",
+      "description": "increases potential of",
+      "weight": "8",
+      "source_id": "paper_2458"
+    },
+    {
+      "source": "ICRISAT GENE BANK",
+      "target": "CHICKPEA",
+      "description": "source of accessions",
+      "weight": "8",
+      "source_id": "paper_2458"
+    }
+  ]
+}

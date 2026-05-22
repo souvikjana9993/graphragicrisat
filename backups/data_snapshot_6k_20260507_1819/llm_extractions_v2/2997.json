@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop whose seeds are stored and protected from bruchid damage",
+      "source_id": "paper_2997"
+    },
+    {
+      "name": "CALLOSOBRUCHUS MACULATUS",
+      "type": "ORGANISM",
+      "description": "A bruchid pest that damages pigeonpea seeds during storage",
+      "source_id": "paper_2997"
+    },
+    {
+      "name": "SOLARIZATION",
+      "type": "METHOD",
+      "description": "The process of exposing seeds in polythene bags to sunlight to increase temperature and kill pests",
+      "source_id": "paper_2997"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The thermal environment affecting the survival of C. maculatus and seed germination",
+      "source_id": "paper_2997"
+    },
+    {
+      "name": "GERMINATION",
+      "type": "TRAIT",
+      "description": "The ability of pigeonpea seeds to sprout after solarization treatment",
+      "source_id": "paper_2997"
+    },
+    {
+      "name": "STORAGE",
+      "type": "CONCEPT",
+      "description": "The period during which pigeonpea seeds are kept and protected from damage",
+      "source_id": "paper_2997"
+    },
+    {
+      "name": "LABORATORY",
+      "type": "LOCATION",
+      "description": "The controlled environment used as a comparison for solarization",
+      "source_id": "paper_2997"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOLARIZATION",
+      "target": "PIGEONPEA",
+      "description": "used to protect seeds from damage",
+      "weight": "9",
+      "source_id": "paper_2997"
+    },
+    {
+      "source": "SOLARIZATION",
+      "target": "CALLOSOBRUCHUS MACULATUS",
+      "description": "kills the pest by increasing temperature",
+      "weight": "10",
+      "source_id": "paper_2997"
+    },
+    {
+      "source": "CALLOSOBRUCHUS MACULATUS",
+      "target": "PIGEONPEA",
+      "description": "damages seeds during storage",
+      "weight": "9",
+      "source_id": "paper_2997"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "CALLOSOBRUCHUS MACULATUS",
+      "description": "affects survival and egg-laying capacity",
+      "weight": "10",
+      "source_id": "paper_2997"
+    },
+    {
+      "source": "SOLARIZATION",
+      "target": "GERMINATION",
+      "description": "does not adversely affect",
+      "weight": "8",
+      "source_id": "paper_2997"
+    },
+    {
+      "source": "STORAGE",
+      "target": "PIGEONPEA",
+      "description": "context in which seeds are protected",
+      "weight": "7",
+      "source_id": "paper_2997"
+    },
+    {
+      "source": "LABORATORY",
+      "target": "CALLOSOBRUCHUS MACULATUS",
+      "description": "environment where the pest survived and laid eggs",
+      "weight": "8",
+      "source_id": "paper_2997"
+    }
+  ]
+}

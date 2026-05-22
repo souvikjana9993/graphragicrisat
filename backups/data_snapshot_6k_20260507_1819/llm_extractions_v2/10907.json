@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Staple food crop in Niger, Sorghum bicolor L. Moench",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "Country where sorghum is produced and experimental sites are located",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "SORGHUM MIDGE",
+      "type": "ORGANISM",
+      "description": "Stenodiplosis sorghicola Coquillett 1898, a pest constraining sorghum production",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the crop, a key trait for improvement",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "MIDGE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum to resist infestation by sorghum midge",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "YIELD-CONTRIBUTING TRAITS",
+      "type": "TRAIT",
+      "description": "Traits that influence the overall grain yield",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variation in genetic characteristics among sorghum inbred lines",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "ALPHA LATTICE DESIGN",
+      "type": "METHOD",
+      "description": "Experimental design used to conduct the trial with two replications",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "PRINCIPAL COMPONENT ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to determine the relationship between grain yield and midge resistance",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "GENOTYPIC VARIATION",
+      "type": "CONCEPT",
+      "description": "The total variation in genotypes accounted for by principal components",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "HYBRIDIZATION",
+      "type": "METHOD",
+      "description": "Process of crossing midge-resistant genotypes from different clusters to create new genotypes",
+      "source_id": "paper_10907"
+    },
+    {
+      "name": "GENETIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "Presence of variation for traits under study in the tested germplasm",
+      "source_id": "paper_10907"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "NIGER",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "SORGHUM MIDGE",
+      "target": "SORGHUM",
+      "description": "constrains production of",
+      "weight": "10",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "MIDGE RESISTANCE",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "YIELD-CONTRIBUTING TRAITS",
+      "target": "GRAIN YIELD",
+      "description": "influence",
+      "weight": "8",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "PRINCIPAL COMPONENT ANALYSIS",
+      "target": "GRAIN YIELD",
+      "description": "used to analyze",
+      "weight": "7",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "PRINCIPAL COMPONENT ANALYSIS",
+      "target": "MIDGE RESISTANCE",
+      "description": "used to analyze",
+      "weight": "7",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "ALPHA LATTICE DESIGN",
+      "target": "SORGHUM",
+      "description": "used to evaluate lines of",
+      "weight": "7",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "HYBRIDIZATION",
+      "target": "MIDGE RESISTANCE",
+      "description": "used to combine",
+      "weight": "8",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "HYBRIDIZATION",
+      "target": "GRAIN YIELD",
+      "description": "used to combine",
+      "weight": "8",
+      "source_id": "paper_10907"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "SORGHUM",
+      "description": "evaluated among inbred lines of",
+      "weight": "8",
+      "source_id": "paper_10907"
+    }
+  ]
+}

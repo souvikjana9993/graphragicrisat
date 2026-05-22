@@ -1,0 +1,148 @@
+{
+  "entities": [
+    {
+      "name": "LAND COVER AND LAND USE (LCLU)",
+      "type": "CONCEPT",
+      "description": "Information used for monitoring the status of land resources to ensure sustainable planning.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "SUSTAINABLE LAND USE PLANNING AND DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The goal of ensuring land resources are managed and developed sustainably.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "LCLU CHANGE",
+      "type": "CONCEPT",
+      "description": "The extent of change in land cover and land use over time.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The geographic region where land cover mapping and LCLU changes are being analyzed.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "POPULATION GROWTH",
+      "type": "CONDITION",
+      "description": "A driver that increases the demand for land resources.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "LAND COVER MAPPING",
+      "type": "METHOD",
+      "description": "The process of producing regional and national maps to monitor land cover.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "CLASSIFICATION SYSTEMS AND LEGENDS",
+      "type": "METHOD",
+      "description": "The frameworks used to categorize land cover, which currently lack standardization.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "LAND COVER META LANGUAGE (LCML)",
+      "type": "METHOD",
+      "description": "A standardized language based on ISO standards for land cover classification.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "ISO STANDARDS",
+      "type": "CONCEPT",
+      "description": "International standards that provide a basis for the Land Cover Meta Language.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "MULTISTAKEHOLDER COLLABORATION",
+      "type": "CONCEPT",
+      "description": "The process of involving multiple parties to develop a standardized classification system.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "STANDARDIZED LAND COVER CLASSIFICATION SYSTEM",
+      "type": "METHOD",
+      "description": "A unified system for land cover classification to enable data integration and efficient management.",
+      "source_id": "paper_13025"
+    },
+    {
+      "name": "SURVEY DATA",
+      "type": "METHOD",
+      "description": "Data collected to evaluate historical, current, and future land cover mapping projects.",
+      "source_id": "paper_13025"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LAND COVER AND LAND USE (LCLU)",
+      "target": "SUSTAINABLE LAND USE PLANNING AND DEVELOPMENT",
+      "description": "provides information for",
+      "weight": "8",
+      "source_id": "paper_13025"
+    },
+    {
+      "source": "POPULATION GROWTH",
+      "target": "LCLU CHANGE",
+      "description": "drives",
+      "weight": "7",
+      "source_id": "paper_13025"
+    },
+    {
+      "source": "LCLU CHANGE",
+      "target": "WEST AFRICA",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_13025"
+    },
+    {
+      "source": "LAND COVER MAPPING",
+      "target": "WEST AFRICA",
+      "description": "is conducted in",
+      "weight": "9",
+      "source_id": "paper_13025"
+    },
+    {
+      "source": "CLASSIFICATION SYSTEMS AND LEGENDS",
+      "target": "LAND COVER MAPPING",
+      "description": "are used in",
+      "weight": "8",
+      "source_id": "paper_13025"
+    },
+    {
+      "source": "LAND COVER META LANGUAGE (LCML)",
+      "target": "ISO STANDARDS",
+      "description": "is based on",
+      "weight": "10",
+      "source_id": "paper_13025"
+    },
+    {
+      "source": "LAND COVER META LANGUAGE (LCML)",
+      "target": "STANDARDIZED LAND COVER CLASSIFICATION SYSTEM",
+      "description": "enables the creation of",
+      "weight": "9",
+      "source_id": "paper_13025"
+    },
+    {
+      "source": "STANDARDIZED LAND COVER CLASSIFICATION SYSTEM",
+      "target": "WEST AFRICA",
+      "description": "is needed for",
+      "weight": "9",
+      "source_id": "paper_13025"
+    },
+    {
+      "source": "MULTISTAKEHOLDER COLLABORATION",
+      "target": "STANDARDIZED LAND COVER CLASSIFICATION SYSTEM",
+      "description": "is required to develop",
+      "weight": "8",
+      "source_id": "paper_13025"
+    },
+    {
+      "source": "SURVEY DATA",
+      "target": "LAND COVER MAPPING",
+      "description": "is used to evaluate",
+      "weight": "7",
+      "source_id": "paper_13025"
+    }
+  ]
+}

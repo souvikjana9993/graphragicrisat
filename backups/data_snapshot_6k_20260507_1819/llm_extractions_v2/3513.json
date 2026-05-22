@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop studied to investigate dry matter production, water use, and light interception",
+      "source_id": "paper_3513"
+    },
+    {
+      "name": "CENTRAL INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the field site for the study was located",
+      "source_id": "paper_3513"
+    },
+    {
+      "name": "STORED WATER",
+      "type": "CONDITION",
+      "description": "The agricultural practice of growing crops using water stored in the soil profile",
+      "source_id": "paper_3513"
+    },
+    {
+      "name": "DRY MATTER",
+      "type": "TRAIT",
+      "description": "The total biomass produced by the shoots and roots of the plant",
+      "source_id": "paper_3513"
+    },
+    {
+      "name": "TRANSPIRATION",
+      "type": "TRAIT",
+      "description": "The process and amount of water transpired by the plant foliage",
+      "source_id": "paper_3513"
+    },
+    {
+      "name": "INTERCEPTED RADIATION",
+      "type": "TRAIT",
+      "description": "The amount of solar radiation captured by the plant foliage",
+      "source_id": "paper_3513"
+    },
+    {
+      "name": "WATER DEFICITS",
+      "type": "CONDITION",
+      "description": "The state of insufficient water availability that limits plant growth",
+      "source_id": "paper_3513"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The overall increase in plant biomass and development",
+      "source_id": "paper_3513"
+    },
+    {
+      "name": "PLANT SPACING",
+      "type": "CONDITION",
+      "description": "The density of the plant population, ranging from sparser to densest stands",
+      "source_id": "paper_3513"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "CENTRAL INDIA",
+      "description": "grown at a field site in",
+      "weight": "8",
+      "source_id": "paper_3513"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "STORED WATER",
+      "description": "maintained on",
+      "weight": "9",
+      "source_id": "paper_3513"
+    },
+    {
+      "source": "DRY MATTER",
+      "target": "TRANSPIRATION",
+      "description": "closely related to",
+      "weight": "10",
+      "source_id": "paper_3513"
+    },
+    {
+      "source": "DRY MATTER",
+      "target": "INTERCEPTED RADIATION",
+      "description": "closely related to",
+      "weight": "10",
+      "source_id": "paper_3513"
+    },
+    {
+      "source": "TRANSPIRATION",
+      "target": "INTERCEPTED RADIATION",
+      "description": "increased linearly with",
+      "weight": "9",
+      "source_id": "paper_3513"
+    },
+    {
+      "source": "WATER DEFICITS",
+      "target": "GROWTH",
+      "description": "curtailed",
+      "weight": "9",
+      "source_id": "paper_3513"
+    },
+    {
+      "source": "PLANT SPACING",
+      "target": "TRANSPIRATION",
+      "description": "influenced the rate of transpiration relative to intercepted radiation",
+      "weight": "7",
+      "source_id": "paper_3513"
+    }
+  ]
+}

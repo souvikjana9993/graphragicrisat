@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop (Arachis hypogaea) studied for its nitrogen fixation capabilities.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The biological process of converting atmospheric nitrogen into a usable form for plants.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The formation of root nodules where nitrogen-fixing bacteria reside.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop used in intercropping and rotational systems with groundnut.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop used in intercropping and rotational systems with groundnut.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used in association with groundnut.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "PURE CULTURE",
+      "type": "CONDITION",
+      "description": "The practice of growing a single crop species without other accompanying crops.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops in proximity, such as groundnut with cereals.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "ROTATIONAL SYSTEMS",
+      "type": "METHOD",
+      "description": "The practice of growing different crops in succession on the same land.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "CEREAL",
+      "type": "CONCEPT",
+      "description": "A category of grass crops including pearl millet, maize, and sorghum.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "SHADING",
+      "type": "CONDITION",
+      "description": "The reduction of sunlight reaching a plant due to the presence of taller neighboring plants.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "PHOTOSYNTHESIS",
+      "type": "TRAIT",
+      "description": "The process by which green plants use sunlight to synthesize nutrients from carbon dioxide and water.",
+      "source_id": "paper_4052"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of crop production per unit area.",
+      "source_id": "paper_4052"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "NITROGEN FIXATION",
+      "description": "performs nitrogen fixation",
+      "weight": "10",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NODULATION",
+      "description": "undergoes nodulation",
+      "weight": "10",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "CEREAL",
+      "description": "is a type of cereal",
+      "weight": "10",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "MAIZE",
+      "target": "CEREAL",
+      "description": "is a type of cereal",
+      "weight": "10",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CEREAL",
+      "description": "is a type of cereal",
+      "weight": "10",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "NODULATION",
+      "description": "reduces nodulation in groundnut",
+      "weight": "9",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "NITROGEN FIXATION",
+      "description": "reduces nitrogen fixation in groundnut",
+      "weight": "9",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "SHADING",
+      "description": "causes shading of the groundnut",
+      "weight": "9",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "SHADING",
+      "target": "PHOTOSYNTHESIS",
+      "description": "reduces photosynthesis",
+      "weight": "9",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "PHOTOSYNTHESIS",
+      "target": "NITROGEN FIXATION",
+      "description": "reduction in photosynthesis leads to reduced nitrogen fixation",
+      "weight": "8",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "ROTATIONAL SYSTEMS",
+      "target": "YIELD",
+      "description": "affects the yield of subsequent crops",
+      "weight": "8",
+      "source_id": "paper_4052"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "YIELD",
+      "description": "increases the yield of following crops in rotation compared to maize",
+      "weight": "7",
+      "source_id": "paper_4052"
+    }
+  ]
+}

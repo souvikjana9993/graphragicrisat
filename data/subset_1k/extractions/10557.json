@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The primary crop used in the farming systems of the Sahel region",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "YIELD STABILITY",
+      "type": "TRAIT",
+      "description": "The consistency of crop yields from year to year",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "YIELD DISPARITY",
+      "type": "TRAIT",
+      "description": "The difference in crop yields between different households in a village",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total biological mass of the pearl millet crop",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area of pearl millet",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "APSIM",
+      "type": "METHOD",
+      "description": "A crop simulation model used to estimate biomass and grain yields",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "GIS",
+      "type": "METHOD",
+      "description": "A geographic information system used to combine simulated yields with land tenure maps",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "LINEAR REGRESSION",
+      "type": "METHOD",
+      "description": "A statistical method used to analyze the relationship between field dispersion and yield variability",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "RAINFALL INTERPOLATION",
+      "type": "METHOD",
+      "description": "A method used to estimate daily rainfall at a high spatial resolution",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "AGRO-CLIMATIC RISK",
+      "type": "CONDITION",
+      "description": "The risk posed by erratic rainfall patterns and spatial variability in the Sahel",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "FERTILITY GRADIENT",
+      "type": "CONDITION",
+      "description": "The variation in soil fertility levels around a village",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "FIELD DISPERSION",
+      "type": "CONCEPT",
+      "description": "A farmer strategy involving the scattering of fields to mitigate climatic risk",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "SPATIAL DISPERSION INDEX",
+      "type": "METHOD",
+      "description": "A metric used to quantify the degree of scattering of household fields",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "SAHEL",
+      "type": "LOCATION",
+      "description": "The semi-arid region of Africa where the study was conducted",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country in the Sahel where the research took place",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "FAKARA REGION",
+      "type": "LOCATION",
+      "description": "The specific region in Southwest Niger where rain gauges were placed",
+      "source_id": "paper_10557"
+    },
+    {
+      "name": "BANIZOUMBOU VILLAGE",
+      "type": "LOCATION",
+      "description": "The village in the Fakara region where land tenure and yields were assessed",
+      "source_id": "paper_10557"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FIELD DISPERSION",
+      "target": "AGRO-CLIMATIC RISK",
+      "description": "mitigates",
+      "weight": "9",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "FIELD DISPERSION",
+      "target": "YIELD STABILITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "FIELD DISPERSION",
+      "target": "YIELD DISPARITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "APSIM",
+      "target": "BIOMASS",
+      "description": "computes",
+      "weight": "10",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "APSIM",
+      "target": "GRAIN YIELD",
+      "description": "computes",
+      "weight": "10",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "APSIM",
+      "target": "PEARL MILLET",
+      "description": "simulates",
+      "weight": "10",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "GIS",
+      "target": "GRAIN YIELD",
+      "description": "assesses",
+      "weight": "8",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "LINEAR REGRESSION",
+      "target": "AGRO-CLIMATIC RISK",
+      "description": "analyzes",
+      "weight": "9",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "SPATIAL DISPERSION INDEX",
+      "target": "FIELD DISPERSION",
+      "description": "quantifies",
+      "weight": "10",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "RAINFALL INTERPOLATION",
+      "target": "APSIM",
+      "description": "provides input data for",
+      "weight": "8",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "FERTILITY GRADIENT",
+      "target": "YIELD STABILITY",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "FERTILITY GRADIENT",
+      "target": "YIELD DISPARITY",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "BANIZOUMBOU VILLAGE",
+      "target": "FAKARA REGION",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "FAKARA REGION",
+      "target": "NIGER",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10557"
+    },
+    {
+      "source": "NIGER",
+      "target": "SAHEL",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10557"
+    }
+  ]
+}

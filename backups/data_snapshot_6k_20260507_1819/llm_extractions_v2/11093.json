@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "ROOT SYSTEM ARCHITECTURE",
+      "type": "TRAIT",
+      "description": "The structural arrangement and growth patterns of a plant's root system in soil",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "ROOT PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of analyzing and quantifying root system traits",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "RHIZOBOX",
+      "type": "METHOD",
+      "description": "An affordable soil-based growth and imaging system designed for root phenotyping",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "PHENOTIKI SENSOR INTERFACE",
+      "type": "METHOD",
+      "description": "A sensor interface used for acquiring, stitching, and analyzing root images",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A dicot species (Cicer arietinum) used to study root system dynamics",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "A monocot species (Hordeum vulgare) used to study root system architecture",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONDITION",
+      "description": "The growth medium that typically obscures root visibility",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "A low-income country where the phenotyping system is relevant for agricultural improvement",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "CROP YIELDS",
+      "type": "TRAIT",
+      "description": "The productivity of crops per unit area",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "CLIMATE RESILIENCE",
+      "type": "TRAIT",
+      "description": "The capacity of crops to withstand and recover from climate-related stresses",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "PLANT RESOURCE ACQUISITION",
+      "type": "CONCEPT",
+      "description": "The process by which plants obtain essential nutrients and water from the soil",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "VEGETATIVE STAGE",
+      "type": "CONDITION",
+      "description": "The growth phase of the plant life cycle focused on leaf and stem development",
+      "source_id": "paper_11093"
+    },
+    {
+      "name": "REPRODUCTIVE STAGE",
+      "type": "CONDITION",
+      "description": "The growth phase of the plant life cycle focused on flowering and seed production",
+      "source_id": "paper_11093"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ROOT PHENOTYPING",
+      "target": "ROOT SYSTEM ARCHITECTURE",
+      "description": "analyzes",
+      "weight": "10",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "RHIZOBOX",
+      "target": "ROOT PHENOTYPING",
+      "description": "facilitates",
+      "weight": "10",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "PHENOTIKI SENSOR INTERFACE",
+      "target": "RHIZOBOX",
+      "description": "provides image acquisition for",
+      "weight": "9",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "RHIZOBOX",
+      "target": "CHICKPEA",
+      "description": "used to phenotype",
+      "weight": "8",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "RHIZOBOX",
+      "target": "BARLEY",
+      "description": "used to phenotype",
+      "weight": "8",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "ROOT PHENOTYPING",
+      "target": "PLANT RESOURCE ACQUISITION",
+      "description": "informs efforts to enhance",
+      "weight": "7",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "RHIZOBOX",
+      "target": "SOIL",
+      "description": "operates within",
+      "weight": "10",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "VEGETATIVE STAGE",
+      "description": "undergoes",
+      "weight": "9",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "REPRODUCTIVE STAGE",
+      "description": "undergoes",
+      "weight": "9",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "RHIZOBOX",
+      "target": "ETHIOPIA",
+      "description": "relevant for agricultural application in",
+      "weight": "7",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "RHIZOBOX",
+      "target": "CROP YIELDS",
+      "description": "aims to enhance",
+      "weight": "7",
+      "source_id": "paper_11093"
+    },
+    {
+      "source": "RHIZOBOX",
+      "target": "CLIMATE RESILIENCE",
+      "description": "aims to enhance",
+      "weight": "7",
+      "source_id": "paper_11093"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A C4 cereal crop used to identify genetic elements of C4 photosynthesis",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A C3 crop targeted for the engineering of C4 photosynthetic traits",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "C4 PHOTOSYNTHETIC TRAITS",
+      "type": "TRAIT",
+      "description": "Characteristics of the C4 photosynthetic pathway to be engineered into C3 plants",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "C3 PLANTS",
+      "type": "CONCEPT",
+      "description": "Plants that utilize the C3 photosynthetic pathway",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "C4 PHOTOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "A highly efficient photosynthetic pathway found in certain plants",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "EMS MUTAGENESIS",
+      "type": "METHOD",
+      "description": "A method using ethyl methanesulfonate to induce random mutations in plants",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "STABLE CARBON ISOTOPE RATIO",
+      "type": "TRAIT",
+      "description": "A trait (δ13C) used to distinguish between C3 and C4 photosynthetic pathways",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "MUT33",
+      "type": "ORGANISM",
+      "description": "A sorghum mutant characterized by low δ13C, pale phenotype, and stunted growth",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "PALE PHENOTYPE",
+      "type": "TRAIT",
+      "description": "A visual trait observed in the Mut33 sorghum mutant",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "STUNTED GROWTH",
+      "type": "TRAIT",
+      "description": "A growth-related trait observed in the Mut33 sorghum mutant",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "13C UPTAKE CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of a plant to incorporate carbon-13, which is decreased in the Mut33 mutant",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "BACK-CROSSING",
+      "type": "METHOD",
+      "description": "A breeding method used to reduce genetic noise from random mutations",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "GAS EXCHANGE MEASUREMENTS",
+      "type": "METHOD",
+      "description": "A method used to analyze CO2 compensation points and photosynthesis rates",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "CO2 COMPENSATION POINT",
+      "type": "TRAIT",
+      "description": "A trait measuring the CO2 concentration where uptake equals release",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "MAXIMUM RATE OF PHOTOSYNTHESIS",
+      "type": "TRAIT",
+      "description": "A trait measuring the peak efficiency of the photosynthetic process",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "ILLUMINA PLATFORM",
+      "type": "METHOD",
+      "description": "A high-throughput sequencing method used to identify SNPs",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms used as genetic markers to locate the causal mutation",
+      "source_id": "paper_10097"
+    },
+    {
+      "name": "CHROMOSOME 10",
+      "type": "LOCATION",
+      "description": "The genomic location containing the locus associated with the low δ13C trait",
+      "source_id": "paper_10097"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "C4 PHOTOSYNTHESIS",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "RICE",
+      "target": "C3 PLANTS",
+      "description": "is a member of",
+      "weight": "10",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "C4 PHOTOSYNTHETIC TRAITS",
+      "target": "RICE",
+      "description": "targeted for engineering into",
+      "weight": "8",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "EMS MUTAGENESIS",
+      "target": "SORGHUM",
+      "description": "used to create mutants in",
+      "weight": "9",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "STABLE CARBON ISOTOPE RATIO",
+      "target": "C4 PHOTOSYNTHESIS",
+      "description": "used to distinguish",
+      "weight": "9",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "MUT33",
+      "target": "SORGHUM",
+      "description": "is a mutant of",
+      "weight": "10",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "MUT33",
+      "target": "STABLE CARBON ISOTOPE RATIO",
+      "description": "exhibits a low",
+      "weight": "10",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "MUT33",
+      "target": "PALE PHENOTYPE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "MUT33",
+      "target": "STUNTED GROWTH",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "MUT33",
+      "target": "13C UPTAKE CAPACITY",
+      "description": "shows a decrease in",
+      "weight": "9",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "BACK-CROSSING",
+      "target": "MUT33",
+      "description": "used to refine mutation in",
+      "weight": "8",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "GAS EXCHANGE MEASUREMENTS",
+      "target": "MUT33",
+      "description": "used to characterize",
+      "weight": "9",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "GAS EXCHANGE MEASUREMENTS",
+      "target": "CO2 COMPENSATION POINT",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "GAS EXCHANGE MEASUREMENTS",
+      "target": "MAXIMUM RATE OF PHOTOSYNTHESIS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "ILLUMINA PLATFORM",
+      "target": "SNPS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "SNPS",
+      "target": "CHROMOSOME 10",
+      "description": "located on",
+      "weight": "10",
+      "source_id": "paper_10097"
+    },
+    {
+      "source": "CHROMOSOME 10",
+      "target": "STABLE CARBON ISOTOPE RATIO",
+      "description": "contains locus for",
+      "weight": "9",
+      "source_id": "paper_10097"
+    }
+  ]
+}

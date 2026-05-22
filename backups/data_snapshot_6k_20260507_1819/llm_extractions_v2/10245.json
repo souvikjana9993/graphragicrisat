@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for drought adaptation.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "STAY-GREEN",
+      "type": "TRAIT",
+      "description": "A trait contributing to the adaptation of sorghum to postflowering drought conditions.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "POSTFLOWERING DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental stress occurring after the flowering stage.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "B35",
+      "type": "ORGANISM",
+      "description": "The stay-green donor line used for QTL introgression.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "QTL INTROGRESSION",
+      "type": "METHOD",
+      "description": "The process of introducing specific quantitative trait loci into different genetic backgrounds.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "S35",
+      "type": "ORGANISM",
+      "description": "A recipient genetic background used for generating introgression lines.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "R16",
+      "type": "ORGANISM",
+      "description": "A recipient genetic background used for generating introgression lines.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The specific growing season during which the evaluation took place.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "WELL-WATERED",
+      "type": "CONDITION",
+      "description": "A growing condition with sufficient water availability.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "WATER-STRESSED",
+      "type": "CONDITION",
+      "description": "A growing condition characterized by limited water availability.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "GREEN LEAF AREA RETENTION AT MATURITY",
+      "type": "TRAIT",
+      "description": "A measure of the stay-green trait, also referred to as GLAM.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "STG3B",
+      "type": "GENE_MARKER",
+      "description": "A key stay-green quantitative trait locus associated with improved yield and GLAM.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "TOTAL DRY MATTER",
+      "type": "TRAIT",
+      "description": "The total biomass produced by the plant.",
+      "source_id": "paper_10245"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The amount of water held in the soil, affecting the expression of QTLs.",
+      "source_id": "paper_10245"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STAY-GREEN",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "STAY-GREEN",
+      "target": "POSTFLOWERING DROUGHT",
+      "description": "contributes to adaptation to",
+      "weight": "9",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "B35",
+      "target": "STAY-GREEN",
+      "description": "is a donor for",
+      "weight": "10",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "QTL INTROGRESSION",
+      "target": "S35",
+      "description": "was performed in",
+      "weight": "8",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "QTL INTROGRESSION",
+      "target": "R16",
+      "description": "was performed in",
+      "weight": "8",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "STG3B",
+      "target": "STAY-GREEN",
+      "description": "is a QTL for",
+      "weight": "10",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "STG3B",
+      "target": "GREEN LEAF AREA RETENTION AT MATURITY",
+      "description": "enhances",
+      "weight": "9",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "STG3B",
+      "target": "GRAIN YIELD",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "STG3B",
+      "target": "TOTAL DRY MATTER",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "WATER-STRESSED",
+      "target": "STG3B",
+      "description": "increases the effectiveness of",
+      "weight": "9",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "STG3B",
+      "description": "influences the expression of",
+      "weight": "8",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "S35",
+      "target": "GRAIN YIELD",
+      "description": "is a genetic background for measuring",
+      "weight": "7",
+      "source_id": "paper_10245"
+    },
+    {
+      "source": "R16",
+      "target": "GRAIN YIELD",
+      "description": "is a genetic background for measuring",
+      "weight": "7",
+      "source_id": "paper_10245"
+    }
+  ]
+}

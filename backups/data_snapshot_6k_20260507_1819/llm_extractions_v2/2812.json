@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "GRYON SP",
+      "type": "ORGANISM",
+      "description": "Parasitoid wasp that oviposits in the eggs of Clavigralla gibbosa",
+      "source_id": "paper_2812"
+    },
+    {
+      "name": "CLAVIGRALLA GIBBOSA",
+      "type": "ORGANISM",
+      "description": "Pest insect whose eggs are parasitized by Gryon sp",
+      "source_id": "paper_2812"
+    },
+    {
+      "name": "HOST AGE",
+      "type": "CONCEPT",
+      "description": "The age of the host eggs, specifically those less than 3 days old",
+      "source_id": "paper_2812"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "Agricultural practice of growing pigeon pea and cotton together",
+      "source_id": "paper_2812"
+    },
+    {
+      "name": "PARASITIZATION",
+      "type": "CONCEPT",
+      "description": "The process of a parasitoid ovipositing in the eggs of a host",
+      "source_id": "paper_2812"
+    },
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "Legume crop that serves as a host for Clavigralla gibbosa",
+      "source_id": "paper_2812"
+    },
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "Fiber crop used in intercropping with pigeon pea",
+      "source_id": "paper_2812"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "Study site located in Andhra Pradesh, India",
+      "source_id": "paper_2812"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GRYON SP",
+      "target": "CLAVIGRALLA GIBBOSA",
+      "description": "parasitizes the eggs of",
+      "weight": "10",
+      "source_id": "paper_2812"
+    },
+    {
+      "source": "GRYON SP",
+      "target": "PARASITIZATION",
+      "description": "performs",
+      "weight": "9",
+      "source_id": "paper_2812"
+    },
+    {
+      "source": "HOST AGE",
+      "target": "PARASITIZATION",
+      "description": "influences the success of",
+      "weight": "8",
+      "source_id": "paper_2812"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PARASITIZATION",
+      "description": "affects the percentage of",
+      "weight": "8",
+      "source_id": "paper_2812"
+    },
+    {
+      "source": "CLAVIGRALLA GIBBOSA",
+      "target": "PIGEON PEA",
+      "description": "is a pest of",
+      "weight": "9",
+      "source_id": "paper_2812"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "INTERCROPPING",
+      "description": "is one of the crops used in",
+      "weight": "10",
+      "source_id": "paper_2812"
+    },
+    {
+      "source": "COTTON",
+      "target": "INTERCROPPING",
+      "description": "is one of the crops used in",
+      "weight": "10",
+      "source_id": "paper_2812"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "INTERCROPPING",
+      "description": "is the location where the study on intercropping was conducted",
+      "weight": "7",
+      "source_id": "paper_2812"
+    }
+  ]
+}

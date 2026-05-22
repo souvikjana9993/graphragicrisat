@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The host crop used in the study for managing Helicoverpa armigera.",
+      "source_id": "paper_3321"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The pest insect targeting chickpea crops.",
+      "source_id": "paper_3321"
+    },
+    {
+      "name": "NPV",
+      "type": "METHOD",
+      "description": "Nucleopolyhedrovirus used as a biological control agent against Helicoverpa armigera.",
+      "source_id": "paper_3321"
+    },
+    {
+      "name": "QUINALPHOS",
+      "type": "METHOD",
+      "description": "A chemical insecticide used to control Helicoverpa armigera.",
+      "source_id": "paper_3321"
+    },
+    {
+      "name": "HOST-PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of the chickpea genotype to resist attack by Helicoverpa armigera.",
+      "source_id": "paper_3321"
+    },
+    {
+      "name": "ICC 506",
+      "type": "CROP",
+      "description": "A specific resistant genotype of chickpea.",
+      "source_id": "paper_3321"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the chickpea genotypes measured under different treatments.",
+      "source_id": "paper_3321"
+    },
+    {
+      "name": "CHEMICAL CONTROL",
+      "type": "METHOD",
+      "description": "The use of chemical agents to manage pests.",
+      "source_id": "paper_3321"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NPV",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Used as a mortality factor to manage the pest population",
+      "weight": "9",
+      "source_id": "paper_3321"
+    },
+    {
+      "source": "QUINALPHOS",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Used as a mortality factor to manage the pest population",
+      "weight": "9",
+      "source_id": "paper_3321"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Serves as the host plant for the pest",
+      "weight": "10",
+      "source_id": "paper_3321"
+    },
+    {
+      "source": "ICC 506",
+      "target": "CHICKPEA",
+      "description": "Is a specific resistant genotype of the crop",
+      "weight": "10",
+      "source_id": "paper_3321"
+    },
+    {
+      "source": "ICC 506",
+      "target": "HOST-PLANT RESISTANCE",
+      "description": "Exhibits the trait of host-plant resistance",
+      "weight": "10",
+      "source_id": "paper_3321"
+    },
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "NPV",
+      "description": "Influences the efficacy of NPV as a mortality factor",
+      "weight": "7",
+      "source_id": "paper_3321"
+    },
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "QUINALPHOS",
+      "description": "Influences the efficacy of quinalphos as a mortality factor",
+      "weight": "7",
+      "source_id": "paper_3321"
+    },
+    {
+      "source": "NPV",
+      "target": "YIELD",
+      "description": "Increases the yield of susceptible chickpea genotypes",
+      "weight": "8",
+      "source_id": "paper_3321"
+    },
+    {
+      "source": "QUINALPHOS",
+      "target": "YIELD",
+      "description": "Increases the yield of susceptible chickpea genotypes",
+      "weight": "8",
+      "source_id": "paper_3321"
+    },
+    {
+      "source": "CHEMICAL CONTROL",
+      "target": "QUINALPHOS",
+      "description": "Includes the use of quinalphos for pest management",
+      "weight": "10",
+      "source_id": "paper_3321"
+    }
+  ]
+}

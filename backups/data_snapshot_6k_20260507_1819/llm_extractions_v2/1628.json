@@ -1,0 +1,216 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, the crop studied for yield and water use in the Sahel",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "Grain and aboveground dry matter yield of the crop",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "WATER USE",
+      "type": "TRAIT",
+      "description": "The amount of water utilized by the crop",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "SAHEL",
+      "type": "LOCATION",
+      "description": "The region where the research was conducted",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "VAPOUR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "Daily atmospheric condition used to correct grain yield predictions",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "SOIL WATER",
+      "type": "CONDITION",
+      "description": "The reserves of water available in the soil",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "NIAMEY",
+      "type": "LOCATION",
+      "description": "City in Niger where the study was conducted",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "Country in the Sahel where the study was conducted",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "GENOTYPE",
+      "type": "CONCEPT",
+      "description": "The genetic variation of the pearl millet",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "PLANT POPULATION",
+      "type": "METHOD",
+      "description": "The density of plants per hectare, measured in hills ha sup(-1)",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "FERTILIZER",
+      "type": "METHOD",
+      "description": "The application of nitrogen (N) and phosphorus (P) to the crop",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "EVAPOTRANSPIRATION",
+      "type": "TRAIT",
+      "description": "The total loss of water from the soil and plant surfaces",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Severe water shortage leading to risk of crop failure",
+      "source_id": "paper_1628"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The ratio of yield produced per unit of water used",
+      "source_id": "paper_1628"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "WATER USE",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "EVAPOTRANSPIRATION",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "WATER USE EFFICIENCY",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "SAHEL",
+      "target": "PEARL MILLET",
+      "description": "is location for growth of",
+      "weight": "8",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "NIAMEY",
+      "target": "SAHEL",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "NIGER",
+      "target": "SAHEL",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "EVAPOTRANSPIRATION",
+      "description": "affects",
+      "weight": "5",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "EVAPOTRANSPIRATION",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "SOIL WATER",
+      "description": "depletes",
+      "weight": "7",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "YIELD",
+      "description": "increases risk of failure of",
+      "weight": "9",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "VAPOUR PRESSURE DEFICIT",
+      "target": "YIELD",
+      "description": "used to predict",
+      "weight": "8",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "EVAPOTRANSPIRATION",
+      "target": "YIELD",
+      "description": "used to predict",
+      "weight": "8",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "WATER USE EFFICIENCY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1628"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "WATER USE EFFICIENCY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1628"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop subject to aflatoxin contamination and associated health risks",
+      "source_id": "paper_2413"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONDITION",
+      "description": "Toxic metabolites that contaminate groundnuts and groundnut products",
+      "source_id": "paper_2413"
+    },
+    {
+      "name": "AFLATOXICOSIS",
+      "type": "CONDITION",
+      "description": "The clinical condition of poisoning resulting from the ingestion of aflatoxins",
+      "source_id": "paper_2413"
+    },
+    {
+      "name": "ANIMALS",
+      "type": "ORGANISM",
+      "description": "Non-human living beings susceptible to aflatoxicosis",
+      "source_id": "paper_2413"
+    },
+    {
+      "name": "HUMANS",
+      "type": "ORGANISM",
+      "description": "People susceptible to aflatoxicosis",
+      "source_id": "paper_2413"
+    },
+    {
+      "name": "AFLATOXIN ANALYSIS",
+      "type": "METHOD",
+      "description": "Methods used for the detection and quantification of aflatoxins",
+      "source_id": "paper_2413"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION MANAGEMENT",
+      "type": "METHOD",
+      "description": "Strategies and practices used to manage and reduce aflatoxin contamination",
+      "source_id": "paper_2413"
+    },
+    {
+      "name": "AFLATOXIN LIMITS AND REGULATIONS",
+      "type": "CONCEPT",
+      "description": "Standards and legal limits established for aflatoxin levels in food and feed",
+      "source_id": "paper_2413"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "AFLATOXIN",
+      "description": "is contaminated by",
+      "weight": "10",
+      "source_id": "paper_2413"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "AFLATOXICOSIS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2413"
+    },
+    {
+      "source": "AFLATOXICOSIS",
+      "target": "ANIMALS",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2413"
+    },
+    {
+      "source": "AFLATOXICOSIS",
+      "target": "HUMANS",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2413"
+    },
+    {
+      "source": "AFLATOXIN ANALYSIS",
+      "target": "AFLATOXIN",
+      "description": "is used to analyze",
+      "weight": "10",
+      "source_id": "paper_2413"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION MANAGEMENT",
+      "target": "AFLATOXIN",
+      "description": "is used to manage",
+      "weight": "10",
+      "source_id": "paper_2413"
+    },
+    {
+      "source": "AFLATOXIN LIMITS AND REGULATIONS",
+      "target": "AFLATOXIN",
+      "description": "regulates levels of",
+      "weight": "10",
+      "source_id": "paper_2413"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION MANAGEMENT",
+      "target": "GROUNDNUT",
+      "description": "is applied to",
+      "weight": "9",
+      "source_id": "paper_2413"
+    }
+  ]
+}

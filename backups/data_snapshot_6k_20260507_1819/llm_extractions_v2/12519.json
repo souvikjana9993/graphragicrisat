@@ -1,0 +1,252 @@
+{
+  "entities": [
+    {
+      "name": "UAV BASED REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Remote sensing using unmanned aerial vehicles for agricultural monitoring",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "PRECISION AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "A farming management concept based on observing, measuring and responding to inter and intra-field variability in crops",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "CROP SEGMENTATION",
+      "type": "METHOD",
+      "description": "The process of partitioning a digital image of a crop into multiple segments to facilitate monitoring",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "UAV IMAGES",
+      "type": "CONCEPT",
+      "description": "Images captured by unmanned aerial vehicles used as input for crop segmentation",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "ILLUMINATION CONDITIONS",
+      "type": "CONDITION",
+      "description": "Various lighting environments that can make crop extraction difficult",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "THRESHOLD-BASED METHODS",
+      "type": "METHOD",
+      "description": "Simple segmentation techniques that use a threshold value to separate pixels",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "TWO-DIMENSIONAL HISTOGRAM",
+      "type": "METHOD",
+      "description": "A proposed segmentation method utilizing gray level and relative entropy of neighboring pixels",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "RELATIVE ENTROPY THRESHOLDING",
+      "type": "METHOD",
+      "description": "A technique used to obtain the optimal threshold by minimizing relative entropy criteria",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "GRAY LEVEL OF PIXELS",
+      "type": "CONCEPT",
+      "description": "The intensity value of pixels used in the construction of the two-dimensional histogram",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "RELATIVE ENTROPY",
+      "type": "CONCEPT",
+      "description": "A measure of the difference between two probability distributions used for thresholding",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "CONTRAST ENHANCED IMAGE",
+      "type": "CONCEPT",
+      "description": "An image processed to improve contrast before segmentation",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "LOGICAL AND OPERATOR",
+      "type": "METHOD",
+      "description": "A boolean operator used to extract crops from the segmented image and CIELAB color space",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "CIELAB COLOR SPACE",
+      "type": "CONCEPT",
+      "description": "A color space used in conjunction with the segmented image for crop extraction",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal grain crop used to evaluate the proposed segmentation method",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal grain crop used to evaluate the proposed segmentation method",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "MISCLASSIFICATION ERROR",
+      "type": "CONCEPT",
+      "description": "A performance metric used to compare segmentation methods",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "DICE COEFFICIENT",
+      "type": "CONCEPT",
+      "description": "A spatial overlap index used to evaluate segmentation accuracy",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "JACCARD INDEX",
+      "type": "CONCEPT",
+      "description": "A statistic used for gauging the similarity and diversity of sample sets in segmentation",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "OTSU METHOD",
+      "type": "METHOD",
+      "description": "A common threshold-based segmentation method used for comparison",
+      "source_id": "paper_12519"
+    },
+    {
+      "name": "KAPUR METHOD",
+      "type": "METHOD",
+      "description": "A threshold-based segmentation method based on entropy used for comparison",
+      "source_id": "paper_12519"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UAV BASED REMOTE SENSING",
+      "target": "PRECISION AGRICULTURE",
+      "description": "is a promising way in",
+      "weight": "10",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "CROP SEGMENTATION",
+      "target": "UAV BASED REMOTE SENSING",
+      "description": "plays a vital role in monitoring crop growth via",
+      "weight": "9",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "CROP SEGMENTATION",
+      "target": "ILLUMINATION CONDITIONS",
+      "description": "is affected by",
+      "weight": "8",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "THRESHOLD-BASED METHODS",
+      "target": "CROP SEGMENTATION",
+      "description": "are used for",
+      "weight": "9",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "TWO-DIMENSIONAL HISTOGRAM",
+      "target": "THRESHOLD-BASED METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "TWO-DIMENSIONAL HISTOGRAM",
+      "target": "GRAY LEVEL OF PIXELS",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "TWO-DIMENSIONAL HISTOGRAM",
+      "target": "RELATIVE ENTROPY",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "TWO-DIMENSIONAL HISTOGRAM",
+      "target": "CONTRAST ENHANCED IMAGE",
+      "description": "utilizes",
+      "weight": "7",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "RELATIVE ENTROPY THRESHOLDING",
+      "target": "TWO-DIMENSIONAL HISTOGRAM",
+      "description": "is used to obtain the optimal threshold for",
+      "weight": "10",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "CROP SEGMENTATION",
+      "target": "LOGICAL AND OPERATOR",
+      "description": "uses",
+      "weight": "8",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "CROP SEGMENTATION",
+      "target": "CIELAB COLOR SPACE",
+      "description": "uses",
+      "weight": "8",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "TWO-DIMENSIONAL HISTOGRAM",
+      "target": "SORGHUM",
+      "description": "was evaluated on",
+      "weight": "9",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "TWO-DIMENSIONAL HISTOGRAM",
+      "target": "PEARL MILLET",
+      "description": "was evaluated on",
+      "weight": "9",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "MISCLASSIFICATION ERROR",
+      "target": "TWO-DIMENSIONAL HISTOGRAM",
+      "description": "used to compare performance of",
+      "weight": "9",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "DICE COEFFICIENT",
+      "target": "TWO-DIMENSIONAL HISTOGRAM",
+      "description": "used to compare performance of",
+      "weight": "9",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "JACCARD INDEX",
+      "target": "TWO-DIMENSIONAL HISTOGRAM",
+      "description": "used to compare performance of",
+      "weight": "9",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "OTSU METHOD",
+      "target": "TWO-DIMENSIONAL HISTOGRAM",
+      "description": "used as a baseline for comparison",
+      "weight": "9",
+      "source_id": "paper_12519"
+    },
+    {
+      "source": "KAPUR METHOD",
+      "target": "TWO-DIMENSIONAL HISTOGRAM",
+      "description": "used as a baseline for comparison",
+      "weight": "9",
+      "source_id": "paper_12519"
+    }
+  ]
+}

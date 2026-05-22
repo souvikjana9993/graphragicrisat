@@ -1,0 +1,240 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea (L.)",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "Growing sorghum and groundnut together in a specific row arrangement",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "SOLE CROPS",
+      "type": "METHOD",
+      "description": "Growing sorghum or groundnut as single species crops",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "LIMITED WATER SUPPLY",
+      "type": "CONDITION",
+      "description": "Restriction of water availability for the crops",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "CONDITION",
+      "description": "The specific soil type used in the study",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "CENTRAL INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the study was conducted",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "The rate of increase in plant size and biomass",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The process of plant maturation, including pod formation",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "LIGHT INTERCEPTION",
+      "type": "CONCEPT",
+      "description": "The fraction of incident light captured by the plant canopy",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "DRY MATTER PRODUCTION",
+      "type": "TRAIT",
+      "description": "The accumulation of biomass in the plants",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "POD NUMBERS",
+      "type": "TRAIT",
+      "description": "The quantity of pods produced by groundnut plants",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of harvested product to total biomass",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "SHADING",
+      "type": "CONDITION",
+      "description": "The reduction of light reaching a plant due to the presence of another plant",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The thermal environment affecting plant growth and development",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "WATER POTENTIAL GRADIENTS",
+      "type": "CONDITION",
+      "description": "Differences in soil water tension affecting plant water uptake",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "MICROCLIMATE",
+      "type": "CONCEPT",
+      "description": "The local atmospheric conditions within the crop canopy",
+      "source_id": "paper_2882"
+    },
+    {
+      "name": "RESOURCE USE",
+      "type": "CONCEPT",
+      "description": "The utilization of light and water by the plants",
+      "source_id": "paper_2882"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "INTERCROPPING",
+      "description": "is a component of the intercrop",
+      "weight": "10",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "INTERCROPPING",
+      "description": "is a component of the intercrop",
+      "weight": "10",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PLANT GROWTH",
+      "description": "affects the growth rate of the crops",
+      "weight": "8",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "DEVELOPMENT",
+      "description": "affects the developmental patterns of the crops",
+      "weight": "8",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SHADING",
+      "description": "causes shading of the groundnut crop",
+      "weight": "9",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "SHADING",
+      "target": "LIGHT INTERCEPTION",
+      "description": "reduces the fraction of light intercepted",
+      "weight": "10",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "SHADING",
+      "target": "DEVELOPMENT",
+      "description": "increases pod numbers in groundnut",
+      "weight": "7",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "LIGHT INTERCEPTION",
+      "target": "DRY MATTER PRODUCTION",
+      "description": "strongly correlates with the growth rate and biomass",
+      "weight": "9",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "LIMITED WATER SUPPLY",
+      "target": "PLANT GROWTH",
+      "description": "limits the growth of the crops",
+      "weight": "7",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "LIMITED WATER SUPPLY",
+      "description": "competes for water resources",
+      "weight": "8",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DEVELOPMENT",
+      "description": "influences the developmental response in groundnut",
+      "weight": "7",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "WATER POTENTIAL GRADIENTS",
+      "target": "DEVELOPMENT",
+      "description": "influences the developmental response in groundnut",
+      "weight": "7",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "PLANT GROWTH",
+      "target": "HARVEST INDEX",
+      "description": "interacts with development to affect the harvest index",
+      "weight": "7",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "DEVELOPMENT",
+      "target": "HARVEST INDEX",
+      "description": "interacts with growth to affect the harvest index",
+      "weight": "7",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "CENTRAL INDIA",
+      "target": "INTERCROPPING",
+      "description": "is the location where the intercropping was studied",
+      "weight": "6",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "INTERCROPPING",
+      "description": "is the soil type used for the intercropping study",
+      "weight": "6",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "RESOURCE USE",
+      "target": "DRY MATTER PRODUCTION",
+      "description": "determines the level of biomass production",
+      "weight": "8",
+      "source_id": "paper_2882"
+    },
+    {
+      "source": "SHADING",
+      "target": "RESOURCE USE",
+      "description": "affects the use of light and water",
+      "weight": "8",
+      "source_id": "paper_2882"
+    }
+  ]
+}

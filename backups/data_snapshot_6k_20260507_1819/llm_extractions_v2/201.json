@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop species being studied for disease resistance and genetic diversity.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting pigeonpea.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "STERILITY MOSAIC DISEASE",
+      "type": "CONDITION",
+      "description": "A viral disease affecting pigeonpea.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "FUSARIUM WILT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pigeonpea genotypes to resist Fusarium wilt.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "STERILITY MOSAIC DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pigeonpea genotypes to resist sterility mosaic disease.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "SIMPLE SEQUENCE REPEAT MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Microsatellite markers used to screen for polymorphism in pigeonpea lines.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "MAPPING POPULATIONS",
+      "type": "CONCEPT",
+      "description": "Genetically diverse populations developed for mapping loci associated with traits.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "LOCI MAPPING",
+      "type": "METHOD",
+      "description": "The process of identifying the genomic location of loci associated with specific traits.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "POLYMORPHISM",
+      "type": "CONCEPT",
+      "description": "The presence of genetic variation at specific marker loci.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "GENETIC DISSIMILARITY COEFFICIENT",
+      "type": "CONCEPT",
+      "description": "A metric used to measure the genetic distance between genotypes.",
+      "source_id": "paper_201"
+    },
+    {
+      "name": "PHENOTYPIC DATA",
+      "type": "CONCEPT",
+      "description": "Observable physical characteristics used to identify contrasting parental lines.",
+      "source_id": "paper_201"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "FUSARIUM WILT",
+      "description": "is affected by",
+      "weight": "8",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "is affected by",
+      "weight": "8",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "FUSARIUM WILT RESISTANCE",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "STERILITY MOSAIC DISEASE RESISTANCE",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "SIMPLE SEQUENCE REPEAT MARKERS",
+      "target": "POLYMORPHISM",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "SIMPLE SEQUENCE REPEAT MARKERS",
+      "target": "MAPPING POPULATIONS",
+      "description": "used to develop",
+      "weight": "9",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "MAPPING POPULATIONS",
+      "target": "LOCI MAPPING",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "LOCI MAPPING",
+      "target": "FUSARIUM WILT RESISTANCE",
+      "description": "aims to map",
+      "weight": "10",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "LOCI MAPPING",
+      "target": "STERILITY MOSAIC DISEASE RESISTANCE",
+      "description": "aims to map",
+      "weight": "10",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "GENETIC DISSIMILARITY COEFFICIENT",
+      "target": "MAPPING POPULATIONS",
+      "description": "used to select parents for",
+      "weight": "8",
+      "source_id": "paper_201"
+    },
+    {
+      "source": "PHENOTYPIC DATA",
+      "target": "MAPPING POPULATIONS",
+      "description": "used to select parents for",
+      "weight": "8",
+      "source_id": "paper_201"
+    }
+  ]
+}

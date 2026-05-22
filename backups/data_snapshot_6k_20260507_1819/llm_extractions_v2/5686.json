@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum biocolor (L.) Moench, the crop studied for root growth and water uptake",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "FERTILIZER NITROGEN",
+      "type": "CONDITION",
+      "description": "Nitrogen fertilizer applied to sorghum to observe effects on root development and water uptake",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The application of water to sorghum to observe effects on root development and water uptake",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "ROOT DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The process of root growth and extension in sorghum",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A deep soil type used in the study conducted in semi-arid tropical India",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The location where the field-grown sorghum study was conducted",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "TOTAL ROOT BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the root system, affected by nitrogen and irrigation",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "TOTAL ROOT LENGTH",
+      "type": "TRAIT",
+      "description": "The cumulative length of the root system, higher under dry conditions",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "DRY CONDITIONS",
+      "type": "CONDITION",
+      "description": "Non-irrigated environment where root length and depth were consistently higher",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "IRRIGATED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environment with irrigation where root length and depth were lower",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "MATHEMATICAL MODELING",
+      "type": "METHOD",
+      "description": "Use of linear, exponential, or logistic curves to describe spatial distribution of root length",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "ROOT LENGTH DENSITY",
+      "type": "TRAIT",
+      "description": "The length of roots per unit volume of soil, which shifts to deeper layers as the plant grows",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "ROOTING DEPTH",
+      "type": "TRAIT",
+      "description": "The maximum depth reached by the roots, showing a linear relationship with time",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "PHYSIOLOGICAL MATURITY STAGE",
+      "type": "CONCEPT",
+      "description": "The growth stage of sorghum up to which rooting depth had a linear relationship with time",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "WATER UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of water absorbed by sorghum, determined by evapotranspiration and soil evaporation",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "EVAPOTRANSPIRATION",
+      "type": "CONCEPT",
+      "description": "The total loss of water from the soil and plant, used to determine water uptake",
+      "source_id": "paper_5686"
+    },
+    {
+      "name": "SOIL EVAPORATION",
+      "type": "CONCEPT",
+      "description": "The loss of water from the soil surface, used to determine water uptake",
+      "source_id": "paper_5686"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FERTILIZER NITROGEN",
+      "target": "ROOT DEVELOPMENT",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "ROOT DEVELOPMENT",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ROOT DEVELOPMENT",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "FERTILIZER NITROGEN",
+      "target": "TOTAL ROOT BIOMASS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "TOTAL ROOT BIOMASS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "DRY CONDITIONS",
+      "target": "TOTAL ROOT LENGTH",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "IRRIGATED CONDITIONS",
+      "target": "TOTAL ROOT LENGTH",
+      "description": "decreases",
+      "weight": "7",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "DRY CONDITIONS",
+      "target": "ROOTING DEPTH",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "IRRIGATED CONDITIONS",
+      "target": "ROOTING DEPTH",
+      "description": "decreases",
+      "weight": "7",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "MATHEMATICAL MODELING",
+      "target": "TOTAL ROOT LENGTH",
+      "description": "used to analyze spatial distribution of",
+      "weight": "6",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "ROOTING DEPTH",
+      "target": "PHYSIOLOGICAL MATURITY STAGE",
+      "description": "linear relationship with time up to",
+      "weight": "6",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "WATER UPTAKE",
+      "target": "EVAPOTRANSPIRATION",
+      "description": "calculated as difference from",
+      "weight": "9",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "WATER UPTAKE",
+      "target": "SOIL EVAPORATION",
+      "description": "calculated as difference from",
+      "weight": "9",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "WATER UPTAKE",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "FERTILIZER NITROGEN",
+      "target": "WATER UPTAKE",
+      "description": "affects in irrigated treatment",
+      "weight": "7",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "INDIA",
+      "target": "SORGHUM",
+      "description": "location of study",
+      "weight": "5",
+      "source_id": "paper_5686"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "SORGHUM",
+      "description": "soil type for growth",
+      "weight": "6",
+      "source_id": "paper_5686"
+    }
+  ]
+}

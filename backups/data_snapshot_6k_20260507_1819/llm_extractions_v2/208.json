@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SWEET SORGHUM",
+      "type": "CROP",
+      "description": "A SMART crop providing food, feed, and fuel, suitable for commercial ethanol production",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "BIO-FUELS",
+      "type": "CONCEPT",
+      "description": "Energy sources developed to reduce reliance on fossil fuels and meet energy demands",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "COMMERCIAL ETHANOL PRODUCTION",
+      "type": "METHOD",
+      "description": "The industrial process of converting feedstock like sweet sorghum into ethanol",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "SUPPLY CHAIN MANAGEMENT",
+      "type": "METHOD",
+      "description": "The coordination of feedstock movement from farmers to distilleries in the ethanol value chain",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "CENTRALIZED MODEL",
+      "type": "CONCEPT",
+      "description": "A supply chain approach where farmers deliver sweet sorghum stalks directly to a distillery",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "DECENTRALIZED MODEL",
+      "type": "CONCEPT",
+      "description": "A supply chain approach where farmers deliver stalks to a village-level crushing unit",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "DECENTRALIZED CRUSHING-SYRUP MAKING UNIT",
+      "type": "METHOD",
+      "description": "A facility that crushes sweet sorghum and produces storable concentrated syrup",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "CONCENTRATED SYRUP",
+      "type": "CONCEPT",
+      "description": "A storable product derived from sweet sorghum juice used as feedstock for ethanol",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "CONCEPT",
+      "description": "International Crops Research Institute for the Semi-Arid Crops, focusing on sweet sorghum supply chains",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "DSR",
+      "type": "CONCEPT",
+      "description": "Directorate of Sorghum Research, focusing on sweet sorghum supply chains",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "RAJENDRANAGAR",
+      "type": "LOCATION",
+      "description": "The location of the Directorate of Sorghum Research in AP, India",
+      "source_id": "paper_208"
+    },
+    {
+      "name": "FOSSIL FUEL",
+      "type": "CONCEPT",
+      "description": "Traditional energy sources associated with environmental concerns",
+      "source_id": "paper_208"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SWEET SORGHUM",
+      "target": "BIO-FUELS",
+      "description": "is a source for",
+      "weight": "10",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "SWEET SORGHUM",
+      "target": "COMMERCIAL ETHANOL PRODUCTION",
+      "description": "serves as feedstock for",
+      "weight": "10",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "COMMERCIAL ETHANOL PRODUCTION",
+      "target": "SUPPLY CHAIN MANAGEMENT",
+      "description": "requires efficient",
+      "weight": "8",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "SUPPLY CHAIN MANAGEMENT",
+      "target": "CENTRALIZED MODEL",
+      "description": "incorporates",
+      "weight": "9",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "SUPPLY CHAIN MANAGEMENT",
+      "target": "DECENTRALIZED MODEL",
+      "description": "incorporates",
+      "weight": "9",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "DECENTRALIZED MODEL",
+      "target": "DECENTRALIZED CRUSHING-SYRUP MAKING UNIT",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "DECENTRALIZED CRUSHING-SYRUP MAKING UNIT",
+      "target": "CONCENTRATED SYRUP",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "CONCENTRATED SYRUP",
+      "target": "COMMERCIAL ETHANOL PRODUCTION",
+      "description": "is used for",
+      "weight": "9",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "SUPPLY CHAIN MANAGEMENT",
+      "description": "works on",
+      "weight": "8",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "DSR",
+      "target": "SUPPLY CHAIN MANAGEMENT",
+      "description": "works on",
+      "weight": "8",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "DSR",
+      "target": "RAJENDRANAGAR",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_208"
+    },
+    {
+      "source": "FOSSIL FUEL",
+      "target": "BIO-FUELS",
+      "description": "is replaced by",
+      "weight": "7",
+      "source_id": "paper_208"
+    }
+  ]
+}

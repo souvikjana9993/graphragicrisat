@@ -1,0 +1,225 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being evaluated for aflatoxin contamination management.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONDITION",
+      "description": "A fungal toxin contaminating groundnut crops.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "AFB1",
+      "type": "CONDITION",
+      "description": "A specific type of aflatoxin measured in the study.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "FARMYARD MANURE",
+      "type": "CONCEPT",
+      "description": "An organic fertilizer source evaluated for its effect on aflatoxin levels.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "GYPSUM",
+      "type": "CONCEPT",
+      "description": "A mineral fertilizer source evaluated for its effect on aflatoxin levels.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "SINGLE SUPERPHOSPHATE",
+      "type": "CONCEPT",
+      "description": "A phosphorus fertilizer source evaluated for its effect on aflatoxin levels.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "NPK FERTILIZER",
+      "type": "CONCEPT",
+      "description": "A complex nitrogen, phosphorus, and potassium fertilizer source.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "SOUTHERN GUINEA SAVANNAH",
+      "type": "LOCATION",
+      "description": "The agro-ecological zone in Nigeria where the study was conducted.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "NIGERIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to lay out the field trials.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "ENZYME LINKED IMMUNOSORBENT ASSAY",
+      "type": "METHOD",
+      "description": "The method used to detect and quantify aflatoxin loads.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A growth parameter measured in groundnut plants.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "NUMBER OF BRANCHES",
+      "type": "TRAIT",
+      "description": "A growth parameter measured in groundnut plants.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "DAYS TO 50% FLOWERING",
+      "type": "TRAIT",
+      "description": "A phenological parameter measured in groundnut plants.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The yield of pods measured in groundnut plants.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "HAULM YIELD",
+      "type": "TRAIT",
+      "description": "The yield of haulms measured in groundnut plants.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "100 SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of 100 seeds per plot in groundnut.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "ANALYSIS OF VARIANCE",
+      "type": "METHOD",
+      "description": "The statistical method used to analyze the collected data.",
+      "source_id": "paper_10350"
+    },
+    {
+      "name": "FISHER'S LEAST SIGNIFICANT DIFFERENCE",
+      "type": "METHOD",
+      "description": "The statistical test used to report significant differences.",
+      "source_id": "paper_10350"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "AFLATOXIN",
+      "description": "is contaminated by",
+      "weight": "10",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "AFB1",
+      "description": "includes specific toxin",
+      "weight": "10",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "AFB1",
+      "description": "increases concentration of",
+      "weight": "8",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "GYPSUM",
+      "target": "AFB1",
+      "description": "reduces concentration of",
+      "weight": "9",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "SINGLE SUPERPHOSPHATE",
+      "target": "AFB1",
+      "description": "reduces concentration when combined with gypsum",
+      "weight": "7",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "NPK FERTILIZER",
+      "target": "AFB1",
+      "description": "reduces concentration when combined with gypsum",
+      "weight": "7",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "PLANT HEIGHT",
+      "description": "increases when combined with NPK",
+      "weight": "6",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "HAULM YIELD",
+      "description": "increases when combined with NPK",
+      "weight": "6",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "SINGLE SUPERPHOSPHATE",
+      "target": "POD YIELD",
+      "description": "increases when combined with NPK",
+      "weight": "7",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "NPK FERTILIZER",
+      "target": "POD YIELD",
+      "description": "increases when combined with SSP",
+      "weight": "7",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "ENZYME LINKED IMMUNOSORBENT ASSAY",
+      "target": "AFB1",
+      "description": "used to detect and quantify",
+      "weight": "10",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SOUTHERN GUINEA SAVANNAH",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "SOUTHERN GUINEA SAVANNAH",
+      "target": "NIGERIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "target": "GROUNDNUT",
+      "description": "used for experimental layout of",
+      "weight": "7",
+      "source_id": "paper_10350"
+    },
+    {
+      "source": "ANALYSIS OF VARIANCE",
+      "target": "GROUNDNUT",
+      "description": "used to analyze data from",
+      "weight": "7",
+      "source_id": "paper_10350"
+    }
+  ]
+}

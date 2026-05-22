@@ -1,0 +1,275 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "A legume crop susceptible to aflatoxin contamination",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop susceptible to aflatoxin contamination",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "ASPERGILLUS",
+      "type": "ORGANISM",
+      "description": "A genus of fungi capable of producing aflatoxins",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A specific fungal species that produces aflatoxins and infects host plants",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONCEPT",
+      "description": "The presence of aflatoxins in crops, leading to economic losses and health risks",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A period of deficient rainfall that increases aflatoxin contamination",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "High temperature conditions that increase aflatoxin contamination",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperatures and weather patterns affecting crop stress",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "REACTIVE OXYGEN SPECIES",
+      "type": "CONCEPT",
+      "description": "Chemically reactive molecules that play a role in signaling and aflatoxin production regulation",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "ANTIOXIDANT MECHANISMS",
+      "type": "CONCEPT",
+      "description": "Biological processes used by plants and fungi to mitigate oxidative stress",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "BIOTECHNOLOGY",
+      "type": "METHOD",
+      "description": "The use of biological systems or organisms to develop technical solutions for aflatoxin mitigation",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "OMICS TECHNOLOGIES",
+      "type": "METHOD",
+      "description": "High-throughput biological analysis technologies including genomics, proteomics, and metabolomics",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "TRANSCRIPTOMICS",
+      "type": "METHOD",
+      "description": "The study of the complete set of RNA transcripts produced by the genome",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "PROTEOMICS",
+      "type": "METHOD",
+      "description": "The large-scale study of proteins",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "METABOLOMICS",
+      "type": "METHOD",
+      "description": "The study of small molecule metabolites",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "COMPARATIVE GENOMICS",
+      "type": "METHOD",
+      "description": "The comparison of genomic features between different organisms or isolates",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "GENETIC AND BIOLOGICAL MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Indicators used to identify specific traits for plant breeding",
+      "source_id": "paper_13420"
+    },
+    {
+      "name": "PLANT BREEDING",
+      "type": "METHOD",
+      "description": "The science of changing the traits of plants to produce desired characteristics",
+      "source_id": "paper_13420"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "PEANUT",
+      "description": "infects",
+      "weight": "9",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "MAIZE",
+      "description": "infects",
+      "weight": "9",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "DROUGHT",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "HEAT STRESS",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "REACTIVE OXYGEN SPECIES",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "regulates",
+      "weight": "8",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "REACTIVE OXYGEN SPECIES",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "mediates signaling in",
+      "weight": "7",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "REACTIVE OXYGEN SPECIES",
+      "target": "PEANUT",
+      "description": "mediates signaling in",
+      "weight": "7",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "ANTIOXIDANT MECHANISMS",
+      "target": "DROUGHT",
+      "description": "responds to",
+      "weight": "8",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "ANTIOXIDANT MECHANISMS",
+      "target": "HEAT STRESS",
+      "description": "responds to",
+      "weight": "8",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "ANTIOXIDANT MECHANISMS",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "responds to",
+      "weight": "8",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "BIOTECHNOLOGY",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "used to study and mitigate",
+      "weight": "9",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "OMICS TECHNOLOGIES",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "used to study",
+      "weight": "9",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "TRANSCRIPTOMICS",
+      "target": "OMICS TECHNOLOGIES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "PROTEOMICS",
+      "target": "OMICS TECHNOLOGIES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "METABOLOMICS",
+      "target": "OMICS TECHNOLOGIES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "COMPARATIVE GENOMICS",
+      "target": "OMICS TECHNOLOGIES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "GENETIC AND BIOLOGICAL MARKERS",
+      "target": "PLANT BREEDING",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "PLANT BREEDING",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_13420"
+    },
+    {
+      "source": "PLANT BREEDING",
+      "target": "PEANUT",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_13420"
+    }
+  ]
+}

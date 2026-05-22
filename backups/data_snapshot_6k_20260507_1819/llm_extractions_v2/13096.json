@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "GWAVA",
+      "type": "METHOD",
+      "description": "Global Water Availability Assessment model used to represent water resources",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "GROUNDWATER",
+      "type": "CONCEPT",
+      "description": "Water located beneath the earth's surface",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "LARGE RESERVOIRS",
+      "type": "CONCEPT",
+      "description": "Large artificial lakes used for water storage",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "MODEL COMPLEXITY",
+      "type": "CONCEPT",
+      "description": "The level of intricacy and number of parameters in a model",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "DATA INPUT REQUIREMENTS",
+      "type": "CONCEPT",
+      "description": "The amount and type of data necessary for model operation",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "LOW-DATA AVAILABILITY",
+      "type": "CONDITION",
+      "description": "Situations where available data for a region is limited",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "CAUVERY",
+      "type": "LOCATION",
+      "description": "A river basin used for model assessment",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "NARMADA",
+      "type": "LOCATION",
+      "description": "A river basin used for model assessment",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "GROUNDWATER ROUTINE",
+      "type": "METHOD",
+      "description": "A computational routine within GWAVA to simulate groundwater processes",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "RESERVOIR ROUTINE",
+      "type": "METHOD",
+      "description": "A computational routine within GWAVA to simulate reservoir operations",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "STREAMFLOW",
+      "type": "CONCEPT",
+      "description": "The volume of water flowing through a river channel",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "BASEFLOW",
+      "type": "CONCEPT",
+      "description": "The portion of streamflow derived from groundwater",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "DAILY RESERVOIR RELEASES",
+      "type": "CONCEPT",
+      "description": "The volume of water released from a reservoir on a daily basis",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "WATER BALANCE COMPONENTS",
+      "type": "CONCEPT",
+      "description": "The various elements contributing to the total water budget of a system",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "HUMAN-WATER INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "The influence of anthropogenic activities on water resources",
+      "source_id": "paper_13096"
+    },
+    {
+      "name": "ANTHROPOGENIC INTERFERENCE",
+      "type": "CONCEPT",
+      "description": "Human-caused disturbances to river basins",
+      "source_id": "paper_13096"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GWAVA",
+      "target": "GROUNDWATER",
+      "description": "represents",
+      "weight": "8",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GWAVA",
+      "target": "LARGE RESERVOIRS",
+      "description": "represents",
+      "weight": "8",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GWAVA",
+      "target": "MODEL COMPLEXITY",
+      "description": "maintains minimal",
+      "weight": "7",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GWAVA",
+      "target": "DATA INPUT REQUIREMENTS",
+      "description": "maintains minimal",
+      "weight": "7",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GWAVA",
+      "target": "LOW-DATA AVAILABILITY",
+      "description": "is applicable to",
+      "weight": "9",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GROUNDWATER ROUTINE",
+      "target": "GWAVA",
+      "description": "is incorporated into",
+      "weight": "10",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GROUNDWATER ROUTINE",
+      "target": "STREAMFLOW",
+      "description": "improves simulation of",
+      "weight": "9",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GROUNDWATER ROUTINE",
+      "target": "BASEFLOW",
+      "description": "improves simulation of",
+      "weight": "9",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "RESERVOIR ROUTINE",
+      "target": "GWAVA",
+      "description": "is part of",
+      "weight": "10",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "RESERVOIR ROUTINE",
+      "target": "STREAMFLOW",
+      "description": "improves simulation of",
+      "weight": "9",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GWAVA",
+      "target": "CAUVERY",
+      "description": "was assessed in",
+      "weight": "9",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GWAVA",
+      "target": "NARMADA",
+      "description": "was assessed in",
+      "weight": "9",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "RESERVOIR ROUTINE",
+      "target": "DAILY RESERVOIR RELEASES",
+      "description": "improves simulation of",
+      "weight": "9",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GWAVA",
+      "target": "WATER BALANCE COMPONENTS",
+      "description": "improves traceability of",
+      "weight": "8",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "GWAVA",
+      "target": "HUMAN-WATER INTERACTIONS",
+      "description": "represents",
+      "weight": "8",
+      "source_id": "paper_13096"
+    },
+    {
+      "source": "ANTHROPOGENIC INTERFERENCE",
+      "target": "HUMAN-WATER INTERACTIONS",
+      "description": "is a part of",
+      "weight": "8",
+      "source_id": "paper_13096"
+    }
+  ]
+}

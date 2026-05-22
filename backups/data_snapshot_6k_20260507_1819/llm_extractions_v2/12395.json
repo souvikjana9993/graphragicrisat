@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop capable of growing and setting seeds under adverse conditions",
+      "source_id": "paper_12395"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A condition of water scarcity that pearl millet can withstand",
+      "source_id": "paper_12395"
+    },
+    {
+      "name": "HIGH TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A condition of elevated temperature to which pearl millet panicles were exposed",
+      "source_id": "paper_12395"
+    },
+    {
+      "name": "NUTRIENT-POOR CONDITIONS",
+      "type": "CONDITION",
+      "description": "Soil conditions lacking essential nutrients that pearl millet can tolerate",
+      "source_id": "paper_12395"
+    },
+    {
+      "name": "SEED-SETTING RATE",
+      "type": "TRAIT",
+      "description": "The rate at which seeds are set in pearl millet panicles, which differs between cultivars",
+      "source_id": "paper_12395"
+    },
+    {
+      "name": "RNA SEQUENCING",
+      "type": "METHOD",
+      "description": "The process of determining the sequence of RNA in pearl millet panicles",
+      "source_id": "paper_12395"
+    },
+    {
+      "name": "ILLUMINA NOVASEQ 6000",
+      "type": "METHOD",
+      "description": "The specific sequencing technology used for RNA sequencing",
+      "source_id": "paper_12395"
+    },
+    {
+      "name": "NCBI",
+      "type": "LOCATION",
+      "description": "The National Center for Biotechnology Information where data was deposited",
+      "source_id": "paper_12395"
+    },
+    {
+      "name": "BIOPROJECT DATABASE",
+      "type": "CONCEPT",
+      "description": "The specific database within NCBI where the sequencing data was stored",
+      "source_id": "paper_12395"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "DROUGHT",
+      "description": "can grow under",
+      "weight": "8",
+      "source_id": "paper_12395"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "HIGH TEMPERATURE",
+      "description": "can grow under",
+      "weight": "8",
+      "source_id": "paper_12395"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "NUTRIENT-POOR CONDITIONS",
+      "description": "can grow under",
+      "weight": "8",
+      "source_id": "paper_12395"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SEED-SETTING RATE",
+      "description": "possesses this trait",
+      "weight": "9",
+      "source_id": "paper_12395"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "RNA SEQUENCING",
+      "description": "subject of sequencing",
+      "weight": "10",
+      "source_id": "paper_12395"
+    },
+    {
+      "source": "RNA SEQUENCING",
+      "target": "ILLUMINA NOVASEQ 6000",
+      "description": "performed using",
+      "weight": "10",
+      "source_id": "paper_12395"
+    },
+    {
+      "source": "RNA SEQUENCING",
+      "target": "NCBI",
+      "description": "data deposited at",
+      "weight": "9",
+      "source_id": "paper_12395"
+    },
+    {
+      "source": "NCBI",
+      "target": "BIOPROJECT DATABASE",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_12395"
+    },
+    {
+      "source": "HIGH TEMPERATURE",
+      "target": "SEED-SETTING RATE",
+      "description": "treatment applied to study",
+      "weight": "8",
+      "source_id": "paper_12395"
+    }
+  ]
+}

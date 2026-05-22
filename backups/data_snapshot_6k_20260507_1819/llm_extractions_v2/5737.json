@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "COMPARATIVE MAP AND TRAIT VIEWER (CMTV)",
+      "type": "METHOD",
+      "description": "An integrated bioinformatic tool to construct consensus maps and compare QTL and functional genomics data across genomes and experiments",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "GENOMIC DATA",
+      "type": "CONCEPT",
+      "description": "Information produced using functional and molecular marker approaches",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "FUNCTIONAL AND MOLECULAR MARKER APPROACHES",
+      "type": "METHOD",
+      "description": "Diverse array of approaches used to produce genomic data",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "GENOMIC REGIONS",
+      "type": "CONCEPT",
+      "description": "Common areas of the genome involved in the expression of target phenotypic traits",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "GENES",
+      "type": "GENE_MARKER",
+      "description": "Sequences involved in the expression of target phenotypic traits",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "PHENOTYPIC TRAITS",
+      "type": "TRAIT",
+      "description": "Observable characteristics of an organism",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "SYNTENIC REGIONS",
+      "type": "CONCEPT",
+      "description": "Regions of genomic maps that show conserved gene order across taxa",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "CONSENSUS MAP",
+      "type": "CONCEPT",
+      "description": "A map created by combining maps from separate experiments",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "CIMMYT",
+      "type": "LOCATION",
+      "description": "International Maize and Wheat Improvement Center",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop used in the case study for drought tolerance research",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The specific phenotypic trait studied in maize",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "QUANTITATIVE TRAIT LOCUS (QTL)",
+      "type": "CONCEPT",
+      "description": "Regions of DNA associated with a particular phenotypic trait",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "LIKELIHOOD RATIO (LR) FILES",
+      "type": "CONCEPT",
+      "description": "Files produced by QTL analysis software used for visualization in CMTV",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "QTL ANALYSIS SOFTWARE",
+      "type": "METHOD",
+      "description": "Software used to produce likelihood ratio files for QTL data",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Different conditions under which traits are expressed",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "CROSSES",
+      "type": "METHOD",
+      "description": "Breeding methods used to generate genetic diversity for QTL analysis",
+      "source_id": "paper_5737"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that show significant differences in expression levels",
+      "source_id": "paper_5737"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COMPARATIVE MAP AND TRAIT VIEWER (CMTV)",
+      "target": "GENOMIC DATA",
+      "description": "aggregates and integrates",
+      "weight": "10",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "COMPARATIVE MAP AND TRAIT VIEWER (CMTV)",
+      "target": "CONSENSUS MAP",
+      "description": "constructs",
+      "weight": "10",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "COMPARATIVE MAP AND TRAIT VIEWER (CMTV)",
+      "target": "SYNTENIC REGIONS",
+      "description": "displays",
+      "weight": "9",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "COMPARATIVE MAP AND TRAIT VIEWER (CMTV)",
+      "target": "QUANTITATIVE TRAIT LOCUS (QTL)",
+      "description": "visualizes",
+      "weight": "10",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "COMPARATIVE MAP AND TRAIT VIEWER (CMTV)",
+      "target": "DIFFERENTIALLY EXPRESSED GENES",
+      "description": "searches and displays",
+      "weight": "9",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "FUNCTIONAL AND MOLECULAR MARKER APPROACHES",
+      "target": "GENOMIC DATA",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "GENES",
+      "target": "PHENOTYPIC TRAITS",
+      "description": "involved in the expression of",
+      "weight": "9",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "GENOMIC REGIONS",
+      "target": "PHENOTYPIC TRAITS",
+      "description": "involved in the expression of",
+      "weight": "9",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "CIMMYT",
+      "target": "MAIZE",
+      "description": "conducts research on",
+      "weight": "10",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "MAIZE",
+      "target": "DROUGHT TOLERANCE",
+      "description": "studied for",
+      "weight": "10",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "QTL ANALYSIS SOFTWARE",
+      "target": "LIKELIHOOD RATIO (LR) FILES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "COMPARATIVE MAP AND TRAIT VIEWER (CMTV)",
+      "target": "LIKELIHOOD RATIO (LR) FILES",
+      "description": "uses for visualization",
+      "weight": "9",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCUS (QTL)",
+      "target": "PHENOTYPIC TRAITS",
+      "description": "associated with",
+      "weight": "10",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCUS (QTL)",
+      "target": "ENVIRONMENTS",
+      "description": "varies across",
+      "weight": "8",
+      "source_id": "paper_5737"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCUS (QTL)",
+      "target": "CROSSES",
+      "description": "varies across",
+      "weight": "8",
+      "source_id": "paper_5737"
+    }
+  ]
+}

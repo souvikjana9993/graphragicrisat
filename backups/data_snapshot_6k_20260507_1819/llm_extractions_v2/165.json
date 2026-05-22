@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "ICP-AES",
+      "type": "METHOD",
+      "description": "Inductively Coupled Plasma Atomic Emission Spectroscopy used for determining extractable sulfur in soils",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "TURBIDIMETRIC METHODS",
+      "type": "METHOD",
+      "description": "Methods based on turbidity used for determining extractable sulfur in soils",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "EXTRACTABLE SULFUR",
+      "type": "CONCEPT",
+      "description": "The portion of sulfur in soil that can be extracted and measured",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "SULFUR",
+      "type": "CONCEPT",
+      "description": "An essential plant nutrient whose deficiency constraints crop productivity",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of crop production and yield",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "IRRIGATED SYSTEMS",
+      "type": "CONDITION",
+      "description": "Agricultural systems characterized by the use of irrigation",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "INDIAN SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The semi-arid tropical region of India",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "RAINFED PRODUCTION SYSTEMS",
+      "type": "CONDITION",
+      "description": "Agricultural systems that rely solely on rainfall for water",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "SOIL TESTING",
+      "type": "METHOD",
+      "description": "The process of analyzing soil to diagnose nutrient deficiencies",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "CALCIUM CHLORIDE EXTRACTABLE-S",
+      "type": "METHOD",
+      "description": "A specific soil extraction method using calcium chloride to determine sulfur levels",
+      "source_id": "paper_165"
+    },
+    {
+      "name": "S DEFICIENCY",
+      "type": "CONDITION",
+      "description": "A state where sulfur levels are insufficient for optimal crop growth",
+      "source_id": "paper_165"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICP-AES",
+      "target": "EXTRACTABLE SULFUR",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_165"
+    },
+    {
+      "source": "TURBIDIMETRIC METHODS",
+      "target": "EXTRACTABLE SULFUR",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_165"
+    },
+    {
+      "source": "S DEFICIENCY",
+      "target": "CROP PRODUCTIVITY",
+      "description": "acts as a constraint to",
+      "weight": "10",
+      "source_id": "paper_165"
+    },
+    {
+      "source": "S DEFICIENCY",
+      "target": "IRRIGATED SYSTEMS",
+      "description": "is a recognized constraint in",
+      "weight": "8",
+      "source_id": "paper_165"
+    },
+    {
+      "source": "S DEFICIENCY",
+      "target": "RAINFED PRODUCTION SYSTEMS",
+      "description": "is widespread in",
+      "weight": "8",
+      "source_id": "paper_165"
+    },
+    {
+      "source": "S DEFICIENCY",
+      "target": "INDIAN SEMI-ARID TROPICS",
+      "description": "is widespread in",
+      "weight": "8",
+      "source_id": "paper_165"
+    },
+    {
+      "source": "SOIL TESTING",
+      "target": "S DEFICIENCY",
+      "description": "effective in diagnosing",
+      "weight": "9",
+      "source_id": "paper_165"
+    },
+    {
+      "source": "CALCIUM CHLORIDE EXTRACTABLE-S",
+      "target": "EXTRACTABLE SULFUR",
+      "description": "used to measure",
+      "weight": "9",
+      "source_id": "paper_165"
+    },
+    {
+      "source": "SULFUR",
+      "target": "S DEFICIENCY",
+      "description": "application corrects",
+      "weight": "10",
+      "source_id": "paper_165"
+    }
+  ]
+}

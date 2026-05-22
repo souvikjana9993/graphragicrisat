@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "BACKGROUND SEGMENTATION",
+      "type": "METHOD",
+      "description": "The process of separating the plant from its background in 3D scans to ensure reliable trait assessment.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "3D PLANT PHENOTYPING",
+      "type": "CONCEPT",
+      "description": "The use of 3D imaging and analysis to measure plant traits.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "TRAIT ASSESSMENT",
+      "type": "CONCEPT",
+      "description": "The process of evaluating specific characteristics of a plant.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "COORDINATE-BASED SEGMENTATION",
+      "type": "METHOD",
+      "description": "A traditional background segmentation method that often leads to data loss.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "AI-DRIVEN APPROACH",
+      "type": "METHOD",
+      "description": "A new segmentation method using a Multi-Layer Perceptron model to enhance precision.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "MULTI-LAYER PERCEPTRON",
+      "type": "METHOD",
+      "description": "The specific AI model architecture used for background segmentation.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "RGB DATA",
+      "type": "CONCEPT",
+      "description": "Red, Green, and Blue color information used as input for the AI model.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "SPATIAL XYZ DATA",
+      "type": "CONCEPT",
+      "description": "Three-dimensional coordinate data used as input for the AI model.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "NEAR-INFRARED NIR DATA",
+      "type": "CONCEPT",
+      "description": "Near-infrared spectral data used as input for the AI model.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "HIGH-THROUGHPUT PHENOTYPING",
+      "type": "CONCEPT",
+      "description": "Rapid and automated measurement of plant traits on a large scale.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "EARLY GROWTH STAGES",
+      "type": "CONDITION",
+      "description": "The initial phases of plant development where segmentation is often challenging.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "PROSTRATE SPECIES",
+      "type": "ORGANISM",
+      "description": "Plant species with a low-growing, spreading habit that are difficult to segment.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "LEAF AREA ESTIMATION",
+      "type": "TRAIT",
+      "description": "The measurement of the total surface area of a plant's leaves.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "DESTRUCTIVE MEASUREMENTS",
+      "type": "METHOD",
+      "description": "Physical measurements that require destroying the plant sample, used for validation.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "PRECISION AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "An agricultural management concept based on observing, measuring, and responding to inter and intra-field variability in crops.",
+      "source_id": "paper_13476"
+    },
+    {
+      "name": "PLANT SCIENCE",
+      "type": "CONCEPT",
+      "description": "The study of the structure, function, and genetics of plants.",
+      "source_id": "paper_13476"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "MULTI-LAYER PERCEPTRON",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "RGB DATA",
+      "description": "leverages",
+      "weight": "9",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "SPATIAL XYZ DATA",
+      "description": "leverages",
+      "weight": "9",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "NEAR-INFRARED NIR DATA",
+      "description": "leverages",
+      "weight": "9",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "BACKGROUND SEGMENTATION",
+      "description": "improves",
+      "weight": "10",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "BACKGROUND SEGMENTATION",
+      "target": "3D PLANT PHENOTYPING",
+      "description": "is crucial for",
+      "weight": "9",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "3D PLANT PHENOTYPING",
+      "target": "TRAIT ASSESSMENT",
+      "description": "enables",
+      "weight": "8",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "COORDINATE-BASED SEGMENTATION",
+      "description": "outperforms",
+      "weight": "9",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "LEAF AREA ESTIMATION",
+      "description": "improves accuracy of",
+      "weight": "9",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "LEAF AREA ESTIMATION",
+      "target": "DESTRUCTIVE MEASUREMENTS",
+      "description": "validated against",
+      "weight": "10",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "PROSTRATE SPECIES",
+      "description": "effective for",
+      "weight": "8",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "EARLY GROWTH STAGES",
+      "description": "effective during",
+      "weight": "8",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "PRECISION AGRICULTURE",
+      "description": "supports",
+      "weight": "7",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "AI-DRIVEN APPROACH",
+      "target": "PLANT SCIENCE",
+      "description": "supports",
+      "weight": "7",
+      "source_id": "paper_13476"
+    },
+    {
+      "source": "HIGH-THROUGHPUT PHENOTYPING",
+      "target": "3D PLANT PHENOTYPING",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_13476"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop being screened for resistance to soil-borne diseases.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "COLLAR ROT",
+      "type": "CONDITION",
+      "description": "A disease caused by Sclerotium rolfsii affecting the collar region of the plant.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing collar rot.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "GREENHOUSE SCREENING METHOD",
+      "type": "METHOD",
+      "description": "A rapid and reliable method developed to screen crops for disease resistance.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a cultivar to withstand or resist the effects of a pathogen.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "GROUNDNUT SHELLS",
+      "type": "CONCEPT",
+      "description": "A substrate used for the growth and formation of sclerotia of the pathogen.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "SORGHUM STRAW",
+      "type": "CONCEPT",
+      "description": "A substrate compared against groundnut shells for pathogen growth.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "SAND-MAIZE MEAL",
+      "type": "CONCEPT",
+      "description": "A substrate compared against groundnut shells for pathogen growth.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "POTATO DEXTROSE BROTH",
+      "type": "CONCEPT",
+      "description": "A substrate compared against groundnut shells for pathogen growth.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "SEED ROT",
+      "type": "CONDITION",
+      "description": "A disease affecting the seeds of the crop.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "DAMPING OFF",
+      "type": "CONDITION",
+      "description": "A disease causing seedlings to collapse and die.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "RIZOLEX",
+      "type": "METHOD",
+      "description": "A chemical seed treatment used to control seed rot and collar rot.",
+      "source_id": "paper_6232"
+    },
+    {
+      "name": "THIRAM",
+      "type": "METHOD",
+      "description": "A chemical seed treatment used in combination with Rizolex to control seed rot and collar rot.",
+      "source_id": "paper_6232"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GREENHOUSE SCREENING METHOD",
+      "target": "CHICKPEA",
+      "description": "used to screen",
+      "weight": "10",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "GREENHOUSE SCREENING METHOD",
+      "target": "RESISTANCE",
+      "description": "used to screen for",
+      "weight": "10",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "COLLAR ROT",
+      "description": "resistance to",
+      "weight": "10",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "COLLAR ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "GROUNDNUT SHELLS",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "supports growth and sclerotia formation of",
+      "weight": "9",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "SORGHUM STRAW",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "supports growth of",
+      "weight": "5",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "SAND-MAIZE MEAL",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "supports growth of",
+      "weight": "5",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "POTATO DEXTROSE BROTH",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "supports growth of",
+      "weight": "5",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED ROT",
+      "description": "susceptibility to",
+      "weight": "8",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "DAMPING OFF",
+      "description": "susceptibility to",
+      "weight": "8",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "COLLAR ROT",
+      "description": "susceptibility to",
+      "weight": "8",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "RIZOLEX",
+      "target": "SEED ROT",
+      "description": "effective in controlling",
+      "weight": "9",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "RIZOLEX",
+      "target": "COLLAR ROT",
+      "description": "effective in controlling",
+      "weight": "9",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "THIRAM",
+      "target": "SEED ROT",
+      "description": "effective in controlling",
+      "weight": "9",
+      "source_id": "paper_6232"
+    },
+    {
+      "source": "THIRAM",
+      "target": "COLLAR ROT",
+      "description": "effective in controlling",
+      "weight": "9",
+      "source_id": "paper_6232"
+    }
+  ]
+}

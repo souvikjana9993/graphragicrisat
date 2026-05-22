@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor, the host crop affected by ergot pathogens",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "CLAVICEPS SORGHI",
+      "type": "ORGANISM",
+      "description": "A species of fungus that causes sorghum ergot",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "CLAVICEPS AFRICANA",
+      "type": "ORGANISM",
+      "description": "A species of fungus that causes sorghum ergot",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "CLAVICEPS SORGHICOLA",
+      "type": "ORGANISM",
+      "description": "A species of fungus that causes sorghum ergot",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "SORGHUM ERGOT PATHOGEN",
+      "type": "ORGANISM",
+      "description": "Fungi that infect sorghum ovaries and produce sclerotia",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "SCLEROTIA",
+      "type": "CONCEPT",
+      "description": "Hard textured resting structures used by ergot pathogens to survive between harvests",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "VIABILITY",
+      "type": "TRAIT",
+      "description": "The capacity of sclerotia to remain alive and capable of causing infection over time",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "VARIABILITY",
+      "type": "TRAIT",
+      "description": "The degree of difference in characteristics among sclerotia",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "INFECTION",
+      "type": "CONCEPT",
+      "description": "The process of the pathogen invading the host crop",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "SPHACELIA",
+      "type": "CONCEPT",
+      "description": "Spore bearing masses that develop from infected ovaries in sorghum panicles",
+      "source_id": "paper_1452"
+    },
+    {
+      "name": "ASCOSPORES",
+      "type": "CONCEPT",
+      "description": "Spores produced by asci from germinating sclerotia that infect new crops",
+      "source_id": "paper_1452"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM ERGOT PATHOGEN",
+      "target": "SORGHUM",
+      "description": "infects ovaries of",
+      "weight": "10",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "CLAVICEPS SORGHI",
+      "target": "SORGHUM ERGOT PATHOGEN",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "CLAVICEPS AFRICANA",
+      "target": "SORGHUM ERGOT PATHOGEN",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "CLAVICEPS SORGHICOLA",
+      "target": "SORGHUM ERGOT PATHOGEN",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "SORGHUM ERGOT PATHOGEN",
+      "target": "SCLEROTIA",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "VIABILITY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "VARIABILITY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "ASCOSPORES",
+      "description": "produces via germination",
+      "weight": "9",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "ASCOSPORES",
+      "target": "INFECTION",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "INFECTION",
+      "description": "enable",
+      "weight": "9",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "SORGHUM ERGOT PATHOGEN",
+      "target": "SPHACELIA",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_1452"
+    },
+    {
+      "source": "SPHACELIA",
+      "target": "SORGHUM",
+      "description": "develops in panicles of",
+      "weight": "9",
+      "source_id": "paper_1452"
+    }
+  ]
+}

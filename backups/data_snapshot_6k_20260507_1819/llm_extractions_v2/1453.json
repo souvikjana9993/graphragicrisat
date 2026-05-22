@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor, the crop affected by grain mold",
+      "source_id": "paper_1453"
+    },
+    {
+      "name": "GRAIN MOLD",
+      "type": "TRAIT",
+      "description": "A disease complex in sorghum involving pathogenic and saprophytic fungi",
+      "source_id": "paper_1453"
+    },
+    {
+      "name": "FUNGI",
+      "type": "ORGANISM",
+      "description": "Pathogenic and saprophytic fungi that cause grain mold",
+      "source_id": "paper_1453"
+    },
+    {
+      "name": "ENVIRONMENTAL CONDITIONS",
+      "type": "CONDITION",
+      "description": "Factors that influence the frequency and severity of fungi in grain mold",
+      "source_id": "paper_1453"
+    },
+    {
+      "name": "GENETIC MANAGEMENT",
+      "type": "METHOD",
+      "description": "The use of genetic approaches to manage grain mold in sorghum",
+      "source_id": "paper_1453"
+    },
+    {
+      "name": "FUSARIUM MONITIFORME",
+      "type": "ORGANISM",
+      "description": "A major pathogenic fungus known to produce fumonisins",
+      "source_id": "paper_1453"
+    },
+    {
+      "name": "FUMONISINS",
+      "type": "CONCEPT",
+      "description": "Mycotoxins produced by Fusarium monitiforme that affect food and feed safety",
+      "source_id": "paper_1453"
+    },
+    {
+      "name": "SGMVN",
+      "type": "METHOD",
+      "description": "Sorghum Grain Mold Variability Nursery, a collaborative trial to study grain mold variability",
+      "source_id": "paper_1453"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the SGMVN trials were conducted",
+      "source_id": "paper_1453"
+    },
+    {
+      "name": "RAINY SEASON 2002",
+      "type": "CONDITION",
+      "description": "The specific environmental time period during which the trials were conducted",
+      "source_id": "paper_1453"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUNGI",
+      "target": "GRAIN MOLD",
+      "description": "cause of",
+      "weight": "10",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN MOLD",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "ENVIRONMENTAL CONDITIONS",
+      "target": "FUNGI",
+      "description": "influence frequency and severity of",
+      "weight": "8",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "GENETIC MANAGEMENT",
+      "target": "GRAIN MOLD",
+      "description": "used to manage",
+      "weight": "9",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "FUSARIUM MONITIFORME",
+      "target": "FUNGI",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "FUSARIUM MONITIFORME",
+      "target": "FUMONISINS",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "FUMONISINS",
+      "target": "SORGHUM",
+      "description": "contaminates grains of",
+      "weight": "8",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "SGMVN",
+      "target": "GRAIN MOLD",
+      "description": "used to study variability of",
+      "weight": "9",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "SGMVN",
+      "target": "SORGHUM",
+      "description": "conducted on",
+      "weight": "9",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "SGMVN",
+      "target": "INDIA",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_1453"
+    },
+    {
+      "source": "SGMVN",
+      "target": "RAINY SEASON 2002",
+      "description": "conducted during",
+      "weight": "10",
+      "source_id": "paper_1453"
+    }
+  ]
+}

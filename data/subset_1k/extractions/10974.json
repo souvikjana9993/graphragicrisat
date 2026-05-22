@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Staple food crop of India grown on 44 Mha",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where rice is grown and drought analysis is conducted",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "An inevitable phenomenon affecting rice production and causing area reduction",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used to assess drought damage and map affected areas",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Moderate Resolution Imaging Spectroradiometer used to derive NDVI data",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "DROUGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of rice varieties to withstand drought conditions",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "TRMM",
+      "type": "METHOD",
+      "description": "Tropical Rainfall Monitoring Mission used to provide rainfall data for drought analysis",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Techniques used to categorize drought-affected rice areas into severe, moderate, and mild classes",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "FIELD SAMPLING",
+      "type": "METHOD",
+      "description": "Process of collecting ground survey samples to assess damage intensity and generate spectral signatures",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "SPECTRAL SIGNATURES",
+      "type": "CONCEPT",
+      "description": "Data generated from ground survey samples used for spectral matching",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "HARVESTED RICE AREA",
+      "type": "CONCEPT",
+      "description": "The actual area of rice harvested, used as a benchmark for drought impact",
+      "source_id": "paper_10974"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "General category of environmental stress that includes drought",
+      "source_id": "paper_10974"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "RICE",
+      "description": "affects production of",
+      "weight": "9",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "NDVI",
+      "target": "DROUGHT",
+      "description": "used to assess damage from",
+      "weight": "8",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "MODIS",
+      "target": "NDVI",
+      "description": "used to derive",
+      "weight": "10",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "NDVI",
+      "target": "DROUGHT RESISTANCE",
+      "description": "provides information for developing",
+      "weight": "7",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "TRMM",
+      "target": "DROUGHT",
+      "description": "supports analysis of",
+      "weight": "8",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "RICE",
+      "description": "categorizes drought-affected areas of",
+      "weight": "8",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "FIELD SAMPLING",
+      "target": "SPECTRAL SIGNATURES",
+      "description": "used to generate",
+      "weight": "9",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "SPECTRAL SIGNATURES",
+      "target": "SPECTRAL MATCHING TECHNIQUES",
+      "description": "used as basis for",
+      "weight": "9",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "MODIS",
+      "target": "HARVESTED RICE AREA",
+      "description": "used to estimate and compare with",
+      "weight": "8",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "HARVESTED RICE AREA",
+      "description": "causes reduction in",
+      "weight": "9",
+      "source_id": "paper_10974"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "ABIOTIC STRESS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10974"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "ALGAL FLOWAY",
+      "type": "METHOD",
+      "description": "A cultivation system used to treat urban wastewater and produce algal biomass for biodiesel production",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "URBAN WASTEWATER",
+      "type": "CONDITION",
+      "description": "The nutrient-rich water from urban areas used as a growth medium for algae",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "BIOMASS PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The rate of algal growth measured in dry weight per unit area per day",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "LIPID CONTENTS",
+      "type": "TRAIT",
+      "description": "The amount of lipids present in the algal biomass, expressed as a percentage of dry cell weight",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "BIODIESEL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of converting algal lipids into biofuel",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "NUTRIENT REMOVAL RATE",
+      "type": "TRAIT",
+      "description": "The efficiency of the system in removing nitrogen and phosphorus from the wastewater",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A key nutrient removed from urban wastewater during the algal cultivation process",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "A key nutrient removed from urban wastewater during the algal cultivation process",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "CETANE NUMBER",
+      "type": "TRAIT",
+      "description": "A quality parameter of biodiesel indicating its ignition quality",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "COLD FILTER PLUGGING POINT",
+      "type": "TRAIT",
+      "description": "A quality parameter of biodiesel indicating its cold-flow properties",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "EICOSAPENTAENOIC ACID",
+      "type": "CONCEPT",
+      "description": "An omega-3 fatty acid produced by algae, specifically noted during winter growth cycles",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "PENNATE DIATOMS",
+      "type": "ORGANISM",
+      "description": "The dominant group of algae found within the algal floway community across all seasons",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the urban wastewater study was conducted",
+      "source_id": "paper_11275"
+    },
+    {
+      "name": "ALGAE BIOFUEL FEEDSTOCK",
+      "type": "CONCEPT",
+      "description": "The biomass produced from algae that serves as the raw material for biofuel",
+      "source_id": "paper_11275"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ALGAL FLOWAY",
+      "target": "URBAN WASTEWATER",
+      "description": "treats",
+      "weight": "10",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "ALGAL FLOWAY",
+      "target": "BIOMASS PRODUCTIVITY",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "ALGAL FLOWAY",
+      "target": "LIPID CONTENTS",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "ALGAL FLOWAY",
+      "target": "BIODIESEL PRODUCTION",
+      "description": "enables",
+      "weight": "9",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "ALGAL FLOWAY",
+      "target": "NUTRIENT REMOVAL RATE",
+      "description": "achieves",
+      "weight": "9",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "NUTRIENT REMOVAL RATE",
+      "target": "NITROGEN",
+      "description": "removes",
+      "weight": "10",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "NUTRIENT REMOVAL RATE",
+      "target": "PHOSPHORUS",
+      "description": "removes",
+      "weight": "10",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "LIPID CONTENTS",
+      "target": "BIODIESEL PRODUCTION",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "BIODIESEL PRODUCTION",
+      "target": "CETANE NUMBER",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "BIODIESEL PRODUCTION",
+      "target": "COLD FILTER PLUGGING POINT",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "PENNATE DIATOMS",
+      "target": "ALGAL FLOWAY",
+      "description": "dominates community in",
+      "weight": "9",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "ALGAL FLOWAY",
+      "target": "INDIA",
+      "description": "studied in",
+      "weight": "8",
+      "source_id": "paper_11275"
+    },
+    {
+      "source": "BIOMASS PRODUCTIVITY",
+      "target": "ALGAE BIOFUEL FEEDSTOCK",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_11275"
+    }
+  ]
+}

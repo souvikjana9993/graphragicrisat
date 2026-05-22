@@ -1,0 +1,225 @@
+{
+  "entities": [
+    {
+      "name": "LIVESTOCK",
+      "type": "ORGANISM",
+      "description": "Animals used for productivity in the West African Sahel",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "WEST AFRICAN SAHEL",
+      "type": "LOCATION",
+      "description": "Region where livestock productivity is constrained by seasonal feed scarcity",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "FEED SCARCITY",
+      "type": "CONDITION",
+      "description": "Seasonal lack of livestock feed resources",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "FEED QUALITY",
+      "type": "TRAIT",
+      "description": "The nutritional value of livestock feed, which is low in the dry season",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "Period characterized by feed scarcity and low feed quality",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "LIVESTOCK POPULATION",
+      "type": "CONCEPT",
+      "description": "The number of livestock, which increases the demand for feed",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "PERIURBAN AREAS",
+      "type": "LOCATION",
+      "description": "Areas surrounding cities where feed demand is heightened",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "LIVESTOCK FEED MARKETS",
+      "type": "CONCEPT",
+      "description": "Markets established in cities and towns for the sale and purchase of livestock feed",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "MARADI",
+      "type": "LOCATION",
+      "description": "A city in Niger where livestock feed market surveys were conducted",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "NIAMEY",
+      "type": "LOCATION",
+      "description": "A city in Niger where livestock feed market surveys were conducted",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the study on livestock feed markets was conducted",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "SURVEYS",
+      "type": "METHOD",
+      "description": "Research method used to understand the dynamics of livestock feed markets",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "SEMI-STRUCTURED QUESTIONNAIRE",
+      "type": "METHOD",
+      "description": "The tool used to conduct surveys in Maradi and Niamey",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "WET SEASON",
+      "type": "CONDITION",
+      "description": "The period of the year characterized by higher feed availability",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume whose hay and husk are used as livestock feed",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume whose haulm is used as livestock feed",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "LEGUME RESIDUES",
+      "type": "CONCEPT",
+      "description": "Feed types including cowpea hay, cowpea husk, and groundnut haulm",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "FEED PRICE",
+      "type": "TRAIT",
+      "description": "The cost of livestock feed, which varies by season, location, and feed type",
+      "source_id": "paper_12439"
+    },
+    {
+      "name": "ANIMAL PERFORMANCE",
+      "type": "TRAIT",
+      "description": "The productivity and health of livestock maintained by supplementary feeds",
+      "source_id": "paper_12439"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FEED SCARCITY",
+      "target": "LIVESTOCK",
+      "description": "Constrains productivity of",
+      "weight": "9",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "FEED QUALITY",
+      "target": "LIVESTOCK",
+      "description": "Affects productivity of",
+      "weight": "9",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "DRY SEASON",
+      "target": "FEED SCARCITY",
+      "description": "Increases",
+      "weight": "8",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "DRY SEASON",
+      "target": "FEED QUALITY",
+      "description": "Decreases",
+      "weight": "8",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "LIVESTOCK POPULATION",
+      "target": "FEED SCARCITY",
+      "description": "Aggravates",
+      "weight": "7",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "PERIURBAN AREAS",
+      "target": "LIVESTOCK FEED MARKETS",
+      "description": "Location of",
+      "weight": "8",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "NIGER",
+      "target": "MARADI",
+      "description": "Contains",
+      "weight": "10",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "NIGER",
+      "target": "NIAMEY",
+      "description": "Contains",
+      "weight": "10",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "SURVEYS",
+      "target": "LIVESTOCK FEED MARKETS",
+      "description": "Used to analyze dynamics of",
+      "weight": "8",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "SEMI-STRUCTURED QUESTIONNAIRE",
+      "target": "SURVEYS",
+      "description": "Tool used for",
+      "weight": "10",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "LEGUME RESIDUES",
+      "target": "FEED PRICE",
+      "description": "Associated with higher prices",
+      "weight": "7",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "COWPEA",
+      "target": "LEGUME RESIDUES",
+      "description": "Is a type of",
+      "weight": "10",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "LEGUME RESIDUES",
+      "description": "Is a type of",
+      "weight": "10",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "FEED PRICE",
+      "target": "FEED QUALITY",
+      "description": "No clear relationship between",
+      "weight": "5",
+      "source_id": "paper_12439"
+    },
+    {
+      "source": "ANIMAL PERFORMANCE",
+      "target": "LIVESTOCK",
+      "description": "Attribute of",
+      "weight": "9",
+      "source_id": "paper_12439"
+    }
+  ]
+}

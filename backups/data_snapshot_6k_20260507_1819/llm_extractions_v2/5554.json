@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A major pest known as the pod borer that attacks chickpea crops",
+      "source_id": "paper_5554"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "An agricultural crop (Cicer arietinum L) targeted by Helicoverpa armigera",
+      "source_id": "paper_5554"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist attack by a pest",
+      "source_id": "paper_5554"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the study on chickpea genotypes and pest impact was conducted",
+      "source_id": "paper_5554"
+    },
+    {
+      "name": "YIELD LOSSES",
+      "type": "TRAIT",
+      "description": "The reduction in crop output caused by pest infestation",
+      "source_id": "paper_5554"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating genotypes for specific traits like resistance",
+      "source_id": "paper_5554"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCREENING",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_5554"
+    },
+    {
+      "source": "SCREENING",
+      "target": "CHICKPEA",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_5554"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "is a major pest of",
+      "weight": "10",
+      "source_id": "paper_5554"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "YIELD LOSSES",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5554"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "KENYA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_5554"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "KENYA",
+      "description": "present in",
+      "weight": "8",
+      "source_id": "paper_5554"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_5554"
+    }
+  ]
+}

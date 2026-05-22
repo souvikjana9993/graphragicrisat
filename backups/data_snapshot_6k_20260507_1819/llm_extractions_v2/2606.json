@@ -1,0 +1,335 @@
+{
+  "entities": [
+    {
+      "name": "ORGANIC MATTER ACCUMULATION",
+      "type": "CONCEPT",
+      "description": "The process of organic materials building up in soil",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "ORGANIC MATTER DECOMPOSITION",
+      "type": "CONCEPT",
+      "description": "The breakdown of organic materials in soil",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "SUBMERGED SOILS",
+      "type": "CONDITION",
+      "description": "Soils that are underwater and anaerobic",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "AEROBIC SOILS",
+      "type": "CONDITION",
+      "description": "Soils with oxygen availability",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "ANAEROBIOSIS",
+      "type": "CONDITION",
+      "description": "The absence of oxygen",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Crop grown in submerged soils",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "WETLANDS",
+      "type": "LOCATION",
+      "description": "Areas of land saturated with water",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "HUMIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of forming humus from organic matter",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "FLOODED CONDITIONS",
+      "type": "CONDITION",
+      "description": "State of being covered with water",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "HISTOSOLS",
+      "type": "CONCEPT",
+      "description": "Soils characterized by a high organic matter content",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "WATERLOGGED SITES",
+      "type": "CONDITION",
+      "description": "Sites permanently saturated with water",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "MICROBES",
+      "type": "ORGANISM",
+      "description": "Organisms responsible for decomposition and affected by reduction products",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "REDUCTION PRODUCTS",
+      "type": "CONCEPT",
+      "description": "Chemicals produced under anaerobic conditions",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "HYDROGEN SULFIDE",
+      "type": "CONCEPT",
+      "description": "A reduction product that affects microbial activity",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "VOLATILE FATTY ACIDS",
+      "type": "CONCEPT",
+      "description": "Reduction products that affect microbial activity",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "AMMONIA",
+      "type": "CONCEPT",
+      "description": "A cation that can reach toxic concentrations",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "ALUMINIUM",
+      "type": "CONCEPT",
+      "description": "A cation that can reach toxic concentrations",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "IRON",
+      "type": "CONCEPT",
+      "description": "A cation that can reach toxic concentrations",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "CATIONS",
+      "type": "CONCEPT",
+      "description": "Positively charged ions in soil solution",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "ELECTRON ACCEPTORS",
+      "type": "CONCEPT",
+      "description": "Substances that accept electrons during oxidation",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "IRON OXIDES AND HYDROXIDES",
+      "type": "CONCEPT",
+      "description": "Specific electron acceptors in soil",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "ORGANIC MATTER OXIDATION",
+      "type": "CONCEPT",
+      "description": "The chemical process of breaking down organic matter using oxygen or other acceptors",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The conversion of organic matter to inorganic forms",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "RECALCITRANT ORGANIC MOLECULES",
+      "type": "CONCEPT",
+      "description": "Complex organic molecules resistant to microbial attack",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "PHENOLICS",
+      "type": "CONCEPT",
+      "description": "Organic compounds that can enrich organic matter and make it recalcitrant",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "INTENSIFIED IRRIGATED RICE PRODUCTION",
+      "type": "METHOD",
+      "description": "A farming system that may increase phenolics in organic matter",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "NET PRIMARY PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The rate at which plants produce useful chemical energy",
+      "source_id": "paper_2606"
+    },
+    {
+      "name": "ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "The carbon component of organic matter",
+      "source_id": "paper_2606"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SUBMERGED SOILS",
+      "target": "ORGANIC MATTER ACCUMULATION",
+      "description": "promotes",
+      "weight": "10",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "SUBMERGED SOILS",
+      "target": "ORGANIC MATTER DECOMPOSITION",
+      "description": "slows down",
+      "weight": "10",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "ANAEROBIOSIS",
+      "target": "SUBMERGED SOILS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "AEROBIC SOILS",
+      "target": "ORGANIC MATTER DECOMPOSITION",
+      "description": "facilitates faster rates than submerged soils",
+      "weight": "8",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "RICE",
+      "target": "SUBMERGED SOILS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "WETLANDS",
+      "target": "SUBMERGED SOILS",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "FLOODED CONDITIONS",
+      "target": "HUMIFICATION",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "WATERLOGGED SITES",
+      "target": "HISTOSOLS",
+      "description": "leads to development of",
+      "weight": "9",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "REDUCTION PRODUCTS",
+      "target": "MICROBES",
+      "description": "has deleterious effects on activity",
+      "weight": "8",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "HYDROGEN SULFIDE",
+      "target": "REDUCTION PRODUCTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "VOLATILE FATTY ACIDS",
+      "target": "REDUCTION PRODUCTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "CATIONS",
+      "target": "MICROBES",
+      "description": "toxic concentrations affect",
+      "weight": "8",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "AMMONIA",
+      "target": "CATIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "ALUMINIUM",
+      "target": "CATIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "IRON",
+      "target": "CATIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "ELECTRON ACCEPTORS",
+      "target": "ORGANIC MATTER OXIDATION",
+      "description": "facilitates",
+      "weight": "9",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "IRON OXIDES AND HYDROXIDES",
+      "target": "ELECTRON ACCEPTORS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "SUBMERGED SOILS",
+      "target": "ELECTRON ACCEPTORS",
+      "description": "lacks",
+      "weight": "9",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "PHENOLICS",
+      "target": "RECALCITRANT ORGANIC MOLECULES",
+      "description": "contributes to formation of",
+      "weight": "8",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "INTENSIFIED IRRIGATED RICE PRODUCTION",
+      "target": "PHENOLICS",
+      "description": "increases enrichment of",
+      "weight": "8",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "RECALCITRANT ORGANIC MOLECULES",
+      "target": "MICROBES",
+      "description": "less available for attack and utilization",
+      "weight": "8",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "WETLANDS",
+      "target": "NET PRIMARY PRODUCTIVITY",
+      "description": "has higher",
+      "weight": "8",
+      "source_id": "paper_2606"
+    },
+    {
+      "source": "ORGANIC MATTER ACCUMULATION",
+      "target": "ORGANIC CARBON",
+      "description": "results in storage of",
+      "weight": "9",
+      "source_id": "paper_2606"
+    }
+  ]
+}

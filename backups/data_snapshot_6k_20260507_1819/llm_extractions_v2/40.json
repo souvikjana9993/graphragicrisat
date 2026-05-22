@@ -1,0 +1,235 @@
+{
+  "entities": [
+    {
+      "name": "JATROPHA",
+      "type": "ORGANISM",
+      "description": "Jatropha curcas, a plant used to create biowash",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "ANNONA",
+      "type": "ORGANISM",
+      "description": "Annona squamosa, a plant used to create biowash",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "PARTHENIUM",
+      "type": "ORGANISM",
+      "description": "Parthenium hysterophorus, a plant used to create biowash",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen causing collar rot in chickpea",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. CICERI",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen causing wilt in chickpea, abbreviated as FOC",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "MACROPHOMINA PHASEOLINA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen causing charcoal rot in sorghum",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A crop susceptible to Sclerotium rolfsii and Fusarium oxysporum f. sp. ciceri",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A crop susceptible to Macrophomina phaseolina",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "BIOWASH",
+      "type": "CONCEPT",
+      "description": "Washings from vermicompost of plant foliage used to control plant pathogens",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "VERMICOMPOST",
+      "type": "CONCEPT",
+      "description": "Decomposed organic matter used to prepare biowash",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "ETHYL ACETATE",
+      "type": "CONCEPT",
+      "description": "A solvent used for partitioning biowash",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "C18 SOLID PHASE EXTRACTION",
+      "type": "METHOD",
+      "description": "A method used to fractionate biowash",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "METHANOL",
+      "type": "CONCEPT",
+      "description": "A solvent used in chromatography, abbreviated as MeOH",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "SILICA GEL 60 F254 TLC",
+      "type": "METHOD",
+      "description": "A thin layer chromatography method used to separate compounds",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "GROWTH INHIBITION",
+      "type": "CONCEPT",
+      "description": "The suppression of fungal growth",
+      "source_id": "paper_40"
+    },
+    {
+      "name": "SECONDARY METABOLITES",
+      "type": "CONCEPT",
+      "description": "Chemical compounds produced by plants",
+      "source_id": "paper_40"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PREPARATION",
+      "target": "VERMICOMPOST",
+      "description": "BIOWASH",
+      "weight": "Biowash is prepared from vermicompost",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "SOURCE",
+      "target": "JATROPHA",
+      "description": "BIOWASH",
+      "weight": "Biowash is derived from Jatropha foliage",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "SOURCE",
+      "target": "ANNONA",
+      "description": "BIOWASH",
+      "weight": "Biowash is derived from Annona foliage",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "SOURCE",
+      "target": "PARTHENIUM",
+      "description": "BIOWASH",
+      "weight": "Biowash is derived from Parthenium foliage",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "TARGET",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "BIOWASH",
+      "weight": "Biowash inhibits Sclerotium rolfsii",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "TARGET",
+      "target": "FUSARIUM OXYSPORUM F. SP. CICERI",
+      "description": "BIOWASH",
+      "weight": "Biowash inhibits Fusarium oxysporum f. sp. ciceri",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "TARGET",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "BIOWASH",
+      "weight": "Biowash inhibits Macrophomina phaseolina",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "PATHOGEN",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "CHICKPEA",
+      "weight": "Sclerotium rolfsii is a pathogen of chickpea",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "PATHOGEN",
+      "target": "FUSARIUM OXYSPORUM F. SP. CICERI",
+      "description": "CHICKPEA",
+      "weight": "Fusarium oxysporum f. sp. ciceri is a pathogen of chickpea",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "PATHOGEN",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "SORGHUM",
+      "weight": "Macrophomina phaseolina is a pathogen of sorghum",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "FRACTIONATION",
+      "target": "BIOWASH",
+      "description": "ETHYL ACETATE",
+      "weight": "Biowash is partitioned using ethyl acetate",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "FRACTIONATION",
+      "target": "BIOWASH",
+      "description": "C18 SOLID PHASE EXTRACTION",
+      "weight": "Biowash is fractionated using C18 solid phase extraction",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "INHIBITION",
+      "target": "JATROPHA BIOWASH",
+      "description": "SCLEROTIUM ROLFSII",
+      "weight": "Jatropha biowash inhibits Sclerotium rolfsii",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "INHIBITION",
+      "target": "PARTHENIUM BIOWASH",
+      "description": "FUSARIUM OXYSPORUM F. SP. CICERI",
+      "weight": "Parthenium biowash inhibits Fusarium oxysporum f. sp. ciceri",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "PURIFICATION",
+      "target": "JATROPHA BIOWASH",
+      "description": "SECONDARY METABOLITES",
+      "weight": "Jatropha biowash is purified to obtain secondary metabolites",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "FRACTIONATION",
+      "target": "JATROPHA BIOWASH",
+      "description": "METHANOL",
+      "weight": "Jatropha biowash is fractionated using methanol",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "SEPARATION",
+      "target": "METHANOL FRACTION",
+      "description": "SILICA GEL 60 F254 TLC",
+      "weight": "Methanol fraction is separated using Silica Gel 60 F254 TLC",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "INHIBITION",
+      "target": "80% METHANOL FRACTION",
+      "description": "SCLEROTIUM ROLFSII",
+      "weight": "80% methanol fraction inhibits Sclerotium rolfsii",
+      "source_id": "paper_40"
+    },
+    {
+      "source": "ACTIVITY",
+      "target": "SILICA GEL 60 F254 TLC BANDS",
+      "description": "SCLEROTIUM ROLFSII",
+      "weight": "Bands on TLC inhibit Sclerotium rolfsii",
+      "source_id": "paper_40"
+    }
+  ]
+}

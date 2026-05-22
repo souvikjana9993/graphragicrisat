@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal crop whose grain yield can be affected by temperature extremes during flowering.",
+      "source_id": "paper_87"
+    },
+    {
+      "name": "EXTREME TEMPERATURES",
+      "type": "CONDITION",
+      "description": "Abnormally high or low temperatures that can impact crop development and yield.",
+      "source_id": "paper_87"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of grain production per unit area of the farm.",
+      "source_id": "paper_87"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "CONCEPT",
+      "description": "The phenological stage of the wheat crop sensitive to temperature extremes.",
+      "source_id": "paper_87"
+    },
+    {
+      "name": "ZONING",
+      "type": "METHOD",
+      "description": "The process of dividing a farm area into distinct zones based on temperature risk.",
+      "source_id": "paper_87"
+    },
+    {
+      "name": "SOUTHERN MALLEE, VICTORIA, AUSTRALIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the farm-scale study was conducted.",
+      "source_id": "paper_87"
+    },
+    {
+      "name": "DATA LOGGERS",
+      "type": "METHOD",
+      "description": "Devices used to spatially record daily temperature courses at a specific height.",
+      "source_id": "paper_87"
+    },
+    {
+      "name": "ZONING ALGORITHMS",
+      "type": "METHOD",
+      "description": "Computational procedures used to categorize the farm into different temperature zones.",
+      "source_id": "paper_87"
+    },
+    {
+      "name": "SPATIAL INTERPOLATION",
+      "type": "METHOD",
+      "description": "A technique used to produce maps of temperature zones from recorded data points.",
+      "source_id": "paper_87"
+    },
+    {
+      "name": "ARCVIEW 3.2",
+      "type": "METHOD",
+      "description": "GIS software used to perform spatial interpolation and generate temperature maps.",
+      "source_id": "paper_87"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "EXTREME TEMPERATURES",
+      "target": "GRAIN YIELD",
+      "description": "can reduce",
+      "weight": "8",
+      "source_id": "paper_87"
+    },
+    {
+      "source": "EXTREME TEMPERATURES",
+      "target": "FLOWERING",
+      "description": "occur around the time of",
+      "weight": "7",
+      "source_id": "paper_87"
+    },
+    {
+      "source": "WHEAT",
+      "target": "FLOWERING",
+      "description": "undergoes",
+      "weight": "9",
+      "source_id": "paper_87"
+    },
+    {
+      "source": "WHEAT",
+      "target": "GRAIN YIELD",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_87"
+    },
+    {
+      "source": "ZONING",
+      "target": "EXTREME TEMPERATURES",
+      "description": "identifies areas at high risk of",
+      "weight": "8",
+      "source_id": "paper_87"
+    },
+    {
+      "source": "ZONING",
+      "target": "SOUTHERN MALLEE, VICTORIA, AUSTRALIA",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_87"
+    },
+    {
+      "source": "DATA LOGGERS",
+      "target": "EXTREME TEMPERATURES",
+      "description": "record the course of",
+      "weight": "9",
+      "source_id": "paper_87"
+    },
+    {
+      "source": "ZONING ALGORITHMS",
+      "target": "ZONING",
+      "description": "applied to perform",
+      "weight": "9",
+      "source_id": "paper_87"
+    },
+    {
+      "source": "SPATIAL INTERPOLATION",
+      "target": "ZONING",
+      "description": "used to produce maps for",
+      "weight": "8",
+      "source_id": "paper_87"
+    },
+    {
+      "source": "ARCVIEW 3.2",
+      "target": "SPATIAL INTERPOLATION",
+      "description": "used to perform",
+      "weight": "9",
+      "source_id": "paper_87"
+    }
+  ]
+}

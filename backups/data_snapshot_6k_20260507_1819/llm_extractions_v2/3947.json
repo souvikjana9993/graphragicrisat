@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Lowland, wetland, or paddy rice cultivated in submerged soils",
+      "source_id": "paper_3947"
+    },
+    {
+      "name": "SUBMERGED SOILS",
+      "type": "CONDITION",
+      "description": "Soils that are under water, typical for wetland rice",
+      "source_id": "paper_3947"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "The continent where wetland rice cultivation has been practiced for centuries",
+      "source_id": "paper_3947"
+    },
+    {
+      "name": "FLOODING",
+      "type": "CONDITION",
+      "description": "The state of land being covered with water, often during the monsoon season",
+      "source_id": "paper_3947"
+    },
+    {
+      "name": "MONSOON SEASON",
+      "type": "CONDITION",
+      "description": "The wet season characterized by heavy rains",
+      "source_id": "paper_3947"
+    },
+    {
+      "name": "LOW-LYING LANDS",
+      "type": "CONCEPT",
+      "description": "Areas of land that are at or near sea level or prone to flooding",
+      "source_id": "paper_3947"
+    },
+    {
+      "name": "VALLEY BOTTOMS",
+      "type": "LOCATION",
+      "description": "The lowest part of a valley, often submerged during rains",
+      "source_id": "paper_3947"
+    },
+    {
+      "name": "INLAND VALLEY SYSTEMS",
+      "type": "LOCATION",
+      "description": "Geographic systems containing valley bottoms",
+      "source_id": "paper_3947"
+    },
+    {
+      "name": "INDO-GANGETIC PLAINS",
+      "type": "LOCATION",
+      "description": "A large plain in South Asia suited for wetland rice",
+      "source_id": "paper_3947"
+    },
+    {
+      "name": "WETLAND RICE CULTIVATION",
+      "type": "METHOD",
+      "description": "The practice of growing rice in flooded or submerged soils",
+      "source_id": "paper_3947"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WETLAND RICE CULTIVATION",
+      "target": "RICE",
+      "description": "is the method used to grow",
+      "weight": "10",
+      "source_id": "paper_3947"
+    },
+    {
+      "source": "WETLAND RICE CULTIVATION",
+      "target": "ASIA",
+      "description": "is practiced in",
+      "weight": "9",
+      "source_id": "paper_3947"
+    },
+    {
+      "source": "WETLAND RICE CULTIVATION",
+      "target": "SUBMERGED SOILS",
+      "description": "is practiced in",
+      "weight": "10",
+      "source_id": "paper_3947"
+    },
+    {
+      "source": "WETLAND RICE CULTIVATION",
+      "target": "FLOODING",
+      "description": "is targeted at lands prone to",
+      "weight": "9",
+      "source_id": "paper_3947"
+    },
+    {
+      "source": "WETLAND RICE CULTIVATION",
+      "target": "LOW-LYING LANDS",
+      "description": "is most suited for",
+      "weight": "8",
+      "source_id": "paper_3947"
+    },
+    {
+      "source": "LOW-LYING LANDS",
+      "target": "VALLEY BOTTOMS",
+      "description": "includes",
+      "weight": "7",
+      "source_id": "paper_3947"
+    },
+    {
+      "source": "LOW-LYING LANDS",
+      "target": "INDO-GANGETIC PLAINS",
+      "description": "includes",
+      "weight": "7",
+      "source_id": "paper_3947"
+    },
+    {
+      "source": "VALLEY BOTTOMS",
+      "target": "INLAND VALLEY SYSTEMS",
+      "description": "are found within",
+      "weight": "8",
+      "source_id": "paper_3947"
+    },
+    {
+      "source": "FLOODING",
+      "target": "MONSOON SEASON",
+      "description": "occurs during",
+      "weight": "9",
+      "source_id": "paper_3947"
+    },
+    {
+      "source": "RICE",
+      "target": "FLOODING",
+      "description": "takes advantage of benefits associated with",
+      "weight": "8",
+      "source_id": "paper_3947"
+    }
+  ]
+}

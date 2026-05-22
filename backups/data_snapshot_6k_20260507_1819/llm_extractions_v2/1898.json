@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal grain that has transitioned from a food security crop to a commercial crop in Botswana",
+      "source_id": "paper_1898"
+    },
+    {
+      "name": "BOTSWANA",
+      "type": "LOCATION",
+      "description": "The country where commercial sorghum processing has grown rapidly",
+      "source_id": "paper_1898"
+    },
+    {
+      "name": "SORGHUM MILLING",
+      "type": "METHOD",
+      "description": "The commercial processing of sorghum grain, involving small- and medium-scale mills",
+      "source_id": "paper_1898"
+    },
+    {
+      "name": "FOOD SECURITY CROP",
+      "type": "CONCEPT",
+      "description": "A crop primarily consumed in rural areas to ensure basic food availability",
+      "source_id": "paper_1898"
+    },
+    {
+      "name": "COMMERCIAL CROP",
+      "type": "CONCEPT",
+      "description": "A crop produced for sale and profit in urban markets",
+      "source_id": "paper_1898"
+    },
+    {
+      "name": "URBAN FOOD MARKET",
+      "type": "CONCEPT",
+      "description": "The commercial marketplace in cities where food products are sold",
+      "source_id": "paper_1898"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM MILLING",
+      "target": "BOTSWANA",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_1898"
+    },
+    {
+      "source": "SORGHUM MILLING",
+      "target": "SORGHUM",
+      "description": "processes",
+      "weight": "10",
+      "source_id": "paper_1898"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "FOOD SECURITY CROP",
+      "description": "was previously categorized as",
+      "weight": "9",
+      "source_id": "paper_1898"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "COMMERCIAL CROP",
+      "description": "is now categorized as",
+      "weight": "9",
+      "source_id": "paper_1898"
+    },
+    {
+      "source": "COMMERCIAL CROP",
+      "target": "URBAN FOOD MARKET",
+      "description": "competes in",
+      "weight": "9",
+      "source_id": "paper_1898"
+    },
+    {
+      "source": "SORGHUM MILLING",
+      "target": "COMMERCIAL CROP",
+      "description": "facilitates the transition of sorghum to",
+      "weight": "8",
+      "source_id": "paper_1898"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "The practice of cultivating land and rearing livestock.",
+      "source_id": "paper_52"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "A country in southeastern Africa.",
+      "source_id": "paper_52"
+    },
+    {
+      "name": "LABOR FORCE",
+      "type": "CONCEPT",
+      "description": "The people available for work.",
+      "source_id": "paper_52"
+    },
+    {
+      "name": "GDP",
+      "type": "CONCEPT",
+      "description": "Gross Domestic Product, a measure of economic activity.",
+      "source_id": "paper_52"
+    },
+    {
+      "name": "FOREIGN EXCHANGE",
+      "type": "CONCEPT",
+      "description": "Currency used in international trade.",
+      "source_id": "paper_52"
+    },
+    {
+      "name": "ESTATES",
+      "type": "ORGANISM",
+      "description": "Large-scale farms, typically owned by companies or individuals.",
+      "source_id": "paper_52"
+    },
+    {
+      "name": "SMALLHOLDER FARMERS",
+      "type": "ORGANISM",
+      "description": "Farmers who cultivate small plots of land, typically for subsistence and local markets.",
+      "source_id": "paper_52"
+    },
+    {
+      "name": "AGRICULTURAL OUTPUT",
+      "type": "CONCEPT",
+      "description": "The total amount of agricultural products produced.",
+      "source_id": "paper_52"
+    },
+    {
+      "name": "CULTIVATED LAND",
+      "type": "CONCEPT",
+      "description": "Land used for growing crops.",
+      "source_id": "paper_52"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "EMPLOYS",
+      "target": "AGRICULTURE",
+      "description": "LABOR FORCE",
+      "weight": "Agriculture utilizes the labor force.",
+      "source_id": "paper_52"
+    },
+    {
+      "source": "ACCOUNTS_FOR",
+      "target": "AGRICULTURE",
+      "description": "GDP",
+      "weight": "Agriculture contributes to the GDP.",
+      "source_id": "paper_52"
+    },
+    {
+      "source": "ACCOUNTS_FOR",
+      "target": "AGRICULTURE",
+      "description": "FOREIGN EXCHANGE",
+      "weight": "Agriculture contributes to foreign exchange earnings.",
+      "source_id": "paper_52"
+    },
+    {
+      "source": "SUBDIVIDED_INTO",
+      "target": "AGRICULTURE",
+      "description": "ESTATES",
+      "weight": "Agriculture is divided into estates.",
+      "source_id": "paper_52"
+    },
+    {
+      "source": "SUBDIVIDED_INTO",
+      "target": "AGRICULTURE",
+      "description": "SMALLHOLDER FARMERS",
+      "weight": "Agriculture is divided into smallholder farmers.",
+      "source_id": "paper_52"
+    },
+    {
+      "source": "ACCOUNTS_FOR",
+      "target": "SMALLHOLDER FARMERS",
+      "description": "AGRICULTURAL OUTPUT",
+      "weight": "Smallholder farmers contribute to agricultural output.",
+      "source_id": "paper_52"
+    },
+    {
+      "source": "ACCOUNTS_FOR",
+      "target": "SMALLHOLDER FARMERS",
+      "description": "CULTIVATED LAND",
+      "weight": "Smallholder farmers account for the majority of cultivated land.",
+      "source_id": "paper_52"
+    }
+  ]
+}

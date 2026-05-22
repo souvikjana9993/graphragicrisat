@@ -1,0 +1,242 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Maize germplasm representing temperate, tropical and subtropical regions used in the study",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental stress that delays developmental events and reduces plant height and biomass",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A secondary trait used as a criterion for drought tolerance in maize",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "Above-ground biomass measured by NDVI, used as a secondary trait for drought tolerance",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural output of maize, which is reduced due to inadequate photosynthate under drought",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of maize to maintain growth and yield under water-stressed conditions",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used to measure biomass at different stages",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "SNP",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphism markers used for genotyping and LD mapping",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "HAPLOTYPE",
+      "type": "GENE_MARKER",
+      "description": "A combination of two or more SNPs used for linkage disequilibrium or association mapping",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "LD MAPPING",
+      "type": "METHOD",
+      "description": "Linkage disequilibrium mapping used to identify QTLs for plant height and biomass",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "ASSOCIATION MAPPING",
+      "type": "METHOD",
+      "description": "A genetic mapping method used to identify associations between markers and traits",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "QTL",
+      "type": "CONCEPT",
+      "description": "Quantitative trait loci identified for plant height and biomass",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "WELL-WATERED",
+      "type": "CONDITION",
+      "description": "A water regime used as a control condition for measuring plant traits",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "WATER-STRESSED",
+      "type": "CONDITION",
+      "description": "A water regime used to evaluate drought tolerance and identify QTLs",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "CHROMOSOMAL REGIONS",
+      "type": "CONCEPT",
+      "description": "Genomic areas defined by haplotype loci",
+      "source_id": "paper_5514"
+    },
+    {
+      "name": "PHENOTYPIC VARIATION",
+      "type": "CONCEPT",
+      "description": "The observable variation in traits explained by SNP and haplotype loci",
+      "source_id": "paper_5514"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "DROUGHT",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "PLANT HEIGHT",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "BIOMASS",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "YIELD",
+      "description": "causes loss in",
+      "weight": "10",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "PLANT HEIGHT",
+      "target": "DROUGHT TOLERANCE",
+      "description": "secondary trait for",
+      "weight": "9",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "BIOMASS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "secondary trait for",
+      "weight": "9",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "NDVI",
+      "target": "BIOMASS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "SNP",
+      "target": "LD MAPPING",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "HAPLOTYPE",
+      "target": "LD MAPPING",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "LD MAPPING",
+      "target": "QTL",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "ASSOCIATION MAPPING",
+      "target": "QTL",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "QTL",
+      "target": "PLANT HEIGHT",
+      "description": "associated with",
+      "weight": "10",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "QTL",
+      "target": "BIOMASS",
+      "description": "associated with",
+      "weight": "10",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "PLANT HEIGHT",
+      "target": "WELL-WATERED",
+      "description": "measured under",
+      "weight": "7",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "PLANT HEIGHT",
+      "target": "WATER-STRESSED",
+      "description": "measured under",
+      "weight": "7",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "BIOMASS",
+      "target": "WELL-WATERED",
+      "description": "measured under",
+      "weight": "7",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "BIOMASS",
+      "target": "WATER-STRESSED",
+      "description": "measured under",
+      "weight": "7",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "HAPLOTYPE",
+      "target": "CHROMOSOMAL REGIONS",
+      "description": "defines",
+      "weight": "8",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "SNP",
+      "target": "PHENOTYPIC VARIATION",
+      "description": "explains",
+      "weight": "7",
+      "source_id": "paper_5514"
+    },
+    {
+      "source": "HAPLOTYPE",
+      "target": "PHENOTYPIC VARIATION",
+      "description": "explains",
+      "weight": "9",
+      "source_id": "paper_5514"
+    }
+  ]
+}

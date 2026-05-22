@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cultivated pigeonpea (Cajanus cajan) which is susceptible to pod borer and pod fly",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "POD BORER",
+      "type": "ORGANISM",
+      "description": "Helicoverpa armigera, a pest causing high yield losses in pigeonpea",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "POD FLY",
+      "type": "ORGANISM",
+      "description": "Melanagromyza obtusa, a pest causing yield losses in pigeonpea",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "RESISTANCE TO POD BORER",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand or repel attack by Helicoverpa armigera",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "ANTIXENOSIS",
+      "type": "CONCEPT",
+      "description": "A resistance mechanism where the plant is less attractive to the pest",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "ANTIBIOSIS",
+      "type": "CONCEPT",
+      "description": "A resistance mechanism where the plant adversely affects the biology of the pest",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "CAJANUS SCARABAEOIDES",
+      "type": "CROP",
+      "description": "A wild Cajanus species used as a pollen donor for pod borer resistance",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "CAJANUS ACUTIFOLIUS",
+      "type": "CROP",
+      "description": "A wild Cajanus species used as a pollen donor for pod borer resistance",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "PRE-BREEDING",
+      "type": "METHOD",
+      "description": "The process of introducing wild traits into cultivated varieties through crossing",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "SIMPLE-CROSS APPROACH",
+      "type": "METHOD",
+      "description": "A breeding method involving a straightforward cross between two parents",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "COMPLEX-CROSS APPROACH",
+      "type": "METHOD",
+      "description": "A breeding method involving multiple or intricate crossing schemes",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "BACKCROSS",
+      "type": "METHOD",
+      "description": "A breeding method where a hybrid is crossed with one of its parents",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "INTROGRESSION LINES",
+      "type": "CONCEPT",
+      "description": "Lines produced by backcrossing to transfer specific traits from a wild donor to a recipient",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "UN-SPRAYED FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "Field environments where no pesticides are applied to evaluate natural resistance",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "VISUAL DAMAGE RATING SCORES",
+      "type": "METHOD",
+      "description": "A method of assessing pest damage based on visual observation and scoring",
+      "source_id": "paper_12318"
+    },
+    {
+      "name": "POD BORER DAMAGE",
+      "type": "TRAIT",
+      "description": "The extent of damage caused by Helicoverpa armigera on the pods",
+      "source_id": "paper_12318"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POD BORER",
+      "target": "PIGEONPEA",
+      "description": "causes yield losses in",
+      "weight": "10",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "POD FLY",
+      "target": "PIGEONPEA",
+      "description": "causes yield losses in",
+      "weight": "8",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "RESISTANCE TO POD BORER",
+      "description": "lacks high levels of",
+      "weight": "9",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "CAJANUS SCARABAEOIDES",
+      "target": "RESISTANCE TO POD BORER",
+      "description": "possesses strong",
+      "weight": "10",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "CAJANUS ACUTIFOLIUS",
+      "target": "RESISTANCE TO POD BORER",
+      "description": "possesses strong",
+      "weight": "10",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "RESISTANCE TO POD BORER",
+      "target": "ANTIXENOSIS",
+      "description": "is mediated by",
+      "weight": "8",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "RESISTANCE TO POD BORER",
+      "target": "ANTIBIOSIS",
+      "description": "is mediated by",
+      "weight": "8",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "PRE-BREEDING",
+      "target": "RESISTANCE TO POD BORER",
+      "description": "is used to improve",
+      "weight": "9",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "PRE-BREEDING",
+      "target": "SIMPLE-CROSS APPROACH",
+      "description": "utilizes",
+      "weight": "7",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "PRE-BREEDING",
+      "target": "COMPLEX-CROSS APPROACH",
+      "description": "utilizes",
+      "weight": "7",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "PRE-BREEDING",
+      "target": "BACKCROSS",
+      "description": "utilizes",
+      "weight": "7",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "BACKCROSS",
+      "target": "INTROGRESSION LINES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "INTROGRESSION LINES",
+      "target": "UN-SPRAYED FIELD CONDITIONS",
+      "description": "evaluated under",
+      "weight": "9",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "INTROGRESSION LINES",
+      "target": "VISUAL DAMAGE RATING SCORES",
+      "description": "assessed by",
+      "weight": "8",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "INTROGRESSION LINES",
+      "target": "RESISTANCE TO POD BORER",
+      "description": "exhibit improved",
+      "weight": "9",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "CAJANUS SCARABAEOIDES",
+      "target": "PIGEONPEA",
+      "description": "used as pollen donor for",
+      "weight": "10",
+      "source_id": "paper_12318"
+    },
+    {
+      "source": "CAJANUS ACUTIFOLIUS",
+      "target": "PIGEONPEA",
+      "description": "used as pollen donor for",
+      "weight": "10",
+      "source_id": "paper_12318"
+    }
+  ]
+}

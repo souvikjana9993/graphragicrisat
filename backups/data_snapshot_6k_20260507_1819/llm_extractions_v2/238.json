@@ -1,0 +1,293 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A legume crop studied for production optimization in tropical environments",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "CSM-CROPGRO-SOYBEAN",
+      "type": "METHOD",
+      "description": "A dynamic crop simulation model used to estimate yield and evaluate management practices for soybean",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of soybean production used to determine optimum management strategies",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "TROPICS",
+      "type": "LOCATION",
+      "description": "The general climatic region where soybean production strategies are being planned",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "PHU PHA MAN DISTRICT",
+      "type": "LOCATION",
+      "description": "A specific location in Thailand used for model evaluation and simulation of soybean management",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "THAILAND",
+      "type": "LOCATION",
+      "description": "The country where the soybean experiments and model application took place",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "CHIANG MAI UNIVERSITY",
+      "type": "LOCATION",
+      "description": "An institution where soybean experiments were conducted to determine cultivar coefficients and evaluate the model",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "KHON KAEN UNIVERSITY",
+      "type": "LOCATION",
+      "description": "An institution where soybean experiments were conducted to determine cultivar coefficients",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "CULTIVAR COEFFICIENTS",
+      "type": "CONCEPT",
+      "description": "Model parameters specific to soybean cultivars used to simulate growth and development",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "CM 60",
+      "type": "CONCEPT",
+      "description": "A specific soybean cultivar used to determine cultivar coefficients",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "SJ 5",
+      "type": "CONCEPT",
+      "description": "A specific soybean cultivar used to determine cultivar coefficients",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "SOIL PROPERTIES",
+      "type": "CONDITION",
+      "description": "Information about soil series used as input for the CSM-CROPGRO-SOYBEAN model",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "WEATHER DATA",
+      "type": "CONDITION",
+      "description": "Historical climatic information used as input for the CSM-CROPGRO-SOYBEAN model",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "PHENOLOGY",
+      "type": "TRAIT",
+      "description": "The timing of growth stages in soybean, used to evaluate model performance",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development of soybean plants, used to evaluate model performance",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "PLANTING DATE",
+      "type": "METHOD",
+      "description": "A management practice evaluated to maximize soybean yield",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "RAINFED ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "A growing condition where water is supplied only by precipitation",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "QUALITY IRRIGATION",
+      "type": "CONDITION",
+      "description": "A growing condition where water is supplied via controlled irrigation systems",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONDITION",
+      "description": "A nutrient applied at planting to improve soybean yield",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "PLANT DENSITY",
+      "type": "METHOD",
+      "description": "The number of plants per unit area, evaluated for its effect on soybean yield",
+      "source_id": "paper_238"
+    },
+    {
+      "name": "SOUTHEAST ASIA",
+      "type": "LOCATION",
+      "description": "The broader geographic region where the CSM-CROPGRO-SOYBEAN model may be applicable",
+      "source_id": "paper_238"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CSM-CROPGRO-SOYBEAN",
+      "target": "SOYBEAN",
+      "description": "simulates growth and yield of",
+      "weight": "10",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "CSM-CROPGRO-SOYBEAN",
+      "target": "YIELD",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "CSM-CROPGRO-SOYBEAN",
+      "target": "PHENOLOGY",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "CSM-CROPGRO-SOYBEAN",
+      "target": "GROWTH",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "CSM-CROPGRO-SOYBEAN",
+      "target": "PHU PHA MAN DISTRICT",
+      "description": "applied to determine management strategies in",
+      "weight": "8",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "PHU PHA MAN DISTRICT",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "PHU PHA MAN DISTRICT",
+      "target": "THAILAND",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "THAILAND",
+      "target": "SOUTHEAST ASIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "CULTIVAR COEFFICIENTS",
+      "target": "CSM-CROPGRO-SOYBEAN",
+      "description": "used as parameters in",
+      "weight": "9",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "CM 60",
+      "target": "CULTIVAR COEFFICIENTS",
+      "description": "used to determine",
+      "weight": "8",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "SJ 5",
+      "target": "CULTIVAR COEFFICIENTS",
+      "description": "used to determine",
+      "weight": "8",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "CM 60",
+      "target": "SOYBEAN",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "SJ 5",
+      "target": "SOYBEAN",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "SOIL PROPERTIES",
+      "target": "CSM-CROPGRO-SOYBEAN",
+      "description": "used as input for",
+      "weight": "8",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "WEATHER DATA",
+      "target": "CSM-CROPGRO-SOYBEAN",
+      "description": "used as input for",
+      "weight": "8",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "RAINFED ENVIRONMENT",
+      "target": "PLANTING DATE",
+      "description": "influences optimum",
+      "weight": "7",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "QUALITY IRRIGATION",
+      "target": "PLANTING DATE",
+      "description": "influences optimum",
+      "weight": "7",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "YIELD",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "PLANT DENSITY",
+      "target": "YIELD",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "CHIANG MAI UNIVERSITY",
+      "target": "SOYBEAN",
+      "description": "site of experiments for",
+      "weight": "7",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "KHON KAEN UNIVERSITY",
+      "target": "SOYBEAN",
+      "description": "site of experiments for",
+      "weight": "7",
+      "source_id": "paper_238"
+    },
+    {
+      "source": "TROPICS",
+      "target": "SOYBEAN",
+      "description": "environment for production",
+      "weight": "8",
+      "source_id": "paper_238"
+    }
+  ]
+}

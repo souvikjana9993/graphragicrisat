@@ -1,0 +1,332 @@
+{
+  "entities": [
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "Agricultural plants used for food or industrial purposes",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "PLANTS",
+      "type": "ORGANISM",
+      "description": "Multicellular eukaryotes in the kingdom Plantae",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress caused by lack of water",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress caused by high temperatures",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Non-living environmental factors that negatively impact plants",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "GLOBAL CLIMATE DRIFT",
+      "type": "CONDITION",
+      "description": "Long-term changes in global climate patterns",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "The process of increasing in size or development of a plant",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of agricultural yield or output",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to survive and produce under water-deficit conditions",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "HEAT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to survive and produce under high-temperature conditions",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "TRANSGENIC TECHNOLOGIES",
+      "type": "METHOD",
+      "description": "Techniques used to introduce foreign genes into an organism",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "RECOMBINANT TECHNOLOGIES",
+      "type": "METHOD",
+      "description": "Techniques used to combine DNA from different sources",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "HOMEOSTASIS",
+      "type": "CONCEPT",
+      "description": "The maintenance of a stable internal environment",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "PROTEINS",
+      "type": "CONCEPT",
+      "description": "Large biomolecules that perform various structural and functional roles in cells",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "PROTEIN KINASES",
+      "type": "CONCEPT",
+      "description": "Enzymes that modify other proteins by adding phosphate groups",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "PHOSPHATASES",
+      "type": "CONCEPT",
+      "description": "Enzymes that remove phosphate groups from proteins",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "TRANSCRIPTION FACTORS",
+      "type": "CONCEPT",
+      "description": "Proteins that regulate the transcription of genes",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "LATE EMBRYOGENESIS ABUNDANT PROTEINS",
+      "type": "CONCEPT",
+      "description": "Proteins that protect cells from desiccation during seed maturation and stress",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "DEHYDRINS",
+      "type": "CONCEPT",
+      "description": "Proteins that help plants tolerate dehydration",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "OSMOTINS",
+      "type": "CONCEPT",
+      "description": "Proteins involved in response to osmotic stress",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "HEAT SHOCK PROTEINS",
+      "type": "CONCEPT",
+      "description": "Proteins that assist in the folding of other proteins under heat stress",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "STRESS SENSORS",
+      "type": "CONCEPT",
+      "description": "Proteins that detect environmental stress signals",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "RECEPTORS",
+      "type": "CONCEPT",
+      "description": "Proteins that receive chemical signals from the environment",
+      "source_id": "paper_11175"
+    },
+    {
+      "name": "CHAPERONES",
+      "type": "CONCEPT",
+      "description": "Proteins that assist in the correct folding or unfolding of other proteins",
+      "source_id": "paper_11175"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT STRESS",
+      "target": "PLANT GROWTH",
+      "description": "limits",
+      "weight": "9",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "PLANT GROWTH",
+      "description": "limits",
+      "weight": "9",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "PRODUCTIVITY",
+      "description": "limits",
+      "weight": "9",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "PRODUCTIVITY",
+      "description": "limits",
+      "weight": "9",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "DROUGHT STRESS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "HEAT STRESS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "PROTEINS",
+      "target": "DROUGHT STRESS",
+      "description": "respond to",
+      "weight": "8",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "PROTEINS",
+      "target": "HEAT STRESS",
+      "description": "respond to",
+      "weight": "8",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "PROTEIN KINASES",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "PHOSPHATASES",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "TRANSCRIPTION FACTORS",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "LATE EMBRYOGENESIS ABUNDANT PROTEINS",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "DEHYDRINS",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "OSMOTINS",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "HEAT SHOCK PROTEINS",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "STRESS SENSORS",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "RECEPTORS",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "CHAPERONES",
+      "target": "PROTEINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "PROTEINS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "imparts",
+      "weight": "8",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "PROTEINS",
+      "target": "HEAT TOLERANCE",
+      "description": "imparts",
+      "weight": "8",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "TRANSGENIC TECHNOLOGIES",
+      "target": "DROUGHT TOLERANCE",
+      "description": "used to produce",
+      "weight": "7",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "TRANSGENIC TECHNOLOGIES",
+      "target": "HEAT TOLERANCE",
+      "description": "used to produce",
+      "weight": "7",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "RECOMBINANT TECHNOLOGIES",
+      "target": "DROUGHT TOLERANCE",
+      "description": "used to produce",
+      "weight": "7",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "RECOMBINANT TECHNOLOGIES",
+      "target": "HEAT TOLERANCE",
+      "description": "used to produce",
+      "weight": "7",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "CROPS",
+      "target": "PLANTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11175"
+    },
+    {
+      "source": "PROTEINS",
+      "target": "CROPS",
+      "description": "augment stress tolerance in",
+      "weight": "8",
+      "source_id": "paper_11175"
+    }
+  ]
+}

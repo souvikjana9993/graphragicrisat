@@ -1,0 +1,215 @@
+{
+  "entities": [
+    {
+      "name": "FIELD PEAS",
+      "type": "CROP",
+      "description": "An important pulse crop in Australia, Pisum sativum",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "AUSTRALIA",
+      "type": "LOCATION",
+      "description": "The country where field peas are an important pulse crop",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "DECORTICATION",
+      "type": "METHOD",
+      "description": "The process of removing the husk from seeds to produce splits",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "YIELD OF SPLITS",
+      "type": "TRAIT",
+      "description": "The amount of split seeds produced after decortication, an economic factor for processors",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "COOKING QUALITY",
+      "type": "TRAIT",
+      "description": "The quality of the crop after cooking, important for consumers",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "GENOTYPE",
+      "type": "CONCEPT",
+      "description": "The genetic makeup of the field pea varieties studied",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "PRETREATMENT",
+      "type": "METHOD",
+      "description": "The process of treating seeds in various solutions before processing",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "A physical characteristic of the seeds",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "HUSK CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of husk present in the seeds",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "BROKEN SEEDS",
+      "type": "TRAIT",
+      "description": "The amount of seeds that break during processing",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "SALT SOLUTIONS",
+      "type": "CONDITION",
+      "description": "Solutions used for preconditioning seeds to improve yield and reduce cooking time",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "SODIUM TRIPOLYPHOSPHATE",
+      "type": "CONDITION",
+      "description": "A specific salt solution used for presoaking",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "COOKING TIME",
+      "type": "TRAIT",
+      "description": "The time required to cook the seeds",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "PRESOAKING",
+      "type": "METHOD",
+      "description": "The process of soaking seeds in solutions before cooking",
+      "source_id": "paper_4273"
+    },
+    {
+      "name": "LOSS OF SEED MATERIAL",
+      "type": "TRAIT",
+      "description": "The amount of seed material lost into cooking water",
+      "source_id": "paper_4273"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FIELD PEAS",
+      "target": "AUSTRALIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "FIELD PEAS",
+      "target": "DECORTICATION",
+      "description": "processed by",
+      "weight": "9",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "DECORTICATION",
+      "target": "YIELD OF SPLITS",
+      "description": "determines",
+      "weight": "10",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "DECORTICATION",
+      "target": "COOKING QUALITY",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "YIELD OF SPLITS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "COOKING QUALITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "PRETREATMENT",
+      "target": "YIELD OF SPLITS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "PRETREATMENT",
+      "target": "COOKING QUALITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "SEED SIZE",
+      "target": "YIELD OF SPLITS",
+      "description": "positively correlated with",
+      "weight": "9",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "HUSK CONTENT",
+      "target": "YIELD OF SPLITS",
+      "description": "negatively correlated with",
+      "weight": "9",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "BROKEN SEEDS",
+      "target": "YIELD OF SPLITS",
+      "description": "negatively correlated with",
+      "weight": "9",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "SALT SOLUTIONS",
+      "target": "YIELD OF SPLITS",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "SALT SOLUTIONS",
+      "target": "COOKING TIME",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "SODIUM TRIPOLYPHOSPHATE",
+      "target": "COOKING TIME",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "PRESOAKING",
+      "target": "COOKING TIME",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "DECORTICATION",
+      "target": "COOKING TIME",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4273"
+    },
+    {
+      "source": "LOSS OF SEED MATERIAL",
+      "target": "COOKING TIME",
+      "description": "correlated with",
+      "weight": "8",
+      "source_id": "paper_4273"
+    }
+  ]
+}

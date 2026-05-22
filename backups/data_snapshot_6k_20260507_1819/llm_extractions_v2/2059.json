@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "HEADCAGE TECHNIQUE",
+      "type": "METHOD",
+      "description": "A standardized technique used to screen sorghum for resistance to the mirid head bug",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being screened for resistance to the mirid head bug",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum to withstand infestation by the mirid head bug",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "MIRID HEAD BUG",
+      "type": "ORGANISM",
+      "description": "Eurystylus immaculatus Odh., a pest that infests sorghum panicles",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The region where the headcage technique was standardized",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "HALF-ANTHESIS TO COMPLETE-ANTHESIS STAGE",
+      "type": "CONDITION",
+      "description": "The growth stage of panicles when infestation leads to maximum population build-up and grain damage",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "POPULATION BUILD-UP",
+      "type": "CONCEPT",
+      "description": "The increase in the number of mirid head bugs on the panicles",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "GRAIN DAMAGE",
+      "type": "TRAIT",
+      "description": "The physical harm caused to sorghum grains by the mirid head bug",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "LOSS IN GRAIN MASS",
+      "type": "TRAIT",
+      "description": "Reduction in the weight of grains due to infestation",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "GRAIN HARDNESS",
+      "type": "TRAIT",
+      "description": "The physical hardness of the grains, affected by infestation",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "SEED GERMINATION",
+      "type": "TRAIT",
+      "description": "The ability of seeds to sprout, which is reduced by infestation",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "GRAIN MOULD INCIDENCE",
+      "type": "CONDITION",
+      "description": "The occurrence of mould on grains, which increases with higher grain damage",
+      "source_id": "paper_2059"
+    },
+    {
+      "name": "PANICLE SIZE",
+      "type": "TRAIT",
+      "description": "The size of the sorghum panicle, which influences bug numbers and damage levels",
+      "source_id": "paper_2059"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HEADCAGE TECHNIQUE",
+      "target": "SORGHUM",
+      "description": "used to screen",
+      "weight": "10",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "HEADCAGE TECHNIQUE",
+      "target": "RESISTANCE",
+      "description": "used to screen for",
+      "weight": "10",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "MIRID HEAD BUG",
+      "description": "is the ability to withstand",
+      "weight": "10",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "MIRID HEAD BUG",
+      "target": "SORGHUM",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "HEADCAGE TECHNIQUE",
+      "target": "WEST AFRICA",
+      "description": "standardized for use in",
+      "weight": "8",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "HALF-ANTHESIS TO COMPLETE-ANTHESIS STAGE",
+      "target": "POPULATION BUILD-UP",
+      "description": "associated with greater",
+      "weight": "9",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "HALF-ANTHESIS TO COMPLETE-ANTHESIS STAGE",
+      "target": "GRAIN DAMAGE",
+      "description": "associated with maximum",
+      "weight": "9",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "MIRID HEAD BUG",
+      "target": "GRAIN DAMAGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "GRAIN DAMAGE",
+      "target": "LOSS IN GRAIN MASS",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "GRAIN DAMAGE",
+      "target": "GRAIN HARDNESS",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "GRAIN DAMAGE",
+      "target": "SEED GERMINATION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "GRAIN DAMAGE",
+      "target": "GRAIN MOULD INCIDENCE",
+      "description": "increases severity of",
+      "weight": "8",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "PANICLE SIZE",
+      "target": "POPULATION BUILD-UP",
+      "description": "positively correlates with",
+      "weight": "7",
+      "source_id": "paper_2059"
+    },
+    {
+      "source": "PANICLE SIZE",
+      "target": "GRAIN DAMAGE",
+      "description": "negatively correlates with",
+      "weight": "7",
+      "source_id": "paper_2059"
+    }
+  ]
+}

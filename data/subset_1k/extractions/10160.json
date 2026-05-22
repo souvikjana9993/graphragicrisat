@@ -1,0 +1,190 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop affected by dry root rot",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "DRY ROOT ROT",
+      "type": "CONDITION",
+      "description": "A soil-borne fungal disease causing significant yield losses in chickpea",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "A soil-borne fungal pathogen that causes dry root rot",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental factor tested at regimes from 15°C to 45°C to observe its effect on fungal growth and disease severity",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "MYCELIAL GROWTH",
+      "type": "TRAIT",
+      "description": "The growth of the fungal mycelium of Rhizoctonia bataticola",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "DRY ROOT ROT SEVERITY RATING",
+      "type": "TRAIT",
+      "description": "A metric used to quantify the severity of dry root rot",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "MADHYA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India from which R. bataticola isolates were sourced",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "KARNATAKA",
+      "type": "LOCATION",
+      "description": "A state in India from which R. bataticola isolates were sourced",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "MAHARASHTRA",
+      "type": "LOCATION",
+      "description": "A state in India from which R. bataticola isolates were sourced",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India from which R. bataticola isolates were sourced",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "A state in India from which R. bataticola isolates were sourced",
+      "source_id": "paper_10160"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study isolates were sourced",
+      "source_id": "paper_10160"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "DRY ROOT ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "RHIZOCTONIA BATATICOLA",
+      "description": "influences growth of",
+      "weight": "9",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DRY ROOT ROT SEVERITY RATING",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "MYCELIAL GROWTH",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "MADHYA PRADESH",
+      "description": "isolated from",
+      "weight": "7",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "KARNATAKA",
+      "description": "isolated from",
+      "weight": "7",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "MAHARASHTRA",
+      "description": "isolated from",
+      "weight": "7",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "ANDHRA PRADESH",
+      "description": "isolated from",
+      "weight": "7",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "TELANGANA",
+      "description": "isolated from",
+      "weight": "7",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "MADHYA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "KARNATAKA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "MAHARASHTRA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "TELANGANA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10160"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "DRY ROOT ROT SEVERITY RATING",
+      "description": "measured by",
+      "weight": "10",
+      "source_id": "paper_10160"
+    }
+  ]
+}

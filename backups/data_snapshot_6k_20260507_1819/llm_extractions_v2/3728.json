@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop being studied for resistance to Aspergillus flavus infection.",
+      "source_id": "paper_3728"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Water deficit imposed during late stages of pod maturation to evaluate seed infection.",
+      "source_id": "paper_3728"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes seed infection in peanuts.",
+      "source_id": "paper_3728"
+    },
+    {
+      "name": "SEED INFECTION",
+      "type": "TRAIT",
+      "description": "The extent of infection by Aspergillus flavus in peanut seeds.",
+      "source_id": "paper_3728"
+    },
+    {
+      "name": "RESISTANCE TO ASPERGILLUS FLAVUS",
+      "type": "TRAIT",
+      "description": "The genetic ability of peanut genotypes to resist infection by A. flavus.",
+      "source_id": "paper_3728"
+    },
+    {
+      "name": "LINE-SOURCE SPRINKLER IRRIGATION SYSTEM",
+      "type": "METHOD",
+      "description": "An irrigation system used to create a drought-stress gradient for screening.",
+      "source_id": "paper_3728"
+    },
+    {
+      "name": "FIELD SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating peanut genotypes for resistance to A. flavus under field conditions.",
+      "source_id": "paper_3728"
+    },
+    {
+      "name": "POD MATURATION",
+      "type": "CONCEPT",
+      "description": "The developmental stage of the peanut crop during which drought stress is applied.",
+      "source_id": "paper_3728"
+    },
+    {
+      "name": "POSTRAINY SEASON",
+      "type": "CONDITION",
+      "description": "The seasonal timing of the irrigated peanut crop growth.",
+      "source_id": "paper_3728"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT STRESS",
+      "target": "SEED INFECTION",
+      "description": "increases the amount of",
+      "weight": "9",
+      "source_id": "paper_3728"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "SEED INFECTION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3728"
+    },
+    {
+      "source": "LINE-SOURCE SPRINKLER IRRIGATION SYSTEM",
+      "target": "DROUGHT STRESS",
+      "description": "imposes a gradient of",
+      "weight": "10",
+      "source_id": "paper_3728"
+    },
+    {
+      "source": "LINE-SOURCE SPRINKLER IRRIGATION SYSTEM",
+      "target": "FIELD SCREENING",
+      "description": "is used for",
+      "weight": "9",
+      "source_id": "paper_3728"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "RESISTANCE TO ASPERGILLUS FLAVUS",
+      "description": "is used to evaluate",
+      "weight": "9",
+      "source_id": "paper_3728"
+    },
+    {
+      "source": "PEANUT",
+      "target": "SEED INFECTION",
+      "description": "is susceptible to",
+      "weight": "8",
+      "source_id": "paper_3728"
+    },
+    {
+      "source": "POD MATURATION",
+      "target": "DROUGHT STRESS",
+      "description": "is the stage when drought stress occurs",
+      "weight": "7",
+      "source_id": "paper_3728"
+    },
+    {
+      "source": "POSTRAINY SEASON",
+      "target": "PEANUT",
+      "description": "is the growth period for the crop",
+      "weight": "7",
+      "source_id": "paper_3728"
+    },
+    {
+      "source": "RESISTANCE TO ASPERGILLUS FLAVUS",
+      "target": "SEED INFECTION",
+      "description": "is characterized by low levels of",
+      "weight": "9",
+      "source_id": "paper_3728"
+    }
+  ]
+}

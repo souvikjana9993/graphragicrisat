@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop species being studied for disease resistance.",
+      "source_id": "paper_10543"
+    },
+    {
+      "name": "SHEATH ROT",
+      "type": "CONDITION",
+      "description": "An emerging disease affecting rice crops.",
+      "source_id": "paper_10543"
+    },
+    {
+      "name": "SAROCLADIUM ORYZAE",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes sheath rot in rice.",
+      "source_id": "paper_10543"
+    },
+    {
+      "name": "RWANDA",
+      "type": "LOCATION",
+      "description": "A country where sheath rot of rice is an important emerging disease.",
+      "source_id": "paper_10543"
+    },
+    {
+      "name": "SHEATH ROT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of rice cultivars to resist infection by Sarocladium oryzae.",
+      "source_id": "paper_10543"
+    },
+    {
+      "name": "SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphism markers used to analyze genetic diversity and identify parental materials.",
+      "source_id": "paper_10543"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The total number of genetic characteristics in the genetic makeup of a species or population.",
+      "source_id": "paper_10543"
+    },
+    {
+      "name": "UPGMA DENDROGRAM",
+      "type": "METHOD",
+      "description": "Unweighted Pair Group Method with Arithmetic Mean used to visualize genetic distances and group genotypes.",
+      "source_id": "paper_10543"
+    },
+    {
+      "name": "HYBRIDISATION",
+      "type": "METHOD",
+      "description": "The process of crossing genetically distant parental materials to improve resistance.",
+      "source_id": "paper_10543"
+    },
+    {
+      "name": "GENETIC DISTANCE",
+      "type": "CONCEPT",
+      "description": "A measure of the genetic divergence between different accessions or genotypes.",
+      "source_id": "paper_10543"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SAROCLADIUM ORYZAE",
+      "target": "SHEATH ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10543"
+    },
+    {
+      "source": "SHEATH ROT",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10543"
+    },
+    {
+      "source": "SHEATH ROT",
+      "target": "RWANDA",
+      "description": "is present in",
+      "weight": "8",
+      "source_id": "paper_10543"
+    },
+    {
+      "source": "SHEATH ROT RESISTANCE",
+      "target": "RICE",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_10543"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_10543"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "SHEATH ROT RESISTANCE",
+      "description": "used to identify parents for",
+      "weight": "8",
+      "source_id": "paper_10543"
+    },
+    {
+      "source": "UPGMA DENDROGRAM",
+      "target": "GENETIC DISTANCE",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_10543"
+    },
+    {
+      "source": "UPGMA DENDROGRAM",
+      "target": "SHEATH ROT RESISTANCE",
+      "description": "distinguishes genotypes based on",
+      "weight": "8",
+      "source_id": "paper_10543"
+    },
+    {
+      "source": "HYBRIDISATION",
+      "target": "SHEATH ROT RESISTANCE",
+      "description": "used to improve",
+      "weight": "9",
+      "source_id": "paper_10543"
+    },
+    {
+      "source": "GENETIC DISTANCE",
+      "target": "GENETIC DIVERSITY",
+      "description": "is a measure of",
+      "weight": "9",
+      "source_id": "paper_10543"
+    }
+  ]
+}

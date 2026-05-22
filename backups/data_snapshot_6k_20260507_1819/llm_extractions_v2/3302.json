@@ -1,0 +1,186 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Grain sorghum (Sorghum bicolor (L.) Moench)",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "BLUE GRAMA GRASS",
+      "type": "ORGANISM",
+      "description": "Bouteloua gracilis, a grass species previously growing on the land",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "BUFFALOGRASS",
+      "type": "ORGANISM",
+      "description": "Buchloe dactyloides, a grass species previously growing on the land",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "SWEEP IMPLEMENT TILLAGE",
+      "type": "METHOD",
+      "description": "Primary tillage using a sweep implement (SW)",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "MOLDBOARD PLOUGH TILLAGE",
+      "type": "METHOD",
+      "description": "Tillage using a moldboard plough (MB)",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "NO-TILLAGE",
+      "type": "METHOD",
+      "description": "A system of no-tillage (NT) for crop production",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain and stover produced by the crop",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "SOIL WATER CONTENT",
+      "type": "CONDITION",
+      "description": "The amount of water stored in the soil, influenced by tillage and irrigation",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "SOIL ORGANIC CARBON CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of organic carbon in the soil at a depth of 0-15 cm",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "NITROGEN MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The process of converting organic nitrogen to inorganic forms in the soil",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "NO3--N",
+      "type": "TRAIT",
+      "description": "Nitrate-nitrogen content in the soil at a depth of 0-15 cm",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "NH4+-N",
+      "type": "TRAIT",
+      "description": "Ammonium-nitrogen content in the soil",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "NITROGEN CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of nitrogen present in the grain and stover of the crop",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "PULLMAN CLAY LOAM",
+      "type": "LOCATION",
+      "description": "The specific soil type (Torrertic Paleustolls) where the experiment was conducted",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "VEGETATIVE STAGE",
+      "type": "CONCEPT",
+      "description": "The growth stage of the crop occurring 60 days after emergence",
+      "source_id": "paper_3302"
+    },
+    {
+      "name": "SUSTAINABLE CROP PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The goal of ensuring long-term crop productivity through appropriate tillage",
+      "source_id": "paper_3302"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NO-TILLAGE",
+      "target": "SORGHUM",
+      "description": "Increases grain and stover yield",
+      "weight": "9",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "SWEEP IMPLEMENT TILLAGE",
+      "target": "SORGHUM",
+      "description": "Affects grain and stover yield",
+      "weight": "7",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "MOLDBOARD PLOUGH TILLAGE",
+      "target": "SORGHUM",
+      "description": "Affects grain and stover yield",
+      "weight": "7",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "NO-TILLAGE",
+      "target": "SOIL WATER CONTENT",
+      "description": "Increases stored soil water due to surface mulch",
+      "weight": "9",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "SOIL WATER CONTENT",
+      "target": "YIELD",
+      "description": "Increases grain and stover yields",
+      "weight": "8",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "NO-TILLAGE",
+      "target": "SOIL ORGANIC CARBON CONTENT",
+      "description": "Significantly increases carbon content at 0-15 cm depth",
+      "weight": "9",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "MOLDBOARD PLOUGH TILLAGE",
+      "target": "NITROGEN MINERALIZATION",
+      "description": "Increases soil nitrogen mineralization",
+      "weight": "8",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "NITROGEN MINERALIZATION",
+      "target": "NO3--N",
+      "description": "Increases the amount of NO3--N at 0-15 cm depth",
+      "weight": "8",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "MOLDBOARD PLOUGH TILLAGE",
+      "target": "NITROGEN CONTENT",
+      "description": "Increases nitrogen content in grain and stover",
+      "weight": "8",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "VEGETATIVE STAGE",
+      "description": "Reaches peak water extraction during this stage",
+      "weight": "7",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "PULLMAN CLAY LOAM",
+      "target": "SORGHUM",
+      "description": "The soil environment where sorghum was grown",
+      "weight": "6",
+      "source_id": "paper_3302"
+    },
+    {
+      "source": "NO-TILLAGE",
+      "target": "SUSTAINABLE CROP PRODUCTION",
+      "description": "Recommended for converting revegetated land to cropland where water is limiting",
+      "weight": "8",
+      "source_id": "paper_3302"
+    }
+  ]
+}

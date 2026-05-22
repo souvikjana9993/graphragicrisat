@@ -1,0 +1,324 @@
+{
+  "entities": [
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "The primary crop studied, including transgenic and non-transgenic cultivars of Gossypium hirsutum and G. arboreum",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "CRY1AC",
+      "type": "GENE_MARKER",
+      "description": "The Bacillus thuringiensis gene used in transgenic cotton to provide resistance to bollworms",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "BACILLUS THURINGIENSIS",
+      "type": "ORGANISM",
+      "description": "The soil bacterium from which the cry1Ac gene is derived",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The cotton bollworm, a target insect pest",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "EARIAS VITTELLA",
+      "type": "ORGANISM",
+      "description": "The spotted bollworm, a non-target insect pest",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "AMRASCA BIGUTTULA BIGUTTULA",
+      "type": "ORGANISM",
+      "description": "The cotton jassid, a non-target insect pest",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "LIRIOMYZA TRIFOLII",
+      "type": "ORGANISM",
+      "description": "The serpentine leaf miner, a non-target insect pest",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "BEMISIA TABACI",
+      "type": "ORGANISM",
+      "description": "The white fly, a non-target insect pest",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "NEZARA VIRIDULA",
+      "type": "ORGANISM",
+      "description": "The green bug, a non-target insect pest",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "MYLLOCERUS UNDECIMPUSTULATUS",
+      "type": "ORGANISM",
+      "description": "The ash weevil, a non-target insect pest",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "DYSDERCUS KOENIGII",
+      "type": "ORGANISM",
+      "description": "The red cotton bug, a non-target insect pest",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the research farm is located",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The specific location of the ICRISAT research farm",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "OVIPOSITION",
+      "type": "TRAIT",
+      "description": "The process of laying eggs by insect pests on cotton cultivars",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "LARVAL DENSITY",
+      "type": "TRAIT",
+      "description": "The number of larvae present on the cotton plants",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "BOLLWORM DAMAGE",
+      "type": "TRAIT",
+      "description": "The extent of damage caused by bollworms to cotton squares and bolls",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "SEED COTTON YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed cotton produced per plant or area",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "SHOOT DAMAGE",
+      "type": "TRAIT",
+      "description": "The extent of damage caused by spotted bollworm to cotton shoots",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The degree to which cotton cultivars are affected by insect pests",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of cotton cultivars to withstand or repel insect pests",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "PROTECTION REGIMES",
+      "type": "CONDITION",
+      "description": "The different levels of protection (protected vs unprotected) applied to the crops",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "INFESTATION LEVEL",
+      "type": "CONDITION",
+      "description": "The degree of pest infestation (low, moderate, or high)",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "CROPPING SEASON",
+      "type": "CONDITION",
+      "description": "The specific time periods and weather conditions during which observations were made",
+      "source_id": "paper_2111"
+    },
+    {
+      "name": "SUSTAINABLE CROP PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The goal of achieving long-term agricultural productivity through combined resistance",
+      "source_id": "paper_2111"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COTTON",
+      "target": "CRY1AC",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "BACILLUS THURINGIENSIS",
+      "target": "CRY1AC",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "CRY1AC",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "provides resistance against",
+      "weight": "9",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "BOLLWORM DAMAGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "LARVAL DENSITY",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "OVIPOSITION",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "EARIAS VITTELLA",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "EARIAS VITTELLA",
+      "target": "SHOOT DAMAGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "AMRASCA BIGUTTULA BIGUTTULA",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "LIRIOMYZA TRIFOLII",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "BEMISIA TABACI",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "NEZARA VIRIDULA",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "MYLLOCERUS UNDECIMPUSTULATUS",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "DYSDERCUS KOENIGII",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "PROTECTION REGIMES",
+      "target": "OVIPOSITION",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "INFESTATION LEVEL",
+      "target": "SEED COTTON YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "INFESTATION LEVEL",
+      "target": "LARVAL DENSITY",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "SEED COTTON YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "INDIA",
+      "target": "ANDHRA PRADESH",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "PATANCHERU",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "SUSTAINABLE CROP PRODUCTION",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "RESISTANCE",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_2111"
+    },
+    {
+      "source": "COTTON",
+      "target": "SUSCEPTIBILITY",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_2111"
+    }
+  ]
+}

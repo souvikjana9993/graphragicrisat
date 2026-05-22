@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop studied, Arachis hypogaea L., representing various cultivated botanical groups",
+      "source_id": "paper_4019"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The biological process of converting atmospheric nitrogen into ammonia, measured via AR rate",
+      "source_id": "paper_4019"
+    },
+    {
+      "name": "LIGHT INTERCEPTION",
+      "type": "TRAIT",
+      "description": "The fraction of light intercepted by the crop canopy",
+      "source_id": "paper_4019"
+    },
+    {
+      "name": "ACETYLENE REDUCTION",
+      "type": "METHOD",
+      "description": "A technique used to measure the rate of nitrogen fixation",
+      "source_id": "paper_4019"
+    },
+    {
+      "name": "PLANT POPULATION DENSITY",
+      "type": "CONDITION",
+      "description": "The number of plants grown per unit area, varied across experiments",
+      "source_id": "paper_4019"
+    },
+    {
+      "name": "ICRISAT CENTER, INDIA",
+      "type": "LOCATION",
+      "description": "The research facility where the groundnut genotypes were grown",
+      "source_id": "paper_4019"
+    },
+    {
+      "name": "GANGAPURI",
+      "type": "CROP",
+      "description": "A specific groundnut genotype that showed consistently low nitrogen fixation in certain experiments",
+      "source_id": "paper_4019"
+    },
+    {
+      "name": "GENOTYPE",
+      "type": "CONCEPT",
+      "description": "The genetic variation among the groundnut cultivars studied",
+      "source_id": "paper_4019"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "NITROGEN FIXATION",
+      "description": "Groundnut genotypes exhibit variation in nitrogen fixation",
+      "weight": "10",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "LIGHT INTERCEPTION",
+      "description": "Groundnut genotypes exhibit variation in light interception",
+      "weight": "10",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "ACETYLENE REDUCTION",
+      "target": "NITROGEN FIXATION",
+      "description": "Used as a method to measure the rate of nitrogen fixation",
+      "weight": "10",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "LIGHT INTERCEPTION",
+      "target": "NITROGEN FIXATION",
+      "description": "A significant source of statistical variation for nitrogen fixation rates",
+      "weight": "9",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "NITROGEN FIXATION",
+      "description": "Influences the rate of nitrogen fixation per square meter",
+      "weight": "8",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "LIGHT INTERCEPTION",
+      "description": "Influences the fraction of light intercepted by the crop",
+      "weight": "8",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "NITROGEN FIXATION",
+      "description": "Influences the rate of nitrogen fixation",
+      "weight": "8",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "LIGHT INTERCEPTION",
+      "description": "Influences the fraction of light intercepted",
+      "weight": "8",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "GANGAPURI",
+      "target": "GROUNDNUT",
+      "description": "A specific genotype of the groundnut crop",
+      "weight": "10",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "GANGAPURI",
+      "target": "NITROGEN FIXATION",
+      "description": "Exhibited consistently low nitrogen fixation across population ranges in one experiment",
+      "weight": "7",
+      "source_id": "paper_4019"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "ICRISAT CENTER, INDIA",
+      "description": "The crop was grown and studied at this location",
+      "weight": "9",
+      "source_id": "paper_4019"
+    }
+  ]
+}

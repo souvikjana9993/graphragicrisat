@@ -1,0 +1,206 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop evaluated for yield in the rotation system",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "COPPICING",
+      "type": "METHOD",
+      "description": "A management practice of cutting back stems of fallow trees",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "NON COPPICING",
+      "type": "METHOD",
+      "description": "A management practice of not cutting back stems of fallow trees",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "FALLOWING",
+      "type": "CONCEPT",
+      "description": "The practice of leaving land unseeded to improve soil quality",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "TRAIT",
+      "description": "The capacity of soil to provide essential nutrients for plant growth",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "NUTRIENT STATUS",
+      "type": "TRAIT",
+      "description": "The current level of available nutrients in the soil",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "PRUNING REGIMES",
+      "type": "METHOD",
+      "description": "Specific timing and frequency of cutting back coppicing fallows",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "TRAIT",
+      "description": "The water content of the soil",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "MAIZE YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of maize measured in tonnes per hectare",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "CONVENTIONAL TILLAGE",
+      "type": "METHOD",
+      "description": "Traditional soil cultivation method involving plowing",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "NO TILLAGE",
+      "type": "METHOD",
+      "description": "A soil management system that avoids mechanical tillage",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "ACACIA ANGUSTISSIMA",
+      "type": "ORGANISM",
+      "description": "A tree species used in coppicing fallow systems",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "SESBANIA SESBAN",
+      "type": "ORGANISM",
+      "description": "A tree species used in non-coppicing fallow systems",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "NATURAL FALLOW",
+      "type": "CONCEPT",
+      "description": "Land left to recover naturally without introduced species",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "CENTRAL ZIMBABWE",
+      "type": "LOCATION",
+      "description": "The geographic region where the research was conducted",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "RAINFALL DEFICIENCY",
+      "type": "CONDITION",
+      "description": "A state of insufficient precipitation",
+      "source_id": "paper_4131"
+    },
+    {
+      "name": "AVAILABLE WATER",
+      "type": "TRAIT",
+      "description": "The portion of soil water that can be absorbed by plant roots",
+      "source_id": "paper_4131"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FALLOWING",
+      "target": "MAIZE YIELD",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "FALLOWING",
+      "target": "SOIL FERTILITY",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "FALLOWING",
+      "target": "NUTRIENT STATUS",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "PRUNING REGIMES",
+      "target": "MAIZE YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "CONVENTIONAL TILLAGE",
+      "target": "MAIZE YIELD",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "NO TILLAGE",
+      "target": "MAIZE YIELD",
+      "description": "decreases",
+      "weight": "7",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "ACACIA ANGUSTISSIMA",
+      "target": "AVAILABLE WATER",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "SESBANIA SESBAN",
+      "target": "MAIZE YIELD",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "RAINFALL DEFICIENCY",
+      "target": "MAIZE YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "PRUNING REGIMES",
+      "target": "RAINFALL DEFICIENCY",
+      "description": "manages water competition during",
+      "weight": "7",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "ACACIA ANGUSTISSIMA",
+      "target": "COPPICING",
+      "description": "is managed by",
+      "weight": "9",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "SESBANIA SESBAN",
+      "target": "NON COPPICING",
+      "description": "is managed by",
+      "weight": "9",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "CENTRAL ZIMBABWE",
+      "target": "MAIZE",
+      "description": "is the location for growing",
+      "weight": "10",
+      "source_id": "paper_4131"
+    },
+    {
+      "source": "NATURAL FALLOW",
+      "target": "MAIZE YIELD",
+      "description": "has lower yield than improved fallowing",
+      "weight": "7",
+      "source_id": "paper_4131"
+    }
+  ]
+}

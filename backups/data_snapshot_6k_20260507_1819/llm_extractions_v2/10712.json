@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Multi-use shrub legume of the tropics, sub-tropics and warmer regions of the world",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "Primary agricultural trait analyzed for genomic association",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "TROPICS",
+      "type": "LOCATION",
+      "description": "Geographic region where pigeonpea is grown",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "SUB-TROPICS",
+      "type": "LOCATION",
+      "description": "Geographic region where pigeonpea is grown",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "GENOTYPING BY SEQUENCING",
+      "type": "METHOD",
+      "description": "Platform used for genetic analysis of pigeonpea populations",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "LINKAGE ANALYSIS",
+      "type": "METHOD",
+      "description": "Process used to determine the relative position of genes on a chromosome",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "JOINMAP VERSION 4",
+      "type": "METHOD",
+      "description": "Software used to perform linkage analysis",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "QUANTITATIVE TRAIT LINKAGE ANALYSIS",
+      "type": "METHOD",
+      "description": "Method used to identify genomic regions associated with traits",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "SINGLE MARKER ANALYSIS",
+      "type": "METHOD",
+      "description": "A specific approach used within QTL analysis",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "COMPOSITE INTERVAL MAPPING",
+      "type": "METHOD",
+      "description": "A method used for QTL analysis employing a regression model",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "STEPWISE REGRESSION LINEAR MODEL",
+      "type": "METHOD",
+      "description": "The mathematical model used in composite interval mapping",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "QTL",
+      "type": "GENE_MARKER",
+      "description": "Genomic regions associated with specific phenotypic traits",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "PLEIOTROPIC EFFECT",
+      "type": "CONCEPT",
+      "description": "Phenomenon where a single genomic region affects multiple traits",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "GENETIC LINKAGE",
+      "type": "CONCEPT",
+      "description": "The tendency of DNA sequences that are close together on a chromosome to be inherited together",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "FINE MAPPING",
+      "type": "METHOD",
+      "description": "Method used to narrow down the location of a QTL",
+      "source_id": "paper_10712"
+    },
+    {
+      "name": "MARKER ASSISTED TRANSFER",
+      "type": "METHOD",
+      "description": "Method of using genetic markers to transfer traits between varieties",
+      "source_id": "paper_10712"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "TROPICS",
+      "description": "grows in",
+      "weight": "8",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SUB-TROPICS",
+      "description": "grows in",
+      "weight": "8",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "GENOTYPING BY SEQUENCING",
+      "target": "PIGEONPEA",
+      "description": "used for genetic analysis of",
+      "weight": "9",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "LINKAGE ANALYSIS",
+      "target": "PIGEONPEA",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "JOINMAP VERSION 4",
+      "target": "LINKAGE ANALYSIS",
+      "description": "used to perform",
+      "weight": "10",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LINKAGE ANALYSIS",
+      "target": "YIELD",
+      "description": "identifies regions associated with",
+      "weight": "10",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "SINGLE MARKER ANALYSIS",
+      "target": "QUANTITATIVE TRAIT LINKAGE ANALYSIS",
+      "description": "used as a method for",
+      "weight": "9",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "COMPOSITE INTERVAL MAPPING",
+      "target": "QUANTITATIVE TRAIT LINKAGE ANALYSIS",
+      "description": "used as a method for",
+      "weight": "9",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "STEPWISE REGRESSION LINEAR MODEL",
+      "target": "COMPOSITE INTERVAL MAPPING",
+      "description": "employed by",
+      "weight": "10",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LINKAGE ANALYSIS",
+      "target": "QTL",
+      "description": "detects",
+      "weight": "10",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "QTL",
+      "target": "YIELD",
+      "description": "associated with",
+      "weight": "10",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "QTL",
+      "target": "PLEIOTROPIC EFFECT",
+      "description": "indicates presence of",
+      "weight": "8",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "QTL",
+      "target": "GENETIC LINKAGE",
+      "description": "indicates presence of",
+      "weight": "8",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "FINE MAPPING",
+      "target": "QTL",
+      "description": "used for further mapping of",
+      "weight": "9",
+      "source_id": "paper_10712"
+    },
+    {
+      "source": "MARKER ASSISTED TRANSFER",
+      "target": "QTL",
+      "description": "uses for transfer",
+      "weight": "9",
+      "source_id": "paper_10712"
+    }
+  ]
+}

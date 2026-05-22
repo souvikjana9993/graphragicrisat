@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "TELANGANA STATE",
+      "type": "LOCATION",
+      "description": "State in southern India where the Mission Kakatiya project was implemented",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where the study was conducted",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "MISSION KAKATIYA",
+      "type": "CONCEPT",
+      "description": "Project for repairing and restoring irrigation water tanks with an investment of over USD 2 billion",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "IRRIGATION WATER TANKS",
+      "type": "CONCEPT",
+      "description": "Artificial reservoirs restored to improve water availability",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "CROPLAND",
+      "type": "CONCEPT",
+      "description": "Land areas used for agricultural crop production",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "WATER BODIES",
+      "type": "CONCEPT",
+      "description": "Accumulations of water, including the restored irrigation tanks",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Technique using satellite imagery to monitor and map land use and cover changes",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "LULC MAPPING ALGORITHMS",
+      "type": "METHOD",
+      "description": "Algorithms used for land use/land cover mapping to identify temporal changes",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "LANDSAT 8",
+      "type": "METHOD",
+      "description": "Satellite providing 16-day time series data for spatial distribution analysis",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "GROUND SURVEY",
+      "type": "METHOD",
+      "description": "Field-based data collection used to assess the pixel-based accuracy of satellite data",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "Machine learning algorithm used to identify areas served by irrigation tanks",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "Cloud-based platform used to implement Random Forest algorithms",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "SPATIAL ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis of geographic data revealing increases in cropped area and water bodies",
+      "source_id": "paper_12137"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONCEPT",
+      "description": "The artificial application of water to land to assist in crop production",
+      "source_id": "paper_12137"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MISSION KAKATIYA",
+      "target": "TELANGANA STATE",
+      "description": "implemented in",
+      "weight": "10",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "MISSION KAKATIYA",
+      "target": "IRRIGATION WATER TANKS",
+      "description": "restores",
+      "weight": "10",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "MISSION KAKATIYA",
+      "target": "CROPLAND",
+      "description": "increases area of",
+      "weight": "8",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "MISSION KAKATIYA",
+      "target": "WATER BODIES",
+      "description": "expands",
+      "weight": "8",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "REMOTE SENSING",
+      "target": "CROPLAND",
+      "description": "used to map changes in",
+      "weight": "9",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "REMOTE SENSING",
+      "target": "WATER BODIES",
+      "description": "used to map changes in",
+      "weight": "9",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "LULC MAPPING ALGORITHMS",
+      "target": "REMOTE SENSING",
+      "description": "applied to imagery from",
+      "weight": "8",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "LANDSAT 8",
+      "target": "REMOTE SENSING",
+      "description": "provides data for",
+      "weight": "10",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "GROUND SURVEY",
+      "target": "LANDSAT 8",
+      "description": "used to assess accuracy of",
+      "weight": "9",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "GOOGLE EARTH ENGINE",
+      "description": "implemented using",
+      "weight": "9",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "IRRIGATION WATER TANKS",
+      "description": "used to identify areas served by",
+      "weight": "8",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "SPATIAL ANALYSIS",
+      "target": "CROPLAND",
+      "description": "revealed increase in",
+      "weight": "9",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "SPATIAL ANALYSIS",
+      "target": "WATER BODIES",
+      "description": "revealed expansion of",
+      "weight": "9",
+      "source_id": "paper_12137"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "CROPLAND",
+      "description": "increases area of",
+      "weight": "8",
+      "source_id": "paper_12137"
+    }
+  ]
+}

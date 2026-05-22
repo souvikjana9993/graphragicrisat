@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "CROPLAND EXTENT",
+      "type": "CONCEPT",
+      "description": "The spatial extent of land used for growing crops)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "AUSTRALIA",
+      "type": "LOCATION",
+      "description": "A country where cropland extent was mapped)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "A country where cropland extent was mapped)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "A supervised machine learning algorithm used for cropland classification)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "A cloud computing platform used to execute the machine learning algorithm)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "LANDSAT-8",
+      "type": "METHOD",
+      "description": "A satellite providing multi-spectral imagery for cropland mapping)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "OPERATIONAL LAND IMAGER",
+      "type": "METHOD",
+      "description": "The sensor on Landsat-8 used to collect spectral data)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "AGRO-ECOLOGICAL ZONES",
+      "type": "CONCEPT",
+      "description": "Geographic areas defined by similar environmental and climatic conditions)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "MEGA-FILE DATA-CUBE",
+      "type": "CONCEPT",
+      "description": "A multi-layered data structure containing time-composited spectral bands)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "VERY HIGH SPATIAL RESOLUTION IMAGERY",
+      "type": "METHOD",
+      "description": "High-resolution imagery used for training and validation data)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "FIELD VISITS",
+      "type": "METHOD",
+      "description": "Direct ground-truth data collection used for training and validation)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "The process of detecting and monitoring the physical characteristics of an area from a distance)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "FOOD AND WATER SECURITY",
+      "type": "CONCEPT",
+      "description": "Global challenges related to the availability and access to food and water)",
+      "source_id": "paper_10829"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The measure of agricultural output per unit of land)",
+      "source_id": "paper_10829"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RANDOM FOREST",
+      "target": "CROPLAND EXTENT",
+      "description": "used to map",
+      "weight": "10)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "RANDOM FOREST",
+      "description": "platform for executing",
+      "weight": "9)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "LANDSAT-8",
+      "target": "CROPLAND EXTENT",
+      "description": "provides data for mapping",
+      "weight": "10)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "OPERATIONAL LAND IMAGER",
+      "target": "LANDSAT-8",
+      "description": "is the sensor of",
+      "weight": "10)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "AUSTRALIA",
+      "description": "applied to map cropland in",
+      "weight": "8)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "CHINA",
+      "description": "applied to map cropland in",
+      "weight": "8)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "REMOTE SENSING",
+      "target": "CROPLAND EXTENT",
+      "description": "general method for mapping",
+      "weight": "9)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "VERY HIGH SPATIAL RESOLUTION IMAGERY",
+      "target": "CROPLAND EXTENT",
+      "description": "used for validation of",
+      "weight": "7)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "FIELD VISITS",
+      "target": "CROPLAND EXTENT",
+      "description": "used for validation of",
+      "weight": "7)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "FOOD AND WATER SECURITY",
+      "description": "helps address",
+      "weight": "6)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "AGRO-ECOLOGICAL ZONES",
+      "target": "MEGA-FILE DATA-CUBE",
+      "description": "used to define the structure of",
+      "weight": "8)",
+      "source_id": "paper_10829"
+    },
+    {
+      "source": "LANDSAT-8",
+      "target": "MEGA-FILE DATA-CUBE",
+      "description": "source of data for",
+      "weight": "9",
+      "source_id": "paper_10829"
+    }
+  ]
+}

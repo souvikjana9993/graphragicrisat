@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "An important legume crop, also known as groundnut or Arachis hypogaea",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "GENOMIC SEQUENCES",
+      "type": "CONCEPT",
+      "description": "DNA sequences generated from groundnut as part of a microsatellite marker development project",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "MICROSATELLITE MOTIFS",
+      "type": "GENE_MARKER",
+      "description": "Repetitive DNA sequences found within the analyzed genomic sequences",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "CLUSTERING",
+      "type": "METHOD",
+      "description": "A process used to group sequences for similarity analysis",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "BLAST",
+      "type": "METHOD",
+      "description": "A sequence alignment tool used to find similarities between genomic sequences and publicly available databases",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "ARABIDOPSIS THALIANA",
+      "type": "ORGANISM",
+      "description": "A model plant used for sequence similarity comparison",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "LOTUS JAPONICUS",
+      "type": "ORGANISM",
+      "description": "A legume plant showing high sequence similarity and similar codon usage patterns to peanut",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A legume crop used for sequence similarity comparison",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "MEDICAGO TRUNCATULA",
+      "type": "ORGANISM",
+      "description": "A legume plant used for sequence similarity comparison",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "CODON USAGE PATTERN",
+      "type": "CONCEPT",
+      "description": "The frequency of use of different codons for the same amino acid in a species",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "TAXONOMY",
+      "type": "CONCEPT",
+      "description": "The science of naming, describing, and classifying organisms",
+      "source_id": "paper_3188"
+    },
+    {
+      "name": "COMPARATIVE GENOMICS",
+      "type": "METHOD",
+      "description": "The study of the relationship of genome structure and function across different species",
+      "source_id": "paper_3188"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "GENOMIC SEQUENCES",
+      "description": "Source of genomic sequences",
+      "weight": "10",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "GENOMIC SEQUENCES",
+      "target": "MICROSATELLITE MOTIFS",
+      "description": "Contain microsatellite motifs",
+      "weight": "9",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "GENOMIC SEQUENCES",
+      "target": "CLUSTERING",
+      "description": "Analyzed using clustering",
+      "weight": "8",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "GENOMIC SEQUENCES",
+      "target": "BLAST",
+      "description": "Analyzed using BLAST",
+      "weight": "9",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "BLAST",
+      "target": "ARABIDOPSIS THALIANA",
+      "description": "Used to find similarities with",
+      "weight": "7",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "BLAST",
+      "target": "LOTUS JAPONICUS",
+      "description": "Used to find similarities with",
+      "weight": "8",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "BLAST",
+      "target": "SOYBEAN",
+      "description": "Used to find similarities with",
+      "weight": "7",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "BLAST",
+      "target": "MEDICAGO TRUNCATULA",
+      "description": "Used to find similarities with",
+      "weight": "7",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "PEANUT",
+      "target": "LOTUS JAPONICUS",
+      "description": "Shares similar codon usage pattern",
+      "weight": "8",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "PEANUT",
+      "target": "TAXONOMY",
+      "description": "Findings have implications for",
+      "weight": "7",
+      "source_id": "paper_3188"
+    },
+    {
+      "source": "PEANUT",
+      "target": "COMPARATIVE GENOMICS",
+      "description": "Findings have implications for",
+      "weight": "7",
+      "source_id": "paper_3188"
+    }
+  ]
+}

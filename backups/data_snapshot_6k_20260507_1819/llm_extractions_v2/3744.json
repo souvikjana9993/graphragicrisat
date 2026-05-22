@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for its response to drought stress.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "MID-SEASON DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress occurring during the mid-season growth phase of the crop.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "DROUGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant lines to withstand mid-season drought stress.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "LEAF-ROLLING",
+      "type": "TRAIT",
+      "description": "A physiological response where leaves roll to reduce the effective area of the uppermost leaves.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "LEAF DISSICATION",
+      "type": "TRAIT",
+      "description": "The drying out of leaf tissue used as a visual indicator for resistance or susceptibility.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "VISUAL SELECTION",
+      "type": "METHOD",
+      "description": "The process of selecting plant lines based on observable physical characteristics like leaf disiccation.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "LEAF WATER-POTENTIAL",
+      "type": "TRAIT",
+      "description": "The measure of the energy state of water in the leaf tissue.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "LIGHT-EXTINCTION COEFFICIENT K",
+      "type": "TRAIT",
+      "description": "A coefficient indicating the rate of light absorption/extinction in the canopy.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "LEAF TEMPERATURE",
+      "type": "TRAIT",
+      "description": "The temperature of the leaf surface.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "RADIATION SHEDDING",
+      "type": "CONCEPT",
+      "description": "The process of reducing heat load by reflecting or transmitting solar radiation.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "LEAF CONDUCTANCE",
+      "type": "TRAIT",
+      "description": "The measure of the ease with which water vapor exits the leaf.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "TRANSPIRATION RATE",
+      "type": "TRAIT",
+      "description": "The rate at which water is lost from the leaf surface per unit area.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "LEAF SURFACE MICROCLIMATE",
+      "type": "CONCEPT",
+      "description": "The immediate atmospheric environment surrounding the leaf surface.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "WATER LOSS",
+      "type": "TRAIT",
+      "description": "The loss of water from the plant tissue.",
+      "source_id": "paper_3744"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The biological process of increasing in size or biomass.",
+      "source_id": "paper_3744"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "MID-SEASON DROUGHT STRESS",
+      "description": "exposed to",
+      "weight": "10",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "DROUGHT RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "VISUAL SELECTION",
+      "target": "LEAF DISSICATION",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "VISUAL SELECTION",
+      "target": "DROUGHT RESISTANCE",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "LEAF-ROLLING",
+      "target": "DROUGHT RESISTANCE",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "LEAF-ROLLING",
+      "target": "LEAF WATER-POTENTIAL",
+      "description": "occurs over a narrow range of",
+      "weight": "8",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "LEAF-ROLLING",
+      "target": "LIGHT-EXTINCTION COEFFICIENT K",
+      "description": "strongly correlated with",
+      "weight": "9",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "LEAF-ROLLING",
+      "target": "LEAF TEMPERATURE",
+      "description": "expected to influence via radiation shedding",
+      "weight": "6",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "LEAF-ROLLING",
+      "target": "LEAF CONDUCTANCE",
+      "description": "associated with higher values",
+      "weight": "7",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "LEAF-ROLLING",
+      "target": "LEAF SURFACE MICROCLIMATE",
+      "description": "alters",
+      "weight": "8",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "LEAF SURFACE MICROCLIMATE",
+      "target": "WATER LOSS",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "LEAF SURFACE MICROCLIMATE",
+      "target": "GROWTH",
+      "description": "allows to continue",
+      "weight": "7",
+      "source_id": "paper_3744"
+    },
+    {
+      "source": "LEAF CONDUCTANCE",
+      "target": "TRANSPIRATION RATE",
+      "description": "related to",
+      "weight": "8",
+      "source_id": "paper_3744"
+    }
+  ]
+}

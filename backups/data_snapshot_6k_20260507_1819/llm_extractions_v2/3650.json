@@ -1,0 +1,161 @@
+{
+  "entities": [
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "A region characterized by highly variable low seasonal rainfall where agricultural production needs to be stabilized",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "AGRICULTURAL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of generating crops in the semi-arid tropics, which the ICRISAT aims to increase and stabilize",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "SEASONAL RAINFALL",
+      "type": "CONDITION",
+      "description": "The variable precipitation patterns that characterize the semi-arid tropics",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "CLIMATIC CLASSIFICATION",
+      "type": "METHOD",
+      "description": "Generalized approaches used to distinguish and categorize different climates",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "TROLL CLASSIFICATION",
+      "type": "METHOD",
+      "description": "A specific climatic classification approach suggested by Troll to distinguish climates",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Precipitation data used as a basis for mapping the dry semi-arid tropics",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "EVAPORATION",
+      "type": "CONDITION",
+      "description": "Water loss data used as a basis for mapping the dry semi-arid tropics",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "AGROCLIMATIC CLASSIFICATION",
+      "type": "METHOD",
+      "description": "A method of classifying the semi-arid tropics to address agricultural risks, droughts, and soil moisture",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "Agricultural plants that are subject to risks identified through agroclimatic classification",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "CROPPING PATTERNS",
+      "type": "CONCEPT",
+      "description": "The spatial and temporal arrangement of crops, which are subject to risks identified through agroclimatic classification",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "DROUGHTS",
+      "type": "CONDITION",
+      "description": "Intra- and inter-seasonal periods of water deficiency that agroclimatic classification aims to address",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The amount of water in the seeding zone, critical for the success of dry seeding",
+      "source_id": "paper_3650"
+    },
+    {
+      "name": "DRY SEEDING",
+      "type": "METHOD",
+      "description": "The agricultural practice of sowing seeds into soil that lacks sufficient moisture",
+      "source_id": "paper_3650"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLIMATIC CLASSIFICATION",
+      "target": "SEMI-ARID TROPICS",
+      "description": "used to categorize the climates of the region",
+      "weight": "8",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "TROLL CLASSIFICATION",
+      "target": "CLIMATIC CLASSIFICATION",
+      "description": "is a specific approach within climatic classification",
+      "weight": "9",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "AGROCLIMATIC CLASSIFICATION",
+      "target": "SEMI-ARID TROPICS",
+      "description": "used to address specific agricultural problems in the region",
+      "weight": "8",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "AGROCLIMATIC CLASSIFICATION",
+      "target": "CROPS",
+      "description": "aims to address risks to",
+      "weight": "7",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "AGROCLIMATIC CLASSIFICATION",
+      "target": "CROPPING PATTERNS",
+      "description": "aims to address risks to",
+      "weight": "7",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "AGROCLIMATIC CLASSIFICATION",
+      "target": "DROUGHTS",
+      "description": "aims to address the likelihood of",
+      "weight": "7",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "AGROCLIMATIC CLASSIFICATION",
+      "target": "SOIL MOISTURE",
+      "description": "aims to address the adequacy of",
+      "weight": "7",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "DRY SEEDING",
+      "description": "is a critical factor for the seeding zone in",
+      "weight": "8",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "SEASONAL RAINFALL",
+      "target": "SEMI-ARID TROPICS",
+      "description": "characterizes the climatic nature of the region",
+      "weight": "9",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "SEMI-ARID TROPICS",
+      "description": "used as data for mapping the dry areas of the region",
+      "weight": "8",
+      "source_id": "paper_3650"
+    },
+    {
+      "source": "EVAPORATION",
+      "target": "SEMI-ARID TROPICS",
+      "description": "used as data for mapping the dry areas of the region",
+      "weight": "8",
+      "source_id": "paper_3650"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Early maturing maize hybrids developed by CIMMYT",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The primary measure of productivity in maize hybrids",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "GENETIC GAIN",
+      "type": "CONCEPT",
+      "description": "The increase in the average performance of a population over time due to selection",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "CIMMYT",
+      "type": "CONCEPT",
+      "description": "International Maize and Wheat Improvement Center, the organization developing the hybrids",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "SOUTHERN AFRICA",
+      "type": "LOCATION",
+      "description": "The region where the breeding program and trials were conducted",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "EASTERN AFRICA",
+      "type": "LOCATION",
+      "description": "One of the regions where trials were conducted",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "REGRESSION",
+      "type": "METHOD",
+      "description": "Statistical method used to estimate genetic gain",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "REGIONAL ON-STATION TRIALS",
+      "type": "METHOD",
+      "description": "The method of assessing hybrids across multiple environments",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "OPTIMUM CONDITION",
+      "type": "CONDITION",
+      "description": "Management condition with no stress",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "LOW N",
+      "type": "CONDITION",
+      "description": "Condition characterized by low nitrogen availability",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "MANAGED DROUGHT",
+      "type": "CONDITION",
+      "description": "Condition where water availability is controlled to simulate drought",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "RANDOM STRESS",
+      "type": "CONDITION",
+      "description": "Unspecified stress conditions encountered in the field",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "MAIZE DISEASES",
+      "type": "CONDITION",
+      "description": "Pathogenic stresses affecting maize",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "STRESS TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of maize hybrids to maintain productivity under stress",
+      "source_id": "paper_12511"
+    },
+    {
+      "name": "AGRONOMIC TRAITS",
+      "type": "TRAIT",
+      "description": "Key characteristics contributing to yield gains",
+      "source_id": "paper_12511"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CIMMYT",
+      "target": "MAIZE",
+      "description": "developed",
+      "weight": "10",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "MAIZE",
+      "target": "GRAIN YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "MAIZE",
+      "target": "STRESS TOLERANCE",
+      "description": "has trait",
+      "weight": "9",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "MAIZE",
+      "target": "AGRONOMIC TRAITS",
+      "description": "has trait",
+      "weight": "9",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "GENETIC GAIN",
+      "target": "GRAIN YIELD",
+      "description": "measured for",
+      "weight": "10",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "GENETIC GAIN",
+      "target": "REGRESSION",
+      "description": "estimated by",
+      "weight": "10",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "REGIONAL ON-STATION TRIALS",
+      "target": "MAIZE",
+      "description": "used to assess",
+      "weight": "10",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "REGIONAL ON-STATION TRIALS",
+      "target": "SOUTHERN AFRICA",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "REGIONAL ON-STATION TRIALS",
+      "target": "EASTERN AFRICA",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "OPTIMUM CONDITION",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "LOW N",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "MANAGED DROUGHT",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "RANDOM STRESS",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "STRESS TOLERANCE",
+      "target": "MAIZE DISEASES",
+      "description": "includes resistance to",
+      "weight": "9",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "STRESS TOLERANCE",
+      "target": "MANAGED DROUGHT",
+      "description": "includes tolerance to",
+      "weight": "9",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "STRESS TOLERANCE",
+      "target": "LOW N",
+      "description": "includes tolerance to",
+      "weight": "9",
+      "source_id": "paper_12511"
+    },
+    {
+      "source": "STRESS TOLERANCE",
+      "target": "RANDOM STRESS",
+      "description": "includes tolerance to",
+      "weight": "9",
+      "source_id": "paper_12511"
+    }
+  ]
+}

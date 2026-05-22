@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop Pennisetum glaucum studied for smut susceptibility",
+      "source_id": "paper_2673"
+    },
+    {
+      "name": "SMUT",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen Tolyposporium penicillariae that causes smut disease",
+      "source_id": "paper_2673"
+    },
+    {
+      "name": "CMS-MEDIATED MALE STERILITY",
+      "type": "CONCEPT",
+      "description": "Male sterility based on A1 cytoplasmic-nuclear interaction",
+      "source_id": "paper_2673"
+    },
+    {
+      "name": "OPEN-POLLINATED VARIETIES",
+      "type": "CONCEPT",
+      "description": "Pearl millet varieties used as a baseline for smut susceptibility",
+      "source_id": "paper_2673"
+    },
+    {
+      "name": "MALE-STERILE LINES",
+      "type": "CONCEPT",
+      "description": "A-lines used in the creation of hybrids",
+      "source_id": "paper_2673"
+    },
+    {
+      "name": "MAINTAINER LINES",
+      "type": "CONCEPT",
+      "description": "B-lines used as counterparts to male-sterile lines",
+      "source_id": "paper_2673"
+    },
+    {
+      "name": "SMUT SEVERITY",
+      "type": "TRAIT",
+      "description": "The measure of smut infection levels in pearl millet hybrids",
+      "source_id": "paper_2673"
+    },
+    {
+      "name": "GENETIC RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherited ability of parental lines to resist smut infection",
+      "source_id": "paper_2673"
+    },
+    {
+      "name": "SELFED SEEDSET",
+      "type": "TRAIT",
+      "description": "The proportion of seeds produced via self-pollination",
+      "source_id": "paper_2673"
+    },
+    {
+      "name": "A1 CYTOPLASM",
+      "type": "CONCEPT",
+      "description": "The specific cytoplasm associated with male sterility in pearl millet",
+      "source_id": "paper_2673"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "SMUT",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_2673"
+    },
+    {
+      "source": "CMS-MEDIATED MALE STERILITY",
+      "target": "SMUT SEVERITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_2673"
+    },
+    {
+      "source": "GENETIC RESISTANCE",
+      "target": "SMUT SEVERITY",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_2673"
+    },
+    {
+      "source": "MALE-STERILE LINES",
+      "target": "CMS-MEDIATED MALE STERILITY",
+      "description": "exhibit",
+      "weight": "10",
+      "source_id": "paper_2673"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "CMS-MEDIATED MALE STERILITY",
+      "description": "do not exhibit",
+      "weight": "7",
+      "source_id": "paper_2673"
+    },
+    {
+      "source": "A1 CYTOPLASM",
+      "target": "CMS-MEDIATED MALE STERILITY",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_2673"
+    },
+    {
+      "source": "CMS-MEDIATED MALE STERILITY",
+      "target": "SELFED SEEDSET",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_2673"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "CMS-MEDIATED MALE STERILITY",
+      "description": "can exhibit",
+      "weight": "8",
+      "source_id": "paper_2673"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GENETIC RESISTANCE",
+      "description": "can exhibit",
+      "weight": "8",
+      "source_id": "paper_2673"
+    }
+  ]
+}

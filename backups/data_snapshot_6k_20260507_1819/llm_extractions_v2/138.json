@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "ICARDA",
+      "type": "CONCEPT",
+      "description": "International Center for Agricultural Research in the Dry Areas",
+      "source_id": "paper_138"
+    },
+    {
+      "name": "INTERNATIONAL TRIALS",
+      "type": "METHOD",
+      "description": "Systematic international trials used for agricultural evaluation",
+      "source_id": "paper_138"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "CONCEPT",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_138"
+    },
+    {
+      "name": "NURSERIES",
+      "type": "METHOD",
+      "description": "Agricultural nurseries used for testing and evaluation",
+      "source_id": "paper_138"
+    },
+    {
+      "name": "COUNTRIES",
+      "type": "LOCATION",
+      "description": "Geographic locations where trials and nurseries were established",
+      "source_id": "paper_138"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICARDA",
+      "target": "INTERNATIONAL TRIALS",
+      "description": "coordinated systematic international trials",
+      "weight": "10",
+      "source_id": "paper_138"
+    },
+    {
+      "source": "ICARDA",
+      "target": "NURSERIES",
+      "description": "coordinated nurseries",
+      "weight": "10",
+      "source_id": "paper_138"
+    },
+    {
+      "source": "INTERNATIONAL TRIALS",
+      "target": "ICRISAT",
+      "description": "shared objectives with",
+      "weight": "7",
+      "source_id": "paper_138"
+    },
+    {
+      "source": "NURSERIES",
+      "target": "COUNTRIES",
+      "description": "distributed to cooperators in various countries",
+      "weight": "8",
+      "source_id": "paper_138"
+    },
+    {
+      "source": "INTERNATIONAL TRIALS",
+      "target": "COUNTRIES",
+      "description": "conducted across various countries",
+      "weight": "8",
+      "source_id": "paper_138"
+    }
+  ]
+}

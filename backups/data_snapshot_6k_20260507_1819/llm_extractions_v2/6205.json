@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Zea mays L., the crop studied for tocopherol content",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "TOCOPHEROLS",
+      "type": "TRAIT",
+      "description": "Vitamin E compounds analyzed in maize",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "POP-1",
+      "type": "CONCEPT",
+      "description": "F2 segregating population K22/CI7",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "POP-2",
+      "type": "CONCEPT",
+      "description": "F2 segregating population K22/Dan340",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "GOLDENGATE ASSAY",
+      "type": "METHOD",
+      "description": "Genotyping method used to identify SNP markers",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphism markers used for genotyping and mapping",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "GENETIC LINKAGE MAP",
+      "type": "METHOD",
+      "description": "Integrated map constructed to identify QTLs in the maize genome",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "QTL",
+      "type": "CONCEPT",
+      "description": "Quantitative trait loci associated with phenotypic variation of traits",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "TOCOPHEROL BIOSYNTHESIS PATHWAY",
+      "type": "CONCEPT",
+      "description": "The metabolic pathway responsible for the production of tocopherols",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "QC5-1/QD5-1",
+      "type": "GENE_MARKER",
+      "description": "A major QTL on chromosome 5 affecting alpha-tocopherol levels",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "ALPHA-TOCOPHEROL",
+      "type": "TRAIT",
+      "description": "A specific form of tocopherol (alphaT)",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "CHROMOSOME 5",
+      "type": "LOCATION",
+      "description": "The specific chromosome where the major QTL for alpha-tocopherol is located",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "PZA03161.1",
+      "type": "GENE_MARKER",
+      "description": "A high-density SNP marker used to narrow down the QTL region",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "PZA02068.1",
+      "type": "GENE_MARKER",
+      "description": "A high-density SNP marker used to narrow down the QTL region",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "VTE4",
+      "type": "GENE_MARKER",
+      "description": "A candidate gene encoding gamma-tocopherol methyltransferase",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "GAMMA-TOCOPHEROL METHYLTRANSFERASE",
+      "type": "CONCEPT",
+      "description": "An enzyme that converts gamma-tocopherol to alpha-tocopherol",
+      "source_id": "paper_6205"
+    },
+    {
+      "name": "GAMMA-TOCOPHEROL",
+      "type": "TRAIT",
+      "description": "A specific form of tocopherol (gammaT)",
+      "source_id": "paper_6205"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "TOCOPHEROLS",
+      "description": "is studied for its",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "POP-1",
+      "target": "MAIZE",
+      "description": "is a population of",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "POP-2",
+      "target": "MAIZE",
+      "description": "is a population of",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "GOLDENGATE ASSAY",
+      "target": "SNP MARKERS",
+      "description": "is used to identify",
+      "weight": "9",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "GENETIC LINKAGE MAP",
+      "description": "are used to construct",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "GENETIC LINKAGE MAP",
+      "target": "MAIZE",
+      "description": "maps the genome of",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "QTL",
+      "target": "TOCOPHEROLS",
+      "description": "are associated with the content of",
+      "weight": "9",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "QTL",
+      "target": "TOCOPHEROL BIOSYNTHESIS PATHWAY",
+      "description": "are co-located with genes in the",
+      "weight": "8",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "QC5-1/QD5-1",
+      "target": "ALPHA-TOCOPHEROL",
+      "description": "affects the levels of",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "QC5-1/QD5-1",
+      "target": "CHROMOSOME 5",
+      "description": "is located on",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "QC5-1/QD5-1",
+      "target": "PZA03161.1",
+      "description": "is bounded by",
+      "weight": "9",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "QC5-1/QD5-1",
+      "target": "PZA02068.1",
+      "description": "is bounded by",
+      "weight": "9",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "QC5-1/QD5-1",
+      "target": "VTE4",
+      "description": "contains the candidate gene",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "VTE4",
+      "target": "GAMMA-TOCOPHEROL METHYLTRANSFERASE",
+      "description": "encodes the enzyme",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "GAMMA-TOCOPHEROL METHYLTRANSFERASE",
+      "target": "GAMMA-TOCOPHEROL",
+      "description": "transforms",
+      "weight": "10",
+      "source_id": "paper_6205"
+    },
+    {
+      "source": "GAMMA-TOCOPHEROL METHYLTRANSFERASE",
+      "target": "ALPHA-TOCOPHEROL",
+      "description": "transforms gamma-tocopherol into",
+      "weight": "10",
+      "source_id": "paper_6205"
+    }
+  ]
+}

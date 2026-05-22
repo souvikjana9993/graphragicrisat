@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop used for nodulation studies.",
+      "source_id": "paper_140"
+    },
+    {
+      "name": "RHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "Nitrogen-fixing bacteria that form nodules in chickpea roots.",
+      "source_id": "paper_140"
+    },
+    {
+      "name": "SOIL SAMPLE",
+      "type": "CONDITION",
+      "description": "The soil medium containing the rhizobia to be estimated.",
+      "source_id": "paper_140"
+    },
+    {
+      "name": "RHIZOBIUM ESTIMATION METHOD",
+      "type": "METHOD",
+      "description": "A technique for estimating the most probable number of Rhizobium in soil based on nodulation patterns.",
+      "source_id": "paper_140"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The process of forming nodules on the roots of plants.",
+      "source_id": "paper_140"
+    },
+    {
+      "name": "PROBABILITY",
+      "type": "CONCEPT",
+      "description": "The statistical likelihood that a single Rhizobium will produce a nodule.",
+      "source_id": "paper_140"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOBIUM ESTIMATION METHOD",
+      "target": "RHIZOBIUM",
+      "description": "estimates the number of",
+      "weight": "10",
+      "source_id": "paper_140"
+    },
+    {
+      "source": "RHIZOBIUM ESTIMATION METHOD",
+      "target": "SOIL SAMPLE",
+      "description": "analyzes",
+      "weight": "9",
+      "source_id": "paper_140"
+    },
+    {
+      "source": "RHIZOBIUM ESTIMATION METHOD",
+      "target": "NODULATION",
+      "description": "uses the pattern of",
+      "weight": "9",
+      "source_id": "paper_140"
+    },
+    {
+      "source": "RHIZOBIUM ESTIMATION METHOD",
+      "target": "PROBABILITY",
+      "description": "is based on",
+      "weight": "8",
+      "source_id": "paper_140"
+    },
+    {
+      "source": "RHIZOBIUM",
+      "target": "NODULATION",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_140"
+    },
+    {
+      "source": "RHIZOBIUM",
+      "target": "CHICKPEA",
+      "description": "symbiotically associates with",
+      "weight": "10",
+      "source_id": "paper_140"
+    },
+    {
+      "source": "NODULATION",
+      "target": "CHICKPEA",
+      "description": "occurs on the roots of",
+      "weight": "10",
+      "source_id": "paper_140"
+    },
+    {
+      "source": "RHIZOBIUM",
+      "target": "SOIL SAMPLE",
+      "description": "is present in",
+      "weight": "9",
+      "source_id": "paper_140"
+    }
+  ]
+}

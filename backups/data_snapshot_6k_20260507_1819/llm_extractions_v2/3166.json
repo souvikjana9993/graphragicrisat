@@ -1,0 +1,247 @@
+{
+  "entities": [
+    {
+      "name": "SUSTAINABILITY INDEX",
+      "type": "CONCEPT",
+      "description": "An index calculated to assess soil quality and sustainability based on nutrient, microbial, and crop indices",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "SOIL QUALITY",
+      "type": "CONCEPT",
+      "description": "The state of the soil being assessed for sustainability and health",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "FERTILIZER MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Different ways of applying nutrients to the soil to affect soil quality",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "NUTRIENT INDEX",
+      "type": "CONCEPT",
+      "description": "An index reflecting the nutrient status of soil calculated from soil chemical parameters",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "MICROBIAL INDEX",
+      "type": "CONCEPT",
+      "description": "An index calculated by determining soil microbial and biochemical activities",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "CROP INDEX",
+      "type": "CONCEPT",
+      "description": "An index calculated by measuring crop yield parameters",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "SOIL CHEMICAL PARAMETERS",
+      "type": "CONCEPT",
+      "description": "Measurements of soil chemistry used to calculate the nutrient index",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "SOIL MICROBIAL AND BIOCHEMICAL ACTIVITIES",
+      "type": "CONCEPT",
+      "description": "Measurements of biological activity in soil used to calculate the microbial index",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "CROP YIELD PARAMETERS",
+      "type": "TRAIT",
+      "description": "Measurements of crop productivity used to calculate the crop index",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "GREEN MANURE",
+      "type": "METHOD",
+      "description": "A source of organic nutrients used in the cropping system",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "FARMYARD MANURE",
+      "type": "METHOD",
+      "description": "A source of organic nutrients (FYM) used to increase soil sustainability",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "CHEMICAL FERTILIZER",
+      "type": "METHOD",
+      "description": "A source of synthetic nutrients that can negatively impact microbial and crop indices if used alone",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A crop used in the rotation system",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "CORN",
+      "type": "CROP",
+      "description": "A crop used in the rotation system",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A crop used in the rotation system",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "RICE/CORN-WHEAT ROTATION",
+      "type": "CONCEPT",
+      "description": "A cropping system involving the rotation of rice, corn, and wheat",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "ORGANIC MANURES",
+      "type": "METHOD",
+      "description": "Manures such as green manure and farmyard manure that increase the sustainability index",
+      "source_id": "paper_3166"
+    },
+    {
+      "name": "NPK",
+      "type": "METHOD",
+      "description": "A specific chemical fertilizer treatment consisting of nitrogen, phosphorus, and potassium",
+      "source_id": "paper_3166"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SUSTAINABILITY INDEX",
+      "target": "SOIL QUALITY",
+      "description": "assesses",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "SUSTAINABILITY INDEX",
+      "target": "NUTRIENT INDEX",
+      "description": "composed of",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "SUSTAINABILITY INDEX",
+      "target": "MICROBIAL INDEX",
+      "description": "composed of",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "SUSTAINABILITY INDEX",
+      "target": "CROP INDEX",
+      "description": "composed of",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "NUTRIENT INDEX",
+      "target": "SOIL CHEMICAL PARAMETERS",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "MICROBIAL INDEX",
+      "target": "SOIL MICROBIAL AND BIOCHEMICAL ACTIVITIES",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "CROP INDEX",
+      "target": "CROP YIELD PARAMETERS",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "FERTILIZER MANAGEMENT PRACTICES",
+      "target": "SOIL QUALITY",
+      "description": "influence",
+      "weight": "8",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "GREEN MANURE",
+      "target": "ORGANIC MANURES",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "ORGANIC MANURES",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "CHEMICAL FERTILIZER",
+      "target": "FERTILIZER MANAGEMENT PRACTICES",
+      "description": "is a type of",
+      "weight": "8",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "ORGANIC MANURES",
+      "target": "SUSTAINABILITY INDEX",
+      "description": "increase",
+      "weight": "9",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "CHEMICAL FERTILIZER",
+      "target": "MICROBIAL INDEX",
+      "description": "decrease",
+      "weight": "8",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "CHEMICAL FERTILIZER",
+      "target": "CROP INDEX",
+      "description": "decrease",
+      "weight": "8",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "RICE/CORN-WHEAT ROTATION",
+      "target": "RICE",
+      "description": "involves",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "RICE/CORN-WHEAT ROTATION",
+      "target": "CORN",
+      "description": "involves",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "RICE/CORN-WHEAT ROTATION",
+      "target": "WHEAT",
+      "description": "involves",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "NPK",
+      "target": "CHEMICAL FERTILIZER",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3166"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "SUSTAINABILITY INDEX",
+      "description": "increase",
+      "weight": "9",
+      "source_id": "paper_3166"
+    }
+  ]
+}

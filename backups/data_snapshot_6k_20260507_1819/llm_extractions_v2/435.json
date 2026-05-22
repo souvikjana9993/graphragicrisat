@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "PEANUTS",
+      "type": "CROP",
+      "description": "The crop being analyzed for aflatoxin contamination in Western Kenya",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONDITION",
+      "description": "A toxic contaminant found in peanuts that poses a risk to human health and trade",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "WESTERN KENYA",
+      "type": "LOCATION",
+      "description": "The general region in Kenya where the peanut survey was conducted",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "BUSIA",
+      "type": "LOCATION",
+      "description": "A district in Western Kenya used for peanut sampling",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "HOMABAY",
+      "type": "LOCATION",
+      "description": "A district in Western Kenya used for peanut sampling",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "INDIRECT COMPETITIVE ELISA",
+      "type": "METHOD",
+      "description": "The protocol used to analyze the aflatoxin content in peanut samples",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "AGRO ECOLOGICAL ZONES",
+      "type": "CONCEPT",
+      "description": "Environmental classifications used to analyze the association with aflatoxin levels",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "LM3 ZONE",
+      "type": "LOCATION",
+      "description": "A dryer agro ecological zone in Western Kenya",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "LM1 ZONE",
+      "type": "LOCATION",
+      "description": "A wetter and humid agro ecological zone in Western Kenya",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "CULTIVAR IMPROVEMENT STATUS",
+      "type": "TRAIT",
+      "description": "The status of whether a peanut cultivar is improved or a local landrace",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "LOGISTIC REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "The statistical method used to determine the odds of contamination",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "IMPROVED CULTIVARS",
+      "type": "CROP",
+      "description": "Peanut varieties that have been genetically or selectively improved",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "LOCAL LANDRACES",
+      "type": "CROP",
+      "description": "Traditional peanut varieties local to the region",
+      "source_id": "paper_435"
+    },
+    {
+      "name": "HUMAN HEALTH",
+      "type": "CONCEPT",
+      "description": "The target of risk associated with aflatoxin exposure",
+      "source_id": "paper_435"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUTS",
+      "target": "AFLATOXIN",
+      "description": "contaminated by",
+      "weight": "9",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "HUMAN HEALTH",
+      "description": "poses risk to",
+      "weight": "8",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "PEANUTS",
+      "target": "WESTERN KENYA",
+      "description": "produced in",
+      "weight": "7",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "BUSIA",
+      "target": "WESTERN KENYA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "HOMABAY",
+      "target": "WESTERN KENYA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "INDIRECT COMPETITIVE ELISA",
+      "target": "AFLATOXIN",
+      "description": "used to analyze content of",
+      "weight": "9",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "AGRO ECOLOGICAL ZONES",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "LM3 ZONE",
+      "target": "AGRO ECOLOGICAL ZONES",
+      "description": "is a specific",
+      "weight": "10",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "LM1 ZONE",
+      "target": "AGRO ECOLOGICAL ZONES",
+      "description": "is a specific",
+      "weight": "10",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "CULTIVAR IMPROVEMENT STATUS",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "LOGISTIC REGRESSION ANALYSIS",
+      "target": "AFLATOXIN",
+      "description": "used to analyze contamination odds of",
+      "weight": "8",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "IMPROVED CULTIVARS",
+      "target": "AFLATOXIN",
+      "description": "lower odds of contamination",
+      "weight": "9",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "LOCAL LANDRACES",
+      "target": "AFLATOXIN",
+      "description": "higher odds of contamination",
+      "weight": "9",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "BUSIA",
+      "target": "AFLATOXIN",
+      "description": "higher odds of contamination",
+      "weight": "7",
+      "source_id": "paper_435"
+    },
+    {
+      "source": "HOMABAY",
+      "target": "AFLATOXIN",
+      "description": "lower odds of contamination",
+      "weight": "7",
+      "source_id": "paper_435"
+    }
+  ]
+}

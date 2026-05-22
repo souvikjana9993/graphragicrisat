@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop studied for male sterility",
+      "source_id": "paper_1374"
+    },
+    {
+      "name": "MALE STERILITY",
+      "type": "TRAIT",
+      "description": "The inability of a plant to produce functional pollen, characterized by translucent white anthers",
+      "source_id": "paper_1374"
+    },
+    {
+      "name": "HAND POLLINATION",
+      "type": "METHOD",
+      "description": "The process of manually transferring pollen from a donor plant to a recipient plant",
+      "source_id": "paper_1374"
+    },
+    {
+      "name": "JL 24",
+      "type": "CROP",
+      "description": "A short-duration Indian cultivar of groundnut used for pollination",
+      "source_id": "paper_1374"
+    },
+    {
+      "name": "CHI-SQUARE TESTS",
+      "type": "METHOD",
+      "description": "Statistical method used to analyze the segregation of male fertile and male sterile plants",
+      "source_id": "paper_1374"
+    },
+    {
+      "name": "MALE FERTILITY",
+      "type": "TRAIT",
+      "description": "The ability of a plant to produce functional pollen",
+      "source_id": "paper_1374"
+    },
+    {
+      "name": "MS1",
+      "type": "GENE_MARKER",
+      "description": "A recessive gene that governs male sterility in groundnut",
+      "source_id": "paper_1374"
+    },
+    {
+      "name": "MS2",
+      "type": "GENE_MARKER",
+      "description": "A recessive gene that governs male sterility in groundnut",
+      "source_id": "paper_1374"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "MALE STERILITY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_1374"
+    },
+    {
+      "source": "MALE STERILITY",
+      "target": "MS1",
+      "description": "is governed by",
+      "weight": "10",
+      "source_id": "paper_1374"
+    },
+    {
+      "source": "MALE STERILITY",
+      "target": "MS2",
+      "description": "is governed by",
+      "weight": "10",
+      "source_id": "paper_1374"
+    },
+    {
+      "source": "HAND POLLINATION",
+      "target": "JL 24",
+      "description": "used pollen from",
+      "weight": "8",
+      "source_id": "paper_1374"
+    },
+    {
+      "source": "CHI-SQUARE TESTS",
+      "target": "MALE STERILITY",
+      "description": "analyzed segregation of",
+      "weight": "9",
+      "source_id": "paper_1374"
+    },
+    {
+      "source": "CHI-SQUARE TESTS",
+      "target": "MALE FERTILITY",
+      "description": "analyzed segregation of",
+      "weight": "9",
+      "source_id": "paper_1374"
+    },
+    {
+      "source": "JL 24",
+      "target": "GROUNDNUT",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_1374"
+    }
+  ]
+}

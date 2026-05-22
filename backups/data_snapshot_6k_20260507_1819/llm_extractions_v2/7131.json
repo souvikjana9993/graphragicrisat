@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop being evaluated for resistance to the nematode Rotylenchulus reniformis",
+      "source_id": "paper_7131"
+    },
+    {
+      "name": "ROTYLENCHULUS RENIFORMIS",
+      "type": "ORGANISM",
+      "description": "A nematode pest that infects the roots of pigeonpea",
+      "source_id": "paper_7131"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pigeonpea genotypes to resist infestation by Rotylenchulus reniformis",
+      "source_id": "paper_7131"
+    },
+    {
+      "name": "SCREENING TECHNIQUE",
+      "type": "METHOD",
+      "description": "A greenhouse-based method developed to evaluate pigeonpea genotypes for resistance to R. reniformis",
+      "source_id": "paper_7131"
+    },
+    {
+      "name": "GREENHOUSE POT EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The experimental setup used to count eggsacs of R. reniformis in pigeonpea roots",
+      "source_id": "paper_7131"
+    },
+    {
+      "name": "STEREOSCOPIC MICROSCOPE",
+      "type": "METHOD",
+      "description": "A tool used to visualize and count eggsacs of R. reniformis in roots",
+      "source_id": "paper_7131"
+    },
+    {
+      "name": "TRYPAN BLUE STAINING",
+      "type": "METHOD",
+      "description": "A staining technique using 0.25% trypan blue to make nematode eggsacs visible",
+      "source_id": "paper_7131"
+    },
+    {
+      "name": "INFESTATION",
+      "type": "CONDITION",
+      "description": "The state of pigeonpea roots being infected by Rotylenchulus reniformis",
+      "source_id": "paper_7131"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "ROTYLENCHULUS RENIFORMIS",
+      "description": "is a host for",
+      "weight": "10",
+      "source_id": "paper_7131"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "RESISTANCE",
+      "description": "possesses the trait of",
+      "weight": "9",
+      "source_id": "paper_7131"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "ROTYLENCHULUS RENIFORMIS",
+      "description": "is directed against",
+      "weight": "10",
+      "source_id": "paper_7131"
+    },
+    {
+      "source": "SCREENING TECHNIQUE",
+      "target": "RESISTANCE",
+      "description": "is used to evaluate",
+      "weight": "10",
+      "source_id": "paper_7131"
+    },
+    {
+      "source": "SCREENING TECHNIQUE",
+      "target": "PIGEONPEA",
+      "description": "is used to evaluate",
+      "weight": "9",
+      "source_id": "paper_7131"
+    },
+    {
+      "source": "GREENHOUSE POT EXPERIMENTS",
+      "target": "SCREENING TECHNIQUE",
+      "description": "is the basis of",
+      "weight": "8",
+      "source_id": "paper_7131"
+    },
+    {
+      "source": "STEREOSCOPIC MICROSCOPE",
+      "target": "SCREENING TECHNIQUE",
+      "description": "is used as a tool in",
+      "weight": "7",
+      "source_id": "paper_7131"
+    },
+    {
+      "source": "TRYPAN BLUE STAINING",
+      "target": "SCREENING TECHNIQUE",
+      "description": "is used to improve accuracy in",
+      "weight": "8",
+      "source_id": "paper_7131"
+    },
+    {
+      "source": "TRYPAN BLUE STAINING",
+      "target": "INFESTATION",
+      "description": "helps in the assessment of",
+      "weight": "9",
+      "source_id": "paper_7131"
+    },
+    {
+      "source": "ROTYLENCHULUS RENIFORMIS",
+      "target": "INFESTATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_7131"
+    }
+  ]
+}

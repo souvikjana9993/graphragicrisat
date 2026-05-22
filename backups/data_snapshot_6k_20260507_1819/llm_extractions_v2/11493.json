@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Major staple food crop expected to feed a global population of 9 billion by 2050",
+      "source_id": "paper_11493"
+    },
+    {
+      "name": "WEEDS",
+      "type": "ORGANISM",
+      "description": "Plants that act as major constraints limiting rice productivity",
+      "source_id": "paper_11493"
+    },
+    {
+      "name": "ECOLOGICAL WEED MANAGEMENT",
+      "type": "METHOD",
+      "description": "Economic and effective approaches for managing weeds in rice during climate change",
+      "source_id": "paper_11493"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Environmental shift affecting agricultural productivity and weed management",
+      "source_id": "paper_11493"
+    },
+    {
+      "name": "RICE PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of rice yield which is limited by the presence of weeds",
+      "source_id": "paper_11493"
+    },
+    {
+      "name": "DRY-DIRECT-SEEDING",
+      "type": "METHOD",
+      "description": "A rice cultivation method where weed constraints are more severe",
+      "source_id": "paper_11493"
+    },
+    {
+      "name": "CLIMATE RESILIENT RICE CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Rice varieties designed to be resilient to climate change and competitive against weeds",
+      "source_id": "paper_11493"
+    },
+    {
+      "name": "WEED COMPETITIVENESS",
+      "type": "TRAIT",
+      "description": "The ability of rice cultivars to compete effectively against weeds",
+      "source_id": "paper_11493"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ECOLOGICAL WEED MANAGEMENT",
+      "target": "WEEDS",
+      "description": "manages",
+      "weight": "10",
+      "source_id": "paper_11493"
+    },
+    {
+      "source": "ECOLOGICAL WEED MANAGEMENT",
+      "target": "RICE",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_11493"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "ECOLOGICAL WEED MANAGEMENT",
+      "description": "influences the need for",
+      "weight": "8",
+      "source_id": "paper_11493"
+    },
+    {
+      "source": "WEEDS",
+      "target": "RICE PRODUCTIVITY",
+      "description": "limits",
+      "weight": "10",
+      "source_id": "paper_11493"
+    },
+    {
+      "source": "WEEDS",
+      "target": "DRY-DIRECT-SEEDING",
+      "description": "more severe constraint in",
+      "weight": "9",
+      "source_id": "paper_11493"
+    },
+    {
+      "source": "CLIMATE RESILIENT RICE CULTIVARS",
+      "target": "ECOLOGICAL WEED MANAGEMENT",
+      "description": "plays a key role in",
+      "weight": "8",
+      "source_id": "paper_11493"
+    },
+    {
+      "source": "CLIMATE RESILIENT RICE CULTIVARS",
+      "target": "WEED COMPETITIVENESS",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_11493"
+    },
+    {
+      "source": "WEED COMPETITIVENESS",
+      "target": "WEEDS",
+      "description": "competes against",
+      "weight": "9",
+      "source_id": "paper_11493"
+    }
+  ]
+}

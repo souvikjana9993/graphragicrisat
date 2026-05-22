@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "TRICHODERMA",
+      "type": "ORGANISM",
+      "description": "A genus of fungi including species T. viride, T. hamatum, T. harzianum, T. aureoviride, and T. longibrachiatum used for biocontrol.",
+      "source_id": "paper_2240"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes infection in groundnuts.",
+      "source_id": "paper_2240"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The agricultural crop targeted for protection against A. flavus infection.",
+      "source_id": "paper_2240"
+    },
+    {
+      "name": "BIOCONTROL",
+      "type": "CONCEPT",
+      "description": "The use of biological agents to control pests or pathogens.",
+      "source_id": "paper_2240"
+    },
+    {
+      "name": "INFECTION",
+      "type": "CONDITION",
+      "description": "The pathological state caused by Aspergillus flavus in groundnuts.",
+      "source_id": "paper_2240"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TRICHODERMA",
+      "target": "BIOCONTROL",
+      "description": "possesses potential for",
+      "weight": "10",
+      "source_id": "paper_2240"
+    },
+    {
+      "source": "TRICHODERMA",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_2240"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_2240"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "INFECTION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2240"
+    },
+    {
+      "source": "INFECTION",
+      "target": "GROUNDNUT",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_2240"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The legume crop studied for fungal infection and termite damage",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "BENIN",
+      "type": "LOCATION",
+      "description": "Country where farmers' peanut fields were surveyed",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A fungus that colonizes peanut pods",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "MICROTERMES",
+      "type": "ORGANISM",
+      "description": "A genus of termites that damage peanut pods",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "Country where field trials were conducted",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "CARBOFURAN",
+      "type": "METHOD",
+      "description": "A chemical treatment applied at planting to reduce termite damage and fungal colonization",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "CHLORPYRIFOS",
+      "type": "METHOD",
+      "description": "A chemical treatment applied at 40 days after planting to reduce termite damage and fungal colonization",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "M. LEPIDUS",
+      "type": "ORGANISM",
+      "description": "A specific species of termite causing pod damage",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "ICG 10946",
+      "type": "CROP",
+      "description": "A peanut cultivar showing high susceptibility to A. flavus and termite damage",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "47-16",
+      "type": "CROP",
+      "description": "A peanut cultivar showing low susceptibility to A. flavus and termite damage",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "POD DAMAGE",
+      "type": "TRAIT",
+      "description": "The physical damage caused to peanut pods by termites",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "COLONIZATION",
+      "type": "TRAIT",
+      "description": "The process and extent of Aspergillus flavus infection in peanut pods",
+      "source_id": "paper_4944"
+    },
+    {
+      "name": "TERMITE DAMAGE",
+      "type": "CONDITION",
+      "description": "The state of peanut pods being damaged by termites, which influences fungal infection",
+      "source_id": "paper_4944"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "PEANUT",
+      "description": "colonizes",
+      "weight": "9",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "MICROTERMES",
+      "target": "PEANUT",
+      "description": "damages",
+      "weight": "9",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "MICROTERMES",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "influences colonization",
+      "weight": "8",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "POD DAMAGE",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "reduces colonization",
+      "weight": "8",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "CHLORPYRIFOS",
+      "target": "POD DAMAGE",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "CHLORPYRIFOS",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "reduces colonization",
+      "weight": "8",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "M. LEPIDUS",
+      "target": "POD DAMAGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "ICG 10946",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "highly susceptible to",
+      "weight": "8",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "ICG 10946",
+      "target": "POD DAMAGE",
+      "description": "highly susceptible to",
+      "weight": "8",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "47-16",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "resistant to",
+      "weight": "8",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "47-16",
+      "target": "POD DAMAGE",
+      "description": "resistant to",
+      "weight": "7",
+      "source_id": "paper_4944"
+    },
+    {
+      "source": "TERMITE DAMAGE",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "correlated with colonization",
+      "weight": "9",
+      "source_id": "paper_4944"
+    }
+  ]
+}

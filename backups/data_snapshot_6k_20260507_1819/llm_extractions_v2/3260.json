@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop species being studied for resistance to Aceria cajani.",
+      "source_id": "paper_3260"
+    },
+    {
+      "name": "ACERIA CAJANI",
+      "type": "ORGANISM",
+      "description": "The mite that acts as a vector for the pigeonpea sterility mosaic virus.",
+      "source_id": "paper_3260"
+    },
+    {
+      "name": "PIGEONPEA STERILITY MOSAIC VIRUS",
+      "type": "ORGANISM",
+      "description": "The pathogen transmitted by Aceria cajani to pigeonpea.",
+      "source_id": "paper_3260"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of certain pigeonpea lines to resist infestation by Aceria cajani.",
+      "source_id": "paper_3260"
+    },
+    {
+      "name": "LEAF CUTICLE",
+      "type": "CONCEPT",
+      "description": "The waxy layer covering the epidermis of the leaf.",
+      "source_id": "paper_3260"
+    },
+    {
+      "name": "EPIDERMAL CELL WALL",
+      "type": "CONCEPT",
+      "description": "The cell wall of the leaf's epidermal cells.",
+      "source_id": "paper_3260"
+    },
+    {
+      "name": "CUTICLE THICKNESS",
+      "type": "TRAIT",
+      "description": "The measurement of the thickness of the leaf cuticle.",
+      "source_id": "paper_3260"
+    },
+    {
+      "name": "STYLET LENGTH",
+      "type": "TRAIT",
+      "description": "The length of the piercing-sucking mouthpart of Aceria cajani.",
+      "source_id": "paper_3260"
+    },
+    {
+      "name": "LEAF ANATOMY",
+      "type": "METHOD",
+      "description": "The study of the structural organization of the leaf.",
+      "source_id": "paper_3260"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "RESISTANCE",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_3260"
+    },
+    {
+      "source": "ACERIA CAJANI",
+      "target": "PIGEONPEA",
+      "description": "infests",
+      "weight": "9",
+      "source_id": "paper_3260"
+    },
+    {
+      "source": "ACERIA CAJANI",
+      "target": "PIGEONPEA STERILITY MOSAIC VIRUS",
+      "description": "vectors",
+      "weight": "10",
+      "source_id": "paper_3260"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "LEAF CUTICLE",
+      "description": "attributed to",
+      "weight": "9",
+      "source_id": "paper_3260"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "EPIDERMAL CELL WALL",
+      "description": "related to",
+      "weight": "7",
+      "source_id": "paper_3260"
+    },
+    {
+      "source": "CUTICLE THICKNESS",
+      "target": "RESISTANCE",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_3260"
+    },
+    {
+      "source": "STYLET LENGTH",
+      "target": "CUTICLE THICKNESS",
+      "description": "compared to",
+      "weight": "8",
+      "source_id": "paper_3260"
+    },
+    {
+      "source": "LEAF ANATOMY",
+      "target": "RESISTANCE",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_3260"
+    }
+  ]
+}

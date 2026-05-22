@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "DESI CHICKPEA",
+      "type": "CROP",
+      "description": "Normal-seeded chickpea type",
+      "source_id": "paper_136"
+    },
+    {
+      "name": "KABULI CHICKPEA",
+      "type": "CROP",
+      "description": "Bold-seeded chickpea type",
+      "source_id": "paper_136"
+    },
+    {
+      "name": "LEBANESE LOCAL",
+      "type": "CROP",
+      "description": "A cultivar of kabuli chickpea",
+      "source_id": "paper_136"
+    },
+    {
+      "name": "LEBANON",
+      "type": "LOCATION",
+      "description": "Country where Lebanese Local chickpea was grown",
+      "source_id": "paper_136"
+    },
+    {
+      "name": "LABORATORY GERMINATION",
+      "type": "METHOD",
+      "description": "Test to measure seed germination in a controlled environment",
+      "source_id": "paper_136"
+    },
+    {
+      "name": "FIELD GERMINATION",
+      "type": "TRAIT",
+      "description": "The ability of seeds to germinate under field conditions",
+      "source_id": "paper_136"
+    },
+    {
+      "name": "ACCELERATED AGING TEST",
+      "type": "METHOD",
+      "description": "Test used to evaluate seed longevity and vigour",
+      "source_id": "paper_136"
+    },
+    {
+      "name": "SEED VIGOUR",
+      "type": "TRAIT",
+      "description": "The potential for rapid and uniform emergence of seeds",
+      "source_id": "paper_136"
+    },
+    {
+      "name": "ADVERSE SOIL PHYSICAL CONDITIONS",
+      "type": "CONDITION",
+      "description": "Unfavorable physical properties of the soil during germination",
+      "source_id": "paper_136"
+    },
+    {
+      "name": "SURVIVAL",
+      "type": "CONCEPT",
+      "description": "The ability of desi chickpeas to persist in a population of kabuli landraces",
+      "source_id": "paper_136"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DESI CHICKPEA",
+      "target": "FIELD GERMINATION",
+      "description": "shows higher field germination",
+      "weight": "9",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "KABULI CHICKPEA",
+      "target": "FIELD GERMINATION",
+      "description": "shows lower field germination",
+      "weight": "9",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "DESI CHICKPEA",
+      "target": "ACCELERATED AGING TEST",
+      "description": "shows higher germination in this test",
+      "weight": "9",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "KABULI CHICKPEA",
+      "target": "ACCELERATED AGING TEST",
+      "description": "shows lower germination in this test",
+      "weight": "9",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "DESI CHICKPEA",
+      "target": "LABORATORY GERMINATION",
+      "description": "shows similar germination to kabuli type",
+      "weight": "7",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "KABULI CHICKPEA",
+      "target": "LABORATORY GERMINATION",
+      "description": "shows similar germination to desi type",
+      "weight": "7",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "LEBANESE LOCAL",
+      "target": "KABULI CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "LEBANESE LOCAL",
+      "target": "LEBANON",
+      "description": "is grown in",
+      "weight": "10",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "DESI CHICKPEA",
+      "target": "SEED VIGOUR",
+      "description": "possesses higher seed vigour",
+      "weight": "9",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "DESI CHICKPEA",
+      "target": "SURVIVAL",
+      "description": "higher seed vigour and field germination contribute to its survival",
+      "weight": "10",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "ADVERSE SOIL PHYSICAL CONDITIONS",
+      "target": "FIELD GERMINATION",
+      "description": "influences the expression of field germination",
+      "weight": "8",
+      "source_id": "paper_136"
+    },
+    {
+      "source": "ADVERSE SOIL PHYSICAL CONDITIONS",
+      "target": "SURVIVAL",
+      "description": "creates the environment where desi chickpea survival is advantageous",
+      "weight": "8",
+      "source_id": "paper_136"
+    }
+  ]
+}

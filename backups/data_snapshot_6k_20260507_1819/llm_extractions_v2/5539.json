@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The host plant Cajanus cajan L. used in the study",
+      "source_id": "paper_5539"
+    },
+    {
+      "name": "RHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "Bacterial strains isolated from pigeonpea and screened for temperature tolerance",
+      "source_id": "paper_5539"
+    },
+    {
+      "name": "BRADYRHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "Bacterial strains isolated from pigeonpea and screened for temperature tolerance",
+      "source_id": "paper_5539"
+    },
+    {
+      "name": "TEMPERATURE TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of bacterial strains to grow at high temperatures",
+      "source_id": "paper_5539"
+    },
+    {
+      "name": "HIGH TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental condition ranging from 30°C to 44°C",
+      "source_id": "paper_5539"
+    },
+    {
+      "name": "LIQUID MEDIUM",
+      "type": "METHOD",
+      "description": "The medium used for screening the growth of bacterial strains",
+      "source_id": "paper_5539"
+    },
+    {
+      "name": "EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The effectiveness of bacterial strains in infecting the pigeonpea host",
+      "source_id": "paper_5539"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOBIUM",
+      "target": "PIGEONPEA",
+      "description": "infects the host",
+      "weight": "9",
+      "source_id": "paper_5539"
+    },
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "PIGEONPEA",
+      "description": "infects the host",
+      "weight": "9",
+      "source_id": "paper_5539"
+    },
+    {
+      "source": "RHIZOBIUM",
+      "target": "TEMPERATURE TOLERANCE",
+      "description": "screened for",
+      "weight": "8",
+      "source_id": "paper_5539"
+    },
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "TEMPERATURE TOLERANCE",
+      "description": "screened for",
+      "weight": "8",
+      "source_id": "paper_5539"
+    },
+    {
+      "source": "TEMPERATURE TOLERANCE",
+      "target": "HIGH TEMPERATURE",
+      "description": "measured by growth at",
+      "weight": "10",
+      "source_id": "paper_5539"
+    },
+    {
+      "source": "LIQUID MEDIUM",
+      "target": "TEMPERATURE TOLERANCE",
+      "description": "used to screen for",
+      "weight": "7",
+      "source_id": "paper_5539"
+    },
+    {
+      "source": "TEMPERATURE TOLERANCE",
+      "target": "EFFICIENCY",
+      "description": "no correlation observed between",
+      "weight": "5",
+      "source_id": "paper_5539"
+    },
+    {
+      "source": "EFFICIENCY",
+      "target": "PIGEONPEA",
+      "description": "effectiveness of infection in",
+      "weight": "9",
+      "source_id": "paper_5539"
+    }
+  ]
+}

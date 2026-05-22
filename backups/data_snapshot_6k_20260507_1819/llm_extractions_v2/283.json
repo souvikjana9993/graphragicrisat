@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum lines evaluated for their reaction to Ascochyta blight",
+      "source_id": "paper_283"
+    },
+    {
+      "name": "INTER-ROW SPACING",
+      "type": "CONDITION",
+      "description": "The distance between rows of plants, which was tested for its effect on disease reaction",
+      "source_id": "paper_283"
+    },
+    {
+      "name": "ASCOCHYTA RABIEI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for Ascochyta blight in chickpeas",
+      "source_id": "paper_283"
+    },
+    {
+      "name": "RESISTANCE TO ASCOCHYTA BLIGHT",
+      "type": "TRAIT",
+      "description": "The ability of chickpea lines to resist infection by A. rabiei",
+      "source_id": "paper_283"
+    },
+    {
+      "name": "ILC 2952",
+      "type": "CONCEPT",
+      "description": "A specific resistant line of chickpea that showed decreased resistance under closer spacing",
+      "source_id": "paper_283"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "RESISTANCE TO ASCOCHYTA BLIGHT",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_283"
+    },
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "RESISTANCE TO ASCOCHYTA BLIGHT",
+      "description": "is the target of",
+      "weight": "9",
+      "source_id": "paper_283"
+    },
+    {
+      "source": "INTER-ROW SPACING",
+      "target": "RESISTANCE TO ASCOCHYTA BLIGHT",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_283"
+    },
+    {
+      "source": "ILC 2952",
+      "target": "CHICKPEA",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_283"
+    },
+    {
+      "source": "ILC 2952",
+      "target": "RESISTANCE TO ASCOCHYTA BLIGHT",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_283"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "name": "PULSES",
+      "type": "CROP",
+      "description": "Leguminous crops processed into dhal for human consumption",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "DEHULLING",
+      "type": "METHOD",
+      "description": "The process of removing the outer hull from pulses",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "DHAL",
+      "type": "CONCEPT",
+      "description": "Decorticated dry split cotyledons of pulses",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "COOKING TIME",
+      "type": "TRAIT",
+      "description": "The duration required to cook pulses, which is reduced by dehulling",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "ANTINUTRITIONAL FACTORS",
+      "type": "TRAIT",
+      "description": "Compounds in pulses that interfere with nutrient absorption, reduced by dehulling",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "PROTEIN QUALITY",
+      "type": "TRAIT",
+      "description": "The nutritional value of protein in pulses, improved by dehulling",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "PALATABILITY",
+      "type": "TRAIT",
+      "description": "The taste and texture of pulses, improved by dehulling",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "The ease with which pulses are digested, improved by dehulling",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "DEHULLING LOSSES",
+      "type": "TRAIT",
+      "description": "The amount of material lost during the dehulling process",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "DHAL YIELD",
+      "type": "TRAIT",
+      "description": "The quantity of dhal produced from pulses",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "DEHULLING EFFICIENCY",
+      "type": "CONCEPT",
+      "description": "The effectiveness of the dehulling process in producing dhal",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "CHICKPEAS",
+      "type": "CROP",
+      "description": "A pulse crop characterized by high dhal yield",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "PIGEONPEAS",
+      "type": "CROP",
+      "description": "A pulse crop characterized by low dhal yield",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "STONE CHAKKI",
+      "type": "METHOD",
+      "description": "A small-scale dehulling operation",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "DHAL MILL",
+      "type": "METHOD",
+      "description": "A large-scale dehulling operation",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "HEATING",
+      "type": "METHOD",
+      "description": "A pretreatment process applied to seeds before dehulling to improve yield",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "SEED SHAPE",
+      "type": "TRAIT",
+      "description": "The physical form of seeds, where uniform and round seeds are preferred for higher dhal yields",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "GENOTYPIC DIFFERENCES",
+      "type": "CONCEPT",
+      "description": "Genetic variations that influence the dehulling characteristics of pulses",
+      "source_id": "paper_3315"
+    },
+    {
+      "name": "NUTRIENT LOSSES",
+      "type": "TRAIT",
+      "description": "The loss of nutrients occurring during the dehulling process",
+      "source_id": "paper_3315"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PULSES",
+      "target": "DEHULLING",
+      "description": "PULSES are processed using the DEHULLING method",
+      "weight": "10",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DEHULLING",
+      "target": "DHAL",
+      "description": "DEHULLING produces DHAL",
+      "weight": "10",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DEHULLING",
+      "target": "COOKING TIME",
+      "description": "DEHULLING reduces COOKING TIME",
+      "weight": "8",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DEHULLING",
+      "target": "ANTINUTRITIONAL FACTORS",
+      "description": "DEHULLING reduces ANTINUTRITIONAL FACTORS",
+      "weight": "8",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DEHULLING",
+      "target": "PROTEIN QUALITY",
+      "description": "DEHULLING improves PROTEIN QUALITY",
+      "weight": "8",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DEHULLING",
+      "target": "PALATABILITY",
+      "description": "DEHULLING improves PALATABILITY",
+      "weight": "8",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DEHULLING",
+      "target": "DIGESTIBILITY",
+      "description": "DEHULLING improves DIGESTIBILITY",
+      "weight": "8",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DEHULLING",
+      "target": "DEHULLING LOSSES",
+      "description": "DEHULLING results in DEHULLING LOSSES",
+      "weight": "9",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DEHULLING EFFICIENCY",
+      "target": "DHAL YIELD",
+      "description": "DHAL YIELD is a function of DEHULLING EFFICIENCY",
+      "weight": "10",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "CHICKPEAS",
+      "target": "DHAL YIELD",
+      "description": "CHICKPEAS exhibit high DHAL YIELD",
+      "weight": "9",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "PIGEONPEAS",
+      "target": "DHAL YIELD",
+      "description": "PIGEONPEAS exhibit low DHAL YIELD",
+      "weight": "9",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "STONE CHAKKI",
+      "target": "DEHULLING LOSSES",
+      "description": "STONE CHAKKI operations result in higher DEHULLING LOSSES",
+      "weight": "8",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DHAL MILL",
+      "target": "DEHULLING LOSSES",
+      "description": "DHAL MILL operations result in lower DEHULLING LOSSES",
+      "weight": "8",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "HEATING",
+      "target": "DHAL YIELD",
+      "description": "HEATING as a pretreatment improves DHAL YIELD",
+      "weight": "8",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "HEATING",
+      "target": "PIGEONPEAS",
+      "description": "HEATING is particularly effective for improving yield in PIGEONPEAS",
+      "weight": "7",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "SEED SHAPE",
+      "target": "DHAL YIELD",
+      "description": "Uniform and round SEED SHAPE leads to higher DHAL YIELD",
+      "weight": "8",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "GENOTYPIC DIFFERENCES",
+      "target": "DEHULLING",
+      "description": "GENOTYPIC DIFFERENCES affect the characteristics of DEHULLING",
+      "weight": "7",
+      "source_id": "paper_3315"
+    },
+    {
+      "source": "DEHULLING",
+      "target": "NUTRIENT LOSSES",
+      "description": "DEHULLING leads to NUTRIENT LOSSES",
+      "weight": "7",
+      "source_id": "paper_3315"
+    }
+  ]
+}

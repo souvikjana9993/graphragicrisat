@@ -1,0 +1,85 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, the crop whose seeds are treated for blight.",
+      "source_id": "paper_287"
+    },
+    {
+      "name": "CALIXIN M",
+      "type": "METHOD",
+      "description": "A fungicide containing tridemorph used to eradicate Ascochyta rabiei.",
+      "source_id": "paper_287"
+    },
+    {
+      "name": "BENOMYL",
+      "type": "METHOD",
+      "description": "A fungicide used in combination with Calixin M for blight control.",
+      "source_id": "paper_287"
+    },
+    {
+      "name": "ASCOCHYTA RABIEI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing blight in chickpea.",
+      "source_id": "paper_287"
+    },
+    {
+      "name": "BLIGHT",
+      "type": "CONDITION",
+      "description": "The disease caused by Ascochyta rabiei in chickpea seeds.",
+      "source_id": "paper_287"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CALIXIN M",
+      "target": "ASCOCHYTA RABIEI",
+      "description": "used for eradication of",
+      "weight": "10",
+      "source_id": "paper_287"
+    },
+    {
+      "source": "CALIXIN M",
+      "target": "BLIGHT",
+      "description": "provides complete control of",
+      "weight": "10",
+      "source_id": "paper_287"
+    },
+    {
+      "source": "BENOMYL",
+      "target": "BLIGHT",
+      "description": "provides control of",
+      "weight": "9",
+      "source_id": "paper_287"
+    },
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_287"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "BLIGHT",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_287"
+    },
+    {
+      "source": "CALIXIN M",
+      "target": "CHICKPEA",
+      "description": "applied to seeds of",
+      "weight": "8",
+      "source_id": "paper_287"
+    },
+    {
+      "source": "BENOMYL",
+      "target": "CHICKPEA",
+      "description": "applied to seeds of",
+      "weight": "8",
+      "source_id": "paper_287"
+    }
+  ]
+}

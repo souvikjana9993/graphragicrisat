@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop with low productivity in drought-prone regions of western India",
+      "source_id": "paper_12022"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The yield of the crop, reported as 600-700 kg/ha in specific environments",
+      "source_id": "paper_12022"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental stress characterized by rainfall of less than 400mm per annum",
+      "source_id": "paper_12022"
+    },
+    {
+      "name": "WESTERN INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region in India characterized by drought-prone environments",
+      "source_id": "paper_12022"
+    },
+    {
+      "name": "THREE-WAY HYBRIDS",
+      "type": "METHOD",
+      "description": "A breeding approach used to improve crop productivity and adaptation",
+      "source_id": "paper_12022"
+    },
+    {
+      "name": "DISEASE",
+      "type": "CONDITION",
+      "description": "Biological stress affecting crops in the specified zone",
+      "source_id": "paper_12022"
+    },
+    {
+      "name": "ADAPTATION",
+      "type": "TRAIT",
+      "description": "The ability of a crop to perform well in drought and disease-prone environments",
+      "source_id": "paper_12022"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "PRODUCTIVITY",
+      "description": "has a measured",
+      "weight": "10",
+      "source_id": "paper_12022"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "WESTERN INDIA",
+      "description": "is cultivated in",
+      "weight": "9",
+      "source_id": "paper_12022"
+    },
+    {
+      "source": "PRODUCTIVITY",
+      "target": "DROUGHT",
+      "description": "is negatively affected by",
+      "weight": "9",
+      "source_id": "paper_12022"
+    },
+    {
+      "source": "THREE-WAY HYBRIDS",
+      "target": "PEARL MILLET",
+      "description": "is used to improve",
+      "weight": "10",
+      "source_id": "paper_12022"
+    },
+    {
+      "source": "THREE-WAY HYBRIDS",
+      "target": "ADAPTATION",
+      "description": "is evaluated for",
+      "weight": "9",
+      "source_id": "paper_12022"
+    },
+    {
+      "source": "ADAPTATION",
+      "target": "DROUGHT",
+      "description": "is targeted for",
+      "weight": "9",
+      "source_id": "paper_12022"
+    },
+    {
+      "source": "ADAPTATION",
+      "target": "DISEASE",
+      "description": "is targeted for",
+      "weight": "9",
+      "source_id": "paper_12022"
+    },
+    {
+      "source": "WESTERN INDIA",
+      "target": "DROUGHT",
+      "description": "is characterized by",
+      "weight": "10",
+      "source_id": "paper_12022"
+    }
+  ]
+}

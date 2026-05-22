@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "CROPLAND EXTENT MAPS",
+      "type": "CONCEPT",
+      "description": "Maps used for assessing food security and calculating cropland area across various spatial units from individual farms to nations",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "AGRICULTURAL STATISTICS",
+      "type": "CONCEPT",
+      "description": "Countrywide data used to calculate cropland area and estimate agricultural productivity",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "AGRICULTURAL PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The measure of agricultural output, which can be estimated using cropland extent maps",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "NATURAL DISASTERS",
+      "type": "CONDITION",
+      "description": "Environmental events that can cause disturbance to food security",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "POLITICAL CONFLICT",
+      "type": "CONDITION",
+      "description": "Human-driven events that can cause disturbance to food security",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "SOUTHEAST AND NORTHEAST ASIAN COUNTRIES",
+      "type": "LOCATION",
+      "description": "The geographic region of the study, comprising 12 countries in Southeast and Northeast Asia",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "REFINED AGRO-ECOLOGICAL ZONES",
+      "type": "CONCEPT",
+      "description": "Seven spatial zones used to generate data-cubes and reference training data for cropland mapping",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "LANDSAT 8 OPERATIONAL LAND IMAGER",
+      "type": "METHOD",
+      "description": "A satellite sensor providing 30-m multi-year time-series data for cropland mapping",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "LANDSAT 7 ENHANCED THEMATIC MAPPER",
+      "type": "METHOD",
+      "description": "A satellite sensor providing 30-m multi-year time-series data for cropland mapping",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "SPECTRAL BANDS",
+      "type": "CONCEPT",
+      "description": "Ten Landsat bands including blue, green, red, NIR, SWIR1, SWIR2, Thermal, NDVI, NDWI, and LSWI used as input features",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "GLOBAL DIGITAL ELEVATION MODEL",
+      "type": "METHOD",
+      "description": "A data source used to derive slope and elevation bands for the analysis",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "VERY HIGH SPATIAL RESOLUTION IMAGERY",
+      "type": "METHOD",
+      "description": "Sub-meter to 5-m imagery used to generate the reference training data to separate croplands from non-croplands",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "RANDOM FOREST CLASSIFIER",
+      "type": "METHOD",
+      "description": "A supervised machine learning algorithm used to separate croplands from non-croplands",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "A cloud computing environment used to execute the random forest classifier",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "UNITED NATIONS FOOD AND AGRICULTURE ORGANIZATION",
+      "type": "CONCEPT",
+      "description": "An organization providing national cropland statistics for validation of the resulting products",
+      "source_id": "paper_11209"
+    },
+    {
+      "name": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION",
+      "type": "CONCEPT",
+      "description": "An organization that hosts the cropland products via the Land Processes Distributed Active Archive Center",
+      "source_id": "paper_11209"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROPLAND EXTENT MAPS",
+      "target": "FOOD SECURITY",
+      "description": "used to assess",
+      "weight": "8",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "CROPLAND EXTENT MAPS",
+      "target": "AGRICULTURAL STATISTICS",
+      "description": "complements",
+      "weight": "7",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "CROPLAND EXTENT MAPS",
+      "target": "AGRICULTURAL PRODUCTIVITY",
+      "description": "used to estimate",
+      "weight": "7",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "NATURAL DISASTERS",
+      "target": "FOOD SECURITY",
+      "description": "causes disturbance to",
+      "weight": "9",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "POLITICAL CONFLICT",
+      "target": "FOOD SECURITY",
+      "description": "causes disturbance to",
+      "weight": "9",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "RANDOM FOREST CLASSIFIER",
+      "target": "CROPLAND EXTENT MAPS",
+      "description": "used to generate",
+      "weight": "10",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "RANDOM FOREST CLASSIFIER",
+      "description": "provides computing environment for",
+      "weight": "9",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "LANDSAT 8 OPERATIONAL LAND IMAGER",
+      "target": "RANDOM FOREST CLASSIFIER",
+      "description": "provides input data for",
+      "weight": "8",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "LANDSAT 7 ENHANCED THEMATIC MAPPER",
+      "target": "RANDOM FOREST CLASSIFIER",
+      "description": "provides input data for",
+      "weight": "8",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "SPECTRAL BANDS",
+      "target": "RANDOM FOREST CLASSIFIER",
+      "description": "used as input features for",
+      "weight": "9",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "GLOBAL DIGITAL ELEVATION MODEL",
+      "target": "RANDOM FOREST CLASSIFIER",
+      "description": "provides slope and elevation features for",
+      "weight": "7",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "VERY HIGH SPATIAL RESOLUTION IMAGERY",
+      "target": "RANDOM FOREST CLASSIFIER",
+      "description": "used to create training data for",
+      "weight": "9",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "SOUTHEAST AND NORTHEAST ASIAN COUNTRIES",
+      "target": "CROPLAND EXTENT MAPS",
+      "description": "geographic focus of",
+      "weight": "10",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "REFINED AGRO-ECOLOGICAL ZONES",
+      "target": "CROPLAND EXTENT MAPS",
+      "description": "used for spatial stratification of",
+      "weight": "8",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "UNITED NATIONS FOOD AND AGRICULTURE ORGANIZATION",
+      "target": "CROPLAND EXTENT MAPS",
+      "description": "provides validation data for",
+      "weight": "7",
+      "source_id": "paper_11209"
+    },
+    {
+      "source": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION",
+      "target": "CROPLAND EXTENT MAPS",
+      "description": "hosts and distributes",
+      "weight": "8",
+      "source_id": "paper_11209"
+    }
+  ]
+}

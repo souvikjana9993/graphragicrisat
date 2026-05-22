@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the primary crop affected by rust disease",
+      "source_id": "paper_2757"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A crop used in intercropping with groundnut to reduce rust incidence",
+      "source_id": "paper_2757"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A crop used in intercropping with groundnut to reduce rust incidence",
+      "source_id": "paper_2757"
+    },
+    {
+      "name": "GROUNDNUT RUST",
+      "type": "CONDITION",
+      "description": "An economically important disease of groundnut caused by Puccinia arachidis",
+      "source_id": "paper_2757"
+    },
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes groundnut rust",
+      "source_id": "paper_2757"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of groundnut pods, which can be reduced by rust infection",
+      "source_id": "paper_2757"
+    },
+    {
+      "name": "UREDINIOSPORE GERMINATION",
+      "type": "TRAIT",
+      "description": "The process of urediniospore sprouting, which is inhibited by certain pollens",
+      "source_id": "paper_2757"
+    },
+    {
+      "name": "GERM TUBE GROWTH",
+      "type": "TRAIT",
+      "description": "The growth of the germ tube from a spore, which is inhibited by certain pollens",
+      "source_id": "paper_2757"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The agricultural practice of growing two or more crops together to reduce disease incidence",
+      "source_id": "paper_2757"
+    },
+    {
+      "name": "POLLEN",
+      "type": "CONCEPT",
+      "description": "The male reproductive cells of plants, specifically from sorghum and pearl millet, that exhibit inhibitory effects on rust",
+      "source_id": "paper_2757"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PUCCINIA ARACHIDIS",
+      "target": "GROUNDNUT RUST",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "GROUNDNUT RUST",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "GROUNDNUT RUST",
+      "target": "POD YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "GROUNDNUT RUST",
+      "description": "reduces incidence and severity of",
+      "weight": "8",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INTERCROPPING",
+      "description": "is used in",
+      "weight": "9",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "INTERCROPPING",
+      "description": "is used in",
+      "weight": "9",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "POLLEN",
+      "target": "SORGHUM",
+      "description": "is produced by",
+      "weight": "10",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "POLLEN",
+      "target": "PEARL MILLET",
+      "description": "is produced by",
+      "weight": "10",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "POLLEN",
+      "target": "UREDINIOSPORE GERMINATION",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "POLLEN",
+      "target": "GERM TUBE GROWTH",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "UREDINIOSPORE GERMINATION",
+      "target": "GROUNDNUT RUST",
+      "description": "is a stage of infection for",
+      "weight": "8",
+      "source_id": "paper_2757"
+    },
+    {
+      "source": "GERM TUBE GROWTH",
+      "target": "GROUNDNUT RUST",
+      "description": "is a stage of infection for",
+      "weight": "8",
+      "source_id": "paper_2757"
+    }
+  ]
+}

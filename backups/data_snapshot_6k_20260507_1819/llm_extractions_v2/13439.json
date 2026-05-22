@@ -1,0 +1,193 @@
+{
+  "entities": [
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A critical input for crop production.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "NITROGEN USE INEFFICIENCIES",
+      "type": "CONDITION",
+      "description": "Conditions resulting in substantial economic losses and environmental externalities.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "NITRATE LEACHING",
+      "type": "CONDITION",
+      "description": "An environmental externality resulting from nitrogen use inefficiencies.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "GREENHOUSE GAS EMISSIONS",
+      "type": "CONDITION",
+      "description": "Environmental externalities including CO2-equivalent emissions.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "BIOLOGICAL NITRIFICATION INHIBITION",
+      "type": "TRAIT",
+      "description": "A plant-mediated mechanism that suppresses soil nitrification via root-secreted compounds to improve nitrogen retention.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "SOIL NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of converting ammonia to nitrate in soil, which is suppressed by BNI.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The cereal crop being evaluated for the potential of biological nitrification inhibition.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "EX-ANTE CROP SIMULATION",
+      "type": "METHOD",
+      "description": "An approach used to evaluate the potential agronomic and environmental benefits of BNI.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "DSSAT",
+      "type": "METHOD",
+      "description": "A crop system model applied to simulate sorghum systems.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "AHMEDNAGAR DISTRICT",
+      "type": "LOCATION",
+      "description": "The specific district in Maharashtra, India, used as a representative location for the sorghum system.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "MAHARASHTRA",
+      "type": "LOCATION",
+      "description": "The state in India where the study's representative system is located.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study's representative system is located.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "CSH-5",
+      "type": "CROP",
+      "description": "A widely cultivated sorghum hybrid used in the simulation.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "BNI EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The varying level of effectiveness of biological nitrification inhibition in virtual cultivars.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "SORGHUM YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the sorghum crop, which can be increased by high-efficiency BNI.",
+      "source_id": "paper_13439"
+    },
+    {
+      "name": "NITROGEN LOSSES",
+      "type": "CONDITION",
+      "description": "The loss of nitrogen from the agroecosystem, which can be reduced by BNI.",
+      "source_id": "paper_13439"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITION",
+      "target": "SORGHUM",
+      "description": "is incorporated into",
+      "weight": "9",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITION",
+      "target": "SOIL NITRIFICATION",
+      "description": "suppresses",
+      "weight": "10",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITION",
+      "target": "NITROGEN LOSSES",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITION",
+      "target": "SORGHUM YIELD",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITION",
+      "target": "GREENHOUSE GAS EMISSIONS",
+      "description": "lowers",
+      "weight": "8",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "DSSAT",
+      "target": "EX-ANTE CROP SIMULATION",
+      "description": "is used for",
+      "weight": "10",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "EX-ANTE CROP SIMULATION",
+      "target": "SORGHUM",
+      "description": "evaluates BNI in",
+      "weight": "8",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "CSH-5",
+      "target": "SORGHUM",
+      "description": "is a hybrid of",
+      "weight": "10",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "DSSAT",
+      "target": "AHMEDNAGAR DISTRICT",
+      "description": "is applied to a system in",
+      "weight": "7",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "AHMEDNAGAR DISTRICT",
+      "target": "MAHARASHTRA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "MAHARASHTRA",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "NITROGEN USE INEFFICIENCIES",
+      "target": "NITRATE LEACHING",
+      "description": "results in",
+      "weight": "9",
+      "source_id": "paper_13439"
+    },
+    {
+      "source": "NITROGEN USE INEFFICIENCIES",
+      "target": "GREENHOUSE GAS EMISSIONS",
+      "description": "results in",
+      "weight": "9",
+      "source_id": "paper_13439"
+    }
+  ]
+}

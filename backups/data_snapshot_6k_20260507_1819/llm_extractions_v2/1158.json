@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, the crop studied for genetic variation",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "SUDAN",
+      "type": "LOCATION",
+      "description": "Country of origin for sorghum accessions",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "Organization and source of sorghum accessions",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "USA",
+      "type": "LOCATION",
+      "description": "Country of origin for sorghum accessions",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "NEBRASKA",
+      "type": "LOCATION",
+      "description": "State in the USA providing sorghum accessions",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "SIMPLE SEQUENCE REPEATS",
+      "type": "GENE_MARKER",
+      "description": "Molecular markers used to assess genetic variability",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "GENETIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The variation in genetic makeup among crop accessions",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "PLANT BREEDING",
+      "type": "CONCEPT",
+      "description": "The process of improving plants through genetic selection",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "CONSERVATION OF GENETIC RESOURCES",
+      "type": "CONCEPT",
+      "description": "The preservation of genetic diversity in crops",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "UPGMA",
+      "type": "METHOD",
+      "description": "Unweighted pair-grouped method with arithmetic average used for clustering",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "MANTEL STATISTICS",
+      "type": "METHOD",
+      "description": "Statistical method used to test the fit of clustering to similarity data",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "DIVERSITY INDEX",
+      "type": "CONCEPT",
+      "description": "A measure used to quantify genetic diversity",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "POLYMORPHIC INFORMATION CONTENT",
+      "type": "CONCEPT",
+      "description": "A measure of the informativeness of a genetic marker",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "SB4-72",
+      "type": "GENE_MARKER",
+      "description": "A specific SSR marker with a PIC of 0.46",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "SBAGF06",
+      "type": "GENE_MARKER",
+      "description": "A specific SSR marker with a PIC of 0.87",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "GENETIC SIMILARITY",
+      "type": "CONCEPT",
+      "description": "The degree of genetic relatedness between accessions",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "MORPHOLOGICAL CHARACTERS",
+      "type": "TRAIT",
+      "description": "Physical characteristics used for grouping sorghum types",
+      "source_id": "paper_1158"
+    },
+    {
+      "name": "CHARACTERIZATION",
+      "type": "METHOD",
+      "description": "The process of identifying and describing the properties of accessions",
+      "source_id": "paper_1158"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SIMPLE SEQUENCE REPEATS",
+      "target": "SORGHUM",
+      "description": "used to assess genetic variation in",
+      "weight": "10",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "UPGMA",
+      "target": "SORGHUM",
+      "description": "used to cluster accessions of",
+      "weight": "9",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "MANTEL STATISTICS",
+      "target": "UPGMA",
+      "description": "used to evaluate the fit of",
+      "weight": "8",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "SIMPLE SEQUENCE REPEATS",
+      "target": "GENETIC VARIABILITY",
+      "description": "used to estimate",
+      "weight": "10",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "GENETIC VARIABILITY",
+      "target": "PLANT BREEDING",
+      "description": "has a strong impact on",
+      "weight": "9",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "GENETIC VARIABILITY",
+      "target": "CONSERVATION OF GENETIC RESOURCES",
+      "description": "has a strong impact on",
+      "weight": "9",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "SB4-72",
+      "target": "SIMPLE SEQUENCE REPEATS",
+      "description": "is a specific marker of",
+      "weight": "10",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "SBAGF06",
+      "target": "SIMPLE SEQUENCE REPEATS",
+      "description": "is a specific marker of",
+      "weight": "10",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "SUDAN",
+      "target": "SORGHUM",
+      "description": "is a geographical origin of",
+      "weight": "8",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "USA",
+      "target": "SORGHUM",
+      "description": "is a geographical origin of",
+      "weight": "8",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "SORGHUM",
+      "description": "is a source of",
+      "weight": "8",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "NEBRASKA",
+      "target": "USA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "UPGMA",
+      "target": "GENETIC SIMILARITY",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "DIVERSITY INDEX",
+      "target": "SORGHUM",
+      "description": "used to measure diversity in",
+      "weight": "8",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "POLYMORPHIC INFORMATION CONTENT",
+      "target": "SIMPLE SEQUENCE REPEATS",
+      "description": "used to evaluate the informativeness of",
+      "weight": "9",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "MORPHOLOGICAL CHARACTERS",
+      "target": "SORGHUM",
+      "description": "used to differentiate types of",
+      "weight": "7",
+      "source_id": "paper_1158"
+    },
+    {
+      "source": "CHARACTERIZATION",
+      "target": "SORGHUM",
+      "description": "used for the identification of accessions of",
+      "weight": "8",
+      "source_id": "paper_1158"
+    }
+  ]
+}

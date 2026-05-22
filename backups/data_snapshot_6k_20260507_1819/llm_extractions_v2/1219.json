@@ -1,0 +1,236 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Oryza sativa cv. N22, the crop studied for its response to water deficit and heat stress",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "A state of limited water availability that affects rice growth and development",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "A state of high temperature that affects rice growth and development",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "FLOWERING STAGE",
+      "type": "CONCEPT",
+      "description": "The most sensitive growth stage of rice where water deficit and heat stress cause sterility",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "SPIKELET STERILITY",
+      "type": "TRAIT",
+      "description": "The failure of spikelets to develop into viable seeds due to stress",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "YIELD LOSSES",
+      "type": "TRAIT",
+      "description": "The reduction in crop productivity resulting from spikelet sterility",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "PEDUNCLE ELONGATION",
+      "type": "TRAIT",
+      "description": "The growth process of the peduncle, which is reduced by water deficit and heat stress",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "SPIKELET FERTILITY",
+      "type": "TRAIT",
+      "description": "The capacity of spikelets to produce viable seeds",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "THERMO-TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand heat stress, potentially acquired through prior water-deficit stress",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "POLLEN GERMINATION",
+      "type": "CONCEPT",
+      "description": "The physiological process of pollen grains sprouting to fertilize the ovule",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "POLLEN ALLERGENS",
+      "type": "GENE_MARKER",
+      "description": "Proteins that favor pollen germination and are upregulated by water deficit",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "BETA EXPANSIN",
+      "type": "GENE_MARKER",
+      "description": "Proteins that favor pollen germination and are upregulated by water deficit",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "HEAT SHOCK TRANSCRIPTS",
+      "type": "GENE_MARKER",
+      "description": "RNA molecules that are significantly up-regulated under combined water deficit and heat stress",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "HEAT SHOCK PROTEINS",
+      "type": "GENE_MARKER",
+      "description": "Chaperonic proteins that are significantly up-regulated under combined water deficit and heat stress",
+      "source_id": "paper_1219"
+    },
+    {
+      "name": "PROTEOMIC ANALYSIS",
+      "type": "METHOD",
+      "description": "The study of the proteomic response of spikelets to combined water deficit and heat stress",
+      "source_id": "paper_1219"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "WATER DEFICIT",
+      "description": "is exposed to",
+      "weight": "8",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "RICE",
+      "target": "HEAT STRESS",
+      "description": "is exposed to",
+      "weight": "8",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "SPIKELET STERILITY",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "SPIKELET STERILITY",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "YIELD LOSSES",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "YIELD LOSSES",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "PEDUNCLE ELONGATION",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "PEDUNCLE ELONGATION",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "SPIKELET FERTILITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "SPIKELET FERTILITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "THERMO-TOLERANCE",
+      "description": "induces",
+      "weight": "7",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "POLLEN ALLERGENS",
+      "description": "upregulates",
+      "weight": "9",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "BETA EXPANSIN",
+      "description": "upregulates",
+      "weight": "9",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "HEAT SHOCK PROTEINS",
+      "description": "upregulates in combination with heat stress",
+      "weight": "7",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "HEAT SHOCK PROTEINS",
+      "description": "upregulates in combination with water deficit",
+      "weight": "7",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "HEAT SHOCK TRANSCRIPTS",
+      "description": "upregulates in combination with heat stress",
+      "weight": "7",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "HEAT SHOCK TRANSCRIPTS",
+      "description": "upregulates in combination with water deficit",
+      "weight": "7",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "POLLEN ALLERGENS",
+      "target": "POLLEN GERMINATION",
+      "description": "favors",
+      "weight": "9",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "BETA EXPANSIN",
+      "target": "POLLEN GERMINATION",
+      "description": "favors",
+      "weight": "9",
+      "source_id": "paper_1219"
+    },
+    {
+      "source": "PROTEOMIC ANALYSIS",
+      "target": "RICE",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_1219"
+    }
+  ]
+}

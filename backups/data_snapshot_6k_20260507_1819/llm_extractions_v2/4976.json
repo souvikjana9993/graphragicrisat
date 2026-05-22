@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used as a component in the intercrop experiment",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop used as a component in the intercrop experiment",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "INTERCROP",
+      "type": "CONCEPT",
+      "description": "The practice of growing two or more crops in proximity, specifically sorghum and groundnut",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "CROP PERFORMANCE RATIO",
+      "type": "CONCEPT",
+      "description": "A ratio defined as the productivity of an intercrop per unit area compared with that expected from sole crops",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of output per unit area of ground",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "INTERCEPTED RADIATION",
+      "type": "TRAIT",
+      "description": "The amount of solar radiation captured by the crop canopy",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "SEASONAL TRANSPIRATION",
+      "type": "TRAIT",
+      "description": "The total amount of water transpired by the crop over the growing season",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "CONVERSION COEFFICIENTS FOR RADIATION",
+      "type": "CONCEPT",
+      "description": "Coefficients used to relate intercepted radiation to dry matter production",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "DRY MATTER/WATER RATIOS",
+      "type": "CONCEPT",
+      "description": "The ratio of dry matter produced to the amount of water transpired",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "TOTAL DRY WEIGHT",
+      "type": "TRAIT",
+      "description": "The total mass of dry plant material produced",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "REPRODUCTIVE YIELD",
+      "type": "TRAIT",
+      "description": "The yield of the economically useful reproductive parts of the plant",
+      "source_id": "paper_4976"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of reproductive yield to total dry weight",
+      "source_id": "paper_4976"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "INTERCROP",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "INTERCROP",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "CROP PERFORMANCE RATIO",
+      "target": "PRODUCTIVITY",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "CROP PERFORMANCE RATIO",
+      "target": "INTERCEPTED RADIATION",
+      "description": "allows comparison of",
+      "weight": "8",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "CROP PERFORMANCE RATIO",
+      "target": "SEASONAL TRANSPIRATION",
+      "description": "allows comparison of",
+      "weight": "8",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "CROP PERFORMANCE RATIO",
+      "target": "CONVERSION COEFFICIENTS FOR RADIATION",
+      "description": "used to calculate",
+      "weight": "8",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "CROP PERFORMANCE RATIO",
+      "target": "DRY MATTER/WATER RATIOS",
+      "description": "used to calculate",
+      "weight": "8",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "INTERCEPTED RADIATION",
+      "target": "TOTAL DRY WEIGHT",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "HARVEST INDEX",
+      "target": "REPRODUCTIVE YIELD",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HARVEST INDEX",
+      "description": "exhibits improved value in intercrop",
+      "weight": "8",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "INTERCROP",
+      "target": "TOTAL DRY WEIGHT",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_4976"
+    },
+    {
+      "source": "INTERCROP",
+      "target": "REPRODUCTIVE YIELD",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_4976"
+    }
+  ]
+}

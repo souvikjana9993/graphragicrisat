@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species being studied for improvement",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "DESI",
+      "type": "CONCEPT",
+      "description": "Small-seeded, primitive variety of chickpea",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "KABULI",
+      "type": "CONCEPT",
+      "description": "Large-seeded, advanced variety of chickpea",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "DIALLEL CROSS",
+      "type": "METHOD",
+      "description": "A breeding method where all possible combinations of parents are crossed",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "SEED SHAPE",
+      "type": "TRAIT",
+      "description": "The physical form of the seed",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The physical dimensions of the seed",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "SEED COLOUR",
+      "type": "TRAIT",
+      "description": "The pigmentation of the seed",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "INTROGRESSION",
+      "type": "METHOD",
+      "description": "The movement of a gene from one species into the gene pool of another",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The degree of difference between segregants",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "F2 GENERATION",
+      "type": "CONCEPT",
+      "description": "The second filial generation of a cross",
+      "source_id": "paper_1612"
+    },
+    {
+      "name": "F4 GENERATION",
+      "type": "CONCEPT",
+      "description": "The fourth filial generation of a cross",
+      "source_id": "paper_1612"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DESI",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1612"
+    },
+    {
+      "source": "KABULI",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1612"
+    },
+    {
+      "source": "DIALLEL CROSS",
+      "target": "CHICKPEA",
+      "description": "used for improvement of",
+      "weight": "8",
+      "source_id": "paper_1612"
+    },
+    {
+      "source": "DIALLEL CROSS",
+      "target": "VARIABILITY",
+      "description": "generates",
+      "weight": "7",
+      "source_id": "paper_1612"
+    },
+    {
+      "source": "F2 GENERATION",
+      "target": "SEED SHAPE",
+      "description": "exhibits variability in",
+      "weight": "8",
+      "source_id": "paper_1612"
+    },
+    {
+      "source": "F2 GENERATION",
+      "target": "SEED SIZE",
+      "description": "exhibits variability in",
+      "weight": "8",
+      "source_id": "paper_1612"
+    },
+    {
+      "source": "F2 GENERATION",
+      "target": "SEED COLOUR",
+      "description": "exhibits variability in",
+      "weight": "8",
+      "source_id": "paper_1612"
+    },
+    {
+      "source": "INTROGRESSION",
+      "target": "CHICKPEA",
+      "description": "used for improvement of",
+      "weight": "8",
+      "source_id": "paper_1612"
+    },
+    {
+      "source": "INTROGRESSION",
+      "target": "KABULI",
+      "description": "used to introduce traits of",
+      "weight": "7",
+      "source_id": "paper_1612"
+    },
+    {
+      "source": "F4 GENERATION",
+      "target": "INTROGRESSION",
+      "description": "used in the process of",
+      "weight": "6",
+      "source_id": "paper_1612"
+    }
+  ]
+}

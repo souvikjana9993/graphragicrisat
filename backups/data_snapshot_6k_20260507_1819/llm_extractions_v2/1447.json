@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species Cicer arietinum L. studied for its seed protein content.",
+      "source_id": "paper_1447"
+    },
+    {
+      "name": "SEED PROTEIN CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of protein present in the seeds of the crop.",
+      "source_id": "paper_1447"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted and genotypes were grown.",
+      "source_id": "paper_1447"
+    },
+    {
+      "name": "STATISTICAL ANALYSIS",
+      "type": "METHOD",
+      "description": "The analytical approach used to evaluate the influence of location and cultivar on protein content.",
+      "source_id": "paper_1447"
+    },
+    {
+      "name": "CULTIVAR",
+      "type": "CONCEPT",
+      "description": "The specific genotypes or varieties of chickpea evaluated in the study.",
+      "source_id": "paper_1447"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of improving specific traits in a crop population.",
+      "source_id": "paper_1447"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "is the crop whose seed protein content was estimated",
+      "weight": "10",
+      "source_id": "paper_1447"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "INDIA",
+      "description": "was grown in",
+      "weight": "8",
+      "source_id": "paper_1447"
+    },
+    {
+      "source": "STATISTICAL ANALYSIS",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "was used to analyze the variation in",
+      "weight": "9",
+      "source_id": "paper_1447"
+    },
+    {
+      "source": "CULTIVAR",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "had a significant but low magnitude effect on",
+      "weight": "6",
+      "source_id": "paper_1447"
+    },
+    {
+      "source": "INDIA",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "had the greatest influence on",
+      "weight": "9",
+      "source_id": "paper_1447"
+    },
+    {
+      "source": "BREEDING",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "is used to improve",
+      "weight": "9",
+      "source_id": "paper_1447"
+    },
+    {
+      "source": "BREEDING",
+      "target": "CHICKPEA",
+      "description": "is applied to",
+      "weight": "10",
+      "source_id": "paper_1447"
+    },
+    {
+      "source": "CULTIVAR",
+      "target": "CHICKPEA",
+      "description": "represents genotypes of",
+      "weight": "10",
+      "source_id": "paper_1447"
+    }
+  ]
+}

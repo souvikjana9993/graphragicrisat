@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the case study on customized information delivery is conducted",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "KNOWLEDGE DATABASE",
+      "type": "CONCEPT",
+      "description": "A system that assembles agricultural data including land holding, soil analysis, cropping patterns, past yield, and fertilizer use",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "LAND HOLDING",
+      "type": "CONCEPT",
+      "description": "Agricultural data relating to the size and ownership of land",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "SOIL ANALYSIS",
+      "type": "METHOD",
+      "description": "The process of analyzing soil properties to provide agricultural data",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "CROPPING PATTERNS",
+      "type": "CONCEPT",
+      "description": "Data regarding the sequence and spatial arrangement of crops",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "PAST YIELD",
+      "type": "CONCEPT",
+      "description": "Historical data on crop production",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "FERTILIZER USE",
+      "type": "CONCEPT",
+      "description": "Data regarding the application of fertilizers",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "MOBILE PHONES",
+      "type": "METHOD",
+      "description": "Technology used to relay tailored information to farmers",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "BROADCASTING",
+      "type": "METHOD",
+      "description": "A general method of information delivery with limited value for tailored needs",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "NARROWCASTING",
+      "type": "METHOD",
+      "description": "A targeted method of information delivery that better serves farmers' needs",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "TABLETS",
+      "type": "METHOD",
+      "description": "Devices used by farmer facilitators for data management and information sharing",
+      "source_id": "paper_10666"
+    },
+    {
+      "name": "DRYLAND",
+      "type": "CONDITION",
+      "description": "The environmental condition of the farming areas",
+      "source_id": "paper_10666"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INDIA",
+      "target": "KNOWLEDGE DATABASE",
+      "description": "Location of the case study implementing the database",
+      "weight": "10",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "KNOWLEDGE DATABASE",
+      "target": "LAND HOLDING",
+      "description": "Assembles data relating to",
+      "weight": "10",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "KNOWLEDGE DATABASE",
+      "target": "SOIL ANALYSIS",
+      "description": "Assembles data relating to",
+      "weight": "10",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "KNOWLEDGE DATABASE",
+      "target": "CROPPING PATTERNS",
+      "description": "Assembles data relating to",
+      "weight": "10",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "KNOWLEDGE DATABASE",
+      "target": "PAST YIELD",
+      "description": "Assembles data relating to",
+      "weight": "10",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "KNOWLEDGE DATABASE",
+      "target": "FERTILIZER USE",
+      "description": "Assembles data relating to",
+      "weight": "10",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "MOBILE PHONES",
+      "target": "KNOWLEDGE DATABASE",
+      "description": "Used to relay information from the database to farmers",
+      "weight": "8",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "NARROWCASTING",
+      "target": "MOBILE PHONES",
+      "description": "Implemented via mobile technology to target farmers",
+      "weight": "7",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "TABLETS",
+      "target": "KNOWLEDGE DATABASE",
+      "description": "Used for uploading and updating data within the database",
+      "weight": "9",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "DRYLAND",
+      "target": "KNOWLEDGE DATABASE",
+      "description": "Environmental context for the farmers using the database",
+      "weight": "8",
+      "source_id": "paper_10666"
+    },
+    {
+      "source": "NARROWCASTING",
+      "target": "BROADCASTING",
+      "description": "Presented as a more effective alternative for tailored information",
+      "weight": "9",
+      "source_id": "paper_10666"
+    }
+  ]
+}

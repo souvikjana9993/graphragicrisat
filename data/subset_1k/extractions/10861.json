@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The target legume crop used for genome-wide SNP generation and genotyping.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphisms used as molecular markers to scan for seed yield signatures.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "GENOTYPING-BY-SEQUENCING",
+      "type": "METHOD",
+      "description": "A high-throughput sequencing method used to generate sequence reads for SNP discovery.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "DAD SNPS",
+      "type": "GENE_MARKER",
+      "description": "Desi accessions-derived Single Nucleotide Polymorphisms.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "KAD SNPS",
+      "type": "GENE_MARKER",
+      "description": "Kabuli accessions-derived Single Nucleotide Polymorphisms.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "MAD SNPS",
+      "type": "GENE_MARKER",
+      "description": "Multiple accessions-derived Single Nucleotide Polymorphisms efficient in detecting polymorphic potential.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "TAD SNPS",
+      "type": "GENE_MARKER",
+      "description": "Two accessions-derived Single Nucleotide Polymorphisms derived from desi ICC 4958 and kabuli CDC Frontier.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "SEED YIELD PER PLANT",
+      "type": "TRAIT",
+      "description": "An agronomic trait (SYP) for which molecular signatures and phenotypic variation were analyzed.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "QTNS",
+      "type": "GENE_MARKER",
+      "description": "Quantitative trait nucleotides associated with phenotypic variation in seed yield.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "PPR GENE",
+      "type": "CONCEPT",
+      "description": "Pentatricopeptide repeat gene significantly associated with the seed yield per plant trait.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "INTROGRESSION BREEDING",
+      "type": "METHOD",
+      "description": "A breeding method targeting useful agronomic traits using informative SNPs.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "VARIETAL IMPROVEMENT",
+      "type": "METHOD",
+      "description": "The process of improving crop varieties using molecular markers.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "GENOMICS-ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "The application of genomic information to develop high-yielding cultivars.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "PHYLOGENETIC RELATIONSHIP",
+      "type": "CONCEPT",
+      "description": "The evolutionary relationship among desi and kabuli accessions.",
+      "source_id": "paper_10861"
+    },
+    {
+      "name": "ALLELIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The level of natural genetic variation within the chickpea accessions.",
+      "source_id": "paper_10861"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "SNPS",
+      "description": "used to discover",
+      "weight": "10",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "CHICKPEA",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "SNPS",
+      "target": "CHICKPEA",
+      "description": "identified within",
+      "weight": "10",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "DAD SNPS",
+      "target": "SNPS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "KAD SNPS",
+      "target": "SNPS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "MAD SNPS",
+      "target": "SNPS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "TAD SNPS",
+      "target": "SNPS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "MAD SNPS",
+      "target": "PHYLOGENETIC RELATIONSHIP",
+      "description": "used to detect",
+      "weight": "8",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "MAD SNPS",
+      "target": "ALLELIC DIVERSITY",
+      "description": "used to detect",
+      "weight": "8",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "SNPS",
+      "target": "SEED YIELD PER PLANT",
+      "description": "used to scan molecular signatures for",
+      "weight": "9",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "QTNS",
+      "target": "SEED YIELD PER PLANT",
+      "description": "explain phenotypic variation for",
+      "weight": "9",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "PPR GENE",
+      "target": "SEED YIELD PER PLANT",
+      "description": "significantly associated with",
+      "weight": "10",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "PPR GENE",
+      "target": "SNPS",
+      "description": "contains synonymous-coding SNP/QTN",
+      "weight": "9",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "SNPS",
+      "target": "INTROGRESSION BREEDING",
+      "description": "effective for",
+      "weight": "8",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "SNPS",
+      "target": "VARIETAL IMPROVEMENT",
+      "description": "effective for",
+      "weight": "8",
+      "source_id": "paper_10861"
+    },
+    {
+      "source": "GENOMICS-ASSISTED BREEDING",
+      "target": "CHICKPEA",
+      "description": "used to develop high-yielding cultivars of",
+      "weight": "9",
+      "source_id": "paper_10861"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop affected by ergot disease in Africa",
+      "source_id": "paper_1892"
+    },
+    {
+      "name": "ERGOT DISEASE",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting sorghum production",
+      "source_id": "paper_1892"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "The continent where sorghum ergot is prevalent",
+      "source_id": "paper_1892"
+    },
+    {
+      "name": "CLAVICEPS AFRICANA",
+      "type": "ORGANISM",
+      "description": "The causal pathogen of ergot disease in sorghum",
+      "source_id": "paper_1892"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "Country where Claviceps africana was first recorded in 1923",
+      "source_id": "paper_1892"
+    },
+    {
+      "name": "NIGERIA",
+      "type": "LOCATION",
+      "description": "Country where the national breeding program's A-lines were infected",
+      "source_id": "paper_1892"
+    },
+    {
+      "name": "A-LINES",
+      "type": "CONCEPT",
+      "description": "Specific genetic lines used in Nigeria's national breeding program",
+      "source_id": "paper_1892"
+    },
+    {
+      "name": "NATIONAL BREEDING PROGRAM",
+      "type": "CONCEPT",
+      "description": "The breeding initiative in Nigeria for sorghum",
+      "source_id": "paper_1892"
+    },
+    {
+      "name": "SEED PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of producing seeds, which was nearly excluded due to ergot infection",
+      "source_id": "paper_1892"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ERGOT DISEASE",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1892"
+    },
+    {
+      "source": "CLAVICEPS AFRICANA",
+      "target": "ERGOT DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1892"
+    },
+    {
+      "source": "ERGOT DISEASE",
+      "target": "AFRICA",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_1892"
+    },
+    {
+      "source": "CLAVICEPS AFRICANA",
+      "target": "KENYA",
+      "description": "recorded in",
+      "weight": "7",
+      "source_id": "paper_1892"
+    },
+    {
+      "source": "ERGOT DISEASE",
+      "target": "A-LINES",
+      "description": "infected",
+      "weight": "9",
+      "source_id": "paper_1892"
+    },
+    {
+      "source": "A-LINES",
+      "target": "NATIONAL BREEDING PROGRAM",
+      "description": "part of",
+      "weight": "8",
+      "source_id": "paper_1892"
+    },
+    {
+      "source": "NATIONAL BREEDING PROGRAM",
+      "target": "NIGERIA",
+      "description": "located in",
+      "weight": "9",
+      "source_id": "paper_1892"
+    },
+    {
+      "source": "ERGOT DISEASE",
+      "target": "SEED PRODUCTION",
+      "description": "excludes",
+      "weight": "9",
+      "source_id": "paper_1892"
+    }
+  ]
+}

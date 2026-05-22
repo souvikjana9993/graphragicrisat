@@ -1,0 +1,229 @@
+{
+  "entities": [
+    {
+      "name": "CROP MONITORING",
+      "type": "CONCEPT",
+      "description": "The process of observing and assessing crop growth and health over time to ensure food security.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "AGRICULTURAL SERVING PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Programs designed to provide services and support to the agricultural sector.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE (GEE)",
+      "type": "METHOD",
+      "description": "A cloud-based platform for geospatial analysis and processing of time series satellite data.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+      "type": "METHOD",
+      "description": "A numerical indicator used to assess live green vegetation, derived from satellite imagery.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "SUPERVISED CLASSIFICATION",
+      "type": "METHOD",
+      "description": "A machine learning task of classifying data into predefined categories based on labeled training data.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "MACHINE LEARNING CLASSIFIERS",
+      "type": "METHOD",
+      "description": "Algorithms that learn to categorize data based on patterns in training sets, evaluated in the GEE platform.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "type": "METHOD",
+      "description": "A technique used for crop classification by matching spectral signatures with ground data.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "SENTINEL-2",
+      "type": "METHOD",
+      "description": "A satellite mission providing 10 m multi-spectral imagery used for crop type classification.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "JHANSI DISTRICT",
+      "type": "LOCATION",
+      "description": "The specific geographical area where the crop classification study was conducted for the 2018-19 rabi season.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "RANDOM FOREST (RF)",
+      "type": "METHOD",
+      "description": "An ensemble learning classifier that produced 81.8% accuracy and outperformed other ML classifiers.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "SUPPORT VECTOR MACHINE (SVM)",
+      "type": "METHOD",
+      "description": "A supervised learning classifier that produced 68.8% accuracy in the study.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "CLASSIFICATION AND REGRESSION TREES (CART)",
+      "type": "METHOD",
+      "description": "A decision tree classifier that produced 64.9% accuracy in the study.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "GROUND DATA",
+      "type": "CONCEPT",
+      "description": "Actual field observations used to train classifiers and validate classification maps.",
+      "source_id": "paper_12138"
+    },
+    {
+      "name": "AGRICULTURAL STATISTICS",
+      "type": "CONCEPT",
+      "description": "Quantitative data used to compare and validate the results obtained from classifiers.",
+      "source_id": "paper_12138"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROP MONITORING",
+      "target": "FOOD SECURITY",
+      "description": "essential for attaining",
+      "weight": "8",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "CROP MONITORING",
+      "target": "AGRICULTURAL SERVING PROGRAMS",
+      "description": "essential for implementation of",
+      "weight": "8",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE (GEE)",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+      "description": "used to process imagery into",
+      "weight": "7",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+      "target": "SUPERVISED CLASSIFICATION",
+      "description": "used as input for",
+      "weight": "7",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "MACHINE LEARNING CLASSIFIERS",
+      "target": "GOOGLE EARTH ENGINE (GEE)",
+      "description": "evaluated within the platform",
+      "weight": "9",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "target": "SENTINEL-2",
+      "description": "uses data from",
+      "weight": "9",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "RANDOM FOREST (RF)",
+      "target": "MACHINE LEARNING CLASSIFIERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "SUPPORT VECTOR MACHINE (SVM)",
+      "target": "MACHINE LEARNING CLASSIFIERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "CLASSIFICATION AND REGRESSION TREES (CART)",
+      "target": "MACHINE LEARNING CLASSIFIERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "RANDOM FOREST (RF)",
+      "target": "JHANSI DISTRICT",
+      "description": "applied to classify crops in",
+      "weight": "9",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "SUPPORT VECTOR MACHINE (SVM)",
+      "target": "JHANSI DISTRICT",
+      "description": "applied to classify crops in",
+      "weight": "9",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "CLASSIFICATION AND REGRESSION TREES (CART)",
+      "target": "JHANSI DISTRICT",
+      "description": "applied to classify crops in",
+      "weight": "9",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "target": "JHANSI DISTRICT",
+      "description": "applied to classify crops in",
+      "weight": "9",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "target": "GROUND DATA",
+      "description": "utilizes for classification",
+      "weight": "9",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "RANDOM FOREST (RF)",
+      "target": "GROUND DATA",
+      "description": "performance depends on quality of",
+      "weight": "8",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "RANDOM FOREST (RF)",
+      "target": "AGRICULTURAL STATISTICS",
+      "description": "results compared with",
+      "weight": "7",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "SUPPORT VECTOR MACHINE (SVM)",
+      "target": "AGRICULTURAL STATISTICS",
+      "description": "results compared with",
+      "weight": "7",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "CLASSIFICATION AND REGRESSION TREES (CART)",
+      "target": "AGRICULTURAL STATISTICS",
+      "description": "results compared with",
+      "weight": "7",
+      "source_id": "paper_12138"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "target": "AGRICULTURAL STATISTICS",
+      "description": "results compared with",
+      "weight": "7",
+      "source_id": "paper_12138"
+    }
+  ]
+}

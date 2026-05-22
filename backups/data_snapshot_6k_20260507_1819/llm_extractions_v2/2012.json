@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The species Arachis hypogaea L.",
+      "source_id": "paper_2012"
+    },
+    {
+      "name": "PUCKERED LEAF",
+      "type": "TRAIT",
+      "description": "Partially crinkled leaves with yellow stripes along the margins",
+      "source_id": "paper_2012"
+    },
+    {
+      "name": "DWARF COMPACT HABIT",
+      "type": "TRAIT",
+      "description": "Dwarf and compact plant growth habit",
+      "source_id": "paper_2012"
+    },
+    {
+      "name": "YELLOW STRIPES",
+      "type": "TRAIT",
+      "description": "Yellow stripes along the margins of the leaves",
+      "source_id": "paper_2012"
+    },
+    {
+      "name": "NL1",
+      "type": "GENE_MARKER",
+      "description": "A gene that controls the leaf phenotype in groundnut",
+      "source_id": "paper_2012"
+    },
+    {
+      "name": "NL2",
+      "type": "GENE_MARKER",
+      "description": "A gene that controls the leaf phenotype in groundnut",
+      "source_id": "paper_2012"
+    },
+    {
+      "name": "RECIPROCAL CROSSING",
+      "type": "METHOD",
+      "description": "The process of crossing PLM with cultivars J11 and MK374 to study inheritance",
+      "source_id": "paper_2012"
+    },
+    {
+      "name": "LEAF PHENOTYPE",
+      "type": "CONCEPT",
+      "description": "The observable physical characteristics of the leaves",
+      "source_id": "paper_2012"
+    },
+    {
+      "name": "RECESSIVE HOMOZYGOUS CONDITION",
+      "type": "CONDITION",
+      "description": "The genetic state of the NL1 gene required for the expression of the mutant leaf phenotype",
+      "source_id": "paper_2012"
+    },
+    {
+      "name": "DOMINANT CONDITION",
+      "type": "CONDITION",
+      "description": "The genetic state of the NL2 gene (homozygous or heterozygous) required for the expression of the mutant leaf phenotype",
+      "source_id": "paper_2012"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "PUCKERED LEAF",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_2012"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "DWARF COMPACT HABIT",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_2012"
+    },
+    {
+      "source": "PUCKERED LEAF",
+      "target": "NL1",
+      "description": "controlled by",
+      "weight": "10",
+      "source_id": "paper_2012"
+    },
+    {
+      "source": "PUCKERED LEAF",
+      "target": "NL2",
+      "description": "controlled by",
+      "weight": "10",
+      "source_id": "paper_2012"
+    },
+    {
+      "source": "NL1",
+      "target": "RECESSIVE HOMOZYGOUS CONDITION",
+      "description": "requires",
+      "weight": "9",
+      "source_id": "paper_2012"
+    },
+    {
+      "source": "NL2",
+      "target": "DOMINANT CONDITION",
+      "description": "requires",
+      "weight": "9",
+      "source_id": "paper_2012"
+    },
+    {
+      "source": "RECIPROCAL CROSSING",
+      "target": "LEAF PHENOTYPE",
+      "description": "used to analyze",
+      "weight": "7",
+      "source_id": "paper_2012"
+    },
+    {
+      "source": "PUCKERED LEAF",
+      "target": "YELLOW STRIPES",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_2012"
+    }
+  ]
+}

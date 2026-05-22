@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop species for which a reference set was developed.",
+      "source_id": "paper_4192"
+    },
+    {
+      "name": "REFERENCE SET",
+      "type": "CONCEPT",
+      "description": "A curated collection of 300 genetically diverse accessions.",
+      "source_id": "paper_4192"
+    },
+    {
+      "name": "ACCESSIONS",
+      "type": "CONCEPT",
+      "description": "Individual genetic samples used to form the reference set.",
+      "source_id": "paper_4192"
+    },
+    {
+      "name": "COMPOSITE COLLECTION",
+      "type": "CONCEPT",
+      "description": "The total collection of genetic material from which the reference set was derived.",
+      "source_id": "paper_4192"
+    },
+    {
+      "name": "ALLELES",
+      "type": "GENE_MARKER",
+      "description": "Genetic variants captured from the composite collection.",
+      "source_id": "paper_4192"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "TRAIT",
+      "description": "The variation in genetic makeup represented within the reference set.",
+      "source_id": "paper_4192"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REFERENCE SET",
+      "target": "CHICKPEA",
+      "description": "The reference set is composed of chickpea accessions",
+      "weight": "10",
+      "source_id": "paper_4192"
+    },
+    {
+      "source": "REFERENCE SET",
+      "target": "ACCESSIONS",
+      "description": "The reference set consists of 300 genetically diverse accessions",
+      "weight": "10",
+      "source_id": "paper_4192"
+    },
+    {
+      "source": "REFERENCE SET",
+      "target": "ALLELES",
+      "description": "The reference set captured 1315 alleles from the composite collection",
+      "weight": "9",
+      "source_id": "paper_4192"
+    },
+    {
+      "source": "ALLELES",
+      "target": "COMPOSITE COLLECTION",
+      "description": "Alleles are the genetic variants found within the composite collection",
+      "weight": "10",
+      "source_id": "paper_4192"
+    },
+    {
+      "source": "REFERENCE SET",
+      "target": "GENETIC DIVERSITY",
+      "description": "The reference set represents the genetic diversity of the composite collection",
+      "weight": "9",
+      "source_id": "paper_4192"
+    },
+    {
+      "source": "REFERENCE SET",
+      "target": "COMPOSITE COLLECTION",
+      "description": "The reference set is a representative subset of the composite collection",
+      "weight": "10",
+      "source_id": "paper_4192"
+    }
+  ]
+}

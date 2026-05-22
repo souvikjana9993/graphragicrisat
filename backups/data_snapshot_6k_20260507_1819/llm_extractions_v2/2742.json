@@ -1,0 +1,219 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "An important cereal crop grown in tropical and temperate environments.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An environmental factor that influences the flowering responses of sorghum genotypes.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "PHOTOPERIOD",
+      "type": "CONDITION",
+      "description": "The length of daylight, an environmental factor influencing the flowering responses of sorghum genotypes.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "PHOTOTHERMAL FLOWERING RESPONSES",
+      "type": "TRAIT",
+      "description": "The genotypic responses of sorghum flowering to the combined effects of temperature and photoperiod.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "One of the countries where sorghum genotypes were grown for the study.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "One of the countries where sorghum genotypes were grown for the study.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "One of the countries where sorghum genotypes were grown for the study.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "TIMES FROM SOWING TO FLOWERING",
+      "type": "TRAIT",
+      "description": "The duration from the date of sowing until the plant reaches the flowering stage.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "PHOTOTHERMAL MODELS",
+      "type": "METHOD",
+      "description": "Models used to quantify the responsiveness of flowering time to temperature and photoperiod.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "MULTIPLICATIVE RATE PHOTOTHERMAL MODEL",
+      "type": "METHOD",
+      "description": "A specific photothermal model used to accurately predict the time from sowing to flowering.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "MINIMUM TIME TO FLOWER",
+      "type": "TRAIT",
+      "description": "The shortest possible time a genotype takes to flower, denoted as Fm.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "PHOTOPERIOD SENSITIVITY",
+      "type": "TRAIT",
+      "description": "The degree to which flowering is affected by photoperiod, determining broad adaptation to latitude.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "CRITICAL PHOTOPERIOD",
+      "type": "TRAIT",
+      "description": "A specific photoperiod threshold (Pc) used to measure photoperiod sensitivity.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "PHOTOPERIOD-SENSITIVITY SLOPE",
+      "type": "TRAIT",
+      "description": "The slope (Ps) used to measure the rate of change in flowering response to photoperiod.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "BASE TEMPERATURE",
+      "type": "TRAIT",
+      "description": "The temperature threshold (Tb) below which plant development ceases.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "LATITUDE",
+      "type": "CONDITION",
+      "description": "A geographic factor related to daylength that influences broad adaptation of sorghum.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "HUMID AND SUB-HUMID TROPICS",
+      "type": "CONDITION",
+      "description": "Specific environmental ranges within latitudes where minimum time to flower determines adaptation.",
+      "source_id": "paper_2742"
+    },
+    {
+      "name": "ADAPTATION TO ENVIRONMENT",
+      "type": "CONCEPT",
+      "description": "The phenological basis of how sorghum genotypes adjust to diverse environments.",
+      "source_id": "paper_2742"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "PHOTOTHERMAL FLOWERING RESPONSES",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PHOTOTHERMAL FLOWERING RESPONSES",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "PHOTOTHERMAL FLOWERING RESPONSES",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "PHOTOTHERMAL MODELS",
+      "target": "TIMES FROM SOWING TO FLOWERING",
+      "description": "quantifies",
+      "weight": "8",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "MULTIPLICATIVE RATE PHOTOTHERMAL MODEL",
+      "target": "TIMES FROM SOWING TO FLOWERING",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "PHOTOPERIOD SENSITIVITY",
+      "target": "LATITUDE",
+      "description": "determines adaptation to",
+      "weight": "8",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "MINIMUM TIME TO FLOWER",
+      "target": "HUMID AND SUB-HUMID TROPICS",
+      "description": "determines adaptation within",
+      "weight": "8",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "PHOTOPERIOD SENSITIVITY",
+      "target": "ADAPTATION TO ENVIRONMENT",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "MINIMUM TIME TO FLOWER",
+      "target": "ADAPTATION TO ENVIRONMENT",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "CRITICAL PHOTOPERIOD",
+      "target": "PHOTOPERIOD SENSITIVITY",
+      "description": "defines",
+      "weight": "9",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "PHOTOPERIOD-SENSITIVITY SLOPE",
+      "target": "PHOTOPERIOD SENSITIVITY",
+      "description": "defines",
+      "weight": "9",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "BASE TEMPERATURE",
+      "target": "PHOTOTHERMAL FLOWERING RESPONSES",
+      "description": "is a component of",
+      "weight": "7",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "6",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "KENYA",
+      "description": "grown in",
+      "weight": "6",
+      "source_id": "paper_2742"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MALI",
+      "description": "grown in",
+      "weight": "6",
+      "source_id": "paper_2742"
+    }
+  ]
+}

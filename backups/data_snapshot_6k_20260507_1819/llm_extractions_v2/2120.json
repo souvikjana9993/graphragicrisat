@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "ICSV 197",
+      "type": "CROP",
+      "description": "A midge resistant sorghum cultivar",
+      "source_id": "paper_2120"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species to which ICSV 197 belongs",
+      "source_id": "paper_2120"
+    },
+    {
+      "name": "MIDGE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist attack by midges",
+      "source_id": "paper_2120"
+    },
+    {
+      "name": "CONTARINIA SORGHICOLA",
+      "type": "ORGANISM",
+      "description": "The midge species that attacks sorghum",
+      "source_id": "paper_2120"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_2120"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICSV 197",
+      "target": "SORGHUM",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2120"
+    },
+    {
+      "source": "ICSV 197",
+      "target": "MIDGE RESISTANCE",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_2120"
+    },
+    {
+      "source": "ICSV 197",
+      "target": "CONTARINIA SORGHICOLA",
+      "description": "is resistant to",
+      "weight": "10",
+      "source_id": "paper_2120"
+    },
+    {
+      "source": "MIDGE RESISTANCE",
+      "target": "CONTARINIA SORGHICOLA",
+      "description": "provides resistance against",
+      "weight": "10",
+      "source_id": "paper_2120"
+    }
+  ]
+}

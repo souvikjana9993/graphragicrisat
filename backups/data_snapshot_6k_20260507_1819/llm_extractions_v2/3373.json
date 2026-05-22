@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop (Sorghum bicolor) studied for its phenology in semi-arid tropics",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "PHENOLOGY",
+      "type": "TRAIT",
+      "description": "The study of cyclic and seasonal natural phenomena, specifically the timing of growth stages in sorghum",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where the sorghum phenology study was conducted",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "ITERATIVE REGRESSION APPROACH",
+      "type": "METHOD",
+      "description": "A mathematical method used to derive equations for predicting growth stages and solving non-linear functions",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "GROWTH STAGES",
+      "type": "TRAIT",
+      "description": "The distinct phases of development in the sorghum plant",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "MOISTURE",
+      "type": "CONDITION",
+      "description": "Water availability required for the prediction of growth stages",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "NUTRIENT AVAILABILITY",
+      "type": "CONDITION",
+      "description": "The availability of essential nutrients required for the prediction of growth stages",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An environmental factor used to predict phenophase duration and growth stages",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "RELATIVE HUMIDITY",
+      "type": "CONDITION",
+      "description": "An environmental factor used to predict phenophase duration and growth stages",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "PHENOPHASE DURATION",
+      "type": "TRAIT",
+      "description": "The length of time a plant spends in a specific phenological phase",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "BASE TEMPERATURE",
+      "type": "CONCEPT",
+      "description": "The minimum temperature at which plant growth or development occurs, identified as 10°C",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "POINT OF INFLECTION TEMPERATURE",
+      "type": "CONCEPT",
+      "description": "The temperature at which the rate of development changes, identified as 19.6°C",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "ORGANISM",
+      "description": "The different genetic variations of sorghum studied for their response to temperature",
+      "source_id": "paper_3373"
+    },
+    {
+      "name": "NON-LINEAR FUNCTIONS",
+      "type": "CONCEPT",
+      "description": "Mathematical functions that do not form a straight line, solved using the iterative regression approach",
+      "source_id": "paper_3373"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ITERATIVE REGRESSION APPROACH",
+      "target": "PHENOLOGY",
+      "description": "used to predict",
+      "weight": "9",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "ITERATIVE REGRESSION APPROACH",
+      "target": "NON-LINEAR FUNCTIONS",
+      "description": "used to solve",
+      "weight": "8",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PHENOLOGY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEMI-ARID TROPICS",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PHENOPHASE DURATION",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "RELATIVE HUMIDITY",
+      "target": "PHENOPHASE DURATION",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "TEMPERATURE",
+      "description": "respond to",
+      "weight": "9",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "BASE TEMPERATURE",
+      "target": "GENOTYPES",
+      "description": "shared by",
+      "weight": "8",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "POINT OF INFLECTION TEMPERATURE",
+      "target": "GENOTYPES",
+      "description": "shared by",
+      "weight": "8",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "GROWTH STAGES",
+      "target": "PHENOLOGY",
+      "description": "component of",
+      "weight": "9",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "MOISTURE",
+      "target": "GROWTH STAGES",
+      "description": "condition for prediction of",
+      "weight": "7",
+      "source_id": "paper_3373"
+    },
+    {
+      "source": "NUTRIENT AVAILABILITY",
+      "target": "GROWTH STAGES",
+      "description": "condition for prediction of",
+      "weight": "7",
+      "source_id": "paper_3373"
+    }
+  ]
+}

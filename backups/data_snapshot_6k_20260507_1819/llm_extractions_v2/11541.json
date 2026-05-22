@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "SATELLITE REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Technology used to acquire spatial agricultural information from a distance",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "SPATIAL AGRICULTURAL INFORMATION",
+      "type": "CONCEPT",
+      "description": "Data regarding the spatial distribution of agricultural activities used for assessment and management",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "COMPLEX AGRO-ECOSYSTEMS",
+      "type": "CONCEPT",
+      "description": "Agricultural systems characterized by high diversity and complexity, often with small farm holdings",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "SMALL FARM HOLDINGS",
+      "type": "CONDITION",
+      "description": "Agricultural land ownership characterized by small plot sizes and diverse crop types",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "TIME-SERIES ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis of vegetation indices over time to detect seasonal patterns",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "type": "METHOD",
+      "description": "A vegetation index used to quantify vegetation greenness and detect cropping patterns",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "ENHANCED VEGETATION INDEX",
+      "type": "METHOD",
+      "description": "A vegetation index used to quantify vegetation greenness, designed to reduce atmospheric noise",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "MODERATE RESOLUTION IMAGING SPECTROMETER",
+      "type": "METHOD",
+      "description": "A sensor used to derive vegetation indices for remote sensing",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "IRRIGATED CROPPING PATTERNS",
+      "type": "CONCEPT",
+      "description": "Patterns of crop cultivation that utilize artificial irrigation",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "RAINFED CROPPING PATTERNS",
+      "type": "CONCEPT",
+      "description": "Patterns of crop cultivation that rely solely on rainfall",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "CENTRAL DRY ZONE OF MYANMAR",
+      "type": "LOCATION",
+      "description": "An important agricultural region in Myanmar characterized by diverse cropping practices",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "ITERATIVE PARTICIPATORY APPROACH",
+      "type": "METHOD",
+      "description": "A collaborative method involving field data collection and classification to improve mapping accuracy",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "MACHINE LEARNING ALGORITHMS",
+      "type": "METHOD",
+      "description": "Computational methods used to classify cropping patterns based on predictor variables",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "SUPPORT VECTOR MACHINE",
+      "type": "METHOD",
+      "description": "A machine learning algorithm used for the classification of cropping patterns",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "A machine learning algorithm that achieved the highest accuracy in mapping cropping patterns",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "C5.0 ALGORITHM",
+      "type": "METHOD",
+      "description": "A machine learning algorithm used for the classification of cropping patterns",
+      "source_id": "paper_11541"
+    },
+    {
+      "name": "CROPPING PATTERN MAPPING",
+      "type": "METHOD",
+      "description": "The process of characterizing and mapping the spatial distribution of irrigated and rainfed crops",
+      "source_id": "paper_11541"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SATELLITE REMOTE SENSING",
+      "target": "SPATIAL AGRICULTURAL INFORMATION",
+      "description": "generates",
+      "weight": "8",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "SATELLITE REMOTE SENSING",
+      "target": "COMPLEX AGRO-ECOSYSTEMS",
+      "description": "analyzes",
+      "weight": "7",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "TIME-SERIES ANALYSIS",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "TIME-SERIES ANALYSIS",
+      "target": "ENHANCED VEGETATION INDEX",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "MODERATE RESOLUTION IMAGING SPECTROMETER",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "provides data for",
+      "weight": "10",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "MODERATE RESOLUTION IMAGING SPECTROMETER",
+      "target": "ENHANCED VEGETATION INDEX",
+      "description": "provides data for",
+      "weight": "10",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "TIME-SERIES ANALYSIS",
+      "target": "IRRIGATED CROPPING PATTERNS",
+      "description": "detects",
+      "weight": "8",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "TIME-SERIES ANALYSIS",
+      "target": "RAINFED CROPPING PATTERNS",
+      "description": "detects",
+      "weight": "8",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "IRRIGATED CROPPING PATTERNS",
+      "target": "CENTRAL DRY ZONE OF MYANMAR",
+      "description": "observed in",
+      "weight": "9",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "RAINFED CROPPING PATTERNS",
+      "target": "CENTRAL DRY ZONE OF MYANMAR",
+      "description": "observed in",
+      "weight": "9",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "ITERATIVE PARTICIPATORY APPROACH",
+      "target": "CROPPING PATTERN MAPPING",
+      "description": "improves accuracy of",
+      "weight": "9",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "MACHINE LEARNING ALGORITHMS",
+      "target": "CROPPING PATTERN MAPPING",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "SUPPORT VECTOR MACHINE",
+      "target": "MACHINE LEARNING ALGORITHMS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "MACHINE LEARNING ALGORITHMS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "C5.0 ALGORITHM",
+      "target": "MACHINE LEARNING ALGORITHMS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "CROPPING PATTERN MAPPING",
+      "description": "achieved highest accuracy for",
+      "weight": "9",
+      "source_id": "paper_11541"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "CROPPING PATTERN MAPPING",
+      "description": "used as predictor for",
+      "weight": "9",
+      "source_id": "paper_11541"
+    }
+  ]
+}

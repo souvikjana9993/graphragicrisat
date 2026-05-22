@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "RAINFALL VARIABILITY",
+      "type": "CONDITION",
+      "description": "Fluctuations in the amount of rainfall over time",
+      "source_id": "paper_11216"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_11216"
+    },
+    {
+      "name": "DEVELOPING COUNTRIES",
+      "type": "LOCATION",
+      "description": "Nations with lower industrialization and lower Human Development Index",
+      "source_id": "paper_11216"
+    },
+    {
+      "name": "FOOD AVAILABILITY PER CAPITA",
+      "type": "CONCEPT",
+      "description": "The amount of food available for each person in a population",
+      "source_id": "paper_11216"
+    },
+    {
+      "name": "UNDERNOURISHED POPULATION PERCENTAGE",
+      "type": "CONCEPT",
+      "description": "The proportion of the population that does not have enough food to meet their dietary energy requirements",
+      "source_id": "paper_11216"
+    },
+    {
+      "name": "CIVIL CONFLICTS",
+      "type": "CONDITION",
+      "description": "Violent conflict between organized groups within the same state",
+      "source_id": "paper_11216"
+    },
+    {
+      "name": "FOOD PRICE SHOCKS",
+      "type": "CONDITION",
+      "description": "Sudden and significant changes in the price of food",
+      "source_id": "paper_11216"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RAINFALL VARIABILITY",
+      "target": "FOOD SECURITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_11216"
+    },
+    {
+      "source": "RAINFALL VARIABILITY",
+      "target": "DEVELOPING COUNTRIES",
+      "description": "affects food security in",
+      "weight": "8",
+      "source_id": "paper_11216"
+    },
+    {
+      "source": "RAINFALL VARIABILITY",
+      "target": "FOOD AVAILABILITY PER CAPITA",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_11216"
+    },
+    {
+      "source": "RAINFALL VARIABILITY",
+      "target": "UNDERNOURISHED POPULATION PERCENTAGE",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_11216"
+    },
+    {
+      "source": "CIVIL CONFLICTS",
+      "target": "RAINFALL VARIABILITY",
+      "description": "exacerbates the negative effects of",
+      "weight": "7",
+      "source_id": "paper_11216"
+    },
+    {
+      "source": "FOOD PRICE SHOCKS",
+      "target": "RAINFALL VARIABILITY",
+      "description": "increases the negative effects of",
+      "weight": "7",
+      "source_id": "paper_11216"
+    }
+  ]
+}

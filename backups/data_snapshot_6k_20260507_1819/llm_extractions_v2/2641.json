@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where molasses based distilleries generate effluents",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "MOLASSES BASED DISTILLERIES",
+      "type": "CONCEPT",
+      "description": "Facilities that generate high organic load and salt effluents",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "POST METHANATION DISTILLERY EFFLUENT (PME)",
+      "type": "CONCEPT",
+      "description": "Nutrient-rich effluent used as a ferti-irrigation source in agriculture",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "PLANT NUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Essential elements like Potassium and Nitrogen found in PME",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONCEPT",
+      "description": "A plant nutrient found in PME",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A plant nutrient found in PME",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "FERTI-IRRIGATION",
+      "type": "METHOD",
+      "description": "The use of PME as a source of water and nutrients for crops",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "PME APPLICATION",
+      "type": "METHOD",
+      "description": "The experimental application of PME at various concentrations to agricultural fields",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "SOIL MICROBIAL POPULATION",
+      "type": "ORGANISM",
+      "description": "The community of microorganisms in the soil",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "CHLORIDE LEVELS",
+      "type": "TRAIT",
+      "description": "The concentration of chloride in the soil",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "MICROBIAL ENUMERATION STUDIES",
+      "type": "METHOD",
+      "description": "Studies used to quantify the soil microbial population",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "CARBON",
+      "type": "CONCEPT",
+      "description": "An element in PME that enhances soil microbial activity",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "SOIL MICROBIAL ACTIVITY",
+      "type": "TRAIT",
+      "description": "The biological activity level of soil microbes",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "CROP GROWTH",
+      "type": "TRAIT",
+      "description": "The growth and development of crops",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "SOIL HEALTH",
+      "type": "TRAIT",
+      "description": "The overall biological and chemical condition of the soil",
+      "source_id": "paper_2641"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "CONCEPT",
+      "description": "The broader ecological system affected by distillery effluents",
+      "source_id": "paper_2641"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MOLASSES BASED DISTILLERIES",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "8",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "MOLASSES BASED DISTILLERIES",
+      "target": "POST METHANATION DISTILLERY EFFLUENT (PME)",
+      "description": "generates",
+      "weight": "10",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "POST METHANATION DISTILLERY EFFLUENT (PME)",
+      "target": "PLANT NUTRIENTS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "PLANT NUTRIENTS",
+      "target": "POTASSIUM",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "PLANT NUTRIENTS",
+      "target": "NITROGEN",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "POST METHANATION DISTILLERY EFFLUENT (PME)",
+      "target": "FERTI-IRRIGATION",
+      "description": "used as source for",
+      "weight": "9",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "PME APPLICATION",
+      "target": "SOIL MICROBIAL POPULATION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "PME APPLICATION",
+      "target": "CHLORIDE LEVELS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "MICROBIAL ENUMERATION STUDIES",
+      "target": "SOIL MICROBIAL POPULATION",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "POST METHANATION DISTILLERY EFFLUENT (PME)",
+      "target": "CARBON",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "CARBON",
+      "target": "SOIL MICROBIAL ACTIVITY",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "PLANT NUTRIENTS",
+      "target": "SOIL MICROBIAL ACTIVITY",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "POST METHANATION DISTILLERY EFFLUENT (PME)",
+      "target": "CROP GROWTH",
+      "description": "negatively affects at high concentrations",
+      "weight": "7",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "POST METHANATION DISTILLERY EFFLUENT (PME)",
+      "target": "SOIL HEALTH",
+      "description": "negatively affects at high concentrations",
+      "weight": "7",
+      "source_id": "paper_2641"
+    },
+    {
+      "source": "POST METHANATION DISTILLERY EFFLUENT (PME)",
+      "target": "ENVIRONMENT",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_2641"
+    }
+  ]
+}

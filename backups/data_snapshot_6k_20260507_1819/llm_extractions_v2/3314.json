@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor, the crop being studied for rust resistance",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "PUCCINIA PUPUREA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing rust in sorghum",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "RUST RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum genotypes to resist infection by Puccinia pupurea",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "PLANT GROWTH STAGE",
+      "type": "CONDITION",
+      "description": "The developmental stage of the plant at the time of inoculation",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "INOCULUM DENSITY",
+      "type": "CONDITION",
+      "description": "The concentration of urediniospores used for inoculation",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The ambient temperature during incubation",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "RELATIVE HUMIDITY",
+      "type": "CONDITION",
+      "description": "The moisture level in the air during incubation",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "GREENHOUSE SCREENING TECHNIQUE",
+      "type": "METHOD",
+      "description": "A method used to assess rust resistance in sorghum genotypes",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "DISEASE SEVERITY",
+      "type": "CONCEPT",
+      "description": "The percentage of leaf area covered with rust pustules",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "IS 18420",
+      "type": "CONCEPT",
+      "description": "A susceptible sorghum genotype used as a control",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "IS 3979",
+      "type": "CONCEPT",
+      "description": "A sorghum genotype identified as resistant to rust",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "ICSH 110",
+      "type": "CONCEPT",
+      "description": "A sorghum genotype identified as resistant to rust",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "ICSH 86647",
+      "type": "CONCEPT",
+      "description": "A sorghum genotype identified as resistant to rust",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "ICSH 871035",
+      "type": "CONCEPT",
+      "description": "A sorghum genotype identified as resistant to rust",
+      "source_id": "paper_3314"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The environment where the screening technique was applied",
+      "source_id": "paper_3314"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GREENHOUSE SCREENING TECHNIQUE",
+      "target": "RUST RESISTANCE",
+      "description": "used to assess",
+      "weight": "10",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "GREENHOUSE SCREENING TECHNIQUE",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "PUCCINIA PUPUREA",
+      "target": "SORGHUM",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "PUCCINIA PUPUREA",
+      "target": "DISEASE SEVERITY",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "PLANT GROWTH STAGE",
+      "target": "DISEASE SEVERITY",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "INOCULUM DENSITY",
+      "target": "DISEASE SEVERITY",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DISEASE SEVERITY",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "RELATIVE HUMIDITY",
+      "target": "DISEASE SEVERITY",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "GREENHOUSE SCREENING TECHNIQUE",
+      "target": "GREENHOUSE",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "IS 18420",
+      "target": "DISEASE SEVERITY",
+      "description": "shows high",
+      "weight": "9",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "IS 3979",
+      "target": "RUST RESISTANCE",
+      "description": "shows",
+      "weight": "9",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "ICSH 110",
+      "target": "RUST RESISTANCE",
+      "description": "shows",
+      "weight": "9",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "ICSH 86647",
+      "target": "RUST RESISTANCE",
+      "description": "shows",
+      "weight": "9",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "ICSH 871035",
+      "target": "RUST RESISTANCE",
+      "description": "shows",
+      "weight": "9",
+      "source_id": "paper_3314"
+    },
+    {
+      "source": "RUST RESISTANCE",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_3314"
+    }
+  ]
+}

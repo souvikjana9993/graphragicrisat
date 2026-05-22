@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum (cv. Maldandi) seeds used in the study",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pearl millet (cv. Sadoré local) seeds used in the study",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "MOISTURE CONTENT",
+      "type": "TRAIT",
+      "description": "The water content of the seeds, adjusted to 6%, 10%, and 14%",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "GERMINATION",
+      "type": "TRAIT",
+      "description": "The ability of seeds to sprout, measured as a percentage of normal seedlings",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "VACUUM PACKING",
+      "type": "METHOD",
+      "description": "The process of removing air from aluminium foil envelopes to a pressure of -0.95 bar",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "SEED LONGEVITY",
+      "type": "TRAIT",
+      "description": "The duration for which seeds remain viable during storage",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Storage temperatures used to accelerate ageing, specifically 50°C and 35°C",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "VIABILITY",
+      "type": "TRAIT",
+      "description": "The capacity of seeds to germinate and grow",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "GERMINATION TEST",
+      "type": "METHOD",
+      "description": "Replicated tests on fifty seeds to estimate initial and subsequent viability",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "HALF-LIFE",
+      "type": "CONCEPT",
+      "description": "The time taken for the viability of seeds to reduce to half of its initial value",
+      "source_id": "paper_1624"
+    },
+    {
+      "name": "SEED SURVIVAL",
+      "type": "TRAIT",
+      "description": "The ability of seeds to remain alive and viable under specific storage conditions",
+      "source_id": "paper_1624"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "MOISTURE CONTENT",
+      "description": "initial moisture content of 8.45%",
+      "weight": "8",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GERMINATION",
+      "description": "initial germination of 98%",
+      "weight": "8",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "MOISTURE CONTENT",
+      "description": "initial moisture content of 9.2%",
+      "weight": "8",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GERMINATION",
+      "description": "initial germination of 94%",
+      "weight": "8",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "VACUUM PACKING",
+      "target": "SEED LONGEVITY",
+      "description": "enhanced seed longevity at 6% moisture content",
+      "weight": "9",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "MOISTURE CONTENT",
+      "target": "SEED LONGEVITY",
+      "description": "lower moisture content (6%) retained viability longer",
+      "weight": "9",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "SEED LONGEVITY",
+      "description": "higher temperature (50°C) accelerated deterioration",
+      "weight": "9",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "MOISTURE CONTENT",
+      "target": "SEED SURVIVAL",
+      "description": "significant effect on seed survival at 50°C",
+      "weight": "9",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "VACUUM PACKING",
+      "target": "SEED SURVIVAL",
+      "description": "significant effect on seed survival at 50°C",
+      "weight": "9",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SEED SURVIVAL",
+      "description": "survived longer than sorghum under similar conditions",
+      "weight": "8",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEED SURVIVAL",
+      "description": "survived shorter than pearl millet under similar conditions",
+      "weight": "8",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "GERMINATION TEST",
+      "target": "VIABILITY",
+      "description": "used to estimate initial and subsequent viability",
+      "weight": "10",
+      "source_id": "paper_1624"
+    },
+    {
+      "source": "HALF-LIFE",
+      "target": "SEED SURVIVAL",
+      "description": "estimates of half-life used to analyze seed survival",
+      "weight": "9",
+      "source_id": "paper_1624"
+    }
+  ]
+}

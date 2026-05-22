@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop (Sorghum bicolor (L.) Moench) used as samples for protein and lysine analysis",
+      "source_id": "paper_3369"
+    },
+    {
+      "name": "PROTEIN",
+      "type": "TRAIT",
+      "description": "A nutritional component of sorghum analyzed using TAA and micro-Kjeldahl methods",
+      "source_id": "paper_3369"
+    },
+    {
+      "name": "TECHNICON AUTO ANALYZER",
+      "type": "METHOD",
+      "description": "A rapid method used for estimating protein content in sorghum samples",
+      "source_id": "paper_3369"
+    },
+    {
+      "name": "MICRO-KJELDAHL METHOD",
+      "type": "METHOD",
+      "description": "A standard method used to compare and validate the protein estimation of the TAA method",
+      "source_id": "paper_3369"
+    },
+    {
+      "name": "LYSINE",
+      "type": "TRAIT",
+      "description": "An essential amino acid in sorghum analyzed using DBC and amino-acid analyzer",
+      "source_id": "paper_3369"
+    },
+    {
+      "name": "DYE-BINDING CAPACITY",
+      "type": "METHOD",
+      "description": "A rapid procedure used for estimating lysine content in sorghum",
+      "source_id": "paper_3369"
+    },
+    {
+      "name": "AMINO-ACID ANALYZER",
+      "type": "METHOD",
+      "description": "A method used to determine lysine content and validate the DBC procedure",
+      "source_id": "paper_3369"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TECHNICON AUTO ANALYZER",
+      "target": "PROTEIN",
+      "description": "used to estimate",
+      "weight": "10",
+      "source_id": "paper_3369"
+    },
+    {
+      "source": "MICRO-KJELDAHL METHOD",
+      "target": "PROTEIN",
+      "description": "used to estimate",
+      "weight": "10",
+      "source_id": "paper_3369"
+    },
+    {
+      "source": "TECHNICON AUTO ANALYZER",
+      "target": "MICRO-KJELDAHL METHOD",
+      "description": "highly correlated results",
+      "weight": "9",
+      "source_id": "paper_3369"
+    },
+    {
+      "source": "DYE-BINDING CAPACITY",
+      "target": "LYSINE",
+      "description": "used to estimate",
+      "weight": "10",
+      "source_id": "paper_3369"
+    },
+    {
+      "source": "AMINO-ACID ANALYZER",
+      "target": "LYSINE",
+      "description": "used to determine",
+      "weight": "10",
+      "source_id": "paper_3369"
+    },
+    {
+      "source": "DYE-BINDING CAPACITY",
+      "target": "AMINO-ACID ANALYZER",
+      "description": "highly positively correlated results",
+      "weight": "9",
+      "source_id": "paper_3369"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PROTEIN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3369"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "LYSINE",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3369"
+    },
+    {
+      "source": "DYE-BINDING CAPACITY",
+      "target": "PROTEIN",
+      "description": "results expressed as ratio with respect to",
+      "weight": "7",
+      "source_id": "paper_3369"
+    }
+  ]
+}

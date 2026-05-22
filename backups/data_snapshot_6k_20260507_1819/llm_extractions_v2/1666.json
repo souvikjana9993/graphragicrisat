@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop studied for natural outcrossing and leaf morphology.",
+      "source_id": "paper_1666"
+    },
+    {
+      "name": "SIMPLE LEAF",
+      "type": "TRAIT",
+      "description": "A leaf morphology trait that is monogenically recessive to the compound leaf trait.",
+      "source_id": "paper_1666"
+    },
+    {
+      "name": "COMPOUND LEAF",
+      "type": "TRAIT",
+      "description": "The normal leaf morphology trait in chickpea.",
+      "source_id": "paper_1666"
+    },
+    {
+      "name": "F2 SEGREGATES",
+      "type": "CONCEPT",
+      "description": "The second filial generation plants derived from crossing simple-leaved and compound-leaved material.",
+      "source_id": "paper_1666"
+    },
+    {
+      "name": "F3 PLANTS",
+      "type": "CONCEPT",
+      "description": "The third filial generation progeny used to determine the rate of natural outcrossing.",
+      "source_id": "paper_1666"
+    },
+    {
+      "name": "CROSSING",
+      "type": "METHOD",
+      "description": "The breeding method used to create the F2 segregating populations.",
+      "source_id": "paper_1666"
+    },
+    {
+      "name": "NATURAL OUTCROSSING",
+      "type": "CONCEPT",
+      "description": "The spontaneous pollination of plants by pollen from other individuals, assessed at 1.92%.",
+      "source_id": "paper_1666"
+    },
+    {
+      "name": "MONOGENIC RECESSIVENESS",
+      "type": "CONCEPT",
+      "description": "The genetic inheritance pattern where a trait is controlled by a single gene and is recessive.",
+      "source_id": "paper_1666"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "SIMPLE LEAF",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_1666"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "COMPOUND LEAF",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_1666"
+    },
+    {
+      "source": "CROSSING",
+      "target": "SIMPLE LEAF",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_1666"
+    },
+    {
+      "source": "CROSSING",
+      "target": "COMPOUND LEAF",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_1666"
+    },
+    {
+      "source": "CROSSING",
+      "target": "F2 SEGREGATES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_1666"
+    },
+    {
+      "source": "F2 SEGREGATES",
+      "target": "F3 PLANTS",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_1666"
+    },
+    {
+      "source": "F3 PLANTS",
+      "target": "NATURAL OUTCROSSING",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_1666"
+    },
+    {
+      "source": "SIMPLE LEAF",
+      "target": "MONOGENIC RECESSIVENESS",
+      "description": "characterized by",
+      "weight": "10",
+      "source_id": "paper_1666"
+    },
+    {
+      "source": "SIMPLE LEAF",
+      "target": "COMPOUND LEAF",
+      "description": "is recessive to",
+      "weight": "10",
+      "source_id": "paper_1666"
+    }
+  ]
+}

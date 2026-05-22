@@ -1,0 +1,206 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The cereal crop evaluated for stay-green traits and leaf senescence patterns",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "LEAF SENESCENCE",
+      "type": "TRAIT",
+      "description": "The process of leaf aging and death, which the study aims to delay to increase production",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "STAY-GREEN",
+      "type": "TRAIT",
+      "description": "The ability of a plant to maintain green leaves and delay senescence",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "PERCENT GREEN LEAF AREA (% GLA)",
+      "type": "TRAIT",
+      "description": "A quantitative measure used to estimate the extent and pattern of leaf senescence",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "DROUGHT ESCAPE",
+      "type": "TRAIT",
+      "description": "A survival strategy where a plant completes its life cycle before the onset of severe drought",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "EARLY FLOWERING",
+      "type": "TRAIT",
+      "description": "The trait of flowering early in the growth cycle, contributing to drought escape",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "LATE FLOWERING",
+      "type": "TRAIT",
+      "description": "The trait of flowering late in the growth cycle",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "REPLICATED FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The experimental design used to evaluate sorghum genotypes across different seasons",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "VISUAL SCORING",
+      "type": "METHOD",
+      "description": "The process of visually assessing leaf senescence at weekly intervals",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "LOGISTIC FUNCTIONS",
+      "type": "METHOD",
+      "description": "Mathematical models used to determine leaf senescence patterns from % GLA data",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "LINEAR FUNCTIONS",
+      "type": "METHOD",
+      "description": "Mathematical models used to determine leaf senescence patterns from % GLA data",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "The statistical method used to group genotypes based on their % GLA estimates",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "WATER-LIMITED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions characterized by insufficient water availability",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "POST-RAINY SEASONS",
+      "type": "CONDITION",
+      "description": "The specific seasonal timing during which the field experiments were conducted",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "STRESS",
+      "type": "CONDITION",
+      "description": "Environmental pressure, specifically drought, affecting plant development and senescence",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "CEREAL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The overall output of cereal crops, which can be increased by delaying leaf senescence",
+      "source_id": "paper_1503"
+    },
+    {
+      "name": "INTERNATIONAL CROPS RESEARCH INSTITUTE FOR SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The research institution where the sorghum evaluation experiments were conducted",
+      "source_id": "paper_1503"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "STAY-GREEN",
+      "description": "evaluated for",
+      "weight": "9",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "LEAF SENESCENCE",
+      "description": "evaluated for",
+      "weight": "9",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "STAY-GREEN",
+      "target": "LEAF SENESCENCE",
+      "description": "delays",
+      "weight": "10",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "STAY-GREEN",
+      "target": "WATER-LIMITED CONDITIONS",
+      "description": "effective under",
+      "weight": "8",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "PERCENT GREEN LEAF AREA (% GLA)",
+      "target": "LEAF SENESCENCE",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "REPLICATED FIELD EXPERIMENTS",
+      "target": "SORGHUM",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "VISUAL SCORING",
+      "target": "LEAF SENESCENCE",
+      "description": "used to score",
+      "weight": "8",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "LOGISTIC FUNCTIONS",
+      "target": "PERCENT GREEN LEAF AREA (% GLA)",
+      "description": "used to fit",
+      "weight": "8",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "LINEAR FUNCTIONS",
+      "target": "PERCENT GREEN LEAF AREA (% GLA)",
+      "description": "used to fit",
+      "weight": "8",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "PERCENT GREEN LEAF AREA (% GLA)",
+      "description": "used to group genotypes based on",
+      "weight": "9",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "DROUGHT ESCAPE",
+      "target": "EARLY FLOWERING",
+      "description": "achieved through",
+      "weight": "9",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "DROUGHT ESCAPE",
+      "target": "WATER-LIMITED CONDITIONS",
+      "description": "important during",
+      "weight": "8",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "INTERNATIONAL CROPS RESEARCH INSTITUTE FOR SEMI-ARID TROPICS",
+      "target": "REPLICATED FIELD EXPERIMENTS",
+      "description": "location of",
+      "weight": "10",
+      "source_id": "paper_1503"
+    },
+    {
+      "source": "CEREAL PRODUCTION",
+      "target": "LEAF SENESCENCE",
+      "description": "increased by delaying",
+      "weight": "8",
+      "source_id": "paper_1503"
+    }
+  ]
+}

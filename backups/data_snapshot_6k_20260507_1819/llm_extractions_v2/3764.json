@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "PLANT BREEDING",
+      "type": "CONCEPT",
+      "description": "The process of developing new plant varieties with desirable characteristics.",
+      "source_id": "paper_3764"
+    },
+    {
+      "name": "GENOTYPE BY ENVIRONMENT INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "The interaction between the genetic makeup of an organism and its environment, which creates difficulties in the breeding process.",
+      "source_id": "paper_3764"
+    },
+    {
+      "name": "CROP PHYSIOLOGICAL MODELS",
+      "type": "METHOD",
+      "description": "Mathematical representations of crop growth and development used as tools to improve breeding.",
+      "source_id": "paper_3764"
+    },
+    {
+      "name": "SIMULATION MODELS",
+      "type": "METHOD",
+      "description": "Complex crop models that require extensive input parameters, making them difficult to apply to large numbers of lines.",
+      "source_id": "paper_3764"
+    },
+    {
+      "name": "SELECTION",
+      "type": "METHOD",
+      "description": "The process of choosing specific lines or genotypes within a breeding program.",
+      "source_id": "paper_3764"
+    },
+    {
+      "name": "NONDESTRUCTIVE OBSERVATION",
+      "type": "METHOD",
+      "description": "Data collection techniques that do not harm the plant, used to derive parameters for simpler crop models.",
+      "source_id": "paper_3764"
+    },
+    {
+      "name": "DATA CAPTURE AND PROCESSING",
+      "type": "CONCEPT",
+      "description": "The technical capabilities used to collect and analyze data within a breeding program.",
+      "source_id": "paper_3764"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOTYPE BY ENVIRONMENT INTERACTIONS",
+      "target": "PLANT BREEDING",
+      "description": "causes difficulties in",
+      "weight": "8",
+      "source_id": "paper_3764"
+    },
+    {
+      "source": "CROP PHYSIOLOGICAL MODELS",
+      "target": "PLANT BREEDING",
+      "description": "has the potential to improve",
+      "weight": "9",
+      "source_id": "paper_3764"
+    },
+    {
+      "source": "SIMULATION MODELS",
+      "target": "CROP PHYSIOLOGICAL MODELS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3764"
+    },
+    {
+      "source": "SIMULATION MODELS",
+      "target": "SELECTION",
+      "description": "is difficult to apply to due to extensive input parameters",
+      "weight": "7",
+      "source_id": "paper_3764"
+    },
+    {
+      "source": "NONDESTRUCTIVE OBSERVATION",
+      "target": "CROP PHYSIOLOGICAL MODELS",
+      "description": "provides parameters for simpler versions of",
+      "weight": "8",
+      "source_id": "paper_3764"
+    },
+    {
+      "source": "CROP PHYSIOLOGICAL MODELS",
+      "target": "SELECTION",
+      "description": "can be applied to improve",
+      "weight": "8",
+      "source_id": "paper_3764"
+    },
+    {
+      "source": "CROP PHYSIOLOGICAL MODELS",
+      "target": "DATA CAPTURE AND PROCESSING",
+      "description": "can improve breeding efficiency without requiring major changes to",
+      "weight": "6",
+      "source_id": "paper_3764"
+    }
+  ]
+}

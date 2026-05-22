@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "AGRICULTURAL STATISTICS",
+      "type": "CONCEPT",
+      "description": "Statistics that correspond to ground situations and determine the actual extent of crops and farming practices",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "Agricultural plants whose extent is determined by statistics",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "CULTIVATION",
+      "type": "CONCEPT",
+      "description": "The process of preparing land and growing crops",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "FARMING PRACTICES",
+      "type": "CONCEPT",
+      "description": "General methods and techniques used in agricultural production",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "GEOGRAPHICAL DATA",
+      "type": "CONCEPT",
+      "description": "Reliable, retraceable, and climate-independent data used in agricultural statistics",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "AGROCLIMATIC REGIONS",
+      "type": "LOCATION",
+      "description": "Different regions characterized by climate and soil where geographical data is applied",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "GEO-STAMPING APPROACH",
+      "type": "METHOD",
+      "description": "An integration of remote sensing, GPS, and GIS for tracking workflow and enabling plot-level inventory",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "A technology used to acquire information from a distance, integrated into the geo-stamping approach",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "GPS",
+      "type": "METHOD",
+      "description": "Global Positioning System used for location tracking within the geo-stamping approach",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "GIS",
+      "type": "METHOD",
+      "description": "Geographic Information System used for mapping and analysis within the geo-stamping approach",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "PLOT-LEVEL INVENTORY",
+      "type": "CONCEPT",
+      "description": "The detailed inventory of crops at the plot level enabled by the geo-stamping approach",
+      "source_id": "paper_11020"
+    },
+    {
+      "name": "GPS-BASED SMARTPHONES",
+      "type": "METHOD",
+      "description": "Instruments used to capture actual ground situations and provide data authenticity",
+      "source_id": "paper_11020"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AGRICULTURAL STATISTICS",
+      "target": "CROP",
+      "description": "determines the actual extent of",
+      "weight": "8",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "AGRICULTURAL STATISTICS",
+      "target": "CULTIVATION",
+      "description": "determines",
+      "weight": "7",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "AGRICULTURAL STATISTICS",
+      "target": "FARMING PRACTICES",
+      "description": "determines",
+      "weight": "7",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "AGRICULTURAL STATISTICS",
+      "target": "GEOGRAPHICAL DATA",
+      "description": "provides",
+      "weight": "8",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "GEOGRAPHICAL DATA",
+      "target": "AGROCLIMATIC REGIONS",
+      "description": "applied to",
+      "weight": "7",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "GEO-STAMPING APPROACH",
+      "target": "REMOTE SENSING",
+      "description": "integrates",
+      "weight": "10",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "GEO-STAMPING APPROACH",
+      "target": "GPS",
+      "description": "integrates",
+      "weight": "10",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "GEO-STAMPING APPROACH",
+      "target": "GIS",
+      "description": "integrates",
+      "weight": "10",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "GEO-STAMPING APPROACH",
+      "target": "PLOT-LEVEL INVENTORY",
+      "description": "allows",
+      "weight": "9",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "GPS-BASED SMARTPHONES",
+      "target": "GEO-STAMPING APPROACH",
+      "description": "serves as instrument for",
+      "weight": "9",
+      "source_id": "paper_11020"
+    },
+    {
+      "source": "GPS-BASED SMARTPHONES",
+      "target": "GEOGRAPHICAL DATA",
+      "description": "provides authenticity of",
+      "weight": "8",
+      "source_id": "paper_11020"
+    }
+  ]
+}

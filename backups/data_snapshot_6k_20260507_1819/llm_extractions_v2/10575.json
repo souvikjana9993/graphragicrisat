@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "Economically important legume crop grown in arid regions of sub-Saharan Africa",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "Region where cowpea is grown and Bt-cowpea is being developed",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "Region where the risk of Bt-cowpea to non-target organisms is assessed",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "LEGUME POD BORER",
+      "type": "ORGANISM",
+      "description": "An insect pest (Maruca vitrata) that causes losses in cowpea production",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "BT-COWPEA",
+      "type": "CROP",
+      "description": "Genetically engineered cowpea expressing cry1Ab and cry2Ab transgenes to control the legume pod borer",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "CRY1AB",
+      "type": "GENE_MARKER",
+      "description": "A transgene (Event 709) used in the development of Bt-cowpea",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "CRY2AB",
+      "type": "GENE_MARKER",
+      "description": "A transgene used in the development of Bt-cowpea",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "BT CRY PROTEINS",
+      "type": "CONCEPT",
+      "description": "Proteins expressed by Bt-cowpea used for the control of the legume pod borer",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "NON-TARGET ORGANISMS",
+      "type": "ORGANISM",
+      "description": "Organisms other than the target pest that are assessed for potential effects from Bt Cry proteins",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "ARTHROPODS",
+      "type": "ORGANISM",
+      "description": "A specific group of non-target organisms of particular interest in the risk assessment",
+      "source_id": "paper_10575"
+    },
+    {
+      "name": "RISK ASSESSMENT",
+      "type": "METHOD",
+      "description": "The process of evaluating the potential effects of Bt Cry proteins on non-target organisms",
+      "source_id": "paper_10575"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COWPEA",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "LEGUME POD BORER",
+      "target": "COWPEA",
+      "description": "pest of",
+      "weight": "10",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "BT-COWPEA",
+      "target": "COWPEA",
+      "description": "genetically engineered version of",
+      "weight": "10",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "BT-COWPEA",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "developed for use in",
+      "weight": "8",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "BT-COWPEA",
+      "target": "CRY1AB",
+      "description": "based on",
+      "weight": "10",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "BT-COWPEA",
+      "target": "CRY2AB",
+      "description": "based on",
+      "weight": "10",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "BT-COWPEA",
+      "target": "BT CRY PROTEINS",
+      "description": "expresses",
+      "weight": "10",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "BT CRY PROTEINS",
+      "target": "LEGUME POD BORER",
+      "description": "used for control of",
+      "weight": "10",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "BT CRY PROTEINS",
+      "target": "NON-TARGET ORGANISMS",
+      "description": "assessed for effects on",
+      "weight": "9",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "NON-TARGET ORGANISMS",
+      "target": "ARTHROPODS",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "RISK ASSESSMENT",
+      "target": "BT CRY PROTEINS",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "RISK ASSESSMENT",
+      "target": "NON-TARGET ORGANISMS",
+      "description": "evaluates impact on",
+      "weight": "9",
+      "source_id": "paper_10575"
+    },
+    {
+      "source": "BT-COWPEA",
+      "target": "WEST AFRICA",
+      "description": "risk assessment conducted for",
+      "weight": "8",
+      "source_id": "paper_10575"
+    }
+  ]
+}

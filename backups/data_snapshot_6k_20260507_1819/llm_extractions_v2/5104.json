@@ -1,0 +1,293 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Cereal crop genotypes used to study fermentation kinetics of stems",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "Cereal crop genotypes used to study fermentation kinetics of stems",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "IN VITRO FERMENTATION",
+      "type": "METHOD",
+      "description": "Laboratory method used to simulate rumen fermentation and measure gas production",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "GAS PRODUCTION PROFILES",
+      "type": "CONCEPT",
+      "description": "The pattern of gas release over time during fermentation",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "MULTIPHASE MODEL",
+      "type": "METHOD",
+      "description": "Mathematical model used to fit gas production data and determine kinetics parameters",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "MONOPHASIC MODEL",
+      "type": "METHOD",
+      "description": "Mathematical model used to provide initial parameter estimates for the multiphase model",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "FERMENTATION KINETICS PARAMETERS",
+      "type": "CONCEPT",
+      "description": "Quantitative values derived from the multiphase model describing the rate and extent of fermentation",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "A",
+      "type": "CONCEPT",
+      "description": "A specific parameter of the multiphase model",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "B",
+      "type": "CONCEPT",
+      "description": "A specific parameter of the multiphase model",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "C",
+      "type": "CONCEPT",
+      "description": "A specific parameter of the multiphase model",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "A1",
+      "type": "CONCEPT",
+      "description": "Asymptotic gas production of the first phase of fermentation",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "NDF",
+      "type": "TRAIT",
+      "description": "Neutral Detergent Fiber, a measure of the total cell wall content of the plant",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "LIGNIN",
+      "type": "TRAIT",
+      "description": "A complex polymer in plant cell walls that reduces digestibility",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "RM2",
+      "type": "CONCEPT",
+      "description": "Maximum fractional rate of substrate digestion in the second phase of fermentation",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "TMAX1",
+      "type": "CONCEPT",
+      "description": "Time at which the fermentation rate reaches its maximum in the first phase",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "ADF",
+      "type": "TRAIT",
+      "description": "Acid Detergent Fiber, a measure of cellulose and lignin content",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "TMAX2",
+      "type": "CONCEPT",
+      "description": "Time at which the fermentation rate reaches its maximum in the second phase",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "FEED QUALITY",
+      "type": "CONCEPT",
+      "description": "The degree of digestibility and nutritional value of crop residues",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics, where the crops were grown",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research crops were grown at ICRISAT",
+      "source_id": "paper_5104"
+    },
+    {
+      "name": "RUMEN",
+      "type": "ORGANISM",
+      "description": "The first stomach of ruminant animals, relevant for in vivo outflow rates",
+      "source_id": "paper_5104"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "IN VITRO FERMENTATION",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "MILLET",
+      "target": "IN VITRO FERMENTATION",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "IN VITRO FERMENTATION",
+      "target": "GAS PRODUCTION PROFILES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "MULTIPHASE MODEL",
+      "target": "GAS PRODUCTION PROFILES",
+      "description": "fits",
+      "weight": "9",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "MULTIPHASE MODEL",
+      "target": "FERMENTATION KINETICS PARAMETERS",
+      "description": "calculates",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "MONOPHASIC MODEL",
+      "target": "MULTIPHASE MODEL",
+      "description": "provides initial estimates for",
+      "weight": "8",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "FERMENTATION KINETICS PARAMETERS",
+      "target": "A",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "FERMENTATION KINETICS PARAMETERS",
+      "target": "B",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "FERMENTATION KINETICS PARAMETERS",
+      "target": "C",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "FERMENTATION KINETICS PARAMETERS",
+      "target": "A1",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "FERMENTATION KINETICS PARAMETERS",
+      "target": "RM2",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "FERMENTATION KINETICS PARAMETERS",
+      "target": "TMAX1",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "FERMENTATION KINETICS PARAMETERS",
+      "target": "TMAX2",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "A1",
+      "target": "NDF",
+      "description": "negatively correlated",
+      "weight": "9",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "A1",
+      "target": "LIGNIN",
+      "description": "negatively correlated",
+      "weight": "9",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "RM2",
+      "target": "LIGNIN",
+      "description": "strong inverse relationship",
+      "weight": "9",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "TMAX1",
+      "target": "ADF",
+      "description": "negatively correlated",
+      "weight": "8",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "TMAX1",
+      "target": "LIGNIN",
+      "description": "negatively correlated",
+      "weight": "8",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "TMAX2",
+      "target": "LIGNIN",
+      "description": "negatively correlated",
+      "weight": "8",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "FERMENTATION KINETICS PARAMETERS",
+      "target": "FEED QUALITY",
+      "description": "discriminates",
+      "weight": "9",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ICRISAT",
+      "description": "grown at",
+      "weight": "9",
+      "source_id": "paper_5104"
+    },
+    {
+      "source": "MILLET",
+      "target": "ICRISAT",
+      "description": "grown at",
+      "weight": "9",
+      "source_id": "paper_5104"
+    }
+  ]
+}

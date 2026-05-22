@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "SEED DETERIORATION",
+      "type": "CONCEPT",
+      "description": "A continuous process of quality loss in seeds",
+      "source_id": "paper_6494"
+    },
+    {
+      "name": "LONGEVITY",
+      "type": "TRAIT",
+      "description": "The duration for which seeds remain viable",
+      "source_id": "paper_6494"
+    },
+    {
+      "name": "SEED MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "The percentage of water in seeds, specifically 3-7% for preservation",
+      "source_id": "paper_6494"
+    },
+    {
+      "name": "STORAGE TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature at which seeds are stored, specifically below 0°C",
+      "source_id": "paper_6494"
+    },
+    {
+      "name": "LONG-TERM PRESERVATION",
+      "type": "METHOD",
+      "description": "The process of maintaining germplasm samples over a long period",
+      "source_id": "paper_6494"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "Genetic resources stored as seed samples",
+      "source_id": "paper_6494"
+    },
+    {
+      "name": "CROP SEEDS",
+      "type": "CROP",
+      "description": "Seeds derived from agricultural crops",
+      "source_id": "paper_6494"
+    },
+    {
+      "name": "SEED COAT CRACKS",
+      "type": "TRAIT",
+      "description": "Physical fissures in the seed coat caused by rapid drying",
+      "source_id": "paper_6494"
+    },
+    {
+      "name": "MECHANICAL INJURIES",
+      "type": "CONDITION",
+      "description": "Physical damage to dried seeds",
+      "source_id": "paper_6494"
+    },
+    {
+      "name": "IMBIBITION INJURY",
+      "type": "CONDITION",
+      "description": "Damage occurring when dried seeds absorb water too quickly",
+      "source_id": "paper_6494"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SEED MOISTURE CONTENT",
+      "target": "LONG-TERM PRESERVATION",
+      "description": "Combined with storage temperature, it is suitable for preservation",
+      "weight": "9",
+      "source_id": "paper_6494"
+    },
+    {
+      "source": "STORAGE TEMPERATURE",
+      "target": "LONG-TERM PRESERVATION",
+      "description": "Combined with moisture content, it is suitable for preservation",
+      "weight": "9",
+      "source_id": "paper_6494"
+    },
+    {
+      "source": "LONG-TERM PRESERVATION",
+      "target": "GERMPLASM",
+      "description": "Used to conserve germplasm samples",
+      "weight": "10",
+      "source_id": "paper_6494"
+    },
+    {
+      "source": "CROP SEEDS",
+      "target": "SEED DETERIORATION",
+      "description": "Undergo a continuous process of deterioration",
+      "weight": "8",
+      "source_id": "paper_6494"
+    },
+    {
+      "source": "CROP SEEDS",
+      "target": "SEED COAT CRACKS",
+      "description": "Can develop cracks if dried too rapidly",
+      "weight": "7",
+      "source_id": "paper_6494"
+    },
+    {
+      "source": "CROP SEEDS",
+      "target": "MECHANICAL INJURIES",
+      "description": "Dried seeds are susceptible to these injuries",
+      "weight": "7",
+      "source_id": "paper_6494"
+    },
+    {
+      "source": "MECHANICAL INJURIES",
+      "target": "IMBIBITION INJURY",
+      "description": "Increases susceptibility to injury during rapid water absorption",
+      "weight": "8",
+      "source_id": "paper_6494"
+    },
+    {
+      "source": "SEED DETERIORATION",
+      "target": "LONGEVITY",
+      "description": "Techniques are needed to prolong longevity against deterioration",
+      "weight": "8",
+      "source_id": "paper_6494"
+    }
+  ]
+}

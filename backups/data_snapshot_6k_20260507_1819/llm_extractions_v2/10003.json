@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for salinity tolerance.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "SALINITY TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to maintain growth and productivity under high salt conditions.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "IMAGE-BASED PHENOTYPING",
+      "type": "METHOD",
+      "description": "A high-throughput technique used to measure plant traits using images.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "SOIL SALINITY",
+      "type": "CONDITION",
+      "description": "The presence of excess salts in the soil that reduces crop productivity.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "PLANT GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate at which a plant increases in size, measured by tracking leaf expansion.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "The vertical measurement of the plant from the base to the tip.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "SHOOT BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the above-ground parts of the plant.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "POD ABORTION",
+      "type": "TRAIT",
+      "description": "The premature shedding of pods due to stress.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "POD FILLING",
+      "type": "TRAIT",
+      "description": "The process of seed development and accumulation of nutrients within the pod.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "SEED NUMBER",
+      "type": "TRAIT",
+      "description": "The total count of seeds produced per plant, identified as a major determinant for salinity tolerance.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The total weight or quantity of seeds harvested.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "GENETIC VARIATION",
+      "type": "CONCEPT",
+      "description": "The diversity in genetic makeup among different accessions of a species.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "GLASSHOUSE",
+      "type": "LOCATION",
+      "description": "A controlled environment used for conducting plant assays.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "FIELD SITES",
+      "type": "LOCATION",
+      "description": "Natural outdoor environments used to validate glasshouse results.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "SHOOT ION INDEPENDENT STRESS",
+      "type": "CONCEPT",
+      "description": "Stress in the shoot resulting from hydraulic resistance and osmotic stress rather than ion toxicity.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "HYDRAULIC RESISTANCE",
+      "type": "CONCEPT",
+      "description": "The resistance to the flow of water through the plant's vascular system.",
+      "source_id": "paper_10003"
+    },
+    {
+      "name": "OSMOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by the imbalance of water potential between the soil and the plant roots.",
+      "source_id": "paper_10003"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL SALINITY",
+      "target": "CHICKPEA",
+      "description": "reduces productivity of",
+      "weight": "9",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "IMAGE-BASED PHENOTYPING",
+      "target": "SALINITY TOLERANCE",
+      "description": "used to study genetic variation for",
+      "weight": "8",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "PLANT GROWTH RATE",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "PLANT HEIGHT",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "SHOOT BIOMASS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "POD ABORTION",
+      "description": "induces",
+      "weight": "8",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "POD FILLING",
+      "description": "inhibits",
+      "weight": "8",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "POD ABORTION",
+      "target": "SEED NUMBER",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "POD FILLING",
+      "target": "SEED NUMBER",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "SEED NUMBER",
+      "target": "SEED YIELD",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "SEED NUMBER",
+      "target": "SALINITY TOLERANCE",
+      "description": "major determinant for",
+      "weight": "9",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "GLASSHOUSE",
+      "target": "FIELD SITES",
+      "description": "shows moderate to strong correlation in trait measurement",
+      "weight": "7",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "IMAGE-BASED PHENOTYPING",
+      "target": "SHOOT ION INDEPENDENT STRESS",
+      "description": "used to elucidate the role of",
+      "weight": "7",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "HYDRAULIC RESISTANCE",
+      "target": "SHOOT ION INDEPENDENT STRESS",
+      "description": "results in",
+      "weight": "8",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "OSMOTIC STRESS",
+      "target": "SHOOT ION INDEPENDENT STRESS",
+      "description": "results in",
+      "weight": "8",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "GENETIC VARIATION",
+      "target": "SALINITY TOLERANCE",
+      "description": "observed for",
+      "weight": "8",
+      "source_id": "paper_10003"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SALINITY TOLERANCE",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_10003"
+    }
+  ]
+}

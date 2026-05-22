@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being evaluated for disease resistance and molecular diversity",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the crop to resist fungal diseases",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "MINICORE",
+      "type": "CONCEPT",
+      "description": "A subset of world germplasm comprising 188 accessions used for evaluation",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting groundnut leaves",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "RUST",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting groundnut",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "SEED COLONIZATION",
+      "type": "CONDITION",
+      "description": "The infection of seeds by A. flavus",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The fungus responsible for seed colonization in groundnut",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "RAPD ASSAY",
+      "type": "METHOD",
+      "description": "A molecular technique used to assess genetic diversity",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "PRIMERS",
+      "type": "GENE_MARKER",
+      "description": "Short DNA sequences used in the RAPD assay to assess diversity",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "MOLECULAR DIVERSITY",
+      "type": "TRAIT",
+      "description": "The genetic variation among the groundnut accessions",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "GENETIC SIMILARITY",
+      "type": "TRAIT",
+      "description": "A measure of the genetic relatedness between accessions",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "HYBRIDIZATION",
+      "type": "METHOD",
+      "description": "The process of crossing different varieties to develop resistant ones",
+      "source_id": "paper_5197"
+    },
+    {
+      "name": "FUNGAL DISEASES",
+      "type": "CONDITION",
+      "description": "General category of diseases including late leaf spot, rust, and seed colonization",
+      "source_id": "paper_5197"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "DISEASE RESISTANCE",
+      "description": "is evaluated for",
+      "weight": "9",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "LATE LEAF SPOT",
+      "description": "is susceptible to",
+      "weight": "8",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RUST",
+      "description": "is susceptible to",
+      "weight": "8",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEED COLONIZATION",
+      "description": "is susceptible to",
+      "weight": "8",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "SEED COLONIZATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "MINICORE",
+      "target": "GROUNDNUT",
+      "description": "is a subset of germplasm for",
+      "weight": "9",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "RAPD ASSAY",
+      "target": "MOLECULAR DIVERSITY",
+      "description": "is used to assess",
+      "weight": "10",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "RAPD ASSAY",
+      "target": "PRIMERS",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "MOLECULAR DIVERSITY",
+      "target": "GENETIC SIMILARITY",
+      "description": "is measured by",
+      "weight": "9",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "HYBRIDIZATION",
+      "target": "DISEASE RESISTANCE",
+      "description": "is used to improve",
+      "weight": "9",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "FUNGAL DISEASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "RUST",
+      "target": "FUNGAL DISEASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_5197"
+    },
+    {
+      "source": "SEED COLONIZATION",
+      "target": "FUNGAL DISEASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_5197"
+    }
+  ]
+}

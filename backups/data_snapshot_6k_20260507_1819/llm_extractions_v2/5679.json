@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "SUGARCANE",
+      "type": "CROP",
+      "description": "The crop varieties being screened for resistance to brown eye spot disease",
+      "source_id": "paper_5679"
+    },
+    {
+      "name": "BROWN EYE SPOT",
+      "type": "CONDITION",
+      "description": "A leaf spot disease affecting sugarcane",
+      "source_id": "paper_5679"
+    },
+    {
+      "name": "HELMINTHOSPOROSIDE",
+      "type": "CONCEPT",
+      "description": "A toxic compound produced by Helminthosporium saccizari used to screen for disease resistance",
+      "source_id": "paper_5679"
+    },
+    {
+      "name": "HELMINTHOSPORIUM SACCIZARI",
+      "type": "ORGANISM",
+      "description": "The fungus that produces helminthosporoside and causes brown eye spot disease",
+      "source_id": "paper_5679"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of using helminthosporoside to evaluate sugarcane varieties",
+      "source_id": "paper_5679"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of sugarcane varieties to withstand brown eye spot disease",
+      "source_id": "paper_5679"
+    },
+    {
+      "name": "RUNNER APPEARANCE",
+      "type": "TRAIT",
+      "description": "A criterion used to measure resistance to brown eye spot",
+      "source_id": "paper_5679"
+    },
+    {
+      "name": "RUNNER LENGTH",
+      "type": "TRAIT",
+      "description": "A criterion used to measure resistance to brown eye spot",
+      "source_id": "paper_5679"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELMINTHOSPORIUM SACCIZARI",
+      "target": "HELMINTHOSPOROSIDE",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_5679"
+    },
+    {
+      "source": "HELMINTHOSPORIUM SACCIZARI",
+      "target": "BROWN EYE SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5679"
+    },
+    {
+      "source": "HELMINTHOSPOROSIDE",
+      "target": "SCREENING",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_5679"
+    },
+    {
+      "source": "SCREENING",
+      "target": "SUGARCANE",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_5679"
+    },
+    {
+      "source": "SCREENING",
+      "target": "BROWN EYE SPOT",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_5679"
+    },
+    {
+      "source": "SUGARCANE",
+      "target": "RESISTANCE",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_5679"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "RUNNER APPEARANCE",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_5679"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "RUNNER LENGTH",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_5679"
+    }
+  ]
+}

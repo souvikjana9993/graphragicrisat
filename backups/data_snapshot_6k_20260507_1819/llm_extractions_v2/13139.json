@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A major staple food crop for people in semi-arid areas of Africa and Asia.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "Continent where sorghum is a staple food and the study was conducted.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "Continent where sorghum is a staple food.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "POST-FLOWERING DROUGHT",
+      "type": "CONDITION",
+      "description": "A global constraint affecting the production of sorghum.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "STAY-GREEN",
+      "type": "TRAIT",
+      "description": "Characteristics of sorghum varieties aimed for improvement to enhance drought tolerance.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "TANZANIA",
+      "type": "LOCATION",
+      "description": "Country where farmer-preferred sorghum varieties were improved.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "MARKER-ASSISTED BACKCROSSING",
+      "type": "METHOD",
+      "description": "A breeding technique used to improve stay-green characteristics in sorghum.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "KASP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Markers used for genotyping individuals linked with STG 3A and STG 3B QTLs.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "STG 3A",
+      "type": "GENE_MARKER",
+      "description": "A specific quantitative trait locus linked with stay-green characteristics.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "STG 3B",
+      "type": "GENE_MARKER",
+      "description": "A specific quantitative trait locus linked with stay-green characteristics.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "QUANTITATIVE TRAIT LOCI",
+      "type": "CONCEPT",
+      "description": "Regions of DNA associated with a particular phenotypic trait.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "SINGLE NUCLEOTIDE POLYMORPHISM MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Markers used to observe favourable alleles in BC2F1 populations.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per panicle.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "WATER IRRIGATION REGIMES",
+      "type": "CONDITION",
+      "description": "Different levels of water application used to observe grain weight.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "GRAIN WEIGHT",
+      "type": "TRAIT",
+      "description": "The mean weight of grain produced per panicle.",
+      "source_id": "paper_13139"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a crop to withstand drought conditions.",
+      "source_id": "paper_13139"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "AFRICA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ASIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "POST-FLOWERING DROUGHT",
+      "target": "SORGHUM",
+      "description": "constrains production of",
+      "weight": "9",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "STAY-GREEN",
+      "target": "SORGHUM",
+      "description": "trait of",
+      "weight": "9",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "MARKER-ASSISTED BACKCROSSING",
+      "target": "STAY-GREEN",
+      "description": "used to improve",
+      "weight": "10",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "MARKER-ASSISTED BACKCROSSING",
+      "target": "SORGHUM",
+      "description": "used to improve",
+      "weight": "9",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "STG 3A",
+      "description": "linked with",
+      "weight": "10",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "KASP MARKERS",
+      "target": "STG 3B",
+      "description": "linked with",
+      "weight": "10",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "STG 3A",
+      "target": "QUANTITATIVE TRAIT LOCI",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "STG 3B",
+      "target": "QUANTITATIVE TRAIT LOCI",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISM MARKERS",
+      "target": "SORGHUM",
+      "description": "used to identify alleles in",
+      "weight": "8",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "SORGHUM",
+      "description": "trait of",
+      "weight": "9",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "GRAIN WEIGHT",
+      "target": "SORGHUM",
+      "description": "trait of",
+      "weight": "9",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "WATER IRRIGATION REGIMES",
+      "target": "GRAIN WEIGHT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "SORGHUM",
+      "description": "trait improved in",
+      "weight": "10",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "STAY-GREEN",
+      "target": "DROUGHT TOLERANCE",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_13139"
+    },
+    {
+      "source": "TANZANIA",
+      "target": "AFRICA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_13139"
+    }
+  ]
+}

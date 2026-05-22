@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop species evaluated for resistance to Sclerotium rolfsii.",
+      "source_id": "paper_1550"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing stem rot in groundnut.",
+      "source_id": "paper_1550"
+    },
+    {
+      "name": "SCLEROTIUM STEM ROT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of groundnut genotypes to resist infection and mortality caused by Sclerotium rolfsii.",
+      "source_id": "paper_1550"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The environmental thermal conditions, including ambient and specific day/night regimes, that influence disease incidence.",
+      "source_id": "paper_1550"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where the groundnut accessions were evaluated.",
+      "source_id": "paper_1550"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating groundnut accessions and genotypes for disease resistance across different temperature regimes.",
+      "source_id": "paper_1550"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "SCLEROTIUM STEM ROT RESISTANCE",
+      "description": "is evaluated for",
+      "weight": "10",
+      "source_id": "paper_1550"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "SCLEROTIUM STEM ROT RESISTANCE",
+      "description": "is the target pathogen for",
+      "weight": "10",
+      "source_id": "paper_1550"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "SCLEROTIUM STEM ROT RESISTANCE",
+      "description": "influences the expression of",
+      "weight": "9",
+      "source_id": "paper_1550"
+    },
+    {
+      "source": "SCREENING",
+      "target": "GROUNDNUT",
+      "description": "is used to evaluate",
+      "weight": "8",
+      "source_id": "paper_1550"
+    },
+    {
+      "source": "SCREENING",
+      "target": "GREENHOUSE",
+      "description": "is conducted in",
+      "weight": "8",
+      "source_id": "paper_1550"
+    },
+    {
+      "source": "SCREENING",
+      "target": "SCLEROTIUM STEM ROT RESISTANCE",
+      "description": "is used to measure",
+      "weight": "9",
+      "source_id": "paper_1550"
+    },
+    {
+      "source": "SCREENING",
+      "target": "TEMPERATURE",
+      "description": "incorporates different",
+      "weight": "9",
+      "source_id": "paper_1550"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used as the base for the cultivars mentioned.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "ANNIGERI",
+      "type": "CROP",
+      "description": "A single podded chickpea cultivar.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "ANNIGERI-TP",
+      "type": "CROP",
+      "description": "A twin-podded mutant genotype derived from Annigeri.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "TWIN-PODDED",
+      "type": "TRAIT",
+      "description": "The characteristic of having two pods per leaf axil.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "COLCHICINE INDUCTION",
+      "type": "METHOD",
+      "description": "The process of using colchicine to induce tetraploidy in plants.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "SEED SHAPE",
+      "type": "TRAIT",
+      "description": "The physical form of the seed.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "MATURITY",
+      "type": "TRAIT",
+      "description": "The time taken for the plant to reach full development.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "GROWTH HABIT",
+      "type": "TRAIT",
+      "description": "The general shape and growth pattern of the plant.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F.SP. CICERI",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes wilt in chickpeas.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "WILT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist infection by Fusarium oxysporum f.sp. ciceri.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The yield or output of the crop.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "ICRISAT GENE BANK",
+      "type": "LOCATION",
+      "description": "The facility where the genotype ICC14362 is maintained.",
+      "source_id": "paper_2149"
+    },
+    {
+      "name": "ICC14362",
+      "type": "CONCEPT",
+      "description": "The accession number assigned to the Annigeri-TP genotype.",
+      "source_id": "paper_2149"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ANNIGERI-TP",
+      "target": "ANNIGERI",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "COLCHICINE INDUCTION",
+      "target": "ANNIGERI-TP",
+      "description": "used to create",
+      "weight": "9",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "ANNIGERI-TP",
+      "target": "TWIN-PODDED",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "ANNIGERI-TP",
+      "target": "SEED SHAPE",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "ANNIGERI-TP",
+      "target": "MATURITY",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "ANNIGERI-TP",
+      "target": "GROWTH HABIT",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "ANNIGERI-TP",
+      "target": "WILT RESISTANCE",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "WILT RESISTANCE",
+      "target": "FUSARIUM OXYSPORUM F.SP. CICERI",
+      "description": "provides resistance against",
+      "weight": "10",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "ANNIGERI-TP",
+      "target": "PRODUCTIVITY",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "ANNIGERI-TP",
+      "target": "ICRISAT GENE BANK",
+      "description": "maintained in",
+      "weight": "9",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "ANNIGERI-TP",
+      "target": "ICC14362",
+      "description": "identified as",
+      "weight": "10",
+      "source_id": "paper_2149"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2149"
+    }
+  ]
+}

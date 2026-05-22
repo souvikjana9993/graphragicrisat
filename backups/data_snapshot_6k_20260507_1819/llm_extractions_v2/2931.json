@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA ICPL 270",
+      "type": "CROP",
+      "description": "A pigeonpea line that is resistant to Fusarium wilt but susceptible to reniform nematodes",
+      "source_id": "paper_2931"
+    },
+    {
+      "name": "ROTYLENCHULUS RENIFORMIS",
+      "type": "ORGANISM",
+      "description": "A reniform nematode that infests soil and interacts with Fusarium udum",
+      "source_id": "paper_2931"
+    },
+    {
+      "name": "FUSARIUM UDUM",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes Fusarium wilt in pigeonpea",
+      "source_id": "paper_2931"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A disease caused by Fusarium udum",
+      "source_id": "paper_2931"
+    },
+    {
+      "name": "FUSARIUM WILT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist infection by Fusarium udum",
+      "source_id": "paper_2931"
+    },
+    {
+      "name": "PATANCHERU, ANDHRA PRADESH, INDIA",
+      "type": "LOCATION",
+      "description": "The geographical location where the research was conducted",
+      "source_id": "paper_2931"
+    },
+    {
+      "name": "ICRISAT ASIA CENTER",
+      "type": "LOCATION",
+      "description": "The research center where the study was carried out",
+      "source_id": "paper_2931"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ROTYLENCHULUS RENIFORMIS",
+      "target": "FUSARIUM WILT RESISTANCE",
+      "description": "Affects and reduces the resistance of ICPL 270 to F. udum",
+      "weight": "9",
+      "source_id": "paper_2931"
+    },
+    {
+      "source": "FUSARIUM UDUM",
+      "target": "FUSARIUM WILT",
+      "description": "Causes the disease",
+      "weight": "10",
+      "source_id": "paper_2931"
+    },
+    {
+      "source": "PIGEONPEA ICPL 270",
+      "target": "FUSARIUM WILT RESISTANCE",
+      "description": "Possesses resistance to Fusarium wilt",
+      "weight": "8",
+      "source_id": "paper_2931"
+    },
+    {
+      "source": "PIGEONPEA ICPL 270",
+      "target": "ROTYLENCHULUS RENIFORMIS",
+      "description": "Is susceptible to the nematode",
+      "weight": "8",
+      "source_id": "paper_2931"
+    },
+    {
+      "source": "ROTYLENCHULUS RENIFORMIS",
+      "target": "PIGEONPEA ICPL 270",
+      "description": "Infests the soil and affects the plant",
+      "weight": "7",
+      "source_id": "paper_2931"
+    },
+    {
+      "source": "FUSARIUM UDUM",
+      "target": "PIGEONPEA ICPL 270",
+      "description": "Causes wilt in the plant",
+      "weight": "7",
+      "source_id": "paper_2931"
+    }
+  ]
+}

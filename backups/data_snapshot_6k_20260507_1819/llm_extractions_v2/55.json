@@ -1,0 +1,249 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Important oilseed crop, Arachis hypogaea L., grown in over 100 countries.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A frequent occurrence limiting groundnut productivity, especially in rainfed areas.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "WUE, correlated with SCMR and SLA, important for groundnut productivity under limited water.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "SPAD CHLOROPHYLL METER READING",
+      "type": "TRAIT",
+      "description": "SCMR, a surrogate trait for WUE.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "SPECIFIC LEAF AREA",
+      "type": "TRAIT",
+      "description": "SLA, a surrogate trait for WUE.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "GENETIC SYSTEM",
+      "type": "CONCEPT",
+      "description": "The system controlling the expression of SCMR and SLA.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "BREEDING PROCEDURE",
+      "type": "METHOD",
+      "description": "The process of improving SCMR and SLA in groundnut.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "ICG 7243",
+      "type": "GENE_MARKER",
+      "description": "Groundnut genotype used in a cross.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "ICG 9418",
+      "type": "GENE_MARKER",
+      "description": "Groundnut genotype used in a cross.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "ICG 6766",
+      "type": "GENE_MARKER",
+      "description": "Groundnut genotype used in a cross.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "CHICO",
+      "type": "GENE_MARKER",
+      "description": "Groundnut genotype used in a cross.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "P-1",
+      "type": "GENE_MARKER",
+      "description": "Parental generation 1.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "P-2",
+      "type": "GENE_MARKER",
+      "description": "Parental generation 2.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "F-1",
+      "type": "GENE_MARKER",
+      "description": "First filial generation.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "F-2",
+      "type": "GENE_MARKER",
+      "description": "Second filial generation.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "BC1P1",
+      "type": "GENE_MARKER",
+      "description": "Backcross 1, parent 1.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "BC1P2",
+      "type": "GENE_MARKER",
+      "description": "Backcross 1, parent 2.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "60 DAYS AFTER SOWING",
+      "type": "CONDITION",
+      "description": "A stage of crop growth, used for evaluating SCMR and SLA.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "80 DAYS AFTER SOWING",
+      "type": "CONDITION",
+      "description": "A stage of crop growth, used for evaluating SCMR and SLA.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "ADDITIVE EFFECTS",
+      "type": "CONCEPT",
+      "description": "Genetic effects contributing to trait inheritance.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "DOMINANCE EFFECTS",
+      "type": "CONCEPT",
+      "description": "Genetic effects contributing to trait inheritance.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "DUPLICATE EPISTASIS",
+      "type": "CONCEPT",
+      "description": "A type of gene interaction affecting trait inheritance.",
+      "source_id": "paper_55"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "Ability of groundnut to withstand drought conditions.",
+      "source_id": "paper_55"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER USE EFFICIENCY",
+      "target": "GROUNDNUT",
+      "description": "Is a trait important for",
+      "weight": "9",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "SPAD CHLOROPHYLL METER READING",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Is correlated with",
+      "weight": "8",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "SPECIFIC LEAF AREA",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Is correlated with",
+      "weight": "8",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "SPAD CHLOROPHYLL METER READING",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Can be used as a surrogate for",
+      "weight": "7",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "SPECIFIC LEAF AREA",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Can be used as a surrogate for",
+      "weight": "7",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "ICG 7243",
+      "target": "ICG 9418",
+      "description": "Are crossed to study",
+      "weight": "8",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "ICG 6766",
+      "target": "CHICO",
+      "description": "Are crossed to study",
+      "weight": "8",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "ADDITIVE EFFECTS",
+      "target": "SPAD CHLOROPHYLL METER READING",
+      "description": "Important for at 80 DAS",
+      "weight": "7",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "DOMINANCE EFFECTS",
+      "target": "SPAD CHLOROPHYLL METER READING",
+      "description": "Predominate at 60 DAS",
+      "weight": "7",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "DUPLICATE EPISTASIS",
+      "target": "SPAD CHLOROPHYLL METER READING",
+      "description": "Observed with at 60 DAS",
+      "weight": "7",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "DOMINANCE EFFECTS",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "Predominate at both stages",
+      "weight": "7",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "DUPLICATE EPISTASIS",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "Observed at both stages",
+      "weight": "7",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "SPAD CHLOROPHYLL METER READING",
+      "target": "DROUGHT TOLERANCE",
+      "description": "Used for screening for",
+      "weight": "6",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "SPECIFIC LEAF AREA",
+      "target": "DROUGHT TOLERANCE",
+      "description": "Used for screening for",
+      "weight": "6",
+      "source_id": "paper_55"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "GROUNDNUT",
+      "description": "Adversely affects",
+      "weight": "9",
+      "source_id": "paper_55"
+    }
+  ]
+}

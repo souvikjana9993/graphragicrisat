@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A failsafe crop grown in semi-arid regions particularly in post rainy season",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "SEMI-ARID REGIONS",
+      "type": "LOCATION",
+      "description": "Regions where sorghum is widely grown",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "POST RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The specific timing of growth and evaluation for the crop",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Water availability regime that affects crop performance",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "FODDER QUALITY",
+      "type": "TRAIT",
+      "description": "Characteristics of the fodder, including digestibility",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "AGRONOMIC TRAITS",
+      "type": "TRAIT",
+      "description": "General growth and yield characteristics of the crop",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced by the crop",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "FODDER YIELD",
+      "type": "TRAIT",
+      "description": "The amount of fodder produced by the crop",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "DELAYED FLOWERING",
+      "type": "TRAIT",
+      "description": "A response to drought stress characterized by a delay in flowering",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A growth parameter reduced by drought stress",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "FODDER DIGESTIBILITY TRAITS",
+      "type": "TRAIT",
+      "description": "Traits related to how well fodder is digested",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "IN VITRO ORGANIC MATTER DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "A specific measure of fodder digestibility",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "General growth parameters of the crop",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "YIELD PARAMETERS",
+      "type": "TRAIT",
+      "description": "Parameters related to the production of the crop",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "HERITABILITY",
+      "type": "CONCEPT",
+      "description": "The proportion of variation in a trait due to genetic factors",
+      "source_id": "paper_11730"
+    },
+    {
+      "name": "GENES",
+      "type": "GENE_MARKER",
+      "description": "Biological units controlling the fodder quality traits under drought",
+      "source_id": "paper_11730"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SEMI-ARID REGIONS",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "POST RAINY SEASON",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "SORGHUM",
+      "description": "affects performance of",
+      "weight": "9",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "DELAYED FLOWERING",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "PLANT HEIGHT",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "FODDER DIGESTIBILITY TRAITS",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "IN VITRO ORGANIC MATTER DIGESTIBILITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "FODDER QUALITY",
+      "target": "AGRONOMIC TRAITS",
+      "description": "no significant relationship",
+      "weight": "2",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "FODDER QUALITY",
+      "target": "GRAIN YIELD",
+      "description": "interaction studied",
+      "weight": "6",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "FODDER YIELD",
+      "target": "GRAIN YIELD",
+      "description": "interaction studied",
+      "weight": "6",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "GENES",
+      "target": "FODDER QUALITY",
+      "description": "control",
+      "weight": "8",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "HERITABILITY",
+      "target": "PLANT GROWTH",
+      "description": "recorded for",
+      "weight": "7",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "HERITABILITY",
+      "target": "YIELD PARAMETERS",
+      "description": "recorded for",
+      "weight": "7",
+      "source_id": "paper_11730"
+    },
+    {
+      "source": "HERITABILITY",
+      "target": "FODDER QUALITY",
+      "description": "recorded for",
+      "weight": "7",
+      "source_id": "paper_11730"
+    }
+  ]
+}

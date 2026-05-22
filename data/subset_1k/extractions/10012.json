@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop studied in the lowland cropping systems.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "SOIL ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "Organic material in the soil, crucial for livelihoods and food security.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "LOW INPUT FARMING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Farming systems with minimal external inputs, typical of smallholders.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where the farming systems are located.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "RAINFED LOWLAND RICE EXPERIMENT",
+      "type": "METHOD",
+      "description": "A long-term study testing the effect of plant material additions on rice.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "SLOWLY DECOMPOSABLE PLANT MATERIALS",
+      "type": "CONCEPT",
+      "description": "Plant materials with low quality that decompose slowly.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "SOIL ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "A component of soil organic matter that increased with leaf litter application.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of rice grain produced.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "NUTRIENT RECOVERY",
+      "type": "TRAIT",
+      "description": "The efficiency of recovering nutrients like nitrogen and sulfur.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "LEAF LITTER APPLICATIONS",
+      "type": "METHOD",
+      "description": "The process of adding leaf litter to the soil over 9 seasons.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A nutrient whose recovery is affected by residue decomposition.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "SULFUR",
+      "type": "CONCEPT",
+      "description": "A nutrient whose recovery is affected by residue decomposition.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "DECOMPOSITION RATE",
+      "type": "CONCEPT",
+      "description": "The speed at which added residues break down.",
+      "source_id": "paper_10012"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONCEPT",
+      "description": "The ability of soil to sustain crop growth.",
+      "source_id": "paper_10012"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "LOW INPUT FARMING SYSTEMS",
+      "description": "is grown in",
+      "weight": "10",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "LOW INPUT FARMING SYSTEMS",
+      "target": "SEMI-ARID TROPICS",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "RAINFED LOWLAND RICE EXPERIMENT",
+      "target": "RICE",
+      "description": "studies",
+      "weight": "10",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "RAINFED LOWLAND RICE EXPERIMENT",
+      "target": "SLOWLY DECOMPOSABLE PLANT MATERIALS",
+      "description": "tests the effect of",
+      "weight": "9",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "LEAF LITTER APPLICATIONS",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "LEAF LITTER APPLICATIONS",
+      "target": "CROP YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "LEAF LITTER APPLICATIONS",
+      "target": "NUTRIENT RECOVERY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "DECOMPOSITION RATE",
+      "target": "NUTRIENT RECOVERY",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "NUTRIENT RECOVERY",
+      "description": "is a measured component of",
+      "weight": "10",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "SULFUR",
+      "target": "NUTRIENT RECOVERY",
+      "description": "is a measured component of",
+      "weight": "10",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON",
+      "target": "SOIL ORGANIC MATTER",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "SOIL ORGANIC MATTER",
+      "target": "SOIL FERTILITY",
+      "description": "maintains",
+      "weight": "8",
+      "source_id": "paper_10012"
+    },
+    {
+      "source": "SOIL FERTILITY",
+      "target": "CROP YIELD",
+      "description": "supports",
+      "weight": "9",
+      "source_id": "paper_10012"
+    }
+  ]
+}

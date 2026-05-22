@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A near-subsistence crop grown in semiarid tropical India",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study on sorghum market impacts is conducted",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "TECHNOLOGICAL CHANGE",
+      "type": "CONCEPT",
+      "description": "Changes in technology affecting the production and market of crops",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "NEAR-SUBSISTENCE AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "Agricultural systems where production is primarily for local consumption with minimal surplus",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "SEMIARID TROPICAL",
+      "type": "CONDITION",
+      "description": "The climatic condition of the region in India where sorghum is grown",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "DIVERSIFIED AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "Agricultural practice involving the cultivation of multiple crops",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "GEOGRAPHICALLY ISOLATED MARKETS",
+      "type": "CONCEPT",
+      "description": "Markets that are physically separated, affecting price and distribution",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "PRICES",
+      "type": "CONCEPT",
+      "description": "The monetary value at which goods are traded in the market",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "PRODUCER-DEMANDER INCOME LINKS",
+      "type": "CONCEPT",
+      "description": "Economic connections between those who produce the crop and those who consume it",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "DYNAMIC SIMULATIONS",
+      "type": "METHOD",
+      "description": "A computational method used to model the behavior of a system over time",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "MULTICOMMODITY MARKET MODEL",
+      "type": "METHOD",
+      "description": "A model used to analyze the interactions between different commodity markets",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "SORGHUM PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of output per unit of input for sorghum production",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "CONSUMER WELFARE",
+      "type": "CONCEPT",
+      "description": "The economic well-being of the people consuming sorghum",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "SORGHUM PRICE",
+      "type": "CONCEPT",
+      "description": "The market price specifically for sorghum",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "OUTPUT GAIN",
+      "type": "TRAIT",
+      "description": "The increase in total production resulting from productivity improvements",
+      "source_id": "paper_3411"
+    },
+    {
+      "name": "INDUCED INPUT ALLOCATIONS",
+      "type": "CONCEPT",
+      "description": "The reallocation of resources to favor a specific crop due to market signals",
+      "source_id": "paper_3411"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TECHNOLOGICAL CHANGE",
+      "target": "SORGHUM",
+      "description": "impacts the production and market of",
+      "weight": "8",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INDIA",
+      "description": "is cultivated in",
+      "weight": "10",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEMIARID TROPICAL",
+      "description": "is grown under",
+      "weight": "9",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NEAR-SUBSISTENCE AGRICULTURE",
+      "description": "is a key crop in",
+      "weight": "9",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "DYNAMIC SIMULATIONS",
+      "target": "MULTICOMMODITY MARKET MODEL",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "MULTICOMMODITY MARKET MODEL",
+      "target": "TECHNOLOGICAL CHANGE",
+      "description": "is used to evaluate the impacts of",
+      "weight": "8",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "TECHNOLOGICAL CHANGE",
+      "target": "SORGHUM PRODUCTIVITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "SORGHUM PRODUCTIVITY",
+      "target": "SORGHUM PRICE",
+      "description": "likely lowers",
+      "weight": "7",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "SORGHUM PRODUCTIVITY",
+      "target": "CONSUMER WELFARE",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "SORGHUM PRICE",
+      "target": "OUTPUT GAIN",
+      "description": "influences",
+      "weight": "6",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "INDUCED INPUT ALLOCATIONS",
+      "target": "OUTPUT GAIN",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "DIVERSIFIED AGRICULTURE",
+      "target": "TECHNOLOGICAL CHANGE",
+      "description": "complicates the evaluation of",
+      "weight": "6",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "GEOGRAPHICALLY ISOLATED MARKETS",
+      "target": "TECHNOLOGICAL CHANGE",
+      "description": "complicates the evaluation of",
+      "weight": "6",
+      "source_id": "paper_3411"
+    },
+    {
+      "source": "PRODUCER-DEMANDER INCOME LINKS",
+      "target": "TECHNOLOGICAL CHANGE",
+      "description": "complicates the evaluation of",
+      "weight": "6",
+      "source_id": "paper_3411"
+    }
+  ]
+}

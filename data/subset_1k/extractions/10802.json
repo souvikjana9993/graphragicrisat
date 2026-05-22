@@ -1,0 +1,192 @@
+{
+  "entities": [
+    {
+      "name": "FUTURE CLIMATE",
+      "type": "CONDITION",
+      "description": "Predicted climatic conditions for the period 2040–2069",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "IRRIGATION EXPANSION",
+      "type": "CONCEPT",
+      "description": "The increase in the area or intensity of irrigated agriculture",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "GROUNDWATER RECHARGE",
+      "type": "CONCEPT",
+      "description": "The process where water moves downward from surface water to groundwater",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "SOUTH INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "MIKE SHE/MIKE11",
+      "type": "METHOD",
+      "description": "Integrated modeling software used to evaluate water levels and flows",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "AGRICULTURAL WATERSHED",
+      "type": "LOCATION",
+      "description": "The specific area of study in a low-storage crystalline aquifer region",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "DEMAND AND SUPPLY MANAGEMENT",
+      "type": "METHOD",
+      "description": "Strategies to manage water use and availability, including efficiency and storage",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "FUTURE RAINFALL",
+      "type": "CONDITION",
+      "description": "Predicted increase in precipitation based on Global Climate Models",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "GLOBAL CLIMATE MODELS",
+      "type": "METHOD",
+      "description": "Models used to predict future rainfall patterns",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "BASEFLOW",
+      "type": "CONCEPT",
+      "description": "The portion of streamflow that comes from groundwater seepage",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "IRRIGATION WITHDRAWALS",
+      "type": "CONCEPT",
+      "description": "The extraction of groundwater for irrigation purposes",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "WELL DRYING",
+      "type": "CONDITION",
+      "description": "The state where irrigation wells no longer provide water",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "FLOODING",
+      "type": "CONDITION",
+      "description": "The overflow of water onto land that is normally dry",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "DRIP IRRIGATION",
+      "type": "METHOD",
+      "description": "A water-efficient irrigation method involving flood to drip conversion",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "ENERGY SUBSIDY",
+      "type": "CONCEPT",
+      "description": "Government financial support for electricity used in irrigation",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "FOOD-WATER-ENERGY NEXUS",
+      "type": "CONCEPT",
+      "description": "The interconnected relationship between food security, water availability, and energy use",
+      "source_id": "paper_10802"
+    },
+    {
+      "name": "SEMI-ARID REGIONS",
+      "type": "LOCATION",
+      "description": "Regions characterized by low and irregular rainfall",
+      "source_id": "paper_10802"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUTURE CLIMATE",
+      "target": "GROUNDWATER RECHARGE",
+      "description": "Increases recharge via increased rainfall",
+      "weight": "8",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "IRRIGATION EXPANSION",
+      "target": "GROUNDWATER RECHARGE",
+      "description": "Outweighs recharge gains",
+      "weight": "9",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "FUTURE RAINFALL",
+      "target": "GROUNDWATER RECHARGE",
+      "description": "Increases recharge by 10-55%",
+      "weight": "9",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "FUTURE RAINFALL",
+      "target": "BASEFLOW",
+      "description": "Increases baseflow by 17-154%",
+      "weight": "9",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "IRRIGATION WITHDRAWALS",
+      "target": "WELL DRYING",
+      "description": "Increases likelihood of well drying",
+      "weight": "9",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "IRRIGATION WITHDRAWALS",
+      "target": "FLOODING",
+      "description": "Contributes to hydrologic extremes",
+      "weight": "7",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "DRIP IRRIGATION",
+      "target": "IRRIGATION EXPANSION",
+      "description": "Supports expansion by saving water",
+      "weight": "8",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "ENERGY SUBSIDY",
+      "target": "IRRIGATION WITHDRAWALS",
+      "description": "High subsidy leads to higher withdrawals",
+      "weight": "8",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "DEMAND AND SUPPLY MANAGEMENT",
+      "target": "FOOD-WATER-ENERGY NEXUS",
+      "description": "Recommended to achieve sustainability",
+      "weight": "9",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "MIKE SHE/MIKE11",
+      "target": "AGRICULTURAL WATERSHED",
+      "description": "Used to model water levels and flows in the watershed",
+      "weight": "8",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "AGRICULTURAL WATERSHED",
+      "target": "SOUTH INDIA",
+      "description": "Located in south India",
+      "weight": "10",
+      "source_id": "paper_10802"
+    },
+    {
+      "source": "FUTURE CLIMATE",
+      "target": "WELL DRYING",
+      "description": "Indirectly affects via rainfall and irrigation",
+      "weight": "6",
+      "source_id": "paper_10802"
+    }
+  ]
+}

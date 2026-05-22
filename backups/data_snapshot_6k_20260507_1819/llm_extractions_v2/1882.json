@@ -1,0 +1,226 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The primary agricultural crop being studied for disease resistance.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "ICGV-SM 90704",
+      "type": "CROP",
+      "description": "A specific groundnut genotype evaluated for rosette resistance.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "ICG 12991",
+      "type": "CROP",
+      "description": "A specific groundnut genotype evaluated for rosette resistance.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "JL 24",
+      "type": "CROP",
+      "description": "A specific groundnut genotype evaluated for rosette resistance.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "MALIMBA",
+      "type": "CROP",
+      "description": "A groundnut cultivar used as the source of rosette infection.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "ROSETTE",
+      "type": "CONDITION",
+      "description": "A disease in groundnuts caused by a complex of viruses and satellite RNA.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "ROSETTE ASSISTOR VIRUS",
+      "type": "ORGANISM",
+      "description": "One of the viral components causing the rosette disease.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE VIRUS",
+      "type": "ORGANISM",
+      "description": "One of the viral components causing the rosette disease.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "SATELLITE RNA",
+      "type": "ORGANISM",
+      "description": "A component of the virus complex that contributes to the rosette disease.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "APHIS CRACCIVORA",
+      "type": "ORGANISM",
+      "description": "The aphid species that acts as a vector for the rosette virus complex.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut genotypes to resist infection or vector infestation.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "ROSETTE SYMPTOMS",
+      "type": "TRAIT",
+      "description": "The physical manifestations of the rosette disease in groundnut plants.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "VECTOR TRANSMISSION",
+      "type": "METHOD",
+      "description": "The process of transmitting the virus using an insect vector.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "MECHANICAL TRANSMISSION",
+      "type": "METHOD",
+      "description": "The process of transmitting the virus through physical means.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "GRAFTING",
+      "type": "METHOD",
+      "description": "A technique used to transmit the virus by joining tissues of an infected plant to a healthy one.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where the experiments were conducted.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "APHID POPULATION COUNTS",
+      "type": "CONCEPT",
+      "description": "The measurement of the number of aphids present on the plants to assess vector performance.",
+      "source_id": "paper_1882"
+    },
+    {
+      "name": "DISEASE EXPRESSION",
+      "type": "TRAIT",
+      "description": "The degree to which the disease manifests in the plant.",
+      "source_id": "paper_1882"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ROSETTE ASSISTOR VIRUS",
+      "target": "ROSETTE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE VIRUS",
+      "target": "ROSETTE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "SATELLITE RNA",
+      "target": "ROSETTE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "APHIS CRACCIVORA",
+      "target": "ROSETTE",
+      "description": "transmits",
+      "weight": "10",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "ICGV-SM 90704",
+      "description": "evaluated in",
+      "weight": "9",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "ICG 12991",
+      "description": "evaluated in",
+      "weight": "9",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "JL 24",
+      "description": "evaluated in",
+      "weight": "9",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "VECTOR TRANSMISSION",
+      "target": "RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "MECHANICAL TRANSMISSION",
+      "target": "RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "GRAFTING",
+      "target": "RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "ICG 12991",
+      "target": "RESISTANCE",
+      "description": "demonstrates high",
+      "weight": "10",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "JL 24",
+      "target": "ROSETTE SYMPTOMS",
+      "description": "demonstrates severe",
+      "weight": "10",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "ICGV-SM 90704",
+      "target": "ROSETTE SYMPTOMS",
+      "description": "demonstrates mild",
+      "weight": "8",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "ICG 12991",
+      "target": "APHIS CRACCIVORA",
+      "description": "shows resistance to",
+      "weight": "10",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "APHID POPULATION COUNTS",
+      "target": "RESISTANCE",
+      "description": "used to assess vector performance",
+      "weight": "9",
+      "source_id": "paper_1882"
+    },
+    {
+      "source": "GRAFTING",
+      "target": "GREENHOUSE",
+      "description": "performed in",
+      "weight": "7",
+      "source_id": "paper_1882"
+    }
+  ]
+}

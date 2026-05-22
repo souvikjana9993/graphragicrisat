@@ -1,0 +1,284 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for transgenic resistance",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "CRY IIA",
+      "type": "GENE_MARKER",
+      "description": "The insecticidal protein gene used for transgenic modification",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The pod borer pest attacking chickpea",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "NATURAL ENEMIES",
+      "type": "ORGANISM",
+      "description": "Organisms that naturally prey upon or parasitize Helicoverpa armigera",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "LEAF DAMAGE",
+      "type": "TRAIT",
+      "description": "The extent of foliage destruction caused by pests",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "LARVAL SURVIVAL",
+      "type": "TRAIT",
+      "description": "The rate at which H. armigera larvae survive on the host plant",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "LARVAL WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight gained by H. armigera larvae during development",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The total productivity of grain per plant or area",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "DRY MATTER WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of the plant material after moisture removal",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "POD WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of the seed pods",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of the seeds produced",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "NUMBER OF SEEDS",
+      "type": "TRAIT",
+      "description": "The total count of seeds formed per plant",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The town where ICRISAT is located",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the research was conducted",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "LABORATORY CONDITIONS",
+      "type": "CONDITION",
+      "description": "Controlled indoor environment for experimental testing",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "Natural outdoor environment for experimental testing",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "GLASSHOUSE CONDITIONS",
+      "type": "CONDITION",
+      "description": "Semi-controlled environment for plant growth and testing",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "INFESTATION",
+      "type": "CONDITION",
+      "description": "The state of being attacked by H. armigera",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "BS5A.2(T2) 19-1P2",
+      "type": "CROP",
+      "description": "A specific transgenic chickpea line",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "BS5A.2(T2) 19-2P1",
+      "type": "CROP",
+      "description": "A specific transgenic chickpea line showing high performance",
+      "source_id": "paper_10083"
+    },
+    {
+      "name": "BS5A.1(T2) 18-1P1",
+      "type": "CROP",
+      "description": "A specific transgenic chickpea line",
+      "source_id": "paper_10083"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CRY IIA",
+      "target": "CHICKPEA",
+      "description": "Used to create transgenic lines",
+      "weight": "10",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "Acts as a pest attacking the crop",
+      "weight": "10",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "NATURAL ENEMIES",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Interact with and prey upon the pest",
+      "weight": "9",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "CRY IIA",
+      "target": "LEAF DAMAGE",
+      "description": "Reduces the amount of damage",
+      "weight": "8",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "CRY IIA",
+      "target": "LARVAL SURVIVAL",
+      "description": "Reduces the survival rate of larvae",
+      "weight": "9",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "CRY IIA",
+      "target": "LARVAL WEIGHT",
+      "description": "Reduces the weight gain of larvae",
+      "weight": "9",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "LEAF DAMAGE",
+      "description": "Causes damage to the leaves",
+      "weight": "10",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "GRAIN YIELD",
+      "description": "Negatively impacts the grain yield",
+      "weight": "8",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "BS5A.2(T2) 19-2P1",
+      "target": "GRAIN YIELD",
+      "description": "Exhibited the highest grain yield",
+      "weight": "9",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "BS5A.2(T2) 19-2P1",
+      "target": "DRY MATTER WEIGHT",
+      "description": "Exhibited the highest dry matter weight",
+      "weight": "9",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "BS5A.2(T2) 19-2P1",
+      "target": "POD WEIGHT",
+      "description": "Exhibited the highest pod weight",
+      "weight": "9",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "BS5A.2(T2) 19-2P1",
+      "target": "SEED WEIGHT",
+      "description": "Exhibited the highest seed weight",
+      "weight": "9",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "BS5A.2(T2) 19-2P1",
+      "target": "NUMBER OF SEEDS",
+      "description": "Exhibited the highest number of seeds",
+      "weight": "9",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "PATANCHERU",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "ANDHRA PRADESH",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "LABORATORY CONDITIONS",
+      "description": "Tested under",
+      "weight": "7",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "FIELD CONDITIONS",
+      "description": "Tested under",
+      "weight": "7",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "GLASSHOUSE CONDITIONS",
+      "description": "Tested under",
+      "weight": "7",
+      "source_id": "paper_10083"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "INFESTATION",
+      "description": "Subjected to pest attack",
+      "weight": "8",
+      "source_id": "paper_10083"
+    }
+  ]
+}

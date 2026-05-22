@@ -1,0 +1,219 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The host crop affected by stem rot",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "ATHELIA ROLFSII",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing peanut stem rot",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "PEANUT STEM ROT",
+      "type": "CONDITION",
+      "description": "A soilborne disease affecting peanuts",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "GUANGDONG PROVINCE",
+      "type": "LOCATION",
+      "description": "A southern Chinese province showing high genetic variability of A. rolfsii",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "MYCELIAL COMPATIBILITY GROUPS",
+      "type": "CONCEPT",
+      "description": "Groups of isolates determined by pairing tests",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "PAIRING TESTING",
+      "type": "METHOD",
+      "description": "A method used to determine mycelial compatibility groups",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "MYCELIAL GROWTH RATE",
+      "type": "TRAIT",
+      "description": "A phenotypic trait of A. rolfsii isolates",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "SCLEROTIAL NUMBER",
+      "type": "TRAIT",
+      "description": "The number of sclerotia produced by A. rolfsii isolates",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "SCLEROTIAL SIZE",
+      "type": "TRAIT",
+      "description": "The size of sclerotia produced by A. rolfsii isolates",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "SCLEROTIAL DRY WEIGHT",
+      "type": "TRAIT",
+      "description": "The dry weight of sclerotia produced by A. rolfsii isolates",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "LATITUDE",
+      "type": "CONDITION",
+      "description": "The geographical coordinate that correlates with sclerotial traits",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "DISEASE INDEX",
+      "type": "TRAIT",
+      "description": "A measure used to quantify the pathogenicity of isolates on peanut",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "INTER-SIMPLE SEQUENCE REPEAT ANALYSIS",
+      "type": "METHOD",
+      "description": "A molecular method used to analyze genetic diversity",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "UNWEIGHTED PAIR-GROUP METHOD WITH ARITHMETIC AVERAGE CLUSTERING",
+      "type": "METHOD",
+      "description": "A clustering method used to group isolates based on genetic data",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "VIRULENCE",
+      "type": "TRAIT",
+      "description": "The degree of pathogenicity of A. rolfsii isolates",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variation in genetic makeup among A. rolfsii isolates",
+      "source_id": "paper_12248"
+    },
+    {
+      "name": "MORPHOLOGICAL TRAITS",
+      "type": "CONCEPT",
+      "description": "The physical characteristics of A. rolfsii isolates",
+      "source_id": "paper_12248"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ATHELIA ROLFSII",
+      "target": "PEANUT STEM ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "ATHELIA ROLFSII",
+      "target": "PEANUT",
+      "description": "pathogenic on",
+      "weight": "10",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "PEANUT STEM ROT",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "ATHELIA ROLFSII",
+      "target": "CHINA",
+      "description": "distributed in",
+      "weight": "9",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "ATHELIA ROLFSII",
+      "target": "GUANGDONG PROVINCE",
+      "description": "shows high genetic variability in",
+      "weight": "8",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "PAIRING TESTING",
+      "target": "MYCELIAL COMPATIBILITY GROUPS",
+      "description": "used to assign isolates to",
+      "weight": "10",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "LATITUDE",
+      "target": "SCLEROTIAL SIZE",
+      "description": "positively correlated with",
+      "weight": "9",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "LATITUDE",
+      "target": "SCLEROTIAL DRY WEIGHT",
+      "description": "positively correlated with",
+      "weight": "9",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "LATITUDE",
+      "target": "SCLEROTIAL NUMBER",
+      "description": "negatively correlated with",
+      "weight": "9",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "INTER-SIMPLE SEQUENCE REPEAT ANALYSIS",
+      "target": "ATHELIA ROLFSII",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "UNWEIGHTED PAIR-GROUP METHOD WITH ARITHMETIC AVERAGE CLUSTERING",
+      "target": "ATHELIA ROLFSII",
+      "description": "used to cluster",
+      "weight": "9",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "ATHELIA ROLFSII",
+      "target": "VIRULENCE",
+      "description": "varies in",
+      "weight": "8",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "ATHELIA ROLFSII",
+      "target": "GENETIC DIVERSITY",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "ATHELIA ROLFSII",
+      "target": "MORPHOLOGICAL TRAITS",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_12248"
+    },
+    {
+      "source": "ATHELIA ROLFSII",
+      "target": "MYCELIAL GROWTH RATE",
+      "description": "exhibits variation in",
+      "weight": "8",
+      "source_id": "paper_12248"
+    }
+  ]
+}

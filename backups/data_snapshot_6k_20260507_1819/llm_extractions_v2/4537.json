@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The agricultural crop from which the straw is derived and for which the soils are characteristic",
+      "source_id": "paper_4537"
+    },
+    {
+      "name": "RICE STRAW",
+      "type": "CONCEPT",
+      "description": "Organic residue from rice plants applied at a concentration of 0.15% to study its effect on nitrogen",
+      "source_id": "paper_4537"
+    },
+    {
+      "name": "FLOODED TROPICAL RICE SOILS",
+      "type": "CONDITION",
+      "description": "Three types of tropical soils under flooded conditions used for the experiment",
+      "source_id": "paper_4537"
+    },
+    {
+      "name": "MINERALISATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting organic nitrogen into inorganic forms",
+      "source_id": "paper_4537"
+    },
+    {
+      "name": "SOIL NITROGEN",
+      "type": "CONCEPT",
+      "description": "The nitrogen content naturally occurring within the soil",
+      "source_id": "paper_4537"
+    },
+    {
+      "name": "FERTILIZER NITROGEN",
+      "type": "CONCEPT",
+      "description": "The nitrogen added to the soil through fertilizer application",
+      "source_id": "paper_4537"
+    },
+    {
+      "name": "INCUBATION",
+      "type": "METHOD",
+      "description": "A laboratory-controlled process lasting 8 weeks to observe nitrogen transformations",
+      "source_id": "paper_4537"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE STRAW",
+      "target": "FLOODED TROPICAL RICE SOILS",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_4537"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "MINERALISATION",
+      "description": "had no significant effect on",
+      "weight": "7",
+      "source_id": "paper_4537"
+    },
+    {
+      "source": "MINERALISATION",
+      "target": "SOIL NITROGEN",
+      "description": "transforms",
+      "weight": "9",
+      "source_id": "paper_4537"
+    },
+    {
+      "source": "MINERALISATION",
+      "target": "FERTILIZER NITROGEN",
+      "description": "transforms",
+      "weight": "9",
+      "source_id": "paper_4537"
+    },
+    {
+      "source": "INCUBATION",
+      "target": "MINERALISATION",
+      "description": "used to measure",
+      "weight": "8",
+      "source_id": "paper_4537"
+    },
+    {
+      "source": "RICE",
+      "target": "RICE STRAW",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_4537"
+    },
+    {
+      "source": "RICE",
+      "target": "FLOODED TROPICAL RICE SOILS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_4537"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "MICROARRAY EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Experiments used to analyze gene expression using arrays",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "ROW-COLUMN DESIGN",
+      "type": "METHOD",
+      "description": "A design structure where arrays represent columns, dyes represent rows, and varieties represent treatments",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "ARRAY EFFECTS",
+      "type": "CONCEPT",
+      "description": "The influence of the specific array used in the experiment",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "VARIETY EFFECTS",
+      "type": "CONCEPT",
+      "description": "The influence of the different varieties being tested",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "DYE EFFECTS",
+      "type": "CONCEPT",
+      "description": "The influence of the dyes used in the microarray process",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "FIXED MIXED EFFECTS MODEL",
+      "type": "METHOD",
+      "description": "A statistical model combining fixed and random effects used for design efficiency",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "EXCHANGE AND INTERCHANGE ALGORITHMS",
+      "type": "METHOD",
+      "description": "Algorithms used to generate efficient row-column designs",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "MICROSOFT VISUAL C++",
+      "type": "METHOD",
+      "description": "The programming language/environment used to implement the design algorithm",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "PAIRWISE TREATMENT COMPARISONS",
+      "type": "CONCEPT",
+      "description": "The process of comparing two treatments to determine differences",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "FIXED EFFECTS MODEL",
+      "type": "METHOD",
+      "description": "A statistical model where all effects are assumed to be constant",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "MIXED EFFECTS MODEL",
+      "type": "METHOD",
+      "description": "A statistical model containing both fixed and random effects",
+      "source_id": "paper_157"
+    },
+    {
+      "name": "3-COLOUR MICROARRAY EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Microarray experiments utilizing three different dyes",
+      "source_id": "paper_157"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ROW-COLUMN DESIGN",
+      "target": "MICROARRAY EXPERIMENTS",
+      "description": "is used to structure",
+      "weight": "9",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "ROW-COLUMN DESIGN",
+      "target": "ARRAY EFFECTS",
+      "description": "incorporates",
+      "weight": "8",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "ROW-COLUMN DESIGN",
+      "target": "VARIETY EFFECTS",
+      "description": "incorporates",
+      "weight": "8",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "ROW-COLUMN DESIGN",
+      "target": "DYE EFFECTS",
+      "description": "incorporates",
+      "weight": "8",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "EXCHANGE AND INTERCHANGE ALGORITHMS",
+      "target": "ROW-COLUMN DESIGN",
+      "description": "generates",
+      "weight": "10",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "EXCHANGE AND INTERCHANGE ALGORITHMS",
+      "target": "FIXED MIXED EFFECTS MODEL",
+      "description": "is modified for",
+      "weight": "7",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "MICROSOFT VISUAL C++",
+      "target": "EXCHANGE AND INTERCHANGE ALGORITHMS",
+      "description": "implements",
+      "weight": "9",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "ROW-COLUMN DESIGN",
+      "target": "PAIRWISE TREATMENT COMPARISONS",
+      "description": "facilitates",
+      "weight": "8",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "FIXED EFFECTS MODEL",
+      "target": "ROW-COLUMN DESIGN",
+      "description": "is used to obtain",
+      "weight": "8",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "MIXED EFFECTS MODEL",
+      "target": "ROW-COLUMN DESIGN",
+      "description": "is used to investigate robustness of",
+      "weight": "7",
+      "source_id": "paper_157"
+    },
+    {
+      "source": "EXCHANGE AND INTERCHANGE ALGORITHMS",
+      "target": "3-COLOUR MICROARRAY EXPERIMENTS",
+      "description": "is used for",
+      "weight": "8",
+      "source_id": "paper_157"
+    }
+  ]
+}

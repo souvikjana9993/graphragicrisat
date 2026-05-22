@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The primary crop studied for head miner attraction and oviposition preferences.",
+      "source_id": "paper_1309"
+    },
+    {
+      "name": "MILLET HEAD MINER",
+      "type": "ORGANISM",
+      "description": "The pest Heliocheilus albipunctella whose oviposition preferences are being studied.",
+      "source_id": "paper_1309"
+    },
+    {
+      "name": "OVIPOSITION",
+      "type": "TRAIT",
+      "description": "The process of egg-laying by the gravid female head miner.",
+      "source_id": "paper_1309"
+    },
+    {
+      "name": "GROWTH STAGE",
+      "type": "CONDITION",
+      "description": "The developmental phase of the crop, including 30%, 50%, 100% panicle stage, flowering, and dough-filling stage.",
+      "source_id": "paper_1309"
+    },
+    {
+      "name": "MULTI- AND NO-CHOICE TESTS",
+      "type": "METHOD",
+      "description": "Experimental tests used to determine the oviposition preference of the head miner.",
+      "source_id": "paper_1309"
+    },
+    {
+      "name": "METHANOL EXTRACTION",
+      "type": "METHOD",
+      "description": "The process of using methanol to create extracts from panicles, leaves, and stems for preference testing.",
+      "source_id": "paper_1309"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A crop used as a comparison for the oviposition preference of the millet head miner.",
+      "source_id": "paper_1309"
+    },
+    {
+      "name": "PEARL MILLET CULTIVARS",
+      "type": "CROP",
+      "description": "Specific varieties of pearl millet including 3/4HK, MBH110, ICMV IS 89305, and Chalakh.",
+      "source_id": "paper_1309"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MILLET HEAD MINER",
+      "target": "OVIPOSITION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_1309"
+    },
+    {
+      "source": "MILLET HEAD MINER",
+      "target": "PEARL MILLET",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_1309"
+    },
+    {
+      "source": "OVIPOSITION",
+      "target": "GROWTH STAGE",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_1309"
+    },
+    {
+      "source": "OVIPOSITION",
+      "target": "PEARL MILLET CULTIVARS",
+      "description": "varies across",
+      "weight": "8",
+      "source_id": "paper_1309"
+    },
+    {
+      "source": "MULTI- AND NO-CHOICE TESTS",
+      "target": "OVIPOSITION",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_1309"
+    },
+    {
+      "source": "METHANOL EXTRACTION",
+      "target": "OVIPOSITION",
+      "description": "used to test attraction for",
+      "weight": "8",
+      "source_id": "paper_1309"
+    },
+    {
+      "source": "MILLET HEAD MINER",
+      "target": "SORGHUM",
+      "description": "tested for preference on",
+      "weight": "7",
+      "source_id": "paper_1309"
+    },
+    {
+      "source": "PEARL MILLET CULTIVARS",
+      "target": "PEARL MILLET",
+      "description": "are varieties of",
+      "weight": "10",
+      "source_id": "paper_1309"
+    }
+  ]
+}

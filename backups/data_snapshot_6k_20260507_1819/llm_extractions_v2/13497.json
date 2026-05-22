@@ -1,0 +1,290 @@
+{
+  "entities": [
+    {
+      "name": "ABIOTIC STRESSORS",
+      "type": "CONDITION",
+      "description": "General environmental factors that negatively impact plant growth and productivity",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "Lack of sufficient water available for crop growth, a specific abiotic stressor",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The cereal crop investigated for yield shifts in Senegal",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of crop productivity",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "SENEGAL",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "NASA POWER",
+      "type": "METHOD",
+      "description": "Data source used for climate and weather analysis",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "CHIRPS DATA",
+      "type": "METHOD",
+      "description": "Data source used for precipitation analysis",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "MATAM",
+      "type": "LOCATION",
+      "description": "A hotspot identified with low rainfall in Senegal",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "MBANE",
+      "type": "LOCATION",
+      "description": "A hotspot identified with low rainfall in Senegal",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "GAMADJI SARRE",
+      "type": "LOCATION",
+      "description": "A hotspot identified with low rainfall in Senegal",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "YANG-YANG",
+      "type": "LOCATION",
+      "description": "A hotspot identified with low rainfall in Senegal",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "RAINFALL ANOMALY INDEX",
+      "type": "METHOD",
+      "description": "Index used to identify rainfall hotspots and categorize precipitation",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "LOW RAINFALL",
+      "type": "CONDITION",
+      "description": "Condition characterized by 12-15% rainy days",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "PRECIPITATION",
+      "type": "CONDITION",
+      "description": "The amount of rainfall received",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "ABOVE-NORMAL",
+      "type": "CONDITION",
+      "description": "Precipitation category where RAI is greater than or equal to 0",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "BELOW-NORMAL",
+      "type": "CONDITION",
+      "description": "Precipitation category where RAI is less than 0",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "APSIM MODEL",
+      "type": "METHOD",
+      "description": "Agricultural Production Systems sIMulator used to assess yield variations",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "FERTILIZER DOSES",
+      "type": "METHOD",
+      "description": "Application rates of fertilizer (40 and 60 kg ha-1) tested for yield impact",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "SOWING DATES",
+      "type": "METHOD",
+      "description": "Timing of planting tested for yield variations",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "RAINFALL FORECASTS",
+      "type": "METHOD",
+      "description": "Predictions of future rainfall used for decision-making",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "FARM-LEVEL DECISION-MAKING",
+      "type": "CONCEPT",
+      "description": "The process of making agricultural choices at the farm level",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "RAINFALL VARIABILITY",
+      "type": "CONDITION",
+      "description": "The fluctuation of rainfall over time and space",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "AGRICULTURAL PLANNING",
+      "type": "CONCEPT",
+      "description": "The process of organizing farming activities",
+      "source_id": "paper_13497"
+    },
+    {
+      "name": "CLIMATE ADAPTATION STRATEGIES",
+      "type": "CONCEPT",
+      "description": "Methods used to adjust agricultural practices to climate change",
+      "source_id": "paper_13497"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ABIOTIC STRESSORS",
+      "target": "MOISTURE STRESS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "YIELD",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "YIELD",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "SENEGAL",
+      "target": "SORGHUM",
+      "description": "location of study",
+      "weight": "8",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "NASA POWER",
+      "target": "YIELD",
+      "description": "used to analyze",
+      "weight": "7",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "CHIRPS DATA",
+      "target": "YIELD",
+      "description": "used to analyze",
+      "weight": "7",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "RAINFALL ANOMALY INDEX",
+      "target": "MATAM",
+      "description": "identified as hotspot",
+      "weight": "9",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "RAINFALL ANOMALY INDEX",
+      "target": "MBANE",
+      "description": "identified as hotspot",
+      "weight": "9",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "RAINFALL ANOMALY INDEX",
+      "target": "GAMADJI SARRE",
+      "description": "identified as hotspot",
+      "weight": "9",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "RAINFALL ANOMALY INDEX",
+      "target": "YANG-YANG",
+      "description": "identified as hotspot",
+      "weight": "9",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "RAINFALL ANOMALY INDEX",
+      "target": "PRECIPITATION",
+      "description": "categorizes",
+      "weight": "10",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "PRECIPITATION",
+      "target": "ABOVE-NORMAL",
+      "description": "categorized as",
+      "weight": "10",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "PRECIPITATION",
+      "target": "BELOW-NORMAL",
+      "description": "categorized as",
+      "weight": "10",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "BELOW-NORMAL",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "YIELD",
+      "description": "assesses",
+      "weight": "9",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "FERTILIZER DOSES",
+      "description": "tests",
+      "weight": "8",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "SOWING DATES",
+      "description": "tests",
+      "weight": "8",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "RAINFALL FORECASTS",
+      "target": "FARM-LEVEL DECISION-MAKING",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "RAINFALL VARIABILITY",
+      "target": "AGRICULTURAL PLANNING",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_13497"
+    },
+    {
+      "source": "RAINFALL VARIABILITY",
+      "target": "CLIMATE ADAPTATION STRATEGIES",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_13497"
+    }
+  ]
+}

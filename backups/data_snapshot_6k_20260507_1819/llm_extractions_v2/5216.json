@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop for which the adequate plot size for trials was investigated.",
+      "source_id": "paper_5216"
+    },
+    {
+      "name": "PLOT SIZE",
+      "type": "CONCEPT",
+      "description": "The dimensions of a test plot used in agricultural trials to ensure adequate data collection.",
+      "source_id": "paper_5216"
+    },
+    {
+      "name": "REPLICATED YIELD TRIAL",
+      "type": "METHOD",
+      "description": "An experimental trial design used to measure crop yield across multiple replicates.",
+      "source_id": "paper_5216"
+    },
+    {
+      "name": "HARVESTING INDIVIDUAL ROWS",
+      "type": "METHOD",
+      "description": "The process of harvesting specific rows from a plot to analyze the effect of plot size on yield estimates.",
+      "source_id": "paper_5216"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the crop measured in the trial.",
+      "source_id": "paper_5216"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "PLOT SIZE",
+      "description": "The study aims to determine the adequate plot size for pigeonpea trials.",
+      "weight": "9",
+      "source_id": "paper_5216"
+    },
+    {
+      "source": "REPLICATED YIELD TRIAL",
+      "target": "PIGEONPEA",
+      "description": "The yield trial was conducted using pigeonpea.",
+      "weight": "8",
+      "source_id": "paper_5216"
+    },
+    {
+      "source": "HARVESTING INDIVIDUAL ROWS",
+      "target": "PLOT SIZE",
+      "description": "Harvesting individual rows was the method used to investigate plot size adequacy.",
+      "weight": "9",
+      "source_id": "paper_5216"
+    },
+    {
+      "source": "REPLICATED YIELD TRIAL",
+      "target": "YIELD",
+      "description": "The trial was designed to measure the yield of the crop.",
+      "weight": "10",
+      "source_id": "paper_5216"
+    },
+    {
+      "source": "HARVESTING INDIVIDUAL ROWS",
+      "target": "REPLICATED YIELD TRIAL",
+      "description": "Individual row harvesting was performed within the replicated yield trial.",
+      "weight": "8",
+      "source_id": "paper_5216"
+    }
+  ]
+}

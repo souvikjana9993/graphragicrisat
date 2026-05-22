@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop studied for resistance to early leaf spot.",
+      "source_id": "paper_1546"
+    },
+    {
+      "name": "LABORATORY SCREENING TECHNIQUE",
+      "type": "METHOD",
+      "description": "A technique using whole plants to determine resistance to Cercospora arachidicola.",
+      "source_id": "paper_1546"
+    },
+    {
+      "name": "EARLY LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A disease caused by Cercospora arachidicola in groundnuts.",
+      "source_id": "paper_1546"
+    },
+    {
+      "name": "EARLY LEAF SPOT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut cultivars to resist infection by Cercospora arachidicola.",
+      "source_id": "paper_1546"
+    },
+    {
+      "name": "CERCOSPORA ARACHIDICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for early leaf spot in groundnuts.",
+      "source_id": "paper_1546"
+    },
+    {
+      "name": "INOCULUM CONCENTRATION",
+      "type": "CONCEPT",
+      "description": "The amount of conidia per millilitre used during the inoculation process.",
+      "source_id": "paper_1546"
+    },
+    {
+      "name": "NUMBER OF LESIONS",
+      "type": "TRAIT",
+      "description": "A disease component used to measure the severity of early leaf spot.",
+      "source_id": "paper_1546"
+    },
+    {
+      "name": "PERCENTAGE LEAF AREA DAMAGED",
+      "type": "TRAIT",
+      "description": "A disease component measuring the extent of leaf damage caused by the pathogen.",
+      "source_id": "paper_1546"
+    },
+    {
+      "name": "PERCENTAGE DEFOLIATION",
+      "type": "TRAIT",
+      "description": "A disease component measuring the loss of leaves due to infection.",
+      "source_id": "paper_1546"
+    },
+    {
+      "name": "NUMBER OF CONIDIA PER LESION",
+      "type": "TRAIT",
+      "description": "A metric used to distinguish between susceptible and resistant genotypes.",
+      "source_id": "paper_1546"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LABORATORY SCREENING TECHNIQUE",
+      "target": "EARLY LEAF SPOT RESISTANCE",
+      "description": "used to determine",
+      "weight": "10",
+      "source_id": "paper_1546"
+    },
+    {
+      "source": "EARLY LEAF SPOT RESISTANCE",
+      "target": "GROUNDNUT",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_1546"
+    },
+    {
+      "source": "CERCOSPORA ARACHIDICOLA",
+      "target": "EARLY LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1546"
+    },
+    {
+      "source": "EARLY LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1546"
+    },
+    {
+      "source": "INOCULUM CONCENTRATION",
+      "target": "LABORATORY SCREENING TECHNIQUE",
+      "description": "affects the efficiency of",
+      "weight": "8",
+      "source_id": "paper_1546"
+    },
+    {
+      "source": "INOCULUM CONCENTRATION",
+      "target": "NUMBER OF LESIONS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_1546"
+    },
+    {
+      "source": "INOCULUM CONCENTRATION",
+      "target": "PERCENTAGE LEAF AREA DAMAGED",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_1546"
+    },
+    {
+      "source": "INOCULUM CONCENTRATION",
+      "target": "PERCENTAGE DEFOLIATION",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_1546"
+    },
+    {
+      "source": "NUMBER OF CONIDIA PER LESION",
+      "target": "EARLY LEAF SPOT RESISTANCE",
+      "description": "is used to evaluate",
+      "weight": "8",
+      "source_id": "paper_1546"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Rice germplasm used for screening tolerance to iron toxicity",
+      "source_id": "paper_4945"
+    },
+    {
+      "name": "VISUAL SCORING",
+      "type": "METHOD",
+      "description": "The process of visually assessing rice materials to determine tolerance",
+      "source_id": "paper_4945"
+    },
+    {
+      "name": "YIELD REDUCTION",
+      "type": "TRAIT",
+      "description": "The decrease in crop yield used as a measure of sensitivity to iron toxicity",
+      "source_id": "paper_4945"
+    },
+    {
+      "name": "IRON TOXICITY",
+      "type": "CONDITION",
+      "description": "The stress condition caused by excessive iron in the soil",
+      "source_id": "paper_4945"
+    },
+    {
+      "name": "KORHOGO",
+      "type": "LOCATION",
+      "description": "The city in northern Cote d'Ivoire where the experiment was conducted",
+      "source_id": "paper_4945"
+    },
+    {
+      "name": "COTE D'IVOIRE",
+      "type": "LOCATION",
+      "description": "The country where the research took place",
+      "source_id": "paper_4945"
+    },
+    {
+      "name": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used for the study",
+      "source_id": "paper_4945"
+    },
+    {
+      "name": "ULTISOL LOWLAND",
+      "type": "CONCEPT",
+      "description": "The specific soil type and landscape where the experiment was conducted",
+      "source_id": "paper_4945"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "IRON TOXICITY",
+      "description": "is screened for tolerance to",
+      "weight": "9",
+      "source_id": "paper_4945"
+    },
+    {
+      "source": "VISUAL SCORING",
+      "target": "RICE",
+      "description": "is used to score",
+      "weight": "8",
+      "source_id": "paper_4945"
+    },
+    {
+      "source": "YIELD REDUCTION",
+      "target": "IRON TOXICITY",
+      "description": "is a result of",
+      "weight": "9",
+      "source_id": "paper_4945"
+    },
+    {
+      "source": "YIELD REDUCTION",
+      "target": "RICE",
+      "description": "is measured in",
+      "weight": "8",
+      "source_id": "paper_4945"
+    },
+    {
+      "source": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "target": "RICE",
+      "description": "was used to study",
+      "weight": "7",
+      "source_id": "paper_4945"
+    },
+    {
+      "source": "KORHOGO",
+      "target": "COTE D'IVOIRE",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_4945"
+    },
+    {
+      "source": "RICE",
+      "target": "KORHOGO",
+      "description": "was grown in",
+      "weight": "8",
+      "source_id": "paper_4945"
+    },
+    {
+      "source": "RICE",
+      "target": "ULTISOL LOWLAND",
+      "description": "was grown in",
+      "weight": "8",
+      "source_id": "paper_4945"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "ULTISOL LOWLAND",
+      "description": "is present in",
+      "weight": "9",
+      "source_id": "paper_4945"
+    }
+  ]
+}

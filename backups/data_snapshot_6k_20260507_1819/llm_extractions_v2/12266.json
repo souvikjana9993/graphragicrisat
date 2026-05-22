@@ -1,0 +1,203 @@
+{
+  "entities": [
+    {
+      "name": "GENDER INEQUALITY",
+      "type": "CONCEPT",
+      "description": "Disparity between genders in social, economic, and political status",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "WOMEN'S NUTRITION",
+      "type": "CONCEPT",
+      "description": "The nutritional status and dietary intake of women",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "OVERWEIGHT",
+      "type": "CONDITION",
+      "description": "A condition where body weight exceeds what is healthy",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "OBESITY",
+      "type": "CONDITION",
+      "description": "A complex disease involving an excessive amount of body fat",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study data was sourced from",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "NUTRITION LANDSCAPE INFORMATION SYSTEMS",
+      "type": "CONCEPT",
+      "description": "A database provided by WHO for nutrition data",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "WORLD HEALTH ORGANISATION",
+      "type": "CONCEPT",
+      "description": "The international body providing the NLiS database",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "TIME SERIES ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical technique for analyzing a sequence of data points collected over time",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "BREAK TEST",
+      "type": "METHOD",
+      "description": "A test used in time series analysis to identify structural breaks",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "STATIONARITY TEST",
+      "type": "METHOD",
+      "description": "A test to determine if a time series has a constant mean and variance over time",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "COINTEGRATION TEST",
+      "type": "METHOD",
+      "description": "A test to determine if a long-term relationship exists between non-stationary time series",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "VECTOR ERROR CORRECTION MODEL",
+      "type": "METHOD",
+      "description": "A model used to estimate the short-run and long-run relationships between variables",
+      "source_id": "paper_12266"
+    },
+    {
+      "name": "UNHEALTHY HABITS",
+      "type": "CONCEPT",
+      "description": "Behaviors that contribute to poor health outcomes like obesity",
+      "source_id": "paper_12266"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENDER INEQUALITY",
+      "target": "WOMEN'S NUTRITION",
+      "description": "Influences the nutritional status of women",
+      "weight": "8",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "GENDER INEQUALITY",
+      "target": "OVERWEIGHT",
+      "description": "Decrease in inequality influences increase in overweight",
+      "weight": "7",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "GENDER INEQUALITY",
+      "target": "OBESITY",
+      "description": "Decrease in inequality influences increase in obesity",
+      "weight": "7",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "OVERWEIGHT",
+      "target": "OBESITY",
+      "description": "Closely related health conditions",
+      "weight": "9",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "INDIA",
+      "target": "GENDER INEQUALITY",
+      "description": "Location where gender inequality was studied",
+      "weight": "10",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "INDIA",
+      "target": "OVERWEIGHT",
+      "description": "Location where overweight prevalence was studied",
+      "weight": "10",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "INDIA",
+      "target": "OBESITY",
+      "description": "Location where obesity prevalence was studied",
+      "weight": "10",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "TIME SERIES ANALYSIS",
+      "target": "GENDER INEQUALITY",
+      "description": "Method used to analyze gender inequality",
+      "weight": "8",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "TIME SERIES ANALYSIS",
+      "target": "OVERWEIGHT",
+      "description": "Method used to analyze overweight",
+      "weight": "8",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "TIME SERIES ANALYSIS",
+      "target": "OBESITY",
+      "description": "Method used to analyze obesity",
+      "weight": "8",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "BREAK TEST",
+      "target": "TIME SERIES ANALYSIS",
+      "description": "Component of time series analysis",
+      "weight": "9",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "STATIONARITY TEST",
+      "target": "TIME SERIES ANALYSIS",
+      "description": "Component of time series analysis",
+      "weight": "9",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "COINTEGRATION TEST",
+      "target": "TIME SERIES ANALYSIS",
+      "description": "Component of time series analysis",
+      "weight": "9",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "VECTOR ERROR CORRECTION MODEL",
+      "target": "TIME SERIES ANALYSIS",
+      "description": "Component of time series analysis",
+      "weight": "9",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "NUTRITION LANDSCAPE INFORMATION SYSTEMS",
+      "target": "INDIA",
+      "description": "Source of data for India",
+      "weight": "10",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "WORLD HEALTH ORGANISATION",
+      "target": "NUTRITION LANDSCAPE INFORMATION SYSTEMS",
+      "description": "Provider of the database",
+      "weight": "10",
+      "source_id": "paper_12266"
+    },
+    {
+      "source": "UNHEALTHY HABITS",
+      "target": "OBESITY",
+      "description": "Promote obesity",
+      "weight": "9",
+      "source_id": "paper_12266"
+    }
+  ]
+}

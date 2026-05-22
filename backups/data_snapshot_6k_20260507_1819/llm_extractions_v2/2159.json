@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "ANALYSIS OF VARIANCE OF RATIOS",
+      "type": "METHOD",
+      "description": "A statistical method applied on a plot basis for estimating ratios, which is criticized in the text",
+      "source_id": "paper_2159"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "A measure of the proportion of agricultural produce that is harvested",
+      "source_id": "paper_2159"
+    },
+    {
+      "name": "RATIO OF MEANS",
+      "type": "METHOD",
+      "description": "An alternative procedure proposed for estimating the harvest index, noted for being more precise and having smaller bias",
+      "source_id": "paper_2159"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop (Arachis hypogaea) used to provide field data for comparing harvest index estimation methods",
+      "source_id": "paper_2159"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ANALYSIS OF VARIANCE OF RATIOS",
+      "target": "HARVEST INDEX",
+      "description": "used to estimate",
+      "weight": "7",
+      "source_id": "paper_2159"
+    },
+    {
+      "source": "RATIO OF MEANS",
+      "target": "HARVEST INDEX",
+      "description": "proposed method to estimate",
+      "weight": "9",
+      "source_id": "paper_2159"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "HARVEST INDEX",
+      "description": "used to provide field data for estimating",
+      "weight": "8",
+      "source_id": "paper_2159"
+    },
+    {
+      "source": "RATIO OF MEANS",
+      "target": "ANALYSIS OF VARIANCE OF RATIOS",
+      "description": "proposed as a more precise alternative to",
+      "weight": "8",
+      "source_id": "paper_2159"
+    }
+  ]
+}

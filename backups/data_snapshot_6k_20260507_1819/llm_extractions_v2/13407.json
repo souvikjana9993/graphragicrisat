@@ -1,0 +1,210 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop targeted for biofortification to improve micronutrient content in grains.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "BIOFORTIFICATION",
+      "type": "CONCEPT",
+      "description": "A cost-effective approach to increase the nutritional value of crops to solve micronutrient deficiencies in human diets.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "MICRONUTRIENT DEFICIENCIES",
+      "type": "CONDITION",
+      "description": "Nutritional gaps in human diets that biofortification aims to solve.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method used to address challenges in phenotyping time, cost, and accuracy in evaluating breeding populations.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "GRAIN FE CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of iron in sorghum grains, used as a target trait for genomic selection.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "GRAIN ZN CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of zinc in sorghum grains, used as a target trait for genomic selection.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "MT-GBLUP",
+      "type": "METHOD",
+      "description": "Multi-trait genomic best linear unbiased prediction model used for predicting trait values.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "ST-GBLUP",
+      "type": "METHOD",
+      "description": "Single-trait genomic best linear unbiased prediction model used for predicting trait values.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "PREDICTION ACCURACY",
+      "type": "CONCEPT",
+      "description": "A measure of the performance of genomic selection models in predicting trait values.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "BREEDING RESOURCE-CONSTRAINED SCENARIOS",
+      "type": "CONDITION",
+      "description": "Situations where phenotyping time, cost, and environment availability are limited.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "AUXILIARY AGRONOMIC TRAITS",
+      "type": "TRAIT",
+      "description": "Easily scorable non-target traits used to improve the prediction of target traits.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "GENOMIC ESTIMATED BREEDING VALUES",
+      "type": "CONCEPT",
+      "description": "Values estimated via genomic selection to predict the genetic merit of individuals for specific traits.",
+      "source_id": "paper_13407"
+    },
+    {
+      "name": "GENETIC GAIN",
+      "type": "CONCEPT",
+      "description": "The increase in the average genetic merit of a population per unit time and cost.",
+      "source_id": "paper_13407"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOFORTIFICATION",
+      "target": "MICRONUTRIENT DEFICIENCIES",
+      "description": "aims to solve",
+      "weight": "10",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "BREEDING RESOURCE-CONSTRAINED SCENARIOS",
+      "description": "addresses challenges of",
+      "weight": "8",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "MT-GBLUP",
+      "target": "GENOMIC SELECTION",
+      "description": "is a specific model of",
+      "weight": "10",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "ST-GBLUP",
+      "target": "GENOMIC SELECTION",
+      "description": "is a specific model of",
+      "weight": "10",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "MT-GBLUP",
+      "target": "GRAIN FE CONCENTRATION",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "MT-GBLUP",
+      "target": "GRAIN ZN CONCENTRATION",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "ST-GBLUP",
+      "target": "GRAIN FE CONCENTRATION",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "ST-GBLUP",
+      "target": "GRAIN ZN CONCENTRATION",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "MT-GBLUP",
+      "target": "ST-GBLUP",
+      "description": "outperforms in prediction accuracy",
+      "weight": "8",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "MT-GBLUP",
+      "target": "PREDICTION ACCURACY",
+      "description": "evaluated by",
+      "weight": "9",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "ST-GBLUP",
+      "target": "PREDICTION ACCURACY",
+      "description": "evaluated by",
+      "weight": "9",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "AUXILIARY AGRONOMIC TRAITS",
+      "target": "MT-GBLUP",
+      "description": "inform and improve",
+      "weight": "8",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "AUXILIARY AGRONOMIC TRAITS",
+      "target": "PREDICTION ACCURACY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "MT-GBLUP",
+      "target": "GENOMIC ESTIMATED BREEDING VALUES",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "GENOMIC ESTIMATED BREEDING VALUES",
+      "target": "GRAIN FE CONCENTRATION",
+      "description": "represents genetic merit for",
+      "weight": "8",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "GENOMIC ESTIMATED BREEDING VALUES",
+      "target": "GRAIN ZN CONCENTRATION",
+      "description": "represents genetic merit for",
+      "weight": "8",
+      "source_id": "paper_13407"
+    },
+    {
+      "source": "MT-GBLUP",
+      "target": "GENETIC GAIN",
+      "description": "potentially boosts",
+      "weight": "7",
+      "source_id": "paper_13407"
+    }
+  ]
+}

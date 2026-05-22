@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Transgenic lines expressing CryIIa protein used in the study",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "CRYIIA",
+      "type": "GENE_MARKER",
+      "description": "A protein expressed in transgenic chickpea lines to provide resistance against pests",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "CAMPOLETIS CHLORIDEAE",
+      "type": "ORGANISM",
+      "description": "A larval parasitoid of Helicoverpa armigera",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pest larvae that feeds on chickpea leaves and is parasitized by C. chlorideae",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "LABORATORY CONDITIONS",
+      "type": "CONDITION",
+      "description": "The controlled environment where the experiments were conducted",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "COCOON FORMATION",
+      "type": "TRAIT",
+      "description": "The process of forming a cocoon in the parasitoid C. chlorideae",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "ADULT EMERGENCE",
+      "type": "TRAIT",
+      "description": "The process of adult insects emerging from the pupal stage in C. chlorideae",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "LARVAL PERIOD",
+      "type": "TRAIT",
+      "description": "The duration of the larval stage of the insect",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "PUPAL PERIOD",
+      "type": "TRAIT",
+      "description": "The duration of the pupal stage of the parasitoid C. chlorideae",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "BT TOXIN PROTEIN",
+      "type": "CONCEPT",
+      "description": "The protein produced by Bacillus thuringiensis, of which CryIIa is a part",
+      "source_id": "paper_10019"
+    },
+    {
+      "name": "EARLY MORTALITY",
+      "type": "TRAIT",
+      "description": "The premature death of H. armigera larvae",
+      "source_id": "paper_10019"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "CRYIIA",
+      "description": "expresses",
+      "weight": "10",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "is fed upon by",
+      "weight": "9",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CAMPOLETIS CHLORIDEAE",
+      "description": "is parasitized by",
+      "weight": "10",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "CRYIIA",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "causes early mortality in",
+      "weight": "9",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "CRYIIA",
+      "target": "CAMPOLETIS CHLORIDEAE",
+      "description": "indirectly reduces cocoon formation and adult emergence of",
+      "weight": "7",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "CRYIIA",
+      "target": "BT TOXIN PROTEIN",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "CAMPOLETIS CHLORIDEAE",
+      "target": "COCOON FORMATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "CAMPOLETIS CHLORIDEAE",
+      "target": "ADULT EMERGENCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "CAMPOLETIS CHLORIDEAE",
+      "target": "PUPAL PERIOD",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "LARVAL PERIOD",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "EARLY MORTALITY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10019"
+    },
+    {
+      "source": "LABORATORY CONDITIONS",
+      "target": "CHICKPEA",
+      "description": "used for evaluating",
+      "weight": "8",
+      "source_id": "paper_10019"
+    }
+  ]
+}

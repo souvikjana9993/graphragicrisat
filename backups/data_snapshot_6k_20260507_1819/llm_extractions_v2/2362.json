@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "MIGRATION",
+      "type": "CONCEPT",
+      "description": "The movement of individuals and households into and out of villages.",
+      "source_id": "paper_2362"
+    },
+    {
+      "name": "TEMPORARY MIGRATION",
+      "type": "CONCEPT",
+      "description": "Movements away from villages for short-term periods of work.",
+      "source_id": "paper_2362"
+    },
+    {
+      "name": "PERMANENT MIGRATION",
+      "type": "CONCEPT",
+      "description": "Movements where individuals are no longer considered residents of the villages.",
+      "source_id": "paper_2362"
+    },
+    {
+      "name": "INDIAN VILLAGES",
+      "type": "LOCATION",
+      "description": "Six villages in India used as the study area.",
+      "source_id": "paper_2362"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The climatic region where the study villages are located.",
+      "source_id": "paper_2362"
+    },
+    {
+      "name": "SURVEYING",
+      "type": "METHOD",
+      "description": "The data collection method used to track migration flows from 1975 to 2005.",
+      "source_id": "paper_2362"
+    },
+    {
+      "name": "SOCIOECONOMIC FEATURES",
+      "type": "CONCEPT",
+      "description": "Basic characteristics of the households involved in migration flows.",
+      "source_id": "paper_2362"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MIGRATION",
+      "target": "TEMPORARY MIGRATION",
+      "description": "is split into",
+      "weight": "10",
+      "source_id": "paper_2362"
+    },
+    {
+      "source": "MIGRATION",
+      "target": "PERMANENT MIGRATION",
+      "description": "is split into",
+      "weight": "10",
+      "source_id": "paper_2362"
+    },
+    {
+      "source": "MIGRATION",
+      "target": "INDIAN VILLAGES",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_2362"
+    },
+    {
+      "source": "INDIAN VILLAGES",
+      "target": "SEMI-ARID TROPICS",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2362"
+    },
+    {
+      "source": "SURVEYING",
+      "target": "MIGRATION",
+      "description": "used to study",
+      "weight": "9",
+      "source_id": "paper_2362"
+    },
+    {
+      "source": "TEMPORARY MIGRATION",
+      "target": "SOCIOECONOMIC FEATURES",
+      "description": "is an occupational choice related to",
+      "weight": "7",
+      "source_id": "paper_2362"
+    }
+  ]
+}

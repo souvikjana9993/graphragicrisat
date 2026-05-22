@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum (L.) R. Br., the crop studied for yield response to water availability",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, which fluctuates based on drought stress and water availability",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "The lack of water availability that causes fluctuations in grain yield",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "Tropical environments characterized by low and irregular rainfall",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the 24 semi-arid tropical environments were located",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "WATER AVAILABILITY",
+      "type": "CONDITION",
+      "description": "The pattern and amount of water available to the plant throughout the season",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "SOIL WATER BUDGET",
+      "type": "METHOD",
+      "description": "A simple calculation method used to determine the water satisfaction index",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "WATER SATISFACTION INDEX",
+      "type": "METHOD",
+      "description": "An integrated measure of plant-available water (WSI) used to estimate environmental potential for yield",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "SEASONAL RAINFALL",
+      "type": "CONDITION",
+      "description": "The total rainfall during the growing season, found to be poorly related to grain yield",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "WATER LOSSES",
+      "type": "CONDITION",
+      "description": "Losses of water from the soil-plant system accounted for by the WSI",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "PAN EVAPORATION",
+      "type": "CONDITION",
+      "description": "The rate of evaporation from a pan, accounted for by the WSI",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "GRAIN NUMBER",
+      "type": "TRAIT",
+      "description": "The number of grains produced, influenced by water availability patterns",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "GRAIN MASS",
+      "type": "TRAIT",
+      "description": "The weight of the grains produced, influenced by both water availability and temperature",
+      "source_id": "paper_3277"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental temperature that affects grain mass",
+      "source_id": "paper_3277"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "GRAIN YIELD",
+      "description": "is the crop for which yield is measured",
+      "weight": "10",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "WATER AVAILABILITY",
+      "target": "GRAIN YIELD",
+      "description": "determines the yield of pearl millet",
+      "weight": "9",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "GRAIN YIELD",
+      "description": "causes fluctuations in grain yield",
+      "weight": "8",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SEMI-ARID TROPICS",
+      "description": "is grown in semi-arid tropical environments",
+      "weight": "7",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "INDIA",
+      "description": "is grown in India",
+      "weight": "7",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "SOIL WATER BUDGET",
+      "target": "WATER SATISFACTION INDEX",
+      "description": "is used to calculate the water satisfaction index",
+      "weight": "10",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "WATER SATISFACTION INDEX",
+      "target": "GRAIN YIELD",
+      "description": "explains 76% of the variance in grain yield",
+      "weight": "9",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "SEASONAL RAINFALL",
+      "target": "GRAIN YIELD",
+      "description": "is poorly related to grain yield",
+      "weight": "5",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "WATER SATISFACTION INDEX",
+      "target": "WATER LOSSES",
+      "description": "accounts for differences in water losses",
+      "weight": "8",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "WATER SATISFACTION INDEX",
+      "target": "PAN EVAPORATION",
+      "description": "accounts for differences in pan evaporation",
+      "weight": "8",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "WATER AVAILABILITY",
+      "target": "GRAIN NUMBER",
+      "description": "explains environmental differences in grain number",
+      "weight": "8",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "WATER AVAILABILITY",
+      "target": "GRAIN MASS",
+      "description": "is related to differences in grain mass",
+      "weight": "7",
+      "source_id": "paper_3277"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "GRAIN MASS",
+      "description": "is related to differences in grain mass",
+      "weight": "7",
+      "source_id": "paper_3277"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop produced in Nepal.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "NEPAL",
+      "type": "LOCATION",
+      "description": "The country where chickpea production and grey mould disease are studied.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "INTEGRATED CROP MANAGEMENT",
+      "type": "METHOD",
+      "description": "An approach combining various components to control disease and improve crop production.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "BOTRYTIS GREY MOULD",
+      "type": "CONDITION",
+      "description": "A fungal disease that causes damage to chickpea production.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "BOTRYTIS CINEREA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing grey mould disease.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the host plant to resist the grey mould pathogen.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "FUNGICIDE MANAGEMENT",
+      "type": "METHOD",
+      "description": "The strategic use of fungicides to control grey mould.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "FORECASTING MODEL-BASED FUNGICIDE APPLICATION",
+      "type": "METHOD",
+      "description": "A method of applying fungicides based on predictive models.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "ROW SPACING VARIATION",
+      "type": "METHOD",
+      "description": "The practice of adjusting the distance between rows to manage disease.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "SEED TREATMENT WITH RHIZOBIUM",
+      "type": "METHOD",
+      "description": "The process of treating seeds with Rhizobium bacteria to improve growth.",
+      "source_id": "paper_1178"
+    },
+    {
+      "name": "RHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "Nitrogen-fixing bacteria used in seed treatment for chickpeas.",
+      "source_id": "paper_1178"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "NEPAL",
+      "description": "produced in",
+      "weight": "10",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "BOTRYTIS GREY MOULD",
+      "target": "CHICKPEA",
+      "description": "causes damage to",
+      "weight": "10",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "BOTRYTIS CINEREA",
+      "target": "BOTRYTIS GREY MOULD",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "INTEGRATED CROP MANAGEMENT",
+      "target": "BOTRYTIS GREY MOULD",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "INTEGRATED CROP MANAGEMENT",
+      "target": "CHICKPEA",
+      "description": "improves production of",
+      "weight": "9",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "INTEGRATED CROP MANAGEMENT",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "FUNGICIDE MANAGEMENT",
+      "target": "INTEGRATED CROP MANAGEMENT",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "FORECASTING MODEL-BASED FUNGICIDE APPLICATION",
+      "target": "INTEGRATED CROP MANAGEMENT",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "ROW SPACING VARIATION",
+      "target": "INTEGRATED CROP MANAGEMENT",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "SEED TREATMENT WITH RHIZOBIUM",
+      "target": "INTEGRATED CROP MANAGEMENT",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "RHIZOBIUM",
+      "target": "SEED TREATMENT WITH RHIZOBIUM",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "BOTRYTIS GREY MOULD",
+      "description": "controls",
+      "weight": "7",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "FUNGICIDE MANAGEMENT",
+      "target": "BOTRYTIS GREY MOULD",
+      "description": "controls",
+      "weight": "7",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "FORECASTING MODEL-BASED FUNGICIDE APPLICATION",
+      "target": "BOTRYTIS GREY MOULD",
+      "description": "controls",
+      "weight": "7",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "ROW SPACING VARIATION",
+      "target": "BOTRYTIS GREY MOULD",
+      "description": "controls",
+      "weight": "7",
+      "source_id": "paper_1178"
+    },
+    {
+      "source": "SEED TREATMENT WITH RHIZOBIUM",
+      "target": "CHICKPEA",
+      "description": "improves production of",
+      "weight": "7",
+      "source_id": "paper_1178"
+    }
+  ]
+}

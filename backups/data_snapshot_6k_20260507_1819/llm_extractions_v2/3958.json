@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "NITRATE NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nitrate nitrogen (NO3-N) added to the soil for study",
+      "source_id": "paper_3958"
+    },
+    {
+      "name": "AMMONIUM",
+      "type": "CONCEPT",
+      "description": "Ammonium nitrogen (NH4-N) resulting from the reduction of nitrate",
+      "source_id": "paper_3958"
+    },
+    {
+      "name": "ACID SULFATE SOIL",
+      "type": "LOCATION",
+      "description": "The specific soil environment where nitrate transformations were observed",
+      "source_id": "paper_3958"
+    },
+    {
+      "name": "WATERLOGGED CONDITIONS",
+      "type": "CONDITION",
+      "description": "The state of the soil following flooding which leads to anaerobic conditions",
+      "source_id": "paper_3958"
+    },
+    {
+      "name": "FERROUS IRON",
+      "type": "CONCEPT",
+      "description": "The reduced form of iron that facilitates the chemical reduction of nitrate",
+      "source_id": "paper_3958"
+    },
+    {
+      "name": "FERRIC IRON",
+      "type": "CONCEPT",
+      "description": "The oxidized form of iron that is reduced to ferrous iron under waterlogged conditions",
+      "source_id": "paper_3958"
+    },
+    {
+      "name": "CHEMICAL REDUCTION",
+      "type": "CONCEPT",
+      "description": "The process of transforming nitrate nitrogen into ammonium nitrogen",
+      "source_id": "paper_3958"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITRATE NITROGEN",
+      "target": "AMMONIUM",
+      "description": "is reduced to",
+      "weight": "10",
+      "source_id": "paper_3958"
+    },
+    {
+      "source": "FERROUS IRON",
+      "target": "CHEMICAL REDUCTION",
+      "description": "effects",
+      "weight": "9",
+      "source_id": "paper_3958"
+    },
+    {
+      "source": "WATERLOGGED CONDITIONS",
+      "target": "FERROUS IRON",
+      "description": "releases",
+      "weight": "8",
+      "source_id": "paper_3958"
+    },
+    {
+      "source": "FERRIC IRON",
+      "target": "FERROUS IRON",
+      "description": "is reduced to",
+      "weight": "9",
+      "source_id": "paper_3958"
+    },
+    {
+      "source": "ACID SULFATE SOIL",
+      "target": "WATERLOGGED CONDITIONS",
+      "description": "is under",
+      "weight": "7",
+      "source_id": "paper_3958"
+    },
+    {
+      "source": "CHEMICAL REDUCTION",
+      "target": "NITRATE NITROGEN",
+      "description": "transforms",
+      "weight": "9",
+      "source_id": "paper_3958"
+    },
+    {
+      "source": "CHEMICAL REDUCTION",
+      "target": "AMMONIUM",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_3958"
+    }
+  ]
+}

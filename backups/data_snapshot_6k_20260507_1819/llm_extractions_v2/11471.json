@@ -1,0 +1,167 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the host crop affected by Ascochyta blight",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONCEPT",
+      "description": "The most destructive disease of chickpea caused by the fungus Ascochyta rabiei",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "ASCOCHYTA RABIEI",
+      "type": "ORGANISM",
+      "description": "The fungus that causes Ascochyta blight",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "LOW TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental condition between 15-25ºC that favors the development of Ascochyta blight",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "HIGH HUMIDITY",
+      "type": "CONDITION",
+      "description": "Environmental condition with rainfall greater than 150mm that favors the development of Ascochyta blight",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the Ascochyta rabiei isolates were studied",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "PATHOTYPE",
+      "type": "CONCEPT",
+      "description": "Classification of fungal isolates based on their aggressiveness",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "PHYSIOLOGICAL RACE",
+      "type": "CONCEPT",
+      "description": "Classification of fungal isolates based on their virulence",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "AGGRESSIVENESS",
+      "type": "TRAIT",
+      "description": "The characteristic used to classify isolates into pathotypes",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "VIRULENCE",
+      "type": "TRAIT",
+      "description": "The characteristic used to classify isolates into physiological races",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "CHICKPEA DIFFERENTIALS",
+      "type": "METHOD",
+      "description": "Standard international chickpea lines used to identify pathotypes and physiological races",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "MULTIPLEX PCR",
+      "type": "METHOD",
+      "description": "Molecular technique used to identify mating types in Ascochyta rabiei isolates",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "MAT1-2",
+      "type": "GENE_MARKER",
+      "description": "The specific mating type identified in Indian Ascochyta rabiei isolates",
+      "source_id": "paper_11471"
+    },
+    {
+      "name": "HAEMOCYTOMETER",
+      "type": "METHOD",
+      "description": "Instrument used to adjust the concentration of spore suspensions",
+      "source_id": "paper_11471"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "ASCOCHYTA BLIGHT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "LOW TEMPERATURE",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "favors",
+      "weight": "8",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "HIGH HUMIDITY",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "favors",
+      "weight": "8",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "INDIA",
+      "description": "found in",
+      "weight": "9",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "PATHOTYPE",
+      "target": "AGGRESSIVENESS",
+      "description": "based on",
+      "weight": "10",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "PHYSIOLOGICAL RACE",
+      "target": "VIRULENCE",
+      "description": "based on",
+      "weight": "10",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "CHICKPEA DIFFERENTIALS",
+      "target": "PATHOTYPE",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "CHICKPEA DIFFERENTIALS",
+      "target": "PHYSIOLOGICAL RACE",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "MULTIPLEX PCR",
+      "target": "MAT1-2",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_11471"
+    },
+    {
+      "source": "MAT1-2",
+      "target": "ASCOCHYTA RABIEI",
+      "description": "found in",
+      "weight": "9",
+      "source_id": "paper_11471"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species being evaluated for disease resistance.",
+      "source_id": "paper_3091"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONDITION",
+      "description": "A fungal disease that affects chickpea crops.",
+      "source_id": "paper_3091"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea lines to withstand Ascochyta blight.",
+      "source_id": "paper_3091"
+    },
+    {
+      "name": "MULTILOCATION EVALUATION",
+      "type": "METHOD",
+      "description": "The process of evaluating germplasm across multiple disease-endemic locations.",
+      "source_id": "paper_3091"
+    },
+    {
+      "name": "DESI GERMPLASM",
+      "type": "CONCEPT",
+      "description": "A specific category of chickpea germplasm accessions.",
+      "source_id": "paper_3091"
+    },
+    {
+      "name": "KABULI GERMPLASM",
+      "type": "CONCEPT",
+      "description": "A specific category of chickpea germplasm and breeding lines.",
+      "source_id": "paper_3091"
+    },
+    {
+      "name": "DISEASE-ENDEMIC LOCATIONS",
+      "type": "LOCATION",
+      "description": "The 48 geographic sites where Ascochyta blight is prevalent.",
+      "source_id": "paper_3091"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MULTILOCATION EVALUATION",
+      "target": "CHICKPEA",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_3091"
+    },
+    {
+      "source": "MULTILOCATION EVALUATION",
+      "target": "RESISTANCE",
+      "description": "used to measure",
+      "weight": "9",
+      "source_id": "paper_3091"
+    },
+    {
+      "source": "MULTILOCATION EVALUATION",
+      "target": "DISEASE-ENDEMIC LOCATIONS",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_3091"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "susceptible to",
+      "weight": "8",
+      "source_id": "paper_3091"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_3091"
+    },
+    {
+      "source": "DESI GERMPLASM",
+      "target": "CHICKPEA",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3091"
+    },
+    {
+      "source": "KABULI GERMPLASM",
+      "target": "CHICKPEA",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3091"
+    },
+    {
+      "source": "KABULI GERMPLASM",
+      "target": "RESISTANCE",
+      "description": "exhibits higher levels of",
+      "weight": "8",
+      "source_id": "paper_3091"
+    },
+    {
+      "source": "DESI GERMPLASM",
+      "target": "RESISTANCE",
+      "description": "exhibits lower levels of",
+      "weight": "7",
+      "source_id": "paper_3091"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Cultivated peanut (Arachis hypogaea L.) used in the study for resistance mapping.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "BACTERIAL WILT DISEASE",
+      "type": "CONDITION",
+      "description": "A disease caused by Ralstonia solanacearum that affects peanut productivity.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "RALSTONIA SOLANACEARUM",
+      "type": "ORGANISM",
+      "description": "The bacterial pathogen that causes bacterial wilt disease in peanuts.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "The geographical region where bacterial wilt disease is a major challenge for peanut production.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "RESISTANCE TO RALSTONIA SOLANACEARUM",
+      "type": "TRAIT",
+      "description": "The genetic ability of peanut plants to resist infection by R. solanacearum.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "QTL-SEQ",
+      "type": "METHOD",
+      "description": "A sequencing-based trait mapping approach used to identify candidate genomic regions.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "WHOLE GENOME RESEQUENCING",
+      "type": "METHOD",
+      "description": "A method used to identify homozygous SNPs and InDels in resistant and susceptible parents.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "type": "GENE_MARKER",
+      "description": "Homozygous genetic variations identified through whole genome resequencing.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "INDELS",
+      "type": "GENE_MARKER",
+      "description": "Insertions and deletions identified through whole genome resequencing.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "EUCLIDEAN DISTANCE",
+      "type": "METHOD",
+      "description": "A method used in QTL-seq analysis to associate genomic regions with the trait.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "SNP-INDEX",
+      "type": "METHOD",
+      "description": "A method used in QTL-seq analysis to associate genomic regions with the trait.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "CHROMOSOME 12",
+      "type": "CONCEPT",
+      "description": "The specific chromosome containing the candidate genomic region associated with RRS.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "NBS-LRR GENES",
+      "type": "GENE_MARKER",
+      "description": "Nucleotide binding site leucine rich repeat putative resistant genes identified as important candidates.",
+      "source_id": "paper_12428"
+    },
+    {
+      "name": "DIAGNOSTIC SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Validated markers used to identify phenotypic variation and for breeding disease-resistant varieties.",
+      "source_id": "paper_12428"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RALSTONIA SOLANACEARUM",
+      "target": "BACTERIAL WILT DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "BACTERIAL WILT DISEASE",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "BACTERIAL WILT DISEASE",
+      "target": "CHINA",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "RESISTANCE TO RALSTONIA SOLANACEARUM",
+      "target": "PEANUT",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "QTL-SEQ",
+      "target": "RESISTANCE TO RALSTONIA SOLANACEARUM",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "WHOLE GENOME RESEQUENCING",
+      "target": "QTL-SEQ",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "WHOLE GENOME RESEQUENCING",
+      "target": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "WHOLE GENOME RESEQUENCING",
+      "target": "INDELS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "EUCLIDEAN DISTANCE",
+      "target": "QTL-SEQ",
+      "description": "used in analysis of",
+      "weight": "8",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "SNP-INDEX",
+      "target": "QTL-SEQ",
+      "description": "used in analysis of",
+      "weight": "8",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "QTL-SEQ",
+      "target": "CHROMOSOME 12",
+      "description": "identifies region on",
+      "weight": "9",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "CHROMOSOME 12",
+      "target": "RESISTANCE TO RALSTONIA SOLANACEARUM",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "NBS-LRR GENES",
+      "target": "RESISTANCE TO RALSTONIA SOLANACEARUM",
+      "description": "are candidate genes for",
+      "weight": "9",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "DIAGNOSTIC SNP MARKERS",
+      "target": "PEANUT",
+      "description": "used for breeding",
+      "weight": "8",
+      "source_id": "paper_12428"
+    },
+    {
+      "source": "DIAGNOSTIC SNP MARKERS",
+      "target": "RESISTANCE TO RALSTONIA SOLANACEARUM",
+      "description": "validated for",
+      "weight": "9",
+      "source_id": "paper_12428"
+    }
+  ]
+}

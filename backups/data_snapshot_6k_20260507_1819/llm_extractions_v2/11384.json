@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species Sorghum bicolor being improved for Striga resistance",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "STRIGA",
+      "type": "ORGANISM",
+      "description": "A parasitic weed that causes significant yield loss in sorghum",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "STRIGA RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum to resist infestation by Striga",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "STRIGA RESISTANCE QTLS",
+      "type": "GENE_MARKER",
+      "description": "Quantitative Trait Loci associated with resistance to Striga",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "MARKER-ASSISTED FOREGROUND SELECTION",
+      "type": "METHOD",
+      "description": "A breeding technique used to select for the presence of specific target genes or QTLs in offspring",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat markers used for genotyping and identifying polymorphism",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "N13",
+      "type": "CONCEPT",
+      "description": "The donor parent providing the Striga resistance QTLs",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "DANYANA",
+      "type": "CONCEPT",
+      "description": "A recurrent parent used in the development of backcross lines",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "SAMSORG39",
+      "type": "CONCEPT",
+      "description": "A recurrent parent used in the development of backcross lines",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "BACKCROSS LINES",
+      "type": "CONCEPT",
+      "description": "Plant lines developed by crossing an F1 hybrid back to its recurrent parent",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "YIELD LOSS",
+      "type": "TRAIT",
+      "description": "The reduction in crop productivity caused by Striga infestation",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "STRIGA INFESTATION",
+      "type": "CONDITION",
+      "description": "The occurrence and spread of Striga in sorghum fields",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "MARKER POLYMORPHISM",
+      "type": "METHOD",
+      "description": "The analysis of genetic variation at specific marker loci between different parents",
+      "source_id": "paper_11384"
+    },
+    {
+      "name": "MARKER ASSISTED SELECTION",
+      "type": "METHOD",
+      "description": "The use of molecular markers to select for desired traits in breeding programs",
+      "source_id": "paper_11384"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STRIGA",
+      "target": "YIELD LOSS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "STRIGA",
+      "target": "STRIGA INFESTATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "STRIGA INFESTATION",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "STRIGA RESISTANCE",
+      "target": "STRIGA INFESTATION",
+      "description": "counters",
+      "weight": "9",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "STRIGA RESISTANCE QTLS",
+      "target": "STRIGA RESISTANCE",
+      "description": "confer",
+      "weight": "10",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "MARKER-ASSISTED FOREGROUND SELECTION",
+      "target": "STRIGA RESISTANCE QTLS",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "MARKER-ASSISTED FOREGROUND SELECTION",
+      "target": "BACKCROSS LINES",
+      "description": "used to select",
+      "weight": "8",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "MARKER-ASSISTED FOREGROUND SELECTION",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "N13",
+      "target": "STRIGA RESISTANCE QTLS",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "DANYANA",
+      "target": "BACKCROSS LINES",
+      "description": "recurrent parent for",
+      "weight": "9",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "SAMSORG39",
+      "target": "BACKCROSS LINES",
+      "description": "recurrent parent for",
+      "weight": "9",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "N13",
+      "target": "BACKCROSS LINES",
+      "description": "donor parent for",
+      "weight": "9",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "MARKER POLYMORPHISM",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11384"
+    },
+    {
+      "source": "MARKER ASSISTED SELECTION",
+      "target": "SORGHUM",
+      "description": "used to improve",
+      "weight": "8",
+      "source_id": "paper_11384"
+    }
+  ]
+}

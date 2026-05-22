@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor, a crop plant studied for nitrogen fixation in the rhizosphere",
+      "source_id": "paper_3752"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "Pennisetum americanum, a crop plant studied for nitrogen fixation in the rhizosphere",
+      "source_id": "paper_3752"
+    },
+    {
+      "name": "N2-FIXING BACTERIA",
+      "type": "ORGANISM",
+      "description": "Bacteria capable of fixing atmospheric nitrogen used to inoculate plant root systems",
+      "source_id": "paper_3752"
+    },
+    {
+      "name": "15N2-ENRICHED ATMOSPHERE",
+      "type": "CONDITION",
+      "description": "An atmosphere enriched with the 15N isotope of nitrogen used to track nitrogen fixation",
+      "source_id": "paper_3752"
+    },
+    {
+      "name": "N2-FIXATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting atmospheric nitrogen into a usable form for plants",
+      "source_id": "paper_3752"
+    },
+    {
+      "name": "RHIZOSPHERE",
+      "type": "CONCEPT",
+      "description": "The soil region surrounding plant roots where nitrogen fixation occurs",
+      "source_id": "paper_3752"
+    },
+    {
+      "name": "SAND/FARMYARD MANURE MEDIUM",
+      "type": "CONDITION",
+      "description": "A growth medium composed of sand and farmyard manure used for sorghum plants",
+      "source_id": "paper_3752"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONDITION",
+      "description": "The natural growth medium used for both sorghum and millet plants",
+      "source_id": "paper_3752"
+    },
+    {
+      "name": "ACETYLENE REDUCTION ASSAY",
+      "type": "METHOD",
+      "description": "A method used to measure nitrogenase activity by detecting ethylene production",
+      "source_id": "paper_3752"
+    },
+    {
+      "name": "ETHYLENE CONCENTRATION",
+      "type": "CONCEPT",
+      "description": "The level of ethylene produced during the acetylene reduction assay as an indicator of nitrogen fixation",
+      "source_id": "paper_3752"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "N2-FIXING BACTERIA",
+      "target": "SORGHUM",
+      "description": "used to inoculate the root systems of",
+      "weight": "8",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "N2-FIXING BACTERIA",
+      "target": "MILLET",
+      "description": "used to inoculate the root systems of",
+      "weight": "8",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "15N2-ENRICHED ATMOSPHERE",
+      "description": "exposed to for 72 hours",
+      "weight": "7",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "MILLET",
+      "target": "15N2-ENRICHED ATMOSPHERE",
+      "description": "exposed to for 72 hours",
+      "weight": "7",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "N2-FIXATION",
+      "target": "RHIZOSPHERE",
+      "description": "occurs within the",
+      "weight": "9",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "N2-FIXATION",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "MILLET",
+      "target": "N2-FIXATION",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SAND/FARMYARD MANURE MEDIUM",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SOIL",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "MILLET",
+      "target": "SOIL",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "ACETYLENE REDUCTION ASSAY",
+      "target": "ETHYLENE CONCENTRATION",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3752"
+    },
+    {
+      "source": "ACETYLENE REDUCTION ASSAY",
+      "target": "N2-FIXATION",
+      "description": "used to detect",
+      "weight": "9",
+      "source_id": "paper_3752"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop studied for production and adaptation in Ethiopia",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The primary measure of productivity for the chickpea crop",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Environmental shifts projected to alter growing conditions and reduce crop yields",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A climate-related stress causing substantial reduction in grain yield",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "CROPGRO-CHICKPEA MODEL",
+      "type": "METHOD",
+      "description": "A simulation model used to evaluate climate change impacts and adaptation options",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "SIRINKA",
+      "type": "LOCATION",
+      "description": "A study site in North-Eastern Ethiopia",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "CHEFA",
+      "type": "LOCATION",
+      "description": "A study site in North-Eastern Ethiopia",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "NORTH-EASTERN ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The semi-arid region where the study was conducted",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "CO2 FERTILIZATION",
+      "type": "CONDITION",
+      "description": "The direct effect of increased atmospheric carbon dioxide on plant growth and yield",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "SUPPLEMENTAL IRRIGATION",
+      "type": "METHOD",
+      "description": "An adaptation option involving the addition of water to crops to increase yield",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "MATURITY GROUPS",
+      "type": "CONCEPT",
+      "description": "Classification of cultivars based on the duration of their growth cycle",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "SHORT DURATION CULTIVAR",
+      "type": "CONCEPT",
+      "description": "A cultivar with a shorter growth cycle used as an adaptation option",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "LONG DURATION CULTIVAR",
+      "type": "CONCEPT",
+      "description": "A cultivar with a longer growth cycle",
+      "source_id": "paper_10328"
+    },
+    {
+      "name": "STANDARD CULTIVAR",
+      "type": "CONCEPT",
+      "description": "The control cultivar used as a baseline for comparison",
+      "source_id": "paper_10328"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "CHICKPEA",
+      "description": "alters growing conditions of",
+      "weight": "8",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "GRAIN YIELD",
+      "description": "causes substantial reduction in",
+      "weight": "10",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "CROPGRO-CHICKPEA MODEL",
+      "target": "CLIMATE CHANGE",
+      "description": "used to evaluate impacts of",
+      "weight": "9",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "CROPGRO-CHICKPEA MODEL",
+      "target": "CHICKPEA",
+      "description": "used to simulate production of",
+      "weight": "10",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "SIRINKA",
+      "target": "NORTH-EASTERN ETHIOPIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "CHEFA",
+      "target": "NORTH-EASTERN ETHIOPIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "CO2 FERTILIZATION",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "SUPPLEMENTAL IRRIGATION",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "SHORT DURATION CULTIVAR",
+      "target": "GRAIN YIELD",
+      "description": "increases yield at Sirinka but decreases at Chefa",
+      "weight": "7",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "LONG DURATION CULTIVAR",
+      "target": "GRAIN YIELD",
+      "description": "decreases yield compared to standard cultivar",
+      "weight": "7",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "SUPPLEMENTAL IRRIGATION",
+      "target": "CHICKPEA",
+      "description": "is an adaptation option for",
+      "weight": "9",
+      "source_id": "paper_10328"
+    },
+    {
+      "source": "MATURITY GROUPS",
+      "target": "CHICKPEA",
+      "description": "is an adaptation option for",
+      "weight": "8",
+      "source_id": "paper_10328"
+    }
+  ]
+}

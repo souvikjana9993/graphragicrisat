@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The target crop of the study",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "LEAF RUST",
+      "type": "CONDITION",
+      "description": "Fungal disease caused by Puccinia triticina",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "STRIPE RUST",
+      "type": "CONDITION",
+      "description": "Fungal disease caused by P. striiformis",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "PUCCINIA TRITICINA",
+      "type": "ORGANISM",
+      "description": "Fungal pathogen causing leaf rust",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "PUCCINIA STRIIFORMIS",
+      "type": "ORGANISM",
+      "description": "Fungal pathogen causing stripe rust",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "LR46",
+      "type": "GENE_MARKER",
+      "description": "Gene conferring slow rusting resistance to leaf rust",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "YR29",
+      "type": "GENE_MARKER",
+      "description": "Gene conferring moderate adult plant resistance to stripe rust",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "WHEAT CHROMOSOME 1B",
+      "type": "LOCATION",
+      "description": "Genomic location of Lr46 and Yr29",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "LEAF RUST RESISTANCE",
+      "type": "TRAIT",
+      "description": "Ability of wheat to resist leaf rust",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "STRIPE RUST RESISTANCE",
+      "type": "TRAIT",
+      "description": "Ability of wheat to resist stripe rust",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "MOLECULAR MARKER MAPPING",
+      "type": "METHOD",
+      "description": "Technique used to locate genes",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "BULKED SEGREGANT ANALYSIS",
+      "type": "METHOD",
+      "description": "Method used for gene mapping",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "LINKAGE MAPPING",
+      "type": "METHOD",
+      "description": "Method used to determine the genomic location of genes",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "AMPLIFIED FRAGMENT LENGTH POLYMORPHISMS",
+      "type": "METHOD",
+      "description": "Molecular marker used in linkage mapping",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "AVOCET S",
+      "type": "CONCEPT",
+      "description": "Susceptible wheat line",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "PAVON 76",
+      "type": "CONCEPT",
+      "description": "Resistant wheat line",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "LALBAHADUR",
+      "type": "CONCEPT",
+      "description": "Wheat line used in the cross",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "LALBAHADUR (PAVON 1B)",
+      "type": "CONCEPT",
+      "description": "Wheat line used in the cross",
+      "source_id": "paper_5735"
+    },
+    {
+      "name": "INTERNATIONAL TRITICEAE MAPPING INITIATIVE POPULATION",
+      "type": "CONCEPT",
+      "description": "Population used for mapping",
+      "source_id": "paper_5735"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PUCCINIA TRITICINA",
+      "target": "LEAF RUST",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "PUCCINIA STRIIFORMIS",
+      "target": "STRIPE RUST",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "LEAF RUST",
+      "target": "WHEAT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "STRIPE RUST",
+      "target": "WHEAT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "LR46",
+      "target": "LEAF RUST RESISTANCE",
+      "description": "confers",
+      "weight": "10",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "YR29",
+      "target": "STRIPE RUST RESISTANCE",
+      "description": "confers",
+      "weight": "10",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "LR46",
+      "target": "WHEAT CHROMOSOME 1B",
+      "description": "located on",
+      "weight": "10",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "YR29",
+      "target": "WHEAT CHROMOSOME 1B",
+      "description": "located on",
+      "weight": "10",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "LR46",
+      "target": "YR29",
+      "description": "closely linked to",
+      "weight": "9",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "MOLECULAR MARKER MAPPING",
+      "target": "LR46",
+      "description": "used to locate",
+      "weight": "9",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "BULKED SEGREGANT ANALYSIS",
+      "target": "LR46",
+      "description": "used to locate",
+      "weight": "8",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "LINKAGE MAPPING",
+      "target": "LR46",
+      "description": "used to locate",
+      "weight": "8",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "AMPLIFIED FRAGMENT LENGTH POLYMORPHISMS",
+      "target": "LINKAGE MAPPING",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "AVOCET S",
+      "target": "LINKAGE MAPPING",
+      "description": "used in",
+      "weight": "7",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "PAVON 76",
+      "target": "LINKAGE MAPPING",
+      "description": "used in",
+      "weight": "7",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "LALBAHADUR",
+      "target": "LINKAGE MAPPING",
+      "description": "used in",
+      "weight": "7",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "LALBAHADUR (PAVON 1B)",
+      "target": "LINKAGE MAPPING",
+      "description": "used in",
+      "weight": "7",
+      "source_id": "paper_5735"
+    },
+    {
+      "source": "INTERNATIONAL TRITICEAE MAPPING INITIATIVE POPULATION",
+      "target": "LINKAGE MAPPING",
+      "description": "used in",
+      "weight": "7",
+      "source_id": "paper_5735"
+    }
+  ]
+}

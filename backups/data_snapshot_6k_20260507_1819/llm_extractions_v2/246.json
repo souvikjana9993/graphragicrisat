@@ -1,0 +1,202 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop grown in the post-rainy season in India",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic location where the sorghum study was conducted",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The specific seasonal timing for sorghum cultivation",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "The specific soil type used for sorghum cultivation",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "STORED SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The moisture remaining in the soil used for crop growth",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "The condition of insufficient water availability towards the end of the growing season",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of grain production from the crop",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "STOVER YIELD",
+      "type": "TRAIT",
+      "description": "The measure of vegetative biomass production from the crop",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "The method of applying supplementary water to crops",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "METHOD",
+      "description": "The timing of planting seeds in the field",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "SPY 86",
+      "type": "CROP",
+      "description": "A sorghum cultivar that provides the best grain yield across sowing dates",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "M 35-1",
+      "type": "CROP",
+      "description": "A widely grown sorghum cultivar with high stover yield and stability",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "STABILITY",
+      "type": "TRAIT",
+      "description": "The consistency of crop yields across different sowing dates and conditions",
+      "source_id": "paper_246"
+    },
+    {
+      "name": "HYBRIDS",
+      "type": "CONCEPT",
+      "description": "Sorghum plants produced by crossing different genotypes",
+      "source_id": "paper_246"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "POST-RAINY SEASON",
+      "description": "grown during",
+      "weight": "9",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "VERTISOLS",
+      "description": "grown on",
+      "weight": "8",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "STOVER YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "STOVER YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "SPY 86",
+      "target": "GRAIN YIELD",
+      "description": "exhibits high",
+      "weight": "9",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "M 35-1",
+      "target": "STOVER YIELD",
+      "description": "exhibits high",
+      "weight": "9",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "M 35-1",
+      "target": "STABILITY",
+      "description": "exhibits high",
+      "weight": "9",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "STOVER YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "STABILITY",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "HYBRIDS",
+      "target": "GRAIN YIELD",
+      "description": "similar to cultivars",
+      "weight": "7",
+      "source_id": "paper_246"
+    },
+    {
+      "source": "HYBRIDS",
+      "target": "STOVER YIELD",
+      "description": "lower than cultivars",
+      "weight": "7",
+      "source_id": "paper_246"
+    }
+  ]
+}

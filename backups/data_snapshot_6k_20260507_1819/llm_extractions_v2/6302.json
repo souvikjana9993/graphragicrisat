@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cicer arietinum L.) screened for resistance to pests",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "GRAM POD BORER",
+      "type": "ORGANISM",
+      "description": "A pest (Helicoverpa armigera) that causes pod damage in chickpea",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to withstand attack by gram pod borer",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating genotypes for a specific trait",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "NATURAL FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environment in which the screening was conducted",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "POD DAMAGE",
+      "type": "TRAIT",
+      "description": "The percentage of pods damaged by larvae, used to measure susceptibility",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "MALIC ACID",
+      "type": "CONCEPT",
+      "description": "An organic acid found in leaf exudates",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "LEAF EXUDATES",
+      "type": "CONCEPT",
+      "description": "Secretions from the leaves of the plant",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "ACIDITY",
+      "type": "TRAIT",
+      "description": "The level of acidity in leaf exudates, measured in meq./100 gm",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The degree to which a genotype is affected by the gram pod borer",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "ICC 506",
+      "type": "CONCEPT",
+      "description": "A chickpea genotype designated as least susceptible to gram pod borer",
+      "source_id": "paper_6302"
+    },
+    {
+      "name": "ICC 14665",
+      "type": "CONCEPT",
+      "description": "A chickpea genotype designated as most susceptible to gram pod borer",
+      "source_id": "paper_6302"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCREENING",
+      "target": "CHICKPEA",
+      "description": "Screening was performed on chickpea genotypes",
+      "weight": "10",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "GRAM POD BORER",
+      "description": "Resistance is measured against the gram pod borer",
+      "weight": "10",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "SCREENING",
+      "target": "NATURAL FIELD CONDITIONS",
+      "description": "Screening was conducted under natural field conditions",
+      "weight": "8",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "GRAM POD BORER",
+      "target": "POD DAMAGE",
+      "description": "Gram pod borer causes pod damage",
+      "weight": "10",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "POD DAMAGE",
+      "target": "SUSCEPTIBILITY",
+      "description": "Pod damage is used to categorize susceptibility",
+      "weight": "9",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "ACIDITY",
+      "target": "SUSCEPTIBILITY",
+      "description": "Low acidity in leaf exudates is associated with susceptibility to gram pod borer",
+      "weight": "8",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "ACIDITY",
+      "target": "LEAF EXUDATES",
+      "description": "Acidity is measured within the leaf exudates",
+      "weight": "10",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "MALIC ACID",
+      "target": "ACIDITY",
+      "description": "Malic acid contributes to the acidity of leaf exudates",
+      "weight": "7",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "ICC 506",
+      "target": "CHICKPEA",
+      "description": "ICC 506 is a genotype of chickpea",
+      "weight": "10",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "ICC 14665",
+      "target": "CHICKPEA",
+      "description": "ICC 14665 is a genotype of chickpea",
+      "weight": "10",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "ICC 506",
+      "target": "RESISTANCE",
+      "description": "ICC 506 exhibited high resistance (least susceptible)",
+      "weight": "9",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "ICC 14665",
+      "target": "SUSCEPTIBILITY",
+      "description": "ICC 14665 exhibited high susceptibility",
+      "weight": "9",
+      "source_id": "paper_6302"
+    },
+    {
+      "source": "ICC 14665",
+      "target": "ACIDITY",
+      "description": "ICC 14665 showed low acidity in leaf exudates",
+      "weight": "8",
+      "source_id": "paper_6302"
+    }
+  ]
+}

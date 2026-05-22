@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "NITRAPYRIN",
+      "type": "CONCEPT",
+      "description": "A nitrification inhibitor used to prevent the loss of ammonified nitrogen)",
+      "source_id": "paper_4566"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting ammonium to nitrate)",
+      "source_id": "paper_4566"
+    },
+    {
+      "name": "DENITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting nitrate to nitrogen gas)",
+      "source_id": "paper_4566"
+    },
+    {
+      "name": "AMMONIUM",
+      "type": "CONCEPT",
+      "description": "Ammonified nitrogen (NH4+ N) released during soil incubation)",
+      "source_id": "paper_4566"
+    },
+    {
+      "name": "SOIL-WATER SYSTEM",
+      "type": "CONDITION",
+      "description": "A submerged soil environment used for incubation)",
+      "source_id": "paper_4566"
+    },
+    {
+      "name": "INCUBATION",
+      "type": "METHOD",
+      "description": "The process of maintaining soil samples under specific conditions to measure nitrogen release)",
+      "source_id": "paper_4566"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The thermal condition of 30°C maintained during incubation)",
+      "source_id": "paper_4566"
+    },
+    {
+      "name": "PH LEVEL",
+      "type": "CONDITION",
+      "description": "The acidity or alkalinity of the soil, specifically near neutral to alkaline)",
+      "source_id": "paper_4566"
+    },
+    {
+      "name": "NITROGEN GAS",
+      "type": "CONDITION",
+      "description": "An inert gas atmosphere (N2) used to exclude air and prevent nitrogen loss)",
+      "source_id": "paper_4566"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITRAPYRIN",
+      "target": "NITRIFICATION",
+      "description": "inhibits",
+      "weight": "10)",
+      "source_id": "paper_4566"
+    },
+    {
+      "source": "NITRAPYRIN",
+      "target": "AMMONIUM",
+      "description": "conserves",
+      "weight": "9)",
+      "source_id": "paper_4566"
+    },
+    {
+      "source": "NITRIFICATION",
+      "target": "AMMONIUM",
+      "description": "causes loss of",
+      "weight": "8)",
+      "source_id": "paper_4566"
+    },
+    {
+      "source": "DENITRIFICATION",
+      "target": "AMMONIUM",
+      "description": "causes loss of",
+      "weight": "8)",
+      "source_id": "paper_4566"
+    },
+    {
+      "source": "INCUBATION",
+      "target": "SOIL-WATER SYSTEM",
+      "description": "conducted in",
+      "weight": "7)",
+      "source_id": "paper_4566"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "INCUBATION",
+      "description": "parameter of",
+      "weight": "6)",
+      "source_id": "paper_4566"
+    },
+    {
+      "source": "PH LEVEL",
+      "target": "AMMONIUM",
+      "description": "influences recovery of",
+      "weight": "7)",
+      "source_id": "paper_4566"
+    },
+    {
+      "source": "NITROGEN GAS",
+      "target": "NITRIFICATION",
+      "description": "prevents",
+      "weight": "9)",
+      "source_id": "paper_4566"
+    },
+    {
+      "source": "NITROGEN GAS",
+      "target": "DENITRIFICATION",
+      "description": "prevents",
+      "weight": "9",
+      "source_id": "paper_4566"
+    }
+  ]
+}

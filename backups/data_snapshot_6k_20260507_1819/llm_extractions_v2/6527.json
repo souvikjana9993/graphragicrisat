@@ -1,0 +1,125 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor, the primary crop studied for nitrogen response.",
+      "source_id": "paper_6527"
+    },
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "Cajanus cajan, the crop intercropped with sorghum.",
+      "source_id": "paper_6527"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONDITION",
+      "description": "The nutrient applied to sorghum to study its response.",
+      "source_id": "paper_6527"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "LOCATION",
+      "description": "The type of soil in which the experiments were conducted.",
+      "source_id": "paper_6527"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing sorghum and pigeon pea together in the same field.",
+      "source_id": "paper_6527"
+    },
+    {
+      "name": "NITROGEN RESPONSE",
+      "type": "TRAIT",
+      "description": "The reaction of sorghum to different levels of nitrogen application.",
+      "source_id": "paper_6527"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced, specifically mentioned for pigeon pea.",
+      "source_id": "paper_6527"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "PIGEON PEA",
+      "description": "Intercropped together in experiments",
+      "weight": "8",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NITROGEN",
+      "description": "Responded to applied nitrogen",
+      "weight": "9",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "VERTISOLS",
+      "description": "Grown in Vertisols soil",
+      "weight": "7",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "VERTISOLS",
+      "description": "Grown in Vertisols soil",
+      "weight": "7",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "SORGHUM",
+      "description": "Method used to grow sorghum with another crop",
+      "weight": "8",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PIGEON PEA",
+      "description": "Method used to grow pigeon pea with another crop",
+      "weight": "8",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "NITROGEN RESPONSE",
+      "description": "Nitrogen application is the basis for measuring nitrogen response",
+      "weight": "10",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "YIELD",
+      "description": "Higher nitrogen levels in sorghum had a greater effect on pigeon pea yield",
+      "weight": "6",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NITROGEN RESPONSE",
+      "description": "Sorghum exhibits a specific response to nitrogen",
+      "weight": "9",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "NITROGEN",
+      "description": "Did not contribute nitrogen to sorghum",
+      "weight": "5",
+      "source_id": "paper_6527"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "YIELD",
+      "description": "Sorghum at higher nitrogen levels affected pigeon pea yield",
+      "weight": "7",
+      "source_id": "paper_6527"
+    }
+  ]
+}

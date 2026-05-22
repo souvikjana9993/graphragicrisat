@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "BRACHIARIA HUMIDICOLA",
+      "type": "CROP",
+      "description": "A tropical pasture grass found to have nitrification inhibitory activity in its root tissues",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "NITRIFICATION INHIBITORY ACTIVITY",
+      "type": "TRAIT",
+      "description": "The ability of a substance to inhibit the process of nitrification",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "ACTIVITY-GUIDED FRACTIONATION",
+      "type": "METHOD",
+      "description": "A technique used to isolate active compounds based on their biological activity",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "NITROSOMONAS EUROPAEA",
+      "type": "ORGANISM",
+      "description": "A bacterium used in a recombinant form to detect nitrification inhibitory activity",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "LUXAB GENES",
+      "type": "GENE_MARKER",
+      "description": "Bioluminescent genes derived from Vibrio harveyi and inserted into Nitrosomonas europaea",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "VIBRIO HARVEYI",
+      "type": "ORGANISM",
+      "description": "A bioluminescent marine gram-negative bacterium",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "METHYL-P-COUMARATE",
+      "type": "CONCEPT",
+      "description": "An active nitrification inhibitory compound isolated from Brachiaria humidicola",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "METHYL FERULATE",
+      "type": "CONCEPT",
+      "description": "An active nitrification inhibitory compound isolated from Brachiaria humidicola",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "P-COUMARIC ACID",
+      "type": "CONCEPT",
+      "description": "The free acid form of methyl-p-coumarate which does not show inhibitory activity",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "FERULIC ACID",
+      "type": "CONCEPT",
+      "description": "The free acid form of methyl ferulate which does not show inhibitory activity",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting ammonia to nitrate",
+      "source_id": "paper_5543"
+    },
+    {
+      "name": "IC50",
+      "type": "METHOD",
+      "description": "The half maximal inhibitory concentration used to quantify the potency of inhibitors",
+      "source_id": "paper_5543"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BRACHIARIA HUMIDICOLA",
+      "target": "NITRIFICATION INHIBITORY ACTIVITY",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "ACTIVITY-GUIDED FRACTIONATION",
+      "target": "METHYL-P-COUMARATE",
+      "description": "used to isolate",
+      "weight": "9",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "ACTIVITY-GUIDED FRACTIONATION",
+      "target": "METHYL FERULATE",
+      "description": "used to isolate",
+      "weight": "9",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "NITROSOMONAS EUROPAEA",
+      "target": "ACTIVITY-GUIDED FRACTIONATION",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "LUXAB GENES",
+      "target": "NITROSOMONAS EUROPAEA",
+      "description": "contained in recombinant form of",
+      "weight": "10",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "VIBRIO HARVEYI",
+      "target": "LUXAB GENES",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "METHYL-P-COUMARATE",
+      "target": "NITRIFICATION",
+      "description": "inhibits",
+      "weight": "10",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "METHYL FERULATE",
+      "target": "NITRIFICATION",
+      "description": "inhibits",
+      "weight": "10",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "IC50",
+      "target": "METHYL-P-COUMARATE",
+      "description": "measures potency of",
+      "weight": "9",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "IC50",
+      "target": "METHYL FERULATE",
+      "description": "measures potency of",
+      "weight": "9",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "P-COUMARIC ACID",
+      "target": "NITRIFICATION",
+      "description": "does not inhibit",
+      "weight": "7",
+      "source_id": "paper_5543"
+    },
+    {
+      "source": "FERULIC ACID",
+      "target": "NITRIFICATION",
+      "description": "does not inhibit",
+      "weight": "7",
+      "source_id": "paper_5543"
+    }
+  ]
+}

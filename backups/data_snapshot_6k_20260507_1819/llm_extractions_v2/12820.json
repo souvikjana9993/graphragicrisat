@@ -1,0 +1,297 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Major staple food crop with high area and production in India",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area, used as a primary measure of productivity",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A dimensionless quantity that characterizes plant canopies, used as a criterion for evaluating grain yield",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Technology used for crop growth monitoring and LAI estimation",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "CROP SIMULATION MODELS",
+      "type": "METHOD",
+      "description": "Models used to assess the effects of different scenarios on crop yield",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "DSSAT MODEL",
+      "type": "METHOD",
+      "description": "A specific crop simulation model used for predicting rice grain yield",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "SENTINEL-2 SATELLITE",
+      "type": "METHOD",
+      "description": "Satellite used for the estimation of Leaf Area Index",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "CEPTOMETER",
+      "type": "METHOD",
+      "description": "Instrument used for measuring Leaf Area Index in the field",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "SUPERVISED CLASSIFICATION",
+      "type": "METHOD",
+      "description": "Image analysis technique performed using ERDAS Imagine",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "ERDAS IMAGINE",
+      "type": "METHOD",
+      "description": "Software used for performing supervised classification of satellite imagery",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "CROP CUTTING EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Field-based method for optimizing yield data collection",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "NDVI",
+      "type": "TRAIT",
+      "description": "Normalized Difference Vegetation Index used as a critical element for integration with crop models",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "BIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by living organisms that can lead to crop insurance losses",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by non-living factors that can lead to crop insurance losses",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shift in temperatures and weather patterns affecting crop yield",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A period of abnormally dry weather that affects crop yield",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONDITION",
+      "description": "The autumn sowing season in India",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "RABI",
+      "type": "CONDITION",
+      "description": "The spring sowing season in India",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where rice is a major staple food",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "State in India contributing significantly to rice area and production",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "KARIMNAGAR DISTRICT",
+      "type": "LOCATION",
+      "description": "District in Telangana where the field-level research was conducted",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "CROP INSURANCE",
+      "type": "CONCEPT",
+      "description": "Insurance provided to farmers to cover losses due to stress and yield failure",
+      "source_id": "paper_12820"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nutrient applied to crops that shows a strong correlation with grain yield",
+      "source_id": "paper_12820"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "GRAIN YIELD",
+      "description": "has a measurable",
+      "weight": "10",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "RICE",
+      "target": "LEAF AREA INDEX",
+      "description": "has a measurable",
+      "weight": "10",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "REMOTE SENSING",
+      "target": "LEAF AREA INDEX",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "CROP SIMULATION MODELS",
+      "target": "GRAIN YIELD",
+      "description": "is used to predict",
+      "weight": "9",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "DSSAT MODEL",
+      "target": "GRAIN YIELD",
+      "description": "is used to predict",
+      "weight": "10",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "DSSAT MODEL",
+      "target": "LEAF AREA INDEX",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "SENTINEL-2 SATELLITE",
+      "target": "LEAF AREA INDEX",
+      "description": "is used for estimation of",
+      "weight": "9",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "CEPTOMETER",
+      "target": "LEAF AREA INDEX",
+      "description": "is used to measure",
+      "weight": "10",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "NDVI",
+      "target": "LEAF AREA INDEX",
+      "description": "has a strong correlation with",
+      "weight": "9",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "NDVI",
+      "target": "GRAIN YIELD",
+      "description": "is used for estimation of",
+      "weight": "8",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "GRAIN YIELD",
+      "description": "shows a good correlation with",
+      "weight": "10",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "GRAIN YIELD",
+      "description": "has a correlation with",
+      "weight": "8",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "BIOTIC STRESS",
+      "target": "GRAIN YIELD",
+      "description": "causes losses in",
+      "weight": "7",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "GRAIN YIELD",
+      "description": "causes losses in",
+      "weight": "7",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "RICE",
+      "target": "INDIA",
+      "description": "is grown in",
+      "weight": "10",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "RICE",
+      "target": "TELANGANA",
+      "description": "is grown in",
+      "weight": "10",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "TELANGANA",
+      "target": "KARIMNAGAR DISTRICT",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "CROP INSURANCE",
+      "target": "GRAIN YIELD",
+      "description": "relies on estimates of",
+      "weight": "8",
+      "source_id": "paper_12820"
+    },
+    {
+      "source": "FOOD SECURITY",
+      "target": "GRAIN YIELD",
+      "description": "is ensured by",
+      "weight": "8",
+      "source_id": "paper_12820"
+    }
+  ]
+}

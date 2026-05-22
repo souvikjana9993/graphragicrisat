@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "PULSE",
+      "type": "CROP",
+      "description": "Broad category of leguminous crops studied in the report",
+      "source_id": "paper_2941"
+    },
+    {
+      "name": "PIGEON",
+      "type": "CROP",
+      "description": "Specific pulse crop whose physiology is the focus of the report",
+      "source_id": "paper_2941"
+    },
+    {
+      "name": "PHYSIOLOGY",
+      "type": "CONCEPT",
+      "description": "The study of the functions and processes of living organisms, specifically applied to pigeon pea",
+      "source_id": "paper_2941"
+    },
+    {
+      "name": "ICRISAT AGROCLIMATOLOGICAL OBSERVATORY",
+      "type": "LOCATION",
+      "description": "Facility where meteorological data for 1982-83 was collected",
+      "source_id": "paper_2941"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation measured during the rainy season",
+      "source_id": "paper_2941"
+    },
+    {
+      "name": "HISAR AGROCLIMATOLOGICAL OBSERVATORY",
+      "type": "LOCATION",
+      "description": "Facility where meteorological data from June to December 1982 was collected",
+      "source_id": "paper_2941"
+    },
+    {
+      "name": "METEOROLOGICAL DATA",
+      "type": "CONCEPT",
+      "description": "Weather-related information collected at the observatories",
+      "source_id": "paper_2941"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEON",
+      "target": "PULSE",
+      "description": "PIGEON is a type of PULSE",
+      "weight": "10",
+      "source_id": "paper_2941"
+    },
+    {
+      "source": "PIGEON",
+      "target": "PHYSIOLOGY",
+      "description": "PIGEON is the subject of the PHYSIOLOGY study",
+      "weight": "9",
+      "source_id": "paper_2941"
+    },
+    {
+      "source": "ICRISAT AGROCLIMATOLOGICAL OBSERVATORY",
+      "target": "METEOROLOGICAL DATA",
+      "description": "Site where METEOROLOGICAL DATA was collected",
+      "weight": "8",
+      "source_id": "paper_2941"
+    },
+    {
+      "source": "HISAR AGROCLIMATOLOGICAL OBSERVATORY",
+      "target": "METEOROLOGICAL DATA",
+      "description": "Site where METEOROLOGICAL DATA was collected",
+      "weight": "8",
+      "source_id": "paper_2941"
+    },
+    {
+      "source": "METEOROLOGICAL DATA",
+      "target": "RAINFALL",
+      "description": "RAINFALL is a key component of the METEOROLOGICAL DATA",
+      "weight": "9",
+      "source_id": "paper_2941"
+    }
+  ]
+}

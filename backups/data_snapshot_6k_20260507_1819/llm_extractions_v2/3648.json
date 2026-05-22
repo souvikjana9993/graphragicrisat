@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The specific cereal crop studied in the research",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "CEREAL CROPS",
+      "type": "CROP",
+      "description": "General category of crops including pearl millet",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of grain produced per unit area",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "YIELD COMPONENTS",
+      "type": "TRAIT",
+      "description": "Factors that contribute to the overall grain yield",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "GRAIN NUMBER",
+      "type": "TRAIT",
+      "description": "The number of grains produced, a component of yield",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "GRAIN SIZE",
+      "type": "TRAIT",
+      "description": "The size of the grains produced, a component of yield",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "CHLOROPHYLL CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of chlorophyll in the leaves, affecting photosynthesis",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "DROUGHT RESPONSE",
+      "type": "TRAIT",
+      "description": "The genetic reaction of breeder lines to water deficit",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "A state of insufficient water availability for the plant",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "POTASSIUM IODIDE",
+      "type": "METHOD",
+      "description": "A chemical senescing agent used to simulate water deficit",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "SENESCING AGENT",
+      "type": "METHOD",
+      "description": "An agent that induces senescence in plant tissues",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "CHEMICAL DESICCANT",
+      "type": "METHOD",
+      "description": "A chemical used to dry out plant tissues",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating genetic material for specific traits",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "WITHHOLDING IRRIGATION",
+      "type": "METHOD",
+      "description": "A method of simulating drought by stopping water supply",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "ANTHESIS",
+      "type": "CONCEPT",
+      "description": "The period during which a flower is fully open and functional",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "GRAINFILLING",
+      "type": "CONCEPT",
+      "description": "The stage of crop development where grains accumulate dry matter",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "CONCEPT",
+      "description": "The process of producing flowers",
+      "source_id": "paper_3648"
+    },
+    {
+      "name": "CURRENT PHOTOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "The immediate production of photosynthates by the plant",
+      "source_id": "paper_3648"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POTASSIUM IODIDE",
+      "target": "WATER DEFICIT",
+      "description": "simulates the effects of",
+      "weight": "9",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "POTASSIUM IODIDE",
+      "target": "SENESCING AGENT",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "SENESCING AGENT",
+      "target": "CHEMICAL DESICCANT",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "CURRENT PHOTOSYNTHESIS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "POTASSIUM IODIDE",
+      "target": "CHLOROPHYLL CONTENT",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "POTASSIUM IODIDE",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "POTASSIUM IODIDE",
+      "target": "GRAIN NUMBER",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "POTASSIUM IODIDE",
+      "target": "GRAIN SIZE",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "POTASSIUM IODIDE",
+      "target": "ANTHESIS",
+      "description": "applied at the stage of",
+      "weight": "7",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "GRAINFILLING",
+      "description": "occurs during",
+      "weight": "7",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "FLOWERING",
+      "description": "occurs during",
+      "weight": "7",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "SCREENING",
+      "target": "DROUGHT RESPONSE",
+      "description": "evaluates",
+      "weight": "8",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "POTASSIUM IODIDE",
+      "target": "SCREENING",
+      "description": "used as a tool for",
+      "weight": "7",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GRAIN YIELD",
+      "description": "measured for",
+      "weight": "9",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "GRAIN NUMBER",
+      "target": "YIELD COMPONENTS",
+      "description": "is a part of",
+      "weight": "10",
+      "source_id": "paper_3648"
+    },
+    {
+      "source": "GRAIN SIZE",
+      "target": "YIELD COMPONENTS",
+      "description": "is a part of",
+      "weight": "10",
+      "source_id": "paper_3648"
+    }
+  ]
+}

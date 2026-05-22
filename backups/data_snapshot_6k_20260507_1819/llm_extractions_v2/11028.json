@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "AGRICULTURAL STATISTICS",
+      "type": "CONCEPT",
+      "description": "Statistics related to agriculture that should correspond to ground situations and determine crop extent and farming practices",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "Agricultural plants whose actual extent is determined through statistics",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "CULTIVATION",
+      "type": "CONCEPT",
+      "description": "The act of preparing land and growing crops",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "FARMING PRACTICES",
+      "type": "CONCEPT",
+      "description": "Methods and techniques used in farming",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "GEOGRAPHICAL DATA",
+      "type": "CONCEPT",
+      "description": "Reliable and retraceable data regarding location, independent of climate",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "AGROCLIMATIC REGIONS",
+      "type": "LOCATION",
+      "description": "Different regions characterized by specific climatic and soil conditions for agriculture",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "GEO-STAMPING",
+      "type": "METHOD",
+      "description": "An approach for generating crop statistics using geospatial tools",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "GEOSPATIAL TOOLS",
+      "type": "METHOD",
+      "description": "Tools used in the geo-stamping approach for data collection",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "A method of gathering information about an object or phenomenon without making physical contact",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "GPS",
+      "type": "METHOD",
+      "description": "Global Positioning System used for precise location tracking",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "GIS",
+      "type": "METHOD",
+      "description": "Geographic Information System used for capturing and analyzing spatial data",
+      "source_id": "paper_11028"
+    },
+    {
+      "name": "PLOT-LEVEL INVENTORY",
+      "type": "CONCEPT",
+      "description": "A detailed record of assets or crops at the individual plot level",
+      "source_id": "paper_11028"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AGRICULTURAL STATISTICS",
+      "target": "CROP",
+      "description": "determines the actual extent of",
+      "weight": "8",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "AGRICULTURAL STATISTICS",
+      "target": "CULTIVATION",
+      "description": "determines the extent of",
+      "weight": "7",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "AGRICULTURAL STATISTICS",
+      "target": "FARMING PRACTICES",
+      "description": "determines the extent of",
+      "weight": "7",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "AGRICULTURAL STATISTICS",
+      "target": "GEOGRAPHICAL DATA",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "GEOGRAPHICAL DATA",
+      "target": "AGROCLIMATIC REGIONS",
+      "description": "can be applied to",
+      "weight": "8",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "GEO-STAMPING",
+      "target": "AGRICULTURAL STATISTICS",
+      "description": "is used for generating",
+      "weight": "10",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "GEO-STAMPING",
+      "target": "GEOSPATIAL TOOLS",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "GEO-STAMPING",
+      "target": "REMOTE SENSING",
+      "description": "integrates",
+      "weight": "10",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "GEO-STAMPING",
+      "target": "GPS",
+      "description": "integrates",
+      "weight": "10",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "GEO-STAMPING",
+      "target": "GIS",
+      "description": "integrates",
+      "weight": "10",
+      "source_id": "paper_11028"
+    },
+    {
+      "source": "GEO-STAMPING",
+      "target": "PLOT-LEVEL INVENTORY",
+      "description": "allows",
+      "weight": "9",
+      "source_id": "paper_11028"
+    }
+  ]
+}

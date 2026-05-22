@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop with global productivity trends and specific yield potentials",
+      "source_id": "paper_3770"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop mentioned in the context of international research and development activities",
+      "source_id": "paper_3770"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity measure of the crop, with current global averages and potential values",
+      "source_id": "paper_3770"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A country where a significant portion of the additional demand for chickpea is expected",
+      "source_id": "paper_3770"
+    },
+    {
+      "name": "DEMAND",
+      "type": "CONCEPT",
+      "description": "The estimated requirement for chickpea in tons",
+      "source_id": "paper_3770"
+    },
+    {
+      "name": "AREA EXPANSION",
+      "type": "CONCEPT",
+      "description": "A strategy to meet the projected demand for crops",
+      "source_id": "paper_3770"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "YIELD",
+      "description": "has a specific productivity measure",
+      "weight": "10",
+      "source_id": "paper_3770"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "DEMAND",
+      "description": "has an estimated global requirement",
+      "weight": "10",
+      "source_id": "paper_3770"
+    },
+    {
+      "source": "INDIA",
+      "target": "DEMAND",
+      "description": "is the primary source of additional demand for chickpea",
+      "weight": "9",
+      "source_id": "paper_3770"
+    },
+    {
+      "source": "DEMAND",
+      "target": "AREA EXPANSION",
+      "description": "can be met through",
+      "weight": "8",
+      "source_id": "paper_3770"
+    },
+    {
+      "source": "YIELD",
+      "target": "DEMAND",
+      "description": "increase in yield can help meet",
+      "weight": "8",
+      "source_id": "paper_3770"
+    }
+  ]
+}

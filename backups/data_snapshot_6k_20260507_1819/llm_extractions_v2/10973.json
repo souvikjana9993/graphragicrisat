@@ -1,0 +1,253 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop being stored and affected by rodents in the study",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "RODENTS",
+      "type": "ORGANISM",
+      "description": "Pests causing weight and quality losses in stored maize",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "LOWLAND TROPICAL ZONE OF KENYA",
+      "type": "LOCATION",
+      "description": "The geographic area where the case study was conducted",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "WEIGHT LOSS",
+      "type": "TRAIT",
+      "description": "The reduction in mass of maize grain and cobs due to rodent activity",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "QUALITY LOSS",
+      "type": "TRAIT",
+      "description": "The degradation of grain quality, including nutritional and safety aspects, due to rodent activity",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "RODENT TRAPPING",
+      "type": "METHOD",
+      "description": "The technique used to identify rodent species and estimate their population",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "MOULDS",
+      "type": "ORGANISM",
+      "description": "Fungi that contaminate rodent-damaged grains",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "TOTAL AFLATOXIN CONTAMINATION",
+      "type": "TRAIT",
+      "description": "The level of aflatoxin present in the grain, increased by rodent damage",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "NUTRITIONAL VALUE",
+      "type": "TRAIT",
+      "description": "The overall nutritional quality of the grain",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "RATTUS RATTUS",
+      "type": "ORGANISM",
+      "description": "The specific rodent species captured during the study",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "FUSARIUM SPP.",
+      "type": "ORGANISM",
+      "description": "A specific type of mould found in rodent-damaged grains",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "ASPERGILLUS SPP.",
+      "type": "ORGANISM",
+      "description": "A specific type of mould evaluated in the study",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "DRY-MATTER",
+      "type": "TRAIT",
+      "description": "A nutritional component of the grain that decreases due to rodent damage",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "FAT",
+      "type": "TRAIT",
+      "description": "A nutritional component of the grain that decreases due to rodent damage",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "CRUDE PROTEIN",
+      "type": "TRAIT",
+      "description": "A nutritional component of the grain that decreases due to rodent damage",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "FATTY ACID CONTENT",
+      "type": "TRAIT",
+      "description": "A nutritional component of the grain that decreases due to rodent damage",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "POSTHARVEST LOSSES",
+      "type": "CONCEPT",
+      "description": "The overall loss of crop quantity and quality after harvest",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "RODENT CONTROL",
+      "type": "METHOD",
+      "description": "Strategies to mitigate postharvest losses caused by rodents",
+      "source_id": "paper_10973"
+    },
+    {
+      "name": "ON-FARM STORAGE",
+      "type": "CONDITION",
+      "description": "The environment where maize is stored and rodents cause damage",
+      "source_id": "paper_10973"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RODENTS",
+      "target": "MAIZE",
+      "description": "cause losses in",
+      "weight": "10",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "WEIGHT LOSS",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "QUALITY LOSS",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "LOWLAND TROPICAL ZONE OF KENYA",
+      "target": "MAIZE",
+      "description": "location of storage",
+      "weight": "8",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENT TRAPPING",
+      "target": "RODENTS",
+      "description": "used to identify and estimate",
+      "weight": "9",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "RATTUS RATTUS",
+      "description": "includes species",
+      "weight": "10",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "MOULDS",
+      "description": "increase incidence of",
+      "weight": "8",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "TOTAL AFLATOXIN CONTAMINATION",
+      "description": "increase",
+      "weight": "8",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "NUTRITIONAL VALUE",
+      "description": "decrease",
+      "weight": "8",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "MOULDS",
+      "target": "TOTAL AFLATOXIN CONTAMINATION",
+      "description": "cause",
+      "weight": "9",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "FUSARIUM SPP.",
+      "target": "RODENTS",
+      "description": "associated with rodent-damaged grain",
+      "weight": "7",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "ASPERGILLUS SPP.",
+      "target": "RODENTS",
+      "description": "evaluated in rodent-damaged grain",
+      "weight": "7",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "DRY-MATTER",
+      "description": "decrease",
+      "weight": "8",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "FAT",
+      "description": "decrease",
+      "weight": "8",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "CRUDE PROTEIN",
+      "description": "decrease",
+      "weight": "8",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "FATTY ACID CONTENT",
+      "description": "decrease",
+      "weight": "8",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENTS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "contribute to",
+      "weight": "10",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "RODENT CONTROL",
+      "target": "POSTHARVEST LOSSES",
+      "description": "mitigate",
+      "weight": "9",
+      "source_id": "paper_10973"
+    },
+    {
+      "source": "MAIZE",
+      "target": "ON-FARM STORAGE",
+      "description": "stored in",
+      "weight": "10",
+      "source_id": "paper_10973"
+    }
+  ]
+}

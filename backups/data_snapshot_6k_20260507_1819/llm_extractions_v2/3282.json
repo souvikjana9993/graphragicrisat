@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being screened for disease resistance",
+      "source_id": "paper_3282"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting chickpea",
+      "source_id": "paper_3282"
+    },
+    {
+      "name": "ENVIRONMENTAL FACTORS",
+      "type": "CONDITION",
+      "description": "Factors that influence the occurrence and severity of Ascochyta blight",
+      "source_id": "paper_3282"
+    },
+    {
+      "name": "FIELD SCREENING",
+      "type": "METHOD",
+      "description": "A method of evaluating crop resistance in the field",
+      "source_id": "paper_3282"
+    },
+    {
+      "name": "CONTROLLED-ENVIRONMENT SCREENING",
+      "type": "METHOD",
+      "description": "A rapid screening method using a plant growth room to evaluate resistance",
+      "source_id": "paper_3282"
+    },
+    {
+      "name": "ICRISAT ASIA CENTER",
+      "type": "LOCATION",
+      "description": "The facility where the controlled-environment plant growth room was developed",
+      "source_id": "paper_3282"
+    },
+    {
+      "name": "ASCOCHYTA RABIEI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Ascochyta blight",
+      "source_id": "paper_3282"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to resist Ascochyta blight",
+      "source_id": "paper_3282"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_3282"
+    },
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3282"
+    },
+    {
+      "source": "ENVIRONMENTAL FACTORS",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "influences occurrence and severity of",
+      "weight": "8",
+      "source_id": "paper_3282"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "ASCOCHYTA BLIGHT RESISTANCE",
+      "description": "is used to evaluate",
+      "weight": "9",
+      "source_id": "paper_3282"
+    },
+    {
+      "source": "CONTROLLED-ENVIRONMENT SCREENING",
+      "target": "ASCOCHYTA BLIGHT RESISTANCE",
+      "description": "is used to evaluate",
+      "weight": "9",
+      "source_id": "paper_3282"
+    },
+    {
+      "source": "ICRISAT ASIA CENTER",
+      "target": "CONTROLLED-ENVIRONMENT SCREENING",
+      "description": "is the location where the method was developed",
+      "weight": "10",
+      "source_id": "paper_3282"
+    },
+    {
+      "source": "CONTROLLED-ENVIRONMENT SCREENING",
+      "target": "FIELD SCREENING",
+      "description": "shows a positive correlation in results",
+      "weight": "7",
+      "source_id": "paper_3282"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ASCOCHYTA BLIGHT RESISTANCE",
+      "description": "is screened for",
+      "weight": "10",
+      "source_id": "paper_3282"
+    }
+  ]
+}

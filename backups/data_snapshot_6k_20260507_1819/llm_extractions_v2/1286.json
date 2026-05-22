@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop affected by anthracnose in West and Central Africa",
+      "source_id": "paper_1286"
+    },
+    {
+      "name": "ANTHRACNOSE",
+      "type": "CONDITION",
+      "description": "A significant foliar disease of sorghum caused by Colletotrichum graminicola",
+      "source_id": "paper_1286"
+    },
+    {
+      "name": "COLLETOTRICHUM GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing anthracnose in sorghum",
+      "source_id": "paper_1286"
+    },
+    {
+      "name": "WEST AND CENTRAL AFRICA",
+      "type": "LOCATION",
+      "description": "The geographical region where sorghum anthracnose is a major issue",
+      "source_id": "paper_1286"
+    },
+    {
+      "name": "PATHOGENIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variation in the ability of the pathogen to cause disease",
+      "source_id": "paper_1286"
+    },
+    {
+      "name": "GENOTYPIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The genetic variation within the pathogen populations",
+      "source_id": "paper_1286"
+    },
+    {
+      "name": "EPIDEMIOLOGY",
+      "type": "CONCEPT",
+      "description": "The study of how anthracnose spreads and is distributed in the region",
+      "source_id": "paper_1286"
+    },
+    {
+      "name": "DISEASE MANAGEMENT STRATEGIES",
+      "type": "METHOD",
+      "description": "Approaches used to sustainably control and manage sorghum anthracnose",
+      "source_id": "paper_1286"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of sorghum varieties to resist anthracnose infection",
+      "source_id": "paper_1286"
+    },
+    {
+      "name": "CROP RESIDUE MANAGEMENT",
+      "type": "METHOD",
+      "description": "The practice of managing crop remains to reduce the inoculum of the pathogen",
+      "source_id": "paper_1286"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COLLETOTRICHUM GRAMINICOLA",
+      "target": "ANTHRACNOSE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1286"
+    },
+    {
+      "source": "ANTHRACNOSE",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1286"
+    },
+    {
+      "source": "ANTHRACNOSE",
+      "target": "WEST AND CENTRAL AFRICA",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_1286"
+    },
+    {
+      "source": "DISEASE MANAGEMENT STRATEGIES",
+      "target": "ANTHRACNOSE",
+      "description": "manages",
+      "weight": "10",
+      "source_id": "paper_1286"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "DISEASE MANAGEMENT STRATEGIES",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_1286"
+    },
+    {
+      "source": "CROP RESIDUE MANAGEMENT",
+      "target": "DISEASE MANAGEMENT STRATEGIES",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_1286"
+    },
+    {
+      "source": "PATHOGENIC DIVERSITY",
+      "target": "DISEASE MANAGEMENT STRATEGIES",
+      "description": "interplays with",
+      "weight": "7",
+      "source_id": "paper_1286"
+    },
+    {
+      "source": "GENOTYPIC DIVERSITY",
+      "target": "DISEASE MANAGEMENT STRATEGIES",
+      "description": "interplays with",
+      "weight": "7",
+      "source_id": "paper_1286"
+    },
+    {
+      "source": "EPIDEMIOLOGY",
+      "target": "DISEASE MANAGEMENT STRATEGIES",
+      "description": "informs",
+      "weight": "7",
+      "source_id": "paper_1286"
+    }
+  ]
+}

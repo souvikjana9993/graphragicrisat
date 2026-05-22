@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "NEEM",
+      "type": "CROP",
+      "description": "Azadirachta indica, a plant known for its insecticidal properties used in the production of pesticides",
+      "source_id": "paper_3834"
+    },
+    {
+      "name": "INSECTICIDAL PROPERTIES",
+      "type": "TRAIT",
+      "description": "The biological ability of certain plants to act as insecticides",
+      "source_id": "paper_3834"
+    },
+    {
+      "name": "BOTANICAL INSECTICIDES",
+      "type": "CONCEPT",
+      "description": "Insecticides derived from plant materials used for the management of pests",
+      "source_id": "paper_3834"
+    },
+    {
+      "name": "INSECT PESTS",
+      "type": "ORGANISM",
+      "description": "Insects that cause damage to crops or other plants",
+      "source_id": "paper_3834"
+    },
+    {
+      "name": "PESTICIDES",
+      "type": "CONCEPT",
+      "description": "Chemicals or biological agents used to kill or control pests",
+      "source_id": "paper_3834"
+    },
+    {
+      "name": "INSECT SPECIES",
+      "type": "ORGANISM",
+      "description": "Various types of insects targeted by neem-based products",
+      "source_id": "paper_3834"
+    },
+    {
+      "name": "PLANTS",
+      "type": "ORGANISM",
+      "description": "General biological kingdom from which botanical insecticides are derived",
+      "source_id": "paper_3834"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NEEM",
+      "target": "INSECTICIDAL PROPERTIES",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3834"
+    },
+    {
+      "source": "BOTANICAL INSECTICIDES",
+      "target": "INSECT PESTS",
+      "description": "used for management of",
+      "weight": "9",
+      "source_id": "paper_3834"
+    },
+    {
+      "source": "NEEM",
+      "target": "BOTANICAL INSECTICIDES",
+      "description": "is a source of",
+      "weight": "10",
+      "source_id": "paper_3834"
+    },
+    {
+      "source": "NEEM",
+      "target": "PESTICIDES",
+      "description": "used to create",
+      "weight": "10",
+      "source_id": "paper_3834"
+    },
+    {
+      "source": "PESTICIDES",
+      "target": "INSECT SPECIES",
+      "description": "used against",
+      "weight": "10",
+      "source_id": "paper_3834"
+    },
+    {
+      "source": "PLANTS",
+      "target": "INSECTICIDAL PROPERTIES",
+      "description": "possess",
+      "weight": "8",
+      "source_id": "paper_3834"
+    }
+  ]
+}

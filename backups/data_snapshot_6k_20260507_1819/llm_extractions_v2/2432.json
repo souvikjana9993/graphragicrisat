@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A grain legume crop (Cajanus cajan) grown in Asia.",
+      "source_id": "paper_2432"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A grain legume crop (Cicer arietinum) grown in Asia.",
+      "source_id": "paper_2432"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "The geographical region where pigeonpea and chickpea are important crops.",
+      "source_id": "paper_2432"
+    },
+    {
+      "name": "INSECT PESTS",
+      "type": "ORGANISM",
+      "description": "Organisms that cause heavy damage to grain legume crops.",
+      "source_id": "paper_2432"
+    },
+    {
+      "name": "INSECTICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents applied by farmers to manage insect pests.",
+      "source_id": "paper_2432"
+    },
+    {
+      "name": "INTEGRATED PEST MANAGEMENT",
+      "type": "METHOD",
+      "description": "A strategy for pest control that emphasizes reduced reliance on insecticides.",
+      "source_id": "paper_2432"
+    },
+    {
+      "name": "GRAIN LEGUMES",
+      "type": "CONCEPT",
+      "description": "A category of crops including pigeonpea and chickpea.",
+      "source_id": "paper_2432"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "GRAIN LEGUMES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2432"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "GRAIN LEGUMES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2432"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "ASIA",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_2432"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ASIA",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_2432"
+    },
+    {
+      "source": "INSECT PESTS",
+      "target": "PIGEONPEA",
+      "description": "damages",
+      "weight": "9",
+      "source_id": "paper_2432"
+    },
+    {
+      "source": "INSECT PESTS",
+      "target": "CHICKPEA",
+      "description": "damages",
+      "weight": "9",
+      "source_id": "paper_2432"
+    },
+    {
+      "source": "INSECTICIDES",
+      "target": "INSECT PESTS",
+      "description": "used to manage",
+      "weight": "8",
+      "source_id": "paper_2432"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "INSECT PESTS",
+      "description": "used to manage",
+      "weight": "9",
+      "source_id": "paper_2432"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "INSECTICIDES",
+      "description": "aims to reduce reliance on",
+      "weight": "7",
+      "source_id": "paper_2432"
+    }
+  ]
+}

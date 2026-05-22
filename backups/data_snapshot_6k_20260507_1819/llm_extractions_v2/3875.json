@@ -1,0 +1,148 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal grain crop used in rotation with groundnut.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop whose yield is affected by wheat straw incorporation.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of crop production, specifically grain yield for wheat and overall yield for groundnut.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "N UPTAKE",
+      "type": "TRAIT",
+      "description": "The absorption of nitrogen by groundnut plants.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "INCORPORATION OF WHEAT STRAW",
+      "type": "METHOD",
+      "description": "The process of adding undecomposed wheat straw into the soil.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "INOCULATION",
+      "type": "METHOD",
+      "description": "The process of adding specific microbial decomposers to wheat straw.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "PENICILLIUM DIGITATUM",
+      "type": "ORGANISM",
+      "description": "A microbial decomposer used to inoculate wheat straw.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "STAPHYLOTRICHUM COCCOSPORUM",
+      "type": "ORGANISM",
+      "description": "A microbial decomposer used to inoculate wheat straw.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "MICROORGANISMS",
+      "type": "ORGANISM",
+      "description": "General microbial agents used for the decomposition of wheat straw.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "C:P RATIO",
+      "type": "CONDITION",
+      "description": "The carbon to phosphorus ratio of the wheat straw.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "SOIL ORGANIC C AND N CONTENT",
+      "type": "CONDITION",
+      "description": "The levels of organic carbon and nitrogen present in the soil.",
+      "source_id": "paper_3875"
+    },
+    {
+      "name": "BIOLOGICAL DECOMPOSITION",
+      "type": "CONCEPT",
+      "description": "The process of breaking down organic matter using microorganisms.",
+      "source_id": "paper_3875"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INCORPORATION OF WHEAT STRAW",
+      "target": "YIELD",
+      "description": "Increases the yield of groundnut and subsequent wheat crops",
+      "weight": "8",
+      "source_id": "paper_3875"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "YIELD",
+      "description": "Increases the yield of groundnut when combined with straw incorporation",
+      "weight": "8",
+      "source_id": "paper_3875"
+    },
+    {
+      "source": "PENICILLIUM DIGITATUM",
+      "target": "YIELD",
+      "description": "Increased groundnut yield by 37% when C:P ratio was 65",
+      "weight": "9",
+      "source_id": "paper_3875"
+    },
+    {
+      "source": "C:P RATIO",
+      "target": "YIELD",
+      "description": "Narrower ratios generally gave higher groundnut yields while a 200 ratio gave highest wheat yield",
+      "weight": "8",
+      "source_id": "paper_3875"
+    },
+    {
+      "source": "INCORPORATION OF WHEAT STRAW",
+      "target": "N UPTAKE",
+      "description": "Increases nitrogen uptake in groundnut plants",
+      "weight": "8",
+      "source_id": "paper_3875"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "N UPTAKE",
+      "description": "Increases nitrogen uptake in groundnut plants",
+      "weight": "8",
+      "source_id": "paper_3875"
+    },
+    {
+      "source": "INCORPORATION OF WHEAT STRAW",
+      "target": "SOIL ORGANIC C AND N CONTENT",
+      "description": "Increases the organic carbon and nitrogen content of the soil",
+      "weight": "9",
+      "source_id": "paper_3875"
+    },
+    {
+      "source": "STAPHYLOTRICHUM COCCOSPORUM",
+      "target": "SOIL ORGANIC C AND N CONTENT",
+      "description": "Produced the highest increase in soil organic C and N at a 65 C:P ratio",
+      "weight": "9",
+      "source_id": "paper_3875"
+    },
+    {
+      "source": "BIOLOGICAL DECOMPOSITION",
+      "target": "INCORPORATION OF WHEAT STRAW",
+      "description": "The objective of incorporating straw and microorganisms is to facilitate biological decomposition",
+      "weight": "7",
+      "source_id": "paper_3875"
+    },
+    {
+      "source": "MICROORGANISMS",
+      "target": "BIOLOGICAL DECOMPOSITION",
+      "description": "Microorganisms are the agents that carry out biological decomposition",
+      "weight": "10",
+      "source_id": "paper_3875"
+    }
+  ]
+}

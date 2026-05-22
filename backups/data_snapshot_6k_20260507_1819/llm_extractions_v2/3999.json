@@ -1,0 +1,314 @@
+{
+  "entities": [
+    {
+      "name": "FLOODING",
+      "type": "CONDITION",
+      "description": "The state of soil being saturated with water",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "ELECTROCHEMICAL AND CHEMICAL PROPERTIES",
+      "type": "CONCEPT",
+      "description": "The chemical and electrical characteristics of the soil",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop produced in West African lowland soils",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "LOWLAND SOILS",
+      "type": "CONCEPT",
+      "description": "Soils from five rice producing countries in West Africa",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "GREENHOUSE POTS",
+      "type": "METHOD",
+      "description": "The experimental setup used to maintain flooded conditions",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "SOIL PH",
+      "type": "CONCEPT",
+      "description": "The measure of acidity or alkalinity of the soil",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "REDOX POTENTIAL",
+      "type": "CONCEPT",
+      "description": "The measure of the tendency of a chemical species to be reduced or oxidized, denoted as Eh",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "ANOXIC SOIL SOLUTIONS",
+      "type": "CONCEPT",
+      "description": "Soil solutions that are depleted of oxygen",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "MAJOR AND MICRONUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Essential elements required for plant growth",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "AMMONIUM",
+      "type": "CONCEPT",
+      "description": "A form of nitrogen released into the soil solution",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "A plant nutrient denoted as P",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONCEPT",
+      "description": "A plant nutrient denoted as K",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "CALCIUM",
+      "type": "CONCEPT",
+      "description": "A plant nutrient denoted as Ca",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "MAGNESIUM",
+      "type": "CONCEPT",
+      "description": "A plant nutrient denoted as Mg",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "IRON",
+      "type": "CONCEPT",
+      "description": "A plant nutrient/element denoted as Fe",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "MANGANESE",
+      "type": "CONCEPT",
+      "description": "A plant nutrient/element denoted as Mn",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "ZINC",
+      "type": "CONCEPT",
+      "description": "A plant nutrient/element denoted as Zn",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "FE TOXICITY",
+      "type": "CONDITION",
+      "description": "A condition where excessive iron levels are toxic to plants",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "SOIL SOLUTION EC",
+      "type": "CONCEPT",
+      "description": "The electrical conductivity of the soil solution",
+      "source_id": "paper_3999"
+    },
+    {
+      "name": "FE(II)",
+      "type": "CONCEPT",
+      "description": "The ferrous form of iron found in soil solutions",
+      "source_id": "paper_3999"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FLOODING",
+      "target": "ELECTROCHEMICAL AND CHEMICAL PROPERTIES",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "FLOODING",
+      "target": "LOWLAND SOILS",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "WEST AFRICA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "RICE",
+      "target": "WEST AFRICA",
+      "description": "produced in",
+      "weight": "8",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "RICE",
+      "description": "used for production of",
+      "weight": "9",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "GREENHOUSE POTS",
+      "target": "FLOODING",
+      "description": "used to maintain",
+      "weight": "8",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "FLOODING",
+      "target": "SOIL PH",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "FLOODING",
+      "target": "REDOX POTENTIAL",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "FLOODING",
+      "target": "ANOXIC SOIL SOLUTIONS",
+      "description": "creates",
+      "weight": "9",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "ANOXIC SOIL SOLUTIONS",
+      "target": "MAJOR AND MICRONUTRIENTS",
+      "description": "monitored for changes in",
+      "weight": "8",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "AMMONIUM",
+      "description": "releases",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "PHOSPHORUS",
+      "description": "releases",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "POTASSIUM",
+      "description": "releases",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "CALCIUM",
+      "description": "releases",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "MAGNESIUM",
+      "description": "releases",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "IRON",
+      "description": "releases",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "MANGANESE",
+      "description": "releases",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "LOWLAND SOILS",
+      "target": "ZINC",
+      "description": "releases",
+      "weight": "7",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "IRON",
+      "target": "FE TOXICITY",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "FE TOXICITY",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "REDOX POTENTIAL",
+      "target": "SOIL PH",
+      "description": "has a dynamic relationship with",
+      "weight": "8",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "REDOX POTENTIAL",
+      "target": "FE(II)",
+      "description": "has a dynamic relationship with",
+      "weight": "8",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "SOIL PH",
+      "target": "FE(II)",
+      "description": "has a dynamic relationship with",
+      "weight": "8",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "SOIL SOLUTION EC",
+      "target": "POTASSIUM",
+      "description": "closely related to concentration of",
+      "weight": "8",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "SOIL SOLUTION EC",
+      "target": "CALCIUM",
+      "description": "closely related to concentration of",
+      "weight": "8",
+      "source_id": "paper_3999"
+    },
+    {
+      "source": "SOIL SOLUTION EC",
+      "target": "MAGNESIUM",
+      "description": "closely related to concentration of",
+      "weight": "8",
+      "source_id": "paper_3999"
+    }
+  ]
+}

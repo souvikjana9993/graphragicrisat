@@ -1,0 +1,302 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The primary cereal crop studied for productivity in North-Eastern Nigeria",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "CSR01",
+      "type": "CROP",
+      "description": "A specific sorghum cultivar evaluated for optimal planting windows",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "SAMSORG-44",
+      "type": "CROP",
+      "description": "A specific sorghum cultivar evaluated for optimal planting windows",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "ICSV400",
+      "type": "CROP",
+      "description": "A specific sorghum cultivar evaluated for optimal planting windows",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "IMPROVED DEKO",
+      "type": "CROP",
+      "description": "A specific sorghum cultivar evaluated for optimal planting windows",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "SK5912",
+      "type": "CROP",
+      "description": "A specific sorghum cultivar evaluated for optimal planting windows",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The measure of agricultural productivity of the sorghum crop",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "MATURITY LENGTH",
+      "type": "TRAIT",
+      "description": "The duration from planting to physiological maturity of a cultivar",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The weight of grain harvested per unit area",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "APSIM CROP MODEL",
+      "type": "METHOD",
+      "description": "A simulation tool used to calibrate and validate sorghum growth and yield",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "CLIMATE-SMART MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Agricultural practices designed to increase productivity under climate change",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "IMPROVED AGRICULTURAL PRACTICES",
+      "type": "METHOD",
+      "description": "Enhanced farming techniques used to simulate crop performance",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "SOLE CROPPING SYSTEM",
+      "type": "METHOD",
+      "description": "A cropping system where only one crop is grown in a field",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The long-term shift in global or regional climate patterns affecting agriculture",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "LOW SOIL FERTILITY",
+      "type": "CONDITION",
+      "description": "A deficiency of essential nutrients in the soil constraining crop growth",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "EARLY TERMINAL DROUGHT",
+      "type": "CONDITION",
+      "description": "Water stress occurring at the end of the growing season",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "SANDY SOIL",
+      "type": "CONDITION",
+      "description": "A soil type with high sand content, often associated with low fertility",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "NORTH-EASTERN NIGERIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "SUDAN SAVANNA",
+      "type": "LOCATION",
+      "description": "An agro-ecological zone in North-Eastern Nigeria",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "NORTHERN GUINEA SAVANNA",
+      "type": "LOCATION",
+      "description": "An agro-ecological zone in North-Eastern Nigeria",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "SOUTHERN GUINEA SAVANNA",
+      "type": "LOCATION",
+      "description": "An agro-ecological zone in North-Eastern Nigeria",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "OPTIMAL SOWING WINDOW",
+      "type": "CONCEPT",
+      "description": "The ideal time period for planting to maximize crop yield",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "CONCEPT",
+      "description": "The specific date on which seeds are planted",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "CULTIVAR CHOICE",
+      "type": "CONCEPT",
+      "description": "The process of selecting specific crop varieties for a given environment",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "AGRO-ECOLOGICAL ZONES",
+      "type": "CONCEPT",
+      "description": "Regions defined by their unique combination of climate, soil, and landform",
+      "source_id": "paper_12059"
+    },
+    {
+      "name": "MEAN BIAS ERROR",
+      "type": "CONCEPT",
+      "description": "A statistical measure used to evaluate the performance of the APSIM model",
+      "source_id": "paper_12059"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOWING DATE",
+      "target": "CROP YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "CULTIVAR CHOICE",
+      "target": "CROP YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "LOW SOIL FERTILITY",
+      "target": "CROP YIELD",
+      "description": "constrains",
+      "weight": "9",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "EARLY TERMINAL DROUGHT",
+      "target": "CROP YIELD",
+      "description": "constrains",
+      "weight": "9",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "APSIM CROP MODEL",
+      "target": "SORGHUM",
+      "description": "simulates growth and yield of",
+      "weight": "10",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "APSIM CROP MODEL",
+      "target": "OPTIMAL SOWING WINDOW",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "CLIMATE-SMART MANAGEMENT PRACTICES",
+      "target": "CROP YIELD",
+      "description": "maximizes",
+      "weight": "7",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "SUDAN SAVANNA",
+      "target": "SORGHUM",
+      "description": "is a location for cultivation of",
+      "weight": "8",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "NORTHERN GUINEA SAVANNA",
+      "target": "SORGHUM",
+      "description": "is a location for cultivation of",
+      "weight": "8",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "SOUTHERN GUINEA SAVANNA",
+      "target": "SORGHUM",
+      "description": "is a location for cultivation of",
+      "weight": "8",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "CSR01",
+      "target": "SUDAN SAVANNA",
+      "description": "has optimal planting window in",
+      "weight": "7",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "SAMSORG-44",
+      "target": "SUDAN SAVANNA",
+      "description": "has optimal planting window in",
+      "weight": "7",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "ICSV400",
+      "target": "SUDAN SAVANNA",
+      "description": "has optimal planting window in",
+      "weight": "7",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "IMPROVED DEKO",
+      "target": "SUDAN SAVANNA",
+      "description": "has optimal planting window in",
+      "weight": "7",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "SK5912",
+      "target": "NORTHERN GUINEA SAVANNA",
+      "description": "is unsuitable for cultivation in",
+      "weight": "8",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "SANDY SOIL",
+      "target": "SOUTHERN GUINEA SAVANNA",
+      "description": "is a characteristic of",
+      "weight": "9",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "SANDY SOIL",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "LOW SOIL FERTILITY",
+      "target": "SOUTHERN GUINEA SAVANNA",
+      "description": "is a characteristic of",
+      "weight": "9",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "SORGHUM",
+      "description": "affects productivity of",
+      "weight": "7",
+      "source_id": "paper_12059"
+    },
+    {
+      "source": "MATURITY LENGTH",
+      "target": "OPTIMAL SOWING WINDOW",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_12059"
+    }
+  ]
+}

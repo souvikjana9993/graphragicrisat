@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The cereal crop being bred for productivity impacts in farmers' fields",
+      "source_id": "paper_4814"
+    },
+    {
+      "name": "SORGHUM BREEDING",
+      "type": "METHOD",
+      "description": "The process of developing improved sorghum varieties to create impacts in farmers' fields",
+      "source_id": "paper_4814"
+    },
+    {
+      "name": "IMPROVED SORGHUM CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Varieties of sorghum developed through breeding to enhance productivity and stability",
+      "source_id": "paper_4814"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area, which can be increased by improved cultivars",
+      "source_id": "paper_4814"
+    },
+    {
+      "name": "PER UNIT COST OF PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The expense incurred to produce a specific unit of the crop, which can be reduced by improved cultivars",
+      "source_id": "paper_4814"
+    },
+    {
+      "name": "STABILITY OF YIELD",
+      "type": "TRAIT",
+      "description": "The consistency of crop yield across different environments or years, which can be increased by improved cultivars",
+      "source_id": "paper_4814"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM BREEDING",
+      "target": "IMPROVED SORGHUM CULTIVARS",
+      "description": "creates",
+      "weight": "10",
+      "source_id": "paper_4814"
+    },
+    {
+      "source": "IMPROVED SORGHUM CULTIVARS",
+      "target": "YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_4814"
+    },
+    {
+      "source": "IMPROVED SORGHUM CULTIVARS",
+      "target": "PER UNIT COST OF PRODUCTION",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4814"
+    },
+    {
+      "source": "IMPROVED SORGHUM CULTIVARS",
+      "target": "STABILITY OF YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_4814"
+    },
+    {
+      "source": "SORGHUM BREEDING",
+      "target": "SORGHUM",
+      "description": "is applied to",
+      "weight": "10",
+      "source_id": "paper_4814"
+    }
+  ]
+}

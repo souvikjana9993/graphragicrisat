@@ -1,0 +1,180 @@
+{
+  "entities": [
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONCEPT",
+      "description": "The ability of soil to provide essential nutrients for plant growth.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "NUTRIENT RECOMMENDATIONS",
+      "type": "CONCEPT",
+      "description": "Guidelines for the application of nutrients based on soil tests.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "LAND USE PLANNING",
+      "type": "CONCEPT",
+      "description": "The process of regulating land use to achieve efficient resource management.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "GREEN REVOLUTION",
+      "type": "CONCEPT",
+      "description": "A period of agricultural transformation involving high-yielding varieties and improved technology.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "HIGH-YIELDING VARIETIES",
+      "type": "CONCEPT",
+      "description": "Crop varieties developed to produce higher yields.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "CROP PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of growing crops for food or other purposes.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "SOIL DEGRADATION",
+      "type": "CONDITION",
+      "description": "The decline in soil quality and productivity.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "CROP YIELDS",
+      "type": "TRAIT",
+      "description": "The amount of agricultural production harvested per unit area.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "FERTILIZER",
+      "type": "CONCEPT",
+      "description": "Chemical or natural substances added to soil to increase its fertility.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "PLANT NUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Essential chemical elements required by plants for growth.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "SOIL FERTILITY MAPS",
+      "type": "CONCEPT",
+      "description": "Spatial representations of soil nutrient levels across a geographical area.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "STRATIFIED MULTISTAGE STRATIFIED RANDOM SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling technique used to collect soil samples from different geographical locations.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "KRIGING",
+      "type": "METHOD",
+      "description": "A geostatistical interpolation method used for spatial prediction.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "AKAIKE'S INFORMATION CRITERION",
+      "type": "METHOD",
+      "description": "A method for model selection used to determine the appropriate kriging method.",
+      "source_id": "paper_158"
+    },
+    {
+      "name": "SOIL TEST VALUES",
+      "type": "TRAIT",
+      "description": "Measured concentrations of nutrients in soil samples.",
+      "source_id": "paper_158"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL FERTILITY",
+      "target": "NUTRIENT RECOMMENDATIONS",
+      "description": "informs the basis of",
+      "weight": "8",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "SOIL FERTILITY",
+      "target": "CROP YIELDS",
+      "description": "directly influences",
+      "weight": "9",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "GREEN REVOLUTION",
+      "target": "CROP PRODUCTION",
+      "description": "increased",
+      "weight": "9",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "GREEN REVOLUTION",
+      "target": "SOIL DEGRADATION",
+      "description": "contributed to the risk of",
+      "weight": "7",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "SOIL DEGRADATION",
+      "target": "SOIL FERTILITY",
+      "description": "leads to a decrease in",
+      "weight": "9",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "PLANT NUTRIENTS",
+      "description": "provides",
+      "weight": "10",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "PLANT NUTRIENTS",
+      "target": "SOIL FERTILITY",
+      "description": "determine",
+      "weight": "9",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "STRATIFIED MULTISTAGE STRATIFIED RANDOM SAMPLING",
+      "target": "SOIL FERTILITY MAPS",
+      "description": "used to prepare",
+      "weight": "8",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "KRIGING",
+      "target": "SOIL FERTILITY MAPS",
+      "description": "used to prepare",
+      "weight": "9",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "AKAIKE'S INFORMATION CRITERION",
+      "target": "KRIGING",
+      "description": "used to select the appropriate",
+      "weight": "8",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "SOIL TEST VALUES",
+      "target": "SOIL FERTILITY MAPS",
+      "description": "used to validate",
+      "weight": "8",
+      "source_id": "paper_158"
+    },
+    {
+      "source": "KRIGING",
+      "target": "SOIL TEST VALUES",
+      "description": "used to estimate",
+      "weight": "8",
+      "source_id": "paper_158"
+    }
+  ]
+}

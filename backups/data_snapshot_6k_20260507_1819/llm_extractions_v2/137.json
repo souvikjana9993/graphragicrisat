@@ -1,0 +1,267 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L.",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The overall productivity of the crop",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "RAINFED MEDITERRANEAN CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions in the Mediterranean region relying on rainfall",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "WINTER PLANTING",
+      "type": "METHOD",
+      "description": "The practice of planting crops during the winter season",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting chickpeas",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "ASCOCHYTA RABIEI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Ascochyta blight",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "SOUTHERN SPAIN",
+      "type": "LOCATION",
+      "description": "The geographical area where the field study was conducted",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "PLANTING DATE",
+      "type": "METHOD",
+      "description": "The specific timing of sowing seeds",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "FARDÓN",
+      "type": "CROP",
+      "description": "A chickpea cultivar resistant to Ascochyta blight",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "PEDROSILLANO",
+      "type": "CROP",
+      "description": "A local chickpea cultivar susceptible to Ascochyta blight",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "FUNGICIDE TREATMENTS",
+      "type": "METHOD",
+      "description": "The application of fungicides to control fungal diseases",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The weight of the harvested grain",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Precipitation occurring during the growing season",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "BIOMASS PRODUCTION",
+      "type": "TRAIT",
+      "description": "The total organic matter produced by the plant",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "LEAF AREA DURATION",
+      "type": "TRAIT",
+      "description": "The index (LAD) measuring the duration of leaf area",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "DRY MATTER PRODUCTION",
+      "type": "TRAIT",
+      "description": "The production of organic matter excluding water",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "SPRING WEATHER CONDITIONS",
+      "type": "CONDITION",
+      "description": "Weather patterns during the spring season",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "PLANT DENSITY",
+      "type": "TRAIT",
+      "description": "The number of plants per unit area",
+      "source_id": "paper_137"
+    },
+    {
+      "name": "PODS PER PLANT",
+      "type": "TRAIT",
+      "description": "The number of pods produced by an individual plant",
+      "source_id": "paper_137"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "RAINFED MEDITERRANEAN CONDITIONS",
+      "target": "YIELD",
+      "description": "affects stability of",
+      "weight": "8",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "WINTER PLANTING",
+      "target": "YIELD",
+      "description": "improves stability of",
+      "weight": "9",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "WINTER PLANTING",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "ASCOCHYTA BLIGHT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "SOUTHERN SPAIN",
+      "target": "WINTER PLANTING",
+      "description": "location of study",
+      "weight": "7",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "FARDÓN",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "PEDROSILLANO",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "FARDÓN",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "is resistant to",
+      "weight": "10",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "PEDROSILLANO",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "PEDROSILLANO",
+      "target": "FUNGICIDE TREATMENTS",
+      "description": "received",
+      "weight": "8",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "BIOMASS PRODUCTION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "LEAF AREA DURATION",
+      "target": "DRY MATTER PRODUCTION",
+      "description": "positively correlated with",
+      "weight": "9",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "LEAF AREA DURATION",
+      "target": "GRAIN YIELD",
+      "description": "positively correlated with",
+      "weight": "9",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "SPRING WEATHER CONDITIONS",
+      "target": "GRAIN YIELD",
+      "description": "affects via interaction with planting date",
+      "weight": "7",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "PLANT DENSITY",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "PLANT DENSITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_137"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "PODS PER PLANT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_137"
+    }
+  ]
+}

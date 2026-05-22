@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop studied for its susceptibility to Rhizoctonia bataticola.",
+      "source_id": "paper_2188"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen, also known as Macrophomina phaseolina, that causes disease in chickpea.",
+      "source_id": "paper_2188"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The degree to which chickpea cultivars are affected by the pathogen Rhizoctonia bataticola.",
+      "source_id": "paper_2188"
+    },
+    {
+      "name": "AGE AT INOCULATION",
+      "type": "CONDITION",
+      "description": "The age of the plant at the time of pathogen exposure, which influences the level of susceptibility.",
+      "source_id": "paper_2188"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating plant cultivars for resistance or susceptibility to a disease.",
+      "source_id": "paper_2188"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "RHIZOCTONIA BATATICOLA",
+      "description": "is susceptible to",
+      "weight": "9",
+      "source_id": "paper_2188"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SUSCEPTIBILITY",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_2188"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "SUSCEPTIBILITY",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_2188"
+    },
+    {
+      "source": "AGE AT INOCULATION",
+      "target": "SUSCEPTIBILITY",
+      "description": "increases",
+      "weight": "10",
+      "source_id": "paper_2188"
+    },
+    {
+      "source": "SCREENING",
+      "target": "SUSCEPTIBILITY",
+      "description": "is used to evaluate",
+      "weight": "9",
+      "source_id": "paper_2188"
+    },
+    {
+      "source": "SCREENING",
+      "target": "CHICKPEA",
+      "description": "is performed on",
+      "weight": "8",
+      "source_id": "paper_2188"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop cultivated in subtropical India and the subject of the yield and GWP study",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "SUBTROPICAL INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where rice cultivation and GHG emission analysis were conducted",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "GLOBAL WARMING POTENTIAL",
+      "type": "CONCEPT",
+      "description": "A measure of how much heat a greenhouse gas traps in the atmosphere, calculated per kg of rice grain",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "GREENHOUSE GAS EMISSIONS",
+      "type": "CONCEPT",
+      "description": "Emissions of gases that contribute to the greenhouse effect, specifically CO2 and CH4 in this study",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "CO2",
+      "type": "CONCEPT",
+      "description": "Carbon dioxide, a greenhouse gas analyzed using GOSAT satellite data",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "CH4",
+      "type": "CONCEPT",
+      "description": "Methane, a greenhouse gas analyzed using GOSAT satellite data",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "NUTRIENT MANAGEMENT",
+      "type": "METHOD",
+      "description": "The practice of applying fertilizers to crops to optimize growth and reduce environmental impact",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "GOSAT SATELLITE DATA",
+      "type": "METHOD",
+      "description": "Satellite-based data used to analyze decadal variations in CO2 and CH4",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Long-term trials used to validate the CERES-Rice and DNDC models",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "CERES-RICE",
+      "type": "METHOD",
+      "description": "Crop Environment Resource Synthesis model used to predict rice yield",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "DNDC",
+      "type": "METHOD",
+      "description": "De-nitrification and Decomposition model used to predict global warming potential",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "SIMULATION TECHNIQUE",
+      "type": "METHOD",
+      "description": "A computational approach used to predict rice yield and GWP under different treatments",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "RICE YIELD",
+      "type": "TRAIT",
+      "description": "The amount of rice grain produced per unit area",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "CHEMICAL FERTILIZER",
+      "type": "METHOD",
+      "description": "A nutrient management treatment using synthetic fertilizers",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "ORGANIC FERTILIZER",
+      "type": "METHOD",
+      "description": "A nutrient management treatment using organic matter",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "VERMICOMPOST",
+      "type": "CONCEPT",
+      "description": "Organic matter produced by earthworms used as organic fertilizer",
+      "source_id": "paper_12001"
+    },
+    {
+      "name": "INTEGRATED NUTRIENT MANAGEMENT",
+      "type": "METHOD",
+      "description": "A nutrient management treatment combining organic and chemical fertilizers",
+      "source_id": "paper_12001"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "SUBTROPICAL INDIA",
+      "description": "cultivated in",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "NUTRIENT MANAGEMENT",
+      "target": "GLOBAL WARMING POTENTIAL",
+      "description": "may reduce",
+      "weight": "9",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "NUTRIENT MANAGEMENT",
+      "target": "RICE",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "GOSAT SATELLITE DATA",
+      "target": "CO2",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "GOSAT SATELLITE DATA",
+      "target": "CH4",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "CERES-RICE",
+      "target": "RICE YIELD",
+      "description": "predicts",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "DNDC",
+      "target": "GLOBAL WARMING POTENTIAL",
+      "description": "predicts",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "SIMULATION TECHNIQUE",
+      "target": "CERES-RICE",
+      "description": "employs",
+      "weight": "7",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "SIMULATION TECHNIQUE",
+      "target": "DNDC",
+      "description": "employs",
+      "weight": "7",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "CHEMICAL FERTILIZER",
+      "target": "NUTRIENT MANAGEMENT",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "ORGANIC FERTILIZER",
+      "target": "NUTRIENT MANAGEMENT",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "INTEGRATED NUTRIENT MANAGEMENT",
+      "target": "NUTRIENT MANAGEMENT",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "CHEMICAL FERTILIZER",
+      "target": "GLOBAL WARMING POTENTIAL",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "VERMICOMPOST",
+      "target": "ORGANIC FERTILIZER",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "GREENHOUSE GAS EMISSIONS",
+      "target": "GLOBAL WARMING POTENTIAL",
+      "description": "contributes to",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "CO2",
+      "target": "GREENHOUSE GAS EMISSIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12001"
+    },
+    {
+      "source": "CH4",
+      "target": "GREENHOUSE GAS EMISSIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12001"
+    }
+  ]
+}

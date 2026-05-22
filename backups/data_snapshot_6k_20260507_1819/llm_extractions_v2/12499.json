@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "GRAPEVINE",
+      "type": "CROP",
+      "description": "A member of the family Vitaceae, native to North America, grown as a table grape.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "PHAKOPSORA EUVITIS",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes leaf rust disease on grapevine.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "LEAF RUST DISEASE",
+      "type": "CONDITION",
+      "description": "A disease characterized by yellow pustules and chlorotic spots on grapevine leaves.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the leaf rust disease on grapevine was reported.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "NORTH AMERICA",
+      "type": "LOCATION",
+      "description": "The native region of the grapevine (Vitis labrusca).",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "BANGALORE BLUE",
+      "type": "CROP",
+      "description": "A specific cultivar of grapevine affected by leaf rust disease.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "NANDI VILLAGE",
+      "type": "LOCATION",
+      "description": "The specific location in Karnataka, India, where the disease was observed.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "CHIKKABALLAPUR DISTRICT",
+      "type": "LOCATION",
+      "description": "The district in Karnataka, India, where Nandi Village is located.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "KARNATAKA",
+      "type": "LOCATION",
+      "description": "The state in India where the disease was observed.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "ANGELOTTI SCALE",
+      "type": "METHOD",
+      "description": "A scale developed by Angelotti et al. (2008) used to determine the severity of rust disease.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "YELLOW PUSTULES",
+      "type": "TRAIT",
+      "description": "Small, raised yellow pustules on the abaxial surface of leaves, a symptom of leaf rust disease.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "CHLOROTIC SPOTS",
+      "type": "TRAIT",
+      "description": "Spots on the adaxial surface of leaves, a symptom of leaf rust disease.",
+      "source_id": "paper_12499"
+    },
+    {
+      "name": "DEFOLIATION",
+      "type": "TRAIT",
+      "description": "The loss of leaves occurring in severe conditions of leaf rust disease.",
+      "source_id": "paper_12499"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHAKOPSORA EUVITIS",
+      "target": "LEAF RUST DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "LEAF RUST DISEASE",
+      "target": "GRAPEVINE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "LEAF RUST DISEASE",
+      "target": "BANGALORE BLUE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "GRAPEVINE",
+      "target": "NORTH AMERICA",
+      "description": "native to",
+      "weight": "8",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "LEAF RUST DISEASE",
+      "target": "NANDI VILLAGE",
+      "description": "observed in",
+      "weight": "9",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "NANDI VILLAGE",
+      "target": "CHIKKABALLAPUR DISTRICT",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "CHIKKABALLAPUR DISTRICT",
+      "target": "KARNATAKA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "KARNATAKA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "ANGELOTTI SCALE",
+      "target": "LEAF RUST DISEASE",
+      "description": "measures severity of",
+      "weight": "9",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "LEAF RUST DISEASE",
+      "target": "YELLOW PUSTULES",
+      "description": "manifests as",
+      "weight": "9",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "LEAF RUST DISEASE",
+      "target": "CHLOROTIC SPOTS",
+      "description": "manifests as",
+      "weight": "9",
+      "source_id": "paper_12499"
+    },
+    {
+      "source": "LEAF RUST DISEASE",
+      "target": "DEFOLIATION",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_12499"
+    }
+  ]
+}

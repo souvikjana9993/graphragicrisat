@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The primary crop being studied for susceptibility to the shoot fly.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "ATHERIGONA SOCCATA",
+      "type": "ORGANISM",
+      "description": "The sorghum shoot fly, a pest that affects sorghum seedlings.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "SEEDLING AGE",
+      "type": "CONDITION",
+      "description": "The age of the sorghum plant, which influences susceptibility to the shoot fly.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "LEAF SURFACE WETNESS",
+      "type": "TRAIT",
+      "description": "Moisture accumulation on the central shoot leaf, influencing larval movement.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "CENTRAL LEAF",
+      "type": "CONCEPT",
+      "description": "The specific leaf that serves as the path for newly hatched larvae.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "LARVA",
+      "type": "ORGANISM",
+      "description": "The larval stage of the sorghum shoot fly.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "CSH 1",
+      "type": "CROP",
+      "description": "A susceptible sorghum genotype characterized by high leaf surface wetness.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "IS 2146",
+      "type": "CROP",
+      "description": "A resistant sorghum genotype characterized by lower leaf surface wetness.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "DEADHEARTS",
+      "type": "TRAIT",
+      "description": "The damage symptom produced by larvae in sorghum seedlings.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "GLOSSY LEAF TRAIT",
+      "type": "TRAIT",
+      "description": "A morphological characteristic used as a parameter for resistance.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "TRICHOME DENSITY",
+      "type": "TRAIT",
+      "description": "A morphological characteristic used as a parameter for resistance.",
+      "source_id": "paper_4965"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum genotypes to withstand attack by the shoot fly.",
+      "source_id": "paper_4965"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ATHERIGONA SOCCATA",
+      "target": "SORGHUM",
+      "description": "attacks and affects susceptibility of",
+      "weight": "10",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "SEEDLING AGE",
+      "target": "SORGHUM",
+      "description": "affects susceptibility to shoot fly",
+      "weight": "8",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "LEAF SURFACE WETNESS",
+      "target": "SORGHUM",
+      "description": "is a trait of the central shoot leaf",
+      "weight": "7",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "LEAF SURFACE WETNESS",
+      "target": "LARVA",
+      "description": "influences the speed and behavior of movement",
+      "weight": "9",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "LARVA",
+      "target": "CENTRAL LEAF",
+      "description": "moves downwards from oviposition site along",
+      "weight": "8",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "LARVA",
+      "target": "DEADHEARTS",
+      "description": "produces as a result of movement to growing point",
+      "weight": "10",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "CSH 1",
+      "target": "SORGHUM",
+      "description": "is a susceptible genotype of",
+      "weight": "10",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "IS 2146",
+      "target": "SORGHUM",
+      "description": "is a resistant genotype of",
+      "weight": "10",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "CSH 1",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "exhibits higher levels of",
+      "weight": "8",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "IS 2146",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "exhibits lower levels of",
+      "weight": "8",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "CSH 1",
+      "target": "DEADHEARTS",
+      "description": "produces deadhearts much earlier",
+      "weight": "9",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "IS 2146",
+      "target": "DEADHEARTS",
+      "description": "produces deadhearts later or less frequently",
+      "weight": "9",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "LEAF SURFACE WETNESS",
+      "target": "RESISTANCE",
+      "description": "is a more reliable parameter for",
+      "weight": "9",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "GLOSSY LEAF TRAIT",
+      "target": "RESISTANCE",
+      "description": "is a parameter for",
+      "weight": "6",
+      "source_id": "paper_4965"
+    },
+    {
+      "source": "TRICHOME DENSITY",
+      "target": "RESISTANCE",
+      "description": "is a parameter for",
+      "weight": "6",
+      "source_id": "paper_4965"
+    }
+  ]
+}

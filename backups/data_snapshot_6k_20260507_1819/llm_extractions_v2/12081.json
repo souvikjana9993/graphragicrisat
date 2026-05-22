@@ -1,0 +1,231 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for race level diversity and genomic resources",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "RACE POPULATIONS",
+      "type": "CONCEPT",
+      "description": "Groups of sorghum that exhibit significant genetic and morphological variation due to evolutionary divergence",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "K-MER-BASED SEQUENCE COMPARISON",
+      "type": "METHOD",
+      "description": "A method used to identify conserved k-mers and race-specific genetic signatures across sorghum accessions",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "CONSERVED K-MERS",
+      "type": "GENE_MARKER",
+      "description": "Genetic sequences found to be conserved across all 272 sorghum accessions",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "RACE-SPECIFIC GENETIC SIGNATURES",
+      "type": "GENE_MARKER",
+      "description": "Genetic markers used to identify gene variability in sorghum races",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "PAVS",
+      "type": "GENE_MARKER",
+      "description": "Presence-Absence Variations identified in 10,321 genes",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "RACE STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The genetic organization and distribution of sorghum races",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The genetic and morphological variation within the sorghum species",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "DOMESTICATION",
+      "type": "CONCEPT",
+      "description": "The process of adapting sorghum for agricultural use, linked to specific selection signatures",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "DEEP LEARNING-BASED VARIANT CALLING",
+      "type": "METHOD",
+      "description": "A computational approach used to analyze genotypic data for identifying variants",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "1.7 million high-quality genome-wide single nucleotide polymorphisms identified in sorghum",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "SELECTIVE SIGNATURE REGIONS",
+      "type": "GENE_MARKER",
+      "description": "Genomic regions showing evidence of positive or negative selection",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "GENOME-WIDE SCAN",
+      "type": "METHOD",
+      "description": "A method used to identify selective signature regions across the genome",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "IHS",
+      "type": "METHOD",
+      "description": "Integrated Haplotype Score, a statistical method used for genome-wide scans of selection",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "XP-EHH",
+      "type": "METHOD",
+      "description": "Cross-population Extended Haplotype Homozygosity, a statistical method used for genome-wide scans of selection",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "SELECTIVE SWEEP REGIONS",
+      "type": "GENE_MARKER",
+      "description": "179 regions distributed over 10 chromosomes associated with selection signatures",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "QTLS",
+      "type": "GENE_MARKER",
+      "description": "Quantitative Trait Loci that co-localize with selective sweep regions",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "An important agronomic trait related to the domestication of sorghum",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "An important agronomic trait related to the domestication of sorghum",
+      "source_id": "paper_12081"
+    },
+    {
+      "name": "PLANT BREEDING",
+      "type": "METHOD",
+      "description": "Agricultural programs that can be assisted by k-mer signatures, traits, and SNP markers",
+      "source_id": "paper_12081"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "K-MER-BASED SEQUENCE COMPARISON",
+      "target": "SORGHUM",
+      "description": "analyzes",
+      "weight": "9",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "K-MER-BASED SEQUENCE COMPARISON",
+      "target": "CONSERVED K-MERS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "K-MER-BASED SEQUENCE COMPARISON",
+      "target": "RACE-SPECIFIC GENETIC SIGNATURES",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "RACE-SPECIFIC GENETIC SIGNATURES",
+      "target": "PAVS",
+      "description": "identifies variability in",
+      "weight": "9",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "DEEP LEARNING-BASED VARIANT CALLING",
+      "target": "SNPS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "GENOME-WIDE SCAN",
+      "target": "SELECTIVE SIGNATURE REGIONS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "IHS",
+      "target": "GENOME-WIDE SCAN",
+      "description": "is a statistical method for",
+      "weight": "9",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "XP-EHH",
+      "target": "GENOME-WIDE SCAN",
+      "description": "is a statistical method for",
+      "weight": "9",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "SELECTIVE SIGNATURE REGIONS",
+      "target": "SELECTIVE SWEEP REGIONS",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "SELECTIVE SWEEP REGIONS",
+      "target": "QTLS",
+      "description": "co-localize with",
+      "weight": "8",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "QTLS",
+      "target": "BIOMASS",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "QTLS",
+      "target": "PLANT HEIGHT",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "SELECTIVE SIGNATURE REGIONS",
+      "target": "DOMESTICATION",
+      "description": "related to",
+      "weight": "8",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "RACE-SPECIFIC GENETIC SIGNATURES",
+      "target": "PLANT BREEDING",
+      "description": "assists",
+      "weight": "7",
+      "source_id": "paper_12081"
+    },
+    {
+      "source": "SNPS",
+      "target": "PLANT BREEDING",
+      "description": "assists",
+      "weight": "7",
+      "source_id": "paper_12081"
+    }
+  ]
+}

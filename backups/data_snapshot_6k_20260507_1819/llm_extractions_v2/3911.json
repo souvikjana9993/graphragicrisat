@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop grown in poor fertility conditions",
+      "source_id": "paper_3911"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop grown in poor fertility conditions",
+      "source_id": "paper_3911"
+    },
+    {
+      "name": "POOR FERTILITY CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environments characterized by low nutrient availability",
+      "source_id": "paper_3911"
+    },
+    {
+      "name": "N BALANCE",
+      "type": "CONCEPT",
+      "description": "The difference between nitrogen input and output in crop production",
+      "source_id": "paper_3911"
+    },
+    {
+      "name": "SOIL NITRATE",
+      "type": "CONCEPT",
+      "description": "Nitrogen in the form of nitrate present in the soil",
+      "source_id": "paper_3911"
+    },
+    {
+      "name": "BIOLOGICAL N 2-FIXATION",
+      "type": "CONCEPT",
+      "description": "The process of converting atmospheric nitrogen into ammonia by microorganisms",
+      "source_id": "paper_3911"
+    },
+    {
+      "name": "NITROGEN-BALANCE FIELD EXPERIMENT",
+      "type": "METHOD",
+      "description": "A long-term study to examine nitrogen uptake and fixation",
+      "source_id": "paper_3911"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research center where the field experiment is conducted",
+      "source_id": "paper_3911"
+    },
+    {
+      "name": "N FERTILIZER",
+      "type": "CONDITION",
+      "description": "Nitrogen-based fertilizer added to soil",
+      "source_id": "paper_3911"
+    },
+    {
+      "name": "LOW FERTILITY SOIL",
+      "type": "CONDITION",
+      "description": "Soil with low nutrient content, specifically mentioned as 0.03% in the top 30 cm",
+      "source_id": "paper_3911"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "POOR FERTILITY CONDITIONS",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_3911"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "POOR FERTILITY CONDITIONS",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_3911"
+    },
+    {
+      "source": "N BALANCE",
+      "target": "SORGHUM",
+      "description": "estimated for",
+      "weight": "7",
+      "source_id": "paper_3911"
+    },
+    {
+      "source": "N BALANCE",
+      "target": "PEARL MILLET",
+      "description": "estimated for",
+      "weight": "7",
+      "source_id": "paper_3911"
+    },
+    {
+      "source": "N BALANCE",
+      "target": "SOIL NITRATE",
+      "description": "indicates uptake of",
+      "weight": "6",
+      "source_id": "paper_3911"
+    },
+    {
+      "source": "N BALANCE",
+      "target": "BIOLOGICAL N 2-FIXATION",
+      "description": "indicates input from",
+      "weight": "6",
+      "source_id": "paper_3911"
+    },
+    {
+      "source": "NITROGEN-BALANCE FIELD EXPERIMENT",
+      "target": "ICRISAT",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_3911"
+    },
+    {
+      "source": "NITROGEN-BALANCE FIELD EXPERIMENT",
+      "target": "N BALANCE",
+      "description": "examines",
+      "weight": "9",
+      "source_id": "paper_3911"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "LOW FERTILITY SOIL",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_3911"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "N FERTILIZER",
+      "description": "grown with no addition of",
+      "weight": "7",
+      "source_id": "paper_3911"
+    }
+  ]
+}

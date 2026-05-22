@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "SOIL COMPACTION",
+      "type": "CONDITION",
+      "description": "The process of compressing soil, which affects surface cracking patterns.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "SHADING",
+      "type": "CONDITION",
+      "description": "The process of blocking sunlight from the soil surface, affecting cracking.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "SURFACE CRACKING",
+      "type": "CONCEPT",
+      "description": "The formation of cracks on the surface of the soil.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONCEPT",
+      "description": "A type of clay-rich soil that shrinks and swells.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "ICRISAT CENTER",
+      "type": "LOCATION",
+      "description": "The research facility where the study was conducted.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "TYPE 1 CRACKING",
+      "type": "CONCEPT",
+      "description": "Wide and deep cracks associated with larger intercrack structural units.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "TYPE 2 CRACKING",
+      "type": "CONCEPT",
+      "description": "Narrow and shallow cracks associated with smaller intercrack structural units.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "INTERCRACK STRUCTURAL UNITS",
+      "type": "CONCEPT",
+      "description": "The structural units of soil located between cracks.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "AREAL SHRINKAGE",
+      "type": "TRAIT",
+      "description": "The reduction in the surface area of the soil during drying.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "EQUIVALENT DIAMETER OF ISUS",
+      "type": "TRAIT",
+      "description": "A measurement of the size of the intercrack structural units.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "DRYING",
+      "type": "CONDITION",
+      "description": "The process of moisture loss from the soil leading to shrinkage.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "QUALITATIVE MODEL OF CRACK INITIATION",
+      "type": "METHOD",
+      "description": "A proposed model explaining the effects of compaction and shading on crack initiation.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "SOIL MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The practice of managing soil properties for agricultural productivity.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "INFILTRATION",
+      "type": "TRAIT",
+      "description": "The process of water entering the soil surface.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "INTERNAL DRAINAGE",
+      "type": "TRAIT",
+      "description": "The movement of water within the soil profile.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "WATER STORAGE",
+      "type": "TRAIT",
+      "description": "The capacity of subsurface soil layers to hold water.",
+      "source_id": "paper_3751"
+    },
+    {
+      "name": "SEEDLING ESTABLISHMENT",
+      "type": "TRAIT",
+      "description": "The successful germination and growth of a seedling in the soil.",
+      "source_id": "paper_3751"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL COMPACTION",
+      "target": "SURFACE CRACKING",
+      "description": "affects the pattern of",
+      "weight": "9",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "SHADING",
+      "target": "SURFACE CRACKING",
+      "description": "affects the pattern of",
+      "weight": "9",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "SURFACE CRACKING",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "ICRISAT CENTER",
+      "target": "VERTISOL",
+      "description": "location of study on",
+      "weight": "7",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "SOIL COMPACTION",
+      "target": "TYPE 1 CRACKING",
+      "description": "results in",
+      "weight": "10",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "SHADING",
+      "target": "TYPE 1 CRACKING",
+      "description": "results in",
+      "weight": "10",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "TYPE 1 CRACKING",
+      "target": "INTERCRACK STRUCTURAL UNITS",
+      "description": "associated with bigger",
+      "weight": "9",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "TYPE 2 CRACKING",
+      "target": "INTERCRACK STRUCTURAL UNITS",
+      "description": "associated with smaller",
+      "weight": "9",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "SOIL COMPACTION",
+      "target": "EQUIVALENT DIAMETER OF ISUS",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "SHADING",
+      "target": "EQUIVALENT DIAMETER OF ISUS",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "DRYING",
+      "target": "SURFACE CRACKING",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "QUALITATIVE MODEL OF CRACK INITIATION",
+      "target": "SURFACE CRACKING",
+      "description": "explains",
+      "weight": "8",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "TYPE 1 CRACKING",
+      "target": "INFILTRATION",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "TYPE 1 CRACKING",
+      "target": "INTERNAL DRAINAGE",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "TYPE 1 CRACKING",
+      "target": "WATER STORAGE",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "TYPE 2 CRACKING",
+      "target": "SEEDLING ESTABLISHMENT",
+      "description": "is preferred for",
+      "weight": "9",
+      "source_id": "paper_3751"
+    },
+    {
+      "source": "SURFACE CRACKING",
+      "target": "SOIL MANAGEMENT",
+      "description": "has applications in",
+      "weight": "7",
+      "source_id": "paper_3751"
+    }
+  ]
+}

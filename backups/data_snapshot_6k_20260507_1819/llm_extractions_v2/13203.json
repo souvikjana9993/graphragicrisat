@@ -1,0 +1,247 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop affected by stem rot disease and treated with biochar",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "STEM ROT DISEASE",
+      "type": "CONDITION",
+      "description": "A soilborne disease caused by Sclerotium rolfsii affecting peanut plants",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "The soilborne fungal pathogen that causes stem rot disease",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "BIOCHAR",
+      "type": "METHOD",
+      "description": "A sustainable soil amendment produced via biomass pyrolysis used to manage stem rot and improve soil health",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "BIOMASS PYROLYSIS",
+      "type": "METHOD",
+      "description": "The process of heating biomass under oxygen-limited conditions to produce biochar",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "OXYGEN-LIMITED CONDITIONS",
+      "type": "CONDITION",
+      "description": "The specific environmental state required for the biomass pyrolysis process",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "TRAIT",
+      "description": "The capacity of soil to provide essential nutrients for plant growth",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "SCLEROTIA FORMATION",
+      "type": "TRAIT",
+      "description": "The production of resting structures by the pathogen Sclerotium rolfsii",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "ICGV 171002",
+      "type": "GENE_MARKER",
+      "description": "A specific peanut genotype evaluated for its response to biochar and stem rot",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "ICGV 181035",
+      "type": "GENE_MARKER",
+      "description": "A specific peanut genotype evaluated for its response to biochar and stem rot",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "An essential soil nutrient increased by biochar application",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "An essential soil nutrient increased by biochar application",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONCEPT",
+      "description": "An essential soil nutrient increased by biochar application",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "SOIL ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "The organic component of soil enhanced by biochar",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "ELECTRICAL CONDUCTIVITY",
+      "type": "CONCEPT",
+      "description": "A measure of soil salinity and nutrient concentration improved by biochar",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "PH",
+      "type": "CONCEPT",
+      "description": "The measure of acidity or alkalinity of the soil, influenced by biochar",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "SOIL STRUCTURE",
+      "type": "TRAIT",
+      "description": "The arrangement of soil particles, enhanced by biochar application",
+      "source_id": "paper_13203"
+    },
+    {
+      "name": "WATER RETENTION",
+      "type": "TRAIT",
+      "description": "The ability of soil to hold water, improved by biochar",
+      "source_id": "paper_13203"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOCHAR",
+      "target": "STEM ROT DISEASE",
+      "description": "manages and suppresses",
+      "weight": "8",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "STEM ROT DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "STEM ROT DISEASE",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOMASS PYROLYSIS",
+      "target": "BIOCHAR",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "OXYGEN-LIMITED CONDITIONS",
+      "target": "BIOMASS PYROLYSIS",
+      "description": "is required for",
+      "weight": "9",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SCLEROTIA FORMATION",
+      "description": "suppresses",
+      "weight": "7",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SOIL FERTILITY",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SOIL STRUCTURE",
+      "description": "enhances",
+      "weight": "7",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "WATER RETENTION",
+      "description": "improves",
+      "weight": "7",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "NITROGEN",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "PHOSPHORUS",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "POTASSIUM",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SOIL ORGANIC MATTER",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "ELECTRICAL CONDUCTIVITY",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "PH",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "ICGV 171002",
+      "target": "BIOCHAR",
+      "description": "demonstrates superior disease suppression when treated with",
+      "weight": "8",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "ICGV 181035",
+      "target": "BIOCHAR",
+      "description": "demonstrates superior disease suppression when treated with",
+      "weight": "8",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "ICGV 171002",
+      "target": "STEM ROT DISEASE",
+      "description": "is susceptible to",
+      "weight": "9",
+      "source_id": "paper_13203"
+    },
+    {
+      "source": "ICGV 181035",
+      "target": "STEM ROT DISEASE",
+      "description": "is susceptible to",
+      "weight": "9",
+      "source_id": "paper_13203"
+    }
+  ]
+}

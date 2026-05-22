@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "COFFEE",
+      "type": "CROP",
+      "description": "The primary crop species being studied for genome analysis and improvement",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "GENIC MICROSATELLITES",
+      "type": "GENE_MARKER",
+      "description": "Microsatellite markers derived from expressed sequence tags used for genome analysis",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "EST-SSRS",
+      "type": "GENE_MARKER",
+      "description": "Simple sequence repeats derived from expressed sequence tags",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "EXPRESSED SEQUENCE TAGS",
+      "type": "CONCEPT",
+      "description": "Short sub-sequences of cDNA used to identify transcribed genes",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "MISA",
+      "type": "METHOD",
+      "description": "A search module used for the identification of SSRs in sequence data",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "STACKPACK CLUSTERING",
+      "type": "METHOD",
+      "description": "A clustering method used to identify non-redundant ESTs or consensus sequences",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "DI-TRI NUCLEOTIDE REPEATS",
+      "type": "CONCEPT",
+      "description": "Types of repeat motifs consisting of two or three nucleotides",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "AG AND AAG MOTIFS",
+      "type": "CONCEPT",
+      "description": "The most abundant repeat motifs found in the coffee transcriptome",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "PRIMER PAIRS",
+      "type": "METHOD",
+      "description": "Oligonucleotide sequences designed to amplify specific SSR markers",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "POLYMORPHISM INFORMATION CONTENT",
+      "type": "CONCEPT",
+      "description": "A measure used to quantify the informativeness of a genetic marker",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "C. ARABICA",
+      "type": "CROP",
+      "description": "A species of cultivated coffee used for marker validation",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "C. CANEPHORA",
+      "type": "CROP",
+      "description": "A species of coffee used for marker validation",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "COFFEA",
+      "type": "ORGANISM",
+      "description": "The genus containing coffee species",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "PSILANTHUS",
+      "type": "ORGANISM",
+      "description": "A genus related to Coffea used to test marker transferability",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "GENOME ANALYSES",
+      "type": "METHOD",
+      "description": "The process of analyzing the genetic makeup of an organism",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "GENETIC STUDIES",
+      "type": "METHOD",
+      "description": "Research focused on the genes and heredity of coffee and related taxa",
+      "source_id": "paper_3015"
+    },
+    {
+      "name": "COFFEE IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The goal of enhancing coffee traits through genetic research",
+      "source_id": "paper_3015"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENIC MICROSATELLITES",
+      "target": "COFFEE",
+      "description": "used for genome analyses of",
+      "weight": "10",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "EST-SSRS",
+      "target": "EXPRESSED SEQUENCE TAGS",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "MISA",
+      "target": "GENIC MICROSATELLITES",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "STACKPACK CLUSTERING",
+      "target": "GENIC MICROSATELLITES",
+      "description": "used to identify non-redundant sequences of",
+      "weight": "9",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "GENIC MICROSATELLITES",
+      "target": "DI-TRI NUCLEOTIDE REPEATS",
+      "description": "comprised of",
+      "weight": "8",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "DI-TRI NUCLEOTIDE REPEATS",
+      "target": "AG AND AAG MOTIFS",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "PRIMER PAIRS",
+      "target": "GENIC MICROSATELLITES",
+      "description": "designed from",
+      "weight": "9",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "POLYMORPHISM INFORMATION CONTENT",
+      "target": "GENIC MICROSATELLITES",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "GENIC MICROSATELLITES",
+      "target": "C. ARABICA",
+      "description": "tested across genotypes of",
+      "weight": "9",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "GENIC MICROSATELLITES",
+      "target": "C. CANEPHORA",
+      "description": "tested across genotypes of",
+      "weight": "9",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "GENIC MICROSATELLITES",
+      "target": "COFFEA",
+      "description": "showed cross-species amplification across",
+      "weight": "9",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "GENIC MICROSATELLITES",
+      "target": "PSILANTHUS",
+      "description": "showed cross-species amplification across",
+      "weight": "9",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "GENIC MICROSATELLITES",
+      "target": "GENOME ANALYSES",
+      "description": "utilized for",
+      "weight": "10",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "GENIC MICROSATELLITES",
+      "target": "GENETIC STUDIES",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_3015"
+    },
+    {
+      "source": "GENETIC STUDIES",
+      "target": "COFFEE IMPROVEMENT",
+      "description": "contribute to",
+      "weight": "9",
+      "source_id": "paper_3015"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A legume crop used in sequential and intercropping systems",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used in sequential systems with soybean",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used in intercropping systems with soybean",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of output from the cropping systems",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "ERRATIC RAINFALL",
+      "type": "CONDITION",
+      "description": "Unpredictable precipitation affecting crop productivity",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONDITION",
+      "description": "Decline in soil quality affecting productivity",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "CENTRAL INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study is focused",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "VERTIC INCEPTISOL",
+      "type": "CONCEPT",
+      "description": "A specific type of soil characterized by certain properties",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The specific site of the experiments at ICRISAT",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "RAINFALL USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which rainfall is utilized by the crops",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "INTEGRATED NUTRIENT MANAGEMENT",
+      "type": "METHOD",
+      "description": "Management involving crop residues and Gliricidia loppings",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "BROADBED-AND-FURROW",
+      "type": "METHOD",
+      "description": "A sowing system designed to manage water and runoff",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "TRADITIONAL MANAGEMENT",
+      "type": "METHOD",
+      "description": "Sowing on flat landform with minimal nutrient addition",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "GLIRICIDIA",
+      "type": "ORGANISM",
+      "description": "A plant used for loppings in nutrient management",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "SURFACE RUNOFF",
+      "type": "TRAIT",
+      "description": "The amount of water flowing over the land surface",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "DEEP DRAINAGE",
+      "type": "TRAIT",
+      "description": "Water that percolates deep into the soil profile",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "SOIL N BUDGET",
+      "type": "TRAIT",
+      "description": "The balance of nitrogen in the soil",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "YIELD GAP",
+      "type": "TRAIT",
+      "description": "The difference between potential and actual crop yields",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Agricultural conditions relying solely on rainfall",
+      "source_id": "paper_3840"
+    },
+    {
+      "name": "PHOSPHORUS APPLICATION",
+      "type": "METHOD",
+      "description": "Application of phosphorus as a nutrient source",
+      "source_id": "paper_3840"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ERRATIC RAINFALL",
+      "target": "PRODUCTIVITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "LAND DEGRADATION",
+      "target": "PRODUCTIVITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "INTEGRATED NUTRIENT MANAGEMENT",
+      "target": "SOIL N BUDGET",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "BROADBED-AND-FURROW",
+      "target": "SURFACE RUNOFF",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "BROADBED-AND-FURROW",
+      "target": "DEEP DRAINAGE",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "TRADITIONAL MANAGEMENT",
+      "target": "SOIL N BUDGET",
+      "description": "causes deficit in",
+      "weight": "7",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "RAINFED CONDITIONS",
+      "target": "YIELD GAP",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "INTEGRATED NUTRIENT MANAGEMENT",
+      "target": "GLIRICIDIA",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "CENTRAL INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "VERTIC INCEPTISOL",
+      "description": "characterized by",
+      "weight": "7",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "PRODUCTIVITY",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "PRODUCTIVITY",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "PRODUCTIVITY",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_3840"
+    },
+    {
+      "source": "TRADITIONAL MANAGEMENT",
+      "target": "PHOSPHORUS APPLICATION",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_3840"
+    }
+  ]
+}

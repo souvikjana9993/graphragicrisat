@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop variety Annigeri used in the study to test collar rot control.",
+      "source_id": "paper_3871"
+    },
+    {
+      "name": "COLLAR ROT",
+      "type": "CONDITION",
+      "description": "A disease caused by Sclerotium rolfsii affecting chickpea.",
+      "source_id": "paper_3871"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing collar rot in chickpea.",
+      "source_id": "paper_3871"
+    },
+    {
+      "name": "PSEUDOMONAS FLUORESCENS",
+      "type": "ORGANISM",
+      "description": "Bacterial strains CP 8-2 and CP 8-3 used as antagonists to control collar rot.",
+      "source_id": "paper_3871"
+    },
+    {
+      "name": "THIRAM",
+      "type": "METHOD",
+      "description": "A fungicide used in combination with Pseudomonas fluorescens for disease control.",
+      "source_id": "paper_3871"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where field experiments were conducted.",
+      "source_id": "paper_3871"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted.",
+      "source_id": "paper_3871"
+    },
+    {
+      "name": "IN VITRO STUDIES",
+      "type": "METHOD",
+      "description": "Laboratory studies used to evaluate the effect of thiram on P. fluorescens growth.",
+      "source_id": "paper_3871"
+    },
+    {
+      "name": "GREENHOUSE EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Controlled environment studies to test the efficacy of treatments against collar rot.",
+      "source_id": "paper_3871"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Studies conducted in the field to test the efficacy of treatments against collar rot.",
+      "source_id": "paper_3871"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PSEUDOMONAS FLUORESCENS",
+      "target": "COLLAR ROT",
+      "description": "reduces incidence of",
+      "weight": "8",
+      "source_id": "paper_3871"
+    },
+    {
+      "source": "THIRAM",
+      "target": "COLLAR ROT",
+      "description": "reduces incidence of",
+      "weight": "7",
+      "source_id": "paper_3871"
+    },
+    {
+      "source": "PSEUDOMONAS FLUORESCENS",
+      "target": "THIRAM",
+      "description": "acts synergistically with to control",
+      "weight": "10",
+      "source_id": "paper_3871"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "COLLAR ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3871"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "CHICKPEA",
+      "description": "infects",
+      "weight": "9",
+      "source_id": "paper_3871"
+    },
+    {
+      "source": "COLLAR ROT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3871"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "ANDHRA PRADESH",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_3871"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3871"
+    },
+    {
+      "source": "THIRAM",
+      "target": "PSEUDOMONAS FLUORESCENS",
+      "description": "does not significantly affect growth of",
+      "weight": "5",
+      "source_id": "paper_3871"
+    }
+  ]
+}

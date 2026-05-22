@@ -1,0 +1,199 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop species studied in the research",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant uses water for biomass production",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "WATER-LIMITED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environments where water availability is restricted",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "JL 24",
+      "type": "CONCEPT",
+      "description": "The wild-type parent line of groundnut used as a control",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "DREB1A",
+      "type": "GENE_MARKER",
+      "description": "A transcription factor from Arabidopsis thaliana inserted into groundnut",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "ARABIDOPSIS THALIANA",
+      "type": "ORGANISM",
+      "description": "The plant species from which the DREB1A gene was derived",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "RD29",
+      "type": "GENE_MARKER",
+      "description": "A stress responsive promoter used to drive the expression of DREB1A",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "SOIL DRYING",
+      "type": "CONDITION",
+      "description": "The process of soil moisture depletion to which plants were exposed",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "WELL-WATERED",
+      "type": "CONDITION",
+      "description": "A water regime where plants are provided with sufficient water",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "WATER-STRESSED",
+      "type": "CONDITION",
+      "description": "A water regime where plants are subjected to water deficiency",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "SCMR",
+      "type": "TRAIT",
+      "description": "Soil plant analysis development chlorophyll meter readings used as a surrogate for TE",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "SPECIFIC LEAF AREA",
+      "type": "TRAIT",
+      "description": "The ratio of leaf area to leaf dry mass used as a surrogate for TE",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "The state of water deficiency in plants",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "CARBON ISOTOPE DISCRIMINATION",
+      "type": "TRAIT",
+      "description": "Measured as Δ13C, used as a potential surrogate for TE",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "FRACTION OF TRANSPIRABLE SOIL WATER",
+      "type": "TRAIT",
+      "description": "FTSW threshold values where transpiration declines upon soil drying",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "VAPOUR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "The difference between saturation vapor pressure and actual vapor pressure",
+      "source_id": "paper_5365"
+    },
+    {
+      "name": "GAS EXCHANGE",
+      "type": "TRAIT",
+      "description": "The process of exchange of gases between the plant and the atmosphere",
+      "source_id": "paper_5365"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "WATER-LIMITED CONDITIONS",
+      "description": "contributes to crop performance under these conditions",
+      "weight": "8",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "studied for variation in TE",
+      "weight": "10",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "DREB1A",
+      "target": "GROUNDNUT",
+      "description": "inserted into groundnut to create transgenic lines",
+      "weight": "10",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "ARABIDOPSIS THALIANA",
+      "target": "DREB1A",
+      "description": "source organism of the transcription factor",
+      "weight": "10",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "RD29",
+      "target": "DREB1A",
+      "description": "promoter that drives the expression of the gene",
+      "weight": "10",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "SCMR",
+      "description": "significant correlation found in drought stress",
+      "weight": "7",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "significant correlation found in drought stress",
+      "weight": "7",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "SPECIFIC LEAF AREA",
+      "target": "SCMR",
+      "description": "significant correlation found in drought stress",
+      "weight": "7",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "CARBON ISOTOPE DISCRIMINATION",
+      "description": "no correlation found regardless of water regime",
+      "weight": "2",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "FRACTION OF TRANSPIRABLE SOIL WATER",
+      "description": "significant negative correlation",
+      "weight": "8",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "significant relationships with surrogates were confined to this treatment",
+      "weight": "9",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "VAPOUR PRESSURE DEFICIT",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "did not affect the ranking of genotypes",
+      "weight": "3",
+      "source_id": "paper_5365"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "GAS EXCHANGE",
+      "description": "high TE genotypes maintain gas exchange until soil is dryer",
+      "weight": "8",
+      "source_id": "paper_5365"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The primary crop studied for productivity improvement under changing climatic conditions",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Environmental variability and change affecting agricultural productivity in sub-Saharan Africa",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The broad region where smallholder farmers depend on agriculture for livelihoods",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "CROP MODELLING",
+      "type": "METHOD",
+      "description": "The general scientific approach used to inform the improvement of agricultural productivity",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "APSIM",
+      "type": "METHOD",
+      "description": "The Agricultural Production Systems sIMulator used to assess climate change impacts on sorghum",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "EARLY MATURING VARIETY",
+      "type": "CONCEPT",
+      "description": "A sorghum variety characterized by early maturity, showing high inter-annual variability under climate change",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "MEDIUM MATURING VARIETY",
+      "type": "CONCEPT",
+      "description": "A sorghum variety characterized by medium maturity, showing yield gains under climate change",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "MANAGEMENT PRACTICES",
+      "type": "CONCEPT",
+      "description": "Agricultural techniques and interventions tested to enhance crop productivity",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "CROP PHENOLOGY",
+      "type": "TRAIT",
+      "description": "The timing of biological events in the crop's life cycle used for model validation",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "LEAF NUMBER PER PLANT",
+      "type": "TRAIT",
+      "description": "A physical trait of the sorghum plant used for model validation",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, used as a key measure of productivity and model accuracy",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "TOTAL BIOMASS",
+      "type": "TRAIT",
+      "description": "The total organic matter produced by the sorghum plant",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "RADIATION USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A plant trait (RUE) that significantly influences yield changes in sorghum",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "COEFFICIENT EXTINCTION",
+      "type": "TRAIT",
+      "description": "A plant trait (Coeff_ext) affecting light absorption and yield in early maturing sorghum",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "PHYLLOCHRON",
+      "type": "TRAIT",
+      "description": "The time interval between the appearance of successive leaves (Phyllo), affecting yield in sorghum",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "RCP 8.5",
+      "type": "CONDITION",
+      "description": "A high-emission climate scenario used for projecting future yield impacts",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "BAMAKO",
+      "type": "LOCATION",
+      "description": "A specific location in Mali where sorghum yield was simulated",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "KANO",
+      "type": "LOCATION",
+      "description": "A specific location in Nigeria where sorghum yield was simulated",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "SOWING DATES",
+      "type": "CONCEPT",
+      "description": "A management practice used as an adaptation strategy to optimize yield",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "SUDANIAN ZONE OF WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The specific ecological zone in West Africa where the study is applicable",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The regional focus for designing resilient and productive farming systems",
+      "source_id": "paper_11347"
+    },
+    {
+      "name": "SORGHUM GERMPLASM",
+      "type": "CONCEPT",
+      "description": "The diverse genetic resources of sorghum available in the West African region",
+      "source_id": "paper_11347"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "APSIM",
+      "target": "SORGHUM",
+      "description": "Used to assess the impacts of climate change on",
+      "weight": "10",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "APSIM",
+      "target": "CLIMATE CHANGE",
+      "description": "Used to simulate the impacts of",
+      "weight": "10",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "SORGHUM",
+      "description": "Affects the productivity of",
+      "weight": "9",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "APSIM",
+      "target": "EARLY MATURING VARIETY",
+      "description": "Used to simulate the yield and traits of",
+      "weight": "9",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "APSIM",
+      "target": "MEDIUM MATURING VARIETY",
+      "description": "Used to simulate the yield and traits of",
+      "weight": "9",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "EARLY MATURING VARIETY",
+      "target": "GRAIN YIELD",
+      "description": "Shows potential yield loss under climate change",
+      "weight": "8",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "MEDIUM MATURING VARIETY",
+      "target": "GRAIN YIELD",
+      "description": "Shows potential yield gain under climate change",
+      "weight": "8",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "RADIATION USE EFFICIENCY",
+      "target": "GRAIN YIELD",
+      "description": "Significantly influences yield change",
+      "weight": "9",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "COEFFICIENT EXTINCTION",
+      "target": "GRAIN YIELD",
+      "description": "Significantly influences yield change in early maturing variety",
+      "weight": "9",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "PHYLLOCHRON",
+      "target": "GRAIN YIELD",
+      "description": "Significantly influences yield change in both varieties",
+      "weight": "9",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "RCP 8.5",
+      "target": "GRAIN YIELD",
+      "description": "Scenario used to project yield changes",
+      "weight": "8",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "BAMAKO",
+      "target": "GRAIN YIELD",
+      "description": "Location where yield changes were simulated",
+      "weight": "7",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "KANO",
+      "target": "GRAIN YIELD",
+      "description": "Location where yield changes were simulated",
+      "weight": "7",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "SOWING DATES",
+      "target": "GRAIN YIELD",
+      "description": "Management practice used to optimize yield",
+      "weight": "8",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "SUDANIAN ZONE OF WEST AFRICA",
+      "target": "SORGHUM",
+      "description": "Region where sorghum productivity is analyzed",
+      "weight": "7",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "WEST AFRICA",
+      "target": "SORGHUM",
+      "description": "Region where diverse sorghum germplasm is available",
+      "weight": "7",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "CROP MODELLING",
+      "target": "APSIM",
+      "description": "General method implemented by the specific tool",
+      "weight": "10",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "APSIM",
+      "target": "CROP PHENOLOGY",
+      "description": "Simulated with high accuracy",
+      "weight": "8",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "APSIM",
+      "target": "LEAF NUMBER PER PLANT",
+      "description": "Simulated with high accuracy",
+      "weight": "8",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "APSIM",
+      "target": "TOTAL BIOMASS",
+      "description": "Used to predict biomass of sorghum varieties",
+      "weight": "8",
+      "source_id": "paper_11347"
+    },
+    {
+      "source": "APSIM",
+      "target": "MANAGEMENT PRACTICES",
+      "description": "Used as a tool for testing",
+      "weight": "9",
+      "source_id": "paper_11347"
+    }
+  ]
+}

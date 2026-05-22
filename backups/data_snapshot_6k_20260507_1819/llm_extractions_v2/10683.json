@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "OIL PALM",
+      "type": "CROP",
+      "description": "The primary oil-bearing crop studied in Ghana",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "GHANA",
+      "type": "LOCATION",
+      "description": "The country where the oil palm production study was conducted",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "FRUIT BUNCH YIELD",
+      "type": "TRAIT",
+      "description": "The measure of productivity based on the weight of fruit bunches produced per hectare per year",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "YIELD GAP",
+      "type": "CONCEPT",
+      "description": "The difference between the potential yield and the actual yield achieved in production systems",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "BOUNDARY LINE ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to determine the water-limited yield and quantify yield gaps",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "WATER-LIMITED YIELD",
+      "type": "TRAIT",
+      "description": "The maximum achievable yield under water-limited conditions",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "POOR MANAGEMENT PRACTICES",
+      "type": "CONDITION",
+      "description": "Factors such as incomplete crop recovery and inadequate agronomic management that reduce productivity",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "INCOMPLETE CROP RECOVERY",
+      "type": "CONDITION",
+      "description": "The failure to harvest all suitable crop, contributing to yield losses",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "INADEQUATE AGRONOMIC MANAGEMENT",
+      "type": "CONDITION",
+      "description": "Insufficient application of agricultural best practices to maintain crop health and productivity",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "OIL EXTRACTION RATE",
+      "type": "TRAIT",
+      "description": "The percentage of oil extracted from the fruit bunches",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "CRUDE PALM OIL",
+      "type": "CONCEPT",
+      "description": "The raw oil extracted from oil palm fruit bunches",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "SMALLHOLDER FARMS",
+      "type": "CONCEPT",
+      "description": "Small-scale oil palm production systems managed by individual farmers",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "PLANTATIONS",
+      "type": "CONCEPT",
+      "description": "Large-scale oil palm production systems",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "SMALL-SCALE PROCESSORS",
+      "type": "CONCEPT",
+      "description": "Entities that process oil palm fruit with lower extraction efficiency",
+      "source_id": "paper_10683"
+    },
+    {
+      "name": "LARGE-SCALE PROCESSORS",
+      "type": "CONCEPT",
+      "description": "Entities that process oil palm fruit with higher extraction efficiency",
+      "source_id": "paper_10683"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "OIL PALM",
+      "target": "GHANA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "OIL PALM",
+      "target": "FRUIT BUNCH YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "OIL PALM",
+      "target": "YIELD GAP",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "BOUNDARY LINE ANALYSIS",
+      "target": "WATER-LIMITED YIELD",
+      "description": "used to define",
+      "weight": "10",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "BOUNDARY LINE ANALYSIS",
+      "target": "YIELD GAP",
+      "description": "used to calculate",
+      "weight": "10",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "POOR MANAGEMENT PRACTICES",
+      "target": "YIELD GAP",
+      "description": "contributes to",
+      "weight": "10",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "INCOMPLETE CROP RECOVERY",
+      "target": "POOR MANAGEMENT PRACTICES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "INADEQUATE AGRONOMIC MANAGEMENT",
+      "target": "POOR MANAGEMENT PRACTICES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "OIL EXTRACTION RATE",
+      "target": "CRUDE PALM OIL",
+      "description": "affects production of",
+      "weight": "9",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "SMALLHOLDER FARMS",
+      "target": "YIELD GAP",
+      "description": "has specific gap",
+      "weight": "9",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "PLANTATIONS",
+      "target": "YIELD GAP",
+      "description": "has specific gap",
+      "weight": "9",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "SMALL-SCALE PROCESSORS",
+      "target": "OIL EXTRACTION RATE",
+      "description": "have specific rate",
+      "weight": "9",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "LARGE-SCALE PROCESSORS",
+      "target": "OIL EXTRACTION RATE",
+      "description": "have specific rate",
+      "weight": "9",
+      "source_id": "paper_10683"
+    },
+    {
+      "source": "OIL PALM",
+      "target": "CRUDE PALM OIL",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_10683"
+    }
+  ]
+}

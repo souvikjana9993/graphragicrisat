@@ -1,0 +1,118 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, a crop studied for its seedling emergence under high temperature conditions.",
+      "source_id": "paper_3593"
+    },
+    {
+      "name": "HIGH SOIL TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Soil temperatures exceeding 45°C that inhibit the field emergence of sorghum.",
+      "source_id": "paper_3593"
+    },
+    {
+      "name": "SEEDLING EMERGENCE",
+      "type": "TRAIT",
+      "description": "The process of seedlings emerging from the soil, which is inhibited by high soil temperatures.",
+      "source_id": "paper_3593"
+    },
+    {
+      "name": "SEMIARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where sorghum field emergence is inhibited by high soil temperatures.",
+      "source_id": "paper_3593"
+    },
+    {
+      "name": "EMBRYO PROTEIN SYNTHESIS",
+      "type": "METHOD",
+      "description": "A rapid technique used to assess sorghum emergence by measuring protein synthesis in embryos using 14C-labeled amino acids.",
+      "source_id": "paper_3593"
+    },
+    {
+      "name": "LANDRACE ACCESSIONS",
+      "type": "CONCEPT",
+      "description": "Traditional sorghum varieties used to evaluate the relationship between embryo protein synthesis and emergence.",
+      "source_id": "paper_3593"
+    },
+    {
+      "name": "COMMERCIALLY AVAILABLE LINES",
+      "type": "CONCEPT",
+      "description": "Commercial sorghum varieties used to evaluate the relationship between embryo protein synthesis and emergence.",
+      "source_id": "paper_3593"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HIGH SOIL TEMPERATURE",
+      "target": "SEEDLING EMERGENCE",
+      "description": "inhibits",
+      "weight": "10",
+      "source_id": "paper_3593"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEEDLING EMERGENCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3593"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HIGH SOIL TEMPERATURE",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_3593"
+    },
+    {
+      "source": "EMBRYO PROTEIN SYNTHESIS",
+      "target": "SEEDLING EMERGENCE",
+      "description": "is used to assess",
+      "weight": "9",
+      "source_id": "paper_3593"
+    },
+    {
+      "source": "EMBRYO PROTEIN SYNTHESIS",
+      "target": "SORGHUM",
+      "description": "is measured in",
+      "weight": "10",
+      "source_id": "paper_3593"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEMIARID TROPICS",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_3593"
+    },
+    {
+      "source": "LANDRACE ACCESSIONS",
+      "target": "SORGHUM",
+      "description": "are varieties of",
+      "weight": "10",
+      "source_id": "paper_3593"
+    },
+    {
+      "source": "COMMERCIALLY AVAILABLE LINES",
+      "target": "SORGHUM",
+      "description": "are varieties of",
+      "weight": "10",
+      "source_id": "paper_3593"
+    },
+    {
+      "source": "EMBRYO PROTEIN SYNTHESIS",
+      "target": "LANDRACE ACCESSIONS",
+      "description": "distinguishes emergence ability in",
+      "weight": "9",
+      "source_id": "paper_3593"
+    },
+    {
+      "source": "EMBRYO PROTEIN SYNTHESIS",
+      "target": "COMMERCIALLY AVAILABLE LINES",
+      "description": "shows general agreement with emergence ranking in",
+      "weight": "7",
+      "source_id": "paper_3593"
+    }
+  ]
+}

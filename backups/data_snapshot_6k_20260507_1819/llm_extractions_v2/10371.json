@@ -1,0 +1,228 @@
+{
+  "entities": [
+    {
+      "name": "LAPSUS_LS",
+      "type": "METHOD",
+      "description": "A physical landslide model that models slope stability at the catchment scale by combining hydrological and Limit Equilibrium Method models",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "HYDROLOGICAL MODEL",
+      "type": "METHOD",
+      "description": "A model used within LAPSUS_LS to account for water movement",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "LIMIT EQUILIBRIUM METHOD",
+      "type": "METHOD",
+      "description": "A model used within LAPSUS_LS to calculate the factor of safety for slope stability",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "SLOPE STABILITY",
+      "type": "CONCEPT",
+      "description": "The resistance of a slope to landslide failure",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "CATCHMENT LEVEL",
+      "type": "CONCEPT",
+      "description": "The spatial scale at which landslide models are applied",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "FACTOR OF SAFETY",
+      "type": "CONCEPT",
+      "description": "A calculated value used to determine if a slope is stable or unstable",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "COFFEE",
+      "type": "CROP",
+      "description": "Coffea arabica, tested as a monoculture for its effect on slope stability",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "ERYTHRINA",
+      "type": "CROP",
+      "description": "Erythrina poeppigiana, deep-rooting trees tested in mixed plantation for slope stability",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "COSTA RICA",
+      "type": "LOCATION",
+      "description": "The region from which soil and root data were obtained for simulations",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "ROOT REINFORCEMENT",
+      "type": "TRAIT",
+      "description": "The mechanical stabilization of soil provided by plant roots",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "SOIL BULK DENSITY",
+      "type": "TRAIT",
+      "description": "The mass of soil per unit volume, used as a parameter in LAPSUS_LS",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "TRANSMISSIVITY",
+      "type": "TRAIT",
+      "description": "The rate at which water is transmitted through soil",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "INTERNAL FRICTION ANGLE",
+      "type": "TRAIT",
+      "description": "A soil property representing the shear strength of the soil",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "DEPTH OF SHEAR PLANE",
+      "type": "TRAIT",
+      "description": "The depth at which the failure surface occurs in a landslide",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "BIOMASS SURCHARGE EFFECT",
+      "type": "CONCEPT",
+      "description": "The additional load placed on a slope by the weight of vegetation biomass",
+      "source_id": "paper_10371"
+    },
+    {
+      "name": "ADDITIONAL COHESION",
+      "type": "TRAIT",
+      "description": "The increase in soil cohesion provided by the presence of roots",
+      "source_id": "paper_10371"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LAPSUS_LS",
+      "target": "SLOPE STABILITY",
+      "description": "models",
+      "weight": "10",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "HYDROLOGICAL MODEL",
+      "description": "combines",
+      "weight": "9",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "LIMIT EQUILIBRIUM METHOD",
+      "description": "combines",
+      "weight": "9",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "FACTOR OF SAFETY",
+      "description": "calculates",
+      "weight": "8",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "CATCHMENT LEVEL",
+      "description": "operates at",
+      "weight": "8",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "COFFEE",
+      "target": "SLOPE STABILITY",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "ERYTHRINA",
+      "target": "SLOPE STABILITY",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "COSTA RICA",
+      "target": "ROOT REINFORCEMENT",
+      "description": "provides data for",
+      "weight": "6",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "COSTA RICA",
+      "target": "SOIL BULK DENSITY",
+      "description": "provides data for",
+      "weight": "6",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "ROOT REINFORCEMENT",
+      "description": "is sensitive to",
+      "weight": "9",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "SOIL BULK DENSITY",
+      "description": "is sensitive to",
+      "weight": "7",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "TRANSMISSIVITY",
+      "description": "is sensitive to",
+      "weight": "5",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "INTERNAL FRICTION ANGLE",
+      "description": "is sensitive to",
+      "weight": "7",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "DEPTH OF SHEAR PLANE",
+      "description": "is sensitive to",
+      "weight": "8",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "LAPSUS_LS",
+      "target": "BIOMASS SURCHARGE EFFECT",
+      "description": "includes",
+      "weight": "6",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "ROOT REINFORCEMENT",
+      "target": "ADDITIONAL COHESION",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "ERYTHRINA",
+      "target": "ROOT REINFORCEMENT",
+      "description": "provides high",
+      "weight": "8",
+      "source_id": "paper_10371"
+    },
+    {
+      "source": "COFFEE",
+      "target": "ROOT REINFORCEMENT",
+      "description": "provides low",
+      "weight": "6",
+      "source_id": "paper_10371"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A versatile legume crop (Cajanus cajan L.) used in pulse production",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "CONDITION",
+      "description": "A type of soil used in the field experiment",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A type of soil used in the field experiment",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The specific site where the field experiment was conducted",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "The state in India where the experiment took place",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "WEED MANAGEMENT",
+      "type": "METHOD",
+      "description": "Strategies and practices used to control weed infestation",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the crop measured in kg/ha",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "WEED INFESTATION",
+      "type": "CONDITION",
+      "description": "The presence of weeds that acts as a constraint to pulse production",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "HERBICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents applied to suppress weeds",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "RANDOMIZED BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to replicate treatments",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "WEED CONTROL EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A measure of the effectiveness of weed management practices",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "NET RETURN",
+      "type": "TRAIT",
+      "description": "The economic profit derived from the crop",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "WEED INDEX",
+      "type": "TRAIT",
+      "description": "A percentage measure used to evaluate weed infestation",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "IMAZETHAPYR",
+      "type": "METHOD",
+      "description": "A specific herbicide (10% SL) used for weed control",
+      "source_id": "paper_10448"
+    },
+    {
+      "name": "EARLY VEGETATIVE STAGE",
+      "type": "CONCEPT",
+      "description": "The initial growth phase of the pigeonpea crop",
+      "source_id": "paper_10448"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WEED MANAGEMENT",
+      "target": "PIGEONPEA",
+      "description": "applied to improve productivity of",
+      "weight": "8",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "WEED MANAGEMENT",
+      "target": "WEED INFESTATION",
+      "description": "used to control",
+      "weight": "10",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "ALFISOL",
+      "description": "grown under",
+      "weight": "7",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "VERTISOL",
+      "description": "grown under",
+      "weight": "7",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "HERBICIDES",
+      "target": "WEED MANAGEMENT",
+      "description": "is a tool for",
+      "weight": "9",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "IMAZETHAPYR",
+      "target": "HERBICIDES",
+      "description": "is a specific type of",
+      "weight": "10",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "RANDOMIZED BLOCK DESIGN",
+      "target": "WEED MANAGEMENT",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "WEED CONTROL EFFICIENCY",
+      "description": "showed better",
+      "weight": "7",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "YIELD",
+      "description": "showed higher",
+      "weight": "7",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "IMAZETHAPYR",
+      "target": "WEED INDEX",
+      "description": "significantly lowered",
+      "weight": "9",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "TELANGANA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "YIELD",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "NET RETURN",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_10448"
+    },
+    {
+      "source": "HERBICIDES",
+      "target": "EARLY VEGETATIVE STAGE",
+      "description": "applied during",
+      "weight": "8",
+      "source_id": "paper_10448"
+    }
+  ]
+}

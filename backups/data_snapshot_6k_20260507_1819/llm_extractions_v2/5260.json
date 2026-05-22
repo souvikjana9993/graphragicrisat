@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A blockbuster crop used to boost production and cut hunger",
+      "source_id": "paper_5260"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A blockbuster crop used to boost production and cut hunger",
+      "source_id": "paper_5260"
+    },
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A gangly, unrefined plant chosen for breeding",
+      "source_id": "paper_5260"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The location of top agricultural universities where Saxena studied",
+      "source_id": "paper_5260"
+    },
+    {
+      "name": "PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The output of crops that helps in cutting hunger",
+      "source_id": "paper_5260"
+    },
+    {
+      "name": "HUNGER",
+      "type": "CONDITION",
+      "description": "A global condition being reduced by the production of new crop varieties",
+      "source_id": "paper_5260"
+    },
+    {
+      "name": "PLANT BREEDING",
+      "type": "METHOD",
+      "description": "The professional practice of developing new plant varieties",
+      "source_id": "paper_5260"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "PRODUCTION",
+      "description": "boosts",
+      "weight": "8",
+      "source_id": "paper_5260"
+    },
+    {
+      "source": "WHEAT",
+      "target": "PRODUCTION",
+      "description": "boosts",
+      "weight": "8",
+      "source_id": "paper_5260"
+    },
+    {
+      "source": "PRODUCTION",
+      "target": "HUNGER",
+      "description": "cuts",
+      "weight": "9",
+      "source_id": "paper_5260"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "PLANT BREEDING",
+      "description": "subject of",
+      "weight": "10",
+      "source_id": "paper_5260"
+    }
+  ]
+}

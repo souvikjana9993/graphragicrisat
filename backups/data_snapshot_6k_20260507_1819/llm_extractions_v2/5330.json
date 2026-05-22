@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "A legume crop used in various rotation sequences to study soil fungal communities",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "BAHIAGRASS",
+      "type": "CROP",
+      "description": "A grass crop used in rotation with peanut",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "CORN",
+      "type": "CROP",
+      "description": "A cereal crop used in rotation with peanut",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "A fiber crop used in rotation with peanut",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "SOIL FUNGAL COMMUNITY STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The composition and organization of fungal populations within the soil",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "PEANUT-CROPPING SEQUENCES",
+      "type": "CONDITION",
+      "description": "Different patterns of rotating peanut with other crops, such as continuous peanut or peanut-corn-cotton",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "RIBOSOMAL INTERGENIC SPACER ANALYSIS",
+      "type": "METHOD",
+      "description": "A high-resolution DNA fingerprinting technique used to determine fungal community profiles",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A soil fungus known for producing aflatoxins",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "POLYMERASE CHAIN REACTION",
+      "type": "METHOD",
+      "description": "A molecular biology technique used for the detection of specific DNA sequences",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "FLA1",
+      "type": "GENE_MARKER",
+      "description": "A specific primer used in PCR for the detection of Aspergillus flavus",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "FLA2",
+      "type": "GENE_MARKER",
+      "description": "A specific primer used in PCR for the detection of Aspergillus flavus",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "ASPERGILLUS PARASITICUS",
+      "type": "ORGANISM",
+      "description": "A fungus related to A. flavus that produces aflatoxins",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "AGAR MEDIUM",
+      "type": "METHOD",
+      "description": "A growth medium used for the quantitative estimation of culturable fungi",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "AFLATOXIN-PRODUCING FUNGI",
+      "type": "CONCEPT",
+      "description": "A group of fungi, including A. flavus and A. parasiticus, capable of producing aflatoxins",
+      "source_id": "paper_5330"
+    },
+    {
+      "name": "ARTIFICIAL INOCULATION",
+      "type": "METHOD",
+      "description": "The process of introducing known concentrations of fungi into soil to determine detection thresholds",
+      "source_id": "paper_5330"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "PEANUT-CROPPING SEQUENCES",
+      "description": "is the primary crop in",
+      "weight": "10",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "BAHIAGRASS",
+      "target": "PEANUT-CROPPING SEQUENCES",
+      "description": "is used in",
+      "weight": "8",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "CORN",
+      "target": "PEANUT-CROPPING SEQUENCES",
+      "description": "is used in",
+      "weight": "8",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "COTTON",
+      "target": "PEANUT-CROPPING SEQUENCES",
+      "description": "is used in",
+      "weight": "8",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "RIBOSOMAL INTERGENIC SPACER ANALYSIS",
+      "target": "SOIL FUNGAL COMMUNITY STRUCTURE",
+      "description": "is used to analyze",
+      "weight": "10",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "RIBOSOMAL INTERGENIC SPACER ANALYSIS",
+      "target": "PEANUT-CROPPING SEQUENCES",
+      "description": "is used to determine profiles in",
+      "weight": "9",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "SOIL FUNGAL COMMUNITY STRUCTURE",
+      "description": "is a component of",
+      "weight": "7",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN-PRODUCING FUNGI",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "ASPERGILLUS PARASITICUS",
+      "target": "AFLATOXIN-PRODUCING FUNGI",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "POLYMERASE CHAIN REACTION",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "is used to detect",
+      "weight": "10",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "FLA1",
+      "target": "POLYMERASE CHAIN REACTION",
+      "description": "is a primer used in",
+      "weight": "10",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "FLA2",
+      "target": "POLYMERASE CHAIN REACTION",
+      "description": "is a primer used in",
+      "weight": "10",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "AGAR MEDIUM",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "is used for quantitative estimation of",
+      "weight": "9",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "AGAR MEDIUM",
+      "target": "ASPERGILLUS PARASITICUS",
+      "description": "is used for quantitative estimation of",
+      "weight": "9",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "ARTIFICIAL INOCULATION",
+      "target": "POLYMERASE CHAIN REACTION",
+      "description": "is used to determine the detection threshold for",
+      "weight": "9",
+      "source_id": "paper_5330"
+    },
+    {
+      "source": "PEANUT-CROPPING SEQUENCES",
+      "target": "SOIL FUNGAL COMMUNITY STRUCTURE",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_5330"
+    }
+  ]
+}

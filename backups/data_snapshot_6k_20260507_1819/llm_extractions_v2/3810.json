@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop used in the study",
+      "source_id": "paper_3810"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting pearl millet",
+      "source_id": "paper_3810"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The causal agent of pearl millet downy mildew",
+      "source_id": "paper_3810"
+    },
+    {
+      "name": "METALAXYL",
+      "type": "METHOD",
+      "description": "A fungicide used to control downy mildew",
+      "source_id": "paper_3810"
+    },
+    {
+      "name": "SEED TREATMENT",
+      "type": "METHOD",
+      "description": "The application of fungicides to seeds before planting",
+      "source_id": "paper_3810"
+    },
+    {
+      "name": "NHB-3",
+      "type": "CROP",
+      "description": "A downy mildew-susceptible pearl millet hybrid",
+      "source_id": "paper_3810"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_3810"
+    },
+    {
+      "name": "INFECTION INDEX",
+      "type": "CONCEPT",
+      "description": "A measure used to quantify the severity of downy mildew infection",
+      "source_id": "paper_3810"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "METALAXYL",
+      "target": "DOWNY MILDEW",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_3810"
+    },
+    {
+      "source": "SEED TREATMENT",
+      "target": "DOWNY MILDEW",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_3810"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3810"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "DOWNY MILDEW",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_3810"
+    },
+    {
+      "source": "NHB-3",
+      "target": "PEARL MILLET",
+      "description": "is a hybrid of",
+      "weight": "10",
+      "source_id": "paper_3810"
+    },
+    {
+      "source": "NHB-3",
+      "target": "DOWNY MILDEW",
+      "description": "susceptible to",
+      "weight": "9",
+      "source_id": "paper_3810"
+    },
+    {
+      "source": "METALAXYL",
+      "target": "SEED TREATMENT",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_3810"
+    },
+    {
+      "source": "SEED TREATMENT",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3810"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "GRAIN YIELD",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_3810"
+    },
+    {
+      "source": "INFECTION INDEX",
+      "target": "DOWNY MILDEW",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3810"
+    }
+  ]
+}

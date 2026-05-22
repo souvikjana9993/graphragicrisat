@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "The crop species being studied for resistance to nematodes.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "SOYBEAN CYST NEMATODE",
+      "type": "ORGANISM",
+      "description": "A parasitic nematode that affects soybean crops.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "HETERODERA GLYCINES",
+      "type": "ORGANISM",
+      "description": "The scientific name of the soybean cyst nematode.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "SCN RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of soybean genotypes to resist infection and reproduction of soybean cyst nematodes.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "SOIL TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature of the soil, tested at 20, 26, and 32 degrees Celsius.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "SOIL PH",
+      "type": "CONDITION",
+      "description": "The acidity or alkalinity of the soil, tested at levels 5.5, 6.5, and 7.5.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "PEKING",
+      "type": "CROP",
+      "description": "A soybean genotype resistant to SCN.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "PI 88788",
+      "type": "CROP",
+      "description": "A soybean genotype resistant to SCN.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "CUSTER BEDFORD",
+      "type": "CROP",
+      "description": "A soybean genotype resistant to SCN.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "FORREST",
+      "type": "CROP",
+      "description": "A soybean genotype resistant to SCN.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "ESSEX",
+      "type": "CROP",
+      "description": "A soybean cultivar used as a susceptible check.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "SCN RACE",
+      "type": "CONCEPT",
+      "description": "Different biological races of the soybean cyst nematode, specifically races 3, 5, and 14.",
+      "source_id": "paper_3306"
+    },
+    {
+      "name": "SCN REPRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of nematode reproduction, measured by the number of cysts and matured females.",
+      "source_id": "paper_3306"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN",
+      "target": "SCN RESISTANCE",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "HETERODERA GLYCINES",
+      "description": "is attacked by",
+      "weight": "10",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "SCN RESISTANCE",
+      "target": "SOIL TEMPERATURE",
+      "description": "stability tested against",
+      "weight": "8",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "SCN RESISTANCE",
+      "target": "SOIL PH",
+      "description": "stability tested against",
+      "weight": "8",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "SCN REPRODUCTION",
+      "description": "significantly affects",
+      "weight": "9",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "SOIL PH",
+      "target": "SCN REPRODUCTION",
+      "description": "significantly affects",
+      "weight": "9",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "SCN RACE",
+      "target": "SCN REPRODUCTION",
+      "description": "significantly affects",
+      "weight": "9",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "PEKING",
+      "target": "SCN RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "PI 88788",
+      "target": "SCN RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "CUSTER BEDFORD",
+      "target": "SCN RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "FORREST",
+      "target": "SCN RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "ESSEX",
+      "target": "SCN RESISTANCE",
+      "description": "lacks",
+      "weight": "10",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "HETERODERA GLYCINES",
+      "target": "SCN RACE",
+      "description": "is categorized into",
+      "weight": "9",
+      "source_id": "paper_3306"
+    },
+    {
+      "source": "SOYBEAN CYST NEMATODE",
+      "target": "HETERODERA GLYCINES",
+      "description": "is synonym of",
+      "weight": "10",
+      "source_id": "paper_3306"
+    }
+  ]
+}

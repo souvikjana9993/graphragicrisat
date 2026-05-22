@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A period of abnormally dry weather that affects crop growth",
+      "source_id": "paper_11205"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a crop to maintain growth and productivity during drought conditions",
+      "source_id": "paper_11205"
+    },
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "Agricultural plants targeted for improvement in the value chain",
+      "source_id": "paper_11205"
+    },
+    {
+      "name": "USAIDKEA",
+      "type": "CONCEPT",
+      "description": "Financial supporter of the project",
+      "source_id": "paper_11205"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "CONCEPT",
+      "description": "International research organization collaborating on the project",
+      "source_id": "paper_11205"
+    },
+    {
+      "name": "COUNTY GOVERNMENTS",
+      "type": "CONCEPT",
+      "description": "Local government bodies collaborating with ICRISAT",
+      "source_id": "paper_11205"
+    },
+    {
+      "name": "VALUE CHAIN DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The process of improving the entire sequence of activities from production to consumption",
+      "source_id": "paper_11205"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT",
+      "target": "DROUGHT TOLERANCE",
+      "description": "is the condition that defines the need for",
+      "weight": "10",
+      "source_id": "paper_11205"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "CROPS",
+      "description": "is a trait developed in",
+      "weight": "9",
+      "source_id": "paper_11205"
+    },
+    {
+      "source": "USAIDKEA",
+      "target": "ICRISAT",
+      "description": "provided financial support for the work of",
+      "weight": "8",
+      "source_id": "paper_11205"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "COUNTY GOVERNMENTS",
+      "description": "collaborated with",
+      "weight": "8",
+      "source_id": "paper_11205"
+    },
+    {
+      "source": "COUNTY GOVERNMENTS",
+      "target": "VALUE CHAIN DEVELOPMENT",
+      "description": "interacted with stakeholders in the",
+      "weight": "7",
+      "source_id": "paper_11205"
+    },
+    {
+      "source": "CROPS",
+      "target": "VALUE CHAIN DEVELOPMENT",
+      "description": "are the subject of the",
+      "weight": "9",
+      "source_id": "paper_11205"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A country in South Asia identified as a prominent greening hotspot.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "GREENING",
+      "type": "CONCEPT",
+      "description": "The increase in vegetation cover or leaf area in an ecosystem.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "CROPLANDS",
+      "type": "CONCEPT",
+      "description": "Land used for agricultural crop production.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "The artificial application of water to land or soil to assist in the production of crops.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "CROP WATER STRESS",
+      "type": "CONDITION",
+      "description": "A state where the water available to a plant is insufficient to meet its needs.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "PRODUCTION",
+      "type": "TRAIT",
+      "description": "The total amount of agricultural output produced.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "SATELLITE-DERIVED LEAF AREA DATA",
+      "type": "METHOD",
+      "description": "Data obtained from satellites to measure the leaf area index of vegetation.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "SURVEY-BASED AGRICULTURAL STATISTICS",
+      "type": "METHOD",
+      "description": "Data collected through surveys regarding agricultural practices and outputs.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "LAND SURFACE MODELS",
+      "type": "METHOD",
+      "description": "Mathematical models used to simulate the interaction between the land surface and the atmosphere.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "A period of the year characterized by low rainfall.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "DRIER ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Regions characterized by low precipitation and arid conditions.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "YIELD ENHANCEMENT",
+      "type": "TRAIT",
+      "description": "The increase in the amount of crop produced per unit area.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "CROPPING INTENSITY",
+      "type": "TRAIT",
+      "description": "The number of crops grown on a piece of land in a year.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "LAND MANAGEMENT",
+      "type": "METHOD",
+      "description": "The process of managing land and its resources for agricultural production.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "CO2 FERTILIZATION",
+      "type": "CONCEPT",
+      "description": "The increase in plant growth and productivity due to higher atmospheric CO2 concentrations.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "EARTH OBSERVATION",
+      "type": "METHOD",
+      "description": "The collection of information about the Earth's physical, chemical, and biological systems via remote sensing.",
+      "source_id": "paper_12474"
+    },
+    {
+      "name": "LAND SYSTEM SCIENCE",
+      "type": "CONCEPT",
+      "description": "An interdisciplinary field studying the interactions between human and natural systems on land.",
+      "source_id": "paper_12474"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "IRRIGATION",
+      "target": "CROP WATER STRESS",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "PRODUCTION",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "GREENING",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "DRY SEASON",
+      "description": "is used during",
+      "weight": "8",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "DRIER ENVIRONMENTS",
+      "description": "is used in",
+      "weight": "8",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "YIELD ENHANCEMENT",
+      "description": "drives",
+      "weight": "9",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "CROPPING INTENSITY",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "LAND MANAGEMENT",
+      "target": "GREENING",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "CO2 FERTILIZATION",
+      "target": "GREENING",
+      "description": "is a primary driver of",
+      "weight": "9",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "SATELLITE-DERIVED LEAF AREA DATA",
+      "target": "GREENING",
+      "description": "used to investigate",
+      "weight": "8",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "SURVEY-BASED AGRICULTURAL STATISTICS",
+      "target": "GREENING",
+      "description": "used to investigate",
+      "weight": "8",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "LAND SURFACE MODELS",
+      "target": "GREENING",
+      "description": "used to investigate",
+      "weight": "8",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "LAND SURFACE MODELS",
+      "target": "CO2 FERTILIZATION",
+      "description": "identifies as a driver",
+      "weight": "9",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "CROPLANDS",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12474"
+    },
+    {
+      "source": "GREENING",
+      "target": "CROPLANDS",
+      "description": "observed in",
+      "weight": "9",
+      "source_id": "paper_12474"
+    }
+  ]
+}

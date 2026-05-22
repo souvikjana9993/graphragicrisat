@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "INDIAN WOMEN OF REPRODUCTIVE AGE",
+      "type": "ORGANISM",
+      "description": "Women of reproductive age in India who were the subjects of the study",
+      "source_id": "paper_12414"
+    },
+    {
+      "name": "ANAEMIA",
+      "type": "CONDITION",
+      "description": "A medical condition characterized by a deficiency of red blood cells or haemoglobin",
+      "source_id": "paper_12414"
+    },
+    {
+      "name": "HAEMOGLOBIN",
+      "type": "TRAIT",
+      "description": "A protein in red blood cells used as a diagnostic marker for anaemia",
+      "source_id": "paper_12414"
+    },
+    {
+      "name": "PLASMA FERRITIN",
+      "type": "TRAIT",
+      "description": "A protein that stores iron, used as a marker for body iron stores",
+      "source_id": "paper_12414"
+    },
+    {
+      "name": "IRON-FOLIC ACID SUPPLEMENTATION",
+      "type": "METHOD",
+      "description": "The administration of iron and folic acid to treat or prevent anaemia",
+      "source_id": "paper_12414"
+    },
+    {
+      "name": "HIERARCHICAL MIXED EFFECTS MODEL",
+      "type": "METHOD",
+      "description": "A statistical model used to estimate the response curve of haemoglobin to plasma ferritin",
+      "source_id": "paper_12414"
+    },
+    {
+      "name": "POLYNOMIAL MEAN AND VARIANCE MODEL",
+      "type": "METHOD",
+      "description": "A model used to account for intraclass correlation due to repeated measures within the hierarchical mixed effects model",
+      "source_id": "paper_12414"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study population is located",
+      "source_id": "paper_12414"
+    },
+    {
+      "name": "DIAGNOSTIC CUT-OFF",
+      "type": "CONCEPT",
+      "description": "The threshold value of haemoglobin used to define the presence of anaemia",
+      "source_id": "paper_12414"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INDIAN WOMEN OF REPRODUCTIVE AGE",
+      "target": "ANAEMIA",
+      "description": "studied for prevalence of",
+      "weight": "9",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "INDIAN WOMEN OF REPRODUCTIVE AGE",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "ANAEMIA",
+      "target": "HAEMOGLOBIN",
+      "description": "diagnosed using",
+      "weight": "10",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "IRON-FOLIC ACID SUPPLEMENTATION",
+      "target": "INDIAN WOMEN OF REPRODUCTIVE AGE",
+      "description": "administered to",
+      "weight": "9",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "IRON-FOLIC ACID SUPPLEMENTATION",
+      "target": "HAEMOGLOBIN",
+      "description": "increases levels of",
+      "weight": "8",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "IRON-FOLIC ACID SUPPLEMENTATION",
+      "target": "PLASMA FERRITIN",
+      "description": "increases levels of",
+      "weight": "8",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "HIERARCHICAL MIXED EFFECTS MODEL",
+      "target": "HAEMOGLOBIN",
+      "description": "used to estimate response curve of",
+      "weight": "9",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "HIERARCHICAL MIXED EFFECTS MODEL",
+      "target": "PLASMA FERRITIN",
+      "description": "used to estimate response relative to",
+      "weight": "9",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "POLYNOMIAL MEAN AND VARIANCE MODEL",
+      "target": "HIERARCHICAL MIXED EFFECTS MODEL",
+      "description": "used within",
+      "weight": "8",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "DIAGNOSTIC CUT-OFF",
+      "target": "HAEMOGLOBIN",
+      "description": "determined as a value of",
+      "weight": "10",
+      "source_id": "paper_12414"
+    },
+    {
+      "source": "DIAGNOSTIC CUT-OFF",
+      "target": "ANAEMIA",
+      "description": "used to diagnose",
+      "weight": "10",
+      "source_id": "paper_12414"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The agricultural crop being studied for pest impact",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "KADIRI 3",
+      "type": "CROP",
+      "description": "A specific cultivar of groundnut",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "NC AC 17090",
+      "type": "CROP",
+      "description": "A specific cultivar of groundnut",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "APROAEREMA MODICELLA",
+      "type": "ORGANISM",
+      "description": "The groundnut leafminer pest that causes defoliation",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "DEFOLIATION",
+      "type": "CONDITION",
+      "description": "The removal of leaves from the plant caused by leaf-mining larvae",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The physical growth of the groundnut plant",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The developmental stages of the groundnut plant",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The overall agricultural productivity of the plant",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "PLANT MORTALITY",
+      "type": "TRAIT",
+      "description": "The rate of death of the groundnut plants",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "LEAF PRODUCTION",
+      "type": "TRAIT",
+      "description": "The amount of leaf biomass produced",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "STEM PRODUCTION",
+      "type": "TRAIT",
+      "description": "The amount of stem biomass produced",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "FLOWER PRODUCTION",
+      "type": "TRAIT",
+      "description": "The number of flowers produced per plant",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "PEG PRODUCTION",
+      "type": "TRAIT",
+      "description": "The number of pegs produced per plant",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "POD PRODUCTION",
+      "type": "TRAIT",
+      "description": "The number of pods produced per plant",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "FRUIT GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate at which the fruit develops",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The total yield of pods harvested",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "HAULM YIELD",
+      "type": "TRAIT",
+      "description": "The total yield of haulms harvested",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "INSECTICIDE TREATMENT",
+      "type": "METHOD",
+      "description": "The application of chemical agents to protect plants from pests",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "MONOCROTOPHOS",
+      "type": "METHOD",
+      "description": "A specific insecticide used to protect groundnut plants",
+      "source_id": "paper_3177"
+    },
+    {
+      "name": "LEAFMINER DENSITY",
+      "type": "CONDITION",
+      "description": "The population density of Aproaerema modicella",
+      "source_id": "paper_3177"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "GROUNDNUT",
+      "description": "infests and damages",
+      "weight": "10",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "DEFOLIATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "DEFOLIATION",
+      "target": "GROWTH",
+      "description": "negatively impacts",
+      "weight": "8",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "DEFOLIATION",
+      "target": "DEVELOPMENT",
+      "description": "negatively impacts",
+      "weight": "8",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "DEFOLIATION",
+      "target": "YIELD",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "PLANT MORTALITY",
+      "description": "does not significantly increase",
+      "weight": "3",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "LEAF PRODUCTION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "STEM PRODUCTION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "FLOWER PRODUCTION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "PEG PRODUCTION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "POD PRODUCTION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "POD YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "APROAEREMA MODICELLA",
+      "target": "HAULM YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "INSECTICIDE TREATMENT",
+      "target": "APROAEREMA MODICELLA",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "MONOCROTOPHOS",
+      "target": "INSECTICIDE TREATMENT",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "LEAFMINER DENSITY",
+      "target": "POD YIELD",
+      "description": "has a linear relationship with",
+      "weight": "9",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "LEAFMINER DENSITY",
+      "target": "HAULM YIELD",
+      "description": "has a linear relationship with",
+      "weight": "9",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "KADIRI 3",
+      "target": "GROUNDNUT",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3177"
+    },
+    {
+      "source": "NC AC 17090",
+      "target": "GROUNDNUT",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3177"
+    }
+  ]
+}

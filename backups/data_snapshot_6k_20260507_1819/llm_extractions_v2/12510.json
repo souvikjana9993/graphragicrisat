@@ -1,0 +1,193 @@
+{
+  "entities": [
+    {
+      "name": "CORN",
+      "type": "CROP",
+      "description": "Zea mays L., the crop studied for yield and nutrient uptake",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "NITROGEN USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which nitrogen is used by the plant, including agronomic NUE and apparent N recovery efficiency",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the corn crop",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "NITROGEN UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of nitrogen absorbed by the corn plant",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "SULFUR UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of sulfur absorbed by the corn plant",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "SULFUR AVAILABILITY",
+      "type": "CONDITION",
+      "description": "The availability of sulfur in the soil, influenced by source and application rate",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "SULFUR APPLICATION RATE",
+      "type": "CONDITION",
+      "description": "The amount of sulfur applied to the soil, ranging from 25% to 125% of the recommended rate",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "NITROGEN APPLICATION RATE",
+      "type": "CONDITION",
+      "description": "The site-specific recommended rate of nitrogen applied to the crop",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "FIELD STUDY",
+      "type": "METHOD",
+      "description": "A research study conducted over 2020-2022 across six locations in three countries",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "UNITED STATES",
+      "type": "LOCATION",
+      "description": "One of the countries where the field study was conducted",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "GHANA",
+      "type": "LOCATION",
+      "description": "One of the countries where the field study was conducted",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "One of the countries where the field study was conducted",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "MICRONIZED ELEMENTAL SULFUR",
+      "type": "CONCEPT",
+      "description": "A sulfur source with a specific bioavailability level",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "UNTREATED ELEMENTAL SULFUR",
+      "type": "CONCEPT",
+      "description": "A sulfur source with a specific bioavailability level",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "AMMONIUM SULFATE",
+      "type": "CONCEPT",
+      "description": "A sulfur source with a specific bioavailability level",
+      "source_id": "paper_12510"
+    },
+    {
+      "name": "NITROGEN FERTILIZER",
+      "type": "CONCEPT",
+      "description": "The source of nitrogen applied to the soil to enhance crop growth",
+      "source_id": "paper_12510"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SULFUR AVAILABILITY",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "enhances",
+      "weight": "9",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "SULFUR AVAILABILITY",
+      "target": "NITROGEN UPTAKE",
+      "description": "positively correlates with",
+      "weight": "9",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "SULFUR AVAILABILITY",
+      "target": "YIELD",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "SULFUR APPLICATION RATE",
+      "target": "SULFUR AVAILABILITY",
+      "description": "increases",
+      "weight": "10",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "SULFUR UPTAKE",
+      "target": "NITROGEN UPTAKE",
+      "description": "positively correlates with",
+      "weight": "9",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "FIELD STUDY",
+      "target": "CORN",
+      "description": "evaluates",
+      "weight": "10",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "FIELD STUDY",
+      "target": "UNITED STATES",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "FIELD STUDY",
+      "target": "GHANA",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "FIELD STUDY",
+      "target": "MALI",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "MICRONIZED ELEMENTAL SULFUR",
+      "target": "SULFUR AVAILABILITY",
+      "description": "provides",
+      "weight": "10",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "UNTREATED ELEMENTAL SULFUR",
+      "target": "SULFUR AVAILABILITY",
+      "description": "provides",
+      "weight": "10",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "AMMONIUM SULFATE",
+      "target": "SULFUR AVAILABILITY",
+      "description": "provides",
+      "weight": "10",
+      "source_id": "paper_12510"
+    },
+    {
+      "source": "NITROGEN FERTILIZER",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "is the subject of",
+      "weight": "8",
+      "source_id": "paper_12510"
+    }
+  ]
+}

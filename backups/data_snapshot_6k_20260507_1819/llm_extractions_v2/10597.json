@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "ICP-OES",
+      "type": "METHOD",
+      "description": "Inductively coupled plasma-optical emission spectrometry used for determining phosphorus and other elements in plant materials",
+      "source_id": "paper_10597"
+    },
+    {
+      "name": "COLORIMETRY",
+      "type": "METHOD",
+      "description": "A method used for determining phosphorus in grain samples",
+      "source_id": "paper_10597"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "TRAIT",
+      "description": "A plant nutrient element measured in grain samples",
+      "source_id": "paper_10597"
+    },
+    {
+      "name": "SKALAR AUTOANALYZER",
+      "type": "METHOD",
+      "description": "An instrument used to perform the colorimetric method for phosphorus determination",
+      "source_id": "paper_10597"
+    },
+    {
+      "name": "GRAIN SAMPLES",
+      "type": "CONCEPT",
+      "description": "Samples collected from eight diverse crops for nutrient analysis",
+      "source_id": "paper_10597"
+    },
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "Eight diverse plant species used in the study",
+      "source_id": "paper_10597"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICP-OES",
+      "target": "PHOSPHORUS",
+      "description": "used to determine",
+      "weight": "10",
+      "source_id": "paper_10597"
+    },
+    {
+      "source": "COLORIMETRY",
+      "target": "PHOSPHORUS",
+      "description": "used to determine",
+      "weight": "10",
+      "source_id": "paper_10597"
+    },
+    {
+      "source": "SKALAR AUTOANALYZER",
+      "target": "COLORIMETRY",
+      "description": "used to implement",
+      "weight": "10",
+      "source_id": "paper_10597"
+    },
+    {
+      "source": "ICP-OES",
+      "target": "GRAIN SAMPLES",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10597"
+    },
+    {
+      "source": "COLORIMETRY",
+      "target": "GRAIN SAMPLES",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10597"
+    },
+    {
+      "source": "CROPS",
+      "target": "GRAIN SAMPLES",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_10597"
+    },
+    {
+      "source": "ICP-OES",
+      "target": "COLORIMETRY",
+      "description": "compared for efficacy in determining phosphorus",
+      "weight": "8",
+      "source_id": "paper_10597"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop evaluated for forage quality and genetic diversity.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variation in genetic characteristics among hybrid parents of pearl millet.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "MORPHOLOGICAL TRAITS",
+      "type": "TRAIT",
+      "description": "Physical characteristics of the plant measured across different cutting intervals.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "SSRS",
+      "type": "GENE_MARKER",
+      "description": "Simple sequence repeats used as molecular markers to assess genetic distance.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "GBS",
+      "type": "METHOD",
+      "description": "Genotyping by sequencing used to identify single nucleotide polymorphisms.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms identified through GBS for genetic analysis.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "GENETIC DISTANCE",
+      "type": "CONCEPT",
+      "description": "A measure of genetic divergence between parents used to predict heterosis.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "CRUDE PROTEIN",
+      "type": "TRAIT",
+      "description": "A forage quality trait denoted as CP, measuring protein content.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "IN VITRO ORGANIC MATTER DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "A forage quality trait denoted as IVOMD, measuring the digestibility of organic matter.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "HETEROSIS",
+      "type": "CONCEPT",
+      "description": "The superior performance of hybrids compared to their parents for specific traits.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "GFY",
+      "type": "TRAIT",
+      "description": "Green Fodder Yield, a forage trait used for predicting heterosis.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "DFY",
+      "type": "TRAIT",
+      "description": "Dry Fodder Yield, a forage trait used for predicting heterosis.",
+      "source_id": "paper_11132"
+    },
+    {
+      "name": "FORAGE QUALITY TRAITS",
+      "type": "TRAIT",
+      "description": "A group of traits including CP, IVOMD, GFY, and DFY that determine forage value.",
+      "source_id": "paper_11132"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "PEARL MILLET",
+      "description": "investigated in",
+      "weight": "9",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "MORPHOLOGICAL TRAITS",
+      "target": "PEARL MILLET",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "SSRS",
+      "target": "PEARL MILLET",
+      "description": "used as markers for",
+      "weight": "9",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "SNPS",
+      "target": "PEARL MILLET",
+      "description": "used as markers for",
+      "weight": "9",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "GBS",
+      "target": "SNPS",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "SSRS",
+      "target": "GENETIC DISTANCE",
+      "description": "used to calculate",
+      "weight": "9",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "SNPS",
+      "target": "GENETIC DISTANCE",
+      "description": "used to calculate",
+      "weight": "9",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "GENETIC DISTANCE",
+      "target": "HETEROSIS",
+      "description": "positively correlated with",
+      "weight": "7",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "HETEROSIS",
+      "target": "GFY",
+      "description": "realized for",
+      "weight": "8",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "HETEROSIS",
+      "target": "DFY",
+      "description": "realized for",
+      "weight": "8",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "HETEROSIS",
+      "target": "CRUDE PROTEIN",
+      "description": "realized for",
+      "weight": "8",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "CRUDE PROTEIN",
+      "target": "FORAGE QUALITY TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "IN VITRO ORGANIC MATTER DIGESTIBILITY",
+      "target": "FORAGE QUALITY TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11132"
+    },
+    {
+      "source": "MORPHOLOGICAL TRAITS",
+      "target": "FORAGE QUALITY TRAITS",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_11132"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "entities": [
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where the study was conducted",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "NUTRITIONAL STATUS",
+      "type": "TRAIT",
+      "description": "The health state of individuals based on nutrient intake and utilization",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "ECONOMIC GROWTH",
+      "type": "CONCEPT",
+      "description": "Increase in the capacity of an economy to produce goods and services",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "DIET QUALITY",
+      "type": "TRAIT",
+      "description": "The nutrient density and variety of foods consumed",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "The practice of farming and producing crops",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "FARMER'S INCOME",
+      "type": "CONCEPT",
+      "description": "The total earnings of farmers from agricultural and other activities",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "FOOD AND NUTRITION SECURITY",
+      "type": "CONCEPT",
+      "description": "Access to sufficient, safe, and nutritious food",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "State in India where data was collected",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "State in India where data was collected",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "MAHARASHTRA",
+      "type": "LOCATION",
+      "description": "State in India where data was collected",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "DIETARY DIVERSITY SCORES",
+      "type": "METHOD",
+      "description": "A measure used to assess the variety of food groups consumed",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "SIMPSON DIVERSITY INDEX",
+      "type": "METHOD",
+      "description": "A measure of diversity used to analyze food expenditure",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "BODY MASS INDEX (BMI)",
+      "type": "METHOD",
+      "description": "A measure of body fat based on height and weight",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "OBESITY",
+      "type": "CONDITION",
+      "description": "A condition of excessive body fat accumulation",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "OVERWEIGHT",
+      "type": "CONDITION",
+      "description": "A condition where body weight exceeds what is considered healthy for a given height",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "UNDERWEIGHT",
+      "type": "CONDITION",
+      "description": "A condition where body weight is lower than what is considered healthy",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "TOBIT REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to analyze censored data",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "FRUITS",
+      "type": "CROP",
+      "description": "High-value agricultural commodities",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "VEGETABLES",
+      "type": "CROP",
+      "description": "High-value agricultural commodities",
+      "source_id": "paper_10976"
+    },
+    {
+      "name": "DIVERSIFICATION OF AGRICULTURE",
+      "type": "METHOD",
+      "description": "The process of expanding the range of crops produced",
+      "source_id": "paper_10976"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FARMER'S INCOME",
+      "target": "NUTRITIONAL STATUS",
+      "description": "Income plays a significant role in enhancing nutritional status",
+      "weight": "8",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "ECONOMIC GROWTH",
+      "target": "NUTRITIONAL STATUS",
+      "description": "Disconnection suggested between growth and nutrition",
+      "weight": "4",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "DIET QUALITY",
+      "target": "NUTRITIONAL STATUS",
+      "description": "Important ingredient for enhancing nutritional status",
+      "weight": "9",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "FARMER'S INCOME",
+      "target": "FOOD AND NUTRITION SECURITY",
+      "description": "Enhancing income may lead to better security",
+      "weight": "7",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "DIETARY DIVERSITY SCORES",
+      "target": "DIET QUALITY",
+      "description": "Used to measure diet quality",
+      "weight": "10",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "SIMPSON DIVERSITY INDEX",
+      "target": "DIET QUALITY",
+      "description": "Used to analyze food expenditure diversity",
+      "weight": "8",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "BODY MASS INDEX (BMI)",
+      "target": "OBESITY",
+      "description": "Used as an outcome variable to identify obesity",
+      "weight": "10",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "BODY MASS INDEX (BMI)",
+      "target": "OVERWEIGHT",
+      "description": "Used as an outcome variable to identify overweight",
+      "weight": "10",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "BODY MASS INDEX (BMI)",
+      "target": "UNDERWEIGHT",
+      "description": "Used as an outcome variable to identify underweight",
+      "weight": "10",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "TOBIT REGRESSION ANALYSIS",
+      "target": "NUTRITIONAL STATUS",
+      "description": "Used to reveal the role of income and expenditure on nutritional status",
+      "weight": "8",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "DIVERSIFICATION OF AGRICULTURE",
+      "target": "DIET QUALITY",
+      "description": "Can improve diversity in diets",
+      "weight": "8",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "FRUITS",
+      "target": "DIVERSIFICATION OF AGRICULTURE",
+      "description": "Example of high value commodities for diversification",
+      "weight": "9",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "VEGETABLES",
+      "target": "DIVERSIFICATION OF AGRICULTURE",
+      "description": "Example of high value commodities for diversification",
+      "weight": "9",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "INDIA",
+      "target": "ANDHRA PRADESH",
+      "description": "Contains the state of",
+      "weight": "10",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "INDIA",
+      "target": "TELANGANA",
+      "description": "Contains the state of",
+      "weight": "10",
+      "source_id": "paper_10976"
+    },
+    {
+      "source": "INDIA",
+      "target": "MAHARASHTRA",
+      "description": "Contains the state of",
+      "weight": "10",
+      "source_id": "paper_10976"
+    }
+  ]
+}

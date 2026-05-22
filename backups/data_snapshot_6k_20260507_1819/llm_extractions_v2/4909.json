@@ -1,0 +1,312 @@
+{
+  "entities": [
+    {
+      "name": "ALFISOL",
+      "type": "CONCEPT",
+      "description": "A type of soil characterized by high base saturation and leaching, found in the semiarid tropics of India",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "SEMIARID TROPICS",
+      "type": "LOCATION",
+      "description": "A climatic region characterized by low and irregular rainfall",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONDITION",
+      "description": "The decline in the quality of land caused by human activities or natural processes",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The displacement of the upper layer of soil",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "NUTRIENT LOSS",
+      "type": "CONDITION",
+      "description": "The depletion of essential nutrients from the soil",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "RUNOFF",
+      "type": "CONDITION",
+      "description": "The flow of water that occurs when excess stormwater runs off the land surface",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "CROP YIELDS",
+      "type": "TRAIT",
+      "description": "The amount of agricultural production harvested per unit area of land",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "SOIL MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Techniques used to maintain and improve soil health and productivity",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "TILLAGE",
+      "type": "METHOD",
+      "description": "The agricultural practice of preparing soil by mechanical agitation",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "MULCH",
+      "type": "METHOD",
+      "description": "The practice of covering soil with a layer of organic or inorganic material",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "ROTATIONAL SYSTEMS",
+      "type": "METHOD",
+      "description": "The practice of growing different crops in succession on the same land",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "CROP PRODUCTION",
+      "type": "TRAIT",
+      "description": "The process of growing crops for food, feed, or fiber",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "LAND RESOURCE PROTECTION",
+      "type": "CONCEPT",
+      "description": "Strategies to prevent land degradation and preserve soil quality",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the Alfisol study was conducted",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A chemical element essential for plant growth, measured in soil and sediment",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "CARBON",
+      "type": "CONCEPT",
+      "description": "A chemical element essential for soil organic matter, measured in soil and sediment",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "ENRICHMENT RATIOS",
+      "type": "CONCEPT",
+      "description": "The ratio of nutrient concentration in eroded sediment compared to the original soil",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "ORGANIC ADDITIONS",
+      "type": "METHOD",
+      "description": "The application of organic materials to soil to improve fertility",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "FARMYARD MANURE",
+      "type": "METHOD",
+      "description": "A type of organic addition consisting of decomposed animal waste",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "RICE STRAW",
+      "type": "METHOD",
+      "description": "A type of organic addition consisting of leftover rice stalks",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "PERENNIAL PASTURE",
+      "type": "CROP",
+      "description": "Plants that live for more than two years, used for grazing",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "ANNUAL CROPS",
+      "type": "CROP",
+      "description": "Plants that complete their life cycle in one growing season",
+      "source_id": "paper_4909"
+    },
+    {
+      "name": "GROUNDWATER",
+      "type": "CONCEPT",
+      "description": "Water held underground in the soil or in pores and crevices in rock",
+      "source_id": "paper_4909"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL MANAGEMENT PRACTICES",
+      "target": "CROP PRODUCTION",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "SOIL MANAGEMENT PRACTICES",
+      "target": "LAND RESOURCE PROTECTION",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "TILLAGE",
+      "target": "SOIL MANAGEMENT PRACTICES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "MULCH",
+      "target": "SOIL MANAGEMENT PRACTICES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ROTATIONAL SYSTEMS",
+      "target": "SOIL MANAGEMENT PRACTICES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "RUNOFF",
+      "target": "SOIL EROSION",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "RUNOFF",
+      "target": "NUTRIENT LOSS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "CROP YIELDS",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "NUTRIENT LOSS",
+      "target": "CROP YIELDS",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "SEMIARID TROPICS",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "SEMIARID TROPICS",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ORGANIC ADDITIONS",
+      "target": "CARBON",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ORGANIC ADDITIONS",
+      "target": "NITROGEN",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ORGANIC ADDITIONS",
+      "target": "RUNOFF",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ORGANIC ADDITIONS",
+      "target": "SOIL EROSION",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ORGANIC ADDITIONS",
+      "target": "NUTRIENT LOSS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "ORGANIC ADDITIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "ORGANIC ADDITIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ROTATIONAL SYSTEMS",
+      "target": "PERENNIAL PASTURE",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ROTATIONAL SYSTEMS",
+      "target": "ANNUAL CROPS",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "ENRICHMENT RATIOS",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "ENRICHMENT RATIOS",
+      "description": "is measured for",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "CARBON",
+      "target": "ENRICHMENT RATIOS",
+      "description": "is measured for",
+      "weight": "8",
+      "source_id": "paper_4909"
+    },
+    {
+      "source": "ORGANIC ADDITIONS",
+      "target": "GROUNDWATER",
+      "description": "increases percolation to",
+      "weight": "7",
+      "source_id": "paper_4909"
+    }
+  ]
+}

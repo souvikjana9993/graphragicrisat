@@ -1,0 +1,266 @@
+{
+  "entities": [
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "Legumes used for grain, forage, or green manure in cropping systems",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Rice crops grown in South Asian cropping systems",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "Wheat crops grown in South Asian cropping systems",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "Region encompassing India, Bangladesh, Pakistan, and Sri Lanka",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country in South Asia and part of the Indo-Gangetic Plains",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "BANGLADESH",
+      "type": "LOCATION",
+      "description": "Country in South Asia and part of the Indo-Gangetic Plains",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "PAKISTAN",
+      "type": "LOCATION",
+      "description": "Country in South Asia and part of the Indo-Gangetic Plains",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "SRI LANKA",
+      "type": "LOCATION",
+      "description": "Country in South Asia",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "INDO-GANGETIC PLAINS",
+      "type": "LOCATION",
+      "description": "Region spanning India, Bangladesh, and Pakistan",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "SOIL WATER AVAILABILITY",
+      "type": "CONDITION",
+      "description": "The amount of water available in the soil, a major determinant for rainfed crop success",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "RAINFED",
+      "type": "CONDITION",
+      "description": "Agricultural condition where crops rely on rainfall",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Precipitation that influences soil water availability",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "WATBAL",
+      "type": "METHOD",
+      "description": "A water balance model used to assess soil water availability scenarios",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "GIS",
+      "type": "METHOD",
+      "description": "Geographic Information Systems used to display and analyze soil water availability maps",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "SUSTAINABILITY",
+      "type": "CONCEPT",
+      "description": "The ability of cropping systems to maintain productivity",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "CROP DIVERSIFICATION",
+      "type": "CONCEPT",
+      "description": "The practice of increasing the variety of crops grown in a system",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "CROPPING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The pattern of crops grown on a piece of land, such as rice or wheat-based systems",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "LENGTH OF GROWING SEASON",
+      "type": "TRAIT",
+      "description": "The duration of time available for crop growth based on water availability",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "CLIMATIC DATA",
+      "type": "CONCEPT",
+      "description": "Monthly, daily, or weekly weather data used as input for water balance models",
+      "source_id": "paper_3686"
+    },
+    {
+      "name": "IRRIGATION SCHEDULING",
+      "type": "METHOD",
+      "description": "The process of planning water application for irrigated crops",
+      "source_id": "paper_3686"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LEGUMES",
+      "target": "CROPPING SYSTEMS",
+      "description": "component of",
+      "weight": "8",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "RICE",
+      "target": "CROPPING SYSTEMS",
+      "description": "component of",
+      "weight": "8",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "WHEAT",
+      "target": "CROPPING SYSTEMS",
+      "description": "component of",
+      "weight": "8",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "SUSTAINABILITY",
+      "description": "helps maintain",
+      "weight": "7",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "CROP DIVERSIFICATION",
+      "description": "helps achieve",
+      "weight": "7",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "RAINFED",
+      "description": "normally grown as",
+      "weight": "9",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "SOIL WATER AVAILABILITY",
+      "target": "LEGUMES",
+      "description": "major determinant of success",
+      "weight": "9",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "WATBAL",
+      "target": "SOIL WATER AVAILABILITY",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "GIS",
+      "target": "SOIL WATER AVAILABILITY",
+      "description": "used to display and analyze",
+      "weight": "9",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "WATBAL",
+      "target": "CLIMATIC DATA",
+      "description": "uses as input",
+      "weight": "10",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "INDO-GANGETIC PLAINS",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "INDO-GANGETIC PLAINS",
+      "target": "BANGLADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "INDO-GANGETIC PLAINS",
+      "target": "PAKISTAN",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "INDIA",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "BANGLADESH",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "PAKISTAN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "SRI LANKA",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "SOIL WATER AVAILABILITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "SOIL WATER AVAILABILITY",
+      "target": "LENGTH OF GROWING SEASON",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_3686"
+    },
+    {
+      "source": "SOIL WATER AVAILABILITY",
+      "target": "IRRIGATION SCHEDULING",
+      "description": "used to refine",
+      "weight": "7",
+      "source_id": "paper_3686"
+    }
+  ]
+}

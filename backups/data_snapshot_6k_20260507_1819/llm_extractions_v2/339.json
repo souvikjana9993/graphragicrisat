@@ -1,0 +1,277 @@
+{
+  "entities": [
+    {
+      "name": "PADDY",
+      "type": "CROP",
+      "description": "Lowland rice grown under flooded or submerged conditions",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "FLOODED CONDITION",
+      "type": "CONDITION",
+      "description": "State of soil being saturated with water",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "PUDDLING",
+      "type": "METHOD",
+      "description": "Traditional practice to reduce water loss in lowland rice fields",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "PLOW SOLE",
+      "type": "CONCEPT",
+      "description": "A hydraulically less-conductive layer formed below the root zone due to puddling",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "SOIL CRACKING",
+      "type": "CONDITION",
+      "description": "Formation of cracks in the soil that can lead to preferential flow",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "PREFERENTIAL FLOW",
+      "type": "CONCEPT",
+      "description": "Water movement through macropores or cracks, bypassing the soil matrix",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "SOIL WATER REGIME",
+      "type": "CONCEPT",
+      "description": "The pattern and distribution of water in the soil",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "IN SITU MEASUREMENT",
+      "type": "METHOD",
+      "description": "Method for measuring soil hydraulic properties directly in the field",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "SOIL HYDRAULIC PROPERTIES",
+      "type": "CONCEPT",
+      "description": "Characteristics of soil that determine the movement of water",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "Period of high precipitation from June to October",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "PIEZOMETERS",
+      "type": "METHOD",
+      "description": "Instruments used to measure piezometric pressure heads in soil layers",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "DRYING AND WETTING CYCLES",
+      "type": "CONDITION",
+      "description": "Periodic changes in soil moisture content",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "MONSOON CLIMATE",
+      "type": "CONDITION",
+      "description": "Climate characterized by seasonal rainfall",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "EASTERN INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the field experiment was conducted",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "MARQUARDT-LEVENBERG ALGORITHM",
+      "type": "METHOD",
+      "description": "An algorithm used for inverse estimation of parameters",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "HYDRUS-1D",
+      "type": "METHOD",
+      "description": "A simulation environment used to estimate soil hydraulic parameters",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "HYDRAULIC CONDUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The ease with which water can move through soil pore spaces",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "EARTHWORM",
+      "type": "ORGANISM",
+      "description": "Soil organisms whose burrows contribute to preferential flow",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "SINGLE-POROSITY MODEL",
+      "type": "METHOD",
+      "description": "A simulation model that treats soil as a single medium for water flow",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "DUAL-POROSITY MODEL",
+      "type": "METHOD",
+      "description": "A simulation model that distinguishes between matrix flow and preferential flow",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "WATER FLOW",
+      "type": "CONCEPT",
+      "description": "The movement of water through the soil profile",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "MACROPORES",
+      "type": "CONCEPT",
+      "description": "Large pores in the soil that facilitate preferential transport",
+      "source_id": "paper_339"
+    },
+    {
+      "name": "SOIL MATRIX",
+      "type": "CONCEPT",
+      "description": "The bulk of the soil pores through which water moves slowly",
+      "source_id": "paper_339"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PADDY",
+      "target": "FLOODED CONDITION",
+      "description": "grown under",
+      "weight": "10",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "PUDDLING",
+      "target": "PADDY",
+      "description": "done to reduce water loss in",
+      "weight": "9",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "PUDDLING",
+      "target": "PLOW SOLE",
+      "description": "leads to formation of",
+      "weight": "8",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "SOIL CRACKING",
+      "target": "PREFERENTIAL FLOW",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "IN SITU MEASUREMENT",
+      "target": "SOIL HYDRAULIC PROPERTIES",
+      "description": "used to evaluate",
+      "weight": "10",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "PIEZOMETERS",
+      "target": "DRYING AND WETTING CYCLES",
+      "description": "respond to",
+      "weight": "8",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "DRYING AND WETTING CYCLES",
+      "target": "MONSOON CLIMATE",
+      "description": "part of",
+      "weight": "9",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "MONSOON CLIMATE",
+      "target": "EASTERN INDIA",
+      "description": "observed in",
+      "weight": "10",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "MARQUARDT-LEVENBERG ALGORITHM",
+      "target": "HYDRUS-1D",
+      "description": "built into",
+      "weight": "10",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "HYDRUS-1D",
+      "target": "SOIL HYDRAULIC PROPERTIES",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "HYDRAULIC CONDUCTIVITY",
+      "target": "PLOW SOLE",
+      "description": "property of",
+      "weight": "8",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "MONSOON CLIMATE",
+      "target": "HYDRAULIC CONDUCTIVITY",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "EARTHWORM",
+      "target": "HYDRAULIC CONDUCTIVITY",
+      "description": "burrows increase",
+      "weight": "7",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "SINGLE-POROSITY MODEL",
+      "target": "WATER FLOW",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "DUAL-POROSITY MODEL",
+      "target": "WATER FLOW",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "DUAL-POROSITY MODEL",
+      "target": "PREFERENTIAL FLOW",
+      "description": "describes better",
+      "weight": "8",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "MACROPORES",
+      "target": "PREFERENTIAL FLOW",
+      "description": "facilitate",
+      "weight": "10",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "SOIL MATRIX",
+      "target": "WATER FLOW",
+      "description": "dominates during drying cycles",
+      "weight": "8",
+      "source_id": "paper_339"
+    },
+    {
+      "source": "PIEZOMETERS",
+      "target": "HYDRUS-1D",
+      "description": "combined with to estimate properties",
+      "weight": "8",
+      "source_id": "paper_339"
+    }
+  ]
+}

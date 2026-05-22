@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop focused on in the seed production manual",
+      "source_id": "paper_10276"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of crop output at the farm level",
+      "source_id": "paper_10276"
+    },
+    {
+      "name": "IMPROVED CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Enhanced varieties of chickpea developed through research to increase yield and quality",
+      "source_id": "paper_10276"
+    },
+    {
+      "name": "IMPROVED PRODUCTION TECHNOLOGIES",
+      "type": "METHOD",
+      "description": "Advanced agricultural practices used to enhance crop growth and yield",
+      "source_id": "paper_10276"
+    },
+    {
+      "name": "SEED PRODUCTION",
+      "type": "METHOD",
+      "description": "The process of growing and harvesting seeds for future planting",
+      "source_id": "paper_10276"
+    },
+    {
+      "name": "QUALITY SEED",
+      "type": "CONCEPT",
+      "description": "Seeds that meet high standards of purity, germination, and health",
+      "source_id": "paper_10276"
+    },
+    {
+      "name": "INFORMAL SEED SYSTEM",
+      "type": "CONCEPT",
+      "description": "A seed distribution network involving non-government organizations, farmers' groups, and individual farmers",
+      "source_id": "paper_10276"
+    },
+    {
+      "name": "PRIVATE SECTOR",
+      "type": "CONCEPT",
+      "description": "Commercial businesses involved in the production and sale of seeds",
+      "source_id": "paper_10276"
+    },
+    {
+      "name": "SEED STORAGE",
+      "type": "METHOD",
+      "description": "The practice of preserving seeds to maintain viability and quality",
+      "source_id": "paper_10276"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "IMPROVED CULTIVARS",
+      "target": "CHICKPEA",
+      "description": "are improved varieties of",
+      "weight": "10",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "IMPROVED CULTIVARS",
+      "target": "PRODUCTIVITY",
+      "description": "increase",
+      "weight": "8",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "IMPROVED PRODUCTION TECHNOLOGIES",
+      "target": "PRODUCTIVITY",
+      "description": "enhance",
+      "weight": "8",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "IMPROVED CULTIVARS",
+      "target": "IMPROVED PRODUCTION TECHNOLOGIES",
+      "description": "act as a vehicle for the transfer of",
+      "weight": "7",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "SEED PRODUCTION",
+      "target": "QUALITY SEED",
+      "description": "is the process used to produce",
+      "weight": "9",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "QUALITY SEED",
+      "target": "IMPROVED CULTIVARS",
+      "description": "is required for the adoption of",
+      "weight": "8",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "INFORMAL SEED SYSTEM",
+      "target": "SEED PRODUCTION",
+      "description": "facilitates",
+      "weight": "9",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "INFORMAL SEED SYSTEM",
+      "target": "QUALITY SEED",
+      "description": "increases availability of",
+      "weight": "8",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "INFORMAL SEED SYSTEM",
+      "target": "IMPROVED CULTIVARS",
+      "description": "increases adoption of",
+      "weight": "8",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "PRIVATE SECTOR",
+      "target": "SEED PRODUCTION",
+      "description": "plays a minor role in",
+      "weight": "5",
+      "source_id": "paper_10276"
+    },
+    {
+      "source": "SEED STORAGE",
+      "target": "CHICKPEA",
+      "description": "is used for the preservation of seeds of",
+      "weight": "7",
+      "source_id": "paper_10276"
+    }
+  ]
+}

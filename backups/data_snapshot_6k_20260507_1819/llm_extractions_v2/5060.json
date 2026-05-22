@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Improved varieties of groundnut studied for adoption in Malawi",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "The country where the study on groundnut adoption was conducted",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "AVERAGE TREATMENT EFFECT",
+      "type": "METHOD",
+      "description": "A framework used to document actual and potential adoption rates and their determinants",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "ADOPTION RATE",
+      "type": "CONCEPT",
+      "description": "The proportion of farmers who adopt improved groundnut varieties",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "AWARENESS",
+      "type": "CONCEPT",
+      "description": "The state of farmers being informed about the improved groundnut technology",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "PROBIT",
+      "type": "METHOD",
+      "description": "A classical adoption model used for estimating adoption rates",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "TOBIT",
+      "type": "METHOD",
+      "description": "A classical adoption model used for estimating adoption rates",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "EXPOSURE",
+      "type": "CONCEPT",
+      "description": "The extent to which farmers are exposed to new agricultural technologies",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "SELECTION BIAS",
+      "type": "CONCEPT",
+      "description": "Bias in adoption rate estimates resulting from non-random exposure to technology",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "INFORMATION ACCESS",
+      "type": "CONCEPT",
+      "description": "Variables that influence the awareness of improved groundnut varieties",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "ECONOMIC CONSTRAINTS",
+      "type": "CONDITION",
+      "description": "Factors such as financial limitations that influence the adoption of technology",
+      "source_id": "paper_5060"
+    },
+    {
+      "name": "ACCESS TO CREDIT",
+      "type": "CONDITION",
+      "description": "A specific economic constraint that limits the adoption of improved groundnut varieties",
+      "source_id": "paper_5060"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AVERAGE TREATMENT EFFECT",
+      "target": "ADOPTION RATE",
+      "description": "used to document",
+      "weight": "10",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "AVERAGE TREATMENT EFFECT",
+      "target": "MALAWI",
+      "description": "applied to data from",
+      "weight": "8",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "MALAWI",
+      "description": "studied in",
+      "weight": "10",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "ADOPTION RATE",
+      "target": "GROUNDNUT",
+      "description": "measured for improved varieties of",
+      "weight": "10",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "AWARENESS",
+      "target": "ADOPTION RATE",
+      "description": "is a conditional determinant of",
+      "weight": "9",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "PROBIT",
+      "target": "ADOPTION RATE",
+      "description": "used as a model to estimate",
+      "weight": "7",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "TOBIT",
+      "target": "ADOPTION RATE",
+      "description": "used as a model to estimate",
+      "weight": "7",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "EXPOSURE",
+      "target": "ADOPTION RATE",
+      "description": "affects the consistency of estimates for",
+      "weight": "8",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "SELECTION BIAS",
+      "target": "ADOPTION RATE",
+      "description": "controlled for in assessing",
+      "weight": "8",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "INFORMATION ACCESS",
+      "target": "AWARENESS",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "ECONOMIC CONSTRAINTS",
+      "target": "ADOPTION RATE",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "ACCESS TO CREDIT",
+      "target": "ECONOMIC CONSTRAINTS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_5060"
+    },
+    {
+      "source": "ACCESS TO CREDIT",
+      "target": "ADOPTION RATE",
+      "description": "acts as a constraint to",
+      "weight": "8",
+      "source_id": "paper_5060"
+    }
+  ]
+}

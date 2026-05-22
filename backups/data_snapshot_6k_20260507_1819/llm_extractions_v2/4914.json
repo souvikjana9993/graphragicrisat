@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Cultivated groundnut (Arachis hypogaea) evaluated for resistance to aflatoxin contamination",
+      "source_id": "paper_4914"
+    },
+    {
+      "name": "WILD ARACHIS",
+      "type": "CROP",
+      "description": "Wild Arachis species accessions evaluated for resistance to aflatoxin contamination",
+      "source_id": "paper_4914"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "Fungus responsible for seed colonization and aflatoxin production",
+      "source_id": "paper_4914"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "Infection by Aspergillus flavus and the subsequent production of aflatoxin",
+      "source_id": "paper_4914"
+    },
+    {
+      "name": "AFLATOXIN PRODUCTION",
+      "type": "TRAIT",
+      "description": "The process of producing aflatoxin by Aspergillus flavus",
+      "source_id": "paper_4914"
+    },
+    {
+      "name": "SEED COLONIZATION",
+      "type": "TRAIT",
+      "description": "The ability of a pathogen to colonize the seeds of a crop",
+      "source_id": "paper_4914"
+    },
+    {
+      "name": "SEED INVASION",
+      "type": "TRAIT",
+      "description": "The ability of a pathogen to invade the seeds of a crop",
+      "source_id": "paper_4914"
+    },
+    {
+      "name": "RESISTANCE TO AFLATOXIN CONTAMINATION",
+      "type": "TRAIT",
+      "description": "The ability of a plant genotype to resist infection by Aspergillus flavus and aflatoxin production",
+      "source_id": "paper_4914"
+    },
+    {
+      "name": "IN VITRO",
+      "type": "METHOD",
+      "description": "Experimental technique performed in a controlled environment outside a living organism",
+      "source_id": "paper_4914"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics, which maintains a collection of wild Arachis accessions",
+      "source_id": "paper_4914"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4914"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN PRODUCTION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_4914"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "susceptible to",
+      "weight": "8",
+      "source_id": "paper_4914"
+    },
+    {
+      "source": "WILD ARACHIS",
+      "target": "RESISTANCE TO AFLATOXIN CONTAMINATION",
+      "description": "evaluated for",
+      "weight": "7",
+      "source_id": "paper_4914"
+    },
+    {
+      "source": "RESISTANCE TO AFLATOXIN CONTAMINATION",
+      "target": "SEED COLONIZATION",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_4914"
+    },
+    {
+      "source": "RESISTANCE TO AFLATOXIN CONTAMINATION",
+      "target": "SEED INVASION",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_4914"
+    },
+    {
+      "source": "RESISTANCE TO AFLATOXIN CONTAMINATION",
+      "target": "AFLATOXIN PRODUCTION",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_4914"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "WILD ARACHIS",
+      "description": "maintains collection of",
+      "weight": "10",
+      "source_id": "paper_4914"
+    },
+    {
+      "source": "IN VITRO",
+      "target": "SEED COLONIZATION",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_4914"
+    },
+    {
+      "source": "IN VITRO",
+      "target": "AFLATOXIN PRODUCTION",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_4914"
+    }
+  ]
+}

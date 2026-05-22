@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "name": "GUJARAT",
+      "type": "LOCATION",
+      "description": "State in India where irrigated areas are being monitored",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "IRRIGATED AREAS",
+      "type": "CONCEPT",
+      "description": "Areas of land receiving artificial water application for crop production",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "A cloud-based geospatial processing platform used for analyzing satellite imagery",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "SENTINEL-2",
+      "type": "METHOD",
+      "description": "High spatial resolution satellite imagery used for crop identification",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "LANDSAT-8",
+      "type": "METHOD",
+      "description": "High spatial resolution satellite dataset",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "SENTINEL-1",
+      "type": "METHOD",
+      "description": "High spatial resolution satellite dataset",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "ERDAS",
+      "type": "METHOD",
+      "description": "Software traditionally used for processing satellite images",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "ARCGIS",
+      "type": "METHOD",
+      "description": "Software traditionally used for processing satellite images",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "RANDOM FOREST ALGORITHM",
+      "type": "METHOD",
+      "description": "Machine learning algorithm used within GEE for image classification",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "LULC MAP",
+      "type": "CONCEPT",
+      "description": "Land Use Land Cover map generated as a result of the study",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The specific crop whose extent is being identified in the study",
+      "source_id": "paper_11698"
+    },
+    {
+      "name": "RICE CROP EXTENT MAP",
+      "type": "CONCEPT",
+      "description": "Map showing the spatial distribution and area of rice cultivation",
+      "source_id": "paper_11698"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "GUJARAT",
+      "description": "Used to monitor irrigated areas in",
+      "weight": "8",
+      "source_id": "paper_11698"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "SENTINEL-2",
+      "description": "Processes imagery from",
+      "weight": "9",
+      "source_id": "paper_11698"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "RANDOM FOREST ALGORITHM",
+      "description": "Implements the",
+      "weight": "10",
+      "source_id": "paper_11698"
+    },
+    {
+      "source": "RANDOM FOREST ALGORITHM",
+      "target": "RICE",
+      "description": "Used to identify the extent of",
+      "weight": "9",
+      "source_id": "paper_11698"
+    },
+    {
+      "source": "SENTINEL-2",
+      "target": "RICE",
+      "description": "Used to monitor the extent of",
+      "weight": "8",
+      "source_id": "paper_11698"
+    },
+    {
+      "source": "RANDOM FOREST ALGORITHM",
+      "target": "LULC MAP",
+      "description": "Used to generate",
+      "weight": "9",
+      "source_id": "paper_11698"
+    },
+    {
+      "source": "RANDOM FOREST ALGORITHM",
+      "target": "RICE CROP EXTENT MAP",
+      "description": "Used to generate",
+      "weight": "9",
+      "source_id": "paper_11698"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "IRRIGATED AREAS",
+      "description": "Used to identify",
+      "weight": "9",
+      "source_id": "paper_11698"
+    },
+    {
+      "source": "SENTINEL-2",
+      "target": "IRRIGATED AREAS",
+      "description": "Used to identify",
+      "weight": "8",
+      "source_id": "paper_11698"
+    }
+  ]
+}

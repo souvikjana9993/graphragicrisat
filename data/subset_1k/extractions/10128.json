@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used in an intercropping ecosystem and targeted for pest control.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "CORIANDER",
+      "type": "CROP",
+      "description": "An aromatic herb crop intercropped with chickpea.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "JATROPHA OIL",
+      "type": "METHOD",
+      "description": "A botanical insecticide derived from Jatropha curcas seed oil used for pest control.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "NSKE",
+      "type": "METHOD",
+      "description": "Neem Seed Kernel Extract used as a biopesticide for pest control.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "NPV",
+      "type": "METHOD",
+      "description": "Nucleopolyhedrovirus used as a biopesticide for pest control.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pest insect that causes damage to chickpea and coriander.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "THYSANOPLUSIA ORICHALCEA",
+      "type": "ORGANISM",
+      "description": "A pest insect targeted by the evaluated biopesticides.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area, used to measure the efficacy of treatments.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "DAMAGE",
+      "type": "TRAIT",
+      "description": "The level of harm caused by pests to the crops.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "CONCEPT",
+      "description": "The practice of growing two or more crops in the same field simultaneously.",
+      "source_id": "paper_10128"
+    },
+    {
+      "name": "INTEGRATED PEST MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "A comprehensive strategy for insect pest control incorporating various methods.",
+      "source_id": "paper_10128"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "JATROPHA OIL",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Used as a botanical insecticide to control",
+      "weight": "9",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "NPV",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Used as a biopesticide to control",
+      "weight": "9",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "NSKE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Used as a biopesticide to control",
+      "weight": "7",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "Acts as a pest causing damage to",
+      "weight": "10",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CORIANDER",
+      "description": "Acts as a pest causing damage to",
+      "weight": "8",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "JATROPHA OIL",
+      "target": "CHICKPEA",
+      "description": "Applied to protect the crop from pests",
+      "weight": "9",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "NPV",
+      "target": "CORIANDER",
+      "description": "Applied to protect the crop from pests",
+      "weight": "9",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "NSKE",
+      "target": "CHICKPEA",
+      "description": "Applied to protect the crop from pests",
+      "weight": "7",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "CHICKPEA",
+      "description": "System in which the crop is grown",
+      "weight": "10",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "CORIANDER",
+      "description": "System in which the crop is grown",
+      "weight": "10",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "INTEGRATED PEST MANAGEMENT",
+      "target": "JATROPHA OIL",
+      "description": "Strategy that can incorporate the use of",
+      "weight": "8",
+      "source_id": "paper_10128"
+    },
+    {
+      "source": "JATROPHA OIL",
+      "target": "GRAIN YIELD",
+      "description": "Treatment that leads to recorded grain yield",
+      "weight": "7",
+      "source_id": "paper_10128"
+    }
+  ]
+}

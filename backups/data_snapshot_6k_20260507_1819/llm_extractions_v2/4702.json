@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being evaluated for resistance to insect pests",
+      "source_id": "paper_4702"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research institution where the resistance tests were conducted",
+      "source_id": "paper_4702"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of the plant to avoid or reduce the impact of pest attacks",
+      "source_id": "paper_4702"
+    },
+    {
+      "name": "HELIOTHIS ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The insect pest that attacks chickpea crops",
+      "source_id": "paper_4702"
+    },
+    {
+      "name": "DESI TYPES",
+      "type": "CONCEPT",
+      "description": "A specific category of chickpea varieties",
+      "source_id": "paper_4702"
+    },
+    {
+      "name": "KABULI TYPES",
+      "type": "CONCEPT",
+      "description": "A specific category of chickpea varieties",
+      "source_id": "paper_4702"
+    },
+    {
+      "name": "TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to endure pest attacks without significant yield loss",
+      "source_id": "paper_4702"
+    },
+    {
+      "name": "RECOVERY",
+      "type": "TRAIT",
+      "description": "The ability of the plant to regain health after being attacked by pests",
+      "source_id": "paper_4702"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "is the host for",
+      "weight": "9",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "CHICKPEA",
+      "description": "conducted resistance tests on",
+      "weight": "8",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "is measured against",
+      "weight": "10",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "DESI TYPES",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "KABULI TYPES",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "DESI TYPES",
+      "target": "RESISTANCE",
+      "description": "exhibits higher levels of",
+      "weight": "9",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "KABULI TYPES",
+      "target": "RESISTANCE",
+      "description": "exhibits lower levels of",
+      "weight": "9",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "DESI TYPES",
+      "target": "TOLERANCE",
+      "description": "shows substantial differences in",
+      "weight": "7",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "DESI TYPES",
+      "target": "RECOVERY",
+      "description": "shows substantial differences in",
+      "weight": "7",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "TOLERANCE",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "is a response to",
+      "weight": "8",
+      "source_id": "paper_4702"
+    },
+    {
+      "source": "RECOVERY",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "is a response to",
+      "weight": "8",
+      "source_id": "paper_4702"
+    }
+  ]
+}

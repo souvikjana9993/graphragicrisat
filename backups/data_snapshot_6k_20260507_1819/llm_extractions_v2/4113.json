@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The target crop Arachis hypogaea used in the mutation experiment",
+      "source_id": "paper_4113"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The primary agricultural output trait being improved",
+      "source_id": "paper_4113"
+    },
+    {
+      "name": "POLYGENIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "Genetic variation involving multiple genes induced for yield components",
+      "source_id": "paper_4113"
+    },
+    {
+      "name": "JL 24",
+      "type": "CROP",
+      "description": "A specific variety of groundnut used as seed for treatment",
+      "source_id": "paper_4113"
+    },
+    {
+      "name": "KRG 1",
+      "type": "CROP",
+      "description": "A specific variety of groundnut used as seed for treatment",
+      "source_id": "paper_4113"
+    },
+    {
+      "name": "GAMMA RAYS",
+      "type": "METHOD",
+      "description": "Radiation used at 30 and 40kR doses to induce mutations",
+      "source_id": "paper_4113"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The water supply condition under which the population was grown",
+      "source_id": "paper_4113"
+    },
+    {
+      "name": "INDUCED MUTATION",
+      "type": "METHOD",
+      "description": "The process of creating genetic variability using radiation",
+      "source_id": "paper_4113"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INDUCED MUTATION",
+      "target": "GROUNDNUT",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_4113"
+    },
+    {
+      "source": "INDUCED MUTATION",
+      "target": "YIELD",
+      "description": "aims to increase",
+      "weight": "8",
+      "source_id": "paper_4113"
+    },
+    {
+      "source": "GAMMA RAYS",
+      "target": "INDUCED MUTATION",
+      "description": "used to achieve",
+      "weight": "10",
+      "source_id": "paper_4113"
+    },
+    {
+      "source": "JL 24",
+      "target": "GROUNDNUT",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_4113"
+    },
+    {
+      "source": "KRG 1",
+      "target": "GROUNDNUT",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_4113"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "POLYGENIC VARIABILITY",
+      "description": "influenced the expression of",
+      "weight": "7",
+      "source_id": "paper_4113"
+    },
+    {
+      "source": "INDUCED MUTATION",
+      "target": "POLYGENIC VARIABILITY",
+      "description": "creates",
+      "weight": "9",
+      "source_id": "paper_4113"
+    },
+    {
+      "source": "POLYGENIC VARIABILITY",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4113"
+    }
+  ]
+}

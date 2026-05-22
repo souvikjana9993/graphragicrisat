@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The cereal crop being studied for productivity in iron-toxic environments",
+      "source_id": "paper_4880"
+    },
+    {
+      "name": "IRON TOXICITY",
+      "type": "CONDITION",
+      "description": "A condition caused by excess iron in the soil that negatively affects plant growth",
+      "source_id": "paper_4880"
+    },
+    {
+      "name": "TOLERANT GENOTYPES",
+      "type": "TRAIT",
+      "description": "Genetic variations of plants that can withstand iron toxicity",
+      "source_id": "paper_4880"
+    },
+    {
+      "name": "PLANT NUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Essential elements required by plants that may help mitigate iron toxicity",
+      "source_id": "paper_4880"
+    },
+    {
+      "name": "RICE PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of yield and growth efficiency of rice",
+      "source_id": "paper_4880"
+    },
+    {
+      "name": "IRON-TOXIC WETLANDS",
+      "type": "LOCATION",
+      "description": "Lowland areas characterized by high iron levels in the soil",
+      "source_id": "paper_4880"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TOLERANT GENOTYPES",
+      "target": "IRON TOXICITY",
+      "description": "used for reducing",
+      "weight": "9",
+      "source_id": "paper_4880"
+    },
+    {
+      "source": "PLANT NUTRIENTS",
+      "target": "IRON TOXICITY",
+      "description": "role in reducing",
+      "weight": "8",
+      "source_id": "paper_4880"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "RICE PRODUCTIVITY",
+      "description": "negatively impacts",
+      "weight": "10",
+      "source_id": "paper_4880"
+    },
+    {
+      "source": "RICE",
+      "target": "IRON-TOXIC WETLANDS",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_4880"
+    },
+    {
+      "source": "TOLERANT GENOTYPES",
+      "target": "RICE PRODUCTIVITY",
+      "description": "helps increase",
+      "weight": "7",
+      "source_id": "paper_4880"
+    },
+    {
+      "source": "PLANT NUTRIENTS",
+      "target": "RICE PRODUCTIVITY",
+      "description": "helps increase",
+      "weight": "7",
+      "source_id": "paper_4880"
+    }
+  ]
+}

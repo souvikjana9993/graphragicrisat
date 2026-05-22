@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cajanus cajan) used for hybrid development",
+      "source_id": "paper_1040"
+    },
+    {
+      "name": "MALE STERILITY",
+      "type": "TRAIT",
+      "description": "A genetic condition where the plant cannot produce functional pollen, used for hybrid breeding",
+      "source_id": "paper_1040"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced, showing non-additive genetic variation",
+      "source_id": "paper_1040"
+    },
+    {
+      "name": "HYBRID BREEDING",
+      "type": "METHOD",
+      "description": "The process of crossing genetically different parents to produce hybrid offspring",
+      "source_id": "paper_1040"
+    },
+    {
+      "name": "MALE STERILE GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes responsible for male sterility transferred to cultivars",
+      "source_id": "paper_1040"
+    },
+    {
+      "name": "ICPH 8",
+      "type": "CROP",
+      "description": "The first released hybrid pigeonpea variety",
+      "source_id": "paper_1040"
+    },
+    {
+      "name": "HYBRID SEED PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The commercial process of producing seeds for hybrid crops",
+      "source_id": "paper_1040"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MALE STERILITY",
+      "target": "PIGEONPEA",
+      "description": "Occurs in pigeonpea",
+      "weight": "10",
+      "source_id": "paper_1040"
+    },
+    {
+      "source": "YIELD",
+      "target": "PIGEONPEA",
+      "description": "Is a trait of pigeonpea",
+      "weight": "10",
+      "source_id": "paper_1040"
+    },
+    {
+      "source": "MALE STERILITY",
+      "target": "HYBRID BREEDING",
+      "description": "Enables the development of hybrids",
+      "weight": "9",
+      "source_id": "paper_1040"
+    },
+    {
+      "source": "YIELD",
+      "target": "HYBRID BREEDING",
+      "description": "Non-additive variation for yield justifies hybrid breeding",
+      "weight": "8",
+      "source_id": "paper_1040"
+    },
+    {
+      "source": "MALE STERILE GENES",
+      "target": "MALE STERILITY",
+      "description": "Responsible for the trait of male sterility",
+      "weight": "10",
+      "source_id": "paper_1040"
+    },
+    {
+      "source": "MALE STERILE GENES",
+      "target": "PIGEONPEA",
+      "description": "Transferred to pigeonpea cultivars",
+      "weight": "9",
+      "source_id": "paper_1040"
+    },
+    {
+      "source": "ICPH 8",
+      "target": "PIGEONPEA",
+      "description": "Is a hybrid variety of pigeonpea",
+      "weight": "10",
+      "source_id": "paper_1040"
+    },
+    {
+      "source": "HYBRID BREEDING",
+      "target": "HYBRID SEED PRODUCTION",
+      "description": "Provides the basis for commercial seed production",
+      "weight": "8",
+      "source_id": "paper_1040"
+    }
+  ]
+}

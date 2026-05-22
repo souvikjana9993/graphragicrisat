@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONCEPT",
+      "description": "The nutrient status of the soil, which is experiencing a widespread decline in Malawi",
+      "source_id": "paper_2233"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "The country where soil fertility decline and food security issues are prevalent",
+      "source_id": "paper_2233"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "A pressing issue in Malawi linked to agricultural productivity and soil health",
+      "source_id": "paper_2233"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of agricultural output that guidelines aim to improve for various crops",
+      "source_id": "paper_2233"
+    },
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "Plants grown for agricultural production",
+      "source_id": "paper_2233"
+    },
+    {
+      "name": "SOIL FERTILITY MANAGEMENT",
+      "type": "METHOD",
+      "description": "Low-cost options and guidelines designed to improve soil fertility for resource-poor smallholder farmers",
+      "source_id": "paper_2233"
+    },
+    {
+      "name": "FERTILIZER APPLICATION",
+      "type": "METHOD",
+      "description": "The practice of applying fertilizers at recommended rates to maintain soil fertility",
+      "source_id": "paper_2233"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL FERTILITY",
+      "target": "MALAWI",
+      "description": "declining in",
+      "weight": "10",
+      "source_id": "paper_2233"
+    },
+    {
+      "source": "FOOD SECURITY",
+      "target": "MALAWI",
+      "description": "is a pressing issue in",
+      "weight": "10",
+      "source_id": "paper_2233"
+    },
+    {
+      "source": "SOIL FERTILITY",
+      "target": "FOOD SECURITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_2233"
+    },
+    {
+      "source": "SOIL FERTILITY MANAGEMENT",
+      "target": "SOIL FERTILITY",
+      "description": "aims to improve",
+      "weight": "9",
+      "source_id": "paper_2233"
+    },
+    {
+      "source": "SOIL FERTILITY MANAGEMENT",
+      "target": "PRODUCTIVITY",
+      "description": "aims to increase",
+      "weight": "8",
+      "source_id": "paper_2233"
+    },
+    {
+      "source": "PRODUCTIVITY",
+      "target": "CROPS",
+      "description": "is measured in",
+      "weight": "9",
+      "source_id": "paper_2233"
+    },
+    {
+      "source": "FERTILIZER APPLICATION",
+      "target": "SOIL FERTILITY",
+      "description": "is a method to improve",
+      "weight": "9",
+      "source_id": "paper_2233"
+    },
+    {
+      "source": "SOIL FERTILITY MANAGEMENT",
+      "target": "FERTILIZER APPLICATION",
+      "description": "provides low-cost alternatives to",
+      "weight": "7",
+      "source_id": "paper_2233"
+    }
+  ]
+}

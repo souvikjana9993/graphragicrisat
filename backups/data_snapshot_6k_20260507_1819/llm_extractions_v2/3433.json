@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A food legume used as a source of dietary proteins in several countries.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "PROTEIN QUALITY",
+      "type": "TRAIT",
+      "description": "The nutritional value of proteins in pigeonpea, influenced by amino acid composition, anti-nutritional factors, and processing.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "SULPHUR AMINO ACIDS",
+      "type": "CONCEPT",
+      "description": "Amino acids containing sulphur, such as methionine and cystine, which are limiting in pigeonpea.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "METHIONINE",
+      "type": "CONCEPT",
+      "description": "A limiting sulphur amino acid in pigeonpea.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "CYSTINE",
+      "type": "CONCEPT",
+      "description": "A limiting sulphur amino acid in pigeonpea.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "PROTEASE INHIBITORS",
+      "type": "CONCEPT",
+      "description": "Compounds that inhibit protease enzymes, with concentrations varying among pigeonpea varieties and wild relatives.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "WILD RELATIVES OF PIGEONPEA",
+      "type": "ORGANISM",
+      "description": "Natural relatives of the cultivated pigeonpea that often contain higher levels of protease inhibitors.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "PROTEIN DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "The extent to which proteins in cooked pigeonpea meal are digested, which is influenced by various compounds.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "TRYPSIN INHIBITORS",
+      "type": "CONCEPT",
+      "description": "A type of protease inhibitor that can negatively impact protein digestibility.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "POLYPHENOLIC COMPOUNDS",
+      "type": "CONCEPT",
+      "description": "Compounds in pigeonpea that inhibit the activity of digestive enzymes.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "DIGESTIVE ENZYMES",
+      "type": "CONCEPT",
+      "description": "Enzymes responsible for protein digestion, whose activity is affected by polyphenolic compounds.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "STORAGE PRACTICES",
+      "type": "CONDITION",
+      "description": "The methods of storing pigeonpea that influence its protein quality.",
+      "source_id": "paper_3433"
+    },
+    {
+      "name": "PROCESSING PRACTICES",
+      "type": "CONDITION",
+      "description": "The methods of processing pigeonpea that influence its protein quality.",
+      "source_id": "paper_3433"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "PROTEIN QUALITY",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "SULPHUR AMINO ACIDS",
+      "target": "PROTEIN QUALITY",
+      "description": "affect",
+      "weight": "9",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "METHIONINE",
+      "target": "SULPHUR AMINO ACIDS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "CYSTINE",
+      "target": "SULPHUR AMINO ACIDS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "PROTEASE INHIBITORS",
+      "target": "PIGEONPEA",
+      "description": "present in",
+      "weight": "8",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "WILD RELATIVES OF PIGEONPEA",
+      "target": "PROTEASE INHIBITORS",
+      "description": "have higher concentration of",
+      "weight": "9",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "PROTEIN DIGESTIBILITY",
+      "target": "PROTEIN QUALITY",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "TRYPSIN INHIBITORS",
+      "target": "PROTEIN DIGESTIBILITY",
+      "description": "affect",
+      "weight": "8",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "POLYPHENOLIC COMPOUNDS",
+      "target": "DIGESTIVE ENZYMES",
+      "description": "adversely affect activity of",
+      "weight": "9",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "DIGESTIVE ENZYMES",
+      "target": "PROTEIN QUALITY",
+      "description": "affect",
+      "weight": "8",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "STORAGE PRACTICES",
+      "target": "PROTEIN QUALITY",
+      "description": "influence",
+      "weight": "8",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "PROCESSING PRACTICES",
+      "target": "PROTEIN QUALITY",
+      "description": "influence",
+      "weight": "8",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "POLYPHENOLIC COMPOUNDS",
+      "target": "PROTEIN QUALITY",
+      "description": "affect",
+      "weight": "8",
+      "source_id": "paper_3433"
+    },
+    {
+      "source": "POLYPHENOLIC COMPOUNDS",
+      "target": "PIGEONPEA",
+      "description": "present in",
+      "weight": "8",
+      "source_id": "paper_3433"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "NERICA",
+      "type": "CROP",
+      "description": "New Rice for Africa rice varieties",
+      "source_id": "paper_10113"
+    },
+    {
+      "name": "BURKINA FASO",
+      "type": "LOCATION",
+      "description": "Country in Western Africa where the adoption of NERICA was assessed",
+      "source_id": "paper_10113"
+    },
+    {
+      "name": "ADOPTION RATE",
+      "type": "CONCEPT",
+      "description": "The actual and potential rate of adoption of NERICA varieties",
+      "source_id": "paper_10113"
+    },
+    {
+      "name": "DIFFUSION",
+      "type": "CONCEPT",
+      "description": "The process of spreading NERICA varieties among farmers",
+      "source_id": "paper_10113"
+    },
+    {
+      "name": "AVERAGE TREATMENT EFFECT (ATE)",
+      "type": "METHOD",
+      "description": "A statistical method used to determine the common rate of exposure to and adoption of NERICA",
+      "source_id": "paper_10113"
+    },
+    {
+      "name": "AGRICULTURAL RESEARCH SERVICES",
+      "type": "CONCEPT",
+      "description": "Services that act as a key factor in the awareness and adoption of NERICA",
+      "source_id": "paper_10113"
+    },
+    {
+      "name": "RICE VARIETAL SELECTION TESTS",
+      "type": "METHOD",
+      "description": "Tests used to evaluate rice varieties among farmers",
+      "source_id": "paper_10113"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NERICA",
+      "target": "BURKINA FASO",
+      "description": "is adopted in",
+      "weight": "8",
+      "source_id": "paper_10113"
+    },
+    {
+      "source": "AVERAGE TREATMENT EFFECT (ATE)",
+      "target": "ADOPTION RATE",
+      "description": "is used to determine",
+      "weight": "9",
+      "source_id": "paper_10113"
+    },
+    {
+      "source": "AGRICULTURAL RESEARCH SERVICES",
+      "target": "ADOPTION RATE",
+      "description": "is a key factor determining",
+      "weight": "9",
+      "source_id": "paper_10113"
+    },
+    {
+      "source": "AGRICULTURAL RESEARCH SERVICES",
+      "target": "NERICA",
+      "description": "influences awareness and adoption of",
+      "weight": "8",
+      "source_id": "paper_10113"
+    },
+    {
+      "source": "RICE VARIETAL SELECTION TESTS",
+      "target": "NERICA",
+      "description": "are used to test",
+      "weight": "7",
+      "source_id": "paper_10113"
+    },
+    {
+      "source": "DIFFUSION",
+      "target": "ADOPTION RATE",
+      "description": "affects the",
+      "weight": "7",
+      "source_id": "paper_10113"
+    }
+  ]
+}

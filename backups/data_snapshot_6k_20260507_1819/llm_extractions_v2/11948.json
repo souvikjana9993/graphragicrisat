@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SALMONELLA",
+      "type": "ORGANISM",
+      "description": "Genus of bacteria targeted for detection in the study",
+      "source_id": "paper_11948"
+    },
+    {
+      "name": "SURFACE PLASMON RESONANCE",
+      "type": "METHOD",
+      "description": "An optical technique used for the rapid and specific detection of analytes",
+      "source_id": "paper_11948"
+    },
+    {
+      "name": "PLASMONIC SPR DEVICE",
+      "type": "METHOD",
+      "description": "The specific hardware used to implement surface plasmon resonance",
+      "source_id": "paper_11948"
+    },
+    {
+      "name": "SANDWICH IMMUNOASSAY",
+      "type": "METHOD",
+      "description": "An assay format utilizing capture and detection antibodies to identify a target",
+      "source_id": "paper_11948"
+    },
+    {
+      "name": "POLYCLONAL ANTI-SALMONELLA ANTIBODY",
+      "type": "CONCEPT",
+      "description": "Antibodies used to capture multiple Salmonella serovars in the immunoassay",
+      "source_id": "paper_11948"
+    },
+    {
+      "name": "O-SPECIFIC ANTI-SALMONELLA ANTIBODIES",
+      "type": "CONCEPT",
+      "description": "Antibodies used for the specific detection of captured Salmonella serovars",
+      "source_id": "paper_11948"
+    },
+    {
+      "name": "MILK",
+      "type": "CONDITION",
+      "description": "The sample matrix used as a model system to establish the assay",
+      "source_id": "paper_11948"
+    },
+    {
+      "name": "SALMONELLA TYPHIMURIUM",
+      "type": "ORGANISM",
+      "description": "A specific serovar of Salmonella used for assay validation",
+      "source_id": "paper_11948"
+    },
+    {
+      "name": "SALMONELLA ENTERITIDIS",
+      "type": "ORGANISM",
+      "description": "A specific serovar of Salmonella used for assay validation",
+      "source_id": "paper_11948"
+    },
+    {
+      "name": "LOWER LIMITS OF DETECTION",
+      "type": "CONCEPT",
+      "description": "The minimum concentration of bacteria that can be reliably detected by the assay",
+      "source_id": "paper_11948"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SURFACE PLASMON RESONANCE",
+      "target": "SALMONELLA",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_11948"
+    },
+    {
+      "source": "PLASMONIC SPR DEVICE",
+      "target": "SURFACE PLASMON RESONANCE",
+      "description": "implements",
+      "weight": "10",
+      "source_id": "paper_11948"
+    },
+    {
+      "source": "SANDWICH IMMUNOASSAY",
+      "target": "SURFACE PLASMON RESONANCE",
+      "description": "is the assay format used with",
+      "weight": "9",
+      "source_id": "paper_11948"
+    },
+    {
+      "source": "POLYCLONAL ANTI-SALMONELLA ANTIBODY",
+      "target": "SANDWICH IMMUNOASSAY",
+      "description": "used as capture agent in",
+      "weight": "10",
+      "source_id": "paper_11948"
+    },
+    {
+      "source": "O-SPECIFIC ANTI-SALMONELLA ANTIBODIES",
+      "target": "SANDWICH IMMUNOASSAY",
+      "description": "used as detection agent in",
+      "weight": "10",
+      "source_id": "paper_11948"
+    },
+    {
+      "source": "SALMONELLA TYPHIMURIUM",
+      "target": "SALMONELLA",
+      "description": "is a serovar of",
+      "weight": "10",
+      "source_id": "paper_11948"
+    },
+    {
+      "source": "SALMONELLA ENTERITIDIS",
+      "target": "SALMONELLA",
+      "description": "is a serovar of",
+      "weight": "10",
+      "source_id": "paper_11948"
+    },
+    {
+      "source": "MILK",
+      "target": "SALMONELLA TYPHIMURIUM",
+      "description": "used as sample matrix for",
+      "weight": "8",
+      "source_id": "paper_11948"
+    },
+    {
+      "source": "MILK",
+      "target": "SALMONELLA ENTERITIDIS",
+      "description": "used as sample matrix for",
+      "weight": "8",
+      "source_id": "paper_11948"
+    },
+    {
+      "source": "SURFACE PLASMON RESONANCE",
+      "target": "LOWER LIMITS OF DETECTION",
+      "description": "is characterized by",
+      "weight": "9",
+      "source_id": "paper_11948"
+    }
+  ]
+}

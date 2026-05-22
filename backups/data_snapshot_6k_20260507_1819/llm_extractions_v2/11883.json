@@ -1,0 +1,217 @@
+{
+  "entities": [
+    {
+      "name": "STREAMFLOW",
+      "type": "CONCEPT",
+      "description": "Hydrologic variable used to observe signs of hydrologic change in a catchment",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "GROUNDWATER STORAGE",
+      "type": "CONCEPT",
+      "description": "Hydrologic variable including groundwater levels and storage capacity",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "HIMAYAT SAGAR CATCHMENT",
+      "type": "LOCATION",
+      "description": "A typical semi-arid catchment in southern India used as a case study",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study area is located",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "CLIMATIC CHANGES",
+      "type": "CONDITION",
+      "description": "External drivers of hydrologic change",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "ANTHROPOGENIC CHANGES",
+      "type": "CONDITION",
+      "description": "Internal human-driven drivers of hydrologic change",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "MODIFIED SOIL AND WATER ASSESSMENT TOOL (SWAT)",
+      "type": "METHOD",
+      "description": "A semidistributed rainfall-runoff model used to attribute hydrologic changes",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "LUMPED GROUNDWATER MODEL",
+      "type": "METHOD",
+      "description": "A model coupled with SWAT for each sub-catchment to analyze groundwater",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "POTENTIAL EVAPOTRANSPIRATION",
+      "type": "CONCEPT",
+      "description": "A climatic variable that influences the water balance",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "A climatic driver that influences streamflow and groundwater recharge",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "WATERSHED HYDROLOGICAL STRUCTURES",
+      "type": "CONCEPT",
+      "description": "Measures implemented to enhance groundwater recharge",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "LAND USE CHANGES",
+      "type": "CONDITION",
+      "description": "Anthropogenic drivers that impact groundwater storage and streamflow",
+      "source_id": "paper_11883"
+    },
+    {
+      "name": "CATCHMENT HYDROLOGY",
+      "type": "CONCEPT",
+      "description": "The overall study of water movement and distribution within a catchment",
+      "source_id": "paper_11883"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STREAMFLOW",
+      "target": "HIMAYAT SAGAR CATCHMENT",
+      "description": "Observed significant decline in",
+      "weight": "10",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "GROUNDWATER STORAGE",
+      "target": "HIMAYAT SAGAR CATCHMENT",
+      "description": "Observed significant decline in",
+      "weight": "10",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "HIMAYAT SAGAR CATCHMENT",
+      "target": "INDIA",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "CLIMATIC CHANGES",
+      "target": "STREAMFLOW",
+      "description": "Driver of trends in",
+      "weight": "8",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "CLIMATIC CHANGES",
+      "target": "GROUNDWATER STORAGE",
+      "description": "Driver of trends in",
+      "weight": "8",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "ANTHROPOGENIC CHANGES",
+      "target": "STREAMFLOW",
+      "description": "Driver of trends in",
+      "weight": "8",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "ANTHROPOGENIC CHANGES",
+      "target": "GROUNDWATER STORAGE",
+      "description": "Driver of trends in",
+      "weight": "8",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "MODIFIED SOIL AND WATER ASSESSMENT TOOL (SWAT)",
+      "target": "STREAMFLOW",
+      "description": "Used to predict trends in",
+      "weight": "9",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "MODIFIED SOIL AND WATER ASSESSMENT TOOL (SWAT)",
+      "target": "GROUNDWATER STORAGE",
+      "description": "Used to predict trends in",
+      "weight": "9",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "LUMPED GROUNDWATER MODEL",
+      "target": "MODIFIED SOIL AND WATER ASSESSMENT TOOL (SWAT)",
+      "description": "Coupled with",
+      "weight": "10",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "POTENTIAL EVAPOTRANSPIRATION",
+      "target": "STREAMFLOW",
+      "description": "Influences water balance",
+      "weight": "7",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "STREAMFLOW",
+      "description": "Influences water balance",
+      "weight": "7",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "WATERSHED HYDROLOGICAL STRUCTURES",
+      "target": "GROUNDWATER STORAGE",
+      "description": "Intended to enhance recharge",
+      "weight": "7",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "LAND USE CHANGES",
+      "target": "GROUNDWATER STORAGE",
+      "description": "Causes decline in",
+      "weight": "9",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "LAND USE CHANGES",
+      "target": "STREAMFLOW",
+      "description": "Impacts trends in",
+      "weight": "9",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "CLIMATIC CHANGES",
+      "target": "POTENTIAL EVAPOTRANSPIRATION",
+      "description": "Includes",
+      "weight": "8",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "CLIMATIC CHANGES",
+      "target": "RAINFALL",
+      "description": "Includes",
+      "weight": "8",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "ANTHROPOGENIC CHANGES",
+      "target": "LAND USE CHANGES",
+      "description": "Includes",
+      "weight": "9",
+      "source_id": "paper_11883"
+    },
+    {
+      "source": "ANTHROPOGENIC CHANGES",
+      "target": "WATERSHED HYDROLOGICAL STRUCTURES",
+      "description": "Includes",
+      "weight": "9",
+      "source_id": "paper_11883"
+    }
+  ]
+}

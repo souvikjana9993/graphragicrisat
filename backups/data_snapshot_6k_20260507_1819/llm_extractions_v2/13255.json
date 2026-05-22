@@ -1,0 +1,294 @@
+{
+  "entities": [
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "A region in Africa undergoing rapid agricultural intensification and land cover changes.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "AGRICULTURAL INTENSIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of increasing the intensity of agricultural production.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "POPULATION GROWTH",
+      "type": "CONCEPT",
+      "description": "The increase in the number of people residing in a particular area.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "LAND USE AND LAND COVER CHANGE",
+      "type": "CONCEPT",
+      "description": "Anthropogenic changes in the physical environment, including deforestation and afforestation.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "DEFORESTATION",
+      "type": "CONCEPT",
+      "description": "The removal of forest or stand of trees from land that was previously forested.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "AFFORESTATION",
+      "type": "CONCEPT",
+      "description": "The establishment of a forest or stand of trees in an area where there was no previous tree cover.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "REGIONAL CLIMATE SYSTEM",
+      "type": "CONCEPT",
+      "description": "The complex of atmospheric and surface interactions that determine the climate of a specific region.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "SURFACE ENERGY BALANCE",
+      "type": "CONCEPT",
+      "description": "The balance between incoming and outgoing energy at the Earth's surface.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "MOISTURE FLUXES",
+      "type": "CONCEPT",
+      "description": "The movement of water vapor between the surface and the atmosphere.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "ATMOSPHERIC CIRCULATION",
+      "type": "CONCEPT",
+      "description": "The large-scale movement of air by which heat is distributed on the surface of the Earth.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "CLIMATE MODELS",
+      "type": "METHOD",
+      "description": "Computational tools used to simulate and predict climate responses to various drivers.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "PRECIPITATION",
+      "type": "CONCEPT",
+      "description": "Any form of water, liquid or solid, that falls from the atmosphere and reaches the ground.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONCEPT",
+      "description": "The measure of heat or coldness of the atmosphere.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "REGIONAL WARMING",
+      "type": "CONDITION",
+      "description": "An increase in the average temperature of a specific region.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "CARBON SEQUESTRATION",
+      "type": "CONCEPT",
+      "description": "The process of capturing and storing atmospheric carbon dioxide.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "DROUGHTS",
+      "type": "CONDITION",
+      "description": "Prolonged periods of abnormally low rainfall, leading to a water shortage.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "SYSTEMATIC REVIEW",
+      "type": "METHOD",
+      "description": "A multidisciplinary review synthesizing data from multiple publications to analyze a specific topic.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "LAND-BASED MITIGATION STRATEGIES",
+      "type": "CONCEPT",
+      "description": "Strategies aimed at reducing greenhouse gas emissions or enhancing carbon sinks through land management.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "CLIMATE POLICY",
+      "type": "CONCEPT",
+      "description": "Governmental or organizational guidelines and laws aimed at addressing climate change.",
+      "source_id": "paper_13255"
+    },
+    {
+      "name": "ASSESSMENT FRAMEWORKS",
+      "type": "CONCEPT",
+      "description": "Structured approaches used to evaluate the impacts and risks of climate change.",
+      "source_id": "paper_13255"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POPULATION GROWTH",
+      "target": "AGRICULTURAL INTENSIFICATION",
+      "description": "drives",
+      "weight": "8",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "AGRICULTURAL INTENSIFICATION",
+      "target": "LAND USE AND LAND COVER CHANGE",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "LAND USE AND LAND COVER CHANGE",
+      "target": "DEFORESTATION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "LAND USE AND LAND COVER CHANGE",
+      "target": "AFFORESTATION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "LAND USE AND LAND COVER CHANGE",
+      "target": "REGIONAL CLIMATE SYSTEM",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "REGIONAL CLIMATE SYSTEM",
+      "target": "SURFACE ENERGY BALANCE",
+      "description": "alters",
+      "weight": "8",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "REGIONAL CLIMATE SYSTEM",
+      "target": "MOISTURE FLUXES",
+      "description": "alters",
+      "weight": "8",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "REGIONAL CLIMATE SYSTEM",
+      "target": "ATMOSPHERIC CIRCULATION",
+      "description": "alters",
+      "weight": "8",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "CLIMATE MODELS",
+      "target": "LAND USE AND LAND COVER CHANGE",
+      "description": "simulate impacts of",
+      "weight": "7",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "CLIMATE MODELS",
+      "target": "PRECIPITATION",
+      "description": "simulate responses of",
+      "weight": "7",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "CLIMATE MODELS",
+      "target": "TEMPERATURE",
+      "description": "simulate responses of",
+      "weight": "7",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "DEFORESTATION",
+      "target": "REGIONAL WARMING",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "DEFORESTATION",
+      "target": "TEMPERATURE",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "DEFORESTATION",
+      "target": "PRECIPITATION",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "AFFORESTATION",
+      "target": "REGIONAL CLIMATE SYSTEM",
+      "description": "cools",
+      "weight": "8",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "AFFORESTATION",
+      "target": "TEMPERATURE",
+      "description": "lowers",
+      "weight": "9",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "AFFORESTATION",
+      "target": "DROUGHTS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "AFFORESTATION",
+      "target": "PRECIPITATION",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "AFFORESTATION",
+      "target": "CARBON SEQUESTRATION",
+      "description": "is associated with",
+      "weight": "7",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "SYSTEMATIC REVIEW",
+      "target": "LAND USE AND LAND COVER CHANGE",
+      "description": "reviews impacts of",
+      "weight": "10",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "LAND USE AND LAND COVER CHANGE",
+      "target": "LAND-BASED MITIGATION STRATEGIES",
+      "description": "should be integrated into",
+      "weight": "8",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "LAND USE AND LAND COVER CHANGE",
+      "target": "CLIMATE POLICY",
+      "description": "should be integrated into",
+      "weight": "8",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "LAND USE AND LAND COVER CHANGE",
+      "target": "ASSESSMENT FRAMEWORKS",
+      "description": "should be integrated into",
+      "weight": "8",
+      "source_id": "paper_13255"
+    },
+    {
+      "source": "WEST AFRICA",
+      "target": "LAND USE AND LAND COVER CHANGE",
+      "description": "is the location of",
+      "weight": "10",
+      "source_id": "paper_13255"
+    }
+  ]
+}

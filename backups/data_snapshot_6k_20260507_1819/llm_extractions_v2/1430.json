@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop species studied for its response to water deficit during panicle development.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "A condition of limited water availability during the panicle development stage.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "PANICLE DEVELOPMENT STAGE",
+      "type": "CONCEPT",
+      "description": "The specific growth phase of the crop including panicle initiation and flowering.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of grain production from the main shoot and tillers.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "MAIN SHOOT PANICLE",
+      "type": "CONCEPT",
+      "description": "The primary reproductive structure on the main stem of the plant.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "TILLERS",
+      "type": "CONCEPT",
+      "description": "Secondary shoots that can produce grain and compensate for main shoot yield loss.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "MAIN SHOOT REMOVAL",
+      "type": "METHOD",
+      "description": "The experimental method of removing the main shoot at panicle initiation or flowering stages.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The condition of providing sufficient water to the plants.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "NUMBER OF PRODUCTIVE TILLERS",
+      "type": "TRAIT",
+      "description": "The count of tillers that successfully produce grain.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "NUMBER OF GRAINS PER PANICLE",
+      "type": "TRAIT",
+      "description": "The count of grains produced on a single panicle.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "YIELD COMPENSATION",
+      "type": "CONCEPT",
+      "description": "The biological mechanism where tillers increase yield to offset losses in the main shoot.",
+      "source_id": "paper_1430"
+    },
+    {
+      "name": "NUMBER OF GRAINS ON TILLERS",
+      "type": "TRAIT",
+      "description": "The total count of grains produced by the tillers.",
+      "source_id": "paper_1430"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER DEFICIT",
+      "target": "PEARL MILLET",
+      "description": "affects the growth and yield of",
+      "weight": "8",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "GRAIN YIELD",
+      "description": "reduces the grain yield of the main shoot panicle",
+      "weight": "9",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "TILLERS",
+      "target": "GRAIN YIELD",
+      "description": "compensates for the loss of grain yield in the main shoot",
+      "weight": "10",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "MAIN SHOOT REMOVAL",
+      "target": "GRAIN YIELD",
+      "description": "causes loss of grain yield in the main shoot",
+      "weight": "9",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "MAIN SHOOT REMOVAL",
+      "target": "TILLERS",
+      "description": "induces compensatory grain yield increase in",
+      "weight": "8",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "NUMBER OF PRODUCTIVE TILLERS",
+      "description": "increases the number of",
+      "weight": "7",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "MAIN SHOOT REMOVAL",
+      "target": "NUMBER OF PRODUCTIVE TILLERS",
+      "description": "increases the number of",
+      "weight": "7",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "MAIN SHOOT REMOVAL",
+      "target": "NUMBER OF GRAINS PER PANICLE",
+      "description": "increases the number of",
+      "weight": "7",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "NUMBER OF PRODUCTIVE TILLERS",
+      "target": "GRAIN YIELD",
+      "description": "contributes to the increase in",
+      "weight": "8",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "NUMBER OF GRAINS PER PANICLE",
+      "target": "GRAIN YIELD",
+      "description": "contributes to the increase in",
+      "weight": "8",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "YIELD COMPENSATION",
+      "target": "TILLERS",
+      "description": "is achieved through the activity of",
+      "weight": "9",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "PANICLE DEVELOPMENT STAGE",
+      "target": "WATER DEFICIT",
+      "description": "is the stage during which water deficit occurs",
+      "weight": "8",
+      "source_id": "paper_1430"
+    },
+    {
+      "source": "NUMBER OF GRAINS ON TILLERS",
+      "target": "GRAIN YIELD",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_1430"
+    }
+  ]
+}

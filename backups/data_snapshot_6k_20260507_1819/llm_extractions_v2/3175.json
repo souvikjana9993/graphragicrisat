@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being studied for resistance to shoot fly.",
+      "source_id": "paper_3175"
+    },
+    {
+      "name": "SHOOT FLY",
+      "type": "ORGANISM",
+      "description": "The pest Atherigona soccata that attacks sorghum seedlings.",
+      "source_id": "paper_3175"
+    },
+    {
+      "name": "LEAF SURFACE WETNESS",
+      "type": "TRAIT",
+      "description": "Wetness on the central whorl leaf of sorghum seedlings associated with shoot fly susceptibility.",
+      "source_id": "paper_3175"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The vulnerability of sorghum genotypes to shoot fly attack.",
+      "source_id": "paper_3175"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum genotypes to resist shoot fly attack.",
+      "source_id": "paper_3175"
+    },
+    {
+      "name": "RADIOACTIVE LABELLING",
+      "type": "METHOD",
+      "description": "Technique using radioactive isotopes to track movement of water and solutes in plants.",
+      "source_id": "paper_3175"
+    },
+    {
+      "name": "TRITIUM",
+      "type": "CONCEPT",
+      "description": "A radioactive isotope of hydrogen used to track water translocation to the leaf surface.",
+      "source_id": "paper_3175"
+    },
+    {
+      "name": "CARBON-14",
+      "type": "CONCEPT",
+      "description": "A radioactive isotope of carbon used to detect solutes in leaf surface water.",
+      "source_id": "paper_3175"
+    },
+    {
+      "name": "CSH 5",
+      "type": "CONCEPT",
+      "description": "A sorghum genotype identified as susceptible to shoot fly.",
+      "source_id": "paper_3175"
+    },
+    {
+      "name": "IS 18551",
+      "type": "CONCEPT",
+      "description": "A sorghum genotype identified as resistant to shoot fly.",
+      "source_id": "paper_3175"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SHOOT FLY",
+      "description": "is attacked by",
+      "weight": "8",
+      "source_id": "paper_3175"
+    },
+    {
+      "source": "LEAF SURFACE WETNESS",
+      "target": "SUSCEPTIBILITY",
+      "description": "is associated with",
+      "weight": "9",
+      "source_id": "paper_3175"
+    },
+    {
+      "source": "RADIOACTIVE LABELLING",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "confirmed the source of",
+      "weight": "10",
+      "source_id": "paper_3175"
+    },
+    {
+      "source": "RADIOACTIVE LABELLING",
+      "target": "TRITIUM",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_3175"
+    },
+    {
+      "source": "RADIOACTIVE LABELLING",
+      "target": "CARBON-14",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_3175"
+    },
+    {
+      "source": "CSH 5",
+      "target": "SUSCEPTIBILITY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3175"
+    },
+    {
+      "source": "IS 18551",
+      "target": "RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3175"
+    },
+    {
+      "source": "CARBON-14",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "used to identify solutes in",
+      "weight": "8",
+      "source_id": "paper_3175"
+    },
+    {
+      "source": "SHOOT FLY",
+      "target": "LEAF SURFACE WETNESS",
+      "description": "is influenced by",
+      "weight": "7",
+      "source_id": "paper_3175"
+    }
+  ]
+}

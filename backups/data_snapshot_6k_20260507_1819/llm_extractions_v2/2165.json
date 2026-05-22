@@ -1,0 +1,161 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being cross-pollinated",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "DEBRE ZEIT",
+      "type": "LOCATION",
+      "description": "The specific location in Ethiopia where the study was conducted",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "DZ10-11",
+      "type": "CROP",
+      "description": "A desi variety of chickpea used as the female parent",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "ICCU2",
+      "type": "CROP",
+      "description": "A kabuli variety of chickpea used in the cross",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "ARTIFICIAL CROSS POLLINATION",
+      "type": "METHOD",
+      "description": "The process of manually transferring pollen between chickpea varieties",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "SAME-DAY EMASCULATION AND POLLINATION",
+      "type": "METHOD",
+      "description": "A crossing method where emasculation and pollination occur on the same day at 09.00 h",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "NEXT-DAY POLLINATION",
+      "type": "METHOD",
+      "description": "A crossing method where emasculation occurs at 16.00 h and pollination occurs at 08.30 h the next day",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "The outdoor environment where crossing was performed",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled indoor environment where crossing was performed",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "HIGH MINIMUM TEMPERATURES",
+      "type": "CONDITION",
+      "description": "Environmental factor that had deleterious effects on the success rate",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "HIGH HUMIDITY",
+      "type": "CONDITION",
+      "description": "Environmental factor that had deleterious effects on the success rate",
+      "source_id": "paper_2165"
+    },
+    {
+      "name": "SUCCESS RATE",
+      "type": "TRAIT",
+      "description": "The measure of effectiveness of the artificial cross pollination",
+      "source_id": "paper_2165"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DZ10-11",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "ICCU2",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "ARTIFICIAL CROSS POLLINATION",
+      "target": "CHICKPEA",
+      "description": "is performed on",
+      "weight": "10",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "SAME-DAY EMASCULATION AND POLLINATION",
+      "target": "ARTIFICIAL CROSS POLLINATION",
+      "description": "is a specific method of",
+      "weight": "9",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "NEXT-DAY POLLINATION",
+      "target": "ARTIFICIAL CROSS POLLINATION",
+      "description": "is a specific method of",
+      "weight": "9",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "DEBRE ZEIT",
+      "target": "ETHIOPIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "ARTIFICIAL CROSS POLLINATION",
+      "target": "DEBRE ZEIT",
+      "description": "was conducted in",
+      "weight": "8",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "ARTIFICIAL CROSS POLLINATION",
+      "target": "FIELD",
+      "description": "was performed in",
+      "weight": "7",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "ARTIFICIAL CROSS POLLINATION",
+      "target": "GREENHOUSE",
+      "description": "was performed in",
+      "weight": "7",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "HIGH MINIMUM TEMPERATURES",
+      "target": "SUCCESS RATE",
+      "description": "negatively affects",
+      "weight": "8",
+      "source_id": "paper_2165"
+    },
+    {
+      "source": "HIGH HUMIDITY",
+      "target": "SUCCESS RATE",
+      "description": "negatively affects",
+      "weight": "8",
+      "source_id": "paper_2165"
+    }
+  ]
+}

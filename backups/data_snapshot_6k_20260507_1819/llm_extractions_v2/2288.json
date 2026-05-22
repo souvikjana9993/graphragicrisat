@@ -1,0 +1,222 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan (L.) Millsp., the crop studied in the field studies",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the field studies were conducted",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The environmental variable that varied across locations and affected plant development",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "ALTITUDE",
+      "type": "CONDITION",
+      "description": "The factor that caused temperature to decrease as it increased",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "TIME TO FLOWERING",
+      "type": "TRAIT",
+      "description": "The duration from sowing to flowering, denoted as f",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "TIME TO MATURITY",
+      "type": "TRAIT",
+      "description": "The duration from sowing to maturity, denoted as m",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "DURATION BETWEEN FLOWERING AND MATURITY",
+      "type": "TRAIT",
+      "description": "The duration between flowering and maturity, denoted as fm",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "PIGEONPEA LINES",
+      "type": "CONCEPT",
+      "description": "63 lines of pigeonpea developed in India used in the study",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the pigeonpea lines were developed",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "DEVELOPMENT RATE EQUATIONS",
+      "type": "METHOD",
+      "description": "Equations used to describe the rates of development (1/f, 1/m, and 1/fm)",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "OPTIMUM TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature range that allows for the fastest time to flowering and shortest duration between flowering and maturity",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "SUPRA-OPTIMAL TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Temperatures above the optimum range that result in slower development",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "HIGH NIGHT TEMPERATURES",
+      "type": "CONDITION",
+      "description": "Nighttime temperatures that contributed to the supra-optimal effect on development",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "The overall growth of the pigeonpea plants, which was retarded by cool temperatures and enhanced by warm temperatures",
+      "source_id": "paper_2288"
+    },
+    {
+      "name": "KABETE",
+      "type": "LOCATION",
+      "description": "A specific location in Kenya where cool temperatures were observed to retard plant growth",
+      "source_id": "paper_2288"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "KENYA",
+      "description": "studied in",
+      "weight": "10",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PIGEONPEA",
+      "description": "affects development of",
+      "weight": "10",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "ALTITUDE",
+      "target": "TEMPERATURE",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "TIME TO FLOWERING",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "TIME TO MATURITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DURATION BETWEEN FLOWERING AND MATURITY",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "PIGEONPEA LINES",
+      "target": "PIGEONPEA",
+      "description": "are varieties of",
+      "weight": "10",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "PIGEONPEA LINES",
+      "target": "INDIA",
+      "description": "developed in",
+      "weight": "10",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "DEVELOPMENT RATE EQUATIONS",
+      "target": "TIME TO FLOWERING",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "DEVELOPMENT RATE EQUATIONS",
+      "target": "TIME TO MATURITY",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "DEVELOPMENT RATE EQUATIONS",
+      "target": "DURATION BETWEEN FLOWERING AND MATURITY",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "OPTIMUM TEMPERATURE",
+      "target": "TIME TO FLOWERING",
+      "description": "determines fastest rate of",
+      "weight": "9",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "OPTIMUM TEMPERATURE",
+      "target": "DURATION BETWEEN FLOWERING AND MATURITY",
+      "description": "determines shortest duration of",
+      "weight": "9",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "SUPRA-OPTIMAL TEMPERATURE",
+      "target": "TIME TO FLOWERING",
+      "description": "slows down",
+      "weight": "8",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "HIGH NIGHT TEMPERATURES",
+      "target": "SUPRA-OPTIMAL TEMPERATURE",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PLANT GROWTH",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "KABETE",
+      "target": "KENYA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2288"
+    },
+    {
+      "source": "KABETE",
+      "target": "TEMPERATURE",
+      "description": "experienced cool",
+      "weight": "8",
+      "source_id": "paper_2288"
+    }
+  ]
+}

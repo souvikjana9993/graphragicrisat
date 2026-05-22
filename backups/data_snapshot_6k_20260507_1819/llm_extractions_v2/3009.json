@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "The crop species being studied for genetic mapping and gene distribution.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "ESTS",
+      "type": "GENE_MARKER",
+      "description": "Expressed sequence tags used as a source for identifying microsatellite motifs.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "SSRS",
+      "type": "GENE_MARKER",
+      "description": "Simple sequence repeats, also known as microsatellite motifs.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "EST-SSRS",
+      "type": "GENE_MARKER",
+      "description": "Microsatellite loci derived from expressed sequence tags.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "GENETIC MAPPING",
+      "type": "METHOD",
+      "description": "The process of determining the relative positions of markers on a chromosome.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "LINKAGE GROUPS",
+      "type": "CONCEPT",
+      "description": "Groups of markers that are inherited together, representing chromosomes.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "POLYMORPHISM INFORMATION CONTENT",
+      "type": "CONCEPT",
+      "description": "A metric used to evaluate the informativeness of genetic markers.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "BARLEY GENOME",
+      "type": "CONCEPT",
+      "description": "The complete genetic sequence of the barley plant.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "BAC LIBRARY",
+      "type": "METHOD",
+      "description": "Bacterial artificial chromosomes library used for physical mapping of markers.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "CONTIGS",
+      "type": "CONCEPT",
+      "description": "Overlapping DNA segments that represent a continuous region of the genome.",
+      "source_id": "paper_3009"
+    },
+    {
+      "name": "GENE DISTRIBUTION",
+      "type": "CONCEPT",
+      "description": "The spatial arrangement of genes within the genome, found to be non-uniform in barley.",
+      "source_id": "paper_3009"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "EST-SSRS",
+      "target": "BARLEY",
+      "description": "EST-SSRs were placed onto a genetic map of barley",
+      "weight": "9",
+      "source_id": "paper_3009"
+    },
+    {
+      "source": "EST-SSRS",
+      "target": "GENETIC MAPPING",
+      "description": "EST-SSRs were mapped using genetic mapping techniques",
+      "weight": "10",
+      "source_id": "paper_3009"
+    },
+    {
+      "source": "EST-SSRS",
+      "target": "LINKAGE GROUPS",
+      "description": "EST-SSRs show a uniform distribution along seven linkage groups",
+      "weight": "8",
+      "source_id": "paper_3009"
+    },
+    {
+      "source": "POLYMORPHISM INFORMATION CONTENT",
+      "target": "EST-SSRS",
+      "description": "Used to measure the informativeness of the EST-SSR markers",
+      "weight": "7",
+      "source_id": "paper_3009"
+    },
+    {
+      "source": "BAC LIBRARY",
+      "target": "EST-SSRS",
+      "description": "Used to investigate the physical distribution of EST-SSRs",
+      "weight": "9",
+      "source_id": "paper_3009"
+    },
+    {
+      "source": "EST-SSRS",
+      "target": "BARLEY GENOME",
+      "description": "EST-SSRs are distributed within the barley genome",
+      "weight": "8",
+      "source_id": "paper_3009"
+    },
+    {
+      "source": "EST-SSRS",
+      "target": "CONTIGS",
+      "description": "Some EST-SSRs are physically linked within contigs",
+      "weight": "7",
+      "source_id": "paper_3009"
+    },
+    {
+      "source": "EST-SSRS",
+      "target": "GENE DISTRIBUTION",
+      "description": "The physical linkage of EST-SSRs provides evidence of uneven gene distribution",
+      "weight": "9",
+      "source_id": "paper_3009"
+    },
+    {
+      "source": "ESTS",
+      "target": "SSRS",
+      "description": "ESTs were searched for the presence of SSR motifs",
+      "weight": "10",
+      "source_id": "paper_3009"
+    },
+    {
+      "source": "ESTS",
+      "target": "EST-SSRS",
+      "description": "ESTs were used to derive EST-SSR markers",
+      "weight": "10",
+      "source_id": "paper_3009"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A multipurpose cereal crop used worldwide as a major forage crop.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "DHURRIN",
+      "type": "CONCEPT",
+      "description": "A cyanogenic glycoside found in the vegetative shoot tissues of sorghum that is harmful to livestock.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "VEGETATIVE SHOOT TISSUES",
+      "type": "CONCEPT",
+      "description": "The parts of the sorghum plant where dhurrin is located.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "LIVESTOCK",
+      "type": "ORGANISM",
+      "description": "Animals that are fed sorghum as fodder and can be harmed by cyanogenic glycosides.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "HYDROGEN CYANIDE POTENTIAL",
+      "type": "TRAIT",
+      "description": "The potential of tissues to produce hydrogen cyanide, measured in ppm.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "WELL-WATERED",
+      "type": "CONDITION",
+      "description": "The environmental condition under which hydrogen cyanide potential was estimated.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "ICSR 14001",
+      "type": "CROP",
+      "description": "A sorghum genotype exhibiting high hydrogen cyanide potential of 511 ppm.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "ICSV 93046",
+      "type": "CROP",
+      "description": "A sorghum genotype exhibiting hydrogen cyanide potential of 443 ppm and high expression of dhurrin biosynthesis genes.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "CSH 24 MF",
+      "type": "CROP",
+      "description": "A sorghum genotype exhibiting the lowest hydrogen cyanide potential of 364 ppm among the studied genotypes.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "DHURRIN BIOSYNTHESIS PATHWAY GENES",
+      "type": "CONCEPT",
+      "description": "Genes responsible for the synthesis of the cyanogenic glycoside dhurrin.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "BIOINFORMATIC TOOLS",
+      "type": "METHOD",
+      "description": "Tools used to retrieve and characterize the sequence information of dhurrin biosynthesis pathway genes.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "GENE EXPRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "The process of analyzing the expression patterns of dhurrin biosynthesis pathway genes across different genotypes.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "CYP79A1",
+      "type": "GENE_MARKER",
+      "description": "A specific gene in the dhurrin biosynthesis pathway showing varied expression across genotypes.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "CYP71E1",
+      "type": "GENE_MARKER",
+      "description": "A specific gene in the dhurrin biosynthesis pathway showing high expression in ICSV 93046.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "UGT85B1",
+      "type": "GENE_MARKER",
+      "description": "A specific gene in the dhurrin biosynthesis pathway showing high expression in ICSV 93046.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "HYDROGEN CYANIDE",
+      "type": "CONCEPT",
+      "description": "The toxic substance produced by the dhurrin biosynthesis pathway.",
+      "source_id": "paper_12682"
+    },
+    {
+      "name": "GENE EDITING",
+      "type": "METHOD",
+      "description": "A potential technique to target key genes of the dhurrin pathway to provide safe feed for livestock.",
+      "source_id": "paper_12682"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "DHURRIN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "DHURRIN",
+      "target": "VEGETATIVE SHOOT TISSUES",
+      "description": "located in",
+      "weight": "9",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "DHURRIN",
+      "target": "LIVESTOCK",
+      "description": "harmful to",
+      "weight": "10",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HYDROGEN CYANIDE POTENTIAL",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "HYDROGEN CYANIDE POTENTIAL",
+      "target": "WELL-WATERED",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "ICSR 14001",
+      "target": "HYDROGEN CYANIDE POTENTIAL",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "ICSV 93046",
+      "target": "HYDROGEN CYANIDE POTENTIAL",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "CSH 24 MF",
+      "target": "HYDROGEN CYANIDE POTENTIAL",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "DHURRIN BIOSYNTHESIS PATHWAY GENES",
+      "target": "DHURRIN",
+      "description": "synthesizes",
+      "weight": "10",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "BIOINFORMATIC TOOLS",
+      "target": "DHURRIN BIOSYNTHESIS PATHWAY GENES",
+      "description": "used to characterize",
+      "weight": "8",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "GENE EXPRESSION ANALYSIS",
+      "target": "DHURRIN BIOSYNTHESIS PATHWAY GENES",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "CYP79A1",
+      "target": "DHURRIN BIOSYNTHESIS PATHWAY GENES",
+      "description": "is part of",
+      "weight": "10",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "CYP71E1",
+      "target": "DHURRIN BIOSYNTHESIS PATHWAY GENES",
+      "description": "is part of",
+      "weight": "10",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "UGT85B1",
+      "target": "DHURRIN BIOSYNTHESIS PATHWAY GENES",
+      "description": "is part of",
+      "weight": "10",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "DHURRIN BIOSYNTHESIS PATHWAY GENES",
+      "target": "HYDROGEN CYANIDE",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "GENE EDITING",
+      "target": "DHURRIN BIOSYNTHESIS PATHWAY GENES",
+      "description": "targets",
+      "weight": "8",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "ICSV 93046",
+      "target": "CYP79A1",
+      "description": "shows high expression of",
+      "weight": "9",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "ICSV 93046",
+      "target": "CYP71E1",
+      "description": "shows high expression of",
+      "weight": "9",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "ICSV 93046",
+      "target": "UGT85B1",
+      "description": "shows high expression of",
+      "weight": "9",
+      "source_id": "paper_12682"
+    },
+    {
+      "source": "CSH 24 MF",
+      "target": "CYP79A1",
+      "description": "shows slight increase in expression of",
+      "weight": "7",
+      "source_id": "paper_12682"
+    }
+  ]
+}

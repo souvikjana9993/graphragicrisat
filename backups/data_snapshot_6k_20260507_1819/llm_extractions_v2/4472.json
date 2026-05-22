@@ -1,0 +1,170 @@
+{
+  "entities": [
+    {
+      "name": "CORN",
+      "type": "CROP",
+      "description": "The host plant used in the study for smut gall development.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "TASTYVEE SWEET CORN",
+      "type": "CROP",
+      "description": "A specific sweet corn hybrid used for inducing ear galls.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "USTILAGO MAYDIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes common smut in corn.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "SMUT GALL",
+      "type": "TRAIT",
+      "description": "Abnormal growths induced by Ustilago maydis in various plant parts.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "INJECTION",
+      "type": "METHOD",
+      "description": "The technique of injecting sporidial suspension into plant tissues.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "POT",
+      "type": "LOCATION",
+      "description": "A growth environment used for sweet corn hybrids.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "A controlled environment used for growing and inoculating corn plants.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "An outdoor environment used for growing and inoculating corn plants.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "QUANTITATIVE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The genetic ability of corn genotypes to resist common smut.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "COMMON SMUT",
+      "type": "CONDITION",
+      "description": "The disease caused by the fungus Ustilago maydis.",
+      "source_id": "paper_4472"
+    },
+    {
+      "name": "INCUBATION PERIOD",
+      "type": "CONCEPT",
+      "description": "The time elapsed between inoculation and the appearance of galls.",
+      "source_id": "paper_4472"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "USTILAGO MAYDIS",
+      "target": "COMMON SMUT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "USTILAGO MAYDIS",
+      "target": "SMUT GALL",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "INJECTION",
+      "target": "CORN",
+      "description": "used to inoculate",
+      "weight": "9",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "INJECTION",
+      "target": "TASTYVEE SWEET CORN",
+      "description": "used to inoculate",
+      "weight": "9",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "CORN",
+      "target": "USTILAGO MAYDIS",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "TASTYVEE SWEET CORN",
+      "target": "CORN",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "SMUT GALL",
+      "target": "CORN",
+      "description": "develops in",
+      "weight": "10",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "SMUT GALL",
+      "target": "TASTYVEE SWEET CORN",
+      "description": "develops in",
+      "weight": "10",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "CORN",
+      "target": "POT",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "CORN",
+      "target": "GREENHOUSE",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "CORN",
+      "target": "FIELD",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "QUANTITATIVE RESISTANCE",
+      "target": "CORN",
+      "description": "trait of",
+      "weight": "8",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "QUANTITATIVE RESISTANCE",
+      "target": "COMMON SMUT",
+      "description": "resistance to",
+      "weight": "9",
+      "source_id": "paper_4472"
+    },
+    {
+      "source": "INCUBATION PERIOD",
+      "target": "SMUT GALL",
+      "description": "time until appearance of",
+      "weight": "8",
+      "source_id": "paper_4472"
+    }
+  ]
+}

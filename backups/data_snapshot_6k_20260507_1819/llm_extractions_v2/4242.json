@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop studied for its response to agroclimatological factors.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An agroclimatological factor that affects crop phenology and growth processes.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "HUMIDITY",
+      "type": "CONDITION",
+      "description": "An agroclimatological factor that influences phenology indirectly via soil water depletion.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "SOIL-WATER DEFICITS",
+      "type": "CONDITION",
+      "description": "A condition of water scarcity in the soil affecting groundnut response.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The climatic region where the groundnut model is applicable.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "CONTROLLED-ENVIRONMENT FACILITIES",
+      "type": "METHOD",
+      "description": "Facilities used to obtain information for modeling groundnut response in the SAT.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "The application of water to crops, affecting phenology.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "RAINFALL DISTRIBUTION",
+      "type": "CONDITION",
+      "description": "The pattern of precipitation affecting crop phenology.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "CROP PHENOLOGY",
+      "type": "TRAIT",
+      "description": "The timing of biological events in the crop's life cycle.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of agricultural production per unit area.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "DAYLENGTH",
+      "type": "CONDITION",
+      "description": "The duration of daylight, which affects phenology based on genotypic variation.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "GENOTYPIC VARIATION",
+      "type": "CONCEPT",
+      "description": "Differences in genetic makeup that influence responses to daylength.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "SATURATION DEFICIT",
+      "type": "CONDITION",
+      "description": "A measure of the dryness of the air, influencing water depletion in soil.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "WATER-DEPLETION RATE",
+      "type": "CONDITION",
+      "description": "The rate at which water is removed from the soil, affecting phenology.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period of the year with significant rainfall, affecting the growing period.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "GROWING PERIOD",
+      "type": "TRAIT",
+      "description": "The duration of time the crop is actively growing.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "GROWTH PROCESSES",
+      "type": "CONCEPT",
+      "description": "Biological processes related to the development and increase in size of the crop.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "PARTITIONING OF DRY MATTER TO PODS",
+      "type": "TRAIT",
+      "description": "The allocation of biomass to the reproductive organs of the groundnut.",
+      "source_id": "paper_4242"
+    },
+    {
+      "name": "CROP-WEATHER INVESTIGATIONS",
+      "type": "METHOD",
+      "description": "Studies that integrate phenology and growth processes to understand weather impacts.",
+      "source_id": "paper_4242"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "CROP PHENOLOGY",
+      "description": "Affects the timing of biological events",
+      "weight": "8",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "HUMIDITY",
+      "target": "WATER-DEPLETION RATE",
+      "description": "Influences the rate of water loss from soil",
+      "weight": "7",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "SATURATION DEFICIT",
+      "target": "WATER-DEPLETION RATE",
+      "description": "Influences the rate of water loss from soil",
+      "weight": "7",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "WATER-DEPLETION RATE",
+      "target": "CROP PHENOLOGY",
+      "description": "Influences the timing of biological events",
+      "weight": "8",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "CROP PHENOLOGY",
+      "description": "Affects the timing of biological events",
+      "weight": "7",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "RAINFALL DISTRIBUTION",
+      "target": "CROP PHENOLOGY",
+      "description": "Affects the timing of biological events",
+      "weight": "7",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "CROP PHENOLOGY",
+      "target": "YIELD",
+      "description": "General relation where phenology impacts final production",
+      "weight": "8",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "DAYLENGTH",
+      "target": "CROP PHENOLOGY",
+      "description": "Affects phenology depending on genotypic variation",
+      "weight": "6",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "GENOTYPIC VARIATION",
+      "target": "DAYLENGTH",
+      "description": "Determines the response of the crop to daylength",
+      "weight": "7",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "GROWING PERIOD",
+      "description": "Delays in start reduce the length of the period",
+      "weight": "9",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "GROWING PERIOD",
+      "target": "YIELD",
+      "description": "Reduction in length may result in lower yields",
+      "weight": "8",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "GROWTH PROCESSES",
+      "description": "Major influence on biological growth processes",
+      "weight": "8",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PARTITIONING OF DRY MATTER TO PODS",
+      "description": "Influences the allocation of dry matter to pods",
+      "weight": "8",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "CROP PHENOLOGY",
+      "target": "GROWTH PROCESSES",
+      "description": "Should be integrated in investigations",
+      "weight": "6",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "CROP-WEATHER INVESTIGATIONS",
+      "target": "CROP PHENOLOGY",
+      "description": "Integrates phenology into weather studies",
+      "weight": "9",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "CROP-WEATHER INVESTIGATIONS",
+      "target": "GROWTH PROCESSES",
+      "description": "Integrates growth processes into weather studies",
+      "weight": "9",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEMI-ARID TROPICS",
+      "description": "Crop grown and studied within this climatic region",
+      "weight": "9",
+      "source_id": "paper_4242"
+    },
+    {
+      "source": "CONTROLLED-ENVIRONMENT FACILITIES",
+      "target": "SEMI-ARID TROPICS",
+      "description": "Used to provide a model applicable to this region",
+      "weight": "7",
+      "source_id": "paper_4242"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "ENZYME-LINKED IMMUNOSORBENT ASSAY (ELISA)",
+      "type": "METHOD",
+      "description": "A biochemical technique used for the enumeration of rhizobia, noted for being faster than plant infection techniques but requiring a minimum of 10^2-10^3 cells for detection.",
+      "source_id": "paper_3426"
+    },
+    {
+      "name": "RHIZOBIA",
+      "type": "ORGANISM",
+      "description": "Soil bacteria that are the subject of enumeration using ELISA and plant infection techniques.",
+      "source_id": "paper_3426"
+    },
+    {
+      "name": "PEAT CARRIER",
+      "type": "CONDITION",
+      "description": "A medium used for carrying rhizobia in which their population is enumerated.",
+      "source_id": "paper_3426"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONDITION",
+      "description": "The natural medium in which rhizobia are found and enumerated.",
+      "source_id": "paper_3426"
+    },
+    {
+      "name": "PLANT INFECTION TECHNIQUE",
+      "type": "METHOD",
+      "description": "A conventional method for enumerating rhizobia, which is slower than ELISA and used when other micro-organisms are present.",
+      "source_id": "paper_3426"
+    },
+    {
+      "name": "MICRO-ORGANISMS",
+      "type": "ORGANISM",
+      "description": "Other biological entities present in the environment alongside rhizobia.",
+      "source_id": "paper_3426"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ENZYME-LINKED IMMUNOSORBENT ASSAY (ELISA)",
+      "target": "RHIZOBIA",
+      "description": "used to enumerate",
+      "weight": "10",
+      "source_id": "paper_3426"
+    },
+    {
+      "source": "ENZYME-LINKED IMMUNOSORBENT ASSAY (ELISA)",
+      "target": "PEAT CARRIER",
+      "description": "used to enumerate rhizobia in",
+      "weight": "8",
+      "source_id": "paper_3426"
+    },
+    {
+      "source": "ENZYME-LINKED IMMUNOSORBENT ASSAY (ELISA)",
+      "target": "SOIL",
+      "description": "used to enumerate rhizobia in",
+      "weight": "8",
+      "source_id": "paper_3426"
+    },
+    {
+      "source": "PLANT INFECTION TECHNIQUE",
+      "target": "RHIZOBIA",
+      "description": "used to enumerate",
+      "weight": "10",
+      "source_id": "paper_3426"
+    },
+    {
+      "source": "RHIZOBIA",
+      "target": "MICRO-ORGANISMS",
+      "description": "co-exist in the environment",
+      "weight": "5",
+      "source_id": "paper_3426"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop affected by the Asian rice gall midge",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "ASIAN RICE GALL MIDGE",
+      "type": "ORGANISM",
+      "description": "A serious pest (Orseolia oryzae) affecting rice-growing countries",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The preferred management strategy for controlling the Asian rice gall midge",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple sequence repeat markers used to identify genes linked to pest resistance",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "GENE PYRAMIDS",
+      "type": "CONCEPT",
+      "description": "The combination of multiple resistance genes to achieve durable resistance",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "DURABLE RESISTANCE",
+      "type": "TRAIT",
+      "description": "Long-term resistance to pests achieved through gene pyramids",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "ALLELISM TESTS",
+      "type": "METHOD",
+      "description": "Conventional and molecular tests used to determine if genes are allelic",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "AGANNI",
+      "type": "CROP",
+      "description": "A rice genotype that possesses the Gm8 gene",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "GM8",
+      "type": "GENE_MARKER",
+      "description": "A major resistance gene conferring hypersensitive independent resistance to gall midge",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "HR-TYPE RESISTANCE",
+      "type": "TRAIT",
+      "description": "Hypersensitive independent resistance conferred by the Gm8 gene",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "GALL MIDGE BIOTYPES",
+      "type": "ORGANISM",
+      "description": "Specific strains of the Asian rice gall midge including GMB1, GMB2, GMB3, GMB4, and GMB4M",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "CHROMOSOME 8",
+      "type": "CONCEPT",
+      "description": "The genomic location where the Gm8 gene is mapped",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "RM22685",
+      "type": "GENE_MARKER",
+      "description": "An SSR marker that closely flanks the Gm8 gene",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "RM22709",
+      "type": "GENE_MARKER",
+      "description": "An SSR marker that closely flanks the Gm8 gene",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "MARKER-ASSISTED SELECTION",
+      "type": "METHOD",
+      "description": "A method used to introgress the Gm8 gene into elite cultivars",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "BACTERIAL BLIGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "A trait possessed by the Improved Samba-Mahsuri cultivar",
+      "source_id": "paper_6476"
+    },
+    {
+      "name": "IMPROVED SAMBA-MAHSURI",
+      "type": "CROP",
+      "description": "An elite bacterial blight-resistant rice cultivar",
+      "source_id": "paper_6476"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "ASIAN RICE GALL MIDGE",
+      "description": "is attacked by",
+      "weight": "9",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "GM8",
+      "target": "RICE",
+      "description": "is a resistance gene in",
+      "weight": "10",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "GM8",
+      "target": "ASIAN RICE GALL MIDGE",
+      "description": "confers resistance to",
+      "weight": "10",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "GM8",
+      "target": "HR-TYPE RESISTANCE",
+      "description": "confers",
+      "weight": "9",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "GM8",
+      "target": "CHROMOSOME 8",
+      "description": "is mapped to",
+      "weight": "10",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "RM22685",
+      "target": "GM8",
+      "description": "flanks",
+      "weight": "9",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "RM22709",
+      "target": "GM8",
+      "description": "flanks",
+      "weight": "9",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "GM8",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "ALLELISM TESTS",
+      "target": "GM8",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "AGANNI",
+      "target": "GM8",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "MARKER-ASSISTED SELECTION",
+      "target": "GM8",
+      "description": "used to introgress",
+      "weight": "9",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "GM8",
+      "target": "IMPROVED SAMBA-MAHSURI",
+      "description": "introgressed into",
+      "weight": "10",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "IMPROVED SAMBA-MAHSURI",
+      "target": "BACTERIAL BLIGHT RESISTANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "GM8",
+      "target": "GALL MIDGE BIOTYPES",
+      "description": "provides resistance against",
+      "weight": "9",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "GENE PYRAMIDS",
+      "target": "DURABLE RESISTANCE",
+      "description": "provide",
+      "weight": "9",
+      "source_id": "paper_6476"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "GENE PYRAMIDS",
+      "description": "accelerate development of",
+      "weight": "7",
+      "source_id": "paper_6476"
+    }
+  ]
+}

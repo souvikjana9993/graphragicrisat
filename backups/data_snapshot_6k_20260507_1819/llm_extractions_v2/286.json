@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "CALLOSOBRUCHUS",
+      "type": "ORGANISM",
+      "description": "Species of bruchid beetles that act as pests of stored chickpeas",
+      "source_id": "paper_286"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, the legume crop targeted by Callosobruchus",
+      "source_id": "paper_286"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where surveys on pods and seeds were performed",
+      "source_id": "paper_286"
+    },
+    {
+      "name": "STORAGE",
+      "type": "CONDITION",
+      "description": "The condition of being stored, which is where Callosobruchus infestation is significant",
+      "source_id": "paper_286"
+    },
+    {
+      "name": "FIELD",
+      "type": "CONDITION",
+      "description": "The environment of growing plants where infestation was not found to originate",
+      "source_id": "paper_286"
+    },
+    {
+      "name": "SURVEYS",
+      "type": "METHOD",
+      "description": "Extensive investigations of pods and seeds to determine the origin of infestation",
+      "source_id": "paper_286"
+    },
+    {
+      "name": "INFESTATION",
+      "type": "CONCEPT",
+      "description": "The occurrence of pests attacking the crop",
+      "source_id": "paper_286"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CALLOSOBRUCHUS",
+      "target": "CHICKPEA",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_286"
+    },
+    {
+      "source": "CALLOSOBRUCHUS",
+      "target": "STORAGE",
+      "description": "is associated with stored conditions",
+      "weight": "9",
+      "source_id": "paper_286"
+    },
+    {
+      "source": "SURVEYS",
+      "target": "INDIA",
+      "description": "were conducted in",
+      "weight": "8",
+      "source_id": "paper_286"
+    },
+    {
+      "source": "SURVEYS",
+      "target": "INFESTATION",
+      "description": "investigated the origin of",
+      "weight": "9",
+      "source_id": "paper_286"
+    },
+    {
+      "source": "INFESTATION",
+      "target": "FIELD",
+      "description": "does not originate in",
+      "weight": "8",
+      "source_id": "paper_286"
+    },
+    {
+      "source": "INFESTATION",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_286"
+    }
+  ]
+}

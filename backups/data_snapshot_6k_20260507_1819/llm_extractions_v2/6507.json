@@ -1,0 +1,148 @@
+{
+  "entities": [
+    {
+      "name": "ZINC",
+      "type": "CONCEPT",
+      "description": "Essential micronutrient whose deficiency is widespread in rainfed semi-arid tropics of India",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the rainfed semi-arid tropics are located",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "WATER SHORTAGES",
+      "type": "CONDITION",
+      "description": "A limiting factor contributing to low productivity in rainfed systems",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The agricultural output of rainfed systems in semi-arid India",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONCEPT",
+      "description": "The status of nutrients in the soil which affects crop productivity",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A primary macronutrient often applied in sub-optimal amounts",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "A primary macronutrient often applied in sub-optimal amounts",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONCEPT",
+      "description": "A primary macronutrient often applied in sub-optimal amounts",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "SOIL TESTING",
+      "type": "METHOD",
+      "description": "A process used to diagnose and manage nutrient problems in farmers' fields",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "NUTRIENT MAPS",
+      "type": "CONCEPT",
+      "description": "Tools used to delineate deficient regions from sufficient ones",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "GIS",
+      "type": "METHOD",
+      "description": "Geographic Information System used to prepare nutrient maps",
+      "source_id": "paper_6507"
+    },
+    {
+      "name": "NUTRIENT DEFICIENCIES",
+      "type": "CONDITION",
+      "description": "Problems related to the lack of essential nutrients in the soil",
+      "source_id": "paper_6507"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER SHORTAGES",
+      "target": "PRODUCTIVITY",
+      "description": "contributes to low",
+      "weight": "8",
+      "source_id": "paper_6507"
+    },
+    {
+      "source": "SOIL FERTILITY",
+      "target": "PRODUCTIVITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_6507"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "SOIL FERTILITY",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_6507"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "SOIL FERTILITY",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_6507"
+    },
+    {
+      "source": "POTASSIUM",
+      "target": "SOIL FERTILITY",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_6507"
+    },
+    {
+      "source": "ZINC",
+      "target": "NUTRIENT DEFICIENCIES",
+      "description": "is a specific example of",
+      "weight": "10",
+      "source_id": "paper_6507"
+    },
+    {
+      "source": "SOIL TESTING",
+      "target": "NUTRIENT DEFICIENCIES",
+      "description": "is used to diagnose",
+      "weight": "9",
+      "source_id": "paper_6507"
+    },
+    {
+      "source": "GIS",
+      "target": "NUTRIENT MAPS",
+      "description": "is used to create",
+      "weight": "10",
+      "source_id": "paper_6507"
+    },
+    {
+      "source": "NUTRIENT MAPS",
+      "target": "NUTRIENT DEFICIENCIES",
+      "description": "is used to delineate",
+      "weight": "8",
+      "source_id": "paper_6507"
+    },
+    {
+      "source": "INDIA",
+      "target": "SOIL FERTILITY",
+      "description": "is the location of the study on",
+      "weight": "7",
+      "source_id": "paper_6507"
+    }
+  ]
+}

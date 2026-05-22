@@ -1,0 +1,250 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The primary crop studied for production in Mali",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "The specific country where production environments are characterized",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "WESTERN AFRICA",
+      "type": "LOCATION",
+      "description": "The broader region encompassing the study area",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "SEMI-ARID REGION OF AFRICA",
+      "type": "LOCATION",
+      "description": "The general environmental zone characterized by low yields",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "LOW YIELDS",
+      "type": "TRAIT",
+      "description": "The characteristic of sorghum production in semi-arid Africa",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "HIGH RAINFALL VARIABILITY",
+      "type": "CONDITION",
+      "description": "A factor contributing to low sorghum yields",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "POOR SOIL FERTILITY",
+      "type": "CONDITION",
+      "description": "A factor contributing to low sorghum yields",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "BIOTIC FACTORS",
+      "type": "CONDITION",
+      "description": "Factors contributing to low sorghum yields",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "IN SILICO METHODS",
+      "type": "METHOD",
+      "description": "Computational methods used to characterize production regions",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "DROUGHT OCCURRENCE",
+      "type": "CONDITION",
+      "description": "The specific environmental stress being analyzed",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "SORGHUM PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of grain and biomass output",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "APSIM-SORGHUM MODULE",
+      "type": "METHOD",
+      "description": "The specific simulation tool used to reproduce sorghum types",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "PHOTOPERIOD SENSITIVITY",
+      "type": "TRAIT",
+      "description": "A characteristic of the sorghum types studied",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "DROUGHT STRESS SCENARIOS",
+      "type": "CONDITION",
+      "description": "Categorized scenarios including no-stress, early pre-flowering, and flowering onset",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "NO-STRESS",
+      "type": "CONDITION",
+      "description": "A drought scenario where no stress occurs",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "EARLY PRE-FLOWERING DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "A specific timing of drought stress",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "DROUGHT STRESS ONSET AROUND FLOWERING",
+      "type": "CONDITION",
+      "description": "A specific timing of drought stress",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "RAINFALL ZONES",
+      "type": "CONDITION",
+      "description": "Areas categorized by rainfall amounts",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "SOIL TYPES",
+      "type": "CONDITION",
+      "description": "Different types of soil affecting drought stress frequency",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "GRAIN PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The yield of grains",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "BIOMASS PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The total biological mass produced",
+      "source_id": "paper_13258"
+    },
+    {
+      "name": "GENOTYPE X ENVIRONMENT X MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The framework for optimizing sorghum production",
+      "source_id": "paper_13258"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "MALI",
+      "description": "produced in",
+      "weight": "10",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "WESTERN AFRICA",
+      "description": "produced in",
+      "weight": "10",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEMI-ARID REGION OF AFRICA",
+      "description": "produced in",
+      "weight": "10",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "HIGH RAINFALL VARIABILITY",
+      "target": "LOW YIELDS",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "POOR SOIL FERTILITY",
+      "target": "LOW YIELDS",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "BIOTIC FACTORS",
+      "target": "LOW YIELDS",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "IN SILICO METHODS",
+      "target": "SORGHUM PRODUCTIVITY",
+      "description": "used to analyze",
+      "weight": "7",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "APSIM-SORGHUM MODULE",
+      "target": "SORGHUM",
+      "description": "simulates growth of",
+      "weight": "9",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "APSIM-SORGHUM MODULE",
+      "target": "DROUGHT STRESS SCENARIOS",
+      "description": "characterizes",
+      "weight": "9",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "DROUGHT OCCURRENCE",
+      "target": "SORGHUM PRODUCTIVITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "PHOTOPERIOD SENSITIVITY",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "8",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "DROUGHT STRESS SCENARIOS",
+      "target": "GRAIN PRODUCTIVITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "DROUGHT STRESS SCENARIOS",
+      "target": "BIOMASS PRODUCTIVITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "RAINFALL ZONES",
+      "target": "DROUGHT STRESS SCENARIOS",
+      "description": "influences frequency of",
+      "weight": "8",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "SOIL TYPES",
+      "target": "DROUGHT STRESS SCENARIOS",
+      "description": "influences frequency of",
+      "weight": "8",
+      "source_id": "paper_13258"
+    },
+    {
+      "source": "GENOTYPE X ENVIRONMENT X MANAGEMENT",
+      "target": "SORGHUM",
+      "description": "used to optimize production of",
+      "weight": "7",
+      "source_id": "paper_13258"
+    }
+  ]
+}

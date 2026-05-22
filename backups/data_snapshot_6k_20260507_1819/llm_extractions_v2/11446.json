@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop grown for grain and fodder",
+      "source_id": "paper_11446"
+    },
+    {
+      "name": "GRAIN",
+      "type": "TRAIT",
+      "description": "The seed part of the sorghum crop used for food and feed",
+      "source_id": "paper_11446"
+    },
+    {
+      "name": "STOVER",
+      "type": "TRAIT",
+      "description": "The stalks and leaves of the sorghum crop used as fodder",
+      "source_id": "paper_11446"
+    },
+    {
+      "name": "STOVER QUALITY",
+      "type": "TRAIT",
+      "description": "The quality attributes of sorghum stover that influence its market price",
+      "source_id": "paper_11446"
+    },
+    {
+      "name": "SORGHUM VALUE CHAIN",
+      "type": "CONCEPT",
+      "description": "The economic system encompassing the production and sale of sorghum and its residues",
+      "source_id": "paper_11446"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where there is a growing demand for sorghum grain and fodder",
+      "source_id": "paper_11446"
+    },
+    {
+      "name": "POSTRAINY SEASON",
+      "type": "CONDITION",
+      "description": "The specific agricultural season for growing sorghum varieties",
+      "source_id": "paper_11446"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_11446"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "STOVER",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_11446"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SORGHUM VALUE CHAIN",
+      "description": "is the primary component of",
+      "weight": "10",
+      "source_id": "paper_11446"
+    },
+    {
+      "source": "STOVER",
+      "target": "STOVER QUALITY",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_11446"
+    },
+    {
+      "source": "STOVER QUALITY",
+      "target": "SORGHUM VALUE CHAIN",
+      "description": "influences the premium price within",
+      "weight": "8",
+      "source_id": "paper_11446"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INDIA",
+      "description": "is grown in",
+      "weight": "9",
+      "source_id": "paper_11446"
+    },
+    {
+      "source": "POSTRAINY SEASON",
+      "target": "SORGHUM",
+      "description": "is the growing condition for",
+      "weight": "9",
+      "source_id": "paper_11446"
+    }
+  ]
+}

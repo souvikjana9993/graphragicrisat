@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop affected by grain mold disease",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "GRAIN MOLD",
+      "type": "CONCEPT",
+      "description": "A biotic constraint and disease that affects sorghum grain yield and quality",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced by the crop",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "GRAIN QUALITY",
+      "type": "TRAIT",
+      "description": "The overall quality of the sorghum grain",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "WET AND HUMID CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions that favor the development of grain mold fungi",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "GRAIN MOLD FUNGI",
+      "type": "ORGANISM",
+      "description": "Fungi that cause the development of grain mold",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The yield of seeds, which can be reduced by grain mold",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "MARKET VALUE",
+      "type": "CONCEPT",
+      "description": "The economic value of the grain in the market",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "STORAGE QUALITY",
+      "type": "TRAIT",
+      "description": "The quality of the grain during storage",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "VIABILITY",
+      "type": "TRAIT",
+      "description": "The ability of the seeds to remain alive and capable of germination",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "PROCESSING QUALITY",
+      "type": "TRAIT",
+      "description": "The quality of the seed for food and feed processing",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "MYCOTOXINS",
+      "type": "CONCEPT",
+      "description": "Toxic secondary metabolites produced by mold-causal fungi",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "ANIMALS",
+      "type": "ORGANISM",
+      "description": "Organisms that consume feed containing mycotoxins",
+      "source_id": "paper_3867"
+    },
+    {
+      "name": "GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate at which animals grow, which can be slowed by mycotoxins",
+      "source_id": "paper_3867"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GRAIN MOLD",
+      "target": "SORGHUM",
+      "description": "is a biotic constraint of",
+      "weight": "10",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "GRAIN MOLD",
+      "target": "GRAIN YIELD",
+      "description": "compromises",
+      "weight": "9",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "GRAIN MOLD",
+      "target": "GRAIN QUALITY",
+      "description": "compromises",
+      "weight": "9",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "WET AND HUMID CONDITIONS",
+      "target": "GRAIN MOLD FUNGI",
+      "description": "are favorable for the development of",
+      "weight": "10",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "GRAIN MOLD FUNGI",
+      "target": "GRAIN MOLD",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "GRAIN MOLD",
+      "target": "SEED YIELD",
+      "description": "causes losses in",
+      "weight": "9",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "GRAIN MOLD",
+      "target": "MARKET VALUE",
+      "description": "causes losses in",
+      "weight": "8",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "GRAIN MOLD",
+      "target": "STORAGE QUALITY",
+      "description": "causes losses in",
+      "weight": "8",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "GRAIN MOLD",
+      "target": "VIABILITY",
+      "description": "causes losses in",
+      "weight": "8",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "GRAIN MOLD",
+      "target": "PROCESSING QUALITY",
+      "description": "causes losses in",
+      "weight": "8",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "GRAIN MOLD FUNGI",
+      "target": "MYCOTOXINS",
+      "description": "produce",
+      "weight": "10",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "MYCOTOXINS",
+      "target": "ANIMALS",
+      "description": "affect",
+      "weight": "9",
+      "source_id": "paper_3867"
+    },
+    {
+      "source": "MYCOTOXINS",
+      "target": "GROWTH RATE",
+      "description": "slow the",
+      "weight": "9",
+      "source_id": "paper_3867"
+    }
+  ]
+}

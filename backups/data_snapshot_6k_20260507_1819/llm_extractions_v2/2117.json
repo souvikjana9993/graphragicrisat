@@ -1,0 +1,203 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop important in the semi-arid tropics.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region where sorghum is grown.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "MULTIPLE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a genotype to resist multiple insect pests.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "YIELD LOSSES",
+      "type": "CONCEPT",
+      "description": "The reduction in crop output caused by insect pests.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "CYTOPLASMIC MALE-STERILE LINES",
+      "type": "CONCEPT",
+      "description": "Specific sorghum lines used in breeding that lack pollen production.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "MAINTAINER LINES",
+      "type": "CONCEPT",
+      "description": "Sorghum lines used to maintain cytoplasmic male sterility.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "RESTORER LINES",
+      "type": "CONCEPT",
+      "description": "Sorghum lines used to restore fertility in hybrids.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "F1 HYBRIDS",
+      "type": "CONCEPT",
+      "description": "First-generation offspring of cross-pollinated sorghum lines.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "SORGHUM SHOOT FLY",
+      "type": "ORGANISM",
+      "description": "An insect pest (Atherigona soccata) that damages sorghum.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "SPOTTED STEMBORER",
+      "type": "ORGANISM",
+      "description": "An insect pest (Chilo partellus) that damages sorghum.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "SUGARCANE APHID",
+      "type": "ORGANISM",
+      "description": "An insect pest (Melanaphis sacchari) that damages sorghum.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environment in which the genotypes were evaluated.",
+      "source_id": "paper_2117"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of a plant to withstand or overcome the effects of pests.",
+      "source_id": "paper_2117"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SEMI-ARID TROPICS",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "SORGHUM SHOOT FLY",
+      "target": "SORGHUM",
+      "description": "damages",
+      "weight": "10",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "SPOTTED STEMBORER",
+      "target": "SORGHUM",
+      "description": "damages",
+      "weight": "10",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "SUGARCANE APHID",
+      "target": "SORGHUM",
+      "description": "damages",
+      "weight": "10",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "MULTIPLE RESISTANCE",
+      "target": "YIELD LOSSES",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "CYTOPLASMIC MALE-STERILE LINES",
+      "target": "RESISTANCE",
+      "description": "evaluated for",
+      "weight": "7",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "RESISTANCE",
+      "description": "evaluated for",
+      "weight": "7",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "RESTORER LINES",
+      "target": "RESISTANCE",
+      "description": "evaluated for",
+      "weight": "7",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "RESISTANCE",
+      "description": "evaluated for",
+      "weight": "7",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "SORGHUM SHOOT FLY",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "SPOTTED STEMBORER",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "SUGARCANE APHID",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "FIELD CONDITIONS",
+      "description": "evaluated under",
+      "weight": "6",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "CYTOPLASMIC MALE-STERILE LINES",
+      "target": "SORGHUM",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "SORGHUM",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "RESTORER LINES",
+      "target": "SORGHUM",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_2117"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "SORGHUM",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_2117"
+    }
+  ]
+}

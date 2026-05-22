@@ -1,0 +1,199 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal grain crop used for biofuel production",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "SWEET SORGHUM",
+      "type": "CROP",
+      "description": "A variety of sorghum with high sugar content",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "HIGH BIOMASS SORGHUM",
+      "type": "CROP",
+      "description": "A variety of sorghum bred for high biomass yield",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "BMR6 GENE",
+      "type": "GENE_MARKER",
+      "description": "A gene that reduces lignin concentration in the cell wall to improve digestibility",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "LIGNIN CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The amount of lignin present in the plant cell wall",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "BIOMASS ENZYMATIC DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "The ease with which plant biomass can be broken down by enzymes",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "2G ETHANOL BIOCONVERSION PROCESS YIELD",
+      "type": "CONCEPT",
+      "description": "The efficiency and output of converting second-generation biomass into ethanol",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "BIOFUEL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of creating fuels from biological sources",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "RENEWABLE FUELS",
+      "type": "CONCEPT",
+      "description": "Fuels derived from sustainable biological sources",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "GREENHOUSE GAS EMISSIONS",
+      "type": "CONCEPT",
+      "description": "Gases that trap heat in the atmosphere and contribute to climate change",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "BACKCROSSING",
+      "type": "METHOD",
+      "description": "A breeding technique used to introduce a specific trait into an elite line",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "MARKER-ASSISTED BACKCROSSING",
+      "type": "METHOD",
+      "description": "A breeding technique using molecular markers to track the introgression of a gene",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "KASPAR ASSAYS",
+      "type": "METHOD",
+      "description": "A molecular assay used to confirm the presence of specific alleles",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "SSV84",
+      "type": "CROP",
+      "description": "A bmr sweet sorghum variety used as a recurrent parent",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "ICSV18003",
+      "type": "CROP",
+      "description": "A bmr sweet sorghum variety used as a recurrent parent",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "ICSV15024",
+      "type": "CROP",
+      "description": "A bmr high biomass sorghum variety used as a recurrent parent",
+      "source_id": "paper_13308"
+    },
+    {
+      "name": "N609",
+      "type": "CROP",
+      "description": "A bmr6 mutant donor line",
+      "source_id": "paper_13308"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BMR6 GENE",
+      "target": "LIGNIN CONCENTRATION",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "LIGNIN CONCENTRATION",
+      "target": "BIOMASS ENZYMATIC DIGESTIBILITY",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "BIOMASS ENZYMATIC DIGESTIBILITY",
+      "target": "2G ETHANOL BIOCONVERSION PROCESS YIELD",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "BMR6 GENE",
+      "target": "SWEET SORGHUM",
+      "description": "introgressed into",
+      "weight": "10",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "BMR6 GENE",
+      "target": "HIGH BIOMASS SORGHUM",
+      "description": "introgressed into",
+      "weight": "10",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "MARKER-ASSISTED BACKCROSSING",
+      "target": "BMR6 GENE",
+      "description": "used to transfer",
+      "weight": "10",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "KASPAR ASSAYS",
+      "target": "BMR6 GENE",
+      "description": "used to confirm",
+      "weight": "10",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "BMR6 GENE",
+      "target": "BIOFUEL PRODUCTION",
+      "description": "enhances",
+      "weight": "9",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "RENEWABLE FUELS",
+      "target": "GREENHOUSE GAS EMISSIONS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "N609",
+      "target": "BMR6 GENE",
+      "description": "donor of",
+      "weight": "10",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "SSV84",
+      "target": "BMR6 GENE",
+      "description": "recurrent parent for",
+      "weight": "9",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "ICSV18003",
+      "target": "BMR6 GENE",
+      "description": "recurrent parent for",
+      "weight": "9",
+      "source_id": "paper_13308"
+    },
+    {
+      "source": "ICSV15024",
+      "target": "BMR6 GENE",
+      "description": "recurrent parent for",
+      "weight": "9",
+      "source_id": "paper_13308"
+    }
+  ]
+}

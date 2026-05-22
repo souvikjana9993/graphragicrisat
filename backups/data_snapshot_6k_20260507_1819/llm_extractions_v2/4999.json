@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "A country in West Africa where rainfall patterns and their impact on agriculture were studied",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONCEPT",
+      "description": "The long-term shift in weather patterns, specifically the decline in rainfall in Niger",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "ANNUAL RAINFALL",
+      "type": "CONDITION",
+      "description": "The total yearly precipitation, which showed a decline after 1960 in Niger",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "MOVING AVERAGES",
+      "type": "METHOD",
+      "description": "A statistical technique used to smooth out short-term fluctuations and highlight longer-term trends in annual rainfall",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "CORRELATION COEFFICIENTS",
+      "type": "METHOD",
+      "description": "A statistical measure used to determine the strength of the relationship between monthly and annual rainfall",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONCEPT",
+      "description": "The period of the year characterized by rainfall, with parameters like onset, ending, and number of rainy days",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "GROWING SEASON",
+      "type": "CONCEPT",
+      "description": "The period during which crops can grow, which was reduced by 5-20 days in Niger",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "WATER BALANCE CALCULATIONS",
+      "type": "METHOD",
+      "description": "A method used to determine the probability of rainfall exceeding potential evapotranspiration",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "POTENTIAL EVAPOTRANSPIRATION",
+      "type": "CONDITION",
+      "description": "The amount of water that would evaporate and transpire from a surface under specific environmental conditions",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "The practice of farming in Niger, which is impacted by changes in rainfall and growing season",
+      "source_id": "paper_4999"
+    },
+    {
+      "name": "CROPPING",
+      "type": "CONCEPT",
+      "description": "The act of growing crops, which has become more risky due to increased variability in rain onset and ending",
+      "source_id": "paper_4999"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MOVING AVERAGES",
+      "target": "ANNUAL RAINFALL",
+      "description": "used to analyze trends in",
+      "weight": "9",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "CORRELATION COEFFICIENTS",
+      "target": "ANNUAL RAINFALL",
+      "description": "used to analyze correlations in",
+      "weight": "9",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "ANNUAL RAINFALL",
+      "target": "NIGER",
+      "description": "measured across 21 locations in",
+      "weight": "10",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "ANNUAL RAINFALL",
+      "description": "manifests as a decline in",
+      "weight": "10",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "ANNUAL RAINFALL",
+      "target": "RAINY SEASON",
+      "description": "determines the parameters of",
+      "weight": "8",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "GROWING SEASON",
+      "description": "influences the length of",
+      "weight": "9",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "GROWING SEASON",
+      "target": "NIGER",
+      "description": "observed across locations in",
+      "weight": "10",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "WATER BALANCE CALCULATIONS",
+      "target": "POTENTIAL EVAPOTRANSPIRATION",
+      "description": "used to compare rainfall against",
+      "weight": "9",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "WATER BALANCE CALCULATIONS",
+      "target": "ANNUAL RAINFALL",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "ANNUAL RAINFALL",
+      "target": "AGRICULTURE",
+      "description": "has implications for",
+      "weight": "9",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "GROWING SEASON",
+      "target": "CROPPING",
+      "description": "affects the risk of",
+      "weight": "9",
+      "source_id": "paper_4999"
+    },
+    {
+      "source": "CROPPING",
+      "target": "AGRICULTURE",
+      "description": "is a part of",
+      "weight": "10",
+      "source_id": "paper_4999"
+    }
+  ]
+}

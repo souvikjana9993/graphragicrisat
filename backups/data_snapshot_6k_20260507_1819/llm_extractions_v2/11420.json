@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONCEPT",
+      "description": "The amount of water held in the soil, serving as a critical input for agricultural management.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "WATER RESOURCE ALLOCATION",
+      "type": "CONCEPT",
+      "description": "The process of distributing water resources among various users.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "IRRIGATION SCHEDULING",
+      "type": "CONCEPT",
+      "description": "The timing and amount of water applied to crops.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "CLIMATE RISK MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "Strategies to reduce the impact of climate-related risks.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "DATE OF SOWING",
+      "type": "CONCEPT",
+      "description": "The specific time when seeds are planted by farmers.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "INITIAL RAINFALL",
+      "type": "CONDITION",
+      "description": "The first rainfall event that triggers sowing decisions.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "TRADITIONAL KNOWLEDGE",
+      "type": "METHOD",
+      "description": "Local knowledge used by farmers to estimate soil moisture and decide sowing dates.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "PHYSICAL ESTIMATION",
+      "type": "METHOD",
+      "description": "Manual or physical methods of measuring soil moisture.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "BARE AGRICULTURE FIELDS",
+      "type": "CONDITION",
+      "description": "Fields without crop cover used as the study area.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "SIRUGUPPA SUB-DISTRICT",
+      "type": "LOCATION",
+      "description": "The specific administrative area in Karnataka where the study was conducted.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "KARNATAKA",
+      "type": "LOCATION",
+      "description": "The state in India where the study took place.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "SENTINEL-1 BAND C IMAGERY",
+      "type": "METHOD",
+      "description": "Satellite imagery used to estimate surface soil moisture.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "RADAR REMOTE SENSING",
+      "type": "METHOD",
+      "description": "The technology used to detect surface soil moisture.",
+      "source_id": "paper_11420"
+    },
+    {
+      "name": "NORTHERN DRY ZONE OF THE DECCAN PLATEAU",
+      "type": "LOCATION",
+      "description": "The geographical region of the study area.",
+      "source_id": "paper_11420"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL MOISTURE",
+      "target": "WATER RESOURCE ALLOCATION",
+      "description": "is a critical input to",
+      "weight": "8",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "IRRIGATION SCHEDULING",
+      "description": "is a critical input to",
+      "weight": "8",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "CLIMATE RISK MANAGEMENT",
+      "description": "is a critical input to",
+      "weight": "8",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "INITIAL RAINFALL",
+      "target": "DATE OF SOWING",
+      "description": "triggers the decision for",
+      "weight": "9",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "TRADITIONAL KNOWLEDGE",
+      "target": "DATE OF SOWING",
+      "description": "is used to determine",
+      "weight": "7",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "PHYSICAL ESTIMATION",
+      "target": "DATE OF SOWING",
+      "description": "is used to determine",
+      "weight": "7",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "PHYSICAL ESTIMATION",
+      "target": "SOIL MOISTURE",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "SENTINEL-1 BAND C IMAGERY",
+      "target": "SOIL MOISTURE",
+      "description": "is used to estimate",
+      "weight": "10",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "RADAR REMOTE SENSING",
+      "target": "SOIL MOISTURE",
+      "description": "is used to estimate",
+      "weight": "10",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "SENTINEL-1 BAND C IMAGERY",
+      "target": "RADAR REMOTE SENSING",
+      "description": "is a form of",
+      "weight": "10",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "SIRUGUPPA SUB-DISTRICT",
+      "target": "KARNATAKA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "KARNATAKA",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "SIRUGUPPA SUB-DISTRICT",
+      "target": "NORTHERN DRY ZONE OF THE DECCAN PLATEAU",
+      "description": "is located in",
+      "weight": "9",
+      "source_id": "paper_11420"
+    },
+    {
+      "source": "BARE AGRICULTURE FIELDS",
+      "target": "SIRUGUPPA SUB-DISTRICT",
+      "description": "are located in",
+      "weight": "9",
+      "source_id": "paper_11420"
+    }
+  ]
+}

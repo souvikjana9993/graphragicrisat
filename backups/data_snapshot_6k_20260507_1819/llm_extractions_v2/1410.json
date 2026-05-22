@@ -1,0 +1,176 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal crop studied for grain yield and pre-anthesis assimilate contribution",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "A cereal crop studied for grain yield and pre-anthesis assimilate contribution",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of grain produced, which can be buffered by pre-anthesis assimilates",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "PRE-ANTHESIS ASSIMILATE",
+      "type": "CONCEPT",
+      "description": "Reserves of assimilate present at flowering available for translocation to grains",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "GRAIN FILLING",
+      "type": "CONCEPT",
+      "description": "The developmental stage where grains accumulate dry matter",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "ENVIRONMENTAL STRESSES",
+      "type": "CONDITION",
+      "description": "External factors that can impact grain yield during the grain filling period",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A specific environmental stress characterized by water deficiency",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "WATERED",
+      "type": "CONDITION",
+      "description": "A condition of sufficient water availability or irrigation",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "IN SITU LABELLING WITH 14CO2",
+      "type": "METHOD",
+      "description": "A technique using carbon-14 dioxide to estimate the contribution of pre-anthesis assimilate",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "DRY WEIGHT OF NON-GRAIN PARTS",
+      "type": "CONCEPT",
+      "description": "The mass of the plant excluding the grains, used as a proxy to estimate assimilate contribution",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "CAMBRIDGE",
+      "type": "LOCATION",
+      "description": "The location where irrigated wheat was studied",
+      "source_id": "paper_1410"
+    },
+    {
+      "name": "NOTTINGHAM",
+      "type": "LOCATION",
+      "description": "The location where wheat and barley crops were studied by Gallagher et al.",
+      "source_id": "paper_1410"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PRE-ANTHESIS ASSIMILATE",
+      "target": "GRAIN YIELD",
+      "description": "contributes to and buffers against stress",
+      "weight": "8",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "PRE-ANTHESIS ASSIMILATE",
+      "target": "WHEAT",
+      "description": "is present in",
+      "weight": "10",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "PRE-ANTHESIS ASSIMILATE",
+      "target": "BARLEY",
+      "description": "is present in",
+      "weight": "10",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "ENVIRONMENTAL STRESSES",
+      "target": "GRAIN YIELD",
+      "description": "can negatively impact",
+      "weight": "9",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "GRAIN FILLING",
+      "target": "GRAIN YIELD",
+      "description": "is the period during which yield is determined",
+      "weight": "9",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "GRAIN YIELD",
+      "description": "acts as a stressor affecting",
+      "weight": "8",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "IN SITU LABELLING WITH 14CO2",
+      "target": "PRE-ANTHESIS ASSIMILATE",
+      "description": "is used to estimate the contribution of",
+      "weight": "10",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "DRY WEIGHT OF NON-GRAIN PARTS",
+      "target": "PRE-ANTHESIS ASSIMILATE",
+      "description": "is used to estimate the contribution of",
+      "weight": "7",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "WHEAT",
+      "target": "CAMBRIDGE",
+      "description": "was studied at",
+      "weight": "6",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "WHEAT",
+      "target": "NOTTINGHAM",
+      "description": "was studied at",
+      "weight": "6",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "BARLEY",
+      "target": "NOTTINGHAM",
+      "description": "was studied at",
+      "weight": "6",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "WATERED",
+      "target": "WHEAT",
+      "description": "is a condition applied to",
+      "weight": "7",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "WHEAT",
+      "description": "is a condition applied to",
+      "weight": "7",
+      "source_id": "paper_1410"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "BARLEY",
+      "description": "is a condition applied to",
+      "weight": "7",
+      "source_id": "paper_1410"
+    }
+  ]
+}

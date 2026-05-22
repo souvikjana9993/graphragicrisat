@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop (ArachiHypogaea L.) investigated for nutritional disorders causing chlorosis.",
+      "source_id": "paper_2586"
+    },
+    {
+      "name": "CHLOROSIS",
+      "type": "CONDITION",
+      "description": "A nutritional disorder characterized by the yellowing of leaf tissue.",
+      "source_id": "paper_2586"
+    },
+    {
+      "name": "IRON CONTENT",
+      "type": "TRAIT",
+      "description": "The level of iron present in plant tissues, specifically the leaves.",
+      "source_id": "paper_2586"
+    },
+    {
+      "name": "O-PHENANTHROLINE EXTRACTION",
+      "type": "METHOD",
+      "description": "A chemical analysis method used to estimate extractable ferrous iron in plant tissues.",
+      "source_id": "paper_2586"
+    },
+    {
+      "name": "FERROUS IRON",
+      "type": "CONCEPT",
+      "description": "The specific form of iron estimated by the o-phenanthroline extraction method.",
+      "source_id": "paper_2586"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research center where the investigations were conducted.",
+      "source_id": "paper_2586"
+    },
+    {
+      "name": "YOUNGEST LEAF TISSUE",
+      "type": "CONCEPT",
+      "description": "The plant part identified as the most appropriate for analysis because it is where chlorosis occurs and iron levels are lowest.",
+      "source_id": "paper_2586"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "CHLOROSIS",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_2586"
+    },
+    {
+      "source": "CHLOROSIS",
+      "target": "IRON CONTENT",
+      "description": "associated with low levels of",
+      "weight": "9",
+      "source_id": "paper_2586"
+    },
+    {
+      "source": "O-PHENANTHROLINE EXTRACTION",
+      "target": "IRON CONTENT",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_2586"
+    },
+    {
+      "source": "O-PHENANTHROLINE EXTRACTION",
+      "target": "FERROUS IRON",
+      "description": "estimates",
+      "weight": "9",
+      "source_id": "paper_2586"
+    },
+    {
+      "source": "CHLOROSIS",
+      "target": "YOUNGEST LEAF TISSUE",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_2586"
+    },
+    {
+      "source": "IRON CONTENT",
+      "target": "YOUNGEST LEAF TISSUE",
+      "description": "lowest in",
+      "weight": "8",
+      "source_id": "paper_2586"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "ICRISAT",
+      "description": "studied at",
+      "weight": "7",
+      "source_id": "paper_2586"
+    }
+  ]
+}

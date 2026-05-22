@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A rainfed dryland crop often encountering terminal drought.",
+      "source_id": "paper_10286"
+    },
+    {
+      "name": "TERMINAL DROUGHT",
+      "type": "CONDITION",
+      "description": "Drought occurring at the end of the crop season that affects yield and nutrient density.",
+      "source_id": "paper_10286"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the grain hybrids were grown.",
+      "source_id": "paper_10286"
+    },
+    {
+      "name": "D2 DWARFING GENE",
+      "type": "GENE_MARKER",
+      "description": "A gene that affects plant height and reduces grain iron and zinc density.",
+      "source_id": "paper_10286"
+    },
+    {
+      "name": "GRAIN IRON DENSITY",
+      "type": "TRAIT",
+      "description": "The concentration of iron (Fe) in the grains of pearl millet.",
+      "source_id": "paper_10286"
+    },
+    {
+      "name": "GRAIN ZINC DENSITY",
+      "type": "TRAIT",
+      "description": "The concentration of zinc (Zn) in the grains of pearl millet.",
+      "source_id": "paper_10286"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of grain produced per unit area.",
+      "source_id": "paper_10286"
+    },
+    {
+      "name": "ISOGENIC LINES",
+      "type": "METHOD",
+      "description": "Lines developed from diverse composites used to evaluate the effects of specific genes and conditions.",
+      "source_id": "paper_10286"
+    },
+    {
+      "name": "IRRIGATED CONTROL",
+      "type": "CONDITION",
+      "description": "A controlled environment with irrigation used as a baseline for comparison with drought.",
+      "source_id": "paper_10286"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "TERMINAL DROUGHT",
+      "description": "encounters",
+      "weight": "7",
+      "source_id": "paper_10286"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "6",
+      "source_id": "paper_10286"
+    },
+    {
+      "source": "D2 DWARFING GENE",
+      "target": "PEARL MILLET",
+      "description": "affects height and nutrients in",
+      "weight": "8",
+      "source_id": "paper_10286"
+    },
+    {
+      "source": "TERMINAL DROUGHT",
+      "target": "GRAIN IRON DENSITY",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10286"
+    },
+    {
+      "source": "TERMINAL DROUGHT",
+      "target": "GRAIN ZINC DENSITY",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10286"
+    },
+    {
+      "source": "TERMINAL DROUGHT",
+      "target": "GRAIN YIELD",
+      "description": "adversely impacts",
+      "weight": "10",
+      "source_id": "paper_10286"
+    },
+    {
+      "source": "D2 DWARFING GENE",
+      "target": "GRAIN IRON DENSITY",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_10286"
+    },
+    {
+      "source": "D2 DWARFING GENE",
+      "target": "GRAIN ZINC DENSITY",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_10286"
+    },
+    {
+      "source": "ISOGENIC LINES",
+      "target": "D2 DWARFING GENE",
+      "description": "used to examine effect of",
+      "weight": "8",
+      "source_id": "paper_10286"
+    },
+    {
+      "source": "ISOGENIC LINES",
+      "target": "TERMINAL DROUGHT",
+      "description": "evaluated under",
+      "weight": "8",
+      "source_id": "paper_10286"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Transgenic chickpea lines used to study effects on non-target organisms",
+      "source_id": "paper_10139"
+    },
+    {
+      "name": "CRYIIA",
+      "type": "GENE_MARKER",
+      "description": "Transgenic protein/gene inserted into chickpea",
+      "source_id": "paper_10139"
+    },
+    {
+      "name": "CHEILOMENES SEXMACULATUS",
+      "type": "ORGANISM",
+      "description": "Coccinellid beetle used to evaluate the impact of transgenic chickpea",
+      "source_id": "paper_10139"
+    },
+    {
+      "name": "ICRISAT, HYDERABAD",
+      "type": "LOCATION",
+      "description": "The research institution and city where the experiments were conducted",
+      "source_id": "paper_10139"
+    },
+    {
+      "name": "BT",
+      "type": "GENE_MARKER",
+      "description": "Bacillus thuringiensis toxin used in intoxicated diets",
+      "source_id": "paper_10139"
+    },
+    {
+      "name": "SURVIVAL AND DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "Biological parameters measured in coccinellid grubs",
+      "source_id": "paper_10139"
+    },
+    {
+      "name": "BS5A.2(T2) 19-3P1",
+      "type": "GENE_MARKER",
+      "description": "A specific transgenic chickpea line tested in the study",
+      "source_id": "paper_10139"
+    },
+    {
+      "name": "APHIDS",
+      "type": "ORGANISM",
+      "description": "Insects fed on transgenic chickpea leaf powder and subsequently fed to coccinellids",
+      "source_id": "paper_10139"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CRYIIA",
+      "target": "CHICKPEA",
+      "description": "is the transgenic gene inserted into",
+      "weight": "10",
+      "source_id": "paper_10139"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "CHEILOMENES SEXMACULATUS",
+      "description": "has direct effects on",
+      "weight": "8",
+      "source_id": "paper_10139"
+    },
+    {
+      "source": "BT",
+      "target": "CHEILOMENES SEXMACULATUS",
+      "description": "has direct effects on",
+      "weight": "8",
+      "source_id": "paper_10139"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "APHIDS",
+      "description": "is used as a food source for",
+      "weight": "7",
+      "source_id": "paper_10139"
+    },
+    {
+      "source": "APHIDS",
+      "target": "CHEILOMENES SEXMACULATUS",
+      "description": "is used as a food source for",
+      "weight": "9",
+      "source_id": "paper_10139"
+    },
+    {
+      "source": "CHEILOMENES SEXMACULATUS",
+      "target": "SURVIVAL AND DEVELOPMENT",
+      "description": "is evaluated for",
+      "weight": "10",
+      "source_id": "paper_10139"
+    },
+    {
+      "source": "BS5A.2(T2) 19-3P1",
+      "target": "CHEILOMENES SEXMACULATUS",
+      "description": "causes marginal reduction in survival and development of",
+      "weight": "6",
+      "source_id": "paper_10139"
+    },
+    {
+      "source": "ICRISAT, HYDERABAD",
+      "target": "CHICKPEA",
+      "description": "is the location where experiments on were conducted",
+      "weight": "5",
+      "source_id": "paper_10139"
+    }
+  ]
+}

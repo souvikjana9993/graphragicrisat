@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop affected by nematode diseases in the semiarid tropics.",
+      "source_id": "paper_5019"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop affected by nematode diseases in the semiarid tropics.",
+      "source_id": "paper_5019"
+    },
+    {
+      "name": "NEMATODE",
+      "type": "ORGANISM",
+      "description": "Microscopic worms that act as pathogens causing diseases in crops.",
+      "source_id": "paper_5019"
+    },
+    {
+      "name": "SEMIARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where chickpea and pigeonpea production is constrained by nematodes.",
+      "source_id": "paper_5019"
+    },
+    {
+      "name": "NEMATODE DISEASES",
+      "type": "CONDITION",
+      "description": "Pathological conditions caused by nematodes in crops.",
+      "source_id": "paper_5019"
+    },
+    {
+      "name": "SYMPTOMS",
+      "type": "CONCEPT",
+      "description": "The physical manifestations of nematode diseases.",
+      "source_id": "paper_5019"
+    },
+    {
+      "name": "LIFE CYCLE",
+      "type": "CONCEPT",
+      "description": "The developmental stages of the nematode pathogens.",
+      "source_id": "paper_5019"
+    },
+    {
+      "name": "PATHOGEN INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "The biological interactions between the nematode pathogens and the host plants.",
+      "source_id": "paper_5019"
+    },
+    {
+      "name": "MANAGEMENT OPTIONS",
+      "type": "METHOD",
+      "description": "Strategies used to control or mitigate nematode diseases.",
+      "source_id": "paper_5019"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NEMATODE",
+      "target": "NEMATODE DISEASES",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5019"
+    },
+    {
+      "source": "NEMATODE DISEASES",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5019"
+    },
+    {
+      "source": "NEMATODE DISEASES",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5019"
+    },
+    {
+      "source": "NEMATODE DISEASES",
+      "target": "SEMIARID TROPICS",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_5019"
+    },
+    {
+      "source": "NEMATODE DISEASES",
+      "target": "SYMPTOMS",
+      "description": "characterized by",
+      "weight": "9",
+      "source_id": "paper_5019"
+    },
+    {
+      "source": "NEMATODE",
+      "target": "LIFE CYCLE",
+      "description": "has",
+      "weight": "9",
+      "source_id": "paper_5019"
+    },
+    {
+      "source": "NEMATODE",
+      "target": "PATHOGEN INTERACTIONS",
+      "description": "involved in",
+      "weight": "9",
+      "source_id": "paper_5019"
+    },
+    {
+      "source": "MANAGEMENT OPTIONS",
+      "target": "NEMATODE DISEASES",
+      "description": "used to control",
+      "weight": "10",
+      "source_id": "paper_5019"
+    }
+  ]
+}

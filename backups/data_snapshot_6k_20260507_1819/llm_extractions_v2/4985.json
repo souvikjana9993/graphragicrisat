@@ -1,0 +1,215 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The main crop studied, Pennisetum glaucum, grown in the West African Sahelian zone",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "WEED GROWTH",
+      "type": "TRAIT",
+      "description": "The growth and dry matter accumulation of weeds in the field",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of pearl millet measured in kg/ha",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "LABOUR REQUIREMENTS",
+      "type": "TRAIT",
+      "description": "The amount of human work required for weeding, measured in h/ha",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "PRE-SOWING RIDGING",
+      "type": "METHOD",
+      "description": "A pre-sowing tillage practice used to manage soil and weeds",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "HAND WEEDING",
+      "type": "METHOD",
+      "description": "Manual weed control method (Wf) providing full field weed removal",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "ANIMAL TRACTION WEEDING",
+      "type": "METHOD",
+      "description": "Mechanical weeding powered by donkeys (Wa) targeting between-row weeds",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "COMBINED WEEDING",
+      "type": "METHOD",
+      "description": "A combination of animal traction for between-row and hand weeding for within-row weeds (Wa+h)",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "NO WEEDING",
+      "type": "METHOD",
+      "description": "A control method (W0) where no weed control is applied",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "SANDY SOIL",
+      "type": "CONDITION",
+      "description": "The soil type characteristic of the study area in Niger",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "WEST AFRICAN SAHELIAN ZONE",
+      "type": "LOCATION",
+      "description": "The broad geographic region where the research was conducted",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The specific country where the studies were conducted",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "RAINFED FARMING",
+      "type": "CONDITION",
+      "description": "Agricultural practice relying solely on rainfall for water",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "WEEDS",
+      "type": "ORGANISM",
+      "description": "Unwanted plants that compete with pearl millet for resources",
+      "source_id": "paper_4985"
+    },
+    {
+      "name": "DONKEYS",
+      "type": "ORGANISM",
+      "description": "Animals used to provide power for mechanical weeding",
+      "source_id": "paper_4985"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PRE-SOWING RIDGING",
+      "target": "WEED GROWTH",
+      "description": "reduces seasonal weed growth",
+      "weight": "7",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "PRE-SOWING RIDGING",
+      "target": "CROP YIELD",
+      "description": "increases crop yields",
+      "weight": "7",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "HAND WEEDING",
+      "target": "WEED GROWTH",
+      "description": "most effective at reducing weed growth",
+      "weight": "10",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "HAND WEEDING",
+      "target": "CROP YIELD",
+      "description": "results in the highest crop yields",
+      "weight": "10",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "HAND WEEDING",
+      "target": "LABOUR REQUIREMENTS",
+      "description": "requires the highest amount of labour",
+      "weight": "10",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "ANIMAL TRACTION WEEDING",
+      "target": "WEED GROWTH",
+      "description": "reduces between-row weeds but allows within-row growth",
+      "weight": "8",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "ANIMAL TRACTION WEEDING",
+      "target": "CROP YIELD",
+      "description": "reduces yield to 28-34% of hand weeding",
+      "weight": "8",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "COMBINED WEEDING",
+      "target": "WEED GROWTH",
+      "description": "reduces weed growth effectively",
+      "weight": "8",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "COMBINED WEEDING",
+      "target": "CROP YIELD",
+      "description": "results in yields 78-100% of hand weeding",
+      "weight": "9",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "COMBINED WEEDING",
+      "target": "LABOUR REQUIREMENTS",
+      "description": "requires less labour than full hand weeding",
+      "weight": "8",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "NO WEEDING",
+      "target": "WEED GROWTH",
+      "description": "results in the highest weed dry matter",
+      "weight": "10",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "NO WEEDING",
+      "target": "CROP YIELD",
+      "description": "reduces yield to 2-10% of hand weeding",
+      "weight": "10",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "WEEDS",
+      "target": "CROP YIELD",
+      "description": "reduces crop yield",
+      "weight": "9",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "WEST AFRICAN SAHELIAN ZONE",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "NIGER",
+      "target": "WEST AFRICAN SAHELIAN ZONE",
+      "description": "is located within",
+      "weight": "10",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "SANDY SOIL",
+      "target": "WEST AFRICAN SAHELIAN ZONE",
+      "description": "is found in",
+      "weight": "7",
+      "source_id": "paper_4985"
+    },
+    {
+      "source": "DONKEYS",
+      "target": "ANIMAL TRACTION WEEDING",
+      "description": "provide power for",
+      "weight": "10",
+      "source_id": "paper_4985"
+    }
+  ]
+}

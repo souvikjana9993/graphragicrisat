@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The target crop Pennisetum americanum used in the study",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "METALAXYL",
+      "type": "CONCEPT",
+      "description": "A systemic fungicide used to suppress downy mildew symptoms",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A systemic disease affecting pearl millet",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "FOLIAR APPLICATION",
+      "type": "METHOD",
+      "description": "The process of applying fungicide to the leaves of the plant",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "SEED TREATMENT",
+      "type": "METHOD",
+      "description": "The process of applying fungicide to seeds",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "NHB-3",
+      "type": "CROP",
+      "description": "A susceptible cultivar of pearl millet",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "7042",
+      "type": "CROP",
+      "description": "A susceptible cultivar of pearl millet",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "EARHEAD LENGTH",
+      "type": "TRAIT",
+      "description": "The length of the earhead produced by the plant",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "A controlled environment for plant growth and treatment",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "An outdoor environment for plant growth and treatment",
+      "source_id": "paper_3876"
+    },
+    {
+      "name": "PANICLE INITIATION",
+      "type": "CONCEPT",
+      "description": "A growth stage of the plant that influences the effect of fungicide on earhead length",
+      "source_id": "paper_3876"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "METALAXYL",
+      "target": "DOWNY MILDEW",
+      "description": "suppresses symptoms of",
+      "weight": "10",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "is the causal agent of",
+      "weight": "10",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "FOLIAR APPLICATION",
+      "target": "METALAXYL",
+      "description": "is a method of applying",
+      "weight": "9",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "SEED TREATMENT",
+      "target": "METALAXYL",
+      "description": "is a method of applying",
+      "weight": "9",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "FOLIAR APPLICATION",
+      "target": "NHB-3",
+      "description": "was used to treat",
+      "weight": "8",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "FOLIAR APPLICATION",
+      "target": "7042",
+      "description": "was used to treat",
+      "weight": "8",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "SEED TREATMENT",
+      "target": "NHB-3",
+      "description": "was used to treat",
+      "weight": "8",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "SEED TREATMENT",
+      "target": "7042",
+      "description": "was used to treat",
+      "weight": "8",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "PANICLE INITIATION",
+      "target": "EARHEAD LENGTH",
+      "description": "timing relative to this stage affects",
+      "weight": "7",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "METALAXYL",
+      "target": "GREENHOUSE",
+      "description": "was tested in",
+      "weight": "7",
+      "source_id": "paper_3876"
+    },
+    {
+      "source": "METALAXYL",
+      "target": "FIELD",
+      "description": "was tested in",
+      "weight": "7",
+      "source_id": "paper_3876"
+    }
+  ]
+}

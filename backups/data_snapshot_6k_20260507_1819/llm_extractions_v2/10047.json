@@ -1,0 +1,317 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary grain crop being stored and assessed for losses in Kenya",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the off-farm grain storage survey was conducted",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "POSTHARVEST LOSSES",
+      "type": "CONCEPT",
+      "description": "The reduction in quantity or quality of grain after harvest during storage",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "OFF-FARM GRAIN STORAGE",
+      "type": "CONCEPT",
+      "description": "The practice of storing grain in facilities outside the farm, managed by government, traders, or processors",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "SURVEY",
+      "type": "METHOD",
+      "description": "The data collection method used to assess perceived losses and associated factors",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "PUBLIC STORES",
+      "type": "CONCEPT",
+      "description": "Grain storage facilities owned and managed by the government",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "PRIVATE STORES",
+      "type": "CONCEPT",
+      "description": "Grain storage facilities owned and managed by traders or processors",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "INSECTS",
+      "type": "ORGANISM",
+      "description": "Pests that contribute to grain losses in storage",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "MOLDS",
+      "type": "ORGANISM",
+      "description": "Fungal organisms that cause grain spoilage and losses",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "MOISTURE LOSS",
+      "type": "CONCEPT",
+      "description": "Loss of grain weight due to evaporation of water",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "RODENTS",
+      "type": "ORGANISM",
+      "description": "Vertebrate pests that consume or damage stored grain",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "SPILLAGE",
+      "type": "CONCEPT",
+      "description": "Physical loss of grain due to leaks or accidents during handling and storage",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "BIRDS",
+      "type": "ORGANISM",
+      "description": "Vertebrate pests that contribute to grain losses",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to determine factors associated with higher or lower losses",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "RESIDUAL INSECTICIDES",
+      "type": "METHOD",
+      "description": "The use of remaining insecticide chemicals for pest control in stores",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "LOW QUALITY MAIZE",
+      "type": "CONCEPT",
+      "description": "Maize grain with poor initial quality characteristics before storage",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "REUSE OF STORAGE BAGS",
+      "type": "METHOD",
+      "description": "The practice of using storage bags multiple times",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "UNTIMELY CONTROL OF STORAGE PESTS",
+      "type": "METHOD",
+      "description": "Delayed or poorly timed application of pest control measures",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "MOIST TRANSITIONAL ZONE",
+      "type": "LOCATION",
+      "description": "An agro-climatic zone associated with higher grain losses",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "MOIST MID-ALTITUDE ZONE",
+      "type": "LOCATION",
+      "description": "An agro-climatic zone associated with higher grain losses",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "DRY MID-ALTITUDE ZONE",
+      "type": "LOCATION",
+      "description": "An agro-climatic zone associated with higher grain losses",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "INFESTATION REPORTS",
+      "type": "METHOD",
+      "description": "The practice of initiating pest control based on reports of infestation",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "CLEANING AND DRYING GRAIN",
+      "type": "METHOD",
+      "description": "Pre-storage practices to reduce moisture and contaminants",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "EARLY PEST CONTROL",
+      "type": "METHOD",
+      "description": "Proactive and timely application of pest control measures",
+      "source_id": "paper_10047"
+    },
+    {
+      "name": "STORAGE PERIODS",
+      "type": "CONCEPT",
+      "description": "The duration for which grain is kept in off-farm stores",
+      "source_id": "paper_10047"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "OFF-FARM GRAIN STORAGE",
+      "target": "KENYA",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "SURVEY",
+      "target": "POSTHARVEST LOSSES",
+      "description": "assesses",
+      "weight": "9",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "POSTHARVEST LOSSES",
+      "target": "MAIZE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "POSTHARVEST LOSSES",
+      "target": "PUBLIC STORES",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "POSTHARVEST LOSSES",
+      "target": "PRIVATE STORES",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "INSECTS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "MOLDS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "MOISTURE LOSS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "RODENTS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "SPILLAGE",
+      "target": "POSTHARVEST LOSSES",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "BIRDS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "causes",
+      "weight": "7",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "REGRESSION ANALYSIS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "analyzes factors of",
+      "weight": "9",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "RESIDUAL INSECTICIDES",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with higher",
+      "weight": "7",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "LOW QUALITY MAIZE",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with higher",
+      "weight": "8",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "REUSE OF STORAGE BAGS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with higher",
+      "weight": "7",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "UNTIMELY CONTROL OF STORAGE PESTS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with higher",
+      "weight": "8",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "MOIST TRANSITIONAL ZONE",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with higher",
+      "weight": "7",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "MOIST MID-ALTITUDE ZONE",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with higher",
+      "weight": "7",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "DRY MID-ALTITUDE ZONE",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with higher",
+      "weight": "7",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "INFESTATION REPORTS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with higher",
+      "weight": "8",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "CLEANING AND DRYING GRAIN",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with lower",
+      "weight": "8",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "EARLY PEST CONTROL",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with lower",
+      "weight": "8",
+      "source_id": "paper_10047"
+    },
+    {
+      "source": "STORAGE PERIODS",
+      "target": "POSTHARVEST LOSSES",
+      "description": "associated with lower when short",
+      "weight": "7",
+      "source_id": "paper_10047"
+    }
+  ]
+}

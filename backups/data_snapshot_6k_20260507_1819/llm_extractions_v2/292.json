@@ -1,0 +1,119 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species under study.",
+      "source_id": "paper_292"
+    },
+    {
+      "name": "DESI CHICKPEA",
+      "type": "CROP",
+      "description": "Small-seeded cultivars of chickpea.",
+      "source_id": "paper_292"
+    },
+    {
+      "name": "KABULI CHICKPEA",
+      "type": "CROP",
+      "description": "Large-seeded cultivars of chickpea.",
+      "source_id": "paper_292"
+    },
+    {
+      "name": "SEED COAT PERCENTAGE",
+      "type": "TRAIT",
+      "description": "The percentage of seed weight attributed to the seed coat.",
+      "source_id": "paper_292"
+    },
+    {
+      "name": "SEED COAT THICKNESS",
+      "type": "TRAIT",
+      "description": "The thickness of the seed coat.",
+      "source_id": "paper_292"
+    },
+    {
+      "name": "100-SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "The combined weight of 100 seeds.",
+      "source_id": "paper_292"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DESI CHICKPEA",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "KABULI CHICKPEA",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "SEED COAT PERCENTAGE",
+      "target": "DESI CHICKPEA",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "SEED COAT PERCENTAGE",
+      "target": "KABULI CHICKPEA",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "SEED COAT THICKNESS",
+      "target": "DESI CHICKPEA",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "SEED COAT THICKNESS",
+      "target": "KABULI CHICKPEA",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "100-SEED WEIGHT",
+      "target": "DESI CHICKPEA",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "100-SEED WEIGHT",
+      "target": "KABULI CHICKPEA",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "SEED COAT PERCENTAGE",
+      "target": "SEED COAT THICKNESS",
+      "description": "positively correlated with",
+      "weight": "9",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "SEED COAT PERCENTAGE",
+      "target": "100-SEED WEIGHT",
+      "description": "negatively correlated with",
+      "weight": "9",
+      "source_id": "paper_292"
+    },
+    {
+      "source": "SEED COAT THICKNESS",
+      "target": "100-SEED WEIGHT",
+      "description": "not associated with",
+      "weight": "7",
+      "source_id": "paper_292"
+    }
+  ]
+}

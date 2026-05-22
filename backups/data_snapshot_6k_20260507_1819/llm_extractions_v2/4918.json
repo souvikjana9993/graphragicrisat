@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop that is often infested with mealy bugs.",
+      "source_id": "paper_4918"
+    },
+    {
+      "name": "MEALY BUG",
+      "type": "ORGANISM",
+      "description": "An insect pest, specifically Ceroplastodes cajani Mask, that infests pigeonpea plants.",
+      "source_id": "paper_4918"
+    },
+    {
+      "name": "INFESTATION",
+      "type": "CONDITION",
+      "description": "The state of being infested by pests.",
+      "source_id": "paper_4918"
+    },
+    {
+      "name": "SECOND SEASON",
+      "type": "CONDITION",
+      "description": "The growth period of a second season which increases the likelihood of infestation.",
+      "source_id": "paper_4918"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MEALY BUG",
+      "target": "PIGEONPEA",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_4918"
+    },
+    {
+      "source": "SECOND SEASON",
+      "target": "INFESTATION",
+      "description": "increases likelihood of",
+      "weight": "8",
+      "source_id": "paper_4918"
+    },
+    {
+      "source": "MEALY BUG",
+      "target": "INFESTATION",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_4918"
+    }
+  ]
+}

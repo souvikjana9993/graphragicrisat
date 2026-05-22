@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "SEMI-EMPIRICAL MODEL",
+      "type": "METHOD",
+      "description": "A model developed to estimate volumetric soil moisture in bare soils using SAR imagery",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "VOLUMETRIC SOIL MOISTURE",
+      "type": "CONCEPT",
+      "description": "The amount of water contained in a given volume of soil, measured as a percentage or fraction",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "BARE SOILS",
+      "type": "CONDITION",
+      "description": "Agricultural croplands without vegetation cover",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "The period from March to May characterized by low precipitation",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "SENTINEL-1 SAR DATA",
+      "type": "METHOD",
+      "description": "C-band synthetic aperture radar imagery acquired from the Sentinel-1 European satellite platform",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "BACKSCATTER COEFFICIENT",
+      "type": "CONCEPT",
+      "description": "The measure of radar signal reflection, specifically in VV and VH polarizations",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "SIRUGUPPA TALUK",
+      "type": "LOCATION",
+      "description": "A sub-district in the Karnataka state of India where soil moisture was collected",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "KARNATAKA STATE",
+      "type": "LOCATION",
+      "description": "A state in India where the study was conducted",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "SOIL CORE SAMPLER",
+      "type": "METHOD",
+      "description": "A tool used to extract soil samples at a depth of 0-10 cm",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "STANDARD GRAVIMETRIC METHOD",
+      "type": "METHOD",
+      "description": "A standard laboratory method used to measure volumetric soil moisture",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "LINEAR EQUATION",
+      "type": "METHOD",
+      "description": "A mathematical approach combining VV and VH backscatter coefficients to estimate soil moisture",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "LOCALIZED LINEAR MODELS",
+      "type": "METHOD",
+      "description": "Linear models derived using specific Sentinel-1 images for localized estimation",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "GENERALIZED LINEAR MODELS",
+      "type": "METHOD",
+      "description": "Linear models derived using all Sentinel-1 images across multiple years for broader estimation",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "ROOT MEAN SQUARE ERROR",
+      "type": "CONCEPT",
+      "description": "A statistical metric used to validate the accuracy of the soil moisture estimations",
+      "source_id": "paper_11513"
+    },
+    {
+      "name": "R2",
+      "type": "CONCEPT",
+      "description": "A statistical measure of the correlation between the model estimations and in situ data",
+      "source_id": "paper_11513"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SEMI-EMPIRICAL MODEL",
+      "target": "VOLUMETRIC SOIL MOISTURE",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "SEMI-EMPIRICAL MODEL",
+      "target": "BARE SOILS",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "SEMI-EMPIRICAL MODEL",
+      "target": "DRY SEASON",
+      "description": "used during",
+      "weight": "8",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "SEMI-EMPIRICAL MODEL",
+      "target": "SENTINEL-1 SAR DATA",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "SENTINEL-1 SAR DATA",
+      "target": "BACKSCATTER COEFFICIENT",
+      "description": "provides",
+      "weight": "10",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "SEMI-EMPIRICAL MODEL",
+      "target": "SIRUGUPPA TALUK",
+      "description": "developed in",
+      "weight": "9",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "SIRUGUPPA TALUK",
+      "target": "KARNATAKA STATE",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "KARNATAKA STATE",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "STANDARD GRAVIMETRIC METHOD",
+      "target": "VOLUMETRIC SOIL MOISTURE",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "SOIL CORE SAMPLER",
+      "target": "STANDARD GRAVIMETRIC METHOD",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "LINEAR EQUATION",
+      "target": "SEMI-EMPIRICAL MODEL",
+      "description": "is a form of",
+      "weight": "9",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "LINEAR EQUATION",
+      "target": "BACKSCATTER COEFFICIENT",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "LOCALIZED LINEAR MODELS",
+      "target": "LINEAR EQUATION",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "GENERALIZED LINEAR MODELS",
+      "target": "LINEAR EQUATION",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "ROOT MEAN SQUARE ERROR",
+      "target": "SEMI-EMPIRICAL MODEL",
+      "description": "validates",
+      "weight": "9",
+      "source_id": "paper_11513"
+    },
+    {
+      "source": "R2",
+      "target": "LINEAR EQUATION",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_11513"
+    }
+  ]
+}

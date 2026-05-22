@@ -1,0 +1,328 @@
+{
+  "entities": [
+    {
+      "name": "SOUTHEAST ASIA",
+      "type": "LOCATION",
+      "description": "Region in Asia including Myanmar, Thailand, Vietnam, and Indonesia",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "MYANMAR",
+      "type": "LOCATION",
+      "description": "Country in Southeast Asia",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "THAILAND",
+      "type": "LOCATION",
+      "description": "Country in Southeast Asia",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "VIETNAM",
+      "type": "LOCATION",
+      "description": "Country in Southeast Asia",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "INDONESIA",
+      "type": "LOCATION",
+      "description": "Country in Southeast Asia",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "JAPAN",
+      "type": "LOCATION",
+      "description": "Country in East Asia",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "NORTH KOREA",
+      "type": "LOCATION",
+      "description": "Country in East Asia",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "SOUTH KOREA",
+      "type": "LOCATION",
+      "description": "Country in East Asia",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Major export crop of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "SUGAR",
+      "type": "CROP",
+      "description": "Major export crop of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "SHRIMP",
+      "type": "ORGANISM",
+      "description": "Major export product of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "CASSAVA",
+      "type": "CROP",
+      "description": "Major export crop of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "OIL PALM",
+      "type": "CROP",
+      "description": "Major export crop of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "PULSES & BEANS",
+      "type": "CROP",
+      "description": "Major export crops of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "COCOA",
+      "type": "CROP",
+      "description": "Major export crop of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "COFFEE",
+      "type": "CROP",
+      "description": "Major export crop of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "TROPICAL FRUIT",
+      "type": "CROP",
+      "description": "Major export crops of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "SPICES",
+      "type": "CROP",
+      "description": "Major export crops of the studied countries",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "POPULATION EXPANSION",
+      "type": "CONDITION",
+      "description": "Predicted increase in population to 1 billion by 2050",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "URBAN AND INDUSTRIAL DEVELOPMENT",
+      "type": "CONDITION",
+      "description": "Factor causing reduction in arable land",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "PRECIPITATION VARIABILITY",
+      "type": "CONDITION",
+      "description": "Environmental factor causing reduction in arable land",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "SEA LEVEL RISE",
+      "type": "CONDITION",
+      "description": "Environmental factor causing reduction in arable land",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "GLOBAL FOOD SECURITY-SUPPORT ANALYSIS DATA",
+      "type": "CONCEPT",
+      "description": "Project supporting the mapping of croplands",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "CROPLAND MAPPING",
+      "type": "CONCEPT",
+      "description": "The process of identifying croplands versus non-croplands at 30-m resolution",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "FOOD DEMAND",
+      "type": "CONCEPT",
+      "description": "Future food requirements to be addressed",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "RANDOM FOREST ALGORITHM",
+      "type": "METHOD",
+      "description": "Machine learning algorithm used to separate croplands from non-croplands",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "LANDSAT DATA",
+      "type": "METHOD",
+      "description": "30-m time-series satellite data used for mapping",
+      "source_id": "paper_10399"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "Cloud platform used for all computing",
+      "source_id": "paper_10399"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RANDOM FOREST ALGORITHM",
+      "target": "CROPLAND MAPPING",
+      "description": "used to execute",
+      "weight": "10",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "LANDSAT DATA",
+      "target": "CROPLAND MAPPING",
+      "description": "used as input for",
+      "weight": "10",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "RANDOM FOREST ALGORITHM",
+      "description": "platform used to run",
+      "weight": "9",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "GLOBAL FOOD SECURITY-SUPPORT ANALYSIS DATA",
+      "target": "CROPLAND MAPPING",
+      "description": "project supporting",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "POPULATION EXPANSION",
+      "target": "FOOD DEMAND",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "URBAN AND INDUSTRIAL DEVELOPMENT",
+      "target": "CROPLAND MAPPING",
+      "description": "reduces arable land, driving need for",
+      "weight": "7",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "PRECIPITATION VARIABILITY",
+      "target": "CROPLAND MAPPING",
+      "description": "reduces arable land, driving need for",
+      "weight": "7",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SEA LEVEL RISE",
+      "target": "CROPLAND MAPPING",
+      "description": "reduces arable land, driving need for",
+      "weight": "7",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "RICE",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "SUGAR",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "SHRIMP",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "CASSAVA",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "OIL PALM",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "PULSES & BEANS",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "COCOA",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "COFFEE",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "TROPICAL FRUIT",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "SOUTHEAST ASIA",
+      "target": "SPICES",
+      "description": "exports",
+      "weight": "8",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "CROPLAND MAPPING",
+      "target": "SOUTHEAST ASIA",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "CROPLAND MAPPING",
+      "target": "JAPAN",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "CROPLAND MAPPING",
+      "target": "NORTH KOREA",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_10399"
+    },
+    {
+      "source": "CROPLAND MAPPING",
+      "target": "SOUTH KOREA",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_10399"
+    }
+  ]
+}

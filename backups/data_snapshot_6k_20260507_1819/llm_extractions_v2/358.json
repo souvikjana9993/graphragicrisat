@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The specific crop studied for adaptation to climate change in western India",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The primary agricultural output measured and simulated",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "CROP SIMULATION ENSEMBLE",
+      "type": "METHOD",
+      "description": "A method of perturbing crop and climate responses to quantify uncertainty",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The overarching environmental shift affecting crop responses",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "DOUBLED-CO2",
+      "type": "CONDITION",
+      "description": "A specific climate scenario involving a doubling of atmospheric carbon dioxide",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "BASELINE CLIMATE",
+      "type": "CONDITION",
+      "description": "The reference climate scenario used for comparison",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "MEAN TEMPERATURE CHANGE",
+      "type": "CONDITION",
+      "description": "The variation in average temperature affecting crop growth",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the simulation location is situated",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "WESTERN INDIA",
+      "type": "LOCATION",
+      "description": "The specific region where groundnut cultivation is analyzed",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "GENOTYPIC ADAPTATION",
+      "type": "CONCEPT",
+      "description": "The process of adjusting genetic traits to survive or thrive in changing temperatures",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "UNCERTAINTY",
+      "type": "CONCEPT",
+      "description": "The variability and lack of precision in crop and climate simulations",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "CARDINAL TEMPERATURES",
+      "type": "TRAIT",
+      "description": "The critical temperature thresholds that define the growth limits of a crop",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "THERMAL TIME",
+      "type": "TRAIT",
+      "description": "The accumulated temperature over time used to track crop development",
+      "source_id": "paper_358"
+    },
+    {
+      "name": "GENETIC RESOURCES",
+      "type": "CONCEPT",
+      "description": "The genetic material available for breeding crops to adapt to climate change",
+      "source_id": "paper_358"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROP SIMULATION ENSEMBLE",
+      "target": "YIELD",
+      "description": "used to simulate and estimate",
+      "weight": "9",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "CROP SIMULATION ENSEMBLE",
+      "target": "CLIMATE CHANGE",
+      "description": "used to quantify response to",
+      "weight": "8",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "CROP SIMULATION ENSEMBLE",
+      "target": "INDIA",
+      "description": "applied to a location in",
+      "weight": "7",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "GENOTYPIC ADAPTATION",
+      "target": "MEAN TEMPERATURE CHANGE",
+      "description": "occurs in response to",
+      "weight": "8",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "YIELD",
+      "target": "MEAN TEMPERATURE CHANGE",
+      "description": "shows sensitivity to",
+      "weight": "9",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "UNCERTAINTY",
+      "target": "CROP SIMULATION ENSEMBLE",
+      "description": "is inherent in",
+      "weight": "8",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "UNCERTAINTY",
+      "target": "CLIMATE CHANGE",
+      "description": "is inherent in simulation of",
+      "weight": "8",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "WESTERN INDIA",
+      "description": "is cultivated in",
+      "weight": "7",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "DOUBLED-CO2",
+      "description": "is analyzed for adaptation to",
+      "weight": "8",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "GENETIC RESOURCES",
+      "target": "CLIMATE CHANGE",
+      "description": "are needed to adapt to",
+      "weight": "9",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "GENOTYPIC ADAPTATION",
+      "target": "GROUNDNUT",
+      "description": "is evaluated for",
+      "weight": "7",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "CARDINAL TEMPERATURES",
+      "target": "YIELD",
+      "description": "used to estimate potential for",
+      "weight": "6",
+      "source_id": "paper_358"
+    },
+    {
+      "source": "THERMAL TIME",
+      "target": "YIELD",
+      "description": "used to estimate potential for",
+      "weight": "6",
+      "source_id": "paper_358"
+    }
+  ]
+}

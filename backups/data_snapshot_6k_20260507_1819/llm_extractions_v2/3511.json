@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, a cereal crop evaluated for nitrogen requirements and utilization.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., a legume crop evaluated for nitrogen requirements and utilization, including nodulating and non-nodulating genotypes.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "Mineral nitrogen (N) and atmospheric nitrogen (N2) used as essential nutrients for plant growth.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "NITROGEN USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The measure of biomass produced per unit of nitrogen harvested.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting atmospheric N2 into ammonia, performed by nodulating groundnut genotypes.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "NITROGEN FERTILIZATION",
+      "type": "CONDITION",
+      "description": "The application of nitrogen fertilizer to plants to observe effects on growth and yield.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of the weight of the harvested grain to the total above-ground biomass.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "NITROGEN TRANSLOCATION TO SEEDS",
+      "type": "TRAIT",
+      "description": "The movement of nitrogen from vegetative tissues to the seeds.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "NITRATE REDUCTASE ACTIVITY",
+      "type": "TRAIT",
+      "description": "The enzymatic activity (NRA) responsible for reducing nitrate in the leaves.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "NITRATE CONTENT",
+      "type": "TRAIT",
+      "description": "The concentration of nitrate present in the leaf tissues.",
+      "source_id": "paper_3511"
+    },
+    {
+      "name": "MICHAELIS-MENTON CONSTANT",
+      "type": "CONCEPT",
+      "description": "The Km value indicating the affinity of the nitrate reductase enzyme for its substrate.",
+      "source_id": "paper_3511"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "NITROGEN",
+      "description": "utilizes mineral nitrogen for growth",
+      "weight": "8",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NITROGEN",
+      "description": "utilizes mineral nitrogen and fixes atmospheric nitrogen",
+      "weight": "8",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "exhibits higher efficiency of 120 kg biomass/kg N",
+      "weight": "9",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "exhibits lower efficiency of 36 kg biomass/kg N",
+      "weight": "9",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NITROGEN FIXATION",
+      "description": "nodulating genotypes fix 183-190 kg N/ha",
+      "weight": "9",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "NITROGEN FERTILIZATION",
+      "target": "SORGHUM",
+      "description": "increases harvest index and nitrogen translocation to seeds",
+      "weight": "8",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "NITROGEN FERTILIZATION",
+      "target": "GROUNDNUT",
+      "description": "decreases harvest index and has variable effects on nitrogen translocation to seeds",
+      "weight": "8",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NITRATE REDUCTASE ACTIVITY",
+      "description": "shows higher activity compared to groundnut",
+      "weight": "8",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NITRATE REDUCTASE ACTIVITY",
+      "description": "shows lower activity and lower affinity for substrate",
+      "weight": "8",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NITRATE CONTENT",
+      "description": "shows lower nitrate concentration in leaves",
+      "weight": "8",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NITRATE CONTENT",
+      "description": "shows higher nitrate concentration in leaves",
+      "weight": "8",
+      "source_id": "paper_3511"
+    },
+    {
+      "source": "NITRATE REDUCTASE ACTIVITY",
+      "target": "MICHAELIS-MENTON CONSTANT",
+      "description": "affinity is characterized by the Km value",
+      "weight": "7",
+      "source_id": "paper_3511"
+    }
+  ]
+}

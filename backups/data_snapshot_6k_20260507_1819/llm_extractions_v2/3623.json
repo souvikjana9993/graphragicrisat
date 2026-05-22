@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop affected by the sorghum shoot fly",
+      "source_id": "paper_3623"
+    },
+    {
+      "name": "SORGHUM SHOOT FLY",
+      "type": "ORGANISM",
+      "description": "A pest insect of the species Atherigona soccata",
+      "source_id": "paper_3623"
+    },
+    {
+      "name": "FISH MEAL",
+      "type": "CONCEPT",
+      "description": "An attractant substance used for sampling shootfly populations",
+      "source_id": "paper_3623"
+    },
+    {
+      "name": "DETERGENT WATER",
+      "type": "CONCEPT",
+      "description": "A substance used in combination with fish meal for sampling shootflies",
+      "source_id": "paper_3623"
+    },
+    {
+      "name": "SAMPLING",
+      "type": "METHOD",
+      "description": "The process of collecting shootfly populations for study",
+      "source_id": "paper_3623"
+    },
+    {
+      "name": "YEAST",
+      "type": "ORGANISM",
+      "description": "A fungus used as an ingredient in attractant mixtures for shootflies",
+      "source_id": "paper_3623"
+    },
+    {
+      "name": "AMMONIUM SULPHIDE",
+      "type": "CONCEPT",
+      "description": "A chemical compound used in potent attractant mixtures for shootflies",
+      "source_id": "paper_3623"
+    },
+    {
+      "name": "AMINES",
+      "type": "CONCEPT",
+      "description": "Chemical compounds resulting from the biodegradation of fish meal that act as attractants",
+      "source_id": "paper_3623"
+    },
+    {
+      "name": "BIODEGRADATION",
+      "type": "CONCEPT",
+      "description": "The biological breakdown of fish meal that increases its attractancy over time",
+      "source_id": "paper_3623"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM SHOOT FLY",
+      "target": "SORGHUM",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "FISH MEAL",
+      "target": "SORGHUM SHOOT FLY",
+      "description": "acts as an attractant for",
+      "weight": "9",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "DETERGENT WATER",
+      "target": "SORGHUM SHOOT FLY",
+      "description": "used for sampling",
+      "weight": "7",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "SAMPLING",
+      "target": "SORGHUM SHOOT FLY",
+      "description": "targets the population of",
+      "weight": "10",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "FISH MEAL",
+      "target": "SAMPLING",
+      "description": "is used as a tool for",
+      "weight": "9",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "DETERGENT WATER",
+      "target": "SAMPLING",
+      "description": "is used as a tool for",
+      "weight": "8",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "YEAST",
+      "target": "FISH MEAL",
+      "description": "is mixed with to increase potency",
+      "weight": "7",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "AMMONIUM SULPHIDE",
+      "target": "FISH MEAL",
+      "description": "is mixed with to increase potency",
+      "weight": "7",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "BIODEGRADATION",
+      "target": "FISH MEAL",
+      "description": "increases the attractancy of",
+      "weight": "9",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "AMINES",
+      "target": "FISH MEAL",
+      "description": "are produced by the biodegradation of",
+      "weight": "8",
+      "source_id": "paper_3623"
+    },
+    {
+      "source": "AMINES",
+      "target": "SORGHUM SHOOT FLY",
+      "description": "are likely responsible for the attractancy of",
+      "weight": "8",
+      "source_id": "paper_3623"
+    }
+  ]
+}

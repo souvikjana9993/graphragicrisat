@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SOIL MANAGEMENT PRACTICES",
+      "type": "CONCEPT",
+      "description": "Practices used to manage soil to affect runoff and infiltration processes",
+      "source_id": "paper_4728"
+    },
+    {
+      "name": "RUNOFF",
+      "type": "CONCEPT",
+      "description": "The flow of water that occurs when excess stormwater runs off the land surface",
+      "source_id": "paper_4728"
+    },
+    {
+      "name": "INFILTRATION",
+      "type": "CONCEPT",
+      "description": "The process by which water on the ground surface enters the soil",
+      "source_id": "paper_4728"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "CONCEPT",
+      "description": "A type of soil characterized as hardsetting and structurally unstable in semi-arid tropics",
+      "source_id": "paper_4728"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region characterized by specific climatic conditions",
+      "source_id": "paper_4728"
+    },
+    {
+      "name": "STRUCTURAL INSTABILITY",
+      "type": "TRAIT",
+      "description": "The characteristic of Alfisols that makes them prone to surface sealing under raindrop impact",
+      "source_id": "paper_4728"
+    },
+    {
+      "name": "RAINDROPS",
+      "type": "CONDITION",
+      "description": "The physical impact of falling rain on the soil surface",
+      "source_id": "paper_4728"
+    },
+    {
+      "name": "SURFACE SEAL",
+      "type": "CONCEPT",
+      "description": "A thin layer on the soil surface that reduces infiltration and increases runoff",
+      "source_id": "paper_4728"
+    },
+    {
+      "name": "PLANT-AVAILABLE WATER",
+      "type": "CONCEPT",
+      "description": "The portion of soil water that can be absorbed by plant roots",
+      "source_id": "paper_4728"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_4728"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL MANAGEMENT PRACTICES",
+      "target": "RUNOFF",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_4728"
+    },
+    {
+      "source": "SOIL MANAGEMENT PRACTICES",
+      "target": "INFILTRATION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_4728"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "SEMI-ARID TROPICS",
+      "description": "found in",
+      "weight": "10",
+      "source_id": "paper_4728"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "STRUCTURAL INSTABILITY",
+      "description": "characterized by",
+      "weight": "9",
+      "source_id": "paper_4728"
+    },
+    {
+      "source": "RAINDROPS",
+      "target": "STRUCTURAL INSTABILITY",
+      "description": "triggers effect of",
+      "weight": "8",
+      "source_id": "paper_4728"
+    },
+    {
+      "source": "STRUCTURAL INSTABILITY",
+      "target": "SURFACE SEAL",
+      "description": "leads to formation of",
+      "weight": "9",
+      "source_id": "paper_4728"
+    },
+    {
+      "source": "SURFACE SEAL",
+      "target": "INFILTRATION",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_4728"
+    },
+    {
+      "source": "SURFACE SEAL",
+      "target": "RUNOFF",
+      "description": "increases",
+      "weight": "10",
+      "source_id": "paper_4728"
+    },
+    {
+      "source": "INFILTRATION",
+      "target": "PLANT-AVAILABLE WATER",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_4728"
+    },
+    {
+      "source": "PLANT-AVAILABLE WATER",
+      "target": "CROP YIELD",
+      "description": "constrains",
+      "weight": "9",
+      "source_id": "paper_4728"
+    }
+  ]
+}

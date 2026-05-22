@@ -1,0 +1,147 @@
+{
+  "entities": [
+    {
+      "name": "CASTOR",
+      "type": "CROP",
+      "description": "The crop affected by wilt disease and the subject of susceptibility testing",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "WILT DISEASE",
+      "type": "CONDITION",
+      "description": "A disease causing productivity loss in castor crops",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. RICINI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing castor wilt disease",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the castor-growing agro-climatic zones and isolates were studied",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "MORPHOLOGICAL FEATURES",
+      "type": "CONCEPT",
+      "description": "Physical characteristics of the pathogen including radial growth and conidia size",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "PATHOGENIC FEATURES",
+      "type": "CONCEPT",
+      "description": "Characteristics related to the virulence and ability of the pathogen to cause disease",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "MOLECULAR FEATURES",
+      "type": "CONCEPT",
+      "description": "Genetic characteristics of the pathogen analyzed using molecular markers",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "BIPLOT ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to group isolates and rank genotypes for susceptibility",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "PATHOGEN SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The degree to which different castor genotypes are affected by the pathogen",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "K-MEANS CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "A clustering method used to study pathogenic variability of isolates",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "ISSR PRIMERS",
+      "type": "GENE_MARKER",
+      "description": "Molecular markers used to analyze genetic variability among pathogen isolates",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "DENDROGRAM ANALYSIS",
+      "type": "METHOD",
+      "description": "A method used to visualize genetic similarity and group isolates into clusters",
+      "source_id": "paper_12980"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "Different varieties of castor plants tested for resistance and susceptibility",
+      "source_id": "paper_12980"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. RICINI",
+      "target": "WILT DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12980"
+    },
+    {
+      "source": "WILT DISEASE",
+      "target": "CASTOR",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12980"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. RICINI",
+      "target": "INDIA",
+      "description": "collected from",
+      "weight": "8",
+      "source_id": "paper_12980"
+    },
+    {
+      "source": "BIPLOT ANALYSIS",
+      "target": "MORPHOLOGICAL FEATURES",
+      "description": "analyzed",
+      "weight": "7",
+      "source_id": "paper_12980"
+    },
+    {
+      "source": "BIPLOT ANALYSIS",
+      "target": "PATHOGEN SUSCEPTIBILITY",
+      "description": "ranked",
+      "weight": "9",
+      "source_id": "paper_12980"
+    },
+    {
+      "source": "K-MEANS CLUSTER ANALYSIS",
+      "target": "PATHOGENIC FEATURES",
+      "description": "analyzed",
+      "weight": "8",
+      "source_id": "paper_12980"
+    },
+    {
+      "source": "ISSR PRIMERS",
+      "target": "MOLECULAR FEATURES",
+      "description": "analyzed",
+      "weight": "9",
+      "source_id": "paper_12980"
+    },
+    {
+      "source": "DENDROGRAM ANALYSIS",
+      "target": "MOLECULAR FEATURES",
+      "description": "analyzed",
+      "weight": "8",
+      "source_id": "paper_12980"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "PATHOGEN SUSCEPTIBILITY",
+      "description": "exhibit",
+      "weight": "9",
+      "source_id": "paper_12980"
+    }
+  ]
+}

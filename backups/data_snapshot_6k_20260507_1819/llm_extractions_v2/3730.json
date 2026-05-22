@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "FERROUS SULFATE",
+      "type": "CONCEPT",
+      "description": "A source of iron used as fertilizer, denoted as FeSO4",
+      "source_id": "paper_3730"
+    },
+    {
+      "name": "FEEDTA",
+      "type": "CONCEPT",
+      "description": "A chelated iron fertilizer",
+      "source_id": "paper_3730"
+    },
+    {
+      "name": "FEEDDHA",
+      "type": "CONCEPT",
+      "description": "A chelated iron fertilizer",
+      "source_id": "paper_3730"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONCEPT",
+      "description": "A high pH (8.3) soil type used in the study",
+      "source_id": "paper_3730"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "CONCEPT",
+      "description": "A soil type with pH 5.8 used in the study",
+      "source_id": "paper_3730"
+    },
+    {
+      "name": "DTPA EXTRACTABLE FE",
+      "type": "METHOD",
+      "description": "A monitoring method used to measure extractable iron in soil samples",
+      "source_id": "paper_3730"
+    },
+    {
+      "name": "PH",
+      "type": "CONDITION",
+      "description": "The acidity or alkalinity level of the soil",
+      "source_id": "paper_3730"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The soil moisture level maintained at -33 kPa",
+      "source_id": "paper_3730"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The incubation temperature maintained at 30°C",
+      "source_id": "paper_3730"
+    },
+    {
+      "name": "EXTRACTABLE IRON",
+      "type": "CONCEPT",
+      "description": "The amount of iron that can be extracted from the soil",
+      "source_id": "paper_3730"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FERROUS SULFATE",
+      "target": "VERTISOL",
+      "description": "Ineffective in maintaining extractable iron",
+      "weight": "8",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "FERROUS SULFATE",
+      "target": "ALFISOL",
+      "description": "Moderately effective in maintaining extractable iron",
+      "weight": "6",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "FEEDTA",
+      "target": "VERTISOL",
+      "description": "Ineffective in maintaining extractable iron",
+      "weight": "8",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "FEEDTA",
+      "target": "ALFISOL",
+      "description": "Moderately effective in maintaining extractable iron",
+      "weight": "6",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "FEEDDHA",
+      "target": "VERTISOL",
+      "description": "Most effective in maintaining extractable iron",
+      "weight": "10",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "FEEDDHA",
+      "target": "ALFISOL",
+      "description": "Most effective in maintaining extractable iron",
+      "weight": "10",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "DTPA EXTRACTABLE FE",
+      "target": "EXTRACTABLE IRON",
+      "description": "Method used to measure the amount of",
+      "weight": "10",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "PH",
+      "target": "VERTISOL",
+      "description": "Vertisol has a pH of 8.3",
+      "weight": "10",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "PH",
+      "target": "ALFISOL",
+      "description": "Alfisol has a pH of 5.8",
+      "weight": "10",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "VERTISOL",
+      "description": "Incubation condition for the soil",
+      "weight": "7",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "ALFISOL",
+      "description": "Incubation condition for the soil",
+      "weight": "7",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "VERTISOL",
+      "description": "Incubation condition for the soil",
+      "weight": "7",
+      "source_id": "paper_3730"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "ALFISOL",
+      "description": "Incubation condition for the soil",
+      "weight": "7",
+      "source_id": "paper_3730"
+    }
+  ]
+}

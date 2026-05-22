@@ -1,0 +1,226 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The legume crop being evaluated for growth and yield response to population and spacing",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "PNUTGRO",
+      "type": "METHOD",
+      "description": "A crop growth model used to predict phenological development, canopy growth, and yields of groundnut",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "PLANT POPULATION",
+      "type": "CONDITION",
+      "description": "The number of plants per unit area used as a variable to test crop response",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "ROW SPACING",
+      "type": "CONDITION",
+      "description": "The distance between rows of plants used as a variable to test crop response",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The specific site where field experiments were conducted",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the experiments were located",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "PHENOLOGICAL DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The timing and progression of growth stages in the groundnut crop",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "LIGHT INTERCEPTION",
+      "type": "TRAIT",
+      "description": "The process of the crop canopy capturing light for photosynthesis",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "CANOPY GROWTH",
+      "type": "TRAIT",
+      "description": "The development and expansion of the crop's foliage",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "DM PRODUCTION",
+      "type": "TRAIT",
+      "description": "The total dry matter produced by the groundnut plant",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The weight of pods produced per unit area",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The weight of seeds produced per unit area",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "ROBUT 33-1",
+      "type": "CROP",
+      "description": "A specific cultivar of groundnut used for model calibration",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The application of water to the crop used as an experimental condition",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "LAI",
+      "type": "TRAIT",
+      "description": "Leaf Area Index, a measure of canopy density used for model validation",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "VEGETATIVE STAGE",
+      "type": "TRAIT",
+      "description": "The initial growth phase of the plant before reproductive development",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "REPRODUCTIVE STAGE",
+      "type": "TRAIT",
+      "description": "The phase of the plant involving flowering and pod development",
+      "source_id": "paper_3660"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The seasonal timing during which field experiments were conducted",
+      "source_id": "paper_3660"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PNUTGRO",
+      "target": "GROUNDNUT",
+      "description": "predicts growth and yield of",
+      "weight": "10",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "PHENOLOGICAL DEVELOPMENT",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "LIGHT INTERCEPTION",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "CANOPY GROWTH",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "DM PRODUCTION",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "POD YIELD",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "SEED YIELD",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "GROUNDNUT",
+      "description": "influences growth and yield of",
+      "weight": "8",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "ROW SPACING",
+      "target": "GROUNDNUT",
+      "description": "influences growth and yield of",
+      "weight": "8",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "ROBUT 33-1",
+      "target": "GROUNDNUT",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "ANDHRA PRADESH",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "GROUNDNUT",
+      "description": "influences growth of",
+      "weight": "7",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "LAI",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "VEGETATIVE STAGE",
+      "description": "predicts occurrence of",
+      "weight": "9",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "REPRODUCTIVE STAGE",
+      "description": "predicts occurrence of",
+      "weight": "9",
+      "source_id": "paper_3660"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "GROUNDNUT",
+      "description": "environmental condition for growth",
+      "weight": "7",
+      "source_id": "paper_3660"
+    }
+  ]
+}

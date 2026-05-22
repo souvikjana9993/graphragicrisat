@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Tropical wetland rice used in the study",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "PHILIPPINES",
+      "type": "LOCATION",
+      "description": "Country where the wetland rice soils were sourced",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "WETLAND",
+      "type": "CONDITION",
+      "description": "Environmental condition of the rice soils",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "CARBON DIOXIDE",
+      "type": "CONCEPT",
+      "description": "Gas evolved during distillation that causes measurement error",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "DIRECT STEAM DISTILLATION",
+      "type": "METHOD",
+      "description": "Process used to determine ammonium in soil suspensions",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "AEROBIC",
+      "type": "CONDITION",
+      "description": "Soil condition where CO2 error was negligible",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "ANAEROBIC",
+      "type": "CONDITION",
+      "description": "Soil condition where CO2 error was higher and significant",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "MAGNESIUM OXIDE",
+      "type": "CONCEPT",
+      "description": "Reagent used during the direct distillation process",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "AMMONIUM",
+      "type": "CONCEPT",
+      "description": "The chemical species (NH4+) being determined in the soil",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "SULFURIC ACID",
+      "type": "CONCEPT",
+      "description": "Reagent used to absorb ammonia and eliminate CO2 error through boiling",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "BORIC ACID",
+      "type": "CONCEPT",
+      "description": "Reagent used to absorb ammonia that failed to eliminate CO2 error",
+      "source_id": "paper_4002"
+    },
+    {
+      "name": "POTASSIUM CHLORIDE",
+      "type": "CONCEPT",
+      "description": "Reagent present during the direct distillation of soil suspensions",
+      "source_id": "paper_4002"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DIRECT STEAM DISTILLATION",
+      "target": "AMMONIUM",
+      "description": "used to determine",
+      "weight": "10",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "CARBON DIOXIDE",
+      "target": "DIRECT STEAM DISTILLATION",
+      "description": "causes negative error in",
+      "weight": "9",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "SULFURIC ACID",
+      "target": "CARBON DIOXIDE",
+      "description": "eliminates error caused by",
+      "weight": "9",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "BORIC ACID",
+      "target": "CARBON DIOXIDE",
+      "description": "does not eliminate error caused by",
+      "weight": "9",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "SULFURIC ACID",
+      "target": "AMMONIUM",
+      "description": "used to absorb",
+      "weight": "8",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "BORIC ACID",
+      "target": "AMMONIUM",
+      "description": "used to absorb",
+      "weight": "8",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "ANAEROBIC",
+      "target": "CARBON DIOXIDE",
+      "description": "associated with higher magnitude of error",
+      "weight": "8",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "AEROBIC",
+      "target": "CARBON DIOXIDE",
+      "description": "associated with negligible error",
+      "weight": "8",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "DIRECT STEAM DISTILLATION",
+      "target": "MAGNESIUM OXIDE",
+      "description": "uses",
+      "weight": "7",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "DIRECT STEAM DISTILLATION",
+      "target": "POTASSIUM CHLORIDE",
+      "description": "uses",
+      "weight": "7",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "RICE",
+      "target": "PHILIPPINES",
+      "description": "studied in",
+      "weight": "8",
+      "source_id": "paper_4002"
+    },
+    {
+      "source": "RICE",
+      "target": "WETLAND",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_4002"
+    }
+  ]
+}

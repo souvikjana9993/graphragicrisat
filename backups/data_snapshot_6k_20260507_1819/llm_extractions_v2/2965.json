@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "An important oilseed crop and food legume grown in warm tropical or subtropical areas",
+      "source_id": "paper_2965"
+    },
+    {
+      "name": "TROPICAL AND SUBTROPICAL AREAS",
+      "type": "LOCATION",
+      "description": "Warm regions throughout the world where peanut is cultivated",
+      "source_id": "paper_2965"
+    },
+    {
+      "name": "DISEASES",
+      "type": "CONDITION",
+      "description": "Pathological conditions that negatively impact peanut yield and quality",
+      "source_id": "paper_2965"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the peanut crop",
+      "source_id": "paper_2965"
+    },
+    {
+      "name": "QUALITY",
+      "type": "TRAIT",
+      "description": "The standard or grade of the peanut crop",
+      "source_id": "paper_2965"
+    },
+    {
+      "name": "COST OF PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The economic expense associated with growing peanut crops",
+      "source_id": "paper_2965"
+    },
+    {
+      "name": "CHEMICAL DISEASE MANAGEMENT",
+      "type": "METHOD",
+      "description": "The use of chemical agents to control peanut diseases",
+      "source_id": "paper_2965"
+    },
+    {
+      "name": "NONCHEMICAL DISEASE MANAGEMENT",
+      "type": "METHOD",
+      "description": "The use of non-chemical strategies to control peanut diseases",
+      "source_id": "paper_2965"
+    },
+    {
+      "name": "DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the peanut plant to withstand or resist diseases",
+      "source_id": "paper_2965"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "TROPICAL AND SUBTROPICAL AREAS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_2965"
+    },
+    {
+      "source": "DISEASES",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2965"
+    },
+    {
+      "source": "DISEASES",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2965"
+    },
+    {
+      "source": "DISEASES",
+      "target": "QUALITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2965"
+    },
+    {
+      "source": "DISEASES",
+      "target": "COST OF PRODUCTION",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_2965"
+    },
+    {
+      "source": "CHEMICAL DISEASE MANAGEMENT",
+      "target": "DISEASES",
+      "description": "manages",
+      "weight": "8",
+      "source_id": "paper_2965"
+    },
+    {
+      "source": "NONCHEMICAL DISEASE MANAGEMENT",
+      "target": "DISEASES",
+      "description": "manages",
+      "weight": "8",
+      "source_id": "paper_2965"
+    },
+    {
+      "source": "DISEASE RESISTANCE",
+      "target": "PEANUT",
+      "description": "is a target trait for breeding in",
+      "weight": "10",
+      "source_id": "paper_2965"
+    }
+  ]
+}

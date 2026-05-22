@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the host crop being studied for infection.",
+      "source_id": "paper_4621"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "ORGANISM",
+      "description": "Phaeoisatiopsis personata, the fungal pathogen causing leaf spot in groundnut.",
+      "source_id": "paper_4621"
+    },
+    {
+      "name": "WEATHER",
+      "type": "CONDITION",
+      "description": "Environmental factors that influence the infection process.",
+      "source_id": "paper_4621"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A specific weather parameter affecting the infection of groundnut by late leaf spot.",
+      "source_id": "paper_4621"
+    },
+    {
+      "name": "LEAF WETNESS",
+      "type": "CONDITION",
+      "description": "A specific weather parameter affecting the infection of groundnut by late leaf spot.",
+      "source_id": "paper_4621"
+    },
+    {
+      "name": "INFECTION",
+      "type": "CONCEPT",
+      "description": "The process of a pathogen establishing itself in a host plant.",
+      "source_id": "paper_4621"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crop Research Institute for the Semi-Arid Tropics, where experiments were conducted.",
+      "source_id": "paper_4621"
+    },
+    {
+      "name": "SIMPLE MODEL",
+      "type": "METHOD",
+      "description": "A proposed model to describe the effects of temperature and leaf wetness on infection.",
+      "source_id": "paper_4621"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WEATHER",
+      "target": "INFECTION",
+      "description": "influences the occurrence and severity of",
+      "weight": "9",
+      "source_id": "paper_4621"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "infects the host plant",
+      "weight": "10",
+      "source_id": "paper_4621"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "INFECTION",
+      "description": "is the causative agent of",
+      "weight": "10",
+      "source_id": "paper_4621"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "INFECTION",
+      "description": "affects the rate and success of",
+      "weight": "8",
+      "source_id": "paper_4621"
+    },
+    {
+      "source": "LEAF WETNESS",
+      "target": "INFECTION",
+      "description": "affects the rate and success of",
+      "weight": "8",
+      "source_id": "paper_4621"
+    },
+    {
+      "source": "SIMPLE MODEL",
+      "target": "TEMPERATURE",
+      "description": "incorporates as a variable to describe infection",
+      "weight": "9",
+      "source_id": "paper_4621"
+    },
+    {
+      "source": "SIMPLE MODEL",
+      "target": "LEAF WETNESS",
+      "description": "incorporates as a variable to describe infection",
+      "weight": "9",
+      "source_id": "paper_4621"
+    },
+    {
+      "source": "SIMPLE MODEL",
+      "target": "INFECTION",
+      "description": "is used to describe the effects on",
+      "weight": "9",
+      "source_id": "paper_4621"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "SIMPLE MODEL",
+      "description": "provided experimental results used to propose",
+      "weight": "7",
+      "source_id": "paper_4621"
+    }
+  ]
+}

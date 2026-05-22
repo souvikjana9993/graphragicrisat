@@ -1,0 +1,186 @@
+{
+  "entities": [
+    {
+      "name": "LAND USE CHANGE",
+      "type": "CONCEPT",
+      "description": "The modification of the landscape for different purposes, such as cultivation or reforestation",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "SOIL QUALITY",
+      "type": "CONCEPT",
+      "description": "The capacity of a soil to function within an ecosystem",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "LOESSIAL SOIL",
+      "type": "CONCEPT",
+      "description": "A type of wind-deposited silt soil found in the study area",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "GOLESTAN PROVINCE",
+      "type": "LOCATION",
+      "description": "A province in northern Iran where the study was conducted",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "SHASTKOLA DISTRICT",
+      "type": "LOCATION",
+      "description": "A district within Golestan Province, Iran",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "NATURAL FOREST",
+      "type": "CONDITION",
+      "description": "A land use system consisting of native forest cover",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "CULTIVATED LAND",
+      "type": "CONDITION",
+      "description": "A land use system where land is used for agriculture",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "OLIVE",
+      "type": "CROP",
+      "description": "A tree species used for reforestation of degraded land",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "CUPRESSUS",
+      "type": "CROP",
+      "description": "A tree species used for reforestation of degraded land",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "FACTOR ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to determine suitable soil quality indicators",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "ANALYSIS OF VARIANCE",
+      "type": "METHOD",
+      "description": "A statistical method used to determine significant differences among treatments",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "MEAN WEIGHT DIAMETER",
+      "type": "TRAIT",
+      "description": "A soil physical property used as a soil quality indicator",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "WATER STABLE AGGREGATES",
+      "type": "TRAIT",
+      "description": "A soil physical property used as a soil quality indicator",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "SOIL ORGANIC MATTER",
+      "type": "TRAIT",
+      "description": "A soil chemical/biological property used as a soil quality indicator",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "TOTAL NITROGEN",
+      "type": "TRAIT",
+      "description": "A soil chemical property used as a soil quality indicator",
+      "source_id": "paper_1272"
+    },
+    {
+      "name": "SAND CONTENT",
+      "type": "TRAIT",
+      "description": "A soil physical property measured to assess land use impacts",
+      "source_id": "paper_1272"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LAND USE CHANGE",
+      "target": "SOIL QUALITY",
+      "description": "Affects the indicators of soil quality",
+      "weight": "9",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "FACTOR ANALYSIS",
+      "target": "SOIL QUALITY",
+      "description": "Used to identify indicators for assessing soil quality",
+      "weight": "8",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "ANALYSIS OF VARIANCE",
+      "target": "SOIL QUALITY",
+      "description": "Used to evaluate differences in soil quality attributes among treatments",
+      "weight": "7",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "CULTIVATED LAND",
+      "target": "SOIL ORGANIC MATTER",
+      "description": "Leads to a decrease in soil organic matter",
+      "weight": "9",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "CULTIVATED LAND",
+      "target": "MEAN WEIGHT DIAMETER",
+      "description": "Leads to a decrease in mean weight diameter",
+      "weight": "9",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "CULTIVATED LAND",
+      "target": "SAND CONTENT",
+      "description": "Leads to an increase in sand content",
+      "weight": "9",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "OLIVE",
+      "target": "SOIL ORGANIC MATTER",
+      "description": "Increases soil organic matter during reforestation",
+      "weight": "8",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "OLIVE",
+      "target": "MEAN WEIGHT DIAMETER",
+      "description": "Increases mean weight diameter during reforestation",
+      "weight": "8",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "CUPRESSUS",
+      "target": "SOIL ORGANIC MATTER",
+      "description": "Increases soil organic matter during reforestation",
+      "weight": "8",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "CUPRESSUS",
+      "target": "MEAN WEIGHT DIAMETER",
+      "description": "Increases mean weight diameter during reforestation",
+      "weight": "8",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "SHASTKOLA DISTRICT",
+      "target": "GOLESTAN PROVINCE",
+      "description": "Located within",
+      "weight": "10",
+      "source_id": "paper_1272"
+    },
+    {
+      "source": "GOLESTAN PROVINCE",
+      "target": "LOESSIAL SOIL",
+      "description": "Location where loessial soil is studied",
+      "weight": "7",
+      "source_id": "paper_1272"
+    }
+  ]
+}

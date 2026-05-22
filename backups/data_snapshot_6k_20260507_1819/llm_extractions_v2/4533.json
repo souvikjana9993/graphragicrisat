@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "CARBOFURAN",
+      "type": "CONDITION",
+      "description": "An insecticide applied at 10 and 50 ppm to soil to study its effect on nitrogen transformation",
+      "source_id": "paper_4533"
+    },
+    {
+      "name": "UREA NITROGEN",
+      "type": "CONCEPT",
+      "description": "The nitrogen source whose transformation in soil is being studied",
+      "source_id": "paper_4533"
+    },
+    {
+      "name": "SANDY LOAM",
+      "type": "CONDITION",
+      "description": "The type of soil used in the laboratory study",
+      "source_id": "paper_4533"
+    },
+    {
+      "name": "UREA HYDROLYSIS",
+      "type": "CONCEPT",
+      "description": "The process of breaking down urea into other forms of nitrogen",
+      "source_id": "paper_4533"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological oxidation of ammonia to nitrite followed by the oxidation of nitrite to nitrate",
+      "source_id": "paper_4533"
+    },
+    {
+      "name": "AMMONIUM",
+      "type": "CONCEPT",
+      "description": "The NH4+ ion produced during urea hydrolysis",
+      "source_id": "paper_4533"
+    },
+    {
+      "name": "NITRITE",
+      "type": "CONCEPT",
+      "description": "The N02- ion produced during the first step of nitrification",
+      "source_id": "paper_4533"
+    },
+    {
+      "name": "NITRATE",
+      "type": "CONCEPT",
+      "description": "The N03- ion produced during the second step of nitrification",
+      "source_id": "paper_4533"
+    },
+    {
+      "name": "PH",
+      "type": "CONDITION",
+      "description": "The measure of acidity or alkalinity of the soil",
+      "source_id": "paper_4533"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CARBOFURAN",
+      "target": "UREA HYDROLYSIS",
+      "description": "had no effect on",
+      "weight": "2",
+      "source_id": "paper_4533"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "NITRIFICATION",
+      "description": "moderately inhibited",
+      "weight": "7",
+      "source_id": "paper_4533"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "AMMONIUM",
+      "description": "inhibited conversion to nitrite",
+      "weight": "8",
+      "source_id": "paper_4533"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "NITRITE",
+      "description": "inhibited conversion to nitrate",
+      "weight": "8",
+      "source_id": "paper_4533"
+    },
+    {
+      "source": "UREA NITROGEN",
+      "target": "UREA HYDROLYSIS",
+      "description": "is the substrate for",
+      "weight": "10",
+      "source_id": "paper_4533"
+    },
+    {
+      "source": "UREA NITROGEN",
+      "target": "NITRIFICATION",
+      "description": "is the substrate for",
+      "weight": "10",
+      "source_id": "paper_4533"
+    },
+    {
+      "source": "SANDY LOAM",
+      "target": "PH",
+      "description": "has a specific pH range",
+      "weight": "9",
+      "source_id": "paper_4533"
+    }
+  ]
+}

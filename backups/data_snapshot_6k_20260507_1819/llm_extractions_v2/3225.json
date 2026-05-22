@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "CASH-CROPPING",
+      "type": "CONCEPT",
+      "description": "The practice of growing crops for sale rather than for subsistence",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "DEFORESTATION",
+      "type": "CONDITION",
+      "description": "The clearing of forest area for agricultural use",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The specific crop used for cash-cropping in the study",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "DATA ESTIMATION",
+      "type": "METHOD",
+      "description": "The use of three-year data from 493 households to estimate associations",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "INCOME",
+      "type": "CONCEPT",
+      "description": "Financial gain, specifically targeted at 1US$/person/day",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "WORK REQUIREMENTS",
+      "type": "CONCEPT",
+      "description": "The amount of labor needed for crop production",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "LABOR AVAILABILITY",
+      "type": "CONCEPT",
+      "description": "The amount of labor available within a household",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "FALLOWS DURATION",
+      "type": "CONCEPT",
+      "description": "The period during which land is left unseeded",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The efficiency of production per unit of land or labor",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "INCOME DIVERSIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of increasing the variety of income sources",
+      "source_id": "paper_3225"
+    },
+    {
+      "name": "AMAZON",
+      "type": "LOCATION",
+      "description": "The region where the Tsimane' panel study was conducted",
+      "source_id": "paper_3225"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CASH-CROPPING",
+      "target": "DEFORESTATION",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_3225"
+    },
+    {
+      "source": "RICE",
+      "target": "DEFORESTATION",
+      "description": "cash-cropping of rice increases forest clearing",
+      "weight": "9",
+      "source_id": "paper_3225"
+    },
+    {
+      "source": "RICE",
+      "target": "INCOME",
+      "description": "source of cash income",
+      "weight": "9",
+      "source_id": "paper_3225"
+    },
+    {
+      "source": "INCOME",
+      "target": "DEFORESTATION",
+      "description": "pursuit of income through rice leads to increased deforestation",
+      "weight": "7",
+      "source_id": "paper_3225"
+    },
+    {
+      "source": "INCOME",
+      "target": "WORK REQUIREMENTS",
+      "description": "increasing income through rice increases work requirements",
+      "weight": "7",
+      "source_id": "paper_3225"
+    },
+    {
+      "source": "INCOME",
+      "target": "FALLOWS DURATION",
+      "description": "increasing income through rice decreases fallows duration",
+      "weight": "7",
+      "source_id": "paper_3225"
+    },
+    {
+      "source": "PRODUCTIVITY",
+      "target": "DEFORESTATION",
+      "description": "increasing productivity helps avoid deforestation",
+      "weight": "8",
+      "source_id": "paper_3225"
+    },
+    {
+      "source": "INCOME DIVERSIFICATION",
+      "target": "DEFORESTATION",
+      "description": "diversification of income sources helps avoid deforestation",
+      "weight": "8",
+      "source_id": "paper_3225"
+    },
+    {
+      "source": "WORK REQUIREMENTS",
+      "target": "LABOR AVAILABILITY",
+      "description": "work requirements can exceed labor availability",
+      "weight": "7",
+      "source_id": "paper_3225"
+    }
+  ]
+}

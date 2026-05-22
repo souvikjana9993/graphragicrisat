@@ -1,0 +1,202 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop being studied for yield and drought tolerance",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, which is reduced by drought stress",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "STOVER YIELD",
+      "type": "TRAIT",
+      "description": "The yield of the non-grain part of the plant",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "YIELD STABILITY",
+      "type": "TRAIT",
+      "description": "The consistency of grain yield across different environments",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress during the reproductive stage that reduces yield",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "QTL MAPPING",
+      "type": "METHOD",
+      "description": "An approach used to identify genomic regions associated with specific traits",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to maintain productivity under water-limited conditions",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "WATER-LIMITED ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Environments characterized by insufficient water availability",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "GENOMIC REGIONS",
+      "type": "GENE_MARKER",
+      "description": "Specific areas of the genome associated with enhanced drought tolerance",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "TERMINAL DROUGHT-STRESS",
+      "type": "CONDITION",
+      "description": "Drought stress occurring during the flowering and grain-filling stages",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "LINKAGE GROUP 2",
+      "type": "GENE_MARKER",
+      "description": "The specific genomic location where a QTL for grain yield was mapped",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of grain yield to total biomass productivity",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "BIOMASS PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The total organic matter produced by the plant",
+      "source_id": "paper_1599"
+    },
+    {
+      "name": "MARKER-ASSISTED BACKCROSS TRANSFER",
+      "type": "METHOD",
+      "description": "A technique used to transfer selected QTLs to elite parents for crop improvement",
+      "source_id": "paper_1599"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "GRAIN YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "STOVER YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "YIELD STABILITY",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "DROUGHT TOLERANCE",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "YIELD STABILITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "QTL MAPPING",
+      "target": "DROUGHT TOLERANCE",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "QTL MAPPING",
+      "target": "PEARL MILLET",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "GENOMIC REGIONS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "GENOMIC REGIONS",
+      "target": "GRAIN YIELD",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "LINKAGE GROUP 2",
+      "target": "GRAIN YIELD",
+      "description": "contains QTL for",
+      "weight": "10",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "HARVEST INDEX",
+      "description": "maintained through",
+      "weight": "8",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "BIOMASS PRODUCTIVITY",
+      "description": "maintained through",
+      "weight": "8",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "MARKER-ASSISTED BACKCROSS TRANSFER",
+      "target": "GENOMIC REGIONS",
+      "description": "used to transfer",
+      "weight": "9",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "MARKER-ASSISTED BACKCROSS TRANSFER",
+      "target": "PEARL MILLET",
+      "description": "used to improve",
+      "weight": "9",
+      "source_id": "paper_1599"
+    },
+    {
+      "source": "TERMINAL DROUGHT-STRESS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "context for evaluation",
+      "weight": "7",
+      "source_id": "paper_1599"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the crop studied for transpiration and drought adaptation",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "TERMINAL DROUGHT",
+      "type": "CONDITION",
+      "description": "Drought occurring at the end of the growing season that reduces yield",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the chickpea crop",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "TRANSPIRATION",
+      "type": "TRAIT",
+      "description": "The loss of water from plant leaves, specifically under high vapor pressure deficit",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "VAPOR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "The difference between the amount of moisture in the air and how much moisture the air can hold when saturated",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "DROUGHT ADAPTATION",
+      "type": "TRAIT",
+      "description": "The ability of the plant to adjust to drought conditions to maintain productivity",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "ROOT WATER TRANSPORT PATHWAYS",
+      "type": "CONCEPT",
+      "description": "The routes through which water moves from the soil through the root cylinder",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "HYDRAULICS",
+      "type": "CONCEPT",
+      "description": "The physical properties governing water movement within the plant",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "CONSERVATIVE GENOTYPES",
+      "type": "CONCEPT",
+      "description": "Chickpea genotypes that restrict transpiration under high vapor pressure deficit",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "PROFLIGATE GENOTYPES",
+      "type": "CONCEPT",
+      "description": "Chickpea genotypes that maintain higher transpiration under high vapor pressure deficit",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "APOPLASTIC TRANSPORT INHIBITORS",
+      "type": "METHOD",
+      "description": "Chemicals used to block the apoplastic water transport pathway",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "CELL-TO-CELL TRANSPORT INHIBITORS",
+      "type": "METHOD",
+      "description": "Chemicals used to block the symplastic or cell-to-cell water transport pathway",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "AQUAPORIN INHIBITION",
+      "type": "METHOD",
+      "description": "The use of inhibitors to block aquaporins, affecting the cell-to-cell pathway",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "ROOT HYDRAULIC CONDUCTANCE",
+      "type": "TRAIT",
+      "description": "A measure of the ease with which water moves through the root system",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "ROOT HYDRAULIC CONDUCTIVITY",
+      "type": "TRAIT",
+      "description": "The intrinsic ability of root tissues to conduct water",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "APOPLASTIC PATHWAY",
+      "type": "CONCEPT",
+      "description": "The water transport route through cell walls and intercellular spaces",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "CELL-TO-CELL PATHWAY",
+      "type": "CONCEPT",
+      "description": "The water transport route through the cytoplasm and plasmodesmata",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "EARLY VIGOUR",
+      "type": "TRAIT",
+      "description": "The growth strength and rate of the plant during its early vegetative stage",
+      "source_id": "paper_11620"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of identifying specific phenotypes using inhibitors",
+      "source_id": "paper_11620"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TERMINAL DROUGHT",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "TRANSPIRATION",
+      "target": "DROUGHT ADAPTATION",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "VAPOR PRESSURE DEFICIT",
+      "target": "TRANSPIRATION",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "CONSERVATIVE GENOTYPES",
+      "target": "TRANSPIRATION",
+      "description": "restrict",
+      "weight": "10",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "PROFLIGATE GENOTYPES",
+      "target": "TRANSPIRATION",
+      "description": "maintain higher",
+      "weight": "10",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "PROFLIGATE GENOTYPES",
+      "target": "CELL-TO-CELL PATHWAY",
+      "description": "depend more on",
+      "weight": "9",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "CONSERVATIVE GENOTYPES",
+      "target": "APOPLASTIC PATHWAY",
+      "description": "depend more on",
+      "weight": "9",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "AQUAPORIN INHIBITION",
+      "target": "ROOT HYDRAULIC CONDUCTIVITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "AQUAPORIN INHIBITION",
+      "target": "PROFLIGATE GENOTYPES",
+      "description": "more strongly affects",
+      "weight": "8",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "APOPLASTIC TRANSPORT INHIBITORS",
+      "target": "TRANSPIRATION",
+      "description": "decrease",
+      "weight": "8",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "APOPLASTIC TRANSPORT INHIBITORS",
+      "target": "CONSERVATIVE GENOTYPES",
+      "description": "more strongly affects",
+      "weight": "8",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "CONSERVATIVE GENOTYPES",
+      "target": "EARLY VIGOUR",
+      "description": "associated with high",
+      "weight": "7",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "PROFLIGATE GENOTYPES",
+      "target": "EARLY VIGOUR",
+      "description": "associated with low",
+      "weight": "7",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "CELL-TO-CELL PATHWAY",
+      "target": "ROOT HYDRAULIC CONDUCTIVITY",
+      "description": "explains higher",
+      "weight": "8",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "TRANSPIRATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "YIELD",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "SCREENING",
+      "target": "CONSERVATIVE GENOTYPES",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_11620"
+    },
+    {
+      "source": "SCREENING",
+      "target": "PROFLIGATE GENOTYPES",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_11620"
+    }
+  ]
+}

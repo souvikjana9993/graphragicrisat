@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "TOMATO",
+      "type": "CROP",
+      "description": "Solanum lycopersicum L., the agricultural plant being studied for disease tolerance",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A devastating fungal disease that reduces yield and production in tomato",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. LYCOPERSICI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing Fusarium wilt",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "XSP10",
+      "type": "GENE_MARKER",
+      "description": "Xylem sap protein 10, a putative negative regulatory gene associated with Fusarium wilt susceptibility",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "SLSAMT",
+      "type": "GENE_MARKER",
+      "description": "Salicylic acid methyl transferase, a putative negative regulatory gene associated with Fusarium wilt susceptibility",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "FUSARIUM WILT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The genetic ability of tomato plants to resist or tolerate Fusarium wilt disease",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "CRISPR/CAS9",
+      "type": "METHOD",
+      "description": "A high-efficiency gene-editing technique used to knock out susceptibility genes",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "RNAI",
+      "type": "METHOD",
+      "description": "An alternative gene-silencing method used to knock down susceptibility genes",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "INDEL MUTATIONS",
+      "type": "CONCEPT",
+      "description": "Insertions and deletions in the DNA sequence resulting from CRISPR/Cas9 editing",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "PROTOPLAST TRANSFORMATION",
+      "type": "METHOD",
+      "description": "A single-cell transformation technique used to validate sgRNA-Cas9 editing efficacy",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "TRANSIENT LEAF DISC ASSAY",
+      "type": "METHOD",
+      "description": "An assay used to evaluate phenotypic tolerance to Fusarium wilt in edited tissues",
+      "source_id": "paper_12118"
+    },
+    {
+      "name": "STABLE GENETIC TRANSFORMATION",
+      "type": "METHOD",
+      "description": "The process of creating stable transgenic lines of tomato",
+      "source_id": "paper_12118"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. LYCOPERSICI",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "TOMATO",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "XSP10",
+      "target": "FUSARIUM WILT",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "SLSAMT",
+      "target": "FUSARIUM WILT",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "CRISPR/CAS9",
+      "target": "XSP10",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "CRISPR/CAS9",
+      "target": "SLSAMT",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "CRISPR/CAS9",
+      "target": "INDEL MUTATIONS",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "INDEL MUTATIONS",
+      "target": "FUSARIUM WILT TOLERANCE",
+      "description": "confers",
+      "weight": "9",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "RNAI",
+      "target": "XSP10",
+      "description": "targets",
+      "weight": "7",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "RNAI",
+      "target": "SLSAMT",
+      "description": "targets",
+      "weight": "7",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "PROTOPLAST TRANSFORMATION",
+      "target": "CRISPR/CAS9",
+      "description": "validates",
+      "weight": "8",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "TRANSIENT LEAF DISC ASSAY",
+      "target": "FUSARIUM WILT TOLERANCE",
+      "description": "evaluates",
+      "weight": "8",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "STABLE GENETIC TRANSFORMATION",
+      "target": "TOMATO",
+      "description": "modifies",
+      "weight": "8",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "XSP10",
+      "target": "FUSARIUM WILT TOLERANCE",
+      "description": "negative regulator of",
+      "weight": "9",
+      "source_id": "paper_12118"
+    },
+    {
+      "source": "SLSAMT",
+      "target": "FUSARIUM WILT TOLERANCE",
+      "description": "negative regulator of",
+      "weight": "9",
+      "source_id": "paper_12118"
+    }
+  ]
+}

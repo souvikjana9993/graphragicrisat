@@ -1,0 +1,105 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cicer arietinum) whose root nodules are subject to insect damage",
+      "source_id": "paper_2135"
+    },
+    {
+      "name": "INSECT DAMAGE",
+      "type": "CONDITION",
+      "description": "Damage characterized by small holes and extensive tunnelling in the internal tissues of root nodules",
+      "source_id": "paper_2135"
+    },
+    {
+      "name": "ROOT NODULES",
+      "type": "CONCEPT",
+      "description": "Specialized root structures of chickpea that are targeted by dipteran larvae",
+      "source_id": "paper_2135"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A region in India where insect damage to chickpea root nodules was observed",
+      "source_id": "paper_2135"
+    },
+    {
+      "name": "DIPTERAN LARVAE",
+      "type": "ORGANISM",
+      "description": "Larvae of dipteran insects found inhabiting and damaging chickpea root nodules",
+      "source_id": "paper_2135"
+    },
+    {
+      "name": "METOPINA",
+      "type": "ORGANISM",
+      "description": "An undescribed species of phorid fly identified as the insect causing damage to chickpea root nodules",
+      "source_id": "paper_2135"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INSECT DAMAGE",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2135"
+    },
+    {
+      "source": "INSECT DAMAGE",
+      "target": "ROOT NODULES",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_2135"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ROOT NODULES",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_2135"
+    },
+    {
+      "source": "INSECT DAMAGE",
+      "target": "ANDHRA PRADESH",
+      "description": "observed in",
+      "weight": "8",
+      "source_id": "paper_2135"
+    },
+    {
+      "source": "DIPTERAN LARVAE",
+      "target": "INSECT DAMAGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2135"
+    },
+    {
+      "source": "DIPTERAN LARVAE",
+      "target": "ROOT NODULES",
+      "description": "found in",
+      "weight": "10",
+      "source_id": "paper_2135"
+    },
+    {
+      "source": "METOPINA",
+      "target": "DIPTERAN LARVAE",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_2135"
+    },
+    {
+      "source": "METOPINA",
+      "target": "ROOT NODULES",
+      "description": "feeds on",
+      "weight": "10",
+      "source_id": "paper_2135"
+    },
+    {
+      "source": "METOPINA",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2135"
+    }
+  ]
+}

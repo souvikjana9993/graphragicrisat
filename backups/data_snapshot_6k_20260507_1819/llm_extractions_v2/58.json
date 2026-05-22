@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "Complex abiotic stress affecting plant growth and reproduction.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "CROP",
+      "type": "CHICKPEA",
+      "description": "Legume crop studied for salinity tolerance.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "ICCV 2",
+      "type": "CROP",
+      "description": "Chickpea line sensitive to salinity.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "JG 62",
+      "type": "CROP",
+      "description": "Chickpea line tolerant to salinity.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINES",
+      "type": "METHOD",
+      "description": "Population derived from a cross between ICCV 2 and JG 62 used for genetic mapping.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The primary trait investigated, affected by salinity.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "SEED NUMBER",
+      "type": "TRAIT",
+      "description": "A trait closely related to seed yield under saline conditions.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "100-SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "A trait not related to seed yield in this study.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "FLOWERING TIME",
+      "type": "TRAIT",
+      "description": "A trait that segregates in the population and influences salinity response.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "SHOOT DRY WEIGHT",
+      "type": "TRAIT",
+      "description": "A trait positively correlated with seed yield in early entries.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "CONCEPT",
+      "description": "Total mass of plant material, related to salinity sensitivity.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "QTL MAPPING",
+      "type": "METHOD",
+      "description": "Technique used to identify quantitative trait loci.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "QTL",
+      "type": "GENE_MARKER",
+      "description": "Quantitative trait loci associated with seed yield and seed number.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "LINKAGE GROUP 3",
+      "type": "LOCATION",
+      "description": "Chromosomal region where a QTL for seed yield was found in the late group.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "LINKAGE GROUP 6",
+      "type": "LOCATION",
+      "description": "Chromosomal region where a cluster of QTLs for seed yield components was found.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "EARLINESS",
+      "type": "CONCEPT",
+      "description": "The timing of flowering, influencing salinity tolerance.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "REPRODUCTIVE SITES",
+      "type": "CONCEPT",
+      "description": "Plant structures involved in seed production, crucial for tolerance.",
+      "source_id": "paper_58"
+    },
+    {
+      "name": "SALINE CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environment with high salt concentration.",
+      "source_id": "paper_58"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AFFECTS",
+      "target": "SALINITY",
+      "description": "SEED YIELD",
+      "weight": "8",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "SALINITY",
+      "description": "SEED NUMBER",
+      "weight": "9",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "UNRELATED_TO",
+      "target": "SEED YIELD",
+      "description": "100-SEED WEIGHT",
+      "weight": "1",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "UNRELATED_TO",
+      "target": "SEED YIELD",
+      "description": "FLOWERING TIME",
+      "weight": "1",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "CORRELATED_WITH",
+      "target": "SHOOT DRY WEIGHT",
+      "description": "SEED YIELD",
+      "weight": "6",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "EARLINESS",
+      "description": "SALINITY",
+      "weight": "7",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "LOCATED_IN",
+      "target": "QTL",
+      "description": "LINKAGE GROUP 3",
+      "weight": "8",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "LOCATED_IN",
+      "target": "QTL",
+      "description": "LINKAGE GROUP 6",
+      "weight": "8",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "CONTROLS",
+      "target": "QTL MAPPING",
+      "description": "QTL",
+      "weight": "9",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "DERIVED_FROM",
+      "target": "RECOMBINANT INBRED LINES",
+      "description": "ICCV 2",
+      "weight": "7",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "DERIVED_FROM",
+      "target": "RECOMBINANT INBRED LINES",
+      "description": "JG 62",
+      "weight": "7",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "SENSITIVITY",
+      "target": "ICCV 2",
+      "description": "SALINITY",
+      "weight": "9",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "TOLERANCE",
+      "target": "JG 62",
+      "description": "SALINITY",
+      "weight": "9",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "SALINITY",
+      "description": "BIOMASS",
+      "weight": "7",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "SALINITY",
+      "description": "REPRODUCTIVE SITES",
+      "weight": "8",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "EARLINESS",
+      "description": "REPRODUCTIVE SITES",
+      "weight": "6",
+      "source_id": "paper_58"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "EARLINESS",
+      "description": "GROWTH",
+      "weight": "6",
+      "source_id": "paper_58"
+    }
+  ]
+}

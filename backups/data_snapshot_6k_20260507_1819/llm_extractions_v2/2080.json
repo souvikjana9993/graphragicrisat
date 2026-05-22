@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being studied for resistance to the sorghum midge",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "SORGHUM MIDGE",
+      "type": "ORGANISM",
+      "description": "The pest Contarinia sorghicola that infests sorghum",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum cultivars to resist infestation by the sorghum midge",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The degree to which sorghum cultivars are affected by the sorghum midge",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "GRAIN DAMAGE",
+      "type": "TRAIT",
+      "description": "Damage caused to the panicles of sorghum by the sorghum midge",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "GLUME SIZE",
+      "type": "TRAIT",
+      "description": "The length of the glume in sorghum floral parts",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "LEMMA SIZE",
+      "type": "TRAIT",
+      "description": "The length of the lemma in sorghum floral parts",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "PALEA SIZE",
+      "type": "TRAIT",
+      "description": "The length of the palea in sorghum floral parts",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "LODICULE SIZE",
+      "type": "TRAIT",
+      "description": "The length of the lodicule in sorghum floral parts",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "STIGMA SIZE",
+      "type": "TRAIT",
+      "description": "The length of the stigma in sorghum floral parts",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "STYLE SIZE",
+      "type": "TRAIT",
+      "description": "The length of the style in sorghum floral parts",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "ANTHER SIZE",
+      "type": "TRAIT",
+      "description": "The length of the anther in sorghum floral parts",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "RATE OF GRAIN DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The speed of grain development between the 3rd and 7th day after anthesis",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "TANNIN CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of tannin present in the sorghum grain",
+      "source_id": "paper_2080"
+    },
+    {
+      "name": "NO-CHOICE CONDITIONS",
+      "type": "CONDITION",
+      "description": "Experimental conditions where the pest has no alternative host",
+      "source_id": "paper_2080"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SORGHUM MIDGE",
+      "description": "is infested by",
+      "weight": "10",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "SORGHUM MIDGE",
+      "description": "provides protection against",
+      "weight": "9",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "SUSCEPTIBILITY",
+      "target": "SORGHUM MIDGE",
+      "description": "increases vulnerability to",
+      "weight": "9",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "GLUME SIZE",
+      "target": "SUSCEPTIBILITY",
+      "description": "positively associated with",
+      "weight": "7",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "LEMMA SIZE",
+      "target": "SUSCEPTIBILITY",
+      "description": "positively associated with",
+      "weight": "7",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "PALEA SIZE",
+      "target": "SUSCEPTIBILITY",
+      "description": "positively associated with",
+      "weight": "7",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "LODICULE SIZE",
+      "target": "SUSCEPTIBILITY",
+      "description": "positively associated with",
+      "weight": "7",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "ANTHER SIZE",
+      "target": "SUSCEPTIBILITY",
+      "description": "positively associated with",
+      "weight": "7",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "STYLE SIZE",
+      "target": "SUSCEPTIBILITY",
+      "description": "positively associated with",
+      "weight": "7",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "STIGMA SIZE",
+      "target": "SUSCEPTIBILITY",
+      "description": "positively associated with",
+      "weight": "7",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "RATE OF GRAIN DEVELOPMENT",
+      "target": "SUSCEPTIBILITY",
+      "description": "negatively associated with",
+      "weight": "8",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "TANNIN CONTENT",
+      "target": "SUSCEPTIBILITY",
+      "description": "negatively correlated with",
+      "weight": "8",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "SORGHUM MIDGE",
+      "target": "GRAIN DAMAGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2080"
+    },
+    {
+      "source": "NO-CHOICE CONDITIONS",
+      "target": "SUSCEPTIBILITY",
+      "description": "used to measure",
+      "weight": "6",
+      "source_id": "paper_2080"
+    }
+  ]
+}

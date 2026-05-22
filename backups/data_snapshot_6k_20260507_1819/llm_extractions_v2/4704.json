@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop affected by various stalk rot diseases.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "STALK ROTS",
+      "type": "CONDITION",
+      "description": "Diseases of sorghum with great destructive potential.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "MACROPHOMINA PHASEOLINA",
+      "type": "ORGANISM",
+      "description": "Fungus that causes stalk rots in sorghum.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "FUSARIUM MONILIFORME",
+      "type": "ORGANISM",
+      "description": "Fungus that causes stalk rots in sorghum.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "ACREMONIUM STRICTUM",
+      "type": "ORGANISM",
+      "description": "Vascular pathogen causing leaf and stalk death in sorghum.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "LEAF AND STALK DEATH",
+      "type": "CONDITION",
+      "description": "Condition caused by the pathogen Acremonium strictum.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "HIGH-YIELDING VARIETIES",
+      "type": "TRAIT",
+      "description": "Sorghum varieties that tend to be highly susceptible to stalk rot diseases.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "GRAIN LOSSES",
+      "type": "TRAIT",
+      "description": "The reduction in grain yield caused by stalk rots, ranging from 15% to 60%.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "FUNGI",
+      "type": "ORGANISM",
+      "description": "Organisms often associated with diseased roots and stalks in sorghum.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "BACTERIA",
+      "type": "ORGANISM",
+      "description": "Organisms often associated with diseased roots and stalks in sorghum.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "COMPLEX ETIOLOGY",
+      "type": "CONCEPT",
+      "description": "The nature of stalk rot diseases involving multiple associated fungi and bacteria.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "HOST RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the sorghum plant to resist specific stalk rot diseases.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "CHARCOAL ROT",
+      "type": "CONDITION",
+      "description": "A specific type of stalk rot disease.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "FUSARIUM ROOT AND STALK ROT",
+      "type": "CONDITION",
+      "description": "A specific type of stalk rot disease.",
+      "source_id": "paper_4704"
+    },
+    {
+      "name": "ACREMONIUM WILT",
+      "type": "CONDITION",
+      "description": "A specific type of stalk rot disease.",
+      "source_id": "paper_4704"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STALK ROTS",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "STALK ROTS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "FUSARIUM MONILIFORME",
+      "target": "STALK ROTS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "ACREMONIUM STRICTUM",
+      "target": "LEAF AND STALK DEATH",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "ACREMONIUM STRICTUM",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "HIGH-YIELDING VARIETIES",
+      "target": "STALK ROTS",
+      "description": "susceptible to",
+      "weight": "8",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "STALK ROTS",
+      "target": "GRAIN LOSSES",
+      "description": "results in",
+      "weight": "9",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "FUNGI",
+      "target": "STALK ROTS",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "BACTERIA",
+      "target": "STALK ROTS",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "STALK ROTS",
+      "target": "COMPLEX ETIOLOGY",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "HOST RESISTANCE",
+      "target": "CHARCOAL ROT",
+      "description": "resistance against",
+      "weight": "9",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "HOST RESISTANCE",
+      "target": "FUSARIUM ROOT AND STALK ROT",
+      "description": "resistance against",
+      "weight": "9",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "HOST RESISTANCE",
+      "target": "ACREMONIUM WILT",
+      "description": "resistance against",
+      "weight": "9",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "CHARCOAL ROT",
+      "target": "STALK ROTS",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "FUSARIUM ROOT AND STALK ROT",
+      "target": "STALK ROTS",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_4704"
+    },
+    {
+      "source": "ACREMONIUM WILT",
+      "target": "STALK ROTS",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_4704"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop studied for its response to iron toxicity in acid sulfate soils",
+      "source_id": "paper_3923"
+    },
+    {
+      "name": "IR-32 RICE",
+      "type": "CROP",
+      "description": "The specific rice variety used in the pot experiments",
+      "source_id": "paper_3923"
+    },
+    {
+      "name": "IRON TOXICITY",
+      "type": "CONDITION",
+      "description": "A condition where excess iron in the soil solution harms the plant",
+      "source_id": "paper_3923"
+    },
+    {
+      "name": "ACID SULFATE SOIL",
+      "type": "CONDITION",
+      "description": "A type of soil characterized by high acidity and potential for iron toxicity",
+      "source_id": "paper_3923"
+    },
+    {
+      "name": "CONTINUOUS FLOODING",
+      "type": "METHOD",
+      "description": "A water regime where the soil is kept constantly flooded",
+      "source_id": "paper_3923"
+    },
+    {
+      "name": "FLOODING WITH SOIL DRYING",
+      "type": "METHOD",
+      "description": "A water regime involving alternating periods of flooding and drying",
+      "source_id": "paper_3923"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development and growth of the rice plants",
+      "source_id": "paper_3923"
+    },
+    {
+      "name": "SOIL ACIDITY",
+      "type": "CONDITION",
+      "description": "The level of acidity in the soil, which can be aggravated by drying and reflooding",
+      "source_id": "paper_3923"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "IRON TOXICITY",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_3923"
+    },
+    {
+      "source": "IR-32 RICE",
+      "target": "RICE",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_3923"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "ACID SULFATE SOIL",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_3923"
+    },
+    {
+      "source": "CONTINUOUS FLOODING",
+      "target": "IRON TOXICITY",
+      "description": "reduces the impact of",
+      "weight": "8",
+      "source_id": "paper_3923"
+    },
+    {
+      "source": "FLOODING WITH SOIL DRYING",
+      "target": "IRON TOXICITY",
+      "description": "aggravates",
+      "weight": "9",
+      "source_id": "paper_3923"
+    },
+    {
+      "source": "CONTINUOUS FLOODING",
+      "target": "PLANT GROWTH",
+      "description": "promotes after initial crops",
+      "weight": "7",
+      "source_id": "paper_3923"
+    },
+    {
+      "source": "FLOODING WITH SOIL DRYING",
+      "target": "PLANT GROWTH",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_3923"
+    },
+    {
+      "source": "FLOODING WITH SOIL DRYING",
+      "target": "SOIL ACIDITY",
+      "description": "aggravates",
+      "weight": "9",
+      "source_id": "paper_3923"
+    },
+    {
+      "source": "SOIL ACIDITY",
+      "target": "IRON TOXICITY",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_3923"
+    }
+  ]
+}

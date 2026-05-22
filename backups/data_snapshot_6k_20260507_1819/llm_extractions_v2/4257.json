@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop damaged by various insect species in India.",
+      "source_id": "paper_4257"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study of pigeonpea insect pests was conducted.",
+      "source_id": "paper_4257"
+    },
+    {
+      "name": "INSECT SPECIES",
+      "type": "ORGANISM",
+      "description": "Various insects reported as damaging pigeonpea.",
+      "source_id": "paper_4257"
+    },
+    {
+      "name": "HELIOTHIS ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A major insect pest of pigeonpea known as the pod borer.",
+      "source_id": "paper_4257"
+    },
+    {
+      "name": "MELANAGROMYZA OBTUSA",
+      "type": "ORGANISM",
+      "description": "A major insect pest of pigeonpea known as the podfly.",
+      "source_id": "paper_4257"
+    },
+    {
+      "name": "INSECT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pigeonpea to resist damage from insect pests.",
+      "source_id": "paper_4257"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INSECT SPECIES",
+      "target": "PIGEONPEA",
+      "description": "damages",
+      "weight": "9",
+      "source_id": "paper_4257"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_4257"
+    },
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "INSECT SPECIES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4257"
+    },
+    {
+      "source": "MELANAGROMYZA OBTUSA",
+      "target": "INSECT SPECIES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4257"
+    },
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "PIGEONPEA",
+      "description": "damages",
+      "weight": "10",
+      "source_id": "paper_4257"
+    },
+    {
+      "source": "MELANAGROMYZA OBTUSA",
+      "target": "PIGEONPEA",
+      "description": "damages",
+      "weight": "10",
+      "source_id": "paper_4257"
+    },
+    {
+      "source": "INSECT RESISTANCE",
+      "target": "PIGEONPEA",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_4257"
+    }
+  ]
+}

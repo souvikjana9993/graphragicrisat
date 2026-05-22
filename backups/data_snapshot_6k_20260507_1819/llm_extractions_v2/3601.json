@@ -1,0 +1,203 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM BICOLOR",
+      "type": "CROP",
+      "description": "The crop species being bred for resistance and tolerance against Striga hermonthica",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "STRIGA HERMONTHICA",
+      "type": "ORGANISM",
+      "description": "A hemi-parasitic weed that infests sorghum",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum to prevent or limit the infection and growth of Striga hermonthica",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum to maintain yield despite being infested by Striga hermonthica",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "STRIGA INFESTATION",
+      "type": "CONDITION",
+      "description": "The state of being infected by Striga hermonthica, categorized by low, high, and intermediate levels",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "RELATIVE YIELD LOSS",
+      "type": "TRAIT",
+      "description": "A measure representing the combined effect of resistance and tolerance on crop yield",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "AGAR-GEL ASSAY",
+      "type": "METHOD",
+      "description": "A laboratory method used to determine resistance during the below-ground stages of the parasite",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "POT TRIAL",
+      "type": "METHOD",
+      "description": "A controlled trial used to determine resistance during the below-ground stages of the parasite",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "SPLIT-PLOT DESIGN",
+      "type": "METHOD",
+      "description": "The experimental field layout used to grow sorghum genotypes with and without Striga infestation",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "CORRELATION ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to demonstrate the importance of resistance and tolerance as yield determining traits",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "ASNPC",
+      "type": "METHOD",
+      "description": "Area under the Striga number progress curve, a discriminative selection measure for resistance",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "NSMAX",
+      "type": "METHOD",
+      "description": "Maximum above-ground Striga number, a discriminative selection measure for resistance",
+      "source_id": "paper_3601"
+    },
+    {
+      "name": "LINEAR CORRECTION",
+      "type": "METHOD",
+      "description": "A method used to correct for differences in infection level resulting from genotypic differences in resistance",
+      "source_id": "paper_3601"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM BICOLOR",
+      "target": "STRIGA HERMONTHICA",
+      "description": "is infested by",
+      "weight": "10",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "SORGHUM BICOLOR",
+      "target": "RESISTANCE",
+      "description": "possesses the trait of",
+      "weight": "9",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "SORGHUM BICOLOR",
+      "target": "TOLERANCE",
+      "description": "possesses the trait of",
+      "weight": "9",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "STRIGA HERMONTHICA",
+      "description": "provides defense against",
+      "weight": "10",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "TOLERANCE",
+      "target": "STRIGA HERMONTHICA",
+      "description": "provides defense against",
+      "weight": "10",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "STRIGA INFESTATION",
+      "target": "RESISTANCE",
+      "description": "influences the importance of",
+      "weight": "8",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "STRIGA INFESTATION",
+      "target": "TOLERANCE",
+      "description": "influences the importance of",
+      "weight": "8",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "AGAR-GEL ASSAY",
+      "target": "RESISTANCE",
+      "description": "is used to measure",
+      "weight": "9",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "POT TRIAL",
+      "target": "RESISTANCE",
+      "description": "is used to measure",
+      "weight": "9",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "ASNPC",
+      "target": "RESISTANCE",
+      "description": "is a selection measure for",
+      "weight": "10",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "NSMAX",
+      "target": "RESISTANCE",
+      "description": "is a selection measure for",
+      "weight": "10",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "RELATIVE YIELD LOSS",
+      "target": "RESISTANCE",
+      "description": "is determined by",
+      "weight": "8",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "RELATIVE YIELD LOSS",
+      "target": "TOLERANCE",
+      "description": "is determined by",
+      "weight": "8",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "CORRELATION ANALYSIS",
+      "target": "RESISTANCE",
+      "description": "is used to analyze",
+      "weight": "7",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "CORRELATION ANALYSIS",
+      "target": "TOLERANCE",
+      "description": "is used to analyze",
+      "weight": "7",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "SPLIT-PLOT DESIGN",
+      "target": "STRIGA INFESTATION",
+      "description": "is used to study",
+      "weight": "7",
+      "source_id": "paper_3601"
+    },
+    {
+      "source": "LINEAR CORRECTION",
+      "target": "RESISTANCE",
+      "description": "corrects for differences in",
+      "weight": "7",
+      "source_id": "paper_3601"
+    }
+  ]
+}

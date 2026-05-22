@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "Leguminous plants used to contribute nitrogen to the soil",
+      "source_id": "paper_3640"
+    },
+    {
+      "name": "NITROGEN ADDITION",
+      "type": "CONCEPT",
+      "description": "The process of adding nitrogen to the soil",
+      "source_id": "paper_3640"
+    },
+    {
+      "name": "NITROGEN BUDGET",
+      "type": "CONCEPT",
+      "description": "The balance of nitrogen inputs and outputs in the soil",
+      "source_id": "paper_3640"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONCEPT",
+      "description": "The medium in which nitrogen budget and mineral-N content are analyzed",
+      "source_id": "paper_3640"
+    },
+    {
+      "name": "LONG-TERM PERIOD EXPERIMENT",
+      "type": "METHOD",
+      "description": "A research study conducted over nine cropping seasons",
+      "source_id": "paper_3640"
+    },
+    {
+      "name": "CROPPING SYSTEMS",
+      "type": "METHOD",
+      "description": "Different arrangements of crops used to evaluate nitrogen dynamics",
+      "source_id": "paper_3640"
+    },
+    {
+      "name": "ICRISAT ASIA CENTRE",
+      "type": "LOCATION",
+      "description": "The research facility where the study was conducted",
+      "source_id": "paper_3640"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was performed",
+      "source_id": "paper_3640"
+    },
+    {
+      "name": "MINERAL NITROGEN CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of mineral nitrogen present in the soil",
+      "source_id": "paper_3640"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LEGUMES",
+      "target": "NITROGEN ADDITION",
+      "description": "contribute to",
+      "weight": "10",
+      "source_id": "paper_3640"
+    },
+    {
+      "source": "NITROGEN ADDITION",
+      "target": "NITROGEN BUDGET",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_3640"
+    },
+    {
+      "source": "CROPPING SYSTEMS",
+      "target": "NITROGEN BUDGET",
+      "description": "are used to determine",
+      "weight": "8",
+      "source_id": "paper_3640"
+    },
+    {
+      "source": "LONG-TERM PERIOD EXPERIMENT",
+      "target": "CROPPING SYSTEMS",
+      "description": "evaluated eight different",
+      "weight": "9",
+      "source_id": "paper_3640"
+    },
+    {
+      "source": "LONG-TERM PERIOD EXPERIMENT",
+      "target": "ICRISAT ASIA CENTRE",
+      "description": "was conducted at",
+      "weight": "10",
+      "source_id": "paper_3640"
+    },
+    {
+      "source": "ICRISAT ASIA CENTRE",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_3640"
+    },
+    {
+      "source": "SOIL",
+      "target": "MINERAL NITROGEN CONTENT",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3640"
+    },
+    {
+      "source": "CROPPING SYSTEMS",
+      "target": "SOIL",
+      "description": "affect the properties of",
+      "weight": "7",
+      "source_id": "paper_3640"
+    }
+  ]
+}

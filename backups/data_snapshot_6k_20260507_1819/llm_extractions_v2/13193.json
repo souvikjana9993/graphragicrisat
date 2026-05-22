@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop being studied for drought tolerance and aflatoxin resistance",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of peanut genotypes to maintain productivity and health under water-deficit conditions",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "AFLATOXIN B1 CONTAMINATION",
+      "type": "CONCEPT",
+      "description": "The presence of Aflatoxin B1 in peanuts resulting from fungal infestation",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The fungus responsible for colonization and aflatoxin contamination in peanuts",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where resistant peanut varieties are intended for development and use",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "ICRISAT SAHELIAN CENTRE",
+      "type": "LOCATION",
+      "description": "The research facility where the peanut genotype experiments were conducted",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "Intermittent water-deficit regime imposed at the pod filling stage",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "WELL-WATERED CONDITIONS",
+      "type": "CONDITION",
+      "description": "The control condition with adequate water supply",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The quantity and components of pods produced per plant",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "AFLATOXIN RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of peanut genotypes to resist Aspergillus flavus infestation and subsequent aflatoxin contamination",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "SEED COAT TOTAL POLYPHENOL",
+      "type": "TRAIT",
+      "description": "Biochemical compounds in the seed coat associated with resistance to aflatoxin",
+      "source_id": "paper_13193"
+    },
+    {
+      "name": "NUMBER OF IMMATURE PODS PER PLANT",
+      "type": "TRAIT",
+      "description": "A specific component of pod yield measured during the study",
+      "source_id": "paper_13193"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER STRESS",
+      "target": "AFLATOXIN B1 CONTAMINATION",
+      "description": "Increases the severity of contamination",
+      "weight": "9",
+      "source_id": "paper_13193"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN B1 CONTAMINATION",
+      "description": "Causes contamination through colonization and infection",
+      "weight": "10",
+      "source_id": "paper_13193"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "PEANUT",
+      "description": "A trait identified in specific peanut genotypes",
+      "weight": "8",
+      "source_id": "paper_13193"
+    },
+    {
+      "source": "AFLATOXIN RESISTANCE",
+      "target": "PEANUT",
+      "description": "A trait identified in specific peanut genotypes",
+      "weight": "8",
+      "source_id": "paper_13193"
+    },
+    {
+      "source": "SEED COAT TOTAL POLYPHENOL",
+      "target": "AFLATOXIN RESISTANCE",
+      "description": "Shows a significant positive relationship with resistance",
+      "weight": "9",
+      "source_id": "paper_13193"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "POD YIELD",
+      "description": "Causes a significant decrease in yield",
+      "weight": "8",
+      "source_id": "paper_13193"
+    },
+    {
+      "source": "ICRISAT SAHELIAN CENTRE",
+      "target": "PEANUT",
+      "description": "Location where peanut genotypes were assessed",
+      "weight": "7",
+      "source_id": "paper_13193"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "PEANUT",
+      "description": "Target environment for developing resistant peanut varieties",
+      "weight": "7",
+      "source_id": "paper_13193"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "SEED COAT TOTAL POLYPHENOL",
+      "description": "Maintained intact in tolerant genotypes despite stress",
+      "weight": "7",
+      "source_id": "paper_13193"
+    }
+  ]
+}

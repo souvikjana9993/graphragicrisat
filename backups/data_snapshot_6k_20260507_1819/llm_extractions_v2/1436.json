@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The geographical region in Africa where the study was conducted.",
+      "source_id": "paper_1436"
+    },
+    {
+      "name": "SAHELIAN AND SUDANIAN CLIMATIC ZONES",
+      "type": "LOCATION",
+      "description": "Specific climatic zones in West Africa analyzed for rainfall patterns.",
+      "source_id": "paper_1436"
+    },
+    {
+      "name": "ONSET OF RAINS",
+      "type": "CONCEPT",
+      "description": "The date when the rainy season begins, used to predict growing season potential.",
+      "source_id": "paper_1436"
+    },
+    {
+      "name": "GROWING SEASON LENGTH",
+      "type": "CONCEPT",
+      "description": "The total duration of the period suitable for crop growth.",
+      "source_id": "paper_1436"
+    },
+    {
+      "name": "RAINFALL DATA ANALYSIS",
+      "type": "METHOD",
+      "description": "The analysis of long-term daily rainfall data to determine relationships between rain onset and season length.",
+      "source_id": "paper_1436"
+    },
+    {
+      "name": "CROP AND DISASTER PLANNING",
+      "type": "CONCEPT",
+      "description": "The application of rainfall analysis to manage agricultural production and mitigate disaster risks.",
+      "source_id": "paper_1436"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A condition of water deficiency that makes West Africa prone to disasters.",
+      "source_id": "paper_1436"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RAINFALL DATA ANALYSIS",
+      "target": "ONSET OF RAINS",
+      "description": "analyzes the date of",
+      "weight": "9",
+      "source_id": "paper_1436"
+    },
+    {
+      "source": "RAINFALL DATA ANALYSIS",
+      "target": "GROWING SEASON LENGTH",
+      "description": "analyzes the duration of",
+      "weight": "9",
+      "source_id": "paper_1436"
+    },
+    {
+      "source": "ONSET OF RAINS",
+      "target": "GROWING SEASON LENGTH",
+      "description": "significantly influences the length of",
+      "weight": "10",
+      "source_id": "paper_1436"
+    },
+    {
+      "source": "RAINFALL DATA ANALYSIS",
+      "target": "CROP AND DISASTER PLANNING",
+      "description": "provides data for",
+      "weight": "8",
+      "source_id": "paper_1436"
+    },
+    {
+      "source": "CROP AND DISASTER PLANNING",
+      "target": "DROUGHT",
+      "description": "aims to mitigate the effects of",
+      "weight": "9",
+      "source_id": "paper_1436"
+    },
+    {
+      "source": "SAHELIAN AND SUDANIAN CLIMATIC ZONES",
+      "target": "WEST AFRICA",
+      "description": "are located within",
+      "weight": "10",
+      "source_id": "paper_1436"
+    },
+    {
+      "source": "RAINFALL DATA ANALYSIS",
+      "target": "SAHELIAN AND SUDANIAN CLIMATIC ZONES",
+      "description": "was performed on data from",
+      "weight": "10",
+      "source_id": "paper_1436"
+    }
+  ]
+}

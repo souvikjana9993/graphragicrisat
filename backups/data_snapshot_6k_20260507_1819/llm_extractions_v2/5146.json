@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cajanus cajan L. Millsp.) subject to pest-induced losses",
+      "source_id": "paper_5146"
+    },
+    {
+      "name": "INSECT PESTS",
+      "type": "ORGANISM",
+      "description": "Insects that attack pigeonpea crops causing damage and yield loss",
+      "source_id": "paper_5146"
+    },
+    {
+      "name": "CROP LOSSES",
+      "type": "CONCEPT",
+      "description": "The reduction in crop yield or quality resulting from pest infestation",
+      "source_id": "paper_5146"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "A location in Andhra Pradesh, India where pest damage assessments were performed",
+      "source_id": "paper_5146"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India",
+      "source_id": "paper_5146"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A country where pigeonpea is grown and pest surveys were conducted",
+      "source_id": "paper_5146"
+    },
+    {
+      "name": "GROWTH HABIT",
+      "type": "TRAIT",
+      "description": "The physical growth pattern of the pigeonpea plant",
+      "source_id": "paper_5146"
+    },
+    {
+      "name": "MATURITY PERIOD",
+      "type": "TRAIT",
+      "description": "The duration required for the pigeonpea crop to reach maturity",
+      "source_id": "paper_5146"
+    },
+    {
+      "name": "PEST DAMAGE ASSESSMENT",
+      "type": "METHOD",
+      "description": "The evaluation of damage caused by pests on pigeonpea cultivars",
+      "source_id": "paper_5146"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INSECT PESTS",
+      "target": "CROP LOSSES",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_5146"
+    },
+    {
+      "source": "INSECT PESTS",
+      "target": "PIGEONPEA",
+      "description": "attack",
+      "weight": "10",
+      "source_id": "paper_5146"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "CROP LOSSES",
+      "description": "experience",
+      "weight": "9",
+      "source_id": "paper_5146"
+    },
+    {
+      "source": "PEST DAMAGE ASSESSMENT",
+      "target": "PIGEONPEA",
+      "description": "evaluates",
+      "weight": "8",
+      "source_id": "paper_5146"
+    },
+    {
+      "source": "PEST DAMAGE ASSESSMENT",
+      "target": "PATANCHERU",
+      "description": "conducted at",
+      "weight": "9",
+      "source_id": "paper_5146"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5146"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5146"
+    },
+    {
+      "source": "GROWTH HABIT",
+      "target": "INSECT PESTS",
+      "description": "influences attack and damage",
+      "weight": "7",
+      "source_id": "paper_5146"
+    },
+    {
+      "source": "MATURITY PERIOD",
+      "target": "INSECT PESTS",
+      "description": "influences attack and damage",
+      "weight": "7",
+      "source_id": "paper_5146"
+    }
+  ]
+}

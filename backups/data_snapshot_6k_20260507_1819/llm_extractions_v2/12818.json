@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "CLIMATE AND CATCHMENT CHARACTERISTICS",
+      "type": "CONCEPT",
+      "description": "Characteristics of the climate and the physical catchment area, including land and water use and management",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "LAND AND WATER USE AND MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "Practices related to how land and water are utilized and managed within a catchment",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "POPULATION GROWTH RATE",
+      "type": "CONCEPT",
+      "description": "The rate at which the population increases, influencing resource management and water demands",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "FUTURE FOOD HABITS",
+      "type": "CONCEPT",
+      "description": "Expected changes in dietary patterns that affect land and water use",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "WATER DEMANDS",
+      "type": "CONCEPT",
+      "description": "The amount of water required for various human and agricultural uses",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "A1B SCENARIO",
+      "type": "CONCEPT",
+      "description": "A specific emissions scenario from the IPCC Special Report on Emissions Scenarios used for climate simulation",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "PRECIS",
+      "type": "METHOD",
+      "description": "Providing Regional Climates for Impact Studies, a method used for downscaling climate simulations",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "QUANTILE MAPPING",
+      "type": "METHOD",
+      "description": "A bias correction method used to refine downscaled climate data",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "MODIFIED SWAT",
+      "type": "METHOD",
+      "description": "A semi-distributed integrated model (Modified Soil and Water Assessment Tool) used to predict hydrological impacts",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "HIMAYAT SAGAR CATCHMENT",
+      "type": "LOCATION",
+      "description": "The specific semi-arid catchment area in which the study was conducted",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Future changes in climatic patterns affecting the hydrological system",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "STREAMFLOW",
+      "type": "CONCEPT",
+      "description": "The volume of water flowing through a stream channel",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "GROUNDWATER STORAGE",
+      "type": "CONCEPT",
+      "description": "The volume of water stored in the subsurface aquifers",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "ACTUAL EVAPORATION",
+      "type": "CONCEPT",
+      "description": "The actual amount of water evaporated from the land and water surfaces",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "BASE FLOW",
+      "type": "CONCEPT",
+      "description": "The portion of streamflow derived from groundwater seepage",
+      "source_id": "paper_12818"
+    },
+    {
+      "name": "ANTHROPOGENIC CHANGES",
+      "type": "CONDITION",
+      "description": "Human-induced changes to the environment, such as land use and water management",
+      "source_id": "paper_12818"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "STREAMFLOW",
+      "description": "leads to reduction in",
+      "weight": "8",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "ANTHROPOGENIC CHANGES",
+      "target": "STREAMFLOW",
+      "description": "leads to reduction in",
+      "weight": "8",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "ACTUAL EVAPORATION",
+      "description": "leads to increase in",
+      "weight": "8",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "ANTHROPOGENIC CHANGES",
+      "target": "ACTUAL EVAPORATION",
+      "description": "leads to increase in",
+      "weight": "8",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "GROUNDWATER STORAGE",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "ANTHROPOGENIC CHANGES",
+      "target": "GROUNDWATER STORAGE",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "PRECIS",
+      "target": "A1B SCENARIO",
+      "description": "used to downscale",
+      "weight": "9",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "QUANTILE MAPPING",
+      "target": "PRECIS",
+      "description": "used for bias correction of",
+      "weight": "7",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "MODIFIED SWAT",
+      "target": "HIMAYAT SAGAR CATCHMENT",
+      "description": "used to predict impacts in",
+      "weight": "9",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "MODIFIED SWAT",
+      "target": "STREAMFLOW",
+      "description": "used to predict",
+      "weight": "8",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "MODIFIED SWAT",
+      "target": "GROUNDWATER STORAGE",
+      "description": "used to predict",
+      "weight": "8",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "POPULATION GROWTH RATE",
+      "target": "LAND AND WATER USE AND MANAGEMENT",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "FUTURE FOOD HABITS",
+      "target": "LAND AND WATER USE AND MANAGEMENT",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "WATER DEMANDS",
+      "target": "LAND AND WATER USE AND MANAGEMENT",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_12818"
+    },
+    {
+      "source": "ANTHROPOGENIC CHANGES",
+      "target": "BASE FLOW",
+      "description": "reduces contribution to streamflow",
+      "weight": "8",
+      "source_id": "paper_12818"
+    }
+  ]
+}

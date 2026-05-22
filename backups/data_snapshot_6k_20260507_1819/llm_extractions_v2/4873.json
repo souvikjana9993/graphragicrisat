@@ -1,0 +1,253 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop being studied for nitrogen production and productivity in tropical soils.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "An essential nutrient whose deficiency limits rice production.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "NITROGEN DEFICIENCY",
+      "type": "CONDITION",
+      "description": "A state of lacking nitrogen that limits rice production and productivity in tropical soils.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "TROPICAL SOILS",
+      "type": "CONCEPT",
+      "description": "The type of soils where nitrogen deficiency limits rice production.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "CHEMICAL FERTILIZERS",
+      "type": "CONCEPT",
+      "description": "External inputs of nitrogen used to increase crop productivity.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "INDIGENOUS N SUPPLY",
+      "type": "CONCEPT",
+      "description": "The natural supply of nitrogen available within the soil.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "N SUPPLYING CAPACITY",
+      "type": "CONCEPT",
+      "description": "The ability of a soil to provide nitrogen to the crop.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "AMMONIUM PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The key process in the nitrogen nutrition of wetland rice, where nitrogen mineralization halts in submerged soils.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "N MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The process of converting organic nitrogen to inorganic forms, which halts at ammonium production in submerged soils.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "SUBMERGED SOILS",
+      "type": "CONDITION",
+      "description": "Soils that are underwater, causing nitrogen mineralization to halt at ammonium production.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "A soil component that controls ammonium production in submerged soils.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "REDUCIBLE IRON",
+      "type": "CONCEPT",
+      "description": "A soil component that controls ammonium production in submerged soils.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The region where the 15 diverse rice soils studied in the paper are located.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "REGRESSION EQUATION",
+      "type": "METHOD",
+      "description": "A mathematical tool connecting organic carbon and reducible iron with ammonium released to predict ammonium production.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "A component of organic matter used as a predictor for ammonium production.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "EDTA",
+      "type": "METHOD",
+      "description": "A chemical agent used for the extraction of reducible iron.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "AMMONIUM OXALATE",
+      "type": "METHOD",
+      "description": "A chemical agent used for the extraction of reducible iron.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "WATERLOGGED CONDITION",
+      "type": "CONDITION",
+      "description": "The state of soil saturation under which ammonium is released.",
+      "source_id": "paper_4873"
+    },
+    {
+      "name": "CHEMICAL INDEX",
+      "type": "METHOD",
+      "description": "A simple and rapid index based on organic carbon and reducible iron contents used to estimate the N supplying capacity of wetland rice soils.",
+      "source_id": "paper_4873"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN DEFICIENCY",
+      "target": "RICE",
+      "description": "limits production and productivity of",
+      "weight": "10",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "NITROGEN DEFICIENCY",
+      "target": "TROPICAL SOILS",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "CHEMICAL FERTILIZERS",
+      "target": "NITROGEN",
+      "description": "provide external inputs of",
+      "weight": "9",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "INDIGENOUS N SUPPLY",
+      "target": "N SUPPLYING CAPACITY",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "AMMONIUM PRODUCTION",
+      "target": "N SUPPLYING CAPACITY",
+      "description": "is the key process for",
+      "weight": "10",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "N MINERALIZATION",
+      "target": "AMMONIUM PRODUCTION",
+      "description": "halts at",
+      "weight": "9",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "SUBMERGED SOILS",
+      "target": "N MINERALIZATION",
+      "description": "affects the process of",
+      "weight": "8",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "ORGANIC MATTER",
+      "target": "AMMONIUM PRODUCTION",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "REDUCIBLE IRON",
+      "target": "AMMONIUM PRODUCTION",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "WEST AFRICA",
+      "target": "TROPICAL SOILS",
+      "description": "is the location of the studied",
+      "weight": "7",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "REGRESSION EQUATION",
+      "target": "AMMONIUM PRODUCTION",
+      "description": "is used for predicting",
+      "weight": "10",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "ORGANIC CARBON",
+      "target": "REGRESSION EQUATION",
+      "description": "is a variable in",
+      "weight": "9",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "REDUCIBLE IRON",
+      "target": "REGRESSION EQUATION",
+      "description": "is a variable in",
+      "weight": "9",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "EDTA",
+      "target": "REDUCIBLE IRON",
+      "description": "is used to extract",
+      "weight": "10",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "AMMONIUM OXALATE",
+      "target": "REDUCIBLE IRON",
+      "description": "is used to extract",
+      "weight": "10",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "WATERLOGGED CONDITION",
+      "target": "AMMONIUM PRODUCTION",
+      "description": "is the condition under which ammonium is released",
+      "weight": "8",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "CHEMICAL INDEX",
+      "target": "N SUPPLYING CAPACITY",
+      "description": "is used for estimating",
+      "weight": "10",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "ORGANIC CARBON",
+      "target": "CHEMICAL INDEX",
+      "description": "is a basis for",
+      "weight": "9",
+      "source_id": "paper_4873"
+    },
+    {
+      "source": "REDUCIBLE IRON",
+      "target": "CHEMICAL INDEX",
+      "description": "is a basis for",
+      "weight": "9",
+      "source_id": "paper_4873"
+    }
+  ]
+}

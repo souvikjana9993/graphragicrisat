@@ -1,0 +1,300 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The host plant affected by stem rot",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "STEM ROT",
+      "type": "CONDITION",
+      "description": "A soil-borne disease caused by Sclerotium rolfsii",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "A necrotrophic plant pathogenic fungus that causes stem rot",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "GP3",
+      "type": "ORGANISM",
+      "description": "A weakly aggressive strain of Sclerotium rolfsii collected from China",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "ZY",
+      "type": "ORGANISM",
+      "description": "A highly aggressive strain of Sclerotium rolfsii collected from China",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "The country where S. rolfsii strains GP3 and ZY were collected",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "AGGRESSIVENESS",
+      "type": "TRAIT",
+      "description": "The degree of pathogenicity of S. rolfsii strains on peanut plants",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "ARTIFICIAL INOCULATION TEST",
+      "type": "METHOD",
+      "description": "A test used to determine the aggressiveness of S. rolfsii strains",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "DE-NOVO GENOME SEQUENCING",
+      "type": "METHOD",
+      "description": "The process of sequencing a genome from scratch to reveal genomic basis of traits",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "PACBIO LONG READ TECHNOLOGY",
+      "type": "METHOD",
+      "description": "The sequencing technology used to sequence the genomes of S. rolfsii strains",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "COMPARATIVE GENOMIC ANALYSIS",
+      "type": "METHOD",
+      "description": "The analysis used to compare the genomes of different S. rolfsii strains",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "PATHOGENICITY-RELATED GENE REPERTOIRES",
+      "type": "CONCEPT",
+      "description": "The collection of genes associated with the ability of a pathogen to cause disease",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "PATHOGEN-HOST INTERACTION GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes involved in the interaction between the pathogen and its host",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "CARBOHYDRATE-ACTIVE ENZYMES",
+      "type": "GENE_MARKER",
+      "description": "Enzymes that break down carbohydrates, found in the secretome of S. rolfsii",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "GLYCOSIDE HYDROLASE FAMILY",
+      "type": "GENE_MARKER",
+      "description": "A specific family of carbohydrate-active enzymes",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "CARBOHYDRATE ESTERASE FAMILY",
+      "type": "GENE_MARKER",
+      "description": "A specific family of carbohydrate-active enzymes",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "POLYSACCHARIDE LYASE FAMILY",
+      "type": "GENE_MARKER",
+      "description": "A specific family of carbohydrate-active enzymes",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "EFFECTOR CANDIDATES",
+      "type": "GENE_MARKER",
+      "description": "Putative proteins secreted by the pathogen to manipulate the host",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "SECONDARY METABOLITE SYNTHETIC GENE CLUSTERS",
+      "type": "GENE_MARKER",
+      "description": "Groups of genes responsible for the synthesis of secondary metabolites",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "OXALIC ACID PRODUCTION",
+      "type": "TRAIT",
+      "description": "The production of oxalic acid by S. rolfsii",
+      "source_id": "paper_11825"
+    },
+    {
+      "name": "GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The speed of growth of S. rolfsii strains",
+      "source_id": "paper_11825"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "STEM ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "PEANUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "GP3",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "is a strain of",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "ZY",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "is a strain of",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "GP3",
+      "target": "CHINA",
+      "description": "collected from",
+      "weight": "8",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "ZY",
+      "target": "CHINA",
+      "description": "collected from",
+      "weight": "8",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "GP3",
+      "target": "AGGRESSIVENESS",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "ZY",
+      "target": "AGGRESSIVENESS",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "ARTIFICIAL INOCULATION TEST",
+      "target": "AGGRESSIVENESS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "DE-NOVO GENOME SEQUENCING",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "analyzes",
+      "weight": "9",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "PACBIO LONG READ TECHNOLOGY",
+      "target": "DE-NOVO GENOME SEQUENCING",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "COMPARATIVE GENOMIC ANALYSIS",
+      "target": "GP3",
+      "description": "analyzes",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "COMPARATIVE GENOMIC ANALYSIS",
+      "target": "ZY",
+      "description": "analyzes",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "COMPARATIVE GENOMIC ANALYSIS",
+      "target": "PATHOGENICITY-RELATED GENE REPERTOIRES",
+      "description": "reveals",
+      "weight": "9",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "PATHOGENICITY-RELATED GENE REPERTOIRES",
+      "target": "AGGRESSIVENESS",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "PATHOGEN-HOST INTERACTION GENES",
+      "target": "PATHOGENICITY-RELATED GENE REPERTOIRES",
+      "description": "part of",
+      "weight": "9",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "CARBOHYDRATE-ACTIVE ENZYMES",
+      "target": "PATHOGENICITY-RELATED GENE REPERTOIRES",
+      "description": "part of",
+      "weight": "9",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "GLYCOSIDE HYDROLASE FAMILY",
+      "target": "CARBOHYDRATE-ACTIVE ENZYMES",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "CARBOHYDRATE ESTERASE FAMILY",
+      "target": "CARBOHYDRATE-ACTIVE ENZYMES",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "POLYSACCHARIDE LYASE FAMILY",
+      "target": "CARBOHYDRATE-ACTIVE ENZYMES",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "EFFECTOR CANDIDATES",
+      "target": "PATHOGENICITY-RELATED GENE REPERTOIRES",
+      "description": "part of",
+      "weight": "9",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "SECONDARY METABOLITE SYNTHETIC GENE CLUSTERS",
+      "target": "PATHOGENICITY-RELATED GENE REPERTOIRES",
+      "description": "part of",
+      "weight": "9",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "OXALIC ACID PRODUCTION",
+      "description": "exhibits",
+      "weight": "7",
+      "source_id": "paper_11825"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "GROWTH RATE",
+      "description": "exhibits",
+      "weight": "7",
+      "source_id": "paper_11825"
+    }
+  ]
+}

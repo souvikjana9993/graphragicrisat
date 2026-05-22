@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "SOIL CRUSTING",
+      "type": "CONCEPT",
+      "description": "The formation of a hard layer on the soil surface that can hinder crop growth.",
+      "source_id": "paper_3402"
+    },
+    {
+      "name": "SOIL AND CLIMATIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental factors that influence the occurrence of soil crusting.",
+      "source_id": "paper_3402"
+    },
+    {
+      "name": "SEEDLING EMERGENCE",
+      "type": "TRAIT",
+      "description": "The process of a seedling breaking through the soil surface to reach the air.",
+      "source_id": "paper_3402"
+    },
+    {
+      "name": "INFILTRATION RATE",
+      "type": "CONCEPT",
+      "description": "The speed at which water enters the soil from the surface.",
+      "source_id": "paper_3402"
+    },
+    {
+      "name": "WATER",
+      "type": "CONCEPT",
+      "description": "The liquid resource necessary for plant growth, which can be lost due to reduced infiltration.",
+      "source_id": "paper_3402"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of agricultural production harvested per unit area.",
+      "source_id": "paper_3402"
+    },
+    {
+      "name": "CRUST FORMATION",
+      "type": "CONCEPT",
+      "description": "The physical and chemical process leading to the creation of a soil crust.",
+      "source_id": "paper_3402"
+    },
+    {
+      "name": "SOIL CRUST STRENGTH",
+      "type": "CONCEPT",
+      "description": "The measure of the physical resistance of the soil crust.",
+      "source_id": "paper_3402"
+    },
+    {
+      "name": "IMPEDANCE TO SEEDLING EMERGENCE",
+      "type": "CONCEPT",
+      "description": "The physical barrier or resistance provided by the soil crust that prevents seedlings from emerging.",
+      "source_id": "paper_3402"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL CRUSTING",
+      "target": "SOIL AND CLIMATIC CONDITIONS",
+      "description": "occurs under",
+      "weight": "9",
+      "source_id": "paper_3402"
+    },
+    {
+      "source": "SOIL CRUSTING",
+      "target": "SEEDLING EMERGENCE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3402"
+    },
+    {
+      "source": "SOIL CRUSTING",
+      "target": "INFILTRATION RATE",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_3402"
+    },
+    {
+      "source": "INFILTRATION RATE",
+      "target": "WATER",
+      "description": "causes loss of",
+      "weight": "8",
+      "source_id": "paper_3402"
+    },
+    {
+      "source": "SOIL CRUSTING",
+      "target": "CROP YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3402"
+    },
+    {
+      "source": "CRUST FORMATION",
+      "target": "SOIL CRUSTING",
+      "description": "is the process of",
+      "weight": "10",
+      "source_id": "paper_3402"
+    },
+    {
+      "source": "SOIL CRUST STRENGTH",
+      "target": "IMPEDANCE TO SEEDLING EMERGENCE",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_3402"
+    },
+    {
+      "source": "IMPEDANCE TO SEEDLING EMERGENCE",
+      "target": "SEEDLING EMERGENCE",
+      "description": "hinders",
+      "weight": "10",
+      "source_id": "paper_3402"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop susceptible to aflatoxin contamination",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop susceptible to aflatoxin contamination",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop susceptible to aflatoxin contamination",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "The presence of aflatoxins in crops, which the study aims to reduce",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "KNOWLEDGE, ATTITUDE AND PRACTICE STUDY",
+      "type": "METHOD",
+      "description": "A research approach used to evaluate farmers' understanding and implementation of practices",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "PRE- AND POST-HARVEST CROP MANAGEMENT",
+      "type": "METHOD",
+      "description": "Agricultural practices used to mitigate aflatoxin contamination before and after harvest",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "TRAINING",
+      "type": "METHOD",
+      "description": "Educational intervention provided to farmers to improve their crop management practices",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "BEHAVIORAL CHANGE",
+      "type": "CONCEPT",
+      "description": "The goal of achieving sustainable shifts in farmers' practices and attitudes",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "WEATHER",
+      "type": "CONDITION",
+      "description": "Environmental conditions that can impact the level of aflatoxin contamination",
+      "source_id": "paper_11352"
+    },
+    {
+      "name": "ECONOMIC INCENTIVE INCOMPATIBILITY",
+      "type": "CONCEPT",
+      "description": "The conflict between economic incentives and the adoption of safe crop management practices",
+      "source_id": "paper_11352"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "KNOWLEDGE, ATTITUDE AND PRACTICE STUDY",
+      "target": "MALAWI",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "KNOWLEDGE, ATTITUDE AND PRACTICE STUDY",
+      "target": "PRE- AND POST-HARVEST CROP MANAGEMENT",
+      "description": "tests adoption of",
+      "weight": "9",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "PRE- AND POST-HARVEST CROP MANAGEMENT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "mitigates",
+      "weight": "10",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "MAIZE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "TRAINING",
+      "target": "PRE- AND POST-HARVEST CROP MANAGEMENT",
+      "description": "increases knowledge and adoption of",
+      "weight": "9",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "TRAINING",
+      "target": "BEHAVIORAL CHANGE",
+      "description": "aims for",
+      "weight": "8",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "WEATHER",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "ECONOMIC INCENTIVE INCOMPATIBILITY",
+      "target": "BEHAVIORAL CHANGE",
+      "description": "hinders",
+      "weight": "8",
+      "source_id": "paper_11352"
+    },
+    {
+      "source": "ECONOMIC INCENTIVE INCOMPATIBILITY",
+      "target": "PRE- AND POST-HARVEST CROP MANAGEMENT",
+      "description": "affects adoption of",
+      "weight": "7",
+      "source_id": "paper_11352"
+    }
+  ]
+}

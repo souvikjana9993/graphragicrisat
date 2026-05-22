@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "TIFRUST-13",
+      "type": "CROP",
+      "description": "A peanut germplasm line released in 1981 characterized by resistance to peanut rust, larger seeds, and greater productivity.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop species Arachis hypogaea.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "RUST RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist infection by peanut rust.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "PEANUT RUST",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting peanut plants.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes peanut rust.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "GREENHOUSE AND FIELD TESTS",
+      "type": "METHOD",
+      "description": "Evaluation methods used to test the resistance of the genotype.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "GEORGIA",
+      "type": "LOCATION",
+      "description": "A location where tests were conducted.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "PUERTO RICO",
+      "type": "LOCATION",
+      "description": "A location where tests were conducted.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A location where tests were conducted.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The physical size of the peanut seeds.",
+      "source_id": "paper_1265"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The yield or output of the peanut plant.",
+      "source_id": "paper_1265"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TIFRUST-13",
+      "target": "PEANUT",
+      "description": "is a germplasm line of",
+      "weight": "10",
+      "source_id": "paper_1265"
+    },
+    {
+      "source": "TIFRUST-13",
+      "target": "RUST RESISTANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_1265"
+    },
+    {
+      "source": "RUST RESISTANCE",
+      "target": "PEANUT RUST",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_1265"
+    },
+    {
+      "source": "PUCCINIA ARACHIDIS",
+      "target": "PEANUT RUST",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1265"
+    },
+    {
+      "source": "TIFRUST-13",
+      "target": "SEED SIZE",
+      "description": "has larger",
+      "weight": "8",
+      "source_id": "paper_1265"
+    },
+    {
+      "source": "TIFRUST-13",
+      "target": "PRODUCTIVITY",
+      "description": "has greater",
+      "weight": "8",
+      "source_id": "paper_1265"
+    },
+    {
+      "source": "GREENHOUSE AND FIELD TESTS",
+      "target": "TIFRUST-13",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_1265"
+    },
+    {
+      "source": "GREENHOUSE AND FIELD TESTS",
+      "target": "GEORGIA",
+      "description": "conducted in",
+      "weight": "7",
+      "source_id": "paper_1265"
+    },
+    {
+      "source": "GREENHOUSE AND FIELD TESTS",
+      "target": "PUERTO RICO",
+      "description": "conducted in",
+      "weight": "7",
+      "source_id": "paper_1265"
+    },
+    {
+      "source": "GREENHOUSE AND FIELD TESTS",
+      "target": "INDIA",
+      "description": "conducted in",
+      "weight": "7",
+      "source_id": "paper_1265"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "entities": [
+    {
+      "name": "OIL PALM",
+      "type": "CROP",
+      "description": "A tropical oil bearing tree used for genetic studies.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "SNP",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphism used as a molecular marker for genetic studies.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "INDEL",
+      "type": "GENE_MARKER",
+      "description": "Small insertions or deletions used as molecular markers.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "SSR",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeats derived from EST data.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "EST",
+      "type": "CONCEPT",
+      "description": "Expressed Sequence Tag libraries used to mine for polymorphisms.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "DBEST",
+      "type": "LOCATION",
+      "description": "NCBI database from which oil palm EST sequences were mined.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "CAP3",
+      "type": "METHOD",
+      "description": "Program used to assemble EST sequences into contigs.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "CONTIGS",
+      "type": "CONCEPT",
+      "description": "Assembled sequences of ESTs.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "AUTO_SNIP",
+      "type": "METHOD",
+      "description": "Perl script version 1.0 used for detecting SNPs and Indel polymorphisms.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "SHANNON INDEX",
+      "type": "METHOD",
+      "description": "Index used to analyze the proportion of SNP and indel types.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "MESOCARP",
+      "type": "CONCEPT",
+      "description": "Tissue of oil palm showing high frequency of SNPs and indels.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "ZYGOTIC EMBRYOS",
+      "type": "CONCEPT",
+      "description": "Tissue of oil palm showing lowest frequency of SNPs and indels.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "NORMAL APEX",
+      "type": "CONCEPT",
+      "description": "Tissue of oil palm showing highest values of Shannon index.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "ABNORMAL APEX",
+      "type": "CONCEPT",
+      "description": "Tissue of oil palm showing lowest values of Shannon index.",
+      "source_id": "paper_2629"
+    },
+    {
+      "name": "MOLECULAR MARKERS",
+      "type": "CONCEPT",
+      "description": "Genetic tools used for genetic studies, including SNPs and indels.",
+      "source_id": "paper_2629"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "OIL PALM",
+      "target": "SNP",
+      "description": "Source of SNP polymorphisms",
+      "weight": "10",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "OIL PALM",
+      "target": "INDEL",
+      "description": "Source of indel polymorphisms",
+      "weight": "10",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "OIL PALM",
+      "target": "EST",
+      "description": "Source of EST libraries",
+      "weight": "10",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "EST",
+      "target": "SNP",
+      "description": "Source for deriving SNPs",
+      "weight": "9",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "EST",
+      "target": "INDEL",
+      "description": "Source for deriving indels",
+      "weight": "9",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "DBEST",
+      "target": "EST",
+      "description": "Database containing EST sequences",
+      "weight": "8",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "CAP3",
+      "target": "EST",
+      "description": "Used to assemble EST sequences",
+      "weight": "8",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "CAP3",
+      "target": "CONTIGS",
+      "description": "Produces contigs from ESTs",
+      "weight": "9",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "AUTO_SNIP",
+      "target": "SNP",
+      "description": "Used to detect SNP sites",
+      "weight": "9",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "AUTO_SNIP",
+      "target": "INDEL",
+      "description": "Used to detect indel polymorphisms",
+      "weight": "9",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "SHANNON INDEX",
+      "target": "SNP",
+      "description": "Used to analyze SNP proportions",
+      "weight": "8",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "SHANNON INDEX",
+      "target": "INDEL",
+      "description": "Used to analyze indel proportions",
+      "weight": "8",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "MESOCARP",
+      "target": "SNP",
+      "description": "Tissue with high SNP frequency",
+      "weight": "7",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "MESOCARP",
+      "target": "INDEL",
+      "description": "Tissue with high indel frequency",
+      "weight": "7",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "ZYGOTIC EMBRYOS",
+      "target": "SNP",
+      "description": "Tissue with low SNP frequency",
+      "weight": "7",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "ZYGOTIC EMBRYOS",
+      "target": "INDEL",
+      "description": "Tissue with low indel frequency",
+      "weight": "7",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "NORMAL APEX",
+      "target": "SHANNON INDEX",
+      "description": "Tissue with highest Shannon index value",
+      "weight": "7",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "ABNORMAL APEX",
+      "target": "SHANNON INDEX",
+      "description": "Tissue with lowest Shannon index value",
+      "weight": "7",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "SNP",
+      "target": "MOLECULAR MARKERS",
+      "description": "Type of molecular marker",
+      "weight": "10",
+      "source_id": "paper_2629"
+    },
+    {
+      "source": "INDEL",
+      "target": "MOLECULAR MARKERS",
+      "description": "Type of molecular marker",
+      "weight": "10",
+      "source_id": "paper_2629"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species being studied for drought tolerance and water use efficiency.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "TRANSPIRATION RATE",
+      "type": "TRAIT",
+      "description": "The rate at which water is lost from the plant to the atmosphere.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "VAPOR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "The difference between the saturation vapor pressure and the actual vapor pressure of the air.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "EARLY PLANT VIGOR",
+      "type": "TRAIT",
+      "description": "The growth and strength of the plant during its early stages of development.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "CROP WATER USE",
+      "type": "CONCEPT",
+      "description": "The total amount of water consumed by the crop during its growth cycle.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "TERMINAL DROUGHT",
+      "type": "CONDITION",
+      "description": "Drought stress occurring during the reproductive stage of the crop.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "HYDRAULIC CONDUCTANCE",
+      "type": "TRAIT",
+      "description": "The measure of the ease with which water moves through plant tissues.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A type of clay-rich soil used in the experiments.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "HYDROPONIC CULTURE",
+      "type": "METHOD",
+      "description": "A method of growing plants in a nutrient-rich water solution without soil.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "ICC 4958",
+      "type": "CROP",
+      "description": "A chickpea genotype characterized by early vigor and low transpiration rate.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "RIL 211",
+      "type": "CROP",
+      "description": "A chickpea recombinant inbred line characterized by early vigor and low transpiration rate.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "ICC 1882",
+      "type": "CROP",
+      "description": "A chickpea genotype characterized by late vigor and high transpiration rate.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "RIL 022",
+      "type": "CROP",
+      "description": "A chickpea recombinant inbred line characterized by late vigor and high transpiration rate.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "WATER TRANSPORT PATHWAYS",
+      "type": "CONCEPT",
+      "description": "The biological routes, including apoplastic and symplastic, for water movement in plants.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "APOPLAST",
+      "type": "CONCEPT",
+      "description": "The space outside the plasma membrane through which water moves.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "SYMPLAST",
+      "type": "CONCEPT",
+      "description": "The inner cytoplasmic network through which water moves.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "AQUAPORINS",
+      "type": "CONCEPT",
+      "description": "Water channel proteins that facilitate water transport across membranes.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "DE-ROOTED SHOOT TREATMENT",
+      "type": "METHOD",
+      "description": "An experimental procedure where roots are removed to isolate shoot responses.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "AQUAPORIN INHIBITOR",
+      "type": "METHOD",
+      "description": "A chemical agent used to block the function of aquaporin proteins.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "ROOT HYDRAULIC CONDUCTIVITY",
+      "type": "TRAIT",
+      "description": "The capacity of the roots to transport water from the soil to the shoot.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "EVAPORATIVE DEMAND",
+      "type": "CONDITION",
+      "description": "The atmospheric demand for water, often linked to high VPD.",
+      "source_id": "paper_10201"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of selecting and crossing genotypes to achieve desired traits.",
+      "source_id": "paper_10201"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "TRANSPIRATION RATE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "EARLY PLANT VIGOR",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "TRANSPIRATION RATE",
+      "target": "VAPOR PRESSURE DEFICIT",
+      "description": "is influenced by",
+      "weight": "8",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "EARLY PLANT VIGOR",
+      "target": "TERMINAL DROUGHT",
+      "description": "influences fitness in",
+      "weight": "7",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "TRANSPIRATION RATE",
+      "target": "CROP WATER USE",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "TRANSPIRATION RATE",
+      "target": "HYDRAULIC CONDUCTANCE",
+      "description": "is hypothesized to relate to",
+      "weight": "6",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "ICC 4958",
+      "target": "EARLY PLANT VIGOR",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "ICC 4958",
+      "target": "TRANSPIRATION RATE",
+      "description": "exhibits low",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "RIL 211",
+      "target": "EARLY PLANT VIGOR",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "RIL 211",
+      "target": "TRANSPIRATION RATE",
+      "description": "exhibits low",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "ICC 1882",
+      "target": "EARLY PLANT VIGOR",
+      "description": "exhibits late",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "ICC 1882",
+      "target": "TRANSPIRATION RATE",
+      "description": "exhibits high",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "RIL 022",
+      "target": "EARLY PLANT VIGOR",
+      "description": "exhibits late",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "RIL 022",
+      "target": "TRANSPIRATION RATE",
+      "description": "exhibits high",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "WATER TRANSPORT PATHWAYS",
+      "target": "APOPLAST",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "WATER TRANSPORT PATHWAYS",
+      "target": "SYMPLAST",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "SYMPLAST",
+      "target": "AQUAPORINS",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "AQUAPORIN INHIBITOR",
+      "target": "AQUAPORINS",
+      "description": "inhibits",
+      "weight": "10",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "ROOT HYDRAULIC CONDUCTIVITY",
+      "target": "EARLY PLANT VIGOR",
+      "description": "differs based on",
+      "weight": "8",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "ROOT HYDRAULIC CONDUCTIVITY",
+      "target": "WATER TRANSPORT PATHWAYS",
+      "description": "is determined by",
+      "weight": "8",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "TRANSPIRATION RATE",
+      "target": "EVAPORATIVE DEMAND",
+      "description": "is restricted under high",
+      "weight": "7",
+      "source_id": "paper_10201"
+    },
+    {
+      "source": "BREEDING",
+      "target": "CHICKPEA",
+      "description": "is used to improve",
+      "weight": "9",
+      "source_id": "paper_10201"
+    }
+  ]
+}

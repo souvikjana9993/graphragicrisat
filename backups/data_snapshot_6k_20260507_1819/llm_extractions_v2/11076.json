@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop Zea mays L. used in the breeding program",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "NORTH AMERICA",
+      "type": "LOCATION",
+      "description": "The region where the maize breeding program is conducted",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "SPATIAL MODEL",
+      "type": "METHOD",
+      "description": "A model used to estimate spatial trend and residual variance in fields",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "MULTIYEAR MULTICYCLE ANALYSIS",
+      "type": "METHOD",
+      "description": "An analysis approach combining data across multiple years and cycles",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "GENOTYPE X YEAR VARIANCE",
+      "type": "CONCEPT",
+      "description": "Variance resulting from the interaction between genotype and year",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "GENOTYPE X YEAR X LOCATION VARIANCE",
+      "type": "CONCEPT",
+      "description": "Variance resulting from the interaction between genotype, year, and location",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "PHENOTYPIC VARIANCE",
+      "type": "CONCEPT",
+      "description": "The total variance observed in the phenotype",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "GENOTYPIC VARIANCE",
+      "type": "CONCEPT",
+      "description": "The variance attributable to genetic differences",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "GENOTYPE PERFORMANCE",
+      "type": "TRAIT",
+      "description": "The overall performance of a genotype",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "PLANT BREEDING PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Programs aimed at improving crop genotypes",
+      "source_id": "paper_11076"
+    },
+    {
+      "name": "SELECTION DECISIONS",
+      "type": "METHOD",
+      "description": "The process of choosing genotypes for advancement",
+      "source_id": "paper_11076"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "PLANT BREEDING PROGRAMS",
+      "description": "is the subject of",
+      "weight": "10",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "NORTH AMERICA",
+      "target": "MAIZE",
+      "description": "is the location of the breeding program for",
+      "weight": "10",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "SPATIAL MODEL",
+      "target": "MAIZE",
+      "description": "is applied to the breeding program of",
+      "weight": "8",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "MULTIYEAR MULTICYCLE ANALYSIS",
+      "target": "GENOTYPE X YEAR VARIANCE",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "MULTIYEAR MULTICYCLE ANALYSIS",
+      "target": "GENOTYPE X YEAR X LOCATION VARIANCE",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "GENOTYPE X YEAR VARIANCE",
+      "target": "PHENOTYPIC VARIANCE",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "GENOTYPE X YEAR X LOCATION VARIANCE",
+      "target": "PHENOTYPIC VARIANCE",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "GENOTYPIC VARIANCE",
+      "target": "PHENOTYPIC VARIANCE",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "MULTIYEAR MULTICYCLE ANALYSIS",
+      "target": "GENOTYPE PERFORMANCE",
+      "description": "is used to better predict",
+      "weight": "9",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "GENOTYPE X YEAR VARIANCE",
+      "target": "GENOTYPIC VARIANCE",
+      "description": "can inflate the estimate of when using single-year data",
+      "weight": "8",
+      "source_id": "paper_11076"
+    },
+    {
+      "source": "MULTIYEAR MULTICYCLE ANALYSIS",
+      "target": "SELECTION DECISIONS",
+      "description": "is used to inform",
+      "weight": "9",
+      "source_id": "paper_11076"
+    }
+  ]
+}

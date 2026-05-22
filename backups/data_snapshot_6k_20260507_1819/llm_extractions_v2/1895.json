@@ -1,0 +1,216 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, the legume crop under study",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "DOUBLE-POD PER PEDUNCLE",
+      "type": "TRAIT",
+      "description": "A trait where two pods develop per peduncle, contributing to increased seed yield",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of seed produced by the plant",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "ICCV 2",
+      "type": "CROP",
+      "description": "A single-podded variety of chickpea used in the cross",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "JG 62",
+      "type": "CROP",
+      "description": "A double-podded variety of chickpea used in the cross",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "PENETRANCE",
+      "type": "CONCEPT",
+      "description": "The proportion of individuals with a specific genotype who express the associated phenotype",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "EXPRESSIVITY",
+      "type": "CONCEPT",
+      "description": "The degree to which a trait is expressed in individuals",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "GENE FOR DOUBLE PODDING",
+      "type": "GENE_MARKER",
+      "description": "The gene responsible for the double-pod trait",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "S ALLELE",
+      "type": "GENE_MARKER",
+      "description": "The homozygous recessive allele (ss) governing the production of double flowers and pods",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "F2 POPULATION",
+      "type": "METHOD",
+      "description": "The second filial generation used to study penetrance and expressivity",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINES",
+      "type": "METHOD",
+      "description": "F10 lines used to study the stability of the double-pod trait",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "DOUBLE FLOWERS",
+      "type": "TRAIT",
+      "description": "The production of double flowers governed by the s allele",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "SOIL MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition that enhances penetrance and expressivity of the s allele",
+      "source_id": "paper_1895"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The size of the seed, which may influence the penetrance and expressivity of the s allele",
+      "source_id": "paper_1895"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DOUBLE-POD PER PEDUNCLE",
+      "target": "SEED YIELD",
+      "description": "contributes to increased",
+      "weight": "8",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "GENE FOR DOUBLE PODDING",
+      "target": "DOUBLE-POD PER PEDUNCLE",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "S ALLELE",
+      "target": "GENE FOR DOUBLE PODDING",
+      "description": "is the recessive allele of",
+      "weight": "10",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "S ALLELE",
+      "target": "DOUBLE FLOWERS",
+      "description": "governs production of",
+      "weight": "9",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "S ALLELE",
+      "target": "DOUBLE-POD PER PEDUNCLE",
+      "description": "governs production of",
+      "weight": "9",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "S ALLELE",
+      "target": "PENETRANCE",
+      "description": "exhibits unstable",
+      "weight": "8",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "S ALLELE",
+      "target": "EXPRESSIVITY",
+      "description": "exhibits variable",
+      "weight": "8",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "SOIL MOISTURE STRESS",
+      "target": "PENETRANCE",
+      "description": "enhances",
+      "weight": "7",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "SOIL MOISTURE STRESS",
+      "target": "EXPRESSIVITY",
+      "description": "enhances",
+      "weight": "7",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "SEED SIZE",
+      "target": "PENETRANCE",
+      "description": "decreases",
+      "weight": "6",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "SEED SIZE",
+      "target": "EXPRESSIVITY",
+      "description": "decreases",
+      "weight": "6",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "ICCV 2",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "JG 62",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "F2 POPULATION",
+      "target": "PENETRANCE",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "F2 POPULATION",
+      "target": "EXPRESSIVITY",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "PENETRANCE",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "EXPRESSIVITY",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_1895"
+    },
+    {
+      "source": "DOUBLE-POD PER PEDUNCLE",
+      "target": "SEED SIZE",
+      "description": "associated with a slight decrease in",
+      "weight": "6",
+      "source_id": "paper_1895"
+    }
+  ]
+}

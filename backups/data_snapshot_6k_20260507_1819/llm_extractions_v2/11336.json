@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop species Arachis hypogaea L. being studied for disease resistance",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "BACTERIAL WILT",
+      "type": "CONDITION",
+      "description": "A devastating disease affecting over 350 plant species, including peanut",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "RALSTONIA SOLANACEARUM",
+      "type": "ORGANISM",
+      "description": "The pathogen that causes bacterial wilt",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "BACTERIAL WILT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of certain peanut cultivars to resist bacterial wilt",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "GENOMICS-ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "A breeding approach using diagnostic markers to accelerate the development of resistant cultivars",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "DIAGNOSTIC MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Genetic markers used to identify and select for specific traits like BWR",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "QTL-SEQ",
+      "type": "METHOD",
+      "description": "A sequencing-based trait mapping approach used to discover genomic regions and markers",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "CHROMOSOME B02",
+      "type": "LOCATION",
+      "description": "The specific chromosome in peanut where the genomic region associated with BWR was identified",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphism markers used to narrow down the genomic region",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "CANDIDATE GENES",
+      "type": "GENE_MARKER",
+      "description": "Putative genes within the identified genomic region that may contribute to BWR",
+      "source_id": "paper_11336"
+    },
+    {
+      "name": "R-GENES",
+      "type": "GENE_MARKER",
+      "description": "Putative resistance genes among the candidate genes",
+      "source_id": "paper_11336"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RALSTONIA SOLANACEARUM",
+      "target": "BACTERIAL WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "PEANUT",
+      "target": "BACTERIAL WILT RESISTANCE",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "GENOMICS-ASSISTED BREEDING",
+      "target": "DIAGNOSTIC MARKERS",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "GENOMICS-ASSISTED BREEDING",
+      "target": "BACTERIAL WILT RESISTANCE",
+      "description": "enhances",
+      "weight": "9",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "QTL-SEQ",
+      "target": "CHROMOSOME B02",
+      "description": "identifies",
+      "weight": "8",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "QTL-SEQ",
+      "target": "BACTERIAL WILT RESISTANCE",
+      "description": "maps",
+      "weight": "8",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "CHROMOSOME B02",
+      "target": "BACTERIAL WILT RESISTANCE",
+      "description": "associated with",
+      "weight": "10",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "CHROMOSOME B02",
+      "description": "narrows down",
+      "weight": "9",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "CHROMOSOME B02",
+      "target": "CANDIDATE GENES",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "CANDIDATE GENES",
+      "target": "R-GENES",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_11336"
+    },
+    {
+      "source": "DIAGNOSTIC MARKERS",
+      "target": "BACTERIAL WILT RESISTANCE",
+      "description": "validates",
+      "weight": "9",
+      "source_id": "paper_11336"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "SOIL ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "A key component of soil organic matter used to assess soil carbon content and sustainability",
+      "source_id": "paper_13455"
+    },
+    {
+      "name": "SOIL ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "Organic material in soil that supports fertility and structure",
+      "source_id": "paper_13455"
+    },
+    {
+      "name": "FERTILITY",
+      "type": "TRAIT",
+      "description": "The ability of soil to support plant growth, supported by soil organic matter",
+      "source_id": "paper_13455"
+    },
+    {
+      "name": "STRUCTURE",
+      "type": "TRAIT",
+      "description": "The arrangement of soil particles, supported by soil organic matter",
+      "source_id": "paper_13455"
+    },
+    {
+      "name": "CHROMIC ACID OXIDATION",
+      "type": "METHOD",
+      "description": "A process used to estimate soil organic carbon",
+      "source_id": "paper_13455"
+    },
+    {
+      "name": "REDOX TITRATION",
+      "type": "METHOD",
+      "description": "A titration method using ferrous salts following chromic acid oxidation",
+      "source_id": "paper_13455"
+    },
+    {
+      "name": "FERROUS SALTS",
+      "type": "CONCEPT",
+      "description": "Chemicals used in redox titration for soil carbon estimation",
+      "source_id": "paper_13455"
+    },
+    {
+      "name": "SOIL CARBON CONTENT",
+      "type": "CONCEPT",
+      "description": "The amount of carbon present in the soil",
+      "source_id": "paper_13455"
+    },
+    {
+      "name": "SUSTAINABILITY",
+      "type": "CONCEPT",
+      "description": "The long-term viability of soil health and productivity",
+      "source_id": "paper_13455"
+    },
+    {
+      "name": "WET DIGESTION METHOD",
+      "type": "METHOD",
+      "description": "A method for the determination of soil organic carbon",
+      "source_id": "paper_13455"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL ORGANIC CARBON",
+      "target": "SOIL ORGANIC MATTER",
+      "description": "is a key component of",
+      "weight": "10",
+      "source_id": "paper_13455"
+    },
+    {
+      "source": "SOIL ORGANIC MATTER",
+      "target": "FERTILITY",
+      "description": "supports",
+      "weight": "8",
+      "source_id": "paper_13455"
+    },
+    {
+      "source": "SOIL ORGANIC MATTER",
+      "target": "STRUCTURE",
+      "description": "supports",
+      "weight": "8",
+      "source_id": "paper_13455"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON",
+      "target": "CHROMIC ACID OXIDATION",
+      "description": "is estimated through",
+      "weight": "9",
+      "source_id": "paper_13455"
+    },
+    {
+      "source": "CHROMIC ACID OXIDATION",
+      "target": "REDOX TITRATION",
+      "description": "is followed by",
+      "weight": "9",
+      "source_id": "paper_13455"
+    },
+    {
+      "source": "REDOX TITRATION",
+      "target": "FERROUS SALTS",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_13455"
+    },
+    {
+      "source": "WET DIGESTION METHOD",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "is used to determine",
+      "weight": "10",
+      "source_id": "paper_13455"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON",
+      "target": "SOIL CARBON CONTENT",
+      "description": "is used to assess",
+      "weight": "9",
+      "source_id": "paper_13455"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON",
+      "target": "SUSTAINABILITY",
+      "description": "is used to assess",
+      "weight": "8",
+      "source_id": "paper_13455"
+    }
+  ]
+}

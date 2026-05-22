@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "BIOLOGICAL NITRIFICATION INHIBITION (BNI)",
+      "type": "TRAIT",
+      "description": "The capacity of a plant to release compounds that inhibit the biological process of nitrification",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "LEYMUS RACEMOSUS",
+      "type": "CROP",
+      "description": "A perennial wild relative of wheat exhibiting high biological nitrification inhibition capacity",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "TRITICUM AESTIVUM",
+      "type": "CROP",
+      "description": "Cultivated wheat",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting ammonia to nitrate in the soil",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "RECOMBINANT LUMINESCENT NITROSOMONAS EUROPAEA ASSAY",
+      "type": "METHOD",
+      "description": "A biochemical assay used to quantify biological nitrification inhibition",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "CHROMOSOME LR#N",
+      "type": "GENE_MARKER",
+      "description": "A chromosome in Leymus racemosus associated with high BNI capacity",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "CHROMOSOME LR#J",
+      "type": "GENE_MARKER",
+      "description": "A chromosome in Leymus racemosus that influences BNI production",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "CHROMOSOME LR#I",
+      "type": "GENE_MARKER",
+      "description": "A chromosome in Leymus racemosus that influences BNI production",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "CHROMOSOME 7LR#1-1",
+      "type": "GENE_MARKER",
+      "description": "A chromosome controlling tolerance in Leymus racemosus",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "NITRAPYRIN",
+      "type": "CONCEPT",
+      "description": "A synthetic chemical inhibitor of nitrification",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "DICYANDIAMIDE",
+      "type": "CONCEPT",
+      "description": "A synthetic nitrification inhibitor that specifically blocks the AMO pathway",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "AMO PATHWAY",
+      "type": "CONCEPT",
+      "description": "The ammonia monooxygenase pathway involved in nitrification",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "HAO PATHWAY",
+      "type": "CONCEPT",
+      "description": "The hydroxylamine oxidoreductase pathway involved in nitrification",
+      "source_id": "paper_5540"
+    },
+    {
+      "name": "NITROSOMONAS",
+      "type": "ORGANISM",
+      "description": "Ammonia-oxidizing bacteria used in BNI assays",
+      "source_id": "paper_5540"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RECOMBINANT LUMINESCENT NITROSOMONAS EUROPAEA ASSAY",
+      "target": "BIOLOGICAL NITRIFICATION INHIBITION (BNI)",
+      "description": "used to quantify",
+      "weight": "10",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "LEYMUS RACEMOSUS",
+      "target": "BIOLOGICAL NITRIFICATION INHIBITION (BNI)",
+      "description": "possesses high capacity for",
+      "weight": "10",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "TRITICUM AESTIVUM",
+      "target": "BIOLOGICAL NITRIFICATION INHIBITION (BNI)",
+      "description": "possesses low capacity for",
+      "weight": "8",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITION (BNI)",
+      "target": "NITRIFICATION",
+      "description": "inhibits",
+      "weight": "10",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "CHROMOSOME LR#N",
+      "target": "BIOLOGICAL NITRIFICATION INHIBITION (BNI)",
+      "description": "associated with high capacity",
+      "weight": "9",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "CHROMOSOME LR#J",
+      "target": "BIOLOGICAL NITRIFICATION INHIBITION (BNI)",
+      "description": "influences production",
+      "weight": "7",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "CHROMOSOME LR#I",
+      "target": "BIOLOGICAL NITRIFICATION INHIBITION (BNI)",
+      "description": "influences production",
+      "weight": "7",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "NITRAPYRIN",
+      "target": "NITRIFICATION",
+      "description": "inhibits",
+      "weight": "10",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "DICYANDIAMIDE",
+      "target": "AMO PATHWAY",
+      "description": "blocks",
+      "weight": "10",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITION (BNI)",
+      "target": "HAO PATHWAY",
+      "description": "blocks",
+      "weight": "9",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "AMO PATHWAY",
+      "target": "NITRIFICATION",
+      "description": "is part of",
+      "weight": "10",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "HAO PATHWAY",
+      "target": "NITRIFICATION",
+      "description": "is part of",
+      "weight": "10",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "NITROSOMONAS",
+      "target": "NITRIFICATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_5540"
+    },
+    {
+      "source": "LEYMUS RACEMOSUS",
+      "target": "TRITICUM AESTIVUM",
+      "description": "is a wild relative of",
+      "weight": "9",
+      "source_id": "paper_5540"
+    }
+  ]
+}

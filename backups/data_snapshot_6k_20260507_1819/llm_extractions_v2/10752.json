@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being evaluated for transgenic resistance to pests",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "CRY IIA",
+      "type": "GENE_MARKER",
+      "description": "A transgenic gene/protein encoded in chickpea lines to provide insect resistance",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The lepidopteran pest (pod borer) used to test the resistance of chickpea lines",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "RESISTANCE TO HELICOVERPA ARMIGERA",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand or reduce damage caused by Helicoverpa armigera",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "DETACHED LEAF ASSAY",
+      "type": "METHOD",
+      "description": "An experimental technique used to evaluate pest resistance using separated plant leaves",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "LEAF DAMAGE",
+      "type": "TRAIT",
+      "description": "The extent of tissue loss on leaves caused by pest feeding, used as a measure of resistance",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "LARVAL SURVIVAL",
+      "type": "TRAIT",
+      "description": "The rate of survival of H. armigera larvae when feeding on specific plant lines",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "WEIGHT GAIN",
+      "type": "TRAIT",
+      "description": "The growth rate of H. armigera larvae when feeding on specific plant lines",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "LABORATORY CONDITIONS",
+      "type": "CONDITION",
+      "description": "The controlled environment where larval survival and weight gain were observed",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "BS5A.2(T2) 19-1P2",
+      "type": "CROP",
+      "description": "A specific transgenic chickpea line that showed enhanced resistance to H. armigera",
+      "source_id": "paper_10752"
+    },
+    {
+      "name": "BS5A.2(T2) 19-2P1",
+      "type": "CROP",
+      "description": "A specific transgenic chickpea line that showed enhanced resistance to H. armigera",
+      "source_id": "paper_10752"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "CRY IIA",
+      "description": "encodes",
+      "weight": "9",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "CRY IIA",
+      "target": "RESISTANCE TO HELICOVERPA ARMIGERA",
+      "description": "confers",
+      "weight": "10",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "RESISTANCE TO HELICOVERPA ARMIGERA",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "targets",
+      "weight": "10",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "DETACHED LEAF ASSAY",
+      "target": "RESISTANCE TO HELICOVERPA ARMIGERA",
+      "description": "evaluates",
+      "weight": "8",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "RESISTANCE TO HELICOVERPA ARMIGERA",
+      "target": "LEAF DAMAGE",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "RESISTANCE TO HELICOVERPA ARMIGERA",
+      "target": "LARVAL SURVIVAL",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "RESISTANCE TO HELICOVERPA ARMIGERA",
+      "target": "WEIGHT GAIN",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "LARVAL SURVIVAL",
+      "target": "LABORATORY CONDITIONS",
+      "description": "observed under",
+      "weight": "7",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "WEIGHT GAIN",
+      "target": "LABORATORY CONDITIONS",
+      "description": "observed under",
+      "weight": "7",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "BS5A.2(T2) 19-1P2",
+      "target": "RESISTANCE TO HELICOVERPA ARMIGERA",
+      "description": "shows",
+      "weight": "9",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "BS5A.2(T2) 19-2P1",
+      "target": "RESISTANCE TO HELICOVERPA ARMIGERA",
+      "description": "shows",
+      "weight": "9",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "BS5A.2(T2) 19-1P2",
+      "target": "CHICKPEA",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_10752"
+    },
+    {
+      "source": "BS5A.2(T2) 19-2P1",
+      "target": "CHICKPEA",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_10752"
+    }
+  ]
+}

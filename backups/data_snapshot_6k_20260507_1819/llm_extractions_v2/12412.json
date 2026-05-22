@@ -1,0 +1,299 @@
+{
+  "entities": [
+    {
+      "name": "PADDY",
+      "type": "CROP",
+      "description": "Rice crop cultivated in Eastern India",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "PADDY YIELD",
+      "type": "TRAIT",
+      "description": "The productivity and output of paddy crops",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "NET INCOME",
+      "type": "CONCEPT",
+      "description": "The financial gain of farmers after expenses",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "GREENHOUSE GASES",
+      "type": "CONDITION",
+      "description": "Gases that trap heat in the atmosphere, including N2O, CO2, and CH4",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "N2O",
+      "type": "CONDITION",
+      "description": "Nitrous oxide, a greenhouse gas",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "CO2",
+      "type": "CONDITION",
+      "description": "Carbon dioxide, a greenhouse gas",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "CH4",
+      "type": "CONDITION",
+      "description": "Methane, a greenhouse gas",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "GLOBAL WARMING",
+      "type": "CONDITION",
+      "description": "The long-term heating of Earth's climate system",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperatures and weather patterns",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "CLIMATE-RESILIENT STRATEGIES",
+      "type": "CONCEPT",
+      "description": "Agricultural ploys and adaptation methods to mitigate climate change risks",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "PROBIT REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to identify adaptation constraints",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "MULTINOMIAL LOGISTIC REGRESSION",
+      "type": "METHOD",
+      "description": "A statistical method used to determine the direction and magnitude of adaptation determinants",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "PROPENSITY SCORE MATCHING",
+      "type": "METHOD",
+      "description": "An approach used to estimate the causal impact of climate adaptation",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "WEST BENGAL",
+      "type": "LOCATION",
+      "description": "A state in subtropical India",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "HOOGHLY DISTRICT",
+      "type": "LOCATION",
+      "description": "A district in West Bengal, India",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "EDUCATION LEVEL",
+      "type": "CONCEPT",
+      "description": "The level of formal schooling of the farmers",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "COOPERATIVE MEMBERSHIP",
+      "type": "CONCEPT",
+      "description": "Participation in agricultural cooperatives",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "ACCESS TO EXTENSION SERVICES",
+      "type": "CONCEPT",
+      "description": "Availability of agricultural advisory services",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "INSTITUTIONAL CREDIT ADOPTION",
+      "type": "CONCEPT",
+      "description": "The use of formal credit systems for farming",
+      "source_id": "paper_12412"
+    },
+    {
+      "name": "EDGAR DATA",
+      "type": "CONCEPT",
+      "description": "Dataset used to analyze greenhouse gas emissions",
+      "source_id": "paper_12412"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PADDY",
+      "target": "WEST BENGAL",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "PADDY",
+      "target": "INDIA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "GREENHOUSE GASES",
+      "target": "GLOBAL WARMING",
+      "description": "contributes to",
+      "weight": "10",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "N2O",
+      "target": "GREENHOUSE GASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "CO2",
+      "target": "GREENHOUSE GASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "CH4",
+      "target": "GREENHOUSE GASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "GLOBAL WARMING",
+      "target": "CLIMATE CHANGE",
+      "description": "drives",
+      "weight": "10",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "PADDY",
+      "description": "poses risk to production of",
+      "weight": "8",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "CLIMATE-RESILIENT STRATEGIES",
+      "target": "PADDY YIELD",
+      "description": "positively impacts",
+      "weight": "9",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "CLIMATE-RESILIENT STRATEGIES",
+      "target": "NET INCOME",
+      "description": "positively impacts",
+      "weight": "9",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "CLIMATE-RESILIENT STRATEGIES",
+      "target": "FOOD SECURITY",
+      "description": "positively impacts",
+      "weight": "9",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "PROBIT REGRESSION ANALYSIS",
+      "target": "CLIMATE-RESILIENT STRATEGIES",
+      "description": "identifies constraints of",
+      "weight": "7",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "MULTINOMIAL LOGISTIC REGRESSION",
+      "target": "CLIMATE-RESILIENT STRATEGIES",
+      "description": "determines determinants of",
+      "weight": "7",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "PROPENSITY SCORE MATCHING",
+      "target": "PADDY YIELD",
+      "description": "estimates causal impact on",
+      "weight": "7",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "PROPENSITY SCORE MATCHING",
+      "target": "NET INCOME",
+      "description": "estimates causal impact on",
+      "weight": "7",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "PROPENSITY SCORE MATCHING",
+      "target": "FOOD SECURITY",
+      "description": "estimates causal impact on",
+      "weight": "7",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "EDUCATION LEVEL",
+      "target": "CLIMATE-RESILIENT STRATEGIES",
+      "description": "positively impacts adoption of",
+      "weight": "8",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "COOPERATIVE MEMBERSHIP",
+      "target": "CLIMATE-RESILIENT STRATEGIES",
+      "description": "positively impacts adoption of",
+      "weight": "8",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "ACCESS TO EXTENSION SERVICES",
+      "target": "CLIMATE-RESILIENT STRATEGIES",
+      "description": "positively impacts adoption of",
+      "weight": "8",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "INSTITUTIONAL CREDIT ADOPTION",
+      "target": "CLIMATE-RESILIENT STRATEGIES",
+      "description": "positively impacts adoption of",
+      "weight": "8",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "HOOGHLY DISTRICT",
+      "target": "WEST BENGAL",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "WEST BENGAL",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12412"
+    },
+    {
+      "source": "EDGAR DATA",
+      "target": "GREENHOUSE GASES",
+      "description": "used to analyze",
+      "weight": "7",
+      "source_id": "paper_12412"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "entities": [
+    {
+      "name": "DAIRY FARM",
+      "type": "CONCEPT",
+      "description": "Agricultural production unit focused on milk production",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "PRODUCTION QUOTA",
+      "type": "CONCEPT",
+      "description": "Regulatory limit on the amount of milk a farm can produce",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "BILATERAL AUCTIONS",
+      "type": "METHOD",
+      "description": "A mechanism for trading production quotas between two parties",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "SUPPLY MANAGEMENT POLICY",
+      "type": "CONCEPT",
+      "description": "Government policy to control milk production and pricing in Canada",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "CANADA",
+      "type": "LOCATION",
+      "description": "The country where the supply management policy is implemented",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "QUEBEC",
+      "type": "LOCATION",
+      "description": "A province in Canada with specific dairy farm characteristics",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "WESTERN CANADA",
+      "type": "LOCATION",
+      "description": "A region in Canada with larger-scale dairy farms",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "TIE-STALL MILKING SYSTEM",
+      "type": "METHOD",
+      "description": "A traditional milking technology used predominantly in Quebec",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "INPUT LUMPINESS",
+      "type": "CONCEPT",
+      "description": "The characteristic of inputs that cannot be adjusted in small, continuous increments",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "DAIRY FARM EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The measure of productivity and resource use on dairy farms",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "PRODUCTION EXCHANGE",
+      "type": "CONCEPT",
+      "description": "The market system where production quotas are traded",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "PRODUCTION ADJUSTMENTS",
+      "type": "CONCEPT",
+      "description": "The process of changing production levels to optimize output",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "INEFFICIENCIES",
+      "type": "TRAIT",
+      "description": "Scale, allocative, and technical failures in production optimization",
+      "source_id": "paper_10338"
+    },
+    {
+      "name": "HERD EXPANSION",
+      "type": "CONCEPT",
+      "description": "The act of increasing the number of livestock on a farm",
+      "source_id": "paper_10338"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BILATERAL AUCTIONS",
+      "target": "PRODUCTION QUOTA",
+      "description": "used to trade",
+      "weight": "8",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "SUPPLY MANAGEMENT POLICY",
+      "target": "PRODUCTION QUOTA",
+      "description": "establishes",
+      "weight": "9",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "PRODUCTION QUOTA",
+      "target": "DAIRY FARM",
+      "description": "influences size of",
+      "weight": "7",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "QUEBEC",
+      "target": "DAIRY FARM",
+      "description": "location of",
+      "weight": "10",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "WESTERN CANADA",
+      "target": "DAIRY FARM",
+      "description": "location of",
+      "weight": "10",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "TIE-STALL MILKING SYSTEM",
+      "target": "DAIRY FARM",
+      "description": "technology used by",
+      "weight": "8",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "PRODUCTION QUOTA",
+      "target": "INPUT LUMPINESS",
+      "description": "exacerbates",
+      "weight": "7",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "INPUT LUMPINESS",
+      "target": "DAIRY FARM EFFICIENCY",
+      "description": "negatively impacts",
+      "weight": "8",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "PRODUCTION EXCHANGE",
+      "target": "PRODUCTION ADJUSTMENTS",
+      "description": "constrains",
+      "weight": "9",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "PRODUCTION ADJUSTMENTS",
+      "target": "INEFFICIENCIES",
+      "description": "affects persistence of",
+      "weight": "8",
+      "source_id": "paper_10338"
+    },
+    {
+      "source": "PRODUCTION ADJUSTMENTS",
+      "target": "HERD EXPANSION",
+      "description": "affects profitability of",
+      "weight": "7",
+      "source_id": "paper_10338"
+    }
+  ]
+}

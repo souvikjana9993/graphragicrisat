@@ -1,0 +1,184 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The primary crop studied, Arachis hypogaea L.",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "TMV 2",
+      "type": "CROP",
+      "description": "A specific genotype of groundnut used in the study",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "N C AC 17090",
+      "type": "CROP",
+      "description": "A specific genotype of groundnut used in the study",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "VA 81B",
+      "type": "CROP",
+      "description": "A specific genotype of groundnut used in the study",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental temperature regimes (22/18°C, 26/22°C, 30/26°C) used to study growth",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "PHOTOPERIOD",
+      "type": "CONDITION",
+      "description": "Day length regimes (12 h long and 9 h short) used to study growth",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "PLANT GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate of overall plant growth, denoted as PLGR",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "POD GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate of growth of pods, denoted as PDGR",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "PARTITIONING OF DRY MATTER TO PODS",
+      "type": "TRAIT",
+      "description": "The distribution of dry matter to pods, denoted as Pf",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "WALK-IN GROWTH CHAMBERS",
+      "type": "METHOD",
+      "description": "Controlled environments used to simulate temperature and photoperiod",
+      "source_id": "paper_3465"
+    },
+    {
+      "name": "THERMAL TIME BASIS",
+      "type": "METHOD",
+      "description": "The basis used to estimate plant and pod growth rates",
+      "source_id": "paper_3465"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "PLANT GROWTH RATE",
+      "description": "Significantly influences",
+      "weight": "9",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "PLANT GROWTH RATE",
+      "description": "Significantly influences",
+      "weight": "9",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "POD GROWTH RATE",
+      "description": "Primarily influences",
+      "weight": "9",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "POD GROWTH RATE",
+      "description": "Influences through interaction with genotype",
+      "weight": "7",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PARTITIONING OF DRY MATTER TO PODS",
+      "description": "Significantly influences",
+      "weight": "9",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "PARTITIONING OF DRY MATTER TO PODS",
+      "description": "Significantly influences",
+      "weight": "9",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "TMV 2",
+      "target": "GROUNDNUT",
+      "description": "Is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "N C AC 17090",
+      "target": "GROUNDNUT",
+      "description": "Is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "VA 81B",
+      "target": "GROUNDNUT",
+      "description": "Is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "WALK-IN GROWTH CHAMBERS",
+      "target": "TEMPERATURE",
+      "description": "Used to simulate",
+      "weight": "10",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "WALK-IN GROWTH CHAMBERS",
+      "target": "PHOTOPERIOD",
+      "description": "Used to simulate",
+      "weight": "10",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "THERMAL TIME BASIS",
+      "target": "PLANT GROWTH RATE",
+      "description": "Used to estimate",
+      "weight": "10",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "THERMAL TIME BASIS",
+      "target": "POD GROWTH RATE",
+      "description": "Used to estimate",
+      "weight": "10",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "VA 81B",
+      "target": "POD GROWTH RATE",
+      "description": "Had a high rate at 22/18°C",
+      "weight": "8",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "N C AC 17090",
+      "target": "POD GROWTH RATE",
+      "description": "Did not initiate growth at 22/18°C",
+      "weight": "8",
+      "source_id": "paper_3465"
+    },
+    {
+      "source": "VA 81B",
+      "target": "PARTITIONING OF DRY MATTER TO PODS",
+      "description": "Relatively insensitive to photoperiod",
+      "weight": "8",
+      "source_id": "paper_3465"
+    }
+  ]
+}

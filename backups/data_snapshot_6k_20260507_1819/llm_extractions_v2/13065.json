@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "ROOT-ZONE SOIL MOISTURE",
+      "type": "CONCEPT",
+      "description": "Moisture content in the soil area where roots are present",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "THERMAL INFRARED REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Technique using thermal infrared data to estimate soil moisture",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "CROP WATER STRESS INDEX",
+      "type": "CONCEPT",
+      "description": "An index derived from thermal infrared data used as an indicator for root zone soil moisture",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "CANOPY TEMPERATURE",
+      "type": "TRAIT",
+      "description": "Temperature of the crop canopy used to calculate CWSI",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "AIR TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Ambient temperature used to calculate theoretical limits of CWSI",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "VAPOR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "Difference between the amount of moisture the air can hold and how much it currently holds",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "EMPIRICAL MODEL",
+      "type": "METHOD",
+      "description": "A model developed using remotely sensed and meteorological data",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The crop used at the Dookie experimental farm for model development",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "DOOKIE EXPERIMENTAL FARM",
+      "type": "LOCATION",
+      "description": "Site in Victoria, Australia where wheat was studied",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "VICTORIA, AUSTRALIA",
+      "type": "LOCATION",
+      "description": "Region where the Dookie experimental farm is located",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "LINEAR MODEL",
+      "type": "METHOD",
+      "description": "A specific type of model used to predict RZSM using CWSI",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "EXPONENTIAL MODEL",
+      "type": "METHOD",
+      "description": "A specific type of model used to predict RZSM using CWSI",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "CORN",
+      "type": "CROP",
+      "description": "The crop used at the OPE3 site for model validation",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "OPE3 SITE",
+      "type": "LOCATION",
+      "description": "Optimizing Production Inputs for Economic and Environmental Enhancement site in the USA",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "USA",
+      "type": "LOCATION",
+      "description": "Country where the OPE3 site is located",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "RAINFALL DISTRIBUTION",
+      "type": "CONDITION",
+      "description": "Environmental factor affecting the accuracy of RZSM estimates",
+      "source_id": "paper_13065"
+    },
+    {
+      "name": "SPARSE VEGETATION",
+      "type": "CONDITION",
+      "description": "Condition in initial growth stages causing negative CWSI values",
+      "source_id": "paper_13065"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "THERMAL INFRARED REMOTE SENSING",
+      "target": "ROOT-ZONE SOIL MOISTURE",
+      "description": "used to estimate",
+      "weight": "8",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "CROP WATER STRESS INDEX",
+      "target": "ROOT-ZONE SOIL MOISTURE",
+      "description": "used as an indicator to estimate",
+      "weight": "9",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "CANOPY TEMPERATURE",
+      "target": "CROP WATER STRESS INDEX",
+      "description": "used to calculate",
+      "weight": "10",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "AIR TEMPERATURE",
+      "target": "CROP WATER STRESS INDEX",
+      "description": "used to calculate theoretical limits",
+      "weight": "8",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "VAPOR PRESSURE DEFICIT",
+      "target": "AIR TEMPERATURE",
+      "description": "related to",
+      "weight": "7",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "EMPIRICAL MODEL",
+      "target": "ROOT-ZONE SOIL MOISTURE",
+      "description": "developed to estimate",
+      "weight": "8",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "WHEAT",
+      "target": "DOOKIE EXPERIMENTAL FARM",
+      "description": "grown at",
+      "weight": "10",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "DOOKIE EXPERIMENTAL FARM",
+      "target": "VICTORIA, AUSTRALIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "LINEAR MODEL",
+      "target": "ROOT-ZONE SOIL MOISTURE",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "EXPONENTIAL MODEL",
+      "target": "ROOT-ZONE SOIL MOISTURE",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "CORN",
+      "target": "OPE3 SITE",
+      "description": "grown at",
+      "weight": "10",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "OPE3 SITE",
+      "target": "USA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "RAINFALL DISTRIBUTION",
+      "target": "ROOT-ZONE SOIL MOISTURE",
+      "description": "affects estimates",
+      "weight": "7",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "SPARSE VEGETATION",
+      "target": "CROP WATER STRESS INDEX",
+      "description": "produces negative values",
+      "weight": "8",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "CROP WATER STRESS INDEX",
+      "target": "LINEAR MODEL",
+      "description": "used as input for",
+      "weight": "9",
+      "source_id": "paper_13065"
+    },
+    {
+      "source": "CROP WATER STRESS INDEX",
+      "target": "EXPONENTIAL MODEL",
+      "description": "used as input for",
+      "weight": "9",
+      "source_id": "paper_13065"
+    }
+  ]
+}

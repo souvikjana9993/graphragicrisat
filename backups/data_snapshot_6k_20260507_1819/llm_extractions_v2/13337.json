@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Technology used for improving the estimation of stream characteristics in regions where field data is limited",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "ENTROPY THEORY",
+      "type": "CONCEPT",
+      "description": "Theoretical framework integrated with remote sensing to address limitations in streamflow estimation",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "MODIS-LANDSAT FUSION IMAGERY",
+      "type": "METHOD",
+      "description": "Fused pixels of 30m x 1-day resolution derived from MODIS and Landsat sensors",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "SURFACE VELOCITY",
+      "type": "CONCEPT",
+      "description": "Velocity derived from fused pixels at the deepest river sections",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "ENTROPY-BASED VELOCITY MODEL",
+      "type": "METHOD",
+      "description": "Model that applies RS-derived velocity to estimate river discharge",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "RIVER DISCHARGE",
+      "type": "CONCEPT",
+      "description": "The volume of water moving through a river channel per unit of time",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "STAGE-AREA RELATIONSHIP",
+      "type": "CONCEPT",
+      "description": "Established relationship at gauging sites used to estimate river discharge",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "ENHANCED SPATIOTEMPORAL ADAPTIVE REFLECTANCE FUSION MODEL",
+      "type": "METHOD",
+      "description": "Model used for the spectral fusion of coarse resolution MODIS and fine resolution Landsat pixels",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "BRAHMANI RIVER",
+      "type": "LOCATION",
+      "description": "The river system where the entropy-RS integrated framework was field-tested",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "JENAPUR",
+      "type": "LOCATION",
+      "description": "A gauging station on the Brahmani River",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "GOMLAI",
+      "type": "LOCATION",
+      "description": "A gauging station on the Brahmani River",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "PANPOSH",
+      "type": "LOCATION",
+      "description": "A gauging station on the Brahmani River",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "SCANTY DATA AVAILABILITY",
+      "type": "CONDITION",
+      "description": "Condition of limited field data at gauging stations",
+      "source_id": "paper_13337"
+    },
+    {
+      "name": "NASH-SUTCLIFFE MODEL EFFICIENCY",
+      "type": "METHOD",
+      "description": "Metric used to evaluate the performance of the streamflow estimation framework",
+      "source_id": "paper_13337"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REMOTE SENSING",
+      "target": "RIVER DISCHARGE",
+      "description": "used to estimate",
+      "weight": "7",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "ENTROPY THEORY",
+      "target": "ENTROPY-BASED VELOCITY MODEL",
+      "description": "provides theoretical basis for",
+      "weight": "9",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "MODIS-LANDSAT FUSION IMAGERY",
+      "target": "SURFACE VELOCITY",
+      "description": "used to derive",
+      "weight": "8",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "SURFACE VELOCITY",
+      "target": "ENTROPY-BASED VELOCITY MODEL",
+      "description": "serves as input for",
+      "weight": "9",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "ENTROPY-BASED VELOCITY MODEL",
+      "target": "RIVER DISCHARGE",
+      "description": "used to estimate",
+      "weight": "10",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "STAGE-AREA RELATIONSHIP",
+      "target": "RIVER DISCHARGE",
+      "description": "used to estimate",
+      "weight": "8",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "ENHANCED SPATIOTEMPORAL ADAPTIVE REFLECTANCE FUSION MODEL",
+      "target": "MODIS-LANDSAT FUSION IMAGERY",
+      "description": "used to create",
+      "weight": "9",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "BRAHMANI RIVER",
+      "target": "JENAPUR",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "BRAHMANI RIVER",
+      "target": "GOMLAI",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "BRAHMANI RIVER",
+      "target": "PANPOSH",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "ENTROPY-BASED VELOCITY MODEL",
+      "target": "BRAHMANI RIVER",
+      "description": "field-tested in",
+      "weight": "8",
+      "source_id": "paper_13337"
+    },
+    {
+      "source": "SCANTY DATA AVAILABILITY",
+      "target": "BRAHMANI RIVER",
+      "description": "characteristic of",
+      "weight": "7",
+      "source_id": "paper_13337"
+    }
+  ]
+}

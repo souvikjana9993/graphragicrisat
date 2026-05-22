@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop (Arachis hypogaea L.) being evaluated for resistance to early leafspot",
+      "source_id": "paper_3102"
+    },
+    {
+      "name": "CERCOSPORA ARACHIDICOLA",
+      "type": "ORGANISM",
+      "description": "The foliar pathogen that causes early leafspot in peanuts",
+      "source_id": "paper_3102"
+    },
+    {
+      "name": "EARLY LEAFSPOT",
+      "type": "CONDITION",
+      "description": "A disease caused by the fungus Cercospora arachidicola that limits peanut production",
+      "source_id": "paper_3102"
+    },
+    {
+      "name": "FIELD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of peanut genotypes to resist early leafspot under field conditions",
+      "source_id": "paper_3102"
+    },
+    {
+      "name": "DETACHED LEAF TECHNIQUE",
+      "type": "METHOD",
+      "description": "A laboratory method used to evaluate the components of resistance in peanut genotypes",
+      "source_id": "paper_3102"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The location of the ICRISAT Center from which the pathogen isolate was obtained",
+      "source_id": "paper_3102"
+    },
+    {
+      "name": "INCUBATION PERIOD",
+      "type": "TRAIT",
+      "description": "The time between infection and the appearance of symptoms, used as a measure of resistance",
+      "source_id": "paper_3102"
+    },
+    {
+      "name": "SPORULATION",
+      "type": "TRAIT",
+      "description": "The production of spores by the pathogen, used as a measure of resistance",
+      "source_id": "paper_3102"
+    },
+    {
+      "name": "LESION DIAMETER",
+      "type": "TRAIT",
+      "description": "The size of the disease spots on the leaf, used as a measure of resistance",
+      "source_id": "paper_3102"
+    },
+    {
+      "name": "INFECTION FREQUENCY",
+      "type": "TRAIT",
+      "description": "The rate at which the pathogen successfully infects the host tissue, used as a measure of resistance",
+      "source_id": "paper_3102"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CERCOSPORA ARACHIDICOLA",
+      "target": "EARLY LEAFSPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "EARLY LEAFSPOT",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "PEANUT",
+      "target": "DETACHED LEAF TECHNIQUE",
+      "description": "evaluated by",
+      "weight": "8",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "DETACHED LEAF TECHNIQUE",
+      "target": "INCUBATION PERIOD",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "DETACHED LEAF TECHNIQUE",
+      "target": "SPORULATION",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "DETACHED LEAF TECHNIQUE",
+      "target": "LESION DIAMETER",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "DETACHED LEAF TECHNIQUE",
+      "target": "INFECTION FREQUENCY",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "FIELD RESISTANCE",
+      "target": "EARLY LEAFSPOT",
+      "description": "resistance to",
+      "weight": "10",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "CERCOSPORA ARACHIDICOLA",
+      "target": "INDIA",
+      "description": "isolated from",
+      "weight": "7",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "INCUBATION PERIOD",
+      "target": "FIELD RESISTANCE",
+      "description": "component of",
+      "weight": "8",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "SPORULATION",
+      "target": "FIELD RESISTANCE",
+      "description": "component of",
+      "weight": "8",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "LESION DIAMETER",
+      "target": "FIELD RESISTANCE",
+      "description": "component of",
+      "weight": "8",
+      "source_id": "paper_3102"
+    },
+    {
+      "source": "INFECTION FREQUENCY",
+      "target": "FIELD RESISTANCE",
+      "description": "component of",
+      "weight": "8",
+      "source_id": "paper_3102"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop studied for charcoal rot incidence",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "CHARCOAL ROT",
+      "type": "ORGANISM",
+      "description": "A fungal disease affecting sorghum cultivars",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "CONDITION",
+      "description": "The date at which seeds are planted, affecting disease development",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "PLANT DENSITY",
+      "type": "CONDITION",
+      "description": "The number of plants per unit area, affecting disease quantification",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "RECEDING SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "Environmental condition under which sorghum was grown",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "NATURAL INFECTION CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions allowing for natural disease occurrence",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "LODGING",
+      "type": "TRAIT",
+      "description": "A symptom of charcoal rot used as a measure of infection",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "E 36-1",
+      "type": "CROP",
+      "description": "A sorghum cultivar from Ethiopia resistant to charcoal rot",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The origin of the resistant sorghum cultivar E 36-1",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "SOFT STALK",
+      "type": "TRAIT",
+      "description": "A trait significantly correlated with lodging",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "NUMBER OF NODES CROSSED",
+      "type": "TRAIT",
+      "description": "A trait significantly correlated with lodging",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "ROOT DAMAGE",
+      "type": "TRAIT",
+      "description": "A trait significantly correlated with lodging",
+      "source_id": "paper_3113"
+    },
+    {
+      "name": "PLANT SENESCENCE",
+      "type": "TRAIT",
+      "description": "A trait significantly correlated with lodging",
+      "source_id": "paper_3113"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOWING DATE",
+      "target": "CHARCOAL ROT",
+      "description": "affects the development of",
+      "weight": "8",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "PLANT DENSITY",
+      "target": "CHARCOAL ROT",
+      "description": "affects the development of",
+      "weight": "8",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CHARCOAL ROT",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "RECEDING SOIL MOISTURE",
+      "target": "CHARCOAL ROT",
+      "description": "provides conditions for",
+      "weight": "7",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "NATURAL INFECTION CONDITIONS",
+      "target": "CHARCOAL ROT",
+      "description": "provides conditions for",
+      "weight": "7",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "INDIA",
+      "target": "SORGHUM",
+      "description": "location where cultivars were grown",
+      "weight": "9",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "LODGING",
+      "target": "CHARCOAL ROT",
+      "description": "used to measure infection of",
+      "weight": "9",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "E 36-1",
+      "target": "SORGHUM",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "E 36-1",
+      "target": "CHARCOAL ROT",
+      "description": "is resistant to",
+      "weight": "10",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "ETHIOPIA",
+      "target": "E 36-1",
+      "description": "is the origin of",
+      "weight": "9",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "LODGING",
+      "target": "SOFT STALK",
+      "description": "is significantly correlated with",
+      "weight": "8",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "LODGING",
+      "target": "NUMBER OF NODES CROSSED",
+      "description": "is significantly correlated with",
+      "weight": "8",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "LODGING",
+      "target": "ROOT DAMAGE",
+      "description": "is significantly correlated with",
+      "weight": "8",
+      "source_id": "paper_3113"
+    },
+    {
+      "source": "LODGING",
+      "target": "PLANT SENESCENCE",
+      "description": "is significantly correlated with",
+      "weight": "8",
+      "source_id": "paper_3113"
+    }
+  ]
+}

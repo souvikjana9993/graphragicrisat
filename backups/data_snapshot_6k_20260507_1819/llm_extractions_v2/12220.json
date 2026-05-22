@@ -1,0 +1,259 @@
+{
+  "entities": [
+    {
+      "name": "PROTEOMES",
+      "type": "CONCEPT",
+      "description": "The entire set of proteins expressed by a genome, cells, tissues, or an organism at a certain time under certain conditions",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "BIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by living organisms such as pests, pathogens, and weeds",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by non-living factors such as drought, salinity, and temperature",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "PROTEIN ABUNDANCES",
+      "type": "TRAIT",
+      "description": "The quantity of proteins present in a cell or tissue",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "CELLULAR LOCALIZATION",
+      "type": "TRAIT",
+      "description": "The specific location of a protein within a cell",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "POSTTRANSCRIPTIONAL MODIFICATIONS",
+      "type": "TRAIT",
+      "description": "Changes made to RNA after transcription",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "POSTTRANSLATIONAL MODIFICATIONS",
+      "type": "TRAIT",
+      "description": "Chemical modifications of a protein after its translation",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "PROTEIN INTERACTIONS",
+      "type": "TRAIT",
+      "description": "Physical contacts established between two or more protein molecules",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "PROTEIN BIOLOGICAL FUNCTIONS",
+      "type": "TRAIT",
+      "description": "The specific biological roles and activities performed by proteins",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of agricultural production harvested per unit area",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "GENE IDENTIFICATION",
+      "type": "METHOD",
+      "description": "The process of locating and characterizing specific genes within a genome",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "GENOMICS",
+      "type": "METHOD",
+      "description": "The study of the complete set of DNA within an organism",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "PROTEOMICS",
+      "type": "METHOD",
+      "description": "The large-scale study of proteins, particularly their structures and functions",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "OMIC BRANCHES",
+      "type": "METHOD",
+      "description": "Various high-throughput biological technologies including genomics, proteomics, and metabolomics",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "BIOTECHNOLOGY",
+      "type": "METHOD",
+      "description": "The use of living systems and organisms to develop or make products",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "CROP IMPROVEMENT PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Efforts to enhance the genetic makeup of crops for better yield and stress tolerance",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "OMIC DATABASES",
+      "type": "METHOD",
+      "description": "Digital repositories storing large-scale biological data from omic technologies",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "PROTEOMIC PLATFORMS",
+      "type": "METHOD",
+      "description": "Technological systems used to analyze the proteome",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "PLANT BIOTECHNOLOGY APPROACHES",
+      "type": "METHOD",
+      "description": "Techniques applied to plants to improve their characteristics using biotechnology",
+      "source_id": "paper_12220"
+    },
+    {
+      "name": "PLANTS",
+      "type": "ORGANISM",
+      "description": "Multicellular eukaryotes of the kingdom Plantae",
+      "source_id": "paper_12220"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOTIC STRESS",
+      "target": "PROTEOMES",
+      "description": "Affects the composition and function of",
+      "weight": "10",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "PROTEOMES",
+      "description": "Affects the composition and function of",
+      "weight": "10",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "BIOTIC STRESS",
+      "target": "CROP YIELD",
+      "description": "Causes reduction in",
+      "weight": "8",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "CROP YIELD",
+      "description": "Causes reduction in",
+      "weight": "8",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMICS",
+      "target": "GENE IDENTIFICATION",
+      "description": "Used as a tool for",
+      "weight": "9",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "GENOMICS",
+      "target": "GENE IDENTIFICATION",
+      "description": "Used as a tool for",
+      "weight": "9",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "OMIC BRANCHES",
+      "target": "GENE IDENTIFICATION",
+      "description": "Used as a tool for",
+      "weight": "8",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "BIOTECHNOLOGY",
+      "target": "GENE IDENTIFICATION",
+      "description": "Used as a tool for",
+      "weight": "8",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "GENE IDENTIFICATION",
+      "target": "CROP IMPROVEMENT PROGRAMS",
+      "description": "Used to advance",
+      "weight": "9",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMICS",
+      "target": "BIOTIC STRESS",
+      "description": "Used to analyze plant responses to",
+      "weight": "10",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMICS",
+      "target": "ABIOTIC STRESS",
+      "description": "Used to analyze plant responses to",
+      "weight": "10",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMIC PLATFORMS",
+      "target": "CROP IMPROVEMENT PROGRAMS",
+      "description": "Provide strategies to encourage",
+      "weight": "8",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PLANT BIOTECHNOLOGY APPROACHES",
+      "target": "CROP IMPROVEMENT PROGRAMS",
+      "description": "Provide strategies to encourage",
+      "weight": "8",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMES",
+      "target": "PROTEIN ABUNDANCES",
+      "description": "Includes changes in",
+      "weight": "9",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMES",
+      "target": "CELLULAR LOCALIZATION",
+      "description": "Includes changes in",
+      "weight": "9",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMES",
+      "target": "POSTTRANSCRIPTIONAL MODIFICATIONS",
+      "description": "Includes changes in",
+      "weight": "9",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMES",
+      "target": "POSTTRANSLATIONAL MODIFICATIONS",
+      "description": "Includes changes in",
+      "weight": "9",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMES",
+      "target": "PROTEIN INTERACTIONS",
+      "description": "Includes changes in",
+      "weight": "9",
+      "source_id": "paper_12220"
+    },
+    {
+      "source": "PROTEOMES",
+      "target": "PROTEIN BIOLOGICAL FUNCTIONS",
+      "description": "Includes changes in",
+      "weight": "9",
+      "source_id": "paper_12220"
+    }
+  ]
+}

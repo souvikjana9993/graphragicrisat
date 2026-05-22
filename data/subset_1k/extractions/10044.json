@@ -1,0 +1,272 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The cereal crop being studied for yield forecasting",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the wheat crop measured for forecasting",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "UTTAR PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the study was conducted",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "LUCKNOW",
+      "type": "LOCATION",
+      "description": "One of the five districts in Uttar Pradesh used in the study",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "KANPUR",
+      "type": "LOCATION",
+      "description": "One of the five districts in Uttar Pradesh used in the study",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "BANDA",
+      "type": "LOCATION",
+      "description": "One of the five districts in Uttar Pradesh used in the study",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "JHANSI",
+      "type": "LOCATION",
+      "description": "One of the five districts in Uttar Pradesh used in the study",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "FAIZABAD",
+      "type": "LOCATION",
+      "description": "One of the five districts in Uttar Pradesh used in the study",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "MAXIMUM TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A weather variable analyzed for its relation to wheat yield",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "A weather variable analyzed for its relation to wheat yield",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "MINIMUM TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A weather variable analyzed for its relation to wheat yield",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "RELATIVE HUMIDITY",
+      "type": "CONDITION",
+      "description": "A weather variable analyzed for its relation to wheat yield",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "CORRELATION",
+      "type": "METHOD",
+      "description": "A statistical tool used to determine the relationship between weather variables and yield",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "REGRESSION",
+      "type": "METHOD",
+      "description": "A statistical tool used to determine the relationship between weather variables and yield",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "DETRENDING",
+      "type": "METHOD",
+      "description": "The process of removing trends from yield data to obtain parameter estimates",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "ARIMA MODEL",
+      "type": "METHOD",
+      "description": "A time series model used to forecast the detrended yield of the crop",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "TRADITIONAL APPROACHES OF FORECASTING",
+      "type": "METHOD",
+      "description": "Existing forecasting methods used as a baseline for comparison",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "SUB-HUMID CLIMATIC ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "The climatic condition of the study area in Uttar Pradesh",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "GOODNESS OF FIT",
+      "type": "CONCEPT",
+      "description": "A criterion used to evaluate the performance and accuracy of the forecasting models",
+      "source_id": "paper_10044"
+    },
+    {
+      "name": "PRE-HARVEST FORECASTING",
+      "type": "CONCEPT",
+      "description": "The process of predicting crop yield before the actual harvest",
+      "source_id": "paper_10044"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WHEAT",
+      "target": "YIELD",
+      "description": "yield is the primary trait measured for wheat",
+      "weight": "10",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "WHEAT",
+      "target": "UTTAR PRADESH",
+      "description": "wheat is grown in the districts of Uttar Pradesh",
+      "weight": "9",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "UTTAR PRADESH",
+      "target": "INDIA",
+      "description": "Uttar Pradesh is a state located in India",
+      "weight": "10",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "LUCKNOW",
+      "target": "UTTAR PRADESH",
+      "description": "Lucknow is a district within Uttar Pradesh",
+      "weight": "10",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "KANPUR",
+      "target": "UTTAR PRADESH",
+      "description": "Kanpur is a district within Uttar Pradesh",
+      "weight": "10",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "BANDA",
+      "target": "UTTAR PRADESH",
+      "description": "Banda is a district within Uttar Pradesh",
+      "weight": "10",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "JHANSI",
+      "target": "UTTAR PRADESH",
+      "description": "Jhansi is a district within Uttar Pradesh",
+      "weight": "10",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "FAIZABAD",
+      "target": "UTTAR PRADESH",
+      "description": "Faizabad is a district within Uttar Pradesh",
+      "weight": "10",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "MAXIMUM TEMPERATURE",
+      "target": "YIELD",
+      "description": "maximum temperature is a weather variable that affects yield",
+      "weight": "7",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "YIELD",
+      "description": "rainfall is a weather variable that affects yield",
+      "weight": "7",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "MINIMUM TEMPERATURE",
+      "target": "YIELD",
+      "description": "minimum temperature is a weather variable that affects yield",
+      "weight": "7",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "RELATIVE HUMIDITY",
+      "target": "YIELD",
+      "description": "relative humidity is a weather variable that affects yield",
+      "weight": "7",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "CORRELATION",
+      "target": "YIELD",
+      "description": "correlation is used to analyze the relationship between weather and yield",
+      "weight": "8",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "REGRESSION",
+      "target": "YIELD",
+      "description": "regression is used to analyze the relationship between weather and yield",
+      "weight": "8",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "DETRENDING",
+      "target": "YIELD",
+      "description": "detrending is applied to yield data to prepare it for forecasting",
+      "weight": "9",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "ARIMA MODEL",
+      "target": "YIELD",
+      "description": "ARIMA model is used to forecast the detrended yield",
+      "weight": "10",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "ARIMA MODEL",
+      "target": "TRADITIONAL APPROACHES OF FORECASTING",
+      "description": "ARIMA model is compared against traditional forecasting approaches",
+      "weight": "8",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "GOODNESS OF FIT",
+      "target": "ARIMA MODEL",
+      "description": "goodness of fit is used to evaluate the performance of the ARIMA model",
+      "weight": "9",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "SUB-HUMID CLIMATIC ENVIRONMENT",
+      "target": "UTTAR PRADESH",
+      "description": "the study area in Uttar Pradesh is characterized by a sub-humid climatic environment",
+      "weight": "8",
+      "source_id": "paper_10044"
+    },
+    {
+      "source": "PRE-HARVEST FORECASTING",
+      "target": "YIELD",
+      "description": "pre-harvest forecasting is the objective for predicting crop yield",
+      "weight": "9",
+      "source_id": "paper_10044"
+    }
+  ]
+}

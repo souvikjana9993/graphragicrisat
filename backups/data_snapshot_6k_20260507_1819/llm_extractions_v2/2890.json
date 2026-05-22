@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop studied in the research",
+      "source_id": "paper_2890"
+    },
+    {
+      "name": "KALIKA",
+      "type": "CROP",
+      "description": "The specific cultivar of chickpea used in the field study",
+      "source_id": "paper_2890"
+    },
+    {
+      "name": "BORON DEFICIENCY",
+      "type": "CONDITION",
+      "description": "The state of lacking sufficient boron in the soil or plant",
+      "source_id": "paper_2890"
+    },
+    {
+      "name": "FLOWER ABORTION",
+      "type": "TRAIT",
+      "description": "The premature shedding or failure of flowers to develop",
+      "source_id": "paper_2890"
+    },
+    {
+      "name": "POD SET FAILURE",
+      "type": "TRAIT",
+      "description": "The failure of the plant to successfully develop pods",
+      "source_id": "paper_2890"
+    },
+    {
+      "name": "NEPAL",
+      "type": "LOCATION",
+      "description": "The country where the field study was conducted",
+      "source_id": "paper_2890"
+    },
+    {
+      "name": "BORON",
+      "type": "CONCEPT",
+      "description": "A trace element essential for plant growth",
+      "source_id": "paper_2890"
+    },
+    {
+      "name": "FERTILIZER APPLICATION",
+      "type": "METHOD",
+      "description": "The administration of nutrients to the soil to observe effects on crop growth",
+      "source_id": "paper_2890"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BORON DEFICIENCY",
+      "target": "FLOWER ABORTION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2890"
+    },
+    {
+      "source": "BORON DEFICIENCY",
+      "target": "POD SET FAILURE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2890"
+    },
+    {
+      "source": "KALIKA",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2890"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "NEPAL",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_2890"
+    },
+    {
+      "source": "BORON",
+      "target": "BORON DEFICIENCY",
+      "description": "lack of this element causes",
+      "weight": "10",
+      "source_id": "paper_2890"
+    },
+    {
+      "source": "FERTILIZER APPLICATION",
+      "target": "BORON DEFICIENCY",
+      "description": "used to mitigate",
+      "weight": "9",
+      "source_id": "paper_2890"
+    }
+  ]
+}

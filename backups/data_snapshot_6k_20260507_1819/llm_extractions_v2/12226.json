@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Dry-season sorghum cultivars evaluated for photoperiod sensitivity and yield in Southern Chad",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "CONDITION",
+      "description": "The date of planting, categorized as early or late, affecting plant traits",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "POTENTIAL YIELD",
+      "type": "TRAIT",
+      "description": "The maximum yield achievable by the sorghum cultivars",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "FLOWERING TIME",
+      "type": "TRAIT",
+      "description": "The time taken for the sorghum plant to reach the flowering stage",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "PHOTOPERIOD SENSITIVITY",
+      "type": "TRAIT",
+      "description": "The degree to which the plant's development is influenced by day length",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "SOUTHERN CHAD",
+      "type": "LOCATION",
+      "description": "The region in Chad where the sorghum ecotypes were collected and studied",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "YOUÉ, CHAD",
+      "type": "LOCATION",
+      "description": "The location of the Agricultural Research Extension Farm where trials were conducted",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "ALPHA-LATTICE DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to replicate the trials",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "DURATION OF VEGETATIVE PHASE",
+      "type": "TRAIT",
+      "description": "The length of the plant's growth period before flowering",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "STAYGREEN",
+      "type": "TRAIT",
+      "description": "The trait of maintaining green leaf area during the ripening stage",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "CUMULATIVE GROWING DEGREE UNIT",
+      "type": "CONCEPT",
+      "description": "A measure of heat accumulation used to determine flowering requirements",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "DAYLENGTH",
+      "type": "CONDITION",
+      "description": "The duration of light per day, which influences flowering time",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "NIGHT TEMPERATURES",
+      "type": "CONDITION",
+      "description": "The temperature during the night period",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "RESIDUAL MOISTURE",
+      "type": "CONDITION",
+      "description": "Soil moisture remaining from previous seasons used for dry-season cultivation",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "WEST AND CENTRAL AFRICA",
+      "type": "LOCATION",
+      "description": "The broader geographical area where dry-season sorghum is grown",
+      "source_id": "paper_12226"
+    },
+    {
+      "name": "YEAR",
+      "type": "CONDITION",
+      "description": "The specific years 2013 and 2014 during which the trials were conducted",
+      "source_id": "paper_12226"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOWING DATE",
+      "target": "SORGHUM",
+      "description": "Affects the growth and yield of dry-season sorghum",
+      "weight": "9",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "POTENTIAL YIELD",
+      "description": "Delaying sowing significantly decreases potential yield",
+      "weight": "10",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "FLOWERING TIME",
+      "description": "Affects the timing of flowering",
+      "weight": "8",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "DURATION OF VEGETATIVE PHASE",
+      "description": "Delaying sowing decreases the duration of the vegetative phase",
+      "weight": "9",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "PHOTOPERIOD SENSITIVITY",
+      "description": "Used to determine the photoperiod sensitivity of cultivars",
+      "weight": "8",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "DAYLENGTH",
+      "target": "FLOWERING TIME",
+      "description": "Decrease in daylength affects flowering time",
+      "weight": "9",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "NIGHT TEMPERATURES",
+      "target": "FLOWERING TIME",
+      "description": "Does not significantly affect flowering time",
+      "weight": "2",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "CUMULATIVE GROWING DEGREE UNIT",
+      "target": "FLOWERING TIME",
+      "description": "Late sowing requires lower cumulative growing degree units to flower",
+      "weight": "8",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SOUTHERN CHAD",
+      "description": "Cultivars were collected and evaluated in this region",
+      "weight": "10",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "YOUÉ, CHAD",
+      "description": "Trials were conducted at the research farm in this location",
+      "weight": "10",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "ALPHA-LATTICE DESIGN",
+      "target": "SORGHUM",
+      "description": "Experimental design used to evaluate sorghum ecotypes",
+      "weight": "7",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "YEAR",
+      "target": "POTENTIAL YIELD",
+      "description": "Year significantly affected the assessed traits including yield",
+      "weight": "7",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "STAYGREEN",
+      "description": "Sowing date did not significantly decrease staygreen",
+      "weight": "2",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "RESIDUAL MOISTURE",
+      "target": "SORGHUM",
+      "description": "Dry-season sorghum is cultivated on residual moisture",
+      "weight": "8",
+      "source_id": "paper_12226"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "WEST AND CENTRAL AFRICA",
+      "description": "Cultivation occurs in this broader region",
+      "weight": "7",
+      "source_id": "paper_12226"
+    }
+  ]
+}

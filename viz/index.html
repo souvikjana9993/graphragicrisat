@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICRISAT GraphRAG — Knowledge Graph Explorer</title>
+    <meta name="description" content="Interactive knowledge graph visualization of ICRISAT agricultural research papers">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+    <!-- ── Top Bar ── -->
+    <header id="top-bar">
+        <div class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/>
+                <circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/>
+                <line x1="6" y1="7" x2="10" y2="10"/><line x1="14" y1="10" x2="18" y2="7"/>
+                <line x1="6" y1="17" x2="10" y2="14"/><line x1="14" y1="14" x2="18" y2="17"/>
+            </svg>
+            <span>ICRISAT GraphRAG</span>
+        </div>
+        <div id="search-container">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" id="search-input" placeholder="Search papers, authors, keywords, crops..." autocomplete="off">
+            <div id="search-results" class="hidden"></div>
+        </div>
+        <div id="stats-bar">
+            <span id="stat-nodes">— nodes</span>
+            <span class="stat-divider">•</span>
+            <span id="stat-edges">— edges</span>
+        </div>
+    </header>
+
+    <!-- ── Main Content ── -->
+    <main>
+        <!-- Left Panel: Filters & Legend -->
+        <aside id="left-panel">
+            <section class="panel-section">
+                <h3>Node Types</h3>
+                <div id="type-filters"></div>
+            </section>
+            <section class="panel-section">
+                <h3>Edge Types</h3>
+                <div id="edge-filters"></div>
+            </section>
+            <section class="panel-section">
+                <h3>Controls</h3>
+                <div class="control-row">
+                    <label for="hop-slider">Neighborhood hops</label>
+                    <input type="range" id="hop-slider" min="1" max="3" value="1">
+                    <span id="hop-value">1</span>
+                </div>
+                <div class="control-row">
+                    <label for="link-strength">Link strength</label>
+                    <input type="range" id="link-strength" min="1" max="100" value="30">
+                </div>
+                <div class="control-row">
+                    <label for="charge-strength">Repulsion</label>
+                    <input type="range" id="charge-strength" min="10" max="500" value="150">
+                </div>
+                <button id="btn-reset-view" class="btn-secondary">Reset View</button>
+                <button id="btn-toggle-labels" class="btn-secondary">Toggle Labels</button>
+            </section>
+        </aside>
+
+        <!-- Center: Graph Canvas -->
+        <div id="graph-container">
+            <div id="graph-canvas"></div>
+            <div id="loading-overlay">
+                <div class="spinner"></div>
+                <p>Loading knowledge graph...</p>
+            </div>
+            <div id="tooltip" class="hidden"></div>
+        </div>
+
+        <!-- Right Panel: Details -->
+        <aside id="right-panel" class="hidden">
+            <div class="panel-header">
+                <h3 id="detail-title">Details</h3>
+                <button id="btn-close-detail" class="btn-icon" title="Close">✕</button>
+            </div>
+            <div id="detail-content"></div>
+        </aside>
+    </main>
+
+    <!-- ── Query Modal ── -->
+    <div id="query-modal" class="hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🔍 Ask the Knowledge Graph</h2>
+                <button id="btn-close-modal" class="btn-icon">✕</button>
+            </div>
+            <div class="query-modes" style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <label class="mode-btn active" style="flex: 1; text-align: center; padding: 10px; background: #1e293b; border-radius: 6px; cursor: pointer; border: 1px solid #334155; font-size: 12px; color: #94a3b8; transition: all 0.2s;">
+                    <input type="radio" name="query-mode" value="naive" checked style="display: none;">
+                    <span>Naive RAG</span>
+                </label>
+                <label class="mode-btn" style="flex: 1; text-align: center; padding: 10px; background: #1e293b; border-radius: 6px; cursor: pointer; border: 1px solid #334155; font-size: 12px; color: #94a3b8; transition: all 0.2s;">
+                    <input type="radio" name="query-mode" value="local" style="display: none;">
+                    <span>Local Graph</span>
+                </label>
+                <label class="mode-btn" style="flex: 1; text-align: center; padding: 10px; background: #1e293b; border-radius: 6px; cursor: pointer; border: 1px solid #334155; font-size: 12px; color: #94a3b8; transition: all 0.2s;">
+                    <input type="radio" name="query-mode" value="global" style="display: none;">
+                    <span>Global Search</span>
+                </label>
+                <label class="mode-btn" style="flex: 1; text-align: center; padding: 10px; background: #1e293b; border-radius: 6px; cursor: pointer; border: 1px solid #334155; font-size: 12px; color: #94a3b8; transition: all 0.2s;">
+                    <input type="radio" name="query-mode" value="drift" style="display: none;">
+                    <span>Drift Search</span>
+                </label>
+            </div>
+            <div id="hops-container" style="margin-bottom: 20px; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 6px; border: 1px solid rgba(255,255,255,0.05);">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                    <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Search Depth (Hops)</span>
+                    <span id="hops-value" style="font-size: 11px; color: #6366f1; font-weight: 700;">2</span>
+                </div>
+                <input type="range" id="query-hops" min="1" max="3" value="2" step="1" style="width: 100%; accent-color: #6366f1; cursor: pointer;">
+                <div style="display: flex; justify-content: space-between; margin-top: 4px; font-size: 9px; color: #64748b;">
+                    <span>Direct (1)</span>
+                    <span>Multi-Hop (2)</span>
+                    <span>Deep Discovery (3)</span>
+                </div>
+            </div>
+            <div class="query-input-row">
+                <input type="text" id="query-input" placeholder="e.g., What papers study drought tolerance in groundnut?">
+                <button id="btn-query" class="btn-primary">Ask</button>
+            </div>
+            <div id="query-results"></div>
+        </div>
+    </div>
+
+    <!-- FAB: Query button -->
+    <button id="fab-query" title="Ask the Knowledge Graph">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+        </svg>
+    </button>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/force-graph"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>

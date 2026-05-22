@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop Pennisetum americanum being screened for resistance to downy mildew",
+      "source_id": "paper_3803"
+    },
+    {
+      "name": "DOWNY MILDEW RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pearl millet to resist infection by Sclerospora graminicola",
+      "source_id": "paper_3803"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew in pearl millet",
+      "source_id": "paper_3803"
+    },
+    {
+      "name": "FIELD SCREENING TECHNIQUE",
+      "type": "METHOD",
+      "description": "A large-scale field technique based on preplanted infector rows used to screen for resistance",
+      "source_id": "paper_3803"
+    },
+    {
+      "name": "DRY WINTER SEASON",
+      "type": "CONDITION",
+      "description": "A specific seasonal condition during which the screening technique remains effective",
+      "source_id": "paper_3803"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "An environmental factor that the field screening technique is independent of",
+      "source_id": "paper_3803"
+    },
+    {
+      "name": "SPORANGIAL INOCULUM",
+      "type": "CONCEPT",
+      "description": "The infectious material provided by preplanted infector rows",
+      "source_id": "paper_3803"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FIELD SCREENING TECHNIQUE",
+      "target": "PEARL MILLET",
+      "description": "used to screen",
+      "weight": "10",
+      "source_id": "paper_3803"
+    },
+    {
+      "source": "FIELD SCREENING TECHNIQUE",
+      "target": "DOWNY MILDEW RESISTANCE",
+      "description": "used to identify and improve",
+      "weight": "10",
+      "source_id": "paper_3803"
+    },
+    {
+      "source": "FIELD SCREENING TECHNIQUE",
+      "target": "SCLEROSPORA GRAMINICOLA",
+      "description": "utilizes for screening",
+      "weight": "9",
+      "source_id": "paper_3803"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "PEARL MILLET",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3803"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW RESISTANCE",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_3803"
+    },
+    {
+      "source": "FIELD SCREENING TECHNIQUE",
+      "target": "SPORANGIAL INOCULUM",
+      "description": "relies on the provision of",
+      "weight": "9",
+      "source_id": "paper_3803"
+    },
+    {
+      "source": "FIELD SCREENING TECHNIQUE",
+      "target": "DRY WINTER SEASON",
+      "description": "is effective during",
+      "weight": "7",
+      "source_id": "paper_3803"
+    },
+    {
+      "source": "FIELD SCREENING TECHNIQUE",
+      "target": "RAINFALL",
+      "description": "is independent of",
+      "weight": "8",
+      "source_id": "paper_3803"
+    }
+  ]
+}

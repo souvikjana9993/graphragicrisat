@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Host crop affected by anthracnose disease",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "SORGHUM ANTHRACNOSE",
+      "type": "CONDITION",
+      "description": "A destructive disease caused by Colletotrichum graminicola resulting in grain yield loss",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "COLLETRICHUM GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "Fungal pathogen responsible for causing sorghum anthracnose",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural output of sorghum affected by anthracnose",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "CONCEPT",
+      "description": "The ability of the host plant to resist the pathogen, used as a management strategy",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variability in the genetic make-up of the pathogen population",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "RFLP",
+      "type": "METHOD",
+      "description": "Restriction Fragment Length Polymorphism, a reliable but cumbersome molecular tool for studying genetic variability",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "RAPD",
+      "type": "METHOD",
+      "description": "Random Amplified Polymorphic DNA, a simple and rapid but often non-reproducible molecular tool for studying genetic variability",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "PCR",
+      "type": "METHOD",
+      "description": "Polymerase Chain Reaction, a method for DNA amplification providing simplicity and speed",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "RESTRICTION ANALYSIS OF INTERGENIC SPACER REGION",
+      "type": "METHOD",
+      "description": "A technique using PCR and restriction enzymes to study variability in fungi",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM",
+      "type": "ORGANISM",
+      "description": "A fungus for which the intergenic spacer region analysis was originally designed",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "PYRENOPHORA GRAMINEA",
+      "type": "ORGANISM",
+      "description": "A fungus used in variability studies using restriction analysis of rDNA",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "KPNI",
+      "type": "GENE_MARKER",
+      "description": "A restriction enzyme used for fingerprinting C. graminicola populations",
+      "source_id": "paper_1331"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region from which C. graminicola isolates were obtained",
+      "source_id": "paper_1331"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COLLETRICHUM GRAMINICOLA",
+      "target": "SORGHUM ANTHRACNOSE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "SORGHUM ANTHRACNOSE",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "SORGHUM ANTHRACNOSE",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "SORGHUM ANTHRACNOSE",
+      "description": "manages",
+      "weight": "8",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "RFLP",
+      "target": "GENETIC DIVERSITY",
+      "description": "studies",
+      "weight": "8",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "RAPD",
+      "target": "GENETIC DIVERSITY",
+      "description": "studies",
+      "weight": "8",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "RESTRICTION ANALYSIS OF INTERGENIC SPACER REGION",
+      "target": "GENETIC DIVERSITY",
+      "description": "studies",
+      "weight": "9",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "RESTRICTION ANALYSIS OF INTERGENIC SPACER REGION",
+      "target": "PCR",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "RESTRICTION ANALYSIS OF INTERGENIC SPACER REGION",
+      "target": "COLLETRICHUM GRAMINICOLA",
+      "description": "analyzes",
+      "weight": "10",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "RESTRICTION ANALYSIS OF INTERGENIC SPACER REGION",
+      "target": "FUSARIUM OXYSPORUM",
+      "description": "analyzes",
+      "weight": "9",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "RESTRICTION ANALYSIS OF INTERGENIC SPACER REGION",
+      "target": "PYRENOPHORA GRAMINEA",
+      "description": "analyzes",
+      "weight": "9",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "KPNI",
+      "target": "RESTRICTION ANALYSIS OF INTERGENIC SPACER REGION",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "KPNI",
+      "target": "COLLETRICHUM GRAMINICOLA",
+      "description": "fingerprints",
+      "weight": "10",
+      "source_id": "paper_1331"
+    },
+    {
+      "source": "COLLETRICHUM GRAMINICOLA",
+      "target": "INDIA",
+      "description": "found in",
+      "weight": "10",
+      "source_id": "paper_1331"
+    }
+  ]
+}

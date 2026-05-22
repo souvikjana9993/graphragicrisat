@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "Glycine max (L.) Merr., the primary crop studied",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "SOYBEAN CYST NEMATODE",
+      "type": "ORGANISM",
+      "description": "Heterodera glycines Ichinohe, a parasitic nematode pest",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a cultivar to withstand attack by soybean cyst nematode",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity measured in kg ha-1",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "CULTIVAR BLENDING",
+      "type": "METHOD",
+      "description": "The practice of growing resistant and susceptible cultivars together in a specific ratio",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "MONOCULTURE",
+      "type": "METHOD",
+      "description": "The practice of growing a single cultivar in pure stands",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "BEDFORD",
+      "type": "CROP",
+      "description": "An SCN-resistant soybean cultivar",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "BRADLEY",
+      "type": "CROP",
+      "description": "An SCN-resistant soybean cultivar",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "ESSEX",
+      "type": "CROP",
+      "description": "A susceptible soybean cultivar",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "YORK",
+      "type": "CROP",
+      "description": "A susceptible soybean cultivar",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "N79-491",
+      "type": "CROP",
+      "description": "A susceptible soybean breeding line",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "SCN RACE 14 INFESTATION",
+      "type": "CONDITION",
+      "description": "A field condition where soybean cyst nematode Race 14 is present",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "SCN RACE",
+      "type": "CONCEPT",
+      "description": "The designation of the specific population of soybean cyst nematode",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "CYST COUNT",
+      "type": "TRAIT",
+      "description": "The number of nematode cysts found on the roots of the plant",
+      "source_id": "paper_3317"
+    },
+    {
+      "name": "SELECTION PRESSURE",
+      "type": "CONCEPT",
+      "description": "The evolutionary pressure on the nematode population to adapt to resistant cultivars",
+      "source_id": "paper_3317"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN CYST NEMATODE",
+      "target": "SOYBEAN",
+      "description": "parasitizes",
+      "weight": "10",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "SOYBEAN CYST NEMATODE",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "CULTIVAR BLENDING",
+      "target": "YIELD",
+      "description": "maintains",
+      "weight": "8",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "CULTIVAR BLENDING",
+      "target": "SELECTION PRESSURE",
+      "description": "minimizes",
+      "weight": "9",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "BEDFORD",
+      "target": "RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "BRADLEY",
+      "target": "RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "ESSEX",
+      "target": "SOYBEAN CYST NEMATODE",
+      "description": "susceptible to",
+      "weight": "10",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "YORK",
+      "target": "SOYBEAN CYST NEMATODE",
+      "description": "susceptible to",
+      "weight": "10",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "N79-491",
+      "target": "SOYBEAN CYST NEMATODE",
+      "description": "susceptible to",
+      "weight": "10",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "SCN RACE 14 INFESTATION",
+      "target": "SOYBEAN",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "CULTIVAR BLENDING",
+      "target": "CYST COUNT",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "SOYBEAN CYST NEMATODE",
+      "target": "SCN RACE",
+      "description": "classified by",
+      "weight": "10",
+      "source_id": "paper_3317"
+    },
+    {
+      "source": "MONOCULTURE",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3317"
+    }
+  ]
+}

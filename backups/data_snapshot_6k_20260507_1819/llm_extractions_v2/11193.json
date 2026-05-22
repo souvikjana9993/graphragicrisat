@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cajanus cajan L.) used in the field experiment",
+      "source_id": "paper_11193"
+    },
+    {
+      "name": "BIO-PESTICIDES",
+      "type": "METHOD",
+      "description": "Biological agents used as an alternative to toxic insecticides to control pests",
+      "source_id": "paper_11193"
+    },
+    {
+      "name": "NATURAL ENEMIES",
+      "type": "ORGANISM",
+      "description": "Beneficial organisms that prey on or parasitize pests in the pigeonpea crop",
+      "source_id": "paper_11193"
+    },
+    {
+      "name": "ICRISAT HYDERABAD",
+      "type": "LOCATION",
+      "description": "The site where the field experiment was conducted",
+      "source_id": "paper_11193"
+    },
+    {
+      "name": "POD BORERS",
+      "type": "ORGANISM",
+      "description": "Pests that attack the pods of pigeonpea",
+      "source_id": "paper_11193"
+    },
+    {
+      "name": "INSECTICIDE",
+      "type": "METHOD",
+      "description": "Chemical agents used to control pod borers, which can lead to resistance and residues",
+      "source_id": "paper_11193"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "CONCEPT",
+      "description": "The development of immunity or reduced sensitivity to insecticides by pests",
+      "source_id": "paper_11193"
+    },
+    {
+      "name": "RESIDUE IN GRAIN",
+      "type": "CONDITION",
+      "description": "The presence of chemical insecticide remnants in the harvested pigeonpea grains",
+      "source_id": "paper_11193"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIO-PESTICIDES",
+      "target": "PIGEONPEA",
+      "description": "applied to control pests in",
+      "weight": "9",
+      "source_id": "paper_11193"
+    },
+    {
+      "source": "BIO-PESTICIDES",
+      "target": "NATURAL ENEMIES",
+      "description": "safe for and enhances the population of",
+      "weight": "10",
+      "source_id": "paper_11193"
+    },
+    {
+      "source": "BIO-PESTICIDES",
+      "target": "POD BORERS",
+      "description": "provides excellent control of",
+      "weight": "9",
+      "source_id": "paper_11193"
+    },
+    {
+      "source": "INSECTICIDE",
+      "target": "POD BORERS",
+      "description": "used to control",
+      "weight": "8",
+      "source_id": "paper_11193"
+    },
+    {
+      "source": "INSECTICIDE",
+      "target": "RESISTANCE",
+      "description": "repeated use may create",
+      "weight": "8",
+      "source_id": "paper_11193"
+    },
+    {
+      "source": "INSECTICIDE",
+      "target": "RESIDUE IN GRAIN",
+      "description": "repeated use may create",
+      "weight": "8",
+      "source_id": "paper_11193"
+    },
+    {
+      "source": "POD BORERS",
+      "target": "PIGEONPEA",
+      "description": "attack the pods of",
+      "weight": "10",
+      "source_id": "paper_11193"
+    },
+    {
+      "source": "NATURAL ENEMIES",
+      "target": "PIGEONPEA",
+      "description": "found in and protect the crop",
+      "weight": "8",
+      "source_id": "paper_11193"
+    },
+    {
+      "source": "ICRISAT HYDERABAD",
+      "target": "PIGEONPEA",
+      "description": "location where the crop experiment was conducted",
+      "weight": "7",
+      "source_id": "paper_11193"
+    }
+  ]
+}

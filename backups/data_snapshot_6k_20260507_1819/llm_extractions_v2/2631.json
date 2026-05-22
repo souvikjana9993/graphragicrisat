@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop genotypes used in the study to investigate the effect of moisture stress on seed quality",
+      "source_id": "paper_2631"
+    },
+    {
+      "name": "MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "The environmental stress, also referred to as water stress, imposed on the crop at different phases",
+      "source_id": "paper_2631"
+    },
+    {
+      "name": "SEED QUALITY",
+      "type": "TRAIT",
+      "description": "The characteristic of groundnut seeds being investigated under moisture stress",
+      "source_id": "paper_2631"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The International Crop Research Institute for the Semi-Arid Tropics where the experiments were conducted",
+      "source_id": "paper_2631"
+    },
+    {
+      "name": "PATANCHERU, HYDERABAD",
+      "type": "LOCATION",
+      "description": "The specific geographic location of the field experiments",
+      "source_id": "paper_2631"
+    },
+    {
+      "name": "LINE SOURCE SPRINKLER SYSTEM",
+      "type": "METHOD",
+      "description": "The system used to impose variable levels of water stress on the crop",
+      "source_id": "paper_2631"
+    },
+    {
+      "name": "OIL ANALYSIS",
+      "type": "METHOD",
+      "description": "The process of analyzing the oil content of the seeds",
+      "source_id": "paper_2631"
+    },
+    {
+      "name": "NUCLEAR MAGNETIC RESONANCE",
+      "type": "METHOD",
+      "description": "A technique used for the oil analysis of seed samples",
+      "source_id": "paper_2631"
+    },
+    {
+      "name": "SOXHLET METHOD",
+      "type": "METHOD",
+      "description": "A technique used for the oil analysis of seed samples",
+      "source_id": "paper_2631"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MOISTURE STRESS",
+      "target": "SEED QUALITY",
+      "description": "Effect of moisture stress on seed quality",
+      "weight": "9",
+      "source_id": "paper_2631"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "GROUNDNUT",
+      "description": "Moisture stress was imposed on groundnut genotypes",
+      "weight": "10",
+      "source_id": "paper_2631"
+    },
+    {
+      "source": "SEED QUALITY",
+      "target": "GROUNDNUT",
+      "description": "Seed quality was investigated in groundnut genotypes",
+      "weight": "10",
+      "source_id": "paper_2631"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "GROUNDNUT",
+      "description": "Field experiments on groundnut were conducted at ICRISAT",
+      "weight": "8",
+      "source_id": "paper_2631"
+    },
+    {
+      "source": "PATANCHERU, HYDERABAD",
+      "target": "ICRISAT",
+      "description": "Location of the ICRISAT facility",
+      "weight": "10",
+      "source_id": "paper_2631"
+    },
+    {
+      "source": "LINE SOURCE SPRINKLER SYSTEM",
+      "target": "MOISTURE STRESS",
+      "description": "Used to impose variable levels of water stress",
+      "weight": "9",
+      "source_id": "paper_2631"
+    },
+    {
+      "source": "OIL ANALYSIS",
+      "target": "SEED QUALITY",
+      "description": "Used to evaluate the seed quality",
+      "weight": "8",
+      "source_id": "paper_2631"
+    },
+    {
+      "source": "NUCLEAR MAGNETIC RESONANCE",
+      "target": "OIL ANALYSIS",
+      "description": "Technique used to perform oil analysis",
+      "weight": "10",
+      "source_id": "paper_2631"
+    },
+    {
+      "source": "SOXHLET METHOD",
+      "target": "OIL ANALYSIS",
+      "description": "Technique used to perform oil analysis",
+      "weight": "10",
+      "source_id": "paper_2631"
+    }
+  ]
+}

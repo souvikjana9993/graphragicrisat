@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being analyzed for performance prediction in northern Nigeria",
+      "source_id": "paper_11455"
+    },
+    {
+      "name": "PERFORMANCE",
+      "type": "TRAIT",
+      "description": "The productivity or yield metrics of the crop",
+      "source_id": "paper_11455"
+    },
+    {
+      "name": "BIG ON-FARM DATA",
+      "type": "METHOD",
+      "description": "Large datasets collected from actual farming environments used for predictive modeling",
+      "source_id": "paper_11455"
+    },
+    {
+      "name": "SAVANNAH ZONE OF NORTHERN NIGERIA",
+      "type": "LOCATION",
+      "description": "The specific geographic area of the study",
+      "source_id": "paper_11455"
+    },
+    {
+      "name": "SMALLHOLDER FARMING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Farming operations managed by small-scale farmers in semi-arid regions",
+      "source_id": "paper_11455"
+    },
+    {
+      "name": "SEMI-ARID REGIONS",
+      "type": "CONDITION",
+      "description": "Environmental zones characterized by low rainfall",
+      "source_id": "paper_11455"
+    },
+    {
+      "name": "POOR SOIL FERTILITY",
+      "type": "CONDITION",
+      "description": "A condition of low nutrient levels in the soil",
+      "source_id": "paper_11455"
+    },
+    {
+      "name": "LOW AGRICULTURAL INPUT USE",
+      "type": "CONDITION",
+      "description": "The limited application of external inputs like fertilizers",
+      "source_id": "paper_11455"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIG ON-FARM DATA",
+      "target": "PERFORMANCE",
+      "description": "used to predict",
+      "weight": "9",
+      "source_id": "paper_11455"
+    },
+    {
+      "source": "PERFORMANCE",
+      "target": "SORGHUM",
+      "description": "is the measured attribute of",
+      "weight": "10",
+      "source_id": "paper_11455"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SAVANNAH ZONE OF NORTHERN NIGERIA",
+      "description": "is cultivated in",
+      "weight": "8",
+      "source_id": "paper_11455"
+    },
+    {
+      "source": "SMALLHOLDER FARMING SYSTEMS",
+      "target": "SEMI-ARID REGIONS",
+      "description": "are found in",
+      "weight": "8",
+      "source_id": "paper_11455"
+    },
+    {
+      "source": "SMALLHOLDER FARMING SYSTEMS",
+      "target": "POOR SOIL FERTILITY",
+      "description": "are characterized by",
+      "weight": "9",
+      "source_id": "paper_11455"
+    },
+    {
+      "source": "SMALLHOLDER FARMING SYSTEMS",
+      "target": "LOW AGRICULTURAL INPUT USE",
+      "description": "are characterized by",
+      "weight": "9",
+      "source_id": "paper_11455"
+    }
+  ]
+}

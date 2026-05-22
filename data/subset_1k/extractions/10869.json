@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "CONSUMPTION",
+      "type": "CONCEPT",
+      "description": "The act of using resources to satisfy the needs and desires of households",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "UNINSURED RISK",
+      "type": "CONDITION",
+      "description": "Financial risks that are not covered by insurance policies",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "RURAL FARMING HOUSEHOLDS",
+      "type": "CONCEPT",
+      "description": "Households located in rural areas whose primary livelihood is farming",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "INCOME UNCERTAINTY",
+      "type": "CONDITION",
+      "description": "The unpredictability and variability of income levels",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "HABIT FORMATION",
+      "type": "CONCEPT",
+      "description": "The process by which consumption patterns become automatic over time",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "SAVINGS",
+      "type": "CONCEPT",
+      "description": "The portion of income not spent on current consumption",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "WEATHER CONDITIONS",
+      "type": "CONDITION",
+      "description": "Atmospheric states that affect agricultural productivity",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "AGRICULTURAL INCOME",
+      "type": "CONCEPT",
+      "description": "Income generated from farming and agricultural activities",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "DEVELOPING COUNTRIES",
+      "type": "LOCATION",
+      "description": "Nations characterized by lower industrialization and income levels",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the rural household panel survey was conducted",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "HOUSEHOLD PANEL DATA",
+      "type": "METHOD",
+      "description": "Data collected from the same set of households over multiple time periods",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "CONSUMPTION EQUATION",
+      "type": "METHOD",
+      "description": "A mathematical model used to estimate consumption behavior",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "WEATHER RISKS",
+      "type": "CONDITION",
+      "description": "Potential losses resulting from adverse annual or seasonal weather events",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "FARM ECONOMY",
+      "type": "CONCEPT",
+      "description": "The economic system centered around agricultural production",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "NONFARM ECONOMY",
+      "type": "CONCEPT",
+      "description": "The economic system based on activities other than farming",
+      "source_id": "paper_10869"
+    },
+    {
+      "name": "ECONOMIC WELL-BEING",
+      "type": "CONCEPT",
+      "description": "The overall financial health and stability of rural households",
+      "source_id": "paper_10869"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UNINSURED RISK",
+      "target": "CONSUMPTION",
+      "description": "Affects the ability to protect consumption",
+      "weight": "8",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "INCOME UNCERTAINTY",
+      "target": "CONSUMPTION",
+      "description": "Plays an important role in determining consumption levels",
+      "weight": "9",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "INCOME UNCERTAINTY",
+      "target": "SAVINGS",
+      "description": "Plays an important role in determining savings levels",
+      "weight": "9",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "HABIT FORMATION",
+      "target": "CONSUMPTION",
+      "description": "Influences consumption patterns through behavioral habits",
+      "weight": "9",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "HABIT FORMATION",
+      "target": "SAVINGS",
+      "description": "Influences the amount of income saved",
+      "weight": "7",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "WEATHER CONDITIONS",
+      "target": "AGRICULTURAL INCOME",
+      "description": "Strongly linked to the variability of agricultural income",
+      "weight": "9",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "RURAL FARMING HOUSEHOLDS",
+      "target": "INDIA",
+      "description": "The study focuses on these households within India",
+      "weight": "10",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "HOUSEHOLD PANEL DATA",
+      "target": "CONSUMPTION EQUATION",
+      "description": "Used as the basis for estimating the consumption equation",
+      "weight": "10",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "CONSUMPTION EQUATION",
+      "target": "HABIT FORMATION",
+      "description": "Accounts for the effect of habit formation on consumption",
+      "weight": "9",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "CONSUMPTION EQUATION",
+      "target": "INCOME UNCERTAINTY",
+      "description": "Accounts for the effect of income uncertainty on consumption",
+      "weight": "9",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "WEATHER RISKS",
+      "target": "SAVINGS",
+      "description": "Significantly influence the savings of rural households",
+      "weight": "9",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "NONFARM ECONOMY",
+      "target": "ECONOMIC WELL-BEING",
+      "description": "Contributes to the overall economic well-being of rural farming households",
+      "weight": "8",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "FARM ECONOMY",
+      "target": "ECONOMIC WELL-BEING",
+      "description": "Contributes to the overall economic well-being of rural farming households",
+      "weight": "8",
+      "source_id": "paper_10869"
+    },
+    {
+      "source": "RURAL FARMING HOUSEHOLDS",
+      "target": "INCOME UNCERTAINTY",
+      "description": "Experience income uncertainty due to various risks",
+      "weight": "8",
+      "source_id": "paper_10869"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "JARASINGHA",
+      "type": "LOCATION",
+      "description": "A village featuring kitchen gardens within settlements attached to dwelling units.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "KITCHEN GARDEN",
+      "type": "CONCEPT",
+      "description": "Small-scale gardens within settlements used to supplement livelihood options.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "VEGETABLES",
+      "type": "CROP",
+      "description": "Various types of edible plants cultivated in kitchen gardens.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "GROUNDWATER",
+      "type": "CONDITION",
+      "description": "Water source used for cultivating vegetables in the kitchen gardens.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "BOREWELLS",
+      "type": "METHOD",
+      "description": "Means of extracting groundwater shared between households.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "LEAFY VEGETABLES",
+      "type": "CROP",
+      "description": "Types of vegetables cultivated specifically during the summer season.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "SUMMER",
+      "type": "CONDITION",
+      "description": "The season during which leafy vegetables are grown and organic cultivation is practiced.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "CAULIFLOWER",
+      "type": "CROP",
+      "description": "A vegetable cultivated during the Kharif season based on market demand.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONDITION",
+      "description": "The season during which cauliflower is grown and chemical inputs are used.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "LOCAL MARKET DEMAND",
+      "type": "CONCEPT",
+      "description": "The economic driver causing a shift in crop selection to cauliflower during Kharif.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "ORGANIC CULTIVATION",
+      "type": "METHOD",
+      "description": "Agricultural practice used during the summer season.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "CHEMICAL FERTILIZERS",
+      "type": "METHOD",
+      "description": "Inputs used for crop cultivation during the Kharif season.",
+      "source_id": "paper_11026"
+    },
+    {
+      "name": "PESTICIDES",
+      "type": "METHOD",
+      "description": "Inputs used for crop protection during the Kharif season.",
+      "source_id": "paper_11026"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "JARASINGHA",
+      "target": "KITCHEN GARDEN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "KITCHEN GARDEN",
+      "target": "VEGETABLES",
+      "description": "used to cultivate",
+      "weight": "9",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "VEGETABLES",
+      "target": "GROUNDWATER",
+      "description": "depend on",
+      "weight": "8",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "GROUNDWATER",
+      "target": "BOREWELLS",
+      "description": "extracted via",
+      "weight": "9",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "KITCHEN GARDEN",
+      "target": "LEAFY VEGETABLES",
+      "description": "cultivates",
+      "weight": "8",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "LEAFY VEGETABLES",
+      "target": "SUMMER",
+      "description": "grown during",
+      "weight": "9",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "KITCHEN GARDEN",
+      "target": "CAULIFLOWER",
+      "description": "cultivates",
+      "weight": "8",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "CAULIFLOWER",
+      "target": "KHARIF",
+      "description": "grown during",
+      "weight": "9",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "CAULIFLOWER",
+      "target": "LOCAL MARKET DEMAND",
+      "description": "driven by",
+      "weight": "8",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "SUMMER",
+      "target": "ORGANIC CULTIVATION",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "KHARIF",
+      "target": "CHEMICAL FERTILIZERS",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_11026"
+    },
+    {
+      "source": "KHARIF",
+      "target": "PESTICIDES",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_11026"
+    }
+  ]
+}

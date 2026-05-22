@@ -1,0 +1,226 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Third food legume crop of the world and first food legume crop of India",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "GENIC MOLECULAR MARKERS",
+      "type": "METHOD",
+      "description": "Markers used for constructing a transcript map of chickpea, including SNP, SSR, and ISR-based markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "SNP",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphism markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "SSR",
+      "type": "GENE_MARKER",
+      "description": "Simple sequence repeat or genic microsatellite markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "ISR",
+      "type": "GENE_MARKER",
+      "description": "Intron spanning region-based markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "GENES",
+      "type": "CONCEPT",
+      "description": "Genes/expressed sequence tags (ESTs) used for SNP discovery",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "ESTS",
+      "type": "CONCEPT",
+      "description": "Expressed sequence tags",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "CICER SPECIES",
+      "type": "ORGANISM",
+      "description": "Nine species of the genus Cicer",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "MEDICAGO TRUNCATULA",
+      "type": "ORGANISM",
+      "description": "Species used for genome alignment to develop CISR markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "CISR",
+      "type": "GENE_MARKER",
+      "description": "Intron spanning region markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "ICCEM",
+      "type": "GENE_MARKER",
+      "description": "EST-derived SSR markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "HAPLOTYPES",
+      "type": "CONCEPT",
+      "description": "Genetic variations present in candidate genic regions",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "CAPS",
+      "type": "GENE_MARKER",
+      "description": "Converted SNPs to CAPS markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "TRANSCRIPT MAP",
+      "type": "CONCEPT",
+      "description": "A genetic map constructed using genic molecular markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "GENETIC MAP",
+      "type": "CONCEPT",
+      "description": "A map showing the loci of genes and markers",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where chickpea is the first food legume crop",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "LEGUME GENOMICS",
+      "type": "CONCEPT",
+      "description": "Comparative genomics of legumes",
+      "source_id": "paper_6"
+    },
+    {
+      "name": "ALLELE RE-SEQUENCING",
+      "type": "METHOD",
+      "description": "Method used for SNP discovery",
+      "source_id": "paper_6"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENIC MOLECULAR MARKERS",
+      "target": "SNP",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "GENIC MOLECULAR MARKERS",
+      "target": "SSR",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "GENIC MOLECULAR MARKERS",
+      "target": "ISR",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "SNP",
+      "target": "GENES",
+      "description": "derived from",
+      "weight": "8",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "SNP",
+      "target": "ESTS",
+      "description": "derived from",
+      "weight": "8",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "CISR",
+      "target": "MEDICAGO TRUNCATULA",
+      "description": "developed using genome of",
+      "weight": "7",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "ICCEM",
+      "target": "ESTS",
+      "description": "derived from",
+      "weight": "8",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "CAPS",
+      "target": "SNP",
+      "description": "derived from",
+      "weight": "9",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "TRANSCRIPT MAP",
+      "target": "GENIC MOLECULAR MARKERS",
+      "description": "constructed using",
+      "weight": "10",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "GENETIC MAP",
+      "target": "GENETIC MAP",
+      "description": "developed from",
+      "weight": "10",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "GENETIC MAP",
+      "target": "GMM LOCI",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "TRANSCRIPT MAP",
+      "description": "has transcript map",
+      "weight": "8",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "GENETIC MAP",
+      "description": "has genetic map",
+      "weight": "8",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "LEGUME GENOMICS",
+      "description": "relevant to",
+      "weight": "7",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "GENES",
+      "target": "CICER SPECIES",
+      "description": "from",
+      "weight": "7",
+      "source_id": "paper_6"
+    },
+    {
+      "source": "HAPLOTYPES",
+      "target": "GENES",
+      "description": "present in",
+      "weight": "7",
+      "source_id": "paper_6"
+    }
+  ]
+}

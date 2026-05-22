@@ -1,0 +1,306 @@
+{
+  "entities": [
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Water deficits causing abiotic stress",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "High temperatures causing abiotic stress",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "FOOD CROPS",
+      "type": "CROP",
+      "description": "General category of crops used for food",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "SEED FILLING",
+      "type": "CONCEPT",
+      "description": "The phase of crop growth where seeds are filled with reserves",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The physical dimensions of the seed",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "SEED NUMBER",
+      "type": "TRAIT",
+      "description": "The quantity of seeds produced",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "100 SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "A commercial trait measuring the weight of 100 seeds",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "SEED QUALITY",
+      "type": "TRAIT",
+      "description": "The nutritional and functional quality of the seed",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "SEED COMPOSITION",
+      "type": "TRAIT",
+      "description": "The chemical and nutritional makeup of the seed",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "STRESS TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a crop to maintain productivity under stress",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The overall output of the crop",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "PHOTOASSIMILATES",
+      "type": "CONCEPT",
+      "description": "Carbohydrates produced by photosynthesis",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "METABOLIC PROCESSES",
+      "type": "CONCEPT",
+      "description": "Chemical reactions occurring within the organism to maintain life",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "OMICS TECHNOLOGIES",
+      "type": "METHOD",
+      "description": "High-throughput biological analysis technologies",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "AGRONOMIC MANAGEMENT SYSTEM",
+      "type": "METHOD",
+      "description": "Practices used to manage crop growth and environment",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "BIOTECHNOLOGY",
+      "type": "METHOD",
+      "description": "Use of biological systems or organisms to develop products",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "BIOCHEMISTRY",
+      "type": "METHOD",
+      "description": "Study of chemical processes within and relating to living organisms",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "PHYSIOLOGY",
+      "type": "METHOD",
+      "description": "Study of the functions and mechanisms in a living system",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "ENZYMES",
+      "type": "CONCEPT",
+      "description": "Biological catalysts that speed up chemical reactions",
+      "source_id": "paper_10992"
+    },
+    {
+      "name": "TRANSPORTERS",
+      "type": "CONCEPT",
+      "description": "Proteins that move ions or molecules across biological membranes",
+      "source_id": "paper_10992"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT",
+      "target": "CROP PRODUCTIVITY",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "CROP PRODUCTIVITY",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "SEED FILLING",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "SEED FILLING",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "SEED FILLING",
+      "target": "SEED YIELD",
+      "description": "determines",
+      "weight": "10",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "SEED YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "SEED YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "SEED YIELD",
+      "target": "SEED SIZE",
+      "description": "depends on",
+      "weight": "8",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "SEED YIELD",
+      "target": "SEED NUMBER",
+      "description": "depends on",
+      "weight": "8",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "SEED SIZE",
+      "target": "100 SEED WEIGHT",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "SEED QUALITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "SEED QUALITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "METABOLIC PROCESSES",
+      "target": "SEED FILLING",
+      "description": "influence",
+      "weight": "9",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "PHOTOASSIMILATES",
+      "target": "METABOLIC PROCESSES",
+      "description": "are part of",
+      "weight": "8",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "METABOLIC PROCESSES",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "METABOLIC PROCESSES",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "SEED COMPOSITION",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "SEED COMPOSITION",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "OMICS TECHNOLOGIES",
+      "target": "STRESS TOLERANCE",
+      "description": "help understand",
+      "weight": "7",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "AGRONOMIC MANAGEMENT SYSTEM",
+      "target": "CROP PRODUCTIVITY",
+      "description": "improves",
+      "weight": "7",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "BIOTECHNOLOGY",
+      "target": "STRESS TOLERANCE",
+      "description": "helps develop",
+      "weight": "7",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "CROP PRODUCTIVITY",
+      "target": "FOOD SECURITY",
+      "description": "impacts",
+      "weight": "9",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "ENZYMES",
+      "target": "METABOLIC PROCESSES",
+      "description": "involved in",
+      "weight": "9",
+      "source_id": "paper_10992"
+    },
+    {
+      "source": "TRANSPORTERS",
+      "target": "METABOLIC PROCESSES",
+      "description": "involved in",
+      "weight": "9",
+      "source_id": "paper_10992"
+    }
+  ]
+}

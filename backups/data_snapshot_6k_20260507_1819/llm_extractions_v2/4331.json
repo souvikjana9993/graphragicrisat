@@ -1,0 +1,206 @@
+{
+  "entities": [
+    {
+      "name": "AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "The practice of farming and producing food and energy",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "BIOENERGY PRODUCTION",
+      "type": "METHOD",
+      "description": "The process of converting biological materials into energy",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "FOOD",
+      "type": "CONCEPT",
+      "description": "Agricultural products intended for human consumption",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "PETROLEUM RESERVES",
+      "type": "CONCEPT",
+      "description": "Natural deposits of oil used for fuel",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "FUEL PRICES",
+      "type": "CONDITION",
+      "description": "The market cost of energy fuels",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "CROP BIOMASS",
+      "type": "TRAIT",
+      "description": "Plant material, including grain and other parts, used as raw material for energy",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "FOOD AND FEED SUPPLIES",
+      "type": "CONCEPT",
+      "description": "The availability of crops for human and animal consumption",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "PLANT RESIDUES",
+      "type": "TRAIT",
+      "description": "Organic materials remaining after crop harvest",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "SOIL PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The capacity of soil to produce agricultural yields",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "SOIL STRUCTURE",
+      "type": "TRAIT",
+      "description": "The physical arrangement of soil particles",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "EROSION",
+      "type": "CONDITION",
+      "description": "The process of wearing away soil",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "AGRICULTURAL RESEARCH",
+      "type": "METHOD",
+      "description": "Scientific investigation to improve farming and energy production",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "BIOMASS TRAITS",
+      "type": "TRAIT",
+      "description": "Characteristics of crops that determine their biomass yield",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "DUAL-PURPOSE FOOD CROPS",
+      "type": "CROP",
+      "description": "Crops that can be used for both food and energy production",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "BIOMASS CROPS",
+      "type": "CROP",
+      "description": "Crops grown specifically for bioenergy production",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "MARGINAL LANDS",
+      "type": "LOCATION",
+      "description": "Land with low productivity or suitability for traditional agriculture",
+      "source_id": "paper_4331"
+    },
+    {
+      "name": "LIVESTOCK MANAGEMENT SYSTEMS",
+      "type": "METHOD",
+      "description": "Systems used for the sustainable rearing of farm animals",
+      "source_id": "paper_4331"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AGRICULTURE",
+      "target": "BIOENERGY PRODUCTION",
+      "description": "Converted to produce energy",
+      "weight": "8",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "AGRICULTURE",
+      "target": "FOOD",
+      "description": "Produces food",
+      "weight": "9",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "PETROLEUM RESERVES",
+      "target": "BIOENERGY PRODUCTION",
+      "description": "Falling reserves drive the need for bioenergy",
+      "weight": "7",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "FUEL PRICES",
+      "target": "BIOENERGY PRODUCTION",
+      "description": "Rising prices drive the need for bioenergy",
+      "weight": "7",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "CROP BIOMASS",
+      "target": "BIOENERGY PRODUCTION",
+      "description": "Used as raw material for production",
+      "weight": "10",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "CROP BIOMASS",
+      "target": "FOOD AND FEED SUPPLIES",
+      "description": "Competes with supplies",
+      "weight": "8",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "PLANT RESIDUES",
+      "target": "SOIL PRODUCTIVITY",
+      "description": "Sustains productivity",
+      "weight": "9",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "PLANT RESIDUES",
+      "target": "SOIL STRUCTURE",
+      "description": "Sustains structure",
+      "weight": "9",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "PLANT RESIDUES",
+      "target": "EROSION",
+      "description": "Helps avoid erosion",
+      "weight": "9",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "AGRICULTURAL RESEARCH",
+      "target": "BIOMASS TRAITS",
+      "description": "Enhances traits of dual-purpose crops",
+      "weight": "8",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "AGRICULTURAL RESEARCH",
+      "target": "BIOMASS CROPS",
+      "description": "Develops new crops for marginal lands",
+      "weight": "8",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "AGRICULTURAL RESEARCH",
+      "target": "LIVESTOCK MANAGEMENT SYSTEMS",
+      "description": "Develops sustainable systems",
+      "weight": "8",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "BIOMASS CROPS",
+      "target": "MARGINAL LANDS",
+      "description": "Developed for use on these lands",
+      "weight": "9",
+      "source_id": "paper_4331"
+    },
+    {
+      "source": "BIOMASS CROPS",
+      "target": "FOOD",
+      "description": "Reduced competition with food crops when grown on marginal lands",
+      "weight": "7",
+      "source_id": "paper_4331"
+    }
+  ]
+}

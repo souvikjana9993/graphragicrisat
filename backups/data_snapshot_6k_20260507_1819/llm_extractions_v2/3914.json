@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "WATERSHED",
+      "type": "CONCEPT",
+      "description": "A hydrological unit and socio-political-ecological entity that determines food, social, and economical security and provides life support services",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "HYDROLOGICAL UNIT",
+      "type": "CONCEPT",
+      "description": "A unit of land drainage defined by the flow of water",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "SOCIO-POLITICAL-ECOLOGICAL ENTITY",
+      "type": "CONCEPT",
+      "description": "An entity that integrates social, political, and ecological dimensions",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to sufficient, affordable, and nutritious food",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "SOCIAL SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having social protections and stability within a community",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "ECONOMICAL SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having stable financial resources to support a standard of living",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "LIFE SUPPORT SERVICES",
+      "type": "CONCEPT",
+      "description": "Essential environmental services that sustain human life",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "RURAL PEOPLE",
+      "type": "ORGANISM",
+      "description": "Human populations residing in rural areas",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "WATERSHED SIZE",
+      "type": "CONCEPT",
+      "description": "The physical area or scale of a watershed",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "DEVELOPMENT OBJECTIVES",
+      "type": "CONCEPT",
+      "description": "The specific goals intended for the development of a region",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "TERRAIN SLOPE",
+      "type": "CONDITION",
+      "description": "The gradient or incline of the land surface",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "PLAIN VALLEY AREAS",
+      "type": "LOCATION",
+      "description": "Low-lying, flat geographical regions",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "FOREST DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The process of establishing or expanding forest cover",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "PASTURE DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The process of establishing or improving land for livestock grazing",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "HILLY AREAS",
+      "type": "LOCATION",
+      "description": "Geographical regions characterized by hills and steep terrain",
+      "source_id": "paper_3914"
+    },
+    {
+      "name": "INTENSIVE AGRICULTURE DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "Agricultural systems characterized by high inputs to maximize productivity",
+      "source_id": "paper_3914"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATERSHED",
+      "target": "HYDROLOGICAL UNIT",
+      "description": "is defined as a",
+      "weight": "10",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "WATERSHED",
+      "target": "SOCIO-POLITICAL-ECOLOGICAL ENTITY",
+      "description": "is defined as a",
+      "weight": "10",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "WATERSHED",
+      "target": "FOOD SECURITY",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "WATERSHED",
+      "target": "SOCIAL SECURITY",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "WATERSHED",
+      "target": "ECONOMICAL SECURITY",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "WATERSHED",
+      "target": "LIFE SUPPORT SERVICES",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "LIFE SUPPORT SERVICES",
+      "target": "RURAL PEOPLE",
+      "description": "supports",
+      "weight": "9",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "WATERSHED SIZE",
+      "target": "DEVELOPMENT OBJECTIVES",
+      "description": "depends on",
+      "weight": "7",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "WATERSHED SIZE",
+      "target": "TERRAIN SLOPE",
+      "description": "depends on",
+      "weight": "7",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "PLAIN VALLEY AREAS",
+      "target": "WATERSHED SIZE",
+      "description": "allows for large",
+      "weight": "6",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "FOREST DEVELOPMENT",
+      "target": "WATERSHED SIZE",
+      "description": "allows for large",
+      "weight": "6",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "PASTURE DEVELOPMENT",
+      "target": "WATERSHED SIZE",
+      "description": "allows for large",
+      "weight": "6",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "HILLY AREAS",
+      "target": "WATERSHED SIZE",
+      "description": "prefers small",
+      "weight": "6",
+      "source_id": "paper_3914"
+    },
+    {
+      "source": "INTENSIVE AGRICULTURE DEVELOPMENT",
+      "target": "WATERSHED SIZE",
+      "description": "prefers small",
+      "weight": "6",
+      "source_id": "paper_3914"
+    }
+  ]
+}

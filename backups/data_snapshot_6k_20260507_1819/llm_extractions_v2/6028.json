@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A dryland cereal crop used in the nitrogen fertilizer study.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "SAFFLOWER",
+      "type": "CROP",
+      "description": "A crop grown in the post-rainy season within a double-cropping system.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A type of clay-rich soil in India where the field studies were conducted.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "UREA",
+      "type": "CONCEPT",
+      "description": "A nitrogen fertilizer applied at a rate of 74 kg N/ha.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "15N-LABELED FERTILIZERS",
+      "type": "CONCEPT",
+      "description": "Fertilizers containing the 15N isotope used to determine the fate of nitrogen.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "POST-EMERGENCE SPLIT-BAND APPLICATION",
+      "type": "METHOD",
+      "description": "A urea application method (SB) performed after crop emergence.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "SURFACE-APPLIED APPLICATION",
+      "type": "METHOD",
+      "description": "A urea application method (S) where fertilizer is applied to the soil surface.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "INCORPORATED APPLICATION",
+      "type": "METHOD",
+      "description": "A urea application method (I) where fertilizer is mixed into the soil.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Precipitation during the growing season that affects nitrogen recovery and utilization.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "DOUBLE-CROPPING SYSTEM",
+      "type": "CONCEPT",
+      "description": "An agricultural system involving the sequential growth of sorghum and safflower.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "NITROGEN RECOVERY",
+      "type": "CONCEPT",
+      "description": "The percentage of applied nitrogen recovered in the soil-plant system after harvest.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "PLANT UTILIZATION",
+      "type": "CONCEPT",
+      "description": "The efficiency with which plants use added urea-nitrogen.",
+      "source_id": "paper_6028"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the Vertisol field studies were conducted.",
+      "source_id": "paper_6028"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UREA",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "15N-LABELED FERTILIZERS",
+      "target": "UREA",
+      "description": "used to track the fate of",
+      "weight": "9",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "POST-EMERGENCE SPLIT-BAND APPLICATION",
+      "target": "UREA",
+      "description": "method of applying",
+      "weight": "10",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "SURFACE-APPLIED APPLICATION",
+      "target": "UREA",
+      "description": "method of applying",
+      "weight": "10",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "INCORPORATED APPLICATION",
+      "target": "UREA",
+      "description": "method of applying",
+      "weight": "10",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "SORGHUM",
+      "description": "soil environment for growth",
+      "weight": "8",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "NITROGEN RECOVERY",
+      "description": "influences the rate of",
+      "weight": "8",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "PLANT UTILIZATION",
+      "description": "influences the efficiency of",
+      "weight": "8",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "DOUBLE-CROPPING SYSTEM",
+      "description": "first crop in the sequence",
+      "weight": "9",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "SAFFLOWER",
+      "target": "DOUBLE-CROPPING SYSTEM",
+      "description": "second crop in the sequence",
+      "weight": "9",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "POST-EMERGENCE SPLIT-BAND APPLICATION",
+      "target": "NITROGEN RECOVERY",
+      "description": "resulted in higher recovery percentages",
+      "weight": "9",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "UREA",
+      "target": "SAFFLOWER",
+      "description": "residual nitrogen provided value to",
+      "weight": "7",
+      "source_id": "paper_6028"
+    },
+    {
+      "source": "INDIA",
+      "target": "VERTISOL",
+      "description": "location of the soil type",
+      "weight": "10",
+      "source_id": "paper_6028"
+    }
+  ]
+}

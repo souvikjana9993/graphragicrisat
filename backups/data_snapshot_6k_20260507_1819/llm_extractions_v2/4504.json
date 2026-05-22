@@ -1,0 +1,222 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used in intercropping experiments",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used in intercropping experiments",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "LIGHT INTERCEPTION",
+      "type": "TRAIT",
+      "description": "The amount of light captured by the crops",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "COMPETITIVE ABILITY",
+      "type": "TRAIT",
+      "description": "The capacity of a plant to compete for resources",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "DROUGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand moisture stress",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "Growing two or more crops simultaneously on the same field",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "ALTERNATE ROW ARRANGEMENT",
+      "type": "METHOD",
+      "description": "A specific intercropping pattern (SP) where rows of sorghum and pigeonpea alternate",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "TWO SORGHUM ONE PIGEONPEA ROW ARRANGEMENT",
+      "type": "METHOD",
+      "description": "A specific intercropping pattern (SSP) with two rows of sorghum for every one row of pigeonpea",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "GOOD MOISTURE SUPPLY",
+      "type": "CONDITION",
+      "description": "Environmental state with sufficient water availability",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "Environmental state with insufficient water availability",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "HIGH RAINFALL",
+      "type": "CONDITION",
+      "description": "Weather condition characterized by significant precipitation",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "LOCATION",
+      "description": "A type of soil site characterized by high clay content",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "LOCATION",
+      "description": "A type of soil site characterized by specific leaching properties",
+      "source_id": "paper_4504"
+    },
+    {
+      "name": "SOIL MOISTURE STORAGE",
+      "type": "CONCEPT",
+      "description": "The amount of water retained in the soil",
+      "source_id": "paper_4504"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTERCROPPING",
+      "target": "SORGHUM",
+      "description": "involves",
+      "weight": "10",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PIGEONPEA",
+      "description": "involves",
+      "weight": "10",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "ALTERNATE ROW ARRANGEMENT",
+      "target": "INTERCROPPING",
+      "description": "is a specific arrangement of",
+      "weight": "10",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "TWO SORGHUM ONE PIGEONPEA ROW ARRANGEMENT",
+      "target": "INTERCROPPING",
+      "description": "is a specific arrangement of",
+      "weight": "10",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "ALTERNATE ROW ARRANGEMENT",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "TWO SORGHUM ONE PIGEONPEA ROW ARRANGEMENT",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "LIGHT INTERCEPTION",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "GOOD MOISTURE SUPPLY",
+      "target": "VERTISOL",
+      "description": "occurred at",
+      "weight": "9",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "HIGH RAINFALL",
+      "target": "GOOD MOISTURE SUPPLY",
+      "description": "contributed to",
+      "weight": "9",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "ALFISOL",
+      "description": "occurred at",
+      "weight": "9",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "DROUGHT RESISTANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "COMPETITIVE ABILITY",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "COMPETITIVE ABILITY",
+      "target": "YIELD",
+      "description": "reduces sorghum yield",
+      "weight": "8",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "COMPETITIVE ABILITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "ALTERNATE ROW ARRANGEMENT",
+      "target": "YIELD",
+      "description": "adversely affects sorghum yield under moisture stress",
+      "weight": "9",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "YIELD",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_4504"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "YIELD",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_4504"
+    }
+  ]
+}

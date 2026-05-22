@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop species being genetically characterized using a global collection of inbred lines.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "ILLUMINA GOLDENGATE ASSAY",
+      "type": "METHOD",
+      "description": "A genotyping method using 1536 SNPs from 582 loci to analyze maize diversity.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphisms used as genetic markers to estimate diversity and population structure.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "LOCI",
+      "type": "GENE_MARKER",
+      "description": "Specific genomic positions used to identify informative SNPs and haplotypes.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "INBRED LINES",
+      "type": "CONCEPT",
+      "description": "Pure-breeding maize lines from temperate, tropical, and subtropical breeding programs.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "TEMPERATE",
+      "type": "LOCATION",
+      "description": "Geographic region or breeding program associated with temperate climates.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "TROPICAL",
+      "type": "LOCATION",
+      "description": "Geographic region or breeding program associated with tropical climates.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "SUBTROPICAL",
+      "type": "LOCATION",
+      "description": "Geographic region or breeding program associated with subtropical climates.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The overall genetic variation within the global maize collection.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "POPULATION STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The organization of the maize collection into subgroups based on genetic similarity.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "FAMILIAL RELATEDNESS",
+      "type": "CONCEPT",
+      "description": "The degree of genetic kinship among the inbred lines in the collection.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "LINKAGE DISEQUILIBRIUM",
+      "type": "CONCEPT",
+      "description": "The non-random association of alleles at different loci, measured overall and within chromosomes.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "LD DECAY DISTANCE",
+      "type": "CONCEPT",
+      "description": "The distance over which linkage disequilibrium decreases, varying by chromosome and region.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "MINOR ALLELIC FREQUENCY",
+      "type": "CONCEPT",
+      "description": "The frequency of the less common allele, which influences the LD decay distance.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "HAPLOTYPE DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variety of allele combinations across loci used to define a core set of inbreds.",
+      "source_id": "paper_1989"
+    },
+    {
+      "name": "CORE SET",
+      "type": "CONCEPT",
+      "description": "A representative subset of 60 inbred lines capturing 90% of the haplotype diversity.",
+      "source_id": "paper_1989"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ILLUMINA GOLDENGATE ASSAY",
+      "target": "MAIZE",
+      "description": "used to genotype",
+      "weight": "10",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "ILLUMINA GOLDENGATE ASSAY",
+      "target": "SNP MARKERS",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "POPULATION STRUCTURE",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "FAMILIAL RELATEDNESS",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "POPULATION STRUCTURE",
+      "target": "TROPICAL",
+      "description": "identified subgroups from",
+      "weight": "8",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "POPULATION STRUCTURE",
+      "target": "TEMPERATE",
+      "description": "identified subgroups from",
+      "weight": "8",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "LINKAGE DISEQUILIBRIUM",
+      "target": "LD DECAY DISTANCE",
+      "description": "measured by",
+      "weight": "10",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "LD DECAY DISTANCE",
+      "target": "MINOR ALLELIC FREQUENCY",
+      "description": "increases with",
+      "weight": "9",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "LD DECAY DISTANCE",
+      "target": "TEMPERATE",
+      "description": "higher in",
+      "weight": "9",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "LD DECAY DISTANCE",
+      "target": "TROPICAL",
+      "description": "lower in",
+      "weight": "9",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "LD DECAY DISTANCE",
+      "target": "SUBTROPICAL",
+      "description": "lower in",
+      "weight": "9",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "CORE SET",
+      "target": "HAPLOTYPE DIVERSITY",
+      "description": "defined based on",
+      "weight": "10",
+      "source_id": "paper_1989"
+    },
+    {
+      "source": "CORE SET",
+      "target": "MAIZE",
+      "description": "represents a subset of",
+      "weight": "8",
+      "source_id": "paper_1989"
+    }
+  ]
+}

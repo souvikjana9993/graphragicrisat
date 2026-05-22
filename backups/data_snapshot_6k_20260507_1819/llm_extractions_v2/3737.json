@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum americanum (L.) Leeke, the primary crop studied for sterility maintainers and restorers",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "MALE-STERILITY RESTORER LINES",
+      "type": "CONCEPT",
+      "description": "Lines that restore male fertility in hybrids",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "MAINTAINER LINES",
+      "type": "CONCEPT",
+      "description": "Lines that maintain male sterility in hybrids",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "MALE-STERILITY",
+      "type": "TRAIT",
+      "description": "The inability of a plant to produce functional pollen",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "LINE 5141A",
+      "type": "CONCEPT",
+      "description": "A specific male-sterile line used for crossing with diverse germplasm",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "F1 HYBRIDS",
+      "type": "CONCEPT",
+      "description": "The first generation offspring resulting from the cross between germplasm and line 5141A",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "SEED SET",
+      "type": "TRAIT",
+      "description": "The production of seeds on bagged ear heads used to classify fertility",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "Environmental condition where some lines behaved as male-fertile",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "POSTRAINY SEASON",
+      "type": "CONDITION",
+      "description": "Environmental condition where some lines behaved as male-sterile",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "CAMEROON",
+      "type": "LOCATION",
+      "description": "A country where male-sterility restorer lines were not distributed",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "USSR",
+      "type": "LOCATION",
+      "description": "A country where male-sterility restorer lines were not distributed",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A country where maintainer lines were concentrated",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "TRAIT",
+      "description": "A morphological and agronomic character used to differentiate maintainer lines",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A morphological and agronomic character used to differentiate maintainer lines",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "SPIKE LENGTH",
+      "type": "TRAIT",
+      "description": "A morphological and agronomic character used to differentiate maintainer lines",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "GRAIN SIZE",
+      "type": "TRAIT",
+      "description": "A morphological and agronomic character used to differentiate maintainer lines",
+      "source_id": "paper_3737"
+    },
+    {
+      "name": "CROSSING",
+      "type": "METHOD",
+      "description": "The process of mating diverse germplasm with a male-sterile line",
+      "source_id": "paper_3737"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROSSING",
+      "target": "F1 HYBRIDS",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "LINE 5141A",
+      "target": "CROSSING",
+      "description": "used as a parent in",
+      "weight": "10",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "MALE-STERILITY RESTORER LINES",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "MAINTAINER LINES",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "SEED SET",
+      "target": "MALE-STERILITY",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "MALE-STERILITY RESTORER LINES",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "MAINTAINER LINES",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "MALE-STERILITY",
+      "description": "influences expression of",
+      "weight": "7",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "POSTRAINY SEASON",
+      "target": "MALE-STERILITY",
+      "description": "influences expression of",
+      "weight": "7",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "MALE-STERILITY RESTORER LINES",
+      "target": "CAMEROON",
+      "description": "not distributed in",
+      "weight": "6",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "MALE-STERILITY RESTORER LINES",
+      "target": "USSR",
+      "description": "not distributed in",
+      "weight": "6",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "INDIA",
+      "description": "concentrated in",
+      "weight": "8",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "FLOWERING",
+      "description": "differ in",
+      "weight": "7",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "PLANT HEIGHT",
+      "description": "differ in",
+      "weight": "7",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "SPIKE LENGTH",
+      "description": "differ in",
+      "weight": "7",
+      "source_id": "paper_3737"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "GRAIN SIZE",
+      "description": "differ in",
+      "weight": "7",
+      "source_id": "paper_3737"
+    }
+  ]
+}

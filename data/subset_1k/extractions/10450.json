@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogea L., the crop studied for its susceptibility to aflatoxin contamination under drought stress",
+      "source_id": "paper_10450"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONCEPT",
+      "description": "Naturally occurring toxic chemical substances produced by Aspergillus flavus that contaminate groundnuts",
+      "source_id": "paper_10450"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "Fungal species that produces aflatoxins and whose population in the soil is affected by drought stress",
+      "source_id": "paper_10450"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition imposed at different levels to study its effect on aflatoxin contamination and fungal populations",
+      "source_id": "paper_10450"
+    },
+    {
+      "name": "ICRISAT-CHITEDZE AGRICULTURAL RESEARCH STATION",
+      "type": "LOCATION",
+      "description": "The research facility in Malawi where the screen house study was conducted",
+      "source_id": "paper_10450"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "The country where the ICRISAT-Chitedze Agricultural Research Station is located",
+      "source_id": "paper_10450"
+    },
+    {
+      "name": "NEOGENSTRIPS",
+      "type": "METHOD",
+      "description": "Diagnostic tool used in conjunction with a mobile assay tablet reader to estimate aflatoxin levels in groundnut grains",
+      "source_id": "paper_10450"
+    },
+    {
+      "name": "SERIAL DILUTIONS ON MDRB",
+      "type": "METHOD",
+      "description": "Laboratory method using modified dichloran Rose Bengal selective media to quantify Aspergillus flavus population in soil",
+      "source_id": "paper_10450"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "TRAIT",
+      "description": "The presence and concentration of aflatoxins in groundnut grains, measured in ppb",
+      "source_id": "paper_10450"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS POPULATION",
+      "type": "CONCEPT",
+      "description": "The density of Aspergillus flavus fungi in soil samples, measured in cfu/g",
+      "source_id": "paper_10450"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_10450"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10450"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10450"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10450"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "ASPERGILLUS FLAVUS POPULATION",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10450"
+    },
+    {
+      "source": "NEOGENSTRIPS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_10450"
+    },
+    {
+      "source": "SERIAL DILUTIONS ON MDRB",
+      "target": "ASPERGILLUS FLAVUS POPULATION",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_10450"
+    },
+    {
+      "source": "ICRISAT-CHITEDZE AGRICULTURAL RESEARCH STATION",
+      "target": "MALAWI",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10450"
+    }
+  ]
+}

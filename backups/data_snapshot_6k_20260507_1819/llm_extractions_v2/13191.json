@@ -1,0 +1,215 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop species being studied for aflatoxin contamination and resistance.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "The presence of aflatoxins in peanuts occurring at pre-harvest, post-harvest, and storage stages.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "AFLATOXIN RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of peanut genotypes to resist aflatoxin contamination, a priority trait for breeding.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "INTEGRATED AFLATOXIN MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "A comprehensive management approach where aflatoxin resistance is an important component.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "FIELD SCREENING PROTOCOLS",
+      "type": "METHOD",
+      "description": "Procedures used to evaluate peanut genotypes for resistance in the field.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "SAMPLING STRATEGY",
+      "type": "METHOD",
+      "description": "The approach used to collect samples from field plots for aflatoxin analysis.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "PLOT SIZE",
+      "type": "CONCEPT",
+      "description": "The physical dimensions of the experimental plot, identified as key to reducing variability.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "MAGIC POPULATION",
+      "type": "CONCEPT",
+      "description": "Multi-parent Advanced Generation Inter-Cross population lines used as genotypes in the study.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "J11",
+      "type": "CONCEPT",
+      "description": "A known resistant peanut variety used as a standard check.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "JL 24",
+      "type": "CONCEPT",
+      "description": "A known susceptible peanut variety used as a standard check.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The institution and location where the field experiment was conducted.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to arrange peanut genotypes in the field.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The toxigenic fungus used to inoculate peanut plots to induce aflatoxin contamination.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "INDIRECT COMPETITIVE ELISA",
+      "type": "METHOD",
+      "description": "The laboratory method used for the quantification of aflatoxin in peanut pods.",
+      "source_id": "paper_13191"
+    },
+    {
+      "name": "STANDARD ERROR",
+      "type": "CONCEPT",
+      "description": "A statistical measure of variability that is minimized by optimizing plot size.",
+      "source_id": "paper_13191"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is subject to",
+      "weight": "10",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "PEANUT",
+      "target": "AFLATOXIN RESISTANCE",
+      "description": "is bred for",
+      "weight": "10",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "AFLATOXIN RESISTANCE",
+      "target": "INTEGRATED AFLATOXIN MANAGEMENT",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "FIELD SCREENING PROTOCOLS",
+      "target": "AFLATOXIN RESISTANCE",
+      "description": "are used to identify sources of",
+      "weight": "9",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "SAMPLING STRATEGY",
+      "target": "FIELD SCREENING PROTOCOLS",
+      "description": "is a critical part of",
+      "weight": "8",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "PLOT SIZE",
+      "target": "FIELD SCREENING PROTOCOLS",
+      "description": "is a key design parameter of",
+      "weight": "9",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "PLOT SIZE",
+      "target": "STANDARD ERROR",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "MAGIC POPULATION",
+      "target": "PEANUT",
+      "description": "provides genotypes of",
+      "weight": "7",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "J11",
+      "target": "PEANUT",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "JL 24",
+      "target": "PEANUT",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "J11",
+      "target": "AFLATOXIN RESISTANCE",
+      "description": "is a known source of",
+      "weight": "10",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "JL 24",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "description": "is the location where the design was implemented",
+      "weight": "7",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "PEANUT",
+      "description": "inoculates",
+      "weight": "9",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "INDIRECT COMPETITIVE ELISA",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is used to quantify",
+      "weight": "10",
+      "source_id": "paper_13191"
+    },
+    {
+      "source": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "target": "PEANUT",
+      "description": "is used to organize the sowing of",
+      "weight": "8",
+      "source_id": "paper_13191"
+    }
+  ]
+}

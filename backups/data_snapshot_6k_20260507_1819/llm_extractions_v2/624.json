@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A pulse crop (Cicer arietinum L.) cultivated in the Eastern Hemisphere",
+      "source_id": "paper_624"
+    },
+    {
+      "name": "CHICKPEA DISEASES",
+      "type": "CONDITION",
+      "description": "Pathological conditions affecting chickpea plants",
+      "source_id": "paper_624"
+    },
+    {
+      "name": "FUNGAL AND BACTERIAL MICROORGANISMS",
+      "type": "ORGANISM",
+      "description": "Microorganisms associated with chickpea seeds that cause diseases",
+      "source_id": "paper_624"
+    },
+    {
+      "name": "EASTERN HEMISPHERE",
+      "type": "LOCATION",
+      "description": "The region where chickpea has been cultivated for centuries",
+      "source_id": "paper_624"
+    },
+    {
+      "name": "ANNOTATED BIBLIOGRAPHY",
+      "type": "CONCEPT",
+      "description": "A working file of literature concerning chickpea diseases to assist in identification and accessibility",
+      "source_id": "paper_624"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "CHICKPEA DISEASES",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_624"
+    },
+    {
+      "source": "FUNGAL AND BACTERIAL MICROORGANISMS",
+      "target": "CHICKPEA DISEASES",
+      "description": "are associated with",
+      "weight": "9",
+      "source_id": "paper_624"
+    },
+    {
+      "source": "FUNGAL AND BACTERIAL MICROORGANISMS",
+      "target": "CHICKPEA",
+      "description": "are associated with seeds of",
+      "weight": "8",
+      "source_id": "paper_624"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "EASTERN HEMISPHERE",
+      "description": "is cultivated in",
+      "weight": "7",
+      "source_id": "paper_624"
+    },
+    {
+      "source": "ANNOTATED BIBLIOGRAPHY",
+      "target": "CHICKPEA DISEASES",
+      "description": "documents literature on",
+      "weight": "10",
+      "source_id": "paper_624"
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, a crop evaluated for nitrogen use efficiency in sole and intercropping systems",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan (L.) Millsp., a legume crop evaluated for nitrogen fixation and use efficiency in sole and intercropping systems",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The biological process of converting atmospheric nitrogen into a usable form, specifically by pigeonpea",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "NITROGEN FERTILIZER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a crop utilizes applied nitrogen fertilizer",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "DRY MATTER PRODUCTION",
+      "type": "TRAIT",
+      "description": "The total biomass produced by the crops, used as a measure of productivity",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "LAND EQUIVALENT RATIO",
+      "type": "CONCEPT",
+      "description": "A metric used to determine the productivity advantage of intercropping over sole cropping",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "AREA-TIME EQUIVALENT RATIO",
+      "type": "CONCEPT",
+      "description": "A metric used to determine the productivity advantage of intercropping over sole cropping",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "15N-LABELING",
+      "type": "METHOD",
+      "description": "An isotopic labeling method used to estimate nitrogen fertilizer use efficiency and nitrogen fixation",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "NATURAL ABUNDANCE METHOD",
+      "type": "METHOD",
+      "description": "A method using naturally occurring nitrogen isotopes to estimate nitrogen fixation",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously on the same field",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "SOLE CROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing a single crop on a field",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "CONDITION",
+      "description": "A specific type of soil on which the field experiment was conducted",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "INDIAN SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region where the study was performed",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "SYMBIOTICALLY FIXED N",
+      "type": "CONCEPT",
+      "description": "Nitrogen fixed from the atmosphere through a symbiotic relationship between the plant and bacteria",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "SOIL N",
+      "type": "CONCEPT",
+      "description": "Nitrogen naturally available in the soil",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "FERTILIZER N",
+      "type": "CONCEPT",
+      "description": "Nitrogen provided to the crops through chemical fertilizers",
+      "source_id": "paper_3150"
+    },
+    {
+      "name": "LAND PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The overall output and efficiency of land use in cropping systems",
+      "source_id": "paper_3150"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "INTERCROPPING",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "INTERCROPPING",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SOLE CROPPING",
+      "description": "is grown in",
+      "weight": "10",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SOLE CROPPING",
+      "description": "is grown in",
+      "weight": "10",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "NITROGEN FIXATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NITROGEN FERTILIZER USE EFFICIENCY",
+      "description": "has measured",
+      "weight": "8",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "NITROGEN FERTILIZER USE EFFICIENCY",
+      "description": "has measured",
+      "weight": "8",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "DRY MATTER PRODUCTION",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "LAND EQUIVALENT RATIO",
+      "description": "is evaluated by",
+      "weight": "9",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "AREA-TIME EQUIVALENT RATIO",
+      "description": "is evaluated by",
+      "weight": "9",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "15N-LABELING",
+      "target": "NITROGEN FIXATION",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "15N-LABELING",
+      "target": "NITROGEN FERTILIZER USE EFFICIENCY",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "NATURAL ABUNDANCE METHOD",
+      "target": "NITROGEN FIXATION",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "NATURAL ABUNDANCE METHOD",
+      "target": "NITROGEN FERTILIZER USE EFFICIENCY",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SYMBIOTICALLY FIXED N",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "NITROGEN FERTILIZER USE EFFICIENCY",
+      "description": "reduces efficiency in pigeonpea",
+      "weight": "7",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "NITROGEN FIXATION",
+      "description": "increases fractional contribution in pigeonpea",
+      "weight": "7",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "INDIAN SEMI-ARID TROPICS",
+      "description": "is located in",
+      "weight": "8",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ALFISOL",
+      "description": "is grown on",
+      "weight": "7",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "ALFISOL",
+      "description": "is grown on",
+      "weight": "7",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SOIL N",
+      "description": "exploits",
+      "weight": "8",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SOIL N",
+      "description": "exploits",
+      "weight": "8",
+      "source_id": "paper_3150"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "LAND PRODUCTIVITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3150"
+    }
+  ]
+}

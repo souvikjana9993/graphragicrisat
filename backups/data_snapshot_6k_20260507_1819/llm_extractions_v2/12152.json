@@ -1,0 +1,270 @@
+{
+  "entities": [
+    {
+      "name": "HOMOSOILS",
+      "type": "CONCEPT",
+      "description": "Soils that can be geographically distant but share similar soil-forming factors",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "SOIL DATA AVAILABILITY",
+      "type": "CONCEPT",
+      "description": "The availability of soil data in various areas of the world",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "SOIL MANAGEMENT STRATEGIES",
+      "type": "CONCEPT",
+      "description": "Strategies for improving the management of soil",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "SOIL DATA COLLECTION",
+      "type": "METHOD",
+      "description": "The process of gathering new soil data to update legacy surveys",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "LEGACY SOIL SURVEYS",
+      "type": "CONCEPT",
+      "description": "Existing soil surveys that require updating with new data",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "SOIL-FORMING FACTORS",
+      "type": "CONCEPT",
+      "description": "Factors that contribute to the formation and characteristics of soil",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "DISTANCE METRICS",
+      "type": "METHOD",
+      "description": "Metrics used to identify homosoils in the character space of environmental covariates",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "ENVIRONMENTAL COVARIATES",
+      "type": "CONCEPT",
+      "description": "Variables that span the character space used to calculate distance metrics",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "A country in Africa used as a case study for soil data enrichment",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A country identified as having homosoils similar to Mali",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "AUSTRALIA",
+      "type": "LOCATION",
+      "description": "A country identified as having homosoils similar to Mali",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "AMERICA",
+      "type": "LOCATION",
+      "description": "A region identified as having homosoils similar to Mali",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "AFRICAN SAHELIAN ZONE",
+      "type": "LOCATION",
+      "description": "A geographical zone in Africa with specific soil-forming factors",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "WOSIS DATABASE",
+      "type": "CONCEPT",
+      "description": "A database from which soil data for various areas was collected",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "STATISTICAL ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis used to determine the relationship between homosoils and soil properties",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "SOIL PROPERTIES",
+      "type": "CONCEPT",
+      "description": "Physical and chemical characteristics of soil, such as clay, sand, and pH",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "CLAY",
+      "type": "TRAIT",
+      "description": "A soil property analyzed in relation to homosoils",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "SAND",
+      "type": "TRAIT",
+      "description": "A soil property analyzed in relation to homosoils",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "PH",
+      "type": "TRAIT",
+      "description": "A soil property analyzed in relation to homosoils",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "SEMI-ARID CONDITIONS",
+      "type": "CONDITION",
+      "description": "Climatic conditions associated with specific homosoils in Mali",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "SEDIMENTARY PARENT MATERIAL",
+      "type": "CONDITION",
+      "description": "Geological material associated with specific homosoils in Mali",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "SOIL MODELS",
+      "type": "CONCEPT",
+      "description": "Models of soil that could be transferred between areas using homosoils",
+      "source_id": "paper_12152"
+    },
+    {
+      "name": "AGRONOMIC EXPERIMENTAL RESULTS",
+      "type": "CONCEPT",
+      "description": "Results from agronomic experiments that could be transferred between areas using homosoils",
+      "source_id": "paper_12152"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HOMOSOILS",
+      "target": "SOIL-FORMING FACTORS",
+      "description": "share similar",
+      "weight": "10",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "DISTANCE METRICS",
+      "target": "HOMOSOILS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "ENVIRONMENTAL COVARIATES",
+      "target": "DISTANCE METRICS",
+      "description": "used to calculate",
+      "weight": "8",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "MALI",
+      "target": "AFRICAN SAHELIAN ZONE",
+      "description": "located within",
+      "weight": "10",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "INDIA",
+      "target": "HOMOSOILS",
+      "description": "shares similar soil-forming factors with Mali",
+      "weight": "7",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "AUSTRALIA",
+      "target": "HOMOSOILS",
+      "description": "shares similar soil-forming factors with Mali",
+      "weight": "7",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "AMERICA",
+      "target": "HOMOSOILS",
+      "description": "shares similar soil-forming factors with Mali",
+      "weight": "7",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "WOSIS DATABASE",
+      "target": "SOIL DATA COLLECTION",
+      "description": "source of data for",
+      "weight": "9",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "STATISTICAL ANALYSIS",
+      "target": "SOIL PROPERTIES",
+      "description": "analyzed the relationship with",
+      "weight": "8",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "STATISTICAL ANALYSIS",
+      "target": "HOMOSOILS",
+      "description": "analyzed the relationship with",
+      "weight": "8",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "PH",
+      "target": "SEMI-ARID CONDITIONS",
+      "description": "strong association",
+      "weight": "9",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "PH",
+      "target": "SEDIMENTARY PARENT MATERIAL",
+      "description": "strong association",
+      "weight": "9",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "HOMOSOILS",
+      "target": "CLAY",
+      "description": "moderate association",
+      "weight": "6",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "HOMOSOILS",
+      "target": "SAND",
+      "description": "moderate association",
+      "weight": "6",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "HOMOSOILS",
+      "target": "SOIL MODELS",
+      "description": "enables transfer of",
+      "weight": "7",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "HOMOSOILS",
+      "target": "AGRONOMIC EXPERIMENTAL RESULTS",
+      "description": "enables transfer of",
+      "weight": "7",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "SOIL DATA COLLECTION",
+      "target": "LEGACY SOIL SURVEYS",
+      "description": "used to update",
+      "weight": "8",
+      "source_id": "paper_12152"
+    },
+    {
+      "source": "SOIL DATA AVAILABILITY",
+      "target": "SOIL MANAGEMENT STRATEGIES",
+      "description": "affects implementation of",
+      "weight": "7",
+      "source_id": "paper_12152"
+    }
+  ]
+}

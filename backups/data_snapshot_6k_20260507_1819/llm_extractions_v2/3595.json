@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "MYCOPLASMA-LIKE ORGANISM",
+      "type": "ORGANISM",
+      "description": "An organism associated with peanut witches' broom",
+      "source_id": "paper_3595"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The host plant affected by witches' broom",
+      "source_id": "paper_3595"
+    },
+    {
+      "name": "WITCHES' BROOM",
+      "type": "CONDITION",
+      "description": "A disease affecting peanut plants characterized by abnormal growth",
+      "source_id": "paper_3595"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the samples were collected",
+      "source_id": "paper_3595"
+    },
+    {
+      "name": "INDIRECT ENZYME-LINKED IMMUNOSORBENT ASSAY",
+      "type": "METHOD",
+      "description": "A protein A procedure used to detect the mycoplasma-like organism",
+      "source_id": "paper_3595"
+    },
+    {
+      "name": "BRINJAL",
+      "type": "CROP",
+      "description": "A plant affected by little leaf disease",
+      "source_id": "paper_3595"
+    },
+    {
+      "name": "LITTLE LEAF",
+      "type": "CONDITION",
+      "description": "A disease of brinjal assumed to have MLO etiology",
+      "source_id": "paper_3595"
+    },
+    {
+      "name": "DATURA SP.",
+      "type": "ORGANISM",
+      "description": "A plant species affected by witches' broom",
+      "source_id": "paper_3595"
+    },
+    {
+      "name": "DATURA WITCHES' BROOM",
+      "type": "CONDITION",
+      "description": "A disease affecting Datura sp. assumed to have MLO etiology",
+      "source_id": "paper_3595"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MYCOPLASMA-LIKE ORGANISM",
+      "target": "GROUNDNUT",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_3595"
+    },
+    {
+      "source": "MYCOPLASMA-LIKE ORGANISM",
+      "target": "WITCHES' BROOM",
+      "description": "associated with",
+      "weight": "10",
+      "source_id": "paper_3595"
+    },
+    {
+      "source": "WITCHES' BROOM",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3595"
+    },
+    {
+      "source": "WITCHES' BROOM",
+      "target": "INDIA",
+      "description": "occurred in",
+      "weight": "8",
+      "source_id": "paper_3595"
+    },
+    {
+      "source": "INDIRECT ENZYME-LINKED IMMUNOSORBENT ASSAY",
+      "target": "MYCOPLASMA-LIKE ORGANISM",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_3595"
+    },
+    {
+      "source": "LITTLE LEAF",
+      "target": "BRINJAL",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3595"
+    },
+    {
+      "source": "LITTLE LEAF",
+      "target": "MYCOPLASMA-LIKE ORGANISM",
+      "description": "assumed etiology",
+      "weight": "7",
+      "source_id": "paper_3595"
+    },
+    {
+      "source": "DATURA WITCHES' BROOM",
+      "target": "DATURA SP.",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3595"
+    },
+    {
+      "source": "DATURA WITCHES' BROOM",
+      "target": "MYCOPLASMA-LIKE ORGANISM",
+      "description": "assumed etiology",
+      "weight": "7",
+      "source_id": "paper_3595"
+    }
+  ]
+}

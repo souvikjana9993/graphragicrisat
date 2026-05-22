@@ -1,0 +1,180 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "The crop being studied, specifically Glycine max cv. Wayne",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "GLYCINE MAX",
+      "type": "ORGANISM",
+      "description": "The scientific name of the soybean plant used in the study",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "EXTENDED DRYING CYCLE",
+      "type": "METHOD",
+      "description": "The experimental procedure used to induce water deficits in the field",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "WATER DEFICITS",
+      "type": "CONDITION",
+      "description": "The state of lacking sufficient water used to test leaf sensitivity",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "LEAF SENSITIVITY",
+      "type": "TRAIT",
+      "description": "The response of soybean leaves to water deficits",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The application of water to plots to compare against non-irrigated ones",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "NON-IRRIGATION",
+      "type": "CONDITION",
+      "description": "The absence of water application in plots",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "LEAFLET SIZE AND NUMBER",
+      "type": "TRAIT",
+      "description": "The average size and count of leaflets per plant",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "LEAF AREA DISTRIBUTION",
+      "type": "TRAIT",
+      "description": "The distribution of leaf area within the plant canopy",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by lack of moisture affecting leaf area distribution",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "LEAF SENESCENCE",
+      "type": "CONCEPT",
+      "description": "The process of leaf aging and death",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "LIGHT PENETRATION",
+      "type": "CONCEPT",
+      "description": "The ability of light to reach lower depths of the canopy",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "LEAF ENLARGEMENT",
+      "type": "TRAIT",
+      "description": "The growth and expansion of leaves",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "LEAF-WATER POTENTIAL",
+      "type": "TRAIT",
+      "description": "A measure of the water tension in the leaf used to identify growth thresholds",
+      "source_id": "paper_2324"
+    },
+    {
+      "name": "STOMATAL CONDUCTANCE",
+      "type": "TRAIT",
+      "description": "The rate of passage of carbon dioxide entering or water vapor exiting through the stomata",
+      "source_id": "paper_2324"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN",
+      "target": "GLYCINE MAX",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "EXTENDED DRYING CYCLE",
+      "description": "subjected to",
+      "weight": "8",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "EXTENDED DRYING CYCLE",
+      "target": "WATER DEFICITS",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "WATER DEFICITS",
+      "target": "LEAF SENSITIVITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "LEAFLET SIZE AND NUMBER",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "NON-IRRIGATION",
+      "target": "LEAFLET SIZE AND NUMBER",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "LEAF AREA DISTRIBUTION",
+      "description": "mediates",
+      "weight": "7",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "LEAF SENESCENCE",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "LIGHT PENETRATION",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "LEAF-WATER POTENTIAL",
+      "target": "LEAF ENLARGEMENT",
+      "description": "determines threshold for",
+      "weight": "9",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "STOMATAL CONDUCTANCE",
+      "target": "LEAF ENLARGEMENT",
+      "description": "determines threshold for",
+      "weight": "9",
+      "source_id": "paper_2324"
+    },
+    {
+      "source": "WATER DEFICITS",
+      "target": "MOISTURE STRESS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2324"
+    }
+  ]
+}

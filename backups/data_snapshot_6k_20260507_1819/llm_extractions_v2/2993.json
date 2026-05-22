@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, a legume crop from which disease resistance genes were cloned",
+      "source_id": "paper_2993"
+    },
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "Cajanus cajan, a legume crop from which disease resistance genes were cloned",
+      "source_id": "paper_2993"
+    },
+    {
+      "name": "DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist disease, conferred by specific nucleotide binding sites",
+      "source_id": "paper_2993"
+    },
+    {
+      "name": "NUCLEOTIDE BINDING SITES",
+      "type": "GENE_MARKER",
+      "description": "Genetic sequences that confer disease resistance and were cloned from chickpea and pigeon pea",
+      "source_id": "paper_2993"
+    },
+    {
+      "name": "CLONING",
+      "type": "METHOD",
+      "description": "The process used to isolate putative disease resistance gene clones",
+      "source_id": "paper_2993"
+    },
+    {
+      "name": "N GENE",
+      "type": "GENE_MARKER",
+      "description": "A resistance gene from tobacco showing high homology to the cloned candidates",
+      "source_id": "paper_2993"
+    },
+    {
+      "name": "TOBACCO",
+      "type": "CROP",
+      "description": "The source plant for the N resistance gene",
+      "source_id": "paper_2993"
+    },
+    {
+      "name": "L6 GENE",
+      "type": "GENE_MARKER",
+      "description": "A resistance gene from flax showing high homology to the cloned candidates",
+      "source_id": "paper_2993"
+    },
+    {
+      "name": "FLAX",
+      "type": "CROP",
+      "description": "The source plant for the L6 resistance gene",
+      "source_id": "paper_2993"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLONING",
+      "target": "NUCLEOTIDE BINDING SITES",
+      "description": "used to isolate",
+      "weight": "10",
+      "source_id": "paper_2993"
+    },
+    {
+      "source": "NUCLEOTIDE BINDING SITES",
+      "target": "DISEASE RESISTANCE",
+      "description": "confers",
+      "weight": "10",
+      "source_id": "paper_2993"
+    },
+    {
+      "source": "NUCLEOTIDE BINDING SITES",
+      "target": "CHICKPEA",
+      "description": "cloned from",
+      "weight": "10",
+      "source_id": "paper_2993"
+    },
+    {
+      "source": "NUCLEOTIDE BINDING SITES",
+      "target": "PIGEON PEA",
+      "description": "cloned from",
+      "weight": "10",
+      "source_id": "paper_2993"
+    },
+    {
+      "source": "NUCLEOTIDE BINDING SITES",
+      "target": "N GENE",
+      "description": "shows high homology to",
+      "weight": "8",
+      "source_id": "paper_2993"
+    },
+    {
+      "source": "NUCLEOTIDE BINDING SITES",
+      "target": "L6 GENE",
+      "description": "shows high homology to",
+      "weight": "8",
+      "source_id": "paper_2993"
+    },
+    {
+      "source": "N GENE",
+      "target": "TOBACCO",
+      "description": "found in",
+      "weight": "10",
+      "source_id": "paper_2993"
+    },
+    {
+      "source": "L6 GENE",
+      "target": "FLAX",
+      "description": "found in",
+      "weight": "10",
+      "source_id": "paper_2993"
+    }
+  ]
+}

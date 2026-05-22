@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, the crop evaluated for resistance to downy mildew",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew in pearl millet",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "DOWNY MILDEW RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pearl millet genotypes to resist infection by Sclerospora graminicola",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "IAC",
+      "type": "LOCATION",
+      "description": "A research location where field tests were conducted",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A geographical region where field tests were conducted",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "A geographical region where field tests were conducted",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "PATHOTYPES",
+      "type": "CONCEPT",
+      "description": "Host-specific strains of Sclerospora graminicola used for evaluation",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "SPRAY-INOCULATION",
+      "type": "METHOD",
+      "description": "The process of applying a sporangial suspension to seedlings",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "GLASSHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where spray-inoculation experiments were performed",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "LATENT PERIOD",
+      "type": "TRAIT",
+      "description": "The time interval between inoculation and the appearance of disease symptoms",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "DISEASE INCIDENCE",
+      "type": "TRAIT",
+      "description": "The percentage of plants showing disease symptoms",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "HOST RESISTANCE INDEX",
+      "type": "METHOD",
+      "description": "A calculated measure of resistance stability based on disease incidence and latent period",
+      "source_id": "paper_3639"
+    },
+    {
+      "name": "HOST GENOTYPE",
+      "type": "CONCEPT",
+      "description": "The genetic variation among the pearl millet genotypes evaluated",
+      "source_id": "paper_3639"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "SCLEROSPORA GRAMINICOLA",
+      "description": "is the host for",
+      "weight": "10",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "DOWNY MILDEW RESISTANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW RESISTANCE",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "PATHOTYPES",
+      "description": "is divided into",
+      "weight": "9",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "IAC",
+      "description": "was tested at",
+      "weight": "7",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "INDIA",
+      "description": "was tested in",
+      "weight": "7",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "AFRICA",
+      "description": "was tested in",
+      "weight": "7",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "SPRAY-INOCULATION",
+      "target": "SCLEROSPORA GRAMINICOLA",
+      "description": "is used to introduce",
+      "weight": "8",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "SPRAY-INOCULATION",
+      "target": "GLASSHOUSE",
+      "description": "was performed in",
+      "weight": "7",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "HOST RESISTANCE INDEX",
+      "target": "LATENT PERIOD",
+      "description": "is calculated using",
+      "weight": "10",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "HOST RESISTANCE INDEX",
+      "target": "DISEASE INCIDENCE",
+      "description": "is calculated using",
+      "weight": "10",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "HOST RESISTANCE INDEX",
+      "target": "DOWNY MILDEW RESISTANCE",
+      "description": "quantifies",
+      "weight": "9",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "HOST GENOTYPE",
+      "target": "HOST RESISTANCE INDEX",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3639"
+    },
+    {
+      "source": "PATHOTYPES",
+      "target": "HOST RESISTANCE INDEX",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3639"
+    }
+  ]
+}

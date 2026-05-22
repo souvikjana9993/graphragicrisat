@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT STRAW",
+      "type": "CROP",
+      "description": "Straw from wheat plants undergoing biological degradation",
+      "source_id": "paper_5678"
+    },
+    {
+      "name": "MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The process of converting organic matter into inorganic forms of nutrients",
+      "source_id": "paper_5678"
+    },
+    {
+      "name": "BIOLOGICAL DEGRADATION",
+      "type": "CONCEPT",
+      "description": "The breakdown of organic material by living organisms",
+      "source_id": "paper_5678"
+    },
+    {
+      "name": "MICROORGANISMS",
+      "type": "ORGANISM",
+      "description": "Inoculated biological agents used to degrade straw and release nutrients",
+      "source_id": "paper_5678"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nutrient released as ammonical and nitrate forms during degradation",
+      "source_id": "paper_5678"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "Nutrient released during mineralization, specifically by Penicillium sp.",
+      "source_id": "paper_5678"
+    },
+    {
+      "name": "PENICILLIUM SP.",
+      "type": "ORGANISM",
+      "description": "A specific microorganism found to be most active in releasing available phosphorus",
+      "source_id": "paper_5678"
+    },
+    {
+      "name": "POTASH",
+      "type": "CONCEPT",
+      "description": "Nutrient whose amount declined as degradation progressed",
+      "source_id": "paper_5678"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MICROORGANISMS",
+      "target": "BIOLOGICAL DEGRADATION",
+      "description": "drive the process of",
+      "weight": "9",
+      "source_id": "paper_5678"
+    },
+    {
+      "source": "MICROORGANISMS",
+      "target": "MINERALIZATION",
+      "description": "perform mineralizing activities",
+      "weight": "9",
+      "source_id": "paper_5678"
+    },
+    {
+      "source": "BIOLOGICAL DEGRADATION",
+      "target": "WHEAT STRAW",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_5678"
+    },
+    {
+      "source": "MINERALIZATION",
+      "target": "WHEAT STRAW",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_5678"
+    },
+    {
+      "source": "MICROORGANISMS",
+      "target": "NITROGEN",
+      "description": "increase the release of",
+      "weight": "8",
+      "source_id": "paper_5678"
+    },
+    {
+      "source": "MICROORGANISMS",
+      "target": "PHOSPHORUS",
+      "description": "increase the release of",
+      "weight": "8",
+      "source_id": "paper_5678"
+    },
+    {
+      "source": "PENICILLIUM SP.",
+      "target": "PHOSPHORUS",
+      "description": "most active in releasing",
+      "weight": "10",
+      "source_id": "paper_5678"
+    },
+    {
+      "source": "BIOLOGICAL DEGRADATION",
+      "target": "POTASH",
+      "description": "leads to a decline in",
+      "weight": "7",
+      "source_id": "paper_5678"
+    }
+  ]
+}

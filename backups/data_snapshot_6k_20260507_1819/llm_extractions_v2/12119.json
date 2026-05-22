@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop studied for productivity and yield impacts in Kenya",
+      "source_id": "paper_12119"
+    },
+    {
+      "name": "STEMBORERS",
+      "type": "ORGANISM",
+      "description": "Pests that attack maize crops and are targeted by biological control",
+      "source_id": "paper_12119"
+    },
+    {
+      "name": "BIOLOGICAL CONTROL",
+      "type": "METHOD",
+      "description": "The use of biological agents to manage and reduce the population of stemborers",
+      "source_id": "paper_12119"
+    },
+    {
+      "name": "MAIZE YIELD",
+      "type": "TRAIT",
+      "description": "The measure of maize productivity per hectare",
+      "source_id": "paper_12119"
+    },
+    {
+      "name": "POVERTY",
+      "type": "CONCEPT",
+      "description": "The economic condition of farm households affected by crop productivity",
+      "source_id": "paper_12119"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the biological and household survey data were collected",
+      "source_id": "paper_12119"
+    },
+    {
+      "name": "CONTINUOUS TREATMENT IMPACT-EVALUATION METHOD",
+      "type": "METHOD",
+      "description": "The statistical approach used to estimate average and marginal treatment effects of biological control",
+      "source_id": "paper_12119"
+    },
+    {
+      "name": "FOOD INSECURITY",
+      "type": "CONCEPT",
+      "description": "The state of lacking consistent access to enough food for an active, healthy life",
+      "source_id": "paper_12119"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "The continent where biological control is proposed as a tool against food insecurity and poverty",
+      "source_id": "paper_12119"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "STEMBORERS",
+      "description": "used to control",
+      "weight": "10",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "MAIZE YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "POVERTY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "STEMBORERS",
+      "target": "MAIZE",
+      "description": "acts as a pest to",
+      "weight": "9",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "CONTINUOUS TREATMENT IMPACT-EVALUATION METHOD",
+      "target": "BIOLOGICAL CONTROL",
+      "description": "used to estimate the impact of",
+      "weight": "9",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "MAIZE",
+      "target": "KENYA",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "POVERTY",
+      "target": "KENYA",
+      "description": "observed in",
+      "weight": "7",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "FOOD INSECURITY",
+      "description": "used as a tool to fight",
+      "weight": "7",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "POVERTY",
+      "target": "AFRICA",
+      "description": "prevalent in",
+      "weight": "7",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "FOOD INSECURITY",
+      "target": "AFRICA",
+      "description": "prevalent in",
+      "weight": "7",
+      "source_id": "paper_12119"
+    },
+    {
+      "source": "KENYA",
+      "target": "AFRICA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12119"
+    }
+  ]
+}

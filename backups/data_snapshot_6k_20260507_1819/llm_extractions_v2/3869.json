@@ -1,0 +1,225 @@
+{
+  "entities": [
+    {
+      "name": "SATELLITE DATA",
+      "type": "METHOD",
+      "description": "Data acquired from spaceborne sensors used for watershed management and impact assessment",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "WATERSHED MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The process of managing land and water resources for optimal utilization and conservation",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "ENVIRONMENTAL DEGRADATION",
+      "type": "CONDITION",
+      "description": "The deterioration of the environment through depletion of natural resources",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "SPACEBORNE MULTISPECTRAL MEASUREMENTS",
+      "type": "METHOD",
+      "description": "Measurements taken from space at regular intervals to provide information on natural resources",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "GEOGRAPHIC INFORMATION SYSTEM",
+      "type": "METHOD",
+      "description": "A system for integrating natural resource information with ancillary data for decision making",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "ADARSHA WATERSHED",
+      "type": "LOCATION",
+      "description": "The specific geographic area where the study was conducted",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "KOTHAPALLY",
+      "type": "LOCATION",
+      "description": "The location within the Adarsha watershed",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "RANGA REDDY DISTRICT",
+      "type": "LOCATION",
+      "description": "The district where the study area is located",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state where the study area is located",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study area is located",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "THEMATIC MAPS",
+      "type": "METHOD",
+      "description": "Maps generated through visual interpretation of satellite data to represent natural resources",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "VISUAL INTERPRETATION",
+      "type": "METHOD",
+      "description": "The method of analyzing satellite data to create thematic maps",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "type": "METHOD",
+      "description": "A vegetation index used to monitor vegetation development",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "INDIAN REMOTE SENSING SATELLITE",
+      "type": "METHOD",
+      "description": "The satellite system providing data for NDVI generation",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "LISS-III",
+      "type": "METHOD",
+      "description": "The Linear Imaging Self-scanning Sensor used to collect data for NDVI",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The process of soil being removed by water, causing land degradation",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONDITION",
+      "description": "The decline in the quality of land, primarily caused by soil erosion in this context",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "VEGETATION COVER",
+      "type": "TRAIT",
+      "description": "The amount of vegetation covering the land surface",
+      "source_id": "paper_3869"
+    },
+    {
+      "name": "SOIL AND WATER CONSERVATION MEASURES",
+      "type": "METHOD",
+      "description": "Actions implemented to prevent soil erosion and improve vegetation cover",
+      "source_id": "paper_3869"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SATELLITE DATA",
+      "target": "WATERSHED MANAGEMENT",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "SPACEBORNE MULTISPECTRAL MEASUREMENTS",
+      "target": "SATELLITE DATA",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "GEOGRAPHIC INFORMATION SYSTEM",
+      "target": "WATERSHED MANAGEMENT",
+      "description": "used for integration and decision making",
+      "weight": "8",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "ADARSHA WATERSHED",
+      "target": "KOTHAPALLY",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "KOTHAPALLY",
+      "target": "RANGA REDDY DISTRICT",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "RANGA REDDY DISTRICT",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "VISUAL INTERPRETATION",
+      "target": "THEMATIC MAPS",
+      "description": "used to generate",
+      "weight": "9",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "SATELLITE DATA",
+      "target": "THEMATIC MAPS",
+      "description": "source for",
+      "weight": "9",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "VEGETATION COVER",
+      "description": "used to monitor",
+      "weight": "10",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "INDIAN REMOTE SENSING SATELLITE",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "source of data for",
+      "weight": "8",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "LISS-III",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "sensor used for",
+      "weight": "9",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "LAND DEGRADATION",
+      "description": "is a process of",
+      "weight": "10",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION MEASURES",
+      "target": "VEGETATION COVER",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_3869"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION MEASURES",
+      "target": "SOIL EROSION",
+      "description": "mitigates",
+      "weight": "9",
+      "source_id": "paper_3869"
+    }
+  ]
+}

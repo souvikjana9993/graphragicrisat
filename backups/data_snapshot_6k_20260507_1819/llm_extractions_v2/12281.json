@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, the crop being studied for disease resistance",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONCEPT",
+      "description": "A devastating disease affecting chickpea caused by a fungal pathogen",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. CICERI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Fusarium wilt in chickpea",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "FW RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to resist Fusarium wilt",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "SEEDLING STAGE",
+      "type": "CONDITION",
+      "description": "The early growth stage of the plant used for testing FW reactions",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "REPRODUCTIVE STAGE",
+      "type": "CONDITION",
+      "description": "The later growth stage of the plant used for testing FW reactions",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "Natural environment used for testing FW reactions",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "CONDITION",
+      "description": "Controlled environment used for testing FW reactions",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "AXIOM CICERSNP ARRAY",
+      "type": "METHOD",
+      "description": "A 50K SNP array used for genotyping chickpea to identify marker-trait associations",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "MARKER-TRAIT ASSOCIATIONS",
+      "type": "CONCEPT",
+      "description": "Statistical associations between genetic markers and phenotypic traits",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "AFFX_123280060",
+      "type": "GENE_MARKER",
+      "description": "A specific stable and major marker associated with FW resistance",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "PHENOTYPIC VARIATION",
+      "type": "CONCEPT",
+      "description": "The observable variation in traits explained by marker-trait associations",
+      "source_id": "paper_12281"
+    },
+    {
+      "name": "CHICKPEA BREEDING PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Programs aimed at improving chickpea varieties using genetic markers",
+      "source_id": "paper_12281"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERI",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "FW RESISTANCE",
+      "target": "CHICKPEA",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "AXIOM CICERSNP ARRAY",
+      "target": "MARKER-TRAIT ASSOCIATIONS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "MARKER-TRAIT ASSOCIATIONS",
+      "target": "FW RESISTANCE",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "AFFX_123280060",
+      "target": "MARKER-TRAIT ASSOCIATIONS",
+      "description": "is a specific instance of",
+      "weight": "10",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "AFFX_123280060",
+      "target": "FW RESISTANCE",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "SEEDLING STAGE",
+      "target": "FW RESISTANCE",
+      "description": "is a stage for testing",
+      "weight": "8",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "REPRODUCTIVE STAGE",
+      "target": "FW RESISTANCE",
+      "description": "is a stage for testing",
+      "weight": "8",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "FIELD CONDITIONS",
+      "target": "FW RESISTANCE",
+      "description": "is an environment for testing",
+      "weight": "8",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "FW RESISTANCE",
+      "description": "is an environment for testing",
+      "weight": "8",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "MARKER-TRAIT ASSOCIATIONS",
+      "target": "PHENOTYPIC VARIATION",
+      "description": "explains",
+      "weight": "8",
+      "source_id": "paper_12281"
+    },
+    {
+      "source": "MARKER-TRAIT ASSOCIATIONS",
+      "target": "CHICKPEA BREEDING PROGRAMS",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_12281"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop studied for residue burning and cultivation patterns.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The global environmental shift driving the need for emission mitigation.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "GREENHOUSE GAS EMISSIONS",
+      "type": "CONCEPT",
+      "description": "The release of gases like CO2, CH4, and N2O into the atmosphere.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "RESIDUE BURNING",
+      "type": "CONCEPT",
+      "description": "The practice of burning agricultural crop remains.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "RICE CULTIVATION",
+      "type": "CONCEPT",
+      "description": "The agricultural process of growing rice.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "SENTINEL-2 SATELLITE IMAGERY",
+      "type": "METHOD",
+      "description": "Satellite data used for mapping burn areas and dates.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "MACHINE LEARNING ALGORITHMS",
+      "type": "METHOD",
+      "description": "Computational methods used to analyze cultivation patterns and burn areas.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "GROUND TRUTH DATA",
+      "type": "METHOD",
+      "description": "Field-verified data used to calibrate and validate satellite analysis.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "KALESHWARAM INTERVENTION",
+      "type": "LOCATION",
+      "description": "The specific region or project area where rice cultivation changes were analyzed.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "NEAR-INFRARED REGION (NIR) BAND",
+      "type": "METHOD",
+      "description": "A specific spectral band used to identify residue burn areas and dates.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "CO2",
+      "type": "CONCEPT",
+      "description": "Carbon dioxide emitted during crop residue burning.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "CH4",
+      "type": "CONCEPT",
+      "description": "Methane emitted during both crop residue burning and rice cultivation.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "N2O",
+      "type": "CONCEPT",
+      "description": "Nitrous oxide emitted during crop residue burning.",
+      "source_id": "paper_13056"
+    },
+    {
+      "name": "SUSTAINABLE CROP RESIDUE MANAGEMENT STRATEGIES",
+      "type": "CONCEPT",
+      "description": "Approaches designed to reduce the environmental impact of residue burning.",
+      "source_id": "paper_13056"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "RICE CULTIVATION",
+      "description": "is the subject of",
+      "weight": "10",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "RICE",
+      "target": "RESIDUE BURNING",
+      "description": "is the source of residue for",
+      "weight": "10",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "RESIDUE BURNING",
+      "target": "GREENHOUSE GAS EMISSIONS",
+      "description": "contributes to",
+      "weight": "10",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "RICE CULTIVATION",
+      "target": "GREENHOUSE GAS EMISSIONS",
+      "description": "contributes to",
+      "weight": "10",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "SENTINEL-2 SATELLITE IMAGERY",
+      "target": "RESIDUE BURNING",
+      "description": "is used to map",
+      "weight": "9",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "MACHINE LEARNING ALGORITHMS",
+      "target": "RESIDUE BURNING",
+      "description": "is used to analyze",
+      "weight": "8",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "GROUND TRUTH DATA",
+      "target": "RESIDUE BURNING",
+      "description": "is used to validate",
+      "weight": "8",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "NEAR-INFRARED REGION (NIR) BAND",
+      "target": "RESIDUE BURNING",
+      "description": "is used to identify",
+      "weight": "9",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "KALESHWARAM INTERVENTION",
+      "target": "RICE CULTIVATION",
+      "description": "is the location of",
+      "weight": "9",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "RESIDUE BURNING",
+      "target": "CO2",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "RESIDUE BURNING",
+      "target": "CH4",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "RESIDUE BURNING",
+      "target": "N2O",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "RICE CULTIVATION",
+      "target": "CH4",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "GREENHOUSE GAS EMISSIONS",
+      "target": "CLIMATE CHANGE",
+      "description": "drives",
+      "weight": "10",
+      "source_id": "paper_13056"
+    },
+    {
+      "source": "SUSTAINABLE CROP RESIDUE MANAGEMENT STRATEGIES",
+      "target": "RESIDUE BURNING",
+      "description": "aims to mitigate",
+      "weight": "9",
+      "source_id": "paper_13056"
+    }
+  ]
+}

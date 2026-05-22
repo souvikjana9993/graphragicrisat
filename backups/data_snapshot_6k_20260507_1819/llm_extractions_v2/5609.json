@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop affected by groundnut rosette disease",
+      "source_id": "paper_5609"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE DISEASE",
+      "type": "CONDITION",
+      "description": "A plant virus disease first reported in 1907 that affects groundnuts",
+      "source_id": "paper_5609"
+    },
+    {
+      "name": "PLANT VIRUS DISEASES",
+      "type": "CONCEPT",
+      "description": "Diseases caused by plant viruses, often involving synergistic interactions",
+      "source_id": "paper_5609"
+    },
+    {
+      "name": "CAUSATIVE VIRUSES",
+      "type": "ORGANISM",
+      "description": "Viruses that cause plant virus diseases and may facilitate each other's survival and spread",
+      "source_id": "paper_5609"
+    },
+    {
+      "name": "SYNERGISTIC INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "Interactions between viruses where one facilitates the other's molecular function for survival and spread",
+      "source_id": "paper_5609"
+    },
+    {
+      "name": "TANGANYIKA",
+      "type": "LOCATION",
+      "description": "The location where groundnut rosette disease was first reported in 1907",
+      "source_id": "paper_5609"
+    },
+    {
+      "name": "TANZANIA",
+      "type": "LOCATION",
+      "description": "The present-day name of Tanganyika",
+      "source_id": "paper_5609"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The region where effective control of groundnut rosette disease is needed",
+      "source_id": "paper_5609"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT ROSETTE DISEASE",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5609"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE DISEASE",
+      "target": "PLANT VIRUS DISEASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_5609"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE DISEASE",
+      "target": "CAUSATIVE VIRUSES",
+      "description": "is caused by",
+      "weight": "10",
+      "source_id": "paper_5609"
+    },
+    {
+      "source": "CAUSATIVE VIRUSES",
+      "target": "SYNERGISTIC INTERACTIONS",
+      "description": "exhibit",
+      "weight": "8",
+      "source_id": "paper_5609"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE DISEASE",
+      "target": "TANGANYIKA",
+      "description": "first reported in",
+      "weight": "9",
+      "source_id": "paper_5609"
+    },
+    {
+      "source": "TANGANYIKA",
+      "target": "TANZANIA",
+      "description": "is now",
+      "weight": "10",
+      "source_id": "paper_5609"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE DISEASE",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "needs effective control in",
+      "weight": "9",
+      "source_id": "paper_5609"
+    }
+  ]
+}

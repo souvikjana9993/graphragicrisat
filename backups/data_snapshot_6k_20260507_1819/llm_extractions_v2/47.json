@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Zea mays L. grown in Zimbabwe",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "GREENHOUSE GASES",
+      "type": "CONCEPT",
+      "description": "Gases including N2O, CO2, and CH4 that contribute to global warming",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "N2O",
+      "type": "CONCEPT",
+      "description": "Nitrous oxide emissions from soil",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "CO2",
+      "type": "CONCEPT",
+      "description": "Carbon dioxide emissions from soil",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "CH4",
+      "type": "CONCEPT",
+      "description": "Methane emissions or consumption from soil",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "GLOBAL WARMING",
+      "type": "CONCEPT",
+      "description": "The long-term heating of Earth's climate system caused by greenhouse gas emissions",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "CROP YIELDS",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The efficiency of crop production per unit yield",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "MINERAL FERTILIZER NITROGEN",
+      "type": "CONDITION",
+      "description": "Nitrogen applied as NH4NO3-N",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "COMPOSTED MANURE NITROGEN",
+      "type": "CONDITION",
+      "description": "Nitrogen applied as composted manure",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "CLAY SOIL",
+      "type": "CONDITION",
+      "description": "Chromic luvisol soil type used in the study",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "SANDY LOAM SOIL",
+      "type": "CONDITION",
+      "description": "Haplic lixisol soil type used in the study",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "ZIMBABWE",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "STATIC CHAMBER METHODOLOGY",
+      "type": "METHOD",
+      "description": "Technique used to measure gas fluxes from soil",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "GAS CHROMATOGRAPHY",
+      "type": "METHOD",
+      "description": "Analytical method used for air analysis of gas samples",
+      "source_id": "paper_47"
+    },
+    {
+      "name": "SOIL WATER CONTENT",
+      "type": "CONDITION",
+      "description": "The amount of water held in the soil affecting CH4 flux",
+      "source_id": "paper_47"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "ZIMBABWE",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "MAIZE",
+      "target": "CROP YIELDS",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "MAIZE",
+      "target": "CROP PRODUCTIVITY",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "MINERAL FERTILIZER NITROGEN",
+      "target": "GREENHOUSE GASES",
+      "description": "affects emissions of",
+      "weight": "8",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "COMPOSTED MANURE NITROGEN",
+      "target": "GREENHOUSE GASES",
+      "description": "affects emissions of",
+      "weight": "8",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "MINERAL FERTILIZER NITROGEN",
+      "target": "N2O",
+      "description": "stimulates emissions of",
+      "weight": "9",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "COMPOSTED MANURE NITROGEN",
+      "target": "N2O",
+      "description": "mitigates emissions of compared to mineral N",
+      "weight": "7",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "MINERAL FERTILIZER NITROGEN",
+      "target": "CH4",
+      "description": "stimulates emissions or consumption of",
+      "weight": "7",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "COMPOSTED MANURE NITROGEN",
+      "target": "CH4",
+      "description": "stimulates emissions or consumption of",
+      "weight": "7",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "SOIL WATER CONTENT",
+      "target": "CH4",
+      "description": "influences sink or source strength",
+      "weight": "9",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "GREENHOUSE GASES",
+      "target": "GLOBAL WARMING",
+      "description": "contribute to",
+      "weight": "10",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "STATIC CHAMBER METHODOLOGY",
+      "target": "GREENHOUSE GASES",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "GAS CHROMATOGRAPHY",
+      "target": "GREENHOUSE GASES",
+      "description": "used to analyze",
+      "weight": "10",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "CLAY SOIL",
+      "target": "MAIZE",
+      "description": "medium for growth",
+      "weight": "8",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "SANDY LOAM SOIL",
+      "target": "MAIZE",
+      "description": "medium for growth",
+      "weight": "8",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "ZIMBABWE",
+      "target": "CLAY SOIL",
+      "description": "location of soil type",
+      "weight": "7",
+      "source_id": "paper_47"
+    },
+    {
+      "source": "ZIMBABWE",
+      "target": "SANDY LOAM SOIL",
+      "description": "location of soil type",
+      "weight": "7",
+      "source_id": "paper_47"
+    }
+  ]
+}

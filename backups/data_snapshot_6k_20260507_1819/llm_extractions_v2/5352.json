@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "SATELLITE DATA",
+      "type": "METHOD",
+      "description": "Spaceborne multispectral measurements used for timely and cost-effective monitoring of natural resources",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "WATERSHED MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The optimal utilization and development of land and water resources",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "ENVIRONMENTAL DEGRADATION",
+      "type": "CONDITION",
+      "description": "The deterioration of natural resources due to over-exploitation",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "GEOGRAPHIC INFORMATION SYSTEM",
+      "type": "METHOD",
+      "description": "A system for integrating natural resource information with ancillary data for decision making",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "ADARSHA WATERSHED",
+      "type": "LOCATION",
+      "description": "The specific study area for land and water resources development",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "KOTHAPALLY",
+      "type": "LOCATION",
+      "description": "The village/area where the Adarsha watershed is located",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "RANGA REDDY DISTRICT",
+      "type": "LOCATION",
+      "description": "The district in Andhra Pradesh where the study was conducted",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the study was conducted",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "THEMATIC MAPS",
+      "type": "METHOD",
+      "description": "Maps generated through visual interpretation of satellite data to show natural resources",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "type": "METHOD",
+      "description": "A vegetation index used to monitor vegetation development",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "INDIAN REMOTE SENSING SATELLITE",
+      "type": "METHOD",
+      "description": "The satellite system providing imaging data",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "LISS-III",
+      "type": "METHOD",
+      "description": "The Linear Imaging Self-scanning Sensor used for data collection",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The process of soil removal by water leading to land degradation",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONDITION",
+      "description": "The decline in land quality caused by processes like soil erosion",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "VEGETATION COVER",
+      "type": "TRAIT",
+      "description": "The extent and density of vegetation in the watershed",
+      "source_id": "paper_5352"
+    },
+    {
+      "name": "SOIL AND WATER CONSERVATION MEASURES",
+      "type": "METHOD",
+      "description": "Actions implemented to prevent erosion and improve vegetation",
+      "source_id": "paper_5352"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SATELLITE DATA",
+      "target": "WATERSHED MANAGEMENT",
+      "description": "Used for",
+      "weight": "9",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "GEOGRAPHIC INFORMATION SYSTEM",
+      "target": "WATERSHED MANAGEMENT",
+      "description": "Used for",
+      "weight": "9",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "SATELLITE DATA",
+      "target": "THEMATIC MAPS",
+      "description": "Used to generate",
+      "weight": "10",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "SATELLITE DATA",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "Used to calculate",
+      "weight": "10",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "INDIAN REMOTE SENSING SATELLITE",
+      "target": "LISS-III",
+      "description": "Provides",
+      "weight": "10",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "LISS-III",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "Provides data for",
+      "weight": "9",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "VEGETATION COVER",
+      "description": "Monitors",
+      "weight": "10",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION MEASURES",
+      "target": "VEGETATION COVER",
+      "description": "Improves",
+      "weight": "8",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "LAND DEGRADATION",
+      "description": "Causes",
+      "weight": "10",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "ADARSHA WATERSHED",
+      "target": "KOTHAPALLY",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "KOTHAPALLY",
+      "target": "RANGA REDDY DISTRICT",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "RANGA REDDY DISTRICT",
+      "target": "ANDHRA PRADESH",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "WATERSHED MANAGEMENT",
+      "target": "ADARSHA WATERSHED",
+      "description": "Applied to",
+      "weight": "9",
+      "source_id": "paper_5352"
+    },
+    {
+      "source": "ENVIRONMENTAL DEGRADATION",
+      "target": "WATERSHED MANAGEMENT",
+      "description": "Motivates",
+      "weight": "7",
+      "source_id": "paper_5352"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop affected by the millet head miner in the Sahel region.",
+      "source_id": "paper_10559"
+    },
+    {
+      "name": "MILLET HEAD MINER",
+      "type": "ORGANISM",
+      "description": "An insect pest, Heliocheilus albipunctella, that attacks pearl millet.",
+      "source_id": "paper_10559"
+    },
+    {
+      "name": "HABROBRACON HEBETOR",
+      "type": "ORGANISM",
+      "description": "A parasitoid wasp used as a biological control agent against the millet head miner.",
+      "source_id": "paper_10559"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the biological control process was implemented.",
+      "source_id": "paper_10559"
+    },
+    {
+      "name": "SAHEL",
+      "type": "LOCATION",
+      "description": "The geographical region where the millet head miner is a main insect pest.",
+      "source_id": "paper_10559"
+    },
+    {
+      "name": "BIOLOGICAL CONTROL",
+      "type": "METHOD",
+      "description": "The large-scale process of releasing parasitoids to manage pest populations.",
+      "source_id": "paper_10559"
+    },
+    {
+      "name": "MILLET YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of pearl millet, which increased due to parasitoid release.",
+      "source_id": "paper_10559"
+    },
+    {
+      "name": "PARASITISM RATE",
+      "type": "CONCEPT",
+      "description": "The rate of parasitism on millet head miner larvae.",
+      "source_id": "paper_10559"
+    },
+    {
+      "name": "LARVAE MORTALITY RATE",
+      "type": "CONCEPT",
+      "description": "The rate at which millet head miner larvae die.",
+      "source_id": "paper_10559"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MILLET HEAD MINER",
+      "target": "PEARL MILLET",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_10559"
+    },
+    {
+      "source": "HABROBRACON HEBETOR",
+      "target": "MILLET HEAD MINER",
+      "description": "parasitizes and controls",
+      "weight": "10",
+      "source_id": "paper_10559"
+    },
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "HABROBRACON HEBETOR",
+      "description": "utilizes for pest management",
+      "weight": "9",
+      "source_id": "paper_10559"
+    },
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "MILLET HEAD MINER",
+      "description": "aims to manage",
+      "weight": "9",
+      "source_id": "paper_10559"
+    },
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "NIGER",
+      "description": "was implemented in",
+      "weight": "8",
+      "source_id": "paper_10559"
+    },
+    {
+      "source": "MILLET HEAD MINER",
+      "target": "SAHEL",
+      "description": "is prevalent in",
+      "weight": "8",
+      "source_id": "paper_10559"
+    },
+    {
+      "source": "HABROBRACON HEBETOR",
+      "target": "PARASITISM RATE",
+      "description": "increases the",
+      "weight": "9",
+      "source_id": "paper_10559"
+    },
+    {
+      "source": "HABROBRACON HEBETOR",
+      "target": "LARVAE MORTALITY RATE",
+      "description": "increases the",
+      "weight": "9",
+      "source_id": "paper_10559"
+    },
+    {
+      "source": "HABROBRACON HEBETOR",
+      "target": "MILLET YIELD",
+      "description": "leads to an increase in",
+      "weight": "8",
+      "source_id": "paper_10559"
+    }
+  ]
+}

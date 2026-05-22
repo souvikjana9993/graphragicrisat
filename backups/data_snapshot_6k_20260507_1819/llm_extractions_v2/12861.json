@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop species under investigation for yield and biomass improvement",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "C4 RICE",
+      "type": "CONCEPT",
+      "description": "A conceptual version of rice utilizing the C4 photosynthetic pathway for higher efficiency",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total agricultural productivity of the plant",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "C3 PLANTS",
+      "type": "ORGANISM",
+      "description": "Plants that use the C3 carbon fixation pathway, characterized by photorespiration",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "C4 PLANTS",
+      "type": "ORGANISM",
+      "description": "Plants that use the C4 carbon fixation pathway, reducing photorespiration",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "BIOMASS ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The process of increasing the total biological mass of the plant",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "PHOTORESPIRATION",
+      "type": "CONCEPT",
+      "description": "A metabolic process in C3 plants that leads to carbon loss and energy expenditure",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "PHOTORESPIRATORY BYPASS",
+      "type": "CONCEPT",
+      "description": "A genetic mechanism designed to divert carbon from photorespiration to increase biomass",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "NON-FOLIAR PHOTOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "Photosynthetic activity occurring in non-leaf organs like grains and peduncles",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "FOLIAR PHOTOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "Photosynthetic activity occurring in the leaves",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "RNA-SEQ",
+      "type": "METHOD",
+      "description": "A high-throughput sequencing method used to analyze the transcriptome",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "CPPDC",
+      "type": "GENE_MARKER",
+      "description": "Chloroplastic pyruvate dehydrogenase gene (BGIOSGA015796) involved in the photorespiratory bypass",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "DEVELOPING GRAINS",
+      "type": "LOCATION",
+      "description": "Non-foliar photosynthetic tissue in rice",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "PEDUNCLE",
+      "type": "LOCATION",
+      "description": "Non-foliar photosynthetic tissue in rice",
+      "source_id": "paper_12861"
+    },
+    {
+      "name": "FLAG LEAF",
+      "type": "LOCATION",
+      "description": "The primary foliar photosynthetic organ in rice",
+      "source_id": "paper_12861"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "C4 RICE",
+      "target": "YIELD",
+      "description": "is developed for improvement of",
+      "weight": "8",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "PHOTORESPIRATION",
+      "target": "BIOMASS ACCUMULATION",
+      "description": "limits",
+      "weight": "9",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "PHOTORESPIRATORY BYPASS",
+      "target": "BIOMASS ACCUMULATION",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "PHOTORESPIRATORY BYPASS",
+      "target": "YIELD",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "NON-FOLIAR PHOTOSYNTHESIS",
+      "target": "YIELD",
+      "description": "contributes to improvement of",
+      "weight": "8",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "RNA-SEQ",
+      "target": "CPPDC",
+      "description": "used to analyze expression of",
+      "weight": "10",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "CPPDC",
+      "target": "DEVELOPING GRAINS",
+      "description": "is significantly upregulated in",
+      "weight": "9",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "CPPDC",
+      "target": "FLAG LEAF",
+      "description": "is compared against expression in",
+      "weight": "7",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "CPPDC",
+      "target": "PHOTORESPIRATORY BYPASS",
+      "description": "enhanced expression installs",
+      "weight": "10",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "PHOTORESPIRATORY BYPASS",
+      "target": "RICE",
+      "description": "is proposed to occur in",
+      "weight": "9",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "RICE",
+      "target": "DEVELOPING GRAINS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "RICE",
+      "target": "FLAG LEAF",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "RICE",
+      "target": "PEDUNCLE",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "C3 PLANTS",
+      "target": "BIOMASS ACCUMULATION",
+      "description": "shows difference in compared to C4 plants",
+      "weight": "7",
+      "source_id": "paper_12861"
+    },
+    {
+      "source": "C4 PLANTS",
+      "target": "BIOMASS ACCUMULATION",
+      "description": "shows difference in compared to C3 plants",
+      "weight": "7",
+      "source_id": "paper_12861"
+    }
+  ]
+}

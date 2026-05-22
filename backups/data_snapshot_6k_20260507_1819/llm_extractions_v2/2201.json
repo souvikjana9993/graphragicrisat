@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop on which pesticide dust application is being improved",
+      "source_id": "paper_2201"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_2201"
+    },
+    {
+      "name": "PESTICIDE DUST APPLICATION",
+      "type": "METHOD",
+      "description": "The process of applying pesticide in dust form to crops",
+      "source_id": "paper_2201"
+    },
+    {
+      "name": "HAND-ROTARY DUSTERS",
+      "type": "METHOD",
+      "description": "A manual tool used for applying pesticide dust",
+      "source_id": "paper_2201"
+    },
+    {
+      "name": "MOTORIZED KNAPSACKS",
+      "type": "METHOD",
+      "description": "A motorized tool used for applying pesticide dust",
+      "source_id": "paper_2201"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INDIA",
+      "target": "PESTICIDE DUST APPLICATION",
+      "description": "Location where the study on application was carried out",
+      "weight": "7",
+      "source_id": "paper_2201"
+    },
+    {
+      "source": "PESTICIDE DUST APPLICATION",
+      "target": "CHICKPEA",
+      "description": "The method applied to the crop",
+      "weight": "10",
+      "source_id": "paper_2201"
+    },
+    {
+      "source": "HAND-ROTARY DUSTERS",
+      "target": "PESTICIDE DUST APPLICATION",
+      "description": "Tool used to perform the application",
+      "weight": "9",
+      "source_id": "paper_2201"
+    },
+    {
+      "source": "MOTORIZED KNAPSACKS",
+      "target": "PESTICIDE DUST APPLICATION",
+      "description": "Tool used to perform the application",
+      "weight": "9",
+      "source_id": "paper_2201"
+    }
+  ]
+}

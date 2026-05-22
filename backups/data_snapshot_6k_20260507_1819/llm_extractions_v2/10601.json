@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A nutritious food source and important livelihood option for subsistence farming communities.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The largest chickpea producing nation where the study was conducted.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "YIELD GAP ANALYSIS",
+      "type": "METHOD",
+      "description": "A modelling approach used to quantify region-specific constraints and yield gaps limiting productivity.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "YIELD GAP",
+      "type": "CONCEPT",
+      "description": "The difference between the yield potential and the currently achieved yields.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "CHICKPEA PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The output of chickpea production in various regions.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "SSM-ILEGUME MODEL",
+      "type": "METHOD",
+      "description": "A model used to reproduce seasonal variability and potential yield for major chickpea producing districts.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "POTENTIAL YIELD",
+      "type": "TRAIT",
+      "description": "The maximum achievable yield under standard crop management practices.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "RAIN-FED SYSTEMS",
+      "type": "CONDITION",
+      "description": "Cropping systems where production is largely limited by water availability.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "WATER AVAILABILITY",
+      "type": "CONDITION",
+      "description": "The availability of water during the growing season, a primary limiting factor in rain-fed systems.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "The effect of water scarcity on chickpea yields.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "HOMOGENEOUS SYSTEM UNITS",
+      "type": "CONCEPT",
+      "description": "Clusters of chickpea-growing districts with similar bio-geo-physical properties and system responses.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "GENOTYPE-BY-MANAGEMENT INTERVENTION",
+      "type": "METHOD",
+      "description": "Interventions involving the interaction between genotype and management practices.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "BREEDING UNITS",
+      "type": "CONCEPT",
+      "description": "Authentic units proposed for crop improvement programs based on HSUs.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "CROP IMPROVEMENT PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Programs aimed at enhancing crop production through breeding.",
+      "source_id": "paper_10601"
+    },
+    {
+      "name": "HSU-SPECIFIC BREEDING STRATEGY",
+      "type": "METHOD",
+      "description": "A breeding strategy tailored to specific homogeneous system units to enhance production.",
+      "source_id": "paper_10601"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "YIELD GAP ANALYSIS",
+      "target": "CHICKPEA",
+      "description": "used to quantify constraints limiting productivity of",
+      "weight": "9",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "YIELD GAP ANALYSIS",
+      "target": "INDIA",
+      "description": "applied to major chickpea growing regions in",
+      "weight": "8",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "SSM-ILEGUME MODEL",
+      "target": "POTENTIAL YIELD",
+      "description": "used to reproduce and estimate",
+      "weight": "10",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "SSM-ILEGUME MODEL",
+      "target": "YIELD GAP",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "YIELD GAP",
+      "target": "POTENTIAL YIELD",
+      "description": "calculated as the difference from",
+      "weight": "10",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "RAIN-FED SYSTEMS",
+      "target": "WATER AVAILABILITY",
+      "description": "production is limited by",
+      "weight": "9",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "WATER AVAILABILITY",
+      "target": "DROUGHT STRESS",
+      "description": "lack of availability causes",
+      "weight": "8",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "CHICKPEA PRODUCTIVITY",
+      "description": "negatively affects",
+      "weight": "7",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "YIELD GAP ANALYSIS",
+      "target": "HOMOGENEOUS SYSTEM UNITS",
+      "description": "used to cluster districts into",
+      "weight": "9",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "HOMOGENEOUS SYSTEM UNITS",
+      "target": "GENOTYPE-BY-MANAGEMENT INTERVENTION",
+      "description": "expected to have similar system response to",
+      "weight": "8",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "HOMOGENEOUS SYSTEM UNITS",
+      "target": "BREEDING UNITS",
+      "description": "proposed as the basis for",
+      "weight": "9",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "BREEDING UNITS",
+      "target": "CROP IMPROVEMENT PROGRAMS",
+      "description": "used as target population of environments in",
+      "weight": "8",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "HSU-SPECIFIC BREEDING STRATEGY",
+      "target": "CHICKPEA PRODUCTIVITY",
+      "description": "used to enhance",
+      "weight": "8",
+      "source_id": "paper_10601"
+    },
+    {
+      "source": "HSU-SPECIFIC BREEDING STRATEGY",
+      "target": "HOMOGENEOUS SYSTEM UNITS",
+      "description": "tailored to",
+      "weight": "10",
+      "source_id": "paper_10601"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM BICOLOR",
+      "type": "CROP",
+      "description": "Sorghum bicolor, the crop species studied for pollen-mediated gene flow.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "POLLEN MEDIATED GENE FLOW",
+      "type": "CONCEPT",
+      "description": "The movement of genes through pollen, studied in the context of sorghum varietal purity and transgenic risk mitigation.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "VARIETAL PURITY",
+      "type": "CONCEPT",
+      "description": "Maintaining the genetic consistency of a crop variety.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "TRANSGENIC GENE FLOW",
+      "type": "CONCEPT",
+      "description": "The transfer of genes from genetically modified organisms to other plants.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the replicated trials were conducted.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "OCHUTI",
+      "type": "CROP",
+      "description": "A local sorghum landrace used as the pollen donor.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "WIND DIRECTION",
+      "type": "CONDITION",
+      "description": "Environmental factor influencing pollen dispersal.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "WIND SPEED",
+      "type": "CONDITION",
+      "description": "Environmental factor influencing pollen dispersal.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "ANTHER DEHISCENCE",
+      "type": "CONCEPT",
+      "description": "The release of pollen from the anther, correlated with vapour pressure deficit.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "VAPOUR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "A measure of atmospheric dryness, correlated with anther dehiscence.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "DISTANCE",
+      "type": "CONCEPT",
+      "description": "Spatial separation between pollen source and receiver plants, impacting PMGF frequency.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "FEMALE FLORETS",
+      "type": "PLANT_PART",
+      "description": "The receptive parts of the sorghum plant that receive pollen.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "MALE STERILE PLANTS",
+      "type": "ORGANISM",
+      "description": "Plants incapable of producing pollen, used as pollen baits.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "POLLEN",
+      "type": "CONCEPT",
+      "description": "The carrier of genetic material for plant reproduction.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "SELF-PRODUCED POLLEN",
+      "type": "CONCEPT",
+      "description": "Pollen originating from the same plant, reducing the likelihood of cross-pollination.",
+      "source_id": "paper_53"
+    },
+    {
+      "name": "CROSS-POLLINATION",
+      "type": "CONCEPT",
+      "description": "Pollination between different plants.",
+      "source_id": "paper_53"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INFLUENCES",
+      "target": "WIND DIRECTION",
+      "description": "POLLEN MEDIATED GENE FLOW",
+      "weight": "8",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "INFLUENCES",
+      "target": "WIND SPEED",
+      "description": "POLLEN MEDIATED GENE FLOW",
+      "weight": "8",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "SOURCE_OF",
+      "target": "OCHUTI",
+      "description": "POLLEN",
+      "weight": "9",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "IMPACTS",
+      "target": "DISTANCE",
+      "description": "POLLEN MEDIATED GENE FLOW",
+      "weight": "10",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "CORRELATED_WITH",
+      "target": "ANTHER DEHISCENCE",
+      "description": "VAPOUR PRESSURE DEFICIT",
+      "weight": "7",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "RECEIVES",
+      "target": "FEMALE FLORETS",
+      "description": "POLLEN",
+      "weight": "9",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "USED_AS",
+      "target": "MALE STERILE PLANTS",
+      "description": "POLLEN MEDIATED GENE FLOW",
+      "weight": "7",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "REDUCES",
+      "target": "SELF-PRODUCED POLLEN",
+      "description": "CROSS-POLLINATION",
+      "weight": "8",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "OCCURS_IN",
+      "target": "POLLEN MEDIATED GENE FLOW",
+      "description": "KENYA",
+      "weight": "6",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "POLLEN MEDIATED GENE FLOW",
+      "description": "VARIETAL PURITY",
+      "weight": "7",
+      "source_id": "paper_53"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "POLLEN MEDIATED GENE FLOW",
+      "description": "TRANSGENIC GENE FLOW",
+      "weight": "7",
+      "source_id": "paper_53"
+    }
+  ]
+}

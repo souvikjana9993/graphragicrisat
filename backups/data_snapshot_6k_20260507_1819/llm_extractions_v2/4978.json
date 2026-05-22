@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, the host plant for Sclerospora graminicola",
+      "source_id": "paper_4978"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew disease",
+      "source_id": "paper_4978"
+    },
+    {
+      "name": "DOWNY MILDEW DISEASE",
+      "type": "CONDITION",
+      "description": "A disease caused by Sclerospora graminicola in pearl millet",
+      "source_id": "paper_4978"
+    },
+    {
+      "name": "OOSPORES",
+      "type": "CONCEPT",
+      "description": "Resting spores of Sclerospora graminicola",
+      "source_id": "paper_4978"
+    },
+    {
+      "name": "GERMINATION",
+      "type": "TRAIT",
+      "description": "The process of oospores sprouting and becoming active",
+      "source_id": "paper_4978"
+    },
+    {
+      "name": "SODIUM HYPOCHLORITE TREATMENT",
+      "type": "METHOD",
+      "description": "The process of suspending oospores in NaOCl to prepare them for germination",
+      "source_id": "paper_4978"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The environmental temperature, with 25°C being optimal for germination",
+      "source_id": "paper_4978"
+    },
+    {
+      "name": "OOSPORE CONCENTRATION",
+      "type": "CONDITION",
+      "description": "The density of oospores in water, which influences the germination rate",
+      "source_id": "paper_4978"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4978"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "OOSPORES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_4978"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SCLEROSPORA GRAMINICOLA",
+      "description": "is host to",
+      "weight": "10",
+      "source_id": "paper_4978"
+    },
+    {
+      "source": "OOSPORES",
+      "target": "GERMINATION",
+      "description": "undergoes",
+      "weight": "10",
+      "source_id": "paper_4978"
+    },
+    {
+      "source": "SODIUM HYPOCHLORITE TREATMENT",
+      "target": "GERMINATION",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_4978"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "GERMINATION",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_4978"
+    },
+    {
+      "source": "OOSPORE CONCENTRATION",
+      "target": "GERMINATION",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_4978"
+    }
+  ]
+}

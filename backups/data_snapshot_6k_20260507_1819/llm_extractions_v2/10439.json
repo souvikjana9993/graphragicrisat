@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The agricultural crop whose price fluctuations are analyzed for their impact on socio-economic factors.",
+      "source_id": "paper_10439"
+    },
+    {
+      "name": "RICE PRICES",
+      "type": "CONDITION",
+      "description": "The rising cost of rice in international and local markets.",
+      "source_id": "paper_10439"
+    },
+    {
+      "name": "POVERTY",
+      "type": "CONCEPT",
+      "description": "The state of lacking sufficient financial resources, measured by the poverty rate.",
+      "source_id": "paper_10439"
+    },
+    {
+      "name": "INCOME INEQUALITY",
+      "type": "CONCEPT",
+      "description": "The extent to which income is distributed unevenly among a population.",
+      "source_id": "paper_10439"
+    },
+    {
+      "name": "BURKINA FASO",
+      "type": "LOCATION",
+      "description": "The West African country where the impact of rice prices was assessed.",
+      "source_id": "paper_10439"
+    },
+    {
+      "name": "COMPENSATING VARIATION",
+      "type": "METHOD",
+      "description": "A methodology used to measure the change in welfare resulting from a price change.",
+      "source_id": "paper_10439"
+    },
+    {
+      "name": "NET BENEFIT RATIO",
+      "type": "METHOD",
+      "description": "A specific ratio developed by Deaton to analyze the impact of price changes on welfare.",
+      "source_id": "paper_10439"
+    },
+    {
+      "name": "LIVING STANDARD SURVEY",
+      "type": "METHOD",
+      "description": "A survey tool used to collect data on household living standards and consumption.",
+      "source_id": "paper_10439"
+    },
+    {
+      "name": "URBAN AREAS",
+      "type": "LOCATION",
+      "description": "Regions characterized by city environments where poverty and inequality increases were more pronounced.",
+      "source_id": "paper_10439"
+    },
+    {
+      "name": "RURAL AREAS",
+      "type": "LOCATION",
+      "description": "Regions characterized by countryside environments where poverty increases were observed.",
+      "source_id": "paper_10439"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE PRICES",
+      "target": "POVERTY",
+      "description": "Rising rice prices increase the poverty rate, especially for net buyers.",
+      "weight": "9",
+      "source_id": "paper_10439"
+    },
+    {
+      "source": "RICE PRICES",
+      "target": "INCOME INEQUALITY",
+      "description": "Rising rice prices lead to an increase in income inequality.",
+      "weight": "8",
+      "source_id": "paper_10439"
+    },
+    {
+      "source": "RICE PRICES",
+      "target": "BURKINA FASO",
+      "description": "The study assesses the impact of rising rice prices specifically within Burkina Faso.",
+      "weight": "10",
+      "source_id": "paper_10439"
+    },
+    {
+      "source": "COMPENSATING VARIATION",
+      "target": "POVERTY",
+      "description": "Used as a methodological basis to assess the impact of price changes on poverty.",
+      "weight": "7",
+      "source_id": "paper_10439"
+    },
+    {
+      "source": "NET BENEFIT RATIO",
+      "target": "POVERTY",
+      "description": "Used as a methodological basis to assess the impact of price changes on poverty.",
+      "weight": "7",
+      "source_id": "paper_10439"
+    },
+    {
+      "source": "LIVING STANDARD SURVEY",
+      "target": "POVERTY",
+      "description": "Provides the empirical data used to calculate the poverty rate.",
+      "weight": "8",
+      "source_id": "paper_10439"
+    },
+    {
+      "source": "POVERTY",
+      "target": "URBAN AREAS",
+      "description": "The increase in the poverty rate is higher in urban areas than in rural areas.",
+      "weight": "7",
+      "source_id": "paper_10439"
+    },
+    {
+      "source": "INCOME INEQUALITY",
+      "target": "URBAN AREAS",
+      "description": "Income inequality increases particularly in urban areas.",
+      "weight": "7",
+      "source_id": "paper_10439"
+    },
+    {
+      "source": "RICE",
+      "target": "RICE PRICES",
+      "description": "The price of rice is the specific condition being studied.",
+      "weight": "10",
+      "source_id": "paper_10439"
+    }
+  ]
+}

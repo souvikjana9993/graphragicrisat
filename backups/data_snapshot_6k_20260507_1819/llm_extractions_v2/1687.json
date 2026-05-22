@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Wild Pennisetum glaucum subsp. monodii and subsp. stenostachyum accessions used in the study",
+      "source_id": "paper_1687"
+    },
+    {
+      "name": "STRIGA HERMONTHICA",
+      "type": "ORGANISM",
+      "description": "A parasitic weed that infects pearl millet",
+      "source_id": "paper_1687"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "The country where the pearl millet accessions were assessed",
+      "source_id": "paper_1687"
+    },
+    {
+      "name": "STRIGA RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pearl millet to resist infection by Striga hermonthica",
+      "source_id": "paper_1687"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew",
+      "source_id": "paper_1687"
+    },
+    {
+      "name": "DOWNY MILDEW INCIDENCE",
+      "type": "TRAIT",
+      "description": "The frequency of infection by Sclerospora graminicola in pearl millet",
+      "source_id": "paper_1687"
+    },
+    {
+      "name": "FLOWERING TIME",
+      "type": "TRAIT",
+      "description": "The duration or date until the pearl millet accessions flower",
+      "source_id": "paper_1687"
+    },
+    {
+      "name": "STRIGA EMERGENCE",
+      "type": "TRAIT",
+      "description": "The observed occurrence and emergence of Striga hermonthica",
+      "source_id": "paper_1687"
+    },
+    {
+      "name": "ARTIFICIAL INFESTATION",
+      "type": "METHOD",
+      "description": "The process of intentionally introducing Striga hermonthica into plots",
+      "source_id": "paper_1687"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "STRIGA RESISTANCE",
+      "description": "Assessed for resistance in wild accessions",
+      "weight": "9",
+      "source_id": "paper_1687"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "STRIGA HERMONTHICA",
+      "description": "Host plant for the parasitic weed",
+      "weight": "10",
+      "source_id": "paper_1687"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "DOWNY MILDEW INCIDENCE",
+      "description": "Assessed for incidence of infection",
+      "weight": "9",
+      "source_id": "paper_1687"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "FLOWERING TIME",
+      "description": "Measured as a characteristic of the accessions",
+      "weight": "9",
+      "source_id": "paper_1687"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "MALI",
+      "description": "Location where the accessions were evaluated",
+      "weight": "8",
+      "source_id": "paper_1687"
+    },
+    {
+      "source": "STRIGA HERMONTHICA",
+      "target": "STRIGA EMERGENCE",
+      "description": "The organism whose emergence is measured",
+      "weight": "10",
+      "source_id": "paper_1687"
+    },
+    {
+      "source": "STRIGA EMERGENCE",
+      "target": "FLOWERING TIME",
+      "description": "Lower emergence is associated with earlier flowering",
+      "weight": "8",
+      "source_id": "paper_1687"
+    },
+    {
+      "source": "STRIGA EMERGENCE",
+      "target": "DOWNY MILDEW INCIDENCE",
+      "description": "Lower emergence is associated with high downy mildew incidence",
+      "weight": "8",
+      "source_id": "paper_1687"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW INCIDENCE",
+      "description": "The organism that causes the disease incidence",
+      "weight": "10",
+      "source_id": "paper_1687"
+    },
+    {
+      "source": "ARTIFICIAL INFESTATION",
+      "target": "STRIGA HERMONTHICA",
+      "description": "Method used to introduce the parasite into the plots",
+      "weight": "9",
+      "source_id": "paper_1687"
+    }
+  ]
+}

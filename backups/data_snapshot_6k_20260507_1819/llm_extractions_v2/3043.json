@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being screened for resistance to early leaf spot",
+      "source_id": "paper_3043"
+    },
+    {
+      "name": "EARLY LEAF SPOT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut genotypes to resist early leaf spot infection",
+      "source_id": "paper_3043"
+    },
+    {
+      "name": "EARLY LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting groundnut",
+      "source_id": "paper_3043"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the screening trials were conducted",
+      "source_id": "paper_3043"
+    },
+    {
+      "name": "FIELD TRIALS",
+      "type": "METHOD",
+      "description": "The experimental approach used to evaluate germplasm and breeding lines under natural infection",
+      "source_id": "paper_3043"
+    },
+    {
+      "name": "CERCOSPORA ARACHIDICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes early leaf spot",
+      "source_id": "paper_3043"
+    },
+    {
+      "name": "MYCOSPHAERELLA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "A taxonomic synonym for Cercospora arachidicola",
+      "source_id": "paper_3043"
+    },
+    {
+      "name": "ICRISAT PATANCHERU",
+      "type": "LOCATION",
+      "description": "The research site in Patancheru where trials were conducted in 1987",
+      "source_id": "paper_3043"
+    },
+    {
+      "name": "PANTNAGAR",
+      "type": "LOCATION",
+      "description": "The research site in Pantnagar where trials were conducted in 1988",
+      "source_id": "paper_3043"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "EARLY LEAF SPOT RESISTANCE",
+      "description": "is screened for",
+      "weight": "10",
+      "source_id": "paper_3043"
+    },
+    {
+      "source": "EARLY LEAF SPOT RESISTANCE",
+      "target": "EARLY LEAF SPOT",
+      "description": "is resistance to",
+      "weight": "10",
+      "source_id": "paper_3043"
+    },
+    {
+      "source": "CERCOSPORA ARACHIDICOLA",
+      "target": "EARLY LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3043"
+    },
+    {
+      "source": "CERCOSPORA ARACHIDICOLA",
+      "target": "MYCOSPHAERELLA ARACHIDIS",
+      "description": "is synonym of",
+      "weight": "10",
+      "source_id": "paper_3043"
+    },
+    {
+      "source": "FIELD TRIALS",
+      "target": "GROUNDNUT",
+      "description": "used to screen",
+      "weight": "9",
+      "source_id": "paper_3043"
+    },
+    {
+      "source": "ICRISAT PATANCHERU",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_3043"
+    },
+    {
+      "source": "PANTNAGAR",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_3043"
+    },
+    {
+      "source": "FIELD TRIALS",
+      "target": "ICRISAT PATANCHERU",
+      "description": "conducted at",
+      "weight": "9",
+      "source_id": "paper_3043"
+    },
+    {
+      "source": "FIELD TRIALS",
+      "target": "PANTNAGAR",
+      "description": "conducted at",
+      "weight": "9",
+      "source_id": "paper_3043"
+    }
+  ]
+}

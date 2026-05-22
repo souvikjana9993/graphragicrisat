@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The host plant affected by dry root rot",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "DRY ROOT ROT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting chickpea production",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes dry root rot",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "LOW SOIL MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "A climatic factor that increases the incidence of dry root rot",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "HIGH TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A climatic factor that increases the incidence of dry root rot",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist disease, which can be enhanced via ISR",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "INDUCED SYSTEMIC RESISTANCE",
+      "type": "CONCEPT",
+      "description": "A mechanism of plant defense mediated by phyto-hormones",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "PHYTO-HORMONES",
+      "type": "CONCEPT",
+      "description": "Chemical messengers used to induce systemic resistance in plants",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "METHYL JASMONIC ACID",
+      "type": "CONCEPT",
+      "description": "A phyto-hormone used to induce systemic resistance against dry root rot",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "SALICYLIC ACID",
+      "type": "CONCEPT",
+      "description": "A phyto-hormone used to induce systemic resistance against dry root rot",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "PER-CENT DISEASE SUSCEPTIBILITY INDEX",
+      "type": "METHOD",
+      "description": "A metric derived from a modified 0-9 rating scale to measure disease severity",
+      "source_id": "paper_11475"
+    },
+    {
+      "name": "REAL-TIME QPCR",
+      "type": "METHOD",
+      "description": "A technique used for absolute quantification of fungal propagule concentrations",
+      "source_id": "paper_11475"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "DRY ROOT ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "LOW SOIL MOISTURE STRESS",
+      "target": "DRY ROOT ROT",
+      "description": "increases incidence of",
+      "weight": "7",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "HIGH TEMPERATURE",
+      "target": "DRY ROOT ROT",
+      "description": "increases incidence of",
+      "weight": "7",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "INDUCED SYSTEMIC RESISTANCE",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "PHYTO-HORMONES",
+      "target": "INDUCED SYSTEMIC RESISTANCE",
+      "description": "mediate",
+      "weight": "10",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "METHYL JASMONIC ACID",
+      "target": "PHYTO-HORMONES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "SALICYLIC ACID",
+      "target": "PHYTO-HORMONES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "METHYL JASMONIC ACID",
+      "target": "INDUCED SYSTEMIC RESISTANCE",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "METHYL JASMONIC ACID",
+      "target": "DRY ROOT ROT",
+      "description": "reduces severity of",
+      "weight": "8",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "PER-CENT DISEASE SUSCEPTIBILITY INDEX",
+      "target": "DRY ROOT ROT",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_11475"
+    },
+    {
+      "source": "REAL-TIME QPCR",
+      "target": "RHIZOCTONIA BATATICOLA",
+      "description": "quantifies",
+      "weight": "9",
+      "source_id": "paper_11475"
+    }
+  ]
+}

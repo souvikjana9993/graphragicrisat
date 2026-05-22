@@ -1,0 +1,192 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A tropical crop (Arachis hypogaea L.) studied for seedling emergence and leaf growth responses to temperature.",
+      "source_id": "paper_4948"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A tropical crop (Pennisetum typhoides S. & H. / P. americanum) studied for seedling emergence and leaf growth responses to temperature.",
+      "source_id": "paper_4948"
+    },
+    {
+      "name": "SEEDLING EMERGENCE",
+      "type": "TRAIT",
+      "description": "The process of a seedling breaking through the soil surface.",
+      "source_id": "paper_4948"
+    },
+    {
+      "name": "LEAF GROWTH",
+      "type": "TRAIT",
+      "description": "The development and expansion of leaves in the studied crops.",
+      "source_id": "paper_4948"
+    },
+    {
+      "name": "SOIL TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature of the soil, specifically measured between 7-27°C.",
+      "source_id": "paper_4948"
+    },
+    {
+      "name": "GREENHOUSE TRIALS",
+      "type": "METHOD",
+      "description": "The experimental environment used to measure crop responses.",
+      "source_id": "paper_4948"
+    },
+    {
+      "name": "GERMINATION RATE",
+      "type": "TRAIT",
+      "description": "The speed at which seeds germinate, showing strong correlations with other growth traits in pearl millet.",
+      "source_id": "paper_4948"
+    },
+    {
+      "name": "LEAF PRODUCTION RATE",
+      "type": "TRAIT",
+      "description": "The rate at which new leaves are produced in pearl millet.",
+      "source_id": "paper_4948"
+    },
+    {
+      "name": "HOURLY LEAF EXTENSION",
+      "type": "TRAIT",
+      "description": "The measurement of leaf growth per hour in pearl millet.",
+      "source_id": "paper_4948"
+    },
+    {
+      "name": "THERMAL TIME REQUIREMENTS",
+      "type": "CONCEPT",
+      "description": "The cumulative temperature needed for various biological processes to occur.",
+      "source_id": "paper_4948"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GREENHOUSE TRIALS",
+      "target": "GROUNDNUT",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "GREENHOUSE TRIALS",
+      "target": "PEARL MILLET",
+      "description": "used to study",
+      "weight": "8",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEEDLING EMERGENCE",
+      "description": "exhibits trait",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "LEAF GROWTH",
+      "description": "exhibits trait",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SEEDLING EMERGENCE",
+      "description": "exhibits trait",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "LEAF GROWTH",
+      "description": "exhibits trait",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "SEEDLING EMERGENCE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "LEAF GROWTH",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GERMINATION RATE",
+      "description": "exhibits trait",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "LEAF PRODUCTION RATE",
+      "description": "exhibits trait",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "HOURLY LEAF EXTENSION",
+      "description": "exhibits trait",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "GERMINATION RATE",
+      "target": "LEAF PRODUCTION RATE",
+      "description": "strongly correlated in pearl millet",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "GERMINATION RATE",
+      "target": "HOURLY LEAF EXTENSION",
+      "description": "strongly correlated in pearl millet",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "GERMINATION RATE",
+      "target": "SEEDLING EMERGENCE",
+      "description": "strongly correlated in pearl millet",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "LEAF PRODUCTION RATE",
+      "target": "SEEDLING EMERGENCE",
+      "description": "strongly correlated in pearl millet",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "HOURLY LEAF EXTENSION",
+      "target": "SEEDLING EMERGENCE",
+      "description": "strongly correlated in pearl millet",
+      "weight": "9",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "THERMAL TIME REQUIREMENTS",
+      "target": "SEEDLING EMERGENCE",
+      "description": "governs",
+      "weight": "8",
+      "source_id": "paper_4948"
+    },
+    {
+      "source": "THERMAL TIME REQUIREMENTS",
+      "target": "LEAF GROWTH",
+      "description": "governs",
+      "weight": "8",
+      "source_id": "paper_4948"
+    }
+  ]
+}

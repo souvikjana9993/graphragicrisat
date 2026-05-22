@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "NITROGEN MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The process by which organic nitrogen is converted into inorganic forms available to plants",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "NITROGEN IMMOBILIZATION",
+      "type": "CONCEPT",
+      "description": "The process by which inorganic nitrogen is taken up by microbes and converted into organic forms",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "ORGANIC SOURCES",
+      "type": "CONCEPT",
+      "description": "Materials containing organic matter added to soil to provide nutrients",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "SOIL",
+      "type": "LOCATION",
+      "description": "The medium in which nitrogen mineralization and immobilization processes occur",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "SIMULATION MODELS",
+      "type": "METHOD",
+      "description": "Computational tools used to represent and predict the dynamics of nitrogen in soil",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "DECOMPOSITION",
+      "type": "CONCEPT",
+      "description": "The biological and chemical breakdown of organic materials",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "SOIL ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "The organic component of soil, formed by the decomposition of plant and animal residues",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "N RELEASE",
+      "type": "CONCEPT",
+      "description": "The liberation of nitrogen from organic materials during decomposition",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "C:N RATIO",
+      "type": "CONCEPT",
+      "description": "The ratio of carbon to nitrogen in organic materials, which determines the rate of nitrogen mineralization",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "ANIMAL MANURES",
+      "type": "CONCEPT",
+      "description": "Organic fertilizers derived from animal waste",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "APSIM SOILN MODULE",
+      "type": "METHOD",
+      "description": "A specific soil nitrogen simulation module within the APSIM framework",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "CARBON",
+      "type": "CONCEPT",
+      "description": "A fundamental element of organic matter used to determine the C:N ratio",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "WATER-SOLUBLE C AND N",
+      "type": "CONCEPT",
+      "description": "The most rapidly decomposing fraction of carbon and nitrogen in organic matter",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "LIGNIN-C",
+      "type": "CONCEPT",
+      "description": "The most slowly decomposing fraction of carbon in organic matter",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "FEEDS AND FAECAL MATERIALS",
+      "type": "CONCEPT",
+      "description": "Specific types of animal-derived organic materials used in incubation studies",
+      "source_id": "paper_6377"
+    },
+    {
+      "name": "INCUBATION EXPERIMENT",
+      "type": "METHOD",
+      "description": "A controlled laboratory experiment used to measure the mineralization of nitrogen from organic sources",
+      "source_id": "paper_6377"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SIMULATION MODELS",
+      "target": "NITROGEN MINERALIZATION",
+      "description": "represent the process of",
+      "weight": "8",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "SIMULATION MODELS",
+      "target": "NITROGEN IMMOBILIZATION",
+      "description": "represent the process of",
+      "weight": "8",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "SIMULATION MODELS",
+      "target": "N RELEASE",
+      "description": "capture the pattern of",
+      "weight": "9",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "N RELEASE",
+      "target": "C:N RATIO",
+      "description": "is attributable to",
+      "weight": "9",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "C:N RATIO",
+      "target": "ORGANIC SOURCES",
+      "description": "is a property of",
+      "weight": "9",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "ANIMAL MANURES",
+      "target": "ORGANIC SOURCES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "APSIM SOILN MODULE",
+      "target": "SIMULATION MODELS",
+      "description": "is a specific instance of",
+      "weight": "10",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "APSIM SOILN MODULE",
+      "target": "NITROGEN MINERALIZATION",
+      "description": "simulates the process of",
+      "weight": "9",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "APSIM SOILN MODULE",
+      "target": "C:N RATIO",
+      "description": "uses as a parameter for sub-pools",
+      "weight": "9",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "WATER-SOLUBLE C AND N",
+      "target": "APSIM SOILN MODULE",
+      "description": "is represented as the most rapidly decomposing pool in",
+      "weight": "8",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "LIGNIN-C",
+      "target": "APSIM SOILN MODULE",
+      "description": "is represented as the slowest decomposing pool in",
+      "weight": "8",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "INCUBATION EXPERIMENT",
+      "target": "NITROGEN MINERALIZATION",
+      "description": "measures the rate of",
+      "weight": "9",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "INCUBATION EXPERIMENT",
+      "target": "FEEDS AND FAECAL MATERIALS",
+      "description": "uses as test materials",
+      "weight": "9",
+      "source_id": "paper_6377"
+    },
+    {
+      "source": "FEEDS AND FAECAL MATERIALS",
+      "target": "ANIMAL MANURES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_6377"
+    }
+  ]
+}

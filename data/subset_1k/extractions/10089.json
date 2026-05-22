@@ -1,0 +1,215 @@
+{
+  "entities": [
+    {
+      "name": "NYANDO",
+      "type": "LOCATION",
+      "description": "A region in Kenya where smallholder farming systems were studied for climate change adaptation",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop studied for production and yield projections",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "DECISION SUPPORT SYSTEM FOR AGROTECHNOLOGY TRANSFER",
+      "type": "METHOD",
+      "description": "A modeling tool used to project maize yields under different climate scenarios",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "RAIN FED CONDITIONS",
+      "type": "CONDITION",
+      "description": "The specific agricultural condition under which the maize production was modeled",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "KATUMANI COMP B",
+      "type": "CROP",
+      "description": "An early maturing variety of maize",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "HYBRID 511",
+      "type": "CROP",
+      "description": "A medium maturing variety of maize",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "HYBRID 614",
+      "type": "CROP",
+      "description": "A late maturing variety of maize",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "HADLEY CENTRE GLOBAL ENVIRONMENT MODEL VERSION 2",
+      "type": "METHOD",
+      "description": "A global coupled model used to downscale climate data for the study area",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "REPRESENTATIVE CONCENTRATION PATHWAYS",
+      "type": "CONCEPT",
+      "description": "Climate scenarios, specifically RCP 4.5 and 8.5, used to project future climate data",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "KISUMU METEOROLOGICAL STATION",
+      "type": "LOCATION",
+      "description": "The source of historical and current climate data for the Nyando region",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural output of maize measured in kg ha-1",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The phenomenon of long-term shifts in temperatures and weather patterns affecting farming systems",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An environmental factor projected to increase, affecting crop yields",
+      "source_id": "paper_10089"
+    },
+    {
+      "name": "RAINFALL DURATION",
+      "type": "CONDITION",
+      "description": "An environmental factor projected to reduce, affecting crop yields",
+      "source_id": "paper_10089"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NYANDO",
+      "target": "KENYA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "MAIZE",
+      "target": "NYANDO",
+      "description": "is grown in",
+      "weight": "9",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "DECISION SUPPORT SYSTEM FOR AGROTECHNOLOGY TRANSFER",
+      "target": "MAIZE",
+      "description": "is used to model production of",
+      "weight": "10",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "DECISION SUPPORT SYSTEM FOR AGROTECHNOLOGY TRANSFER",
+      "target": "RAIN FED CONDITIONS",
+      "description": "operates under",
+      "weight": "8",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "KATUMANI COMP B",
+      "target": "MAIZE",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "HYBRID 511",
+      "target": "MAIZE",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "HYBRID 614",
+      "target": "MAIZE",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "HADLEY CENTRE GLOBAL ENVIRONMENT MODEL VERSION 2",
+      "target": "NYANDO",
+      "description": "downscales climate data for",
+      "weight": "9",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "HADLEY CENTRE GLOBAL ENVIRONMENT MODEL VERSION 2",
+      "target": "REPRESENTATIVE CONCENTRATION PATHWAYS",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "KISUMU METEOROLOGICAL STATION",
+      "target": "NYANDO",
+      "description": "provides climate data for",
+      "weight": "8",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "YIELD",
+      "target": "MAIZE",
+      "description": "is a measured trait of",
+      "weight": "10",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "YIELD",
+      "description": "causes a decrease in",
+      "weight": "9",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "REPRESENTATIVE CONCENTRATION PATHWAYS",
+      "target": "YIELD",
+      "description": "is used to project",
+      "weight": "9",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "RAINFALL DURATION",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "KATUMANI COMP B",
+      "target": "TEMPERATURE",
+      "description": "is less affected by changes in",
+      "weight": "7",
+      "source_id": "paper_10089"
+    },
+    {
+      "source": "KATUMANI COMP B",
+      "target": "RAINFALL DURATION",
+      "description": "is less affected by changes in",
+      "weight": "7",
+      "source_id": "paper_10089"
+    }
+  ]
+}

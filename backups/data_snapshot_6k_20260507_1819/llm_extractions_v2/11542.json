@@ -1,0 +1,229 @@
+{
+  "entities": [
+    {
+      "name": "SPATIO-TEMPORAL VEGETATION DYNAMICS",
+      "type": "CONCEPT",
+      "description": "The change in vegetation patterns over space and time within a specific region",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "VEGETATION STRESS ZONES",
+      "type": "CONCEPT",
+      "description": "Areas where vegetation exhibits signs of stress, often due to environmental factors like water scarcity",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "TROPICAL ARID ECOSYSTEM",
+      "type": "CONCEPT",
+      "description": "An ecosystem characterized by high temperatures and low, irregular precipitation",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "ANANTAPURAMU DISTRICT",
+      "type": "LOCATION",
+      "description": "A district in Andhra Pradesh, India, used as the study area",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where Anantapuramu district is located",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "type": "METHOD",
+      "description": "A vegetation index used to estimate vegetation greenness and health",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "VEGETATION CONDITION INDEX",
+      "type": "METHOD",
+      "description": "An index used to monitor vegetation condition relative to its historical range",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "VEGETATION ANOMALY INDEX",
+      "type": "METHOD",
+      "description": "An index used to identify deviations in vegetation from the long-term average",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "MODERATE RESOLUTION IMAGING SPECTRORADIOMETER",
+      "type": "METHOD",
+      "description": "A satellite sensor used to acquire time-series vegetation data",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "MOD13Q1",
+      "type": "METHOD",
+      "description": "A specific MODIS product providing vegetation indices at 250 m spatial resolution",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "STANDARDIZED PRECIPITATION INDEX",
+      "type": "METHOD",
+      "description": "An index used to quantify precipitation deficits or surpluses over a specific period",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "PRECIPITATION DEFICIT",
+      "type": "CONDITION",
+      "description": "A state where precipitation is lower than the long-term average",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A prolonged period of abnormally low rainfall leading to water shortage and vegetation stress",
+      "source_id": "paper_11542"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation falling in a given area, influencing vegetation growth",
+      "source_id": "paper_11542"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MODERATE RESOLUTION IMAGING SPECTRORADIOMETER",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "provides data for calculating",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "MODERATE RESOLUTION IMAGING SPECTRORADIOMETER",
+      "target": "VEGETATION CONDITION INDEX",
+      "description": "provides data for calculating",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "MODERATE RESOLUTION IMAGING SPECTRORADIOMETER",
+      "target": "VEGETATION ANOMALY INDEX",
+      "description": "provides data for calculating",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "MOD13Q1",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "contains data for",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "MOD13Q1",
+      "target": "VEGETATION CONDITION INDEX",
+      "description": "contains data for",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "MOD13Q1",
+      "target": "VEGETATION ANOMALY INDEX",
+      "description": "contains data for",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "SPATIO-TEMPORAL VEGETATION DYNAMICS",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "VEGETATION CONDITION INDEX",
+      "target": "SPATIO-TEMPORAL VEGETATION DYNAMICS",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "VEGETATION ANOMALY INDEX",
+      "target": "SPATIO-TEMPORAL VEGETATION DYNAMICS",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "VEGETATION STRESS ZONES",
+      "description": "used to delineate",
+      "weight": "9",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "VEGETATION CONDITION INDEX",
+      "target": "VEGETATION STRESS ZONES",
+      "description": "used to delineate",
+      "weight": "9",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "VEGETATION ANOMALY INDEX",
+      "target": "VEGETATION STRESS ZONES",
+      "description": "used to delineate",
+      "weight": "9",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "STANDARDIZED PRECIPITATION INDEX",
+      "target": "PRECIPITATION DEFICIT",
+      "description": "used to quantify",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "STANDARDIZED PRECIPITATION INDEX",
+      "target": "SPATIO-TEMPORAL VEGETATION DYNAMICS",
+      "description": "used to assess influence on",
+      "weight": "8",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "SPATIO-TEMPORAL VEGETATION DYNAMICS",
+      "description": "impacts",
+      "weight": "9",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "VEGETATION STRESS ZONES",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "TROPICAL ARID ECOSYSTEM",
+      "target": "ANANTAPURAMU DISTRICT",
+      "description": "characterizes the environment of",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "ANANTAPURAMU DISTRICT",
+      "target": "ANDHRA PRADESH",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11542"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11542"
+    }
+  ]
+}

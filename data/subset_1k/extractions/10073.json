@@ -1,0 +1,281 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Leguminous crop produced in Sub-Saharan Africa",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "Region where groundnut production is limited by water deficit",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "Condition characterized by lack of water, limiting crop yield",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental condition causing yield decreases in groundnut",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "CROP SIMULATION MODELING",
+      "type": "METHOD",
+      "description": "Computational approach used to assess yield and productivity",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "SSM",
+      "type": "METHOD",
+      "description": "Simple Simulation Modeling, a specific crop simulation model",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "MARKSIM",
+      "type": "METHOD",
+      "description": "A weather generator used to provide input data for simulation models",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The weight of pods produced per unit area in groundnut",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "WEST CENTRAL AFRICA",
+      "type": "LOCATION",
+      "description": "Region where drought-related yield reductions occur above 12-13 degrees North",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "EAST SOUTH AFRICA",
+      "type": "LOCATION",
+      "description": "Region where drought-related yield reductions occur in eastern fringes",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "TANZANIA",
+      "type": "LOCATION",
+      "description": "Country in East South Africa affected by drought",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "MOZAMBIQUE",
+      "type": "LOCATION",
+      "description": "Country in East South Africa affected by drought",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "SOWING DENSITY",
+      "type": "CONCEPT",
+      "description": "The number of plants sown per square meter",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "SPANISH CULTIVARS",
+      "type": "CROP",
+      "description": "A specific group of groundnut cultivars",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "RUNNER PLANT TYPE",
+      "type": "TRAIT",
+      "description": "A groundnut plant architecture adapted to low sowing density",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "BUSH PLANT TYPE",
+      "type": "TRAIT",
+      "description": "A groundnut plant architecture that currently receives most genetic attention",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "GENETIC IMPROVEMENT",
+      "type": "METHOD",
+      "description": "The process of altering genetic makeup to enhance traits",
+      "source_id": "paper_10073"
+    },
+    {
+      "name": "DROUGHT ADAPTATION",
+      "type": "TRAIT",
+      "description": "The ability of a plant to maintain productivity under water stress",
+      "source_id": "paper_10073"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "produced in",
+      "weight": "10",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "GROUNDNUT",
+      "description": "limits production of",
+      "weight": "9",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "GROUNDNUT",
+      "description": "limits production of",
+      "weight": "9",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "CROP SIMULATION MODELING",
+      "target": "GROUNDNUT",
+      "description": "used to study productivity of",
+      "weight": "8",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "SSM",
+      "target": "CROP SIMULATION MODELING",
+      "description": "is a specific instance of",
+      "weight": "10",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "MARKSIM",
+      "target": "SSM",
+      "description": "provides weather data for",
+      "weight": "8",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "POD YIELD",
+      "target": "GROUNDNUT",
+      "description": "is a specific measure of yield for",
+      "weight": "10",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "WEST CENTRAL AFRICA",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "is a sub-region of",
+      "weight": "10",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "EAST SOUTH AFRICA",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "is a sub-region of",
+      "weight": "10",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "TANZANIA",
+      "target": "EAST SOUTH AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "MOZAMBIQUE",
+      "target": "EAST SOUTH AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "WEST CENTRAL AFRICA",
+      "description": "causes yield reduction in",
+      "weight": "8",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "EAST SOUTH AFRICA",
+      "description": "causes yield reduction in",
+      "weight": "8",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "SOWING DENSITY",
+      "target": "SPANISH CULTIVARS",
+      "description": "affects the yield of",
+      "weight": "8",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "SOWING DENSITY",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "SPANISH CULTIVARS",
+      "target": "GROUNDNUT",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "RUNNER PLANT TYPE",
+      "target": "GROUNDNUT",
+      "description": "is a plant architecture of",
+      "weight": "9",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "BUSH PLANT TYPE",
+      "target": "GROUNDNUT",
+      "description": "is a plant architecture of",
+      "weight": "9",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "GENETIC IMPROVEMENT",
+      "target": "DROUGHT ADAPTATION",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "GENETIC IMPROVEMENT",
+      "target": "GROUNDNUT",
+      "description": "is applied to",
+      "weight": "9",
+      "source_id": "paper_10073"
+    },
+    {
+      "source": "RUNNER PLANT TYPE",
+      "target": "SOWING DENSITY",
+      "description": "is adapted to low",
+      "weight": "8",
+      "source_id": "paper_10073"
+    }
+  ]
+}

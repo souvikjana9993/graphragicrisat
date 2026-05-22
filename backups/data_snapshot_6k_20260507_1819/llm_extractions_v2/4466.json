@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The genus Arachis, specifically Arachis hypogaea L. cv. ‘NC 6’, used in the study.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "INTERSPECIFIC HYBRIDIZATION",
+      "type": "METHOD",
+      "description": "The process of crossing different species within the Arachis genus.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "EMBRYO ABORTION",
+      "type": "CONDITION",
+      "description": "The early failure of embryo development that restricts interspecific hybridization in Arachis.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "EMBRYO RESCUE",
+      "type": "METHOD",
+      "description": "The technique of recovering young embryos in vitro to prevent abortion.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "IN VITRO CULTURE",
+      "type": "METHOD",
+      "description": "The growth of tissues, such as peg tips and ovules, in a controlled artificial environment.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "PEG TIPS",
+      "type": "CONCEPT",
+      "description": "The tissue containing ovules and embryos in Arachis hypogaea.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "OVULE GROWTH",
+      "type": "TRAIT",
+      "description": "The development and growth of the ovule in vitro.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "CALLUS PRODUCTION",
+      "type": "TRAIT",
+      "description": "The formation of an unorganized mass of cells from cultured tissues.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "PEG ELONGATION",
+      "type": "TRAIT",
+      "description": "The growth in length of the peg tissues.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "SELF-POLLINATION",
+      "type": "METHOD",
+      "description": "The fertilization of a plant by its own pollen.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "KINETIN",
+      "type": "CONCEPT",
+      "description": "A cytokinin used in culture media to stimulate callus production.",
+      "source_id": "paper_4466"
+    },
+    {
+      "name": "SUCROSE",
+      "type": "CONCEPT",
+      "description": "A sugar used in culture media to promote peg elongation.",
+      "source_id": "paper_4466"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTERSPECIFIC HYBRIDIZATION",
+      "target": "GROUNDNUT",
+      "description": "is performed in",
+      "weight": "8",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "INTERSPECIFIC HYBRIDIZATION",
+      "target": "EMBRYO ABORTION",
+      "description": "is restricted by",
+      "weight": "9",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "EMBRYO RESCUE",
+      "target": "EMBRYO ABORTION",
+      "description": "is used to overcome",
+      "weight": "10",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "EMBRYO RESCUE",
+      "target": "IN VITRO CULTURE",
+      "description": "is implemented via",
+      "weight": "9",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "EMBRYO RESCUE",
+      "target": "GROUNDNUT",
+      "description": "is applied to",
+      "weight": "8",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "IN VITRO CULTURE",
+      "target": "PEG TIPS",
+      "description": "is used to culture",
+      "weight": "9",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "IN VITRO CULTURE",
+      "target": "OVULE GROWTH",
+      "description": "is used to observe",
+      "weight": "7",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "IN VITRO CULTURE",
+      "target": "CALLUS PRODUCTION",
+      "description": "is used to observe",
+      "weight": "7",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "IN VITRO CULTURE",
+      "target": "PEG ELONGATION",
+      "description": "is used to observe",
+      "weight": "7",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "KINETIN",
+      "target": "CALLUS PRODUCTION",
+      "description": "stimulates",
+      "weight": "9",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "SUCROSE",
+      "target": "PEG ELONGATION",
+      "description": "promotes",
+      "weight": "8",
+      "source_id": "paper_4466"
+    },
+    {
+      "source": "SELF-POLLINATION",
+      "target": "GROUNDNUT",
+      "description": "is performed on",
+      "weight": "7",
+      "source_id": "paper_4466"
+    }
+  ]
+}

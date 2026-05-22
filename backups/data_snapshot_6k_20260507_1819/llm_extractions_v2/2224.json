@@ -1,0 +1,281 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "Glycine max L. Merr., the crop studied for productivity and yield gaps in India",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "CROPGRO-SOYBEAN MODEL",
+      "type": "METHOD",
+      "description": "A simulation model used to calibrate, validate, and estimate potential yields and yield gaps",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the soybean yield analysis was conducted",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "CENTRAL AND PENINSULAR INDIA",
+      "type": "LOCATION",
+      "description": "The specific regions in India where the CROPGRO-Soybean model was calibrated and validated",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "POTENTIAL YIELD",
+      "type": "TRAIT",
+      "description": "The maximum yield achievable under specific water conditions, either non-limiting or limiting",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "YIELD GAP",
+      "type": "CONCEPT",
+      "description": "The difference between potential yields and actual yields of soybean",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "WATER NON-LIMITING",
+      "type": "CONDITION",
+      "description": "A condition where water availability does not restrict crop yield",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "WATER LIMITING",
+      "type": "CONDITION",
+      "description": "A condition where water availability restricts crop yield",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "ACTUAL YIELD",
+      "type": "TRAIT",
+      "description": "The real yield achieved by farmers in rainfed environments",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The condition of water in the soil that can reduce potential yield",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "SOLAR RADIATION",
+      "type": "CONDITION",
+      "description": "Environmental factor strongly correlated with water non-limiting potential yields",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "CROP SEASON RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation during the growing season affecting yields and yield gaps",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "RAINFED ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "An agricultural setting where crops are grown without irrigation, relying on rainfall",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "IMPROVED CROP MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Agricultural techniques that can be adopted to reduce the yield gap",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "CONSERVATION OF RAINFALL",
+      "type": "METHOD",
+      "description": "A technology aimed at reducing yield gaps in low rainfall regimes",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "DROUGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "A trait of soybean varieties used to reduce yield gaps in low rainfall regimes",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "WATER-LOGGING",
+      "type": "CONDITION",
+      "description": "A condition of excess soil water that negatively impacts crop yield",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "WATER-LOGGING TOLERANCE",
+      "type": "TRAIT",
+      "description": "A trait of soybean varieties used to reduce yield gaps in high rainfall regimes",
+      "source_id": "paper_2224"
+    },
+    {
+      "name": "SUPPLEMENTAL IRRIGATION",
+      "type": "METHOD",
+      "description": "The practice of using harvested excess rainfall to increase crop yields",
+      "source_id": "paper_2224"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROPGRO-SOYBEAN MODEL",
+      "target": "SOYBEAN",
+      "description": "used to assess productivity of",
+      "weight": "10",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "CROPGRO-SOYBEAN MODEL",
+      "target": "POTENTIAL YIELD",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "CROPGRO-SOYBEAN MODEL",
+      "target": "YIELD GAP",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "CROPGRO-SOYBEAN MODEL",
+      "target": "CENTRAL AND PENINSULAR INDIA",
+      "description": "calibrated and validated for",
+      "weight": "8",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "POTENTIAL YIELD",
+      "target": "SOYBEAN",
+      "description": "trait of",
+      "weight": "10",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "ACTUAL YIELD",
+      "target": "SOYBEAN",
+      "description": "trait of",
+      "weight": "10",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "YIELD GAP",
+      "target": "SOYBEAN",
+      "description": "concept applied to",
+      "weight": "10",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "YIELD GAP",
+      "target": "POTENTIAL YIELD",
+      "description": "difference from",
+      "weight": "9",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "YIELD GAP",
+      "target": "ACTUAL YIELD",
+      "description": "difference from",
+      "weight": "9",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "WATER NON-LIMITING",
+      "target": "POTENTIAL YIELD",
+      "description": "condition for",
+      "weight": "8",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "WATER LIMITING",
+      "target": "POTENTIAL YIELD",
+      "description": "condition for",
+      "weight": "8",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "POTENTIAL YIELD",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "SOLAR RADIATION",
+      "target": "POTENTIAL YIELD",
+      "description": "strongly correlated with",
+      "weight": "9",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "CROP SEASON RAINFALL",
+      "target": "POTENTIAL YIELD",
+      "description": "curvilinear relationship with",
+      "weight": "7",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "CROP SEASON RAINFALL",
+      "target": "ACTUAL YIELD",
+      "description": "curvilinear relationship with",
+      "weight": "7",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "RAINFED ENVIRONMENT",
+      "target": "YIELD GAP",
+      "description": "context for",
+      "weight": "8",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "IMPROVED CROP MANAGEMENT PRACTICES",
+      "target": "YIELD GAP",
+      "description": "can reduce",
+      "weight": "9",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "CONSERVATION OF RAINFALL",
+      "target": "YIELD GAP",
+      "description": "component to reduce",
+      "weight": "8",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "DROUGHT RESISTANCE",
+      "target": "YIELD GAP",
+      "description": "component to reduce in low rainfall",
+      "weight": "8",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "WATER-LOGGING",
+      "target": "YIELD GAP",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "WATER-LOGGING TOLERANCE",
+      "target": "YIELD GAP",
+      "description": "component to reduce in high rainfall",
+      "weight": "8",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "SUPPLEMENTAL IRRIGATION",
+      "target": "ACTUAL YIELD",
+      "description": "helps increase",
+      "weight": "8",
+      "source_id": "paper_2224"
+    },
+    {
+      "source": "CENTRAL AND PENINSULAR INDIA",
+      "target": "INDIA",
+      "description": "part of",
+      "weight": "10",
+      "source_id": "paper_2224"
+    }
+  ]
+}

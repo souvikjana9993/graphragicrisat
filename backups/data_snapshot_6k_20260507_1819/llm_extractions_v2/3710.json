@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop species Arachis Hypogaea being studied for yield differences under drought stress.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental stress characterized by limited water availability.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "LEAF DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The rate and process of leaf production in groundnut genotypes.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental factor that primarily influences the rate of leaf development.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "THERMAL TIME",
+      "type": "CONCEPT",
+      "description": "The cumulative temperature required to produce one leaf.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "LEAF WATER POTENTIAL",
+      "type": "TRAIT",
+      "description": "A measure of the water status of the leaf, showing a linear relation with thermal time below -0.6 MPa.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "FLOWER PRODUCTION",
+      "type": "TRAIT",
+      "description": "The process of producing flowers, analyzed in relation to leaf number.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "PEG PRODUCTION",
+      "type": "TRAIT",
+      "description": "The process of producing pegs, analyzed in relation to leaf number.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "POD PRODUCTION",
+      "type": "TRAIT",
+      "description": "The process of producing pods, analyzed in relation to leaf number.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "LEAF NUMBER",
+      "type": "TRAIT",
+      "description": "The total number of leaves, which integrates the effects of temperature and water status.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "WATER STATUS",
+      "type": "CONDITION",
+      "description": "The state of water availability and stress within the plant.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "TMV 2",
+      "type": "CROP",
+      "description": "A groundnut genotype that maintained a high pod to peg ratio and partitioning factor during drought.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "KADIRI 3",
+      "type": "CROP",
+      "description": "A groundnut genotype that maintained peg production during drought and achieved high harvest index and pod yield.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "PARTITIONING FACTOR",
+      "type": "TRAIT",
+      "description": "The factor determining the allocation of resources to pods during the pod-filling period.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "POD-FILLING PERIOD",
+      "type": "CONCEPT",
+      "description": "The developmental stage during which pods are filled with nutrients.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of pod yield to total biomass.",
+      "source_id": "paper_3710"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of pods produced by the plant.",
+      "source_id": "paper_3710"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "DROUGHT",
+      "description": "is affected by",
+      "weight": "8",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "LEAF DEVELOPMENT",
+      "target": "TEMPERATURE",
+      "description": "depends primarily on",
+      "weight": "9",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "THERMAL TIME",
+      "target": "LEAF WATER POTENTIAL",
+      "description": "has a linear relation with",
+      "weight": "7",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "FLOWER PRODUCTION",
+      "target": "LEAF NUMBER",
+      "description": "is analyzed in relation to",
+      "weight": "6",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "PEG PRODUCTION",
+      "target": "LEAF NUMBER",
+      "description": "is analyzed in relation to",
+      "weight": "6",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "POD PRODUCTION",
+      "target": "LEAF NUMBER",
+      "description": "is analyzed in relation to",
+      "weight": "6",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "LEAF NUMBER",
+      "target": "TEMPERATURE",
+      "description": "integrates effects of",
+      "weight": "7",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "LEAF NUMBER",
+      "target": "WATER STATUS",
+      "description": "integrates effects of",
+      "weight": "7",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "TMV 2",
+      "target": "GROUNDNUT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "KADIRI 3",
+      "target": "GROUNDNUT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "TMV 2",
+      "target": "DROUGHT",
+      "description": "maintains pod to peg ratio during",
+      "weight": "8",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "TMV 2",
+      "target": "PARTITIONING FACTOR",
+      "description": "maintains high values of",
+      "weight": "9",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "PARTITIONING FACTOR",
+      "target": "HARVEST INDEX",
+      "description": "results in",
+      "weight": "8",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "PARTITIONING FACTOR",
+      "target": "POD YIELD",
+      "description": "results in",
+      "weight": "8",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "KADIRI 3",
+      "target": "PEG PRODUCTION",
+      "description": "maintains production during drought",
+      "weight": "8",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "KADIRI 3",
+      "target": "HARVEST INDEX",
+      "description": "achieves high",
+      "weight": "7",
+      "source_id": "paper_3710"
+    },
+    {
+      "source": "KADIRI 3",
+      "target": "POD YIELD",
+      "description": "achieves high",
+      "weight": "7",
+      "source_id": "paper_3710"
+    }
+  ]
+}

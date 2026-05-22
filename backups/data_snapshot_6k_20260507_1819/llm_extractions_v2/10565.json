@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "INPUT CREDIT",
+      "type": "CONCEPT",
+      "description": "Financial credit provided to farmers for purchasing agricultural inputs",
+      "source_id": "paper_10565"
+    },
+    {
+      "name": "SMALLHOLDER FARMERS",
+      "type": "CONCEPT",
+      "description": "Farmers operating small-scale agricultural holdings",
+      "source_id": "paper_10565"
+    },
+    {
+      "name": "OUTPUT",
+      "type": "CONCEPT",
+      "description": "The total amount of agricultural produce generated",
+      "source_id": "paper_10565"
+    },
+    {
+      "name": "INCOME",
+      "type": "CONCEPT",
+      "description": "The financial return earned by farmers from their agricultural activities",
+      "source_id": "paper_10565"
+    },
+    {
+      "name": "MASARA N’ARZIKI SUPPORT PROJECT",
+      "type": "CONCEPT",
+      "description": "A support project aimed at providing assistance to farmers in Northern Ghana",
+      "source_id": "paper_10565"
+    },
+    {
+      "name": "NORTHERN GHANA",
+      "type": "LOCATION",
+      "description": "The northern region of Ghana where the study was conducted",
+      "source_id": "paper_10565"
+    },
+    {
+      "name": "PROPENSITY SCORE MATCHING",
+      "type": "METHOD",
+      "description": "A statistical method used to estimate the effect of a treatment by accounting for covariates",
+      "source_id": "paper_10565"
+    },
+    {
+      "name": "YIELD",
+      "type": "CONCEPT",
+      "description": "The measure of crop production per unit area of land",
+      "source_id": "paper_10565"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INPUT CREDIT",
+      "target": "SMALLHOLDER FARMERS",
+      "description": "provided to",
+      "weight": "8",
+      "source_id": "paper_10565"
+    },
+    {
+      "source": "MASARA N’ARZIKI SUPPORT PROJECT",
+      "target": "INPUT CREDIT",
+      "description": "facilitates",
+      "weight": "9",
+      "source_id": "paper_10565"
+    },
+    {
+      "source": "MASARA N’ARZIKI SUPPORT PROJECT",
+      "target": "SMALLHOLDER FARMERS",
+      "description": "supports",
+      "weight": "9",
+      "source_id": "paper_10565"
+    },
+    {
+      "source": "MASARA N’ARZIKI SUPPORT PROJECT",
+      "target": "NORTHERN GHANA",
+      "description": "implemented in",
+      "weight": "10",
+      "source_id": "paper_10565"
+    },
+    {
+      "source": "PROPENSITY SCORE MATCHING",
+      "target": "OUTPUT",
+      "description": "used to estimate effect on",
+      "weight": "8",
+      "source_id": "paper_10565"
+    },
+    {
+      "source": "PROPENSITY SCORE MATCHING",
+      "target": "YIELD",
+      "description": "used to estimate effect on",
+      "weight": "8",
+      "source_id": "paper_10565"
+    },
+    {
+      "source": "PROPENSITY SCORE MATCHING",
+      "target": "INCOME",
+      "description": "used to estimate effect on",
+      "weight": "8",
+      "source_id": "paper_10565"
+    },
+    {
+      "source": "INPUT CREDIT",
+      "target": "OUTPUT",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_10565"
+    },
+    {
+      "source": "INPUT CREDIT",
+      "target": "YIELD",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_10565"
+    },
+    {
+      "source": "INPUT CREDIT",
+      "target": "INCOME",
+      "description": "no significant effect on",
+      "weight": "6",
+      "source_id": "paper_10565"
+    }
+  ]
+}

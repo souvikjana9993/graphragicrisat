@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "GRAIN LEGUMES",
+      "type": "CROP",
+      "description": "Leguminous plants grown for their seeds, with a global production of 161 million mt in 1978",
+      "source_id": "paper_5125"
+    },
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "Grass crops grown for their edible grains, used as a benchmark for grain legume production",
+      "source_id": "paper_5125"
+    },
+    {
+      "name": "WORLD",
+      "type": "LOCATION",
+      "description": "The global scale of production for grain legumes and cereals",
+      "source_id": "paper_5125"
+    },
+    {
+      "name": "APO",
+      "type": "CONCEPT",
+      "description": "An organization focused on the developing market economies of East Asia",
+      "source_id": "paper_5125"
+    },
+    {
+      "name": "EAST ASIA",
+      "type": "LOCATION",
+      "description": "A region of particular concern for the APO where grain legumes and cereals are produced",
+      "source_id": "paper_5125"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "WORLD",
+      "description": "Produced globally with an estimated 161 million mt in 1978",
+      "weight": "10",
+      "source_id": "paper_5125"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "CEREALS",
+      "description": "Production is compared as a percentage of total cereal production",
+      "weight": "8",
+      "source_id": "paper_5125"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "EAST ASIA",
+      "description": "Produced in the region with a total of 23 million mt in 1978",
+      "weight": "10",
+      "source_id": "paper_5125"
+    },
+    {
+      "source": "CEREALS",
+      "target": "EAST ASIA",
+      "description": "Produced in the region, serving as a comparison for grain legume production",
+      "weight": "10",
+      "source_id": "paper_5125"
+    },
+    {
+      "source": "APO",
+      "target": "EAST ASIA",
+      "description": "The organization has a particular concern for the developing market economies of this region",
+      "weight": "9",
+      "source_id": "paper_5125"
+    }
+  ]
+}

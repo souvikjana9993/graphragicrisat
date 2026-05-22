@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The long-term shift in global or regional climate patterns and variability",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "CLIMATE VARIABILITY",
+      "type": "CONDITION",
+      "description": "The variation in climate patterns over time",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "CROPPING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The patterns and methods of growing crops on a piece of land",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "HOST",
+      "type": "ORGANISM",
+      "description": "A susceptible plant organism that can be infected by a pathogen",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "PATHOGEN",
+      "type": "ORGANISM",
+      "description": "A virulent organism capable of causing disease in a host",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "FAVOURABLE ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "Environmental conditions that promote the development and spread of disease",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "DISEASE EPIDEMICS",
+      "type": "CONCEPT",
+      "description": "The rapid spread of infectious diseases among a range of crops",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "Agricultural plants grown for food or other purposes",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "DISEASE TETRAHEDRAN",
+      "type": "CONCEPT",
+      "description": "A model representing the interaction of host, pathogen, environment, and time leading to disease epidemics",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "FOOD PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of generating food through agricultural activities",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "RAINFED REGIONS",
+      "type": "LOCATION",
+      "description": "Agricultural areas that rely solely on rainfall for water",
+      "source_id": "paper_5483"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where rainfed regions constitute a significant portion of cultivation area",
+      "source_id": "paper_5483"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "CLIMATE VARIABILITY",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "DISEASE EPIDEMICS",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "FOOD PRODUCTION",
+      "description": "impairs",
+      "weight": "8",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "RAINFED REGIONS",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "CROPPING SYSTEMS",
+      "target": "DISEASE EPIDEMICS",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "HOST",
+      "target": "DISEASE EPIDEMICS",
+      "description": "is a required component for",
+      "weight": "10",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "PATHOGEN",
+      "target": "DISEASE EPIDEMICS",
+      "description": "is a required component for",
+      "weight": "10",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "FAVOURABLE ENVIRONMENT",
+      "target": "DISEASE EPIDEMICS",
+      "description": "is a required component for",
+      "weight": "10",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "HOST",
+      "target": "DISEASE TETRAHEDRAN",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "PATHOGEN",
+      "target": "DISEASE TETRAHEDRAN",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "FAVOURABLE ENVIRONMENT",
+      "target": "DISEASE TETRAHEDRAN",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_5483"
+    },
+    {
+      "source": "RAINFED REGIONS",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_5483"
+    }
+  ]
+}

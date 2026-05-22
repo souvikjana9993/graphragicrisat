@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for trichome inheritance.",
+      "source_id": "paper_1416"
+    },
+    {
+      "name": "LEAF TRICHOMES",
+      "type": "TRAIT",
+      "description": "The presence or absence of hair-like appendages on the leaf surface.",
+      "source_id": "paper_1416"
+    },
+    {
+      "name": "TRICHOME DENSITY",
+      "type": "TRAIT",
+      "description": "The concentration of trichomes on the abaxial leaf surface.",
+      "source_id": "paper_1416"
+    },
+    {
+      "name": "SINGLE-CROSS MATING",
+      "type": "METHOD",
+      "description": "The breeding process of crossing two distinct parents to produce segregating generations.",
+      "source_id": "paper_1416"
+    },
+    {
+      "name": "TR GENE",
+      "type": "GENE_MARKER",
+      "description": "The single recessive gene locus that controls the presence of leaf trichomes.",
+      "source_id": "paper_1416"
+    },
+    {
+      "name": "SEGREGATION RATIOS",
+      "type": "CONCEPT",
+      "description": "The proportions of phenotypes observed in offspring used to determine the mode of inheritance.",
+      "source_id": "paper_1416"
+    },
+    {
+      "name": "HERITABILITY",
+      "type": "CONCEPT",
+      "description": "The measure of the proportion of phenotypic variation attributable to genetic variation.",
+      "source_id": "paper_1416"
+    },
+    {
+      "name": "FILIAL GENERATIONS",
+      "type": "CONCEPT",
+      "description": "The F3 and F4 generations used to estimate heritability.",
+      "source_id": "paper_1416"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "LEAF TRICHOMES",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_1416"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "TRICHOME DENSITY",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_1416"
+    },
+    {
+      "source": "TR GENE",
+      "target": "LEAF TRICHOMES",
+      "description": "controls the presence of",
+      "weight": "10",
+      "source_id": "paper_1416"
+    },
+    {
+      "source": "SINGLE-CROSS MATING",
+      "target": "LEAF TRICHOMES",
+      "description": "used to study the inheritance of",
+      "weight": "8",
+      "source_id": "paper_1416"
+    },
+    {
+      "source": "SEGREGATION RATIOS",
+      "target": "TR GENE",
+      "description": "indicated the nature of",
+      "weight": "9",
+      "source_id": "paper_1416"
+    },
+    {
+      "source": "HERITABILITY",
+      "target": "TRICHOME DENSITY",
+      "description": "estimated for",
+      "weight": "9",
+      "source_id": "paper_1416"
+    },
+    {
+      "source": "FILIAL GENERATIONS",
+      "target": "HERITABILITY",
+      "description": "used to calculate",
+      "weight": "8",
+      "source_id": "paper_1416"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "TR GENE",
+      "description": "contains the",
+      "weight": "10",
+      "source_id": "paper_1416"
+    }
+  ]
+}

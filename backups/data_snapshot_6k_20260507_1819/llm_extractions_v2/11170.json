@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Cultivated peanut (Arachis hypogaea L.), an important grain legume providing high-quality cooking oil, proteins, and nutrients",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "SHELLING PERCENTAGE",
+      "type": "TRAIT",
+      "description": "An important agronomic trait that significantly affects the economic value of peanut in the market",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The most important agronomic trait of peanut",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "GENOMICS-ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "A breeding approach using diagnostic markers to accelerate the development of improved varieties with enhanced traits",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "QTL-SEQ",
+      "type": "METHOD",
+      "description": "A genomic approach used to identify genomic regions and candidate genes controlling specific traits",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINE POPULATION",
+      "type": "CONCEPT",
+      "description": "A mapping population derived from the cross of Yuanza 9102 and Xuzhou 68-4",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "YUANZA 9102",
+      "type": "ORGANISM",
+      "description": "A parent variety used to construct the recombinant inbred line population",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "XUZHOU 68-4",
+      "type": "ORGANISM",
+      "description": "A parent variety used to construct the recombinant inbred line population",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "GENOMIC REGIONS",
+      "type": "CONCEPT",
+      "description": "Overlapped chromosomal areas identified as controlling shelling percentage",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "CANDIDATE GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes identified within genomic regions that are affected by SNPs and control shelling percentage",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms with non-synonymous effects or in UTRs used to identify candidate genes",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "KASP",
+      "type": "METHOD",
+      "description": "Kompetitive Allele-Specific PCR, a cost-effective method used to develop markers for SNPs",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "A09",
+      "type": "LOCATION",
+      "description": "A chromosome containing a 2.75 Mb genomic region controlling shelling percentage",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "B02",
+      "type": "LOCATION",
+      "description": "A chromosome containing a 1.1 Mb genomic region controlling shelling percentage",
+      "source_id": "paper_11170"
+    },
+    {
+      "name": "MOLECULAR BREEDING",
+      "type": "METHOD",
+      "description": "A breeding method utilizing diagnostic markers to achieve high shelling percentage in improved varieties",
+      "source_id": "paper_11170"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "QTL-SEQ",
+      "target": "SHELLING PERCENTAGE",
+      "description": "used to identify genomic regions controlling",
+      "weight": "10",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "QTL-SEQ",
+      "target": "GENOMIC REGIONS",
+      "description": "used to discover",
+      "weight": "10",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "GENOMIC REGIONS",
+      "target": "SHELLING PERCENTAGE",
+      "description": "control",
+      "weight": "10",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "CANDIDATE GENES",
+      "target": "SHELLING PERCENTAGE",
+      "description": "control",
+      "weight": "9",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "SNPS",
+      "target": "CANDIDATE GENES",
+      "description": "affect",
+      "weight": "8",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "KASP",
+      "target": "SNPS",
+      "description": "used to develop markers for",
+      "weight": "9",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "GENOMIC REGIONS",
+      "target": "A09",
+      "description": "located on",
+      "weight": "10",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "GENOMIC REGIONS",
+      "target": "B02",
+      "description": "located on",
+      "weight": "10",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "GENOMICS-ASSISTED BREEDING",
+      "target": "SHELLING PERCENTAGE",
+      "description": "used to enhance",
+      "weight": "8",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINE POPULATION",
+      "target": "PEANUT",
+      "description": "is a population of",
+      "weight": "10",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "YUANZA 9102",
+      "target": "RECOMBINANT INBRED LINE POPULATION",
+      "description": "is a parent of",
+      "weight": "10",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "XUZHOU 68-4",
+      "target": "RECOMBINANT INBRED LINE POPULATION",
+      "description": "is a parent of",
+      "weight": "10",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "MOLECULAR BREEDING",
+      "target": "SHELLING PERCENTAGE",
+      "description": "used to achieve high",
+      "weight": "8",
+      "source_id": "paper_11170"
+    },
+    {
+      "source": "KASP",
+      "target": "GENOMIC REGIONS",
+      "description": "confirmed control of",
+      "weight": "8",
+      "source_id": "paper_11170"
+    }
+  ]
+}

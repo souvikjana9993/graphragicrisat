@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop discussed in the context of diseases prevalent in China",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "The geographical region where the specified pigeonpea diseases are prevalent",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A disease affecting pigeonpea caused by the fungus Fusarium udum",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "FUSARIUM UDUM",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes fusarium wilt in pigeonpea",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "PHYTOPHTHORA BLIGHT",
+      "type": "CONDITION",
+      "description": "A disease affecting pigeonpea caused by Phytopthora drechsleri f.sp. cajani",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "PHYTOPHTHORA DRECHSLERI F.SP. CAJANI",
+      "type": "ORGANISM",
+      "description": "The pathogen responsible for causing phytopthora blight in pigeonpea",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "POWDERY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease affecting pigeonpea caused by Oidiopsis taurica or Leveillula taurica",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "OIDIOPSIS TAURICA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes powdery mildew in pigeonpea",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "LEVEILLULA TAURICA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes powdery mildew in pigeonpea",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "STERILITY MOSAIC",
+      "type": "CONDITION",
+      "description": "A disease affecting pigeonpea",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "CERCOSPORA LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A disease affecting pigeonpea caused by Cercospora spp.",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "CERCOSPORA SPP.",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for cercospora leaf spot in pigeonpea",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "RUST",
+      "type": "CONDITION",
+      "description": "A disease affecting pigeonpea caused by Uredo cajani",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "UREDO CAJANI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes rust in pigeonpea",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "PHOMA STEM CANKER",
+      "type": "CONDITION",
+      "description": "A disease affecting pigeonpea caused by Phoma cajani",
+      "source_id": "paper_4902"
+    },
+    {
+      "name": "PHOMA CAJANI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes phoma stem canker in pigeonpea",
+      "source_id": "paper_4902"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM WILT",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "FUSARIUM UDUM",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "PHYTOPHTHORA BLIGHT",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "PHYTOPHTHORA DRECHSLERI F.SP. CAJANI",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "POWDERY MILDEW",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "OIDIOPSIS TAURICA",
+      "target": "POWDERY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "LEVEILLULA TAURICA",
+      "target": "POWDERY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "STERILITY MOSAIC",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "CERCOSPORA LEAF SPOT",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "CERCOSPORA SPP.",
+      "target": "CERCOSPORA LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "RUST",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "UREDO CAJANI",
+      "target": "RUST",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "PHOMA STEM CANKER",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "PHOMA CAJANI",
+      "target": "PHOMA STEM CANKER",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4902"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "CHINA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_4902"
+    }
+  ]
+}

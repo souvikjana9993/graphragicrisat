@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "Lack of water available to plants in field conditions",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "PLANT YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Prolonged period of abnormally low rainfall leading to water shortage",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "LIMITED-TRANSPIRATION TRAIT",
+      "type": "TRAIT",
+      "description": "A physiological trait where transpiration is restricted under high vapor pressure deficit to conserve water",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "VAPOR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "The difference between the amount of moisture in the air and how much moisture the air can hold when it is saturated",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "The increase in size or mass of the plant",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "LOW PLANT HYDRAULIC CONDUCTIVITY",
+      "type": "TRAIT",
+      "description": "Reduced ability of water to move through the plant's vascular system",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "AQUAPORIN ACTIVITY",
+      "type": "GENE_MARKER",
+      "description": "The function of water channel proteins that regulate water flow across membranes",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to maintain growth and yield during drought",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A major cereal crop",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A major legume crop",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "ARID CONDITIONS",
+      "type": "CONDITION",
+      "description": "Extremely dry environments",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "GEOSPATIAL ANALYSES",
+      "type": "METHOD",
+      "description": "Analysis of data associated with specific geographic locations",
+      "source_id": "paper_10096"
+    },
+    {
+      "name": "WATER-LIMITED ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Environments where water availability is the primary limiting factor for growth",
+      "source_id": "paper_10096"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER DEFICIT",
+      "target": "PLANT YIELD",
+      "description": "is a major constraint on",
+      "weight": "9",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "PLANT YIELD",
+      "description": "impacts",
+      "weight": "9",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "LIMITED-TRANSPIRATION TRAIT",
+      "target": "PLANT GROWTH",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "LIMITED-TRANSPIRATION TRAIT",
+      "target": "PLANT YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "VAPOR PRESSURE DEFICIT",
+      "target": "LIMITED-TRANSPIRATION TRAIT",
+      "description": "triggers",
+      "weight": "7",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "LIMITED-TRANSPIRATION TRAIT",
+      "target": "LOW PLANT HYDRAULIC CONDUCTIVITY",
+      "description": "is a result of",
+      "weight": "8",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "LOW PLANT HYDRAULIC CONDUCTIVITY",
+      "target": "AQUAPORIN ACTIVITY",
+      "description": "is related to",
+      "weight": "7",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "AQUAPORIN ACTIVITY",
+      "target": "DROUGHT TOLERANCE",
+      "description": "used to identify genotypes for",
+      "weight": "7",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "MAIZE",
+      "target": "ARID CONDITIONS",
+      "description": "marketed for",
+      "weight": "8",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "ARID CONDITIONS",
+      "description": "marketed for",
+      "weight": "8",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "GEOSPATIAL ANALYSES",
+      "target": "WATER-LIMITED ENVIRONMENTS",
+      "description": "defines",
+      "weight": "7",
+      "source_id": "paper_10096"
+    },
+    {
+      "source": "LIMITED-TRANSPIRATION TRAIT",
+      "target": "GEOSPATIAL ANALYSES",
+      "description": "analyzed via",
+      "weight": "6",
+      "source_id": "paper_10096"
+    }
+  ]
+}

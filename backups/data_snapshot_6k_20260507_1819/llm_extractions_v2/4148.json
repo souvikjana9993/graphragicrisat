@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A legume crop used for oil and protein",
+      "source_id": "paper_4148"
+    },
+    {
+      "name": "OIL CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of oil present in the seeds of the crop",
+      "source_id": "paper_4148"
+    },
+    {
+      "name": "GAMMA RAYS",
+      "type": "METHOD",
+      "description": "Ionizing radiation used to induce mutations",
+      "source_id": "paper_4148"
+    },
+    {
+      "name": "BRAGG",
+      "type": "CROP",
+      "description": "A specific cultivar of soybean",
+      "source_id": "paper_4148"
+    },
+    {
+      "name": "TYPE 49",
+      "type": "CROP",
+      "description": "A specific cultivar of soybean",
+      "source_id": "paper_4148"
+    },
+    {
+      "name": "GENETIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The diversity in gene frequencies within a population",
+      "source_id": "paper_4148"
+    },
+    {
+      "name": "SEED TREATMENT",
+      "type": "METHOD",
+      "description": "The process of applying a treatment to seeds before planting",
+      "source_id": "paper_4148"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GAMMA RAYS",
+      "target": "OIL CONTENT",
+      "description": "Increased mean seed oil content in specific cultivars",
+      "weight": "8",
+      "source_id": "paper_4148"
+    },
+    {
+      "source": "GAMMA RAYS",
+      "target": "BRAGG",
+      "description": "Applied to induce mutations in the Bragg cultivar",
+      "weight": "9",
+      "source_id": "paper_4148"
+    },
+    {
+      "source": "GAMMA RAYS",
+      "target": "TYPE 49",
+      "description": "Applied to induce mutations in the Type 49 cultivar",
+      "weight": "9",
+      "source_id": "paper_4148"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "OIL CONTENT",
+      "description": "The crop measured for its oil content",
+      "weight": "10",
+      "source_id": "paper_4148"
+    },
+    {
+      "source": "BRAGG",
+      "target": "SOYBEAN",
+      "description": "A cultivar of soybean",
+      "weight": "10",
+      "source_id": "paper_4148"
+    },
+    {
+      "source": "TYPE 49",
+      "target": "SOYBEAN",
+      "description": "A cultivar of soybean",
+      "weight": "10",
+      "source_id": "paper_4148"
+    },
+    {
+      "source": "SEED TREATMENT",
+      "target": "GAMMA RAYS",
+      "description": "The method of seed treatment used was gamma irradiation",
+      "weight": "10",
+      "source_id": "paper_4148"
+    },
+    {
+      "source": "GAMMA RAYS",
+      "target": "GENETIC VARIABILITY",
+      "description": "Used to induce genetic variability in the crop",
+      "weight": "9",
+      "source_id": "paper_4148"
+    },
+    {
+      "source": "GENETIC VARIABILITY",
+      "target": "OIL CONTENT",
+      "description": "Induced to increase the range of oil content",
+      "weight": "8",
+      "source_id": "paper_4148"
+    }
+  ]
+}

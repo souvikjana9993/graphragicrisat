@@ -1,0 +1,263 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A food legume (Cicer arietinum) grown globally for nutrition and soil benefits",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "HUMAN NUTRITION",
+      "type": "CONCEPT",
+      "description": "The process of providing necessary nutrients to humans",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "HIGH QUALITY PROTEIN",
+      "type": "TRAIT",
+      "description": "A nutritional attribute of chickpea that contributes to human nutrition",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONCEPT",
+      "description": "The ability of soil to sustain plant growth",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The process by which chickpea improves soil fertility",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "CEREAL-BASED CROPPING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Agricultural systems based on cereals that are diversified by chickpea",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The ability of chickpea to use water efficiently, aiding in cropping system diversification",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONDITION",
+      "description": "A disease of chickpea caused by Ascochyta rabiei",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "ASCOCHYTA RABIEI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Ascochyta blight",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "BOTRYTIS GRAY MOLD",
+      "type": "CONDITION",
+      "description": "A disease of chickpea caused by Botrytis cinerea",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "BOTRYTIS CINEREA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Botrytis gray mold",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A disease of chickpea caused by Fusarium oxypsorum f sp ciceris",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "FUSARIUM OXYPSORUM F SP CICERIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Fusarium wilt",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "SEED DRESSING",
+      "type": "METHOD",
+      "description": "A disease management practice involving treating seeds",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "FOLIAR APPLICATION OF FUNGICIDES",
+      "type": "METHOD",
+      "description": "A disease management practice involving spraying fungicides on leaves",
+      "source_id": "paper_2617"
+    },
+    {
+      "name": "FUNGICIDES",
+      "type": "CONCEPT",
+      "description": "Chemical substances used to kill or inhibit the growth of fungi",
+      "source_id": "paper_2617"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "HUMAN NUTRITION",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "HIGH QUALITY PROTEIN",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "HIGH QUALITY PROTEIN",
+      "target": "HUMAN NUTRITION",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SOIL FERTILITY",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "performs",
+      "weight": "9",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION",
+      "target": "SOIL FERTILITY",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "CEREAL-BASED CROPPING SYSTEMS",
+      "description": "diversifies",
+      "weight": "7",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "WATER USE EFFICIENCY",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "WATER USE EFFICIENCY",
+      "target": "CEREAL-BASED CROPPING SYSTEMS",
+      "description": "contributes to diversification of",
+      "weight": "7",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "ASCOCHYTA BLIGHT",
+      "target": "CHICKPEA",
+      "description": "limits productivity of",
+      "weight": "9",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "BOTRYTIS GRAY MOLD",
+      "target": "CHICKPEA",
+      "description": "limits productivity of",
+      "weight": "9",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "BOTRYTIS CINEREA",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "CHICKPEA",
+      "description": "limits productivity of",
+      "weight": "9",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "FUSARIUM OXYPSORUM F SP CICERIS",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "SEED DRESSING",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "SEED DRESSING",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "SEED DRESSING",
+      "target": "FUSARIUM WILT",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "FOLIAR APPLICATION OF FUNGICIDES",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "FOLIAR APPLICATION OF FUNGICIDES",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "FOLIAR APPLICATION OF FUNGICIDES",
+      "target": "FUSARIUM WILT",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "SEED DRESSING",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_2617"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "FOLIAR APPLICATION OF FUNGICIDES",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_2617"
+    }
+  ]
+}

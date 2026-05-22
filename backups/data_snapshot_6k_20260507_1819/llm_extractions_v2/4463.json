@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop affected by rust disease",
+      "source_id": "paper_4463"
+    },
+    {
+      "name": "GROUNDNUT RUST",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting groundnut plants",
+      "source_id": "paper_4463"
+    },
+    {
+      "name": "PLANT QUARANTINE",
+      "type": "METHOD",
+      "description": "Legislation and procedures used to prevent the spread of pests and diseases",
+      "source_id": "paper_4463"
+    },
+    {
+      "name": "GERMPLASM EXCHANGE",
+      "type": "CONCEPT",
+      "description": "The process of exchanging genetic material, such as seeds or vegetative material, between locations",
+      "source_id": "paper_4463"
+    },
+    {
+      "name": "EASTERN HEMISPHERE",
+      "type": "LOCATION",
+      "description": "The region where the spread of rust is attributed to wind dispersal",
+      "source_id": "paper_4463"
+    },
+    {
+      "name": "UREDINIOSPORES",
+      "type": "ORGANISM",
+      "description": "Spores of the rust fungus that are dispersed by wind",
+      "source_id": "paper_4463"
+    },
+    {
+      "name": "WINDS",
+      "type": "CONDITION",
+      "description": "Environmental factor responsible for the long-distance dispersal of urediniospores",
+      "source_id": "paper_4463"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT RUST",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4463"
+    },
+    {
+      "source": "PLANT QUARANTINE",
+      "target": "GROUNDNUT RUST",
+      "description": "prevents the spread of",
+      "weight": "9",
+      "source_id": "paper_4463"
+    },
+    {
+      "source": "PLANT QUARANTINE",
+      "target": "GERMPLASM EXCHANGE",
+      "description": "regulates",
+      "weight": "8",
+      "source_id": "paper_4463"
+    },
+    {
+      "source": "GROUNDNUT RUST",
+      "target": "EASTERN HEMISPHERE",
+      "description": "spreads in",
+      "weight": "7",
+      "source_id": "paper_4463"
+    },
+    {
+      "source": "UREDINIOSPORES",
+      "target": "GROUNDNUT RUST",
+      "description": "are the causative agent of",
+      "weight": "10",
+      "source_id": "paper_4463"
+    },
+    {
+      "source": "WINDS",
+      "target": "UREDINIOSPORES",
+      "description": "disperse",
+      "weight": "9",
+      "source_id": "paper_4463"
+    },
+    {
+      "source": "GERMPLASM EXCHANGE",
+      "target": "GROUNDNUT RUST",
+      "description": "can potentially spread",
+      "weight": "6",
+      "source_id": "paper_4463"
+    }
+  ]
+}

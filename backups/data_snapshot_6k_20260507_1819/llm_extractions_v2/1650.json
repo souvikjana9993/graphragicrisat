@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species being studied for susceptibility to iron chlorosis.",
+      "source_id": "paper_1650"
+    },
+    {
+      "name": "IRON CHLOROSIS",
+      "type": "TRAIT",
+      "description": "A condition characterized by the yellowing of leaves due to iron deficiency.",
+      "source_id": "paper_1650"
+    },
+    {
+      "name": "IRON DEFICIENCY",
+      "type": "CONDITION",
+      "description": "The lack of iron in the environment that causes chlorosis in plants.",
+      "source_id": "paper_1650"
+    },
+    {
+      "name": "ICC5386",
+      "type": "CONCEPT",
+      "description": "A specific germplasm accession of chickpea that is highly susceptible to iron chlorosis.",
+      "source_id": "paper_1650"
+    },
+    {
+      "name": "CROSSING",
+      "type": "METHOD",
+      "description": "The breeding process used to cross the susceptible accession with normal cultivars.",
+      "source_id": "paper_1650"
+    },
+    {
+      "name": "FILIAL GENERATIONS",
+      "type": "CONCEPT",
+      "description": "The F2 and F3 generations examined to determine the inheritance of the trait.",
+      "source_id": "paper_1650"
+    },
+    {
+      "name": "RECESSIVE GENE",
+      "type": "GENE_MARKER",
+      "description": "The single genetic element identified as controlling the susceptibility to iron chlorosis.",
+      "source_id": "paper_1650"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "The environment where the plant generations were grown and examined.",
+      "source_id": "paper_1650"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICC5386",
+      "target": "CHICKPEA",
+      "description": "is a germplasm accession of",
+      "weight": "10",
+      "source_id": "paper_1650"
+    },
+    {
+      "source": "ICC5386",
+      "target": "IRON CHLOROSIS",
+      "description": "is highly susceptible to",
+      "weight": "10",
+      "source_id": "paper_1650"
+    },
+    {
+      "source": "IRON DEFICIENCY",
+      "target": "IRON CHLOROSIS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1650"
+    },
+    {
+      "source": "CROSSING",
+      "target": "ICC5386",
+      "description": "was performed using",
+      "weight": "8",
+      "source_id": "paper_1650"
+    },
+    {
+      "source": "RECESSIVE GENE",
+      "target": "IRON CHLOROSIS",
+      "description": "controls the inheritance of",
+      "weight": "10",
+      "source_id": "paper_1650"
+    },
+    {
+      "source": "FILIAL GENERATIONS",
+      "target": "FIELD",
+      "description": "were examined in",
+      "weight": "7",
+      "source_id": "paper_1650"
+    },
+    {
+      "source": "CROSSING",
+      "target": "FILIAL GENERATIONS",
+      "description": "produced",
+      "weight": "9",
+      "source_id": "paper_1650"
+    },
+    {
+      "source": "IRON CHLOROSIS",
+      "target": "CHICKPEA",
+      "description": "is a trait observed in",
+      "weight": "9",
+      "source_id": "paper_1650"
+    }
+  ]
+}

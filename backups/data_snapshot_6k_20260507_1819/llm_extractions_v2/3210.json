@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A food-feed crop (Arachis hypogaea) whose pods and haulms are used for food and fodder",
+      "source_id": "paper_3210"
+    },
+    {
+      "name": "SHEEP",
+      "type": "ORGANISM",
+      "description": "Young sheep used to measure the productivity parameters based on groundnut haulm feeding",
+      "source_id": "paper_3210"
+    },
+    {
+      "name": "LIVESTOCK PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The output and performance of livestock, constrained by fodder availability",
+      "source_id": "paper_3210"
+    },
+    {
+      "name": "FODDER QUALITY",
+      "type": "TRAIT",
+      "description": "The nutritional value and suitability of groundnut haulms as feed for livestock",
+      "source_id": "paper_3210"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The amount of pods produced by the groundnut crop",
+      "source_id": "paper_3210"
+    },
+    {
+      "name": "HAULM YIELD",
+      "type": "TRAIT",
+      "description": "The amount of haulms produced by the groundnut crop",
+      "source_id": "paper_3210"
+    },
+    {
+      "name": "FODDER SHORTAGE",
+      "type": "CONDITION",
+      "description": "A major constraint to high livestock productivity in mixed crop-livestock systems",
+      "source_id": "paper_3210"
+    },
+    {
+      "name": "RAINFED SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region where fodder resource availability is limited",
+      "source_id": "paper_3210"
+    },
+    {
+      "name": "MIXED CROP-LIVESTOCK SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Agricultural systems in developing countries integrating crop production and livestock feeding",
+      "source_id": "paper_3210"
+    },
+    {
+      "name": "PRODUCTIVITY MEASUREMENT",
+      "type": "METHOD",
+      "description": "The process of measuring productivity parameters of young sheep to investigate fodder quality",
+      "source_id": "paper_3210"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "POD YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "HAULM YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "FODDER QUALITY",
+      "description": "has",
+      "weight": "9",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "SHEEP",
+      "target": "LIVESTOCK PRODUCTIVITY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "FODDER QUALITY",
+      "target": "LIVESTOCK PRODUCTIVITY",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "FODDER SHORTAGE",
+      "target": "LIVESTOCK PRODUCTIVITY",
+      "description": "constrains",
+      "weight": "10",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "MIXED CROP-LIVESTOCK SYSTEMS",
+      "target": "FODDER SHORTAGE",
+      "description": "experiences",
+      "weight": "8",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "RAINFED SEMI-ARID TROPICS",
+      "target": "FODDER SHORTAGE",
+      "description": "context for",
+      "weight": "8",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "PRODUCTIVITY MEASUREMENT",
+      "target": "FODDER QUALITY",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "SHEEP",
+      "target": "PRODUCTIVITY MEASUREMENT",
+      "description": "subject of",
+      "weight": "10",
+      "source_id": "paper_3210"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SHEEP",
+      "description": "fed to",
+      "weight": "9",
+      "source_id": "paper_3210"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop used in the study for nodulation trials",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "RHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "The genus of soil bacteria used for inoculation",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "NC 92",
+      "type": "ORGANISM",
+      "description": "A specific strain of rhizobium studied for its competitive ability and persistence",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The process of forming nodules on the roots of the crop",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "PATANCHERU, ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The location where the field trials were conducted",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "COMPETITIVE ABILITY",
+      "type": "CONCEPT",
+      "description": "The capacity of the inoculant strain to compete with native soil rhizobia",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "FUNGICIDES",
+      "type": "CONDITION",
+      "description": "Chemicals used to treat seeds which may impact inoculation effectiveness",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "SOIL APPLICATION",
+      "type": "METHOD",
+      "description": "The process of applying rhizobium directly to the soil",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "SEED INOCULATION",
+      "type": "METHOD",
+      "description": "The process of applying rhizobium directly to the seeds",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "PEAT CARRIER",
+      "type": "CONCEPT",
+      "description": "The medium used to deliver rhizobium during soil application",
+      "source_id": "paper_3165"
+    },
+    {
+      "name": "INOCULATION RATE",
+      "type": "CONCEPT",
+      "description": "The quantity of rhizobium cells applied per seed",
+      "source_id": "paper_3165"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NC 92",
+      "target": "RHIZOBIUM",
+      "description": "is a strain of",
+      "weight": "10",
+      "source_id": "paper_3165"
+    },
+    {
+      "source": "NC 92",
+      "target": "GROUNDNUT",
+      "description": "used for nodulation of",
+      "weight": "9",
+      "source_id": "paper_3165"
+    },
+    {
+      "source": "RHIZOBIUM",
+      "target": "GROUNDNUT",
+      "description": "used for nodulation of",
+      "weight": "9",
+      "source_id": "paper_3165"
+    },
+    {
+      "source": "NC 92",
+      "target": "NODULATION",
+      "description": "promotes",
+      "weight": "8",
+      "source_id": "paper_3165"
+    },
+    {
+      "source": "NC 92",
+      "target": "COMPETITIVE ABILITY",
+      "description": "is evaluated for",
+      "weight": "8",
+      "source_id": "paper_3165"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "SEED INOCULATION",
+      "description": "reduces effectiveness of",
+      "weight": "7",
+      "source_id": "paper_3165"
+    },
+    {
+      "source": "SOIL APPLICATION",
+      "target": "SEED INOCULATION",
+      "description": "compared as alternative to",
+      "weight": "7",
+      "source_id": "paper_3165"
+    },
+    {
+      "source": "SOIL APPLICATION",
+      "target": "PEAT CARRIER",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_3165"
+    },
+    {
+      "source": "INOCULATION RATE",
+      "target": "NODULATION",
+      "description": "determines success of",
+      "weight": "8",
+      "source_id": "paper_3165"
+    },
+    {
+      "source": "NC 92",
+      "target": "PATANCHERU, ANDHRA PRADESH",
+      "description": "tested at",
+      "weight": "7",
+      "source_id": "paper_3165"
+    }
+  ]
+}

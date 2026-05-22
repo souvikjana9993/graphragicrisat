@@ -1,0 +1,231 @@
+{
+  "entities": [
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "A crop grown in Mali's cotton belt used for production estimation",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A crop grown in Mali's cotton belt used for production estimation",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "A crop grown in Mali's cotton belt used for production estimation",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "A crop grown in Mali's cotton belt used for production estimation",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A crop grown in Mali's cotton belt used for production estimation",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "MALI'S COTTON BELT",
+      "type": "LOCATION",
+      "description": "The region in Mali where the study on smallholder crop production was conducted",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "KONINGUE",
+      "type": "LOCATION",
+      "description": "The specific commune in Mali where ground data was collected",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "SENTINEL-2 TIME SERIES",
+      "type": "METHOD",
+      "description": "High-resolution earth observation data used to estimate crop production",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "SUPERVISED PIXEL-BASED CROP TYPE CLASSIFICATION",
+      "type": "METHOD",
+      "description": "A method used to map crop types within a cropland mask",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "SPECTRAL INDICES",
+      "type": "METHOD",
+      "description": "Indicators used as yield estimators for crops",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A physiological measure used to predict final grain yield",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "MONTE CARLO APPROACH",
+      "type": "METHOD",
+      "description": "A statistical method combining crop area and yield estimates to determine total production",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "INVERSE RADIATIVE TRANSFER MODELING",
+      "type": "METHOD",
+      "description": "A modeling technique used to obtain LAI estimates",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "SEN2-AGRI",
+      "type": "METHOD",
+      "description": "A tool used to estimate LAI from Sentinel-2 data",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The final agricultural output measure for the studied crops",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONDITION",
+      "description": "An environmental factor impacting crop productivity",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "A climatic factor impacting crop productivity",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "MANAGEMENT PRACTICES",
+      "type": "CONDITION",
+      "description": "Agricultural practices that impact crop productivity",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The objective of improving crop production assessment",
+      "source_id": "paper_10845"
+    },
+    {
+      "name": "CROP PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The total agricultural output at farm-to-community scales",
+      "source_id": "paper_10845"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SENTINEL-2 TIME SERIES",
+      "target": "CROP PRODUCTION",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "SUPERVISED PIXEL-BASED CROP TYPE CLASSIFICATION",
+      "target": "COTTON",
+      "description": "used to map",
+      "weight": "8",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "SUPERVISED PIXEL-BASED CROP TYPE CLASSIFICATION",
+      "target": "MAIZE",
+      "description": "used to map",
+      "weight": "8",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "SUPERVISED PIXEL-BASED CROP TYPE CLASSIFICATION",
+      "target": "MILLET",
+      "description": "used to map",
+      "weight": "8",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "SUPERVISED PIXEL-BASED CROP TYPE CLASSIFICATION",
+      "target": "PEANUT",
+      "description": "used to map",
+      "weight": "8",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "SUPERVISED PIXEL-BASED CROP TYPE CLASSIFICATION",
+      "target": "SORGHUM",
+      "description": "used to map",
+      "weight": "8",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "GRAIN YIELD",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "SEN2-AGRI",
+      "target": "LEAF AREA INDEX",
+      "description": "estimates",
+      "weight": "9",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "INVERSE RADIATIVE TRANSFER MODELING",
+      "target": "LEAF AREA INDEX",
+      "description": "obtains",
+      "weight": "9",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "MONTE CARLO APPROACH",
+      "target": "CROP PRODUCTION",
+      "description": "estimates",
+      "weight": "9",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "SOIL FERTILITY",
+      "target": "CROP PRODUCTION",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "CROP PRODUCTION",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "MANAGEMENT PRACTICES",
+      "target": "CROP PRODUCTION",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "MALI'S COTTON BELT",
+      "target": "KONINGUE",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_10845"
+    },
+    {
+      "source": "SENTINEL-2 TIME SERIES",
+      "target": "LEAF AREA INDEX",
+      "description": "provides data for",
+      "weight": "8",
+      "source_id": "paper_10845"
+    }
+  ]
+}

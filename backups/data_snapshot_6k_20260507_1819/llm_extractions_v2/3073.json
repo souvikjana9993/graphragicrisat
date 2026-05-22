@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, the crop species studied for its developmental response to photoperiod and temperature.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "PHOTOPERIOD",
+      "type": "CONDITION",
+      "description": "The duration of light exposure in a 24-hour period that influences plant development.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An environmental factor that influences plant development throughout its entire life cycle.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "PANICLE INITIATION",
+      "type": "TRAIT",
+      "description": "The morphological change where the shoot apex becomes a shiny globular structure, marking the end of the vegetative stage.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "PHOTOPERIOD SENSITIVITY",
+      "type": "TRAIT",
+      "description": "The capacity of sorghum cultivars to respond to different day lengths to regulate the timing of panicle initiation.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "VEGETATIVE STAGE",
+      "type": "CONCEPT",
+      "description": "The growth phase of the plant extending from seedling emergence to panicle initiation.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "SEEDLING EMERGENCE",
+      "type": "CONCEPT",
+      "description": "The point at which the plant first appears above the soil surface.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "SHORT DAYS",
+      "type": "CONDITION",
+      "description": "A specific photoperiod condition defined as 8 hours of light per day.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "LONG DAYS",
+      "type": "CONDITION",
+      "description": "A specific photoperiod condition defined as 17 hours of light per day.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "CROP SIMULATION MODELS",
+      "type": "METHOD",
+      "description": "Computational tools used to simulate and predict plant development based on environmental and genetic factors.",
+      "source_id": "paper_3073"
+    },
+    {
+      "name": "PHOTOPERIOD SENSITIVITY GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that control the sensitivity of sorghum to photoperiod.",
+      "source_id": "paper_3073"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "PHOTOPERIOD",
+      "description": "is influenced by",
+      "weight": "9",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "TEMPERATURE",
+      "description": "is influenced by",
+      "weight": "8",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "VEGETATIVE STAGE",
+      "description": "influences the duration of",
+      "weight": "10",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "PHOTOPERIOD SENSITIVITY",
+      "target": "PANICLE INITIATION",
+      "description": "regulates the timing of",
+      "weight": "9",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "VEGETATIVE STAGE",
+      "target": "SEEDLING EMERGENCE",
+      "description": "begins at",
+      "weight": "10",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "VEGETATIVE STAGE",
+      "target": "PANICLE INITIATION",
+      "description": "ends at",
+      "weight": "10",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "SHORT DAYS",
+      "target": "PHOTOPERIOD",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "LONG DAYS",
+      "target": "PHOTOPERIOD",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "CROP SIMULATION MODELS",
+      "target": "SORGHUM",
+      "description": "are used to simulate the development of",
+      "weight": "8",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "PHOTOPERIOD SENSITIVITY",
+      "target": "SORGHUM",
+      "description": "is a trait exhibited by",
+      "weight": "9",
+      "source_id": "paper_3073"
+    },
+    {
+      "source": "PHOTOPERIOD SENSITIVITY GENES",
+      "target": "PHOTOPERIOD SENSITIVITY",
+      "description": "control",
+      "weight": "10",
+      "source_id": "paper_3073"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop being studied for drought and heat tolerance",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A condition of water scarcity affecting crop growth",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand drought conditions",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "A condition of high temperature that negatively impacts plant processes",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "PHENOTYPING PROTOCOLS",
+      "type": "METHOD",
+      "description": "Standardized procedures used to measure physical traits of plants",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "FLOWERING STAGE",
+      "type": "CONCEPT",
+      "description": "The critical growth phase of the plant where reproduction occurs",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating germplasm to identify specific traits",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "MAPPING-POPULATIONS",
+      "type": "CONCEPT",
+      "description": "Groups of plants used to map genetic markers to traits",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "QTL",
+      "type": "GENE_MARKER",
+      "description": "Quantitative trait loci associated with specific traits",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "CANDIDATE GENES",
+      "type": "GENE_MARKER",
+      "description": "Specific genes suspected to be responsible for a trait",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "A period of the year characterized by low rainfall and often high temperatures",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "POLLINATION",
+      "type": "CONCEPT",
+      "description": "The process of transferring pollen for fertilization",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "A state where the plant lacks sufficient water",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "ANTHESIS",
+      "type": "CONCEPT",
+      "description": "The period during which a flower is fully open and functional",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Research conducted in natural agricultural settings",
+      "source_id": "paper_1228"
+    },
+    {
+      "name": "CONTROLLED ENVIRONMENT EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Research conducted in regulated settings like greenhouses",
+      "source_id": "paper_1228"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "DROUGHT TOLERANCE",
+      "description": "is the subject of screening for",
+      "weight": "10",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "RICE",
+      "target": "HEAT STRESS",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "DROUGHT TOLERANCE",
+      "description": "is the stressor for",
+      "weight": "10",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "confounds the screening for",
+      "weight": "8",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "PHENOTYPING PROTOCOLS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "are used to evaluate",
+      "weight": "9",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "SCREENING",
+      "target": "QTL",
+      "description": "is used to identify",
+      "weight": "9",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "SCREENING",
+      "target": "CANDIDATE GENES",
+      "description": "is used to identify",
+      "weight": "9",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "QTL",
+      "target": "DROUGHT TOLERANCE",
+      "description": "are markers for",
+      "weight": "10",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "CANDIDATE GENES",
+      "target": "DROUGHT TOLERANCE",
+      "description": "are markers for",
+      "weight": "10",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "POLLINATION",
+      "description": "negatively affects",
+      "weight": "9",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "HEAT STRESS",
+      "description": "indirectly increases through reduced cooling",
+      "weight": "7",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "FLOWERING STAGE",
+      "target": "HEAT STRESS",
+      "description": "is a critical period for",
+      "weight": "9",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "ANTHESIS",
+      "target": "FLOWERING STAGE",
+      "description": "is a part of",
+      "weight": "10",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "are used to study",
+      "weight": "8",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "CONTROLLED ENVIRONMENT EXPERIMENTS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "are used to study",
+      "weight": "8",
+      "source_id": "paper_1228"
+    },
+    {
+      "source": "DRY SEASON",
+      "target": "HEAT STRESS",
+      "description": "is associated with",
+      "weight": "8",
+      "source_id": "paper_1228"
+    }
+  ]
+}

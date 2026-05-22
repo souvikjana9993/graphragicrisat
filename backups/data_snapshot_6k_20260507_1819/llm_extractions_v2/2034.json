@@ -1,0 +1,247 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used for hybrid seed production",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "ICPH 2671",
+      "type": "CROP",
+      "description": "A CMS-based pigeonpea hybrid",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "ICPA 2043",
+      "type": "CROP",
+      "description": "The female parent in the pigeonpea hybrid cross",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "ICPR 2671",
+      "type": "CROP",
+      "description": "The male parent/restorer in the pigeonpea hybrid cross",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced per unit area",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the plant",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "The vertical growth of the plant",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "STEM THICKNESS",
+      "type": "TRAIT",
+      "description": "The diameter of the plant stem",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "PODS PER PLANT",
+      "type": "TRAIT",
+      "description": "The number of pods produced by a single plant",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "CMS-BASED HYBRID SEED PRODUCTION",
+      "type": "METHOD",
+      "description": "Production of hybrid seeds using cytoplasmic male sterility",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "CROSSING",
+      "type": "METHOD",
+      "description": "The process of mating female and male parents",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "ROW RATIO",
+      "type": "METHOD",
+      "description": "The proportion of male-sterile to male-fertile plants in a field",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "IRRIGATION FREQUENCY",
+      "type": "METHOD",
+      "description": "The time interval between irrigation applications",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "PLANT SPACING",
+      "type": "METHOD",
+      "description": "The distance between individual plants in a field",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "INSECTS",
+      "type": "ORGANISM",
+      "description": "Biological agents that mediate pollen transfer",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "HIGH DENSITY",
+      "type": "CONDITION",
+      "description": "A planting condition with closer plant spacing",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "LOW DENSITY",
+      "type": "CONDITION",
+      "description": "A planting condition with wider plant spacing",
+      "source_id": "paper_2034"
+    },
+    {
+      "name": "POLLEN TRANSFER",
+      "type": "CONCEPT",
+      "description": "The movement of pollen from the male parent to the female parent",
+      "source_id": "paper_2034"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICPH 2671",
+      "target": "PIGEONPEA",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "ICPA 2043",
+      "target": "PIGEONPEA",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "ICPR 2671",
+      "target": "PIGEONPEA",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "CROSSING",
+      "target": "ICPH 2671",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "CROSSING",
+      "target": "ICPA 2043",
+      "description": "uses as female parent",
+      "weight": "10",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "CROSSING",
+      "target": "ICPR 2671",
+      "description": "uses as male parent",
+      "weight": "10",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "INSECTS",
+      "target": "POLLEN TRANSFER",
+      "description": "mediates",
+      "weight": "9",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "POLLEN TRANSFER",
+      "target": "SEED YIELD",
+      "description": "enables",
+      "weight": "8",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "PLANT SPACING",
+      "target": "SEED YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "IRRIGATION FREQUENCY",
+      "target": "SEED YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "ROW RATIO",
+      "target": "SEED YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "HIGH DENSITY",
+      "target": "PLANT HEIGHT",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "HIGH DENSITY",
+      "target": "BIOMASS",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "HIGH DENSITY",
+      "target": "SEED YIELD",
+      "description": "decreases",
+      "weight": "7",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "LOW DENSITY",
+      "target": "PLANT HEIGHT",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "LOW DENSITY",
+      "target": "BIOMASS",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "LOW DENSITY",
+      "target": "STEM THICKNESS",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "LOW DENSITY",
+      "target": "PODS PER PLANT",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_2034"
+    },
+    {
+      "source": "CMS-BASED HYBRID SEED PRODUCTION",
+      "target": "ICPH 2671",
+      "description": "is the process for producing",
+      "weight": "10",
+      "source_id": "paper_2034"
+    }
+  ]
+}

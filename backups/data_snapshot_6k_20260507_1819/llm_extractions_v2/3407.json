@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop susceptible to fungal invasion and mycotoxin contamination.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A toxigenic fungus known to cause aflatoxin contamination in groundnuts.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where groundnut growers have not adopted recommended practices for contamination reduction.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "GENETIC RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of a plant to resist seed invasion by fungi and the production of aflatoxins.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "SEED INVASION",
+      "type": "CONCEPT",
+      "description": "The process by which fungi like Aspergillus flavus enter groundnut seeds.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONCEPT",
+      "description": "A potent mycotoxin produced by toxigenic strains of Aspergillus flavus.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "The presence of aflatoxins in groundnuts resulting from fungal invasion.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "FUNGI",
+      "type": "ORGANISM",
+      "description": "A group of organisms that can associate with groundnut seeds and produce mycotoxins.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "MYCOTOXINS",
+      "type": "CONCEPT",
+      "description": "Toxic secondary metabolites produced by fungi that can contaminate groundnuts.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "CITRININ",
+      "type": "CONCEPT",
+      "description": "A specific type of mycotoxin found naturally in groundnuts.",
+      "source_id": "paper_3407"
+    },
+    {
+      "name": "ZEARALENONE",
+      "type": "CONCEPT",
+      "description": "A specific type of mycotoxin found naturally in groundnuts.",
+      "source_id": "paper_3407"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "GROUNDNUT",
+      "description": "invades",
+      "weight": "10",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEMI-ARID TROPICS",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "GENETIC RESISTANCE",
+      "target": "SEED INVASION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "GENETIC RESISTANCE",
+      "target": "AFLATOXIN",
+      "description": "reduces production of",
+      "weight": "9",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "FUNGI",
+      "target": "GROUNDNUT",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "FUNGI",
+      "target": "MYCOTOXINS",
+      "description": "produce",
+      "weight": "10",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "MYCOTOXINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "CITRININ",
+      "target": "MYCOTOXINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "ZEARALENONE",
+      "target": "MYCOTOXINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3407"
+    },
+    {
+      "source": "MYCOTOXINS",
+      "target": "GROUNDNUT",
+      "description": "contaminate",
+      "weight": "10",
+      "source_id": "paper_3407"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan (L.) Millsp., the target crop for hybrid breeding",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "CYTOPLASMIC MALE STERILITY",
+      "type": "TRAIT",
+      "description": "A condition where pollen is non-functional, exploited for hybrid breeding",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "HYBRID BREEDING SYSTEM",
+      "type": "CONCEPT",
+      "description": "A commercial system for producing hybrid seeds in pigeonpea",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "A4 CMS SYSTEM",
+      "type": "CONCEPT",
+      "description": "A specific cytoplasmic male sterility system derived from C. cajanifolius",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "CAJANUS CAJANIFOLIUS",
+      "type": "ORGANISM",
+      "description": "The wild relative of pigeonpea from which the A4 CMS system was derived",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "EXPRESSION PROFILING",
+      "type": "METHOD",
+      "description": "Analysis of mitochondrial gene expression levels to identify differentially expressed genes",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "STRUCTURAL VARIATION ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis used to identify length variations in mitochondrial genes",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "NAD4L",
+      "type": "GENE_MARKER",
+      "description": "A mitochondrial gene showing significantly higher expression in CMS lines",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "NAD7A",
+      "type": "GENE_MARKER",
+      "description": "A subunit of the nad7 gene associated with the A4 CMS system",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "SANGER SEQUENCING",
+      "type": "METHOD",
+      "description": "A DNA sequencing method used to identify SNPs and deletions in genes",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "type": "GENE_MARKER",
+      "description": "Single base pair variations identified in the upstream region of nad4L",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "PROTEIN STRUCTURE EVALUATION",
+      "type": "METHOD",
+      "description": "Analysis of predicted protein structures to identify conformational changes",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "POLYMERASE CHAIN REACTION",
+      "type": "METHOD",
+      "description": "A technique used to develop and validate the nad7a_del Indel marker",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "NAD7A_DEL",
+      "type": "GENE_MARKER",
+      "description": "A PCR-based Indel marker used for testing genetic purity of A4 CMS lines",
+      "source_id": "paper_10808"
+    },
+    {
+      "name": "GENETIC PURITY",
+      "type": "TRAIT",
+      "description": "The quality of A4 derived CMS lines used to strengthen hybrid breeding",
+      "source_id": "paper_10808"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "CYTOPLASMIC MALE STERILITY",
+      "description": "exploits CMS for hybrid breeding",
+      "weight": "10",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "HYBRID BREEDING SYSTEM",
+      "description": "utilizes a hybrid breeding system",
+      "weight": "9",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "A4 CMS SYSTEM",
+      "target": "CAJANUS CAJANIFOLIUS",
+      "description": "derived from C. cajanifolius",
+      "weight": "10",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "A4 CMS SYSTEM",
+      "target": "PIGEONPEA",
+      "description": "implemented in pigeonpea",
+      "weight": "9",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "EXPRESSION PROFILING",
+      "target": "NAD4L",
+      "description": "revealed significant differential expression of nad4L",
+      "weight": "8",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "STRUCTURAL VARIATION ANALYSIS",
+      "target": "NAD7A",
+      "description": "identified length variation in nad7a",
+      "weight": "8",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "SANGER SEQUENCING",
+      "target": "NAD4L",
+      "description": "identified SNPs in the upstream region of nad4L",
+      "weight": "8",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "SANGER SEQUENCING",
+      "target": "NAD7A",
+      "description": "identified a 10 bp deletion in nad7a",
+      "weight": "8",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "PROTEIN STRUCTURE EVALUATION",
+      "target": "NAD7A",
+      "description": "showed conformational changes in predicted protein structure of nad7a",
+      "weight": "8",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "NAD7A",
+      "target": "CYTOPLASMIC MALE STERILITY",
+      "description": "associated with CMS for A4 cytoplasm",
+      "weight": "10",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "POLYMERASE CHAIN REACTION",
+      "target": "NAD7A_DEL",
+      "description": "used to develop the nad7a_del marker",
+      "weight": "9",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "NAD7A_DEL",
+      "target": "GENETIC PURITY",
+      "description": "used for testing genetic purity",
+      "weight": "9",
+      "source_id": "paper_10808"
+    },
+    {
+      "source": "GENETIC PURITY",
+      "target": "HYBRID BREEDING SYSTEM",
+      "description": "strengthens the commercial hybrid breeding program",
+      "weight": "8",
+      "source_id": "paper_10808"
+    }
+  ]
+}

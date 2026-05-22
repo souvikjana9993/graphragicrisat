@@ -1,0 +1,252 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop studied for heat responsiveness in Asia and Africa",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "A region where rice cultivation is challenged by climate change",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "A region where rice cultivation is challenged by climate change",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "HIGH TEMPERATURE STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress that impairs rice physiology and reduces grain yield",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural output of rice, reduced by high-temperature stress",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "HEAT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of rice genotypes to maintain growth and yield under high temperature",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "RICE N22",
+      "type": "CROP",
+      "description": "A heat-tolerant rice cultivar used in the study",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "RICE VANDANA",
+      "type": "CROP",
+      "description": "A heat-susceptible rice cultivar used in the study",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "HEAT TREATMENTS",
+      "type": "METHOD",
+      "description": "Experimental application of high temperatures to rice cultivars",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "CHLOROPHYLL CONTENT",
+      "type": "TRAIT",
+      "description": "A physiological parameter analyzed to assess heat stress impact",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "MEMBRANE INTEGRITY",
+      "type": "TRAIT",
+      "description": "A physiological parameter analyzed to assess heat stress impact",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "GAS EXCHANGE PARAMETERS",
+      "type": "TRAIT",
+      "description": "Physiological parameters analyzed to assess heat stress impact",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "GENES",
+      "type": "GENE_MARKER",
+      "description": "Molecular units whose expression dynamics were analyzed under heat stress",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "MIRNAS",
+      "type": "GENE_MARKER",
+      "description": "MicroRNAs whose expression dynamics were analyzed under heat stress",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "GROWTH STAGES",
+      "type": "CONCEPT",
+      "description": "Developmental phases including seedling, vegetative, and reproductive stages",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "RECOVERY",
+      "type": "CONDITION",
+      "description": "The phase following exposure to high temperature stress",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "TRANSGENIC APPROACHES",
+      "type": "METHOD",
+      "description": "Methods used for genetic modification to develop heat tolerant cultivars",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "GENE EDITING",
+      "type": "METHOD",
+      "description": "Methods used for precise genetic modification to develop heat tolerant cultivars",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "Traditional method for developing heat tolerant rice cultivars",
+      "source_id": "paper_12068"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONCEPT",
+      "description": "Global phenomenon driving high-temperature stress in rice cultivation",
+      "source_id": "paper_12068"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "HIGH TEMPERATURE STRESS",
+      "description": "drives",
+      "weight": "9",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "HIGH TEMPERATURE STRESS",
+      "target": "RICE",
+      "description": "impairs physiology and growth of",
+      "weight": "10",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "HIGH TEMPERATURE STRESS",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "RICE N22",
+      "target": "HEAT TOLERANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "RICE VANDANA",
+      "target": "HEAT TOLERANCE",
+      "description": "lacks",
+      "weight": "10",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "HEAT TREATMENTS",
+      "target": "RICE N22",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "HEAT TREATMENTS",
+      "target": "RICE VANDANA",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "GENES",
+      "target": "HEAT TOLERANCE",
+      "description": "determine",
+      "weight": "8",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "MIRNAS",
+      "target": "HEAT TOLERANCE",
+      "description": "determine",
+      "weight": "8",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "GROWTH STAGES",
+      "target": "GENES",
+      "description": "influence expression of",
+      "weight": "7",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "GROWTH STAGES",
+      "target": "MIRNAS",
+      "description": "influence expression of",
+      "weight": "7",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "HIGH TEMPERATURE STRESS",
+      "target": "GENES",
+      "description": "influence expression of",
+      "weight": "8",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "HIGH TEMPERATURE STRESS",
+      "target": "MIRNAS",
+      "description": "influence expression of",
+      "weight": "8",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "BREEDING",
+      "target": "HEAT TOLERANCE",
+      "description": "used to develop",
+      "weight": "7",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "TRANSGENIC APPROACHES",
+      "target": "HEAT TOLERANCE",
+      "description": "used to develop",
+      "weight": "7",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "GENE EDITING",
+      "target": "HEAT TOLERANCE",
+      "description": "used to develop",
+      "weight": "7",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "RICE",
+      "target": "ASIA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_12068"
+    },
+    {
+      "source": "RICE",
+      "target": "AFRICA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_12068"
+    }
+  ]
+}

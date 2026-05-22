@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop species being evaluated for waterlogging tolerance",
+      "source_id": "paper_10503"
+    },
+    {
+      "name": "WATERLOGGING",
+      "type": "CONDITION",
+      "description": "The stress condition of excessive water saturation in the soil",
+      "source_id": "paper_10503"
+    },
+    {
+      "name": "WATERLOGGING TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of pigeonpea genotypes to survive and grow under waterlogging stress",
+      "source_id": "paper_10503"
+    },
+    {
+      "name": "SURVIVAL RATE",
+      "type": "TRAIT",
+      "description": "The percentage of plants that survive waterlogging treatment, used as a measure of tolerance",
+      "source_id": "paper_10503"
+    },
+    {
+      "name": "MAHALANOBIS D2 CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to group genotypes based on their survival performance",
+      "source_id": "paper_10503"
+    },
+    {
+      "name": "POT SCREENING",
+      "type": "METHOD",
+      "description": "The process of assessing plant survival in a controlled pot environment",
+      "source_id": "paper_10503"
+    },
+    {
+      "name": "FIELD SCREENING",
+      "type": "METHOD",
+      "description": "The process of assessing plant survival in a natural field environment",
+      "source_id": "paper_10503"
+    },
+    {
+      "name": "HYBRIDIZATION PROGRAMS",
+      "type": "METHOD",
+      "description": "Breeding programs used to develop new genotypes by crossing tolerant donor parents",
+      "source_id": "paper_10503"
+    },
+    {
+      "name": "GERMPLASM POOL",
+      "type": "CONCEPT",
+      "description": "A collection of genetic resources consisting of various pigeonpea genotypes",
+      "source_id": "paper_10503"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "External factors that influence the performance and survival rate of genotypes",
+      "source_id": "paper_10503"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "WATERLOGGING TOLERANCE",
+      "description": "is evaluated for",
+      "weight": "10",
+      "source_id": "paper_10503"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "WATERLOGGING TOLERANCE",
+      "description": "induces the need for",
+      "weight": "10",
+      "source_id": "paper_10503"
+    },
+    {
+      "source": "WATERLOGGING TOLERANCE",
+      "target": "SURVIVAL RATE",
+      "description": "is measured by",
+      "weight": "9",
+      "source_id": "paper_10503"
+    },
+    {
+      "source": "MAHALANOBIS D2 CLUSTER ANALYSIS",
+      "target": "WATERLOGGING TOLERANCE",
+      "description": "is used to identify",
+      "weight": "8",
+      "source_id": "paper_10503"
+    },
+    {
+      "source": "POT SCREENING",
+      "target": "SURVIVAL RATE",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_10503"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "SURVIVAL RATE",
+      "description": "is used to estimate",
+      "weight": "9",
+      "source_id": "paper_10503"
+    },
+    {
+      "source": "ENVIRONMENT",
+      "target": "SURVIVAL RATE",
+      "description": "affects the performance of",
+      "weight": "7",
+      "source_id": "paper_10503"
+    },
+    {
+      "source": "HYBRIDIZATION PROGRAMS",
+      "target": "WATERLOGGING TOLERANCE",
+      "description": "is used to develop",
+      "weight": "8",
+      "source_id": "paper_10503"
+    },
+    {
+      "source": "GERMPLASM POOL",
+      "target": "PIGEONPEA",
+      "description": "consists of",
+      "weight": "10",
+      "source_id": "paper_10503"
+    }
+  ]
+}

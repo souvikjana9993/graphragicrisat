@@ -1,0 +1,225 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop used in rotation trials in West Africa",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop used in rotation trials in West Africa",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used in rotation trials in West Africa",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop used in rotation trials in West Africa",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The broad region where the research was conducted",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "A country in West Africa where field trials were conducted",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "BURKINA FASO",
+      "type": "LOCATION",
+      "description": "A country in West Africa where field trials were conducted",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "SUDANO-SAHELIAN WEST AFRICA",
+      "type": "LOCATION",
+      "description": "A specific region characterized by nutrient poor soils",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "SOIL MINERAL NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nitrogen available in the soil (Nmin) that affects cereal growth",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "ARBUSCULAR MYCORRHIZAE",
+      "type": "ORGANISM",
+      "description": "Native symbiotic fungi (AM) that infect plant roots",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "NEMATODES",
+      "type": "ORGANISM",
+      "description": "Plant-parasitic organisms that can affect crop yields",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "HELICOTYLENCHUS SP",
+      "type": "ORGANISM",
+      "description": "A genus of plant-parasitic nematode found in the experiment fields",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "ROTYLENCHUS SP",
+      "type": "ORGANISM",
+      "description": "A genus of plant-parasitic nematode found in the experiment fields",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "PRATYLENCHUS SP",
+      "type": "ORGANISM",
+      "description": "A genus of plant-parasitic nematode found in the experiment fields",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of grain and total dry matter produced by cereals",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "CEREAL/LEGUME ROTATION",
+      "type": "METHOD",
+      "description": "The agricultural practice of alternating cereal and legume crops",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "CONTINUOUS CEREAL CULTIVATION",
+      "type": "METHOD",
+      "description": "The practice of growing cereals repeatedly on the same plot",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "N2-FIXATION",
+      "type": "CONCEPT",
+      "description": "The biological process by which legumes increase plant available nitrogen",
+      "source_id": "paper_1919"
+    },
+    {
+      "name": "NUTRIENT POOR SOILS",
+      "type": "CONDITION",
+      "description": "The soil state characteristic of the Sudano-Sahelian region",
+      "source_id": "paper_1919"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CEREAL/LEGUME ROTATION",
+      "target": "YIELD",
+      "description": "Increases grain and total dry matter yields of cereals",
+      "weight": "9",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "CEREAL/LEGUME ROTATION",
+      "target": "SOIL MINERAL NITROGEN",
+      "description": "Increases topsoil Nmin levels compared to continuous cultivation",
+      "weight": "8",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "CEREAL/LEGUME ROTATION",
+      "target": "ARBUSCULAR MYCORRHIZAE",
+      "description": "Increases early AM infection rates in cereal roots",
+      "weight": "8",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SOIL MINERAL NITROGEN",
+      "description": "Produces a larger increase in Nmin than cowpea",
+      "weight": "7",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "COWPEA",
+      "target": "SOIL MINERAL NITROGEN",
+      "description": "Produces a smaller increase in Nmin than groundnut",
+      "weight": "6",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NEMATODES",
+      "description": "Acts as a poor host and suppresses nematode populations",
+      "weight": "9",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "COWPEA",
+      "target": "NEMATODES",
+      "description": "Acts as a good host for nematode populations",
+      "weight": "7",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "NEMATODES",
+      "description": "Acts as a good host for nematode populations",
+      "weight": "7",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "N2-FIXATION",
+      "target": "SOIL MINERAL NITROGEN",
+      "description": "Increases plant available nitrogen in the soil",
+      "weight": "9",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "SUDANO-SAHELIAN WEST AFRICA",
+      "target": "NUTRIENT POOR SOILS",
+      "description": "Region characterized by these soil conditions",
+      "weight": "10",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "NEMATODES",
+      "target": "HELICOTYLENCHUS SP",
+      "description": "Includes this specific genus",
+      "weight": "10",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "NEMATODES",
+      "target": "ROTYLENCHUS SP",
+      "description": "Includes this specific genus",
+      "weight": "10",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "NEMATODES",
+      "target": "PRATYLENCHUS SP",
+      "description": "Includes this specific genus",
+      "weight": "10",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "NIGER",
+      "target": "WEST AFRICA",
+      "description": "Located within this region",
+      "weight": "10",
+      "source_id": "paper_1919"
+    },
+    {
+      "source": "BURKINA FASO",
+      "target": "WEST AFRICA",
+      "description": "Located within this region",
+      "weight": "10",
+      "source_id": "paper_1919"
+    }
+  ]
+}

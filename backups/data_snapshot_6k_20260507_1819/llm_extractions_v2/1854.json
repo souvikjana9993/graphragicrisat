@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "GRAIN SORGHUM",
+      "type": "CROP",
+      "description": "The crop being studied for its response to phosphorus fertilizer.",
+      "source_id": "paper_1854"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "The nutrient applied as fertilizer to study its residual effects on crop growth.",
+      "source_id": "paper_1854"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "The specific soil type, Typic Pellustert, characterized by low extractable phosphorus.",
+      "source_id": "paper_1854"
+    },
+    {
+      "name": "SEMI-ARID ZONE",
+      "type": "LOCATION",
+      "description": "The climatic region in India where the study was conducted.",
+      "source_id": "paper_1854"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted.",
+      "source_id": "paper_1854"
+    },
+    {
+      "name": "RAINFED CROPPING",
+      "type": "CONDITION",
+      "description": "The cropping system where water is supplied solely by rainfall.",
+      "source_id": "paper_1854"
+    },
+    {
+      "name": "FIELD EXPERIMENT",
+      "type": "METHOD",
+      "description": "The research approach used to study the response of sorghum to phosphorus over three years.",
+      "source_id": "paper_1854"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of productivity of the grain sorghum.",
+      "source_id": "paper_1854"
+    },
+    {
+      "name": "PHOSPHORUS UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of phosphorus absorbed by the sorghum plant from the soil.",
+      "source_id": "paper_1854"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The variable weather factor during the cropping season from June to September.",
+      "source_id": "paper_1854"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GRAIN SORGHUM",
+      "target": "PHOSPHORUS",
+      "description": "requires phosphorus for growth and yield",
+      "weight": "9",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "GRAIN SORGHUM",
+      "target": "VERTISOL",
+      "description": "is grown on vertisol soil",
+      "weight": "8",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "GRAIN SORGHUM",
+      "target": "RAINFED CROPPING",
+      "description": "is grown under rainfed cropping conditions",
+      "weight": "8",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "VERTISOL",
+      "description": "has residual effects on vertisol soil",
+      "weight": "7",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "GRAIN SORGHUM",
+      "description": "was conducted to study the response of grain sorghum",
+      "weight": "10",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "PHOSPHORUS",
+      "description": "was conducted to study the effect of phosphorus application rates",
+      "weight": "10",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "GRAIN YIELD",
+      "description": "application of phosphorus affects grain yield",
+      "weight": "9",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "PHOSPHORUS UPTAKE",
+      "description": "application of phosphorus affects phosphorus uptake",
+      "weight": "9",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "GRAIN YIELD",
+      "description": "variability in rainfall affects grain yield",
+      "weight": "6",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "SEMI-ARID ZONE",
+      "target": "INDIA",
+      "description": "is located within India",
+      "weight": "10",
+      "source_id": "paper_1854"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "SEMI-ARID ZONE",
+      "description": "is found in the semi-arid zone of India",
+      "weight": "7",
+      "source_id": "paper_1854"
+    }
+  ]
+}

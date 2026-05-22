@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "STRIGA HERMONTHICA",
+      "type": "ORGANISM",
+      "description": "A parasitic weed that infects cereal crops such as sorghum and millet.",
+      "source_id": "paper_4126"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop that can support Striga from both sorghum and millet hosts.",
+      "source_id": "paper_4126"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "A cereal crop that only supports Striga from millet hosts.",
+      "source_id": "paper_4126"
+    },
+    {
+      "name": "POT EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Experimental trials conducted in pots to test the specificity of Striga hermonthica.",
+      "source_id": "paper_4126"
+    },
+    {
+      "name": "CROP SPECIFICITY",
+      "type": "CONCEPT",
+      "description": "The phenomenon where a parasite shows preference or restriction to specific host crops.",
+      "source_id": "paper_4126"
+    },
+    {
+      "name": "PHYSIOLOGICAL SPECIALIZATION",
+      "type": "CONCEPT",
+      "description": "The adaptation of a parasite to a specific host based on the intensity of the host's cultivation.",
+      "source_id": "paper_4126"
+    },
+    {
+      "name": "HOST SPECIFICITY",
+      "type": "CONCEPT",
+      "description": "The degree to which a parasite is restricted to a particular host species.",
+      "source_id": "paper_4126"
+    },
+    {
+      "name": "LATITUDES 10°42'N TO 13°29'N",
+      "type": "LOCATION",
+      "description": "The geographical range from which Striga seed samples were collected.",
+      "source_id": "paper_4126"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STRIGA HERMONTHICA",
+      "target": "SORGHUM",
+      "description": "attacks",
+      "weight": "10",
+      "source_id": "paper_4126"
+    },
+    {
+      "source": "STRIGA HERMONTHICA",
+      "target": "MILLET",
+      "description": "attacks",
+      "weight": "10",
+      "source_id": "paper_4126"
+    },
+    {
+      "source": "POT EXPERIMENTS",
+      "target": "CROP SPECIFICITY",
+      "description": "used to provide evidence for",
+      "weight": "9",
+      "source_id": "paper_4126"
+    },
+    {
+      "source": "POT EXPERIMENTS",
+      "target": "STRIGA HERMONTHICA",
+      "description": "tested",
+      "weight": "9",
+      "source_id": "paper_4126"
+    },
+    {
+      "source": "CROP SPECIFICITY",
+      "target": "STRIGA HERMONTHICA",
+      "description": "observed in",
+      "weight": "9",
+      "source_id": "paper_4126"
+    },
+    {
+      "source": "PHYSIOLOGICAL SPECIALIZATION",
+      "target": "CROP SPECIFICITY",
+      "description": "is a driver of",
+      "weight": "8",
+      "source_id": "paper_4126"
+    },
+    {
+      "source": "HOST SPECIFICITY",
+      "target": "STRIGA HERMONTHICA",
+      "description": "exhibited by",
+      "weight": "7",
+      "source_id": "paper_4126"
+    },
+    {
+      "source": "LATITUDES 10°42'N TO 13°29'N",
+      "target": "STRIGA HERMONTHICA",
+      "description": "location of sample collection",
+      "weight": "10",
+      "source_id": "paper_4126"
+    }
+  ]
+}

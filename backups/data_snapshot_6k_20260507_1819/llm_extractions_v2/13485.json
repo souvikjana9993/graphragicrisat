@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop species being studied for disease forecasting.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "STERILITY MOSAIC DISEASE",
+      "type": "CONDITION",
+      "description": "A disease affecting pigeonpea caused by a virus.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "DYNAMIC BAYESIAN NETWORK",
+      "type": "METHOD",
+      "description": "A machine learning model used to forecast the spread of Sterility Mosaic Disease.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "HIGH-THROUGHPUT PHENOTYPING",
+      "type": "METHOD",
+      "description": "A method integrated with machine learning to efficiently forecast disease.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "MACHINE LEARNING MODELS",
+      "type": "METHOD",
+      "description": "General computational models used for forecasting disease spread.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "VIRUS",
+      "type": "ORGANISM",
+      "description": "The biological agent responsible for Sterility Mosaic Disease.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "EM ALGORITHM",
+      "type": "METHOD",
+      "description": "An algorithm used to learn parameters for the modules of the Dynamic Bayesian Network.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "3D POINT CLOUD TECHNOLOGY",
+      "type": "METHOD",
+      "description": "A high-throughput scanning platform used to collect physiological data.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "PHYSIOLOGICAL DATA",
+      "type": "CONCEPT",
+      "description": "Biological measurements collected from the crop using 3D point cloud technology.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "ENVIRONMENTAL DATA",
+      "type": "CONCEPT",
+      "description": "Weather-related data recorded by a local weather station.",
+      "source_id": "paper_13485"
+    },
+    {
+      "name": "ICRISAT PATANCHERU",
+      "type": "LOCATION",
+      "description": "The research site in Hyderabad, Telangana, India, where data was collected.",
+      "source_id": "paper_13485"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_13485"
+    },
+    {
+      "source": "DYNAMIC BAYESIAN NETWORK",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "is used to forecast",
+      "weight": "10",
+      "source_id": "paper_13485"
+    },
+    {
+      "source": "HIGH-THROUGHPUT PHENOTYPING",
+      "target": "DYNAMIC BAYESIAN NETWORK",
+      "description": "is integrated with",
+      "weight": "8",
+      "source_id": "paper_13485"
+    },
+    {
+      "source": "MACHINE LEARNING MODELS",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "are used to forecast",
+      "weight": "8",
+      "source_id": "paper_13485"
+    },
+    {
+      "source": "VIRUS",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_13485"
+    },
+    {
+      "source": "EM ALGORITHM",
+      "target": "DYNAMIC BAYESIAN NETWORK",
+      "description": "is used to learn parameters for",
+      "weight": "9",
+      "source_id": "paper_13485"
+    },
+    {
+      "source": "3D POINT CLOUD TECHNOLOGY",
+      "target": "PHYSIOLOGICAL DATA",
+      "description": "is used to collect",
+      "weight": "10",
+      "source_id": "paper_13485"
+    },
+    {
+      "source": "ICRISAT PATANCHERU",
+      "target": "PIGEONPEA",
+      "description": "is the location where data for the crop was collected",
+      "weight": "7",
+      "source_id": "paper_13485"
+    },
+    {
+      "source": "PHYSIOLOGICAL DATA",
+      "target": "DYNAMIC BAYESIAN NETWORK",
+      "description": "serves as input for",
+      "weight": "8",
+      "source_id": "paper_13485"
+    },
+    {
+      "source": "ENVIRONMENTAL DATA",
+      "target": "DYNAMIC BAYESIAN NETWORK",
+      "description": "serves as input for",
+      "weight": "8",
+      "source_id": "paper_13485"
+    }
+  ]
+}

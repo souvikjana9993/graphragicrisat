@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The primary agricultural crop mentioned as being affected by fungal diseases.",
+      "source_id": "paper_4790"
+    },
+    {
+      "name": "FUNGAL DISEASES",
+      "type": "CONDITION",
+      "description": "Devastating diseases caused by fungi that destroy groundnut fields.",
+      "source_id": "paper_4790"
+    },
+    {
+      "name": "WILD RELATIVES OF GROUNDNUT",
+      "type": "CROP",
+      "description": "Wild species related to the groundnut that provide a solution to disease problems.",
+      "source_id": "paper_4790"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUNGAL DISEASES",
+      "target": "GROUNDNUT",
+      "description": "lay waste to groundnut fields",
+      "weight": "9",
+      "source_id": "paper_4790"
+    },
+    {
+      "source": "WILD RELATIVES OF GROUNDNUT",
+      "target": "GROUNDNUT",
+      "description": "are wild relatives of",
+      "weight": "10",
+      "source_id": "paper_4790"
+    },
+    {
+      "source": "WILD RELATIVES OF GROUNDNUT",
+      "target": "FUNGAL DISEASES",
+      "description": "provide a means to combat",
+      "weight": "8",
+      "source_id": "paper_4790"
+    }
+  ]
+}

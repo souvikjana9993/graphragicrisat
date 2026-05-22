@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "GLOBAL WARMING",
+      "type": "CONDITION",
+      "description": "Increase in Earth's average surface temperature",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "CLIMATE RESILIENCE",
+      "type": "CONCEPT",
+      "description": "The ability of a system to absorb disturbances while retaining basic structure and function",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "CROP MANAGEMENT ADVISORIES",
+      "type": "METHOD",
+      "description": "Guidance provided to farmers on managing crops based on weather and climate data",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "MOBILE PHONES",
+      "type": "METHOD",
+      "description": "Technology used to deliver crop management advisories to farmers",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop for which management advisories were provided in Kurnool",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "KURNOOL",
+      "type": "LOCATION",
+      "description": "A district in Andhra Pradesh where the study was conducted",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where Kurnool is located",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "CO2",
+      "type": "CONCEPT",
+      "description": "Carbon dioxide, whose atmospheric concentration is increasing",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperatures and weather patterns",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where climate change is a major challenge for agriculture",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "Regions characterized by low and irregular rainfall",
+      "source_id": "paper_11266"
+    },
+    {
+      "name": "NICRA",
+      "type": "CONCEPT",
+      "description": "National Initiative on Climate Resilient Agriculture project",
+      "source_id": "paper_11266"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROP MANAGEMENT ADVISORIES",
+      "target": "GROUNDNUT",
+      "description": "provided for",
+      "weight": "9",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "MOBILE PHONES",
+      "target": "CROP MANAGEMENT ADVISORIES",
+      "description": "used to deliver",
+      "weight": "8",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "CROP MANAGEMENT ADVISORIES",
+      "target": "CLIMATE RESILIENCE",
+      "description": "promotes",
+      "weight": "7",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "KURNOOL",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "KURNOOL",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "INDIA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "SEMI-ARID TROPICS",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "GLOBAL WARMING",
+      "target": "CLIMATE CHANGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "CO2",
+      "target": "GLOBAL WARMING",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "NICRA",
+      "target": "CLIMATE RESILIENCE",
+      "description": "aims for",
+      "weight": "8",
+      "source_id": "paper_11266"
+    },
+    {
+      "source": "NICRA",
+      "target": "INDIA",
+      "description": "operates in",
+      "weight": "8",
+      "source_id": "paper_11266"
+    }
+  ]
+}

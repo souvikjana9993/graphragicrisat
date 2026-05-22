@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop being studied for yield maximization under disease pressure",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "CERCOSPORA ARACHIDICOLA",
+      "type": "ORGANISM",
+      "description": "Causal organism of early leaf spot in peanuts",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "CERCOSPORIUM PERSONATUM",
+      "type": "ORGANISM",
+      "description": "Causal organism of late leaf spot in peanuts",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "Causal organism of a foliar disease affecting peanuts",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "FUNGICIDE",
+      "type": "METHOD",
+      "description": "Chemical control method used to manage foliar diseases",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "BENIN",
+      "type": "LOCATION",
+      "description": "Country in West Africa where field trials were conducted",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "Country in West Africa where field trials were conducted",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "Region where peanut production and trials were focused",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "EARLY LEAF SPOT",
+      "type": "CONDITION",
+      "description": "Foliar disease caused by Cercospora arachidicola",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "CONDITION",
+      "description": "Foliar disease caused by Cercosporium personatum",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The measure of peanut production output",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "FUNGICIDE APPLICATION TIMING",
+      "type": "METHOD",
+      "description": "The specific days after sowing when fungicides are applied",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "FUNGICIDE APPLICATION FREQUENCY",
+      "type": "METHOD",
+      "description": "The number of times fungicide is applied",
+      "source_id": "paper_3038"
+    },
+    {
+      "name": "AREA UNDER THE DISEASE PROGRESS CURVE",
+      "type": "CONCEPT",
+      "description": "A metric used to evaluate the economic importance of a disease",
+      "source_id": "paper_3038"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CERCOSPORA ARACHIDICOLA",
+      "target": "EARLY LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "CERCOSPORIUM PERSONATUM",
+      "target": "LATE LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "PUCCINIA ARACHIDIS",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "FUNGICIDE",
+      "target": "EARLY LEAF SPOT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "FUNGICIDE",
+      "target": "LATE LEAF SPOT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "FUNGICIDE",
+      "target": "POD YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "FUNGICIDE APPLICATION TIMING",
+      "target": "POD YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "FUNGICIDE APPLICATION FREQUENCY",
+      "target": "POD YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "EARLY LEAF SPOT",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "BENIN",
+      "target": "PEANUT",
+      "description": "location of study",
+      "weight": "7",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "NIGER",
+      "target": "PEANUT",
+      "description": "location of study",
+      "weight": "7",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "WEST AFRICA",
+      "target": "PEANUT",
+      "description": "location of study",
+      "weight": "7",
+      "source_id": "paper_3038"
+    },
+    {
+      "source": "AREA UNDER THE DISEASE PROGRESS CURVE",
+      "target": "LATE LEAF SPOT",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_3038"
+    }
+  ]
+}

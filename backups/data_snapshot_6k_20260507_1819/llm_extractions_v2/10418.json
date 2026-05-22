@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A polyphagous pest known for its high diversity of digestive proteases.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "POLYPHAGY",
+      "type": "TRAIT",
+      "description": "The ability of an organism to feed on a wide variety of host plants.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "SERINE PROTEASES",
+      "type": "CONCEPT",
+      "description": "Digestive enzymes that contribute significantly to dietary protein digestion in H. armigera.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "RNA INTERFERENCE",
+      "type": "METHOD",
+      "description": "A biological process used to silence specific gene expression by using double-stranded RNA.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "HATRY1",
+      "type": "GENE_MARKER",
+      "description": "An isoform of serine protease whose expression levels are proportional to larval growth rate.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "LARVAL GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate at which larvae increase in size and mass.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "DOUBLE-STRANDED RNA",
+      "type": "CONCEPT",
+      "description": "The molecule used to trigger RNA interference for the silencing of target genes.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "LARVAL WEIGHT",
+      "type": "TRAIT",
+      "description": "The physical mass of the larvae, which is reduced upon silencing of serine protease isoforms.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "HATRY13",
+      "type": "GENE_MARKER",
+      "description": "An isoform of serine protease that is over-expressed as a compensatory response when HaTry1 is silenced.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "COMPENSATORY EFFECT",
+      "type": "CONCEPT",
+      "description": "A biological response where the over-expression of one gene offsets the silencing of another.",
+      "source_id": "paper_10418"
+    },
+    {
+      "name": "PHYLOGENETIC ANALYSIS",
+      "type": "METHOD",
+      "description": "A method used to determine the evolutionary relationship between different protease isoforms.",
+      "source_id": "paper_10418"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "POLYPHAGY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "SERINE PROTEASES",
+      "target": "POLYPHAGY",
+      "description": "contribute to the evolution of",
+      "weight": "8",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "SERINE PROTEASES",
+      "description": "utilizes for protein digestion",
+      "weight": "9",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "RNA INTERFERENCE",
+      "target": "HATRY1",
+      "description": "used to silence",
+      "weight": "10",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "RNA INTERFERENCE",
+      "target": "HATRY13",
+      "description": "used to silence",
+      "weight": "10",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "HATRY1",
+      "target": "LARVAL GROWTH RATE",
+      "description": "expression levels are proportional to",
+      "weight": "8",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "DOUBLE-STRANDED RNA",
+      "target": "RNA INTERFERENCE",
+      "description": "mediates",
+      "weight": "10",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "HATRY1",
+      "target": "LARVAL WEIGHT",
+      "description": "silencing reduces",
+      "weight": "9",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "HATRY13",
+      "target": "LARVAL WEIGHT",
+      "description": "silencing reduces",
+      "weight": "9",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "HATRY1",
+      "target": "HATRY13",
+      "description": "silencing triggers over-expression of",
+      "weight": "9",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "HATRY13",
+      "target": "COMPENSATORY EFFECT",
+      "description": "demonstrates",
+      "weight": "8",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "PHYLOGENETIC ANALYSIS",
+      "target": "SERINE PROTEASES",
+      "description": "used to analyze relationships among",
+      "weight": "7",
+      "source_id": "paper_10418"
+    },
+    {
+      "source": "HATRY1",
+      "target": "HATRY13",
+      "description": "closely related according to phylogenetic analysis",
+      "weight": "7",
+      "source_id": "paper_10418"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "GUJARAT STATE",
+      "type": "LOCATION",
+      "description": "The state in India where the crop type mapping case study is conducted",
+      "source_id": "paper_11663"
+    },
+    {
+      "name": "SENTINEL-2 SATELLITE DATA",
+      "type": "METHOD",
+      "description": "High-resolution satellite imagery used for mapping and analysis",
+      "source_id": "paper_11663"
+    },
+    {
+      "name": "CROP TYPE MAPPING",
+      "type": "CONCEPT",
+      "description": "The process of identifying and mapping different types of crops",
+      "source_id": "paper_11663"
+    },
+    {
+      "name": "IRRIGATED AREA",
+      "type": "CONDITION",
+      "description": "Cultivated areas that are supplied with water through artificial irrigation",
+      "source_id": "paper_11663"
+    },
+    {
+      "name": "RAINFED AREA",
+      "type": "CONDITION",
+      "description": "Cultivated areas that rely solely on rainfall for water",
+      "source_id": "paper_11663"
+    },
+    {
+      "name": "SATELLITE IMAGERY ANALYSIS",
+      "type": "METHOD",
+      "description": "The process of interpreting satellite data for land use and land cover identification",
+      "source_id": "paper_11663"
+    },
+    {
+      "name": "FIELD INFORMATION",
+      "type": "METHOD",
+      "description": "Ground reference data and validation points collected from the field",
+      "source_id": "paper_11663"
+    },
+    {
+      "name": "FARMER INTERVIEWS",
+      "type": "METHOD",
+      "description": "Interviews conducted with farmers to gather ground-truth data",
+      "source_id": "paper_11663"
+    },
+    {
+      "name": "LAND USE / LAND COVER",
+      "type": "CONCEPT",
+      "description": "The classification of the physical material on the earth's surface",
+      "source_id": "paper_11663"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROP TYPE MAPPING",
+      "target": "GUJARAT STATE",
+      "description": "is conducted in",
+      "weight": "10",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "CROP TYPE MAPPING",
+      "target": "SENTINEL-2 SATELLITE DATA",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "CROP TYPE MAPPING",
+      "target": "IRRIGATED AREA",
+      "description": "identifies",
+      "weight": "8",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "CROP TYPE MAPPING",
+      "target": "RAINFED AREA",
+      "description": "identifies",
+      "weight": "8",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "SATELLITE IMAGERY ANALYSIS",
+      "target": "SENTINEL-2 SATELLITE DATA",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "SATELLITE IMAGERY ANALYSIS",
+      "target": "LAND USE / LAND COVER",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "SATELLITE IMAGERY ANALYSIS",
+      "target": "IRRIGATED AREA",
+      "description": "identifies",
+      "weight": "8",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "SATELLITE IMAGERY ANALYSIS",
+      "target": "RAINFED AREA",
+      "description": "identifies",
+      "weight": "8",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "FIELD INFORMATION",
+      "target": "CROP TYPE MAPPING",
+      "description": "provides validation for",
+      "weight": "7",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "FARMER INTERVIEWS",
+      "target": "FIELD INFORMATION",
+      "description": "is a source of",
+      "weight": "8",
+      "source_id": "paper_11663"
+    },
+    {
+      "source": "SATELLITE IMAGERY ANALYSIS",
+      "target": "GUJARAT STATE",
+      "description": "is applied to",
+      "weight": "10",
+      "source_id": "paper_11663"
+    }
+  ]
+}

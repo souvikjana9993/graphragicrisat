@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor L. Moench, the crop plant studied for biochemical changes upon virus infection",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "MAIZE MOSAIC VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus that infects sorghum plants and causes biochemical changes",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "PLANT BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the sorghum plant, which decreases upon infection",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "CHLOROPHYLL CONTENT",
+      "type": "TRAIT",
+      "description": "The total amount of chlorophyll in the leaves of the plant",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "NITRATE REDUCTASE ACTIVITY",
+      "type": "TRAIT",
+      "description": "The activity of the nitrate reductase enzyme in leaves and stems",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "NITROGEN CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of nitrogen in the leaves and stems of the plant",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "SOLUBLE SUGARS",
+      "type": "TRAIT",
+      "description": "The concentration of soluble sugars in the leaves and stems",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "ELECTROPHORETIC ANALYSIS",
+      "type": "METHOD",
+      "description": "A technique used to analyze soluble leaf proteins",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "SOLUBLE LEAF PROTEINS",
+      "type": "TRAIT",
+      "description": "Proteins found in the leaves of the plant",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "POLYPEPTIDES",
+      "type": "TRAIT",
+      "description": "Specific proteins of 21 and 22 kD found in infected leaves",
+      "source_id": "paper_2230"
+    },
+    {
+      "name": "ELECTRO-BLOT IMMUNOASSAY",
+      "type": "METHOD",
+      "description": "A technique used to determine if polypeptides are of viral origin",
+      "source_id": "paper_2230"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE MOSAIC VIRUS",
+      "target": "SORGHUM",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "MAIZE MOSAIC VIRUS",
+      "target": "PLANT BIOMASS",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "MAIZE MOSAIC VIRUS",
+      "target": "CHLOROPHYLL CONTENT",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "MAIZE MOSAIC VIRUS",
+      "target": "NITRATE REDUCTASE ACTIVITY",
+      "description": "alters",
+      "weight": "9",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "MAIZE MOSAIC VIRUS",
+      "target": "NITROGEN CONCENTRATION",
+      "description": "alters",
+      "weight": "9",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "MAIZE MOSAIC VIRUS",
+      "target": "SOLUBLE SUGARS",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "PLANT BIOMASS",
+      "target": "CHLOROPHYLL CONTENT",
+      "description": "positively correlated with",
+      "weight": "8",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "PLANT BIOMASS",
+      "target": "NITRATE REDUCTASE ACTIVITY",
+      "description": "negatively correlated with in stems",
+      "weight": "8",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "PLANT BIOMASS",
+      "target": "NITROGEN CONCENTRATION",
+      "description": "negatively correlated with in stems",
+      "weight": "8",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "ELECTROPHORETIC ANALYSIS",
+      "target": "SOLUBLE LEAF PROTEINS",
+      "description": "analyzes",
+      "weight": "10",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "ELECTROPHORETIC ANALYSIS",
+      "target": "POLYPEPTIDES",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_2230"
+    },
+    {
+      "source": "ELECTRO-BLOT IMMUNOASSAY",
+      "target": "POLYPEPTIDES",
+      "description": "determines origin of",
+      "weight": "10",
+      "source_id": "paper_2230"
+    }
+  ]
+}

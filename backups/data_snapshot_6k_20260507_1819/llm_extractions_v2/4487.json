@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being bred for resistance to fungal infection and toxin contamination",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The fungus responsible for seed colonization and aflatoxin production in groundnuts",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "The presence of aflatoxins in groundnut seeds caused by A. flavus",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "SEED COLONIZATION",
+      "type": "CONDITION",
+      "description": "The process by which A. flavus infects the seeds of groundnuts",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut genotypes to resist A. flavus infection and aflatoxin production",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "TESTA RESISTANCE",
+      "type": "TRAIT",
+      "description": "Resistance to A. flavus infection specifically located in the testae of mature seeds",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics where the research was conducted",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "IN VITRO SEED COLONIZATION",
+      "type": "METHOD",
+      "description": "A laboratory-based method used to identify genotypes resistant to A. flavus",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of crossing resistant genotypes with susceptible cultivars to produce improved lines",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the groundnut breeding lines",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "QUALITY",
+      "type": "TRAIT",
+      "description": "The standard and characteristics of the groundnut breeding lines",
+      "source_id": "paper_4487"
+    },
+    {
+      "name": "GENETICS OF INHERITANCE",
+      "type": "CONCEPT",
+      "description": "The study of how resistance traits are passed from parents to offspring",
+      "source_id": "paper_4487"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "is susceptible to infection by",
+      "weight": "8",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "SEED COLONIZATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "TESTA RESISTANCE",
+      "target": "RESISTANCE",
+      "description": "is a specific form of",
+      "weight": "10",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "BREEDING",
+      "description": "conducted",
+      "weight": "9",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "BREEDING",
+      "target": "GROUNDNUT",
+      "description": "is applied to",
+      "weight": "10",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "IN VITRO SEED COLONIZATION",
+      "target": "RESISTANCE",
+      "description": "is used to identify",
+      "weight": "8",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "BREEDING",
+      "target": "YIELD",
+      "description": "aims to maintain",
+      "weight": "7",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "BREEDING",
+      "target": "QUALITY",
+      "description": "aims to maintain",
+      "weight": "7",
+      "source_id": "paper_4487"
+    },
+    {
+      "source": "GENETICS OF INHERITANCE",
+      "target": "TESTA RESISTANCE",
+      "description": "is used to study",
+      "weight": "9",
+      "source_id": "paper_4487"
+    }
+  ]
+}

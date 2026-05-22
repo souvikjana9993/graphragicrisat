@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench grains used in the study",
+      "source_id": "paper_3247"
+    },
+    {
+      "name": "MOLD SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The susceptibility of sorghum grains to mold infection",
+      "source_id": "paper_3247"
+    },
+    {
+      "name": "MOLD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The resistance of sorghum grains to mold infection",
+      "source_id": "paper_3247"
+    },
+    {
+      "name": "VOLATILE COMPOUNDS",
+      "type": "CONCEPT",
+      "description": "Headspace volatile constituents determined in sorghum grains",
+      "source_id": "paper_3247"
+    },
+    {
+      "name": "2-METHYLBUTANAL",
+      "type": "CONCEPT",
+      "description": "A specific volatile compound identified as being higher in mold-susceptible sorghum",
+      "source_id": "paper_3247"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "Controlled environment used for growing mold-free sorghum",
+      "source_id": "paper_3247"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "Natural environment used for growing sorghum",
+      "source_id": "paper_3247"
+    },
+    {
+      "name": "FUNGI",
+      "type": "ORGANISM",
+      "description": "Fungal organisms that contribute to the volatile compounds in mold-susceptible grains",
+      "source_id": "paper_3247"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "MOLD SUSCEPTIBILITY",
+      "description": "Sorghum grains can be mold-susceptible",
+      "weight": "10",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MOLD RESISTANCE",
+      "description": "Sorghum grains can be mold-resistant",
+      "weight": "10",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "VOLATILE COMPOUNDS",
+      "description": "Sorghum grains contain volatile compounds",
+      "weight": "10",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "MOLD SUSCEPTIBILITY",
+      "target": "VOLATILE COMPOUNDS",
+      "description": "Mold-susceptible sorghum has higher concentrations of volatile compounds",
+      "weight": "8",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "MOLD RESISTANCE",
+      "target": "VOLATILE COMPOUNDS",
+      "description": "Mold-resistant sorghum has lower concentrations of volatile compounds",
+      "weight": "8",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "VOLATILE COMPOUNDS",
+      "target": "2-METHYLBUTANAL",
+      "description": "2-methylbutanal is one of the identified volatile compounds",
+      "weight": "10",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "MOLD SUSCEPTIBILITY",
+      "target": "2-METHYLBUTANAL",
+      "description": "2-methylbutanal is severalfold higher in mold-susceptible sorghum",
+      "weight": "9",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "MOLD RESISTANCE",
+      "target": "2-METHYLBUTANAL",
+      "description": "2-methylbutanal is lower in mold-resistant sorghum",
+      "weight": "8",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "FUNGI",
+      "target": "VOLATILE COMPOUNDS",
+      "description": "Fungal organisms contribute to the volatile compounds in mold-susceptible grains",
+      "weight": "9",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "SORGHUM",
+      "description": "Sorghum was grown in a greenhouse environment",
+      "weight": "7",
+      "source_id": "paper_3247"
+    },
+    {
+      "source": "FIELD",
+      "target": "SORGHUM",
+      "description": "Sorghum was grown in a field environment",
+      "weight": "7",
+      "source_id": "paper_3247"
+    }
+  ]
+}

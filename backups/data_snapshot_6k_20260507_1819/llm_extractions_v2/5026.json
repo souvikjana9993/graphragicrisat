@@ -1,0 +1,178 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The cereal crop being studied for malting quality",
+      "source_id": "paper_5026"
+    },
+    {
+      "name": "DIASTATIC ACTIVITY",
+      "type": "TRAIT",
+      "description": "The enzymatic activity in malted grains used as a measure of malting quality",
+      "source_id": "paper_5026"
+    },
+    {
+      "name": "TOTAL PROTEIN CONTENT",
+      "type": "TRAIT",
+      "description": "The overall amount of protein present in the sorghum grains",
+      "source_id": "paper_5026"
+    },
+    {
+      "name": "WATER-EXTRACTABLE PROTEIN",
+      "type": "TRAIT",
+      "description": "The fraction of protein that can be extracted from malted grains using water",
+      "source_id": "paper_5026"
+    },
+    {
+      "name": "WATER-EXTRACTABLE CONTENTS",
+      "type": "TRAIT",
+      "description": "The total amount of components extractable by water in malted grains",
+      "source_id": "paper_5026"
+    },
+    {
+      "name": "MALTING",
+      "type": "CONCEPT",
+      "description": "The process of germinating cereal grains to develop enzymes",
+      "source_id": "paper_5026"
+    },
+    {
+      "name": "PROTEIN FRACTIONATION STUDIES",
+      "type": "METHOD",
+      "description": "Analytical studies used to separate proteins into different fractions",
+      "source_id": "paper_5026"
+    },
+    {
+      "name": "ALBUMIN-GLOBULIN FRACTION",
+      "type": "CONCEPT",
+      "description": "A specific protein fraction found in malted sorghum grains",
+      "source_id": "paper_5026"
+    },
+    {
+      "name": "MALTING QUALITY",
+      "type": "TRAIT",
+      "description": "The overall suitability of sorghum cultivars for the malting process",
+      "source_id": "paper_5026"
+    },
+    {
+      "name": "WATER-EXTRACTABLE DETERMINATIONS",
+      "type": "METHOD",
+      "description": "Simple and rapid methods used to screen sorghum cultivars for malting quality",
+      "source_id": "paper_5026"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MALTING",
+      "target": "SORGHUM",
+      "description": "Process applied to the crop to evaluate quality",
+      "weight": "8",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "DIASTATIC ACTIVITY",
+      "target": "SORGHUM",
+      "description": "Trait measured in malted sorghum cultivars",
+      "weight": "9",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "TOTAL PROTEIN CONTENT",
+      "target": "SORGHUM",
+      "description": "Trait measured in malted sorghum cultivars",
+      "weight": "9",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "WATER-EXTRACTABLE PROTEIN",
+      "target": "SORGHUM",
+      "description": "Trait measured in malted sorghum cultivars",
+      "weight": "9",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "WATER-EXTRACTABLE CONTENTS",
+      "target": "SORGHUM",
+      "description": "Trait measured in malted sorghum cultivars",
+      "weight": "9",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "PROTEIN FRACTIONATION STUDIES",
+      "target": "SORGHUM",
+      "description": "Method used to analyze proteins in sorghum cultivars",
+      "weight": "8",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "DIASTATIC ACTIVITY",
+      "target": "WATER-EXTRACTABLE PROTEIN",
+      "description": "Significantly and positively correlated",
+      "weight": "10",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "DIASTATIC ACTIVITY",
+      "target": "WATER-EXTRACTABLE CONTENTS",
+      "description": "Significantly and positively correlated",
+      "weight": "10",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "WATER-EXTRACTABLE PROTEIN",
+      "target": "DIASTATIC ACTIVITY",
+      "description": "Good indicator for predicting",
+      "weight": "9",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "WATER-EXTRACTABLE CONTENTS",
+      "target": "DIASTATIC ACTIVITY",
+      "description": "Good indicator for predicting",
+      "weight": "9",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "DIASTATIC ACTIVITY",
+      "target": "MALTING QUALITY",
+      "description": "Indirect indicator for predicting",
+      "weight": "8",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "WATER-EXTRACTABLE PROTEIN",
+      "target": "MALTING QUALITY",
+      "description": "Indirect indicator for predicting",
+      "weight": "8",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "WATER-EXTRACTABLE CONTENTS",
+      "target": "MALTING QUALITY",
+      "description": "Indirect indicator for predicting",
+      "weight": "8",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "WATER-EXTRACTABLE DETERMINATIONS",
+      "target": "MALTING QUALITY",
+      "description": "Method used to screen for",
+      "weight": "9",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "WATER-EXTRACTABLE DETERMINATIONS",
+      "target": "SORGHUM",
+      "description": "Method used to screen cultivars",
+      "weight": "9",
+      "source_id": "paper_5026"
+    },
+    {
+      "source": "DIASTATIC ACTIVITY",
+      "target": "ALBUMIN-GLOBULIN FRACTION",
+      "description": "High activity exhibited high amounts of this fraction",
+      "weight": "8",
+      "source_id": "paper_5026"
+    }
+  ]
+}

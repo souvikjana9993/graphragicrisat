@@ -1,0 +1,266 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "OIL CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of oil present in peanut seeds.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "FATTY ACID COMPOSITION",
+      "type": "TRAIT",
+      "description": "The distribution and levels of different fatty acids in peanut oil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "The external conditions and locations where peanut genotypes were grown.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "SOIL PH",
+      "type": "CONDITION",
+      "description": "The pH level of the soil at the experiment locations.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "ELECTRICAL CONDUCTIVITY",
+      "type": "CONDITION",
+      "description": "The EC level of the soil at the experiment locations.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONDITION",
+      "description": "The nitrogen content of the soil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONDITION",
+      "description": "The phosphorus content of the soil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "ZINC",
+      "type": "CONDITION",
+      "description": "The zinc content of the soil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "MANGANESE",
+      "type": "CONDITION",
+      "description": "The manganese content of the soil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "IRON",
+      "type": "CONDITION",
+      "description": "The iron content of the soil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "OLEIC ACID",
+      "type": "TRAIT",
+      "description": "A monounsaturated fatty acid in peanut oil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "LINOLEIC ACID",
+      "type": "TRAIT",
+      "description": "A polyunsaturated fatty acid in peanut oil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "O/L RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of oleic acid to linoleic acid in peanut oil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "TOTAL LONG CHAIN SATURATED FATTY ACIDS",
+      "type": "TRAIT",
+      "description": "The sum of long chain saturated fatty acids in peanut oil.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "GENOTYPE",
+      "type": "CONCEPT",
+      "description": "The genetic variation among the thirteen peanut lines tested.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "ICG 5856",
+      "type": "CONCEPT",
+      "description": "A specific peanut genotype identified for improved oil quality.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "ICG 5369",
+      "type": "CONCEPT",
+      "description": "A specific peanut genotype identified for improved oil quality.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "ICGV 87124",
+      "type": "CONCEPT",
+      "description": "A specific peanut genotype identified for improved oil quality.",
+      "source_id": "paper_3117"
+    },
+    {
+      "name": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The combined effect of genotype and environment on oil traits.",
+      "source_id": "paper_3117"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "OIL CONTENT",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "PEANUT",
+      "target": "FATTY ACID COMPOSITION",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "ENVIRONMENT",
+      "target": "OIL CONTENT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "ENVIRONMENT",
+      "target": "FATTY ACID COMPOSITION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "OIL CONTENT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "FATTY ACID COMPOSITION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "SOIL PH",
+      "target": "OIL CONTENT",
+      "description": "positively correlated",
+      "weight": "7",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "IRON",
+      "target": "OIL CONTENT",
+      "description": "positively correlated",
+      "weight": "7",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "SOIL PH",
+      "target": "OLEIC ACID",
+      "description": "positively correlated",
+      "weight": "7",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "IRON",
+      "target": "OLEIC ACID",
+      "description": "positively correlated",
+      "weight": "7",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "SOIL PH",
+      "target": "LINOLEIC ACID",
+      "description": "negatively correlated",
+      "weight": "7",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "IRON",
+      "target": "LINOLEIC ACID",
+      "description": "negatively correlated",
+      "weight": "7",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "OIL CONTENT",
+      "target": "O/L RATIO",
+      "description": "positively correlated",
+      "weight": "7",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "OLEIC ACID",
+      "target": "LINOLEIC ACID",
+      "description": "negatively correlated",
+      "weight": "8",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "LINOLEIC ACID",
+      "target": "TOTAL LONG CHAIN SATURATED FATTY ACIDS",
+      "description": "positively correlated",
+      "weight": "7",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "ICG 5856",
+      "target": "FATTY ACID COMPOSITION",
+      "description": "improved quality",
+      "weight": "9",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "ICG 5369",
+      "target": "FATTY ACID COMPOSITION",
+      "description": "improved quality",
+      "weight": "9",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "ICGV 87124",
+      "target": "FATTY ACID COMPOSITION",
+      "description": "improved quality",
+      "weight": "9",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "target": "OIL CONTENT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3117"
+    },
+    {
+      "source": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "target": "FATTY ACID COMPOSITION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3117"
+    }
+  ]
+}

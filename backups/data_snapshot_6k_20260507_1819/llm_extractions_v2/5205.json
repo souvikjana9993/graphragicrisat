@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop species Cajanus cajan.",
+      "source_id": "paper_5205"
+    },
+    {
+      "name": "MALE STERILITY",
+      "type": "TRAIT",
+      "description": "A condition where the plant cannot produce functional pollen, governed by a recessive gene.",
+      "source_id": "paper_5205"
+    },
+    {
+      "name": "MS1 GENE",
+      "type": "GENE_MARKER",
+      "description": "A single recessive gene that governs male sterility in pigeonpea.",
+      "source_id": "paper_5205"
+    },
+    {
+      "name": "ICPH 8",
+      "type": "CROP",
+      "description": "The first commercial hybrid of pigeonpea developed using genetic male sterility.",
+      "source_id": "paper_5205"
+    },
+    {
+      "name": "SEED PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The commercial process of producing seeds for male steriles and hybrids.",
+      "source_id": "paper_5205"
+    },
+    {
+      "name": "MANUAL ROGUING",
+      "type": "METHOD",
+      "description": "The practice of removing fertile plants from rows of female plants during seed production.",
+      "source_id": "paper_5205"
+    },
+    {
+      "name": "TEMPERATURE SENSITIVITY",
+      "type": "TRAIT",
+      "description": "A trait that may be linked to the male-sterile gene ms1.",
+      "source_id": "paper_5205"
+    },
+    {
+      "name": "GENETIC MARKER",
+      "type": "CONCEPT",
+      "description": "A DNA sequence used to identify specific traits, such as male sterility.",
+      "source_id": "paper_5205"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MS1 GENE",
+      "target": "MALE STERILITY",
+      "description": "governs",
+      "weight": "10",
+      "source_id": "paper_5205"
+    },
+    {
+      "source": "MALE STERILITY",
+      "target": "PIGEONPEA",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_5205"
+    },
+    {
+      "source": "MS1 GENE",
+      "target": "ICPH 8",
+      "description": "used to develop",
+      "weight": "9",
+      "source_id": "paper_5205"
+    },
+    {
+      "source": "MALE STERILITY",
+      "target": "ICPH 8",
+      "description": "used to develop",
+      "weight": "9",
+      "source_id": "paper_5205"
+    },
+    {
+      "source": "MALE STERILITY",
+      "target": "SEED PRODUCTION",
+      "description": "poses practical difficulties in",
+      "weight": "7",
+      "source_id": "paper_5205"
+    },
+    {
+      "source": "SEED PRODUCTION",
+      "target": "MANUAL ROGUING",
+      "description": "requires",
+      "weight": "8",
+      "source_id": "paper_5205"
+    },
+    {
+      "source": "GENETIC MARKER",
+      "target": "MALE STERILITY",
+      "description": "associated with",
+      "weight": "6",
+      "source_id": "paper_5205"
+    },
+    {
+      "source": "MS1 GENE",
+      "target": "TEMPERATURE SENSITIVITY",
+      "description": "possibly linked to",
+      "weight": "7",
+      "source_id": "paper_5205"
+    }
+  ]
+}

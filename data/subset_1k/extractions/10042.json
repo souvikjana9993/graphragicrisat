@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The legume crop species being studied for resistance to sterility mosaic disease.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "STERILITY MOSAIC DISEASE",
+      "type": "CONDITION",
+      "description": "A serious production constraint in pigeonpea that can lead to complete yield loss.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "SMD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The phenotypic trait of being resistant to sterility mosaic disease in pigeonpea.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "GENOTYPING-BY-SEQUENCING",
+      "type": "METHOD",
+      "description": "A genomic approach used for the simultaneous identification and genotyping of single nucleotide polymorphisms.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphisms used as markers for genetic mapping.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "MAPPING POPULATIONS",
+      "type": "CONCEPT",
+      "description": "Sets of individuals, including recombinant inbred lines and F2, used to link phenotypes to genotypes.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINES",
+      "type": "CONCEPT",
+      "description": "A specific type of mapping population consisting of homozygous lines.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "F2",
+      "type": "CONCEPT",
+      "description": "A second-generation filial mapping population.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of evaluating the physical expression of SMD resistance across different locations and years.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "GENETIC MAPS",
+      "type": "CONCEPT",
+      "description": "Representations of the relative positions of SNPs on chromosomes.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "COMPOSITE INTERVAL MAPPING",
+      "type": "METHOD",
+      "description": "A method used for the precise identification of QTLs.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "QTL ANALYSIS",
+      "type": "METHOD",
+      "description": "The analytical process used to identify quantitative trait loci associated with a trait.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "QTLS",
+      "type": "GENE_MARKER",
+      "description": "Quantitative Trait Loci that contribute to the variance of a trait.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "CCLG11",
+      "type": "GENE_MARKER",
+      "description": "A specific linkage group in pigeonpea containing a promising QTL for SMD resistance.",
+      "source_id": "paper_10042"
+    },
+    {
+      "name": "MOLECULAR BREEDING",
+      "type": "METHOD",
+      "description": "The application of genomic information to develop superior crop lines with enhanced traits.",
+      "source_id": "paper_10042"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SMD RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "STERILITY MOSAIC DISEASE",
+      "target": "SMD RESISTANCE",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "SNPS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "MAPPING POPULATIONS",
+      "target": "PHENOTYPING",
+      "description": "are used for",
+      "weight": "9",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "MAPPING POPULATIONS",
+      "target": "GENOTYPING-BY-SEQUENCING",
+      "description": "are used for",
+      "weight": "9",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "SNPS",
+      "target": "GENETIC MAPS",
+      "description": "are used to construct",
+      "weight": "10",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "COMPOSITE INTERVAL MAPPING",
+      "target": "QTL ANALYSIS",
+      "description": "is used for",
+      "weight": "10",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "QTL ANALYSIS",
+      "target": "QTLS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "QTLS",
+      "target": "SMD RESISTANCE",
+      "description": "are associated with",
+      "weight": "10",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "CCLG11",
+      "target": "QTLS",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "QTLS",
+      "target": "MOLECULAR BREEDING",
+      "description": "are used for",
+      "weight": "9",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "MAPPING POPULATIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10042"
+    },
+    {
+      "source": "F2",
+      "target": "MAPPING POPULATIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10042"
+    }
+  ]
+}

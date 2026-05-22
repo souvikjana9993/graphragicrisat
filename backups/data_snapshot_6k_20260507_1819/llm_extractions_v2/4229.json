@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "SUBMERGED SOILS",
+      "type": "CONDITION",
+      "description": "Soils saturated with water, leading to anaerobic conditions and a reduced state",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "ARABLE SOILS",
+      "type": "CONDITION",
+      "description": "Soils suitable for farming, typically well-aerated and contrasting with submerged soils",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "LACK OF OXYGEN",
+      "type": "CONDITION",
+      "description": "The anaerobic state resulting from soil submergence that drives chemical and biological changes",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONCEPT",
+      "description": "The capacity of soil to provide essential nutrients for plant growth",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "WETLAND RICE",
+      "type": "CROP",
+      "description": "A crop variety adapted for growth in submerged soil environments",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "NITROGEN MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting organic nitrogen into inorganic forms",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "AMMONIUM PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The end point of the nitrogen mineralization process in anaerobic submerged soils",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological oxidation of ammonium to nitrate, which is inhibited in submerged soils",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "IRON",
+      "type": "CONCEPT",
+      "description": "A chemical element abundant in tropical rice soils that undergoes redox changes",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "REDOX CYCLING OF IRON",
+      "type": "CONCEPT",
+      "description": "The process of iron switching between oxidation states, influencing soil biogeochemistry",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "BIOGEOCHEMISTRY",
+      "type": "CONCEPT",
+      "description": "The chemical, physical, geological, and biological processes governing the composition of the environment",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "AQUATIC SEDIMENTS",
+      "type": "CONDITION",
+      "description": "Deposits of organic and inorganic matter at the bottom of water bodies",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "REDUCIBLE IRON",
+      "type": "CONCEPT",
+      "description": "Iron species that can be reduced during redox reactions in submerged environments",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "REDOX REACTIONS",
+      "type": "CONCEPT",
+      "description": "Chemical reactions involving the transfer of electrons between species",
+      "source_id": "paper_4229"
+    },
+    {
+      "name": "TROPICS",
+      "type": "LOCATION",
+      "description": "Geographic regions characterized by high temperatures where rice soils are often rich in iron",
+      "source_id": "paper_4229"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SUBMERGED SOILS",
+      "target": "LACK OF OXYGEN",
+      "description": "characterized by",
+      "weight": "10",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "SUBMERGED SOILS",
+      "target": "SOIL FERTILITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "SUBMERGED SOILS",
+      "target": "WETLAND RICE",
+      "description": "used for growing",
+      "weight": "9",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "LACK OF OXYGEN",
+      "target": "NITROGEN MINERALIZATION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "NITROGEN MINERALIZATION",
+      "target": "AMMONIUM PRODUCTION",
+      "description": "stops at",
+      "weight": "10",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "LACK OF OXYGEN",
+      "target": "NITRIFICATION",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "TROPICS",
+      "target": "IRON",
+      "description": "rich in",
+      "weight": "8",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "IRON",
+      "target": "REDOX CYCLING OF IRON",
+      "description": "undergoes",
+      "weight": "10",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "REDOX CYCLING OF IRON",
+      "target": "BIOGEOCHEMISTRY",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "REDOX CYCLING OF IRON",
+      "target": "SUBMERGED SOILS",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "REDOX CYCLING OF IRON",
+      "target": "AQUATIC SEDIMENTS",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "REDUCIBLE IRON",
+      "target": "REDOX REACTIONS",
+      "description": "participates in",
+      "weight": "10",
+      "source_id": "paper_4229"
+    },
+    {
+      "source": "REDUCIBLE IRON",
+      "target": "REDOX CYCLING OF IRON",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_4229"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The target crop for genomic selection and prediction models.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "A method of selecting lines prior to field phenotyping using genotyping data to enhance genetic gains.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between genotype and environment that affects prediction accuracy in GS models.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "PREDICTION ACCURACY",
+      "type": "CONCEPT",
+      "description": "The measure of how well a model predicts the phenotype of a line.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "FIELD PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of recording phenotypic data on breeding lines in the field.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "GENETIC GAINS",
+      "type": "CONCEPT",
+      "description": "The improvement in the average performance of a population over time.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "DARTSEQ",
+      "type": "METHOD",
+      "description": "A genotyping platform used to identify SNPs.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "GENOTYPING-BY-SEQUENCING",
+      "type": "METHOD",
+      "description": "A genotyping platform (GBS) used to identify SNPs.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "SNP",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphisms used as markers for genotyping.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "CROSS-VALIDATION SCHEMES",
+      "type": "METHOD",
+      "description": "Schemes used to assess the prediction accuracy of models, including CV0, CV1, and CV2.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "CV2",
+      "type": "METHOD",
+      "description": "A cross-validation scheme representing incomplete field trials or sparse testing.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "CV1",
+      "type": "METHOD",
+      "description": "A cross-validation scheme representing newly developed lines.",
+      "source_id": "paper_10821"
+    },
+    {
+      "name": "CV0",
+      "type": "METHOD",
+      "description": "A cross-validation scheme representing untested environments.",
+      "source_id": "paper_10821"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GENETIC GAINS",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "target": "PREDICTION ACCURACY",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "PREDICTION ACCURACY",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "DARTSEQ",
+      "target": "SNP",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "SNP",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "CROSS-VALIDATION SCHEMES",
+      "target": "PREDICTION ACCURACY",
+      "description": "assess",
+      "weight": "9",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "CV2",
+      "target": "PREDICTION ACCURACY",
+      "description": "observed maximum",
+      "weight": "8",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "DARTSEQ",
+      "target": "GENOMIC SELECTION",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "GENOMIC SELECTION",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_10821"
+    },
+    {
+      "source": "FIELD PHENOTYPING",
+      "target": "CHICKPEA",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_10821"
+    }
+  ]
+}

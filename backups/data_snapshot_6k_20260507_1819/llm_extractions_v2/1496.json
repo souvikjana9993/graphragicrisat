@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for disease resistance.",
+      "source_id": "paper_1496"
+    },
+    {
+      "name": "RESISTANCE TO SORGHUM DOWNY MILDEW",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist infection by Peronosclerospora sorghi.",
+      "source_id": "paper_1496"
+    },
+    {
+      "name": "SORGHUM DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease in sorghum caused by the pathogen Peronosclerospora sorghi.",
+      "source_id": "paper_1496"
+    },
+    {
+      "name": "PERONOSCLEROSPORA SORGHI",
+      "type": "ORGANISM",
+      "description": "The causal agent of sorghum downy mildew.",
+      "source_id": "paper_1496"
+    },
+    {
+      "name": "GREENHOUSE TRIALS",
+      "type": "METHOD",
+      "description": "The method used to screen sorghum accessions for resistance.",
+      "source_id": "paper_1496"
+    },
+    {
+      "name": "LATE-FLOWERING",
+      "type": "TRAIT",
+      "description": "A specific flowering characteristic of the sorghum germplasm.",
+      "source_id": "paper_1496"
+    },
+    {
+      "name": "SORGHUM GERMPLASM",
+      "type": "CONCEPT",
+      "description": "The genetic material and accessions of sorghum used in the study.",
+      "source_id": "paper_1496"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM GERMPLASM",
+      "target": "RESISTANCE TO SORGHUM DOWNY MILDEW",
+      "description": "screened for",
+      "weight": "9",
+      "source_id": "paper_1496"
+    },
+    {
+      "source": "PERONOSCLEROSPORA SORGHI",
+      "target": "SORGHUM DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1496"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SORGHUM DOWNY MILDEW",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_1496"
+    },
+    {
+      "source": "GREENHOUSE TRIALS",
+      "target": "RESISTANCE TO SORGHUM DOWNY MILDEW",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_1496"
+    },
+    {
+      "source": "SORGHUM GERMPLASM",
+      "target": "LATE-FLOWERING",
+      "description": "possesses",
+      "weight": "7",
+      "source_id": "paper_1496"
+    },
+    {
+      "source": "SORGHUM GERMPLASM",
+      "target": "SORGHUM",
+      "description": "is a collection of",
+      "weight": "10",
+      "source_id": "paper_1496"
+    }
+  ]
+}

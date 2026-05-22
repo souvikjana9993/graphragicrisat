@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "GFSAD30AUNZCNMOCE",
+      "type": "CONCEPT",
+      "description": "A NASA data product providing cropland extent data for Australia, New Zealand, China, and Mongolia at 30 meter resolution for the year 2015",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "AUSTRALIA",
+      "type": "LOCATION",
+      "description": "A country covered by the GFSAD30AUNZCNMOCE data product",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "NEW ZEALAND",
+      "type": "LOCATION",
+      "description": "A country covered by the GFSAD30AUNZCNMOCE data product",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "A country covered by the GFSAD30AUNZCNMOCE data product",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "MONGOLIA",
+      "type": "LOCATION",
+      "description": "A country covered by the GFSAD30AUNZCNMOCE data product",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "CROPLAND EXTENT",
+      "type": "CONCEPT",
+      "description": "The spatial extent of land used for agricultural crops",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "WATER SUSTAINABILITY",
+      "type": "CONCEPT",
+      "description": "The management and conservation of water resources for long-term use",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "A pixel-based supervised classifier used to retrieve cropland extent",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "LANDSAT 8 OPERATIONAL LAND IMAGER",
+      "type": "METHOD",
+      "description": "A satellite imaging sensor used to provide data for cropland extent retrieval",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "LANDSAT 7 ENHANCED THEMATIC MAPPER PLUS",
+      "type": "METHOD",
+      "description": "A satellite imaging sensor used to provide data for cropland extent retrieval",
+      "source_id": "paper_10980"
+    },
+    {
+      "name": "POLICYMAKING",
+      "type": "CONCEPT",
+      "description": "The process of formulating policies based on baseline data like cropland extent",
+      "source_id": "paper_10980"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GFSAD30AUNZCNMOCE",
+      "target": "AUSTRALIA",
+      "description": "provides cropland extent data for",
+      "weight": "10",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "GFSAD30AUNZCNMOCE",
+      "target": "NEW ZEALAND",
+      "description": "provides cropland extent data for",
+      "weight": "10",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "GFSAD30AUNZCNMOCE",
+      "target": "CHINA",
+      "description": "provides cropland extent data for",
+      "weight": "10",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "GFSAD30AUNZCNMOCE",
+      "target": "MONGOLIA",
+      "description": "provides cropland extent data for",
+      "weight": "10",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "GFSAD30AUNZCNMOCE",
+      "target": "CROPLAND EXTENT",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "POLICYMAKING",
+      "description": "is critical for",
+      "weight": "8",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "WATER SUSTAINABILITY",
+      "description": "is used in studies pertaining to",
+      "weight": "8",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "FOOD SECURITY",
+      "description": "is used in studies pertaining to",
+      "weight": "8",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "GFSAD30AUNZCNMOCE",
+      "target": "RANDOM FOREST",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "CROPLAND EXTENT",
+      "description": "retrieves",
+      "weight": "10",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "LANDSAT 8 OPERATIONAL LAND IMAGER",
+      "description": "uses data from",
+      "weight": "10",
+      "source_id": "paper_10980"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "LANDSAT 7 ENHANCED THEMATIC MAPPER PLUS",
+      "description": "uses data from",
+      "weight": "10",
+      "source_id": "paper_10980"
+    }
+  ]
+}

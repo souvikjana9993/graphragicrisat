@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop used in intercropping with groundnut",
+      "source_id": "paper_1942"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop whose yield is affected by competition from pearl millet",
+      "source_id": "paper_1942"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the crops",
+      "source_id": "paper_1942"
+    },
+    {
+      "name": "COMPETITION",
+      "type": "CONCEPT",
+      "description": "The interaction between pearl millet and groundnut for resources",
+      "source_id": "paper_1942"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing pearl millet and groundnut together",
+      "source_id": "paper_1942"
+    },
+    {
+      "name": "SAHELIAN ZONE",
+      "type": "LOCATION",
+      "description": "An agro-climatic zone where the trials were conducted",
+      "source_id": "paper_1942"
+    },
+    {
+      "name": "SUDANIAN ZONE",
+      "type": "LOCATION",
+      "description": "An agro-climatic zone where the trials were conducted",
+      "source_id": "paper_1942"
+    },
+    {
+      "name": "GENOTYPE",
+      "type": "CONCEPT",
+      "description": "The genetic variation among groundnut cultivars",
+      "source_id": "paper_1942"
+    },
+    {
+      "name": "MILLET POPULATION LEVEL",
+      "type": "CONDITION",
+      "description": "The density of pearl millet plants in the intercrop system",
+      "source_id": "paper_1942"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "GROUNDNUT",
+      "description": "Competes with groundnut in intercrop situations",
+      "weight": "8",
+      "source_id": "paper_1942"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "YIELD",
+      "description": "Affects the yield of groundnut",
+      "weight": "7",
+      "source_id": "paper_1942"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "YIELD",
+      "description": "Reduces the yield of pearl millet",
+      "weight": "8",
+      "source_id": "paper_1942"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PEARL MILLET",
+      "description": "Cultivation method involving pearl millet",
+      "weight": "7",
+      "source_id": "paper_1942"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "GROUNDNUT",
+      "description": "Cultivation method involving groundnut",
+      "weight": "7",
+      "source_id": "paper_1942"
+    },
+    {
+      "source": "SAHELIAN ZONE",
+      "target": "INTERCROPPING",
+      "description": "Location of intercropping trials",
+      "weight": "6",
+      "source_id": "paper_1942"
+    },
+    {
+      "source": "SUDANIAN ZONE",
+      "target": "INTERCROPPING",
+      "description": "Location of intercropping trials",
+      "weight": "6",
+      "source_id": "paper_1942"
+    },
+    {
+      "source": "MILLET POPULATION LEVEL",
+      "target": "YIELD",
+      "description": "Influences the yield of the crops",
+      "weight": "8",
+      "source_id": "paper_1942"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "COMPETITION",
+      "description": "Groundnut genotypes respond to competition from millet",
+      "weight": "7",
+      "source_id": "paper_1942"
+    }
+  ]
+}

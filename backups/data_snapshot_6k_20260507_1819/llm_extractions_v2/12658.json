@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "WATER HYACINTH",
+      "type": "ORGANISM",
+      "description": "Highly invasive aquatic weed (Pontederia crassipes) causing ecological and economic impact",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "PATANCHERU LAKE",
+      "type": "LOCATION",
+      "description": "Lake in Hyderabad, India, where water hyacinth mapping was conducted",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "HYDERABAD",
+      "type": "LOCATION",
+      "description": "City in India where Patancheru Lake is located",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where the study was conducted",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "MULTI-TEMPORAL MULTI-SPECTRAL DRONE IMAGERY",
+      "type": "METHOD",
+      "description": "Technique used for mapping and monitoring water hyacinth",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "GROUND OPTICAL IMAGE CAPTURING",
+      "type": "METHOD",
+      "description": "Process of capturing images via an Android mobile application",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "ANDROID MOBILE APPLICATION",
+      "type": "METHOD",
+      "description": "Tool used for ground optical image capturing",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "SPECTRAL BANDS",
+      "type": "CONCEPT",
+      "description": "Data used to produce water hyacinth detection and mapping",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "SPECTRAL SIGNATURE",
+      "type": "CONCEPT",
+      "description": "Characteristic spectral response compared between clean and infested water",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "WATER QUALITY SAMPLES",
+      "type": "CONCEPT",
+      "description": "Samples collected to analyze the effect of water hyacinth infestation",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "EXPECTATION MAXIMISATION CLUSTERING",
+      "type": "METHOD",
+      "description": "Unsupervised machine learning classifier used to create a segmentation map",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "SEGMENTATION MAP",
+      "type": "CONCEPT",
+      "description": "Map indicating water hyacinth, water, and other regions",
+      "source_id": "paper_12658"
+    },
+    {
+      "name": "MANUAL MONITORING AND REMOVAL",
+      "type": "METHOD",
+      "description": "Traditional remediation action for water hyacinth",
+      "source_id": "paper_12658"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER HYACINTH",
+      "target": "PATANCHERU LAKE",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "MULTI-TEMPORAL MULTI-SPECTRAL DRONE IMAGERY",
+      "target": "WATER HYACINTH",
+      "description": "used for mapping and monitoring",
+      "weight": "10",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "MULTI-TEMPORAL MULTI-SPECTRAL DRONE IMAGERY",
+      "target": "PATANCHERU LAKE",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "GROUND OPTICAL IMAGE CAPTURING",
+      "target": "WATER HYACINTH",
+      "description": "used for monitoring",
+      "weight": "8",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "ANDROID MOBILE APPLICATION",
+      "target": "GROUND OPTICAL IMAGE CAPTURING",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "SPECTRAL BANDS",
+      "target": "WATER HYACINTH",
+      "description": "used for detection and mapping",
+      "weight": "9",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "SPECTRAL SIGNATURE",
+      "target": "WATER HYACINTH",
+      "description": "used to compare clean and infested water",
+      "weight": "9",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "WATER QUALITY SAMPLES",
+      "target": "WATER HYACINTH",
+      "description": "used to analyze effect of infestation",
+      "weight": "8",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "EXPECTATION MAXIMISATION CLUSTERING",
+      "target": "MULTI-TEMPORAL MULTI-SPECTRAL DRONE IMAGERY",
+      "description": "used to process",
+      "weight": "10",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "EXPECTATION MAXIMISATION CLUSTERING",
+      "target": "SEGMENTATION MAP",
+      "description": "used to create",
+      "weight": "10",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "SEGMENTATION MAP",
+      "target": "WATER HYACINTH",
+      "description": "indicates presence of",
+      "weight": "9",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "MANUAL MONITORING AND REMOVAL",
+      "target": "WATER HYACINTH",
+      "description": "remediation action for",
+      "weight": "9",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "PATANCHERU LAKE",
+      "target": "HYDERABAD",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12658"
+    },
+    {
+      "source": "HYDERABAD",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12658"
+    }
+  ]
+}

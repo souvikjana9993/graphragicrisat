@@ -1,0 +1,180 @@
+{
+  "entities": [
+    {
+      "name": "HYDERABAD",
+      "type": "LOCATION",
+      "description": "A city in India serving as the case study for urban sprawl and agricultural land impact.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study on urban sprawl in Hyderabad was conducted.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "URBAN SPRAWL",
+      "type": "CONCEPT",
+      "description": "The rapid expansion of city boundaries into surrounding rural areas.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "AGRICULTURAL LAND",
+      "type": "CONCEPT",
+      "description": "Land used for farming that is being replaced or impacted by urban development.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "INDUSTRIALIZATION",
+      "type": "CONDITION",
+      "description": "A process driving the growth of Indian capitals into megacities.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "RURAL–URBAN EMIGRATION",
+      "type": "CONDITION",
+      "description": "The movement of people from rural to urban areas contributing to city growth.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "LAND USE",
+      "type": "CONCEPT",
+      "description": "The human modification of the environment to provide goods and services.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "LAND COVER",
+      "type": "CONCEPT",
+      "description": "The physical material on the surface of the earth, such as vegetation or buildings.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "LANDSAT-8",
+      "type": "METHOD",
+      "description": "Satellite data used to investigate land-use changes.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "IRS-P6",
+      "type": "METHOD",
+      "description": "Satellite data used to investigate land-use changes.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Advanced analysis methods used with ground information to map land use.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "MUSI RIVER",
+      "type": "LOCATION",
+      "description": "The river adjacent to wastewater-irrigated agricultural areas in Hyderabad.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "WASTEWATER-IRRIGATED AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "Agricultural practice using wastewater for irrigation, often for vegetables and feed.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "FRESH VEGETABLES",
+      "type": "CROP",
+      "description": "Crops grown in wastewater-irrigated areas to meet urban demand.",
+      "source_id": "paper_10269"
+    },
+    {
+      "name": "URBAN LIVESTOCK FEED",
+      "type": "CROP",
+      "description": "Crops grown in wastewater-irrigated areas for urban livestock.",
+      "source_id": "paper_10269"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "URBAN SPRAWL",
+      "target": "HYDERABAD",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "HYDERABAD",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "INDUSTRIALIZATION",
+      "target": "URBAN SPRAWL",
+      "description": "drives",
+      "weight": "8",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "RURAL–URBAN EMIGRATION",
+      "target": "URBAN SPRAWL",
+      "description": "drives",
+      "weight": "8",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "URBAN SPRAWL",
+      "target": "AGRICULTURAL LAND",
+      "description": "adversely impacts",
+      "weight": "9",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "LANDSAT-8",
+      "target": "LAND USE",
+      "description": "used to investigate",
+      "weight": "9",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "IRS-P6",
+      "target": "LAND USE",
+      "description": "used to investigate",
+      "weight": "9",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "LAND USE",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "WASTEWATER-IRRIGATED AGRICULTURE",
+      "target": "MUSI RIVER",
+      "description": "located adjacent to",
+      "weight": "8",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "WASTEWATER-IRRIGATED AGRICULTURE",
+      "target": "FRESH VEGETABLES",
+      "description": "produces",
+      "weight": "7",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "WASTEWATER-IRRIGATED AGRICULTURE",
+      "target": "URBAN LIVESTOCK FEED",
+      "description": "produces",
+      "weight": "7",
+      "source_id": "paper_10269"
+    },
+    {
+      "source": "URBAN SPRAWL",
+      "target": "WASTEWATER-IRRIGATED AGRICULTURE",
+      "description": "influences shifts in",
+      "weight": "6",
+      "source_id": "paper_10269"
+    }
+  ]
+}

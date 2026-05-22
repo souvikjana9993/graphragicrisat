@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being genetically modified for virus resistance.",
+      "source_id": "paper_3630"
+    },
+    {
+      "name": "GENETIC MODIFICATION",
+      "type": "METHOD",
+      "description": "The method used to create the transgenic groundnut.",
+      "source_id": "paper_3630"
+    },
+    {
+      "name": "VIRUS RESISTANCE",
+      "type": "TRAIT",
+      "description": "The trait of being resistant to the peanut clump virus.",
+      "source_id": "paper_3630"
+    },
+    {
+      "name": "PEANUT CLUMP VIRUS",
+      "type": "ORGANISM",
+      "description": "The viral pathogen affecting groundnut crops.",
+      "source_id": "paper_3630"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Location where the peanut clump virus is widespread.",
+      "source_id": "paper_3630"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "Location where the peanut clump virus is widespread.",
+      "source_id": "paper_3630"
+    },
+    {
+      "name": "FIELD TRIAL",
+      "type": "METHOD",
+      "description": "The testing phase for the transgenic groundnut.",
+      "source_id": "paper_3630"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENETIC MODIFICATION",
+      "target": "GROUNDNUT",
+      "description": "used to develop",
+      "weight": "10",
+      "source_id": "paper_3630"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "VIRUS RESISTANCE",
+      "description": "contains genes for",
+      "weight": "10",
+      "source_id": "paper_3630"
+    },
+    {
+      "source": "VIRUS RESISTANCE",
+      "target": "PEANUT CLUMP VIRUS",
+      "description": "provides resistance against",
+      "weight": "10",
+      "source_id": "paper_3630"
+    },
+    {
+      "source": "PEANUT CLUMP VIRUS",
+      "target": "INDIA",
+      "description": "is widespread in",
+      "weight": "8",
+      "source_id": "paper_3630"
+    },
+    {
+      "source": "PEANUT CLUMP VIRUS",
+      "target": "WEST AFRICA",
+      "description": "is widespread in",
+      "weight": "8",
+      "source_id": "paper_3630"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "FIELD TRIAL",
+      "description": "has reached the stage of",
+      "weight": "7",
+      "source_id": "paper_3630"
+    }
+  ]
+}

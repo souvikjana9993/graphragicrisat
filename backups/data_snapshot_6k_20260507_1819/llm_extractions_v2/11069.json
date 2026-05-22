@@ -1,0 +1,176 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species studied, specifically local and improved cultivars from Mali",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "ROOT SYSTEM",
+      "type": "CONCEPT",
+      "description": "The underground organs of the plant responsible for water and mineral uptake",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "The country where the sorghum cultivars were collected and studied",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "SAHELIAN ZONE",
+      "type": "LOCATION",
+      "description": "The specific region in Mali where the sorghum cultivars were sourced",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "A condition of limited water availability that affects crop performance",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "ROOT LENGTH",
+      "type": "TRAIT",
+      "description": "A measurement of the distance the roots extend into the soil",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "ROOT DENSITY",
+      "type": "TRAIT",
+      "description": "A measurement of the concentration of roots within a given volume of soil",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "ROOT CHARACTERIZATION",
+      "type": "METHOD",
+      "description": "The process of studying and describing the physical properties of the root system",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "COMPLETELY RANDOMIZED DESIGN",
+      "type": "METHOD",
+      "description": "The experimental layout used for planting the sorghum entries in PVC tubes",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "ROOT ARCHITECTURE",
+      "type": "TRAIT",
+      "description": "The spatial configuration of the root system",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "CONCEPT",
+      "description": "The overall development of the plant supported by root functions",
+      "source_id": "paper_11069"
+    },
+    {
+      "name": "ANNUAL RAINFALL",
+      "type": "CONDITION",
+      "description": "The yearly amount of precipitation in the Sahelian zone, ranging from 200 to 600 mm",
+      "source_id": "paper_11069"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "MALI",
+      "description": "Cultivars were collected from",
+      "weight": "10",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SAHELIAN ZONE",
+      "description": "Cultivars were collected from",
+      "weight": "10",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT SYSTEM",
+      "target": "SORGHUM",
+      "description": "Is a part of",
+      "weight": "10",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT SYSTEM",
+      "target": "PLANT GROWTH",
+      "description": "Supplies water and minerals for",
+      "weight": "9",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT SYSTEM",
+      "target": "WATER STRESS",
+      "description": "Determines behavior under",
+      "weight": "8",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT CHARACTERIZATION",
+      "target": "ROOT SYSTEM",
+      "description": "Analyzes the properties of",
+      "weight": "10",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT CHARACTERIZATION",
+      "target": "SORGHUM",
+      "description": "Conducted on cultivars of",
+      "weight": "10",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT LENGTH",
+      "target": "ROOT SYSTEM",
+      "description": "Is a characteristic of",
+      "weight": "10",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT DENSITY",
+      "target": "ROOT SYSTEM",
+      "description": "Is a characteristic of",
+      "weight": "10",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT LENGTH",
+      "target": "ROOT DENSITY",
+      "description": "Shows a positive correlation with",
+      "weight": "9",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT ARCHITECTURE",
+      "target": "ROOT SYSTEM",
+      "description": "Describes the structure of",
+      "weight": "10",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "ROOT ARCHITECTURE",
+      "target": "SORGHUM",
+      "description": "Target for improvement in breeding",
+      "weight": "8",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "SAHELIAN ZONE",
+      "target": "ANNUAL RAINFALL",
+      "description": "Characterized by",
+      "weight": "8",
+      "source_id": "paper_11069"
+    },
+    {
+      "source": "COMPLETELY RANDOMIZED DESIGN",
+      "target": "ROOT CHARACTERIZATION",
+      "description": "Used as the experimental layout for",
+      "weight": "9",
+      "source_id": "paper_11069"
+    }
+  ]
+}

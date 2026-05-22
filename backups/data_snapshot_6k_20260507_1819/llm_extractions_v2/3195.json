@@ -1,0 +1,158 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop species Cicer arietinum L. used for protein estimation study",
+      "source_id": "paper_3195"
+    },
+    {
+      "name": "PROTEIN CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of protein present in the seeds of the crop",
+      "source_id": "paper_3195"
+    },
+    {
+      "name": "TECHNICON AUTO-ANALYZER METHOD",
+      "type": "METHOD",
+      "description": "A rapid colorimetric estimation of ammonia with phenol-hypochlorite reagents",
+      "source_id": "paper_3195"
+    },
+    {
+      "name": "DYE-BINDING CAPACITY METHOD",
+      "type": "METHOD",
+      "description": "A rapid protein estimation method using acid orange-12 dye",
+      "source_id": "paper_3195"
+    },
+    {
+      "name": "MODIFIED BIURET METHOD",
+      "type": "METHOD",
+      "description": "A rapid protein estimation method based on the work of Pinckney and Johnson and Craney",
+      "source_id": "paper_3195"
+    },
+    {
+      "name": "MICROKJELDAHL PROCEDURE",
+      "type": "METHOD",
+      "description": "The standard procedure used as a benchmark for protein estimation",
+      "source_id": "paper_3195"
+    },
+    {
+      "name": "SEED-COAT PIGMENTS",
+      "type": "CONCEPT",
+      "description": "Pigments in the seed coat that may interfere with protein estimation results",
+      "source_id": "paper_3195"
+    },
+    {
+      "name": "FLOUR PARTICLE SIZE",
+      "type": "CONCEPT",
+      "description": "The size of flour particles which may affect the results of rapid protein estimation",
+      "source_id": "paper_3195"
+    },
+    {
+      "name": "TIME OF SHAKING",
+      "type": "CONCEPT",
+      "description": "The duration of shaking which may affect the results of rapid protein estimation",
+      "source_id": "paper_3195"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "PROTEIN CONTENT",
+      "description": "The study measures the protein content of chickpea seeds",
+      "weight": "10",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "TECHNICON AUTO-ANALYZER METHOD",
+      "target": "PROTEIN CONTENT",
+      "description": "Used for the rapid estimation of protein content",
+      "weight": "9",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "DYE-BINDING CAPACITY METHOD",
+      "target": "PROTEIN CONTENT",
+      "description": "Used for the rapid estimation of protein content",
+      "weight": "9",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "MODIFIED BIURET METHOD",
+      "target": "PROTEIN CONTENT",
+      "description": "Used for the rapid estimation of protein content",
+      "weight": "9",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "MICROKJELDAHL PROCEDURE",
+      "target": "PROTEIN CONTENT",
+      "description": "The standard method for estimating protein content",
+      "weight": "10",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "TECHNICON AUTO-ANALYZER METHOD",
+      "target": "MICROKJELDAHL PROCEDURE",
+      "description": "Results are highly correlated with the standard procedure",
+      "weight": "8",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "DYE-BINDING CAPACITY METHOD",
+      "target": "MICROKJELDAHL PROCEDURE",
+      "description": "Results are highly correlated with the standard procedure",
+      "weight": "8",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "MODIFIED BIURET METHOD",
+      "target": "MICROKJELDAHL PROCEDURE",
+      "description": "Results are highly correlated with the standard procedure",
+      "weight": "8",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "SEED-COAT PIGMENTS",
+      "target": "DYE-BINDING CAPACITY METHOD",
+      "description": "Possible interference with the results of the method",
+      "weight": "7",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "SEED-COAT PIGMENTS",
+      "target": "MODIFIED BIURET METHOD",
+      "description": "Possible interference with the results of the method",
+      "weight": "7",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "FLOUR PARTICLE SIZE",
+      "target": "DYE-BINDING CAPACITY METHOD",
+      "description": "Affects the results of the method",
+      "weight": "7",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "FLOUR PARTICLE SIZE",
+      "target": "MODIFIED BIURET METHOD",
+      "description": "Affects the results of the method",
+      "weight": "7",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "TIME OF SHAKING",
+      "target": "DYE-BINDING CAPACITY METHOD",
+      "description": "Affects the results of the method",
+      "weight": "7",
+      "source_id": "paper_3195"
+    },
+    {
+      "source": "TIME OF SHAKING",
+      "target": "MODIFIED BIURET METHOD",
+      "description": "Affects the results of the method",
+      "weight": "7",
+      "source_id": "paper_3195"
+    }
+  ]
+}

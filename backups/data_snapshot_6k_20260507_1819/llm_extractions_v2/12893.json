@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "ODISHA",
+      "type": "LOCATION",
+      "description": "A state in India where the study was conducted",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where Odisha is located",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A crop cultivated in rainfed upland ecosystems in Odisha",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "A climate-smart, nutritious crop proposed as a substitute for rainfed upland rice",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "A condition causing weather uncertainties and affecting agriculture",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "WEATHER UNCERTAINTIES",
+      "type": "CONDITION",
+      "description": "Challenges posed by climate change affecting rice cultivation",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "UPLAND RICE ECOSYSTEM",
+      "type": "CONCEPT",
+      "description": "The specific agricultural environment being analyzed for millet suitability",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "SENTINEL-2 TIME-SERIES DATA",
+      "type": "METHOD",
+      "description": "Satellite data used to identify suitable areas for millet",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "DEM",
+      "type": "METHOD",
+      "description": "Digital Elevation Model used for geospatial analysis",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "GROUND DATA",
+      "type": "METHOD",
+      "description": "Field-collected data used for validation and analysis",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Techniques used to delineate areas suitable for millet introduction",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "AGRICULTURAL MANAGEMENT PRACTICES",
+      "type": "CONCEPT",
+      "description": "Practices supported by spatially explicit information for millet introduction",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "ECONOMIC FEASIBILITY",
+      "type": "CONCEPT",
+      "description": "The anticipated financial viability of millet cultivation in upland rice areas",
+      "source_id": "paper_12893"
+    },
+    {
+      "name": "ECONOMIC ANALYSIS",
+      "type": "METHOD",
+      "description": "The process used to provide decision-making assistance for resource allocation",
+      "source_id": "paper_12893"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ODISHA",
+      "target": "INDIA",
+      "description": "is a state in",
+      "weight": "10",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "RICE",
+      "target": "ODISHA",
+      "description": "is cultivated in",
+      "weight": "8",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "WEATHER UNCERTAINTIES",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "WEATHER UNCERTAINTIES",
+      "target": "RICE",
+      "description": "poses challenges to",
+      "weight": "7",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "MILLET",
+      "target": "RICE",
+      "description": "can substitute",
+      "weight": "8",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "MILLET",
+      "target": "UPLAND RICE ECOSYSTEM",
+      "description": "is suitable for",
+      "weight": "9",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "SENTINEL-2 TIME-SERIES DATA",
+      "target": "MILLET",
+      "description": "used to identify suitable areas for",
+      "weight": "9",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "DEM",
+      "target": "MILLET",
+      "description": "used to identify suitable areas for",
+      "weight": "8",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "GROUND DATA",
+      "target": "MILLET",
+      "description": "used to identify suitable areas for",
+      "weight": "8",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "MILLET",
+      "description": "used to delineate suitable areas for",
+      "weight": "9",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "UPLAND RICE ECOSYSTEM",
+      "target": "ODISHA",
+      "description": "is located in",
+      "weight": "9",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "ECONOMIC ANALYSIS",
+      "target": "ECONOMIC FEASIBILITY",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_12893"
+    },
+    {
+      "source": "ECONOMIC FEASIBILITY",
+      "target": "MILLET",
+      "description": "assessed for",
+      "weight": "8",
+      "source_id": "paper_12893"
+    }
+  ]
+}

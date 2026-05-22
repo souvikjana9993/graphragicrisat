@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop species being analyzed in the composite collection",
+      "source_id": "paper_4185"
+    },
+    {
+      "name": "SSR LOCI",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat loci used for genetic analysis",
+      "source_id": "paper_4185"
+    },
+    {
+      "name": "ALLELIC DIVERSITY",
+      "type": "TRAIT",
+      "description": "The measure of the number of alleles present at a locus in a population",
+      "source_id": "paper_4185"
+    },
+    {
+      "name": "GENE DIVERSITY",
+      "type": "TRAIT",
+      "description": "The degree of genetic variation within the groundnut accessions",
+      "source_id": "paper_4185"
+    },
+    {
+      "name": "ACCESSIONS",
+      "type": "CONCEPT",
+      "description": "The 852 individual samples of groundnut analyzed",
+      "source_id": "paper_4185"
+    },
+    {
+      "name": "SUBSPECIES",
+      "type": "CONCEPT",
+      "description": "Biological classifications within the groundnut species",
+      "source_id": "paper_4185"
+    },
+    {
+      "name": "GEOGRAPHICAL GROUPS",
+      "type": "LOCATION",
+      "description": "Groupings of groundnut accessions based on their geographic origin",
+      "source_id": "paper_4185"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SSR LOCI",
+      "target": "ACCESSIONS",
+      "description": "analyzed in",
+      "weight": "10",
+      "source_id": "paper_4185"
+    },
+    {
+      "source": "ACCESSIONS",
+      "target": "GROUNDNUT",
+      "description": "are samples of",
+      "weight": "10",
+      "source_id": "paper_4185"
+    },
+    {
+      "source": "SSR LOCI",
+      "target": "ALLELIC DIVERSITY",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_4185"
+    },
+    {
+      "source": "SSR LOCI",
+      "target": "GENE DIVERSITY",
+      "description": "used to determine",
+      "weight": "9",
+      "source_id": "paper_4185"
+    },
+    {
+      "source": "ALLELIC DIVERSITY",
+      "target": "ACCESSIONS",
+      "description": "measured across",
+      "weight": "8",
+      "source_id": "paper_4185"
+    },
+    {
+      "source": "GENE DIVERSITY",
+      "target": "ACCESSIONS",
+      "description": "measured across",
+      "weight": "8",
+      "source_id": "paper_4185"
+    },
+    {
+      "source": "ALLELIC DIVERSITY",
+      "target": "SUBSPECIES",
+      "description": "shared between",
+      "weight": "7",
+      "source_id": "paper_4185"
+    },
+    {
+      "source": "ALLELIC DIVERSITY",
+      "target": "GEOGRAPHICAL GROUPS",
+      "description": "shared between",
+      "weight": "7",
+      "source_id": "paper_4185"
+    }
+  ]
+}

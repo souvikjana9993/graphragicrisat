@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The grain crop studied for charcoal rot development",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "CSH 6",
+      "type": "CROP",
+      "description": "A specific hybrid of sorghum used in the experiments",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "MACROPHOMINA PHASEOLINA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing charcoal rot",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "SOIL MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress caused by lack of soil moisture",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "CHARCOAL ROT",
+      "type": "TRAIT",
+      "description": "A disease in sorghum characterized by stalk rot and lodging",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "PERCENTAGE LODGING",
+      "type": "TRAIT",
+      "description": "The metric used to quantify the development of charcoal rot",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, which is reduced by charcoal rot",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The research approach used to study the effects of the pathogen and moisture stress",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "FURROW IRRIGATION",
+      "type": "METHOD",
+      "description": "A technique used to eliminate soil moisture stress",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "SOIL FUMIGATION",
+      "type": "METHOD",
+      "description": "A technique used to eliminate the pathogen from the soil",
+      "source_id": "paper_4858"
+    },
+    {
+      "name": "METHYL BROMIDE",
+      "type": "CONCEPT",
+      "description": "The chemical agent used for soil fumigation",
+      "source_id": "paper_4858"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "CHARCOAL ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "SOIL MOISTURE STRESS",
+      "target": "CHARCOAL ROT",
+      "description": "increases development of",
+      "weight": "8",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "SOIL MOISTURE STRESS",
+      "description": "interacts to increase charcoal rot development",
+      "weight": "10",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CHARCOAL ROT",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "CSH 6",
+      "target": "SORGHUM",
+      "description": "is a hybrid of",
+      "weight": "10",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "FURROW IRRIGATION",
+      "target": "SOIL MOISTURE STRESS",
+      "description": "eliminates",
+      "weight": "9",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "SOIL FUMIGATION",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "reduces population of",
+      "weight": "9",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "METHYL BROMIDE",
+      "target": "SOIL FUMIGATION",
+      "description": "is used in",
+      "weight": "10",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "CHARCOAL ROT",
+      "target": "PERCENTAGE LODGING",
+      "description": "is measured by",
+      "weight": "10",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "CHARCOAL ROT",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_4858"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "SORGHUM",
+      "description": "used to study",
+      "weight": "7",
+      "source_id": "paper_4858"
+    }
+  ]
+}

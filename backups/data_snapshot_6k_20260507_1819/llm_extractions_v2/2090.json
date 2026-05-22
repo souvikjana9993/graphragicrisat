@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop targeted for resistance improvement.",
+      "source_id": "paper_2090"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop targeted for resistance improvement.",
+      "source_id": "paper_2090"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pest insect that attacks pigeonpea and chickpea.",
+      "source_id": "paper_2090"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand attack by Helicoverpa armigera.",
+      "source_id": "paper_2090"
+    },
+    {
+      "name": "WILD RELATIVES",
+      "type": "ORGANISM",
+      "description": "Wild species related to pigeonpea and chickpea that serve as sources of resistance genes.",
+      "source_id": "paper_2090"
+    },
+    {
+      "name": "INTERSPECIFIC HYBRIDIZATION",
+      "type": "METHOD",
+      "description": "A breeding technique used to transfer genes between different species.",
+      "source_id": "paper_2090"
+    },
+    {
+      "name": "GENES",
+      "type": "GENE_MARKER",
+      "description": "Genetic material that confers resistance to pests.",
+      "source_id": "paper_2090"
+    },
+    {
+      "name": "COMPATIBLE GENE POOL",
+      "type": "CONCEPT",
+      "description": "A group of related species that can be successfully hybridized.",
+      "source_id": "paper_2090"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WILD RELATIVES",
+      "target": "PIGEONPEA",
+      "description": "wild relatives of",
+      "weight": "8",
+      "source_id": "paper_2090"
+    },
+    {
+      "source": "WILD RELATIVES",
+      "target": "CHICKPEA",
+      "description": "wild relatives of",
+      "weight": "8",
+      "source_id": "paper_2090"
+    },
+    {
+      "source": "WILD RELATIVES",
+      "target": "RESISTANCE",
+      "description": "source of",
+      "weight": "9",
+      "source_id": "paper_2090"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "resistance to",
+      "weight": "10",
+      "source_id": "paper_2090"
+    },
+    {
+      "source": "INTERSPECIFIC HYBRIDIZATION",
+      "target": "GENES",
+      "description": "used to transfer",
+      "weight": "9",
+      "source_id": "paper_2090"
+    },
+    {
+      "source": "INTERSPECIFIC HYBRIDIZATION",
+      "target": "WILD RELATIVES",
+      "description": "used to transfer genes from",
+      "weight": "9",
+      "source_id": "paper_2090"
+    },
+    {
+      "source": "GENES",
+      "target": "RESISTANCE",
+      "description": "confer",
+      "weight": "10",
+      "source_id": "paper_2090"
+    },
+    {
+      "source": "INTERSPECIFIC HYBRIDIZATION",
+      "target": "COMPATIBLE GENE POOL",
+      "description": "utilizes",
+      "weight": "7",
+      "source_id": "paper_2090"
+    }
+  ]
+}

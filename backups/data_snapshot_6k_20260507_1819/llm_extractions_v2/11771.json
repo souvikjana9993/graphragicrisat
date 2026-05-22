@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop studied, including cultivars Kadononga, MGV 4, and MGV 5",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The measure of peanut pod production",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "The presence of aflatoxins in peanuts prior to harvest",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "GYPSUM",
+      "type": "CONCEPT",
+      "description": "A soil amendment containing 15.6% calcium applied at 0 and 400 kg/ha",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "ZAMBIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "CHONGWE",
+      "type": "LOCATION",
+      "description": "A district in Zambia where the field experiment was conducted",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "LUSAKA",
+      "type": "LOCATION",
+      "description": "A district in Zambia where the field experiment was conducted",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "FIELD EXPERIMENT",
+      "type": "METHOD",
+      "description": "The research method used to evaluate gypsum effects",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "KERNEL SIZE",
+      "type": "TRAIT",
+      "description": "The size of the peanut kernels, which may influence aflatoxin resistance",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "NATURAL RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of peanut cultivars to resist aflatoxin contamination",
+      "source_id": "paper_11771"
+    },
+    {
+      "name": "GOOD AGRICULTURAL PRACTICES",
+      "type": "CONCEPT",
+      "description": "Management practices used to minimize pre-harvest aflatoxin contamination",
+      "source_id": "paper_11771"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GYPSUM",
+      "target": "POD YIELD",
+      "description": "Evaluated for its effect on pod yield",
+      "weight": "5",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "GYPSUM",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "Evaluated for its effect on aflatoxin contamination",
+      "weight": "5",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "PEANUT",
+      "target": "POD YIELD",
+      "description": "Crop that exhibits pod yield trait",
+      "weight": "10",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "PEANUT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "Crop susceptible to aflatoxin contamination",
+      "weight": "10",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "PEANUT",
+      "description": "Method used to study peanut cultivars",
+      "weight": "8",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "GYPSUM",
+      "description": "Method used to test the application of gypsum",
+      "weight": "8",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "ZAMBIA",
+      "target": "PEANUT",
+      "description": "Location where peanut cultivars were studied",
+      "weight": "9",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "CHONGWE",
+      "target": "ZAMBIA",
+      "description": "District located within Zambia",
+      "weight": "10",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "LUSAKA",
+      "target": "ZAMBIA",
+      "description": "District located within Zambia",
+      "weight": "10",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "KERNEL SIZE",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "Influence on the level of aflatoxin contamination",
+      "weight": "7",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "NATURAL RESISTANCE",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "Ability to prevent or reduce aflatoxin contamination",
+      "weight": "9",
+      "source_id": "paper_11771"
+    },
+    {
+      "source": "GOOD AGRICULTURAL PRACTICES",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "Effective means of minimizing contamination",
+      "weight": "8",
+      "source_id": "paper_11771"
+    }
+  ]
+}

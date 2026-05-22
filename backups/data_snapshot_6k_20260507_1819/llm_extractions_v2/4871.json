@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The primary crop studied for root and stalk rot reaction",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "NON-SENESCENCE",
+      "type": "TRAIT",
+      "description": "The characteristic of not undergoing senescence in sorghum genotypes",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "ROOT ROT",
+      "type": "CONDITION",
+      "description": "A disease affecting the roots of sorghum",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "STALK ROT",
+      "type": "CONDITION",
+      "description": "A disease affecting the stalks of sorghum",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "TOOTHPICK INOCULATION METHOD",
+      "type": "METHOD",
+      "description": "A technique used to inoculate pathogens into the plant",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environmental setting where the screening was performed",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "SORGHUM GENOTYPES",
+      "type": "CROP",
+      "description": "Specific varieties of sorghum including Q 101, Q 102, Q 103, Q 104, and PQ 54",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of sorghum genotypes to resist stalk rot pathogens",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "GREENER LEAF AREA",
+      "type": "TRAIT",
+      "description": "The presence of more green leaf area at physiological maturity",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "PHYSIOLOGICAL MATURITY",
+      "type": "CONCEPT",
+      "description": "The stage of plant development when the plant has reached full growth",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "E 36-1",
+      "type": "CROP",
+      "description": "A specific sorghum genotype known for stalk rot resistance",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "FUSARIUM MONILIFORME",
+      "type": "ORGANISM",
+      "description": "A specific pathogen that causes stalk rot in sorghum",
+      "source_id": "paper_4871"
+    },
+    {
+      "name": "STALK ROT PATHOGENS",
+      "type": "ORGANISM",
+      "description": "The group of five pathogens that cause stalk rot",
+      "source_id": "paper_4871"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "INDIA",
+      "description": "studied in",
+      "weight": "8",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "STALK ROT",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ROOT ROT",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "SORGHUM GENOTYPES",
+      "target": "NON-SENESCENCE",
+      "description": "possess trait",
+      "weight": "10",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "SORGHUM GENOTYPES",
+      "target": "STALK ROT",
+      "description": "screened for reaction to",
+      "weight": "9",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "TOOTHPICK INOCULATION METHOD",
+      "target": "STALK ROT PATHOGENS",
+      "description": "used to inoculate",
+      "weight": "9",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "TOOTHPICK INOCULATION METHOD",
+      "target": "FIELD CONDITIONS",
+      "description": "conducted under",
+      "weight": "8",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "SORGHUM GENOTYPES",
+      "target": "RESISTANCE",
+      "description": "exhibited",
+      "weight": "10",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "STALK ROT PATHOGENS",
+      "description": "effective against",
+      "weight": "10",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "GREENER LEAF AREA",
+      "target": "RESISTANCE",
+      "description": "confirms",
+      "weight": "9",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "GREENER LEAF AREA",
+      "target": "PHYSIOLOGICAL MATURITY",
+      "description": "observed at",
+      "weight": "8",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "E 36-1",
+      "target": "RESISTANCE",
+      "description": "exhibited",
+      "weight": "10",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "E 36-1",
+      "target": "FUSARIUM MONILIFORME",
+      "description": "not resistant to",
+      "weight": "9",
+      "source_id": "paper_4871"
+    },
+    {
+      "source": "STALK ROT PATHOGENS",
+      "target": "STALK ROT",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_4871"
+    }
+  ]
+}

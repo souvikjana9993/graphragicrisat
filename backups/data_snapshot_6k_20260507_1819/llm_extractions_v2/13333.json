@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "A severe abiotic stress caused by lack of water, reducing plant development and crop yield",
+      "source_id": "paper_13333"
+    },
+    {
+      "name": "PLANT DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The growth and maturation process of plants, which is reduced by drought stress",
+      "source_id": "paper_13333"
+    },
+    {
+      "name": "ABIOTIC STRESSES",
+      "type": "CONDITION",
+      "description": "Non-living environmental factors that negatively impact plants, including drought stress",
+      "source_id": "paper_13333"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Global environmental shifts that contribute to the increase in abiotic stresses",
+      "source_id": "paper_13333"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of agricultural production per unit area, reduced by drought stress",
+      "source_id": "paper_13333"
+    },
+    {
+      "name": "FOOD SHORTAGES",
+      "type": "CONCEPT",
+      "description": "Lack of sufficient food supply resulting from reduced crop yields",
+      "source_id": "paper_13333"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand and produce under drought conditions",
+      "source_id": "paper_13333"
+    },
+    {
+      "name": "CONVENTIONAL APPROACH",
+      "type": "METHOD",
+      "description": "Traditional methods of plant development that are time-consuming and tedious",
+      "source_id": "paper_13333"
+    },
+    {
+      "name": "CRISPR/CAS",
+      "type": "METHOD",
+      "description": "A cutting-edge gene editing tool used for developing drought-tolerant plants",
+      "source_id": "paper_13333"
+    },
+    {
+      "name": "GENE EDITING",
+      "type": "METHOD",
+      "description": "A broad category of techniques used to modify DNA, of which CRISPR/Cas is a prominent tool",
+      "source_id": "paper_13333"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT STRESS",
+      "target": "PLANT DEVELOPMENT",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_13333"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "CROP YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_13333"
+    },
+    {
+      "source": "ABIOTIC STRESSES",
+      "target": "DROUGHT STRESS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_13333"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "ABIOTIC STRESSES",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_13333"
+    },
+    {
+      "source": "CROP YIELD",
+      "target": "FOOD SHORTAGES",
+      "description": "reduction leads to",
+      "weight": "8",
+      "source_id": "paper_13333"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "DROUGHT STRESS",
+      "description": "mitigates",
+      "weight": "9",
+      "source_id": "paper_13333"
+    },
+    {
+      "source": "CONVENTIONAL APPROACH",
+      "target": "DROUGHT TOLERANCE",
+      "description": "used to develop",
+      "weight": "7",
+      "source_id": "paper_13333"
+    },
+    {
+      "source": "CRISPR/CAS",
+      "target": "GENE EDITING",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13333"
+    },
+    {
+      "source": "CRISPR/CAS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "used to develop",
+      "weight": "9",
+      "source_id": "paper_13333"
+    },
+    {
+      "source": "CRISPR/CAS",
+      "target": "DROUGHT STRESS",
+      "description": "used to combat",
+      "weight": "9",
+      "source_id": "paper_13333"
+    }
+  ]
+}

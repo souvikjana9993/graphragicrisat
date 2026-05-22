@@ -1,0 +1,202 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan (L.) Millspaugh",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "ICPA 2043",
+      "type": "CROP",
+      "description": "A specific line of pigeonpea used in the experiment",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "ICPH 2671",
+      "type": "CROP",
+      "description": "A hybrid pigeonpea variety produced from ICPA 2043",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "A X B CMS-LINES",
+      "type": "CONCEPT",
+      "description": "Cytoplasmic Male Sterile lines of type A x B",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "A X R CMS-LINES",
+      "type": "CONCEPT",
+      "description": "Cytoplasmic Male Sterile lines of type A x R",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "SPACING",
+      "type": "CONCEPT",
+      "description": "The distance between plants and rows in the field",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "LATE SOWING",
+      "type": "CONDITION",
+      "description": "The timing of planting occurring later than the optimal window",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "ALFISOLS",
+      "type": "CONDITION",
+      "description": "A specific type of soil used in the experiment",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "A specific type of soil used in the experiment",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "ROW RATIO",
+      "type": "CONCEPT",
+      "description": "The ratio of male sterile to male fertile lines",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "ROW-TO-ROW DISTANCE",
+      "type": "CONCEPT",
+      "description": "The distance between rows of plants",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "PLANT-TO-PLANT SPACING",
+      "type": "CONCEPT",
+      "description": "The distance between individual plants within a row",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced per unit area",
+      "source_id": "paper_5259"
+    },
+    {
+      "name": "ICRISAT PATANCHERU",
+      "type": "LOCATION",
+      "description": "The research institute location where the experiment was conducted",
+      "source_id": "paper_5259"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICPA 2043",
+      "target": "PIGEONPEA",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "ICPH 2671",
+      "target": "PIGEONPEA",
+      "description": "is a hybrid variety of",
+      "weight": "10",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "ICPA 2043",
+      "target": "A X B CMS-LINES",
+      "description": "is used in",
+      "weight": "8",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "ICPA 2043",
+      "target": "A X R CMS-LINES",
+      "description": "is used in",
+      "weight": "8",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "A X B CMS-LINES",
+      "target": "ICPH 2671",
+      "description": "produces seeds of",
+      "weight": "9",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "A X R CMS-LINES",
+      "target": "ICPH 2671",
+      "description": "produces seeds of",
+      "weight": "9",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "SPACING",
+      "target": "SEED YIELD",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "LATE SOWING",
+      "target": "SEED YIELD",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "A X B CMS-LINES",
+      "target": "ALFISOLS",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "A X R CMS-LINES",
+      "target": "VERTISOLS",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "ROW RATIO",
+      "target": "SPACING",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "ROW-TO-ROW DISTANCE",
+      "target": "SPACING",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "PLANT-TO-PLANT SPACING",
+      "target": "SPACING",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "ROW RATIO",
+      "target": "SEED YIELD",
+      "description": "does not significantly influence",
+      "weight": "5",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "PLANT-TO-PLANT SPACING",
+      "target": "SEED YIELD",
+      "description": "does not significantly influence",
+      "weight": "5",
+      "source_id": "paper_5259"
+    },
+    {
+      "source": "ICRISAT PATANCHERU",
+      "target": "PIGEONPEA",
+      "description": "location of research on",
+      "weight": "8",
+      "source_id": "paper_5259"
+    }
+  ]
+}

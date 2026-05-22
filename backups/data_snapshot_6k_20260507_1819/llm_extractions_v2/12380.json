@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "CROPLAND",
+      "type": "CROP",
+      "description": "Land used for agricultural crop production",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "BUDYKO MODEL",
+      "type": "METHOD",
+      "description": "A hydrological model used to differentiate between rainfed and irrigated cropland",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "The process of detecting and monitoring the physical characteristics of an area from a distance",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "HIGH-CONFIDENCE CROPLAND MAP",
+      "type": "METHOD",
+      "description": "A map used for the calibration and validation of the crop partitioning framework",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "CROP PARTITIONING FRAMEWORK",
+      "type": "METHOD",
+      "description": "A framework used to disaggregate remote-sensing cropland into rainfed and irrigated classes",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "RAINFED",
+      "type": "CONDITION",
+      "description": "Agricultural land that relies solely on precipitation for water",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "IRRIGATED",
+      "type": "CONDITION",
+      "description": "Agricultural land that receives water through artificial means",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "AGRICULTURAL WATER MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The planning and control of water resources for agricultural use",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "SUSTAINABLE AND RESILIENT AGRICULTURAL SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Agricultural systems designed to maintain productivity and recover from environmental shocks",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "AGRICULTURAL WATER STUDIES",
+      "type": "CONCEPT",
+      "description": "Research and analysis concerning the use and management of water in agriculture",
+      "source_id": "paper_12380"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "The continent where the cropland disaggregation study was conducted",
+      "source_id": "paper_12380"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROP PARTITIONING FRAMEWORK",
+      "target": "BUDYKO MODEL",
+      "description": "incorporates",
+      "weight": "10",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "CROP PARTITIONING FRAMEWORK",
+      "target": "RAINFED",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "CROP PARTITIONING FRAMEWORK",
+      "target": "IRRIGATED",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "CROP PARTITIONING FRAMEWORK",
+      "target": "CROPLAND",
+      "description": "partitions",
+      "weight": "10",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "CROP PARTITIONING FRAMEWORK",
+      "target": "AFRICA",
+      "description": "applied in",
+      "weight": "10",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "HIGH-CONFIDENCE CROPLAND MAP",
+      "target": "CROP PARTITIONING FRAMEWORK",
+      "description": "used for calibration and validation of",
+      "weight": "9",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "REMOTE SENSING",
+      "target": "CROP PARTITIONING FRAMEWORK",
+      "description": "provides landcover products for",
+      "weight": "8",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "RAINFED",
+      "target": "CROPLAND",
+      "description": "is a class of",
+      "weight": "10",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "CROPLAND",
+      "description": "is a class of",
+      "weight": "10",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "AGRICULTURAL WATER MANAGEMENT",
+      "target": "RAINFED",
+      "description": "requires distinction of",
+      "weight": "7",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "AGRICULTURAL WATER MANAGEMENT",
+      "target": "IRRIGATED",
+      "description": "requires distinction of",
+      "weight": "7",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "FOOD SECURITY",
+      "target": "RAINFED",
+      "description": "is impacted by",
+      "weight": "6",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "FOOD SECURITY",
+      "target": "IRRIGATED",
+      "description": "is impacted by",
+      "weight": "6",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "CROP PARTITIONING FRAMEWORK",
+      "target": "AGRICULTURAL WATER STUDIES",
+      "description": "enables data extraction for",
+      "weight": "8",
+      "source_id": "paper_12380"
+    },
+    {
+      "source": "CROP PARTITIONING FRAMEWORK",
+      "target": "SUSTAINABLE AND RESILIENT AGRICULTURAL SYSTEMS",
+      "description": "supports the achievement of",
+      "weight": "7",
+      "source_id": "paper_12380"
+    }
+  ]
+}

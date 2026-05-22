@@ -1,0 +1,206 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, the primary cereal crop studied in the Sudano-Sahelian Zone",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "Vigna unguiculata, a legume used in rotation and intercropping with millet",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "WEST-AFRICAN SAHEL",
+      "type": "LOCATION",
+      "description": "The broader geographic region where the cropping systems are located",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "SADORE, NIGER",
+      "type": "LOCATION",
+      "description": "The specific site where the long-term study was conducted",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "PHOSPHORUS FERTILIZATION",
+      "type": "METHOD",
+      "description": "The application of phosphorus to the soil to enhance crop growth",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "TILLAGE",
+      "type": "METHOD",
+      "description": "The agricultural practice of preparing soil by mechanical agitation",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "CROP ROTATION",
+      "type": "METHOD",
+      "description": "The practice of growing different crops in succession, specifically rotating millet with sole cowpea",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "MILLET-COWPEA INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing pearl millet and cowpea simultaneously in the same field",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "RIDGING WITH ANIMAL TRACTION",
+      "type": "METHOD",
+      "description": "A specific tillage method involving the creation of ridges using animal power",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to evaluate the effects of different agronomic treatments",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of agricultural output for the cropping systems",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain harvested per unit area",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "TOTAL DRY MATTER",
+      "type": "TRAIT",
+      "description": "The total biomass produced by the crops",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "STABILITY",
+      "type": "TRAIT",
+      "description": "The consistency of crop yield across different years and environments",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation, which varies seasonally and affects yield",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "ORGANIC MATTER DEPLETION",
+      "type": "CONDITION",
+      "description": "The linear decline of organic matter levels in the soil over years of cultivation",
+      "source_id": "paper_1868"
+    },
+    {
+      "name": "ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "The organic component of the soil that affects fertility and yield",
+      "source_id": "paper_1868"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHOSPHORUS FERTILIZATION",
+      "target": "PRODUCTIVITY",
+      "description": "increases productivity of millet",
+      "weight": "9",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "TILLAGE",
+      "target": "PRODUCTIVITY",
+      "description": "increases productivity of millet",
+      "weight": "8",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "CROP ROTATION",
+      "target": "PRODUCTIVITY",
+      "description": "increases productivity of millet",
+      "weight": "8",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "PHOSPHORUS FERTILIZATION",
+      "target": "GRAIN YIELD",
+      "description": "improves grain yield",
+      "weight": "10",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "RIDGING WITH ANIMAL TRACTION",
+      "target": "GRAIN YIELD",
+      "description": "improves grain yield when combined with phosphorus fertilization",
+      "weight": "9",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "CROP ROTATION",
+      "target": "GRAIN YIELD",
+      "description": "increases grain yield when combined with other treatments",
+      "weight": "9",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "MILLET-COWPEA INTERCROPPING",
+      "target": "PRODUCTIVITY",
+      "description": "does not cause significant decline in millet productivity",
+      "weight": "6",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "GRAIN YIELD",
+      "description": "seasonal variation affects grain yield",
+      "weight": "7",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "TOTAL DRY MATTER",
+      "description": "seasonal variation affects total dry matter",
+      "weight": "7",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "ORGANIC MATTER DEPLETION",
+      "target": "GRAIN YIELD",
+      "description": "contributes to annual variation in grain yield",
+      "weight": "7",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "ORGANIC MATTER DEPLETION",
+      "target": "TOTAL DRY MATTER",
+      "description": "contributes to annual variation in total dry matter",
+      "weight": "7",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "SADORE, NIGER",
+      "target": "PEARL MILLET",
+      "description": "location where pearl millet was studied",
+      "weight": "10",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "SADORE, NIGER",
+      "target": "COWPEA",
+      "description": "location where cowpea was studied",
+      "weight": "10",
+      "source_id": "paper_1868"
+    },
+    {
+      "source": "WEST-AFRICAN SAHEL",
+      "target": "SADORE, NIGER",
+      "description": "geographic region containing the study site",
+      "weight": "10",
+      "source_id": "paper_1868"
+    }
+  ]
+}

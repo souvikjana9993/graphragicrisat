@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for shootfly resistance",
+      "source_id": "paper_1417"
+    },
+    {
+      "name": "TRICHOMES",
+      "type": "TRAIT",
+      "description": "Hair-like epidermal outgrowths that contribute to shootfly resistance",
+      "source_id": "paper_1417"
+    },
+    {
+      "name": "SHOOTFLY RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of the plant to resist infestation by shootflies",
+      "source_id": "paper_1417"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The field location where the sorghum lines were studied",
+      "source_id": "paper_1417"
+    },
+    {
+      "name": "ATHERIGONA SOCCATA",
+      "type": "ORGANISM",
+      "description": "The shootfly species responsible for causing deadhearts in sorghum",
+      "source_id": "paper_1417"
+    },
+    {
+      "name": "DEADHEARTS",
+      "type": "TRAIT",
+      "description": "A symptom of shootfly attack used as a measure of resistance",
+      "source_id": "paper_1417"
+    },
+    {
+      "name": "F3 AND F4 LINES",
+      "type": "CONCEPT",
+      "description": "Segregating generations derived from trichomed and trichomeless crosses",
+      "source_id": "paper_1417"
+    },
+    {
+      "name": "GENETIC MODELS",
+      "type": "METHOD",
+      "description": "Statistical models used to analyze the inheritance of resistance",
+      "source_id": "paper_1417"
+    },
+    {
+      "name": "LOCI",
+      "type": "GENE_MARKER",
+      "description": "Specific genetic positions that interact to influence shootfly resistance",
+      "source_id": "paper_1417"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "TRICHOMES",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SHOOTFLY RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "TRICHOMES",
+      "target": "SHOOTFLY RESISTANCE",
+      "description": "is a major factor in",
+      "weight": "9",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "ATHERIGONA SOCCATA",
+      "target": "SHOOTFLY RESISTANCE",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "ATHERIGONA SOCCATA",
+      "target": "DEADHEARTS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "TRICHOMES",
+      "target": "DEADHEARTS",
+      "description": "reduces the occurrence of",
+      "weight": "8",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PATANCHERU",
+      "description": "was studied in",
+      "weight": "7",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "F3 AND F4 LINES",
+      "target": "SORGHUM",
+      "description": "are generations of",
+      "weight": "10",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "GENETIC MODELS",
+      "target": "SHOOTFLY RESISTANCE",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "LOCI",
+      "target": "SHOOTFLY RESISTANCE",
+      "description": "are involved in",
+      "weight": "9",
+      "source_id": "paper_1417"
+    },
+    {
+      "source": "LOCI",
+      "target": "TRICHOMES",
+      "description": "interact with",
+      "weight": "7",
+      "source_id": "paper_1417"
+    }
+  ]
+}

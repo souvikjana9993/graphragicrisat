@@ -1,0 +1,293 @@
+{
+  "entities": [
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "The crop species under study for genetic diversity",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "HORDEUM VULGARE L.",
+      "type": "ORGANISM",
+      "description": "Cultivated barley genotypes used in the study",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "HORDEUM SPONTANEUM L.",
+      "type": "ORGANISM",
+      "description": "Wild barley genotypes used in the study",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "SNP",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphism markers used for genotyping",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "SSR",
+      "type": "GENE_MARKER",
+      "description": "Microsatellite or simple sequence repeat markers used for genotyping",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "EST",
+      "type": "GENE_MARKER",
+      "description": "Expressed sequence tags used to derive markers",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "GENETIC VARIATION",
+      "type": "CONCEPT",
+      "description": "The natural diversity within the germplasm collection",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "GERMPLASM COLLECTION",
+      "type": "CONCEPT",
+      "description": "The ICARDA set of barley genotypes from various countries",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "CROP IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The goal of utilizing genetic variation for better crop traits",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "PIC",
+      "type": "METHOD",
+      "description": "Polymorphism information content used to evaluate marker efficiency",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "GENETIC SIMILARITY MATRICES",
+      "type": "METHOD",
+      "description": "Tools used to analyze allelic data and genetic relationships",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The level of variation observed among different accessions",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "MIDDLE EAST ASIA",
+      "type": "LOCATION",
+      "description": "Geographic region showing high genetic diversity in barley",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "NORTH EAST ASIA",
+      "type": "LOCATION",
+      "description": "Geographic region showing high genetic diversity in barley",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "Geographic region providing genotypes with rare alleles",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "ARABIAN PENINSULA",
+      "type": "LOCATION",
+      "description": "Geographic region providing genotypes with rare alleles",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of developing improved barley varieties",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Environmental condition driving the need for drought and heat tolerance",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "SUSTAINABILITY",
+      "type": "CONCEPT",
+      "description": "The goal of maintaining crop production in changing environments",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "A critical trait for future barley breeding",
+      "source_id": "paper_258"
+    },
+    {
+      "name": "HEAT TOLERANCE",
+      "type": "TRAIT",
+      "description": "A critical trait for future barley breeding",
+      "source_id": "paper_258"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SNP",
+      "target": "BARLEY",
+      "description": "used to genotype",
+      "weight": "9",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "SSR",
+      "target": "BARLEY",
+      "description": "used to genotype",
+      "weight": "9",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "EST",
+      "target": "SNP",
+      "description": "derived markers",
+      "weight": "8",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "EST",
+      "target": "SSR",
+      "description": "derived markers",
+      "weight": "8",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "GENETIC VARIATION",
+      "target": "CROP IMPROVEMENT",
+      "description": "utilized for",
+      "weight": "9",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "GERMPLASM COLLECTION",
+      "target": "BARLEY",
+      "description": "contains genotypes of",
+      "weight": "10",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "PIC",
+      "target": "SNP",
+      "description": "measures polymorphism of",
+      "weight": "8",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "PIC",
+      "target": "SSR",
+      "description": "measures polymorphism of",
+      "weight": "8",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "GENETIC SIMILARITY MATRICES",
+      "target": "SNP",
+      "description": "analyzed data from",
+      "weight": "8",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "GENETIC SIMILARITY MATRICES",
+      "target": "SSR",
+      "description": "analyzed data from",
+      "weight": "8",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "MIDDLE EAST ASIA",
+      "description": "higher in",
+      "weight": "7",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "NORTH EAST ASIA",
+      "description": "higher in",
+      "weight": "7",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "AFRICA",
+      "target": "GERMPLASM COLLECTION",
+      "description": "origin of genotypes",
+      "weight": "7",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "MIDDLE EAST ASIA",
+      "target": "GERMPLASM COLLECTION",
+      "description": "origin of genotypes",
+      "weight": "7",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "NORTH EAST ASIA",
+      "target": "GERMPLASM COLLECTION",
+      "description": "origin of genotypes",
+      "weight": "7",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "ARABIAN PENINSULA",
+      "target": "GERMPLASM COLLECTION",
+      "description": "origin of genotypes",
+      "weight": "7",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "BREEDING",
+      "target": "BARLEY",
+      "description": "target of",
+      "weight": "9",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "BREEDING",
+      "description": "necessitates",
+      "weight": "8",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "BREEDING",
+      "description": "target trait for",
+      "weight": "9",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "HEAT TOLERANCE",
+      "target": "BREEDING",
+      "description": "target trait for",
+      "weight": "9",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "GENETIC VARIATION",
+      "target": "BREEDING",
+      "description": "harnessed for",
+      "weight": "9",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "HORDEUM VULGARE L.",
+      "target": "BARLEY",
+      "description": "cultivated species of",
+      "weight": "10",
+      "source_id": "paper_258"
+    },
+    {
+      "source": "HORDEUM SPONTANEUM L.",
+      "target": "BARLEY",
+      "description": "wild species of",
+      "weight": "10",
+      "source_id": "paper_258"
+    }
+  ]
+}

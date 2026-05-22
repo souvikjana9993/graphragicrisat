@@ -1,0 +1,251 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species studied for its response to CO2",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "JG 11",
+      "type": "CROP",
+      "description": "A specific cultivar of chickpea used in the study",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "KAK 2",
+      "type": "CROP",
+      "description": "A specific cultivar of chickpea used in the study",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "ELEVATED CO2 CONCENTRATION",
+      "type": "CONDITION",
+      "description": "Increased levels of carbon dioxide (550 and 700 ppm) used as a stressor",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "AMBIENT CO2 CONCENTRATION",
+      "type": "CONDITION",
+      "description": "Standard carbon dioxide levels (380 ppm) used as a control",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "The broader environmental scenario driving the study",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "SHOOT LENGTH",
+      "type": "TRAIT",
+      "description": "A physiological parameter measuring the length of the shoot",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "ROOT LENGTH",
+      "type": "TRAIT",
+      "description": "A physiological parameter measuring the length of the root",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The number of nodules formed on the roots",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "TOTAL CHLOROPHYLL CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of chlorophyll present in the plant",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "NITROGEN BALANCE INDEX",
+      "type": "TRAIT",
+      "description": "A measure of nitrogen status in the plant",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "RNA-SEQ",
+      "type": "METHOD",
+      "description": "High-throughput sequencing used to profile the transcriptome",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "QRT-PCR",
+      "type": "METHOD",
+      "description": "Method used to validate the expression dynamics of transcription factors",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "OPEN TOP CHAMBERS",
+      "type": "METHOD",
+      "description": "The growth environment used to control CO2 levels",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that show significant changes in expression under different conditions",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "TRANSCRIPTION FACTORS",
+      "type": "GENE_MARKER",
+      "description": "Proteins that regulate the transcription of genes",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "GENE NETWORKS",
+      "type": "CONCEPT",
+      "description": "Interconnected sets of genes that coordinate biological functions",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "SUGAR/STARCH METABOLISM",
+      "type": "CONCEPT",
+      "description": "Biological pathway involved in the processing of sugars and starches",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "CHLOROPHYLL BIOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "Biological pathway for the production of chlorophyll",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "SECONDARY METABOLITES BIOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "Biological pathway for the production of secondary metabolites",
+      "source_id": "paper_11585"
+    },
+    {
+      "name": "GLOBAL TRANSCRIPTOME",
+      "type": "CONCEPT",
+      "description": "The complete set of RNA transcripts produced by the genome",
+      "source_id": "paper_11585"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ELEVATED CO2 CONCENTRATION",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "ELEVATED CO2 CONCENTRATION",
+      "target": "SHOOT LENGTH",
+      "description": "alters",
+      "weight": "8",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "ELEVATED CO2 CONCENTRATION",
+      "target": "ROOT LENGTH",
+      "description": "alters",
+      "weight": "8",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "ELEVATED CO2 CONCENTRATION",
+      "target": "NODULATION",
+      "description": "alters",
+      "weight": "8",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "ELEVATED CO2 CONCENTRATION",
+      "target": "TOTAL CHLOROPHYLL CONTENT",
+      "description": "alters",
+      "weight": "8",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "ELEVATED CO2 CONCENTRATION",
+      "target": "NITROGEN BALANCE INDEX",
+      "description": "alters",
+      "weight": "8",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "RNA-SEQ",
+      "target": "DIFFERENTIALLY EXPRESSED GENES",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "RNA-SEQ",
+      "target": "TRANSCRIPTION FACTORS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "QRT-PCR",
+      "target": "TRANSCRIPTION FACTORS",
+      "description": "validates expression of",
+      "weight": "9",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "JG 11",
+      "description": "includes cultivar",
+      "weight": "10",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "KAK 2",
+      "description": "includes cultivar",
+      "weight": "10",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "OPEN TOP CHAMBERS",
+      "target": "CHICKPEA",
+      "description": "used to grow",
+      "weight": "9",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "ELEVATED CO2 CONCENTRATION",
+      "target": "SUGAR/STARCH METABOLISM",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "ELEVATED CO2 CONCENTRATION",
+      "target": "CHLOROPHYLL BIOSYNTHESIS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "ELEVATED CO2 CONCENTRATION",
+      "target": "SECONDARY METABOLITES BIOSYNTHESIS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "ELEVATED CO2 CONCENTRATION",
+      "description": "characterized by",
+      "weight": "9",
+      "source_id": "paper_11585"
+    },
+    {
+      "source": "RNA-SEQ",
+      "target": "GLOBAL TRANSCRIPTOME",
+      "description": "profiles",
+      "weight": "10",
+      "source_id": "paper_11585"
+    }
+  ]
+}

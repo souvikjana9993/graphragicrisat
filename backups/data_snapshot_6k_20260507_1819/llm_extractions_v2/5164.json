@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Wild and cultivated sorghum, specifically Sorghum bicolor",
+      "source_id": "paper_5164"
+    },
+    {
+      "name": "COMPOSITE GERMPLASM SET",
+      "type": "CONCEPT",
+      "description": "A set of circa 3000 accessions of wild and cultivated sorghum",
+      "source_id": "paper_5164"
+    },
+    {
+      "name": "POPULATION STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The genetic composition and distribution of alleles within the sorghum germplasm",
+      "source_id": "paper_5164"
+    },
+    {
+      "name": "SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat marker loci used for genotyping and determining population structure",
+      "source_id": "paper_5164"
+    },
+    {
+      "name": "LINKAGE GROUPS",
+      "type": "CONCEPT",
+      "description": "The 10 groups of the genome of cultivated Sorghum bicolor where markers are distributed",
+      "source_id": "paper_5164"
+    },
+    {
+      "name": "GENOME",
+      "type": "CONCEPT",
+      "description": "The complete set of genetic material of Sorghum bicolor",
+      "source_id": "paper_5164"
+    },
+    {
+      "name": "REFERENCE GERMPLASM SET",
+      "type": "CONCEPT",
+      "description": "A curated set of sorghum accessions developed for allele mining and linkage disequilibrium mapping",
+      "source_id": "paper_5164"
+    },
+    {
+      "name": "ALLELE MINING",
+      "type": "METHOD",
+      "description": "The process of searching for specific alleles within a germplasm set",
+      "source_id": "paper_5164"
+    },
+    {
+      "name": "LINKAGE DISEQUILIBRIUM MAPPING",
+      "type": "METHOD",
+      "description": "A method used to map traits based on the non-random association of alleles",
+      "source_id": "paper_5164"
+    },
+    {
+      "name": "GENOTYPING",
+      "type": "METHOD",
+      "description": "The process of determining the genetic makeup of the germplasm set",
+      "source_id": "paper_5164"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOTYPING",
+      "target": "COMPOSITE GERMPLASM SET",
+      "description": "Genotyping was performed on the composite germplasm set",
+      "weight": "9",
+      "source_id": "paper_5164"
+    },
+    {
+      "source": "COMPOSITE GERMPLASM SET",
+      "target": "SORGHUM",
+      "description": "The composite germplasm set consists of wild and cultivated sorghum accessions",
+      "weight": "10",
+      "source_id": "paper_5164"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "POPULATION STRUCTURE",
+      "description": "SSR markers were used to determine the population structure",
+      "weight": "9",
+      "source_id": "paper_5164"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "GENOME",
+      "description": "SSR markers are distributed across the genome",
+      "weight": "8",
+      "source_id": "paper_5164"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "LINKAGE GROUPS",
+      "description": "SSR markers are distributed across 10 linkage groups",
+      "weight": "9",
+      "source_id": "paper_5164"
+    },
+    {
+      "source": "POPULATION STRUCTURE",
+      "target": "REFERENCE GERMPLASM SET",
+      "description": "Information on population structure was used to develop the reference germplasm set",
+      "weight": "8",
+      "source_id": "paper_5164"
+    },
+    {
+      "source": "REFERENCE GERMPLASM SET",
+      "target": "SORGHUM",
+      "description": "The reference germplasm set is composed of sorghum",
+      "weight": "10",
+      "source_id": "paper_5164"
+    },
+    {
+      "source": "REFERENCE GERMPLASM SET",
+      "target": "ALLELE MINING",
+      "description": "The reference germplasm set is used for allele mining",
+      "weight": "9",
+      "source_id": "paper_5164"
+    },
+    {
+      "source": "REFERENCE GERMPLASM SET",
+      "target": "LINKAGE DISEQUILIBRIUM MAPPING",
+      "description": "The reference germplasm set is used for linkage disequilibrium mapping",
+      "weight": "9",
+      "source_id": "paper_5164"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "REFERENCE GERMPLASM SET",
+      "description": "Additional SSR markers were used to validate the population structure of the reference germplasm set",
+      "weight": "8",
+      "source_id": "paper_5164"
+    }
+  ]
+}

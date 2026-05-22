@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "The crop species used in the study for genomic DNA isolation and genotyping",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "GENOMIC DNA ISOLATION",
+      "type": "METHOD",
+      "description": "The process of extracting genomic DNA from plant tissues, which is complicated by secondary metabolites in cotton",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "SECONDARY METABOLITES",
+      "type": "CONCEPT",
+      "description": "Chemical compounds present in cotton that are inhibitory to PCR amplification",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "PCR AMPLIFICATION",
+      "type": "METHOD",
+      "description": "The process of amplifying specific DNA sequences, which can be inhibited by secondary metabolites",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "RADICLE TIPS",
+      "type": "CONCEPT",
+      "description": "The tips of the embryonic root in cotton seedlings that yield high-quality DNA amenable for PCR",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "PCR",
+      "type": "METHOD",
+      "description": "Polymerase Chain Reaction, a method used for genotyping and melting curve analysis",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "ADVENTITIOUS ROOTS",
+      "type": "TRAIT",
+      "description": "Roots that form in cotton seedlings after radicle tip excision, allowing the seedlings to retain viability",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "GENOTYPING",
+      "type": "METHOD",
+      "description": "The process of determining the genetic constitution of an individual, used to distinguish homozygotes from heterozygotes",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "MELTING CURVE ANALYSIS",
+      "type": "METHOD",
+      "description": "A PCR-based analysis method used for genomic study in cotton",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "HOMOZYGOTES",
+      "type": "CONCEPT",
+      "description": "Individuals having two identical alleles for a particular gene, distinguished through genotyping",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "HETEROZYGOTES",
+      "type": "CONCEPT",
+      "description": "Individuals having two different alleles for a particular gene, distinguished through genotyping",
+      "source_id": "paper_6467"
+    },
+    {
+      "name": "HYBRID SEED PURITY TESTING",
+      "type": "METHOD",
+      "description": "A method used to verify the genetic purity of hybrid cotton seeds",
+      "source_id": "paper_6467"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOMIC DNA ISOLATION",
+      "target": "COTTON",
+      "description": "is performed on",
+      "weight": "9",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "SECONDARY METABOLITES",
+      "target": "GENOMIC DNA ISOLATION",
+      "description": "complicates",
+      "weight": "8",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "SECONDARY METABOLITES",
+      "target": "PCR AMPLIFICATION",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "RADICLE TIPS",
+      "target": "GENOMIC DNA ISOLATION",
+      "description": "serves as a source for",
+      "weight": "10",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "RADICLE TIPS",
+      "target": "PCR",
+      "description": "provides DNA amenable for",
+      "weight": "9",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "RADICLE TIPS",
+      "target": "ADVENTITIOUS ROOTS",
+      "description": "excision leads to formation of",
+      "weight": "7",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "GENOTYPING",
+      "target": "COTTON",
+      "description": "is applied to breeding populations of",
+      "weight": "8",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "MELTING CURVE ANALYSIS",
+      "target": "COTTON",
+      "description": "is applied to",
+      "weight": "8",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "GENOTYPING",
+      "target": "HOMOZYGOTES",
+      "description": "distinguishes",
+      "weight": "9",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "GENOTYPING",
+      "target": "HETEROZYGOTES",
+      "description": "distinguishes",
+      "weight": "9",
+      "source_id": "paper_6467"
+    },
+    {
+      "source": "HYBRID SEED PURITY TESTING",
+      "target": "COTTON",
+      "description": "is performed on",
+      "weight": "8",
+      "source_id": "paper_6467"
+    }
+  ]
+}

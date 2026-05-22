@@ -1,0 +1,176 @@
+{
+  "entities": [
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "Region in Africa where soil fertility is a major constraint to crop productivity",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of crop yield and efficiency in agricultural production",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONDITION",
+      "description": "The capacity of soil to provide essential nutrients for plant growth",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "An essential mineral nutrient required for plant growth, often limiting in West African soils",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "SOLUBLE P FERTILIZERS",
+      "type": "CONCEPT",
+      "description": "Commercially available phosphorus fertilizers that are water-soluble and often expensive",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "PHOSPHATE ROCK",
+      "type": "CONCEPT",
+      "description": "Locally available mineral deposits used as an alternative source of phosphorus for soil supply",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "MINERAL PLANT NUTRITION",
+      "type": "CONCEPT",
+      "description": "The process of providing essential minerals to plants for healthy growth",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "CHEMICAL AND MINERALOGICAL COMPOSITION",
+      "type": "TRAIT",
+      "description": "The internal makeup of phosphate rocks that determines their effectiveness",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "ENVIRONMENTAL CONDITIONS",
+      "type": "CONDITION",
+      "description": "External factors that influence the effectiveness of phosphate rock application",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "The plants being cultivated for agricultural production",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Agricultural techniques and strategies used to manage crops and soil",
+      "source_id": "paper_10579"
+    },
+    {
+      "name": "FERTILIZER RECOMMENDATIONS",
+      "type": "METHOD",
+      "description": "Guidelines for the application of mineral fertilizers to optimize crop growth",
+      "source_id": "paper_10579"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WEST AFRICA",
+      "target": "SOIL FERTILITY",
+      "description": "Location where low soil fertility is a constraint",
+      "weight": "8",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "SOIL FERTILITY",
+      "target": "CROP PRODUCTIVITY",
+      "description": "Low soil fertility constrains crop productivity",
+      "weight": "9",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "SOIL FERTILITY",
+      "description": "Deficiency in phosphorus leads to low soil fertility",
+      "weight": "10",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "CROP PRODUCTIVITY",
+      "description": "Phosphorus limitation compromises crop production",
+      "weight": "9",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "SOLUBLE P FERTILIZERS",
+      "target": "PHOSPHORUS",
+      "description": "Provides available phosphorus to the soil",
+      "weight": "10",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "PHOSPHATE ROCK",
+      "target": "PHOSPHORUS",
+      "description": "Provides an alternative source of phosphorus for soil supply",
+      "weight": "10",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "PHOSPHATE ROCK",
+      "target": "MINERAL PLANT NUTRITION",
+      "description": "Ensures mineral plant nutrition",
+      "weight": "8",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "CHEMICAL AND MINERALOGICAL COMPOSITION",
+      "target": "PHOSPHATE ROCK",
+      "description": "Determines the effectiveness of the phosphate rock",
+      "weight": "10",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "ENVIRONMENTAL CONDITIONS",
+      "target": "PHOSPHATE ROCK",
+      "description": "Influences the effectiveness of phosphate rock",
+      "weight": "7",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "CROPS",
+      "target": "PHOSPHATE ROCK",
+      "description": "The type of crop influences the effectiveness of phosphate rock",
+      "weight": "7",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "MANAGEMENT PRACTICES",
+      "target": "PHOSPHATE ROCK",
+      "description": "Influences the effectiveness of phosphate rock",
+      "weight": "7",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "PHOSPHATE ROCK",
+      "target": "FERTILIZER RECOMMENDATIONS",
+      "description": "Can be integrated into fertilizer recommendations for crops",
+      "weight": "8",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "SOLUBLE P FERTILIZERS",
+      "target": "CROP PRODUCTIVITY",
+      "description": "Used to enhance crop productivity but are expensive",
+      "weight": "8",
+      "source_id": "paper_10579"
+    },
+    {
+      "source": "PHOSPHATE ROCK",
+      "target": "CROP PRODUCTIVITY",
+      "description": "Economical alternative to soluble fertilizers for enhancing productivity",
+      "weight": "8",
+      "source_id": "paper_10579"
+    }
+  ]
+}

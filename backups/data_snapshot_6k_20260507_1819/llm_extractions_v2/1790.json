@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A legume crop studied for its pollination mechanisms.",
+      "source_id": "paper_1790"
+    },
+    {
+      "name": "GENETIC MALE STERILITY",
+      "type": "TRAIT",
+      "description": "A condition where the plant is unable to produce functional pollen due to nuclear genetic factors.",
+      "source_id": "paper_1790"
+    },
+    {
+      "name": "CYTOPLASMIC MALE STERILITY",
+      "type": "TRAIT",
+      "description": "A condition where the plant is unable to produce functional pollen due to mitochondrial genetic factors.",
+      "source_id": "paper_1790"
+    },
+    {
+      "name": "ICPL 85010",
+      "type": "CROP",
+      "description": "A specific pigeon pea line used as a pollen source in the experiment.",
+      "source_id": "paper_1790"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where the pigeon pea plants were grown.",
+      "source_id": "paper_1790"
+    },
+    {
+      "name": "EVAPORATIVE COOLERS",
+      "type": "CONDITION",
+      "description": "Equipment used to maintain temperature and provide airflow in the greenhouse.",
+      "source_id": "paper_1790"
+    },
+    {
+      "name": "POD SETTING",
+      "type": "TRAIT",
+      "description": "The formation of pods on the plant, used as an indicator of successful pollination.",
+      "source_id": "paper_1790"
+    },
+    {
+      "name": "WIND POLLINATION",
+      "type": "CONCEPT",
+      "description": "The process of pollen transfer from the anther to the stigma via wind.",
+      "source_id": "paper_1790"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEON PEA",
+      "target": "GENETIC MALE STERILITY",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_1790"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "CYTOPLASMIC MALE STERILITY",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_1790"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "WIND POLLINATION",
+      "description": "is capable of",
+      "weight": "10",
+      "source_id": "paper_1790"
+    },
+    {
+      "source": "ICPL 85010",
+      "target": "PIGEON PEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_1790"
+    },
+    {
+      "source": "ICPL 85010",
+      "target": "WIND POLLINATION",
+      "description": "acts as pollen source for",
+      "weight": "8",
+      "source_id": "paper_1790"
+    },
+    {
+      "source": "EVAPORATIVE COOLERS",
+      "target": "WIND POLLINATION",
+      "description": "facilitates",
+      "weight": "8",
+      "source_id": "paper_1790"
+    },
+    {
+      "source": "WIND POLLINATION",
+      "target": "POD SETTING",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_1790"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "PIGEON PEA",
+      "description": "is the growth location for",
+      "weight": "7",
+      "source_id": "paper_1790"
+    }
+  ]
+}

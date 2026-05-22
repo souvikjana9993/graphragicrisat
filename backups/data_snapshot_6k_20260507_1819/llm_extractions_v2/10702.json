@@ -1,0 +1,255 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The target crop of the study subjected to drought and low phosphorus stress",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Water stress (WS) that acts as a major constraint to groundnut productivity",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "LOW PHOSPHORUS",
+      "type": "CONDITION",
+      "description": "Low soil phosphorus (LP) deficiency that acts as a major constraint to groundnut productivity",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A canopy measurement correlated to pod weight and relevant for LP tolerance",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "ROOTS VOLUME",
+      "type": "TRAIT",
+      "description": "A root-related trait measured under stress conditions",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "ROOT LENGTH DENSITY",
+      "type": "TRAIT",
+      "description": "A root-related trait that contributes to water uptake to avoid dehydration",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "ROOTS DRY MATTER",
+      "type": "TRAIT",
+      "description": "A root-related trait measured under stress conditions",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "WATER EXTRACTION",
+      "type": "TRAIT",
+      "description": "The process of water uptake from the soil, decreased by WS and LP",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency of water use, which increases under WS and decreases under LP",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "SOIL MOISTURE CONTENT",
+      "type": "TRAIT",
+      "description": "A measure of water in the soil showing genotypic variation in extraction patterns",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The overall productivity of the groundnut crop",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "POD WEIGHT",
+      "type": "TRAIT",
+      "description": "A yield component decreased by low phosphorus stress",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "LYSIMETRE",
+      "type": "METHOD",
+      "description": "A controlled condition method used to assess groundnut varieties",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "ICGV 12991",
+      "type": "CROP",
+      "description": "A groundnut variety showing high LAI, Pwt, WEx, RLD, RDM and tolerance to WS-LP",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "12CS-116",
+      "type": "CROP",
+      "description": "A groundnut variety showing high LAI, Pwt, WEx, RLD, RDM and tolerance to WS-LP",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "55-437",
+      "type": "CROP",
+      "description": "A groundnut variety showing high transpiration efficiency and tolerance to WS-LP",
+      "source_id": "paper_10702"
+    },
+    {
+      "name": "BREEDING PROGRAM",
+      "type": "CONCEPT",
+      "description": "The objective of identifying traits for groundnut improvement under stress",
+      "source_id": "paper_10702"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "DROUGHT",
+      "description": "is constrained by",
+      "weight": "9",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "LOW PHOSPHORUS",
+      "description": "is constrained by",
+      "weight": "9",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "LOW PHOSPHORUS",
+      "target": "LEAF AREA INDEX",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "LOW PHOSPHORUS",
+      "target": "POD WEIGHT",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "POD WEIGHT",
+      "description": "is correlated to",
+      "weight": "7",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "WATER EXTRACTION",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "LOW PHOSPHORUS",
+      "target": "WATER EXTRACTION",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "LOW PHOSPHORUS",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "decreases",
+      "weight": "7",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "ICGV 12991",
+      "target": "DROUGHT",
+      "description": "is tolerant to",
+      "weight": "9",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "ICGV 12991",
+      "target": "LOW PHOSPHORUS",
+      "description": "is tolerant to",
+      "weight": "9",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "12CS-116",
+      "target": "DROUGHT",
+      "description": "is tolerant to",
+      "weight": "9",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "12CS-116",
+      "target": "LOW PHOSPHORUS",
+      "description": "is tolerant to",
+      "weight": "9",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "55-437",
+      "target": "DROUGHT",
+      "description": "is tolerant to",
+      "weight": "8",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "55-437",
+      "target": "LOW PHOSPHORUS",
+      "description": "is tolerant to",
+      "weight": "8",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "ROOT LENGTH DENSITY",
+      "target": "WATER EXTRACTION",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "GROUNDNUT",
+      "description": "is a trait for improvement of",
+      "weight": "7",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "ROOT LENGTH DENSITY",
+      "target": "GROUNDNUT",
+      "description": "is a trait for improvement of",
+      "weight": "7",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "WATER EXTRACTION",
+      "target": "GROUNDNUT",
+      "description": "is a trait for improvement of",
+      "weight": "7",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "GROUNDNUT",
+      "description": "is a trait for improvement of",
+      "weight": "7",
+      "source_id": "paper_10702"
+    },
+    {
+      "source": "LYSIMETRE",
+      "target": "GROUNDNUT",
+      "description": "is used to assess",
+      "weight": "6",
+      "source_id": "paper_10702"
+    }
+  ]
+}

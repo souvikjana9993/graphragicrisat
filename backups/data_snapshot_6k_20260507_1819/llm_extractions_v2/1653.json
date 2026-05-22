@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "P-1329",
+      "type": "CROP",
+      "description": "A superior chickpea cultivar adapted to early sowing in peninsular India",
+      "source_id": "paper_1653"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop species to which P-1329 and Annigeri belong",
+      "source_id": "paper_1653"
+    },
+    {
+      "name": "ANNIGERI",
+      "type": "CROP",
+      "description": "A chickpea cultivar used as a comparison for yield",
+      "source_id": "paper_1653"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of agricultural productivity",
+      "source_id": "paper_1653"
+    },
+    {
+      "name": "EARLY SOWING",
+      "type": "CONDITION",
+      "description": "The practice of planting crops before the normal sowing time",
+      "source_id": "paper_1653"
+    },
+    {
+      "name": "NORMAL SOWING TIME",
+      "type": "CONDITION",
+      "description": "The standard time for planting crops",
+      "source_id": "paper_1653"
+    },
+    {
+      "name": "PENINSULAR INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the study was conducted",
+      "source_id": "paper_1653"
+    },
+    {
+      "name": "MONSOON",
+      "type": "CONDITION",
+      "description": "The seasonal wind and rain pattern that influences sowing time",
+      "source_id": "paper_1653"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "P-1329",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_1653"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_1653"
+    },
+    {
+      "source": "P-1329",
+      "target": "YIELD",
+      "description": "outyielded Annigeri when sown early",
+      "weight": "9",
+      "source_id": "paper_1653"
+    },
+    {
+      "source": "P-1329",
+      "target": "EARLY SOWING",
+      "description": "is adapted to",
+      "weight": "9",
+      "source_id": "paper_1653"
+    },
+    {
+      "source": "P-1329",
+      "target": "PENINSULAR INDIA",
+      "description": "is adapted to this region",
+      "weight": "8",
+      "source_id": "paper_1653"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "PENINSULAR INDIA",
+      "description": "is grown in this region",
+      "weight": "8",
+      "source_id": "paper_1653"
+    },
+    {
+      "source": "EARLY SOWING",
+      "target": "PENINSULAR INDIA",
+      "description": "is a practice used in this region",
+      "weight": "7",
+      "source_id": "paper_1653"
+    },
+    {
+      "source": "NORMAL SOWING TIME",
+      "target": "PENINSULAR INDIA",
+      "description": "is a practice used in this region",
+      "weight": "7",
+      "source_id": "paper_1653"
+    },
+    {
+      "source": "NORMAL SOWING TIME",
+      "target": "MONSOON",
+      "description": "varies depending on the end of",
+      "weight": "8",
+      "source_id": "paper_1653"
+    },
+    {
+      "source": "EARLY SOWING",
+      "target": "MONSOON",
+      "description": "varies depending on the end of",
+      "weight": "8",
+      "source_id": "paper_1653"
+    }
+  ]
+}

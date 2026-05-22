@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop grown at the ICRISAT Center.",
+      "source_id": "paper_2756"
+    },
+    {
+      "name": "ICRISAT CENTER",
+      "type": "LOCATION",
+      "description": "The research center where chickpea is grown.",
+      "source_id": "paper_2756"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The season in which chickpea is grown as a crop.",
+      "source_id": "paper_2756"
+    },
+    {
+      "name": "RESIDUAL MOISTURE",
+      "type": "CONDITION",
+      "description": "The moisture remaining in the soil used for growing chickpea.",
+      "source_id": "paper_2756"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "The artificial application of water to land or soil.",
+      "source_id": "paper_2756"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A period of abnormally dry weather, regarded as the foremost abiotic stress factor for chickpea.",
+      "source_id": "paper_2756"
+    },
+    {
+      "name": "ABIOTIC STRESS FACTOR",
+      "type": "CONCEPT",
+      "description": "Non-living factors that cause stress to plants, such as drought.",
+      "source_id": "paper_2756"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "ICRISAT CENTER",
+      "description": "grown at",
+      "weight": "8",
+      "source_id": "paper_2756"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "RAINY SEASON",
+      "description": "grown as a crop during",
+      "weight": "7",
+      "source_id": "paper_2756"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "RESIDUAL MOISTURE",
+      "description": "grown on",
+      "weight": "8",
+      "source_id": "paper_2756"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "IRRIGATION",
+      "description": "often grown without",
+      "weight": "7",
+      "source_id": "paper_2756"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "DROUGHT",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_2756"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "ABIOTIC STRESS FACTOR",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2756"
+    }
+  ]
+}

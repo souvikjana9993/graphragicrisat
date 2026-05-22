@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Groundnut plants suspected of having viral symptoms",
+      "source_id": "paper_1560"
+    },
+    {
+      "name": "VIRAL SYMPTOMS",
+      "type": "CONDITION",
+      "description": "Symptoms in groundnut plants suspected to be caused by a virus",
+      "source_id": "paper_1560"
+    },
+    {
+      "name": "VIRUS",
+      "type": "ORGANISM",
+      "description": "The viral agent being identified in groundnut plants",
+      "source_id": "paper_1560"
+    },
+    {
+      "name": "IDENTIFICATION PROCEDURES",
+      "type": "METHOD",
+      "description": "Procedures for identifying viral symptoms, recording data, and collecting samples",
+      "source_id": "paper_1560"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "IDENTIFICATION PROCEDURES",
+      "target": "GROUNDNUT",
+      "description": "used to identify viral infections in",
+      "weight": "8",
+      "source_id": "paper_1560"
+    },
+    {
+      "source": "IDENTIFICATION PROCEDURES",
+      "target": "VIRAL SYMPTOMS",
+      "description": "used to record and identify",
+      "weight": "9",
+      "source_id": "paper_1560"
+    },
+    {
+      "source": "IDENTIFICATION PROCEDURES",
+      "target": "VIRUS",
+      "description": "used to identify the specific",
+      "weight": "9",
+      "source_id": "paper_1560"
+    },
+    {
+      "source": "VIRUS",
+      "target": "VIRAL SYMPTOMS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1560"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "VIRAL SYMPTOMS",
+      "description": "exhibits",
+      "weight": "7",
+      "source_id": "paper_1560"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "entities": [
+    {
+      "name": "RAINWATER",
+      "type": "CONDITION",
+      "description": "Water falling as rain on the land, the primary resource for water conservation",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "IN SITU WATER CONSERVATION",
+      "type": "METHOD",
+      "description": "The practice of conserving water where it falls on the land to improve agricultural productivity",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "FARMING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The integrated components of farming, ranging from land preparation to crop harvest",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "PLOUGHING",
+      "type": "METHOD",
+      "description": "The process of preparing the land for planting as part of the farming system",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "HARVEST",
+      "type": "METHOD",
+      "description": "The process of gathering mature crops as the final stage of the farming system",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "The agricultural plants grown within the farming system",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "DEEP VERTISOLS",
+      "type": "CONDITION",
+      "description": "A type of deep, clay-rich soil that can show productivity increases with water conservation",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "MEDIUM RAINFALL",
+      "type": "CONDITION",
+      "description": "An intermediate level of precipitation that influences the effectiveness of water conservation",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of agricultural output, which can increase three to five-fold with proper water management",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "LAND DEVELOPMENT",
+      "type": "METHOD",
+      "description": "The process of improving land to enhance water utilization, often executed on a watershed basis",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "WATER UTILISATION",
+      "type": "CONCEPT",
+      "description": "The effective use of water resources on agricultural land",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "WATERSHEDS",
+      "type": "LOCATION",
+      "description": "Geographic land areas that channel rainfall to a common outlet, used as a basis for land development",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "RESOURCE MANAGEMENT SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Systems designed for the improved management of agricultural resources",
+      "source_id": "paper_5122"
+    },
+    {
+      "name": "ORGANIZATIONAL AND ADMINISTRATIVE STRUCTURES",
+      "type": "CONCEPT",
+      "description": "The organizational frameworks required for the operation and maintenance of resource management systems",
+      "source_id": "paper_5122"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "IN SITU WATER CONSERVATION",
+      "target": "RAINWATER",
+      "description": "manages",
+      "weight": "10",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "IN SITU WATER CONSERVATION",
+      "target": "FARMING SYSTEMS",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "PLOUGHING",
+      "target": "FARMING SYSTEMS",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "HARVEST",
+      "target": "FARMING SYSTEMS",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "FARMING SYSTEMS",
+      "target": "CROP",
+      "description": "involves",
+      "weight": "8",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "IN SITU WATER CONSERVATION",
+      "target": "PRODUCTIVITY",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "DEEP VERTISOLS",
+      "target": "PRODUCTIVITY",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "MEDIUM RAINFALL",
+      "target": "PRODUCTIVITY",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "LAND DEVELOPMENT",
+      "target": "WATER UTILISATION",
+      "description": "improves",
+      "weight": "10",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "LAND DEVELOPMENT",
+      "target": "WATERSHEDS",
+      "description": "is executed on the basis of",
+      "weight": "9",
+      "source_id": "paper_5122"
+    },
+    {
+      "source": "RESOURCE MANAGEMENT SYSTEMS",
+      "target": "ORGANIZATIONAL AND ADMINISTRATIVE STRUCTURES",
+      "description": "necessitates",
+      "weight": "9",
+      "source_id": "paper_5122"
+    }
+  ]
+}

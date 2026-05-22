@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A pulse crop (Cicer arietinum L.) used for nitrogen determination in leaf, stem, and seed samples.",
+      "source_id": "paper_3413"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A pulse crop (Cajanus cajan L.) used for nitrogen determination in leaf, stem, and seed samples.",
+      "source_id": "paper_3413"
+    },
+    {
+      "name": "TOTAL NITROGEN",
+      "type": "TRAIT",
+      "description": "The total amount of nitrogen present in plant tissues and grain samples.",
+      "source_id": "paper_3413"
+    },
+    {
+      "name": "HYDROGEN PEROXIDE DIGESTION",
+      "type": "METHOD",
+      "description": "A digestion procedure using hydrogen peroxide (H2O2) as an alternative to catalysts for nitrogen determination.",
+      "source_id": "paper_3413"
+    },
+    {
+      "name": "MICROKJELDAHL",
+      "type": "METHOD",
+      "description": "A nitrogen determination method (MKJ) that can use mercury as a catalyst.",
+      "source_id": "paper_3413"
+    },
+    {
+      "name": "TECHNICON AUTO ANALYSER",
+      "type": "METHOD",
+      "description": "A nitrogen determination method (TAA) that can use selenium as a catalyst.",
+      "source_id": "paper_3413"
+    },
+    {
+      "name": "MERCURY",
+      "type": "CONCEPT",
+      "description": "A catalyst used in nitrogen digestion procedures, noted for cost and health hazards.",
+      "source_id": "paper_3413"
+    },
+    {
+      "name": "SELENIUM",
+      "type": "CONCEPT",
+      "description": "A catalyst used in nitrogen digestion procedures, noted for cost and health hazards.",
+      "source_id": "paper_3413"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HYDROGEN PEROXIDE DIGESTION",
+      "target": "TOTAL NITROGEN",
+      "description": "used for the determination of",
+      "weight": "10",
+      "source_id": "paper_3413"
+    },
+    {
+      "source": "MICROKJELDAHL",
+      "target": "TOTAL NITROGEN",
+      "description": "used for the determination of",
+      "weight": "10",
+      "source_id": "paper_3413"
+    },
+    {
+      "source": "TECHNICON AUTO ANALYSER",
+      "target": "TOTAL NITROGEN",
+      "description": "used for the determination of",
+      "weight": "10",
+      "source_id": "paper_3413"
+    },
+    {
+      "source": "HYDROGEN PEROXIDE DIGESTION",
+      "target": "CHICKPEA",
+      "description": "applied to samples of",
+      "weight": "9",
+      "source_id": "paper_3413"
+    },
+    {
+      "source": "HYDROGEN PEROXIDE DIGESTION",
+      "target": "PIGEONPEA",
+      "description": "applied to samples of",
+      "weight": "9",
+      "source_id": "paper_3413"
+    },
+    {
+      "source": "MERCURY",
+      "target": "MICROKJELDAHL",
+      "description": "used as a catalyst in",
+      "weight": "9",
+      "source_id": "paper_3413"
+    },
+    {
+      "source": "SELENIUM",
+      "target": "TECHNICON AUTO ANALYSER",
+      "description": "used as a catalyst in",
+      "weight": "9",
+      "source_id": "paper_3413"
+    },
+    {
+      "source": "HYDROGEN PEROXIDE DIGESTION",
+      "target": "MERCURY",
+      "description": "serves as an alternative to",
+      "weight": "8",
+      "source_id": "paper_3413"
+    },
+    {
+      "source": "HYDROGEN PEROXIDE DIGESTION",
+      "target": "SELENIUM",
+      "description": "serves as an alternative to",
+      "weight": "8",
+      "source_id": "paper_3413"
+    }
+  ]
+}

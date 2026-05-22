@@ -1,0 +1,198 @@
+{
+  "entities": [
+    {
+      "name": "WHITE GRUBS",
+      "type": "ORGANISM",
+      "description": "Larval scarabaeids that act as pests by damaging the roots of groundnut plants",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The peanut plant, which is the subject of the study",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "ROOT DAMAGE",
+      "type": "CONDITION",
+      "description": "The impairment of the root system caused by pests or physical cutting",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "SIMULATED WHITE GRUB DAMAGE",
+      "type": "METHOD",
+      "description": "A developed method to mimic the feeding activity of white grubs to study plant growth",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "The overall development and biomass increase of the groundnut plant",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "ROOT CUTTING",
+      "type": "METHOD",
+      "description": "The experimental process of cutting roots at specific depths and stages",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "The condition of limited water availability that accentuates the effects of root damage",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "WATER USE",
+      "type": "TRAIT",
+      "description": "The measurement of water uptake and utilization by the plant",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "BIOMASS PRODUCTION",
+      "type": "TRAIT",
+      "description": "The total organic matter produced by the plant",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The production of pods, which is the primary yield component of groundnut",
+      "source_id": "paper_3228"
+    },
+    {
+      "name": "PHENOLOGICAL STAGE",
+      "type": "CONCEPT",
+      "description": "The specific growth stage of the plant, such as late vegetative or early podfilling",
+      "source_id": "paper_3228"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WHITE GRUBS",
+      "target": "GROUNDNUT",
+      "description": "cause damage to",
+      "weight": "10",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "WHITE GRUBS",
+      "target": "ROOT DAMAGE",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "SIMULATED WHITE GRUB DAMAGE",
+      "target": "GROUNDNUT",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "SIMULATED WHITE GRUB DAMAGE",
+      "target": "PLANT GROWTH",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "ROOT CUTTING",
+      "target": "ROOT DAMAGE",
+      "description": "simulates",
+      "weight": "10",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "ROOT CUTTING",
+      "target": "WATER USE",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "ROOT CUTTING",
+      "target": "BIOMASS PRODUCTION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "WATER USE",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "BIOMASS PRODUCTION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "POD YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "ROOT DAMAGE",
+      "target": "WATER USE",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "ROOT DAMAGE",
+      "target": "BIOMASS PRODUCTION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "ROOT DAMAGE",
+      "target": "POD YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "PHENOLOGICAL STAGE",
+      "target": "ROOT DAMAGE",
+      "description": "influences recovery from",
+      "weight": "9",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "PHENOLOGICAL STAGE",
+      "target": "POD YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "WATER USE",
+      "target": "BIOMASS PRODUCTION",
+      "description": "positively correlated with",
+      "weight": "10",
+      "source_id": "paper_3228"
+    },
+    {
+      "source": "WATER USE",
+      "target": "POD YIELD",
+      "description": "positively correlated with",
+      "weight": "10",
+      "source_id": "paper_3228"
+    }
+  ]
+}

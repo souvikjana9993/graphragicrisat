@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop targeted by stem borers",
+      "source_id": "paper_4548"
+    },
+    {
+      "name": "SORGHUM STEM BORERS",
+      "type": "ORGANISM",
+      "description": "Pests that infest sorghum crops",
+      "source_id": "paper_4548"
+    },
+    {
+      "name": "CONTROL MEASURES",
+      "type": "METHOD",
+      "description": "Strategies and methods used to manage sorghum stem borers",
+      "source_id": "paper_4548"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where the control measures are recommended for farmers",
+      "source_id": "paper_4548"
+    },
+    {
+      "name": "FARMER-ORIENTED RESEARCH",
+      "type": "CONCEPT",
+      "description": "A research approach focused on the needs and constraints of farmers regarding control methods",
+      "source_id": "paper_4548"
+    },
+    {
+      "name": "FARM-AND SECTOR-LEVEL CONSTRAINTS",
+      "type": "CONCEPT",
+      "description": "Barriers at the farm and sector levels that affect the adaptation of control measures",
+      "source_id": "paper_4548"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CONTROL MEASURES",
+      "target": "SORGHUM STEM BORERS",
+      "description": "used to control",
+      "weight": "10",
+      "source_id": "paper_4548"
+    },
+    {
+      "source": "SORGHUM STEM BORERS",
+      "target": "SORGHUM",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_4548"
+    },
+    {
+      "source": "CONTROL MEASURES",
+      "target": "SEMI-ARID TROPICS",
+      "description": "recommended for use in",
+      "weight": "8",
+      "source_id": "paper_4548"
+    },
+    {
+      "source": "FARM-AND SECTOR-LEVEL CONSTRAINTS",
+      "target": "CONTROL MEASURES",
+      "description": "hinder adaptation of",
+      "weight": "9",
+      "source_id": "paper_4548"
+    },
+    {
+      "source": "FARMER-ORIENTED RESEARCH",
+      "target": "CONTROL MEASURES",
+      "description": "approach for developing",
+      "weight": "7",
+      "source_id": "paper_4548"
+    }
+  ]
+}

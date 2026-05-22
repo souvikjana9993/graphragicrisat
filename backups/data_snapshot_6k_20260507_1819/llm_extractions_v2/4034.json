@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used in monocropping and intercropping to study residual effects on subsequent crops.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used in monocropping and intercropping treatments.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The subsequent crop used to measure the residual effects of previous crops.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced by the subsequent maize crop.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "TOTAL PLANT DRY MATTER",
+      "type": "TRAIT",
+      "description": "The total biomass of the subsequent maize crop.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "The specific type of soil field where the experiment was conducted.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research institution where the experiment took place.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "FALLOW",
+      "type": "CONDITION",
+      "description": "A treatment where the land is left unplanted during the previous season.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "NITROGEN APPLICATION",
+      "type": "CONDITION",
+      "description": "The application of nitrogen fertilizer at levels of 0 and 80 kg N/ha.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "RESIDUAL EFFECT",
+      "type": "CONCEPT",
+      "description": "The influence of a previous crop on the growth and yield of a subsequent crop.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "MONOCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing a single crop species in a field.",
+      "source_id": "paper_4034"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously in the same field.",
+      "source_id": "paper_4034"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "RESIDUAL EFFECT",
+      "description": "Pigeonpea exhibits a residual effect on subsequent crops",
+      "weight": "9",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "RESIDUAL EFFECT",
+      "target": "MAIZE",
+      "description": "The residual effect is measured on the subsequent maize crop",
+      "weight": "9",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "MONOCROPPING",
+      "target": "PIGEONPEA",
+      "description": "Pigeonpea was grown using a monocropping method",
+      "weight": "8",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PIGEONPEA",
+      "description": "Pigeonpea was grown using an intercropping method",
+      "weight": "8",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "SORGHUM",
+      "description": "Sorghum was grown as an intercrop with pigeonpea",
+      "weight": "8",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "MONOCROPPING",
+      "target": "SORGHUM",
+      "description": "Sorghum was grown using a monocropping method",
+      "weight": "8",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "GRAIN YIELD",
+      "description": "Monocropped pigeonpea increased the grain yield of the subsequent maize crop",
+      "weight": "9",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "TOTAL PLANT DRY MATTER",
+      "description": "Monocropped pigeonpea increased the total plant dry matter of the subsequent maize crop",
+      "weight": "9",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "ICRISAT",
+      "description": "The Vertisol field is located at ICRISAT",
+      "weight": "7",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "SORGHUM",
+      "description": "Nitrogen was applied to monocropped and intercropped sorghum",
+      "weight": "7",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "PIGEONPEA",
+      "description": "Nitrogen was applied to intercropped pigeonpea",
+      "weight": "7",
+      "source_id": "paper_4034"
+    },
+    {
+      "source": "FALLOW",
+      "target": "MAIZE",
+      "description": "Maize was grown on fallow land as a control treatment",
+      "weight": "8",
+      "source_id": "paper_4034"
+    }
+  ]
+}

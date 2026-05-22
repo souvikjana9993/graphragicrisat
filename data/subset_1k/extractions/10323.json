@@ -1,0 +1,247 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop that releases biological nitrification inhibitors from its roots to manage nitrogen in the soil",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "BIOLOGICAL NITRIFICATION INHIBITORS",
+      "type": "CONCEPT",
+      "description": "Natural compounds released by plant roots that slow down the conversion of ammonium to nitrate by soil bacteria",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "HYDROPHILIC-BNIS",
+      "type": "CONCEPT",
+      "description": "Water-soluble biological nitrification inhibitors whose release is influenced by rhizosphere pH and H+ATPase activity",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "HYDROPHOBIC-BNIS",
+      "type": "CONCEPT",
+      "description": "Fat-soluble biological nitrification inhibitors whose release is not affected by rhizosphere pH",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "RHIZOSPHERE PH",
+      "type": "CONDITION",
+      "description": "The pH level of the soil environment immediately surrounding the roots, which regulates the release of hydrophilic-BNIs",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "PLASMA MEMBRANE H+ATPASE",
+      "type": "CONCEPT",
+      "description": "A proton pump in the root cell membrane that is stimulated by low pH and linked to the release of hydrophilic-BNIs",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "HYDROPHONIC SYSTEM",
+      "type": "METHOD",
+      "description": "A soil-less cultivation method used to control the pH of nutrient solutions for sorghum plants",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "FUSICOCCIN",
+      "type": "CONCEPT",
+      "description": "A pharmacological agent that promotes H+ extrusion and stimulates the release of hydrophilic-BNIs",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "VANADATE",
+      "type": "CONCEPT",
+      "description": "A pharmacological agent that suppresses H+ extrusion and lowers the release of hydrophilic-BNIs",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "NIFLUMIC ACID",
+      "type": "CONCEPT",
+      "description": "An anion-channel blocker that enhances H+ extrusion and the release of hydrophilic-BNIs",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "ANTHRACENE-9-CARBOXYLATE",
+      "type": "CONCEPT",
+      "description": "An anion-channel blocker that enhances H+ extrusion and the release of hydrophilic-BNIs",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "NITROSOMONAS EUROPAEA BIOASSAY",
+      "type": "METHOD",
+      "description": "A luminescent assay using Nitrosomonas europaea to measure the activity of biological nitrification inhibitors",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "SORGOLEONE",
+      "type": "CONCEPT",
+      "description": "A hydrophobic compound in sorghum root exudates that correlates positively with hydrophobic-BNI activity",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "H+ EXCRETION",
+      "type": "CONCEPT",
+      "description": "The process of releasing protons from roots into the rhizosphere, closely coupled with the release of hydrophilic-BNIs",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "TWO-PHASE PARTITIONING SYSTEM",
+      "type": "METHOD",
+      "description": "A method used to isolate the plasma membrane from root tissues to determine H+ ATPase activity",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "NITROSOMONAS EUROPAEA",
+      "type": "ORGANISM",
+      "description": "An ammonia-oxidizing bacterium used as the biological indicator in the BNI activity bioassay",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "ANION-CHANNEL BLOCKERS",
+      "type": "CONCEPT",
+      "description": "Chemical agents that inhibit anion channels, leading to increased H+ extrusion and hydrophilic-BNI release",
+      "source_id": "paper_10323"
+    },
+    {
+      "name": "MEMBRANE TRANSPORTERS",
+      "type": "CONCEPT",
+      "description": "Unknown proteins in the root membrane that operate the release of protonated BNIs to maintain charge balance",
+      "source_id": "paper_10323"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "BIOLOGICAL NITRIFICATION INHIBITORS",
+      "description": "releases",
+      "weight": "10",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITORS",
+      "target": "HYDROPHILIC-BNIS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITORS",
+      "target": "HYDROPHOBIC-BNIS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "RHIZOSPHERE PH",
+      "target": "HYDROPHILIC-BNIS",
+      "description": "influences the release of",
+      "weight": "9",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "PLASMA MEMBRANE H+ATPASE",
+      "target": "HYDROPHILIC-BNIS",
+      "description": "is functionally linked with the release of",
+      "weight": "8",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "RHIZOSPHERE PH",
+      "target": "PLASMA MEMBRANE H+ATPASE",
+      "description": "low pH stimulates activity of",
+      "weight": "8",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "FUSICOCCIN",
+      "target": "H+ EXCRETION",
+      "description": "promotes",
+      "weight": "9",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "FUSICOCCIN",
+      "target": "HYDROPHILIC-BNIS",
+      "description": "stimulates the release of",
+      "weight": "9",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "VANADATE",
+      "target": "H+ EXCRETION",
+      "description": "suppresses",
+      "weight": "9",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "VANADATE",
+      "target": "HYDROPHILIC-BNIS",
+      "description": "lowers the release of",
+      "weight": "9",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "ANION-CHANNEL BLOCKERS",
+      "target": "H+ EXCRETION",
+      "description": "enhance",
+      "weight": "8",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "ANION-CHANNEL BLOCKERS",
+      "target": "HYDROPHILIC-BNIS",
+      "description": "enhance the release of",
+      "weight": "8",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "HYDROPHOBIC-BNIS",
+      "target": "SORGOLEONE",
+      "description": "positively correlated with levels of",
+      "weight": "7",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "NITROSOMONAS EUROPAEA BIOASSAY",
+      "target": "BIOLOGICAL NITRIFICATION INHIBITORS",
+      "description": "determines activity of",
+      "weight": "10",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "NITROSOMONAS EUROPAEA",
+      "target": "NITROSOMONAS EUROPAEA BIOASSAY",
+      "description": "is the biological agent used in",
+      "weight": "10",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "H+ EXCRETION",
+      "target": "HYDROPHILIC-BNIS",
+      "description": "is closely coupled with the release of",
+      "weight": "9",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "MEMBRANE TRANSPORTERS",
+      "target": "HYDROPHILIC-BNIS",
+      "description": "operate the release of protonated forms of",
+      "weight": "8",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "NIFLUMIC ACID",
+      "target": "ANION-CHANNEL BLOCKERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10323"
+    },
+    {
+      "source": "ANTHRACENE-9-CARBOXYLATE",
+      "target": "ANION-CHANNEL BLOCKERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10323"
+    }
+  ]
+}

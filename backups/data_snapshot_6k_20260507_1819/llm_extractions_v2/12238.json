@@ -1,0 +1,337 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The cereal crop studied for productivity and yield variability in Northwest India",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "WHEAT YIELD VARIABILITY",
+      "type": "TRAIT",
+      "description": "The variation in wheat production per unit area across different on-farm conditions",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "NORTHWESTERN INDO-GANGETIC PLAINS",
+      "type": "LOCATION",
+      "description": "The geographic region in India where the on-farm wheat data was collected",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "INTERPRETABLE MACHINE LEARNING",
+      "type": "METHOD",
+      "description": "Analytical techniques used to explain the drivers of crop yield variability",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "RIDGE REGRESSION",
+      "type": "METHOD",
+      "description": "A machine learning model used to explain wheat yield variability",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "LASSO REGRESSION",
+      "type": "METHOD",
+      "description": "A machine learning model used to explain wheat yield variability",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "CLASSIFICATION AND REGRESSION TREES",
+      "type": "METHOD",
+      "description": "A machine learning model used to explain wheat yield variability",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "K-NEAREST NEIGHBOR",
+      "type": "METHOD",
+      "description": "A machine learning model used to explain wheat yield variability",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "SUPPORT VECTOR MACHINES",
+      "type": "METHOD",
+      "description": "A machine learning model used to explain wheat yield variability",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "GRADIENT BOOSTING",
+      "type": "METHOD",
+      "description": "A machine learning model used to explain wheat yield variability",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "EXTREME GRADIENT BOOSTING",
+      "type": "METHOD",
+      "description": "A machine learning model used to explain wheat yield variability",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "A tree-based machine learning method identified as the best performing for explaining wheat yield variability",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "R2",
+      "type": "METHOD",
+      "description": "A statistical metric used to evaluate the goodness-of-fit of machine learning models",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "ROOT MEAN SQUARE ERROR",
+      "type": "METHOD",
+      "description": "A metric used to evaluate the precision and accuracy of machine learning models",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "MEAN ABSOLUTE ERROR",
+      "type": "METHOD",
+      "description": "A metric used to evaluate the precision and accuracy of machine learning models",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "GRID SEARCH",
+      "type": "METHOD",
+      "description": "An approach used to fine-tune models for the bias-variance trade-off",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "VARIABLE IMPORTANCE",
+      "type": "METHOD",
+      "description": "A post-hoc model agnostic technique used to identify important drivers of yield",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "INTERACTION STRENGTH",
+      "type": "METHOD",
+      "description": "A post-hoc model agnostic technique used to identify interactions between variables",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "TWO-WAY INTERACTION",
+      "type": "METHOD",
+      "description": "A post-hoc model agnostic technique used to explain variability through pairs of variables",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "FRIEDMAN’S H-STATISTIC",
+      "type": "METHOD",
+      "description": "The statistical basis used to calculate interaction strength",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "NITROGEN APPLICATION RATE",
+      "type": "CONDITION",
+      "description": "A management variable that significantly influences wheat yield",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "CROP RESIDUE MANAGEMENT",
+      "type": "CONDITION",
+      "description": "A management practice involving the retention or removal of crop residues affecting yield",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "CUMULATIVE SOLAR RADIATION",
+      "type": "CONDITION",
+      "description": "A biophysical variable measured during February and March that impacts wheat yield",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "DISEASE MANAGEMENT",
+      "type": "CONDITION",
+      "description": "A management practice that interacts with crop residue management to affect yield",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "SEEDING RATE",
+      "type": "CONDITION",
+      "description": "A management variable that interacts with nitrogen application rate to affect yield",
+      "source_id": "paper_12238"
+    },
+    {
+      "name": "DISEASE INCIDENCE",
+      "type": "CONDITION",
+      "description": "The occurrence of diseases in farmers' fields affecting the response to residue management",
+      "source_id": "paper_12238"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTERPRETABLE MACHINE LEARNING",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "used to explain",
+      "weight": "10",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "best performing method to explain",
+      "weight": "10",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "WHEAT",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "NORTHWESTERN INDO-GANGETIC PLAINS",
+      "target": "WHEAT",
+      "description": "location of growth",
+      "weight": "8",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "RIDGE REGRESSION",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "used to explain",
+      "weight": "7",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "LASSO REGRESSION",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "used to explain",
+      "weight": "7",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "CLASSIFICATION AND REGRESSION TREES",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "used to explain",
+      "weight": "7",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "K-NEAREST NEIGHBOR",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "used to explain",
+      "weight": "7",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "SUPPORT VECTOR MACHINES",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "used to explain",
+      "weight": "7",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "GRADIENT BOOSTING",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "used to explain",
+      "weight": "7",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "EXTREME GRADIENT BOOSTING",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "used to explain",
+      "weight": "7",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "R2",
+      "description": "evaluated by",
+      "weight": "9",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "ROOT MEAN SQUARE ERROR",
+      "description": "evaluated by",
+      "weight": "9",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "MEAN ABSOLUTE ERROR",
+      "description": "evaluated by",
+      "weight": "9",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "GRID SEARCH",
+      "target": "RANDOM FOREST",
+      "description": "used to fine-tune",
+      "weight": "8",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "VARIABLE IMPORTANCE",
+      "target": "RANDOM FOREST",
+      "description": "used to interpret",
+      "weight": "9",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "INTERACTION STRENGTH",
+      "target": "RANDOM FOREST",
+      "description": "used to interpret",
+      "weight": "9",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "TWO-WAY INTERACTION",
+      "target": "RANDOM FOREST",
+      "description": "used to interpret",
+      "weight": "9",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "FRIEDMAN’S H-STATISTIC",
+      "target": "INTERACTION STRENGTH",
+      "description": "basis for",
+      "weight": "10",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "NITROGEN APPLICATION RATE",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "important driver of",
+      "weight": "9",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "CROP RESIDUE MANAGEMENT",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "important driver of",
+      "weight": "9",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "CUMULATIVE SOLAR RADIATION",
+      "target": "WHEAT YIELD VARIABILITY",
+      "description": "important biophysical driver of",
+      "weight": "9",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "CROP RESIDUE MANAGEMENT",
+      "target": "DISEASE MANAGEMENT",
+      "description": "interacts to affect yield",
+      "weight": "8",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "NITROGEN APPLICATION RATE",
+      "target": "SEEDING RATE",
+      "description": "interacts to affect yield",
+      "weight": "8",
+      "source_id": "paper_12238"
+    },
+    {
+      "source": "DISEASE INCIDENCE",
+      "target": "CROP RESIDUE MANAGEMENT",
+      "description": "interacts to affect yield",
+      "weight": "8",
+      "source_id": "paper_12238"
+    }
+  ]
+}

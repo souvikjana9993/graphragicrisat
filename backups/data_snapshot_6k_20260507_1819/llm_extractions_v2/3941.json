@@ -1,0 +1,218 @@
+{
+  "entities": [
+    {
+      "name": "CROTALARIA MICANS",
+      "type": "CROP",
+      "description": "Root nodulating legume used for green manure",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "CASSIA OBTUSIFOLIA",
+      "type": "CROP",
+      "description": "Non-fixing legume reference plant",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "Total organic matter produced by the plant",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "NITROGEN ACCUMULATION",
+      "type": "TRAIT",
+      "description": "Amount of nitrogen accumulated by the legume",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "LEGUME N-FIXED",
+      "type": "TRAIT",
+      "description": "Biological nitrogen fixation (BNF)",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "PERCENTAGE NITROGEN DERIVED FROM ATMOSPHERE",
+      "type": "TRAIT",
+      "description": "Percentage of nitrogen derived from the atmosphere (%N dfa)",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "Essential nutrient P applied to the soil",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "PHOSPHATE ROCK",
+      "type": "CONCEPT",
+      "description": "Source of phosphorus (PR)",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "TILEMSI PR",
+      "type": "CONCEPT",
+      "description": "Specific phosphate rock sourced from Mali",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "TRIPLE SUPERPHOSPHATE",
+      "type": "CONCEPT",
+      "description": "A soluble phosphorus fertilizer (TSP)",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "15N-ISOTOPE DILUTION",
+      "type": "METHOD",
+      "description": "Method used to estimate legume N-fixed",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "Δ15N NATURAL ABUNDANCE",
+      "type": "METHOD",
+      "description": "Method used to estimate legume N-fixed",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "ACID ULTISOLS",
+      "type": "CONDITION",
+      "description": "Acidic soil type with low extractable Bray-1 P",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "P-DEFICIENT SOILS",
+      "type": "CONDITION",
+      "description": "Soils lacking sufficient phosphorus",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "HUMID FOREST ZONE",
+      "type": "CONDITION",
+      "description": "Environmental zone in Côte d'Ivoire",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "CÔTE D'IVOIRE",
+      "type": "LOCATION",
+      "description": "Country where the experiments were conducted",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "Country of origin for Tilemsi PR",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "Regional location of the study",
+      "source_id": "paper_3941"
+    },
+    {
+      "name": "GREEN MANURE",
+      "type": "CONCEPT",
+      "description": "Crop grown and incorporated into the soil to improve fertility",
+      "source_id": "paper_3941"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHOSPHATE ROCK",
+      "target": "CROTALARIA MICANS",
+      "description": "enhances biomass and nitrogen accumulation",
+      "weight": "9",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "TRIPLE SUPERPHOSPHATE",
+      "target": "CROTALARIA MICANS",
+      "description": "enhances biomass and nitrogen accumulation",
+      "weight": "9",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "TILEMSI PR",
+      "target": "PHOSPHATE ROCK",
+      "description": "is a specific type of",
+      "weight": "10",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "TILEMSI PR",
+      "target": "MALI",
+      "description": "originates from",
+      "weight": "10",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "CROTALARIA MICANS",
+      "target": "GREEN MANURE",
+      "description": "is used as",
+      "weight": "8",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "15N-ISOTOPE DILUTION",
+      "target": "LEGUME N-FIXED",
+      "description": "is a method to estimate",
+      "weight": "10",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "Δ15N NATURAL ABUNDANCE",
+      "target": "LEGUME N-FIXED",
+      "description": "is a method to estimate",
+      "weight": "10",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "CASSIA OBTUSIFOLIA",
+      "target": "LEGUME N-FIXED",
+      "description": "serves as a non-fixing reference plant for estimation",
+      "weight": "9",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "CROTALARIA MICANS",
+      "target": "ACID ULTISOLS",
+      "description": "was grown in",
+      "weight": "8",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "CROTALARIA MICANS",
+      "target": "P-DEFICIENT SOILS",
+      "description": "was grown in",
+      "weight": "8",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "HUMID FOREST ZONE",
+      "target": "CÔTE D'IVOIRE",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "HUMID FOREST ZONE",
+      "target": "WEST AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "NITROGEN ACCUMULATION",
+      "description": "application affects the total amount of",
+      "weight": "8",
+      "source_id": "paper_3941"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "PERCENTAGE NITROGEN DERIVED FROM ATMOSPHERE",
+      "description": "application has little effect on",
+      "weight": "4",
+      "source_id": "paper_3941"
+    }
+  ]
+}

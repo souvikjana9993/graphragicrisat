@@ -1,0 +1,292 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The specific crop for which yield estimation is conducted in the study",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "CROP YIELD ESTIMATION",
+      "type": "CONCEPT",
+      "description": "The process of predicting the amount of crop produced per unit area",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "BAREILLY DISTRICT",
+      "type": "LOCATION",
+      "description": "The district in Uttar Pradesh where the study was conducted",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "UTTAR PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the study was conducted",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "GRAM PANCHAYAT LEVEL",
+      "type": "LOCATION",
+      "description": "The local administrative level at which wheat yield estimation was focused",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "MACHINE LEARNING",
+      "type": "METHOD",
+      "description": "Algorithms used for predicting crop yields, effective in homogenous areas with similar cultivars",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "DSSAT",
+      "type": "METHOD",
+      "description": "The Decision Support System for Agrotechnology Transfer crop model used for yield prediction",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "SEMI-PHYSICAL MODEL",
+      "type": "METHOD",
+      "description": "A model for yield estimation whose accuracy depends on the resolution of utilized data",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "SENTINEL-2 DATA",
+      "type": "METHOD",
+      "description": "Satellite time-series data used to generate crop type maps and perform spectral matching",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "GROUND DATA",
+      "type": "METHOD",
+      "description": "Field-collected data used for crop type mapping and crop management analysis",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "CROP TYPE MAPS",
+      "type": "CONCEPT",
+      "description": "Maps showing the spatial distribution and extent of crops",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "CROP EXTENT",
+      "type": "TRAIT",
+      "description": "The spatial area covered by a specific crop",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "GROWTH STAGES",
+      "type": "TRAIT",
+      "description": "The different developmental phases of the crop",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A measure of leaf area per unit ground surface area",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Techniques used on Sentinel-2 data to classify crop types",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "FIELD SURVEYS",
+      "type": "METHOD",
+      "description": "On-ground observations used to complement satellite data for crop classification",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "CROP MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "Practices and data related to the cultivation and maintenance of crops",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "CROP-CUTTING EXPERIMENT",
+      "type": "METHOD",
+      "description": "A method for measuring actual crop yield to enhance study precision",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "SOIL DATA",
+      "type": "CONCEPT",
+      "description": "Information regarding soil properties used to identify CCE locations",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "WEATHER PARAMETERS",
+      "type": "CONCEPT",
+      "description": "Meteorological data used to identify CCE locations",
+      "source_id": "paper_12703"
+    },
+    {
+      "name": "CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Specific varieties of a crop that influence the effectiveness of machine learning models",
+      "source_id": "paper_12703"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WHEAT",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "Target of estimation",
+      "weight": "10",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "CROP YIELD ESTIMATION",
+      "target": "FOOD SECURITY",
+      "description": "Contributes to",
+      "weight": "9",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "BAREILLY DISTRICT",
+      "target": "UTTAR PRADESH",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "GRAM PANCHAYAT LEVEL",
+      "target": "BAREILLY DISTRICT",
+      "description": "Administrative unit within",
+      "weight": "10",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "MACHINE LEARNING",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "Used for",
+      "weight": "9",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "DSSAT",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "Used for",
+      "weight": "9",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "SEMI-PHYSICAL MODEL",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "Used for",
+      "weight": "9",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "SENTINEL-2 DATA",
+      "target": "CROP TYPE MAPS",
+      "description": "Used to generate",
+      "weight": "10",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "GROUND DATA",
+      "target": "CROP TYPE MAPS",
+      "description": "Used to generate",
+      "weight": "9",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "CROP TYPE MAPS",
+      "target": "CROP EXTENT",
+      "description": "Provides insights into",
+      "weight": "8",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "CROP TYPE MAPS",
+      "target": "GROWTH STAGES",
+      "description": "Provides insights into",
+      "weight": "8",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "CROP TYPE MAPS",
+      "target": "LEAF AREA INDEX",
+      "description": "Provides insights into",
+      "weight": "8",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "CROP TYPE MAPS",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "Essential component for",
+      "weight": "9",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "CROP TYPE MAPS",
+      "description": "Used for classification",
+      "weight": "10",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "SENTINEL-2 DATA",
+      "target": "SPECTRAL MATCHING TECHNIQUES",
+      "description": "Input for",
+      "weight": "10",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "FIELD SURVEYS",
+      "target": "CROP TYPE MAPS",
+      "description": "Complements",
+      "weight": "8",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "GROUND DATA",
+      "target": "CROP MANAGEMENT",
+      "description": "Provides info on",
+      "weight": "7",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "CROP-CUTTING EXPERIMENT",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "Used for precision and validation",
+      "weight": "10",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "CROP TYPE MAPS",
+      "target": "CROP-CUTTING EXPERIMENT",
+      "description": "Used to identify locations",
+      "weight": "8",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "SOIL DATA",
+      "target": "CROP-CUTTING EXPERIMENT",
+      "description": "Used to identify locations",
+      "weight": "8",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "WEATHER PARAMETERS",
+      "target": "CROP-CUTTING EXPERIMENT",
+      "description": "Used to identify locations",
+      "weight": "8",
+      "source_id": "paper_12703"
+    },
+    {
+      "source": "MACHINE LEARNING",
+      "target": "CULTIVARS",
+      "description": "Effectiveness depends on similarity of",
+      "weight": "7",
+      "source_id": "paper_12703"
+    }
+  ]
+}

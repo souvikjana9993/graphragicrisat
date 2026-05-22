@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "INDO-GANGES RIVER BASIN",
+      "type": "LOCATION",
+      "description": "The combined region of the Ganges and Indus River basins",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "LAND USE/LAND COVER (LULC)",
+      "type": "CONCEPT",
+      "description": "The classification of land based on its use and physical cover",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "IRRIGATED AREA",
+      "type": "CONCEPT",
+      "description": "Land areas that receive artificial water application for crop production",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "GANGES RIVER BASIN",
+      "type": "LOCATION",
+      "description": "The drainage basin of the Ganges River",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "INDUS RIVER BASIN",
+      "type": "LOCATION",
+      "description": "The drainage basin of the Indus River",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Moderate-resolution imaging spectroradiometer used for satellite imaging",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "CROPLAND",
+      "type": "CONCEPT",
+      "description": "Land used for growing crops",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where part of the study area is located",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "PAKISTAN",
+      "type": "LOCATION",
+      "description": "Country where part of the study area is located",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "RAINFALL FLUCTUATIONS",
+      "type": "CONDITION",
+      "description": "Variability in precipitation affecting water availability",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "WATER SUPPLY",
+      "type": "CONCEPT",
+      "description": "The provision of water for agricultural use",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used to estimate vegetation health and density",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES (SMTS)",
+      "type": "METHOD",
+      "description": "Techniques used to analyze spectral data for mapping",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "GROUND DATA",
+      "type": "METHOD",
+      "description": "Field-plot data gathered from precise geographic locations for validation",
+      "source_id": "paper_11050"
+    },
+    {
+      "name": "KAPPA COEFFICIENT",
+      "type": "METHOD",
+      "description": "A statistical measure used to evaluate the accuracy of the mapping",
+      "source_id": "paper_11050"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MODIS",
+      "target": "LAND USE/LAND COVER (LULC)",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "MODIS",
+      "target": "IRRIGATED AREA",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "INDO-GANGES RIVER BASIN",
+      "target": "GANGES RIVER BASIN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "INDO-GANGES RIVER BASIN",
+      "target": "INDUS RIVER BASIN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "INDIA",
+      "target": "INDO-GANGES RIVER BASIN",
+      "description": "location of",
+      "weight": "8",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "PAKISTAN",
+      "target": "INDO-GANGES RIVER BASIN",
+      "description": "location of",
+      "weight": "8",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "RAINFALL FLUCTUATIONS",
+      "target": "WATER SUPPLY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "NDVI",
+      "target": "SPECTRAL MATCHING TECHNIQUES (SMTS)",
+      "description": "input for",
+      "weight": "9",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES (SMTS)",
+      "target": "LAND USE/LAND COVER (LULC)",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES (SMTS)",
+      "target": "IRRIGATED AREA",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "GROUND DATA",
+      "target": "LAND USE/LAND COVER (LULC)",
+      "description": "used to evaluate accuracy",
+      "weight": "9",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "GROUND DATA",
+      "target": "IRRIGATED AREA",
+      "description": "used to evaluate accuracy",
+      "weight": "9",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "KAPPA COEFFICIENT",
+      "target": "IRRIGATED AREA",
+      "description": "used to estimate accuracy",
+      "weight": "8",
+      "source_id": "paper_11050"
+    },
+    {
+      "source": "CROPLAND",
+      "target": "LAND USE/LAND COVER (LULC)",
+      "description": "is a class of",
+      "weight": "10",
+      "source_id": "paper_11050"
+    }
+  ]
+}

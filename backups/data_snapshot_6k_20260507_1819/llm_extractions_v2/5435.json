@@ -1,0 +1,228 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop used in the experiment to evaluate phosphorus use efficiency.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "type": "ORGANISM",
+      "description": "Fungi cultures used for co-inoculation to improve nutrient uptake in maize.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "PHOSPHATE-SOLUBILIZING BACTERIA",
+      "type": "ORGANISM",
+      "description": "Bacteria cultures used for co-inoculation to solubilize phosphorus for plant uptake.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "PSEUDOMONAS STRIATA",
+      "type": "ORGANISM",
+      "description": "A specific species of phosphate-solubilizing bacteria used in the study.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "GLOMUS INTRARADICES",
+      "type": "ORGANISM",
+      "description": "A specific species of vesicular arbuscular mycorrhizal fungi (VAMT) used in the study.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "GLOMUS MOSSEAE",
+      "type": "ORGANISM",
+      "description": "A specific species of vesicular arbuscular mycorrhizal fungi (VAMI) used in the study.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "ACIDIC ALFISOL",
+      "type": "CONDITION",
+      "description": "A phosphorus-deficient acidic soil type used as the growth medium.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "The essential nutrient whose use and availability were being improved.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "P2O5 DOSE",
+      "type": "CONCEPT",
+      "description": "The amount of phosphorus fertilizer applied based on recommended doses.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "SOIL-TEST CROP RESPONSE MODEL",
+      "type": "METHOD",
+      "description": "The model used to determine the recommended dose of P2O5.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "GLASSHOUSE POT EXPERIMENT",
+      "type": "METHOD",
+      "description": "The experimental setup used to conduct the study.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "MYCORRHIZAL ROOT COLONIZATION",
+      "type": "TRAIT",
+      "description": "The extent of fungal colonization within the roots of the maize plant.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The overall yield and growth performance of the maize crop.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "GRAIN PROTEIN CONTENT",
+      "type": "TRAIT",
+      "description": "The concentration of protein found in the maize grains.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "NUTRIENT UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of nutrients absorbed by the maize plant from the soil.",
+      "source_id": "paper_5435"
+    },
+    {
+      "name": "SOIL FERTILITY STATUS",
+      "type": "TRAIT",
+      "description": "The nutrient levels and health of the soil, specifically regarding phosphorus.",
+      "source_id": "paper_5435"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "target": "MAIZE",
+      "description": "inoculated into",
+      "weight": "8",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "PHOSPHATE-SOLUBILIZING BACTERIA",
+      "target": "MAIZE",
+      "description": "inoculated into",
+      "weight": "8",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "target": "PHOSPHATE-SOLUBILIZING BACTERIA",
+      "description": "synergistic interaction",
+      "weight": "9",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "PSEUDOMONAS STRIATA",
+      "target": "PHOSPHATE-SOLUBILIZING BACTERIA",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "GLOMUS INTRARADICES",
+      "target": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "GLOMUS MOSSEAE",
+      "target": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "MAIZE",
+      "target": "ACIDIC ALFISOL",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "MAIZE",
+      "description": "essential nutrient for",
+      "weight": "10",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "target": "MYCORRHIZAL ROOT COLONIZATION",
+      "description": "stimulates",
+      "weight": "9",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "PHOSPHATE-SOLUBILIZING BACTERIA",
+      "target": "MYCORRHIZAL ROOT COLONIZATION",
+      "description": "stimulates",
+      "weight": "8",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "target": "CROP PRODUCTIVITY",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "PHOSPHATE-SOLUBILIZING BACTERIA",
+      "target": "CROP PRODUCTIVITY",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "target": "GRAIN PROTEIN CONTENT",
+      "description": "improves",
+      "weight": "7",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "PHOSPHATE-SOLUBILIZING BACTERIA",
+      "target": "GRAIN PROTEIN CONTENT",
+      "description": "improves",
+      "weight": "7",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "P2O5 DOSE",
+      "target": "CROP PRODUCTIVITY",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "P2O5 DOSE",
+      "target": "NUTRIENT UPTAKE",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "P2O5 DOSE",
+      "target": "SOIL FERTILITY STATUS",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_5435"
+    },
+    {
+      "source": "GLASSHOUSE POT EXPERIMENT",
+      "target": "MAIZE",
+      "description": "used to evaluate",
+      "weight": "10",
+      "source_id": "paper_5435"
+    }
+  ]
+}

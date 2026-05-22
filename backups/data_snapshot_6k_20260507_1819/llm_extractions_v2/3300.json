@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan (L.) Millsp., the target crop for genetic transformation",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "FUNGAL DISEASE",
+      "type": "CONDITION",
+      "description": "Diseases caused by fungi that the research aims to provide resistance against",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "RESISTANCE TO FUNGAL DISEASE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand fungal diseases",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "RICE CHITINASE GENE",
+      "type": "GENE_MARKER",
+      "description": "A gene from rice used to confer resistance to fungal disease in pigeonpea",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "PCAMBIA 1302:RCHIT",
+      "type": "GENE_MARKER",
+      "description": "The plasmid vector used to carry the rice chitinase gene",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "AGROBACTERIUM-MEDIATED METHOD",
+      "type": "METHOD",
+      "description": "The technique used to deliver the gene into the plant cells",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "AGROBACTERIUM",
+      "type": "ORGANISM",
+      "description": "The genus of bacteria used as a vector for gene transfer",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "COTYLEDONARY NODE EXPLANTS",
+      "type": "CONCEPT",
+      "description": "The specific plant tissue used for transformation",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "HYGROMYCIN",
+      "type": "CONDITION",
+      "description": "An antibiotic used in the selection media to identify transformed plants",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "MOLECULAR TECHNIQUES",
+      "type": "METHOD",
+      "description": "Techniques used to confirm the integration and expression of the gene",
+      "source_id": "paper_3300"
+    },
+    {
+      "name": "T0 AND T1 TRANSGENICS",
+      "type": "CONCEPT",
+      "description": "The first and second generations of genetically transformed plants",
+      "source_id": "paper_3300"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "RESISTANCE TO FUNGAL DISEASE",
+      "description": "Target crop for the development of the trait",
+      "weight": "10",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "RICE CHITINASE GENE",
+      "target": "RESISTANCE TO FUNGAL DISEASE",
+      "description": "Gene responsible for conferring the trait",
+      "weight": "10",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "RICE CHITINASE GENE",
+      "target": "PIGEONPEA",
+      "description": "Gene transferred into the crop",
+      "weight": "10",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "PCAMBIA 1302:RCHIT",
+      "target": "RICE CHITINASE GENE",
+      "description": "Plasmid that harbors the gene",
+      "weight": "10",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "AGROBACTERIUM-MEDIATED METHOD",
+      "target": "PIGEONPEA",
+      "description": "Method used to transform the crop",
+      "weight": "9",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "AGROBACTERIUM-MEDIATED METHOD",
+      "target": "COTYLEDONARY NODE EXPLANTS",
+      "description": "Method applied to the explants",
+      "weight": "9",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "AGROBACTERIUM",
+      "target": "AGROBACTERIUM-MEDIATED METHOD",
+      "description": "Organism used to implement the method",
+      "weight": "10",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "HYGROMYCIN",
+      "target": "PIGEONPEA",
+      "description": "Used for selection of transformed plants",
+      "weight": "8",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "MOLECULAR TECHNIQUES",
+      "target": "RICE CHITINASE GENE",
+      "description": "Used to confirm integration and expression of the gene",
+      "weight": "9",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "FUNGAL DISEASE",
+      "target": "RESISTANCE TO FUNGAL DISEASE",
+      "description": "The trait is a defense against this condition",
+      "weight": "10",
+      "source_id": "paper_3300"
+    },
+    {
+      "source": "T0 AND T1 TRANSGENICS",
+      "target": "RICE CHITINASE GENE",
+      "description": "Generations in which gene expression was confirmed",
+      "weight": "9",
+      "source_id": "paper_3300"
+    }
+  ]
+}

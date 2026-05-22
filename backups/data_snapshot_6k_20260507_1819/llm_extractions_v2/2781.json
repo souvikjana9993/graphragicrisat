@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop for which improved cultivars are being adopted",
+      "source_id": "paper_2781"
+    },
+    {
+      "name": "ADOPTION",
+      "type": "CONCEPT",
+      "description": "The process of farmers implementing improved crop cultivars in their fields",
+      "source_id": "paper_2781"
+    },
+    {
+      "name": "PLANT BREEDING",
+      "type": "METHOD",
+      "description": "The scientific process used to develop improved crop cultivars",
+      "source_id": "paper_2781"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area, which increases with adoption",
+      "source_id": "paper_2781"
+    },
+    {
+      "name": "QUALITY",
+      "type": "TRAIT",
+      "description": "The characteristics of the crop that are improved through adoption",
+      "source_id": "paper_2781"
+    },
+    {
+      "name": "UNIT COST OF PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The cost associated with producing one unit of the crop",
+      "source_id": "paper_2781"
+    },
+    {
+      "name": "PRODUCTION RISKS",
+      "type": "CONDITION",
+      "description": "The uncertainties and potential losses associated with crop production",
+      "source_id": "paper_2781"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The international research organization that develops and networks sorghum cultivars",
+      "source_id": "paper_2781"
+    },
+    {
+      "name": "FARM HOUSEHOLDS",
+      "type": "CONCEPT",
+      "description": "The social and economic units that adopt improved cultivars and experience the impacts",
+      "source_id": "paper_2781"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ADOPTION",
+      "target": "SORGHUM",
+      "description": "Adoption is measured for improved cultivars of this crop",
+      "weight": "10",
+      "source_id": "paper_2781"
+    },
+    {
+      "source": "PLANT BREEDING",
+      "target": "ADOPTION",
+      "description": "Plant breeding is a precondition for the adoption of improved cultivars",
+      "weight": "8",
+      "source_id": "paper_2781"
+    },
+    {
+      "source": "ADOPTION",
+      "target": "FARM HOUSEHOLDS",
+      "description": "Adoption of improved cultivars creates favorable impacts on these units",
+      "weight": "9",
+      "source_id": "paper_2781"
+    },
+    {
+      "source": "ADOPTION",
+      "target": "YIELD",
+      "description": "Adoption can lead to increases in this trait",
+      "weight": "8",
+      "source_id": "paper_2781"
+    },
+    {
+      "source": "ADOPTION",
+      "target": "QUALITY",
+      "description": "Adoption can lead to improvement in this trait",
+      "weight": "8",
+      "source_id": "paper_2781"
+    },
+    {
+      "source": "ADOPTION",
+      "target": "UNIT COST OF PRODUCTION",
+      "description": "Adoption can lead to a reduction in this cost",
+      "weight": "7",
+      "source_id": "paper_2781"
+    },
+    {
+      "source": "ADOPTION",
+      "target": "PRODUCTION RISKS",
+      "description": "Adoption can lead to a reduction in these risks",
+      "weight": "7",
+      "source_id": "paper_2781"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "SORGHUM",
+      "description": "ICRISAT develops and networks cultivars of this crop",
+      "weight": "9",
+      "source_id": "paper_2781"
+    }
+  ]
+}

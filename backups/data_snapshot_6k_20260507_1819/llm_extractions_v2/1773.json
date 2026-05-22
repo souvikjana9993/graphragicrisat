@@ -1,0 +1,273 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The legume crop studied for growth and development patterns.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "NODE PRODUCTION",
+      "type": "TRAIT",
+      "description": "The process of producing nodes on the plant stem.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "LEAF APPEARANCE",
+      "type": "TRAIT",
+      "description": "The process of new leaves appearing on the plant.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "SENESCENCE",
+      "type": "TRAIT",
+      "description": "The biological aging and death of plant nodes and leaves.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "LEAF SIZE",
+      "type": "TRAIT",
+      "description": "The physical dimensions of the leaves in pigeonpea.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental temperature affecting plant growth processes.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "PLANT DENSITY",
+      "type": "CONDITION",
+      "description": "The number of plants per unit area, measured in plants per square meter.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "MATURITY TYPE",
+      "type": "TRAIT",
+      "description": "The classification of the plant based on its growth duration and maturity.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "THERMAL TIME",
+      "type": "CONCEPT",
+      "description": "The accumulation of temperature over time used to track plant development.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "SEASON",
+      "type": "CONDITION",
+      "description": "The specific time of year during which the crop is grown.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "GROWTH DURATION",
+      "type": "TRAIT",
+      "description": "The total length of time the plant spends in its growth cycle.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "LEAF AREA DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The temporal change in the total leaf area of the plant.",
+      "source_id": "paper_1773"
+    },
+    {
+      "name": "CROP GROWTH MODELS",
+      "type": "METHOD",
+      "description": "Mathematical functions used to predict temporal changes in crop growth.",
+      "source_id": "paper_1773"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "NODE PRODUCTION",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "LEAF APPEARANCE",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SENESCENCE",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "LEAF SIZE",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "NODE PRODUCTION",
+      "target": "TEMPERATURE",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "NODE PRODUCTION",
+      "target": "PLANT DENSITY",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "NODE PRODUCTION",
+      "target": "MATURITY TYPE",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF APPEARANCE",
+      "target": "TEMPERATURE",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF APPEARANCE",
+      "target": "PLANT DENSITY",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF APPEARANCE",
+      "target": "MATURITY TYPE",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "SENESCENCE",
+      "target": "TEMPERATURE",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "SENESCENCE",
+      "target": "PLANT DENSITY",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF SIZE",
+      "target": "TEMPERATURE",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF SIZE",
+      "target": "PLANT DENSITY",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF SIZE",
+      "target": "MATURITY TYPE",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "NODE PRODUCTION",
+      "target": "THERMAL TIME",
+      "description": "is measured in relation to",
+      "weight": "9",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "SENESCENCE",
+      "target": "THERMAL TIME",
+      "description": "is measured in relation to",
+      "weight": "9",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "NODE PRODUCTION",
+      "target": "SEASON",
+      "description": "is unaffected by",
+      "weight": "7",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "NODE PRODUCTION",
+      "target": "PLANT DENSITY",
+      "description": "is unaffected by",
+      "weight": "7",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF APPEARANCE",
+      "target": "MATURITY TYPE",
+      "description": "is unaffected by",
+      "weight": "7",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "SENESCENCE",
+      "target": "PLANT DENSITY",
+      "description": "is unaffected by",
+      "weight": "7",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "SENESCENCE",
+      "target": "GROWTH DURATION",
+      "description": "is unaffected by",
+      "weight": "7",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "CROP GROWTH MODELS",
+      "target": "LEAF AREA DEVELOPMENT",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF AREA DEVELOPMENT",
+      "target": "NODE PRODUCTION",
+      "description": "is determined by",
+      "weight": "10",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF AREA DEVELOPMENT",
+      "target": "LEAF APPEARANCE",
+      "description": "is determined by",
+      "weight": "10",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF AREA DEVELOPMENT",
+      "target": "SENESCENCE",
+      "description": "is determined by",
+      "weight": "10",
+      "source_id": "paper_1773"
+    },
+    {
+      "source": "LEAF AREA DEVELOPMENT",
+      "target": "LEAF SIZE",
+      "description": "is determined by",
+      "weight": "10",
+      "source_id": "paper_1773"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop used in the study to detect canopy water stress.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "An abiotic stress condition that affects plant canopy reflectance and is detected using HSI.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "PLANT PHENOTYPING",
+      "type": "CONCEPT",
+      "description": "The assessment of genotypes under field conditions to evaluate traits.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "UAV BASED SENSING",
+      "type": "METHOD",
+      "description": "Sensing using Unmanned Aerial Vehicles to accelerate the phenotyping process.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "HYPERSPECTRAL IMAGING",
+      "type": "METHOD",
+      "description": "A sensing technique using HSI sensors to acquire rich spectral information for stress detection.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "MACHINE LEARNING BASED FEATURE SELECTION",
+      "type": "METHOD",
+      "description": "Methods used to identify the most sensitive wavebands for water stress detection.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "RECURSIVE FEATURE ELIMINATION",
+      "type": "METHOD",
+      "description": "A specific feature selection method that outperformed others in selecting the best band subset.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "SUPPORT VECTOR MACHINE",
+      "type": "METHOD",
+      "description": "A classifier used for feature selection and classifying water stress levels.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "WAVEBANDS",
+      "type": "CONCEPT",
+      "description": "Specific spectral ranges sensitive to canopy water stress.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "CANOPY REFLECTANCE",
+      "type": "CONCEPT",
+      "description": "The reflection of light from the plant canopy, which changes due to drought.",
+      "source_id": "paper_12659"
+    },
+    {
+      "name": "ABIOTIC STRESS ADAPTATION",
+      "type": "TRAIT",
+      "description": "A complex trait involving the plant's ability to adapt to conditions like drought.",
+      "source_id": "paper_12659"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UAV BASED SENSING",
+      "target": "PLANT PHENOTYPING",
+      "description": "accelerates",
+      "weight": "8",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "HYPERSPECTRAL IMAGING",
+      "target": "ABIOTIC STRESS ADAPTATION",
+      "description": "explores",
+      "weight": "7",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "HYPERSPECTRAL IMAGING",
+      "target": "WATER STRESS",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "HYPERSPECTRAL IMAGING",
+      "target": "CANOPY REFLECTANCE",
+      "description": "observes",
+      "weight": "9",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "CANOPY REFLECTANCE",
+      "target": "WATER STRESS",
+      "description": "indicates",
+      "weight": "8",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "HYPERSPECTRAL IMAGING",
+      "target": "PEARL MILLET",
+      "description": "used on",
+      "weight": "10",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "MACHINE LEARNING BASED FEATURE SELECTION",
+      "target": "WAVEBANDS",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "WAVEBANDS",
+      "target": "WATER STRESS",
+      "description": "sensitive to",
+      "weight": "9",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "RECURSIVE FEATURE ELIMINATION",
+      "target": "MACHINE LEARNING BASED FEATURE SELECTION",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "SUPPORT VECTOR MACHINE",
+      "target": "RECURSIVE FEATURE ELIMINATION",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "SUPPORT VECTOR MACHINE",
+      "target": "WATER STRESS",
+      "description": "classifies",
+      "weight": "9",
+      "source_id": "paper_12659"
+    },
+    {
+      "source": "SUPPORT VECTOR MACHINE",
+      "target": "PEARL MILLET",
+      "description": "used on",
+      "weight": "8",
+      "source_id": "paper_12659"
+    }
+  ]
+}

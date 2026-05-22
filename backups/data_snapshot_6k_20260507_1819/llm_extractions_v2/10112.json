@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "NON-FARM INCOME",
+      "type": "CONCEPT",
+      "description": "Income generated from activities outside of agricultural production",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "SOIL AND WATER CONSERVATION",
+      "type": "CONCEPT",
+      "description": "On-farm investments and practices designed to prevent soil loss and manage water",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "SMALLHOLDER FARMERS",
+      "type": "ORGANISM",
+      "description": "Farmers managing small plots of land in the semi-arid tropics",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "CONDITION",
+      "description": "A climatic region characterized by low and irregular rainfall",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic location of the study",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "DYNAMIC BIO-ECONOMIC SIMULATION MODEL",
+      "type": "METHOD",
+      "description": "A modeling approach used to evaluate the interactions between economic factors and biological outcomes",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "HOUSEHOLD WELFARE",
+      "type": "CONCEPT",
+      "description": "The economic and social well-being of the farming household",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONDITION",
+      "description": "The deterioration of land quality and productivity",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "LABOUR ALLOCATION",
+      "type": "CONCEPT",
+      "description": "The distribution of household labor between farm and non-farm activities",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "NON-FARM EMPLOYMENT OPPORTUNITIES",
+      "type": "CONCEPT",
+      "description": "The availability of jobs outside of the agricultural sector",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The process of soil being removed from the earth's surface",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "POLICY INTERVENTIONS",
+      "type": "CONCEPT",
+      "description": "Strategic actions taken by authorities to protect natural resources",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "NATURAL RESOURCE BASE",
+      "type": "CONCEPT",
+      "description": "The total available natural assets, including soil and water",
+      "source_id": "paper_10112"
+    },
+    {
+      "name": "WATERSHED",
+      "type": "LOCATION",
+      "description": "A land area that drains into a common water body",
+      "source_id": "paper_10112"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NON-FARM INCOME",
+      "target": "SOIL AND WATER CONSERVATION",
+      "description": "exists in a trade-off relationship with",
+      "weight": "9",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "SMALLHOLDER FARMERS",
+      "target": "NON-FARM INCOME",
+      "description": "earns",
+      "weight": "10",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "SMALLHOLDER FARMERS",
+      "target": "SOIL AND WATER CONSERVATION",
+      "description": "invests in",
+      "weight": "10",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "SMALLHOLDER FARMERS",
+      "target": "SEMI-ARID TROPICS",
+      "description": "resides in",
+      "weight": "8",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "DYNAMIC BIO-ECONOMIC SIMULATION MODEL",
+      "target": "HOUSEHOLD WELFARE",
+      "description": "assesses impact on",
+      "weight": "9",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "DYNAMIC BIO-ECONOMIC SIMULATION MODEL",
+      "target": "LAND DEGRADATION",
+      "description": "assesses impact on",
+      "weight": "9",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "DYNAMIC BIO-ECONOMIC SIMULATION MODEL",
+      "target": "LABOUR ALLOCATION",
+      "description": "assesses impact on",
+      "weight": "9",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "NON-FARM EMPLOYMENT OPPORTUNITIES",
+      "target": "HOUSEHOLD WELFARE",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "NON-FARM EMPLOYMENT OPPORTUNITIES",
+      "target": "LABOUR ALLOCATION",
+      "description": "reduces labour available for SWC",
+      "weight": "9",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "LABOUR ALLOCATION",
+      "target": "SOIL AND WATER CONSERVATION",
+      "description": "determines the level of investment in",
+      "weight": "10",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "SOIL AND WATER CONSERVATION",
+      "target": "SOIL EROSION",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "LAND DEGRADATION",
+      "description": "leads to",
+      "weight": "10",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "POLICY INTERVENTIONS",
+      "target": "NATURAL RESOURCE BASE",
+      "description": "protects",
+      "weight": "8",
+      "source_id": "paper_10112"
+    },
+    {
+      "source": "NON-FARM INCOME",
+      "target": "WATERSHED",
+      "description": "affects sustainability in",
+      "weight": "7",
+      "source_id": "paper_10112"
+    }
+  ]
+}

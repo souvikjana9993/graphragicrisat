@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "Methods used in plant breeding to select favorable lines using genomic data before performing field trials",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "DIMENSIONALITY REDUCTION",
+      "type": "METHOD",
+      "description": "Pre-processing methods used to reduce the number of features in high-dimensional genomic marker data to improve efficiency",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "GENOMIC MARKER DATA",
+      "type": "GENE_MARKER",
+      "description": "High-dimensional data yielded by genotyping technology used as input for statistical models in genomic prediction",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "GENOTYPING TECHNOLOGY",
+      "type": "METHOD",
+      "description": "Technology used to generate high-dimensional genomic marker data",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "STATISTICAL MODELS",
+      "type": "METHOD",
+      "description": "Models used to incorporate genomic marker data and evaluate effects of line, environment, and markers",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "PREDICTION ACCURACY",
+      "type": "TRAIT",
+      "description": "The measure of the correlation between predicted and observed values used to evaluate DR methods",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "The external conditions in which plant lines are phenotyped, contributing to genotype by environment interactions",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between the genetic makeup of a line and the environment it is grown in",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "COMPUTATIONAL EFFICIENCY",
+      "type": "CONCEPT",
+      "description": "The reduction in computational resources and time required when using DR methods in GS models",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "FIELD TRIALS",
+      "type": "METHOD",
+      "description": "The process of evaluating plant lines in the field to determine favorable traits",
+      "source_id": "paper_12239"
+    },
+    {
+      "name": "LINES",
+      "type": "ORGANISM",
+      "description": "Plant breeding lines that are phenotyped and selected based on genomic data",
+      "source_id": "paper_12239"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DIMENSIONALITY REDUCTION",
+      "target": "GENOMIC SELECTION",
+      "description": "serves as a pre-processing step for",
+      "weight": "10",
+      "source_id": "paper_12239"
+    },
+    {
+      "source": "DIMENSIONALITY REDUCTION",
+      "target": "GENOMIC MARKER DATA",
+      "description": "reduces the dimensionality of",
+      "weight": "10",
+      "source_id": "paper_12239"
+    },
+    {
+      "source": "GENOTYPING TECHNOLOGY",
+      "target": "GENOMIC MARKER DATA",
+      "description": "yields",
+      "weight": "9",
+      "source_id": "paper_12239"
+    },
+    {
+      "source": "STATISTICAL MODELS",
+      "target": "GENOMIC MARKER DATA",
+      "description": "incorporates",
+      "weight": "8",
+      "source_id": "paper_12239"
+    },
+    {
+      "source": "DIMENSIONALITY REDUCTION",
+      "target": "PREDICTION ACCURACY",
+      "description": "influences the trend of",
+      "weight": "7",
+      "source_id": "paper_12239"
+    },
+    {
+      "source": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "target": "ENVIRONMENT",
+      "description": "involves",
+      "weight": "9",
+      "source_id": "paper_12239"
+    },
+    {
+      "source": "DIMENSIONALITY REDUCTION",
+      "target": "COMPUTATIONAL EFFICIENCY",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_12239"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "FIELD TRIALS",
+      "description": "allows selection before performing",
+      "weight": "8",
+      "source_id": "paper_12239"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "LINES",
+      "description": "selects favorable",
+      "weight": "9",
+      "source_id": "paper_12239"
+    }
+  ]
+}

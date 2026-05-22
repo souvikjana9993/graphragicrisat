@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species Cicer arietinum used in the study of root nodulation",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The process of forming root nodules in legumes through symbiosis with bacteria",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "NON-NODULATION",
+      "type": "TRAIT",
+      "description": "The genetic phenotype where a plant fails to form root nodules",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "LEGUME-RHIZOBIUM SYMBIOSIS",
+      "type": "CONCEPT",
+      "description": "The biological interaction between legume plants and rhizobial bacteria",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "RHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "Soil bacteria that form symbiotic relationships with legumes to fix nitrogen",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "CHI-SQUARE TEST",
+      "type": "METHOD",
+      "description": "A statistical method used to test genetic hypotheses of inheritance",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "MONOGENIC INHERITANCE",
+      "type": "CONCEPT",
+      "description": "A pattern of inheritance where a trait is controlled by a single gene",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "DIGENIC INHERITANCE",
+      "type": "CONCEPT",
+      "description": "A pattern of inheritance where a trait is controlled by two genes",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "RECESSIVE GENE ACTION",
+      "type": "CONCEPT",
+      "description": "A genetic mechanism where a trait is expressed only when two copies of a recessive allele are present",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "RN8",
+      "type": "GENE_MARKER",
+      "description": "A specific gene locus identified as controlling the non-nodulating phenotype in kabuli chickpea",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where the plant crosses and nodulation were tested",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "KABULI CHICKPEA",
+      "type": "CROP",
+      "description": "A specific variety of chickpea characterized by larger, lighter seeds",
+      "source_id": "paper_1701"
+    },
+    {
+      "name": "DESI CHICKPEA",
+      "type": "CROP",
+      "description": "A specific variety of chickpea characterized by smaller, darker seeds",
+      "source_id": "paper_1701"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "NODULATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "NON-NODULATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "NODULATION",
+      "target": "LEGUME-RHIZOBIUM SYMBIOSIS",
+      "description": "is a part of",
+      "weight": "10",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "RHIZOBIUM",
+      "target": "LEGUME-RHIZOBIUM SYMBIOSIS",
+      "description": "is a partner in",
+      "weight": "10",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "CHI-SQUARE TEST",
+      "target": "MONOGENIC INHERITANCE",
+      "description": "is used to examine",
+      "weight": "8",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "CHI-SQUARE TEST",
+      "target": "DIGENIC INHERITANCE",
+      "description": "is used to examine",
+      "weight": "8",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "NON-NODULATION",
+      "target": "RECESSIVE GENE ACTION",
+      "description": "is controlled by",
+      "weight": "9",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "RN8",
+      "target": "NON-NODULATION",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "RN8",
+      "target": "KABULI CHICKPEA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "KABULI CHICKPEA",
+      "target": "CHICKPEA",
+      "description": "is a subtype of",
+      "weight": "10",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "DESI CHICKPEA",
+      "target": "CHICKPEA",
+      "description": "is a subtype of",
+      "weight": "10",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "RHIZOBIUM",
+      "target": "NODULATION",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_1701"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "NODULATION",
+      "description": "is the site of testing for",
+      "weight": "7",
+      "source_id": "paper_1701"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for grain hardness.",
+      "source_id": "paper_3409"
+    },
+    {
+      "name": "GRAIN HARDNESS",
+      "type": "TRAIT",
+      "description": "The physical property of sorghum grains being tested.",
+      "source_id": "paper_3409"
+    },
+    {
+      "name": "DENSITY GRADING IN SODIUM NITRATE SOLUTION",
+      "type": "METHOD",
+      "description": "An indirect, non-destructive method for testing grain hardness using a specific solution density.",
+      "source_id": "paper_3409"
+    },
+    {
+      "name": "SODIUM NITRATE SOLUTION",
+      "type": "CONCEPT",
+      "description": "The chemical solution used as the medium for density grading.",
+      "source_id": "paper_3409"
+    },
+    {
+      "name": "PERCENTAGE OF FLOATING KERNELS",
+      "type": "TRAIT",
+      "description": "The measurement obtained from the density grading method.",
+      "source_id": "paper_3409"
+    },
+    {
+      "name": "PERCENTAGE VITREOUSNESS",
+      "type": "TRAIT",
+      "description": "A measure of the glassy appearance of the grain, correlated with floating kernels.",
+      "source_id": "paper_3409"
+    },
+    {
+      "name": "WORK REQUIRED FOR GRINDING",
+      "type": "TRAIT",
+      "description": "A measure of grain hardness based on the energy needed for grinding.",
+      "source_id": "paper_3409"
+    },
+    {
+      "name": "FLOUR PARTICLE SIZE",
+      "type": "TRAIT",
+      "description": "The size of particles in the flour produced from the grain.",
+      "source_id": "paper_3409"
+    },
+    {
+      "name": "RHEOLOGICAL PROPERTIES OF SORGHUM FLOUR DOUGH",
+      "type": "TRAIT",
+      "description": "The flow and deformation properties of the dough made from sorghum flour.",
+      "source_id": "paper_3409"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DENSITY GRADING IN SODIUM NITRATE SOLUTION",
+      "target": "GRAIN HARDNESS",
+      "description": "is a method for testing",
+      "weight": "10",
+      "source_id": "paper_3409"
+    },
+    {
+      "source": "DENSITY GRADING IN SODIUM NITRATE SOLUTION",
+      "target": "SODIUM NITRATE SOLUTION",
+      "description": "employs",
+      "weight": "10",
+      "source_id": "paper_3409"
+    },
+    {
+      "source": "DENSITY GRADING IN SODIUM NITRATE SOLUTION",
+      "target": "PERCENTAGE OF FLOATING KERNELS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3409"
+    },
+    {
+      "source": "PERCENTAGE OF FLOATING KERNELS",
+      "target": "PERCENTAGE VITREOUSNESS",
+      "description": "is highly correlated with",
+      "weight": "9",
+      "source_id": "paper_3409"
+    },
+    {
+      "source": "PERCENTAGE OF FLOATING KERNELS",
+      "target": "WORK REQUIRED FOR GRINDING",
+      "description": "is highly correlated with",
+      "weight": "9",
+      "source_id": "paper_3409"
+    },
+    {
+      "source": "PERCENTAGE OF FLOATING KERNELS",
+      "target": "FLOUR PARTICLE SIZE",
+      "description": "is highly correlated with",
+      "weight": "9",
+      "source_id": "paper_3409"
+    },
+    {
+      "source": "PERCENTAGE OF FLOATING KERNELS",
+      "target": "RHEOLOGICAL PROPERTIES OF SORGHUM FLOUR DOUGH",
+      "description": "is highly correlated with",
+      "weight": "9",
+      "source_id": "paper_3409"
+    },
+    {
+      "source": "GRAIN HARDNESS",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_3409"
+    },
+    {
+      "source": "RHEOLOGICAL PROPERTIES OF SORGHUM FLOUR DOUGH",
+      "target": "SORGHUM",
+      "description": "is a property of flour derived from",
+      "weight": "10",
+      "source_id": "paper_3409"
+    }
+  ]
+}

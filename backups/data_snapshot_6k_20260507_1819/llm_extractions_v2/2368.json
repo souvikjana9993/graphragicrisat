@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "BIOPHYSICAL INDICATORS",
+      "type": "CONCEPT",
+      "description": "Measurable indicators used to monitor the impact of interventions on soil quality attributes",
+      "source_id": "paper_2368"
+    },
+    {
+      "name": "IMPACT ASSESSMENT",
+      "type": "CONCEPT",
+      "description": "The process of evaluating the effects of interventions on specific attributes",
+      "source_id": "paper_2368"
+    },
+    {
+      "name": "NATURAL RESOURCE MANAGEMENT INTERVENTIONS",
+      "type": "METHOD",
+      "description": "Interventions aimed at managing natural resources to improve soil quality",
+      "source_id": "paper_2368"
+    },
+    {
+      "name": "SOIL QUALITY",
+      "type": "TRAIT",
+      "description": "The attributes of soil that are monitored and assessed for changes",
+      "source_id": "paper_2368"
+    },
+    {
+      "name": "SIMULATION MODELLING",
+      "type": "METHOD",
+      "description": "A technique used to assess the long-term effects of interventions on soil quality",
+      "source_id": "paper_2368"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOPHYSICAL INDICATORS",
+      "target": "IMPACT ASSESSMENT",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_2368"
+    },
+    {
+      "source": "BIOPHYSICAL INDICATORS",
+      "target": "NATURAL RESOURCE MANAGEMENT INTERVENTIONS",
+      "description": "used to monitor the impact of",
+      "weight": "9",
+      "source_id": "paper_2368"
+    },
+    {
+      "source": "NATURAL RESOURCE MANAGEMENT INTERVENTIONS",
+      "target": "SOIL QUALITY",
+      "description": "impacts",
+      "weight": "9",
+      "source_id": "paper_2368"
+    },
+    {
+      "source": "SIMULATION MODELLING",
+      "target": "NATURAL RESOURCE MANAGEMENT INTERVENTIONS",
+      "description": "used to assess the long-term effects of",
+      "weight": "8",
+      "source_id": "paper_2368"
+    },
+    {
+      "source": "SIMULATION MODELLING",
+      "target": "SOIL QUALITY",
+      "description": "used to assess effects on",
+      "weight": "8",
+      "source_id": "paper_2368"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L.",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "STEM FASCIATION",
+      "type": "TRAIT",
+      "description": "Morphological abnormality where the stem is widened and leaves, flowers, or pods are clustered at the apex",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per plant",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "SPONTANEOUS MUTATION",
+      "type": "CONDITION",
+      "description": "Natural occurrence of genetic mutations",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "INDUCED MUTATION",
+      "type": "CONDITION",
+      "description": "Artificially created genetic mutations",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "ICC 2042",
+      "type": "ORGANISM",
+      "description": "A spontaneous stem fasciation mutant of chickpea",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "ICC 5645",
+      "type": "ORGANISM",
+      "description": "A spontaneous stem fasciation mutant of chickpea",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "JGM 2",
+      "type": "ORGANISM",
+      "description": "An induced stem fasciation mutant of chickpea",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "FAS1",
+      "type": "GENE_MARKER",
+      "description": "A common gene controlling stem fasciation in spontaneous mutants ICC 2042 and ICC 5645",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "FAS2",
+      "type": "GENE_MARKER",
+      "description": "A gene controlling stem fasciation in the induced mutant JGM 2",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "NUMBER OF PODS PER PLANT",
+      "type": "TRAIT",
+      "description": "A yield-related trait measured in the study",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "NUMBER OF SEEDS PER PLANT",
+      "type": "TRAIT",
+      "description": "A yield-related trait measured in the study",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "A yield-related trait measured in the study",
+      "source_id": "paper_2713"
+    },
+    {
+      "name": "CHICKPEA BREEDING",
+      "type": "METHOD",
+      "description": "The process of improving chickpea varieties",
+      "source_id": "paper_2713"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STEM FASCIATION",
+      "target": "CHICKPEA",
+      "description": "observed in",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "SPONTANEOUS MUTATION",
+      "target": "STEM FASCIATION",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "INDUCED MUTATION",
+      "target": "STEM FASCIATION",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "ICC 2042",
+      "target": "CHICKPEA",
+      "description": "is a mutant of",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "ICC 5645",
+      "target": "CHICKPEA",
+      "description": "is a mutant of",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "JGM 2",
+      "target": "CHICKPEA",
+      "description": "is a mutant of",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "ICC 2042",
+      "target": "STEM FASCIATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "ICC 5645",
+      "target": "STEM FASCIATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "JGM 2",
+      "target": "STEM FASCIATION",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "FAS1",
+      "target": "STEM FASCIATION",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "FAS1",
+      "target": "ICC 2042",
+      "description": "is the gene for",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "FAS1",
+      "target": "ICC 5645",
+      "description": "is the gene for",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "FAS2",
+      "target": "STEM FASCIATION",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "FAS2",
+      "target": "JGM 2",
+      "description": "is the gene for",
+      "weight": "10",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "FAS1",
+      "target": "FAS2",
+      "description": "is not allelic to",
+      "weight": "9",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "STEM FASCIATION",
+      "target": "GRAIN YIELD",
+      "description": "studied for effect on",
+      "weight": "8",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "STEM FASCIATION",
+      "target": "NUMBER OF PODS PER PLANT",
+      "description": "no significant effect on",
+      "weight": "7",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "STEM FASCIATION",
+      "target": "NUMBER OF SEEDS PER PLANT",
+      "description": "no significant effect on",
+      "weight": "7",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "STEM FASCIATION",
+      "target": "SEED SIZE",
+      "description": "no significant effect on",
+      "weight": "7",
+      "source_id": "paper_2713"
+    },
+    {
+      "source": "STEM FASCIATION",
+      "target": "CHICKPEA BREEDING",
+      "description": "can be exploited in",
+      "weight": "8",
+      "source_id": "paper_2713"
+    }
+  ]
+}

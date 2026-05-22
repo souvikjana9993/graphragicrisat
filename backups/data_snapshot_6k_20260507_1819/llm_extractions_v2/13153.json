@@ -1,0 +1,203 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop affected by stem rot and the subject of the study",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "STEM ROT",
+      "type": "CONDITION",
+      "description": "A disease of groundnut caused by Sclerotium rolfsii",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes stem rot in groundnut",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "One of the field evaluation sites",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "RAJENDRANAGAR",
+      "type": "LOCATION",
+      "description": "One of the field evaluation sites",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "TRICHODERMA VIRIDE",
+      "type": "ORGANISM",
+      "description": "A fungal bioagent used for the management of stem rot",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "BACILLUS CEREUS",
+      "type": "ORGANISM",
+      "description": "A bacterial bioagent used for the management of stem rot",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "AZOXYSTROBIN",
+      "type": "METHOD",
+      "description": "A fungicide used in combination with bioagents to control stem rot",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "SEED TREATMENT",
+      "type": "METHOD",
+      "description": "An application method for bioagents and fungicides",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "SOIL APPLICATION",
+      "type": "METHOD",
+      "description": "An application method for bioagents and fungicides",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "A yield attributing parameter measured in groundnut",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "B:C RATIO",
+      "type": "TRAIT",
+      "description": "The benefit-cost ratio used to evaluate the economic viability of treatments",
+      "source_id": "paper_13153"
+    },
+    {
+      "name": "INTEGRATED MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The combined use of fungal bioagents, bacterial bioagents, and fungicides to control disease",
+      "source_id": "paper_13153"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "STEM ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "STEM ROT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "TRICHODERMA VIRIDE",
+      "target": "STEM ROT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "BACILLUS CEREUS",
+      "target": "STEM ROT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "AZOXYSTROBIN",
+      "target": "STEM ROT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "TRICHODERMA VIRIDE",
+      "target": "SEED TREATMENT",
+      "description": "applied via",
+      "weight": "8",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "TRICHODERMA VIRIDE",
+      "target": "SOIL APPLICATION",
+      "description": "applied via",
+      "weight": "8",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "BACILLUS CEREUS",
+      "target": "SEED TREATMENT",
+      "description": "applied via",
+      "weight": "8",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "BACILLUS CEREUS",
+      "target": "SOIL APPLICATION",
+      "description": "applied via",
+      "weight": "8",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "AZOXYSTROBIN",
+      "target": "SEED TREATMENT",
+      "description": "applied via",
+      "weight": "8",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "AZOXYSTROBIN",
+      "target": "SOIL APPLICATION",
+      "description": "applied via",
+      "weight": "8",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "INTEGRATED MANAGEMENT",
+      "target": "STEM ROT",
+      "description": "manages",
+      "weight": "10",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "INTEGRATED MANAGEMENT",
+      "target": "POD YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "INTEGRATED MANAGEMENT",
+      "target": "B:C RATIO",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "TRICHODERMA VIRIDE",
+      "target": "INTEGRATED MANAGEMENT",
+      "description": "component of",
+      "weight": "9",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "BACILLUS CEREUS",
+      "target": "INTEGRATED MANAGEMENT",
+      "description": "component of",
+      "weight": "9",
+      "source_id": "paper_13153"
+    },
+    {
+      "source": "AZOXYSTROBIN",
+      "target": "INTEGRATED MANAGEMENT",
+      "description": "component of",
+      "weight": "9",
+      "source_id": "paper_13153"
+    }
+  ]
+}

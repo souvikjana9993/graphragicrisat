@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "SPODOPTERA LITURA",
+      "type": "ORGANISM",
+      "description": "Tobacco caterpillar, a moth species whose population is monitored in groundnut crops",
+      "source_id": "paper_6571"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hyopogaea L, the crop in which Spodoptera litura populations are monitored",
+      "source_id": "paper_6571"
+    },
+    {
+      "name": "PHEROMONE TRAPPING",
+      "type": "METHOD",
+      "description": "A procedure using pheromone-trap designs to catch male moths",
+      "source_id": "paper_6571"
+    },
+    {
+      "name": "SINGLE-FUNNEL TRAP",
+      "type": "METHOD",
+      "description": "A specific pheromone trap design, 20 cm in diameter, found to be most effective for capturing moths",
+      "source_id": "paper_6571"
+    },
+    {
+      "name": "DOUBLE-FUNNEL TRAP",
+      "type": "METHOD",
+      "description": "A pheromone trap design compared for efficacy in catching moths",
+      "source_id": "paper_6571"
+    },
+    {
+      "name": "SLEEVE TRAP",
+      "type": "METHOD",
+      "description": "A pheromone trap design from which moths were observed to escape",
+      "source_id": "paper_6571"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the national monitoring network for S. litura is implemented",
+      "source_id": "paper_6571"
+    },
+    {
+      "name": "MONITORING",
+      "type": "CONCEPT",
+      "description": "The systematic tracking of S. litura populations using a national network",
+      "source_id": "paper_6571"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHEROMONE TRAPPING",
+      "target": "SPODOPTERA LITURA",
+      "description": "used to catch male moths of",
+      "weight": "10",
+      "source_id": "paper_6571"
+    },
+    {
+      "source": "SPODOPTERA LITURA",
+      "target": "GROUNDNUT",
+      "description": "infests the fields of",
+      "weight": "10",
+      "source_id": "paper_6571"
+    },
+    {
+      "source": "SINGLE-FUNNEL TRAP",
+      "target": "PHEROMONE TRAPPING",
+      "description": "is a specific design of",
+      "weight": "9",
+      "source_id": "paper_6571"
+    },
+    {
+      "source": "DOUBLE-FUNNEL TRAP",
+      "target": "PHEROMONE TRAPPING",
+      "description": "is a specific design of",
+      "weight": "9",
+      "source_id": "paper_6571"
+    },
+    {
+      "source": "SLEEVE TRAP",
+      "target": "PHEROMONE TRAPPING",
+      "description": "is a specific design of",
+      "weight": "9",
+      "source_id": "paper_6571"
+    },
+    {
+      "source": "SINGLE-FUNNEL TRAP",
+      "target": "MONITORING",
+      "description": "found suitable for use in",
+      "weight": "8",
+      "source_id": "paper_6571"
+    },
+    {
+      "source": "MONITORING",
+      "target": "SPODOPTERA LITURA",
+      "description": "tracks the population of",
+      "weight": "9",
+      "source_id": "paper_6571"
+    },
+    {
+      "source": "MONITORING",
+      "target": "INDIA",
+      "description": "conducted within the national network of",
+      "weight": "8",
+      "source_id": "paper_6571"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Cultivated peanut (Arachis hypogaea L.), an important oil and protein crop",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "RECOMBINATION HOT SPOTS",
+      "type": "CONCEPT",
+      "description": "High density regions of crossover events in the genome",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "MEIOSIS",
+      "type": "CONCEPT",
+      "description": "The cell division process that causes recombination hot spots",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "RECOMBINATION EVENTS",
+      "type": "CONCEPT",
+      "description": "Genetic exchange events occurring during meiosis",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "SLAF MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Sequence-based markers used for genome-wide identification of recombination hot spots",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "RIL POPULATION",
+      "type": "METHOD",
+      "description": "Recombinant Inbred Line population used to evaluate recombination events",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "NATURAL POPULATION",
+      "type": "METHOD",
+      "description": "A population of 49 cultivars used to evaluate recombination events",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "CROSSOVER EVENTS",
+      "type": "CONCEPT",
+      "description": "Specific recombination events detected per plant",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "B SUB-GENOME",
+      "type": "CONCEPT",
+      "description": "One of the two sub-genomes in peanut showing specific crossover event distribution",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "A SUB-GENOME",
+      "type": "CONCEPT",
+      "description": "One of the two sub-genomes in peanut showing specific crossover event distribution",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "CHROMOSOMES",
+      "type": "CONCEPT",
+      "description": "Structures containing the genome where crossover events are distributed",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "MARKER HAPLOTYPES CONSERVATIVE REGION",
+      "type": "CONCEPT",
+      "description": "Genomic regions that show a negative relationship with recombination hot spots",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "HEATMAP OF RECOMBINATION",
+      "type": "METHOD",
+      "description": "A visualization tool showing a positive relationship with recombination hot spots",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "GO CATEGORIES",
+      "type": "METHOD",
+      "description": "Gene Ontology categories used to analyze the function of genes in RHP regions",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "ENVIRONMENTAL STIMULI",
+      "type": "CONDITION",
+      "description": "External factors that trigger responses from genes located in RHP regions",
+      "source_id": "paper_11599"
+    },
+    {
+      "name": "ADAPTATION",
+      "type": "TRAIT",
+      "description": "The process of peanut adjusting to changing environments, facilitated by recombination",
+      "source_id": "paper_11599"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MEIOSIS",
+      "target": "RECOMBINATION HOT SPOTS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "RECOMBINATION HOT SPOTS",
+      "target": "PEANUT",
+      "description": "identified in",
+      "weight": "10",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "SLAF MARKERS",
+      "target": "RECOMBINATION HOT SPOTS",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "RIL POPULATION",
+      "target": "RECOMBINATION EVENTS",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "NATURAL POPULATION",
+      "target": "RECOMBINATION EVENTS",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "CROSSOVER EVENTS",
+      "target": "RECOMBINATION HOT SPOTS",
+      "description": "constitute",
+      "weight": "10",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "CROSSOVER EVENTS",
+      "target": "B SUB-GENOME",
+      "description": "distributed in",
+      "weight": "8",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "CROSSOVER EVENTS",
+      "target": "A SUB-GENOME",
+      "description": "distributed in",
+      "weight": "8",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "CROSSOVER EVENTS",
+      "target": "CHROMOSOMES",
+      "description": "distributed along",
+      "weight": "8",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "RECOMBINATION HOT SPOTS",
+      "target": "MARKER HAPLOTYPES CONSERVATIVE REGION",
+      "description": "negatively related to",
+      "weight": "7",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "RECOMBINATION HOT SPOTS",
+      "target": "HEATMAP OF RECOMBINATION",
+      "description": "positively related to",
+      "weight": "7",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "GO CATEGORIES",
+      "target": "RECOMBINATION HOT SPOTS",
+      "description": "used to analyze genes within",
+      "weight": "8",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "ENVIRONMENTAL STIMULI",
+      "target": "RECOMBINATION HOT SPOTS",
+      "description": "genes within respond to",
+      "weight": "8",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "RECOMBINATION HOT SPOTS",
+      "target": "ADAPTATION",
+      "description": "plays a crucial role in",
+      "weight": "9",
+      "source_id": "paper_11599"
+    },
+    {
+      "source": "RECOMBINATION HOT SPOTS",
+      "target": "PEANUT",
+      "description": "crucial for improvement and domestication",
+      "weight": "8",
+      "source_id": "paper_11599"
+    }
+  ]
+}

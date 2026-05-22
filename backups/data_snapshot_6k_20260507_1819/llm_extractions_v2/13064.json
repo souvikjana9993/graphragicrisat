@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "SOIL BUNDS",
+      "type": "METHOD",
+      "description": "Conservation structures used to reduce surface runoff and soil erosion on hill slopes",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "SURFACE RUNOFF",
+      "type": "CONCEPT",
+      "description": "Water flowing over the land surface, which soil bunds aim to reduce",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "SOIL EROSION",
+      "type": "CONCEPT",
+      "description": "The process of soil displacement, which leads to loss of nutrients and organic carbon",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "SOIL ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "A key component of soil health that declines due to soil erosion",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "NUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Essential soil elements including nitrogen, phosphorus, and potassium",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "CROPLAND PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The agricultural output capacity of the land, negatively affected by soil erosion",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "SOUTHWEST ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The region where the study on soil and water conservation was conducted",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "OMO-GIBE RIVER BASIN",
+      "type": "LOCATION",
+      "description": "The specific river basin in southwest Ethiopia where experimental fields were located",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "UNIVERSAL SOIL LOSS EQUATION",
+      "type": "METHOD",
+      "description": "A mathematical model used to describe and predict soil losses",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONCEPT",
+      "description": "A plant-available nutrient lost during soil erosion",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "A plant-available nutrient lost during soil erosion",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A nutrient lost from plots without soil bunds",
+      "source_id": "paper_13064"
+    },
+    {
+      "name": "SUSPENDED MATERIAL",
+      "type": "CONCEPT",
+      "description": "Soil particles removed in suspended form, containing higher concentrations of SOC and nutrients",
+      "source_id": "paper_13064"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL BUNDS",
+      "target": "SURFACE RUNOFF",
+      "description": "effectively reduces",
+      "weight": "10",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "SOIL BUNDS",
+      "target": "SOIL EROSION",
+      "description": "effectively reduces",
+      "weight": "10",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "causes significant declines in",
+      "weight": "8",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "NUTRIENTS",
+      "description": "causes significant declines in",
+      "weight": "8",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "CROPLAND PRODUCTIVITY",
+      "description": "negatively affects",
+      "weight": "9",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "SOIL BUNDS",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "strongly limits losses of",
+      "weight": "9",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "SOIL BUNDS",
+      "target": "NUTRIENTS",
+      "description": "strongly limits losses of",
+      "weight": "9",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "UNIVERSAL SOIL LOSS EQUATION",
+      "target": "SOIL EROSION",
+      "description": "describes soil losses",
+      "weight": "9",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "NUTRIENTS",
+      "target": "POTASSIUM",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "NUTRIENTS",
+      "target": "PHOSPHORUS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "NUTRIENTS",
+      "target": "NITROGEN",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "OMO-GIBE RIVER BASIN",
+      "target": "SOUTHWEST ETHIOPIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "SUSPENDED MATERIAL",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "contains higher concentrations of",
+      "weight": "7",
+      "source_id": "paper_13064"
+    },
+    {
+      "source": "SUSPENDED MATERIAL",
+      "target": "NUTRIENTS",
+      "description": "contains higher concentrations of",
+      "weight": "7",
+      "source_id": "paper_13064"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop studied for aflatoxin contamination",
+      "source_id": "paper_11390"
+    },
+    {
+      "name": "AFLATOXIN CONTENT",
+      "type": "TRAIT",
+      "description": "The level of aflatoxin in peanut kernels, which is a food safety concern",
+      "source_id": "paper_11390"
+    },
+    {
+      "name": "ZAMBIA",
+      "type": "LOCATION",
+      "description": "A developing tropical country where peanut marketability is affected by aflatoxin standards",
+      "source_id": "paper_11390"
+    },
+    {
+      "name": "AMBIENT TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The air temperature measured during the pod development stage of peanuts",
+      "source_id": "paper_11390"
+    },
+    {
+      "name": "SOIL TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature of the soil measured during the pod development stage of peanuts",
+      "source_id": "paper_11390"
+    },
+    {
+      "name": "SOIL MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "The amount of water in the soil measured during the pod development stage of peanuts",
+      "source_id": "paper_11390"
+    },
+    {
+      "name": "POD DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The growth stage of the peanut crop during which environmental factors are monitored",
+      "source_id": "paper_11390"
+    },
+    {
+      "name": "REGRESSION MODELS",
+      "type": "METHOD",
+      "description": "Statistical models used to predict the total aflatoxin content in peanut kernels",
+      "source_id": "paper_11390"
+    },
+    {
+      "name": "SIMPLE LINEAR REGRESSION",
+      "type": "METHOD",
+      "description": "A statistical method used to predict aflatoxin content based on a single environmental factor",
+      "source_id": "paper_11390"
+    },
+    {
+      "name": "MULTIVARIATE REGRESSION",
+      "type": "METHOD",
+      "description": "A statistical method used to predict aflatoxin content based on multiple environmental factors",
+      "source_id": "paper_11390"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "AFLATOXIN CONTENT",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "ZAMBIA",
+      "target": "PEANUT",
+      "description": "produces",
+      "weight": "7",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "AMBIENT TEMPERATURE",
+      "target": "AFLATOXIN CONTENT",
+      "description": "predicts",
+      "weight": "6",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "AFLATOXIN CONTENT",
+      "description": "predicts",
+      "weight": "7",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "SOIL MOISTURE CONTENT",
+      "target": "AFLATOXIN CONTENT",
+      "description": "predicts",
+      "weight": "8",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "POD DEVELOPMENT",
+      "target": "AMBIENT TEMPERATURE",
+      "description": "is the period when measured",
+      "weight": "9",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "POD DEVELOPMENT",
+      "target": "SOIL TEMPERATURE",
+      "description": "is the period when measured",
+      "weight": "9",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "POD DEVELOPMENT",
+      "target": "SOIL MOISTURE CONTENT",
+      "description": "is the period when measured",
+      "weight": "9",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "REGRESSION MODELS",
+      "target": "AFLATOXIN CONTENT",
+      "description": "predicts",
+      "weight": "10",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "SIMPLE LINEAR REGRESSION",
+      "target": "REGRESSION MODELS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "MULTIVARIATE REGRESSION",
+      "target": "REGRESSION MODELS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "SIMPLE LINEAR REGRESSION",
+      "target": "AMBIENT TEMPERATURE",
+      "description": "analyzes",
+      "weight": "8",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "SIMPLE LINEAR REGRESSION",
+      "target": "SOIL TEMPERATURE",
+      "description": "analyzes",
+      "weight": "8",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "SIMPLE LINEAR REGRESSION",
+      "target": "SOIL MOISTURE CONTENT",
+      "description": "analyzes",
+      "weight": "8",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "MULTIVARIATE REGRESSION",
+      "target": "SOIL MOISTURE CONTENT",
+      "description": "analyzes",
+      "weight": "8",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "MULTIVARIATE REGRESSION",
+      "target": "SOIL TEMPERATURE",
+      "description": "analyzes",
+      "weight": "8",
+      "source_id": "paper_11390"
+    },
+    {
+      "source": "MULTIVARIATE REGRESSION",
+      "target": "AMBIENT TEMPERATURE",
+      "description": "analyzes",
+      "weight": "8",
+      "source_id": "paper_11390"
+    }
+  ]
+}

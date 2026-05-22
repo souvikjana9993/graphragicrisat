@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method that uses genomic information to predict the genetic value of individuals to accelerate genetic gain.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "PHENOTYPIC SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method based on the observable characteristics of plants to select for desired traits.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "CONCEPT",
+      "description": "An agricultural practice where two or more component crops are grown together on the same piece of land.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "GENETIC GAIN",
+      "type": "TRAIT",
+      "description": "The increase in the average genetic value of a trait within a population over generations.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "STOCHASTIC SIMULATION",
+      "type": "METHOD",
+      "description": "A computational method used to model random variables to compare different breeding strategies.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "MONOCROP GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced by a crop when grown as a single species.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "INTERCROP GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced by a crop when grown in an intercropping system.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "GENETIC CORRELATION",
+      "type": "CONCEPT",
+      "description": "The degree to which two traits are controlled by the same set of genes.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "GENERATION INTERVAL",
+      "type": "CONCEPT",
+      "description": "The average time between the selection of parents and the selection of their offspring.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "SOIL STRUCTURE",
+      "type": "TRAIT",
+      "description": "The physical arrangement of soil particles, which can be enhanced by intercropping.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "FERTILITY",
+      "type": "TRAIT",
+      "description": "The capacity of soil to provide essential nutrients for plant growth.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "WEED SUPPRESSION",
+      "type": "TRAIT",
+      "description": "The ability of a cropping system to inhibit the growth of weeds.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "PESTS",
+      "type": "ORGANISM",
+      "description": "Organisms that cause damage to crops.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "DISEASES",
+      "type": "CONDITION",
+      "description": "Pathological conditions that affect crop health and yield.",
+      "source_id": "paper_11726"
+    },
+    {
+      "name": "SUBSISTENCE AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "Farming practiced primarily to provide food for the farmer and their family.",
+      "source_id": "paper_11726"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GENETIC GAIN",
+      "description": "produces faster genetic gain than phenotypic selection",
+      "weight": "10",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "PHENOTYPIC SELECTION",
+      "target": "GENETIC GAIN",
+      "description": "produces slower genetic gain than genomic selection",
+      "weight": "8",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "SOIL STRUCTURE",
+      "description": "leads to enhanced soil structure",
+      "weight": "7",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "FERTILITY",
+      "description": "leads to improved fertility",
+      "weight": "7",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "WEED SUPPRESSION",
+      "description": "leads to improved weed suppression",
+      "weight": "7",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PESTS",
+      "description": "provides better control of pests",
+      "weight": "7",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "DISEASES",
+      "description": "provides better control of diseases",
+      "weight": "7",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "SUBSISTENCE AGRICULTURE",
+      "description": "has great potential to optimize farming and increase profitability",
+      "weight": "6",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "STOCHASTIC SIMULATION",
+      "target": "GENOMIC SELECTION",
+      "description": "used to compare breeding programs implementing genomic selection",
+      "weight": "9",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "STOCHASTIC SIMULATION",
+      "target": "PHENOTYPIC SELECTION",
+      "description": "used to compare breeding programs based on phenotypic selection",
+      "weight": "9",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "GENETIC CORRELATION",
+      "target": "MONOCROP GRAIN YIELD",
+      "description": "exists between monocrop grain yield and intercrop grain yield",
+      "weight": "10",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "GENETIC CORRELATION",
+      "target": "INTERCROP GRAIN YIELD",
+      "description": "exists between monocrop grain yield and intercrop grain yield",
+      "weight": "10",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GENERATION INTERVAL",
+      "description": "minimizes the generation interval",
+      "weight": "8",
+      "source_id": "paper_11726"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "INTERCROP GRAIN YIELD",
+      "description": "predicts general intercropping ability to increase selection accuracy",
+      "weight": "9",
+      "source_id": "paper_11726"
+    }
+  ]
+}

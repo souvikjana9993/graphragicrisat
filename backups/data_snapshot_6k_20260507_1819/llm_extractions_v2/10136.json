@@ -1,0 +1,161 @@
+{
+  "entities": [
+    {
+      "name": "CROP FORECAST",
+      "type": "CONCEPT",
+      "description": "A statement of the most likely magnitude of yield or production of a crop based on known facts and weather assumptions",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The magnitude of crop production used as a target for forecasting",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "PRODUCTION",
+      "type": "TRAIT",
+      "description": "The total amount of crop produced",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "WEATHER CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental factors during the growing season assumed to be similar to previous year averages",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "NON-LINEAR REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to develop wheat yield forecast models",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The agricultural crop for which the yield forecast model was developed",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "ALLAHABAD DISTRICT",
+      "type": "LOCATION",
+      "description": "The specific geographic area in India where the study was conducted",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study area is located",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "NONLINEAR MODELS",
+      "type": "METHOD",
+      "description": "Statistical models incorporating weather variables and indices to identify a suitable forecasting approach",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "WEATHER VARIABLES",
+      "type": "CONDITION",
+      "description": "Environmental factors used as inputs in the nonlinear forecasting models",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "WEATHER INDICES",
+      "type": "CONCEPT",
+      "description": "Derived statistical indices of weather variables used in the forecasting models",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "TIME SERIES YIELD DATA",
+      "type": "CONCEPT",
+      "description": "Historical yield records from 1970 to 2010 used for model development",
+      "source_id": "paper_10136"
+    },
+    {
+      "name": "WEATHER DATA",
+      "type": "CONCEPT",
+      "description": "Historical weather records from 1970-71 to 2009-10 used for model development",
+      "source_id": "paper_10136"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROP FORECAST",
+      "target": "YIELD",
+      "description": "forecasts the magnitude of",
+      "weight": "10",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "CROP FORECAST",
+      "target": "PRODUCTION",
+      "description": "forecasts the magnitude of",
+      "weight": "10",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "NON-LINEAR REGRESSION ANALYSIS",
+      "target": "WHEAT",
+      "description": "used to develop yield forecast model for",
+      "weight": "9",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "NON-LINEAR REGRESSION ANALYSIS",
+      "target": "ALLAHABAD DISTRICT",
+      "description": "applied to data from",
+      "weight": "8",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "NONLINEAR MODELS",
+      "target": "WEATHER VARIABLES",
+      "description": "utilize",
+      "weight": "9",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "NONLINEAR MODELS",
+      "target": "WEATHER INDICES",
+      "description": "utilize",
+      "weight": "9",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "NONLINEAR MODELS",
+      "target": "YIELD",
+      "description": "used to forecast",
+      "weight": "10",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "ALLAHABAD DISTRICT",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "TIME SERIES YIELD DATA",
+      "target": "NONLINEAR MODELS",
+      "description": "used to develop",
+      "weight": "9",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "WEATHER DATA",
+      "target": "NONLINEAR MODELS",
+      "description": "used to develop",
+      "weight": "9",
+      "source_id": "paper_10136"
+    },
+    {
+      "source": "WEATHER CONDITIONS",
+      "target": "CROP FORECAST",
+      "description": "assumed to be average of previous years for",
+      "weight": "7",
+      "source_id": "paper_10136"
+    }
+  ]
+}

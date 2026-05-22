@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Lowland rice grown in tropical and sub-tropical regions",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "IRON TOXICITY",
+      "type": "CONDITION",
+      "description": "A widespread nutrient disorder caused by high concentrations of ferrous iron in soil solution",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "TROPICAL AND SUB-TROPICAL REGIONS",
+      "type": "LOCATION",
+      "description": "Geographic areas where lowland rice is grown and iron toxicity is widespread",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "ACID SULFATE SOILS",
+      "type": "CONDITION",
+      "description": "Type of soil where iron toxicity occurs",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "ULTISOLS",
+      "type": "CONDITION",
+      "description": "Type of soil where iron toxicity occurs",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "SANDY SOILS",
+      "type": "CONDITION",
+      "description": "Type of soil characterized by low cation exchange capacity where iron toxicity occurs",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "LOW CATION EXCHANGE CAPACITY",
+      "type": "CONDITION",
+      "description": "A soil attribute contributing to iron toxicity",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "ACIDITY",
+      "type": "CONDITION",
+      "description": "A soil attribute contributing to iron toxicity",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "FERROUS IRON",
+      "type": "CONCEPT",
+      "description": "The form of iron in soil solution that causes iron toxicity stress",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "RICE YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of lowland rice, which is reduced by iron toxicity",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "IRON TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a rice genotype to withstand iron toxicity",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "SOIL FERTILITY STATUS",
+      "type": "CONDITION",
+      "description": "A factor that influences the extent to which iron toxicity reduces rice yields",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "IRON-TOLERANT RICE GENOTYPES",
+      "type": "CONCEPT",
+      "description": "Rice varieties that possess genetic tolerance to iron toxicity",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "SOIL, WATER AND NUTRIENT MANAGEMENT",
+      "type": "METHOD",
+      "description": "Practices used to reduce the effects of iron toxicity in rice",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "PLANT NUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Nutrients used in management practices to reduce iron toxicity",
+      "source_id": "paper_166"
+    },
+    {
+      "name": "IRON-TOXIC WETLANDS",
+      "type": "LOCATION",
+      "description": "Wetland areas characterized by iron toxicity",
+      "source_id": "paper_166"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "IRON TOXICITY",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "TROPICAL AND SUB-TROPICAL REGIONS",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "ACID SULFATE SOILS",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "ULTISOLS",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "SANDY SOILS",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "LOW CATION EXCHANGE CAPACITY",
+      "target": "IRON TOXICITY",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "ACIDITY",
+      "target": "IRON TOXICITY",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "FERROUS IRON",
+      "target": "IRON TOXICITY",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "RICE YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "IRON TOLERANCE",
+      "target": "IRON TOXICITY",
+      "description": "mitigates",
+      "weight": "9",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "SOIL FERTILITY STATUS",
+      "target": "RICE YIELD",
+      "description": "influences",
+      "weight": "6",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "IRON-TOLERANT RICE GENOTYPES",
+      "target": "IRON TOXICITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "SOIL, WATER AND NUTRIENT MANAGEMENT",
+      "target": "IRON TOXICITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "PLANT NUTRIENTS",
+      "target": "IRON TOXICITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_166"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "IRON-TOXIC WETLANDS",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_166"
+    }
+  ]
+}

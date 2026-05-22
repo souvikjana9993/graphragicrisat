@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used for hybrid seed production",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "ICPA 2043",
+      "type": "CROP",
+      "description": "A cytoplasmic-nuclear-male-sterile line of hybrid pigeonpea",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced per unit area, measured in kg/ha",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "PLANT SPACING",
+      "type": "CONDITION",
+      "description": "The distance between plants and rows, such as 75 cm x 30 cm",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "IRRIGATION FREQUENCY",
+      "type": "CONDITION",
+      "description": "The interval of days between irrigation events, such as 14 or 18 days",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "PLANTING RATIO",
+      "type": "CONDITION",
+      "description": "The ratio of male-sterile to male-fertile lines used in planting",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "PLANT POPULATION DENSITY",
+      "type": "CONDITION",
+      "description": "The number of plants per unit of land area",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of living biological organisms in a plant",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "NUMBER OF PRIMARY BRANCHES",
+      "type": "TRAIT",
+      "description": "The count of main branches emerging from the plant stem",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "PODS PER PLANT",
+      "type": "TRAIT",
+      "description": "The number of seed pods produced by an individual plant",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "The vertical measurement of the plant from the ground to the tip",
+      "source_id": "paper_1534"
+    },
+    {
+      "name": "CYTOPLASMIC-NUCLEAR-MALE-STERILITY",
+      "type": "CONCEPT",
+      "description": "A genetic condition where pollen is non-functional due to cytoplasmic and nuclear interactions",
+      "source_id": "paper_1534"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "ICPA 2043",
+      "description": "ICPA 2043 is a specific line of PIGEONPEA",
+      "weight": "10",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "ICPA 2043",
+      "target": "SEED YIELD",
+      "description": "The study evaluates the SEED YIELD of the ICPA 2043 line",
+      "weight": "10",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "PLANT SPACING",
+      "target": "SEED YIELD",
+      "description": "PLANT SPACING significantly influences the SEED YIELD per hectare",
+      "weight": "9",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "IRRIGATION FREQUENCY",
+      "target": "SEED YIELD",
+      "description": "IRRIGATION FREQUENCY affects the SEED YIELD of the crop",
+      "weight": "9",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "PLANTING RATIO",
+      "target": "SEED YIELD",
+      "description": "PLANTING RATIO influences the total SEED YIELD",
+      "weight": "8",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "SEED YIELD",
+      "description": "PLANT POPULATION DENSITY determines the SEED YIELD per hectare",
+      "weight": "9",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "PLANT HEIGHT",
+      "description": "PLANT POPULATION DENSITY affects the PLANT HEIGHT",
+      "weight": "8",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "BIOMASS",
+      "description": "PLANT POPULATION DENSITY influences the BIOMASS of individual plants",
+      "weight": "8",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "NUMBER OF PRIMARY BRANCHES",
+      "description": "PLANT POPULATION DENSITY affects the NUMBER OF PRIMARY BRANCHES",
+      "weight": "8",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "PODS PER PLANT",
+      "description": "PLANT POPULATION DENSITY influences the PODS PER PLANT",
+      "weight": "8",
+      "source_id": "paper_1534"
+    },
+    {
+      "source": "ICPA 2043",
+      "target": "CYTOPLASMIC-NUCLEAR-MALE-STERILITY",
+      "description": "ICPA 2043 is characterized by CYTOPLASMIC-NUCLEAR-MALE-STERILITY",
+      "weight": "10",
+      "source_id": "paper_1534"
+    }
+  ]
+}

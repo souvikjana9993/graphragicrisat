@@ -1,0 +1,244 @@
+{
+  "entities": [
+    {
+      "name": "MUSA",
+      "type": "CROP",
+      "description": "Genus of plants including banana and plantain",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "PLANTAIN",
+      "type": "CROP",
+      "description": "Tetraploid plantain hybrids (TMPx)",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "BANANA",
+      "type": "CROP",
+      "description": "Banana hybrids (TMBx)",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "BANANA STREAK BADNAVIRUS",
+      "type": "ORGANISM",
+      "description": "A virus that infects Musa species",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "NIGERIA",
+      "type": "LOCATION",
+      "description": "Country where the research was conducted",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "NATURAL INCIDENCE",
+      "type": "TRAIT",
+      "description": "The occurrence of BSV infection in the plant population",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "SYMPTOM EXPRESSION",
+      "type": "TRAIT",
+      "description": "The manifestation of physical symptoms of BSV infection",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "VIRUS INDEXING",
+      "type": "METHOD",
+      "description": "Technique used to detect the presence of BSV",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "VIRAL ANTIGEN CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The relative amount of BSV antigens in leaf tissues",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "ELISA",
+      "type": "METHOD",
+      "description": "Enzyme-linked immunosorbent assay used to measure viral antigens",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "GROWTH AND YIELD DESCRIPTORS",
+      "type": "TRAIT",
+      "description": "Characteristics related to the growth and yield of the plants",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "Environmental period characterized by high rainfall",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "HOT DRY SEASON",
+      "type": "CONDITION",
+      "description": "Environmental period characterized by high temperature and low rainfall",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "IITA TMPX HYBRIDS",
+      "type": "CROP",
+      "description": "Plantain hybrids developed by the International Institute of Tropical Agriculture",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "FHIA HYBRIDS",
+      "type": "CROP",
+      "description": "Hybrids developed by Fundación Hondureòa de Investigación Agrìcola",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "EMBRAPA HYBRIDS",
+      "type": "CROP",
+      "description": "Hybrids developed by Empresa Brasileira de Pesquisa Agropecuaria",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "LANDRACES",
+      "type": "CROP",
+      "description": "Local traditional varieties of Musa",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "ONNE",
+      "type": "LOCATION",
+      "description": "A specific study site in Nigeria",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "IBADAN",
+      "type": "LOCATION",
+      "description": "A specific study site in Nigeria",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "BUNCH WEIGHT LOSS",
+      "type": "TRAIT",
+      "description": "Reduction in the weight of the fruit bunch due to infection",
+      "source_id": "paper_2347"
+    },
+    {
+      "name": "FIELD TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a genotype to maintain yield despite virus infection",
+      "source_id": "paper_2347"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BANANA STREAK BADNAVIRUS",
+      "target": "MUSA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "BANANA STREAK BADNAVIRUS",
+      "target": "SYMPTOM EXPRESSION",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "BANANA STREAK BADNAVIRUS",
+      "target": "BUNCH WEIGHT LOSS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "ELISA",
+      "target": "VIRAL ANTIGEN CONCENTRATION",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "VIRUS INDEXING",
+      "target": "BANANA STREAK BADNAVIRUS",
+      "description": "detects",
+      "weight": "10",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "NATURAL INCIDENCE",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "HOT DRY SEASON",
+      "target": "NATURAL INCIDENCE",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "IITA TMPX HYBRIDS",
+      "target": "BANANA STREAK BADNAVIRUS",
+      "description": "high susceptibility",
+      "weight": "9",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "FHIA HYBRIDS",
+      "target": "BANANA STREAK BADNAVIRUS",
+      "description": "variable susceptibility",
+      "weight": "7",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "EMBRAPA HYBRIDS",
+      "target": "BANANA STREAK BADNAVIRUS",
+      "description": "low susceptibility",
+      "weight": "7",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "LANDRACES",
+      "target": "BANANA STREAK BADNAVIRUS",
+      "description": "low susceptibility",
+      "weight": "8",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "NIGERIA",
+      "target": "MUSA",
+      "description": "location of study",
+      "weight": "10",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "ONNE",
+      "target": "MUSA",
+      "description": "location of study",
+      "weight": "10",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "IBADAN",
+      "target": "MUSA",
+      "description": "location of study",
+      "weight": "10",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "BUNCH WEIGHT LOSS",
+      "target": "FIELD TOLERANCE",
+      "description": "indicator of",
+      "weight": "9",
+      "source_id": "paper_2347"
+    },
+    {
+      "source": "VIRAL ANTIGEN CONCENTRATION",
+      "target": "SYMPTOM EXPRESSION",
+      "description": "related to",
+      "weight": "7",
+      "source_id": "paper_2347"
+    }
+  ]
+}

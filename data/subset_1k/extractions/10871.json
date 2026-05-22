@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Dry season food legume (Cicer arietinum L.) grown on residual soil moisture",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "Stress experienced by crops due to lack of water, often occurring as terminal drought",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "TERMINAL DROUGHT",
+      "type": "CONDITION",
+      "description": "Moisture stress occurring towards the end of the crop season",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "Stress faced at the reproductive stage, often due to delayed sowing",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "EARLY MATURITY",
+      "type": "TRAIT",
+      "description": "A trait developed to improve adaptation to abiotic stresses",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "ABIOTIC STRESS TOLERANCE",
+      "type": "TRAIT",
+      "description": "General ability of a crop to withstand non-biological stresses",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "Ability of a crop to maintain productivity under moisture stress",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "Measure of productivity used as a selection criterion for drought tolerance",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "POD SET",
+      "type": "TRAIT",
+      "description": "Measure of productivity used as a selection criterion for heat tolerance",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "HEAT TOLERANCE",
+      "type": "TRAIT",
+      "description": "Ability of a crop to maintain productivity under heat stress",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "QTL-HOTSPOT",
+      "type": "GENE_MARKER",
+      "description": "A genomic region controlling several drought tolerance-related traits",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "MARKER-ASSISTED BACKCROSSING",
+      "type": "METHOD",
+      "description": "A breeding method used to introgress specific genomic regions like QTL-hotspots",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "MULTIPARENT ADVANCED GENERATION INTERCROSS",
+      "type": "METHOD",
+      "description": "A breeding approach used to enhance genetic recombination and stress tolerance",
+      "source_id": "paper_10871"
+    },
+    {
+      "name": "GENETIC RECOMBINATION",
+      "type": "CONCEPT",
+      "description": "The process of rearranging genetic material, enhanced by the MAGIC approach",
+      "source_id": "paper_10871"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "MOISTURE STRESS",
+      "description": "experiences",
+      "weight": "8",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "HEAT STRESS",
+      "description": "experiences",
+      "weight": "8",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "TERMINAL DROUGHT",
+      "description": "is synonymous with",
+      "weight": "10",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "EARLY MATURITY",
+      "description": "trait for adaptation",
+      "weight": "7",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ABIOTIC STRESS TOLERANCE",
+      "description": "trait for adaptation",
+      "weight": "7",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "MOISTURE STRESS",
+      "description": "adaptation to",
+      "weight": "9",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "DROUGHT TOLERANCE",
+      "description": "selection criterion for",
+      "weight": "8",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "POD SET",
+      "target": "HEAT TOLERANCE",
+      "description": "selection criterion for",
+      "weight": "8",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "HEAT TOLERANCE",
+      "target": "HEAT STRESS",
+      "description": "adaptation to",
+      "weight": "9",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "QTL-HOTSPOT",
+      "target": "DROUGHT TOLERANCE",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "MARKER-ASSISTED BACKCROSSING",
+      "target": "QTL-HOTSPOT",
+      "description": "used to introgress",
+      "weight": "9",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "MULTIPARENT ADVANCED GENERATION INTERCROSS",
+      "target": "GENETIC RECOMBINATION",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "MULTIPARENT ADVANCED GENERATION INTERCROSS",
+      "target": "TERMINAL DROUGHT",
+      "description": "develops tolerance to",
+      "weight": "8",
+      "source_id": "paper_10871"
+    },
+    {
+      "source": "MULTIPARENT ADVANCED GENERATION INTERCROSS",
+      "target": "HEAT STRESS",
+      "description": "develops tolerance to",
+      "weight": "8",
+      "source_id": "paper_10871"
+    }
+  ]
+}

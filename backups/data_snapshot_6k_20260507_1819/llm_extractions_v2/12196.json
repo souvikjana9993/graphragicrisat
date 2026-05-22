@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A legume crop whose production is increasing in West Africa and is the subject of productivity simulation under climate change scenarios",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "A semi-arid region where soybean production is being assessed for climate change impacts",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Projected changes in climate that impact the yield productivity and variability of crops",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "YIELD PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of soybean output that is sensitive to climate change, carbon dioxide levels, and management practices",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "DSSAT GROPGRO MODULE",
+      "type": "METHOD",
+      "description": "A simulation tool used to assess soybean productivity under historical and projected climate scenarios",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "GENERAL CIRCULATION MODELS",
+      "type": "METHOD",
+      "description": "Models used to project climate scenarios for impact assessment",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "REPRESENTATIVE CONCENTRATION PATHWAYS",
+      "type": "CONCEPT",
+      "description": "Scenarios (specifically 4.5 and 8.5) used to project future climate conditions",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "NORTHERN GHANA",
+      "type": "LOCATION",
+      "description": "The specific region in West Africa where a reduction in soybean productivity was observed due to climate change",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "ELEVATED ATMOSPHERIC CARBON DIOXIDE",
+      "type": "CONDITION",
+      "description": "An atmospheric condition that has the potential to offset the negative impacts of climate change on soybean productivity",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Cultural and strategic practices used by farmers that influence yield heterogeneity and resilience",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "SOILS",
+      "type": "CONDITION",
+      "description": "Soil profile data and differences that contribute to the heterogeneity of climate change impacts among farms",
+      "source_id": "paper_12196"
+    },
+    {
+      "name": "RESILIENCE",
+      "type": "TRAIT",
+      "description": "The ability of soybean productivity to withstand climate change, which can be enhanced by strategic management",
+      "source_id": "paper_12196"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN",
+      "target": "WEST AFRICA",
+      "description": "produced in",
+      "weight": "10",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "YIELD PRODUCTIVITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "DSSAT GROPGRO MODULE",
+      "target": "SOYBEAN",
+      "description": "simulates productivity of",
+      "weight": "9",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "GENERAL CIRCULATION MODELS",
+      "target": "CLIMATE CHANGE",
+      "description": "projects scenarios of",
+      "weight": "8",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "REPRESENTATIVE CONCENTRATION PATHWAYS",
+      "target": "CLIMATE CHANGE",
+      "description": "defines scenarios for",
+      "weight": "8",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "NORTHERN GHANA",
+      "description": "impacts productivity in",
+      "weight": "8",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "NORTHERN GHANA",
+      "target": "WEST AFRICA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "ELEVATED ATMOSPHERIC CARBON DIOXIDE",
+      "target": "YIELD PRODUCTIVITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "MANAGEMENT PRACTICES",
+      "target": "YIELD PRODUCTIVITY",
+      "description": "explains heterogeneity in",
+      "weight": "7",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "SOILS",
+      "target": "YIELD PRODUCTIVITY",
+      "description": "explains heterogeneity in",
+      "weight": "7",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "MANAGEMENT PRACTICES",
+      "target": "RESILIENCE",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_12196"
+    },
+    {
+      "source": "RESILIENCE",
+      "target": "SOYBEAN",
+      "description": "attribute of productivity",
+      "weight": "7",
+      "source_id": "paper_12196"
+    }
+  ]
+}

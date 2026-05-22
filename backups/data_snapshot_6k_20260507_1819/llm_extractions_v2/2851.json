@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species Cicer.",
+      "source_id": "paper_2851"
+    },
+    {
+      "name": "PURPLISH STEM",
+      "type": "TRAIT",
+      "description": "A characteristic where the stem of the plant has a purplish color.",
+      "source_id": "paper_2851"
+    },
+    {
+      "name": "WHITE FLOWERS",
+      "type": "TRAIT",
+      "description": "A characteristic where the flowers of the plant are white.",
+      "source_id": "paper_2851"
+    },
+    {
+      "name": "NATURAL MUTANT",
+      "type": "CONCEPT",
+      "description": "A plant resulting from a spontaneous mutation.",
+      "source_id": "paper_2851"
+    },
+    {
+      "name": "YIELD COMPONENTS",
+      "type": "TRAIT",
+      "description": "Measurable traits that contribute to the overall yield of the crop.",
+      "source_id": "paper_2851"
+    },
+    {
+      "name": "ICC17101",
+      "type": "CROP",
+      "description": "A specific mutant chickpea line identified with purplish stems and white flowers.",
+      "source_id": "paper_2851"
+    },
+    {
+      "name": "ANNIGERI",
+      "type": "CROP",
+      "description": "A specific cultivar of chickpea used as a comparison.",
+      "source_id": "paper_2851"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NATURAL MUTANT",
+      "target": "PURPLISH STEM",
+      "description": "combines",
+      "weight": "10",
+      "source_id": "paper_2851"
+    },
+    {
+      "source": "NATURAL MUTANT",
+      "target": "WHITE FLOWERS",
+      "description": "combines",
+      "weight": "10",
+      "source_id": "paper_2851"
+    },
+    {
+      "source": "ICC17101",
+      "target": "NATURAL MUTANT",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_2851"
+    },
+    {
+      "source": "ICC17101",
+      "target": "CHICKPEA",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_2851"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "CHICKPEA",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_2851"
+    },
+    {
+      "source": "ICC17101",
+      "target": "YIELD COMPONENTS",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_2851"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "YIELD COMPONENTS",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_2851"
+    }
+  ]
+}

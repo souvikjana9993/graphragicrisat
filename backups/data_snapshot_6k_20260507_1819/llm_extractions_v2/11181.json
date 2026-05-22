@@ -1,0 +1,218 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal crop whose distribution expanded through genome addition",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "TETRAPLOID DURUM WHEAT",
+      "type": "CROP",
+      "description": "A form of wheat with four sets of chromosomes",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "HEXAPLOID WHEAT",
+      "type": "CROP",
+      "description": "A form of wheat with six sets of chromosomes capable of adapting to wide ranges",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "FOOD CHARACTERISTICS",
+      "type": "TRAIT",
+      "description": "Characteristics of crops related to their use as food",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "AGRONOMIC CHARACTERISTICS",
+      "type": "TRAIT",
+      "description": "Characteristics of crops related to their cultivation and yield",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "ADAPTATION",
+      "type": "TRAIT",
+      "description": "The process by which a species becomes fitted to its environment",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "MANUAL SELECTION",
+      "type": "METHOD",
+      "description": "Human-driven selection of desired crop traits",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "NATURAL SELECTION",
+      "type": "METHOD",
+      "description": "Process where organisms better adapted to their environment tend to survive",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "D GENOME",
+      "type": "GENE_MARKER",
+      "description": "A specific genome contributed by Aegilops tauschii to wheat",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "AGRI-ECOLOGICAL ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "The environmental conditions of agricultural areas",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "WILD RELATIVES",
+      "type": "ORGANISM",
+      "description": "Non-domesticated species related to crops",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "AEGILOPS TAUSCHII",
+      "type": "ORGANISM",
+      "description": "A wild grass species that contributed the D genome to wheat",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "GENE POOLS",
+      "type": "CONCEPT",
+      "description": "The total number of genetic characteristics in the genetic makeup of a species",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The total number of genetic characteristics in the genetic makeup of a species",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "MUTATIONS",
+      "type": "CONCEPT",
+      "description": "Changes in the DNA sequence",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "ALLO-POLYPLOIDY",
+      "type": "CONCEPT",
+      "description": "Polyploidy resulting from the combination of genomes from different species",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "AUTO-POLYPLOIDY",
+      "type": "CONCEPT",
+      "description": "Polyploidy resulting from the duplication of a single genome",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "SUBTROPICS",
+      "type": "LOCATION",
+      "description": "Regions bordering the tropics",
+      "source_id": "paper_11181"
+    },
+    {
+      "name": "HIGH LATITUDES",
+      "type": "LOCATION",
+      "description": "Regions far from the equator",
+      "source_id": "paper_11181"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MANUAL SELECTION",
+      "target": "FOOD CHARACTERISTICS",
+      "description": "used to select",
+      "weight": "8",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "MANUAL SELECTION",
+      "target": "AGRONOMIC CHARACTERISTICS",
+      "description": "used to select",
+      "weight": "8",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "NATURAL SELECTION",
+      "target": "ADAPTATION",
+      "description": "drives",
+      "weight": "9",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "NATURAL SELECTION",
+      "target": "AGRI-ECOLOGICAL ENVIRONMENTS",
+      "description": "responds to",
+      "weight": "7",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "WILD RELATIVES",
+      "target": "GENETIC DIVERSITY",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "MUTATIONS",
+      "target": "GENETIC DIVERSITY",
+      "description": "provides",
+      "weight": "8",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "ALLO-POLYPLOIDY",
+      "target": "GENE POOLS",
+      "description": "shapes",
+      "weight": "7",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "AUTO-POLYPLOIDY",
+      "target": "GENE POOLS",
+      "description": "shapes",
+      "weight": "7",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "AEGILOPS TAUSCHII",
+      "target": "D GENOME",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "D GENOME",
+      "target": "TETRAPLOID DURUM WHEAT",
+      "description": "added to",
+      "weight": "10",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "TETRAPLOID DURUM WHEAT",
+      "target": "HEXAPLOID WHEAT",
+      "description": "evolved into",
+      "weight": "9",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "HEXAPLOID WHEAT",
+      "target": "AGRI-ECOLOGICAL ENVIRONMENTS",
+      "description": "adapts to",
+      "weight": "9",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "HEXAPLOID WHEAT",
+      "target": "SUBTROPICS",
+      "description": "distributed in",
+      "weight": "7",
+      "source_id": "paper_11181"
+    },
+    {
+      "source": "HEXAPLOID WHEAT",
+      "target": "HIGH LATITUDES",
+      "description": "distributed in",
+      "weight": "7",
+      "source_id": "paper_11181"
+    }
+  ]
+}

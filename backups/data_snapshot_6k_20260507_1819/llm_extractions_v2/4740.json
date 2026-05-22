@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The primary crop being studied for race classification in Southern Africa",
+      "source_id": "paper_4740"
+    },
+    {
+      "name": "SOUTHERN AFRICA",
+      "type": "LOCATION",
+      "description": "The geographic region where the sorghum germplasm is located",
+      "source_id": "paper_4740"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "The genetic resources of sorghum collected for study",
+      "source_id": "paper_4740"
+    },
+    {
+      "name": "CHARACTERIZATION",
+      "type": "METHOD",
+      "description": "The process of identifying and evaluating indigenous accessions",
+      "source_id": "paper_4740"
+    },
+    {
+      "name": "CLASSIFICATION",
+      "type": "METHOD",
+      "description": "The process of grouping different types of sorghum accessions",
+      "source_id": "paper_4740"
+    },
+    {
+      "name": "INDIGENOUS ACCESSIONS",
+      "type": "CONCEPT",
+      "description": "Local varieties of sorghum collected for characterization",
+      "source_id": "paper_4740"
+    },
+    {
+      "name": "CULTIVATED SPECIES",
+      "type": "ORGANISM",
+      "description": "Domesticated forms of sorghum",
+      "source_id": "paper_4740"
+    },
+    {
+      "name": "WILD SPECIES",
+      "type": "ORGANISM",
+      "description": "Non-domesticated forms of sorghum",
+      "source_id": "paper_4740"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SOUTHERN AFRICA",
+      "description": "is located in",
+      "weight": "8",
+      "source_id": "paper_4740"
+    },
+    {
+      "source": "GERMPLASM",
+      "target": "SORGHUM",
+      "description": "consists of",
+      "weight": "9",
+      "source_id": "paper_4740"
+    },
+    {
+      "source": "CHARACTERIZATION",
+      "target": "INDIGENOUS ACCESSIONS",
+      "description": "is used to evaluate",
+      "weight": "9",
+      "source_id": "paper_4740"
+    },
+    {
+      "source": "CLASSIFICATION",
+      "target": "CHARACTERIZATION",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_4740"
+    },
+    {
+      "source": "CLASSIFICATION",
+      "target": "SORGHUM",
+      "description": "is used to categorize",
+      "weight": "9",
+      "source_id": "paper_4740"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CULTIVATED SPECIES",
+      "description": "includes",
+      "weight": "7",
+      "source_id": "paper_4740"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "WILD SPECIES",
+      "description": "includes",
+      "weight": "7",
+      "source_id": "paper_4740"
+    }
+  ]
+}

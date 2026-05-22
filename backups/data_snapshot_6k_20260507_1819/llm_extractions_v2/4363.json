@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "CASTOR",
+      "type": "CROP",
+      "description": "Castor plants (Ricinus communis cv. Acuna) studied for root characteristics",
+      "source_id": "paper_4363"
+    },
+    {
+      "name": "ROOT SYSTEM",
+      "type": "TRAIT",
+      "description": "The root structures of castor plants analyzed for size and length",
+      "source_id": "paper_4363"
+    },
+    {
+      "name": "EXCAVATION",
+      "type": "METHOD",
+      "description": "The process of digging up plants to examine their root systems",
+      "source_id": "paper_4363"
+    },
+    {
+      "name": "ROOT:SHOOT RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of root mass to shoot mass in the studied plants",
+      "source_id": "paper_4363"
+    },
+    {
+      "name": "VERTIC INCEPTISOL",
+      "type": "CONDITION",
+      "description": "The specific soil type in which the castor plants were grown",
+      "source_id": "paper_4363"
+    },
+    {
+      "name": "C1 HORIZON",
+      "type": "LOCATION",
+      "description": "The specific soil layer where root penetration was observed to be restricted",
+      "source_id": "paper_4363"
+    },
+    {
+      "name": "GRAVEL",
+      "type": "CONDITION",
+      "description": "Soil component suspected of restricting root penetration",
+      "source_id": "paper_4363"
+    },
+    {
+      "name": "CARBONATE CONTENT",
+      "type": "CONDITION",
+      "description": "Soil component suspected of restricting root penetration",
+      "source_id": "paper_4363"
+    },
+    {
+      "name": "ROOT PENETRATION",
+      "type": "TRAIT",
+      "description": "The extent to which roots grow into the soil profile",
+      "source_id": "paper_4363"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CASTOR",
+      "target": "ROOT SYSTEM",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_4363"
+    },
+    {
+      "source": "EXCAVATION",
+      "target": "ROOT SYSTEM",
+      "description": "used to study",
+      "weight": "9",
+      "source_id": "paper_4363"
+    },
+    {
+      "source": "CASTOR",
+      "target": "ROOT:SHOOT RATIO",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_4363"
+    },
+    {
+      "source": "CASTOR",
+      "target": "VERTIC INCEPTISOL",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_4363"
+    },
+    {
+      "source": "VERTIC INCEPTISOL",
+      "target": "C1 HORIZON",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_4363"
+    },
+    {
+      "source": "GRAVEL",
+      "target": "ROOT PENETRATION",
+      "description": "restricts",
+      "weight": "8",
+      "source_id": "paper_4363"
+    },
+    {
+      "source": "CARBONATE CONTENT",
+      "target": "ROOT PENETRATION",
+      "description": "restricts",
+      "weight": "8",
+      "source_id": "paper_4363"
+    },
+    {
+      "source": "C1 HORIZON",
+      "target": "ROOT PENETRATION",
+      "description": "site of restriction",
+      "weight": "7",
+      "source_id": "paper_4363"
+    },
+    {
+      "source": "ROOT SYSTEM",
+      "target": "ROOT PENETRATION",
+      "description": "characteristic of",
+      "weight": "9",
+      "source_id": "paper_4363"
+    }
+  ]
+}

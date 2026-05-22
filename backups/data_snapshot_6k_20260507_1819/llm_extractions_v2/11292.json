@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "BOSOMTWE RANGE FOREST RESERVE",
+      "type": "LOCATION",
+      "description": "A forest reserve in Ghana used as the study area for vegetation dynamics assessment",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "GHANA",
+      "type": "LOCATION",
+      "description": "The country where the Bosomtwe Range Forest Reserve is located",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "A technique used to assess vegetation dynamics and land cover changes",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "QUANTUM GIS",
+      "type": "METHOD",
+      "description": "A geographic information system software used for land use land cover change detection",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "SUPERVISED CLASSIFICATION",
+      "type": "METHOD",
+      "description": "A method applied to detect land use land cover changes",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "MAXIMUM-LIKELIHOOD ALGORITHM",
+      "type": "METHOD",
+      "description": "An algorithm used within supervised classification for land cover detection",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "LAND USE LAND COVER CHANGE DETECTION",
+      "type": "CONCEPT",
+      "description": "The analysis of changes in land use and land cover over time",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "FOREST FRAGMENTATION",
+      "type": "CONDITION",
+      "description": "The process of breaking large forests into smaller, isolated patches",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "SUSTAINABLE FOREST MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The practice of managing forests to maintain biodiversity and productivity",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "LANDSAT 4 – TM",
+      "type": "METHOD",
+      "description": "Satellite imagery used for land cover analysis in 1991",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "LANDSAT 7 – ETM",
+      "type": "METHOD",
+      "description": "Satellite imagery used for land cover analysis in 2002",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "SENTINEL-2",
+      "type": "METHOD",
+      "description": "Satellite imagery used for land cover analysis in 2017",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "FOREST COVER",
+      "type": "CONCEPT",
+      "description": "The area of land covered by forest canopy, including closed and opened types",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "FOREST DEPLETION",
+      "type": "CONDITION",
+      "description": "The reduction of forest area, specifically identified in north eastern and western portions of the reserve",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "REFORESTATION",
+      "type": "METHOD",
+      "description": "The process of planting trees in degraded areas to improve forest cover",
+      "source_id": "paper_11292"
+    },
+    {
+      "name": "BUILT-UP AREAS",
+      "type": "CONCEPT",
+      "description": "Land cover consisting of human-made structures",
+      "source_id": "paper_11292"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REMOTE SENSING",
+      "target": "LAND USE LAND COVER CHANGE DETECTION",
+      "description": "used to perform",
+      "weight": "10",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "QUANTUM GIS",
+      "target": "LAND USE LAND COVER CHANGE DETECTION",
+      "description": "used to perform",
+      "weight": "10",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "SUPERVISED CLASSIFICATION",
+      "target": "LAND USE LAND COVER CHANGE DETECTION",
+      "description": "applied to detect",
+      "weight": "10",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "MAXIMUM-LIKELIHOOD ALGORITHM",
+      "target": "SUPERVISED CLASSIFICATION",
+      "description": "used within",
+      "weight": "10",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "LANDSAT 4 – TM",
+      "target": "LAND USE LAND COVER CHANGE DETECTION",
+      "description": "used as data source for",
+      "weight": "9",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "LANDSAT 7 – ETM",
+      "target": "LAND USE LAND COVER CHANGE DETECTION",
+      "description": "used as data source for",
+      "weight": "9",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "SENTINEL-2",
+      "target": "LAND USE LAND COVER CHANGE DETECTION",
+      "description": "used as data source for",
+      "weight": "9",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "LAND USE LAND COVER CHANGE DETECTION",
+      "target": "BOSOMTWE RANGE FOREST RESERVE",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "BOSOMTWE RANGE FOREST RESERVE",
+      "target": "GHANA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "FOREST FRAGMENTATION",
+      "target": "SUSTAINABLE FOREST MANAGEMENT",
+      "description": "makes analysis important for",
+      "weight": "8",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "LAND USE LAND COVER CHANGE DETECTION",
+      "target": "SUSTAINABLE FOREST MANAGEMENT",
+      "description": "important consideration for",
+      "weight": "8",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "FOREST DEPLETION",
+      "target": "FOREST COVER",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "REFORESTATION",
+      "target": "FOREST COVER",
+      "description": "improves",
+      "weight": "10",
+      "source_id": "paper_11292"
+    },
+    {
+      "source": "BUILT-UP AREAS",
+      "target": "LAND USE LAND COVER CHANGE DETECTION",
+      "description": "analyzed as part of",
+      "weight": "7",
+      "source_id": "paper_11292"
+    }
+  ]
+}

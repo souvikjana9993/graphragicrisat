@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "NITROGEN MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The process of converting organic nitrogen to inorganic forms in soil",
+      "source_id": "paper_3957"
+    },
+    {
+      "name": "ACID SULFATE SOILS",
+      "type": "CONDITION",
+      "description": "Soils characterized by high acidity and sulfate content",
+      "source_id": "paper_3957"
+    },
+    {
+      "name": "ANAEROBIC INCUBATION",
+      "type": "METHOD",
+      "description": "Incubation process conducted in the absence of oxygen",
+      "source_id": "paper_3957"
+    },
+    {
+      "name": "AEROBIC INCUBATION",
+      "type": "METHOD",
+      "description": "Incubation process conducted in the presence of oxygen",
+      "source_id": "paper_3957"
+    },
+    {
+      "name": "30°C",
+      "type": "CONDITION",
+      "description": "The temperature at which the soil incubation was maintained",
+      "source_id": "paper_3957"
+    },
+    {
+      "name": "MINERAL NITROGEN",
+      "type": "CONCEPT",
+      "description": "Inorganic nitrogen released during mineralization",
+      "source_id": "paper_3957"
+    },
+    {
+      "name": "NH4+",
+      "type": "CONCEPT",
+      "description": "Ammonium, the specific form of mineral nitrogen accumulated in the soils",
+      "source_id": "paper_3957"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting ammonium to nitrate",
+      "source_id": "paper_3957"
+    },
+    {
+      "name": "DENITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of reducing nitrate to nitrogen gas",
+      "source_id": "paper_3957"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN MINERALIZATION",
+      "target": "ACID SULFATE SOILS",
+      "description": "studied in",
+      "weight": "9",
+      "source_id": "paper_3957"
+    },
+    {
+      "source": "NITROGEN MINERALIZATION",
+      "target": "ANAEROBIC INCUBATION",
+      "description": "studied under",
+      "weight": "8",
+      "source_id": "paper_3957"
+    },
+    {
+      "source": "NITROGEN MINERALIZATION",
+      "target": "AEROBIC INCUBATION",
+      "description": "studied under",
+      "weight": "8",
+      "source_id": "paper_3957"
+    },
+    {
+      "source": "ANAEROBIC INCUBATION",
+      "target": "30°C",
+      "description": "conducted at",
+      "weight": "7",
+      "source_id": "paper_3957"
+    },
+    {
+      "source": "AEROBIC INCUBATION",
+      "target": "30°C",
+      "description": "conducted at",
+      "weight": "7",
+      "source_id": "paper_3957"
+    },
+    {
+      "source": "NITROGEN MINERALIZATION",
+      "target": "MINERAL NITROGEN",
+      "description": "releases",
+      "weight": "10",
+      "source_id": "paper_3957"
+    },
+    {
+      "source": "MINERAL NITROGEN",
+      "target": "NH4+",
+      "description": "accumulated as",
+      "weight": "10",
+      "source_id": "paper_3957"
+    },
+    {
+      "source": "NITRIFICATION",
+      "target": "ACID SULFATE SOILS",
+      "description": "did not occur in",
+      "weight": "9",
+      "source_id": "paper_3957"
+    },
+    {
+      "source": "DENITRIFICATION",
+      "target": "ACID SULFATE SOILS",
+      "description": "not a serious problem in",
+      "weight": "8",
+      "source_id": "paper_3957"
+    },
+    {
+      "source": "DENITRIFICATION",
+      "target": "NITRIFICATION",
+      "description": "limited by lack of",
+      "weight": "7",
+      "source_id": "paper_3957"
+    }
+  ]
+}

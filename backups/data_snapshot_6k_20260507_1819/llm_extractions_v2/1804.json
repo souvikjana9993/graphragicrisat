@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "GRAIN SORGHUM",
+      "type": "CROP",
+      "description": "The crop being studied for its phosphorus requirements",
+      "source_id": "paper_1804"
+    },
+    {
+      "name": "FERTILIZER PHOSPHORUS REQUIREMENT",
+      "type": "CONCEPT",
+      "description": "The amount of phosphorus fertilizer needed to achieve a specific yield",
+      "source_id": "paper_1804"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "The type of soil on which the sorghum was grown",
+      "source_id": "paper_1804"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environmental condition of relying on rainfall for water",
+      "source_id": "paper_1804"
+    },
+    {
+      "name": "PHOSPHORUS UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of phosphorus absorbed by the plant",
+      "source_id": "paper_1804"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_1804"
+    },
+    {
+      "name": "P UPTAKE AND GRAIN YIELD RELATIONSHIP METHOD",
+      "type": "METHOD",
+      "description": "A method to determine FPR based on the relationship between P uptake and grain yield",
+      "source_id": "paper_1804"
+    },
+    {
+      "name": "FPR EQUATION METHOD",
+      "type": "METHOD",
+      "description": "A method to determine FPR using the formula FPR=(Up-U0)/PRF",
+      "source_id": "paper_1804"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the field experiment was conducted",
+      "source_id": "paper_1804"
+    },
+    {
+      "name": "PHOSPHORUS RECOVERY FACTOR",
+      "type": "CONCEPT",
+      "description": "The recovery of applied phosphorus (PRF)",
+      "source_id": "paper_1804"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "P UPTAKE AND GRAIN YIELD RELATIONSHIP METHOD",
+      "target": "FERTILIZER PHOSPHORUS REQUIREMENT",
+      "description": "used to determine",
+      "weight": "10",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "FPR EQUATION METHOD",
+      "target": "FERTILIZER PHOSPHORUS REQUIREMENT",
+      "description": "used to determine",
+      "weight": "10",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "GRAIN SORGHUM",
+      "target": "VERTISOL",
+      "description": "grown on",
+      "weight": "8",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "GRAIN SORGHUM",
+      "target": "RAINFED CONDITIONS",
+      "description": "grown under",
+      "weight": "8",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "P UPTAKE AND GRAIN YIELD RELATIONSHIP METHOD",
+      "target": "PHOSPHORUS UPTAKE",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "P UPTAKE AND GRAIN YIELD RELATIONSHIP METHOD",
+      "target": "GRAIN YIELD",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "FPR EQUATION METHOD",
+      "target": "PHOSPHORUS UPTAKE",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "FPR EQUATION METHOD",
+      "target": "PHOSPHORUS RECOVERY FACTOR",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "FPR EQUATION METHOD",
+      "target": "INDIA",
+      "description": "experiment conducted in",
+      "weight": "7",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "P UPTAKE AND GRAIN YIELD RELATIONSHIP METHOD",
+      "target": "INDIA",
+      "description": "experiment conducted in",
+      "weight": "7",
+      "source_id": "paper_1804"
+    },
+    {
+      "source": "FERTILIZER PHOSPHORUS REQUIREMENT",
+      "target": "GRAIN SORGHUM",
+      "description": "requirement of",
+      "weight": "10",
+      "source_id": "paper_1804"
+    }
+  ]
+}

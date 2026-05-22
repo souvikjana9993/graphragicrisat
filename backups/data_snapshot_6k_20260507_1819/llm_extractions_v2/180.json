@@ -1,0 +1,212 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop species used in the study to evaluate nitrogen response and agronomic traits",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "NITROGEN USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A trait measuring the efficiency of nitrogen utilization by the plant",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "PLANT YIELD",
+      "type": "TRAIT",
+      "description": "An agronomic trait measuring the productivity of the plant",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "NITROGEN UPTAKE",
+      "type": "TRAIT",
+      "description": "A trait measuring the amount of nitrogen absorbed by the plant",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "An agronomic trait measuring the vertical growth of the plant",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "QTL MAPPING",
+      "type": "METHOD",
+      "description": "The process of identifying quantitative trait loci associated with specific traits",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "COMPOSITE INTERVAL MAPPING",
+      "type": "METHOD",
+      "description": "A specific statistical method used to detect QTLs",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "NITROGEN REGIMES",
+      "type": "CONDITION",
+      "description": "Different levels of nitrogen application (native, optimum, high) used as environments",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "GENOTYPE X NITROGEN LEVEL INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between genetic makeup and nitrogen availability",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between genetic makeup and the growth environment",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "QTL X ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between specific QTLs and the environment",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "QTL",
+      "type": "CONCEPT",
+      "description": "Quantitative trait loci associated with specific agronomic traits",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "RZ678",
+      "type": "GENE_MARKER",
+      "description": "A genetic marker used to define a QTL region",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "RZ574",
+      "type": "GENE_MARKER",
+      "description": "A genetic marker used to define a QTL region",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "RZ284",
+      "type": "GENE_MARKER",
+      "description": "A genetic marker used to define a QTL region",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "CHROMOSOME 3",
+      "type": "LOCATION",
+      "description": "The specific genomic location where several QTLs were detected",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "NITROGEN ASSIMILATION GENES",
+      "type": "CONCEPT",
+      "description": "Genes involved in the process of nitrogen assimilation",
+      "source_id": "paper_180"
+    },
+    {
+      "name": "IR64/AZUCENA",
+      "type": "CROP",
+      "description": "The rice variety from which double haploid lines were derived",
+      "source_id": "paper_180"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "is the crop studied for",
+      "weight": "10",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "RICE",
+      "target": "PLANT YIELD",
+      "description": "is the crop studied for",
+      "weight": "10",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "QTL MAPPING",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "is used to identify loci for",
+      "weight": "9",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "COMPOSITE INTERVAL MAPPING",
+      "target": "QTL",
+      "description": "is used to detect",
+      "weight": "10",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "NITROGEN REGIMES",
+      "target": "GENOTYPE X NITROGEN LEVEL INTERACTION",
+      "description": "are used to quantify",
+      "weight": "9",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "PLANT YIELD",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "is positively correlated with",
+      "weight": "8",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "PLANT YIELD",
+      "target": "NITROGEN UPTAKE",
+      "description": "is positively correlated with",
+      "weight": "8",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "QTL",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "are associated with",
+      "weight": "9",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "QTL",
+      "target": "PLANT YIELD",
+      "description": "are associated with",
+      "weight": "9",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "RZ678",
+      "target": "QTL",
+      "description": "is a marker for",
+      "weight": "10",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "RZ574",
+      "target": "QTL",
+      "description": "is a marker for",
+      "weight": "10",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "RZ284",
+      "target": "QTL",
+      "description": "is a marker for",
+      "weight": "10",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "QTL",
+      "target": "CHROMOSOME 3",
+      "description": "are located on",
+      "weight": "10",
+      "source_id": "paper_180"
+    },
+    {
+      "source": "CHROMOSOME 3",
+      "target": "NITROGEN ASSIMILATION GENES",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_180"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "Glycine max (L.) Merr., the focus crop of the study known for symbiotic nitrogen fixation.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "An environmental factor characterized by water deficit that contributes to crop yield loss.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The measure of agricultural productivity of the soybean crop.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "SYMBIOTIC N2 FIXATION",
+      "type": "CONCEPT",
+      "description": "The biological process of atmospheric nitrogen fixation in soybean plants.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "SOIL WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "A state of inadequate soil moisture that affects nitrogen fixation.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "PROTEIN PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of creating seed proteins, which is dependent on nitrogen availability.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "PHYSIOLOGICAL SCREENING",
+      "type": "METHOD",
+      "description": "A preliminary screening process used to identify lines with N2 fixation drought tolerance.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The research effort to develop soybean lines with diminished sensitivity of N2 fixation to drought.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "N2 FIXATION DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a soybean line to maintain nitrogen fixation activity under drought conditions.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "JACKSON",
+      "type": "CROP",
+      "description": "A soybean cultivar proven to have N2 fixation tolerance to drought.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "KS4895",
+      "type": "CROP",
+      "description": "A high-yielding soybean line used in crossing.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "YIELD TRIALS",
+      "type": "METHOD",
+      "description": "Tests conducted in moderate- and low-yielding rainfed environments to evaluate soybean lines.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "RAINFED ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Agricultural environments where water is supplied solely by precipitation.",
+      "source_id": "paper_3661"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "A controlled environment used to test N2 fixation activity in drying soil.",
+      "source_id": "paper_3661"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT",
+      "target": "CROP YIELD",
+      "description": "causes loss of",
+      "weight": "9",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "SYMBIOTIC N2 FIXATION",
+      "description": "reduces activity of",
+      "weight": "10",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "SYMBIOTIC N2 FIXATION",
+      "target": "PROTEIN PRODUCTION",
+      "description": "provides nitrogen for",
+      "weight": "9",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "PROTEIN PRODUCTION",
+      "target": "CROP YIELD",
+      "description": "is critical for",
+      "weight": "8",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "BREEDING",
+      "target": "N2 FIXATION DROUGHT TOLERANCE",
+      "description": "aims to develop",
+      "weight": "10",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "PHYSIOLOGICAL SCREENING",
+      "target": "N2 FIXATION DROUGHT TOLERANCE",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "JACKSON",
+      "target": "N2 FIXATION DROUGHT TOLERANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "KS4895",
+      "target": "CROP YIELD",
+      "description": "exhibits high",
+      "weight": "8",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "YIELD TRIALS",
+      "target": "CROP YIELD",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "YIELD TRIALS",
+      "target": "RAINFED ENVIRONMENTS",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "SYMBIOTIC N2 FIXATION",
+      "description": "used to test activity of",
+      "weight": "8",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "SOIL WATER DEFICIT",
+      "target": "SYMBIOTIC N2 FIXATION",
+      "description": "causes decline of",
+      "weight": "10",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "SYMBIOTIC N2 FIXATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_3661"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "CROP YIELD",
+      "description": "measured trait of",
+      "weight": "10",
+      "source_id": "paper_3661"
+    }
+  ]
+}

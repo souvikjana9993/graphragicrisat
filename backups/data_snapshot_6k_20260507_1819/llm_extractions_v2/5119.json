@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "FERTILIZER APPLICATORS",
+      "type": "METHOD",
+      "description": "Devices used for the distribution of fertilizer in agricultural fields",
+      "source_id": "paper_5119"
+    },
+    {
+      "name": "UNIFORM APPLICATION OF FERTILIZER",
+      "type": "CONCEPT",
+      "description": "The process of applying fertilizer evenly across a target area",
+      "source_id": "paper_5119"
+    },
+    {
+      "name": "PRECISION OF FERTILIZER APPLICATION",
+      "type": "CONCEPT",
+      "description": "The degree of accuracy and consistency in the amount of fertilizer applied",
+      "source_id": "paper_5119"
+    },
+    {
+      "name": "EXPERIMENTS",
+      "type": "CONCEPT",
+      "description": "Controlled scientific trials conducted to test agricultural hypotheses",
+      "source_id": "paper_5119"
+    },
+    {
+      "name": "AGRICULTURAL STATION",
+      "type": "LOCATION",
+      "description": "A research facility dedicated to agricultural studies",
+      "source_id": "paper_5119"
+    },
+    {
+      "name": "PHYSICAL CONDITION OF FERTILIZER",
+      "type": "CONDITION",
+      "description": "The physical properties of the fertilizer that influence its handling and application",
+      "source_id": "paper_5119"
+    },
+    {
+      "name": "PARTICLE SIZE",
+      "type": "CONDITION",
+      "description": "The size of the fertilizer particles, which affects flow and distribution",
+      "source_id": "paper_5119"
+    },
+    {
+      "name": "ATMOSPHERIC HUMIDITY",
+      "type": "CONDITION",
+      "description": "The amount of moisture in the air, which can affect fertilizer behavior",
+      "source_id": "paper_5119"
+    },
+    {
+      "name": "HYGROSCOPICITY OF FERTILIZER",
+      "type": "CONDITION",
+      "description": "The ability of the fertilizer to absorb moisture from the atmosphere",
+      "source_id": "paper_5119"
+    },
+    {
+      "name": "METERING MECHANISM",
+      "type": "METHOD",
+      "description": "The mechanical system in an applicator that controls the rate of fertilizer delivery",
+      "source_id": "paper_5119"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UNIFORM APPLICATION OF FERTILIZER",
+      "target": "EXPERIMENTS",
+      "description": "is a prerequisite for the precise conduct of",
+      "weight": "8",
+      "source_id": "paper_5119"
+    },
+    {
+      "source": "PHYSICAL CONDITION OF FERTILIZER",
+      "target": "PRECISION OF FERTILIZER APPLICATION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_5119"
+    },
+    {
+      "source": "PARTICLE SIZE",
+      "target": "PRECISION OF FERTILIZER APPLICATION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_5119"
+    },
+    {
+      "source": "ATMOSPHERIC HUMIDITY",
+      "target": "PRECISION OF FERTILIZER APPLICATION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_5119"
+    },
+    {
+      "source": "HYGROSCOPICITY OF FERTILIZER",
+      "target": "PRECISION OF FERTILIZER APPLICATION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_5119"
+    },
+    {
+      "source": "METERING MECHANISM",
+      "target": "PRECISION OF FERTILIZER APPLICATION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_5119"
+    },
+    {
+      "source": "METERING MECHANISM",
+      "target": "FERTILIZER APPLICATORS",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_5119"
+    },
+    {
+      "source": "EXPERIMENTS",
+      "target": "AGRICULTURAL STATION",
+      "description": "are conducted at",
+      "weight": "7",
+      "source_id": "paper_5119"
+    },
+    {
+      "source": "FERTILIZER APPLICATORS",
+      "target": "UNIFORM APPLICATION OF FERTILIZER",
+      "description": "are used to achieve",
+      "weight": "9",
+      "source_id": "paper_5119"
+    }
+  ]
+}

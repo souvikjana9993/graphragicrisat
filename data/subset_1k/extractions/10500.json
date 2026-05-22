@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop produced by smallholder farmers in the study",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "TANZANIA",
+      "type": "LOCATION",
+      "description": "The country where the rural irrigation scheme and study were located",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The broader region where agricultural training is used to increase productivity and alleviate poverty",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "AGRICULTURAL TRAINING",
+      "type": "METHOD",
+      "description": "A method to diffuse new technologies to increase productivity and alleviate rural poverty",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "FARMER-TO-FARMER EXTENSION",
+      "type": "METHOD",
+      "description": "A cost-effective training approach where key farmers train intermediate farmers, who then influence ordinary farmers",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "TECHNOLOGY ADOPTION",
+      "type": "CONCEPT",
+      "description": "The process by which farmers incorporate new agricultural technologies into their farming practices",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The efficiency of production, specifically in the context of rice farming",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "RURAL POVERTY",
+      "type": "CONDITION",
+      "description": "The socio-economic condition that agricultural training aims to alleviate",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "PADDY YIELD",
+      "type": "TRAIT",
+      "description": "The amount of rice produced per hectare, used as a measure of productivity",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "DIFFERENCE-IN-DIFFERENCES MODELS",
+      "type": "METHOD",
+      "description": "Statistical models used to assess the evolution of performance gaps as technologies spill over",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "SPATIAL ECONOMETRIC MODELS",
+      "type": "METHOD",
+      "description": "Models used to examine the influence of social and geographical networks on technology adoption",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "TECHNOLOGY SPILLOVER",
+      "type": "CONCEPT",
+      "description": "The process by which technologies spread from trained farmers to non-trained farmers",
+      "source_id": "paper_10500"
+    },
+    {
+      "name": "SOCIAL AND GEOGRAPHICAL NETWORK",
+      "type": "CONCEPT",
+      "description": "The relationships and proximity between farmers that facilitate the dissemination of technology",
+      "source_id": "paper_10500"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AGRICULTURAL TRAINING",
+      "target": "PRODUCTIVITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10500"
+    },
+    {
+      "source": "AGRICULTURAL TRAINING",
+      "target": "RURAL POVERTY",
+      "description": "alleviates",
+      "weight": "7",
+      "source_id": "paper_10500"
+    },
+    {
+      "source": "FARMER-TO-FARMER EXTENSION",
+      "target": "TECHNOLOGY ADOPTION",
+      "description": "promotes",
+      "weight": "9",
+      "source_id": "paper_10500"
+    },
+    {
+      "source": "FARMER-TO-FARMER EXTENSION",
+      "target": "PRODUCTIVITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10500"
+    },
+    {
+      "source": "TECHNOLOGY ADOPTION",
+      "target": "PADDY YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10500"
+    },
+    {
+      "source": "DIFFERENCE-IN-DIFFERENCES MODELS",
+      "target": "TECHNOLOGY SPILLOVER",
+      "description": "assesses",
+      "weight": "7",
+      "source_id": "paper_10500"
+    },
+    {
+      "source": "SPATIAL ECONOMETRIC MODELS",
+      "target": "TECHNOLOGY ADOPTION",
+      "description": "analyzes",
+      "weight": "7",
+      "source_id": "paper_10500"
+    },
+    {
+      "source": "SOCIAL AND GEOGRAPHICAL NETWORK",
+      "target": "TECHNOLOGY ADOPTION",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_10500"
+    },
+    {
+      "source": "RICE",
+      "target": "TANZANIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10500"
+    },
+    {
+      "source": "TANZANIA",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10500"
+    }
+  ]
+}

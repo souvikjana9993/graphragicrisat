@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop being studied for the inheritance of albinism",
+      "source_id": "paper_1394"
+    },
+    {
+      "name": "ALBINISM",
+      "type": "TRAIT",
+      "description": "A recessive condition characterized by the absence of pigment in groundnut",
+      "source_id": "paper_1394"
+    },
+    {
+      "name": "INTERSPECIFIC AND INTERSUBSPECIFIC CROSSES",
+      "type": "METHOD",
+      "description": "The breeding method used to study the inheritance of albinism",
+      "source_id": "paper_1394"
+    },
+    {
+      "name": "TRIPLICATE RECESSIVE LOCI",
+      "type": "GENE_MARKER",
+      "description": "The genetic loci that control the albinism trait in interspecific and intersubspecific crosses",
+      "source_id": "paper_1394"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTERSPECIFIC AND INTERSUBSPECIFIC CROSSES",
+      "target": "GROUNDNUT",
+      "description": "used to study inheritance in",
+      "weight": "8",
+      "source_id": "paper_1394"
+    },
+    {
+      "source": "INTERSPECIFIC AND INTERSUBSPECIFIC CROSSES",
+      "target": "ALBINISM",
+      "description": "used to study the inheritance of",
+      "weight": "9",
+      "source_id": "paper_1394"
+    },
+    {
+      "source": "ALBINISM",
+      "target": "GROUNDNUT",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_1394"
+    },
+    {
+      "source": "TRIPLICATE RECESSIVE LOCI",
+      "target": "ALBINISM",
+      "description": "control the expression of",
+      "weight": "10",
+      "source_id": "paper_1394"
+    }
+  ]
+}

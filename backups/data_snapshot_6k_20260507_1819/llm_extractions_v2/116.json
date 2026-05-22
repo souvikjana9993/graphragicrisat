@@ -1,0 +1,226 @@
+{
+  "entities": [
+    {
+      "name": "EVAPOTRANSPIRATION",
+      "type": "CONCEPT",
+      "description": "The combined process of water evaporation from soil and transpiration from plants.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "EVAPORATION",
+      "type": "CONCEPT",
+      "description": "The process of water turning into vapor from surfaces.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The measure of heat in the atmosphere.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "Regions characterized by low rainfall and high temperatures.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "The practice of farming and crop production.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in global or regional weather patterns.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "REFERENCE CROP EVAPOTRANSPIRATION",
+      "type": "CONCEPT",
+      "description": "A standardized measure of evapotranspiration used as a baseline for crop water needs.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "A specific study site in Andhra Pradesh, India.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where the study was conducted.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "ENERGY BALANCE TERM",
+      "type": "CONCEPT",
+      "description": "A component of evapotranspiration related to the energy available for water phase change.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "AERODYNAMIC TERM",
+      "type": "CONCEPT",
+      "description": "A component of evapotranspiration related to the transport of water vapor away from the surface.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "WIND SPEED",
+      "type": "CONDITION",
+      "description": "The rate of air movement.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONCEPT",
+      "description": "The monsoon crop season in India, typically from June to October.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "RABI",
+      "type": "CONCEPT",
+      "description": "The winter crop season in India, typically from November to February.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "SOLAR RADIATION",
+      "type": "CONDITION",
+      "description": "The electromagnetic radiation emitted by the sun.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "CROP MODELLING",
+      "type": "METHOD",
+      "description": "The use of mathematical simulations to predict crop growth and water use.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "REGIONAL CIRCULATION MODELS",
+      "type": "METHOD",
+      "description": "Climate models that simulate atmospheric and oceanic processes at a regional scale.",
+      "source_id": "paper_116"
+    },
+    {
+      "name": "GLOBAL CIRCULATION MODELS",
+      "type": "METHOD",
+      "description": "Climate models that simulate atmospheric and oceanic processes at a global scale.",
+      "source_id": "paper_116"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "EVAPOTRANSPIRATION",
+      "description": "Increasing temperature is associated with decreasing evapotranspiration in this paradox",
+      "weight": "8",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "EVAPOTRANSPIRATION",
+      "target": "SEMI-ARID TROPICS",
+      "description": "Occurs and is studied within this region",
+      "weight": "7",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "AGRICULTURE",
+      "target": "CLIMATE CHANGE",
+      "description": "Agriculture in semi-arid tropics is vulnerable to climate change",
+      "weight": "9",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "REFERENCE CROP EVAPOTRANSPIRATION",
+      "target": "PATANCHERU",
+      "description": "Trends in reference crop evapotranspiration were measured at this location",
+      "weight": "10",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "ANDHRA PRADESH",
+      "description": "Patancheru is located within Andhra Pradesh",
+      "weight": "10",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "ENERGY BALANCE TERM",
+      "target": "REFERENCE CROP EVAPOTRANSPIRATION",
+      "description": "Contributes to the total reference crop evapotranspiration",
+      "weight": "9",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "AERODYNAMIC TERM",
+      "target": "REFERENCE CROP EVAPOTRANSPIRATION",
+      "description": "Contributes to the total reference crop evapotranspiration",
+      "weight": "9",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "WIND SPEED",
+      "target": "AERODYNAMIC TERM",
+      "description": "Negative trend in wind speed leads to a fall in the aerodynamic term",
+      "weight": "10",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "AERODYNAMIC TERM",
+      "target": "REFERENCE CROP EVAPOTRANSPIRATION",
+      "description": "Decrease in aerodynamic term leads to a decrease in reference crop evapotranspiration",
+      "weight": "9",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "REFERENCE CROP EVAPOTRANSPIRATION",
+      "target": "KHARIF",
+      "description": "Reduction in evapotranspiration demand was 10% during this season",
+      "weight": "8",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "REFERENCE CROP EVAPOTRANSPIRATION",
+      "target": "RABI",
+      "description": "Reduction in evapotranspiration demand was 14% during this season",
+      "weight": "8",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "SOLAR RADIATION",
+      "description": "Showed opposite trends at the Patancheru location",
+      "weight": "7",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "SOLAR RADIATION",
+      "target": "CROP MODELLING",
+      "description": "Used as an input for crop modelling",
+      "weight": "9",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "CROP MODELLING",
+      "description": "Used to estimate solar radiation for crop modelling input",
+      "weight": "7",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "REGIONAL CIRCULATION MODELS",
+      "description": "Studied using regional circulation models",
+      "weight": "8",
+      "source_id": "paper_116"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "GLOBAL CIRCULATION MODELS",
+      "description": "Studied using global circulation models",
+      "weight": "8",
+      "source_id": "paper_116"
+    }
+  ]
+}

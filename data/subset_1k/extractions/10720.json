@@ -1,0 +1,285 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Dual purpose crop yielding food (grain) and fodder (stover) grown in marginal environments of Asia and Sub-Saharan Africa",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "FODDER QUALITY",
+      "type": "TRAIT",
+      "description": "Characteristics of the stover used for animal feed, which can be improved through breeding",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "STOVER DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "The degree to which sorghum stover can be broken down during digestion, affecting livestock output",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "LIVESTOCK OUTPUT",
+      "type": "TRAIT",
+      "description": "The productivity of livestock, which increases with improved stover digestibility",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "IN VITRO ORGANIC MATTER DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "A key stover quality trait measured as IVOMD%",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "TEST WEIGHT",
+      "type": "TRAIT",
+      "description": "A grain quality trait measured in grams (TW-g)",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "STALK YIELD",
+      "type": "TRAIT",
+      "description": "The amount of stover produced per hectare (SY-Kg/ha)",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per hectare (GY-Kg/ha)",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A physical growth trait of the sorghum plant (PH)",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "WATER REGIMES",
+      "type": "CONDITION",
+      "description": "Different levels of water availability, specifically control and stress, used in evaluation",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "CONTROL",
+      "type": "CONDITION",
+      "description": "A water regime representing normal water availability",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "STRESS",
+      "type": "CONDITION",
+      "description": "A water regime representing limited water availability",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "Geographic region where sorghum is grown",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "Geographic region where sorghum is grown",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "ICRISAT-PATANCHERU",
+      "type": "LOCATION",
+      "description": "The location where mapping population parents were evaluated",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "GENOMICS",
+      "type": "METHOD",
+      "description": "The application of genome-wide study to expedite genetic improvement of crops",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "TRAIT DISCOVERY TOOLS",
+      "type": "METHOD",
+      "description": "Tools used in breeding programs to identify and improve specific traits",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "GENETIC MAPPING",
+      "type": "METHOD",
+      "description": "The process of identifying genomic regions related to specific traits",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "BREEDING PROGRAM",
+      "type": "CONCEPT",
+      "description": "A systematic effort to improve the genetic makeup of a crop",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "MAPPING POPULATION PARENTS",
+      "type": "CONCEPT",
+      "description": "A set of 24 parents evaluated to characterize fodder quality traits",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "ICSV1",
+      "type": "CONCEPT",
+      "description": "A parental sorghum line with contrasting IVOMD values used for genetic mapping",
+      "source_id": "paper_10720"
+    },
+    {
+      "name": "ICSV700",
+      "type": "CONCEPT",
+      "description": "A parental sorghum line with contrasting IVOMD values used for genetic mapping",
+      "source_id": "paper_10720"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "FODDER QUALITY",
+      "description": "Sorghum is evaluated for fodder quality traits",
+      "weight": "10",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN YIELD",
+      "description": "Sorghum yields grain",
+      "weight": "10",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "STALK YIELD",
+      "description": "Sorghum yields stover/stalk",
+      "weight": "10",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "FODDER QUALITY",
+      "target": "STOVER DIGESTIBILITY",
+      "description": "Stover digestibility is a component of fodder quality",
+      "weight": "9",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "STOVER DIGESTIBILITY",
+      "target": "LIVESTOCK OUTPUT",
+      "description": "Stover digestibility increases livestock output",
+      "weight": "8",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "IN VITRO ORGANIC MATTER DIGESTIBILITY",
+      "target": "FODDER QUALITY",
+      "description": "IVOMD is a key stover quality trait",
+      "weight": "10",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "WATER REGIMES",
+      "target": "SORGHUM",
+      "description": "Sorghum was evaluated under different water regimes",
+      "weight": "8",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "CONTROL",
+      "target": "WATER REGIMES",
+      "description": "Control is a type of water regime",
+      "weight": "10",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "STRESS",
+      "target": "WATER REGIMES",
+      "description": "Stress is a type of water regime",
+      "weight": "10",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "GENOMICS",
+      "target": "FODDER QUALITY",
+      "description": "Genomics can expedite genetic improvement of fodder quality",
+      "weight": "7",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "TRAIT DISCOVERY TOOLS",
+      "target": "FODDER QUALITY",
+      "description": "Trait discovery tools can expedite genetic improvement of fodder quality",
+      "weight": "7",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "GENETIC MAPPING",
+      "target": "FODDER QUALITY",
+      "description": "Genetic mapping is used to identify genomic regions related to fodder quality traits",
+      "weight": "9",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "STALK YIELD",
+      "target": "IN VITRO ORGANIC MATTER DIGESTIBILITY",
+      "description": "Positive correlation observed between stalk yield and IVOMD",
+      "weight": "6",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "PLANT HEIGHT",
+      "target": "STALK YIELD",
+      "description": "Positive correlation observed between plant height and stalk yield",
+      "weight": "6",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "ICSV1",
+      "target": "IN VITRO ORGANIC MATTER DIGESTIBILITY",
+      "description": "ICSV1 has contrasting IVOMD values for genetic mapping",
+      "weight": "8",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "ICSV700",
+      "target": "IN VITRO ORGANIC MATTER DIGESTIBILITY",
+      "description": "ICSV700 has contrasting IVOMD values for genetic mapping",
+      "weight": "8",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ASIA",
+      "description": "Sorghum is grown in Asia",
+      "weight": "7",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "Sorghum is grown in Sub-Saharan Africa",
+      "weight": "7",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ICRISAT-PATANCHERU",
+      "description": "Sorghum parents were evaluated at ICRISAT-Patancheru",
+      "weight": "8",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "MAPPING POPULATION PARENTS",
+      "target": "SORGHUM",
+      "description": "Parents are specific genotypes of sorghum",
+      "weight": "10",
+      "source_id": "paper_10720"
+    },
+    {
+      "source": "GENETIC MAPPING",
+      "target": "MAPPING POPULATION PARENTS",
+      "description": "Genetic mapping is performed using mapping population parents",
+      "weight": "9",
+      "source_id": "paper_10720"
+    }
+  ]
+}

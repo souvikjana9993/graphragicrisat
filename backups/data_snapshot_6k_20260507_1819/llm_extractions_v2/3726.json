@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cicer arietinum L.) studied for nitrogen fixation.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The process of converting atmospheric nitrogen into ammonia by the plant.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "N ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The total amount of nitrogen accumulated in the plant tissues.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The formation of root nodules by symbiotic bacteria.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "ACETYLENE REDUCTION ACTIVITY",
+      "type": "TRAIT",
+      "description": "A biochemical measure used as a proxy for nitrogenase activity and nitrogen fixation.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "ISOTOPE-DILUTION METHOD",
+      "type": "METHOD",
+      "description": "A technique using 15N isotopes to estimate the amount of nitrogen fixed from the air.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "SAFFLOWER",
+      "type": "CROP",
+      "description": "A non-nitrogen-fixing plant used as a reference control in the isotope-dilution method.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "N UPTAKE",
+      "type": "TRAIT",
+      "description": "The absorption of nitrogen from the soil by the plant.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "15N FERTILIZER",
+      "type": "CONCEPT",
+      "description": "A labeled nitrogen fertilizer used in isotope dilution studies.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "K 850",
+      "type": "CROP",
+      "description": "A specific genotype of chickpea evaluated for nitrogen fixation.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "G 130",
+      "type": "CROP",
+      "description": "A specific genotype of chickpea evaluated for nitrogen fixation.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "NODULE MASS",
+      "type": "TRAIT",
+      "description": "The total weight of the root nodules.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "RHIZOBIUM SP.",
+      "type": "ORGANISM",
+      "description": "A genus of bacteria that forms symbiotic relationships with legumes to fix nitrogen.",
+      "source_id": "paper_3726"
+    },
+    {
+      "name": "INOCULATION",
+      "type": "METHOD",
+      "description": "The process of introducing Rhizobium bacteria into the plant root system.",
+      "source_id": "paper_3726"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ISOTOPE-DILUTION METHOD",
+      "target": "NITROGEN FIXATION",
+      "description": "used to estimate",
+      "weight": "10",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "SAFFLOWER",
+      "target": "ISOTOPE-DILUTION METHOD",
+      "description": "used as a non-N2-fixing reference",
+      "weight": "8",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "K 850",
+      "target": "CHICKPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "G 130",
+      "target": "CHICKPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "K 850",
+      "target": "NITROGEN FIXATION",
+      "description": "fixed more nitrogen than G 130",
+      "weight": "9",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "K 850",
+      "target": "NODULE MASS",
+      "description": "exhibited greater nodule mass",
+      "weight": "8",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "K 850",
+      "target": "ACETYLENE REDUCTION ACTIVITY",
+      "description": "exhibited greater activity",
+      "weight": "8",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "RHIZOBIUM SP.",
+      "target": "CHICKPEA",
+      "description": "used for inoculation",
+      "weight": "9",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "RHIZOBIUM SP.",
+      "target": "NODULATION",
+      "description": "induced nodulation in genotypes",
+      "weight": "8",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "NODULATION",
+      "description": "affected the percentage of nodulation",
+      "weight": "7",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "N UPTAKE",
+      "description": "decreased N uptake in K 850",
+      "weight": "7",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "ACETYLENE REDUCTION ACTIVITY",
+      "description": "decreased activity in K 850",
+      "weight": "7",
+      "source_id": "paper_3726"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "NITROGEN FIXATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_3726"
+    }
+  ]
+}

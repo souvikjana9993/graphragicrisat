@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "TOTAL N DETERMINATION",
+      "type": "METHOD",
+      "description": "The process of measuring the total amount of nitrogen in soil samples.",
+      "source_id": "paper_3949"
+    },
+    {
+      "name": "NITROGEN BALANCE RESEARCH",
+      "type": "CONCEPT",
+      "description": "Research aimed at understanding the input and output of nitrogen in a system.",
+      "source_id": "paper_3949"
+    },
+    {
+      "name": "ALFISOLS",
+      "type": "CONDITION",
+      "description": "A type of soil characterized by specific mineralogical and chemical properties.",
+      "source_id": "paper_3949"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "A type of clay-rich soil that shrinks and swells.",
+      "source_id": "paper_3949"
+    },
+    {
+      "name": "DISTILLATION OF A CLEAR ALIQUOT",
+      "type": "METHOD",
+      "description": "A distillation method where suspended materials in the soil digest are allowed to settle before an aliquot is taken.",
+      "source_id": "paper_3949"
+    },
+    {
+      "name": "DISTILLATION OF AN ALIQUOT WITH SUSPENDED MATERIALS",
+      "type": "METHOD",
+      "description": "A distillation method where an aliquot of the soil digest is taken including suspended materials.",
+      "source_id": "paper_3949"
+    },
+    {
+      "name": "DISTILLATION OF THE ENTIRE DIGEST",
+      "type": "METHOD",
+      "description": "A distillation method where the complete soil digest is processed.",
+      "source_id": "paper_3949"
+    },
+    {
+      "name": "BLOCK DIGESTOR",
+      "type": "METHOD",
+      "description": "A method or tool used for the digestion of soil samples prior to distillation.",
+      "source_id": "paper_3949"
+    },
+    {
+      "name": "MACRO-KJELDAHL DIGESTION",
+      "type": "METHOD",
+      "description": "A standard chemical digestion process used to prepare soil samples for nitrogen determination.",
+      "source_id": "paper_3949"
+    },
+    {
+      "name": "TOTAL N CONTENT",
+      "type": "TRAIT",
+      "description": "The total amount of nitrogen present in the soil.",
+      "source_id": "paper_3949"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TOTAL N DETERMINATION",
+      "target": "NITROGEN BALANCE RESEARCH",
+      "description": "is a prerequisite for",
+      "weight": "10",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "DISTILLATION OF A CLEAR ALIQUOT",
+      "target": "TOTAL N DETERMINATION",
+      "description": "is a method for",
+      "weight": "9",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "DISTILLATION OF AN ALIQUOT WITH SUSPENDED MATERIALS",
+      "target": "TOTAL N DETERMINATION",
+      "description": "is a method for",
+      "weight": "9",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "DISTILLATION OF THE ENTIRE DIGEST",
+      "target": "TOTAL N DETERMINATION",
+      "description": "is a method for",
+      "weight": "9",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "DISTILLATION OF A CLEAR ALIQUOT",
+      "target": "ALFISOLS",
+      "description": "is the most precise method for",
+      "weight": "8",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "DISTILLATION OF AN ALIQUOT WITH SUSPENDED MATERIALS",
+      "target": "BLOCK DIGESTOR",
+      "description": "follows",
+      "weight": "8",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "DISTILLATION OF THE ENTIRE DIGEST",
+      "target": "MACRO-KJELDAHL DIGESTION",
+      "description": "follows",
+      "weight": "8",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "TOTAL N DETERMINATION",
+      "target": "TOTAL N CONTENT",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "DISTILLATION OF A CLEAR ALIQUOT",
+      "target": "VERTISOLS",
+      "description": "was evaluated on",
+      "weight": "7",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "DISTILLATION OF AN ALIQUOT WITH SUSPENDED MATERIALS",
+      "target": "VERTISOLS",
+      "description": "was evaluated on",
+      "weight": "7",
+      "source_id": "paper_3949"
+    },
+    {
+      "source": "DISTILLATION OF THE ENTIRE DIGEST",
+      "target": "VERTISOLS",
+      "description": "was evaluated on",
+      "weight": "7",
+      "source_id": "paper_3949"
+    }
+  ]
+}

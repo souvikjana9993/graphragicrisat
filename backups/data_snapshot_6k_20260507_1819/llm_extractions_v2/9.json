@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the crop studied for its response to salinity stress.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "SOIL SALINITY",
+      "type": "CONDITION",
+      "description": "The presence of excess salts in the soil which acts as an environmental stressor.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "VEGETATIVE PHASE",
+      "type": "CONCEPT",
+      "description": "The growth stage of the plant prior to the initiation of reproductive organs.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "REPRODUCTIVE PHASE",
+      "type": "CONCEPT",
+      "description": "The growth stage of the plant involving flowering and pod development.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "ROOT-ZONE SALINITY TREATMENTS",
+      "type": "METHOD",
+      "description": "The application of varying concentrations of NaCl in aerated nutrient solution to plant roots.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "NACL",
+      "type": "CONDITION",
+      "description": "Sodium chloride used to induce salinity stress in the experimental setup.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "JG11",
+      "type": "CROP",
+      "description": "A chickpea cultivar previously considered tolerant to salinity.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "SALT SENSITIVITY",
+      "type": "TRAIT",
+      "description": "The susceptibility of the plant to the negative effects of salinity.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "DRY MASS",
+      "type": "TRAIT",
+      "description": "The weight of the plant material after water removal, used to measure growth.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "FLOWER NUMBERS",
+      "type": "TRAIT",
+      "description": "The quantity of flowers produced by the plant.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "POD FORMATION",
+      "type": "TRAIT",
+      "description": "The process of converting flowers into pods, identified as a highly sensitive stage.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "POLLEN GERMINATION",
+      "type": "TRAIT",
+      "description": "The process of pollen grains sprouting, which is inhibited by NaCl.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "TUBE GROWTH",
+      "type": "TRAIT",
+      "description": "The elongation of the pollen tube, which is inhibited by NaCl.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "SALT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to maintain growth and productivity under saline conditions.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "SHOOT CL",
+      "type": "CONCEPT",
+      "description": "Chlorine ions accumulated in the shoot of the plant.",
+      "source_id": "paper_9"
+    },
+    {
+      "name": "SHOOT NA",
+      "type": "CONCEPT",
+      "description": "Sodium ions accumulated in the shoot of the plant.",
+      "source_id": "paper_9"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "SOIL SALINITY",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SALT SENSITIVITY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "VEGETATIVE PHASE",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "REPRODUCTIVE PHASE",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "NACL",
+      "target": "SOIL SALINITY",
+      "description": "is the primary component of",
+      "weight": "10",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "ROOT-ZONE SALINITY TREATMENTS",
+      "target": "NACL",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "ROOT-ZONE SALINITY TREATMENTS",
+      "target": "CHICKPEA",
+      "description": "is applied to",
+      "weight": "9",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "JG11",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "JG11",
+      "target": "SALT SENSITIVITY",
+      "description": "demonstrates",
+      "weight": "8",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "SALT SENSITIVITY",
+      "target": "POD FORMATION",
+      "description": "is particularly high during",
+      "weight": "9",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "NACL",
+      "target": "POLLEN GERMINATION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "NACL",
+      "target": "TUBE GROWTH",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "DRY MASS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "FLOWER NUMBERS",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "SHOOT CL",
+      "target": "SHOOT NA",
+      "description": "exceeds in concentration",
+      "weight": "8",
+      "source_id": "paper_9"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SALT TOLERANCE",
+      "description": "is evaluated for",
+      "weight": "9",
+      "source_id": "paper_9"
+    }
+  ]
+}

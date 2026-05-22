@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop variety being tested for grain yield across different sites.",
+      "source_id": "paper_2524"
+    },
+    {
+      "name": "SEQRET PATTERN ANALYSIS",
+      "type": "METHOD",
+      "description": "A sequential retrospective pattern analysis used to stratify testing sites based on similarity.",
+      "source_id": "paper_2524"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural trait used to discriminate between genotypes across different environments.",
+      "source_id": "paper_2524"
+    },
+    {
+      "name": "MULTI-ENVIRONMENT TRIALS",
+      "type": "METHOD",
+      "description": "Experimental trials conducted across multiple locations to evaluate crop performance.",
+      "source_id": "paper_2524"
+    },
+    {
+      "name": "SADC REGION",
+      "type": "LOCATION",
+      "description": "The Southern African Development Community region where the testing sites are located.",
+      "source_id": "paper_2524"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "The different genetic variations of sorghum varieties being evaluated.",
+      "source_id": "paper_2524"
+    },
+    {
+      "name": "SITE STRATIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of clustering testing sites into groups based on their similarity for yield discrimination.",
+      "source_id": "paper_2524"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SEQRET PATTERN ANALYSIS",
+      "target": "SITE STRATIFICATION",
+      "description": "used to perform",
+      "weight": "10",
+      "source_id": "paper_2524"
+    },
+    {
+      "source": "SITE STRATIFICATION",
+      "target": "GRAIN YIELD",
+      "description": "based on similarity of",
+      "weight": "9",
+      "source_id": "paper_2524"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_2524"
+    },
+    {
+      "source": "MULTI-ENVIRONMENT TRIALS",
+      "target": "SEQRET PATTERN ANALYSIS",
+      "description": "provided historical data for",
+      "weight": "8",
+      "source_id": "paper_2524"
+    },
+    {
+      "source": "MULTI-ENVIRONMENT TRIALS",
+      "target": "SADC REGION",
+      "description": "were conducted in",
+      "weight": "10",
+      "source_id": "paper_2524"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "GENOTYPES",
+      "description": "used for discrimination among",
+      "weight": "9",
+      "source_id": "paper_2524"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MULTI-ENVIRONMENT TRIALS",
+      "description": "was evaluated in",
+      "weight": "9",
+      "source_id": "paper_2524"
+    }
+  ]
+}

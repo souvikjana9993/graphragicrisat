@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being evaluated for sugar content across various cultivars.",
+      "source_id": "paper_3469"
+    },
+    {
+      "name": "TOTAL SUGAR CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of sugar present in the stalks, grains, and juice of sorghum cultivars.",
+      "source_id": "paper_3469"
+    },
+    {
+      "name": "STALKS",
+      "type": "CONCEPT",
+      "description": "The stem part of the sorghum plant used for sugar and juice analysis.",
+      "source_id": "paper_3469"
+    },
+    {
+      "name": "GRAINS",
+      "type": "CONCEPT",
+      "description": "The seed part of the sorghum plant used for sugar analysis.",
+      "source_id": "paper_3469"
+    },
+    {
+      "name": "WORLD GERMPLASM COLLECTION",
+      "type": "CONCEPT",
+      "description": "The global repository of genetic resources from which sorghum cultivars were selected.",
+      "source_id": "paper_3469"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics, which maintains the germplasm collection.",
+      "source_id": "paper_3469"
+    },
+    {
+      "name": "PHYSIOLOGICAL MATURITY",
+      "type": "CONDITION",
+      "description": "The developmental stage of the plant at which stalks were harvested for analysis.",
+      "source_id": "paper_3469"
+    },
+    {
+      "name": "JUICINESS",
+      "type": "TRAIT",
+      "description": "The quantity of juice extracted from the sorghum stalks.",
+      "source_id": "paper_3469"
+    },
+    {
+      "name": "JUICE",
+      "type": "CONCEPT",
+      "description": "The liquid extracted from sorghum stalks to measure sugar content.",
+      "source_id": "paper_3469"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "TOTAL SUGAR CONTENT",
+      "description": "screened for",
+      "weight": "10",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "STALKS",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAINS",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "TOTAL SUGAR CONTENT",
+      "target": "STALKS",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "TOTAL SUGAR CONTENT",
+      "target": "GRAINS",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "TOTAL SUGAR CONTENT",
+      "target": "JUICE",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "WORLD GERMPLASM COLLECTION",
+      "description": "sourced from",
+      "weight": "8",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "WORLD GERMPLASM COLLECTION",
+      "target": "ICRISAT",
+      "description": "maintained at",
+      "weight": "10",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "STALKS",
+      "target": "PHYSIOLOGICAL MATURITY",
+      "description": "harvested at",
+      "weight": "7",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "JUICINESS",
+      "target": "STALKS",
+      "description": "estimated from",
+      "weight": "9",
+      "source_id": "paper_3469"
+    },
+    {
+      "source": "JUICE",
+      "target": "STALKS",
+      "description": "extracted from",
+      "weight": "10",
+      "source_id": "paper_3469"
+    }
+  ]
+}

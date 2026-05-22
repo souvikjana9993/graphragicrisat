@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The host crop affected by Phytophthora blight",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "PHYTOPHTHORA CAJANI",
+      "type": "ORGANISM",
+      "description": "The pathogen causing phytophthora blight in pigeonpea",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "PHYTOPHTHORA BLIGHT",
+      "type": "CONCEPT",
+      "description": "A prominent disease in low laying areas caused by Phytophthora cajani",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "SPORULATION",
+      "type": "CONCEPT",
+      "description": "The process of producing spores, specifically sporangia and zoospores",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "ZOOSPORES",
+      "type": "CONCEPT",
+      "description": "Asexual motile spores of Phytophthora cajani",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "SPORANGIA",
+      "type": "CONCEPT",
+      "description": "Asexual reproductive structures of Phytophthora cajani",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "LOW LAYING AREAS",
+      "type": "LOCATION",
+      "description": "Geographic areas where Phytophthora blight is prominent",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "INTERMITTENT RAINFALL",
+      "type": "CONDITION",
+      "description": "Environmental condition associated with the occurrence of Phytophthora blight",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "SPORULATION INDUCTION PROTOCOL",
+      "type": "METHOD",
+      "description": "A laboratory procedure developed to induce the production of sporangia and zoospores",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "DILUTED TOMATO EXTRACT BROTH",
+      "type": "CONDITION",
+      "description": "A culture medium used in the sporulation induction protocol",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "TEMPERATURE 30°C",
+      "type": "CONDITION",
+      "description": "The specific temperature required for the induction of sporangia and zoospores",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "FLUORESCENT LIGHT AND DARK CYCLE",
+      "type": "CONDITION",
+      "description": "The lighting regime of alternate 12 hours of fluorescent light and dark used in the protocol",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "DIPLANETISM MECHANISM",
+      "type": "CONCEPT",
+      "description": "A biological mechanism recorded in Phytophthora cajani",
+      "source_id": "paper_12194"
+    },
+    {
+      "name": "PHYTOPHTHORA SPP.",
+      "type": "ORGANISM",
+      "description": "The genus of organisms including Phytophthora cajani",
+      "source_id": "paper_12194"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHYTOPHTHORA CAJANI",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "PHYTOPHTHORA BLIGHT",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "PHYTOPHTHORA CAJANI",
+      "target": "SPORULATION",
+      "description": "undergoes",
+      "weight": "9",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "SPORULATION",
+      "target": "SPORANGIA",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "SPORANGIA",
+      "target": "ZOOSPORES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "LOW LAYING AREAS",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "promotes",
+      "weight": "7",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "INTERMITTENT RAINFALL",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "promotes",
+      "weight": "7",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "SPORULATION INDUCTION PROTOCOL",
+      "target": "SPORANGIA",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "SPORULATION INDUCTION PROTOCOL",
+      "target": "ZOOSPORES",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "SPORULATION INDUCTION PROTOCOL",
+      "target": "DILUTED TOMATO EXTRACT BROTH",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "SPORULATION INDUCTION PROTOCOL",
+      "target": "TEMPERATURE 30°C",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "SPORULATION INDUCTION PROTOCOL",
+      "target": "FLUORESCENT LIGHT AND DARK CYCLE",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "PHYTOPHTHORA CAJANI",
+      "target": "DIPLANETISM MECHANISM",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_12194"
+    },
+    {
+      "source": "PHYTOPHTHORA CAJANI",
+      "target": "PHYTOPHTHORA SPP.",
+      "description": "belongs to",
+      "weight": "10",
+      "source_id": "paper_12194"
+    }
+  ]
+}

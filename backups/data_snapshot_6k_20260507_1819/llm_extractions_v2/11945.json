@@ -1,0 +1,317 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "An oilseed crop studied for yield estimation",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A pulse crop studied for yield estimation",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop studied for yield estimation",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A cereal crop studied for yield estimation",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where the study is conducted",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "A state in India where the study is conducted",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "ODISHA",
+      "type": "LOCATION",
+      "description": "A state in India where the study is conducted",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study is conducted",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "CROP CUTTING EXPERIMENTS",
+      "type": "METHOD",
+      "description": "A method used to estimate crop yield, to be optimized in the study",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "SENTINEL-2 SATELLITE DATA",
+      "type": "METHOD",
+      "description": "Satellite data used to derive metrics on crop performance and spatial variability",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "STATISTICAL OPTIMIZATION TECHNIQUES",
+      "type": "METHOD",
+      "description": "Techniques used to model data and assess the optimal number of CCEs",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "CROP YIELD ESTIMATION",
+      "type": "CONCEPT",
+      "description": "The process of estimating the total production of a crop per unit area",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "CROP PERFORMANCE",
+      "type": "TRAIT",
+      "description": "Metrics derived from satellite data to assess how a crop is growing",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "SPATIAL VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The variation in crop performance across different geographical areas",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "ENVIRONMENTAL DATA",
+      "type": "CONCEPT",
+      "description": "Data regarding the environment used for modeling",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "WEATHER DATA",
+      "type": "CONCEPT",
+      "description": "Data regarding weather conditions used for modeling",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "MANAGEMENT DATA",
+      "type": "CONCEPT",
+      "description": "Data regarding agricultural management practices used for modeling",
+      "source_id": "paper_11945"
+    },
+    {
+      "name": "KHARIF 2019",
+      "type": "CONDITION",
+      "description": "The specific cropping season and year of the pilot study",
+      "source_id": "paper_11945"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SENTINEL-2 SATELLITE DATA",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "CROP CUTTING EXPERIMENTS",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "STATISTICAL OPTIMIZATION TECHNIQUES",
+      "target": "CROP CUTTING EXPERIMENTS",
+      "description": "used to optimize",
+      "weight": "9",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "SENTINEL-2 SATELLITE DATA",
+      "target": "CROP PERFORMANCE",
+      "description": "provides metrics on",
+      "weight": "8",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "SENTINEL-2 SATELLITE DATA",
+      "target": "SPATIAL VARIABILITY",
+      "description": "provides metrics on",
+      "weight": "8",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "target of",
+      "weight": "10",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "target of",
+      "weight": "10",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "MAIZE",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "target of",
+      "weight": "10",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "RICE",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "target of",
+      "weight": "10",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "ANDHRA PRADESH",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "TELANGANA",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "ODISHA",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ANDHRA PRADESH",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "TELANGANA",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ODISHA",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "MAIZE",
+      "target": "ANDHRA PRADESH",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "MAIZE",
+      "target": "TELANGANA",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "MAIZE",
+      "target": "ODISHA",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "RICE",
+      "target": "ANDHRA PRADESH",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "RICE",
+      "target": "TELANGANA",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "RICE",
+      "target": "ODISHA",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "ENVIRONMENTAL DATA",
+      "target": "STATISTICAL OPTIMIZATION TECHNIQUES",
+      "description": "input for",
+      "weight": "8",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "WEATHER DATA",
+      "target": "STATISTICAL OPTIMIZATION TECHNIQUES",
+      "description": "input for",
+      "weight": "8",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "MANAGEMENT DATA",
+      "target": "STATISTICAL OPTIMIZATION TECHNIQUES",
+      "description": "input for",
+      "weight": "8",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "SENTINEL-2 SATELLITE DATA",
+      "target": "STATISTICAL OPTIMIZATION TECHNIQUES",
+      "description": "input for",
+      "weight": "8",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "TELANGANA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "ODISHA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11945"
+    },
+    {
+      "source": "KHARIF 2019",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "timeframe of",
+      "weight": "9",
+      "source_id": "paper_11945"
+    }
+  ]
+}

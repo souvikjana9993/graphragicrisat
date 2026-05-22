@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "PHAEOISARIOPSIS PERSONATA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen, also known as Mycosphaerella berkeleyi, that produces conidia on groundnut",
+      "source_id": "paper_2155"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The host plant used in the study for the production of conidia by P. personata",
+      "source_id": "paper_2155"
+    },
+    {
+      "name": "CONIDIAL PRODUCTION",
+      "type": "TRAIT",
+      "description": "The production of conidia by the fungus P. personata, influenced by environmental factors",
+      "source_id": "paper_2155"
+    },
+    {
+      "name": "HUMIDITY",
+      "type": "CONDITION",
+      "description": "Relative humidity (RH) levels, which must be above a threshold of 94.5% for conidial production to occur",
+      "source_id": "paper_2155"
+    },
+    {
+      "name": "LEAF WETNESS",
+      "type": "CONDITION",
+      "description": "The presence of water on the leaf surface, which influences the rate of conidial production",
+      "source_id": "paper_2155"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The ambient temperature, which shows a linear increase in conidial production between 10 and 28°C",
+      "source_id": "paper_2155"
+    },
+    {
+      "name": "LIGHT",
+      "type": "CONDITION",
+      "description": "Light conditions including photon flux density and photoperiod that regulate conidial production",
+      "source_id": "paper_2155"
+    },
+    {
+      "name": "CONTROLLED ENVIRONMENT",
+      "type": "METHOD",
+      "description": "The use of controlled environmental conditions to isolate the effects of humidity, light, and temperature",
+      "source_id": "paper_2155"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHAEOISARIOPSIS PERSONATA",
+      "target": "GROUNDNUT",
+      "description": "infects and produces conidia on",
+      "weight": "10",
+      "source_id": "paper_2155"
+    },
+    {
+      "source": "PHAEOISARIOPSIS PERSONATA",
+      "target": "CONIDIAL PRODUCTION",
+      "description": "undergoes",
+      "weight": "10",
+      "source_id": "paper_2155"
+    },
+    {
+      "source": "HUMIDITY",
+      "target": "CONIDIAL PRODUCTION",
+      "description": "positively correlates with production above 94.5% RH",
+      "weight": "9",
+      "source_id": "paper_2155"
+    },
+    {
+      "source": "LEAF WETNESS",
+      "target": "CONIDIAL PRODUCTION",
+      "description": "influences the amount of conidia produced",
+      "weight": "8",
+      "source_id": "paper_2155"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "CONIDIAL PRODUCTION",
+      "description": "positively correlates with production between 10 and 28°C",
+      "weight": "9",
+      "source_id": "paper_2155"
+    },
+    {
+      "source": "LIGHT",
+      "target": "CONIDIAL PRODUCTION",
+      "description": "inhibits production at high photon flux density and influences biological rhythm",
+      "weight": "8",
+      "source_id": "paper_2155"
+    },
+    {
+      "source": "CONTROLLED ENVIRONMENT",
+      "target": "CONIDIAL PRODUCTION",
+      "description": "used to analyze the factors affecting",
+      "weight": "7",
+      "source_id": "paper_2155"
+    }
+  ]
+}

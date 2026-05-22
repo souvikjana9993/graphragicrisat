@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cicer arietatum L) and a mandate crop of ICRISAT",
+      "source_id": "paper_4319"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_4319"
+    },
+    {
+      "name": "HELIOTHIS ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A polyphagous pest that attacks many crop species, including chickpea",
+      "source_id": "paper_4319"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a crop to withstand attack by a pest",
+      "source_id": "paper_4319"
+    },
+    {
+      "name": "PEST PROBLEMS",
+      "type": "CONDITION",
+      "description": "Issues caused by pests affecting crop growth and yield",
+      "source_id": "paper_4319"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "ICRISAT",
+      "description": "is a mandate crop of",
+      "weight": "10",
+      "source_id": "paper_4319"
+    },
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "is the major pest in most growing areas of",
+      "weight": "10",
+      "source_id": "paper_4319"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "is bred for against",
+      "weight": "9",
+      "source_id": "paper_4319"
+    },
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "PEST PROBLEMS",
+      "description": "is a cause of",
+      "weight": "10",
+      "source_id": "paper_4319"
+    }
+  ]
+}

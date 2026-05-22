@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for disease resistance.",
+      "source_id": "paper_2337"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A fungal disease that causes wilting in plants.",
+      "source_id": "paper_2337"
+    },
+    {
+      "name": "RACE 2",
+      "type": "CONDITION",
+      "description": "A specific race of the fusarium wilt pathogen.",
+      "source_id": "paper_2337"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist infection by fusarium wilt.",
+      "source_id": "paper_2337"
+    },
+    {
+      "name": "GENES",
+      "type": "GENE_MARKER",
+      "description": "The genetic loci that control the resistance to fusarium wilt.",
+      "source_id": "paper_2337"
+    },
+    {
+      "name": "HOMOZYGOUS RECESSIVE",
+      "type": "CONCEPT",
+      "description": "A genetic condition where an individual has two recessive alleles for a trait.",
+      "source_id": "paper_2337"
+    },
+    {
+      "name": "DOMINANT FORM",
+      "type": "CONCEPT",
+      "description": "A genetic condition where an individual has at least one dominant allele for a trait.",
+      "source_id": "paper_2337"
+    },
+    {
+      "name": "COMPLETE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The state of total resistance to the pathogen.",
+      "source_id": "paper_2337"
+    },
+    {
+      "name": "EARLY WILTING",
+      "type": "TRAIT",
+      "description": "The manifestation of disease symptoms at an early stage.",
+      "source_id": "paper_2337"
+    },
+    {
+      "name": "LATE WILTING",
+      "type": "TRAIT",
+      "description": "The manifestation of disease symptoms at a late stage.",
+      "source_id": "paper_2337"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "FUSARIUM WILT",
+      "description": "is affected by",
+      "weight": "8",
+      "source_id": "paper_2337"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "RACE 2",
+      "description": "has a specific strain",
+      "weight": "9",
+      "source_id": "paper_2337"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "FUSARIUM WILT",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_2337"
+    },
+    {
+      "source": "GENES",
+      "target": "RESISTANCE",
+      "description": "control the inheritance of",
+      "weight": "10",
+      "source_id": "paper_2337"
+    },
+    {
+      "source": "HOMOZYGOUS RECESSIVE",
+      "target": "GENES",
+      "description": "is a required state for the first gene for resistance",
+      "weight": "9",
+      "source_id": "paper_2337"
+    },
+    {
+      "source": "DOMINANT FORM",
+      "target": "GENES",
+      "description": "is a required state for the second gene for resistance",
+      "weight": "9",
+      "source_id": "paper_2337"
+    },
+    {
+      "source": "COMPLETE RESISTANCE",
+      "target": "RESISTANCE",
+      "description": "is a specific level of",
+      "weight": "8",
+      "source_id": "paper_2337"
+    },
+    {
+      "source": "GENES",
+      "target": "EARLY WILTING",
+      "description": "determine the occurrence of",
+      "weight": "7",
+      "source_id": "paper_2337"
+    },
+    {
+      "source": "GENES",
+      "target": "LATE WILTING",
+      "description": "determine the occurrence of",
+      "weight": "7",
+      "source_id": "paper_2337"
+    }
+  ]
+}

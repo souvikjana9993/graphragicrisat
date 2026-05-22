@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pest insect that causes massive yield loss of various crops globally.",
+      "source_id": "paper_515"
+    },
+    {
+      "name": "YIELD LOSS",
+      "type": "TRAIT",
+      "description": "The reduction in crop productivity caused by pests.",
+      "source_id": "paper_515"
+    },
+    {
+      "name": "BACILLUS THURINGIENSIS",
+      "type": "ORGANISM",
+      "description": "A bacterium that codes for the Cry1Ac toxin.",
+      "source_id": "paper_515"
+    },
+    {
+      "name": "CRY1AC",
+      "type": "GENE_MARKER",
+      "description": "A toxin protein effective against Helicoverpa armigera.",
+      "source_id": "paper_515"
+    },
+    {
+      "name": "ALKALINE PHOSPHATASE",
+      "type": "CONCEPT",
+      "description": "A homodimeric protein (HaALP) that acts as a putative receptor for Cry1Ac toxin.",
+      "source_id": "paper_515"
+    },
+    {
+      "name": "MIDGUT",
+      "type": "LOCATION",
+      "description": "The part of the Helicoverpa armigera digestive system where the receptor is located.",
+      "source_id": "paper_515"
+    },
+    {
+      "name": "BBMV",
+      "type": "LOCATION",
+      "description": "Brush Border Membrane Vesicles of the target insect gut.",
+      "source_id": "paper_515"
+    },
+    {
+      "name": "ALPHA-GALNAC",
+      "type": "CONCEPT",
+      "description": "A residue at the nonreducing terminal of the glycan structure in HaALP that serves as an interactive epitope.",
+      "source_id": "paper_515"
+    },
+    {
+      "name": "LECTIN-LIGAND IMMUNOBOT ASSAY",
+      "type": "METHOD",
+      "description": "An assay used to detect the presence of R-GalNAc residue in the membrane bound HaALP protein.",
+      "source_id": "paper_515"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "YIELD LOSS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_515"
+    },
+    {
+      "source": "BACILLUS THURINGIENSIS",
+      "target": "CRY1AC",
+      "description": "codes for",
+      "weight": "10",
+      "source_id": "paper_515"
+    },
+    {
+      "source": "CRY1AC",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "is effective against",
+      "weight": "9",
+      "source_id": "paper_515"
+    },
+    {
+      "source": "ALKALINE PHOSPHATASE",
+      "target": "MIDGUT",
+      "description": "is located at",
+      "weight": "8",
+      "source_id": "paper_515"
+    },
+    {
+      "source": "ALKALINE PHOSPHATASE",
+      "target": "BBMV",
+      "description": "is identified in",
+      "weight": "8",
+      "source_id": "paper_515"
+    },
+    {
+      "source": "ALKALINE PHOSPHATASE",
+      "target": "CRY1AC",
+      "description": "acts as a receptor for",
+      "weight": "10",
+      "source_id": "paper_515"
+    },
+    {
+      "source": "ALPHA-GALNAC",
+      "target": "ALKALINE PHOSPHATASE",
+      "description": "is a part of the glycan structure of",
+      "weight": "9",
+      "source_id": "paper_515"
+    },
+    {
+      "source": "ALPHA-GALNAC",
+      "target": "CRY1AC",
+      "description": "mediates interaction with",
+      "weight": "8",
+      "source_id": "paper_515"
+    },
+    {
+      "source": "LECTIN-LIGAND IMMUNOBOT ASSAY",
+      "target": "ALPHA-GALNAC",
+      "description": "detected the presence of",
+      "weight": "10",
+      "source_id": "paper_515"
+    }
+  ]
+}

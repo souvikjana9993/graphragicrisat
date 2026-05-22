@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for salinity tolerance.",
+      "source_id": "paper_3208"
+    },
+    {
+      "name": "SALINITY TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand high salt concentrations.",
+      "source_id": "paper_3208"
+    },
+    {
+      "name": "SCREENING PROTOCOL",
+      "type": "METHOD",
+      "description": "A standardized procedure to identify salt-tolerant genotypes.",
+      "source_id": "paper_3208"
+    },
+    {
+      "name": "NACL",
+      "type": "CONDITION",
+      "description": "Sodium chloride treatment used to simulate salinity stress.",
+      "source_id": "paper_3208"
+    },
+    {
+      "name": "GENOTYPIC VARIATION",
+      "type": "CONCEPT",
+      "description": "The differences in salinity tolerance among different groundnut genotypes.",
+      "source_id": "paper_3208"
+    },
+    {
+      "name": "LEAF SIZE",
+      "type": "TRAIT",
+      "description": "The physical dimensions of the leaves, which decrease under salinity stress.",
+      "source_id": "paper_3208"
+    },
+    {
+      "name": "STEM/LEAF RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of stem to leaf biomass, which is affected by salinity.",
+      "source_id": "paper_3208"
+    },
+    {
+      "name": "LEAF EXPANSION",
+      "type": "CONCEPT",
+      "description": "The process of leaf growth that is arrested by salinity.",
+      "source_id": "paper_3208"
+    },
+    {
+      "name": "PHOTOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "The process of converting light energy to chemical energy, limited by reduced leaf area.",
+      "source_id": "paper_3208"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCREENING PROTOCOL",
+      "target": "GROUNDNUT",
+      "description": "used to screen genotypes of",
+      "weight": "9",
+      "source_id": "paper_3208"
+    },
+    {
+      "source": "SCREENING PROTOCOL",
+      "target": "SALINITY TOLERANCE",
+      "description": "designed to identify",
+      "weight": "10",
+      "source_id": "paper_3208"
+    },
+    {
+      "source": "NACL",
+      "target": "SALINITY TOLERANCE",
+      "description": "used as a treatment to screen for",
+      "weight": "10",
+      "source_id": "paper_3208"
+    },
+    {
+      "source": "NACL",
+      "target": "GROUNDNUT",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_3208"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SALINITY TOLERANCE",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_3208"
+    },
+    {
+      "source": "GENOTYPIC VARIATION",
+      "target": "SALINITY TOLERANCE",
+      "description": "observed for",
+      "weight": "8",
+      "source_id": "paper_3208"
+    },
+    {
+      "source": "NACL",
+      "target": "LEAF SIZE",
+      "description": "causes reduction in",
+      "weight": "9",
+      "source_id": "paper_3208"
+    },
+    {
+      "source": "NACL",
+      "target": "STEM/LEAF RATIO",
+      "description": "causes reduction in",
+      "weight": "9",
+      "source_id": "paper_3208"
+    },
+    {
+      "source": "LEAF EXPANSION",
+      "target": "LEAF SIZE",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_3208"
+    },
+    {
+      "source": "LEAF EXPANSION",
+      "target": "PHOTOSYNTHESIS",
+      "description": "affects the area available for",
+      "weight": "7",
+      "source_id": "paper_3208"
+    }
+  ]
+}

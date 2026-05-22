@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "Vigna unguiculata, a legume cultivated and consumed in West Africa",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "Region where cowpea is most cultivated and consumed",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "MARUCA VITRATA",
+      "type": "ORGANISM",
+      "description": "Cowpea pod borer, an insect pest that attacks cowpea",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "Agricultural output of cowpea, which is reduced by insect pests",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "NEEM OIL",
+      "type": "CONCEPT",
+      "description": "Biopesticide derived from Azadirachta indica used against Maruca vitrata",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "MAVIMNPV",
+      "type": "ORGANISM",
+      "description": "Maruca vitrata multi-nucleopolyhedrovirus, a biopesticide used against Maruca vitrata",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "LABORATORY CONDITIONS",
+      "type": "CONDITION",
+      "description": "Controlled environment where the efficacy of biopesticides was assessed",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "SECOND GENERATION PESTICIDES",
+      "type": "CONCEPT",
+      "description": "Chemical pesticides for which biopesticides are proposed as alternatives",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "EGG VIABILITY",
+      "type": "TRAIT",
+      "description": "The ability of Maruca vitrata eggs to hatch",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "MORTALITY RATE",
+      "type": "TRAIT",
+      "description": "The rate of death among hatched larvae of Maruca vitrata",
+      "source_id": "paper_11873"
+    },
+    {
+      "name": "INTEGRATED PEST MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "A strategic approach to pest control incorporating various biopesticides",
+      "source_id": "paper_11873"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MARUCA VITRATA",
+      "target": "COWPEA",
+      "description": "attacks",
+      "weight": "10",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "MARUCA VITRATA",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "COWPEA",
+      "target": "WEST AFRICA",
+      "description": "cultivated in",
+      "weight": "7",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "NEEM OIL",
+      "target": "MARUCA VITRATA",
+      "description": "reduces egg viability and increases larval mortality",
+      "weight": "9",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "MAVIMNPV",
+      "target": "MARUCA VITRATA",
+      "description": "reduces egg viability and increases larval mortality",
+      "weight": "9",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "NEEM OIL",
+      "target": "EGG VIABILITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "MAVIMNPV",
+      "target": "EGG VIABILITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "NEEM OIL",
+      "target": "MORTALITY RATE",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "MAVIMNPV",
+      "target": "MORTALITY RATE",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "NEEM OIL",
+      "target": "SECOND GENERATION PESTICIDES",
+      "description": "alternative to",
+      "weight": "7",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "MAVIMNPV",
+      "target": "SECOND GENERATION PESTICIDES",
+      "description": "alternative to",
+      "weight": "7",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "NEEM OIL",
+      "target": "INTEGRATED PEST MANAGEMENT",
+      "description": "used within",
+      "weight": "6",
+      "source_id": "paper_11873"
+    },
+    {
+      "source": "MAVIMNPV",
+      "target": "INTEGRATED PEST MANAGEMENT",
+      "description": "used within",
+      "weight": "6",
+      "source_id": "paper_11873"
+    }
+  ]
+}

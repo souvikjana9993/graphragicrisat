@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "TRICHOGRAMMA CHILONIS",
+      "type": "ORGANISM",
+      "description": "A parasitoid wasp used as a biological control agent.",
+      "source_id": "paper_2854"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pest insect that attacks legume crops.",
+      "source_id": "paper_2854"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop targeted for pest control trials.",
+      "source_id": "paper_2854"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop targeted for pest control trials.",
+      "source_id": "paper_2854"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where the trials were conducted.",
+      "source_id": "paper_2854"
+    },
+    {
+      "name": "MASS-RELEASES",
+      "type": "METHOD",
+      "description": "The practice of releasing large numbers of biological control agents into the environment.",
+      "source_id": "paper_2854"
+    },
+    {
+      "name": "PEST CONTROL",
+      "type": "CONCEPT",
+      "description": "The management of pests to prevent crop damage.",
+      "source_id": "paper_2854"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MASS-RELEASES",
+      "target": "TRICHOGRAMMA CHILONIS",
+      "description": "Method used to deploy the organism",
+      "weight": "9",
+      "source_id": "paper_2854"
+    },
+    {
+      "source": "TRICHOGRAMMA CHILONIS",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Used as a biological control agent to manage this pest",
+      "weight": "8",
+      "source_id": "paper_2854"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "PIGEONPEA",
+      "description": "Pest that infests this crop",
+      "weight": "9",
+      "source_id": "paper_2854"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "Pest that infests this crop",
+      "weight": "9",
+      "source_id": "paper_2854"
+    },
+    {
+      "source": "MASS-RELEASES",
+      "target": "PEST CONTROL",
+      "description": "Method employed to achieve pest control",
+      "weight": "7",
+      "source_id": "paper_2854"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "MASS-RELEASES",
+      "description": "Location where the mass-releases were conducted",
+      "weight": "8",
+      "source_id": "paper_2854"
+    }
+  ]
+}

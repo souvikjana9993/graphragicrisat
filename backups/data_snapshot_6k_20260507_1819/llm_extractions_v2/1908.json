@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop affected by sterility mosaic disease",
+      "source_id": "paper_1908"
+    },
+    {
+      "name": "STERILITY MOSAIC DISEASE",
+      "type": "CONDITION",
+      "description": "A disease causing sterility and mosaic patterns in pigeonpea",
+      "source_id": "paper_1908"
+    },
+    {
+      "name": "TENUI-LIKE VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus with flexuous and branched filaments isolated from pigeonpea plants",
+      "source_id": "paper_1908"
+    },
+    {
+      "name": "COAT PROTEIN",
+      "type": "CONCEPT",
+      "description": "A 32 kDa protein component of the tenui-like virus",
+      "source_id": "paper_1908"
+    },
+    {
+      "name": "SEGMENTED RNA",
+      "type": "CONCEPT",
+      "description": "4-5 segments of RNA of size 0.8-3.5 kilo bases found in the tenui-like virus",
+      "source_id": "paper_1908"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TENUI-LIKE VIRUS",
+      "target": "STERILITY MOSAIC DISEASE",
+      "description": "is the causal agent of",
+      "weight": "10",
+      "source_id": "paper_1908"
+    },
+    {
+      "source": "TENUI-LIKE VIRUS",
+      "target": "PIGEONPEA",
+      "description": "was isolated from",
+      "weight": "10",
+      "source_id": "paper_1908"
+    },
+    {
+      "source": "STERILITY MOSAIC DISEASE",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1908"
+    },
+    {
+      "source": "TENUI-LIKE VIRUS",
+      "target": "COAT PROTEIN",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_1908"
+    },
+    {
+      "source": "TENUI-LIKE VIRUS",
+      "target": "SEGMENTED RNA",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_1908"
+    }
+  ]
+}

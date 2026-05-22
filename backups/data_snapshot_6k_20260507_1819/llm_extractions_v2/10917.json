@@ -1,0 +1,176 @@
+{
+  "entities": [
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION (BNF)",
+      "type": "CONCEPT",
+      "description": "The biological process by which atmospheric nitrogen is converted into ammonia by legumes.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "Plants of the family Fabaceae capable of fixing nitrogen.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A chemical element essential for plant growth and recycled in cropping systems.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "CROPPING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The agricultural arrangement of crops grown on a piece of land.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "ISOTOPIC DILUTION (ID) METHOD",
+      "type": "METHOD",
+      "description": "A highly accurate but expensive and time-consuming technique for measuring biological nitrogen fixation.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "TOTAL NITROGEN DIFFERENCE (TND) METHOD",
+      "type": "METHOD",
+      "description": "A simple but less accurate technique for measuring biological nitrogen fixation.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "Vigna unguiculata, the specific legume studied in the research.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "BURKINA FASO",
+      "type": "LOCATION",
+      "description": "The country in West Africa where the study was conducted.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The geographical region where Burkina Faso is located.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "TOTAL NITROGEN ACCUMULATED",
+      "type": "TRAIT",
+      "description": "The total amount of nitrogen accumulated by plant genotypes.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "NITROGEN DERIVED FROM THE ATMOSPHERE (NDFA)",
+      "type": "TRAIT",
+      "description": "The proportion of total nitrogen in the plant that originates from the atmosphere.",
+      "source_id": "paper_10917"
+    },
+    {
+      "name": "POLYNOMIAL REGRESSION",
+      "type": "METHOD",
+      "description": "A statistical method used to describe the relationship between N-accumulated and Ndfa-ID.",
+      "source_id": "paper_10917"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION (BNF)",
+      "target": "LEGUMES",
+      "description": "is performed by",
+      "weight": "10",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION (BNF)",
+      "target": "NITROGEN",
+      "description": "contributes to the recycling of",
+      "weight": "9",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "CROPPING SYSTEMS",
+      "description": "is recycled within",
+      "weight": "8",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "ISOTOPIC DILUTION (ID) METHOD",
+      "target": "BIOLOGICAL NITROGEN FIXATION (BNF)",
+      "description": "is used to measure",
+      "weight": "10",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "TOTAL NITROGEN DIFFERENCE (TND) METHOD",
+      "target": "BIOLOGICAL NITROGEN FIXATION (BNF)",
+      "description": "is used to measure",
+      "weight": "10",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "COWPEA",
+      "target": "LEGUMES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "COWPEA",
+      "target": "BURKINA FASO",
+      "description": "genotypes were studied in",
+      "weight": "10",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "BURKINA FASO",
+      "target": "WEST AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "TOTAL NITROGEN ACCUMULATED",
+      "target": "COWPEA",
+      "description": "is a measurable trait of",
+      "weight": "9",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "NITROGEN DERIVED FROM THE ATMOSPHERE (NDFA)",
+      "target": "BIOLOGICAL NITROGEN FIXATION (BNF)",
+      "description": "is a measure of",
+      "weight": "10",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "TOTAL NITROGEN DIFFERENCE (TND) METHOD",
+      "target": "NITROGEN DERIVED FROM THE ATMOSPHERE (NDFA)",
+      "description": "estimates",
+      "weight": "9",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "ISOTOPIC DILUTION (ID) METHOD",
+      "target": "NITROGEN DERIVED FROM THE ATMOSPHERE (NDFA)",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "POLYNOMIAL REGRESSION",
+      "target": "TOTAL NITROGEN ACCUMULATED",
+      "description": "models the relationship with NDFA",
+      "weight": "10",
+      "source_id": "paper_10917"
+    },
+    {
+      "source": "POLYNOMIAL REGRESSION",
+      "target": "NITROGEN DERIVED FROM THE ATMOSPHERE (NDFA)",
+      "description": "models the relationship with total N accumulated",
+      "weight": "10",
+      "source_id": "paper_10917"
+    }
+  ]
+}

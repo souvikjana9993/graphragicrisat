@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop species being studied for drought tolerance and grain yield.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The phenotypic measure of productivity in rice under different stress conditions.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by lack of water, referred to as RS.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "NON-STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition without water limitation, referred to as NS.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "QTL",
+      "type": "GENE_MARKER",
+      "description": "Quantitative Trait Loci associated with specific traits.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "QDTY",
+      "type": "GENE_MARKER",
+      "description": "Specific drought-related Quantitative Trait Loci.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "GENOMIC-ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "A breeding approach using genomic data to improve crop traits.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "EPISTATIC INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "Interactions between different loci or QTLs that influence the expression of a trait.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "INTROGRESSION LINES",
+      "type": "CONCEPT",
+      "description": "Lines created by introducing a specific genetic segment from one variety into another.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "NIL",
+      "type": "CONCEPT",
+      "description": "Near-Isogenic Lines used to study the effect of specific QTLs.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "IR64",
+      "type": "CONCEPT",
+      "description": "A specific rice genetic background used in the study.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "TDK1-SUB1",
+      "type": "CONCEPT",
+      "description": "A specific rice genetic background used in the study.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "SAVITRI",
+      "type": "CONCEPT",
+      "description": "A specific rice genetic background used in the study.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of measuring the physical traits of the NIL pairs.",
+      "source_id": "paper_11089"
+    },
+    {
+      "name": "GENOTYPING",
+      "type": "METHOD",
+      "description": "The process of determining the genetic makeup of the lines to detect interactions.",
+      "source_id": "paper_11089"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "EPISTATIC INTERACTIONS",
+      "target": "GRAIN YIELD",
+      "description": "determine the expression of",
+      "weight": "9",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "EPISTATIC INTERACTIONS",
+      "target": "QTL",
+      "description": "occur between",
+      "weight": "8",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "QTL",
+      "target": "GRAIN YIELD",
+      "description": "influence",
+      "weight": "7",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "QDTY",
+      "target": "GRAIN YIELD",
+      "description": "influence",
+      "weight": "8",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "GENOMIC-ASSISTED BREEDING",
+      "target": "INTROGRESSION LINES",
+      "description": "used to develop",
+      "weight": "9",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "INTROGRESSION LINES",
+      "target": "NIL",
+      "description": "are implemented as",
+      "weight": "8",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "NIL",
+      "target": "QDTY",
+      "description": "harbor",
+      "weight": "9",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "NIL",
+      "target": "IR64",
+      "description": "developed in background of",
+      "weight": "9",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "NIL",
+      "target": "TDK1-SUB1",
+      "description": "developed in background of",
+      "weight": "9",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "NIL",
+      "target": "SAVITRI",
+      "description": "developed in background of",
+      "weight": "9",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "DROUGHT STRESS",
+      "description": "measured under",
+      "weight": "10",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "NON-STRESS",
+      "description": "measured under",
+      "weight": "10",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "PHENOTYPING",
+      "target": "GRAIN YIELD",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "GENOTYPING",
+      "target": "EPISTATIC INTERACTIONS",
+      "description": "used to detect",
+      "weight": "9",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "RICE",
+      "target": "GRAIN YIELD",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_11089"
+    },
+    {
+      "source": "RICE",
+      "target": "DROUGHT STRESS",
+      "description": "subjected to",
+      "weight": "8",
+      "source_id": "paper_11089"
+    }
+  ]
+}

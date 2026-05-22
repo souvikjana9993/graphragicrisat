@@ -1,0 +1,209 @@
+{
+  "entities": [
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The thermal environment affecting the survival and development of the parasitoid",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The host insect that serves as a food source for the parasitoid",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "CAMPOLETIS CHLORIDEAE",
+      "type": "ORGANISM",
+      "description": "The parasitoid insect whose survival and development are being studied",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "SURVIVAL",
+      "type": "TRAIT",
+      "description": "The ability of the parasitoid to stay alive under specific conditions",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The growth and maturation process of the parasitoid",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "POST-EMBRYONIC DEVELOPMENT PERIOD",
+      "type": "TRAIT",
+      "description": "The duration of development following the embryonic stage",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "DEGREE DAYS",
+      "type": "CONCEPT",
+      "description": "A measure of heat accumulation used to predict development",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "AMBIENT CONDITIONS",
+      "type": "CONDITION",
+      "description": "The natural, fluctuating temperature environment",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "CONSTANT TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A stable, non-fluctuating temperature environment",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "WEIGHT",
+      "type": "TRAIT",
+      "description": "The physical mass of the adult males and females of the parasitoid",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "PARASITISM",
+      "type": "TRAIT",
+      "description": "The act or rate of the parasitoid infecting the host",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "ADULT EMERGENCE",
+      "type": "TRAIT",
+      "description": "The process of the parasitoid emerging as an adult",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "PARASITOID STRAIN",
+      "type": "CONCEPT",
+      "description": "Different genetic variants of the parasitoid species",
+      "source_id": "paper_2110"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperature and weather patterns",
+      "source_id": "paper_2110"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "SURVIVAL",
+      "description": "Influences the survival of the parasitoid, with extremes being detrimental",
+      "weight": "9",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DEVELOPMENT",
+      "description": "Influences the development of the parasitoid",
+      "weight": "9",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "SURVIVAL",
+      "description": "The food source influences the survival of the parasitoid",
+      "weight": "7",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "DEVELOPMENT",
+      "description": "The food source influences the development of the parasitoid",
+      "weight": "7",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "POST-EMBRYONIC DEVELOPMENT PERIOD",
+      "description": "Significantly and negatively associated with the development period",
+      "weight": "10",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "DEGREE DAYS",
+      "description": "Determines the number of degree days required to complete development",
+      "weight": "8",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "AMBIENT CONDITIONS",
+      "target": "DEVELOPMENT",
+      "description": "Prolongs development compared to constant temperature",
+      "weight": "8",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "CONSTANT TEMPERATURE",
+      "target": "DEVELOPMENT",
+      "description": "Affects the speed of development",
+      "weight": "8",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "WEIGHT",
+      "description": "Influences the weight of adult males and females",
+      "weight": "7",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "PARASITISM",
+      "description": "Influences the rate of parasitism",
+      "weight": "7",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "ADULT EMERGENCE",
+      "description": "Influences the rate of adult emergence",
+      "weight": "7",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "PARASITOID STRAIN",
+      "target": "PARASITISM",
+      "description": "Influences the rate of parasitism",
+      "weight": "6",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "PARASITOID STRAIN",
+      "target": "ADULT EMERGENCE",
+      "description": "Influences the rate of adult emergence",
+      "weight": "6",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PARASITISM",
+      "description": "Influences the rate of parasitism",
+      "weight": "7",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "ADULT EMERGENCE",
+      "description": "Influences the rate of adult emergence",
+      "weight": "7",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "SURVIVAL",
+      "description": "Expected to have a considerable influence on survival",
+      "weight": "8",
+      "source_id": "paper_2110"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "DEVELOPMENT",
+      "description": "Expected to have a considerable influence on development",
+      "weight": "8",
+      "source_id": "paper_2110"
+    }
+  ]
+}

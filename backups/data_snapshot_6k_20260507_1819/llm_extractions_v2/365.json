@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum (L.) R. Br., the crop studied for yield heterosis",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The weight of the grain produced by the plant",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "STOVER YIELD",
+      "type": "TRAIT",
+      "description": "The weight of the vegetative part of the plant excluding the grain",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total biological mass of the plant",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of grain yield to total biomass",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "HETEROSIS",
+      "type": "CONCEPT",
+      "description": "The superior performance of hybrids compared to their parents",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "BIOMASS HETEROSIS",
+      "type": "CONCEPT",
+      "description": "Heterosis specifically observed for total biomass",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "GRAIN YIELD HETEROSIS",
+      "type": "CONCEPT",
+      "description": "Heterosis specifically observed for grain yield",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "STOVER YIELD HETEROSIS",
+      "type": "CONCEPT",
+      "description": "Heterosis specifically observed for stover yield",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "HARVEST INDEX HETEROSIS",
+      "type": "CONCEPT",
+      "description": "Heterosis specifically observed for the harvest index",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "TESTCROSSES",
+      "type": "METHOD",
+      "description": "The process of crossing specific populations to evaluate genetic traits",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "ARID ZONE",
+      "type": "CONDITION",
+      "description": "Environment characterized by low rainfall and water scarcity",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "NORTHWEST INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the experiments were conducted",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "SINGLE CROSS HYBRIDS",
+      "type": "CONCEPT",
+      "description": "Hybrids resulting from a single cross between two parental lines",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "RESTORER POPULATIONS",
+      "type": "CONCEPT",
+      "description": "Populations used to restore fertility in male-sterile lines",
+      "source_id": "paper_365"
+    },
+    {
+      "name": "MALE-STERILE LINES",
+      "type": "CONCEPT",
+      "description": "Lines that cannot produce functional pollen",
+      "source_id": "paper_365"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "GRAIN YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "STOVER YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "BIOMASS",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "HARVEST INDEX",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "NORTHWEST INDIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "ARID ZONE",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "BIOMASS HETEROSIS",
+      "target": "GRAIN YIELD HETEROSIS",
+      "description": "major determinant of",
+      "weight": "9",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "BIOMASS HETEROSIS",
+      "target": "STOVER YIELD HETEROSIS",
+      "description": "major determinant of",
+      "weight": "10",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "HARVEST INDEX HETEROSIS",
+      "target": "GRAIN YIELD HETEROSIS",
+      "description": "contributes to variation in",
+      "weight": "7",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "HARVEST INDEX HETEROSIS",
+      "target": "STOVER YIELD HETEROSIS",
+      "description": "contributes to variation in",
+      "weight": "6",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "HARVEST INDEX HETEROSIS",
+      "target": "STOVER YIELD HETEROSIS",
+      "description": "positive HI heterosis results in negative stover yield heterosis",
+      "weight": "8",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "TESTCROSSES",
+      "target": "HETEROSIS",
+      "description": "used to measure",
+      "weight": "9",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "RESTORER POPULATIONS",
+      "target": "TESTCROSSES",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "MALE-STERILE LINES",
+      "target": "TESTCROSSES",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_365"
+    },
+    {
+      "source": "SINGLE CROSS HYBRIDS",
+      "target": "HETEROSIS",
+      "description": "exhibit",
+      "weight": "9",
+      "source_id": "paper_365"
+    }
+  ]
+}

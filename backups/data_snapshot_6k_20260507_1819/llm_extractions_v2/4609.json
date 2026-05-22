@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop Pennisetum glaucum affected by downy mildew",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease caused by Sclerospora graminicola that causes substantial losses in grain yield",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew in pearl millet",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, which is reduced by downy mildew infection",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "DISEASE-FREE SEED",
+      "type": "CONCEPT",
+      "description": "Seed that is free from the pathogen, necessary for managing epidemics",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "OOSPORES",
+      "type": "ORGANISM",
+      "description": "Resting spores of the pathogen that can be seed-carried or present in the field",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "CULTIVAR ROTATION",
+      "type": "METHOD",
+      "description": "The practice of multiplying seed in rotation of selected cultivars to reduce host-specific pathogen populations",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "METALAXYL",
+      "type": "METHOD",
+      "description": "A chemical treatment used to control infection by externally seed-carried oospores",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "PRE SOWING IRRIGATION",
+      "type": "METHOD",
+      "description": "Irrigation performed before sowing to control the development of early epidemics",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "ROGUING",
+      "type": "METHOD",
+      "description": "The practice of removing infected plants from the seedling to heading stage",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "FAST SEEDLING GROWTH",
+      "type": "TRAIT",
+      "description": "A trait that helps in producing seed free from internal mycelium",
+      "source_id": "paper_4609"
+    },
+    {
+      "name": "INTERNAL MYCELIUM",
+      "type": "ORGANISM",
+      "description": "Fungal growth within the plant that can reach the seed from an infected plant",
+      "source_id": "paper_4609"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "OOSPORES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "OOSPORES",
+      "target": "DOWNY MILDEW",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "CULTIVAR ROTATION",
+      "target": "SCLEROSPORA GRAMINICOLA",
+      "description": "reduces population of",
+      "weight": "7",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "METALAXYL",
+      "target": "OOSPORES",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "PRE SOWING IRRIGATION",
+      "target": "DOWNY MILDEW",
+      "description": "controls early epidemic of",
+      "weight": "7",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "ROGUING",
+      "target": "DOWNY MILDEW",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "FAST SEEDLING GROWTH",
+      "target": "INTERNAL MYCELIUM",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "INTERNAL MYCELIUM",
+      "target": "DISEASE-FREE SEED",
+      "description": "prevents production of",
+      "weight": "7",
+      "source_id": "paper_4609"
+    },
+    {
+      "source": "DISEASE-FREE SEED",
+      "target": "DOWNY MILDEW",
+      "description": "manages",
+      "weight": "9",
+      "source_id": "paper_4609"
+    }
+  ]
+}

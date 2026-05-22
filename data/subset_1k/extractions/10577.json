@@ -1,0 +1,294 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "Cultivated soybean species Glycine max",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "WILD SOYBEAN",
+      "type": "CROP",
+      "description": "Wild soybean species Glycine soja",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "PROTEIN CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of protein in soybean seeds",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "OIL CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of oil in soybean seeds",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "SUCROSE CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of sucrose in soybean seeds",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "INTERSPECIFIC POPULATION",
+      "type": "CONCEPT",
+      "description": "A population derived from a cross between cultivated and wild soybean",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "RIL POPULATION",
+      "type": "CONCEPT",
+      "description": "Recombinant inbred line population used for mapping",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "SEQUENCING",
+      "type": "METHOD",
+      "description": "The process of determining the DNA sequence of the population",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms used as genetic markers",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "BIN MAPPING",
+      "type": "METHOD",
+      "description": "A high-resolution mapping method using bins to define recombination events",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "QTL ANALYSIS",
+      "type": "METHOD",
+      "description": "Quantitative Trait Loci analysis to identify genomic regions associated with traits",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "ILLUMINA INFINIUM BEADCHIP",
+      "type": "METHOD",
+      "description": "A sequencing platform used to derive polymorphic SNPs",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "NEXT GENERATION SEQUENCING",
+      "type": "METHOD",
+      "description": "Technology used to enhance mapping resolution and derive the bin map",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "SOYBEAN DOMESTICATION",
+      "type": "CONCEPT",
+      "description": "The process of domestication of soybean from wild ancestors",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "QPRO_20",
+      "type": "GENE_MARKER",
+      "description": "A major QTL for protein and oil content located on chromosome 20",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "QSUC_08",
+      "type": "GENE_MARKER",
+      "description": "A major QTL for sucrose content located on chromosome 8",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "SUGAR TRANSPORT",
+      "type": "CONCEPT",
+      "description": "Biological process of moving sugars, associated with qSuc_08",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "GWAS",
+      "type": "METHOD",
+      "description": "Genome-wide association study used to confirm genomic loci",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "WHOLE GENOME RESEQUENCING",
+      "type": "METHOD",
+      "description": "Method used to identify allelic variation in diverse soybean lines",
+      "source_id": "paper_10577"
+    },
+    {
+      "name": "ALLELIC VARIATION",
+      "type": "CONCEPT",
+      "description": "Unique genetic variations found in wild soybean",
+      "source_id": "paper_10577"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN",
+      "target": "PROTEIN CONTENT",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "OIL CONTENT",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "SUCROSE CONTENT",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "WILD SOYBEAN",
+      "target": "PROTEIN CONTENT",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "WILD SOYBEAN",
+      "target": "OIL CONTENT",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "WILD SOYBEAN",
+      "target": "SUCROSE CONTENT",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "INTERSPECIFIC POPULATION",
+      "target": "SOYBEAN",
+      "description": "derived from",
+      "weight": "9",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "INTERSPECIFIC POPULATION",
+      "target": "WILD SOYBEAN",
+      "description": "derived from",
+      "weight": "9",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "RIL POPULATION",
+      "target": "INTERSPECIFIC POPULATION",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "BIN MAPPING",
+      "target": "SNPS",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "QTL ANALYSIS",
+      "target": "PROTEIN CONTENT",
+      "description": "analyzes",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "QTL ANALYSIS",
+      "target": "OIL CONTENT",
+      "description": "analyzes",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "QTL ANALYSIS",
+      "target": "SUCROSE CONTENT",
+      "description": "analyzes",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "QTL ANALYSIS",
+      "target": "ILLUMINA INFINIUM BEADCHIP",
+      "description": "uses",
+      "weight": "8",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "BIN MAPPING",
+      "target": "NEXT GENERATION SEQUENCING",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "QPRO_20",
+      "target": "PROTEIN CONTENT",
+      "description": "is a QTL for",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "QPRO_20",
+      "target": "OIL CONTENT",
+      "description": "is a QTL for",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "QSUC_08",
+      "target": "SUCROSE CONTENT",
+      "description": "is a QTL for",
+      "weight": "10",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "QSUC_08",
+      "target": "SUGAR TRANSPORT",
+      "description": "harbors genes for",
+      "weight": "9",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "GWAS",
+      "target": "SNPS",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "GWAS",
+      "target": "QTL ANALYSIS",
+      "description": "confirms",
+      "weight": "8",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "WHOLE GENOME RESEQUENCING",
+      "target": "ALLELIC VARIATION",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "ALLELIC VARIATION",
+      "target": "WILD SOYBEAN",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_10577"
+    },
+    {
+      "source": "PROTEIN CONTENT",
+      "target": "OIL CONTENT",
+      "description": "negatively correlated",
+      "weight": "7",
+      "source_id": "paper_10577"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "NAPIERGRASS",
+      "type": "CROP",
+      "description": "A tropical forage grass and promising lignocellulosic biofuel feedstock",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "BIOMASS YIELD",
+      "type": "TRAIT",
+      "description": "The amount of biomass produced by the crop",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "PERSISTENCE",
+      "type": "TRAIT",
+      "description": "The ability of the crop to survive and maintain itself over time",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "NUTRITIVE VALUE",
+      "type": "TRAIT",
+      "description": "The nutritional quality of the forage grass",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "NEXT-GENERATION SEQUENCING",
+      "type": "METHOD",
+      "description": "High-throughput DNA sequencing technology used to survey the genome",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "GENOME",
+      "type": "CONCEPT",
+      "description": "The complete set of genetic material of an organism",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A crop used for genomic comparison with napiergrass",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "SYNTENY",
+      "type": "CONCEPT",
+      "description": "The conservation of blocks of order within two sets of chromosomes",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "GENOMIC REARRANGEMENTS",
+      "type": "CONCEPT",
+      "description": "Structural changes in the genome between species",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "SIMPLE SEQUENCE REPEATS",
+      "type": "GENE_MARKER",
+      "description": "Short tandem repeats used as genetic markers",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "HIGH-DENSITY GENETIC MAP",
+      "type": "CONCEPT",
+      "description": "A detailed map showing the positions of many genetic markers",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "GENOTYPING-BY-SEQUENCING",
+      "type": "METHOD",
+      "description": "A method for discovering and genotyping SNPs",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms used as genetic markers",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "SNP CALLERS",
+      "type": "METHOD",
+      "description": "Software tools used to identify SNPs from sequencing data",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "LINKAGE MAP",
+      "type": "CONCEPT",
+      "description": "A map showing the relative positions of markers on a chromosome",
+      "source_id": "paper_10883"
+    },
+    {
+      "name": "LINKAGE GROUPS",
+      "type": "CONCEPT",
+      "description": "Groups of markers that are inherited together",
+      "source_id": "paper_10883"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NAPIERGRASS",
+      "target": "BIOMASS YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "NAPIERGRASS",
+      "target": "PERSISTENCE",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "NAPIERGRASS",
+      "target": "NUTRITIVE VALUE",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "NEXT-GENERATION SEQUENCING",
+      "target": "GENOME",
+      "description": "used to survey",
+      "weight": "9",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "NEXT-GENERATION SEQUENCING",
+      "target": "NAPIERGRASS",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "NAPIERGRASS",
+      "target": "PEARL MILLET",
+      "description": "shows synteny with",
+      "weight": "8",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "NAPIERGRASS",
+      "target": "GENOMIC REARRANGEMENTS",
+      "description": "shows rearrangements relative to pearl millet",
+      "weight": "8",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "NAPIERGRASS",
+      "target": "SIMPLE SEQUENCE REPEATS",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "HIGH-DENSITY GENETIC MAP",
+      "description": "used to construct",
+      "weight": "10",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "NAPIERGRASS",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "SNPS",
+      "target": "HIGH-DENSITY GENETIC MAP",
+      "description": "used to construct",
+      "weight": "10",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "SNP CALLERS",
+      "target": "SNPS",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "SNPS",
+      "target": "LINKAGE MAP",
+      "description": "used to construct",
+      "weight": "10",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "LINKAGE MAP",
+      "target": "LINKAGE GROUPS",
+      "description": "consists of",
+      "weight": "10",
+      "source_id": "paper_10883"
+    },
+    {
+      "source": "NAPIERGRASS",
+      "target": "LINKAGE MAP",
+      "description": "subject of",
+      "weight": "10",
+      "source_id": "paper_10883"
+    }
+  ]
+}

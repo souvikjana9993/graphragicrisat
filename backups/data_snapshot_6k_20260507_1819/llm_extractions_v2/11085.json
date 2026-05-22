@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "An important source of dietary protein to over a billion people globally.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "SEED PROTEIN CONTENT",
+      "type": "TRAIT",
+      "description": "A trait in pigeonpea that has received limited attention for genetic enhancement.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "GENOMICS-ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "A breeding approach to accelerate genetic gain for seed protein content.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "WHOLE GENOME RE-SEQUENCING",
+      "type": "METHOD",
+      "description": "A technique used to identify sequence-based markers and candidate genes for seed protein content.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "SEQUENCE-BASED MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Markers identified using WGRS data to be associated with seed protein content.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "CANDIDATE GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes identified through WGRS and variant filtering associated with seed protein content.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "COMMON VARIANT FILTERING STRATEGY",
+      "type": "METHOD",
+      "description": "A strategy used on WGRS data combined with gene function knowledge to identify sequence variants.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "SANGER SEQUENCING",
+      "type": "METHOD",
+      "description": "A method used to confirm the presence of sequence variants in genes.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "CAPS/DCAPS MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Markers converted from sequence variants used to identify polymorphism between low and high seed protein content genotypes.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "F2 POPULATION",
+      "type": "CONCEPT",
+      "description": "A population resulting from the cross of ICP 5529 and ICP 11605 used to assay markers.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "ICP 5529",
+      "type": "CONCEPT",
+      "description": "A pigeonpea genotype with high seed protein content.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "ICP 11605",
+      "type": "CONCEPT",
+      "description": "A pigeonpea genotype with low seed protein content.",
+      "source_id": "paper_11085"
+    },
+    {
+      "name": "GO MOLECULAR FUNCTION CATEGORIES",
+      "type": "CONCEPT",
+      "description": "Categories to which the identified genes were assigned.",
+      "source_id": "paper_11085"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOMICS-ASSISTED BREEDING",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "facilitates accelerating genetic gain for",
+      "weight": "8",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "WHOLE GENOME RE-SEQUENCING",
+      "target": "SEQUENCE-BASED MARKERS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "WHOLE GENOME RE-SEQUENCING",
+      "target": "CANDIDATE GENES",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "COMMON VARIANT FILTERING STRATEGY",
+      "target": "SEQUENCE-BASED MARKERS",
+      "description": "used to identify variants",
+      "weight": "8",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "SANGER SEQUENCING",
+      "target": "CANDIDATE GENES",
+      "description": "confirmed presence of variants in",
+      "weight": "8",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "CANDIDATE GENES",
+      "target": "CAPS/DCAPS MARKERS",
+      "description": "converted into",
+      "weight": "9",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "CAPS/DCAPS MARKERS",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "co-segregated with",
+      "weight": "9",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "ICP 5529",
+      "target": "PIGEONPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "ICP 11605",
+      "target": "PIGEONPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "ICP 5529",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "has high level of",
+      "weight": "9",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "ICP 11605",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "has low level of",
+      "weight": "9",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "F2 POPULATION",
+      "target": "ICP 5529",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "F2 POPULATION",
+      "target": "ICP 11605",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_11085"
+    },
+    {
+      "source": "CANDIDATE GENES",
+      "target": "GO MOLECULAR FUNCTION CATEGORIES",
+      "description": "assigned to",
+      "weight": "7",
+      "source_id": "paper_11085"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "entities": [
+    {
+      "name": "KRISHNA RIVER BASIN",
+      "type": "LOCATION",
+      "description": "A large river basin in India that supplies water to many states and is subject to abiotic stress.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the Krishna River Basin is located.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "A technique used for assessments of large river basins to monitor agriculture.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Non-living stress factors affecting agriculture, specifically water scarcity in the Krishna basin.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Moderate-Resolution Imaging Spectroradiometer used for time series products to understand cropland changes.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "CROPLAND CHANGES",
+      "type": "CONCEPT",
+      "description": "Changes in agricultural land use and cover resulting from abiotic stresses.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "WATER SCARCITY",
+      "type": "CONDITION",
+      "description": "A state of being short of water, acting as a primary abiotic stressor.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Methods used to identify land use/land cover (LULC) areas from satellite imagery.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "LULC",
+      "type": "CONCEPT",
+      "description": "Land use/land cover classification used to categorize agricultural areas.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "A condition affecting crops, categorized into severe, moderate, and mild based on vegetation indices and damage.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used to categorize water stress-affected crop areas.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "FIELD SAMPLING",
+      "type": "METHOD",
+      "description": "The process of collecting data on the ground to assess the intensity of crop damage.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "GROUND SURVEY DATA",
+      "type": "METHOD",
+      "description": "Data collected from the field used to assess the accuracy of MODIS-derived classifications.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "WATER INFLOWS",
+      "type": "CONCEPT",
+      "description": "The volume of water entering the Krishna river basin, used as an indicator of water availability.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "WATER OUTFLOWS",
+      "type": "CONCEPT",
+      "description": "The volume of water leaving the Krishna river basin, used as an indicator of water availability.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "TRMM",
+      "type": "METHOD",
+      "description": "Tropical Rainfall Monitoring Mission used to provide rainfall data for water stress analysis.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "RAINFED AREAS",
+      "type": "CONCEPT",
+      "description": "Agricultural areas that rely solely on rainfall for water.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "IRRIGATED AREAS",
+      "type": "CONCEPT",
+      "description": "Agricultural areas that use artificial irrigation systems for water.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A prolonged period of abnormally low rainfall leading to water scarcity.",
+      "source_id": "paper_10224"
+    },
+    {
+      "name": "ACCESS TO WATER",
+      "type": "CONDITION",
+      "description": "The availability of water, which serves as a major driver for crop choice and input use.",
+      "source_id": "paper_10224"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REMOTE SENSING",
+      "target": "KRISHNA RIVER BASIN",
+      "description": "used to assess",
+      "weight": "8",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "KRISHNA RIVER BASIN",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "MODIS",
+      "target": "CROPLAND CHANGES",
+      "description": "used to understand",
+      "weight": "9",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "MODIS",
+      "target": "LULC",
+      "description": "used to derive classification",
+      "weight": "9",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "WATER SCARCITY",
+      "target": "CROPLAND CHANGES",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "LULC",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "NDVI",
+      "target": "WATER STRESS",
+      "description": "used to categorize",
+      "weight": "8",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "FIELD SAMPLING",
+      "target": "WATER STRESS",
+      "description": "used to assess damage intensity",
+      "weight": "8",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "GROUND SURVEY DATA",
+      "target": "MODIS",
+      "description": "used to assess accuracy",
+      "weight": "9",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "WATER INFLOWS",
+      "target": "WATER SCARCITY",
+      "description": "indicator of",
+      "weight": "8",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "WATER OUTFLOWS",
+      "target": "WATER SCARCITY",
+      "description": "indicator of",
+      "weight": "8",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "TRMM",
+      "target": "WATER STRESS",
+      "description": "used to support analysis",
+      "weight": "7",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "RAINFED AREAS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "IRRIGATED AREAS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "RAINFED AREAS",
+      "target": "FOOD SECURITY",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "IRRIGATED AREAS",
+      "target": "FOOD SECURITY",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "WATER SCARCITY",
+      "description": "is a form of",
+      "weight": "10",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "ACCESS TO WATER",
+      "target": "WATER SCARCITY",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_10224"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "WATER SCARCITY",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_10224"
+    }
+  ]
+}

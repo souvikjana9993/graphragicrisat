@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "SOIL ACIDITY",
+      "type": "CONDITION",
+      "description": "The level of acidity in the soil, characterized by pH values, which affects nutrient availability and crop growth",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "SOIL NUTRIENT AVAILABILITY",
+      "type": "CONCEPT",
+      "description": "The degree to which essential nutrients are available for plant uptake in the soil",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "SOIL MICROBIAL ACTIVITIES",
+      "type": "CONCEPT",
+      "description": "The biological processes and activities of microorganisms within the soil",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "CROP GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development and productivity of crops",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation falling over an area",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "ALTITUDE",
+      "type": "CONDITION",
+      "description": "The height of the land above sea level",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "SLOPE GRADIENT",
+      "type": "CONDITION",
+      "description": "The degree of inclination of the land surface",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "LAND COVER",
+      "type": "CONDITION",
+      "description": "The physical material covering the earth's surface",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "CO-KRIGING MODEL",
+      "type": "METHOD",
+      "description": "A geostatistical interpolation method used to predict soil pH surfaces",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The country where the soil acidity study was conducted",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "RAINFED AREAS",
+      "type": "LOCATION",
+      "description": "Agricultural areas that rely solely on rainfall for water",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "INTEGRATED ACID SOIL MANAGEMENT",
+      "type": "METHOD",
+      "description": "Techniques used to reduce soil acidity and improve soil health",
+      "source_id": "paper_12038"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONDITION",
+      "description": "The decline in the quality and productivity of land",
+      "source_id": "paper_12038"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL ACIDITY",
+      "target": "SOIL NUTRIENT AVAILABILITY",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "SOIL ACIDITY",
+      "target": "SOIL MICROBIAL ACTIVITIES",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "SOIL ACIDITY",
+      "target": "CROP GROWTH",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "CO-KRIGING MODEL",
+      "description": "used as a variable for prediction",
+      "weight": "7",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "ALTITUDE",
+      "target": "CO-KRIGING MODEL",
+      "description": "used as a variable for prediction",
+      "weight": "7",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "SLOPE GRADIENT",
+      "target": "CO-KRIGING MODEL",
+      "description": "used as a variable for prediction",
+      "weight": "7",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "LAND COVER",
+      "target": "CO-KRIGING MODEL",
+      "description": "used as a variable for prediction",
+      "weight": "7",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "CO-KRIGING MODEL",
+      "target": "SOIL ACIDITY",
+      "description": "predicts the extent and severity of",
+      "weight": "10",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "ETHIOPIA",
+      "target": "SOIL ACIDITY",
+      "description": "location where acidity is distributed",
+      "weight": "10",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "RAINFED AREAS",
+      "target": "SOIL ACIDITY",
+      "description": "location where acidity is distributed",
+      "weight": "10",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "INTEGRATED ACID SOIL MANAGEMENT",
+      "target": "SOIL ACIDITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_12038"
+    },
+    {
+      "source": "INTEGRATED ACID SOIL MANAGEMENT",
+      "target": "LAND DEGRADATION",
+      "description": "halts",
+      "weight": "8",
+      "source_id": "paper_12038"
+    }
+  ]
+}

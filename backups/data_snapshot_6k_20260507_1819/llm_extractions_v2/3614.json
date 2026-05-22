@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop subject to various fungal diseases affecting its fruits, seeds, and overall yield.",
+      "source_id": "paper_3614"
+    },
+    {
+      "name": "FUNGAL DISEASES",
+      "type": "CONDITION",
+      "description": "Diseases caused by fungi that affect groundnut, ranging from restricted to widespread distribution.",
+      "source_id": "paper_3614"
+    },
+    {
+      "name": "FUNGI",
+      "type": "ORGANISM",
+      "description": "Organisms closely associated with groundnut fruits and seeds that cause fungal diseases.",
+      "source_id": "paper_3614"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where most groundnut fungal diseases commonly occur.",
+      "source_id": "paper_3614"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research institution conducting investigations on widespread groundnut diseases.",
+      "source_id": "paper_3614"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of groundnut which suffers economically important losses due to fungal diseases.",
+      "source_id": "paper_3614"
+    },
+    {
+      "name": "FOLIAR DISEASES",
+      "type": "CONDITION",
+      "description": "Fungal diseases that specifically affect the foliage of the groundnut plant.",
+      "source_id": "paper_3614"
+    },
+    {
+      "name": "SOILBORNE DISEASES",
+      "type": "CONDITION",
+      "description": "Fungal diseases that are transmitted through the soil to the groundnut plant.",
+      "source_id": "paper_3614"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUNGAL DISEASES",
+      "target": "GROUNDNUT",
+      "description": "affect",
+      "weight": "10",
+      "source_id": "paper_3614"
+    },
+    {
+      "source": "FUNGI",
+      "target": "FUNGAL DISEASES",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_3614"
+    },
+    {
+      "source": "FUNGAL DISEASES",
+      "target": "SEMI-ARID TROPICS",
+      "description": "occur in",
+      "weight": "8",
+      "source_id": "paper_3614"
+    },
+    {
+      "source": "FUNGAL DISEASES",
+      "target": "YIELD",
+      "description": "cause losses in",
+      "weight": "9",
+      "source_id": "paper_3614"
+    },
+    {
+      "source": "FOLIAR DISEASES",
+      "target": "FUNGAL DISEASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3614"
+    },
+    {
+      "source": "SOILBORNE DISEASES",
+      "target": "FUNGAL DISEASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3614"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "FUNGAL DISEASES",
+      "description": "researches",
+      "weight": "9",
+      "source_id": "paper_3614"
+    }
+  ]
+}

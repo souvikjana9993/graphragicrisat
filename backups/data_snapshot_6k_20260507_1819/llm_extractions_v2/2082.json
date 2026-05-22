@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "BACILLUS THURINGIENSIS",
+      "type": "ORGANISM",
+      "description": "Soil bacterium that produces Cry proteins",
+      "source_id": "paper_2082"
+    },
+    {
+      "name": "CHRYSOSPORIUM SP.",
+      "type": "ORGANISM",
+      "description": "Soil fungus that produces extracellular proteases capable of degrading Cry1Ac toxin",
+      "source_id": "paper_2082"
+    },
+    {
+      "name": "CRY1AC TOXIN",
+      "type": "GENE_MARKER",
+      "description": "An insecticidal protein produced by Bacillus thuringiensis",
+      "source_id": "paper_2082"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "An insect species targeted by the Cry1Ac toxin",
+      "source_id": "paper_2082"
+    },
+    {
+      "name": "EXTRACELLULAR PROTEASES",
+      "type": "CONCEPT",
+      "description": "Enzymes produced by Chrysosporium sp. that degrade the Cry1Ac toxin",
+      "source_id": "paper_2082"
+    },
+    {
+      "name": "INSECTICIDAL ACTIVITY",
+      "type": "TRAIT",
+      "description": "The ability of a toxin to kill target insects",
+      "source_id": "paper_2082"
+    },
+    {
+      "name": "AGRICULTURAL SOILS",
+      "type": "LOCATION",
+      "description": "The environment where Bt proteins persist and soil fungi are screened",
+      "source_id": "paper_2082"
+    },
+    {
+      "name": "DEGRADATION",
+      "type": "METHOD",
+      "description": "The process of breaking down the Cry1Ac toxin into inactive products",
+      "source_id": "paper_2082"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BACILLUS THURINGIENSIS",
+      "target": "CRY1AC TOXIN",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_2082"
+    },
+    {
+      "source": "CHRYSOSPORIUM SP.",
+      "target": "EXTRACELLULAR PROTEASES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_2082"
+    },
+    {
+      "source": "EXTRACELLULAR PROTEASES",
+      "target": "CRY1AC TOXIN",
+      "description": "degrades",
+      "weight": "10",
+      "source_id": "paper_2082"
+    },
+    {
+      "source": "CRY1AC TOXIN",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "exhibits toxicity against",
+      "weight": "10",
+      "source_id": "paper_2082"
+    },
+    {
+      "source": "CRY1AC TOXIN",
+      "target": "INSECTICIDAL ACTIVITY",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_2082"
+    },
+    {
+      "source": "DEGRADATION",
+      "target": "INSECTICIDAL ACTIVITY",
+      "description": "results in loss of",
+      "weight": "10",
+      "source_id": "paper_2082"
+    },
+    {
+      "source": "BACILLUS THURINGIENSIS",
+      "target": "AGRICULTURAL SOILS",
+      "description": "persists in",
+      "weight": "8",
+      "source_id": "paper_2082"
+    },
+    {
+      "source": "CHRYSOSPORIUM SP.",
+      "target": "AGRICULTURAL SOILS",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_2082"
+    }
+  ]
+}

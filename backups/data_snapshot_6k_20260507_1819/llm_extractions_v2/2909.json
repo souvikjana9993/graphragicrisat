@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop species Arachis hypogaea L. being evaluated for yield and growth processes.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total production of the crop, used as a performance measure.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "CROP GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate at which the crop grows, denoted as C in the study.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "PARTITIONING TO REPRODUCTIVE SINKS",
+      "type": "TRAIT",
+      "description": "The allocation of resources to reproductive organs, denoted as p.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "The application of water to the crop to vary water availability.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "METHOD",
+      "description": "The date of planting used to vary water availability throughout the crop's life.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "The deficiency of water available to the crop, affecting its growth and yield.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "GRAIN FILLING PHASE",
+      "type": "CONCEPT",
+      "description": "The specific growth stage of the crop where seeds are filled.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "SAHELIAN REGION",
+      "type": "LOCATION",
+      "description": "A drought-prone region where specific groundnut genotypes are adapted.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A prolonged period of abnormally low rainfall leading to water shortage.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental heat levels that may influence genotype performance.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "HUMIDITY",
+      "type": "CONDITION",
+      "description": "The amount of water vapor in the air affecting genotype performance.",
+      "source_id": "paper_2909"
+    },
+    {
+      "name": "CANOPY TEMPERATURE RELATIVE TO AIR",
+      "type": "TRAIT",
+      "description": "The difference between the crop canopy temperature and the ambient air temperature, denoted as CATD.",
+      "source_id": "paper_2909"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "YIELD",
+      "description": "evaluated for",
+      "weight": "8",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "CROP GROWTH RATE",
+      "description": "evaluated for",
+      "weight": "8",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "PARTITIONING TO REPRODUCTIVE SINKS",
+      "description": "evaluated for",
+      "weight": "8",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "WATER STRESS",
+      "description": "used to vary",
+      "weight": "9",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "WATER STRESS",
+      "description": "used to vary",
+      "weight": "9",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "GRAIN FILLING PHASE",
+      "description": "occurs during",
+      "weight": "7",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "PARTITIONING TO REPRODUCTIVE SINKS",
+      "target": "SAHELIAN REGION",
+      "description": "dominant attribute for adaptation in",
+      "weight": "8",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "SAHELIAN REGION",
+      "target": "DROUGHT",
+      "description": "characterized by",
+      "weight": "9",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "PARTITIONING TO REPRODUCTIVE SINKS",
+      "target": "TEMPERATURE",
+      "description": "attributable to",
+      "weight": "7",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "PARTITIONING TO REPRODUCTIVE SINKS",
+      "target": "HUMIDITY",
+      "description": "attributable to",
+      "weight": "7",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "PARTITIONING TO REPRODUCTIVE SINKS",
+      "target": "WATER STRESS",
+      "description": "attributable to",
+      "weight": "6",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "CANOPY TEMPERATURE RELATIVE TO AIR",
+      "target": "CROP GROWTH RATE",
+      "description": "strongly correlated with",
+      "weight": "9",
+      "source_id": "paper_2909"
+    },
+    {
+      "source": "CANOPY TEMPERATURE RELATIVE TO AIR",
+      "target": "YIELD",
+      "description": "not strongly correlated with",
+      "weight": "4",
+      "source_id": "paper_2909"
+    }
+  ]
+}

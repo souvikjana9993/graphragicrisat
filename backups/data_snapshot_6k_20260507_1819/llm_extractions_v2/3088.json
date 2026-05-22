@@ -1,0 +1,264 @@
+{
+  "entities": [
+    {
+      "name": "HARDSETTING ALFISOL",
+      "type": "CONDITION",
+      "description": "A type of soil characterized by hardsetting properties in semi-arid regions",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The climatic region where the study was conducted",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "HYDERABAD, INDIA",
+      "type": "LOCATION",
+      "description": "The specific location of the ICRISAT experimental site",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "INFILTRATION",
+      "type": "TRAIT",
+      "description": "The process by which water on the ground surface enters the soil",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "EROSION",
+      "type": "TRAIT",
+      "description": "The process of wearing away soil by water or wind",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "RANDOMISED BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to apply treatments to plots",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "TILLAGE",
+      "type": "METHOD",
+      "description": "The agricultural practice of preparing soil by mechanical agitation",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "MULCH",
+      "type": "METHOD",
+      "description": "The practice of covering soil with organic or inorganic material to protect it",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "FARMYARD MANURE",
+      "type": "METHOD",
+      "description": "An organic mulch and fertilizer treatment",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "RICE STRAW",
+      "type": "METHOD",
+      "description": "An organic mulch treatment derived from rice crop residues",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, the primary crop sown in the factorial sub-set",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "PERENNIAL PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan, a perennial species used in ley treatments",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "VERANO STYLO",
+      "type": "CROP",
+      "description": "Stylosanthes hamata, a perennial species used in ley treatments",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "BUFFEL GRASS",
+      "type": "CROP",
+      "description": "Cenchrus ciliaris, a perennial species used in ley treatments",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "RUNOFF",
+      "type": "TRAIT",
+      "description": "The draining away of water from the surface of an area of land",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "SOIL LOSS",
+      "type": "TRAIT",
+      "description": "The amount of soil removed from the site by erosion",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "STRAW YIELD",
+      "type": "TRAIT",
+      "description": "The amount of straw produced by the crop",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced by the crop",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "SUSPENDED LOAD",
+      "type": "TRAIT",
+      "description": "Soil particles carried in suspension within runoff water",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "BED LOAD",
+      "type": "TRAIT",
+      "description": "Soil particles transported along the bottom of the runoff flow",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "RAINDROP DETACHMENT",
+      "type": "CONCEPT",
+      "description": "The process where raindrops break apart soil particles, leading to erosion",
+      "source_id": "paper_3088"
+    },
+    {
+      "name": "SUSTAINABILITY OF FARMING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The long-term viability and health of agricultural practices",
+      "source_id": "paper_3088"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TILLAGE",
+      "target": "RUNOFF",
+      "description": "Tillage affects the volume of runoff",
+      "weight": "6",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "MULCH",
+      "target": "RUNOFF",
+      "description": "Mulch reduces the volume of runoff",
+      "weight": "8",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "RUNOFF",
+      "description": "Rice straw mulch significantly reduces runoff compared to FYM and no mulch",
+      "weight": "9",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "GRAIN YIELD",
+      "description": "FYM significantly increases millet grain yield",
+      "weight": "8",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "TILLAGE",
+      "target": "GRAIN YIELD",
+      "description": "Tillage to 10 and 20 cm significantly reduces grain yield",
+      "weight": "8",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "TILLAGE",
+      "target": "STRAW YIELD",
+      "description": "Tillage to 20 cm reduces millet straw yield",
+      "weight": "7",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "TILLAGE",
+      "target": "SUSPENDED LOAD",
+      "description": "Tillage significantly increases suspended load concentration in early runoff events",
+      "weight": "7",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "BED LOAD",
+      "description": "Rice straw mulch significantly reduces bed load concentration",
+      "weight": "8",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "SUSPENDED LOAD",
+      "description": "Rice straw mulch reduces suspended load in later runoff events",
+      "weight": "8",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "RAINDROP DETACHMENT",
+      "target": "EROSION",
+      "description": "Raindrop detachment is identified as the main erosion process",
+      "weight": "9",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "HARDSETTING ALFISOL",
+      "target": "EROSION",
+      "description": "Hardsetting Alfisols are the target soil for reducing erosion",
+      "weight": "7",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GRAIN YIELD",
+      "description": "Pearl millet is the crop measured for grain yield",
+      "weight": "10",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "STRAW YIELD",
+      "description": "Pearl millet is the crop measured for straw yield",
+      "weight": "10",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "PERENNIAL PIGEONPEA",
+      "target": "RUNOFF",
+      "description": "Perennial pigeonpea treatments tend to have higher runoff than millet",
+      "weight": "6",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "VERANO STYLO",
+      "target": "RUNOFF",
+      "description": "Verano stylo treatments tend to have higher runoff than millet",
+      "weight": "6",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "BUFFEL GRASS",
+      "target": "RUNOFF",
+      "description": "Buffel grass treatments tend to have higher runoff than millet",
+      "weight": "6",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "MULCH",
+      "target": "SUSTAINABILITY OF FARMING SYSTEMS",
+      "description": "Mulch-based systems contribute to the sustainability of farming systems",
+      "weight": "8",
+      "source_id": "paper_3088"
+    },
+    {
+      "source": "TILLAGE",
+      "target": "SUSTAINABILITY OF FARMING SYSTEMS",
+      "description": "Tillage-based systems have a limited role in sustainability",
+      "weight": "5",
+      "source_id": "paper_3088"
+    }
+  ]
+}

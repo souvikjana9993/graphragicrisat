@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used as a host for lac-producing insects",
+      "source_id": "paper_4901"
+    },
+    {
+      "name": "LAC PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of producing lac resin",
+      "source_id": "paper_4901"
+    },
+    {
+      "name": "KERRIA LACCA",
+      "type": "ORGANISM",
+      "description": "The lac-producing insect",
+      "source_id": "paper_4901"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "The country where research studies on pigeonpea as a lac host were conducted",
+      "source_id": "paper_4901"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "KERRIA LACCA",
+      "description": "serves as a host for",
+      "weight": "10",
+      "source_id": "paper_4901"
+    },
+    {
+      "source": "KERRIA LACCA",
+      "target": "LAC PRODUCTION",
+      "description": "is the insect responsible for",
+      "weight": "10",
+      "source_id": "paper_4901"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "LAC PRODUCTION",
+      "description": "is used as a host for",
+      "weight": "9",
+      "source_id": "paper_4901"
+    },
+    {
+      "source": "CHINA",
+      "target": "LAC PRODUCTION",
+      "description": "location of research studies on",
+      "weight": "7",
+      "source_id": "paper_4901"
+    }
+  ]
+}

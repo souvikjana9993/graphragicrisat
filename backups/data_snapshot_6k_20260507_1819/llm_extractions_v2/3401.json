@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop affected by ergot disease",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "ERGOT",
+      "type": "CONCEPT",
+      "description": "A fungal disease caused by Claviceps fusiformis",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "CLAVICEPS FUSIFORMIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes ergot in pearl millet",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "SCLEROTIA",
+      "type": "CONCEPT",
+      "description": "Hardened fungal masses that germinate to produce stipes",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "MOIST SAND",
+      "type": "CONDITION",
+      "description": "A growth medium used for sclerotia germination in the laboratory",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "LABORATORY",
+      "type": "LOCATION",
+      "description": "A controlled environment where sclerotia germination was observed",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "POTTED SOIL",
+      "type": "CONDITION",
+      "description": "A growth medium used for sclerotia germination in the screenhouse",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "SCREENHOUSE",
+      "type": "LOCATION",
+      "description": "A semi-controlled environment where sclerotia germination was observed",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "A natural environment where sclerotia germination was observed",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "STIPES",
+      "type": "CONCEPT",
+      "description": "Fleshy stalks produced by germinating sclerotia",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "CAPITULUM",
+      "type": "CONCEPT",
+      "description": "A globular head at the top of a stipe containing perithecia",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "PERITHECIA",
+      "type": "CONCEPT",
+      "description": "Pyriform structures within the capitulum that contain asci",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "ASCI",
+      "type": "CONCEPT",
+      "description": "Long structures with an apical pore contained within perithecia",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "ASCOSPORES",
+      "type": "CONCEPT",
+      "description": "Spores contained within asci",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "CELLOPHANE TAPE",
+      "type": "METHOD",
+      "description": "A tool used to trap ascospores for measurement",
+      "source_id": "paper_3401"
+    },
+    {
+      "name": "GREASED MICROSCOPE SLIDES",
+      "type": "METHOD",
+      "description": "A tool used to trap ascospores for measurement",
+      "source_id": "paper_3401"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLAVICEPS FUSIFORMIS",
+      "target": "ERGOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "ERGOT",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "CLAVICEPS FUSIFORMIS",
+      "target": "SCLEROTIA",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "MOIST SAND",
+      "description": "germinated in",
+      "weight": "8",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "LABORATORY",
+      "description": "germinated in",
+      "weight": "8",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "POTTED SOIL",
+      "description": "germinated in",
+      "weight": "8",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "SCREENHOUSE",
+      "description": "germinated in",
+      "weight": "8",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "FIELD",
+      "description": "germinated in",
+      "weight": "8",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "SCLEROTIA",
+      "target": "STIPES",
+      "description": "produced",
+      "weight": "9",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "STIPES",
+      "target": "CAPITULUM",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "CAPITULUM",
+      "target": "PERITHECIA",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "PERITHECIA",
+      "target": "ASCI",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "ASCI",
+      "target": "ASCOSPORES",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "ASCOSPORES",
+      "target": "CELLOPHANE TAPE",
+      "description": "trapped on",
+      "weight": "7",
+      "source_id": "paper_3401"
+    },
+    {
+      "source": "ASCOSPORES",
+      "target": "GREASED MICROSCOPE SLIDES",
+      "description": "trapped on",
+      "weight": "7",
+      "source_id": "paper_3401"
+    }
+  ]
+}

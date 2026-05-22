@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "GFSAD30SAAFGIRCE",
+      "type": "CONCEPT",
+      "description": "NASA data product providing cropland extent data for South Asia, Afghanistan, and Iran for 2015 at 30m resolution",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "CROPLAND EXTENT",
+      "type": "CONCEPT",
+      "description": "The spatial extent of land used for growing crops",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "Geographic region covered by the GFSAD30SAAFGIRCE data product",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "AFGHANISTAN",
+      "type": "LOCATION",
+      "description": "Country covered by the GFSAD30SAAFGIRCE data product",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "IRAN",
+      "type": "LOCATION",
+      "description": "Country covered by the GFSAD30SAAFGIRCE data product",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "POLICYMAKING",
+      "type": "CONCEPT",
+      "description": "The process of formulating policies, for which cropland extent monitoring is critical",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "WATER SUSTAINABILITY",
+      "type": "CONCEPT",
+      "description": "The management of water resources to ensure long-term availability, studied using cropland data",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "RANDOM FOREST (RF)",
+      "type": "METHOD",
+      "description": "A pixel-based supervised classifier used to retrieve cropland extent",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "LANDSAT 8 OPERATIONAL LAND IMAGER (OLI)",
+      "type": "METHOD",
+      "description": "Satellite imaging data used as input for the Random Forest classifier",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "SHUTTLE RADAR TOPOGRAPHY MISSION (SRTM)",
+      "type": "METHOD",
+      "description": "Data product used to derive elevation for cropland extent retrieval",
+      "source_id": "paper_10977"
+    },
+    {
+      "name": "ELEVATION",
+      "type": "CONCEPT",
+      "description": "Topographic height derived from SRTM data used in the classification process",
+      "source_id": "paper_10977"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GFSAD30SAAFGIRCE",
+      "target": "CROPLAND EXTENT",
+      "description": "provides data on",
+      "weight": "10",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "GFSAD30SAAFGIRCE",
+      "target": "SOUTH ASIA",
+      "description": "covers",
+      "weight": "9",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "GFSAD30SAAFGIRCE",
+      "target": "AFGHANISTAN",
+      "description": "covers",
+      "weight": "9",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "GFSAD30SAAFGIRCE",
+      "target": "IRAN",
+      "description": "covers",
+      "weight": "9",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "POLICYMAKING",
+      "description": "is critical for",
+      "weight": "8",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "WATER SUSTAINABILITY",
+      "description": "is used in studies pertaining to",
+      "weight": "7",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "FOOD SECURITY",
+      "description": "is used in studies pertaining to",
+      "weight": "7",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "GFSAD30SAAFGIRCE",
+      "target": "RANDOM FOREST (RF)",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "RANDOM FOREST (RF)",
+      "target": "LANDSAT 8 OPERATIONAL LAND IMAGER (OLI)",
+      "description": "uses data from",
+      "weight": "9",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "RANDOM FOREST (RF)",
+      "target": "SHUTTLE RADAR TOPOGRAPHY MISSION (SRTM)",
+      "description": "uses data from",
+      "weight": "9",
+      "source_id": "paper_10977"
+    },
+    {
+      "source": "SHUTTLE RADAR TOPOGRAPHY MISSION (SRTM)",
+      "target": "ELEVATION",
+      "description": "provides",
+      "weight": "10",
+      "source_id": "paper_10977"
+    }
+  ]
+}

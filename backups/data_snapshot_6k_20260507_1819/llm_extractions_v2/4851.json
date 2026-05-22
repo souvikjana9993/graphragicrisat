@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, the host plant affected by downy mildew",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A widespread disease of sorghum caused by the pathogen Peronosclerospora sorghi",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "PERONOSCLEROSPORA SORGHI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew in sorghum",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, which is lost in systemically infected sorghum plants",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of wild and weedy sorghums to withstand downy mildew infection",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "WILD SORGHUM",
+      "type": "CROP",
+      "description": "Wild and weedy species of sorghum screened for sources of disease resistance",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating 308 wild and weedy sorghum accessions for resistance",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "GREENHOUSE CONDITIONS",
+      "type": "CONDITION",
+      "description": "The controlled environment where the screening was conducted",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "ICRISAT ASIA CENTER",
+      "type": "LOCATION",
+      "description": "The research facility where the screening was performed",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "SPRAY-INOCULATION",
+      "type": "METHOD",
+      "description": "The technique of applying conidia to seedlings to induce infection",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "IAC ISOLATE",
+      "type": "ORGANISM",
+      "description": "The specific isolate of the pathogen used for the inoculation process",
+      "source_id": "paper_4851"
+    },
+    {
+      "name": "DOWNY MILDEW INCIDENCE",
+      "type": "TRAIT",
+      "description": "The recorded occurrence of the disease three weeks after inoculation",
+      "source_id": "paper_4851"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "DOWNY MILDEW",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "PERONOSCLEROSPORA SORGHI",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "GRAIN YIELD",
+      "description": "results in loss of",
+      "weight": "9",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "WILD SORGHUM",
+      "target": "RESISTANCE",
+      "description": "is a source of",
+      "weight": "9",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "DOWNY MILDEW",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "SCREENING",
+      "target": "WILD SORGHUM",
+      "description": "evaluated",
+      "weight": "10",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "SCREENING",
+      "target": "RESISTANCE",
+      "description": "aimed to identify",
+      "weight": "9",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "SCREENING",
+      "target": "GREENHOUSE CONDITIONS",
+      "description": "was conducted in",
+      "weight": "8",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "SCREENING",
+      "target": "ICRISAT ASIA CENTER",
+      "description": "was conducted at",
+      "weight": "8",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "SPRAY-INOCULATION",
+      "target": "WILD SORGHUM",
+      "description": "was applied to",
+      "weight": "9",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "SPRAY-INOCULATION",
+      "target": "IAC ISOLATE",
+      "description": "used",
+      "weight": "10",
+      "source_id": "paper_4851"
+    },
+    {
+      "source": "DOWNY MILDEW INCIDENCE",
+      "target": "DOWNY MILDEW",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_4851"
+    }
+  ]
+}

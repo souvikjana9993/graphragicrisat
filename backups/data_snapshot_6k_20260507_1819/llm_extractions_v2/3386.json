@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop affected by Phytophthora blight and treated with metalaxyl",
+      "source_id": "paper_3386"
+    },
+    {
+      "name": "PHYTOPHTHORA BLIGHT",
+      "type": "CONDITION",
+      "description": "A disease of pigeonpea caused by Phytophthora drechsleri f. sp. cajani",
+      "source_id": "paper_3386"
+    },
+    {
+      "name": "PHYTOPHTHORA DRECHSLERI F. SP. CAJANI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Phytophthora blight in pigeonpea",
+      "source_id": "paper_3386"
+    },
+    {
+      "name": "METALAXYL",
+      "type": "METHOD",
+      "description": "A fungicide used to control Phytophthora blight",
+      "source_id": "paper_3386"
+    },
+    {
+      "name": "SEED DRESSING",
+      "type": "METHOD",
+      "description": "The formulation and application method of metalaxyl to seeds",
+      "source_id": "paper_3386"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where metalaxyl showed significant control of blight",
+      "source_id": "paper_3386"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "The environment where metalaxyl was found ineffective against blight",
+      "source_id": "paper_3386"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "METALAXYL",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "used for the control of",
+      "weight": "8",
+      "source_id": "paper_3386"
+    },
+    {
+      "source": "PHYTOPHTHORA DRECHSLERI F. SP. CAJANI",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3386"
+    },
+    {
+      "source": "PHYTOPHTHORA BLIGHT",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3386"
+    },
+    {
+      "source": "SEED DRESSING",
+      "target": "METALAXYL",
+      "description": "is a formulation of",
+      "weight": "10",
+      "source_id": "paper_3386"
+    },
+    {
+      "source": "METALAXYL",
+      "target": "GREENHOUSE",
+      "description": "evaluated in",
+      "weight": "9",
+      "source_id": "paper_3386"
+    },
+    {
+      "source": "METALAXYL",
+      "target": "FIELD",
+      "description": "evaluated in",
+      "weight": "9",
+      "source_id": "paper_3386"
+    }
+  ]
+}

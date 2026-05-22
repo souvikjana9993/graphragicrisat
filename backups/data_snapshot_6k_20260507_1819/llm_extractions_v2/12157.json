@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "ARACHIS MONTICOLA",
+      "type": "CROP",
+      "description": "Wild allotetraploid peanut species",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "ARACHIS HYPOGAEA",
+      "type": "CROP",
+      "description": "Cultivated allotetraploid peanut species",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "OIL CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of oil present in peanut seeds, a key breeding objective",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "OIL ACCUMULATION",
+      "type": "CONCEPT",
+      "description": "The process of oil building up in seeds",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "COMPARATIVE TRANSCRIPTOMICS",
+      "type": "METHOD",
+      "description": "Analysis of gene expression between different species or varieties",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "SEED DEVELOPMENT",
+      "type": "CONDITION",
+      "description": "The biological stage during which seeds grow and mature",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "LIPID METABOLISM",
+      "type": "CONCEPT",
+      "description": "The set of metabolic processes that synthesize and break down lipids",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "LIPID METABOLIC GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that encode enzymes or proteins involved in lipid metabolism",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "TRANSCRIPTION FACTORS",
+      "type": "GENE_MARKER",
+      "description": "Proteins that regulate the transcription of genes",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "OIL BIOGENESIS",
+      "type": "CONCEPT",
+      "description": "The biological process of oil synthesis",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "LIPID DEGRADATION",
+      "type": "CONCEPT",
+      "description": "The biological process of breaking down lipids",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "BISULFITE SEQUENCING",
+      "type": "METHOD",
+      "description": "A technique used to determine the methylation status of DNA",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "DNA METHYLATION",
+      "type": "CONCEPT",
+      "description": "An epigenetic mechanism involving the addition of methyl groups to DNA",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "CG AND CHG CONTEXT METHYLATION",
+      "type": "CONCEPT",
+      "description": "Specific patterns of DNA methylation occurring at CG and CHG dinucleotides",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "DIFFERENTIALLY METHYLATED REGION ANALYSIS",
+      "type": "METHOD",
+      "description": "A method to identify genomic regions with different methylation levels between samples",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "TRANSGENIC ASSAY",
+      "type": "METHOD",
+      "description": "An experimental method using transgenic plants to verify gene function",
+      "source_id": "paper_12157"
+    },
+    {
+      "name": "ARAIP.H6S1B",
+      "type": "GENE_MARKER",
+      "description": "A gene encoding a peroxisomal acyl transporter protein",
+      "source_id": "paper_12157"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ARACHIS MONTICOLA",
+      "target": "OIL CONTENT",
+      "description": "contains higher oil content than A. hypogaea",
+      "weight": "10",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "ARACHIS HYPOGAEA",
+      "target": "OIL CONTENT",
+      "description": "contains lower oil content than A. monticola",
+      "weight": "8",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "COMPARATIVE TRANSCRIPTOMICS",
+      "target": "LIPID METABOLISM",
+      "description": "used to detect gene clusters enriched in",
+      "weight": "9",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "LIPID METABOLIC GENES",
+      "target": "OIL BIOGENESIS",
+      "description": "expression alteration leads to enhanced activity of",
+      "weight": "9",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "LIPID METABOLIC GENES",
+      "target": "LIPID DEGRADATION",
+      "description": "expression alteration retards the rate of",
+      "weight": "9",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "TRANSCRIPTION FACTORS",
+      "target": "LIPID METABOLIC GENES",
+      "description": "coexpressed with",
+      "weight": "8",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "BISULFITE SEQUENCING",
+      "target": "DNA METHYLATION",
+      "description": "used to characterize variation of",
+      "weight": "10",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "DNA METHYLATION",
+      "target": "LIPID METABOLIC GENES",
+      "description": "negatively regulates",
+      "weight": "9",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "DNA METHYLATION",
+      "target": "TRANSCRIPTION FACTORS",
+      "description": "negatively regulates",
+      "weight": "9",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "DNA METHYLATION",
+      "target": "OIL CONTENT",
+      "description": "affects via altering the expression of genes",
+      "weight": "9",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "ARAIP.H6S1B",
+      "target": "OIL CONTENT",
+      "description": "expression affects oil content",
+      "weight": "10",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "DIFFERENTIALLY METHYLATED REGION ANALYSIS",
+      "target": "ARAIP.H6S1B",
+      "description": "illustrated variation affecting this gene",
+      "weight": "8",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "TRANSGENIC ASSAY",
+      "target": "ARAIP.H6S1B",
+      "description": "used to illustrate effect on oil content",
+      "weight": "8",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "CG AND CHG CONTEXT METHYLATION",
+      "target": "DNA METHYLATION",
+      "description": "are specific contexts of",
+      "weight": "10",
+      "source_id": "paper_12157"
+    },
+    {
+      "source": "CG AND CHG CONTEXT METHYLATION",
+      "target": "SEED DEVELOPMENT",
+      "description": "correlate with gene expression during",
+      "weight": "7",
+      "source_id": "paper_12157"
+    }
+  ]
+}

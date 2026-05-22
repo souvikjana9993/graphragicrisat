@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Short-duration pigeonpea species studied for root development",
+      "source_id": "paper_3295"
+    },
+    {
+      "name": "ROOT SYSTEM DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The growth of roots, specifically measured by length and weight",
+      "source_id": "paper_3295"
+    },
+    {
+      "name": "ROOT SIMULATION MODEL",
+      "type": "METHOD",
+      "description": "A model used to predict and estimate root system development",
+      "source_id": "paper_3295"
+    },
+    {
+      "name": "DAILY CLIMATIC DATA",
+      "type": "CONDITION",
+      "description": "Daily weather-related data used as input for the root simulation model",
+      "source_id": "paper_3295"
+    },
+    {
+      "name": "SOIL PHYSICO-CHEMICAL PROPERTIES",
+      "type": "CONDITION",
+      "description": "Physical and chemical characteristics of the soil used in the simulation",
+      "source_id": "paper_3295"
+    },
+    {
+      "name": "DRY MATTER ALLOCATION",
+      "type": "CONCEPT",
+      "description": "The distribution of dry matter to roots and shoots",
+      "source_id": "paper_3295"
+    },
+    {
+      "name": "DAILY MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "The amount of water in the soil at various depths",
+      "source_id": "paper_3295"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature of the soil at various depths",
+      "source_id": "paper_3295"
+    },
+    {
+      "name": "CERES-MAIZE MODEL",
+      "type": "METHOD",
+      "description": "A model whose sub-routines were used to simulate soil moisture and temperature",
+      "source_id": "paper_3295"
+    },
+    {
+      "name": "LOGISTIC FUNCTIONS",
+      "type": "METHOD",
+      "description": "Mathematical functions used to calculate the daily allocation of dry matter",
+      "source_id": "paper_3295"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ROOT SIMULATION MODEL",
+      "target": "ROOT SYSTEM DEVELOPMENT",
+      "description": "used to predict and estimate",
+      "weight": "9",
+      "source_id": "paper_3295"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "ROOT SYSTEM DEVELOPMENT",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_3295"
+    },
+    {
+      "source": "ROOT SIMULATION MODEL",
+      "target": "DAILY CLIMATIC DATA",
+      "description": "utilizes as input",
+      "weight": "8",
+      "source_id": "paper_3295"
+    },
+    {
+      "source": "ROOT SIMULATION MODEL",
+      "target": "SOIL PHYSICO-CHEMICAL PROPERTIES",
+      "description": "utilizes as input",
+      "weight": "8",
+      "source_id": "paper_3295"
+    },
+    {
+      "source": "ROOT SIMULATION MODEL",
+      "target": "DRY MATTER ALLOCATION",
+      "description": "utilizes as input",
+      "weight": "8",
+      "source_id": "paper_3295"
+    },
+    {
+      "source": "CERES-MAIZE MODEL",
+      "target": "DAILY MOISTURE CONTENT",
+      "description": "simulates",
+      "weight": "7",
+      "source_id": "paper_3295"
+    },
+    {
+      "source": "CERES-MAIZE MODEL",
+      "target": "TEMPERATURE",
+      "description": "simulates",
+      "weight": "7",
+      "source_id": "paper_3295"
+    },
+    {
+      "source": "LOGISTIC FUNCTIONS",
+      "target": "DRY MATTER ALLOCATION",
+      "description": "calculates",
+      "weight": "9",
+      "source_id": "paper_3295"
+    },
+    {
+      "source": "DRY MATTER ALLOCATION",
+      "target": "ROOT SYSTEM DEVELOPMENT",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_3295"
+    }
+  ]
+}

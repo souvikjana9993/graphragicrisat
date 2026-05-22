@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop studied in the field trial to evaluate the effects of plant population on growth parameters.",
+      "source_id": "paper_1788"
+    },
+    {
+      "name": "PATANCHERU, ANDHRA PRADESH, INDIA",
+      "type": "LOCATION",
+      "description": "The location where the field trial was conducted.",
+      "source_id": "paper_1788"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The environmental condition and season during which the trial took place.",
+      "source_id": "paper_1788"
+    },
+    {
+      "name": "RADIATION INTERCEPTION",
+      "type": "METHOD",
+      "description": "The measurement of photosynthetically active radiation intercepted by the crop canopy.",
+      "source_id": "paper_1788"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A measure of the leaf area per unit ground area used to assess crop growth.",
+      "source_id": "paper_1788"
+    },
+    {
+      "name": "TOTAL BIOMASS",
+      "type": "TRAIT",
+      "description": "The total dry matter of the crop used as an indicator of growth.",
+      "source_id": "paper_1788"
+    },
+    {
+      "name": "PLANT POPULATION",
+      "type": "CONDITION",
+      "description": "The density of plants sown per unit area, tested at 2.5, 5.0, 10.0, and 20.0 plants/m2.",
+      "source_id": "paper_1788"
+    },
+    {
+      "name": "CEPTOMETER MEASUREMENTS",
+      "type": "METHOD",
+      "description": "The use of a ceptometer to measure light interception for estimating crop growth.",
+      "source_id": "paper_1788"
+    },
+    {
+      "name": "CROP GROWTH",
+      "type": "CONCEPT",
+      "description": "The overall process of plant development and biomass accumulation.",
+      "source_id": "paper_1788"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RADIATION INTERCEPTION",
+      "target": "SORGHUM",
+      "description": "Used as a tool to document plant population effects in sorghum",
+      "weight": "9",
+      "source_id": "paper_1788"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "LEAF AREA INDEX",
+      "description": "Higher plant populations resulted in higher leaf area index",
+      "weight": "8",
+      "source_id": "paper_1788"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "TOTAL BIOMASS",
+      "description": "Higher plant populations resulted in higher total biomass",
+      "weight": "8",
+      "source_id": "paper_1788"
+    },
+    {
+      "source": "RADIATION INTERCEPTION",
+      "target": "LEAF AREA INDEX",
+      "description": "Radiation interception is used to predict leaf area",
+      "weight": "9",
+      "source_id": "paper_1788"
+    },
+    {
+      "source": "RADIATION INTERCEPTION",
+      "target": "TOTAL BIOMASS",
+      "description": "Radiation interception is used to predict total biomass",
+      "weight": "9",
+      "source_id": "paper_1788"
+    },
+    {
+      "source": "CEPTOMETER MEASUREMENTS",
+      "target": "RADIATION INTERCEPTION",
+      "description": "Ceptometer measurements are used to quantify light/radiation interception",
+      "weight": "10",
+      "source_id": "paper_1788"
+    },
+    {
+      "source": "CEPTOMETER MEASUREMENTS",
+      "target": "CROP GROWTH",
+      "description": "Used as an inexpensive way of estimating crop growth differences",
+      "weight": "8",
+      "source_id": "paper_1788"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PATANCHERU, ANDHRA PRADESH, INDIA",
+      "description": "The sorghum field trial was conducted at this location",
+      "weight": "7",
+      "source_id": "paper_1788"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "RAINY SEASON",
+      "description": "The sorghum field trial was conducted during this season",
+      "weight": "7",
+      "source_id": "paper_1788"
+    }
+  ]
+}

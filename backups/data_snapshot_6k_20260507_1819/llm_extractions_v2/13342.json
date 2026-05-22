@@ -1,0 +1,215 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "An important oil crop with an atypical fruitification pattern.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "POD DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The process of peanut pod formation and growth, influenced by external environmental stimulation.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "DARKNESS",
+      "type": "CONDITION",
+      "description": "An external environmental stimulation required to facilitate normal peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "MECHANICAL STIMULATION",
+      "type": "CONDITION",
+      "description": "An external environmental stimulation required to facilitate normal peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "TRANSCRIPTOME ANALYSIS",
+      "type": "METHOD",
+      "description": "The study of the complete set of RNA transcripts to investigate the impacts of darkness and mechanical stimulation on pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED GENES",
+      "type": "CONCEPT",
+      "description": "Genes identified among different treatment groups that play crucial roles in peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "WGCNA",
+      "type": "METHOD",
+      "description": "Weighted gene coexpression network analysis used to identify hub genes and key pathways.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "HUB GENES",
+      "type": "CONCEPT",
+      "description": "Key genes identified via WGCNA that are candidates for peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "IAA9",
+      "type": "GENE_MARKER",
+      "description": "A hub gene (Ahy_B07g086610) identified as a candidate for peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "BSK5",
+      "type": "GENE_MARKER",
+      "description": "A hub gene (Ahy_B03g068305) identified as a candidate for peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "GRF7",
+      "type": "GENE_MARKER",
+      "description": "A hub gene (Ahy_B10g103808) identified as a candidate for peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "PER17",
+      "type": "GENE_MARKER",
+      "description": "A hub gene (Ahy_B10g105104) identified as a candidate for peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "PLANT HORMONAL AND SIGNAL TRANSDUCTION PATHWAY",
+      "type": "CONCEPT",
+      "description": "A key biological pathway identified as a candidate for peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "LIGNIN BIOSYNTHESIS PATHWAY",
+      "type": "CONCEPT",
+      "description": "A key biological pathway identified as a candidate for peanut pod development.",
+      "source_id": "paper_13342"
+    },
+    {
+      "name": "QRT-PCR",
+      "type": "METHOD",
+      "description": "Quantitative reverse transcription polymerase chain reaction used to validate the expression patterns of key candidate genes.",
+      "source_id": "paper_13342"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DARKNESS",
+      "target": "POD DEVELOPMENT",
+      "description": "facilitates normal development",
+      "weight": "9",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "MECHANICAL STIMULATION",
+      "target": "POD DEVELOPMENT",
+      "description": "facilitates normal development",
+      "weight": "9",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "TRANSCRIPTOME ANALYSIS",
+      "target": "POD DEVELOPMENT",
+      "description": "investigated impacts on",
+      "weight": "8",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "WGCNA",
+      "target": "HUB GENES",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "WGCNA",
+      "target": "PLANT HORMONAL AND SIGNAL TRANSDUCTION PATHWAY",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "WGCNA",
+      "target": "LIGNIN BIOSYNTHESIS PATHWAY",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "IAA9",
+      "target": "POD DEVELOPMENT",
+      "description": "candidate for",
+      "weight": "8",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "BSK5",
+      "target": "POD DEVELOPMENT",
+      "description": "candidate for",
+      "weight": "8",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "GRF7",
+      "target": "POD DEVELOPMENT",
+      "description": "candidate for",
+      "weight": "8",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "PER17",
+      "target": "POD DEVELOPMENT",
+      "description": "candidate for",
+      "weight": "8",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "PLANT HORMONAL AND SIGNAL TRANSDUCTION PATHWAY",
+      "target": "POD DEVELOPMENT",
+      "description": "candidate for",
+      "weight": "8",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "LIGNIN BIOSYNTHESIS PATHWAY",
+      "target": "POD DEVELOPMENT",
+      "description": "candidate for",
+      "weight": "8",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "QRT-PCR",
+      "target": "IAA9",
+      "description": "validated expression of",
+      "weight": "9",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "QRT-PCR",
+      "target": "BSK5",
+      "description": "validated expression of",
+      "weight": "9",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "QRT-PCR",
+      "target": "GRF7",
+      "description": "validated expression of",
+      "weight": "9",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "QRT-PCR",
+      "target": "PER17",
+      "description": "validated expression of",
+      "weight": "9",
+      "source_id": "paper_13342"
+    },
+    {
+      "source": "PEANUT",
+      "target": "POD DEVELOPMENT",
+      "description": "undergoes",
+      "weight": "10",
+      "source_id": "paper_13342"
+    }
+  ]
+}

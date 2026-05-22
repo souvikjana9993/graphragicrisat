@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "WETLAND RICE",
+      "type": "CROP",
+      "description": "Oryza sativa grown in wetland environments",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "NITROGEN SUPPLY",
+      "type": "CONCEPT",
+      "description": "The provision of nitrogen to the soil for plant nutrition",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "Organic components of the soil used as an index of nitrogen availability",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "NITROGEN AVAILABILITY",
+      "type": "CONCEPT",
+      "description": "The accessibility of nitrogen to the crop in the soil",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "MINERALIZABLE NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nitrogen that can be converted from organic to inorganic forms",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "WATERLOGGED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Soil conditions where the soil is saturated with water",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "The carbon component of soil organic matter",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "TOTAL NITROGEN",
+      "type": "CONCEPT",
+      "description": "The total amount of nitrogen present in the soil",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "NITROGEN REQUIREMENT",
+      "type": "CONCEPT",
+      "description": "The amount of nitrogen needed by wetland rice for growth",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "AMMONIUM NITROGEN PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The production of ammonium-N during the mineralization process",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "ANAEROBIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "Oxygen-depleted soil environments",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "INTENSIVE CROPPING",
+      "type": "CONDITION",
+      "description": "Long-term intensive cultivation of wetland rice",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "ORGANIC MATTER QUALITY",
+      "type": "CONCEPT",
+      "description": "The chemical composition and nature of soil organic matter",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "NITROGEN MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The process of converting organic nitrogen into mineral forms",
+      "source_id": "paper_2502"
+    },
+    {
+      "name": "SUBMERGED SOILS",
+      "type": "CONDITION",
+      "description": "Soils that are underwater, affecting chemical environments",
+      "source_id": "paper_2502"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN SUPPLY",
+      "target": "WETLAND RICE",
+      "description": "plays a dominant role in the nutrition of",
+      "weight": "10",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "ORGANIC MATTER",
+      "target": "NITROGEN AVAILABILITY",
+      "description": "proposed as an index of",
+      "weight": "8",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "MINERALIZABLE NITROGEN",
+      "target": "WATERLOGGED CONDITIONS",
+      "description": "produced under",
+      "weight": "9",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "MINERALIZABLE NITROGEN",
+      "target": "ORGANIC CARBON",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "MINERALIZABLE NITROGEN",
+      "target": "TOTAL NITROGEN",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "ORGANIC MATTER",
+      "target": "MINERALIZABLE NITROGEN",
+      "description": "relationship is a prerequisite for determining N requirement",
+      "weight": "9",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "MINERALIZABLE NITROGEN",
+      "target": "NITROGEN REQUIREMENT",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "AMMONIUM NITROGEN PRODUCTION",
+      "target": "ORGANIC CARBON",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "AMMONIUM NITROGEN PRODUCTION",
+      "target": "ANAEROBIC CONDITIONS",
+      "description": "occurs under",
+      "weight": "9",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "INTENSIVE CROPPING",
+      "target": "MINERALIZABLE NITROGEN",
+      "description": "affects the relationship between mineralizable N and organic C or total N",
+      "weight": "7",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "ORGANIC MATTER QUALITY",
+      "target": "NITROGEN MINERALIZATION",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "SUBMERGED SOILS",
+      "target": "ORGANIC MATTER QUALITY",
+      "description": "modifies the chemistry of",
+      "weight": "8",
+      "source_id": "paper_2502"
+    },
+    {
+      "source": "SUBMERGED SOILS",
+      "target": "NITROGEN MINERALIZATION",
+      "description": "affects the mineralization of organic N",
+      "weight": "8",
+      "source_id": "paper_2502"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "POTATO",
+      "type": "CROP",
+      "description": "The crop whose yield is being modeled in India",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural output of potato measured over time",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the potato yield data was collected",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "GOMPERTZ MODEL",
+      "type": "METHOD",
+      "description": "A nonlinear model used to measure growth and fit potato yield data",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "LOGISTIC MODEL",
+      "type": "METHOD",
+      "description": "A nonlinear model used to measure growth and fit potato yield data",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "QUADRATIC MODEL",
+      "type": "METHOD",
+      "description": "A nonlinear model used to measure growth",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "MERCER-MORGAN-FLODIN MODEL",
+      "type": "METHOD",
+      "description": "A nonlinear model used to measure growth",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "WEIBULL MODEL",
+      "type": "METHOD",
+      "description": "A nonlinear model used to measure growth",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "RICHARDS MODEL",
+      "type": "METHOD",
+      "description": "A nonlinear model used to measure growth",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "ARCH/GARCH METHODOLOGY",
+      "type": "METHOD",
+      "description": "A methodology used for time series analysis and comparison with nonlinear models",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "MEAN SQUARED ERROR",
+      "type": "METHOD",
+      "description": "A statistic used to compare the fit of non-linear models",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "MEAN ABSOLUTE PERCENTAGE ERROR",
+      "type": "METHOD",
+      "description": "A statistic used to compare the fit of non-linear models",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "THEIL STATISTIC",
+      "type": "METHOD",
+      "description": "A statistic used to compare the fit of non-linear models",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "ONE STEP AHEAD FORECASTING",
+      "type": "METHOD",
+      "description": "A method used to compare the fit of non-linear models",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "AIC",
+      "type": "METHOD",
+      "description": "A statistic used to compare the fit of non-linear models",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "SBC",
+      "type": "METHOD",
+      "description": "A statistic used to compare the fit of non-linear models",
+      "source_id": "paper_10998"
+    },
+    {
+      "name": "GROWTH",
+      "type": "CONCEPT",
+      "description": "The biological or quantitative increase in potato yield over time",
+      "source_id": "paper_10998"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POTATO",
+      "target": "YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "POTATO",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "GOMPERTZ MODEL",
+      "target": "YIELD",
+      "description": "measures growth of",
+      "weight": "9",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "LOGISTIC MODEL",
+      "target": "YIELD",
+      "description": "measures growth of",
+      "weight": "9",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "QUADRATIC MODEL",
+      "target": "YIELD",
+      "description": "measures growth of",
+      "weight": "8",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "MERCER-MORGAN-FLODIN MODEL",
+      "target": "YIELD",
+      "description": "measures growth of",
+      "weight": "8",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "WEIBULL MODEL",
+      "target": "YIELD",
+      "description": "measures growth of",
+      "weight": "8",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "RICHARDS MODEL",
+      "target": "YIELD",
+      "description": "measures growth of",
+      "weight": "8",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "ARCH/GARCH METHODOLOGY",
+      "target": "YIELD",
+      "description": "models",
+      "weight": "9",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "MEAN SQUARED ERROR",
+      "target": "GOMPERTZ MODEL",
+      "description": "evaluates",
+      "weight": "7",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "MEAN SQUARED ERROR",
+      "target": "LOGISTIC MODEL",
+      "description": "evaluates",
+      "weight": "7",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "LOGISTIC MODEL",
+      "target": "POTATO",
+      "description": "fits yield data of",
+      "weight": "10",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "GOMPERTZ MODEL",
+      "target": "POTATO",
+      "description": "fits yield data of",
+      "weight": "10",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "GOMPERTZ MODEL",
+      "target": "GROWTH",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_10998"
+    },
+    {
+      "source": "LOGISTIC MODEL",
+      "target": "GROWTH",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_10998"
+    }
+  ]
+}

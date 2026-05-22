@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "GRAIN SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for charcoal rot incidence",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONDITION",
+      "description": "Nutrient levels applied to the main plots to study its effect on disease incidence",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "PLANT DENSITY",
+      "type": "CONDITION",
+      "description": "The population density of plants studied for its effect on disease incidence",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "Soil moisture deficit created during grain filling using sprinkler irrigation",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "MACROPHOMINA PHASEOLINA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing charcoal rot",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "CHARCOAL ROT",
+      "type": "TRAIT",
+      "description": "A disease in grain sorghum characterized by symptoms including lodging and root infection",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "SPLIT-SPLIT-SPLIT FIELD PLOT DESIGN",
+      "type": "METHOD",
+      "description": "The experimental field layout used to test nitrogen, density, moisture, and inoculation",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "LINE-SOURCE SPRINKLER IRRIGATION",
+      "type": "METHOD",
+      "description": "The technique used to create a gradient of soil moisture stress",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "PLANT LODGING",
+      "type": "TRAIT",
+      "description": "A symptom of charcoal rot used as a primary measure of disease incidence",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "SOFT STALK",
+      "type": "TRAIT",
+      "description": "A disease parameter of charcoal rot correlated with plant lodging",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "NUMBER OF NODES CROSSED",
+      "type": "TRAIT",
+      "description": "A disease parameter of charcoal rot correlated with plant lodging",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "ROOT INFECTION",
+      "type": "TRAIT",
+      "description": "A disease parameter of charcoal rot correlated with plant lodging",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "PLANT SENESCENCE",
+      "type": "TRAIT",
+      "description": "A disease parameter of charcoal rot correlated with plant lodging",
+      "source_id": "paper_2435"
+    },
+    {
+      "name": "ARTIFICIAL INOCULATION",
+      "type": "METHOD",
+      "description": "The process of introducing Macrophomina phaseolina into the plants",
+      "source_id": "paper_2435"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN",
+      "target": "CHARCOAL ROT",
+      "description": "High nitrogen levels increase disease incidence under moisture stress",
+      "weight": "6",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "PLANT DENSITY",
+      "target": "CHARCOAL ROT",
+      "description": "Plant density significantly affects charcoal rot disease incidence",
+      "weight": "7",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "MOISTURE STRESS",
+      "target": "CHARCOAL ROT",
+      "description": "Positive relationship between moisture stress and disease development",
+      "weight": "9",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "CHARCOAL ROT",
+      "description": "The organism that causes the disease",
+      "weight": "10",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "GRAIN SORGHUM",
+      "target": "CHARCOAL ROT",
+      "description": "The host crop affected by the disease",
+      "weight": "10",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "LINE-SOURCE SPRINKLER IRRIGATION",
+      "target": "MOISTURE STRESS",
+      "description": "Method used to create the moisture stress gradient",
+      "weight": "10",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "PLANT LODGING",
+      "target": "CHARCOAL ROT",
+      "description": "Used as a measure of charcoal rot disease incidence",
+      "weight": "9",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "SOFT STALK",
+      "target": "PLANT LODGING",
+      "description": "Highly correlated with plant lodging",
+      "weight": "8",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "NUMBER OF NODES CROSSED",
+      "target": "PLANT LODGING",
+      "description": "Highly correlated with plant lodging",
+      "weight": "8",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "ROOT INFECTION",
+      "target": "PLANT LODGING",
+      "description": "Highly correlated with plant lodging",
+      "weight": "8",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "PLANT SENESCENCE",
+      "target": "PLANT LODGING",
+      "description": "Highly correlated with plant lodging",
+      "weight": "8",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "ARTIFICIAL INOCULATION",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "Method used to introduce the pathogen",
+      "weight": "10",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "PLANT DENSITY",
+      "target": "PLANT LODGING",
+      "description": "High plant population increases lodging under moisture stress",
+      "weight": "6",
+      "source_id": "paper_2435"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "PLANT LODGING",
+      "description": "High nitrogen increases lodging under moisture stress",
+      "weight": "6",
+      "source_id": "paper_2435"
+    }
+  ]
+}

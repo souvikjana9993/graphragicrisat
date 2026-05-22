@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "HELIOTHIS SPP.",
+      "type": "ORGANISM",
+      "description": "A genus of moth pests reviewed for management compatibility",
+      "source_id": "paper_4211"
+    },
+    {
+      "name": "HOST-PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of a plant to resist pest attack",
+      "source_id": "paper_4211"
+    },
+    {
+      "name": "BIOLOGICAL CONTROL",
+      "type": "METHOD",
+      "description": "The use of natural enemies to manage pest populations",
+      "source_id": "paper_4211"
+    },
+    {
+      "name": "HELIOTHIS ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A specific species of moth pest studied on pigeonpea and chickpea",
+      "source_id": "paper_4211"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used as a host for Heliothis armigera",
+      "source_id": "paper_4211"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used as a host for Heliothis armigera",
+      "source_id": "paper_4211"
+    },
+    {
+      "name": "PARASITISM",
+      "type": "CONCEPT",
+      "description": "A biological process where a parasite lives on a host, acting as a biocontrol element",
+      "source_id": "paper_4211"
+    },
+    {
+      "name": "INTEGRATED PEST MANAGEMENT",
+      "type": "METHOD",
+      "description": "A strategy combining multiple pest control methods",
+      "source_id": "paper_4211"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research institution where studies on host-plant resistance and parasitism were conducted",
+      "source_id": "paper_4211"
+    },
+    {
+      "name": "LARGE PLOT FIELD TRIALS",
+      "type": "METHOD",
+      "description": "A testing approach used to evaluate components before implementation in pest management",
+      "source_id": "paper_4211"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "BIOLOGICAL CONTROL",
+      "description": "Postulated to be compatible or synergistic for pest management",
+      "weight": "8",
+      "source_id": "paper_4211"
+    },
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "HELIOTHIS SPP.",
+      "description": "Used as a component for the management of the pest",
+      "weight": "9",
+      "source_id": "paper_4211"
+    },
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "HELIOTHIS SPP.",
+      "description": "Used as a component for the management of the pest",
+      "weight": "9",
+      "source_id": "paper_4211"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "Conducted research on the effects of host-plant resistance on this organism",
+      "weight": "7",
+      "source_id": "paper_4211"
+    },
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "PIGEONPEA",
+      "description": "The pest larvae feed on this crop",
+      "weight": "10",
+      "source_id": "paper_4211"
+    },
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "The pest larvae feed on this crop",
+      "weight": "10",
+      "source_id": "paper_4211"
+    },
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "PARASITISM",
+      "description": "Research examined the effect of resistance on the rate of parasitism",
+      "weight": "7",
+      "source_id": "paper_4211"
+    },
+    {
+      "source": "PARASITISM",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "Acts as a biological control element against the larvae",
+      "weight": "9",
+      "source_id": "paper_4211"
+    },
+    {
+      "source": "LARGE PLOT FIELD TRIALS",
+      "target": "INTEGRATED PEST MANAGEMENT",
+      "description": "Recommended method for testing components before use in projects",
+      "weight": "8",
+      "source_id": "paper_4211"
+    }
+  ]
+}

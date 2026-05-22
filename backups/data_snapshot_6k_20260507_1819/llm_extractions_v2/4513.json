@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "NEEM",
+      "type": "ORGANISM",
+      "description": "Azadirachta indica L., the source plant for the seed extract",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "ALCOHOL EXTRACT OF NEEM SEED",
+      "type": "CONCEPT",
+      "description": "An extractive rich in lipid associates derived from neem seeds using ethanol",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting ammonium to nitrate",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "NITRIFICATION INHIBITOR",
+      "type": "CONCEPT",
+      "description": "A substance that slows down the process of nitrification",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "ETHANOL SOLVENT",
+      "type": "CONCEPT",
+      "description": "The solvent used to extract components from neem seeds",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "LIPID ASSOCIATES",
+      "type": "CONCEPT",
+      "description": "Components rich in lipids found within the neem seed extract",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "SOIL",
+      "type": "LOCATION",
+      "description": "The medium in which the extract and NH4-N were incubated",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "NH4-N",
+      "type": "CONCEPT",
+      "description": "Ammonium nitrogen used as a substrate in the study",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "AMMONIUM SULPHATE",
+      "type": "CONCEPT",
+      "description": "A chemical compound used to supply NH4-N",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "UREA",
+      "type": "CONCEPT",
+      "description": "A chemical compound used to supply NH4-N",
+      "source_id": "paper_4513"
+    },
+    {
+      "name": "INCUBATION",
+      "type": "METHOD",
+      "description": "The process of maintaining the soil mixture under specific conditions over time to observe nitrification inhibition",
+      "source_id": "paper_4513"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ALCOHOL EXTRACT OF NEEM SEED",
+      "target": "NEEM",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_4513"
+    },
+    {
+      "source": "ALCOHOL EXTRACT OF NEEM SEED",
+      "target": "NITRIFICATION INHIBITOR",
+      "description": "acts as",
+      "weight": "9",
+      "source_id": "paper_4513"
+    },
+    {
+      "source": "NITRIFICATION INHIBITOR",
+      "target": "NITRIFICATION",
+      "description": "inhibits",
+      "weight": "10",
+      "source_id": "paper_4513"
+    },
+    {
+      "source": "ALCOHOL EXTRACT OF NEEM SEED",
+      "target": "LIPID ASSOCIATES",
+      "description": "contains",
+      "weight": "8",
+      "source_id": "paper_4513"
+    },
+    {
+      "source": "ETHANOL SOLVENT",
+      "target": "ALCOHOL EXTRACT OF NEEM SEED",
+      "description": "used to produce",
+      "weight": "9",
+      "source_id": "paper_4513"
+    },
+    {
+      "source": "ALCOHOL EXTRACT OF NEEM SEED",
+      "target": "INCUBATION",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_4513"
+    },
+    {
+      "source": "INCUBATION",
+      "target": "SOIL",
+      "description": "performed in",
+      "weight": "9",
+      "source_id": "paper_4513"
+    },
+    {
+      "source": "NH4-N",
+      "target": "INCUBATION",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_4513"
+    },
+    {
+      "source": "AMMONIUM SULPHATE",
+      "target": "NH4-N",
+      "description": "supplies",
+      "weight": "10",
+      "source_id": "paper_4513"
+    },
+    {
+      "source": "UREA",
+      "target": "NH4-N",
+      "description": "supplies",
+      "weight": "10",
+      "source_id": "paper_4513"
+    }
+  ]
+}

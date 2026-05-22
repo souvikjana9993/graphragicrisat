@@ -1,0 +1,105 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop affected by rosette disease",
+      "source_id": "paper_2784"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE DISEASE",
+      "type": "CONDITION",
+      "description": "A disease caused by a complex of three agents: groundnut rosette virus, satellite RNA, and groundnut rosette assistor virus",
+      "source_id": "paper_2784"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE VIRUS",
+      "type": "ORGANISM",
+      "description": "One of the agents causing groundnut rosette disease",
+      "source_id": "paper_2784"
+    },
+    {
+      "name": "SATELLITE RNA",
+      "type": "CONCEPT",
+      "description": "An agent associated with groundnut rosette virus, primarily responsible for the symptoms of groundnut rosette disease",
+      "source_id": "paper_2784"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "type": "ORGANISM",
+      "description": "One of the agents causing groundnut rosette disease",
+      "source_id": "paper_2784"
+    },
+    {
+      "name": "ROSETTE DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of certain groundnut genotypes to resist groundnut rosette disease",
+      "source_id": "paper_2784"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT ROSETTE VIRUS",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2784"
+    },
+    {
+      "source": "SATELLITE RNA",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2784"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2784"
+    },
+    {
+      "source": "SATELLITE RNA",
+      "target": "GROUNDNUT ROSETTE VIRUS",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_2784"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_2784"
+    },
+    {
+      "source": "ROSETTE DISEASE RESISTANCE",
+      "target": "GROUNDNUT",
+      "description": "trait of",
+      "weight": "10",
+      "source_id": "paper_2784"
+    },
+    {
+      "source": "ROSETTE DISEASE RESISTANCE",
+      "target": "GROUNDNUT ROSETTE VIRUS",
+      "description": "provides resistance to",
+      "weight": "9",
+      "source_id": "paper_2784"
+    },
+    {
+      "source": "ROSETTE DISEASE RESISTANCE",
+      "target": "SATELLITE RNA",
+      "description": "provides resistance to",
+      "weight": "9",
+      "source_id": "paper_2784"
+    },
+    {
+      "source": "ROSETTE DISEASE RESISTANCE",
+      "target": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "description": "does not provide resistance to",
+      "weight": "8",
+      "source_id": "paper_2784"
+    }
+  ]
+}

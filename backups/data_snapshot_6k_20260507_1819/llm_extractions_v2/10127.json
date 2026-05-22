@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "CONSTRUCTED WETLANDS",
+      "type": "METHOD",
+      "description": "Field-scale wastewater treatment systems used for removing pathogens from various wastewater sources.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "PATHOGEN REMOVAL",
+      "type": "CONCEPT",
+      "description": "The process of eliminating pathogenic microorganisms from wastewater to enable reuse.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "WASTEWATER TREATMENT",
+      "type": "CONCEPT",
+      "description": "The process of removing contaminants from wastewater.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "The sector where treated wastewater is potentially reused.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "FREE SURFACE FLOW",
+      "type": "METHOD",
+      "description": "A specific flow regime used in the constructed wetland systems.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "URBAN DOMESTIC WASTEWATER",
+      "type": "CONDITION",
+      "description": "Wastewater sourced from urban residential areas.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "RURAL DOMESTIC WASTEWATER",
+      "type": "CONDITION",
+      "description": "Wastewater sourced from rural residential areas.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "INDUSTRIAL WASTEWATER",
+      "type": "CONDITION",
+      "description": "Wastewater sourced from industrial activities.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "ESCHERICHIA COLI",
+      "type": "ORGANISM",
+      "description": "A bacterial indicator used to measure pathogen load in wastewater.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "ENTEROCOCCI",
+      "type": "ORGANISM",
+      "description": "A bacterial indicator used to measure pathogen load in wastewater.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "TOTAL COLIFORMS",
+      "type": "ORGANISM",
+      "description": "A group of bacteria used as indicators of water quality and pathogen presence.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "CONTINUOUS HYDRAULIC FLOW",
+      "type": "CONDITION",
+      "description": "The operational state of water movement through the treatment systems.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "PCA",
+      "type": "METHOD",
+      "description": "Principal Component Analysis used to analyze the removal of bacterial indicators.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "THREE-COMPONENT ANALYSIS OF VARIANCE",
+      "type": "METHOD",
+      "description": "A statistical analysis of variance used within PCA to evaluate measured parameters.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "WATER QUALITY",
+      "type": "CONCEPT",
+      "description": "The chemical, physical, and biological characteristics of water.",
+      "source_id": "paper_10127"
+    },
+    {
+      "name": "AGRO-CLIMATIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "Variable environmental conditions affecting the performance of treatment systems.",
+      "source_id": "paper_10127"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CONSTRUCTED WETLANDS",
+      "target": "PATHOGEN REMOVAL",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "CONSTRUCTED WETLANDS",
+      "target": "WASTEWATER TREATMENT",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "CONSTRUCTED WETLANDS",
+      "target": "ESCHERICHIA COLI",
+      "description": "removes",
+      "weight": "9",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "CONSTRUCTED WETLANDS",
+      "target": "ENTEROCOCCI",
+      "description": "removes",
+      "weight": "9",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "CONSTRUCTED WETLANDS",
+      "target": "TOTAL COLIFORMS",
+      "description": "removes",
+      "weight": "9",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "FREE SURFACE FLOW",
+      "target": "CONSTRUCTED WETLANDS",
+      "description": "operational mechanism of",
+      "weight": "8",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "URBAN DOMESTIC WASTEWATER",
+      "target": "CONSTRUCTED WETLANDS",
+      "description": "treated by",
+      "weight": "8",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "RURAL DOMESTIC WASTEWATER",
+      "target": "CONSTRUCTED WETLANDS",
+      "description": "treated by",
+      "weight": "8",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "INDUSTRIAL WASTEWATER",
+      "target": "CONSTRUCTED WETLANDS",
+      "description": "treated by",
+      "weight": "8",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "CONTINUOUS HYDRAULIC FLOW",
+      "target": "CONSTRUCTED WETLANDS",
+      "description": "operational condition of",
+      "weight": "7",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "PCA",
+      "target": "PATHOGEN REMOVAL",
+      "description": "analyzes efficacy of",
+      "weight": "7",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "THREE-COMPONENT ANALYSIS OF VARIANCE",
+      "target": "PCA",
+      "description": "used within",
+      "weight": "8",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "CONSTRUCTED WETLANDS",
+      "target": "WATER QUALITY",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "AGRO-CLIMATIC CONDITIONS",
+      "target": "CONSTRUCTED WETLANDS",
+      "description": "influences performance of",
+      "weight": "6",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "ESCHERICHIA COLI",
+      "target": "ENTEROCOCCI",
+      "description": "positively correlated with",
+      "weight": "7",
+      "source_id": "paper_10127"
+    },
+    {
+      "source": "ESCHERICHIA COLI",
+      "target": "TOTAL COLIFORMS",
+      "description": "positively correlated with",
+      "weight": "7",
+      "source_id": "paper_10127"
+    }
+  ]
+}

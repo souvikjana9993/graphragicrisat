@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The most important staple food crop in Asia, covering 81 m ha in South and Southeast Asia",
+      "source_id": "paper_4373"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "Region where about 90% of the world's rice production is located",
+      "source_id": "paper_4373"
+    },
+    {
+      "name": "SOUTH AND SOUTHEAST ASIA",
+      "type": "LOCATION",
+      "description": "Region where rice covers 81 m ha and 30% of cropped land is irrigated",
+      "source_id": "paper_4373"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The state of cropped land being supplied with water, affecting 30% of land in South and Southeast Asia",
+      "source_id": "paper_4373"
+    },
+    {
+      "name": "DOUBLE-CROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two crops on the same land throughout the year",
+      "source_id": "paper_4373"
+    },
+    {
+      "name": "POPULATION INCREASE",
+      "type": "CONCEPT",
+      "description": "The growth in population leading to a need for better land use",
+      "source_id": "paper_4373"
+    },
+    {
+      "name": "FARM SIZE DECLINE",
+      "type": "CONCEPT",
+      "description": "The continuous reduction in average farm size, ranging from 0.5 to 2.0 ha",
+      "source_id": "paper_4373"
+    },
+    {
+      "name": "MONOCROPPING",
+      "type": "METHOD",
+      "description": "The prevailing practice of growing only one crop, specifically rice, in a sequence",
+      "source_id": "paper_4373"
+    },
+    {
+      "name": "FALLOW",
+      "type": "CONDITION",
+      "description": "The practice of leaving fields unplanted after the harvest",
+      "source_id": "paper_4373"
+    },
+    {
+      "name": "GRAIN LEGUMES",
+      "type": "CROP",
+      "description": "Crops for which there is an increasing demand alongside rice",
+      "source_id": "paper_4373"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "ASIA",
+      "description": "is the most important staple food crop in",
+      "weight": "10",
+      "source_id": "paper_4373"
+    },
+    {
+      "source": "RICE",
+      "target": "SOUTH AND SOUTHEAST ASIA",
+      "description": "covers 81 m ha in",
+      "weight": "10",
+      "source_id": "paper_4373"
+    },
+    {
+      "source": "SOUTH AND SOUTHEAST ASIA",
+      "target": "IRRIGATION",
+      "description": "has 30% of cropped land that is",
+      "weight": "8",
+      "source_id": "paper_4373"
+    },
+    {
+      "source": "SOUTH AND SOUTHEAST ASIA",
+      "target": "DOUBLE-CROPPING",
+      "description": "has cropped land that is",
+      "weight": "8",
+      "source_id": "paper_4373"
+    },
+    {
+      "source": "POPULATION INCREASE",
+      "target": "RICE",
+      "description": "increases the demand for",
+      "weight": "9",
+      "source_id": "paper_4373"
+    },
+    {
+      "source": "POPULATION INCREASE",
+      "target": "GRAIN LEGUMES",
+      "description": "increases the demand for",
+      "weight": "9",
+      "source_id": "paper_4373"
+    },
+    {
+      "source": "MONOCROPPING",
+      "target": "RICE",
+      "description": "is the prevailing practice of growing",
+      "weight": "10",
+      "source_id": "paper_4373"
+    },
+    {
+      "source": "MONOCROPPING",
+      "target": "FALLOW",
+      "description": "is followed by leaving fields",
+      "weight": "9",
+      "source_id": "paper_4373"
+    }
+  ]
+}

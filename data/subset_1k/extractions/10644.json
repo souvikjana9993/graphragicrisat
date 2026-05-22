@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM HYBRID PARENTS",
+      "type": "CROP",
+      "description": "Parents of sorghum hybrids developed at ICRISAT",
+      "source_id": "paper_10644"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_10644"
+    },
+    {
+      "name": "DUS-TEST GUIDELINES",
+      "type": "METHOD",
+      "description": "Guidelines for testing Distinctness, Uniformity, and Stability",
+      "source_id": "paper_10644"
+    },
+    {
+      "name": "TRAITS",
+      "type": "TRAIT",
+      "description": "Characteristics stipulated in the DUS-test guidelines for characterization",
+      "source_id": "paper_10644"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICRISAT",
+      "target": "SORGHUM HYBRID PARENTS",
+      "description": "developed",
+      "weight": "9",
+      "source_id": "paper_10644"
+    },
+    {
+      "source": "DUS-TEST GUIDELINES",
+      "target": "TRAITS",
+      "description": "stipulate",
+      "weight": "10",
+      "source_id": "paper_10644"
+    },
+    {
+      "source": "SORGHUM HYBRID PARENTS",
+      "target": "TRAITS",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_10644"
+    },
+    {
+      "source": "DUS-TEST GUIDELINES",
+      "target": "SORGHUM HYBRID PARENTS",
+      "description": "used for characterization",
+      "weight": "8",
+      "source_id": "paper_10644"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Legume crop studied for Fusarium wilt resistance",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONCEPT",
+      "description": "Major disease in chickpea caused by Fusarium oxysporum f. sp. ciceris",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "type": "ORGANISM",
+      "description": "Fungal pathogen that causes Fusarium wilt in chickpea",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "ELEVATED CO2",
+      "type": "CONDITION",
+      "description": "Atmospheric carbon dioxide levels of 550 and 700 ppm",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental temperatures of 25°C, 30°C, and 35°C",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "PLANT RESISTANCE MECHANISMS",
+      "type": "CONCEPT",
+      "description": "Biological processes used by the plant to defend against pathogens",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "PATHOGEN VIRULENCE",
+      "type": "CONCEPT",
+      "description": "The ability of the pathogen to cause disease in the host",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "JG 62",
+      "type": "CROP",
+      "description": "A susceptible cultivar of chickpea",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "WR 315",
+      "type": "CROP",
+      "description": "A resistant cultivar of chickpea",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "INCUBATION PERIOD",
+      "type": "CONCEPT",
+      "description": "The time between infection and the appearance of disease symptoms",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "QPCR",
+      "type": "METHOD",
+      "description": "Quantitative polymerase chain reaction used to quantify pathogen load and gene expression",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "DEFENCE RESPONSIVE GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes in chickpea that are expressed in response to pathogen attack",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "VIRULENCE-RELATED GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes in Foc that contribute to its ability to cause disease",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "PEROXIDISE GENE",
+      "type": "GENE_MARKER",
+      "description": "A specific defence-related gene highly expressed in the WR 315 cultivar",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "SIX 14 GENE",
+      "type": "GENE_MARKER",
+      "description": "A pathogenicity-causing secreted in xylem gene expressed in the JG 62 cultivar",
+      "source_id": "paper_11473"
+    },
+    {
+      "name": "COLONIZATION",
+      "type": "CONCEPT",
+      "description": "The process of the pathogen establishing itself within the host plant tissues",
+      "source_id": "paper_11473"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "ELEVATED CO2",
+      "target": "PLANT RESISTANCE MECHANISMS",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "ELEVATED CO2",
+      "target": "PATHOGEN VIRULENCE",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PLANT RESISTANCE MECHANISMS",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PATHOGEN VIRULENCE",
+      "description": "impacts",
+      "weight": "7",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "ELEVATED CO2",
+      "target": "INCUBATION PERIOD",
+      "description": "delays",
+      "weight": "8",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "QPCR",
+      "target": "DEFENCE RESPONSIVE GENES",
+      "description": "quantifies expression of",
+      "weight": "9",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "QPCR",
+      "target": "VIRULENCE-RELATED GENES",
+      "description": "quantifies expression of",
+      "weight": "9",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "PEROXIDISE GENE",
+      "target": "WR 315",
+      "description": "highly expressed in",
+      "weight": "9",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "PEROXIDISE GENE",
+      "target": "COLONIZATION",
+      "description": "restricts",
+      "weight": "8",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "SIX 14 GENE",
+      "target": "JG 62",
+      "description": "highly expressed in",
+      "weight": "9",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "SIX 14 GENE",
+      "target": "COLONIZATION",
+      "description": "helps in",
+      "weight": "9",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "COLONIZATION",
+      "description": "performs",
+      "weight": "9",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "JG 62",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_11473"
+    },
+    {
+      "source": "WR 315",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_11473"
+    }
+  ]
+}

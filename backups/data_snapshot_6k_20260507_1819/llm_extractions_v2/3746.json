@@ -1,0 +1,202 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species studied for grain molding and phenolic content in its caryopses.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "PHENOLIC COMPOUNDS",
+      "type": "CONCEPT",
+      "description": "Chemical compounds quantified in sorghum caryopses, specifically free phenolic compounds.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "PHENOLIC ACIDS",
+      "type": "CONCEPT",
+      "description": "Chemical acids quantified in sorghum caryopses, including p-coumaric, ferulic, and caffeic acids.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "WET ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "Growth condition characterized by high moisture that promotes grain molding.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "DRY ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "Growth condition characterized by low moisture.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "GRAIN MOLDING",
+      "type": "TRAIT",
+      "description": "The susceptibility or resistance of sorghum caryopses to mold growth.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "PERICARP COLOR",
+      "type": "TRAIT",
+      "description": "The color of the sorghum pericarp, specifically white or red, which affects phenolic levels.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "PIGMENTED TESTA",
+      "type": "TRAIT",
+      "description": "The presence or absence of pigmentation in the seed coat, associated with mold resistance.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "HUMID CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions with high humidity that influence phenolic compound levels.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "ENDOSPERM TEXTURE",
+      "type": "TRAIT",
+      "description": "The physical consistency of the sorghum endosperm, which varies with testa pigmentation.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "P-COUMARIC ACID",
+      "type": "CONCEPT",
+      "description": "A specific phenolic acid whose higher levels are related to mold susceptibility.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "FERULIC ACID",
+      "type": "CONCEPT",
+      "description": "A specific phenolic acid found in sorghum caryopses.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "CAFFEIC ACID",
+      "type": "CONCEPT",
+      "description": "A specific phenolic acid found in sorghum caryopses.",
+      "source_id": "paper_3746"
+    },
+    {
+      "name": "QUANTIFICATION",
+      "type": "METHOD",
+      "description": "The process of measuring the levels of phenolic compounds and phenolic acids in caryopses.",
+      "source_id": "paper_3746"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "PHENOLIC COMPOUNDS",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PHENOLIC ACIDS",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN MOLDING",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "WET ENVIRONMENT",
+      "target": "GRAIN MOLDING",
+      "description": "promotes",
+      "weight": "8",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "DRY ENVIRONMENT",
+      "target": "PHENOLIC COMPOUNDS",
+      "description": "influences levels of",
+      "weight": "7",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "PERICARP COLOR",
+      "target": "PHENOLIC COMPOUNDS",
+      "description": "influences levels of",
+      "weight": "7",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "PIGMENTED TESTA",
+      "target": "GRAIN MOLDING",
+      "description": "increases resistance to",
+      "weight": "9",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "PIGMENTED TESTA",
+      "target": "PHENOLIC COMPOUNDS",
+      "description": "increases levels of",
+      "weight": "8",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "PIGMENTED TESTA",
+      "target": "ENDOSPERM TEXTURE",
+      "description": "influences",
+      "weight": "6",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "PHENOLIC ACIDS",
+      "target": "GRAIN MOLDING",
+      "description": "influences susceptibility to",
+      "weight": "8",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "P-COUMARIC ACID",
+      "target": "GRAIN MOLDING",
+      "description": "higher levels relate to susceptibility",
+      "weight": "9",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "PHENOLIC ACIDS",
+      "target": "P-COUMARIC ACID",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "PHENOLIC ACIDS",
+      "target": "FERULIC ACID",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "PHENOLIC ACIDS",
+      "target": "CAFFEIC ACID",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "QUANTIFICATION",
+      "target": "PHENOLIC COMPOUNDS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3746"
+    },
+    {
+      "source": "QUANTIFICATION",
+      "target": "PHENOLIC ACIDS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3746"
+    }
+  ]
+}

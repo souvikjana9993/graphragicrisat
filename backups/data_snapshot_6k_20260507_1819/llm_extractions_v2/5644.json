@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "EARLY LEAFSPOT",
+      "type": "CONDITION",
+      "description": "A serious disease of peanuts caused by Cercospora arachidicola Hari",
+      "source_id": "paper_5644"
+    },
+    {
+      "name": "CERCOSPORA ARACHIDICOLA HARI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes early leafspot",
+      "source_id": "paper_5644"
+    },
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The agricultural crop affected by early leafspot in Malawi",
+      "source_id": "paper_5644"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "The geographic region where the disease survey was conducted and the disease is prevalent",
+      "source_id": "paper_5644"
+    },
+    {
+      "name": "DISEASE SURVEY",
+      "type": "METHOD",
+      "description": "The process used in the 1982/83 crop season to assess the damage caused by early leafspot",
+      "source_id": "paper_5644"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CERCOSPORA ARACHIDICOLA HARI",
+      "target": "EARLY LEAFSPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5644"
+    },
+    {
+      "source": "EARLY LEAFSPOT",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5644"
+    },
+    {
+      "source": "EARLY LEAFSPOT",
+      "target": "MALAWI",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_5644"
+    },
+    {
+      "source": "DISEASE SURVEY",
+      "target": "EARLY LEAFSPOT",
+      "description": "assessed",
+      "weight": "9",
+      "source_id": "paper_5644"
+    },
+    {
+      "source": "DISEASE SURVEY",
+      "target": "PEANUT",
+      "description": "conducted on",
+      "weight": "8",
+      "source_id": "paper_5644"
+    }
+  ]
+}

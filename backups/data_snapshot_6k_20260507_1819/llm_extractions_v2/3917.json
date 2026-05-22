@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "WATER SHORTAGE",
+      "type": "CONDITION",
+      "description": "Lack of sufficient water for agricultural productivity",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of agricultural output in rain-fed systems",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "RAIN-FED SYSTEMS",
+      "type": "CONDITION",
+      "description": "Agricultural systems that rely on rainfall for water",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "LOW SOIL FERTILITY",
+      "type": "CONDITION",
+      "description": "The state of soil having insufficient nutrients to support plant growth",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "SAT REGIONS",
+      "type": "LOCATION",
+      "description": "Semi-Arid Tropical regions",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "The organic component of soil",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "NUTRIENT RESERVES",
+      "type": "CONCEPT",
+      "description": "The stored nutrients available in the soil",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "SULFUR",
+      "type": "CONCEPT",
+      "description": "An essential plant nutrient found to be deficient in SAT regions",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "BORON",
+      "type": "CONCEPT",
+      "description": "An essential plant nutrient found to be deficient in SAT regions",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "ZINC",
+      "type": "CONCEPT",
+      "description": "An essential plant nutrient found to be deficient in SAT regions",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the survey of farmers' fields was conducted",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "SOIL AND WATER CONSERVING PRACTICES",
+      "type": "METHOD",
+      "description": "Practices aimed at preserving soil quality and water availability",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "BALANCED NUTRITION",
+      "type": "CONCEPT",
+      "description": "The provision of nutrients to crops in the correct proportions",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "Agricultural plants requiring balanced nutrition",
+      "source_id": "paper_3917"
+    },
+    {
+      "name": "INM",
+      "type": "METHOD",
+      "description": "Integrated Nutrient Management, a strategy to optimize soil fertility and crop nutrition",
+      "source_id": "paper_3917"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER SHORTAGE",
+      "target": "PRODUCTIVITY",
+      "description": "constrains",
+      "weight": "8",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "RAIN-FED SYSTEMS",
+      "target": "WATER SHORTAGE",
+      "description": "characterized by",
+      "weight": "9",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "LOW SOIL FERTILITY",
+      "target": "PRODUCTIVITY",
+      "description": "constrains",
+      "weight": "8",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "SAT REGIONS",
+      "target": "LOW SOIL FERTILITY",
+      "description": "characterized by",
+      "weight": "7",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "SAT REGIONS",
+      "target": "ORGANIC MATTER",
+      "description": "has low levels of",
+      "weight": "7",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "SAT REGIONS",
+      "target": "NUTRIENT RESERVES",
+      "description": "has low levels of",
+      "weight": "7",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "INDIA",
+      "target": "SAT REGIONS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "SAT REGIONS",
+      "target": "SULFUR",
+      "description": "deficient in",
+      "weight": "9",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "SAT REGIONS",
+      "target": "BORON",
+      "description": "deficient in",
+      "weight": "9",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "SAT REGIONS",
+      "target": "ZINC",
+      "description": "deficient in",
+      "weight": "9",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "INM",
+      "target": "BALANCED NUTRITION",
+      "description": "achieves",
+      "weight": "10",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "BALANCED NUTRITION",
+      "target": "CROPS",
+      "description": "improves nutrition of",
+      "weight": "9",
+      "source_id": "paper_3917"
+    },
+    {
+      "source": "INM",
+      "target": "SOIL AND WATER CONSERVING PRACTICES",
+      "description": "integrates with",
+      "weight": "8",
+      "source_id": "paper_3917"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "entities": [
+    {
+      "name": "ROOT-ZONE SOIL MOISTURE",
+      "type": "CONCEPT",
+      "description": "Moisture content in the soil area where roots are active, which the study aims to estimate",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "SURFACE MULTISPECTRAL SENSING",
+      "type": "METHOD",
+      "description": "A technique using multispectral sensors at the surface to collect data for estimating soil moisture",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "THERMAL SENSING",
+      "type": "METHOD",
+      "description": "A technique using thermal sensors at the surface to collect data for estimating soil moisture",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "DOOKIE EXPERIMENT SITE",
+      "type": "LOCATION",
+      "description": "The specific site in Victoria, Australia where the hydrometeorological and spectral datasets were collected",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "VICTORIA, AUSTRALIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the Dookie experiment site is located",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "UNIVERSITY OF MELBOURNE'S DOOKIE EXPERIMENTAL FARM",
+      "type": "LOCATION",
+      "description": "The institutional farm where the tower sites and datasets were located",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "One of the vegetation types from which datasets were collected during the cropping seasons",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "CANOLA",
+      "type": "CROP",
+      "description": "One of the vegetation types from which datasets were collected during the cropping seasons",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "GRAZED PASTURE",
+      "type": "CROP",
+      "description": "One of the vegetation types from which datasets were collected during the cropping seasons",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "LATENT HEAT FLUX",
+      "type": "CONCEPT",
+      "description": "A measurement of the energy used for evaporation and transpiration, collected at 30-min frequency",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "SENSIBLE HEAT FLUX",
+      "type": "CONCEPT",
+      "description": "A measurement of the energy transferred between the surface and the atmosphere by conduction and convection, collected at 30-min frequency",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONCEPT",
+      "description": "Layer-average moisture data collected at profile depths ranging from 0 to 120 cm",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "AIR TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Atmospheric temperature data collected from two locations in the study area",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "WIND SPEED",
+      "type": "CONDITION",
+      "description": "The speed of the wind collected from two locations in the study area",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "WIND DIRECTION",
+      "type": "CONDITION",
+      "description": "The direction of the wind collected from two locations in the study area",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "RELATIVE HUMIDITY",
+      "type": "CONDITION",
+      "description": "The amount of water vapor present in air expressed as a percentage of the amount needed for saturation",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "PRECIPITATION",
+      "type": "CONDITION",
+      "description": "The amount of rain or snow collected from two locations in the study area",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "LONGWAVE RADIATION",
+      "type": "CONDITION",
+      "description": "Incoming and outgoing longwave radiation data collected from the study area",
+      "source_id": "paper_11483"
+    },
+    {
+      "name": "SHORTWAVE RADIATION",
+      "type": "CONDITION",
+      "description": "Incoming and outgoing shortwave radiation data collected from the study area",
+      "source_id": "paper_11483"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SURFACE MULTISPECTRAL SENSING",
+      "target": "ROOT-ZONE SOIL MOISTURE",
+      "description": "used to estimate",
+      "weight": "8",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "THERMAL SENSING",
+      "target": "ROOT-ZONE SOIL MOISTURE",
+      "description": "used to estimate",
+      "weight": "8",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "DOOKIE EXPERIMENT SITE",
+      "target": "VICTORIA, AUSTRALIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "UNIVERSITY OF MELBOURNE'S DOOKIE EXPERIMENTAL FARM",
+      "target": "VICTORIA, AUSTRALIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "WHEAT",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "grown at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "CANOLA",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "grown at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "GRAZED PASTURE",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "grown at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "LATENT HEAT FLUX",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "SENSIBLE HEAT FLUX",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "AIR TEMPERATURE",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "WIND SPEED",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "WIND DIRECTION",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "RELATIVE HUMIDITY",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "PRECIPITATION",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "LONGWAVE RADIATION",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    },
+    {
+      "source": "SHORTWAVE RADIATION",
+      "target": "DOOKIE EXPERIMENT SITE",
+      "description": "measured at",
+      "weight": "9",
+      "source_id": "paper_11483"
+    }
+  ]
+}

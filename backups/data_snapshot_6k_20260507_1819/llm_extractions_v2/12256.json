@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The old world bollworm, a polyphagous agricultural pest with global distribution.",
+      "source_id": "paper_12256"
+    },
+    {
+      "name": "ARIMAX",
+      "type": "METHOD",
+      "description": "Auto Regressive Integrated Moving Average with Explanatory variable, a forecasting model used to predict pest trends.",
+      "source_id": "paper_12256"
+    },
+    {
+      "name": "NNARX",
+      "type": "METHOD",
+      "description": "Neural Network Autoregressive models with Exogeneous inputs, a forecasting model used to predict pest trends.",
+      "source_id": "paper_12256"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the study on Helicoverpa armigera was conducted.",
+      "source_id": "paper_12256"
+    },
+    {
+      "name": "WEATHER PARAMETERS",
+      "type": "CONDITION",
+      "description": "Exogeneous variables used as inputs for the ARIMAX and NNARX forecasting models.",
+      "source_id": "paper_12256"
+    },
+    {
+      "name": "MAXIMUM TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A specific weather parameter used as an external variable in the best-fit ARIMAX model.",
+      "source_id": "paper_12256"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "A specific weather parameter used as an external variable in the best-fit ARIMAX model.",
+      "source_id": "paper_12256"
+    },
+    {
+      "name": "PHEROMONE TRAP CATCH",
+      "type": "METHOD",
+      "description": "A method used to collect historical data on the pod borer population for model fitting.",
+      "source_id": "paper_12256"
+    },
+    {
+      "name": "INSECTICIDES",
+      "type": "CONCEPT",
+      "description": "Chemical agents used by farmers to control the damage caused by H. armigera.",
+      "source_id": "paper_12256"
+    },
+    {
+      "name": "POD BORER POPULATION",
+      "type": "CONCEPT",
+      "description": "The population of Helicoverpa armigera being predicted via pheromone trap catches.",
+      "source_id": "paper_12256"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ARIMAX",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "used to forecast the population of",
+      "weight": "9",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "NNARX",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "used to forecast the population of",
+      "weight": "9",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "ARIMAX",
+      "target": "WEATHER PARAMETERS",
+      "description": "uses as exogeneous variables",
+      "weight": "8",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "NNARX",
+      "target": "WEATHER PARAMETERS",
+      "description": "uses as exogeneous variables",
+      "weight": "8",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "ARIMAX",
+      "target": "MAXIMUM TEMPERATURE",
+      "description": "uses as an external variable",
+      "weight": "9",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "ARIMAX",
+      "target": "RAINFALL",
+      "description": "uses as an external variable",
+      "weight": "9",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "PHEROMONE TRAP CATCH",
+      "target": "POD BORER POPULATION",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "POD BORER POPULATION",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "refers to the population of",
+      "weight": "10",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "INDIA",
+      "description": "studied in",
+      "weight": "7",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "INSECTICIDES",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "used to control",
+      "weight": "8",
+      "source_id": "paper_12256"
+    },
+    {
+      "source": "NNARX",
+      "target": "ARIMAX",
+      "description": "comparatively assessed against",
+      "weight": "7",
+      "source_id": "paper_12256"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Early maturing genotypes of Arachis hypogaea",
+      "source_id": "paper_3423"
+    },
+    {
+      "name": "GYPSUM",
+      "type": "CONDITION",
+      "description": "A soil amendment applied to groundnut to improve yield and drought response",
+      "source_id": "paper_3423"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "The application of water to crops, including line source and conventional methods",
+      "source_id": "paper_3423"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The total production of the groundnut crop",
+      "source_id": "paper_3423"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Water deficit conditions, specifically during pod set and pod filling",
+      "source_id": "paper_3423"
+    },
+    {
+      "name": "POD INITIATION",
+      "type": "TRAIT",
+      "description": "The beginning of pod formation in groundnut",
+      "source_id": "paper_3423"
+    },
+    {
+      "name": "POD DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The growth and filling process of groundnut pods",
+      "source_id": "paper_3423"
+    },
+    {
+      "name": "EC 76446(292)",
+      "type": "CROP",
+      "description": "A specific groundnut cultivar with high gypsum requirement and drought susceptibility",
+      "source_id": "paper_3423"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GYPSUM",
+      "target": "CROP YIELD",
+      "description": "Increases yield in certain genotypes and drought conditions",
+      "weight": "8",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "CROP YIELD",
+      "description": "Increases yield in early maturing groundnut genotypes",
+      "weight": "9",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "GYPSUM",
+      "target": "GROUNDNUT",
+      "description": "Applied to early maturing groundnut genotypes",
+      "weight": "10",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "GROUNDNUT",
+      "description": "Applied to early maturing groundnut genotypes",
+      "weight": "10",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "CROP YIELD",
+      "description": "Negatively impacts crop yield",
+      "weight": "9",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "GYPSUM",
+      "target": "DROUGHT",
+      "description": "Mitigates the negative effects of drought on yield and pod initiation",
+      "weight": "7",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "GYPSUM",
+      "target": "POD INITIATION",
+      "description": "Beneficial for pod initiation when water is withheld",
+      "weight": "6",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "POD INITIATION",
+      "description": "Affects pod initiation during pod set",
+      "weight": "8",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "EC 76446(292)",
+      "target": "DROUGHT",
+      "description": "More susceptible to drought than other genotypes",
+      "weight": "9",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "EC 76446(292)",
+      "target": "GYPSUM",
+      "description": "Has a higher requirement for gypsum",
+      "weight": "8",
+      "source_id": "paper_3423"
+    },
+    {
+      "source": "EC 76446(292)",
+      "target": "GROUNDNUT",
+      "description": "Is a specific cultivar of groundnut",
+      "weight": "10",
+      "source_id": "paper_3423"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "UGANDA",
+      "type": "LOCATION",
+      "description": "A country in East Africa where the climatological study was conducted",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "ANNUAL RAINFALL",
+      "type": "CONCEPT",
+      "description": "The total amount of rainfall received over a year",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "SEASONAL RAINFALL",
+      "type": "CONCEPT",
+      "description": "The amount of rainfall received during specific seasons",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONCEPT",
+      "description": "The measure of heat or cold, specifically maximum and minimum temperatures",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "OBSERVATIONAL DATA",
+      "type": "METHOD",
+      "description": "Data collected through direct observation of rainfall and temperature",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "AGMERRA",
+      "type": "METHOD",
+      "description": "A specific dataset or model used for rainfall and temperature data",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "RAINFALL HOMOGENOUS ZONES",
+      "type": "CONCEPT",
+      "description": "Climatological zones characterized by similar rainfall patterns",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "REGRESSION METHOD",
+      "type": "METHOD",
+      "description": "A statistical method used for trend analysis",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "COEFFICIENT OF VARIATION",
+      "type": "METHOD",
+      "description": "A statistical measure used to analyze variability",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "ANOVA",
+      "type": "METHOD",
+      "description": "Analysis of Variance, a statistical technique used to analyze variability",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "ZONE A1",
+      "type": "LOCATION",
+      "description": "One of the 12 rainfall homogenous zones in Uganda",
+      "source_id": "paper_10818"
+    },
+    {
+      "name": "ZONE K",
+      "type": "LOCATION",
+      "description": "One of the 12 rainfall homogenous zones in Uganda",
+      "source_id": "paper_10818"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ANNUAL RAINFALL",
+      "target": "UGANDA",
+      "description": "measured in",
+      "weight": "10",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "SEASONAL RAINFALL",
+      "target": "UGANDA",
+      "description": "measured in",
+      "weight": "10",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "UGANDA",
+      "description": "measured in",
+      "weight": "10",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "OBSERVATIONAL DATA",
+      "target": "ANNUAL RAINFALL",
+      "description": "used to characterize",
+      "weight": "8",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "AGMERRA",
+      "target": "ANNUAL RAINFALL",
+      "description": "used to characterize",
+      "weight": "8",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "REGRESSION METHOD",
+      "target": "ANNUAL RAINFALL",
+      "description": "used for trend analysis of",
+      "weight": "9",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "COEFFICIENT OF VARIATION",
+      "target": "ANNUAL RAINFALL",
+      "description": "used to analyze variability of",
+      "weight": "9",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "ANOVA",
+      "target": "ANNUAL RAINFALL",
+      "description": "used to analyze variability of",
+      "weight": "9",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "RAINFALL HOMOGENOUS ZONES",
+      "target": "UGANDA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "ZONE A1",
+      "target": "RAINFALL HOMOGENOUS ZONES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "ZONE K",
+      "target": "RAINFALL HOMOGENOUS ZONES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "ANNUAL RAINFALL",
+      "target": "ZONE A1",
+      "description": "showed increasing trend in",
+      "weight": "9",
+      "source_id": "paper_10818"
+    },
+    {
+      "source": "ANNUAL RAINFALL",
+      "target": "ZONE K",
+      "description": "showed declining trend in",
+      "weight": "9",
+      "source_id": "paper_10818"
+    }
+  ]
+}

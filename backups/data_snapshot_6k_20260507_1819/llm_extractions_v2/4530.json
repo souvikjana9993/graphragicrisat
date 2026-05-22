@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Upland rice cultivars evaluated for phosphorus response and efficiency",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area, which increased with phosphorus application",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "PHOSPHORUS EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The ability of rice cultivars to utilize phosphorus for growth and yield",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "AGRONOMIC EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A measure of phosphorus efficiency based on yield increase per unit of phosphorus applied",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "PHYSIOLOGICAL EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A measure of phosphorus efficiency based on yield increase per unit of phosphorus absorbed",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "PHOSPHORUS HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of phosphorus in the grain to the total phosphorus in the plant",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "INTERNAL EFFICIENCY OF PHOSPHORUS",
+      "type": "TRAIT",
+      "description": "The efficiency with which the plant uses the phosphorus it has absorbed, determining overall P efficiency",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Three-year study (1993-1995) conducted to determine rice response to phosphorus and its residues",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "PHOSPHORUS DEFICIENCY",
+      "type": "CONDITION",
+      "description": "A major limiting factor for crop production in highly weathered soils of West Africa",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "LOW AVAILABLE PHOSPHORUS",
+      "type": "CONDITION",
+      "description": "The specific nutrient status of the Ultisol soil at the experimental site",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "FERTILIZER PHOSPHORUS APPLICATION",
+      "type": "CONDITION",
+      "description": "The application of phosphorus fertilizer at rates of 0, 45, 90, 145, and 180 kg P ha-1",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The broad geographic region characterized by highly weathered soils in the humid zone",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "IVORY COAST",
+      "type": "LOCATION",
+      "description": "The specific country in West Africa where the field experiments were conducted",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "ULTISOL",
+      "type": "CONCEPT",
+      "description": "A type of highly weathered soil found in the humid forest zone of Ivory Coast",
+      "source_id": "paper_4530"
+    },
+    {
+      "name": "RESIDUAL VALUE OF FERTILIZER PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "The continuing effect of phosphorus fertilizer applied in a previous year on subsequent crops",
+      "source_id": "paper_4530"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "GRAIN YIELD",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "RICE",
+      "target": "PHOSPHORUS EFFICIENCY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "FERTILIZER PHOSPHORUS APPLICATION",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "RESIDUAL VALUE OF FERTILIZER PHOSPHORUS",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "ULTISOL",
+      "target": "LOW AVAILABLE PHOSPHORUS",
+      "description": "characterized by",
+      "weight": "10",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "PHOSPHORUS DEFICIENCY",
+      "target": "RICE",
+      "description": "limits production of",
+      "weight": "9",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "IVORY COAST",
+      "target": "WEST AFRICA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "RICE",
+      "description": "conducted on",
+      "weight": "10",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "PHOSPHORUS EFFICIENCY",
+      "target": "AGRONOMIC EFFICIENCY",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "PHOSPHORUS EFFICIENCY",
+      "target": "PHYSIOLOGICAL EFFICIENCY",
+      "description": "includes",
+      "weight": "8",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "PHOSPHORUS EFFICIENCY",
+      "target": "INTERNAL EFFICIENCY OF PHOSPHORUS",
+      "description": "is due to",
+      "weight": "9",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "PHOSPHORUS EFFICIENCY",
+      "target": "PHOSPHORUS HARVEST INDEX",
+      "description": "is related to",
+      "weight": "7",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "ULTISOL",
+      "target": "IVORY COAST",
+      "description": "found in",
+      "weight": "9",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "FERTILIZER PHOSPHORUS APPLICATION",
+      "description": "tested",
+      "weight": "10",
+      "source_id": "paper_4530"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "RESIDUAL VALUE OF FERTILIZER PHOSPHORUS",
+      "description": "evaluated",
+      "weight": "10",
+      "source_id": "paper_4530"
+    }
+  ]
+}

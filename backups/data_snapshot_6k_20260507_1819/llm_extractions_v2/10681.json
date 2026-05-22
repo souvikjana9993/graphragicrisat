@@ -1,0 +1,167 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop Arachis hypogaea L. studied for yield and soil property responses",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "BIOCHAR",
+      "type": "CONCEPT",
+      "description": "A soil amendment used to improve soil properties and crop performance",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "GYPSUM",
+      "type": "CONCEPT",
+      "description": "A soil amendment (CaSO4.2H2O) applied to study its effects on groundnut",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "CHLOROPHYLL CONCENTRATION",
+      "type": "TRAIT",
+      "description": "A measure of chlorophyll levels in groundnut plants",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which the plant uses water, denoted as WUE",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "BIOMASS YIELD",
+      "type": "TRAIT",
+      "description": "The total biological mass produced by the groundnut plant",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "SOIL PROPERTIES",
+      "type": "CONCEPT",
+      "description": "General characteristics of the soil being amended",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "The condition of limited water availability for the plant",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "SPLIT-SPLIT-PLOT DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to organize the application of amendments and water",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "SOIL PH",
+      "type": "TRAIT",
+      "description": "The measure of acidity or alkalinity of the soil",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "CATION EXCHANGE CAPACITY",
+      "type": "TRAIT",
+      "description": "The soil's ability to hold and exchange cations",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "DRY MATTER YIELD",
+      "type": "TRAIT",
+      "description": "The weight of the plant material after water removal",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "MOISTURE RETENTION",
+      "type": "TRAIT",
+      "description": "The ability of the soil to retain water",
+      "source_id": "paper_10681"
+    },
+    {
+      "name": "PLANT WATER REQUIREMENT",
+      "type": "CONDITION",
+      "description": "The daily water requirement of the plant, used to determine irrigation levels",
+      "source_id": "paper_10681"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOCHAR",
+      "target": "GROUNDNUT",
+      "description": "Increases dry matter yield and improves performance",
+      "weight": "8",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "GYPSUM",
+      "target": "GROUNDNUT",
+      "description": "Studied for its effect on crop performance",
+      "weight": "5",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "GROUNDNUT",
+      "description": "Negatively impacts yield and physiological traits",
+      "weight": "9",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "SOIL PH",
+      "description": "Significantly raises soil pH from 5 to 7.15",
+      "weight": "9",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "CATION EXCHANGE CAPACITY",
+      "description": "Increases cation exchange capacity by 75%",
+      "weight": "9",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "MOISTURE RETENTION",
+      "description": "Increases the soil's ability to retain moisture",
+      "weight": "8",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "PLANT WATER REQUIREMENT",
+      "target": "GROUNDNUT",
+      "description": "Higher levels of PWR increase dry matter yields",
+      "weight": "8",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "PLANT WATER REQUIREMENT",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Lower levels of PWR reduce WUE",
+      "weight": "7",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "SPLIT-SPLIT-PLOT DESIGN",
+      "target": "GROUNDNUT",
+      "description": "Experimental framework used to evaluate the crop's response to treatments",
+      "weight": "6",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "BIOCHAR",
+      "target": "DRY MATTER YIELD",
+      "description": "Increases dry matter yield by 28% at 1 and 2% application rates",
+      "weight": "8",
+      "source_id": "paper_10681"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Affects the water use efficiency of the crop",
+      "weight": "7",
+      "source_id": "paper_10681"
+    }
+  ]
+}

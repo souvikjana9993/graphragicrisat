@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop (Sorghum bicolor L. moench) used for grain production.",
+      "source_id": "paper_3736"
+    },
+    {
+      "name": "STRIGA ASIATICA",
+      "type": "ORGANISM",
+      "description": "A parasitic weed (Striga asiatica (L.) Kuntze) that causes yield losses in sorghum.",
+      "source_id": "paper_3736"
+    },
+    {
+      "name": "REGRESSION APPROACH",
+      "type": "METHOD",
+      "description": "A statistical method used to predict grain yield losses based on Striga counts.",
+      "source_id": "paper_3736"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area, used to measure loss caused by Striga.",
+      "source_id": "paper_3736"
+    },
+    {
+      "name": "CSH 1",
+      "type": "CROP",
+      "description": "A susceptible hybrid cultivar of sorghum.",
+      "source_id": "paper_3736"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the experiments were conducted and yield losses were estimated.",
+      "source_id": "paper_3736"
+    },
+    {
+      "name": "CHECKERBOARD TRIALS",
+      "type": "METHOD",
+      "description": "Experimental design used to obtain grain yield and Striga counts data.",
+      "source_id": "paper_3736"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The seasonal period during which average grain yield loss was 17.5%.",
+      "source_id": "paper_3736"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The seasonal period during which average grain yield loss was 25.2%.",
+      "source_id": "paper_3736"
+    },
+    {
+      "name": "STRIGA INFESTATION",
+      "type": "CONDITION",
+      "description": "The presence and level of Striga asiatica affecting the crop area.",
+      "source_id": "paper_3736"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REGRESSION APPROACH",
+      "target": "GRAIN YIELD",
+      "description": "used to predict losses in",
+      "weight": "9",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "STRIGA ASIATICA",
+      "target": "SORGHUM",
+      "description": "causes yield losses in",
+      "weight": "10",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "STRIGA ASIATICA",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "CSH 1",
+      "target": "SORGHUM",
+      "description": "is a susceptible hybrid cultivar of",
+      "weight": "10",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "REGRESSION APPROACH",
+      "target": "STRIGA ASIATICA",
+      "description": "uses counts of to predict loss",
+      "weight": "8",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "CHECKERBOARD TRIALS",
+      "target": "GRAIN YIELD",
+      "description": "used to obtain data for",
+      "weight": "8",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "CHECKERBOARD TRIALS",
+      "target": "STRIGA ASIATICA",
+      "description": "used to obtain counts for",
+      "weight": "8",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "INDIA",
+      "target": "SORGHUM",
+      "description": "location of crop production and study",
+      "weight": "7",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "GRAIN YIELD",
+      "description": "affects the level of loss",
+      "weight": "7",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "POST-RAINY SEASON",
+      "target": "GRAIN YIELD",
+      "description": "affects the level of loss",
+      "weight": "7",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "STRIGA INFESTATION",
+      "target": "GRAIN YIELD",
+      "description": "leads to loss",
+      "weight": "9",
+      "source_id": "paper_3736"
+    },
+    {
+      "source": "STRIGA INFESTATION",
+      "target": "SORGHUM",
+      "description": "affects the crop area",
+      "weight": "9",
+      "source_id": "paper_3736"
+    }
+  ]
+}

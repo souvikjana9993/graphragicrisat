@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "ORYZA SATIVA",
+      "type": "CROP",
+      "description": "A species of cultivated rice",
+      "source_id": "paper_4004"
+    },
+    {
+      "name": "ORYZA GLABERRIMA",
+      "type": "CROP",
+      "description": "A species of African rice",
+      "source_id": "paper_4004"
+    },
+    {
+      "name": "IRON TOXICITY",
+      "type": "CONDITION",
+      "description": "A nutrient disorder caused by the accumulation of excessive amounts of iron in plants",
+      "source_id": "paper_4004"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "A region where iron toxicity significantly affects rice production in inland swamps",
+      "source_id": "paper_4004"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "A region where iron toxicity affects wetland rice",
+      "source_id": "paper_4004"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "A continent where iron toxicity affects wetland rice",
+      "source_id": "paper_4004"
+    },
+    {
+      "name": "LOWLAND CONDITIONS",
+      "type": "CONDITION",
+      "description": "Rainfed and irrigated environments where rice is grown and iron toxicity occurs",
+      "source_id": "paper_4004"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of rice plants, which is reduced by iron toxicity",
+      "source_id": "paper_4004"
+    },
+    {
+      "name": "IRON TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a rice variety to withstand the effects of iron toxicity",
+      "source_id": "paper_4004"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "IRON TOXICITY",
+      "target": "ORYZA SATIVA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_4004"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "ORYZA GLABERRIMA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_4004"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "WEST AFRICA",
+      "description": "prevalent in",
+      "weight": "10",
+      "source_id": "paper_4004"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "ASIA",
+      "description": "prevalent in",
+      "weight": "8",
+      "source_id": "paper_4004"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "AFRICA",
+      "description": "prevalent in",
+      "weight": "8",
+      "source_id": "paper_4004"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "LOWLAND CONDITIONS",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_4004"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_4004"
+    },
+    {
+      "source": "IRON TOLERANCE",
+      "target": "IRON TOXICITY",
+      "description": "mitigates",
+      "weight": "9",
+      "source_id": "paper_4004"
+    },
+    {
+      "source": "IRON TOLERANCE",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_4004"
+    }
+  ]
+}

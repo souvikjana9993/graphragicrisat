@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress characterized by water deficiency",
+      "source_id": "paper_4775"
+    },
+    {
+      "name": "DREB1A",
+      "type": "GENE_MARKER",
+      "description": "A gene that acts as a master switch to tackle drought stress",
+      "source_id": "paper_4775"
+    },
+    {
+      "name": "RD29A",
+      "type": "GENE_MARKER",
+      "description": "A stress-inducible gene whose promoter drives the expression of DREB1A",
+      "source_id": "paper_4775"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The agricultural crop into which the DREB1A gene was genetically introduced",
+      "source_id": "paper_4775"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A physiological trait improved by the introduction of the DREB1A gene",
+      "source_id": "paper_4775"
+    },
+    {
+      "name": "ROOT RESPONSE",
+      "type": "TRAIT",
+      "description": "A positive root response induced by the introduction of the DREB1A gene",
+      "source_id": "paper_4775"
+    },
+    {
+      "name": "GENETIC TRANSFORMATION",
+      "type": "METHOD",
+      "description": "The process of genetically introducing a gene into a plant",
+      "source_id": "paper_4775"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DREB1A",
+      "target": "DROUGHT STRESS",
+      "description": "tackles",
+      "weight": "9",
+      "source_id": "paper_4775"
+    },
+    {
+      "source": "RD29A",
+      "target": "DREB1A",
+      "description": "promoter drives expression of",
+      "weight": "10",
+      "source_id": "paper_4775"
+    },
+    {
+      "source": "DREB1A",
+      "target": "GROUNDNUT",
+      "description": "introduced into",
+      "weight": "10",
+      "source_id": "paper_4775"
+    },
+    {
+      "source": "GENETIC TRANSFORMATION",
+      "target": "GROUNDNUT",
+      "description": "method used for gene introduction",
+      "weight": "8",
+      "source_id": "paper_4775"
+    },
+    {
+      "source": "DREB1A",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "improved",
+      "weight": "9",
+      "source_id": "paper_4775"
+    },
+    {
+      "source": "DREB1A",
+      "target": "ROOT RESPONSE",
+      "description": "induced",
+      "weight": "9",
+      "source_id": "paper_4775"
+    }
+  ]
+}

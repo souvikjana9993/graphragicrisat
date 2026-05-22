@@ -1,0 +1,242 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A potential energy crop known for high biomass productivity and low input",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "BIOMASS PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The capacity of a crop to produce a large amount of biomass",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "BIOMASS YIELD",
+      "type": "TRAIT",
+      "description": "The total biomass produced, determined by plant height and maturity",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "HEIGHT",
+      "type": "TRAIT",
+      "description": "A physical trait of sorghum used to define biomass yield and targeted for genetic improvement",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "MATURITY",
+      "type": "TRAIT",
+      "description": "A developmental trait of sorghum used to define biomass yield and targeted for genetic improvement",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "MOLECULAR BREEDING",
+      "type": "CONCEPT",
+      "description": "The application of molecular tools for the genetic improvement of crop traits",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple sequence repeat markers used to identify genetic links to height and maturity",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "POOL-BASED ASSOCIATION MAPPING",
+      "type": "METHOD",
+      "description": "A technique used to identify markers linked to specific traits using pooled samples",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "SORGHUM MINI CORE COLLECTION",
+      "type": "CONCEPT",
+      "description": "A representative set of sorghum accessions used for phenotypic and genotypic evaluation",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "FIVE ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "The diverse environmental conditions across which the sorghum mini core collection was tested",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "POST-RAINY SEASONS",
+      "type": "CONDITION",
+      "description": "Specific seasonal conditions used to evaluate and select maturing accessions",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "INDIVIDUAL GENOTYPING",
+      "type": "METHOD",
+      "description": "A method used to confirm polymorphic markers",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "ASSOCIATION MAPPING",
+      "type": "METHOD",
+      "description": "A method used to identify markers associated with specific traits like height and maturity",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "CHROMOSOMES 6, 9, AND 10",
+      "type": "CONCEPT",
+      "description": "Genomic locations where markers for height and maturity are clustered",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "QTLS",
+      "type": "GENE_MARKER",
+      "description": "Quantitative trait loci associated with height and maturity",
+      "source_id": "paper_5967"
+    },
+    {
+      "name": "MA1",
+      "type": "GENE_MARKER",
+      "description": "A recently cloned gene located near markers associated with height and maturity",
+      "source_id": "paper_5967"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "BIOMASS PRODUCTIVITY",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "BIOMASS YIELD",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "BIOMASS YIELD",
+      "target": "HEIGHT",
+      "description": "defined by",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "BIOMASS YIELD",
+      "target": "MATURITY",
+      "description": "defined by",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "MOLECULAR BREEDING",
+      "target": "HEIGHT",
+      "description": "aims to improve",
+      "weight": "8",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "MOLECULAR BREEDING",
+      "target": "MATURITY",
+      "description": "aims to improve",
+      "weight": "8",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "HEIGHT",
+      "description": "linked to",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "MATURITY",
+      "description": "linked to",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "POOL-BASED ASSOCIATION MAPPING",
+      "target": "SSR MARKERS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "SORGHUM MINI CORE COLLECTION",
+      "target": "FIVE ENVIRONMENTS",
+      "description": "evaluated across",
+      "weight": "8",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "SORGHUM MINI CORE COLLECTION",
+      "target": "HEIGHT",
+      "description": "evaluated for",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "SORGHUM MINI CORE COLLECTION",
+      "target": "MATURITY",
+      "description": "evaluated for",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "POST-RAINY SEASONS",
+      "target": "MATURITY",
+      "description": "used to select accessions based on",
+      "weight": "8",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "INDIVIDUAL GENOTYPING",
+      "target": "SSR MARKERS",
+      "description": "used to confirm",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "ASSOCIATION MAPPING",
+      "target": "SSR MARKERS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "ASSOCIATION MAPPING",
+      "target": "HEIGHT",
+      "description": "used to identify markers for",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "ASSOCIATION MAPPING",
+      "target": "MATURITY",
+      "description": "used to identify markers for",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "CHROMOSOMES 6, 9, AND 10",
+      "description": "clustered on",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "QTLS",
+      "target": "CHROMOSOMES 6, 9, AND 10",
+      "description": "located on",
+      "weight": "9",
+      "source_id": "paper_5967"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "MA1",
+      "description": "located near",
+      "weight": "8",
+      "source_id": "paper_5967"
+    }
+  ]
+}

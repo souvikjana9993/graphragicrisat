@@ -1,0 +1,197 @@
+{
+  "entities": [
+    {
+      "name": "BT-COTTON",
+      "type": "CROP",
+      "description": "Transgenic cotton producing Cry1Ac and Cry2Ab toxins used to control bollworms",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "PINK BOLLWORM",
+      "type": "ORGANISM",
+      "description": "Pectinophora gossypiella Saunders, a pest that attacks cotton",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "CRY1AC",
+      "type": "GENE_MARKER",
+      "description": "A toxin produced by transgenic crops to control bollworms",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "CRY2AB",
+      "type": "GENE_MARKER",
+      "description": "A toxin produced by transgenic crops to control bollworms",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "Reduced susceptibility of pink bollworm to Cry toxins",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "F2 SCREEN METHODOLOGY",
+      "type": "METHOD",
+      "description": "A methodology used to estimate the frequency of resistance alleles",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "RESISTANCE ALLELE FREQUENCY",
+      "type": "CONCEPT",
+      "description": "The estimated frequency of alleles conferring resistance to toxins in a population",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where Bt-cotton is cultivated and the study was conducted",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "State in India where the field population of pink bollworms was collected",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "FLOWER DAMAGE",
+      "type": "TRAIT",
+      "description": "Damage caused by pink bollworm to the flowers of Bt-cotton",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "GREEN BOLL DAMAGE",
+      "type": "TRAIT",
+      "description": "Damage caused by pink bollworm to the green bolls of Bt-cotton",
+      "source_id": "paper_12233"
+    },
+    {
+      "name": "LOCULE DAMAGE",
+      "type": "TRAIT",
+      "description": "Damage caused by pink bollworm to the locules of Bt-cotton",
+      "source_id": "paper_12233"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BT-COTTON",
+      "target": "CRY1AC",
+      "description": "expresses",
+      "weight": "10",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "BT-COTTON",
+      "target": "CRY2AB",
+      "description": "expresses",
+      "weight": "10",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "PINK BOLLWORM",
+      "target": "BT-COTTON",
+      "description": "infests and damages",
+      "weight": "10",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "PINK BOLLWORM",
+      "target": "RESISTANCE",
+      "description": "develops",
+      "weight": "9",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "CRY1AC",
+      "description": "conferred against",
+      "weight": "9",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "CRY2AB",
+      "description": "conferred against",
+      "weight": "9",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "F2 SCREEN METHODOLOGY",
+      "target": "RESISTANCE ALLELE FREQUENCY",
+      "description": "used to estimate",
+      "weight": "10",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "RESISTANCE ALLELE FREQUENCY",
+      "target": "CRY1AC",
+      "description": "measured for",
+      "weight": "9",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "RESISTANCE ALLELE FREQUENCY",
+      "target": "CRY2AB",
+      "description": "measured for",
+      "weight": "9",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "PINK BOLLWORM",
+      "target": "FLOWER DAMAGE",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "PINK BOLLWORM",
+      "target": "GREEN BOLL DAMAGE",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "PINK BOLLWORM",
+      "target": "LOCULE DAMAGE",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "FLOWER DAMAGE",
+      "target": "BT-COTTON",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "GREEN BOLL DAMAGE",
+      "target": "BT-COTTON",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "LOCULE DAMAGE",
+      "target": "BT-COTTON",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12233"
+    },
+    {
+      "source": "PINK BOLLWORM",
+      "target": "ANDHRA PRADESH",
+      "description": "collected from",
+      "weight": "10",
+      "source_id": "paper_12233"
+    }
+  ]
+}

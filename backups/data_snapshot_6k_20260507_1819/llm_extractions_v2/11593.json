@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop affected by sheath blight disease worldwide.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "SHEATH BLIGHT",
+      "type": "CONDITION",
+      "description": "A disease caused by Rhizoctonia solani that threatens rice cultivation.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "RHIZOCTONIA SOLANI",
+      "type": "ORGANISM",
+      "description": "A basidiomycetous necrotroph pathogen that causes rice sheath blight.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "HIGH-YIELDING VARIETIES",
+      "type": "CONCEPT",
+      "description": "Rice varieties whose adoption increased the threat of sheath blight.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "NATURAL RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of rice germplasm to resist the sheath blight pathogen.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "RICE GERMPLASM",
+      "type": "CONCEPT",
+      "description": "The genetic resources of rice used to search for natural resistance.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "RICE YIELD LOSSES",
+      "type": "CONDITION",
+      "description": "The reduction in rice production caused by sheath blight disease.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "GLOBAL FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food, threatened by rice yield losses.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "GENETIC RESISTANCE",
+      "type": "TRAIT",
+      "description": "Resistance developed through genetic means to combat the pathogen and avoid chemical fungicides.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "CHEMICAL FUNGICIDES",
+      "type": "METHOD",
+      "description": "Hazardous chemical treatments used to manage the sheath blight pathogen.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "HOST-PATHOGEN RELATIONSHIP",
+      "type": "CONCEPT",
+      "description": "The interaction between the rice plant and the Rhizoctonia solani pathogen.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "GENE MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Loci or markers that impart a resistance response in the host.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "TRANSGENIC DEVELOPMENT",
+      "type": "METHOD",
+      "description": "The process of modifying the host genome to introduce resistance.",
+      "source_id": "paper_11593"
+    },
+    {
+      "name": "HOST GENOME",
+      "type": "CONCEPT",
+      "description": "The complete set of genetic material of the rice plant.",
+      "source_id": "paper_11593"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA SOLANI",
+      "target": "SHEATH BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "SHEATH BLIGHT",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "HIGH-YIELDING VARIETIES",
+      "target": "SHEATH BLIGHT",
+      "description": "increased susceptibility to",
+      "weight": "7",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "RICE GERMPLASM",
+      "target": "NATURAL RESISTANCE",
+      "description": "source of",
+      "weight": "8",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "SHEATH BLIGHT",
+      "target": "RICE YIELD LOSSES",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "RICE YIELD LOSSES",
+      "target": "GLOBAL FOOD SECURITY",
+      "description": "threatens",
+      "weight": "8",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "GENETIC RESISTANCE",
+      "target": "CHEMICAL FUNGICIDES",
+      "description": "alternative to",
+      "weight": "7",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "GENETIC RESISTANCE",
+      "target": "SHEATH BLIGHT",
+      "description": "combats",
+      "weight": "8",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "GENE MARKERS",
+      "target": "GENETIC RESISTANCE",
+      "description": "impart",
+      "weight": "9",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "TRANSGENIC DEVELOPMENT",
+      "target": "HOST GENOME",
+      "description": "modifies",
+      "weight": "10",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "TRANSGENIC DEVELOPMENT",
+      "target": "GENETIC RESISTANCE",
+      "description": "creates",
+      "weight": "9",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "HOST-PATHOGEN RELATIONSHIP",
+      "target": "RICE",
+      "description": "involves",
+      "weight": "9",
+      "source_id": "paper_11593"
+    },
+    {
+      "source": "HOST-PATHOGEN RELATIONSHIP",
+      "target": "RHIZOCTONIA SOLANI",
+      "description": "involves",
+      "weight": "9",
+      "source_id": "paper_11593"
+    }
+  ]
+}

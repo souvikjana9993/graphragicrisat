@@ -1,0 +1,223 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The target agricultural crop being studied for disease control.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "TMV 2",
+      "type": "CROP",
+      "description": "A specific cultivar of groundnut used in the experiment.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "SERRATIA MARCESCENS GPS 5",
+      "type": "ORGANISM",
+      "description": "A chitinolytic bacterium used as a prophylactic spray to control late leaf spot.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "PSEUDOMONAS AERUGINOSA GSE 18",
+      "type": "ORGANISM",
+      "description": "A non-chitinolytic bacterium used for comparison in the study.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "PHAEIOISARIOPSIS PERSONATA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that is the causal agent of late leaf spot disease.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A disease of groundnut caused by Phaeoisariopsis personata.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "CHITIN",
+      "type": "CONCEPT",
+      "description": "A supplement used in foliar application to potentially enhance bacterial control of disease.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "DEFENCE-RELATED ENZYMES",
+      "type": "CONCEPT",
+      "description": "Enzymes activated in the plant as a response to bacterial treatments to combat pathogens.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "CHITINASE",
+      "type": "CONCEPT",
+      "description": "A specific defence-related enzyme whose activity was measured.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "BETA-1,3-GLUCANASE",
+      "type": "CONCEPT",
+      "description": "A specific defence-related enzyme whose activity was measured.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "PEROXIDASE",
+      "type": "CONCEPT",
+      "description": "A specific defence-related enzyme whose activity was measured.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "PHENYLALANINE AMMONIA LYASE",
+      "type": "CONCEPT",
+      "description": "A specific defence-related enzyme whose activity was measured.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "FOLIAR APPLICATION",
+      "type": "METHOD",
+      "description": "The method of applying bacterial treatments and chitin to the leaves of the plant.",
+      "source_id": "paper_3200"
+    },
+    {
+      "name": "LESION FREQUENCY",
+      "type": "TRAIT",
+      "description": "A metric used to quantify the severity and control of late leaf spot disease.",
+      "source_id": "paper_3200"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SERRATIA MARCESCENS GPS 5",
+      "target": "GROUNDNUT",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "PSEUDOMONAS AERUGINOSA GSE 18",
+      "target": "GROUNDNUT",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "PHAEIOISARIOPSIS PERSONATA",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "PHAEIOISARIOPSIS PERSONATA",
+      "target": "LATE LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "SERRATIA MARCESCENS GPS 5",
+      "target": "LATE LEAF SPOT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "PSEUDOMONAS AERUGINOSA GSE 18",
+      "target": "LATE LEAF SPOT",
+      "description": "controls",
+      "weight": "7",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "CHITIN",
+      "target": "SERRATIA MARCESCENS GPS 5",
+      "description": "enhances effectiveness of",
+      "weight": "9",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "CHITIN",
+      "target": "PSEUDOMONAS AERUGINOSA GSE 18",
+      "description": "has no effect on control by",
+      "weight": "3",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "SERRATIA MARCESCENS GPS 5",
+      "target": "DEFENCE-RELATED ENZYMES",
+      "description": "activates",
+      "weight": "9",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "PSEUDOMONAS AERUGINOSA GSE 18",
+      "target": "DEFENCE-RELATED ENZYMES",
+      "description": "activates",
+      "weight": "7",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "DEFENCE-RELATED ENZYMES",
+      "target": "CHITINASE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "DEFENCE-RELATED ENZYMES",
+      "target": "BETA-1,3-GLUCANASE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "DEFENCE-RELATED ENZYMES",
+      "target": "PEROXIDASE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "DEFENCE-RELATED ENZYMES",
+      "target": "PHENYLALANINE AMMONIA LYASE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "FOLIAR APPLICATION",
+      "target": "SERRATIA MARCESCENS GPS 5",
+      "description": "method of application",
+      "weight": "8",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "FOLIAR APPLICATION",
+      "target": "PSEUDOMONAS AERUGINOSA GSE 18",
+      "description": "method of application",
+      "weight": "8",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "LESION FREQUENCY",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_3200"
+    },
+    {
+      "source": "TMV 2",
+      "target": "GROUNDNUT",
+      "description": "cultivar of",
+      "weight": "10",
+      "source_id": "paper_3200"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The process of wearing away of topsoil by physical forces such as water and wind",
+      "source_id": "paper_11810"
+    },
+    {
+      "name": "SOIL EROSION MODELLING",
+      "type": "METHOD",
+      "description": "The use of mathematical models to predict and analyze soil erosion processes",
+      "source_id": "paper_11810"
+    },
+    {
+      "name": "GASEMT",
+      "type": "CONCEPT",
+      "description": "Global Applications of Soil Erosion Modelling Tracker, an open-source database of soil-erosion modelling records",
+      "source_id": "paper_11810"
+    },
+    {
+      "name": "UNITED NATIONS",
+      "type": "CONCEPT",
+      "description": "International organization supporting global soil-erosion assessment",
+      "source_id": "paper_11810"
+    },
+    {
+      "name": "GLOBAL SOIL-EROSION ASSESSMENT",
+      "type": "CONCEPT",
+      "description": "A country-based assessment of soil erosion conducted by the United Nations",
+      "source_id": "paper_11810"
+    },
+    {
+      "name": "STATISTICAL ANALYSIS",
+      "type": "METHOD",
+      "description": "The application of statistical techniques to analyze soil erosion modelling data",
+      "source_id": "paper_11810"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL EROSION MODELLING",
+      "target": "SOIL EROSION",
+      "description": "used to predict and analyze",
+      "weight": "10",
+      "source_id": "paper_11810"
+    },
+    {
+      "source": "GASEMT",
+      "target": "SOIL EROSION MODELLING",
+      "description": "tracks the global application of",
+      "weight": "10",
+      "source_id": "paper_11810"
+    },
+    {
+      "source": "GASEMT",
+      "target": "GLOBAL SOIL-EROSION ASSESSMENT",
+      "description": "supports the upcoming",
+      "weight": "8",
+      "source_id": "paper_11810"
+    },
+    {
+      "source": "UNITED NATIONS",
+      "target": "GLOBAL SOIL-EROSION ASSESSMENT",
+      "description": "conducts the",
+      "weight": "9",
+      "source_id": "paper_11810"
+    },
+    {
+      "source": "STATISTICAL ANALYSIS",
+      "target": "SOIL EROSION MODELLING",
+      "description": "used to analyze the application of",
+      "weight": "7",
+      "source_id": "paper_11810"
+    }
+  ]
+}

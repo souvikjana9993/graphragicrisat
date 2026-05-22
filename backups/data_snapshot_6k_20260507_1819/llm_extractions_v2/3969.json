@@ -1,0 +1,242 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Groundnut or peanut (Arachis hypogaea), a crop affected by late leaf spot",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A foliar disease of groundnut caused by Phaeoisariopsis personata",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "PHAEOISARIOPSIS PERSONATA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes late leaf spot in groundnut",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "BACILLUS CIRCULANS GRS 243",
+      "type": "ORGANISM",
+      "description": "An antifungal and chitinolytic bacterium used for the biological control of late leaf spot",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "SERRATIA MARCESCENS GPS 5",
+      "type": "ORGANISM",
+      "description": "An antifungal and chitinolytic bacterium used for the biological control of late leaf spot",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "PROPHYLACTIC FOLIAR SPRAY",
+      "type": "METHOD",
+      "description": "A preventative application method used to apply bacteria to the foliage of the crop",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "CHITIN-SUPPLEMENTED APPLICATION",
+      "type": "METHOD",
+      "description": "The application of bacterial cells supplemented with colloidal chitin to enhance disease control",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "COLLOIDAL CHITIN",
+      "type": "CONCEPT",
+      "description": "A supplement used to improve the efficacy of biological control agents",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "LESION FREQUENCY",
+      "type": "TRAIT",
+      "description": "A measure of disease severity used to evaluate the effectiveness of LLS control",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the groundnut crop measured by pod yield",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONDITION",
+      "description": "The rainy season during which on-farm trials were conducted",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "CHITINASE",
+      "type": "CONCEPT",
+      "description": "A 55-kDa enzyme purified from S. marcescens GPS 5 that inhibits the germination of P. personata conidia",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "AFFINITY CHROMATOGRAPHY",
+      "type": "METHOD",
+      "description": "A purification technique used to isolate chitinase from culture filtrate",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "GEL FILTRATION",
+      "type": "METHOD",
+      "description": "A purification technique used to isolate chitinase from culture filtrate",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "CHITINOLYSIS",
+      "type": "CONCEPT",
+      "description": "The process of breaking down chitin, which is critical for the biological control of LLS",
+      "source_id": "paper_3969"
+    },
+    {
+      "name": "BIOLOGICAL CONTROL",
+      "type": "CONCEPT",
+      "description": "The use of biological agents to suppress the population of a pathogen",
+      "source_id": "paper_3969"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHAEOISARIOPSIS PERSONATA",
+      "target": "LATE LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "BACILLUS CIRCULANS GRS 243",
+      "target": "LATE LEAF SPOT",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "SERRATIA MARCESCENS GPS 5",
+      "target": "LATE LEAF SPOT",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "PROPHYLACTIC FOLIAR SPRAY",
+      "target": "BACILLUS CIRCULANS GRS 243",
+      "description": "used to apply",
+      "weight": "7",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "PROPHYLACTIC FOLIAR SPRAY",
+      "target": "SERRATIA MARCESCENS GPS 5",
+      "description": "used to apply",
+      "weight": "7",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "CHITIN-SUPPLEMENTED APPLICATION",
+      "target": "LATE LEAF SPOT",
+      "description": "improves control of",
+      "weight": "9",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "CHITIN-SUPPLEMENTED APPLICATION",
+      "target": "COLLOIDAL CHITIN",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "CHITIN-SUPPLEMENTED APPLICATION",
+      "target": "BACILLUS CIRCULANS GRS 243",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "CHITIN-SUPPLEMENTED APPLICATION",
+      "target": "SERRATIA MARCESCENS GPS 5",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "CHITIN-SUPPLEMENTED APPLICATION",
+      "target": "POD YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "CHITIN-SUPPLEMENTED APPLICATION",
+      "target": "LESION FREQUENCY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "KHARIF",
+      "target": "POD YIELD",
+      "description": "context for measurement",
+      "weight": "6",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "SERRATIA MARCESCENS GPS 5",
+      "target": "CHITINASE",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "AFFINITY CHROMATOGRAPHY",
+      "target": "CHITINASE",
+      "description": "purifies",
+      "weight": "9",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "GEL FILTRATION",
+      "target": "CHITINASE",
+      "description": "purifies",
+      "weight": "9",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "CHITINASE",
+      "target": "PHAEOISARIOPSIS PERSONATA",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "CHITINASE",
+      "target": "LATE LEAF SPOT",
+      "description": "controls",
+      "weight": "8",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "CHITINOLYSIS",
+      "target": "BIOLOGICAL CONTROL",
+      "description": "mechanism for",
+      "weight": "9",
+      "source_id": "paper_3969"
+    },
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "LATE LEAF SPOT",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_3969"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop grown in the soils studied",
+      "source_id": "paper_4588"
+    },
+    {
+      "name": "UREASE ACTIVITY",
+      "type": "CONCEPT",
+      "description": "The enzymatic activity measured in flood water and rice soils",
+      "source_id": "paper_4588"
+    },
+    {
+      "name": "FLOOD WATER",
+      "type": "CONDITION",
+      "description": "The water covering the rice soils where urease activity is measured",
+      "source_id": "paper_4588"
+    },
+    {
+      "name": "RICE SOILS",
+      "type": "CONCEPT",
+      "description": "The soils used for rice cultivation in the Philippines",
+      "source_id": "paper_4588"
+    },
+    {
+      "name": "PHILIPPINES",
+      "type": "LOCATION",
+      "description": "The country where the rice soils were sampled",
+      "source_id": "paper_4588"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UREASE ACTIVITY",
+      "target": "FLOOD WATER",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_4588"
+    },
+    {
+      "source": "UREASE ACTIVITY",
+      "target": "RICE SOILS",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_4588"
+    },
+    {
+      "source": "RICE SOILS",
+      "target": "PHILIPPINES",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4588"
+    },
+    {
+      "source": "RICE SOILS",
+      "target": "RICE",
+      "description": "used for growing",
+      "weight": "9",
+      "source_id": "paper_4588"
+    }
+  ]
+}

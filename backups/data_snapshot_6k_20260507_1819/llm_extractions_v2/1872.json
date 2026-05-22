@@ -1,0 +1,299 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop grown in the rabi season in India",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "Short duration crops used for opportunity double cropping",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study on rabi sorghum areas is conducted",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period during which soils are often left fallow and exposed to erosion",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period during which sorghum is grown",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "Degradation of fallow soils caused by run-off during the rainy season",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "DOUBLE CROPPING",
+      "type": "CONCEPT",
+      "description": "The practice of growing two crops in a year on the same land",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "LENGTH OF GROWING SEASON",
+      "type": "CONCEPT",
+      "description": "The period during which plant growth is possible, denoted as LGS",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "SOIL WATER BALANCE APPROACH",
+      "type": "METHOD",
+      "description": "The method used to analyze historical weather data to determine LGS",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "WATER HOLDING CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of soil to retain water, which influences double cropping potential",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "SOIL WATER AVAILABILITY",
+      "type": "CONDITION",
+      "description": "The availability of water in the soil required to provide sufficient LGS",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "PARBHANI",
+      "type": "LOCATION",
+      "description": "A district in India analyzed for double cropping suitability",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "PUNE",
+      "type": "LOCATION",
+      "description": "A district in India analyzed for double cropping suitability",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "AURANGABAD",
+      "type": "LOCATION",
+      "description": "A district in India analyzed for double cropping suitability",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "NANDED",
+      "type": "LOCATION",
+      "description": "A district in India analyzed for double cropping suitability",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "AKOLA",
+      "type": "LOCATION",
+      "description": "A district in India analyzed for double cropping suitability",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "SOLAPUR",
+      "type": "LOCATION",
+      "description": "A district in India analyzed for double cropping suitability",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "GULBARGA",
+      "type": "LOCATION",
+      "description": "A district in India analyzed for double cropping suitability",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "BEED",
+      "type": "LOCATION",
+      "description": "A district in India analyzed for double cropping suitability",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "OSMANABAD",
+      "type": "LOCATION",
+      "description": "A district in India analyzed for double cropping suitability",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "BELLARY",
+      "type": "LOCATION",
+      "description": "A district in India found unsuitable for double cropping with short duration legumes",
+      "source_id": "paper_1872"
+    },
+    {
+      "name": "BIJAPUR",
+      "type": "LOCATION",
+      "description": "A district in India found unsuitable for double cropping with short duration legumes",
+      "source_id": "paper_1872"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "DOUBLE CROPPING",
+      "target": "LEGUMES",
+      "description": "implemented with",
+      "weight": "9",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "DOUBLE CROPPING",
+      "target": "SORGHUM",
+      "description": "implemented with",
+      "weight": "8",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "SOIL WATER BALANCE APPROACH",
+      "target": "LENGTH OF GROWING SEASON",
+      "description": "used to analyze",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "WATER HOLDING CAPACITY",
+      "target": "DOUBLE CROPPING",
+      "description": "influences potential of",
+      "weight": "9",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "SOIL WATER AVAILABILITY",
+      "target": "LENGTH OF GROWING SEASON",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "SOIL EROSION",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "PARBHANI",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "PUNE",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "AURANGABAD",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "NANDED",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "AKOLA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "SOLAPUR",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "GULBARGA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "BEED",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "OSMANABAD",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "BELLARY",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "BIJAPUR",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "PARBHANI",
+      "target": "DOUBLE CROPPING",
+      "description": "suitable for",
+      "weight": "9",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "OSMANABAD",
+      "target": "DOUBLE CROPPING",
+      "description": "less suitable for",
+      "weight": "7",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "BELLARY",
+      "target": "DOUBLE CROPPING",
+      "description": "not suitable for",
+      "weight": "10",
+      "source_id": "paper_1872"
+    },
+    {
+      "source": "BIJAPUR",
+      "target": "DOUBLE CROPPING",
+      "description": "not suitable for",
+      "weight": "10",
+      "source_id": "paper_1872"
+    }
+  ]
+}

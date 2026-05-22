@@ -1,0 +1,259 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cicer arietinum) used to evaluate the effects of brewery effluent on seed germination and growth.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop (Zea mays) used to evaluate the effects of brewery effluent on seed germination and growth.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A legume crop (Cajanus cajan) used to evaluate the effects of brewery effluent on seed germination and growth.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "SEED GERMINATION",
+      "type": "TRAIT",
+      "description": "The process by which an organism grows from a seed, used as a parameter to evaluate wastewater effects.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "GROWTH PARAMETERS",
+      "type": "TRAIT",
+      "description": "Measurable characteristics of plant growth used to assess the impact of brewery effluent.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "GERMINATION PERCENTAGE",
+      "type": "TRAIT",
+      "description": "The proportion of seeds that successfully germinate.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "GERMINATION RATE INDEX",
+      "type": "TRAIT",
+      "description": "An index measuring the speed and percentage of seed germination.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "SEEDLING LENGTH",
+      "type": "TRAIT",
+      "description": "The physical length of the germinated seedling.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "PHYTOTOXICITY INDEX",
+      "type": "TRAIT",
+      "description": "A measure of the toxic effect of a substance on plant growth.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "SEED VIGOR INDEX",
+      "type": "TRAIT",
+      "description": "An index reflecting the overall health and growth potential of the seed.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the plant material produced.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "BREWERY WASTEWATER",
+      "type": "CONDITION",
+      "description": "Wastewater from the brewing industry containing biodegradable organic compounds used for irrigation testing.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "UASBR EFFLUENT",
+      "type": "CONDITION",
+      "description": "Effluent from an Upflow Anaerobic Sludge Blanket Reactor, a phase of brewery wastewater treatment.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "TC EFFLUENT",
+      "type": "CONDITION",
+      "description": "Effluent from a treatment plant phase used to test phytotoxic effects on crops.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "RO REJECT",
+      "type": "CONDITION",
+      "description": "Reject water from a reverse osmosis process used as a treatment in the study.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "TAP WATER",
+      "type": "CONDITION",
+      "description": "Standard water used as a control treatment in the germination study.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "GERMINATION TEST",
+      "type": "METHOD",
+      "description": "A procedure performed in petri plates for 5 days to evaluate seed germination and growth.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "COMPLETELY RANDOMIZED DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to organize the water treatments and replications.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "PHYTOTOXICITY",
+      "type": "CONCEPT",
+      "description": "The toxic effect of brewery wastewater on plant growth and germination.",
+      "source_id": "paper_10523"
+    },
+    {
+      "name": "BIODEGRADABLE ORGANIC COMPOUNDS",
+      "type": "CONCEPT",
+      "description": "Organic substances in brewery wastewater that can be broken down by biological processes.",
+      "source_id": "paper_10523"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BREWERY WASTEWATER",
+      "target": "SEED GERMINATION",
+      "description": "affects the rate and percentage of",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "BREWERY WASTEWATER",
+      "target": "GROWTH PARAMETERS",
+      "description": "affects the measurement of",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "UASBR EFFLUENT",
+      "target": "BREWERY WASTEWATER",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "TC EFFLUENT",
+      "target": "BREWERY WASTEWATER",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "RO REJECT",
+      "target": "BREWERY WASTEWATER",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "TAP WATER",
+      "target": "BREWERY WASTEWATER",
+      "description": "serves as a control for",
+      "weight": "8",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "GERMINATION TEST",
+      "target": "SEED GERMINATION",
+      "description": "is used to evaluate",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "GERMINATION TEST",
+      "target": "GERMINATION PERCENTAGE",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "GERMINATION TEST",
+      "target": "GERMINATION RATE INDEX",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "GERMINATION TEST",
+      "target": "SEEDLING LENGTH",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "GERMINATION TEST",
+      "target": "PHYTOTOXICITY INDEX",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "GERMINATION TEST",
+      "target": "SEED VIGOR INDEX",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "GERMINATION TEST",
+      "target": "BIOMASS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "GERMINATION TEST",
+      "description": "is a subject of",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "MAIZE",
+      "target": "GERMINATION TEST",
+      "description": "is a subject of",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "GERMINATION TEST",
+      "description": "is a subject of",
+      "weight": "10",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "COMPLETELY RANDOMIZED DESIGN",
+      "target": "GERMINATION TEST",
+      "description": "is the experimental design for",
+      "weight": "9",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "BREWERY WASTEWATER",
+      "target": "BIODEGRADABLE ORGANIC COMPOUNDS",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_10523"
+    },
+    {
+      "source": "BREWERY WASTEWATER",
+      "target": "PHYTOTOXICITY",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_10523"
+    }
+  ]
+}

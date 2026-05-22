@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop investigated for resistance to dry root rot",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "DRY ROOT ROT",
+      "type": "CONDITION",
+      "description": "A soil-borne disease affecting pigeonpea",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "MACROPHOMINA PHASEOLINA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing dry root rot, also known as Rhizoctonia bataticola",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "MORTALITY",
+      "type": "TRAIT",
+      "description": "The rate of plant death used to assess the impact of the disease",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The application of water to the soil to study its effect on disease mortality",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "ALFISOLS",
+      "type": "CONDITION",
+      "description": "A specific type of soil used in the field investigation",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "A specific type of soil used in the field investigation",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the field trials were conducted",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research took place",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of certain pigeonpea genotypes to withstand the pathogen",
+      "source_id": "paper_3933"
+    },
+    {
+      "name": "EXTRA-SHORT-DURATION",
+      "type": "TRAIT",
+      "description": "A growth characteristic of the pigeonpea lines studied",
+      "source_id": "paper_3933"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "DRY ROOT ROT",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "DRY ROOT ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "PIGEONPEA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "MORTALITY",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "MORTALITY",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "ALFISOLS",
+      "description": "grown in",
+      "weight": "6",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "VERTISOLS",
+      "description": "grown in",
+      "weight": "6",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "RESISTANCE",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "DRY ROOT ROT",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_3933"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "EXTRA-SHORT-DURATION",
+      "description": "possesses the trait of",
+      "weight": "8",
+      "source_id": "paper_3933"
+    }
+  ]
+}

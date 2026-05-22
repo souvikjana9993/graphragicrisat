@@ -1,0 +1,177 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop studied for its defense responses to stem borer damage.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "CHILO PARTELLUS",
+      "type": "ORGANISM",
+      "description": "The sorghum spotted stem borer that causes damage to sorghum plants.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "IRRIGATED",
+      "type": "CONDITION",
+      "description": "Growth condition with sufficient water supply.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Water-stressed or non-irrigated growth condition.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "DEADHEART FORMATION",
+      "type": "TRAIT",
+      "description": "The occurrence of dead hearts in sorghum due to stem borer infestation.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "LEAF AREA DAMAGE",
+      "type": "TRAIT",
+      "description": "The extent of leaf tissue damaged by the stem borer.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "LARVAE COUNT",
+      "type": "TRAIT",
+      "description": "The number of Chilo partellus larvae found per 5 plants.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "PEDUNCLE DAMAGE",
+      "type": "TRAIT",
+      "description": "Damage caused by the stem borer to the peduncle of the sorghum plant.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "RECOVERY RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the sorghum plant to recover after stem borer damage.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "ANALYSIS OF VARIANCE",
+      "type": "METHOD",
+      "description": "Statistical method used to determine significant differences between genotypes and treatments.",
+      "source_id": "paper_1225"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the research experiment was conducted.",
+      "source_id": "paper_1225"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHILO PARTELLUS",
+      "target": "SORGHUM",
+      "description": "infests and damages",
+      "weight": "10",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "CHILO PARTELLUS",
+      "target": "DEADHEART FORMATION",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "CHILO PARTELLUS",
+      "target": "LEAF AREA DAMAGE",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "CHILO PARTELLUS",
+      "target": "PEDUNCLE DAMAGE",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "CHILO PARTELLUS",
+      "target": "LARVAE COUNT",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "DEADHEART FORMATION",
+      "description": "reduces incidence of",
+      "weight": "7",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "LEAF AREA DAMAGE",
+      "description": "increases incidence of",
+      "weight": "7",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "PEDUNCLE DAMAGE",
+      "description": "reduces incidence of",
+      "weight": "7",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "RECOVERY RESISTANCE",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "DEADHEART FORMATION",
+      "description": "increases incidence of",
+      "weight": "7",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "LEAF AREA DAMAGE",
+      "description": "reduces incidence of",
+      "weight": "7",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "PEDUNCLE DAMAGE",
+      "description": "increases incidence of",
+      "weight": "7",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "RECOVERY RESISTANCE",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "ANALYSIS OF VARIANCE",
+      "target": "SORGHUM",
+      "description": "used to analyze genotypes of",
+      "weight": "8",
+      "source_id": "paper_1225"
+    },
+    {
+      "source": "KENYA",
+      "target": "SORGHUM",
+      "description": "location of study for",
+      "weight": "8",
+      "source_id": "paper_1225"
+    }
+  ]
+}

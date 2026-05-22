@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop used in the introgression and backcrossing experiments to test selection strategies",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "A measured agronomic performance metric used to evaluate the effectiveness of selection before backcross",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A measured agronomic performance metric used to evaluate the effectiveness of selection before backcross",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "MATURITY",
+      "type": "TRAIT",
+      "description": "A measured trait regarding the time to reach maturity in sorghum families",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "AGRONOMIC PERFORMANCE",
+      "type": "TRAIT",
+      "description": "The overall acceptability of the plant's growth and yield characteristics",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "INTROGRESSION",
+      "type": "METHOD",
+      "description": "The process of introducing genes from exotic germplasm into breeding populations to broaden the genetic base",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "BACKCROSS",
+      "type": "METHOD",
+      "description": "A breeding method where a hybrid is crossed with one of its parents to recover the recurrent parent genome",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "SELECTION BEFORE BACKCROSS",
+      "type": "METHOD",
+      "description": "An alternative breeding approach where F2 individuals are selected for agronomic acceptability before further backcrossing",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "DIRECT BACKCROSS",
+      "type": "METHOD",
+      "description": "The traditional backcrossing process conducted using F1 plants without prior selection of F2 individuals",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "EXOTIC GERMPLASM",
+      "type": "CONCEPT",
+      "description": "Genetic material from non-adapted sources used to introduce new genetic variability",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "GENETIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The diversity of alleles and genes available for crop breeding programs",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "GENETIC BASE",
+      "type": "CONCEPT",
+      "description": "The total genetic diversity present within a breeding population",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "F1 PLANTS",
+      "type": "CONCEPT",
+      "description": "The first filial generation resulting from the cross between exotic and adapted parents",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "F2 INDIVIDUALS",
+      "type": "CONCEPT",
+      "description": "The second filial generation from which selection is made in the proposed alternative approach",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "S1 FAMILIES",
+      "type": "CONCEPT",
+      "description": "The families resulting from selfing the backcrossed plants, used for final evaluation",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "RECURRENT PARENTS",
+      "type": "CONCEPT",
+      "description": "The adapted lines or populations used as the target for backcrossing",
+      "source_id": "paper_401"
+    },
+    {
+      "name": "TEST ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "The three different environments where the S1 families were evaluated",
+      "source_id": "paper_401"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INTROGRESSION",
+      "target": "EXOTIC GERMPLASM",
+      "description": "uses genes from",
+      "weight": "10",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "INTROGRESSION",
+      "target": "GENETIC BASE",
+      "description": "broadens the",
+      "weight": "8",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "BACKCROSS",
+      "target": "F1 PLANTS",
+      "description": "traditionally uses",
+      "weight": "9",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "SELECTION BEFORE BACKCROSS",
+      "target": "F2 INDIVIDUALS",
+      "description": "uses selected",
+      "weight": "9",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "SELECTION BEFORE BACKCROSS",
+      "target": "AGRONOMIC PERFORMANCE",
+      "description": "aims to improve",
+      "weight": "7",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "SELECTION BEFORE BACKCROSS",
+      "target": "GRAIN YIELD",
+      "description": "aims to improve",
+      "weight": "7",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "SELECTION BEFORE BACKCROSS",
+      "target": "MATURITY",
+      "description": "resulted in higher frequency of early",
+      "weight": "6",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "SELECTION BEFORE BACKCROSS",
+      "target": "GRAIN YIELD",
+      "description": "showed no consistent change in",
+      "weight": "8",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "SELECTION BEFORE BACKCROSS",
+      "target": "PLANT HEIGHT",
+      "description": "showed no consistent change in",
+      "weight": "8",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "DIRECT BACKCROSS",
+      "target": "F1 PLANTS",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INTROGRESSION",
+      "description": "is the crop used for",
+      "weight": "10",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "BACKCROSS",
+      "description": "is the crop used for",
+      "weight": "10",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "S1 FAMILIES",
+      "target": "GRAIN YIELD",
+      "description": "were evaluated for",
+      "weight": "8",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "S1 FAMILIES",
+      "target": "PLANT HEIGHT",
+      "description": "were evaluated for",
+      "weight": "8",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "S1 FAMILIES",
+      "target": "MATURITY",
+      "description": "were evaluated for",
+      "weight": "8",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "BACKCROSS",
+      "target": "RECURRENT PARENTS",
+      "description": "crosses back to",
+      "weight": "9",
+      "source_id": "paper_401"
+    },
+    {
+      "source": "S1 FAMILIES",
+      "target": "TEST ENVIRONMENTS",
+      "description": "were evaluated in",
+      "weight": "7",
+      "source_id": "paper_401"
+    }
+  ]
+}

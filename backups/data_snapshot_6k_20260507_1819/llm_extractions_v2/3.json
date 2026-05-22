@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "LABORATORY INFORMATION MANAGEMENT SOFTWARE",
+      "type": "CONCEPT",
+      "description": "A software system designed to track samples and manage data throughout the genotyping process to ensure quality and efficiency.",
+      "source_id": "paper_3"
+    },
+    {
+      "name": "GENOTYPING WORKFLOWS",
+      "type": "METHOD",
+      "description": "The structured sequence of steps and protocols used to perform genotyping.",
+      "source_id": "paper_3"
+    },
+    {
+      "name": "HIGH THROUGHPUT CROP GENOTYPING",
+      "type": "METHOD",
+      "description": "The process of genotyping large numbers of crop samples using automated technologies.",
+      "source_id": "paper_3"
+    },
+    {
+      "name": "DNA SEQUENCER-BASED TECHNOLOGIES",
+      "type": "METHOD",
+      "description": "Technologies utilizing DNA sequencers to automate steps in the genotyping process and increase throughput.",
+      "source_id": "paper_3"
+    },
+    {
+      "name": "GENOTYPING PROCESS",
+      "type": "METHOD",
+      "description": "The overall procedure of determining the genetic constitution of an organism.",
+      "source_id": "paper_3"
+    },
+    {
+      "name": "GENOTYPIC DATA",
+      "type": "CONCEPT",
+      "description": "The large amounts of genetic information generated during the genotyping process.",
+      "source_id": "paper_3"
+    },
+    {
+      "name": "QUALITY CONTROL",
+      "type": "CONCEPT",
+      "description": "The process of ensuring the accuracy, reliability, and standardization of genotypic data.",
+      "source_id": "paper_3"
+    },
+    {
+      "name": "GOOD LABORATORY PRACTICE",
+      "type": "CONCEPT",
+      "description": "A set of standards for laboratory operations, including protocol standardization and data annotation.",
+      "source_id": "paper_3"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "Agricultural plants that are the subject of high throughput genotyping.",
+      "source_id": "paper_3"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LABORATORY INFORMATION MANAGEMENT SOFTWARE",
+      "target": "GENOTYPING WORKFLOWS",
+      "description": "manages",
+      "weight": "10",
+      "source_id": "paper_3"
+    },
+    {
+      "source": "LABORATORY INFORMATION MANAGEMENT SOFTWARE",
+      "target": "HIGH THROUGHPUT CROP GENOTYPING",
+      "description": "supports",
+      "weight": "9",
+      "source_id": "paper_3"
+    },
+    {
+      "source": "DNA SEQUENCER-BASED TECHNOLOGIES",
+      "target": "GENOTYPING PROCESS",
+      "description": "automates",
+      "weight": "9",
+      "source_id": "paper_3"
+    },
+    {
+      "source": "GENOTYPING PROCESS",
+      "target": "GENOTYPIC DATA",
+      "description": "generates",
+      "weight": "10",
+      "source_id": "paper_3"
+    },
+    {
+      "source": "LABORATORY INFORMATION MANAGEMENT SOFTWARE",
+      "target": "GENOTYPIC DATA",
+      "description": "manages",
+      "weight": "9",
+      "source_id": "paper_3"
+    },
+    {
+      "source": "LABORATORY INFORMATION MANAGEMENT SOFTWARE",
+      "target": "QUALITY CONTROL",
+      "description": "facilitates",
+      "weight": "8",
+      "source_id": "paper_3"
+    },
+    {
+      "source": "LABORATORY INFORMATION MANAGEMENT SOFTWARE",
+      "target": "GOOD LABORATORY PRACTICE",
+      "description": "encourages",
+      "weight": "8",
+      "source_id": "paper_3"
+    },
+    {
+      "source": "HIGH THROUGHPUT CROP GENOTYPING",
+      "target": "CROP",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_3"
+    }
+  ]
+}

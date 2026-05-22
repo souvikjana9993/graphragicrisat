@@ -1,0 +1,278 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Legume crop grown in semi-arid regions of Asia and Africa",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "Geographic region where chickpea is cultivated",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "Geographic region where chickpea is cultivated",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of agricultural output of the crop",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "BIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by living organisms that reduces crop productivity",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by non-living environmental factors that reduces crop productivity",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "MOLECULAR BREEDING",
+      "type": "METHOD",
+      "description": "Techniques used to enhance crop productivity",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "NEXT GENERATION SEQUENCING",
+      "type": "METHOD",
+      "description": "High-throughput sequencing technologies used for transcriptome analysis",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "ROCHE/454",
+      "type": "METHOD",
+      "description": "A specific next-generation sequencing platform",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "ILLUMINA/SOLEXA",
+      "type": "METHOD",
+      "description": "A specific next-generation sequencing platform",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "An abiotic stress condition used to identify differentially expressed genes",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "TENTATIVE UNIQUE SEQUENCES",
+      "type": "CONCEPT",
+      "description": "A set of unique sequences produced from NGS and EST data",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "SANGER SEQUENCING",
+      "type": "METHOD",
+      "description": "A traditional sequencing method used to produce ESTs",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "EXPRESSED SEQUENCE TAGS",
+      "type": "CONCEPT",
+      "description": "Short sub-sequences of a cDNA sequence",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "GENE ONTOLOGY",
+      "type": "CONCEPT",
+      "description": "A standardized vocabulary used to describe gene functions",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "MEDICAGO TRUNCATULA",
+      "type": "ORGANISM",
+      "description": "A model legume plant used for genome comparison",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "SIMPLE SEQUENCE REPEATS",
+      "type": "GENE_MARKER",
+      "description": "A type of molecular marker consisting of tandem repeats",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "type": "GENE_MARKER",
+      "description": "A type of molecular marker consisting of single base pair changes",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "CONSERVED ORTHOLOGOUS SEQUENCE MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Molecular markers based on conserved sequences across species",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "INTRON-SPANNING REGION MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Molecular markers located within the introns of genes",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "GENOME ANALYSIS",
+      "type": "CONCEPT",
+      "description": "The study of the complete set of genetic material",
+      "source_id": "paper_1313"
+    },
+    {
+      "name": "CROP IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The process of enhancing crop traits for better productivity",
+      "source_id": "paper_1313"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "ASIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "AFRICA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "BIOTIC STRESS",
+      "target": "CROP PRODUCTIVITY",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "CROP PRODUCTIVITY",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "MOLECULAR BREEDING",
+      "target": "CROP PRODUCTIVITY",
+      "description": "used to enhance",
+      "weight": "8",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "NEXT GENERATION SEQUENCING",
+      "target": "CHICKPEA",
+      "description": "used for transcriptome analysis of",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "ROCHE/454",
+      "target": "NEXT GENERATION SEQUENCING",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "ILLUMINA/SOLEXA",
+      "target": "NEXT GENERATION SEQUENCING",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "NEXT GENERATION SEQUENCING",
+      "target": "TENTATIVE UNIQUE SEQUENCES",
+      "description": "used to produce",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "SANGER SEQUENCING",
+      "target": "EXPRESSED SEQUENCE TAGS",
+      "description": "used to produce",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "EXPRESSED SEQUENCE TAGS",
+      "target": "TENTATIVE UNIQUE SEQUENCES",
+      "description": "used to produce",
+      "weight": "8",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "TENTATIVE UNIQUE SEQUENCES",
+      "target": "GENE ONTOLOGY",
+      "description": "assigned to",
+      "weight": "7",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "TENTATIVE UNIQUE SEQUENCES",
+      "target": "MEDICAGO TRUNCATULA",
+      "description": "compared with genome assembly of",
+      "weight": "8",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "TENTATIVE UNIQUE SEQUENCES",
+      "description": "used to identify differentially expressed",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "TENTATIVE UNIQUE SEQUENCES",
+      "target": "SIMPLE SEQUENCE REPEATS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "TENTATIVE UNIQUE SEQUENCES",
+      "target": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "TENTATIVE UNIQUE SEQUENCES",
+      "target": "CONSERVED ORTHOLOGOUS SEQUENCE MARKERS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "TENTATIVE UNIQUE SEQUENCES",
+      "target": "INTRON-SPANNING REGION MARKERS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "TENTATIVE UNIQUE SEQUENCES",
+      "target": "GENOME ANALYSIS",
+      "description": "useful for",
+      "weight": "8",
+      "source_id": "paper_1313"
+    },
+    {
+      "source": "TENTATIVE UNIQUE SEQUENCES",
+      "target": "CROP IMPROVEMENT",
+      "description": "useful for",
+      "weight": "8",
+      "source_id": "paper_1313"
+    }
+  ]
+}

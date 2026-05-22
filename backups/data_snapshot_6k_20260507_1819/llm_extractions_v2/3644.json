@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "name": "SHADING",
+      "type": "CONDITION",
+      "description": "The application of 4 or 5 levels of incident sunlight ranging from 0-10% to study its effect on weed growth",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "CELOSIA ARGENTEA",
+      "type": "ORGANISM",
+      "description": "A common weed of the semi-arid tropics",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "TRIDAX PROCUMBENS",
+      "type": "ORGANISM",
+      "description": "A common weed of the semi-arid tropics",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "DIGITARIA CILIARIS",
+      "type": "ORGANISM",
+      "description": "A common weed of the semi-arid tropics",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "DACTYLOCTENIUM AEGYPTIUM",
+      "type": "ORGANISM",
+      "description": "A common weed of the semi-arid tropics",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "ACANTHOSPERMUM HISPIDUM",
+      "type": "ORGANISM",
+      "description": "A common weed of the semi-arid tropics",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "CYPERUS ROTUNDUS",
+      "type": "ORGANISM",
+      "description": "A common weed of the semi-arid tropics",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "AMARANTHUS VIRIDIS",
+      "type": "ORGANISM",
+      "description": "A common weed of the semi-arid tropics",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A growth metric measured in weeds",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A growth metric (LAI) measured in weeds",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "DRY MATTER PRODUCTION",
+      "type": "TRAIT",
+      "description": "A growth metric (DM production) measured in weeds",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "SEED PRODUCTION",
+      "type": "TRAIT",
+      "description": "A growth metric measured in annual weeds",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "TUBER PRODUCTION",
+      "type": "TRAIT",
+      "description": "A growth metric measured in Cyperus rotundus",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "DICOTYLEDONOUS WEEDS",
+      "type": "CONCEPT",
+      "description": "A group of weeds characterized by two seed leaves",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "MONOCOTYLEDONOUS WEEDS",
+      "type": "CONCEPT",
+      "description": "A group of weeds characterized by one seed leaf",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "WEED SUPPRESSION",
+      "type": "CONCEPT",
+      "description": "The reduction of weed growth and prevalence",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "CROP CANOPIES",
+      "type": "CONCEPT",
+      "description": "The upper layer of a crop that can be manipulated to provide shade",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region where the studied weeds are common",
+      "source_id": "paper_3644"
+    },
+    {
+      "name": "SHADE TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to survive and grow under low light conditions",
+      "source_id": "paper_3644"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SHADING",
+      "target": "CELOSIA ARGENTEA",
+      "description": "reduces plant height",
+      "weight": "8",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SHADING",
+      "target": "TRIDAX PROCUMBENS",
+      "description": "reduces plant height",
+      "weight": "8",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SHADING",
+      "target": "DIGITARIA CILIARIS",
+      "description": "reduces leaf area index and dry matter production",
+      "weight": "9",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SHADING",
+      "target": "DACTYLOCTENIUM AEGYPTIUM",
+      "description": "reduces leaf area index and dry matter production",
+      "weight": "9",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SHADING",
+      "target": "ACANTHOSPERMUM HISPIDUM",
+      "description": "reduces dry matter production",
+      "weight": "8",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SHADING",
+      "target": "CYPERUS ROTUNDUS",
+      "description": "reduces leaf area index, dry matter production, and tuber production",
+      "weight": "9",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SHADING",
+      "target": "AMARANTHUS VIRIDIS",
+      "description": "reduces leaf area index and dry matter production",
+      "weight": "9",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SHADING",
+      "target": "SEED PRODUCTION",
+      "description": "reduces seed production in annual weeds",
+      "weight": "8",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "DICOTYLEDONOUS WEEDS",
+      "target": "SHADING",
+      "description": "less sensitive to shading than monocotyledonous weeds",
+      "weight": "7",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "MONOCOTYLEDONOUS WEEDS",
+      "target": "SHADING",
+      "description": "more sensitive to shading than dicotyledonous weeds",
+      "weight": "7",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "CROP CANOPIES",
+      "target": "WEED SUPPRESSION",
+      "description": "manipulation of canopies can achieve weed suppression",
+      "weight": "9",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "CELOSIA ARGENTEA",
+      "description": "location where the weed is common",
+      "weight": "6",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "TRIDAX PROCUMBENS",
+      "description": "location where the weed is common",
+      "weight": "6",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "DIGITARIA CILIARIS",
+      "description": "location where the weed is common",
+      "weight": "6",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "DACTYLOCTENIUM AEGYPTIUM",
+      "description": "location where the weed is common",
+      "weight": "6",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "ACANTHOSPERMUM HISPIDUM",
+      "description": "location where the weed is common",
+      "weight": "6",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "CYPERUS ROTUNDUS",
+      "description": "location where the weed is common",
+      "weight": "6",
+      "source_id": "paper_3644"
+    },
+    {
+      "source": "SEMI-ARID TROPICS",
+      "target": "AMARANTHUS VIRIDIS",
+      "description": "location where the weed is common",
+      "weight": "6",
+      "source_id": "paper_3644"
+    }
+  ]
+}

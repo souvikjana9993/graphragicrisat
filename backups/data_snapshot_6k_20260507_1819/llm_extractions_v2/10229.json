@@ -1,0 +1,216 @@
+{
+  "entities": [
+    {
+      "name": "DRY DIRECT SEEDED RICE",
+      "type": "CROP",
+      "description": "Rice grown using dry direct seeding method",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "MUSTARD",
+      "type": "CROP",
+      "description": "Crop grown in the rabi season following rice",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "SOIL TEST BASED NUTRIENT MANAGEMENT",
+      "type": "METHOD",
+      "description": "Approach to managing nutrients based on soil testing",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "RCBD",
+      "type": "METHOD",
+      "description": "Randomized Complete Block Design used for experimental layout",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "SSNM",
+      "type": "METHOD",
+      "description": "Site-Specific Nutrient Management approach for targeted yield",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "FARMERS PRACTICE",
+      "type": "METHOD",
+      "description": "Traditional nutrient management methods used by farmers",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "STRAW YIELD",
+      "type": "TRAIT",
+      "description": "The amount of straw produced per unit area",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of mustard seeds produced per unit area",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "STOVER YIELD",
+      "type": "TRAIT",
+      "description": "The amount of mustard stover produced per unit area",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "NUTRIENT USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "Efficiency of nitrogen, phosphorus, and potassium uptake",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "GROSS RETURNS",
+      "type": "TRAIT",
+      "description": "Total income generated from the crop",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "NET RETURNS",
+      "type": "TRAIT",
+      "description": "Income after subtracting cost of cultivation",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "BC RATIO",
+      "type": "TRAIT",
+      "description": "Benefit-Cost ratio",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "COST OF CULTIVATION",
+      "type": "TRAIT",
+      "description": "Total expenditure for growing the crop",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "DRY DIRECT SEEDED RICE-MUSTARD CROPPING SYSTEM",
+      "type": "CONDITION",
+      "description": "A sequence of growing dry DSR followed by mustard",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "KHARIF SEASON",
+      "type": "CONDITION",
+      "description": "Monsoon cropping season",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "RABI SEASON",
+      "type": "CONDITION",
+      "description": "Winter cropping season",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "VIJAYANAGAR CAMP",
+      "type": "LOCATION",
+      "description": "Site of the field experiments",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "RAICHUR",
+      "type": "LOCATION",
+      "description": "District where the experiments were conducted",
+      "source_id": "paper_10229"
+    },
+    {
+      "name": "TARGETED YIELD",
+      "type": "CONCEPT",
+      "description": "A specific yield goal used to determine nutrient application",
+      "source_id": "paper_10229"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SSNM",
+      "target": "DRY DIRECT SEEDED RICE",
+      "description": "increases grain and straw yield",
+      "weight": "9",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "SSNM",
+      "target": "MUSTARD",
+      "description": "increases seed and stover yield via residual effect",
+      "weight": "8",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "SSNM",
+      "target": "NUTRIENT USE EFFICIENCY",
+      "description": "increases efficiency of N, P, and K",
+      "weight": "9",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "SSNM",
+      "target": "GROSS RETURNS",
+      "description": "increases gross returns",
+      "weight": "9",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "SSNM",
+      "target": "NET RETURNS",
+      "description": "increases net returns",
+      "weight": "9",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "SSNM",
+      "target": "BC RATIO",
+      "description": "increases BC ratio",
+      "weight": "9",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "FARMERS PRACTICE",
+      "target": "COST OF CULTIVATION",
+      "description": "recorded highest cost of cultivation",
+      "weight": "7",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "DRY DIRECT SEEDED RICE",
+      "target": "DRY DIRECT SEEDED RICE-MUSTARD CROPPING SYSTEM",
+      "description": "is a component of the cropping system",
+      "weight": "10",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "MUSTARD",
+      "target": "DRY DIRECT SEEDED RICE-MUSTARD CROPPING SYSTEM",
+      "description": "is a component of the cropping system",
+      "weight": "10",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "VIJAYANAGAR CAMP",
+      "target": "RAICHUR",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "RCBD",
+      "target": "DRY DIRECT SEEDED RICE-MUSTARD CROPPING SYSTEM",
+      "description": "used as the experimental design for the system",
+      "weight": "7",
+      "source_id": "paper_10229"
+    },
+    {
+      "source": "SSNM",
+      "target": "TARGETED YIELD",
+      "description": "uses targeted yield to determine nutrient application",
+      "weight": "10",
+      "source_id": "paper_10229"
+    }
+  ]
+}

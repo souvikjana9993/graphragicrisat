@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "The cereal crop studied for nutrient use efficiency and grain yield.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "NUTRIENT USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which the crop utilizes nutrients from the soil and fertilizers.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "ZAÏ TECHNIQUE",
+      "type": "METHOD",
+      "description": "A traditional planting pit technique used to concentrate water and nutrients.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "CATTLE MANURE",
+      "type": "CONCEPT",
+      "description": "Organic fertilizer derived from cattle waste used to provide nutrients.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "MINERAL FERTILIZER",
+      "type": "CONCEPT",
+      "description": "Inorganic fertilizer containing nitrogen, phosphorus, and potassium.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A primary plant nutrient essential for growth.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "A primary plant nutrient essential for root and seed development.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONCEPT",
+      "description": "A primary plant nutrient essential for overall plant health.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "PLINTHOSOLS",
+      "type": "CONDITION",
+      "description": "A type of soil characterized by iron-rich layers.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the field experiment was conducted.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "SADORÉ",
+      "type": "LOCATION",
+      "description": "The location of the ICRISAT research station in Niger.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "MANURE DECOMPOSITION",
+      "type": "CONCEPT",
+      "description": "The process by which organic matter in manure is broken down, releasing nutrients.",
+      "source_id": "paper_10416"
+    },
+    {
+      "name": "N UTILIZATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The specific efficiency of nitrogen uptake and use by the crop.",
+      "source_id": "paper_10416"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CATTLE MANURE",
+      "target": "NUTRIENT USE EFFICIENCY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "CATTLE MANURE",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "MINERAL FERTILIZER",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "ZAÏ TECHNIQUE",
+      "target": "MILLET",
+      "description": "used for cultivation of",
+      "weight": "7",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "MILLET",
+      "target": "PLINTHOSOLS",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "MILLET",
+      "target": "NIGER",
+      "description": "grown in",
+      "weight": "6",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "SADORÉ",
+      "target": "NIGER",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "MINERAL FERTILIZER",
+      "target": "NITROGEN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "MINERAL FERTILIZER",
+      "target": "PHOSPHORUS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "MINERAL FERTILIZER",
+      "target": "POTASSIUM",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "MANURE DECOMPOSITION",
+      "target": "NITROGEN",
+      "description": "releases",
+      "weight": "9",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "MANURE DECOMPOSITION",
+      "target": "PHOSPHORUS",
+      "description": "releases",
+      "weight": "9",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "CATTLE MANURE",
+      "target": "ZAÏ TECHNIQUE",
+      "description": "applied via",
+      "weight": "8",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "MINERAL FERTILIZER",
+      "target": "ZAÏ TECHNIQUE",
+      "description": "applied via",
+      "weight": "8",
+      "source_id": "paper_10416"
+    },
+    {
+      "source": "CATTLE MANURE",
+      "target": "N UTILIZATION EFFICIENCY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10416"
+    }
+  ]
+}

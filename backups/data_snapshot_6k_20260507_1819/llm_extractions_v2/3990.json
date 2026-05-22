@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Lowland rice used for N nutrition study",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "AMMONIUM",
+      "type": "CONCEPT",
+      "description": "The chemical form of nitrogen being studied in soil solutions",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "AMMONIUM PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The key process for N nutrition of lowland rice",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "N NUTRITION",
+      "type": "CONCEPT",
+      "description": "The nutritional requirement of nitrogen for rice",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "MINERALIZATION PROCESS",
+      "type": "CONCEPT",
+      "description": "The process that stops at ammonium in submerged soils",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "SUBMERGED SOILS",
+      "type": "CONDITION",
+      "description": "Soils that are underwater, causing mineralization to stop at ammonium",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The region from which the diverse wetland soils were sourced",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "FLOODED CONDITIONS",
+      "type": "CONDITION",
+      "description": "The state of the soil samples in greenhouse pots",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "ANOXIC SOLUTIONS",
+      "type": "CONDITION",
+      "description": "Oxygen-depleted solutions drawn from the soils",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "ORGANIC C",
+      "type": "CONCEPT",
+      "description": "Organic carbon content of the soils",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "TOTAL N",
+      "type": "CONCEPT",
+      "description": "Total nitrogen content of the soils",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "EXPONENTIAL MODEL",
+      "type": "METHOD",
+      "description": "A mathematical model used to describe the pattern of ammonium N release",
+      "source_id": "paper_3990"
+    },
+    {
+      "name": "LINEAR LOG MODEL",
+      "type": "METHOD",
+      "description": "A mathematical model used to describe the pattern of ammonium N release",
+      "source_id": "paper_3990"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AMMONIUM PRODUCTION",
+      "target": "N NUTRITION",
+      "description": "is the key process for",
+      "weight": "10",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "N NUTRITION",
+      "target": "RICE",
+      "description": "is required for",
+      "weight": "9",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "MINERALIZATION PROCESS",
+      "target": "AMMONIUM",
+      "description": "stops at",
+      "weight": "8",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "MINERALIZATION PROCESS",
+      "target": "SUBMERGED SOILS",
+      "description": "occurs in",
+      "weight": "7",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "AMMONIUM",
+      "target": "SUBMERGED SOILS",
+      "description": "accumulates in",
+      "weight": "8",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "AMMONIUM",
+      "target": "WEST AFRICA",
+      "description": "studied in soils from",
+      "weight": "7",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "FLOODED CONDITIONS",
+      "target": "AMMONIUM",
+      "description": "affects accumulation of",
+      "weight": "8",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "ANOXIC SOLUTIONS",
+      "target": "AMMONIUM",
+      "description": "monitored for concentrations of",
+      "weight": "9",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "AMMONIUM",
+      "target": "ORGANIC C",
+      "description": "release is related to",
+      "weight": "7",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "AMMONIUM",
+      "target": "TOTAL N",
+      "description": "release is related to",
+      "weight": "7",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "EXPONENTIAL MODEL",
+      "target": "AMMONIUM",
+      "description": "describes the pattern of release of",
+      "weight": "9",
+      "source_id": "paper_3990"
+    },
+    {
+      "source": "LINEAR LOG MODEL",
+      "target": "AMMONIUM",
+      "description": "describes the pattern of release of",
+      "weight": "7",
+      "source_id": "paper_3990"
+    }
+  ]
+}

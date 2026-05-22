@@ -1,0 +1,292 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, the crop studied for growth variability",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "GROWTH VARIABILITY",
+      "type": "TRAIT",
+      "description": "Spatial variation in growth over short distances",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "WEST AFRICAN SAHEL",
+      "type": "LOCATION",
+      "description": "Region where growth variability is a constraint on agricultural experiments",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "NON-DESTRUCTIVE METHODS",
+      "type": "METHOD",
+      "description": "Techniques used to estimate millet growth and final yields without destroying the plant",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "AERIAL PHOTOGRAPHY",
+      "type": "METHOD",
+      "description": "Use of true-colour and infrared photographs to monitor growth and evaluate treatment responses",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "GEOREFERENCED RADIOMETRIC MEASUREMENTS",
+      "type": "METHOD",
+      "description": "Measurements used to obtain NDVI for individual millet hills",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "CHLOROPHYLL METER",
+      "type": "METHOD",
+      "description": "Tool used to reflect relative differences in plant nitrogen status",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "NITROGEN RATE",
+      "type": "CONDITION",
+      "description": "Experimental factor tested for its effect on pearl millet growth",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "DENSITY",
+      "type": "CONDITION",
+      "description": "Experimental factor tested for its effect on pearl millet growth",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "GENOTYPE",
+      "type": "CONCEPT",
+      "description": "Experimental factor tested for its effect on pearl millet growth",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "WESTERN NIGER",
+      "type": "LOCATION",
+      "description": "Specific location where the experiment was conducted",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDICES",
+      "type": "METHOD",
+      "description": "Metric (NDVI) obtained from radiometric measurements to correlate with plant traits",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "TOTAL DRY MATTER",
+      "type": "TRAIT",
+      "description": "Plant total dry matter (TDM) used as a growth indicator",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "LEAF WEIGHT",
+      "type": "TRAIT",
+      "description": "Weight of the leaves used as a growth indicator",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "LEAF AREA",
+      "type": "TRAIT",
+      "description": "Area of the leaves used as a growth indicator",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "Final grain production at harvest",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "PLANT NITROGEN STATUS",
+      "type": "TRAIT",
+      "description": "The nitrogen level in the plant",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "SOIL BACKGROUND REFLECTANCE",
+      "type": "CONDITION",
+      "description": "Factor that requires correction in NDVI measurements",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "INCIDENT LIGHT",
+      "type": "CONDITION",
+      "description": "Factor that requires correction in NDVI measurements",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "SOIL ALBEDO",
+      "type": "CONDITION",
+      "description": "Factor that reduced the effectiveness of the red band in aerial photographs",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "IMAGE VIGNETTING",
+      "type": "CONDITION",
+      "description": "Factor that reduced the effectiveness of the red band in aerial photographs",
+      "source_id": "paper_4654"
+    },
+    {
+      "name": "SATELLITE DATA",
+      "type": "METHOD",
+      "description": "Data used for upscaling ground truth in yield prediction studies",
+      "source_id": "paper_4654"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NON-DESTRUCTIVE METHODS",
+      "target": "PEARL MILLET",
+      "description": "estimate growth and yield of",
+      "weight": "10",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "AERIAL PHOTOGRAPHY",
+      "target": "NON-DESTRUCTIVE METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "GEOREFERENCED RADIOMETRIC MEASUREMENTS",
+      "target": "NON-DESTRUCTIVE METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "CHLOROPHYLL METER",
+      "target": "NON-DESTRUCTIVE METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDICES",
+      "target": "GEOREFERENCED RADIOMETRIC MEASUREMENTS",
+      "description": "is obtained from",
+      "weight": "10",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDICES",
+      "target": "TOTAL DRY MATTER",
+      "description": "correlates with",
+      "weight": "9",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDICES",
+      "target": "LEAF WEIGHT",
+      "description": "correlates with",
+      "weight": "9",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDICES",
+      "target": "LEAF AREA",
+      "description": "correlates with",
+      "weight": "9",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDICES",
+      "target": "GRAIN YIELD",
+      "description": "correlates with",
+      "weight": "8",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "AERIAL PHOTOGRAPHY",
+      "target": "PEARL MILLET",
+      "description": "monitors growth of",
+      "weight": "9",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "CHLOROPHYLL METER",
+      "target": "PLANT NITROGEN STATUS",
+      "description": "reflects",
+      "weight": "9",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "CHLOROPHYLL METER",
+      "target": "GRAIN YIELD",
+      "description": "unsuitable to predict",
+      "weight": "7",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "NITROGEN RATE",
+      "target": "PEARL MILLET",
+      "description": "experimental factor for",
+      "weight": "8",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "DENSITY",
+      "target": "PEARL MILLET",
+      "description": "experimental factor for",
+      "weight": "8",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "PEARL MILLET",
+      "description": "experimental factor for",
+      "weight": "8",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "SOIL BACKGROUND REFLECTANCE",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDICES",
+      "description": "causes variation in",
+      "weight": "7",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "INCIDENT LIGHT",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDICES",
+      "description": "causes variation in",
+      "weight": "7",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "SOIL ALBEDO",
+      "target": "AERIAL PHOTOGRAPHY",
+      "description": "influences red band effectiveness",
+      "weight": "7",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "IMAGE VIGNETTING",
+      "target": "AERIAL PHOTOGRAPHY",
+      "description": "influences red band effectiveness",
+      "weight": "7",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "SATELLITE DATA",
+      "target": "NON-DESTRUCTIVE METHODS",
+      "description": "upscaled from",
+      "weight": "8",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "WESTERN NIGER",
+      "target": "WEST AFRICAN SAHEL",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4654"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "WESTERN NIGER",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_4654"
+    }
+  ]
+}

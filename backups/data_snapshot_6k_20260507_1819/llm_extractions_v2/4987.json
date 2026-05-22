@@ -1,0 +1,212 @@
+{
+  "entities": [
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Atmospheric water falling in raindrops",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "SPATIAL VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The variation of a variable across a geographic area",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "SEMI-ARID REGIONS",
+      "type": "LOCATION",
+      "description": "Regions characterized by low and irregular rainfall",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "EXPERIMENTAL TRIALS",
+      "type": "CONCEPT",
+      "description": "Controlled tests conducted to evaluate agricultural or environmental variables",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "RAINGAGES",
+      "type": "METHOD",
+      "description": "Instruments used to measure the amount of liquid precipitation over a set period of time",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "ICRISAT SAHELIAN CENTER",
+      "type": "LOCATION",
+      "description": "An agricultural research center operated by ICRISAT in the Sahel region",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "A country in West Africa",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "A subregion of Africa",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "RAINY SEASONS",
+      "type": "CONDITION",
+      "description": "Periods of the year characterized by higher than average rainfall",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "ISOHYETAL PATTERNS",
+      "type": "METHOD",
+      "description": "The mapping of lines connecting points of equal rainfall",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "TOTAL VOLUME",
+      "type": "CONCEPT",
+      "description": "The total amount of rainfall during a storm or season",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "DURATION",
+      "type": "CONCEPT",
+      "description": "The length of time a rain storm lasts",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "DIRECTION",
+      "type": "CONCEPT",
+      "description": "The orientation or path of storm movement",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "INTENSITY",
+      "type": "CONCEPT",
+      "description": "The rate of rainfall per unit of time",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "SPATIAL CORRELATIONS",
+      "type": "CONCEPT",
+      "description": "The statistical relationship between rainfall measurements at different locations",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "VARIOGRAMS",
+      "type": "METHOD",
+      "description": "A tool used in geostatistics to describe the spatial continuity of a variable",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "POINT RAINFALL MEASUREMENTS",
+      "type": "METHOD",
+      "description": "Rainfall measured at a specific single location",
+      "source_id": "paper_4987"
+    },
+    {
+      "name": "AREAL RAINFALL ESTIMATES",
+      "type": "CONCEPT",
+      "description": "The estimated average rainfall over a specific area",
+      "source_id": "paper_4987"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SPATIAL VARIABILITY",
+      "target": "RAINFALL",
+      "description": "describes the distribution of",
+      "weight": "9",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "SEMI-ARID REGIONS",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "EXPERIMENTAL TRIALS",
+      "description": "affects the evaluation of",
+      "weight": "7",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "RAINGAGES",
+      "target": "RAINFALL",
+      "description": "used to monitor",
+      "weight": "10",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "ICRISAT SAHELIAN CENTER",
+      "target": "NIGER",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "NIGER",
+      "target": "WEST AFRICA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "RAINGAGES",
+      "target": "ICRISAT SAHELIAN CENTER",
+      "description": "deployed at",
+      "weight": "9",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "ISOHYETAL PATTERNS",
+      "target": "RAINFALL",
+      "description": "used to visualize",
+      "weight": "8",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "TOTAL VOLUME",
+      "target": "SPATIAL CORRELATIONS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "DURATION",
+      "target": "SPATIAL CORRELATIONS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "DIRECTION",
+      "target": "SPATIAL CORRELATIONS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "INTENSITY",
+      "target": "SPATIAL CORRELATIONS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "VARIOGRAMS",
+      "target": "RAINGAGES",
+      "description": "analyzed data from",
+      "weight": "8",
+      "source_id": "paper_4987"
+    },
+    {
+      "source": "POINT RAINFALL MEASUREMENTS",
+      "target": "AREAL RAINFALL ESTIMATES",
+      "description": "correlated with",
+      "weight": "8",
+      "source_id": "paper_4987"
+    }
+  ]
+}

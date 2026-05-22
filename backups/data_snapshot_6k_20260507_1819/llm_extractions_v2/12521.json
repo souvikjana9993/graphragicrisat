@@ -1,0 +1,324 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The cereal crop being studied for tillering dynamics",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "TILLERING",
+      "type": "TRAIT",
+      "description": "The process of producing side shoots from the main stem",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "CANOPY LEAF AREA",
+      "type": "TRAIT",
+      "description": "The total leaf area of the crop canopy, affected by tillering",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "CROP GROWTH",
+      "type": "CONCEPT",
+      "description": "The overall development and increase in biomass of the crop",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "WATER-LIMITED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions where water availability is restricted",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "GENERIC MODEL OF TILLERING DYNAMICS",
+      "type": "METHOD",
+      "description": "A mathematical model developed to simulate the phases and controls of tillering",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "PRE-TILLERING",
+      "type": "CONCEPT",
+      "description": "The initial phase before tiller emergence begins",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "TILLER EMERGENCE",
+      "type": "CONCEPT",
+      "description": "The phase where new tillers begin to appear",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "CESSATION OF TILLER EMERGENCE",
+      "type": "CONCEPT",
+      "description": "The phase where the emergence of new tillers stops",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "CESSATION OF TILLER GROWTH",
+      "type": "CONCEPT",
+      "description": "The phase where the growth of existing tillers stops",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "LEAF APPEARANCE",
+      "type": "TRAIT",
+      "description": "The sequential development of leaves, which synchronizes with tillering",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "POTENTIAL TOTAL NUMBER OF TILLERS",
+      "type": "TRAIT",
+      "description": "The maximum number of tillers a plant can potentially produce",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "GENETIC PROPENSITY TO TILLER",
+      "type": "TRAIT",
+      "description": "The inherent genetic tendency of a plant to produce tillers",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "INDEX OF ASSIMILATE AVAILABILITY",
+      "type": "CONCEPT",
+      "description": "A measure of available nutrients and energy for tiller growth",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "SHOOT SOURCE-SINK BALANCE",
+      "type": "CONCEPT",
+      "description": "The relationship between the production of assimilates and their utilization by plant organs",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "COMPETITION FROM NEIGHBOURS",
+      "type": "CONDITION",
+      "description": "External competition for resources between adjacent plants",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "INTERNAL COMPETITION FOR ASSIMILATE",
+      "type": "CONDITION",
+      "description": "Competition for resources among different organs within a single plant",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "FINAL FERTILE TILLER NUMBER",
+      "type": "TRAIT",
+      "description": "The number of tillers that ultimately produce grain",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "PLANT DENSITY",
+      "type": "CONDITION",
+      "description": "The number of plants per unit area",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "PLAUSIBILITY SIMULATIONS",
+      "type": "METHOD",
+      "description": "Simulations used to test the model's predictions under diverse field conditions",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "AUSTRALIAN SORGHUM BELT",
+      "type": "LOCATION",
+      "description": "The geographic region in Australia where sorghum is grown",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "GXMXE CROP ADAPTATION LANDSCAPES",
+      "type": "CONCEPT",
+      "description": "The interaction between genetics, management, and environment affecting crop adaptation",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "MOLECULAR DISCOVERY",
+      "type": "METHOD",
+      "description": "The process of identifying genes or markers associated with specific traits",
+      "source_id": "paper_12521"
+    },
+    {
+      "name": "GENETIC GAIN",
+      "type": "TRAIT",
+      "description": "The increase in the average performance of a crop population over time",
+      "source_id": "paper_12521"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TILLERING",
+      "target": "CANOPY LEAF AREA",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "CANOPY LEAF AREA",
+      "target": "CROP GROWTH",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "TILLERING",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "WATER-LIMITED CONDITIONS",
+      "target": "TILLERING",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "GENERIC MODEL OF TILLERING DYNAMICS",
+      "target": "TILLERING",
+      "description": "models",
+      "weight": "10",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "GENERIC MODEL OF TILLERING DYNAMICS",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "TILLERING",
+      "target": "PRE-TILLERING",
+      "description": "consists of",
+      "weight": "9",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "TILLERING",
+      "target": "TILLER EMERGENCE",
+      "description": "consists of",
+      "weight": "9",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "TILLERING",
+      "target": "CESSATION OF TILLER EMERGENCE",
+      "description": "consists of",
+      "weight": "9",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "TILLERING",
+      "target": "CESSATION OF TILLER GROWTH",
+      "description": "consists of",
+      "weight": "9",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "TILLERING",
+      "target": "LEAF APPEARANCE",
+      "description": "synchronized with",
+      "weight": "7",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "POTENTIAL TOTAL NUMBER OF TILLERS",
+      "target": "GENETIC PROPENSITY TO TILLER",
+      "description": "dependent on",
+      "weight": "9",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "POTENTIAL TOTAL NUMBER OF TILLERS",
+      "target": "INDEX OF ASSIMILATE AVAILABILITY",
+      "description": "dependent on",
+      "weight": "9",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "INDEX OF ASSIMILATE AVAILABILITY",
+      "target": "SHOOT SOURCE-SINK BALANCE",
+      "description": "dependent on",
+      "weight": "8",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "CESSATION OF TILLER EMERGENCE",
+      "target": "COMPETITION FROM NEIGHBOURS",
+      "description": "influenced by",
+      "weight": "8",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "CESSATION OF TILLER GROWTH",
+      "target": "INTERNAL COMPETITION FOR ASSIMILATE",
+      "description": "influenced by",
+      "weight": "8",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "INTERNAL COMPETITION FOR ASSIMILATE",
+      "target": "FINAL FERTILE TILLER NUMBER",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "GENERIC MODEL OF TILLERING DYNAMICS",
+      "target": "FINAL FERTILE TILLER NUMBER",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "GENERIC MODEL OF TILLERING DYNAMICS",
+      "target": "PLANT DENSITY",
+      "description": "tested with",
+      "weight": "7",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "PLAUSIBILITY SIMULATIONS",
+      "target": "FINAL FERTILE TILLER NUMBER",
+      "description": "predicts",
+      "weight": "8",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "PLAUSIBILITY SIMULATIONS",
+      "target": "AUSTRALIAN SORGHUM BELT",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "GENERIC MODEL OF TILLERING DYNAMICS",
+      "target": "GXMXE CROP ADAPTATION LANDSCAPES",
+      "description": "explores",
+      "weight": "7",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "GENERIC MODEL OF TILLERING DYNAMICS",
+      "target": "MOLECULAR DISCOVERY",
+      "description": "guides",
+      "weight": "7",
+      "source_id": "paper_12521"
+    },
+    {
+      "source": "GENERIC MODEL OF TILLERING DYNAMICS",
+      "target": "GENETIC GAIN",
+      "description": "enhances",
+      "weight": "6",
+      "source_id": "paper_12521"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "NITRIFICATION INHIBITORS",
+      "type": "CONCEPT",
+      "description": "Compounds used to retard the process of nitrification in soil",
+      "source_id": "paper_3986"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting ammonium nitrogen into nitrates",
+      "source_id": "paper_3986"
+    },
+    {
+      "name": "PERCENT INHIBITION OF NITRIFICATION",
+      "type": "METHOD",
+      "description": "A criterion for comparing the effectiveness of nitrification inhibitors when soil samples do not contain significant amounts of ammonium nitrogen",
+      "source_id": "paper_3986"
+    },
+    {
+      "name": "NITRIFICATION RATES",
+      "type": "METHOD",
+      "description": "A criterion for comparing the ability of compounds to retard nitrification when soil samples contain significant amounts of ammonium nitrogen",
+      "source_id": "paper_3986"
+    },
+    {
+      "name": "AMMONIUM NITROGEN",
+      "type": "CONCEPT",
+      "description": "The form of nitrogen in soil that is converted during the nitrification process",
+      "source_id": "paper_3986"
+    },
+    {
+      "name": "SOIL",
+      "type": "LOCATION",
+      "description": "The medium in which nitrification occurs and inhibitors are tested",
+      "source_id": "paper_3986"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITRIFICATION INHIBITORS",
+      "target": "NITRIFICATION",
+      "description": "retard the process of",
+      "weight": "10",
+      "source_id": "paper_3986"
+    },
+    {
+      "source": "PERCENT INHIBITION OF NITRIFICATION",
+      "target": "NITRIFICATION INHIBITORS",
+      "description": "used to compare the effectiveness of",
+      "weight": "9",
+      "source_id": "paper_3986"
+    },
+    {
+      "source": "NITRIFICATION RATES",
+      "target": "NITRIFICATION INHIBITORS",
+      "description": "used to compare the ability of",
+      "weight": "9",
+      "source_id": "paper_3986"
+    },
+    {
+      "source": "AMMONIUM NITROGEN",
+      "target": "NITRIFICATION",
+      "description": "serves as the substrate for",
+      "weight": "10",
+      "source_id": "paper_3986"
+    },
+    {
+      "source": "NITRIFICATION",
+      "target": "SOIL",
+      "description": "occurs within",
+      "weight": "10",
+      "source_id": "paper_3986"
+    },
+    {
+      "source": "PERCENT INHIBITION OF NITRIFICATION",
+      "target": "AMMONIUM NITROGEN",
+      "description": "applied when levels are not significant",
+      "weight": "8",
+      "source_id": "paper_3986"
+    },
+    {
+      "source": "NITRIFICATION RATES",
+      "target": "AMMONIUM NITROGEN",
+      "description": "applied when levels are significant",
+      "weight": "8",
+      "source_id": "paper_3986"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species Cicer arietinum.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "type": "ORGANISM",
+      "description": "Symbiotic fungi that colonize plant roots, including Glomus species.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "GLOMUS MOSSEAE",
+      "type": "ORGANISM",
+      "description": "A specific species of vesicular arbuscular mycorrhizal fungi.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "GLOMUS CONSTRICTUM",
+      "type": "ORGANISM",
+      "description": "A specific species of vesicular arbuscular mycorrhizal fungi.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "GLOMUS MONOSPORUM",
+      "type": "ORGANISM",
+      "description": "A specific species of vesicular arbuscular mycorrhizal fungi.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F.SP. CICERIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing fusarium wilt in chickpeas.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A soil-borne fungal disease that affects chickpea plants.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "JG 62",
+      "type": "CONCEPT",
+      "description": "A susceptible genotype of chickpea.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "WR 315",
+      "type": "CONCEPT",
+      "description": "A resistant genotype of chickpea.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "K 850",
+      "type": "CONCEPT",
+      "description": "A wilt-tolerant genotype of chickpea.",
+      "source_id": "paper_2148"
+    },
+    {
+      "name": "INOCULATION",
+      "type": "METHOD",
+      "description": "The process of introducing microorganisms into the plant or soil.",
+      "source_id": "paper_2148"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INOCULATION",
+      "target": "CHICKPEA",
+      "description": "used to treat",
+      "weight": "7",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "description": "involved in",
+      "weight": "8",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "FUSARIUM OXYSPORUM F.SP. CICERIS",
+      "description": "involved in",
+      "weight": "8",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F.SP. CICERIS",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "target": "FUSARIUM WILT",
+      "description": "influences incidence of",
+      "weight": "6",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "FUSARIUM WILT",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "JG 62",
+      "target": "CHICKPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "WR 315",
+      "target": "CHICKPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "K 850",
+      "target": "CHICKPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "JG 62",
+      "target": "FUSARIUM WILT",
+      "description": "is susceptible to",
+      "weight": "9",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "WR 315",
+      "target": "FUSARIUM WILT",
+      "description": "is resistant to",
+      "weight": "9",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "K 850",
+      "target": "FUSARIUM WILT",
+      "description": "is tolerant to",
+      "weight": "9",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "GLOMUS MOSSEAE",
+      "target": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "GLOMUS CONSTRICTUM",
+      "target": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_2148"
+    },
+    {
+      "source": "GLOMUS MONOSPORUM",
+      "target": "VESICULAR ARBUSCULAR MYCORRHIZAL FUNGI",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_2148"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop for which the insect identification handbook is developed",
+      "source_id": "paper_1220"
+    },
+    {
+      "name": "INSECTS",
+      "type": "ORGANISM",
+      "description": "Common pests that affect sorghum at various growth stages and in storage",
+      "source_id": "paper_1220"
+    },
+    {
+      "name": "MITES",
+      "type": "ORGANISM",
+      "description": "Common pests that affect sorghum at various growth stages and in storage",
+      "source_id": "paper_1220"
+    },
+    {
+      "name": "NATURAL ENEMIES",
+      "type": "CONCEPT",
+      "description": "Organisms such as predators and parasites that provide benefits by controlling pests",
+      "source_id": "paper_1220"
+    },
+    {
+      "name": "PREDATORS",
+      "type": "ORGANISM",
+      "description": "Natural enemies that prey upon sorghum pests",
+      "source_id": "paper_1220"
+    },
+    {
+      "name": "PARASITES",
+      "type": "ORGANISM",
+      "description": "Natural enemies that parasitize sorghum pests",
+      "source_id": "paper_1220"
+    },
+    {
+      "name": "IDENTIFICATION",
+      "type": "METHOD",
+      "description": "The process of recognizing pests using general descriptions and color illustrations",
+      "source_id": "paper_1220"
+    },
+    {
+      "name": "CHEMICAL CONTROL",
+      "type": "METHOD",
+      "description": "A pest management approach to be used only when necessary",
+      "source_id": "paper_1220"
+    },
+    {
+      "name": "STORAGE",
+      "type": "CONDITION",
+      "description": "A stage of sorghum handling where pests can occur",
+      "source_id": "paper_1220"
+    },
+    {
+      "name": "SYMPTOMS OF DAMAGE",
+      "type": "TRAIT",
+      "description": "Physical manifestations of pest attacks on the sorghum crop",
+      "source_id": "paper_1220"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INSECTS",
+      "target": "SORGHUM",
+      "description": "are pests of",
+      "weight": "10",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "MITES",
+      "target": "SORGHUM",
+      "description": "are pests of",
+      "weight": "10",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "PREDATORS",
+      "target": "NATURAL ENEMIES",
+      "description": "are a type of",
+      "weight": "10",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "PARASITES",
+      "target": "NATURAL ENEMIES",
+      "description": "are a type of",
+      "weight": "10",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "NATURAL ENEMIES",
+      "target": "INSECTS",
+      "description": "control",
+      "weight": "8",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "NATURAL ENEMIES",
+      "target": "MITES",
+      "description": "control",
+      "weight": "8",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "IDENTIFICATION",
+      "target": "INSECTS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "IDENTIFICATION",
+      "target": "MITES",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "CHEMICAL CONTROL",
+      "target": "INSECTS",
+      "description": "used to control",
+      "weight": "8",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "CHEMICAL CONTROL",
+      "target": "MITES",
+      "description": "used to control",
+      "weight": "8",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "STORAGE",
+      "target": "SORGHUM",
+      "description": "is a condition/stage for",
+      "weight": "7",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "SYMPTOMS OF DAMAGE",
+      "target": "INSECTS",
+      "description": "are caused by",
+      "weight": "9",
+      "source_id": "paper_1220"
+    },
+    {
+      "source": "SYMPTOMS OF DAMAGE",
+      "target": "MITES",
+      "description": "are caused by",
+      "weight": "9",
+      "source_id": "paper_1220"
+    }
+  ]
+}

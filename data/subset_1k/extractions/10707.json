@@ -1,0 +1,234 @@
+{
+  "entities": [
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant uses water for biomass production, often abbreviated as TE",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "VAPOR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "The difference between the amount of moisture in the air and how much moisture the air can hold when saturated, abbreviated as VPD",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A C4 cereal crop studied for its high transpiration efficiency",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A C4 cereal crop studied for its transpiration efficiency",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A C4 cereal crop studied for its transpiration efficiency",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "C4 CEREALS",
+      "type": "CONCEPT",
+      "description": "A group of plants that use the C4 carbon fixation pathway",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of selective improvement of crop traits over time",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "CARBON FIXATION",
+      "type": "CONCEPT",
+      "description": "The process of converting inorganic carbon to organic compounds",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "PLANTING DENSITIES",
+      "type": "CONDITION",
+      "description": "The number of plants grown per unit area, acting as a selective pressure",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "RADIATION USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant converts solar radiation into biomass, abbreviated as RUE",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "DENSITY RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a crop to maintain productivity under high planting densities",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "SOURCE-SINK RELATIONSHIP",
+      "type": "CONCEPT",
+      "description": "The interaction between organs that produce photosynthates and those that consume or store them",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "CARBON DEMAND",
+      "type": "CONCEPT",
+      "description": "The requirement for carbon by the plant's sink organs",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "PHOTOSYNTHETIC ACTIVITY",
+      "type": "TRAIT",
+      "description": "The rate at which photosynthesis occurs in the plant",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "SOILS",
+      "type": "CONDITION",
+      "description": "The growth medium which can vary in hydraulic properties",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "HYDRAULIC SOIL PROPERTIES",
+      "type": "CONDITION",
+      "description": "Physical characteristics of soil that affect water movement and transpiration response",
+      "source_id": "paper_10707"
+    },
+    {
+      "name": "GXEXM INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "The interaction between genotype, environment, and management",
+      "source_id": "paper_10707"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "VAPOR PRESSURE DEFICIT",
+      "description": "closely related to the capacity to restrict transpiration under high VPD",
+      "weight": "9",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "MAIZE",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "had a higher TE than sorghum and pearl millet",
+      "weight": "8",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "had a lower TE than maize",
+      "weight": "8",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "had a lower TE than maize",
+      "weight": "8",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "MAIZE",
+      "target": "C4 CEREALS",
+      "description": "is a type of C4 cereal",
+      "weight": "10",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "C4 CEREALS",
+      "description": "is a type of C4 cereal",
+      "weight": "10",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "C4 CEREALS",
+      "description": "is a type of C4 cereal",
+      "weight": "10",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "BREEDING",
+      "target": "MAIZE",
+      "description": "100 years of breeding in maize may be responsible for TE differences",
+      "weight": "7",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "CARBON FIXATION",
+      "target": "PLANTING DENSITIES",
+      "description": "increased rates of carbon fixation deriving from selective pressure under increased planting densities",
+      "weight": "7",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "BREEDING",
+      "target": "SORGHUM",
+      "description": "targeting reasons for TE differences to accelerate breeding",
+      "weight": "6",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "BREEDING",
+      "target": "PEARL MILLET",
+      "description": "targeting reasons for TE differences to accelerate breeding",
+      "weight": "6",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "RADIATION USE EFFICIENCY",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "possible reason for differences in TE",
+      "weight": "6",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "DENSITY RESISTANCE",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "possible reason for differences in TE",
+      "weight": "6",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "SOURCE-SINK RELATIONSHIP",
+      "target": "CARBON DEMAND",
+      "description": "sets carbon demand",
+      "weight": "8",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "CARBON DEMAND",
+      "target": "PHOTOSYNTHETIC ACTIVITY",
+      "description": "sets photosynthetic activity",
+      "weight": "8",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "SOILS",
+      "description": "showed large differences among soils during high VPD season",
+      "weight": "7",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "HYDRAULIC SOIL PROPERTIES",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "likely affecting the transpiration response under high VPD",
+      "weight": "8",
+      "source_id": "paper_10707"
+    },
+    {
+      "source": "VAPOR PRESSURE DEFICIT",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "influences the transpiration response",
+      "weight": "9",
+      "source_id": "paper_10707"
+    }
+  ]
+}

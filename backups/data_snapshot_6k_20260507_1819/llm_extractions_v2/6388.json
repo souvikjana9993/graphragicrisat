@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop studied for nitrogen fixation",
+      "source_id": "paper_6388"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The process of converting atmospheric nitrogen into ammonia, measured across different genotypes",
+      "source_id": "paper_6388"
+    },
+    {
+      "name": "15N-ISOTOPE DILUTION",
+      "type": "METHOD",
+      "description": "A technique used to measure nitrogen fixation using 15N isotopes",
+      "source_id": "paper_6388"
+    },
+    {
+      "name": "J-11",
+      "type": "CONCEPT",
+      "description": "A specific genotype of groundnut with a nitrogen fixation rate of 100 kg N ha−1",
+      "source_id": "paper_6388"
+    },
+    {
+      "name": "ROBUT 33-1",
+      "type": "CONCEPT",
+      "description": "A specific genotype of groundnut with a nitrogen fixation rate of 153 kg N ha−1",
+      "source_id": "paper_6388"
+    },
+    {
+      "name": "SOIL NITROGEN",
+      "type": "CONDITION",
+      "description": "The amount of plant-available nitrogen present in the soil",
+      "source_id": "paper_6388"
+    },
+    {
+      "name": "TOTAL NITROGEN ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The total amount of nitrogen accumulated by the plant",
+      "source_id": "paper_6388"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "15N-ISOTOPE DILUTION",
+      "target": "NITROGEN FIXATION",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_6388"
+    },
+    {
+      "source": "NITROGEN FIXATION",
+      "target": "GROUNDNUT",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_6388"
+    },
+    {
+      "source": "J-11",
+      "target": "GROUNDNUT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_6388"
+    },
+    {
+      "source": "ROBUT 33-1",
+      "target": "GROUNDNUT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_6388"
+    },
+    {
+      "source": "J-11",
+      "target": "NITROGEN FIXATION",
+      "description": "exhibits a specific rate of",
+      "weight": "8",
+      "source_id": "paper_6388"
+    },
+    {
+      "source": "ROBUT 33-1",
+      "target": "NITROGEN FIXATION",
+      "description": "exhibits a specific rate of",
+      "weight": "8",
+      "source_id": "paper_6388"
+    },
+    {
+      "source": "SOIL NITROGEN",
+      "target": "NITROGEN FIXATION",
+      "description": "influences the proportion of nitrogen derived from",
+      "weight": "7",
+      "source_id": "paper_6388"
+    },
+    {
+      "source": "NITROGEN FIXATION",
+      "target": "TOTAL NITROGEN ACCUMULATION",
+      "description": "closely reflects",
+      "weight": "9",
+      "source_id": "paper_6388"
+    }
+  ]
+}

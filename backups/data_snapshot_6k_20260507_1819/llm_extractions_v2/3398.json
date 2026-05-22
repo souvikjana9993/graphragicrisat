@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A large seeded pulse legume, Cicer arietinum L.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "CICER-RHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "A specific group of Rhizobium strains that nodulate Cicer spp.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "NODULATION",
+      "type": "CONCEPT",
+      "description": "The process of forming nodules on plant roots by Rhizobium strains.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "COTYLEDON REMOVAL",
+      "type": "METHOD",
+      "description": "The removal of cotyledons just after germination to induce dwarfed growth.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "DWARFISM",
+      "type": "TRAIT",
+      "description": "Reduced seedling growth resulting from the removal of cotyledons.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "AXENIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "Sterile conditions used for growing plants in test tubes.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "ROOT MEDIUM",
+      "type": "CONDITION",
+      "description": "Sand or sand + vermiculite used as the growth medium for roots.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "TRAP HOST",
+      "type": "CONCEPT",
+      "description": "Dwarfed chickpea seedlings used for counting and studying Cicer-Rhizobium.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "MOST PROBABLE NUMBER SERIAL DILUTION-PLANT INFECTION TECHNIQUE",
+      "type": "METHOD",
+      "description": "A technique used for counting Cicer-Rhizobium in pure cultures and contaminated materials.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "RHIZOBIUM ECOLOGY",
+      "type": "CONCEPT",
+      "description": "The study of the relationship between Cicer-Rhizobium and its environment.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "STRAIN AUTHENTICATION",
+      "type": "CONCEPT",
+      "description": "The process of verifying the identity of a specific Rhizobium strain.",
+      "source_id": "paper_3398"
+    },
+    {
+      "name": "INOCULUM QUALITY CONTROL",
+      "type": "CONCEPT",
+      "description": "The process of ensuring the quality and purity of the inoculum.",
+      "source_id": "paper_3398"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CICER-RHIZOBIUM",
+      "target": "CHICKPEA",
+      "description": "nodulates",
+      "weight": "10",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "CICER-RHIZOBIUM",
+      "target": "NODULATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "NODULATION",
+      "description": "undergoes",
+      "weight": "10",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "COTYLEDON REMOVAL",
+      "target": "DWARFISM",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "DWARFISM",
+      "target": "TRAP HOST",
+      "description": "enables the use of seedlings as a",
+      "weight": "10",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "TRAP HOST",
+      "target": "CICER-RHIZOBIUM",
+      "description": "used for counting",
+      "weight": "10",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "MOST PROBABLE NUMBER SERIAL DILUTION-PLANT INFECTION TECHNIQUE",
+      "target": "CICER-RHIZOBIUM",
+      "description": "used to count",
+      "weight": "10",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "TRAP HOST",
+      "target": "RHIZOBIUM ECOLOGY",
+      "description": "used for studying",
+      "weight": "8",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "TRAP HOST",
+      "target": "STRAIN AUTHENTICATION",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "TRAP HOST",
+      "target": "INOCULUM QUALITY CONTROL",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "AXENIC CONDITIONS",
+      "description": "grown under",
+      "weight": "7",
+      "source_id": "paper_3398"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ROOT MEDIUM",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_3398"
+    }
+  ]
+}

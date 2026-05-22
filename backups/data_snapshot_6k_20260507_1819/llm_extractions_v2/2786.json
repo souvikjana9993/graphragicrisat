@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The legume crop being evaluated for disease resistance.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "ROBUT 33-1",
+      "type": "CROP",
+      "description": "A specific groundnut cultivar used as the subject for screening stem rot resistance.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "STEM ROT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting groundnut plants, caused by Sclerotium rolfsii.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "STEM ROT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of a groundnut plant to withstand or recover from stem rot infection.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes stem rot in groundnut.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "CORTICIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "An alternative scientific name for the pathogen Sclerotium rolfsii.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "INOCULATION METHODS",
+      "type": "METHOD",
+      "description": "Various techniques used to introduce the pathogen to the plant to test for resistance.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment used to conduct the screening experiments.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The thermal condition in the greenhouse, ranging from 16-31°C.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "HUMIDITY",
+      "type": "CONDITION",
+      "description": "The moisture level in the greenhouse air, ranging from 40-54.5%.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "MORTALITY",
+      "type": "TRAIT",
+      "description": "The rate of plant death used to quantify the severity of stem rot.",
+      "source_id": "paper_2786"
+    },
+    {
+      "name": "ORGANIC MATTER",
+      "type": "CONDITION",
+      "description": "Material used to cover the inoculum on the soil surface to optimize infection.",
+      "source_id": "paper_2786"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ROBUT 33-1",
+      "target": "GROUNDNUT",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "ROBUT 33-1",
+      "target": "STEM ROT RESISTANCE",
+      "description": "was screened for",
+      "weight": "9",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "STEM ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "CORTICIUM ROLFSII",
+      "description": "is synonymous with",
+      "weight": "10",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "INOCULATION METHODS",
+      "target": "STEM ROT RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "INOCULATION METHODS",
+      "target": "GREENHOUSE",
+      "description": "performed in",
+      "weight": "7",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "GREENHOUSE",
+      "description": "environmental factor in",
+      "weight": "6",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "HUMIDITY",
+      "target": "GREENHOUSE",
+      "description": "environmental factor in",
+      "weight": "6",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "MORTALITY",
+      "target": "STEM ROT",
+      "description": "indicates severity of",
+      "weight": "9",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "ORGANIC MATTER",
+      "target": "INOCULATION METHODS",
+      "description": "used to enhance",
+      "weight": "8",
+      "source_id": "paper_2786"
+    },
+    {
+      "source": "STEM ROT RESISTANCE",
+      "target": "GROUNDNUT",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_2786"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "entities": [
+    {
+      "name": "DREB1A",
+      "type": "GENE_MARKER",
+      "description": "A gene that increases water uptake and modifies the root/shoot ratio in groundnut under water deficit conditions",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "WATER UPTAKE",
+      "type": "TRAIT",
+      "description": "The process of absorbing water from the soil, a key component of yield architecture",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea, the crop being studied for water use efficiency and yield",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "ROOT/SHOOT RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of root biomass to shoot biomass, modified by DREB1A",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "A condition of limited water availability that affects yield and plant traits",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the plant, part of the yield architecture",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of harvested grain to total above-ground biomass",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "YIELD ARCHITECTURE",
+      "type": "CONCEPT",
+      "description": "The set of key components, including water uptake and harvest index, that determine overall yield",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics, involved in groundnut breeding",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant converts water into biomass and yield",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "EVAPOTRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A major component of water use efficiency used as a selection criterion",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The total yield of pods in groundnut, influenced by water use efficiency",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "TRAIT-BASED APPROACH",
+      "type": "METHOD",
+      "description": "A selection method using surrogates of evapotranspiration efficiency",
+      "source_id": "paper_2578"
+    },
+    {
+      "name": "YIELD-BASED APPROACH",
+      "type": "METHOD",
+      "description": "A selection method based on yield performance under water deficit",
+      "source_id": "paper_2578"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DREB1A",
+      "target": "WATER UPTAKE",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "DREB1A",
+      "target": "ROOT/SHOOT RATIO",
+      "description": "modifies",
+      "weight": "9",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "WATER UPTAKE",
+      "target": "GROUNDNUT",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "ROOT/SHOOT RATIO",
+      "target": "GROUNDNUT",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "WATER UPTAKE",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "ROOT/SHOOT RATIO",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "WATER UPTAKE",
+      "target": "YIELD ARCHITECTURE",
+      "description": "is a component of",
+      "weight": "7",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "BIOMASS",
+      "target": "YIELD ARCHITECTURE",
+      "description": "is a component of",
+      "weight": "7",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "HARVEST INDEX",
+      "target": "YIELD ARCHITECTURE",
+      "description": "is a component of",
+      "weight": "7",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "GROUNDNUT",
+      "description": "develops breeding lines for",
+      "weight": "9",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "WATER USE EFFICIENCY",
+      "target": "GROUNDNUT",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "EVAPOTRANSPIRATION EFFICIENCY",
+      "target": "WATER USE EFFICIENCY",
+      "description": "is a major component of",
+      "weight": "9",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "WATER USE EFFICIENCY",
+      "target": "POD YIELD",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "POD YIELD",
+      "target": "WATER DEFICIT",
+      "description": "is measured under",
+      "weight": "8",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "TRAIT-BASED APPROACH",
+      "target": "EVAPOTRANSPIRATION EFFICIENCY",
+      "description": "uses as selection criteria",
+      "weight": "7",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "YIELD-BASED APPROACH",
+      "target": "POD YIELD",
+      "description": "uses as selection criteria",
+      "weight": "7",
+      "source_id": "paper_2578"
+    },
+    {
+      "source": "EVAPOTRANSPIRATION EFFICIENCY",
+      "target": "HARVEST INDEX",
+      "description": "has a negative link with",
+      "weight": "8",
+      "source_id": "paper_2578"
+    }
+  ]
+}

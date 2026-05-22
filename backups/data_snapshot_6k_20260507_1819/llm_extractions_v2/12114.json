@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "SESAME",
+      "type": "CROP",
+      "description": "The target crop (Sesamum indicum L.) used in the pilot-scale genotyping study",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "RAD-SEQ",
+      "type": "METHOD",
+      "description": "Restriction site-associated DNA sequencing used to reduce genome sequence representation",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "SINGLE-DIGEST RAD-SEQ",
+      "type": "METHOD",
+      "description": "A RAD-seq protocol using a single restriction enzyme to generate markers",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "DOUBLE-DIGEST RAD-SEQ",
+      "type": "METHOD",
+      "description": "A RAD-seq protocol using two restriction enzymes to generate markers",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "GBS STRATEGY",
+      "type": "METHOD",
+      "description": "Genotyping-by-sequencing strategy used to generate RAD markers",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "K-MER COUNT",
+      "type": "CONCEPT",
+      "description": "A bioinformatics parameter used to assess performance and identify differences between samples",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "GENE PRESENCE ABSENCE VARIATION",
+      "type": "CONCEPT",
+      "description": "A type of genetic variation (PAV) used to analyze differences between sesame samples",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "VARIANT CALLING",
+      "type": "METHOD",
+      "description": "The process of identifying genetic variants from sequencing datasets",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "SNP COUNT",
+      "type": "GENE_MARKER",
+      "description": "The number of single nucleotide polymorphisms used to identify diverse samples",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "HETEROZYGOSITY",
+      "type": "TRAIT",
+      "description": "A measure of genetic variation used to identify representative samples in the population",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "NJ",
+      "type": "METHOD",
+      "description": "Neighbor-Joining analysis used to identify diverse and representative samples",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "PCA",
+      "type": "METHOD",
+      "description": "Principal Component Analysis used to identify diverse and representative samples",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The genetic variation within the sesame population used to identify representative samples",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "POPULATION STRUCTURE",
+      "type": "CONCEPT",
+      "description": "The distribution of genetic variation within the sesame population",
+      "source_id": "paper_12114"
+    },
+    {
+      "name": "CORE DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The process of developing a core collection of representative samples for molecular analysis",
+      "source_id": "paper_12114"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RAD-SEQ",
+      "target": "SESAME",
+      "description": "used to genotype",
+      "weight": "10",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "SINGLE-DIGEST RAD-SEQ",
+      "target": "RAD-SEQ",
+      "description": "is a specific protocol of",
+      "weight": "10",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "DOUBLE-DIGEST RAD-SEQ",
+      "target": "RAD-SEQ",
+      "description": "is a specific protocol of",
+      "weight": "10",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "GBS STRATEGY",
+      "target": "RAD-SEQ",
+      "description": "used to generate markers for",
+      "weight": "9",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "K-MER COUNT",
+      "target": "SESAME",
+      "description": "used to analyze differences in",
+      "weight": "8",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "GENE PRESENCE ABSENCE VARIATION",
+      "target": "SESAME",
+      "description": "used to analyze differences in",
+      "weight": "8",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "VARIANT CALLING",
+      "target": "SINGLE-DIGEST RAD-SEQ",
+      "description": "performed on data from",
+      "weight": "9",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "VARIANT CALLING",
+      "target": "DOUBLE-DIGEST RAD-SEQ",
+      "description": "performed on data from",
+      "weight": "9",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "SNP COUNT",
+      "target": "DIVERSITY",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "HETEROZYGOSITY",
+      "target": "DIVERSITY",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "NJ",
+      "target": "DIVERSITY",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "PCA",
+      "target": "DIVERSITY",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "RAD-SEQ",
+      "target": "POPULATION STRUCTURE",
+      "description": "used for analysis of",
+      "weight": "9",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "RAD-SEQ",
+      "target": "CORE DEVELOPMENT",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_12114"
+    },
+    {
+      "source": "DIVERSITY",
+      "target": "SESAME",
+      "description": "measured within",
+      "weight": "10",
+      "source_id": "paper_12114"
+    }
+  ]
+}

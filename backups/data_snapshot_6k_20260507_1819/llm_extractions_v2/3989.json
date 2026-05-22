@@ -1,0 +1,352 @@
+{
+  "entities": [
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological oxidation of ammonia resulting in the transformation of NH4+ into NO3-",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "AMMONIUM",
+      "type": "CONCEPT",
+      "description": "A relatively immobile form of nitrogen (NH4+)",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "NITRATE",
+      "type": "CONCEPT",
+      "description": "A highly mobile form of nitrogen (NO3-) vulnerable to leaching and denitrification",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "LEACHING",
+      "type": "CONDITION",
+      "description": "The loss of nitrate from the soil system",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "DENITRIFICATION",
+      "type": "CONDITION",
+      "description": "The loss of nitrogen through the process of denitrification",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "NITROGEN-USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which nitrogen is utilized in agricultural systems",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "BIOLOGICAL NITRIFICATION INHIBITION",
+      "type": "CONCEPT",
+      "description": "The ability of certain plants to suppress soil nitrifier function by releasing inhibitors from roots",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "NITROSOMONAS EUROPAEA",
+      "type": "ORGANISM",
+      "description": "A bacterium used in a recombinant luminescent form to develop a BNI assay",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "BNI ASSAY",
+      "type": "METHOD",
+      "description": "An assay developed using recombinant luminescent Nitrosomonas europaea to detect and quantify BNI activity",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "BNI ACTIVITY",
+      "type": "TRAIT",
+      "description": "The inhibitory effects in plant soil systems, expressed in ATU",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "ATU",
+      "type": "CONCEPT",
+      "description": "Allylthiourea unit, the unit used to express BNI activity",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The plant species studied for its biological nitrification inhibition potential",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "ROOT EXUDATES",
+      "type": "CONCEPT",
+      "description": "Substances released by sorghum roots into a water-based medium",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "BNI CAPACITY",
+      "type": "TRAIT",
+      "description": "The BNI activity per gram of root dry weight per day",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "GROWTH STAGE",
+      "type": "CONDITION",
+      "description": "The developmental stage of the plant which affects BNI capacity",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "HYDROPHOBIC COMPOUNDS",
+      "type": "CONCEPT",
+      "description": "Compounds released by sorghum roots that are recoverable by dichloromethane wash",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "DICHLOROMETHANE WASH",
+      "type": "METHOD",
+      "description": "The process of washing roots with dichloromethane to recover hydrophobic compounds",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "HPLC FRACTIONATION",
+      "type": "METHOD",
+      "description": "Activity-guided high-performance liquid chromatography used to isolate active constituents",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "FLAVONOID",
+      "type": "CONCEPT",
+      "description": "A class of plant secondary metabolites to which sakuranetin belongs",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "SAKURANETIN",
+      "type": "CONCEPT",
+      "description": "A flavonoid identified as an active constituent with BNI activity in root exudates",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "SORGOLEONE",
+      "type": "CONCEPT",
+      "description": "An active constituent with BNI activity isolated from DCM-root wash",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "NITROSOMONAS ACTIVITY",
+      "type": "TRAIT",
+      "description": "The biological activity of Nitrosomonas bacteria inhibited by BNI compounds",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "GENETIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The differences in sorgoleone production capacity among sorghum genotypes",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "The natural environment where wild-sorghum species showed high-BNI capacity",
+      "source_id": "paper_3989"
+    },
+    {
+      "name": "NITROGEN FOOTPRINT",
+      "type": "CONCEPT",
+      "description": "The total nitrogen loss and environmental impact from agricultural systems",
+      "source_id": "paper_3989"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITRIFICATION",
+      "target": "AMMONIUM",
+      "description": "transforms",
+      "weight": "10",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "NITRIFICATION",
+      "target": "NITRATE",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "NITRATE",
+      "target": "LEACHING",
+      "description": "is vulnerable to",
+      "weight": "8",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "NITRATE",
+      "target": "DENITRIFICATION",
+      "description": "is vulnerable to",
+      "weight": "8",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "LEACHING",
+      "target": "NITROGEN-USE EFFICIENCY",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "DENITRIFICATION",
+      "target": "NITROGEN-USE EFFICIENCY",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITION",
+      "target": "NITRIFICATION",
+      "description": "suppresses",
+      "weight": "10",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "BNI ASSAY",
+      "target": "NITROSOMONAS EUROPAEA",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "BNI ASSAY",
+      "target": "BNI ACTIVITY",
+      "description": "detects and quantifies",
+      "weight": "10",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "BNI ACTIVITY",
+      "target": "ATU",
+      "description": "is expressed in",
+      "weight": "10",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ROOT EXUDATES",
+      "description": "releases",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "BNI CAPACITY",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "ROOT EXUDATES",
+      "target": "BNI ACTIVITY",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "GROWTH STAGE",
+      "target": "BNI CAPACITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HYDROPHOBIC COMPOUNDS",
+      "description": "releases",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "DICHLOROMETHANE WASH",
+      "target": "HYDROPHOBIC COMPOUNDS",
+      "description": "recovers",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "HPLC FRACTIONATION",
+      "target": "SAKURANETIN",
+      "description": "isolates",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "ROOT EXUDATES",
+      "target": "SAKURANETIN",
+      "description": "contains",
+      "weight": "8",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "SAKURANETIN",
+      "target": "BNI ACTIVITY",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "DICHLOROMETHANE WASH",
+      "target": "SORGOLEONE",
+      "description": "isolates",
+      "weight": "8",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "SORGOLEONE",
+      "target": "BNI ACTIVITY",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "SAKURANETIN",
+      "target": "NITROSOMONAS ACTIVITY",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "SORGOLEONE",
+      "target": "NITROSOMONAS ACTIVITY",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SORGOLEONE",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "GENETIC VARIABILITY",
+      "target": "SORGOLEONE",
+      "description": "affects production capacity of",
+      "weight": "8",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "FIELD CONDITIONS",
+      "target": "BNI CAPACITY",
+      "description": "context for observing high capacity",
+      "weight": "7",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "BIOLOGICAL NITRIFICATION INHIBITION",
+      "target": "NITROGEN FOOTPRINT",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3989"
+    },
+    {
+      "source": "SAKURANETIN",
+      "target": "FLAVONOID",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3989"
+    }
+  ]
+}

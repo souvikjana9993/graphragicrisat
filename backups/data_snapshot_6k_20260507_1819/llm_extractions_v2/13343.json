@@ -1,0 +1,193 @@
+{
+  "entities": [
+    {
+      "name": "MICROPLASTICS",
+      "type": "CONCEPT",
+      "description": "Emerging global threat in all ecosystems with potential negative effects through multiple exposure pathways",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "Country where the study on used tyres and soil conservation was conducted",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "USED TYRES",
+      "type": "CONCEPT",
+      "description": "Waste material repurposed to combat environmental pollution and used in agricultural plots",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "ENVIRONMENTAL POLLUTION",
+      "type": "CONDITION",
+      "description": "The contamination of the environment by waste materials like used tyres",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "INFILTRATION",
+      "type": "TRAIT",
+      "description": "The process by which water on the ground surface enters the soil",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "RUNOFF",
+      "type": "TRAIT",
+      "description": "The draining away of water from the surface of an area of land",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "MOISTURE",
+      "type": "TRAIT",
+      "description": "The amount of water contained in the soil",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "SOIL LOSS",
+      "type": "TRAIT",
+      "description": "The removal of the top layer of soil, often by erosion",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "PNEUSOL",
+      "type": "METHOD",
+      "description": "Agricultural technique involving gathering old tyres, cutting them into arcs, and positioning them in ridges to conserve soil and water",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "EROSION CRUSTED SOIL",
+      "type": "CONDITION",
+      "description": "Soil surface that has developed a hard crust due to erosion, used as the experimental site",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "DJINDJILA",
+      "type": "LOCATION",
+      "description": "Specific location in Mali where the experimental plots were installed",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "AGRICULTURAL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of producing crops, which is stimulated by improved soil moisture and reduced runoff",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shift in temperatures and weather patterns causing harmful effects for farmers",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "SOIL AMENDMENT",
+      "type": "METHOD",
+      "description": "The process of adding materials to soil to improve its properties",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "DEGRADED LAND",
+      "type": "CONDITION",
+      "description": "Land that has lost its biological or economic productivity",
+      "source_id": "paper_13343"
+    },
+    {
+      "name": "CIRCULAR ECONOMY",
+      "type": "CONCEPT",
+      "description": "Economic system aimed at eliminating waste and the continual use of resources by repurposing waste into resources",
+      "source_id": "paper_13343"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PNEUSOL",
+      "target": "RUNOFF",
+      "description": "reduces the amount of water runoff",
+      "weight": "10",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "PNEUSOL",
+      "target": "MOISTURE",
+      "description": "increases average soil moisture",
+      "weight": "10",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "PNEUSOL",
+      "target": "SOIL LOSS",
+      "description": "reduces the amount of soil lost",
+      "weight": "10",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "PNEUSOL",
+      "target": "INFILTRATION",
+      "description": "improves water infiltration",
+      "weight": "10",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "PNEUSOL",
+      "target": "USED TYRES",
+      "description": "utilizes used tyres as the primary material",
+      "weight": "10",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "PNEUSOL",
+      "target": "AGRICULTURAL PRODUCTION",
+      "description": "stimulates agricultural production",
+      "weight": "8",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "PNEUSOL",
+      "target": "DEGRADED LAND",
+      "description": "serves as an effective agricultural production technique on",
+      "weight": "9",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "USED TYRES",
+      "target": "ENVIRONMENTAL POLLUTION",
+      "description": "contributes to environmental pollution when not reused",
+      "weight": "8",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "USED TYRES",
+      "target": "CIRCULAR ECONOMY",
+      "description": "repurposing them promotes a circular economy",
+      "weight": "9",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "MALI",
+      "target": "DJINDJILA",
+      "description": "contains the location",
+      "weight": "10",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "AGRICULTURAL PRODUCTION",
+      "description": "exerts harmful effects on",
+      "weight": "7",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "SOIL AMENDMENT",
+      "target": "PNEUSOL",
+      "description": "combined with to make the technique more effective",
+      "weight": "7",
+      "source_id": "paper_13343"
+    },
+    {
+      "source": "PNEUSOL",
+      "target": "EROSION CRUSTED SOIL",
+      "description": "was tested on",
+      "weight": "9",
+      "source_id": "paper_13343"
+    }
+  ]
+}

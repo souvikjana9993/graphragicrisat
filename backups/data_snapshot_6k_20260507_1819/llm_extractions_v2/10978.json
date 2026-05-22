@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "GFSAD",
+      "type": "METHOD",
+      "description": "Global Food Security-support Analysis Data product providing cropland extent data of the globe for nominal year 2015 at 30 meter resolution",
+      "source_id": "paper_10978"
+    },
+    {
+      "name": "CROPLAND EXTENT",
+      "type": "CONCEPT",
+      "description": "The spatial extent of agricultural cropland across the globe",
+      "source_id": "paper_10978"
+    },
+    {
+      "name": "GLOBE",
+      "type": "LOCATION",
+      "description": "The entire Earth",
+      "source_id": "paper_10978"
+    },
+    {
+      "name": "POLICYMAKING",
+      "type": "CONCEPT",
+      "description": "The process of creating policies based on baseline data",
+      "source_id": "paper_10978"
+    },
+    {
+      "name": "WATER SUSTAINABILITY",
+      "type": "CONCEPT",
+      "description": "The long-term maintenance of water resources",
+      "source_id": "paper_10978"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to sufficient food",
+      "source_id": "paper_10978"
+    },
+    {
+      "name": "GFSAD30VAL",
+      "type": "METHOD",
+      "description": "The GFSAD30 Validation data product used for independent accuracy assessment and validation of cropland extent products",
+      "source_id": "paper_10978"
+    },
+    {
+      "name": "ACCURACY ASSESSMENT",
+      "type": "METHOD",
+      "description": "The process of evaluating the correctness of cropland extent products",
+      "source_id": "paper_10978"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GFSAD",
+      "target": "CROPLAND EXTENT",
+      "description": "provides data on",
+      "weight": "10",
+      "source_id": "paper_10978"
+    },
+    {
+      "source": "GFSAD",
+      "target": "GLOBE",
+      "description": "covers",
+      "weight": "10",
+      "source_id": "paper_10978"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "POLICYMAKING",
+      "description": "is critical for",
+      "weight": "8",
+      "source_id": "paper_10978"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "WATER SUSTAINABILITY",
+      "description": "is used in studies pertaining to",
+      "weight": "7",
+      "source_id": "paper_10978"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "FOOD SECURITY",
+      "description": "is used in studies pertaining to",
+      "weight": "7",
+      "source_id": "paper_10978"
+    },
+    {
+      "source": "GFSAD30VAL",
+      "target": "CROPLAND EXTENT",
+      "description": "provides validation of",
+      "weight": "10",
+      "source_id": "paper_10978"
+    },
+    {
+      "source": "GFSAD30VAL",
+      "target": "ACCURACY ASSESSMENT",
+      "description": "provides",
+      "weight": "10",
+      "source_id": "paper_10978"
+    }
+  ]
+}

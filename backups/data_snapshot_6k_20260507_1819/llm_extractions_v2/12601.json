@@ -1,0 +1,255 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the target crop for yield improvement",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "BIOTIC AND ABIOTIC STRESSES",
+      "type": "CONDITION",
+      "description": "Constraints that limit the yield potential of chickpea",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "NEXT-GENERATION SEQUENCING",
+      "type": "METHOD",
+      "description": "Technology used to obtain genomic data for genetic gain",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "STATISTICAL MODELING",
+      "type": "METHOD",
+      "description": "Advanced modeling used with sequencing to increase genetic gain",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "WHOLE GENOME RESEQUENCING",
+      "type": "METHOD",
+      "description": "Method used to obtain genomic data from breeding lines",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms discovered in the chickpea genome",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "POPULATION STRUCTURE",
+      "type": "CONCEPT",
+      "description": "Analysis revealing distinct groups of breeding lines and allele presence",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "GWAS",
+      "type": "METHOD",
+      "description": "Genome-wide association studies used to identify SNPs associated with traits",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The primary agricultural trait being analyzed and predicted",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "FIELD ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "The settings where phenotyping for grain yield occurs",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "NUCLEOTIDE DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The level of nucleotide variation within the genome",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "LINKAGE DISEQUILIBRIUM",
+      "type": "CONCEPT",
+      "description": "The non-random association of alleles at different loci",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "SELECTIVE BREEDING",
+      "type": "METHOD",
+      "description": "The process of breeding for yield or other specific traits",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "C. ECHINOSPERMUM",
+      "type": "ORGANISM",
+      "description": "A wild relative of chickpea used for introducing resistance",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "PHYTOPHTHORA ROOT ROT RESISTANCE",
+      "type": "TRAIT",
+      "description": "Resistance to root rot introduced via introgression",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "CHROMOSOME 6",
+      "type": "CONCEPT",
+      "description": "The genomic location of the introgression segment from C. echinospermum",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "LINKAGE DRAG",
+      "type": "CONCEPT",
+      "description": "The unintended reduction of yield due to linked genes during introgression",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between genetic makeup and environment affecting yield prediction",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "GENOMIC PREDICTION",
+      "type": "METHOD",
+      "description": "The use of genomic markers to predict the phenotype of breeding lines",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "SNP FUNCTIONAL ANNOTATION",
+      "type": "METHOD",
+      "description": "The process of categorizing SNPs based on their genomic locations",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "REGULATORY REGIONS",
+      "type": "CONCEPT",
+      "description": "Genomic locations used as a subset for SNP functional annotation",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "EXOME",
+      "type": "CONCEPT",
+      "description": "The protein-coding region of the genome used as a subset for SNP functional annotation",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "ALTERNATIVE SPLICE SITES",
+      "type": "CONCEPT",
+      "description": "Genomic locations used as a subset for SNP functional annotation",
+      "source_id": "paper_12601"
+    },
+    {
+      "name": "AUSTRALIA",
+      "type": "LOCATION",
+      "description": "The location of the chickpea breeding program and cultivars",
+      "source_id": "paper_12601"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "BIOTIC AND ABIOTIC STRESSES",
+      "description": "limited by",
+      "weight": "8",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "WHOLE GENOME RESEQUENCING",
+      "target": "SNPS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "GWAS",
+      "target": "SNPS",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "SNPS",
+      "target": "GRAIN YIELD",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "SELECTIVE BREEDING",
+      "target": "GRAIN YIELD",
+      "description": "targets",
+      "weight": "7",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "C. ECHINOSPERMUM",
+      "target": "PHYTOPHTHORA ROOT ROT RESISTANCE",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "PHYTOPHTHORA ROOT ROT RESISTANCE",
+      "target": "CHROMOSOME 6",
+      "description": "located on",
+      "weight": "9",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "LINKAGE DRAG",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "target": "GENOMIC PREDICTION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "SNP FUNCTIONAL ANNOTATION",
+      "target": "GENOMIC PREDICTION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "SNP FUNCTIONAL ANNOTATION",
+      "target": "REGULATORY REGIONS",
+      "description": "categorizes by",
+      "weight": "9",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "SNP FUNCTIONAL ANNOTATION",
+      "target": "EXOME",
+      "description": "categorizes by",
+      "weight": "9",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "SNP FUNCTIONAL ANNOTATION",
+      "target": "ALTERNATIVE SPLICE SITES",
+      "description": "categorizes by",
+      "weight": "9",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "GENOMIC PREDICTION",
+      "target": "GRAIN YIELD",
+      "description": "predicts",
+      "weight": "10",
+      "source_id": "paper_12601"
+    },
+    {
+      "source": "AUSTRALIA",
+      "target": "CHICKPEA",
+      "description": "location of breeding",
+      "weight": "7",
+      "source_id": "paper_12601"
+    }
+  ]
+}

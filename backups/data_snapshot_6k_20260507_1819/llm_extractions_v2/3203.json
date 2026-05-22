@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop produced in China)",
+      "source_id": "paper_3203"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "A country and major producer of groundnut)",
+      "source_id": "paper_3203"
+    },
+    {
+      "name": "ROOT-KNOT DISEASE",
+      "type": "CONDITION",
+      "description": "A biotic stress affecting groundnut production)",
+      "source_id": "paper_3203"
+    },
+    {
+      "name": "MELOIDOGYNE SPECIES",
+      "type": "ORGANISM",
+      "description": "The causal agent of root-knot disease)",
+      "source_id": "paper_3203"
+    },
+    {
+      "name": "ABIOTIC AND BIOTIC STRESSES",
+      "type": "CONCEPT",
+      "description": "Factors that affect groundnut production)",
+      "source_id": "paper_3203"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "CHINA",
+      "description": "produced in",
+      "weight": "10)",
+      "source_id": "paper_3203"
+    },
+    {
+      "source": "ROOT-KNOT DISEASE",
+      "target": "GROUNDNUT",
+      "description": "affects production of",
+      "weight": "9)",
+      "source_id": "paper_3203"
+    },
+    {
+      "source": "MELOIDOGYNE SPECIES",
+      "target": "ROOT-KNOT DISEASE",
+      "description": "causes",
+      "weight": "10)",
+      "source_id": "paper_3203"
+    },
+    {
+      "source": "ABIOTIC AND BIOTIC STRESSES",
+      "target": "GROUNDNUT",
+      "description": "affect production of",
+      "weight": "8",
+      "source_id": "paper_3203"
+    }
+  ]
+}

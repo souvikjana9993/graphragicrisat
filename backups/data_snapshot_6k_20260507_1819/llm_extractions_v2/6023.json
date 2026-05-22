@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "An important component of the national food supply in Malawi, providing nutritional value, cash, and soil enrichment.",
+      "source_id": "paper_6023"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "The country where groundnut production and competitiveness are being assessed.",
+      "source_id": "paper_6023"
+    },
+    {
+      "name": "POLICY ANALYSIS MATRIX",
+      "type": "METHOD",
+      "description": "A methodology used to analyze the private and social profitability of groundnut production.",
+      "source_id": "paper_6023"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The process by which groundnut enriches the soil with nitrogen.",
+      "source_id": "paper_6023"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The volume of groundnut produced, which has been low due to the use of unimproved seeds.",
+      "source_id": "paper_6023"
+    },
+    {
+      "name": "UNIMPROVED SEED",
+      "type": "CONCEPT",
+      "description": "Seeds that have not been improved, contributing to low average yields.",
+      "source_id": "paper_6023"
+    },
+    {
+      "name": "PROTECTIONIST POLICIES",
+      "type": "CONCEPT",
+      "description": "Policies that would raise domestic groundnut prices above import parity prices.",
+      "source_id": "paper_6023"
+    },
+    {
+      "name": "IMPORT PARITY PRICES",
+      "type": "CONCEPT",
+      "description": "Prices determined in world markets used as a benchmark for domestic price analysis.",
+      "source_id": "paper_6023"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "MALAWI",
+      "description": "is produced in",
+      "weight": "10",
+      "source_id": "paper_6023"
+    },
+    {
+      "source": "POLICY ANALYSIS MATRIX",
+      "target": "GROUNDNUT",
+      "description": "is used to analyze the production of",
+      "weight": "9",
+      "source_id": "paper_6023"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "enriches soil through",
+      "weight": "8",
+      "source_id": "paper_6023"
+    },
+    {
+      "source": "UNIMPROVED SEED",
+      "target": "YIELD",
+      "description": "results in low",
+      "weight": "9",
+      "source_id": "paper_6023"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "YIELD",
+      "description": "is characterized by",
+      "weight": "8",
+      "source_id": "paper_6023"
+    },
+    {
+      "source": "POLICY ANALYSIS MATRIX",
+      "target": "PROTECTIONIST POLICIES",
+      "description": "provides evidence against the necessity of",
+      "weight": "7",
+      "source_id": "paper_6023"
+    },
+    {
+      "source": "PROTECTIONIST POLICIES",
+      "target": "IMPORT PARITY PRICES",
+      "description": "aims to raise prices above",
+      "weight": "8",
+      "source_id": "paper_6023"
+    }
+  ]
+}

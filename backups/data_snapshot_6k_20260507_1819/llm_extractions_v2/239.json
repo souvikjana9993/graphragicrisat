@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Legume samples used for biochemical analysis of grain quality",
+      "source_id": "paper_239"
+    },
+    {
+      "name": "PROTEIN",
+      "type": "TRAIT",
+      "description": "Biochemical content analyzed in chickpea samples",
+      "source_id": "paper_239"
+    },
+    {
+      "name": "SULPHUR AMINOACIDS",
+      "type": "TRAIT",
+      "description": "Biochemical content analyzed in chickpea samples",
+      "source_id": "paper_239"
+    },
+    {
+      "name": "TRYPTOPHAN",
+      "type": "TRAIT",
+      "description": "Biochemical content analyzed in chickpea samples",
+      "source_id": "paper_239"
+    },
+    {
+      "name": "DESI",
+      "type": "CONCEPT",
+      "description": "A specific cultivar type of chickpea",
+      "source_id": "paper_239"
+    },
+    {
+      "name": "KABULI",
+      "type": "CONCEPT",
+      "description": "A specific cultivar type of chickpea",
+      "source_id": "paper_239"
+    },
+    {
+      "name": "ANALYSIS",
+      "type": "METHOD",
+      "description": "The process of analyzing protein, sulphur aminoacids, and tryptophan contents",
+      "source_id": "paper_239"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The organization conducting the grain quality and biochemistry program",
+      "source_id": "paper_239"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ANALYSIS",
+      "target": "CHICKPEA",
+      "description": "performed on",
+      "weight": "10",
+      "source_id": "paper_239"
+    },
+    {
+      "source": "ANALYSIS",
+      "target": "PROTEIN",
+      "description": "measured",
+      "weight": "10",
+      "source_id": "paper_239"
+    },
+    {
+      "source": "ANALYSIS",
+      "target": "SULPHUR AMINOACIDS",
+      "description": "measured",
+      "weight": "10",
+      "source_id": "paper_239"
+    },
+    {
+      "source": "ANALYSIS",
+      "target": "TRYPTOPHAN",
+      "description": "measured",
+      "weight": "10",
+      "source_id": "paper_239"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "DESI",
+      "description": "has cultivar",
+      "weight": "9",
+      "source_id": "paper_239"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "KABULI",
+      "description": "has cultivar",
+      "weight": "9",
+      "source_id": "paper_239"
+    },
+    {
+      "source": "DESI",
+      "target": "KABULI",
+      "description": "showed differences in biochemical content",
+      "weight": "7",
+      "source_id": "paper_239"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "ANALYSIS",
+      "description": "conducted",
+      "weight": "8",
+      "source_id": "paper_239"
+    }
+  ]
+}

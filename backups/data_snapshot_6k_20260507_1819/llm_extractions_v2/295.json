@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop studied for its response to soil salinity",
+      "source_id": "paper_295"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "High salt concentration in the soil affecting plant growth",
+      "source_id": "paper_295"
+    },
+    {
+      "name": "NORMAL SOIL",
+      "type": "CONDITION",
+      "description": "Soil without excessive salt levels used as a control",
+      "source_id": "paper_295"
+    },
+    {
+      "name": "SEED PROTEIN CONTENT",
+      "type": "TRAIT",
+      "description": "The percentage of protein found in the seeds of the crop",
+      "source_id": "paper_295"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The weight or dimensions of the seeds, measured as 100-seed weight",
+      "source_id": "paper_295"
+    },
+    {
+      "name": "GERMINABILITY",
+      "type": "TRAIT",
+      "description": "The ability of the seeds to germinate under specific conditions",
+      "source_id": "paper_295"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SALINITY",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "Reduces the average seed protein content in chickpea",
+      "weight": "9",
+      "source_id": "paper_295"
+    },
+    {
+      "source": "SALINITY",
+      "target": "SEED SIZE",
+      "description": "Reduces the 100-seed weight in chickpea",
+      "weight": "9",
+      "source_id": "paper_295"
+    },
+    {
+      "source": "SALINITY",
+      "target": "GERMINABILITY",
+      "description": "Causes poor germination in chickpea",
+      "weight": "9",
+      "source_id": "paper_295"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED PROTEIN CONTENT",
+      "description": "Possesses seed protein content as a measurable trait",
+      "weight": "10",
+      "source_id": "paper_295"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED SIZE",
+      "description": "Possesses seed size as a measurable trait",
+      "weight": "10",
+      "source_id": "paper_295"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "GERMINABILITY",
+      "description": "Possesses germinability as a measurable trait",
+      "weight": "10",
+      "source_id": "paper_295"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SALINITY",
+      "description": "Grown under saline soil conditions",
+      "weight": "8",
+      "source_id": "paper_295"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "NORMAL SOIL",
+      "description": "Grown under normal soil conditions",
+      "weight": "8",
+      "source_id": "paper_295"
+    }
+  ]
+}

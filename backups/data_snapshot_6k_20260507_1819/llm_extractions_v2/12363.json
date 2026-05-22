@@ -1,0 +1,336 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop severely affected by salinity",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "High salt concentration in soil that affects plant growth and yield",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the crop",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "LNCRNAS",
+      "type": "CONCEPT",
+      "description": "Long non-coding RNAs that regulate gene expression and salt tolerance mechanisms",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "SALT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant genotype to withstand salt stress",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "DEEP SEQUENCING",
+      "type": "METHOD",
+      "description": "High-throughput sequencing used to analyze flower transcriptomes",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "TRANSCRIPTOME ANALYSIS",
+      "type": "METHOD",
+      "description": "The study of the complete set of RNA transcripts in a sample",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "RIL POPULATION",
+      "type": "CONCEPT",
+      "description": "Recombinant Inbred Line population used to study contrasting salt responsiveness",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "JG11",
+      "type": "ORGANISM",
+      "description": "A salt-tolerant chickpea genotype",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "ICCV2",
+      "type": "ORGANISM",
+      "description": "A salt-sensitive chickpea genotype",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "POLYADENYLATED RNA",
+      "type": "CONCEPT",
+      "description": "RNA libraries containing polyadenylated transcripts",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "NON-POLYADENYLATED RNA",
+      "type": "CONCEPT",
+      "description": "RNA libraries containing non-polyadenylated transcripts",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "AB INITIO TRANSCRIPTOME ASSEMBLY",
+      "type": "METHOD",
+      "description": "The process of assembling transcripts from sequencing reads without a reference genome",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "SALT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress caused by salinity",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "POLY(A+) LNCRNAS",
+      "type": "CONCEPT",
+      "description": "Polyadenylated long non-coding RNAs involved in gene regulation",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "NATURALLY ANTISENSE TRANSCRIBED RNAS",
+      "type": "CONCEPT",
+      "description": "RNAs transcribed from the opposite strand of a gene, involved in silencing",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "POST-TRANSCRIPTIONAL MODIFICATION",
+      "type": "CONCEPT",
+      "description": "The modification of RNA after transcription has occurred",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "GENE SILENCING",
+      "type": "CONCEPT",
+      "description": "The regulation of gene expression by preventing the translation of mRNA",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "CO-EXPRESSION NETWORK ANALYSIS",
+      "type": "METHOD",
+      "description": "Computational analysis to identify interacting genes and lncRNAs",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "FLOWERING LOCUS (FLC)",
+      "type": "GENE_MARKER",
+      "description": "A gene that regulates the transition to flowering",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "CHROMATIN REMODELLING",
+      "type": "CONCEPT",
+      "description": "The modification of chromatin structure to regulate gene access",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "DNA METHYLATION",
+      "type": "CONCEPT",
+      "description": "A biochemical process that can repress gene transcription",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "TRAIT",
+      "description": "The process of flower development induced during salt stress",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "COOLAIR",
+      "type": "GENE_MARKER",
+      "description": "A reported lncRNA that controls flowering time",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "IPS1",
+      "type": "GENE_MARKER",
+      "description": "A reported lncRNA that controls flowering time",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "AT4",
+      "type": "GENE_MARKER",
+      "description": "A reported lncRNA that controls flowering time",
+      "source_id": "paper_12363"
+    },
+    {
+      "name": "FLOWERING TIME",
+      "type": "TRAIT",
+      "description": "The timing of flowering, acting as a salt tolerance mechanism",
+      "source_id": "paper_12363"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SALINITY",
+      "target": "YIELD",
+      "description": "severely affects",
+      "weight": "10",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "SALINITY",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "LNCRNAS",
+      "target": "SALT TOLERANCE",
+      "description": "influence mechanisms of",
+      "weight": "9",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "DEEP SEQUENCING",
+      "target": "LNCRNAS",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "TRANSCRIPTOME ANALYSIS",
+      "target": "LNCRNAS",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "RIL POPULATION",
+      "target": "JG11",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "RIL POPULATION",
+      "target": "ICCV2",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "JG11",
+      "target": "SALT TOLERANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "ICCV2",
+      "target": "SALT TOLERANCE",
+      "description": "lacks",
+      "weight": "10",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "AB INITIO TRANSCRIPTOME ASSEMBLY",
+      "target": "LNCRNAS",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "SALT STRESS",
+      "target": "LNCRNAS",
+      "description": "induces expression of",
+      "weight": "9",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "POLY(A+) LNCRNAS",
+      "target": "POST-TRANSCRIPTIONAL MODIFICATION",
+      "description": "involved in",
+      "weight": "8",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "POLY(A+) LNCRNAS",
+      "target": "GENE SILENCING",
+      "description": "involved in",
+      "weight": "8",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "NATURALLY ANTISENSE TRANSCRIBED RNAS",
+      "target": "POST-TRANSCRIPTIONAL MODIFICATION",
+      "description": "involved in",
+      "weight": "8",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "NATURALLY ANTISENSE TRANSCRIBED RNAS",
+      "target": "GENE SILENCING",
+      "description": "involved in",
+      "weight": "8",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "CO-EXPRESSION NETWORK ANALYSIS",
+      "target": "LNCRNAS",
+      "description": "revealed interactions of",
+      "weight": "9",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "LNCRNAS",
+      "target": "FLOWERING LOCUS (FLC)",
+      "description": "interact with",
+      "weight": "9",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "LNCRNAS",
+      "target": "CHROMATIN REMODELLING",
+      "description": "interact with",
+      "weight": "9",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "LNCRNAS",
+      "target": "DNA METHYLATION",
+      "description": "interact with",
+      "weight": "9",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "LNCRNAS",
+      "target": "FLOWERING",
+      "description": "induce",
+      "weight": "8",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "COOLAIR",
+      "target": "FLOWERING TIME",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "IPS1",
+      "target": "FLOWERING TIME",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "AT4",
+      "target": "FLOWERING TIME",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_12363"
+    },
+    {
+      "source": "FLOWERING TIME",
+      "target": "SALT TOLERANCE",
+      "description": "is a crucial mechanism for",
+      "weight": "8",
+      "source_id": "paper_12363"
+    }
+  ]
+}

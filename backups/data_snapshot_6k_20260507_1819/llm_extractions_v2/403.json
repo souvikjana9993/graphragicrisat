@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., a crop commonly grown on sandy soils in warm climates.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "SANDY SOILS",
+      "type": "CONDITION",
+      "description": "Type of soil where peanut is commonly grown.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "WARM CLIMATES",
+      "type": "CONDITION",
+      "description": "Environmental climate where peanut is commonly grown.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "WATER-DEFICIT",
+      "type": "CONDITION",
+      "description": "A condition that can impose a limitation on peanut yield.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the peanut plant.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The ratio of mass increase to water transpired.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "WELL-WATERED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental state used to measure transpiration efficiency in a greenhouse.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "SOIL DRYING",
+      "type": "CONDITION",
+      "description": "Environmental state used to measure transpiration efficiency outdoors in pots.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "GAS EXCHANGE PROPERTIES",
+      "type": "CONCEPT",
+      "description": "Physiological properties related to gas exchange in plants.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "FRACTION TRANSPIRABLE SOIL WATER",
+      "type": "TRAIT",
+      "description": "The soil water content at which the decline in transpiration with soil drying is observed.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "Controlled environment used for measuring transpiration efficiency and fraction transpirable soil water.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "OUTDOORS IN POTS",
+      "type": "LOCATION",
+      "description": "Environment used for measuring transpiration efficiency under soil drying conditions.",
+      "source_id": "paper_403"
+    },
+    {
+      "name": "SECOND-ORDER POLYNOMIAL",
+      "type": "METHOD",
+      "description": "A mathematical model used to describe the relationship between transpiration efficiency and the threshold for the decline in transpiration.",
+      "source_id": "paper_403"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "SANDY SOILS",
+      "description": "grown on",
+      "weight": "7",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "PEANUT",
+      "target": "WARM CLIMATES",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "WATER-DEFICIT",
+      "target": "YIELD",
+      "description": "limits",
+      "weight": "9",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "PEANUT",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "shows genotypic variation in",
+      "weight": "8",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "WELL-WATERED CONDITIONS",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "SOIL DRYING",
+      "description": "measured under",
+      "weight": "8",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "GAS EXCHANGE PROPERTIES",
+      "description": "related to",
+      "weight": "6",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "FRACTION TRANSPIRABLE SOIL WATER",
+      "description": "interacts with",
+      "weight": "8",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "FRACTION TRANSPIRABLE SOIL WATER",
+      "target": "SOIL DRYING",
+      "description": "measured during",
+      "weight": "8",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "WELL-WATERED CONDITIONS",
+      "target": "GREENHOUSE",
+      "description": "occur in",
+      "weight": "9",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "SOIL DRYING",
+      "target": "OUTDOORS IN POTS",
+      "description": "occur in",
+      "weight": "9",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "FRACTION TRANSPIRABLE SOIL WATER",
+      "target": "GREENHOUSE",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "SECOND-ORDER POLYNOMIAL",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "describes relationship for",
+      "weight": "7",
+      "source_id": "paper_403"
+    },
+    {
+      "source": "SECOND-ORDER POLYNOMIAL",
+      "target": "FRACTION TRANSPIRABLE SOIL WATER",
+      "description": "describes relationship for",
+      "weight": "7",
+      "source_id": "paper_403"
+    }
+  ]
+}

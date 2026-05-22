@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop species Arachis hypogaea L. studied for iron deficiency chlorosis resistance.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "IRON DEFICIENCY CHLOROSIS",
+      "type": "CONDITION",
+      "description": "A physiological disorder characterized by yellowing of leaves due to iron deficiency, often induced by calcareous soils.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "POT EXPERIMENT",
+      "type": "METHOD",
+      "description": "A controlled experimental setup using pots with factorial design to test genotypes under different soil conditions.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "NORMAL SOIL",
+      "type": "CONDITION",
+      "description": "Soil used as a control in the experiment to compare with calcareous soil.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "CALCAREOUS SOIL",
+      "type": "CONDITION",
+      "description": "Soil rich in calcium carbonate that typically induces iron deficiency chlorosis.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "VCR",
+      "type": "TRAIT",
+      "description": "Visual Chlorosis Rating, a trait used to measure the severity of iron deficiency chlorosis.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "SCMR",
+      "type": "TRAIT",
+      "description": "A trait measured to assess the response of groundnut genotypes to iron deficiency chlorosis.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "CHLOROPHYLL A",
+      "type": "TRAIT",
+      "description": "A primary photosynthetic pigment measured in groundnut leaves.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "CHLOROPHYLL B",
+      "type": "TRAIT",
+      "description": "An accessory photosynthetic pigment measured in groundnut leaves.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "TOTAL CHLOROPHYLL",
+      "type": "TRAIT",
+      "description": "The combined amount of chlorophyll a and b in the leaves.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "ACTIVE IRON CONTENT",
+      "type": "TRAIT",
+      "description": "The concentration of available iron in the leaf tissue.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "PEROXIDASE ACTIVITY",
+      "type": "TRAIT",
+      "description": "The specific activity of the peroxidase enzyme in the leaves, linked to IDC resistance.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total agricultural output of the groundnut genotypes.",
+      "source_id": "paper_10161"
+    },
+    {
+      "name": "YIELD COMPONENTS",
+      "type": "TRAIT",
+      "description": "Specific measurable factors that contribute to the overall yield of the crop.",
+      "source_id": "paper_10161"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "IRON DEFICIENCY CHLOROSIS",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "POT EXPERIMENT",
+      "target": "GROUNDNUT",
+      "description": "is used to study",
+      "weight": "9",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "POT EXPERIMENT",
+      "target": "NORMAL SOIL",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "POT EXPERIMENT",
+      "target": "CALCAREOUS SOIL",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "IRON DEFICIENCY CHLOROSIS",
+      "target": "VCR",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "IRON DEFICIENCY CHLOROSIS",
+      "target": "SCMR",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "IRON DEFICIENCY CHLOROSIS",
+      "target": "CHLOROPHYLL A",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "IRON DEFICIENCY CHLOROSIS",
+      "target": "CHLOROPHYLL B",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "IRON DEFICIENCY CHLOROSIS",
+      "target": "TOTAL CHLOROPHYLL",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "IRON DEFICIENCY CHLOROSIS",
+      "target": "ACTIVE IRON CONTENT",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "IRON DEFICIENCY CHLOROSIS",
+      "target": "PEROXIDASE ACTIVITY",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "IRON DEFICIENCY CHLOROSIS",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "IRON DEFICIENCY CHLOROSIS",
+      "target": "YIELD COMPONENTS",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10161"
+    },
+    {
+      "source": "PEROXIDASE ACTIVITY",
+      "target": "ACTIVE IRON CONTENT",
+      "description": "positively correlated with",
+      "weight": "10",
+      "source_id": "paper_10161"
+    }
+  ]
+}

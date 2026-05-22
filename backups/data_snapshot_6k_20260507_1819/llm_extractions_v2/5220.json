@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop species being studied",
+      "source_id": "paper_5220"
+    },
+    {
+      "name": "CAJANUS CAJAN",
+      "type": "ORGANISM",
+      "description": "The scientific name of pigeonpea",
+      "source_id": "paper_5220"
+    },
+    {
+      "name": "OPEN CARPEL MUTANT",
+      "type": "TRAIT",
+      "description": "A genetically controlled developmental defect in the carpel",
+      "source_id": "paper_5220"
+    },
+    {
+      "name": "ICPL 24",
+      "type": "CONCEPT",
+      "description": "A cultivar of pigeonpea in which the mutant was identified",
+      "source_id": "paper_5220"
+    },
+    {
+      "name": "INHERITANCE STUDIES",
+      "type": "METHOD",
+      "description": "Genetic analysis performed across multiple generations to determine inheritance patterns",
+      "source_id": "paper_5220"
+    },
+    {
+      "name": "F1 F2 AND BC1 GENERATIONS",
+      "type": "CONCEPT",
+      "description": "The specific plant generations used for inheritance analysis",
+      "source_id": "paper_5220"
+    },
+    {
+      "name": "SINGLE RECESSIVE GENE MUTATION",
+      "type": "CONCEPT",
+      "description": "The genetic basis of the open carpel abnormality",
+      "source_id": "paper_5220"
+    },
+    {
+      "name": "CD1",
+      "type": "GENE_MARKER",
+      "description": "The proposed symbol for the gene responsible for the open carpel mutation",
+      "source_id": "paper_5220"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "CAJANUS CAJAN",
+      "description": "is scientifically named",
+      "weight": "10",
+      "source_id": "paper_5220"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "ICPL 24",
+      "description": "has cultivar",
+      "weight": "10",
+      "source_id": "paper_5220"
+    },
+    {
+      "source": "ICPL 24",
+      "target": "OPEN CARPEL MUTANT",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_5220"
+    },
+    {
+      "source": "OPEN CARPEL MUTANT",
+      "target": "CD1",
+      "description": "is caused by gene",
+      "weight": "10",
+      "source_id": "paper_5220"
+    },
+    {
+      "source": "INHERITANCE STUDIES",
+      "target": "OPEN CARPEL MUTANT",
+      "description": "investigated",
+      "weight": "9",
+      "source_id": "paper_5220"
+    },
+    {
+      "source": "INHERITANCE STUDIES",
+      "target": "F1 F2 AND BC1 GENERATIONS",
+      "description": "used",
+      "weight": "10",
+      "source_id": "paper_5220"
+    },
+    {
+      "source": "INHERITANCE STUDIES",
+      "target": "SINGLE RECESSIVE GENE MUTATION",
+      "description": "determined cause as",
+      "weight": "10",
+      "source_id": "paper_5220"
+    },
+    {
+      "source": "CD1",
+      "target": "SINGLE RECESSIVE GENE MUTATION",
+      "description": "is a",
+      "weight": "10",
+      "source_id": "paper_5220"
+    }
+  ]
+}

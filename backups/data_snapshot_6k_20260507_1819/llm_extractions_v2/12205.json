@@ -1,0 +1,266 @@
+{
+  "entities": [
+    {
+      "name": "DISEASES",
+      "type": "CONDITION",
+      "description": "Major constraints in commercial crop production",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "CROP PRODUCTION",
+      "type": "CONCEPT",
+      "description": "Commercial production of agricultural crops",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "Variation in genetic makeup used to manage diseases in varieties",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "MOLECULAR MARKER-ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "Breeding technique using molecular markers to produce varieties with good yields",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity or amount of crop produced",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand or resist disease",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "WHOLE GENOME SEQUENCING",
+      "type": "METHOD",
+      "description": "Technique for determining the complete DNA sequence of an organism",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "GENOME EDITING",
+      "type": "METHOD",
+      "description": "Technique for making precise changes to the DNA to improve inadequate traits",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "PLANTS",
+      "type": "ORGANISM",
+      "description": "Multicellular eukaryotes that produce antimicrobial secondary metabolites",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "ANTIMICROBIAL SECONDARY METABOLITES",
+      "type": "CONCEPT",
+      "description": "Compounds produced by plants to reinforce cell walls and contain pathogens",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "SECONDARY CELL WALLS",
+      "type": "CONCEPT",
+      "description": "Plant cell structures reinforced by metabolites to contain pathogens",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "PATHOGEN",
+      "type": "ORGANISM",
+      "description": "Disease-causing agent that invades plant tissues",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "CONSTITUTIVE RESISTANCE",
+      "type": "TRAIT",
+      "description": "Resistance metabolites or structures that are always present in the plant",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "INDUCED RESISTANCE",
+      "type": "TRAIT",
+      "description": "Resistance metabolites or structures produced following pathogen invasion",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "BIOSYNTHETIC R GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that control the production of resistance metabolites",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "R GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that regulate the hierarchy of biosynthetic R genes",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms that can cause mutations in R genes",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "INDELS",
+      "type": "GENE_MARKER",
+      "description": "Insertions or deletions that can cause mutations in R genes",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "METABOLIC PATHWAYS",
+      "type": "CONCEPT",
+      "description": "Biological pathways involving genes that can be edited to increase resistance",
+      "source_id": "paper_12205"
+    },
+    {
+      "name": "MULTIPLE PATHOGEN RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist multiple types of pathogens under field conditions",
+      "source_id": "paper_12205"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DISEASES",
+      "target": "CROP PRODUCTION",
+      "description": "constrains",
+      "weight": "8",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "DISEASES",
+      "description": "manages",
+      "weight": "7",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "MOLECULAR MARKER-ASSISTED BREEDING",
+      "target": "YIELD",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "MOLECULAR MARKER-ASSISTED BREEDING",
+      "target": "RESISTANCE",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "WHOLE GENOME SEQUENCING",
+      "target": "GENOME EDITING",
+      "description": "enables",
+      "weight": "9",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "GENOME EDITING",
+      "target": "RESISTANCE",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "PLANTS",
+      "target": "ANTIMICROBIAL SECONDARY METABOLITES",
+      "description": "produce",
+      "weight": "10",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "ANTIMICROBIAL SECONDARY METABOLITES",
+      "target": "SECONDARY CELL WALLS",
+      "description": "reinforce",
+      "weight": "8",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "SECONDARY CELL WALLS",
+      "target": "PATHOGEN",
+      "description": "contain",
+      "weight": "8",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "PATHOGEN",
+      "target": "DISEASES",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "ANTIMICROBIAL SECONDARY METABOLITES",
+      "target": "CONSTITUTIVE RESISTANCE",
+      "description": "form",
+      "weight": "7",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "ANTIMICROBIAL SECONDARY METABOLITES",
+      "target": "INDUCED RESISTANCE",
+      "description": "form",
+      "weight": "7",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "PATHOGEN",
+      "target": "INDUCED RESISTANCE",
+      "description": "triggers",
+      "weight": "9",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "BIOSYNTHETIC R GENES",
+      "target": "ANTIMICROBIAL SECONDARY METABOLITES",
+      "description": "control production",
+      "weight": "9",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "R GENES",
+      "target": "BIOSYNTHETIC R GENES",
+      "description": "regulate",
+      "weight": "9",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "SNPS",
+      "target": "R GENES",
+      "description": "mutate",
+      "weight": "8",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "INDELS",
+      "target": "R GENES",
+      "description": "mutate",
+      "weight": "8",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "METABOLIC PATHWAYS",
+      "target": "MULTIPLE PATHOGEN RESISTANCE",
+      "description": "contribute to",
+      "weight": "8",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "GENOME EDITING",
+      "target": "METABOLIC PATHWAYS",
+      "description": "modifies",
+      "weight": "9",
+      "source_id": "paper_12205"
+    },
+    {
+      "source": "METABOLIC PATHWAYS",
+      "target": "ANTIMICROBIAL SECONDARY METABOLITES",
+      "description": "produce",
+      "weight": "9",
+      "source_id": "paper_12205"
+    }
+  ]
+}

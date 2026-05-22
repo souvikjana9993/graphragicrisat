@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop studied for insect pest incidence",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "An insect pest affecting chickpea",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "SPODOPTERA EXIGUA",
+      "type": "ORGANISM",
+      "description": "An insect pest affecting chickpea",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to resist pest infestation",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "CONDITION",
+      "description": "The timing of planting the crop which affects pest incidence",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Maximum and minimum temperature parameters affecting pest population",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "WEATHER PARAMETERS",
+      "type": "CONDITION",
+      "description": "Environmental factors that interact with pest populations",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "MULTIPLE REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to analyze the interaction between weather and pest populations",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "Diverse chickpea varieties including ICC 3137, JG 11, ICCV 10, and KAK 2",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "EGG POPULATION",
+      "type": "CONCEPT",
+      "description": "The number of pest eggs observed on the crop",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "LARVAL POPULATION",
+      "type": "CONCEPT",
+      "description": "The number of pest larvae observed on the crop",
+      "source_id": "paper_11674"
+    },
+    {
+      "name": "COCOON POPULATION",
+      "type": "CONCEPT",
+      "description": "The number of pest cocoons observed on the crop",
+      "source_id": "paper_11674"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Host crop for the pest",
+      "weight": "10",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SPODOPTERA EXIGUA",
+      "description": "Host crop for the pest",
+      "weight": "10",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "RESISTANCE",
+      "description": "Evaluated for resistance to pests",
+      "weight": "9",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Affects the incidence of the pest",
+      "weight": "8",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Shows significant correlation with larval population",
+      "weight": "8",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "WEATHER PARAMETERS",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Interacts with the pest population",
+      "weight": "9",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "WEATHER PARAMETERS",
+      "target": "SPODOPTERA EXIGUA",
+      "description": "Interacts with the pest population",
+      "weight": "9",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "MULTIPLE REGRESSION ANALYSIS",
+      "target": "WEATHER PARAMETERS",
+      "description": "Used to analyze interaction with pest populations",
+      "weight": "7",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "MULTIPLE REGRESSION ANALYSIS",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Used to analyze population dynamics",
+      "weight": "7",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "MULTIPLE REGRESSION ANALYSIS",
+      "target": "SPODOPTERA EXIGUA",
+      "description": "Used to analyze population dynamics",
+      "weight": "7",
+      "source_id": "paper_11674"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Different genotypes exhibit varying levels of pest infestation",
+      "weight": "8",
+      "source_id": "paper_11674"
+    }
+  ]
+}

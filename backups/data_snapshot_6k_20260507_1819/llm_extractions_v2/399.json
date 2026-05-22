@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "APSIM MODEL",
+      "type": "METHOD",
+      "description": "A simulation model used to assess the impact of legumes on sorghum and simulate soil and plant responses",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor, the cereal crop grown in rotation with legumes",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "Vigna unguiculata, a legume used in rotation with sorghum",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan, a legume used in rotation with sorghum",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea, a legume used in rotation with sorghum",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A nutrient accumulated by legumes and available for uptake by sorghum",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "WATER",
+      "type": "CONCEPT",
+      "description": "A resource whose availability affects crop growth in semi-arid conditions",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "SOUTH-WESTERN ZIMBABWE",
+      "type": "LOCATION",
+      "description": "The region where the study was conducted",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "LUCYDALE MATOPOS RESEARCH STATION",
+      "type": "LOCATION",
+      "description": "The specific site where the experiment was conducted",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "SEMI-ARID CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environmental context characterized by dry conditions and water stress",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "TOTAL BIOMASS",
+      "type": "TRAIT",
+      "description": "A measure of plant growth predicted by the APSIM model",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, predicted by the APSIM model",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "NITROGEN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of nitrogen produced or accumulated by the legume phase",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "NITROGEN STRESS",
+      "type": "CONDITION",
+      "description": "A state of nutrient limitation affecting sorghum",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "A state of water limitation affecting sorghum",
+      "source_id": "paper_399"
+    },
+    {
+      "name": "NUTRIENT-LIMITED SYSTEM",
+      "type": "CONDITION",
+      "description": "A system where essential nutrients are scarce",
+      "source_id": "paper_399"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "APSIM MODEL",
+      "target": "SORGHUM",
+      "description": "predicts total biomass and grain yield",
+      "weight": "9",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "COWPEA",
+      "description": "predicts total biomass, grain and N yields",
+      "weight": "9",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "PIGEONPEA",
+      "description": "predicts total biomass, grain and N yields",
+      "weight": "9",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "GROUNDNUT",
+      "description": "predicts total biomass, grain and N yields",
+      "weight": "9",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "COWPEA",
+      "target": "NITROGEN",
+      "description": "accumulates nitrogen for subsequent sorghum crop",
+      "weight": "8",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "NITROGEN",
+      "description": "accumulates nitrogen for subsequent sorghum crop",
+      "weight": "8",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NITROGEN",
+      "description": "accumulates nitrogen for subsequent sorghum crop",
+      "weight": "8",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "SORGHUM",
+      "description": "available for uptake and drives productivity in rotation",
+      "weight": "9",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "WATER",
+      "target": "SORGHUM",
+      "description": "affects growth and productivity",
+      "weight": "8",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "SEMI-ARID CONDITIONS",
+      "target": "SORGHUM",
+      "description": "environmental context for growth",
+      "weight": "7",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "SOUTH-WESTERN ZIMBABWE",
+      "target": "LUCYDALE MATOPOS RESEARCH STATION",
+      "description": "location of the research station",
+      "weight": "10",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "LUCYDALE MATOPOS RESEARCH STATION",
+      "target": "SORGHUM",
+      "description": "site where sorghum was grown in the experiment",
+      "weight": "10",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "NITROGEN STRESS",
+      "target": "SORGHUM",
+      "description": "affects sorghum productivity more than water stress",
+      "weight": "8",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "SORGHUM",
+      "description": "affects sorghum productivity",
+      "weight": "8",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "NITROGEN STRESS",
+      "description": "availability of nitrogen determines the level of stress",
+      "weight": "10",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "WATER",
+      "target": "WATER STRESS",
+      "description": "availability of water determines the level of stress",
+      "weight": "10",
+      "source_id": "paper_399"
+    },
+    {
+      "source": "NUTRIENT-LIMITED SYSTEM",
+      "target": "SORGHUM",
+      "description": "environmental condition affecting growth",
+      "weight": "7",
+      "source_id": "paper_399"
+    }
+  ]
+}

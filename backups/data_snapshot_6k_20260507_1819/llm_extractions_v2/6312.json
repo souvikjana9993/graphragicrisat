@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "Soybean seeds imported from China to India",
+      "source_id": "paper_6312"
+    },
+    {
+      "name": "PEANUT STRIPE POTYVIRUS",
+      "type": "ORGANISM",
+      "description": "A potyvirus intercepted in imported soybean seeds",
+      "source_id": "paper_6312"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "Country of origin for the imported soybean seeds",
+      "source_id": "paper_6312"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where the soybean seeds were imported",
+      "source_id": "paper_6312"
+    },
+    {
+      "name": "QUARANTINE TESTING",
+      "type": "METHOD",
+      "description": "The process of testing imported seeds for viruses to prevent introduction",
+      "source_id": "paper_6312"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN",
+      "target": "PEANUT STRIPE POTYVIRUS",
+      "description": "can be a host for",
+      "weight": "9",
+      "source_id": "paper_6312"
+    },
+    {
+      "source": "CHINA",
+      "target": "SOYBEAN",
+      "description": "source of imported",
+      "weight": "8",
+      "source_id": "paper_6312"
+    },
+    {
+      "source": "INDIA",
+      "target": "SOYBEAN",
+      "description": "destination of imported",
+      "weight": "8",
+      "source_id": "paper_6312"
+    },
+    {
+      "source": "QUARANTINE TESTING",
+      "target": "PEANUT STRIPE POTYVIRUS",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_6312"
+    },
+    {
+      "source": "QUARANTINE TESTING",
+      "target": "SOYBEAN",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_6312"
+    }
+  ]
+}

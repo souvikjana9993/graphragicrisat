@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for disease incidence.",
+      "source_id": "paper_2163"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "CONDITION",
+      "description": "The date on which the crop is planted, used as a variable to observe its effect on disease.",
+      "source_id": "paper_2163"
+    },
+    {
+      "name": "BOTRYTIS GRAY MOLD",
+      "type": "TRAIT",
+      "description": "A fungal disease affecting the crop, measured by its incidence.",
+      "source_id": "paper_2163"
+    },
+    {
+      "name": "BOTRYTIS CINEREA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing Botrytis Gray Mold.",
+      "source_id": "paper_2163"
+    },
+    {
+      "name": "DHANUSH",
+      "type": "CROP",
+      "description": "A specific genotype of chickpea showing lower infection levels.",
+      "source_id": "paper_2163"
+    },
+    {
+      "name": "ICCV1",
+      "type": "CROP",
+      "description": "A specific genotype of chickpea showing higher infection levels.",
+      "source_id": "paper_2163"
+    },
+    {
+      "name": "ICCL82108",
+      "type": "CROP",
+      "description": "A specific genotype of chickpea showing higher infection levels.",
+      "source_id": "paper_2163"
+    },
+    {
+      "name": "INFECTION INTENSITY",
+      "type": "TRAIT",
+      "description": "The degree or severity of the infection caused by the pathogen.",
+      "source_id": "paper_2163"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "The genetic makeup of the chickpea varieties used in the study.",
+      "source_id": "paper_2163"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOWING DATE",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "Sowing date affects the incidence of the disease",
+      "weight": "8",
+      "source_id": "paper_2163"
+    },
+    {
+      "source": "BOTRYTIS CINEREA",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "Botrytis cinerea is the causal agent of Botrytis Gray Mold",
+      "weight": "10",
+      "source_id": "paper_2163"
+    },
+    {
+      "source": "DHANUSH",
+      "target": "CHICKPEA",
+      "description": "Dhanush is a variety of chickpea",
+      "weight": "10",
+      "source_id": "paper_2163"
+    },
+    {
+      "source": "ICCV1",
+      "target": "CHICKPEA",
+      "description": "ICCV1 is a variety of chickpea",
+      "weight": "10",
+      "source_id": "paper_2163"
+    },
+    {
+      "source": "ICCL82108",
+      "target": "CHICKPEA",
+      "description": "ICCL82108 is a variety of chickpea",
+      "weight": "10",
+      "source_id": "paper_2163"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "INFECTION INTENSITY",
+      "description": "Sowing date significantly influences the intensity of infection",
+      "weight": "8",
+      "source_id": "paper_2163"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "SOWING DATE",
+      "description": "There is a significant interaction between genotypes and sowing dates",
+      "weight": "7",
+      "source_id": "paper_2163"
+    },
+    {
+      "source": "DHANUSH",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "Dhanush showed significantly lower infection of Botrytis Gray Mold",
+      "weight": "9",
+      "source_id": "paper_2163"
+    }
+  ]
+}

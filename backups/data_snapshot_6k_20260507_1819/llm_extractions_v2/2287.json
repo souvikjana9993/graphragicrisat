@@ -1,0 +1,177 @@
+{
+  "entities": [
+    {
+      "name": "SOIL ORGANIC CARBON (SOC)",
+      "type": "CONCEPT",
+      "description": "The organic form of carbon found in soil, used as an indicator of soil health and management effectiveness.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "SOIL INORGANIC CARBON (SIC)",
+      "type": "CONCEPT",
+      "description": "The inorganic form of carbon found in soil.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "TOTAL CARBON (TC)",
+      "type": "CONCEPT",
+      "description": "The sum of soil organic carbon and soil inorganic carbon.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "BLACK SOILS",
+      "type": "CONCEPT",
+      "description": "A type of soil characterized by high organic matter and shrink-swell properties, found in the semi-arid tropics of India.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "RED SOILS",
+      "type": "CONCEPT",
+      "description": "A type of soil found in the semi-arid tropics of India.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "SEMI-ARID TROPICS (SAT)",
+      "type": "LOCATION",
+      "description": "A climatic region characterized by low and irregular rainfall, specifically in India.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the benchmark spots for soil carbon estimation are located.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "MANAGEMENT SYSTEMS",
+      "type": "METHOD",
+      "description": "Agricultural and land management practices adopted to maintain or increase soil carbon stocks.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "BULK DENSITY (BD)",
+      "type": "CONCEPT",
+      "description": "The mass of soil per unit volume, used to determine carbon stock thresholds.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "SHRINK-SWELL SOILS",
+      "type": "CONCEPT",
+      "description": "Soils that undergo significant volume changes during wetting and drying cycles, including black soils.",
+      "source_id": "paper_2287"
+    },
+    {
+      "name": "SEMI-ARID AND ARID BIOCLIMATIC SYSTEMS",
+      "type": "CONDITION",
+      "description": "Environmental conditions characterized by water scarcity that influence soil carbon dynamics.",
+      "source_id": "paper_2287"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TOTAL CARBON (TC)",
+      "target": "SOIL ORGANIC CARBON (SOC)",
+      "description": "composed of",
+      "weight": "10",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "TOTAL CARBON (TC)",
+      "target": "SOIL INORGANIC CARBON (SIC)",
+      "description": "composed of",
+      "weight": "10",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON (SOC)",
+      "target": "BLACK SOILS",
+      "description": "estimated in",
+      "weight": "9",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON (SOC)",
+      "target": "RED SOILS",
+      "description": "estimated in",
+      "weight": "9",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "SOIL INORGANIC CARBON (SIC)",
+      "target": "BLACK SOILS",
+      "description": "estimated in",
+      "weight": "9",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "SOIL INORGANIC CARBON (SIC)",
+      "target": "RED SOILS",
+      "description": "estimated in",
+      "weight": "9",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "TOTAL CARBON (TC)",
+      "target": "BLACK SOILS",
+      "description": "estimated in",
+      "weight": "9",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "TOTAL CARBON (TC)",
+      "target": "RED SOILS",
+      "description": "estimated in",
+      "weight": "9",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "BLACK SOILS",
+      "target": "SEMI-ARID TROPICS (SAT)",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "RED SOILS",
+      "target": "SEMI-ARID TROPICS (SAT)",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "SEMI-ARID TROPICS (SAT)",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "MANAGEMENT SYSTEMS",
+      "target": "SOIL ORGANIC CARBON (SOC)",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "BULK DENSITY (BD)",
+      "target": "SOIL ORGANIC CARBON (SOC)",
+      "description": "correlated threshold",
+      "weight": "7",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "BLACK SOILS",
+      "target": "SHRINK-SWELL SOILS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2287"
+    },
+    {
+      "source": "SHRINK-SWELL SOILS",
+      "target": "SEMI-ARID AND ARID BIOCLIMATIC SYSTEMS",
+      "description": "found in",
+      "weight": "9",
+      "source_id": "paper_2287"
+    }
+  ]
+}

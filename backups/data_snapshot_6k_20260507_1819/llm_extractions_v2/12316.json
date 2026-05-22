@@ -1,0 +1,235 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for pest resistance and production limits",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "Cotton bollworm, a widely spread pest that limits chickpea production",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "SPODOPTERA EXIGUA",
+      "type": "ORGANISM",
+      "description": "Beet armyworm, a serious pest that has emerged in southern India",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "CAMPOLETIS CHLORIDEAE",
+      "type": "ORGANISM",
+      "description": "Parasitic wasp, a larval parasitoid that naturally manages pod borer pests",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "SOUTHERN INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where Spodoptera exigua has emerged as a serious pest",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "INSECTICIDES",
+      "type": "CONCEPT",
+      "description": "Chemical agents used for pest control that can lead to the development of resistance",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a pest to withstand the effects of insecticides",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "POD BORER",
+      "type": "CONCEPT",
+      "description": "General term for pests that bore into pods, including H. armigera and S. exigua",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Global environmental shifts influencing the need for resilient crop cultivars",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "CLIMATE RESILIENCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea cultivars to withstand climate change and pest pressure",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "PLANTING DATE",
+      "type": "CONDITION",
+      "description": "The timing of sowing, such as October, December, or January, which affects pest populations",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "ICC 3137",
+      "type": "CROP",
+      "description": "A chickpea genotype that recorded the highest number of H. armigera eggs",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "JG 11",
+      "type": "CROP",
+      "description": "A chickpea genotype that recorded a low number of H. armigera eggs in 2012",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "ICCV 10",
+      "type": "CROP",
+      "description": "A chickpea genotype that recorded a low number of H. armigera eggs in 2013",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "MULTIPLE REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to analyze the interaction between pests and weather patterns",
+      "source_id": "paper_12316"
+    },
+    {
+      "name": "WEATHER PATTERNS",
+      "type": "CONDITION",
+      "description": "Environmental factors that have a strong interaction with pest populations",
+      "source_id": "paper_12316"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "limits production of",
+      "weight": "10",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "SPODOPTERA EXIGUA",
+      "target": "CHICKPEA",
+      "description": "acts as a serious pest of",
+      "weight": "10",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "CAMPOLETIS CHLORIDEAE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "naturally manages",
+      "weight": "9",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "CAMPOLETIS CHLORIDEAE",
+      "target": "SPODOPTERA EXIGUA",
+      "description": "naturally manages",
+      "weight": "9",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "SPODOPTERA EXIGUA",
+      "target": "SOUTHERN INDIA",
+      "description": "emerged as a serious pest in",
+      "weight": "8",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "INSECTICIDES",
+      "target": "RESISTANCE",
+      "description": "leads to development of",
+      "weight": "9",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "POD BORER",
+      "description": "developed in",
+      "weight": "8",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "CLIMATE RESILIENCE",
+      "description": "drives the need for",
+      "weight": "9",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "CLIMATE RESILIENCE",
+      "target": "CHICKPEA",
+      "description": "desired trait for cultivars of",
+      "weight": "8",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "affects egg and larval population of",
+      "weight": "9",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "SPODOPTERA EXIGUA",
+      "description": "affects larval population of",
+      "weight": "9",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "CAMPOLETIS CHLORIDEAE",
+      "description": "affects population of",
+      "weight": "8",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "ICC 3137",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "recorded highest number of eggs of",
+      "weight": "8",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "JG 11",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "recorded lowest number of eggs of",
+      "weight": "8",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "ICCV 10",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "recorded lowest number of eggs of",
+      "weight": "8",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "MULTIPLE REGRESSION ANALYSIS",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "used to analyze interaction of",
+      "weight": "7",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "MULTIPLE REGRESSION ANALYSIS",
+      "target": "SPODOPTERA EXIGUA",
+      "description": "used to analyze interaction of",
+      "weight": "7",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "WEATHER PATTERNS",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "has strong interaction with",
+      "weight": "9",
+      "source_id": "paper_12316"
+    },
+    {
+      "source": "WEATHER PATTERNS",
+      "target": "SPODOPTERA EXIGUA",
+      "description": "has strong interaction with",
+      "weight": "9",
+      "source_id": "paper_12316"
+    }
+  ]
+}

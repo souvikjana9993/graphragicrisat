@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The primary crop species under investigation for commercial hybrid feasibility.",
+      "source_id": "paper_2608"
+    },
+    {
+      "name": "RECURRENT SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method involving repeated cycles of selection and recombination to increase the frequency of desired alleles.",
+      "source_id": "paper_2608"
+    },
+    {
+      "name": "DWARF NIGERIAN COMPOSITE",
+      "type": "CROP",
+      "description": "A specific population of pearl millet (NCD2) used as the base for recurrent selection.",
+      "source_id": "paper_2608"
+    },
+    {
+      "name": "A4 SYSTEM",
+      "type": "CONCEPT",
+      "description": "A specific genetic system used to maintain cytoplasmic-nuclear male sterility in pearl millet.",
+      "source_id": "paper_2608"
+    },
+    {
+      "name": "CYTOPLASMIC-NUCLEAR MALE STERILITY",
+      "type": "TRAIT",
+      "description": "A condition where the plant is unable to produce functional pollen due to cytoplasmic and nuclear interactions.",
+      "source_id": "paper_2608"
+    },
+    {
+      "name": "81A4",
+      "type": "CROP",
+      "description": "A specific male-sterile line of pearl millet used in topcross hybrid evaluations.",
+      "source_id": "paper_2608"
+    },
+    {
+      "name": "TOPCROSS HYBRID",
+      "type": "CONCEPT",
+      "description": "A hybrid produced by crossing a specific inbred line with a genetically diverse population or bulk.",
+      "source_id": "paper_2608"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RECURRENT SELECTION",
+      "target": "DWARF NIGERIAN COMPOSITE",
+      "description": "Applied to improve the population",
+      "weight": "9",
+      "source_id": "paper_2608"
+    },
+    {
+      "source": "RECURRENT SELECTION",
+      "target": "CYTOPLASMIC-NUCLEAR MALE STERILITY",
+      "description": "Used to increase the frequency of this trait",
+      "weight": "10",
+      "source_id": "paper_2608"
+    },
+    {
+      "source": "A4 SYSTEM",
+      "target": "CYTOPLASMIC-NUCLEAR MALE STERILITY",
+      "description": "Maintains the male sterility trait",
+      "weight": "10",
+      "source_id": "paper_2608"
+    },
+    {
+      "source": "DWARF NIGERIAN COMPOSITE",
+      "target": "PEARL MILLET",
+      "description": "Is a variety of",
+      "weight": "10",
+      "source_id": "paper_2608"
+    },
+    {
+      "source": "81A4",
+      "target": "PEARL MILLET",
+      "description": "Is a line of",
+      "weight": "10",
+      "source_id": "paper_2608"
+    },
+    {
+      "source": "81A4",
+      "target": "CYTOPLASMIC-NUCLEAR MALE STERILITY",
+      "description": "Possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_2608"
+    },
+    {
+      "source": "TOPCROSS HYBRID",
+      "target": "81A4",
+      "description": "Created by crossing with",
+      "weight": "9",
+      "source_id": "paper_2608"
+    },
+    {
+      "source": "TOPCROSS HYBRID",
+      "target": "DWARF NIGERIAN COMPOSITE",
+      "description": "Created by crossing with",
+      "weight": "9",
+      "source_id": "paper_2608"
+    }
+  ]
+}

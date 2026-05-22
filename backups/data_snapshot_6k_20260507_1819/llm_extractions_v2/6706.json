@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for genetic divergence",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "Different genetic variations of the chickpea",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "ECOGEOGRAPHICAL AREAS",
+      "type": "LOCATION",
+      "description": "The diverse geographical regions from which genotypes were sourced",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variation in genetic characteristics among the chickpea genotypes",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "GEOGRAPHICAL DISTRIBUTION",
+      "type": "CONCEPT",
+      "description": "The spatial arrangement of genotypes across different areas",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "CLUSTERING",
+      "type": "METHOD",
+      "description": "The process of grouping genotypes based on similarities",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "External factors that influence the clustering pattern of genotypes",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "EXPERIMENTAL CONDITIONS",
+      "type": "CONDITION",
+      "description": "Specific settings under which the research was conducted",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "100-SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "A quantitative trait used for improvement in chickpea",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "PODS PER PLANT",
+      "type": "TRAIT",
+      "description": "A quantitative trait used for improvement in chickpea",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "FLOWERING PERIOD",
+      "type": "TRAIT",
+      "description": "A quantitative trait used for improvement in chickpea",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "A quantitative trait used for improvement in chickpea",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "DESI TYPE",
+      "type": "CONCEPT",
+      "description": "A specific type of chickpea genotype",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "KABULI TYPE",
+      "type": "CONCEPT",
+      "description": "A specific type of chickpea genotype",
+      "source_id": "paper_6706"
+    },
+    {
+      "name": "CROSSING",
+      "type": "METHOD",
+      "description": "The process of breeding different types of genotypes to produce segregants",
+      "source_id": "paper_6706"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLUSTERING",
+      "target": "GENOTYPES",
+      "description": "Used to group genotypes based on similarities",
+      "weight": "9",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "GEOGRAPHICAL DISTRIBUTION",
+      "description": "Shows no parallelism between diversity and distribution",
+      "weight": "7",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "ENVIRONMENT",
+      "target": "CLUSTERING",
+      "description": "Influences the pattern of clustering",
+      "weight": "8",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "EXPERIMENTAL CONDITIONS",
+      "target": "CLUSTERING",
+      "description": "Should be taken into consideration when analyzing clustering",
+      "weight": "7",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "100-SEED WEIGHT",
+      "description": "Trait targeted for improvement in chickpea",
+      "weight": "9",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "PODS PER PLANT",
+      "description": "Trait targeted for improvement in chickpea",
+      "weight": "9",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "FLOWERING PERIOD",
+      "description": "Trait targeted for improvement in chickpea",
+      "weight": "9",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "HARVEST INDEX",
+      "description": "Trait targeted for improvement in chickpea",
+      "weight": "9",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "DESI TYPE",
+      "target": "CHICKPEA",
+      "description": "A specific type of chickpea",
+      "weight": "10",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "KABULI TYPE",
+      "target": "CHICKPEA",
+      "description": "A specific type of chickpea",
+      "weight": "10",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "DESI TYPE",
+      "target": "KABULI TYPE",
+      "description": "Genetically different from each other",
+      "weight": "8",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "CROSSING",
+      "target": "DESI TYPE",
+      "description": "Involves breeding Desi types",
+      "weight": "8",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "CROSSING",
+      "target": "KABULI TYPE",
+      "description": "Involves breeding Kabuli types",
+      "weight": "8",
+      "source_id": "paper_6706"
+    },
+    {
+      "source": "CROSSING",
+      "target": "CHICKPEA",
+      "description": "Method used to provide desirable segregants in chickpea",
+      "weight": "7",
+      "source_id": "paper_6706"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., a cool season food legume grown in semi-arid regions",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "NORTHEASTERN ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The semi-arid region where the study on chickpea productivity was conducted",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Projected changes in climate affecting crop productivity and grain yield",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of chickpea productivity used to assess the impact of climate change and management practices",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "CROPGRO-CHICKPEA MODEL",
+      "type": "METHOD",
+      "description": "A simulation model used to assess climate change impacts and identify adaptation options for chickpea",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "DSSAT",
+      "type": "METHOD",
+      "description": "Decision Support System for Agrotechnology Transfer, the software framework containing the CROPGRO model",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "CO2 FERTILIZATION",
+      "type": "CONDITION",
+      "description": "The process where increased atmospheric CO2 levels enhance plant growth and yield",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "SUPPLEMENTAL IRRIGATION",
+      "type": "METHOD",
+      "description": "The application of additional water during specific growth stages to increase grain yield",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "PLANTING DATE",
+      "type": "METHOD",
+      "description": "The timing of sowing the crop, evaluated as a management option to increase productivity",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "EARLY SOWING",
+      "type": "METHOD",
+      "description": "The practice of planting the crop earlier to increase grain yield under present and future climate conditions",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "RCPS",
+      "type": "CONCEPT",
+      "description": "Representative Concentration Pathways used to simulate different climate change scenarios",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development of the chickpea plant simulated by the crop model",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "PHENOLOGY",
+      "type": "TRAIT",
+      "description": "The timing of biological events in the chickpea plant life cycle simulated by the crop model",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "WATER BALANCE",
+      "type": "CONCEPT",
+      "description": "The simulation of water input and output in the soil for the chickpea crop",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "FLOWER INITIATION",
+      "type": "CONCEPT",
+      "description": "A specific growth stage of chickpea where supplemental irrigation is applied",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "POD SETTING",
+      "type": "CONCEPT",
+      "description": "A specific growth stage of chickpea where supplemental irrigation is applied",
+      "source_id": "paper_10332"
+    },
+    {
+      "name": "CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Different varieties of chickpea selected based on agroecology to increase productivity",
+      "source_id": "paper_10332"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "NORTHEASTERN ETHIOPIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "CHICKPEA",
+      "description": "affects productivity of",
+      "weight": "9",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CROPGRO-CHICKPEA MODEL",
+      "target": "CHICKPEA",
+      "description": "simulates growth and yield of",
+      "weight": "10",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "DSSAT",
+      "target": "CROPGRO-CHICKPEA MODEL",
+      "description": "provides framework for",
+      "weight": "10",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CROPGRO-CHICKPEA MODEL",
+      "target": "GRAIN YIELD",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CROPGRO-CHICKPEA MODEL",
+      "target": "GROWTH",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CROPGRO-CHICKPEA MODEL",
+      "target": "PHENOLOGY",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CROPGRO-CHICKPEA MODEL",
+      "target": "WATER BALANCE",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CO2 FERTILIZATION",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "SUPPLEMENTAL IRRIGATION",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "EARLY SOWING",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "SUPPLEMENTAL IRRIGATION",
+      "target": "FLOWER INITIATION",
+      "description": "applied during",
+      "weight": "8",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "SUPPLEMENTAL IRRIGATION",
+      "target": "POD SETTING",
+      "description": "applied during",
+      "weight": "8",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "RCPS",
+      "target": "CLIMATE CHANGE",
+      "description": "defines scenarios for",
+      "weight": "10",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CULTIVARS",
+      "target": "CHICKPEA",
+      "description": "varieties of",
+      "weight": "10",
+      "source_id": "paper_10332"
+    },
+    {
+      "source": "CULTIVARS",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10332"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "The agricultural crop affected by the virus in the study",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "WARANGAL DISTRICT",
+      "type": "LOCATION",
+      "description": "The district in Andhra Pradesh where cotton was sown and the disease was observed",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the study was conducted",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "BT CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Cotton varieties genetically modified with Bacillus thuringiensis",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "HYBRID RCH-2 BT",
+      "type": "CROP",
+      "description": "A specific Bt cotton hybrid sown in Warangal district",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "CHLOROTIC/NECROTIC LESIONS",
+      "type": "TRAIT",
+      "description": "Leaf symptoms characterized by yellowing or death of tissue",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "LEAF PURPLING",
+      "type": "TRAIT",
+      "description": "A symptom where cotton leaves turn purple",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "NECROTIC BUDS",
+      "type": "TRAIT",
+      "description": "Death of tissue in the buds of the cotton plant",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "DRYING UP OF YOUNG BOLLS",
+      "type": "TRAIT",
+      "description": "The premature drying and death of young cotton bolls",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "TOBACCO STREAK VIRUS",
+      "type": "ORGANISM",
+      "description": "The viral agent identified as the cause of the disease in cotton",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "ENZYME LINKED IMMUNO-SORBENT ASSAY",
+      "type": "METHOD",
+      "description": "A biochemical technique used to detect the presence of the virus",
+      "source_id": "paper_197"
+    },
+    {
+      "name": "DISEASE",
+      "type": "CONDITION",
+      "description": "The pathological state causing lesions and drying of bolls in cotton",
+      "source_id": "paper_197"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COTTON",
+      "target": "WARANGAL DISTRICT",
+      "description": "Sown in",
+      "weight": "10",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "WARANGAL DISTRICT",
+      "target": "ANDHRA PRADESH",
+      "description": "Located in",
+      "weight": "10",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "HYBRID RCH-2 BT",
+      "target": "COTTON",
+      "description": "Is a variety of",
+      "weight": "10",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "HYBRID RCH-2 BT",
+      "target": "BT CULTIVARS",
+      "description": "Is a type of",
+      "weight": "10",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "TOBACCO STREAK VIRUS",
+      "target": "COTTON",
+      "description": "Infects",
+      "weight": "10",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "TOBACCO STREAK VIRUS",
+      "target": "DISEASE",
+      "description": "Causal agent of",
+      "weight": "10",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "DISEASE",
+      "target": "CHLOROTIC/NECROTIC LESIONS",
+      "description": "Causes",
+      "weight": "9",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "DISEASE",
+      "target": "LEAF PURPLING",
+      "description": "Causes",
+      "weight": "9",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "DISEASE",
+      "target": "NECROTIC BUDS",
+      "description": "Causes",
+      "weight": "9",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "DISEASE",
+      "target": "DRYING UP OF YOUNG BOLLS",
+      "description": "Causes",
+      "weight": "9",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "DISEASE",
+      "target": "BT CULTIVARS",
+      "description": "Higher incidence observed in",
+      "weight": "8",
+      "source_id": "paper_197"
+    },
+    {
+      "source": "ENZYME LINKED IMMUNO-SORBENT ASSAY",
+      "target": "TOBACCO STREAK VIRUS",
+      "description": "Used to identify",
+      "weight": "10",
+      "source_id": "paper_197"
+    }
+  ]
+}

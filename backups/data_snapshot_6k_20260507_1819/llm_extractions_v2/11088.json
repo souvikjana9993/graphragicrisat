@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop affected by sheath blight disease and the target for developing resistance.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "SHEATH BLIGHT",
+      "type": "CONDITION",
+      "description": "A devastating fungal disease caused by Rhizoctonia solani that leads to severe loss in rice grain production.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "RHIZOCTONIA SOLANI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing sheath blight disease in rice.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "THANATEPHORUS CUCUMERIS",
+      "type": "ORGANISM",
+      "description": "The telemorph form of the fungal pathogen Rhizoctonia solani.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "RNA INTERFERENCE",
+      "type": "METHOD",
+      "description": "A biological process in which RNA molecules inhibit gene expression or translation, used here to silence pathogen genes.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "RNASEQ",
+      "type": "METHOD",
+      "description": "A sequencing-based technique used to analyze the transcriptome and identify RNAi target genes.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "TRANSCRIPTOME SEQUENCING",
+      "type": "METHOD",
+      "description": "A method used to analyze the complete set of RNA transcripts to study pectin metabolism associated genes.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "PECTIN",
+      "type": "CONCEPT",
+      "description": "A structural heteropolysaccharide used as a growth medium for R. solani and targeted by degrading enzymes.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "AG1IA_04727",
+      "type": "GENE_MARKER",
+      "description": "A key candidate gene in R. solani that encodes the polygalacturonase enzyme.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "POLYGALACTURONASE",
+      "type": "GENE_MARKER",
+      "description": "A pectin-degrading enzyme encoded by the gene AG1IA_04727 and upregulated during infection.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a rice cultivar to resist infection by the sheath blight pathogen.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "PATHOGEN-DERIVED RESISTANCE",
+      "type": "CONCEPT",
+      "description": "A strategy for developing resistance in crops by targeting essential genes of the pathogen using RNAi.",
+      "source_id": "paper_11088"
+    },
+    {
+      "name": "FUNGICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents used to manage sheath blight disease in the absence of resistant cultivars.",
+      "source_id": "paper_11088"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA SOLANI",
+      "target": "SHEATH BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "SHEATH BLIGHT",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "THANATEPHORUS CUCUMERIS",
+      "target": "RHIZOCTONIA SOLANI",
+      "description": "is the telemorph of",
+      "weight": "10",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "RNA INTERFERENCE",
+      "target": "AG1IA_04727",
+      "description": "silences",
+      "weight": "9",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "AG1IA_04727",
+      "target": "POLYGALACTURONASE",
+      "description": "encodes",
+      "weight": "10",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "RNASEQ",
+      "target": "RHIZOCTONIA SOLANI",
+      "description": "used to analyze transcriptome of",
+      "weight": "8",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "TRANSCRIPTOME SEQUENCING",
+      "target": "RHIZOCTONIA SOLANI",
+      "description": "used to analyze pectin metabolism genes of",
+      "weight": "8",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "RHIZOCTONIA SOLANI",
+      "target": "PECTIN",
+      "description": "grown in",
+      "weight": "7",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "POLYGALACTURONASE",
+      "target": "PECTIN",
+      "description": "degrades",
+      "weight": "9",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "RNA INTERFERENCE",
+      "target": "DISEASE RESISTANCE",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "RNA INTERFERENCE",
+      "target": "PATHOGEN-DERIVED RESISTANCE",
+      "description": "is the mechanism for",
+      "weight": "9",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "SHEATH BLIGHT",
+      "description": "manages",
+      "weight": "8",
+      "source_id": "paper_11088"
+    },
+    {
+      "source": "DISEASE RESISTANCE",
+      "target": "RICE",
+      "description": "is a desired trait for",
+      "weight": "9",
+      "source_id": "paper_11088"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for aflatoxin contamination",
+      "source_id": "paper_3171"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "The presence of aflatoxins in groundnuts, which reduces food quality",
+      "source_id": "paper_3171"
+    },
+    {
+      "name": "VIETNAM",
+      "type": "LOCATION",
+      "description": "The country where the preliminary study on aflatoxin contamination is conducted",
+      "source_id": "paper_3171"
+    },
+    {
+      "name": "TROPICS",
+      "type": "LOCATION",
+      "description": "The climatic region where aflatoxin contamination of groundnut occurs on an extensive scale",
+      "source_id": "paper_3171"
+    },
+    {
+      "name": "FOOD QUALITY",
+      "type": "CONCEPT",
+      "description": "The quality of food that is reduced by aflatoxin contamination",
+      "source_id": "paper_3171"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The vulnerability of groundnut germplasm to aflatoxin contamination",
+      "source_id": "paper_3171"
+    },
+    {
+      "name": "GROUNDNUT GERMPLASM",
+      "type": "CONCEPT",
+      "description": "The genetic material of groundnut currently used by farmers",
+      "source_id": "paper_3171"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The aflatoxin-producing fungus",
+      "source_id": "paper_3171"
+    },
+    {
+      "name": "SANDY AND SANDY LOAM SOILS",
+      "type": "CONDITION",
+      "description": "Soil types suitable for groundnut production and where Aspergillus flavus is abundant",
+      "source_id": "paper_3171"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3171"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "VIETNAM",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_3171"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "TROPICS",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_3171"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "FOOD QUALITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_3171"
+    },
+    {
+      "source": "SUSCEPTIBILITY",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "is a main cause of",
+      "weight": "9",
+      "source_id": "paper_3171"
+    },
+    {
+      "source": "SUSCEPTIBILITY",
+      "target": "GROUNDNUT GERMPLASM",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_3171"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "produces the toxin causing",
+      "weight": "10",
+      "source_id": "paper_3171"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "SANDY AND SANDY LOAM SOILS",
+      "description": "is abundant in",
+      "weight": "8",
+      "source_id": "paper_3171"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SANDY AND SANDY LOAM SOILS",
+      "description": "is produced in",
+      "weight": "7",
+      "source_id": "paper_3171"
+    }
+  ]
+}

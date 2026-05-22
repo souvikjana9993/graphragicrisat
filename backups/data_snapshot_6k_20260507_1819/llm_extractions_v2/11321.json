@@ -1,0 +1,160 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Photoperiod insensitive sorghum cultivar (Sorghum bicolor L. Moench)",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental temperature affecting crop growth and yield",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Environmental rainfall affecting crop growth and yield",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "Country in the Sudanian zone where the study was conducted",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "APSIM",
+      "type": "METHOD",
+      "description": "Agricultural Production Systems Simulator used for crop simulation and evaluation",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "TOTAL BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of biological material produced by the crop",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The ratio of crop yield to the amount of water used",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "NITROGEN FERTILIZER",
+      "type": "CONDITION",
+      "description": "Nutrient application used to influence crop growth and yield",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "TRAIT",
+      "description": "Phenological stage of the sorghum crop",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "PHYSIOLOGICAL MATURITY",
+      "type": "TRAIT",
+      "description": "Phenological stage of the sorghum crop",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "CONCEPT",
+      "description": "The date on which seeds are planted, used for model calibration",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "MEAN BIAS ERROR",
+      "type": "CONCEPT",
+      "description": "A metric used to evaluate the performance of the APSIM model",
+      "source_id": "paper_11321"
+    },
+    {
+      "name": "ROOT MEAN SQUARE ERROR",
+      "type": "CONCEPT",
+      "description": "A metric used to evaluate the performance of the APSIM model",
+      "source_id": "paper_11321"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "GRAIN YIELD",
+      "description": "Increased temperature leads to a decline in grain yield",
+      "weight": "8",
+      "source_id": "paper_11321"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "GRAIN YIELD",
+      "description": "Decreased rainfall leads to a significant decline in grain yield",
+      "weight": "9",
+      "source_id": "paper_11321"
+    },
+    {
+      "source": "APSIM",
+      "target": "SORGHUM",
+      "description": "Used to simulate the growth and response of photoperiod insensitive sorghum",
+      "weight": "10",
+      "source_id": "paper_11321"
+    },
+    {
+      "source": "APSIM",
+      "target": "GRAIN YIELD",
+      "description": "Used to evaluate and predict grain yield patterns",
+      "weight": "9",
+      "source_id": "paper_11321"
+    },
+    {
+      "source": "APSIM",
+      "target": "TOTAL BIOMASS",
+      "description": "Used to evaluate and predict total biomass",
+      "weight": "9",
+      "source_id": "paper_11321"
+    },
+    {
+      "source": "NITROGEN FERTILIZER",
+      "target": "GRAIN YIELD",
+      "description": "Application rates affect the grain yield of sorghum",
+      "weight": "7",
+      "source_id": "paper_11321"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MALI",
+      "description": "Cultivar studied in the Sudanian zone of Mali",
+      "weight": "10",
+      "source_id": "paper_11321"
+    },
+    {
+      "source": "MEAN BIAS ERROR",
+      "target": "APSIM",
+      "description": "Used to measure the accuracy of APSIM model predictions for flowering and maturity",
+      "weight": "8",
+      "source_id": "paper_11321"
+    },
+    {
+      "source": "ROOT MEAN SQUARE ERROR",
+      "target": "APSIM",
+      "description": "Used to measure the accuracy of APSIM model predictions for biomass and yield",
+      "weight": "8",
+      "source_id": "paper_11321"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "APSIM",
+      "description": "Used as a variable for model calibration of the sorghum cultivar",
+      "weight": "7",
+      "source_id": "paper_11321"
+    }
+  ]
+}

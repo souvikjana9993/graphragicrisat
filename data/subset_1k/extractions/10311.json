@@ -1,0 +1,219 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop species being studied, specifically Valencia and runner types",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by lack of water",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the peanut crop",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "TRAIT",
+      "description": "Contamination of peanuts by aflatoxins resulting from stress-induced yield reduction",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "VALENCIA-C",
+      "type": "ORGANISM",
+      "description": "A peanut genotype that is highly susceptible to drought stress",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "C76-16",
+      "type": "ORGANISM",
+      "description": "A drought-tolerant runner type peanut genotype",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "TRANSCRIPTOME SEQUENCING",
+      "type": "METHOD",
+      "description": "A method used to investigate tissue-specific gene expression and response to stress",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "TISSUE-SPECIFIC GENE EXPRESSION",
+      "type": "CONCEPT",
+      "description": "The expression of genes in specific tissues of the plant",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Non-living environmental factors that cause stress to plants",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "The natural environment where the genotypes were evaluated",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The application of water to crops to prevent drought stress",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "SOUTHWEST US",
+      "type": "LOCATION",
+      "description": "The geographic region where C76-16 is best suited",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "RNA ISOLATION",
+      "type": "METHOD",
+      "description": "The process of extracting RNA from plant samples",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "SEQUENCING",
+      "type": "METHOD",
+      "description": "The process of determining the nucleotide sequence of RNA/DNA",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that show statistically significant differences in expression between genotypes",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "TRANSCRIPTS",
+      "type": "GENE_MARKER",
+      "description": "RNA molecules produced by the transcription of DNA",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to maintain productivity under drought conditions",
+      "source_id": "paper_10311"
+    },
+    {
+      "name": "EXPRESSION MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Genetic markers based on gene expression levels used to identify drought tolerance",
+      "source_id": "paper_10311"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "DROUGHT TOLERANCE",
+      "description": "is the crop studied for",
+      "weight": "10",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "VALENCIA-C",
+      "target": "PEANUT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "C76-16",
+      "target": "PEANUT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "VALENCIA-C",
+      "target": "DROUGHT STRESS",
+      "description": "is susceptible to",
+      "weight": "9",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "C76-16",
+      "target": "DROUGHT TOLERANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "YIELD",
+      "description": "causes reduction in",
+      "weight": "9",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "YIELD",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "reduction leads to",
+      "weight": "7",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "TRANSCRIPTOME SEQUENCING",
+      "target": "TISSUE-SPECIFIC GENE EXPRESSION",
+      "description": "investigates",
+      "weight": "9",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "TRANSCRIPTOME SEQUENCING",
+      "target": "ABIOTIC STRESS",
+      "description": "investigates response to",
+      "weight": "8",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "C76-16",
+      "target": "SOUTHWEST US",
+      "description": "is suited for",
+      "weight": "8",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "RNA ISOLATION",
+      "target": "SEQUENCING",
+      "description": "is a step before",
+      "weight": "10",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "SEQUENCING",
+      "target": "DIFFERENTIALLY EXPRESSED GENES",
+      "description": "identifies",
+      "weight": "9",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "DROUGHT TOLERANCE",
+      "description": "provide information on",
+      "weight": "8",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "EXPRESSION MARKERS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "serve as markers for",
+      "weight": "9",
+      "source_id": "paper_10311"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "ABIOTIC STRESS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10311"
+    }
+  ]
+}

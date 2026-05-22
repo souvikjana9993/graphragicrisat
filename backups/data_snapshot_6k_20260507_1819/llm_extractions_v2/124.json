@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "A legume crop (Arachis hypogea L.) often grown on sandy soils.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "SANDY SOILS",
+      "type": "CONDITION",
+      "description": "Type of soil characterized by high sand content where peanuts are often grown.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress caused by lack of water, which can limit crop yield.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of agricultural production harvested per unit area.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The process of converting atmospheric nitrogen into ammonia, which is sensitive to soil drying.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "SOIL DRYING",
+      "type": "CONDITION",
+      "description": "The reduction of water content in the soil, leading to plant stress.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A chemical element essential for plant growth, specifically in vegetative tissues and seeds.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "VEGETATIVE TISSUES",
+      "type": "CONCEPT",
+      "description": "The parts of the plant that are not involved in reproduction, such as leaves and stems.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "SEEDS",
+      "type": "CONCEPT",
+      "description": "The reproductive units of the peanut plant.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "ICGV86015",
+      "type": "ORGANISM",
+      "description": "A specific peanut genotype found to be especially tolerant of soil drying regarding nitrogen fixation.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "SOIL WATER CONTENT",
+      "type": "CONCEPT",
+      "description": "The amount of water present in the soil, which affects the onset of nitrogen fixation decrease.",
+      "source_id": "paper_124"
+    },
+    {
+      "name": "AMINO ACID CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The level of amino acids in the leaves of severely stressed plants.",
+      "source_id": "paper_124"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "SANDY SOILS",
+      "description": "is often grown on",
+      "weight": "7",
+      "source_id": "paper_124"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "YIELD",
+      "description": "limits",
+      "weight": "9",
+      "source_id": "paper_124"
+    },
+    {
+      "source": "SOIL DRYING",
+      "target": "NITROGEN FIXATION",
+      "description": "causes loss in activity of",
+      "weight": "9",
+      "source_id": "paper_124"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "VEGETATIVE TISSUES",
+      "description": "is required in",
+      "weight": "8",
+      "source_id": "paper_124"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "SEEDS",
+      "description": "is required in",
+      "weight": "8",
+      "source_id": "paper_124"
+    },
+    {
+      "source": "ICGV86015",
+      "target": "PEANUT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_124"
+    },
+    {
+      "source": "ICGV86015",
+      "target": "SOIL DRYING",
+      "description": "is tolerant of",
+      "weight": "9",
+      "source_id": "paper_124"
+    },
+    {
+      "source": "SOIL WATER CONTENT",
+      "target": "AMINO ACID CONCENTRATION",
+      "description": "positively correlates with",
+      "weight": "8",
+      "source_id": "paper_124"
+    },
+    {
+      "source": "SOIL DRYING",
+      "target": "DROUGHT STRESS",
+      "description": "is a manifestation of",
+      "weight": "9",
+      "source_id": "paper_124"
+    }
+  ]
+}

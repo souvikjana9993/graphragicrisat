@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop plant studied for yield loss due to pod-borer infestation.",
+      "source_id": "paper_2200"
+    },
+    {
+      "name": "ANDHRA PRADESH, INDIA",
+      "type": "LOCATION",
+      "description": "The region where the field experiments were conducted.",
+      "source_id": "paper_2200"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The pod-borer insect that causes damage to chickpea plants.",
+      "source_id": "paper_2200"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The experimental approach used to study the relationship between insect density and yield loss.",
+      "source_id": "paper_2200"
+    },
+    {
+      "name": "INSECT DENSITY",
+      "type": "CONDITION",
+      "description": "The concentration of Helicoverpa armigera to which the chickpea plants were exposed.",
+      "source_id": "paper_2200"
+    },
+    {
+      "name": "GRAIN MASS PER PLANT",
+      "type": "TRAIT",
+      "description": "A yield-related trait measured in the first experiment.",
+      "source_id": "paper_2200"
+    },
+    {
+      "name": "POD DAMAGE",
+      "type": "TRAIT",
+      "description": "The extent of damage to the pods caused by H. armigera at harvest.",
+      "source_id": "paper_2200"
+    },
+    {
+      "name": "MEAN DRY MASS",
+      "type": "TRAIT",
+      "description": "The average dry mass of the plants measured in the second experiment.",
+      "source_id": "paper_2200"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "ANDHRA PRADESH, INDIA",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_2200"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "CHICKPEA",
+      "description": "studied",
+      "weight": "10",
+      "source_id": "paper_2200"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "exposed to",
+      "weight": "10",
+      "source_id": "paper_2200"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "INSECT DENSITY",
+      "description": "measured by",
+      "weight": "10",
+      "source_id": "paper_2200"
+    },
+    {
+      "source": "INSECT DENSITY",
+      "target": "GRAIN MASS PER PLANT",
+      "description": "no relationship found",
+      "weight": "5",
+      "source_id": "paper_2200"
+    },
+    {
+      "source": "INSECT DENSITY",
+      "target": "POD DAMAGE",
+      "description": "no direct relationship found",
+      "weight": "5",
+      "source_id": "paper_2200"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "POD DAMAGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2200"
+    },
+    {
+      "source": "POD DAMAGE",
+      "target": "MEAN DRY MASS",
+      "description": "strong relationship",
+      "weight": "9",
+      "source_id": "paper_2200"
+    }
+  ]
+}

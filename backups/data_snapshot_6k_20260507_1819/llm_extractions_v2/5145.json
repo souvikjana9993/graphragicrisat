@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "PULSES",
+      "type": "CROP",
+      "description": "Leguminous crops subject to crop loss estimation",
+      "source_id": "paper_5145"
+    },
+    {
+      "name": "INSECT PESTS",
+      "type": "ORGANISM",
+      "description": "Organisms that cause damage and crop loss in pulses",
+      "source_id": "paper_5145"
+    },
+    {
+      "name": "CROP LOSS",
+      "type": "CONCEPT",
+      "description": "The reduction in crop yield resulting from pest damage",
+      "source_id": "paper_5145"
+    },
+    {
+      "name": "PODDING STAGE",
+      "type": "CONDITION",
+      "description": "The growth stage of the crop where compensation for losses can occur",
+      "source_id": "paper_5145"
+    },
+    {
+      "name": "ACTUAL DAMAGE RECORDING",
+      "type": "METHOD",
+      "description": "A method of estimating crop loss by recording actual damage and estimating expected yield loss",
+      "source_id": "paper_5145"
+    },
+    {
+      "name": "AVOIDABLE LOSS MEASUREMENT",
+      "type": "METHOD",
+      "description": "A method of estimating crop loss by comparing yields from protected and unprotected plots",
+      "source_id": "paper_5145"
+    },
+    {
+      "name": "YIELD LOSS",
+      "type": "TRAIT",
+      "description": "The measurable decrease in the quantity of crop produced",
+      "source_id": "paper_5145"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INSECT PESTS",
+      "target": "CROP LOSS",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_5145"
+    },
+    {
+      "source": "CROP LOSS",
+      "target": "PULSES",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5145"
+    },
+    {
+      "source": "PULSES",
+      "target": "PODDING STAGE",
+      "description": "has",
+      "weight": "8",
+      "source_id": "paper_5145"
+    },
+    {
+      "source": "ACTUAL DAMAGE RECORDING",
+      "target": "CROP LOSS",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_5145"
+    },
+    {
+      "source": "AVOIDABLE LOSS MEASUREMENT",
+      "target": "CROP LOSS",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_5145"
+    },
+    {
+      "source": "ACTUAL DAMAGE RECORDING",
+      "target": "YIELD LOSS",
+      "description": "estimates",
+      "weight": "9",
+      "source_id": "paper_5145"
+    },
+    {
+      "source": "AVOIDABLE LOSS MEASUREMENT",
+      "target": "YIELD LOSS",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_5145"
+    }
+  ]
+}

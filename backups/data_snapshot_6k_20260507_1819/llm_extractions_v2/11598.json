@@ -1,0 +1,278 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop used in breeding trials for trait prediction",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "A breeding approach that uses genetic markers to predict traits and achieve higher genetic gains",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "A complex agronomic trait targeted for genetic gain in groundnut",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "OIL CONTENT",
+      "type": "TRAIT",
+      "description": "A complex agronomic trait targeted for genetic gain in groundnut",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "AXIOM_ARACHIS SNP ARRAY",
+      "type": "GENE_MARKER",
+      "description": "A 58K SNP array used for genotyping groundnut elite lines",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The location where phenotyping of groundnut traits was conducted",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "GS MODELS",
+      "type": "METHOD",
+      "description": "Mathematical models (M1, M2, M3, M4) used to estimate prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "RANDOM CROSS-VALIDATION SCHEMES",
+      "type": "METHOD",
+      "description": "Methods (CV0, CV1, CV2) used to test the performance of GS models",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "A factor included in GS models to account for environmental effects",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "LINE",
+      "type": "CONCEPT",
+      "description": "A genetic factor representing elite lines in the training population",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Genetic markers used in GS models to improve prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "PREDICTION ACCURACY",
+      "type": "CONCEPT",
+      "description": "A measure of how well GS models predict phenotypic traits",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "DAYS TO 50% FLOWERING",
+      "type": "TRAIT",
+      "description": "An agronomic trait with high prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "DAYS TO MATURITY",
+      "type": "TRAIT",
+      "description": "An agronomic trait with high prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "HUNDRED SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "An agronomic trait with high prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "OLEIC ACID",
+      "type": "TRAIT",
+      "description": "An agronomic trait with high prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "RUST@90 DAYS",
+      "type": "TRAIT",
+      "description": "A disease trait measured at 90 days with high prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "RUST@105 DAYS",
+      "type": "TRAIT",
+      "description": "A disease trait measured at 105 days with high prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "LATE LEAF SPOT@90 DAYS",
+      "type": "TRAIT",
+      "description": "A disease trait measured at 90 days with high prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "PODS/PLANT",
+      "type": "TRAIT",
+      "description": "An agronomic trait with medium prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "SHELLING %",
+      "type": "TRAIT",
+      "description": "An agronomic trait with medium prediction accuracy",
+      "source_id": "paper_11598"
+    },
+    {
+      "name": "TOTAL YIELD/PLANT",
+      "type": "TRAIT",
+      "description": "An agronomic trait with medium prediction accuracy",
+      "source_id": "paper_11598"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GROUNDNUT",
+      "description": "is applied to breed",
+      "weight": "10",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "YIELD",
+      "description": "is used to predict",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "OIL CONTENT",
+      "description": "is used to predict",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "AXIOM_ARACHIS SNP ARRAY",
+      "target": "GROUNDNUT",
+      "description": "is used for genotyping",
+      "weight": "10",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "GS MODELS",
+      "target": "GENOMIC SELECTION",
+      "description": "are implementations of",
+      "weight": "10",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "GS MODELS",
+      "target": "PREDICTION ACCURACY",
+      "description": "are evaluated by",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "GS MODELS",
+      "target": "ENVIRONMENT",
+      "description": "incorporate effects of",
+      "weight": "8",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "GS MODELS",
+      "target": "LINE",
+      "description": "incorporate effects of",
+      "weight": "8",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "GS MODELS",
+      "target": "MARKERS",
+      "description": "incorporate effects of",
+      "weight": "8",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "DAYS TO 50% FLOWERING",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "DAYS TO MATURITY",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "HUNDRED SEED WEIGHT",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "OLEIC ACID",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "RUST@90 DAYS",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "RUST@105 DAYS",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "LATE LEAF SPOT@90 DAYS",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "PODS/PLANT",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "SHELLING %",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "PREDICTION ACCURACY",
+      "target": "TOTAL YIELD/PLANT",
+      "description": "was estimated for",
+      "weight": "9",
+      "source_id": "paper_11598"
+    },
+    {
+      "source": "INDIA",
+      "target": "GROUNDNUT",
+      "description": "is the location for phenotyping",
+      "weight": "7",
+      "source_id": "paper_11598"
+    }
+  ]
+}

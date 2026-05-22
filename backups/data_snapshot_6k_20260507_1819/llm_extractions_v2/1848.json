@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum (L.) R. Br., the crop studied for total dry matter mapping",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "TOTAL DRY MATTER",
+      "type": "TRAIT",
+      "description": "The total dry matter (TDM) of the plant, used as a measure of growth",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "SAHEL",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "SOIL PROPERTIES",
+      "type": "CONDITION",
+      "description": "Characteristics of the soil that influence crop growth variations",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "CROP GROWTH",
+      "type": "TRAIT",
+      "description": "The growth progress of the pearl millet plants",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "RADIOMETER",
+      "type": "METHOD",
+      "description": "An instrument designed to measure reflected red and near-infrared light to calculate NDVI",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "GLOBAL POSITIONING SYSTEM",
+      "type": "METHOD",
+      "description": "A differential GPS used to provide georeferenced coordinates for NDVI measurements",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "type": "METHOD",
+      "description": "A vegetation index (NDVI) used to estimate plant total dry matter",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "SOLAR IRRADIANCE",
+      "type": "CONDITION",
+      "description": "The amount of solar radiation reaching the plant, affecting NDVI calibration",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "FRACTIONAL VEGETATION COVER",
+      "type": "TRAIT",
+      "description": "The proportion of the ground covered by vegetation, derived from aerial photographs",
+      "source_id": "paper_1848"
+    },
+    {
+      "name": "AERIAL PHOTOGRAPHS",
+      "type": "METHOD",
+      "description": "Images taken from the air used to determine fractional vegetation cover",
+      "source_id": "paper_1848"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RADIOMETER",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "measures reflected light to calculate",
+      "weight": "10",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "GLOBAL POSITIONING SYSTEM",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "provides georeferencing for",
+      "weight": "9",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "TOTAL DRY MATTER",
+      "description": "used to determine the distribution of",
+      "weight": "9",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "TOTAL DRY MATTER",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SAHEL",
+      "description": "is grown in the region of",
+      "weight": "10",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "SOIL PROPERTIES",
+      "target": "CROP GROWTH",
+      "description": "cause differences in",
+      "weight": "8",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "CROP GROWTH",
+      "target": "TOTAL DRY MATTER",
+      "description": "is measured by",
+      "weight": "9",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "SOLAR IRRADIANCE",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "affects the correlation with TDM during calibration",
+      "weight": "7",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "FRACTIONAL VEGETATION COVER",
+      "target": "TOTAL DRY MATTER",
+      "description": "shows a good correlation with",
+      "weight": "8",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "AERIAL PHOTOGRAPHS",
+      "target": "FRACTIONAL VEGETATION COVER",
+      "description": "used to derive",
+      "weight": "10",
+      "source_id": "paper_1848"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "FRACTIONAL VEGETATION COVER",
+      "description": "shows a good correlation with",
+      "weight": "8",
+      "source_id": "paper_1848"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The crop studied for the impact of subsoil salinity",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "SOIL SALINITY",
+      "type": "CONDITION",
+      "description": "The subsoil constraint affecting crop growth and yield",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "BIRCHIP REGION",
+      "type": "LOCATION",
+      "description": "The specific study area in the Victorian southern Mallee",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "VICTORIAN SOUTHERN MALLEE",
+      "type": "LOCATION",
+      "description": "The region in Australia where the study was conducted",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "AUSTRALIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "CROP PHYSIOLOGICAL PROPERTIES",
+      "type": "TRAIT",
+      "description": "Physiological attributes of the wheat crop measured during growth",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The overall development and growth of the wheat crop",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "WATER USE",
+      "type": "TRAIT",
+      "description": "The amount of water utilized by the wheat crop",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The overall productivity of the wheat crop",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The specific weight of grain produced per unit area",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "ABOVE-GROUND DRY WEIGHT",
+      "type": "TRAIT",
+      "description": "The biomass of the crop above the soil surface at harvest",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "ACCUMULATED INTERCEPTED RADIATION",
+      "type": "TRAIT",
+      "description": "The total amount of solar radiation captured by the crop canopy",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "RADIATION USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which the crop converts intercepted radiation into biomass",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "ELECTROMAGNETIC SURVEY",
+      "type": "METHOD",
+      "description": "A survey method (EM 38) used to identify salinity levels",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "SOIL ELECTRICAL CONDUCTIVITY",
+      "type": "METHOD",
+      "description": "A measurement used to quantify soil salinity levels",
+      "source_id": "paper_175"
+    },
+    {
+      "name": "SEMI ARID ENVIRONMENT",
+      "type": "CONCEPT",
+      "description": "The environmental classification of the study region",
+      "source_id": "paper_175"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL SALINITY",
+      "target": "WHEAT",
+      "description": "Negatively affects growth and yield",
+      "weight": "10",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "CROP PHYSIOLOGICAL PROPERTIES",
+      "description": "Negatively affects physiological properties",
+      "weight": "9",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "GROWTH",
+      "description": "Negatively affects crop growth",
+      "weight": "9",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "WATER USE",
+      "description": "Reduces water use",
+      "weight": "9",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "YIELD",
+      "description": "Reduces overall yield",
+      "weight": "10",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "GRAIN YIELD",
+      "description": "Reduces grain yield",
+      "weight": "10",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "ABOVE-GROUND DRY WEIGHT",
+      "description": "Reduces above-ground dry weight",
+      "weight": "9",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "ACCUMULATED INTERCEPTED RADIATION",
+      "description": "Reduces accumulated intercepted radiation",
+      "weight": "9",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "SOIL SALINITY",
+      "target": "RADIATION USE EFFICIENCY",
+      "description": "Reduces radiation use efficiency",
+      "weight": "9",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "ELECTROMAGNETIC SURVEY",
+      "target": "SOIL SALINITY",
+      "description": "Used to identify salinity levels",
+      "weight": "8",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "SOIL ELECTRICAL CONDUCTIVITY",
+      "target": "SOIL SALINITY",
+      "description": "Used to measure salinity levels",
+      "weight": "10",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "WHEAT",
+      "target": "BIRCHIP REGION",
+      "description": "Grown in the Birchip region",
+      "weight": "7",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "BIRCHIP REGION",
+      "target": "VICTORIAN SOUTHERN MALLEE",
+      "description": "Located within the Victorian southern Mallee",
+      "weight": "10",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "VICTORIAN SOUTHERN MALLEE",
+      "target": "AUSTRALIA",
+      "description": "Located within Australia",
+      "weight": "10",
+      "source_id": "paper_175"
+    },
+    {
+      "source": "WHEAT",
+      "target": "SEMI ARID ENVIRONMENT",
+      "description": "Grown in a semi arid environment",
+      "weight": "8",
+      "source_id": "paper_175"
+    }
+  ]
+}

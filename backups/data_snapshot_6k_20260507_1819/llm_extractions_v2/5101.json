@@ -1,0 +1,219 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., a legume grown as a dry-season crop",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "SUDANO-SAHELIAN ZONE",
+      "type": "LOCATION",
+      "description": "A region in West Africa where groundnut is grown",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The broader geographic region of the study",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "ICRISAT SAHELIAN CENTRE",
+      "type": "LOCATION",
+      "description": "The research facility where the experiment was conducted",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "DRY SEASON",
+      "type": "CONDITION",
+      "description": "The period of growth characterized by lack of rain",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The artificial application of water to the crop",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Seasonal variation in heat that influences growth and yield",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "METHOD",
+      "description": "The timing of planting used to study effects on phenology and yield",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "PHENOLOGY",
+      "type": "TRAIT",
+      "description": "The timing of biological events such as emergence, flowering, and maturity",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total productivity of the groundnut crop",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The specific weight or quantity of pods produced",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "CROP GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate of biomass accumulation, denoted as B",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "PARTITIONING",
+      "type": "TRAIT",
+      "description": "The allocation of biomass to pods, denoted as p",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "YIELD STABILITY",
+      "type": "TRAIT",
+      "description": "The consistency of yield across different environments and cultivars",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "PLANT HABIT",
+      "type": "TRAIT",
+      "description": "The physical growth form of the groundnut plant",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "HAULM YIELD",
+      "type": "TRAIT",
+      "description": "The yield of the vegetative parts of the plant used as fodder",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "RADIATION INTERCEPTION",
+      "type": "CONCEPT",
+      "description": "The capture of solar energy by the crop canopy",
+      "source_id": "paper_5101"
+    },
+    {
+      "name": "POD-FILLING PHASE",
+      "type": "CONCEPT",
+      "description": "The specific growth stage during which pods are filled",
+      "source_id": "paper_5101"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "SUDANO-SAHELIAN ZONE",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "IRRIGATION",
+      "description": "grown under",
+      "weight": "8",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "PHENOLOGY",
+      "description": "significantly affected",
+      "weight": "9",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "YIELD",
+      "description": "significantly affected",
+      "weight": "9",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "POD YIELD",
+      "description": "influenced",
+      "weight": "9",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "CROP GROWTH RATE",
+      "description": "affected",
+      "weight": "7",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PARTITIONING",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "POD-FILLING PHASE",
+      "description": "affects during",
+      "weight": "8",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "PARTITIONING",
+      "target": "POD YIELD",
+      "description": "optimizes",
+      "weight": "9",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "CROP GROWTH RATE",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "RADIATION INTERCEPTION",
+      "target": "YIELD",
+      "description": "acts as a limitation to",
+      "weight": "7",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "PLANT HABIT",
+      "target": "RADIATION INTERCEPTION",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "TEMPERATURE",
+      "description": "determines exposure to",
+      "weight": "9",
+      "source_id": "paper_5101"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "YIELD STABILITY",
+      "description": "displays differences in",
+      "weight": "7",
+      "source_id": "paper_5101"
+    }
+  ]
+}

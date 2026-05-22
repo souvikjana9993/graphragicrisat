@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "DIFFUSE REFLECTANCE SPECTROSCOPY",
+      "type": "METHOD",
+      "description": "A spectroscopic method used for the rapid assessment of soil properties through spectral data",
+      "source_id": "paper_13504"
+    },
+    {
+      "name": "DIGITAL SOIL MAPPING",
+      "type": "METHOD",
+      "description": "A method used to create spatial representations of soil properties across a region",
+      "source_id": "paper_13504"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONCEPT",
+      "description": "The natural medium being analyzed for nutrient levels and physical/chemical properties",
+      "source_id": "paper_13504"
+    },
+    {
+      "name": "SMALLHOLDER FARMS",
+      "type": "CONCEPT",
+      "description": "Small-scale agricultural land holdings where soil assessment and nutrient recommendations are applied",
+      "source_id": "paper_13504"
+    },
+    {
+      "name": "SOIL TEST RECOMMENDATIONS",
+      "type": "CONCEPT",
+      "description": "Guidance provided to farmers on soil management based on test results",
+      "source_id": "paper_13504"
+    },
+    {
+      "name": "BUNDELKHAND REGION",
+      "type": "LOCATION",
+      "description": "The specific geographical area where the soil spectral data was collected",
+      "source_id": "paper_13504"
+    },
+    {
+      "name": "SOIL PROPERTIES",
+      "type": "TRAIT",
+      "description": "The chemical and physical parameters of the soil being estimated",
+      "source_id": "paper_13504"
+    },
+    {
+      "name": "NUTRIENT RECOMMENDATION",
+      "type": "CONCEPT",
+      "description": "The process of suggesting specific nutrient additions based on soil property analysis",
+      "source_id": "paper_13504"
+    },
+    {
+      "name": "SOIL TEST CROP RESPONSE (STCR) RATINGS",
+      "type": "CONCEPT",
+      "description": "A system of ratings used to determine the nutrient requirements of crops based on soil tests",
+      "source_id": "paper_13504"
+    },
+    {
+      "name": "LIN’S CONCORDANCE CORRELATION COEFFICIENTS",
+      "type": "METHOD",
+      "description": "A statistical method used to measure the agreement between measured and estimated soil properties",
+      "source_id": "paper_13504"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DIFFUSE REFLECTANCE SPECTROSCOPY",
+      "target": "DIGITAL SOIL MAPPING",
+      "description": "combined in a modelling pipeline for soil assessment",
+      "weight": "10",
+      "source_id": "paper_13504"
+    },
+    {
+      "source": "DIFFUSE REFLECTANCE SPECTROSCOPY",
+      "target": "SOIL PROPERTIES",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_13504"
+    },
+    {
+      "source": "DIGITAL SOIL MAPPING",
+      "target": "SOIL PROPERTIES",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_13504"
+    },
+    {
+      "source": "DIFFUSE REFLECTANCE SPECTROSCOPY",
+      "target": "BUNDELKHAND REGION",
+      "description": "applied to soil spectral data from",
+      "weight": "8",
+      "source_id": "paper_13504"
+    },
+    {
+      "source": "DIGITAL SOIL MAPPING",
+      "target": "BUNDELKHAND REGION",
+      "description": "applied to soil spectral data from",
+      "weight": "8",
+      "source_id": "paper_13504"
+    },
+    {
+      "source": "SOIL PROPERTIES",
+      "target": "NUTRIENT RECOMMENDATION",
+      "description": "used as input for",
+      "weight": "9",
+      "source_id": "paper_13504"
+    },
+    {
+      "source": "SOIL TEST CROP RESPONSE (STCR) RATINGS",
+      "target": "NUTRIENT RECOMMENDATION",
+      "description": "used to make",
+      "weight": "9",
+      "source_id": "paper_13504"
+    },
+    {
+      "source": "DIFFUSE REFLECTANCE SPECTROSCOPY",
+      "target": "LIN’S CONCORDANCE CORRELATION COEFFICIENTS",
+      "description": "accuracy evaluated using",
+      "weight": "8",
+      "source_id": "paper_13504"
+    },
+    {
+      "source": "DIGITAL SOIL MAPPING",
+      "target": "SMALLHOLDER FARMS",
+      "description": "used for soil assessment in",
+      "weight": "9",
+      "source_id": "paper_13504"
+    },
+    {
+      "source": "DIFFUSE REFLECTANCE SPECTROSCOPY",
+      "target": "SMALLHOLDER FARMS",
+      "description": "used for soil assessment in",
+      "weight": "9",
+      "source_id": "paper_13504"
+    }
+  ]
+}

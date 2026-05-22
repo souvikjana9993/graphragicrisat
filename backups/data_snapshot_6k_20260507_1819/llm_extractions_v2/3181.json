@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop whose germplasm accessions were analyzed for oil content.",
+      "source_id": "paper_3181"
+    },
+    {
+      "name": "OIL CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of oil present in groundnut samples, measured using different methods.",
+      "source_id": "paper_3181"
+    },
+    {
+      "name": "SOXHLET EXTRACTION",
+      "type": "METHOD",
+      "description": "A standard extraction procedure using petroleum ether to determine oil content.",
+      "source_id": "paper_3181"
+    },
+    {
+      "name": "NUCLEAR MAGNETIC RESONANCE SPECTROMETRY",
+      "type": "METHOD",
+      "description": "A rapid, easy, accurate, and non-destructive method for analyzing oil content.",
+      "source_id": "paper_3181"
+    },
+    {
+      "name": "FUNCTIONAL ANALYSIS",
+      "type": "METHOD",
+      "description": "A method used to compare and predict values between Soxhlet extraction and NMR spectrometry.",
+      "source_id": "paper_3181"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "OIL CONTENT",
+      "description": "analyzed for",
+      "weight": "10",
+      "source_id": "paper_3181"
+    },
+    {
+      "source": "SOXHLET EXTRACTION",
+      "target": "OIL CONTENT",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3181"
+    },
+    {
+      "source": "NUCLEAR MAGNETIC RESONANCE SPECTROMETRY",
+      "target": "OIL CONTENT",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3181"
+    },
+    {
+      "source": "FUNCTIONAL ANALYSIS",
+      "target": "SOXHLET EXTRACTION",
+      "description": "compares results with",
+      "weight": "8",
+      "source_id": "paper_3181"
+    },
+    {
+      "source": "FUNCTIONAL ANALYSIS",
+      "target": "NUCLEAR MAGNETIC RESONANCE SPECTROMETRY",
+      "description": "compares results with",
+      "weight": "8",
+      "source_id": "paper_3181"
+    },
+    {
+      "source": "NUCLEAR MAGNETIC RESONANCE SPECTROMETRY",
+      "target": "SOXHLET EXTRACTION",
+      "description": "highly correlated with",
+      "weight": "9",
+      "source_id": "paper_3181"
+    }
+  ]
+}

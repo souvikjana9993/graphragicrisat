@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A widespread soilborne disease affecting chickpea",
+      "source_id": "paper_2589"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F SP CICERIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Fusarium wilt",
+      "source_id": "paper_2589"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The host crop affected by Fusarium wilt",
+      "source_id": "paper_2589"
+    },
+    {
+      "name": "NEPAL",
+      "type": "LOCATION",
+      "description": "The country where the study is conducted",
+      "source_id": "paper_2589"
+    },
+    {
+      "name": "TERAI",
+      "type": "LOCATION",
+      "description": "The region and inner Terai of Nepal where the disease is prevalent",
+      "source_id": "paper_2589"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A crop that often precedes chickpea in rotation, increasing wilt prevalence",
+      "source_id": "paper_2589"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to resist Fusarium wilt",
+      "source_id": "paper_2589"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F SP CICERIS",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2589"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2589"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "NEPAL",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_2589"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "TERAI",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_2589"
+    },
+    {
+      "source": "RICE",
+      "target": "CHICKPEA",
+      "description": "precedes in crop rotation",
+      "weight": "8",
+      "source_id": "paper_2589"
+    },
+    {
+      "source": "RICE",
+      "target": "FUSARIUM WILT",
+      "description": "increases prevalence of",
+      "weight": "8",
+      "source_id": "paper_2589"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "RESISTANCE",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_2589"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "FUSARIUM WILT",
+      "description": "provides protection against",
+      "weight": "9",
+      "source_id": "paper_2589"
+    }
+  ]
+}

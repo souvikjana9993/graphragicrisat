@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "HARDPAN",
+      "type": "CONCEPT",
+      "description": "A soil layer with physical characteristics that limit root penetration and restrict water movement",
+      "source_id": "paper_11711"
+    },
+    {
+      "name": "DOSSO REGION",
+      "type": "LOCATION",
+      "description": "A region in Niger where hardpans are distributed",
+      "source_id": "paper_11711"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the Dosso region is located",
+      "source_id": "paper_11711"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "An approach used to analyze the spatial distribution of hardpans",
+      "source_id": "paper_11711"
+    },
+    {
+      "name": "SOIL CRUST",
+      "type": "CONCEPT",
+      "description": "A transient soil-surface layer that is denser or more cemented than the material beneath it",
+      "source_id": "paper_11711"
+    },
+    {
+      "name": "ROOT PENETRATION",
+      "type": "TRAIT",
+      "description": "The process of roots growing into the soil, which is limited by hardpans",
+      "source_id": "paper_11711"
+    },
+    {
+      "name": "WATER MOVEMENT",
+      "type": "CONCEPT",
+      "description": "The flow of water through soil, which is restricted by hardpans",
+      "source_id": "paper_11711"
+    },
+    {
+      "name": "SOIL STRENGTH",
+      "type": "TRAIT",
+      "description": "The resistance of soil to penetration, increased by the presence of a soil crust",
+      "source_id": "paper_11711"
+    },
+    {
+      "name": "PENETRATION RESISTANCE",
+      "type": "METHOD",
+      "description": "An index used to measure soil strength",
+      "source_id": "paper_11711"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REMOTE SENSING",
+      "target": "HARDPAN",
+      "description": "used to study the spatial distribution of",
+      "weight": "8",
+      "source_id": "paper_11711"
+    },
+    {
+      "source": "HARDPAN",
+      "target": "DOSSO REGION",
+      "description": "distributed in",
+      "weight": "9",
+      "source_id": "paper_11711"
+    },
+    {
+      "source": "DOSSO REGION",
+      "target": "NIGER",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11711"
+    },
+    {
+      "source": "HARDPAN",
+      "target": "ROOT PENETRATION",
+      "description": "limits",
+      "weight": "9",
+      "source_id": "paper_11711"
+    },
+    {
+      "source": "HARDPAN",
+      "target": "WATER MOVEMENT",
+      "description": "restricts",
+      "weight": "9",
+      "source_id": "paper_11711"
+    },
+    {
+      "source": "SOIL CRUST",
+      "target": "SOIL STRENGTH",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_11711"
+    },
+    {
+      "source": "PENETRATION RESISTANCE",
+      "target": "SOIL STRENGTH",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_11711"
+    }
+  ]
+}

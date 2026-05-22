@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A legume crop studied for seed weight and grain yield across various environments.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "A measured characteristic of pigeon pea genotypes used to assess genotype by environment interaction.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "A measured characteristic of pigeon pea genotypes used to assess genotype by environment interaction.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The effect of the interaction between genotype and environment on the expression of traits.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "PATTERN ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method applied to identify the grouping of genotypes and environments.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the 11 test environments were located.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India used as a testing environment.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "MAHARASHTRA",
+      "type": "LOCATION",
+      "description": "A state in India used as a testing environment.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "HARYANA",
+      "type": "LOCATION",
+      "description": "A state in India used as a testing environment.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "SOIL TYPE",
+      "type": "CONDITION",
+      "description": "The environmental factor that revealed a distinct pattern of genotype by environment interaction.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "BLACK SOIL",
+      "type": "CONDITION",
+      "description": "A specific soil environment that discriminated genotypes differently.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "NON-BLACK SOIL",
+      "type": "CONDITION",
+      "description": "A specific soil environment that discriminated genotypes differently.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "HYBRID",
+      "type": "CONCEPT",
+      "description": "Genotypes produced by crossing different pure lines, showing specific adaptation to particular environments.",
+      "source_id": "paper_1789"
+    },
+    {
+      "name": "PURE LINE",
+      "type": "CONCEPT",
+      "description": "Homozygous genotypes used as controls or for comparison in the study.",
+      "source_id": "paper_1789"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PATTERN ANALYSIS",
+      "target": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "target": "SEED WEIGHT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "SEED WEIGHT",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "GRAIN YIELD",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "INDIA",
+      "target": "ANDHRA PRADESH",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "INDIA",
+      "target": "MAHARASHTRA",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "INDIA",
+      "target": "HARYANA",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "SOIL TYPE",
+      "target": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "BLACK SOIL",
+      "target": "SOIL TYPE",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "NON-BLACK SOIL",
+      "target": "SOIL TYPE",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "HYBRID",
+      "target": "PIGEON PEA",
+      "description": "is a genotype of",
+      "weight": "9",
+      "source_id": "paper_1789"
+    },
+    {
+      "source": "PURE LINE",
+      "target": "PIGEON PEA",
+      "description": "is a genotype of",
+      "weight": "9",
+      "source_id": "paper_1789"
+    }
+  ]
+}

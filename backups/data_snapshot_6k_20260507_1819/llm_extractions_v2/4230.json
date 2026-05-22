@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Oryza sativa L. cv. Bala, the crop studied for grain protein content",
+      "source_id": "paper_4230"
+    },
+    {
+      "name": "GRAIN PROTEIN",
+      "type": "TRAIT",
+      "description": "The protein content of the rice grain, the measured outcome",
+      "source_id": "paper_4230"
+    },
+    {
+      "name": "AMMONIUM SULFATE",
+      "type": "CONDITION",
+      "description": "A nitrogen source applied to the rice",
+      "source_id": "paper_4230"
+    },
+    {
+      "name": "UREA NITROGEN",
+      "type": "CONDITION",
+      "description": "A nitrogen source applied to the rice",
+      "source_id": "paper_4230"
+    },
+    {
+      "name": "NITRIFICATION INHIBITORS",
+      "type": "CONCEPT",
+      "description": "Chemicals used to slow the conversion of ammonium to nitrate",
+      "source_id": "paper_4230"
+    },
+    {
+      "name": "KARANJIN",
+      "type": "CONDITION",
+      "description": "A specific nitrification inhibitor applied at 5, 10, and 15% levels",
+      "source_id": "paper_4230"
+    },
+    {
+      "name": "NITRAPYRIN",
+      "type": "CONDITION",
+      "description": "A specific nitrification inhibitor applied at 5, 10, and 15% levels",
+      "source_id": "paper_4230"
+    },
+    {
+      "name": "POT EXPERIMENT",
+      "type": "METHOD",
+      "description": "The experimental setup used to study the effects of nitrogen and inhibitors",
+      "source_id": "paper_4230"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "KARANJIN",
+      "target": "NITRIFICATION INHIBITORS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4230"
+    },
+    {
+      "source": "NITRAPYRIN",
+      "target": "NITRIFICATION INHIBITORS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4230"
+    },
+    {
+      "source": "KARANJIN",
+      "target": "GRAIN PROTEIN",
+      "description": "significantly increased",
+      "weight": "8",
+      "source_id": "paper_4230"
+    },
+    {
+      "source": "NITRAPYRIN",
+      "target": "GRAIN PROTEIN",
+      "description": "significantly increased",
+      "weight": "8",
+      "source_id": "paper_4230"
+    },
+    {
+      "source": "AMMONIUM SULFATE",
+      "target": "GRAIN PROTEIN",
+      "description": "studied for effect on",
+      "weight": "7",
+      "source_id": "paper_4230"
+    },
+    {
+      "source": "UREA NITROGEN",
+      "target": "GRAIN PROTEIN",
+      "description": "studied for effect on",
+      "weight": "7",
+      "source_id": "paper_4230"
+    },
+    {
+      "source": "POT EXPERIMENT",
+      "target": "RICE",
+      "description": "used to study",
+      "weight": "9",
+      "source_id": "paper_4230"
+    },
+    {
+      "source": "RICE",
+      "target": "GRAIN PROTEIN",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_4230"
+    }
+  ]
+}

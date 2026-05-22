@@ -1,0 +1,239 @@
+{
+  "entities": [
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "Staples in human diet and nutrition",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "GRAIN LEGUMES",
+      "type": "CROP",
+      "description": "Staples important for nutritional security",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "HUMAN DIET AND NUTRITION",
+      "type": "CONCEPT",
+      "description": "The dietary requirements of humans",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study on rice fallows was conducted",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "DRY LAND AREAS",
+      "type": "CONDITION",
+      "description": "Regions in India where rural populations depend on staples",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "NUTRITIONAL SECURITY",
+      "type": "CONCEPT",
+      "description": "The goal of ensuring access to nutritious food",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "RICE-FALLOWS",
+      "type": "CONCEPT",
+      "description": "Niche areas with residual moisture after rice cultivation",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "RESIDUAL MOISTURE",
+      "type": "CONDITION",
+      "description": "Moisture in rice-fallows that allows growth of short duration legumes",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "SHORT DURATION LEGUMES",
+      "type": "CROP",
+      "description": "Crops suitable for growth in rice-fallows to achieve intensification",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "INTENSIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of increasing productivity per unit area",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Cereal crop cultivated during the rainy season",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONDITION",
+      "description": "The rainy season during which rice is cultivated",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "RABI",
+      "type": "CONDITION",
+      "description": "The post-rainy season during which fallows occur",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Moderate-resolution imaging Spectroradiometer used for time series data",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Methods applied to MODIS data to map fallow lands",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used to map rice systems",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "GROUND SURVEY DATA",
+      "type": "METHOD",
+      "description": "Field data used for mapping and validating rice systems",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "SUB-NATIONAL STATISTICS",
+      "type": "METHOD",
+      "description": "Data used to correlate and validate physical rice and irrigated areas",
+      "source_id": "paper_10408"
+    },
+    {
+      "name": "SOIL NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nutrient fixed by short duration grain legumes",
+      "source_id": "paper_10408"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CEREALS",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "CEREALS",
+      "target": "HUMAN DIET AND NUTRITION",
+      "description": "part of",
+      "weight": "10",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "HUMAN DIET AND NUTRITION",
+      "description": "part of",
+      "weight": "10",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "NUTRITIONAL SECURITY",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "RICE-FALLOWS",
+      "target": "RESIDUAL MOISTURE",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "SHORT DURATION LEGUMES",
+      "target": "RICE-FALLOWS",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "SHORT DURATION LEGUMES",
+      "target": "INTENSIFICATION",
+      "description": "enables",
+      "weight": "8",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "RICE",
+      "target": "KHARIF",
+      "description": "cultivated during",
+      "weight": "10",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "RICE-FALLOWS",
+      "target": "RABI",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "MODIS",
+      "target": "RICE-FALLOWS",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "MODIS",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "NDVI",
+      "target": "RICE",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "GROUND SURVEY DATA",
+      "target": "RICE",
+      "description": "used to validate",
+      "weight": "9",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "SUB-NATIONAL STATISTICS",
+      "target": "RICE",
+      "description": "used to compare",
+      "weight": "8",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "SHORT DURATION LEGUMES",
+      "target": "SOIL NITROGEN",
+      "description": "fixes",
+      "weight": "10",
+      "source_id": "paper_10408"
+    },
+    {
+      "source": "RICE",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10408"
+    }
+  ]
+}

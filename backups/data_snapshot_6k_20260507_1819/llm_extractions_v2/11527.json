@@ -1,0 +1,244 @@
+{
+  "entities": [
+    {
+      "name": "INDIAN SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "Semi-arid regions in India characterized by low water and crop productivity",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "Clay-rich soils found in semi-arid tropics associated with poor land management",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "BROAD BED FURROWS",
+      "type": "METHOD",
+      "description": "A land water management practice designed to improve soil water content and crop productivity",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "FLATBED PLANTING",
+      "type": "METHOD",
+      "description": "A conventional planting method used as a baseline for comparing water management",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "SOIL WATER CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of water held in the soil profile",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "WATER PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of crop yield produced per unit of water used",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of crop yield produced per unit area",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used in sequential cropping with chickpea",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used in sequential cropping with sorghum",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop used in sequential cropping with groundnut",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop used in sequential cropping with maize",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop used in intercropping with pigeonpea",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used in intercropping with pearl millet",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "NUTRIENTS MANAGEMENT",
+      "type": "METHOD",
+      "description": "The application of macronutrients and micronutrients to improve crop growth",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "MACRONUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Essential plant nutrients including Nitrogen, Phosphorus, and Potassium",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "MICRONUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Essential plant nutrients required in small quantities",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "SYSTEM EQUIVALENT YIELD",
+      "type": "TRAIT",
+      "description": "A metric used to evaluate the total productivity of a cropping system",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "A state where water availability is insufficient for critical crop growth stages",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "ERRATIC RAINFALL",
+      "type": "CONDITION",
+      "description": "Unpredictable and low rainfall patterns",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperatures and weather patterns causing erratic rainfall",
+      "source_id": "paper_11527"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_11527"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BROAD BED FURROWS",
+      "target": "SOIL WATER CONTENT",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "BROAD BED FURROWS",
+      "target": "WATER PRODUCTIVITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "BROAD BED FURROWS",
+      "target": "CROP PRODUCTIVITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "BROAD BED FURROWS",
+      "target": "WATER STRESS",
+      "description": "minimizes",
+      "weight": "9",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "NUTRIENTS MANAGEMENT",
+      "target": "SYSTEM EQUIVALENT YIELD",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "NUTRIENTS MANAGEMENT",
+      "target": "WATER PRODUCTIVITY",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CHICKPEA",
+      "description": "sequential cropping system",
+      "weight": "10",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "MAIZE",
+      "target": "GROUNDNUT",
+      "description": "sequential cropping system",
+      "weight": "10",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "PIGEONPEA",
+      "description": "intercropping system",
+      "weight": "10",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "ERRATIC RAINFALL",
+      "target": "WATER STRESS",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "ERRATIC RAINFALL",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "BROAD BED FURROWS",
+      "target": "ERRATIC RAINFALL",
+      "description": "mitigates",
+      "weight": "7",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "VERTISOLS",
+      "target": "INDIAN SEMI-ARID TROPICS",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "INDIA",
+      "target": "INDIAN SEMI-ARID TROPICS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "NUTRIENTS MANAGEMENT",
+      "target": "MACRONUTRIENTS",
+      "description": "involves",
+      "weight": "10",
+      "source_id": "paper_11527"
+    },
+    {
+      "source": "NUTRIENTS MANAGEMENT",
+      "target": "MICRONUTRIENTS",
+      "description": "involves",
+      "weight": "10",
+      "source_id": "paper_11527"
+    }
+  ]
+}

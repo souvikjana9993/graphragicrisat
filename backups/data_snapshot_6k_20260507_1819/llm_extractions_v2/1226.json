@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "An important cool season food crop grown mainly in dry lands",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "COOL SEASON",
+      "type": "CONDITION",
+      "description": "The seasonal condition under which chickpea is grown",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "DRY LANDS",
+      "type": "LOCATION",
+      "description": "The primary environment where chickpea is grown",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "DISEASES",
+      "type": "CONCEPT",
+      "description": "Pathological conditions affecting chickpea at all growth stages",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "PATHOGENS",
+      "type": "ORGANISM",
+      "description": "Biological agents that cause diseases in chickpea",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "FUNGI",
+      "type": "ORGANISM",
+      "description": "A type of pathogen affecting chickpea roots, stems, leaves, flowers, and pods",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "BACTERIA",
+      "type": "ORGANISM",
+      "description": "A type of pathogen that affects chickpea",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "VIRUSES",
+      "type": "ORGANISM",
+      "description": "A type of pathogen that affects chickpea",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "MYCOPLASMA",
+      "type": "ORGANISM",
+      "description": "A type of pathogen that affects chickpea",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "FIELD DIAGNOSIS",
+      "type": "METHOD",
+      "description": "The process of identifying diseases in the field",
+      "source_id": "paper_1226"
+    },
+    {
+      "name": "CONTROL MEASURES",
+      "type": "METHOD",
+      "description": "Actions taken to manage or eliminate chickpea diseases",
+      "source_id": "paper_1226"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "COOL SEASON",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "DRY LANDS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "DISEASES",
+      "description": "suffers from",
+      "weight": "10",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "PATHOGENS",
+      "target": "CHICKPEA",
+      "description": "affect",
+      "weight": "10",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "PATHOGENS",
+      "target": "DISEASES",
+      "description": "cause",
+      "weight": "10",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "FUNGI",
+      "target": "PATHOGENS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "BACTERIA",
+      "target": "PATHOGENS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "VIRUSES",
+      "target": "PATHOGENS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "MYCOPLASMA",
+      "target": "PATHOGENS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "FIELD DIAGNOSIS",
+      "target": "DISEASES",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_1226"
+    },
+    {
+      "source": "CONTROL MEASURES",
+      "target": "DISEASES",
+      "description": "used to manage",
+      "weight": "9",
+      "source_id": "paper_1226"
+    }
+  ]
+}

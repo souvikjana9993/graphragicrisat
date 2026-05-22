@@ -1,0 +1,209 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop species Cicer arietinum L. being studied for cold tolerance.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "COLD TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand cold temperatures.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "COLD SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The lack of tolerance to cold temperatures in the plant.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "COLD",
+      "type": "CONDITION",
+      "description": "Low temperature environmental stress.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "COMBINING ABILITY ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to investigate gene action and breeding value.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "GENERATION MEAN ANALYSIS",
+      "type": "METHOD",
+      "description": "A method used to analyze the means of different generations to identify gene effects.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "ADDITIVE GENE EFFECTS",
+      "type": "CONCEPT",
+      "description": "The cumulative effect of alleles at a locus contributing to a trait.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "NONADDITIVE GENE EFFECTS",
+      "type": "CONCEPT",
+      "description": "Gene effects that are not additive, including dominance and epistasis.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "GENE INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "The interaction between alleles at different loci, also known as epistasis.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "DOMINANCE GENE EFFECTS",
+      "type": "CONCEPT",
+      "description": "The effect where one allele masks the expression of another allele at the same locus.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "ADDITIVE X ADDITIVE INTERACTION",
+      "type": "CONCEPT",
+      "description": "A specific type of epistatic interaction between additive gene effects.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "DOMINANCE X DOMINANCE INTERACTION",
+      "type": "CONCEPT",
+      "description": "A specific type of epistatic interaction between dominance gene effects.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "DUPLICATE EPISTASIS",
+      "type": "CONCEPT",
+      "description": "A form of gene interaction where two different genes produce the same phenotypic effect.",
+      "source_id": "paper_3061"
+    },
+    {
+      "name": "SELFING",
+      "type": "METHOD",
+      "description": "The process of self-pollination used to reduce non-additive genetic variance.",
+      "source_id": "paper_3061"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COMBINING ABILITY ANALYSIS",
+      "target": "CHICKPEA",
+      "description": "used to investigate gene action in",
+      "weight": "8",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "GENERATION MEAN ANALYSIS",
+      "target": "CHICKPEA",
+      "description": "used to investigate gene action in",
+      "weight": "8",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "COMBINING ABILITY ANALYSIS",
+      "target": "COLD TOLERANCE",
+      "description": "used to analyze reaction to",
+      "weight": "9",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "GENERATION MEAN ANALYSIS",
+      "target": "COLD TOLERANCE",
+      "description": "used to analyze reaction to",
+      "weight": "9",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "COMBINING ABILITY ANALYSIS",
+      "target": "ADDITIVE GENE EFFECTS",
+      "description": "revealed significance of",
+      "weight": "9",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "COMBINING ABILITY ANALYSIS",
+      "target": "NONADDITIVE GENE EFFECTS",
+      "description": "revealed significance of",
+      "weight": "9",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "GENERATION MEAN ANALYSIS",
+      "target": "GENE INTERACTIONS",
+      "description": "revealed presence of",
+      "weight": "9",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "GENERATION MEAN ANALYSIS",
+      "target": "ADDITIVE GENE EFFECTS",
+      "description": "revealed presence of",
+      "weight": "9",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "GENERATION MEAN ANALYSIS",
+      "target": "DOMINANCE GENE EFFECTS",
+      "description": "revealed presence of",
+      "weight": "9",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "GENE INTERACTIONS",
+      "target": "ADDITIVE X ADDITIVE INTERACTION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "GENE INTERACTIONS",
+      "target": "DOMINANCE X DOMINANCE INTERACTION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "DOMINANCE X DOMINANCE INTERACTION",
+      "target": "DUPLICATE EPISTASIS",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "COLD TOLERANCE",
+      "target": "COLD SUSCEPTIBILITY",
+      "description": "dominant over",
+      "weight": "10",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "SELFING",
+      "target": "DOMINANCE GENE EFFECTS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "SELFING",
+      "target": "GENE INTERACTIONS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "COLD TOLERANCE",
+      "target": "COLD",
+      "description": "is a reaction to",
+      "weight": "10",
+      "source_id": "paper_3061"
+    },
+    {
+      "source": "COLD SUSCEPTIBILITY",
+      "target": "COLD",
+      "description": "is a reaction to",
+      "weight": "10",
+      "source_id": "paper_3061"
+    }
+  ]
+}

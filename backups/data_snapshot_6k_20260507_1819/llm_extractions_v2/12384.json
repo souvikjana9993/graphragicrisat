@@ -1,0 +1,226 @@
+{
+  "entities": [
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "Essential nutrient required for healthy crop growth",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "FIELD PHENOTYPING",
+      "type": "METHOD",
+      "description": "Process of measuring traits in the field, often laborious for nitrogen stress",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "NITROGEN STRESS SYMPTOMS",
+      "type": "TRAIT",
+      "description": "Physical manifestations of nitrogen deficiency in crops",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "RGB IMAGERY",
+      "type": "METHOD",
+      "description": "High-resolution red-green-blue images used for color-based quantification",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "UAV-BASED DIGITAL FIELD PHENOTYPING",
+      "type": "METHOD",
+      "description": "Estimation of crop nitrogen content using unmanned aerial vehicles",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "CROP NITROGEN CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of nitrogen present in the crop tissue",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for Semi-Arid Tropics, research site",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "HYDERABAD",
+      "type": "LOCATION",
+      "description": "City in India where the experiment was conducted",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where the experiment was conducted",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor L., a long-stature cereal model crop",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "MOISTURE",
+      "type": "CONDITION",
+      "description": "Soil water availability regime used in the experiment",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "SOIL NITROGEN CONTENT",
+      "type": "CONDITION",
+      "description": "Soil nitrogen levels used as a regime in the experiment",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "XENMUSEX5S",
+      "type": "METHOD",
+      "description": "High-resolution RGB sensor used for capturing imagery",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "DJI MATRIC 210",
+      "type": "METHOD",
+      "description": "Quadcopter used to mount the RGB sensor",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "RGB SPECTRUM VEGETATION INDICES",
+      "type": "METHOD",
+      "description": "Indices derived from RGB imagery indicating crop greenness",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "SIMPLE LINEAR REGRESSION",
+      "type": "METHOD",
+      "description": "Statistical method used to correlate vegetation indices with nitrogen content",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "STEPWISE BACKWARD REGRESSION",
+      "type": "METHOD",
+      "description": "Statistical model used for real-time estimation of nitrogen status",
+      "source_id": "paper_12384"
+    },
+    {
+      "name": "CROP GREENNESS",
+      "type": "TRAIT",
+      "description": "Visual indicator of crop health and nitrogen status",
+      "source_id": "paper_12384"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UAV-BASED DIGITAL FIELD PHENOTYPING",
+      "target": "CROP NITROGEN CONTENT",
+      "description": "estimates",
+      "weight": "10",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "UAV-BASED DIGITAL FIELD PHENOTYPING",
+      "target": "RGB IMAGERY",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "RGB IMAGERY",
+      "target": "XENMUSEX5S",
+      "description": "captured by",
+      "weight": "10",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "XENMUSEX5S",
+      "target": "DJI MATRIC 210",
+      "description": "mounted on",
+      "weight": "10",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ICRISAT",
+      "description": "studied at",
+      "weight": "9",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "HYDERABAD",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "HYDERABAD",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MOISTURE",
+      "description": "cultivated under",
+      "weight": "8",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SOIL NITROGEN CONTENT",
+      "description": "cultivated under",
+      "weight": "8",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "RGB SPECTRUM VEGETATION INDICES",
+      "target": "CROP GREENNESS",
+      "description": "indicate",
+      "weight": "10",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "RGB SPECTRUM VEGETATION INDICES",
+      "target": "CROP NITROGEN CONTENT",
+      "description": "correlated with",
+      "weight": "9",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "SIMPLE LINEAR REGRESSION",
+      "target": "RGB SPECTRUM VEGETATION INDICES",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "STEPWISE BACKWARD REGRESSION",
+      "target": "RGB SPECTRUM VEGETATION INDICES",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "STEPWISE BACKWARD REGRESSION",
+      "target": "CROP NITROGEN CONTENT",
+      "description": "estimates",
+      "weight": "9",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "SORGHUM",
+      "description": "essential for",
+      "weight": "10",
+      "source_id": "paper_12384"
+    },
+    {
+      "source": "FIELD PHENOTYPING",
+      "target": "NITROGEN STRESS SYMPTOMS",
+      "description": "measures",
+      "weight": "8",
+      "source_id": "paper_12384"
+    }
+  ]
+}

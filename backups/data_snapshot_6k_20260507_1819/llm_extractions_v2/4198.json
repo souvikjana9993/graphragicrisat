@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "An important legume crop for the semiarid tropics, Cajanus cajan",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand drought conditions",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "SINGLE FEATURE POLYMORPHISMS",
+      "type": "GENE_MARKER",
+      "description": "Microarray-based molecular markers detected by hybridization of DNA or cRNA to oligonucleotide probes",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "SEMIARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region where pigeonpea is an important crop",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "Glycine max, a closely related species of pigeonpea used for genome arrays",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "AFFYMETRIX GENOME ARRAYS",
+      "type": "METHOD",
+      "description": "Tool used to detect SFPs using soybean arrays on pigeonpea cRNA",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "POD BORER RESISTANCE",
+      "type": "TRAIT",
+      "description": "Resistance to the pod borer pest",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "HELICOVERPA ARMIGIERA",
+      "type": "ORGANISM",
+      "description": "The pod borer pest",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "ROBUSTIFIED PROJECTION PURSUIT METHOD",
+      "type": "METHOD",
+      "description": "Method used to identify SFPs from pair-wise comparisons",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "SANGER SEQUENCING",
+      "type": "METHOD",
+      "description": "Method used for validation of SFPs",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "SEQUENCE POLYMORPHISMS",
+      "type": "GENE_MARKER",
+      "description": "Polymorphisms identified through Sanger sequencing",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "CANDIDATE GENES",
+      "type": "CONCEPT",
+      "description": "Genes potentially associated with drought tolerance identified via gene ontology analysis",
+      "source_id": "paper_4198"
+    },
+    {
+      "name": "GENE ONTOLOGY ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis used to identify candidate genes associated with drought tolerance",
+      "source_id": "paper_4198"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SINGLE FEATURE POLYMORPHISMS",
+      "target": "PIGEONPEA",
+      "description": "are molecular markers identified in",
+      "weight": "10",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "SINGLE FEATURE POLYMORPHISMS",
+      "target": "DROUGHT TOLERANCE",
+      "description": "are used to identify markers for",
+      "weight": "9",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SEMIARID TROPICS",
+      "description": "is an important legume crop for",
+      "weight": "8",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "PIGEONPEA",
+      "description": "is a closely related species of",
+      "weight": "9",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "AFFYMETRIX GENOME ARRAYS",
+      "target": "SINGLE FEATURE POLYMORPHISMS",
+      "description": "are used to detect",
+      "weight": "10",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "AFFYMETRIX GENOME ARRAYS",
+      "target": "SOYBEAN",
+      "description": "are based on the genome of",
+      "weight": "10",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "POD BORER RESISTANCE",
+      "description": "populations segregate for",
+      "weight": "8",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "POD BORER RESISTANCE",
+      "target": "HELICOVERPA ARMIGIERA",
+      "description": "is resistance against",
+      "weight": "10",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "ROBUSTIFIED PROJECTION PURSUIT METHOD",
+      "target": "SINGLE FEATURE POLYMORPHISMS",
+      "description": "is used to identify",
+      "weight": "10",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "SANGER SEQUENCING",
+      "target": "SINGLE FEATURE POLYMORPHISMS",
+      "description": "is used for validation of",
+      "weight": "10",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "SANGER SEQUENCING",
+      "target": "SEQUENCE POLYMORPHISMS",
+      "description": "is used to obtain",
+      "weight": "10",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "SEQUENCE POLYMORPHISMS",
+      "target": "SINGLE FEATURE POLYMORPHISMS",
+      "description": "are associated with",
+      "weight": "9",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "GENE ONTOLOGY ANALYSIS",
+      "target": "CANDIDATE GENES",
+      "description": "is used to identify",
+      "weight": "10",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "CANDIDATE GENES",
+      "target": "DROUGHT TOLERANCE",
+      "description": "may be associated with",
+      "weight": "9",
+      "source_id": "paper_4198"
+    },
+    {
+      "source": "CANDIDATE GENES",
+      "target": "PIGEONPEA",
+      "description": "are homologous genes in",
+      "weight": "9",
+      "source_id": "paper_4198"
+    }
+  ]
+}

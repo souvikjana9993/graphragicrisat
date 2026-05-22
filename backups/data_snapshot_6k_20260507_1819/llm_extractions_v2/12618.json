@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop species being studied for yield stability under drought.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the rice crop.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "The environmental stress condition affecting rice yield.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "QDTY12.1",
+      "type": "GENE_MARKER",
+      "description": "A quantitative trait locus associated with maintaining yield under drought.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "DECUSSATE",
+      "type": "GENE_MARKER",
+      "description": "The gene (OsDEC) encoded by the qDTY12.1 locus.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "LPB",
+      "type": "ORGANISM",
+      "description": "Low-yield penalty qDTY12.1-introgression lines.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "HPB",
+      "type": "ORGANISM",
+      "description": "High-yield penalty qDTY12.1-introgression lines.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "TRANSCRIPTIONAL NETWORK MODELING",
+      "type": "METHOD",
+      "description": "The process of modeling gene expression networks to identify core and peripheral genes.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "FLORAL DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The biological process of flower formation coordinated by the DEC-network.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "CYTOKININ SIGNALING PATHWAY",
+      "type": "CONCEPT",
+      "description": "The signaling pathway through which OsDEC coordinates with peripheral genes.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "EARLY FLOWERING",
+      "type": "TRAIT",
+      "description": "A mechanism to avoid drought-induced depletion of photosynthate.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "SOURCE-SINK DYNAMICS",
+      "type": "CONCEPT",
+      "description": "The physiological relationship between nutrient production and usage that sustains reproductive transition.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "PHOTOSYNTHATE",
+      "type": "CONCEPT",
+      "description": "The products of photosynthesis required for reproductive growth.",
+      "source_id": "paper_12618"
+    },
+    {
+      "name": "REPRODUCTIVE GROWTH",
+      "type": "CONCEPT",
+      "description": "The stage of plant development focused on the production of seeds/grains.",
+      "source_id": "paper_12618"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "QDTY12.1",
+      "target": "YIELD",
+      "description": "maintains yield under drought",
+      "weight": "9",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "QDTY12.1",
+      "target": "DROUGHT",
+      "description": "impacts yield under drought condition",
+      "weight": "8",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "QDTY12.1",
+      "target": "DECUSSATE",
+      "description": "encodes the DECUSSATE gene",
+      "weight": "10",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "DECUSSATE",
+      "target": "LPB",
+      "description": "expressed and induced by drought in LPB",
+      "weight": "9",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "DECUSSATE",
+      "target": "HPB",
+      "description": "not induced by drought in HPB",
+      "weight": "8",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "DECUSSATE",
+      "target": "FLORAL DEVELOPMENT",
+      "description": "coordinates genes involved in floral development",
+      "weight": "8",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "DECUSSATE",
+      "target": "CYTOKININ SIGNALING PATHWAY",
+      "description": "coordinates peripheral genes through this pathway",
+      "weight": "8",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "DECUSSATE",
+      "target": "EARLY FLOWERING",
+      "description": "defines a mechanism for early flowering",
+      "weight": "9",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "EARLY FLOWERING",
+      "target": "DROUGHT",
+      "description": "avoids drought-induced depletion of photosynthate",
+      "weight": "8",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "EARLY FLOWERING",
+      "target": "PHOTOSYNTHATE",
+      "description": "prevents depletion of photosynthate",
+      "weight": "7",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "PHOTOSYNTHATE",
+      "target": "REPRODUCTIVE GROWTH",
+      "description": "is needed for reproductive growth",
+      "weight": "9",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "EARLY FLOWERING",
+      "target": "SOURCE-SINK DYNAMICS",
+      "description": "establishes stronger source-sink dynamics",
+      "weight": "8",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "SOURCE-SINK DYNAMICS",
+      "target": "YIELD",
+      "description": "sustains reproductive transition to maintain yield under drought",
+      "weight": "8",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "RICE",
+      "target": "YIELD",
+      "description": "the crop whose yield is measured",
+      "weight": "10",
+      "source_id": "paper_12618"
+    },
+    {
+      "source": "RICE",
+      "target": "QDTY12.1",
+      "description": "the crop containing the qDTY12.1 locus",
+      "weight": "10",
+      "source_id": "paper_12618"
+    }
+  ]
+}

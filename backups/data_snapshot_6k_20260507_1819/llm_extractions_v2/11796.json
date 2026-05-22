@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "GWAVA",
+      "type": "METHOD",
+      "description": "Global Water AVailability Assessment hydrological model used for predictive capability assessment",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "SWAT",
+      "type": "METHOD",
+      "description": "Soil Water Assessment Tool hydrological model used for predictive capability assessment",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "VIC",
+      "type": "METHOD",
+      "description": "Variable Infiltration Capacity hydrological model used for predictive capability assessment",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "MEAN ENSEMBLE",
+      "type": "METHOD",
+      "description": "A multi-model ensemble approach used to overcome uncertainties associated with individual models",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "UPPER CAUVERY CATCHMENT",
+      "type": "LOCATION",
+      "description": "A heavily influenced catchment in Peninsular India used for hydrological model investigation",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "PENINSULAR INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the Upper Cauvery Catchment is located",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "NASH-SUTCLIFFE EFFICIENCY",
+      "type": "METHOD",
+      "description": "A performance metric used to analyze monthly streamflow simulations",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "KLING-GUPTA EFFICIENCY",
+      "type": "METHOD",
+      "description": "A performance metric used to analyze monthly streamflow simulations",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "PERCENT BIAS",
+      "type": "METHOD",
+      "description": "A performance metric used to analyze monthly streamflow simulations",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "STREAMFLOW SIMULATIONS",
+      "type": "CONCEPT",
+      "description": "The process of simulating monthly water flow from 1983 to 2005",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "CATCHMENT HYDROLOGICAL PROCESSES",
+      "type": "CONCEPT",
+      "description": "Key physical processes within a catchment that hydrological models aim to represent",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "SPATIAL REPRESENTATION OF PRECIPITATION",
+      "type": "CONCEPT",
+      "description": "The accurate spatial distribution of rainfall used as input for hydrological models",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "RESERVOIR FUNCTIONALITY",
+      "type": "CONCEPT",
+      "description": "The operational functionality of reservoirs which is critical for obtaining accurate hydrological results",
+      "source_id": "paper_11796"
+    },
+    {
+      "name": "UNCERTAINTY",
+      "type": "CONCEPT",
+      "description": "Uncertainties associated with individual models and input data",
+      "source_id": "paper_11796"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GWAVA",
+      "target": "UPPER CAUVERY CATCHMENT",
+      "description": "evaluated in",
+      "weight": "9",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "SWAT",
+      "target": "UPPER CAUVERY CATCHMENT",
+      "description": "evaluated in",
+      "weight": "9",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "VIC",
+      "target": "UPPER CAUVERY CATCHMENT",
+      "description": "evaluated in",
+      "weight": "9",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "MEAN ENSEMBLE",
+      "target": "GWAVA",
+      "description": "composed of",
+      "weight": "10",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "MEAN ENSEMBLE",
+      "target": "SWAT",
+      "description": "composed of",
+      "weight": "10",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "MEAN ENSEMBLE",
+      "target": "VIC",
+      "description": "composed of",
+      "weight": "10",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "NASH-SUTCLIFFE EFFICIENCY",
+      "target": "STREAMFLOW SIMULATIONS",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "KLING-GUPTA EFFICIENCY",
+      "target": "STREAMFLOW SIMULATIONS",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "PERCENT BIAS",
+      "target": "STREAMFLOW SIMULATIONS",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "MEAN ENSEMBLE",
+      "target": "UNCERTAINTY",
+      "description": "used to offset",
+      "weight": "8",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "RESERVOIR FUNCTIONALITY",
+      "target": "STREAMFLOW SIMULATIONS",
+      "description": "impacts accuracy of",
+      "weight": "8",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "SPATIAL REPRESENTATION OF PRECIPITATION",
+      "target": "STREAMFLOW SIMULATIONS",
+      "description": "serves as input for",
+      "weight": "8",
+      "source_id": "paper_11796"
+    },
+    {
+      "source": "UPPER CAUVERY CATCHMENT",
+      "target": "PENINSULAR INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11796"
+    }
+  ]
+}

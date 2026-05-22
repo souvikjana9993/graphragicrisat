@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for podding traits.",
+      "source_id": "paper_1620"
+    },
+    {
+      "name": "DOUBLE-PODDED NODES",
+      "type": "TRAIT",
+      "description": "The trait characterized by having two pods per pedicel at one or more fruiting nodes.",
+      "source_id": "paper_1620"
+    },
+    {
+      "name": "SINGLE-PODDED NODES",
+      "type": "TRAIT",
+      "description": "The trait characterized by having a single pod per pedicel.",
+      "source_id": "paper_1620"
+    },
+    {
+      "name": "CROSSING",
+      "type": "METHOD",
+      "description": "The breeding method used to derive progenies from double-podded and single-podded lines.",
+      "source_id": "paper_1620"
+    },
+    {
+      "name": "ADVANCED GENERATION PROGENIES",
+      "type": "CONCEPT",
+      "description": "The F5, F6, and F7 generations derived from the crosses.",
+      "source_id": "paper_1620"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "The environment where the progenies were evaluated.",
+      "source_id": "paper_1620"
+    },
+    {
+      "name": "ICCX790173BH-BP28P1P",
+      "type": "CONCEPT",
+      "description": "A specific F6 progeny line that exhibited a high proportion of double-podded nodes.",
+      "source_id": "paper_1620"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "DOUBLE-PODDED NODES",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_1620"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SINGLE-PODDED NODES",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_1620"
+    },
+    {
+      "source": "CROSSING",
+      "target": "DOUBLE-PODDED NODES",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_1620"
+    },
+    {
+      "source": "CROSSING",
+      "target": "SINGLE-PODDED NODES",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_1620"
+    },
+    {
+      "source": "CROSSING",
+      "target": "ADVANCED GENERATION PROGENIES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_1620"
+    },
+    {
+      "source": "ADVANCED GENERATION PROGENIES",
+      "target": "DOUBLE-PODDED NODES",
+      "description": "evaluated for",
+      "weight": "10",
+      "source_id": "paper_1620"
+    },
+    {
+      "source": "ADVANCED GENERATION PROGENIES",
+      "target": "FIELD",
+      "description": "studied in",
+      "weight": "8",
+      "source_id": "paper_1620"
+    },
+    {
+      "source": "ICCX790173BH-BP28P1P",
+      "target": "ADVANCED GENERATION PROGENIES",
+      "description": "is a member of",
+      "weight": "10",
+      "source_id": "paper_1620"
+    },
+    {
+      "source": "ICCX790173BH-BP28P1P",
+      "target": "DOUBLE-PODDED NODES",
+      "description": "shows high proportion of",
+      "weight": "10",
+      "source_id": "paper_1620"
+    }
+  ]
+}

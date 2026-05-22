@@ -1,0 +1,331 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species Cicer arietinum L.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "CHIKPGRO",
+      "type": "METHOD",
+      "description": "A growth and development model developed for chickpea.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The legume species used as a basis for the PNUTGRO model.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "PNUTGRO",
+      "type": "METHOD",
+      "description": "A growth model for groundnut used as the basis for CHIKPGRO.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "VEGETATIVE DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The growth phase of the plant before reproduction.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "REPRODUCTIVE DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The growth phase involving flowering and seed production.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "CROP GROWTH",
+      "type": "TRAIT",
+      "description": "The overall increase in plant biomass and size.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "ASSIMILATE PARTITIONING",
+      "type": "TRAIT",
+      "description": "The distribution of photosynthates to various plant organs.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "WATER-LIMITING CONDITIONS",
+      "type": "CONDITION",
+      "description": "Situations where water availability restricts plant growth.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "NON-LIMITING CONDITIONS",
+      "type": "CONDITION",
+      "description": "Situations where water is sufficient for plant growth.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "ANNIGERI",
+      "type": "CROP",
+      "description": "A specific cultivar of chickpea.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "JG 74",
+      "type": "CROP",
+      "description": "A specific cultivar of chickpea.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "SOIL WATER BALANCE",
+      "type": "CONCEPT",
+      "description": "The movement and storage of water in the root-zone soil.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "TRAIT",
+      "description": "The stage of plant development when flowers open.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "POD INITIATION",
+      "type": "TRAIT",
+      "description": "The stage when pods begin to form.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "SEED GROWTH",
+      "type": "TRAIT",
+      "description": "The process of seed development and enlargement.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "PHYSIOLOGICAL MATURITY",
+      "type": "TRAIT",
+      "description": "The stage when the seed has reached its maximum dry weight.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "EXTREME WET CONDITIONS",
+      "type": "CONDITION",
+      "description": "Situations with excessive water availability.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of total upper leaf surface of a crop to the surface area of the land on which the crop grows.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "TOTAL DRY MATTER PRODUCTION",
+      "type": "TRAIT",
+      "description": "The total biomass accumulated by the plant.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "IRRIGATED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Situations where water is artificially supplied to the crop.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "WATER-STRESSED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Situations where the plant lacks sufficient water.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONCEPT",
+      "description": "The amount of water held in the soil.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced per unit area.",
+      "source_id": "paper_3163"
+    },
+    {
+      "name": "INDIAN PLATEAU",
+      "type": "LOCATION",
+      "description": "The geographical region where the model is applicable.",
+      "source_id": "paper_3163"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHIKPGRO",
+      "target": "CHICKPEA",
+      "description": "models growth and development of",
+      "weight": "10",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "PNUTGRO",
+      "description": "developed from",
+      "weight": "9",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "GROUNDNUT",
+      "description": "models growth of",
+      "weight": "10",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "VEGETATIVE DEVELOPMENT",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "REPRODUCTIVE DEVELOPMENT",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "CROP GROWTH",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "ASSIMILATE PARTITIONING",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "WATER-LIMITING CONDITIONS",
+      "description": "simulates growth under",
+      "weight": "9",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "NON-LIMITING CONDITIONS",
+      "description": "simulates growth under",
+      "weight": "9",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "ANNIGERI",
+      "description": "calibrated for",
+      "weight": "8",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "JG 74",
+      "description": "calibrated for",
+      "weight": "8",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "SOIL WATER BALANCE",
+      "description": "calibrated for",
+      "weight": "7",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "FLOWERING",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "POD INITIATION",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "SEED GROWTH",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "PHYSIOLOGICAL MATURITY",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "LEAF AREA INDEX",
+      "description": "predicts",
+      "weight": "8",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "TOTAL DRY MATTER PRODUCTION",
+      "description": "predicts",
+      "weight": "8",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "SEED YIELD",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "SOIL MOISTURE",
+      "description": "predicts",
+      "weight": "8",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "CHIKPGRO",
+      "target": "INDIAN PLATEAU",
+      "description": "applicable in",
+      "weight": "7",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "ANNIGERI",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "JG 74",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "WATER-STRESSED CONDITIONS",
+      "target": "WATER-LIMITING CONDITIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3163"
+    },
+    {
+      "source": "IRRIGATED CONDITIONS",
+      "target": "NON-LIMITING CONDITIONS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3163"
+    }
+  ]
+}

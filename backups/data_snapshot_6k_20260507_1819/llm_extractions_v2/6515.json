@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal crop planted in mid-November and harvested in mid-March with a grain yield of 2-3 tons/ha",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop planted after wheat and harvested in early June, providing grain, fodder, and green manure",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A cereal crop transplanted in July and harvested in early November with a grain yield of about 4.5 ton/ha",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "TRIPLE CROPPING",
+      "type": "METHOD",
+      "description": "A cropping system involving the sequential planting of wheat, cowpea, and rice in a single year",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "SUPPLEMENTAL IRRIGATION",
+      "type": "CONDITION",
+      "description": "The application of additional water to crops in irrigated fields",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "SUDAN SAVANNA ZONE",
+      "type": "LOCATION",
+      "description": "The specific ecological zone in Nigeria where the trials were conducted",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "NIGERIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per hectare",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONCEPT",
+      "description": "The capacity of the soil to provide essential nutrients for plant growth",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "LIVESTOCK NUTRITION",
+      "type": "CONCEPT",
+      "description": "The provision of nutrients to livestock through crop residues or fodder",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "CEREAL-CEREAL ROTATION",
+      "type": "CONCEPT",
+      "description": "The practice of planting cereal crops in succession",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "GREEN MANURE",
+      "type": "METHOD",
+      "description": "The practice of growing crops to be incorporated into the soil to improve fertility",
+      "source_id": "paper_6515"
+    },
+    {
+      "name": "FODDER",
+      "type": "CONCEPT",
+      "description": "Agricultural produce used as feed for livestock",
+      "source_id": "paper_6515"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TRIPLE CROPPING",
+      "target": "WHEAT",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "TRIPLE CROPPING",
+      "target": "COWPEA",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "TRIPLE CROPPING",
+      "target": "RICE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "TRIPLE CROPPING",
+      "target": "SUDAN SAVANNA ZONE",
+      "description": "conducted in",
+      "weight": "9",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "SUDAN SAVANNA ZONE",
+      "target": "NIGERIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "TRIPLE CROPPING",
+      "target": "SUPPLEMENTAL IRRIGATION",
+      "description": "utilizes",
+      "weight": "8",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "WHEAT",
+      "target": "GRAIN YIELD",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "COWPEA",
+      "target": "GRAIN YIELD",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "RICE",
+      "target": "GRAIN YIELD",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "COWPEA",
+      "target": "SOIL FERTILITY",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "COWPEA",
+      "target": "LIVESTOCK NUTRITION",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "COWPEA",
+      "target": "CEREAL-CEREAL ROTATION",
+      "description": "breaks",
+      "weight": "9",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "COWPEA",
+      "target": "FODDER",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "COWPEA",
+      "target": "GREEN MANURE",
+      "description": "used as",
+      "weight": "8",
+      "source_id": "paper_6515"
+    },
+    {
+      "source": "GREEN MANURE",
+      "target": "SOIL FERTILITY",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_6515"
+    }
+  ]
+}

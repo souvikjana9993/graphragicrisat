@@ -1,0 +1,202 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop studied in the experiments",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "CHLOROPHYLL CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of chlorophyll in peanut leaves, measured by SPAD",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency of water use for dry matter production in peanut",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "LEAF NITROGEN",
+      "type": "TRAIT",
+      "description": "The nitrogen content within the leaves of the peanut plant",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "SPECIFIC LEAF AREA",
+      "type": "TRAIT",
+      "description": "The ratio of leaf area to leaf dry mass",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "SPECIFIC LEAF NITROGEN",
+      "type": "TRAIT",
+      "description": "The amount of nitrogen per unit leaf area",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "CARBON ISOTOPE COMPOSITION",
+      "type": "TRAIT",
+      "description": "The delta 13C value in peanut leaves",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "VAPOUR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "Environmental factor affecting transpiration and transpiration efficiency",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "SPAD METRE",
+      "type": "METHOD",
+      "description": "Device used to measure leaf light-transmittance for chlorophyll concentration",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "GRAVIMETRIC METHOD",
+      "type": "METHOD",
+      "description": "Method used to measure transpiration efficiency",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "POT EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Experimental setup used to study peanut traits",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "NITROGEN FERTILISATION",
+      "type": "METHOD",
+      "description": "Application of N fertiliser to manipulate leaf nitrogen levels",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The process of nitrogen fixation in plants",
+      "source_id": "paper_2017"
+    },
+    {
+      "name": "UNIVERSITY OF AGRICULTURAL SCIENCE, BANGALORE, INDIA",
+      "type": "LOCATION",
+      "description": "The location where the pot experiments were conducted",
+      "source_id": "paper_2017"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHLOROPHYLL CONCENTRATION",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "significant positive relationship",
+      "weight": "9",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "LEAF NITROGEN",
+      "target": "CHLOROPHYLL CONCENTRATION",
+      "description": "strongly associated",
+      "weight": "9",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "LEAF NITROGEN",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "strongly associated",
+      "weight": "9",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "LEAF NITROGEN",
+      "target": "CARBON ISOTOPE COMPOSITION",
+      "description": "strongly associated",
+      "weight": "9",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "CHLOROPHYLL CONCENTRATION",
+      "target": "CARBON ISOTOPE COMPOSITION",
+      "description": "significant inverse relationship",
+      "weight": "8",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "VAPOUR PRESSURE DEFICIT",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "affects the relationship between chlorophyll concentration and TE",
+      "weight": "7",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "SPAD METRE",
+      "target": "CHLOROPHYLL CONCENTRATION",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "GRAVIMETRIC METHOD",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "NITROGEN FERTILISATION",
+      "target": "LEAF NITROGEN",
+      "description": "used to manipulate",
+      "weight": "10",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "PEANUT",
+      "target": "CHLOROPHYLL CONCENTRATION",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "PEANUT",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "PEANUT",
+      "target": "LEAF NITROGEN",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "PEANUT",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "PEANUT",
+      "target": "SPECIFIC LEAF NITROGEN",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "PEANUT",
+      "target": "CARBON ISOTOPE COMPOSITION",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2017"
+    },
+    {
+      "source": "UNIVERSITY OF AGRICULTURAL SCIENCE, BANGALORE, INDIA",
+      "target": "POT EXPERIMENTS",
+      "description": "location of",
+      "weight": "10",
+      "source_id": "paper_2017"
+    }
+  ]
+}

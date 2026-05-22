@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "COMMON CARP",
+      "type": "ORGANISM",
+      "description": "Fish species Cyprinus carpio var communis used in growth modelling and forecasting studies.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "SILVER CARP",
+      "type": "ORGANISM",
+      "description": "Fish species Hypophthalmichthys molitrix used in growth modelling and forecasting studies.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "GROWTH MODELLING",
+      "type": "METHOD",
+      "description": "The process of creating mathematical models to describe the growth patterns of fish.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "FORECASTING",
+      "type": "METHOD",
+      "description": "The process of predicting future fish production and growth patterns.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "REPARAMETRISATION",
+      "type": "METHOD",
+      "description": "A methodology used to adjust parameters of growth models for better forecasting accuracy.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "CEMENTED PONDS",
+      "type": "CONDITION",
+      "description": "The specific type of culture environment used for fish farming in the study.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "PLAIN AREAS",
+      "type": "LOCATION",
+      "description": "Geographic regions where cemented ponds are used for fish culture.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "UPLANDS OF INDIA",
+      "type": "LOCATION",
+      "description": "Geographic regions where forecasting methodology for fish ponds is not readily available.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "LOGISTIC MODEL",
+      "type": "METHOD",
+      "description": "A specific growth curve model used for forecasting fish production.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "GOMPERTZ MODEL",
+      "type": "METHOD",
+      "description": "A specific growth curve model used for forecasting fish production.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "VON-BERTALANFFY MODEL",
+      "type": "METHOD",
+      "description": "A specific growth curve model considered for forecasting fish production.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "FISH YIELD",
+      "type": "TRAIT",
+      "description": "The measurable production output of fish from culture ponds.",
+      "source_id": "paper_10995"
+    },
+    {
+      "name": "GROWTH PATTERN",
+      "type": "TRAIT",
+      "description": "The characteristic way in which fish grow over time.",
+      "source_id": "paper_10995"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REPARAMETRISATION",
+      "target": "FORECASTING",
+      "description": "used to improve the accuracy of",
+      "weight": "8",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "FORECASTING",
+      "target": "GROWTH PATTERN",
+      "description": "used to predict",
+      "weight": "9",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "GROWTH MODELLING",
+      "target": "COMMON CARP",
+      "description": "applied to study growth of",
+      "weight": "9",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "GROWTH MODELLING",
+      "target": "SILVER CARP",
+      "description": "applied to study growth of",
+      "weight": "9",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "CEMENTED PONDS",
+      "target": "PLAIN AREAS",
+      "description": "located in",
+      "weight": "7",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "COMMON CARP",
+      "target": "CEMENTED PONDS",
+      "description": "cultured in",
+      "weight": "8",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "SILVER CARP",
+      "target": "CEMENTED PONDS",
+      "description": "cultured in",
+      "weight": "8",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "LOGISTIC MODEL",
+      "target": "FORECASTING",
+      "description": "used as a tool for",
+      "weight": "9",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "GOMPERTZ MODEL",
+      "target": "FORECASTING",
+      "description": "used as a tool for",
+      "weight": "9",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "VON-BERTALANFFY MODEL",
+      "target": "FORECASTING",
+      "description": "considered for",
+      "weight": "7",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "GOMPERTZ MODEL",
+      "target": "FISH YIELD",
+      "description": "provides best fit for forecasting",
+      "weight": "10",
+      "source_id": "paper_10995"
+    },
+    {
+      "source": "LOGISTIC MODEL",
+      "target": "FISH YIELD",
+      "description": "provides best fit for forecasting",
+      "weight": "10",
+      "source_id": "paper_10995"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop studied for productivity in the Sahelian region of Niger",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "TOTAL BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of living biological organisms produced by the crop",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "SOIL PH",
+      "type": "TRAIT",
+      "description": "A measure of the acidity or alkalinity of the soil",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "LOW-INPUT MINERAL FERTILIZER MICRODOSING",
+      "type": "METHOD",
+      "description": "A technology involving the application of small doses of mineral fertilizer",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "NUTRIENT HILL PLACEMENT",
+      "type": "METHOD",
+      "description": "The practice of applying nutrients specifically at the planting hill",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "PLANTING DENSITIES",
+      "type": "METHOD",
+      "description": "The number of plants grown per unit area",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "FERTILITY MANAGEMENT",
+      "type": "METHOD",
+      "description": "Strategies used to maintain or improve soil fertility",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "REMOVAL OF CROP RESIDUE",
+      "type": "METHOD",
+      "description": "The practice of removing plant remains from the field after harvest",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "ORGANIC FERTILIZERS",
+      "type": "METHOD",
+      "description": "Fertilizers derived from organic sources",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "MINERAL FERTILIZERS",
+      "type": "METHOD",
+      "description": "Inorganic fertilizers containing essential plant nutrients",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "NPK",
+      "type": "METHOD",
+      "description": "A mineral fertilizer containing nitrogen, phosphorus, and potassium",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "ORGANIC MANURE",
+      "type": "METHOD",
+      "description": "Decomposed organic matter used as fertilizer",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "ACIDIC SOILS",
+      "type": "CONDITION",
+      "description": "Soils with a low pH value, typically between 4 and 5",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "LOW CARBON CONTENT",
+      "type": "CONDITION",
+      "description": "Soil with a low percentage of organic carbon, specifically around 0.2%",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "NUTRIENT MINING",
+      "type": "CONCEPT",
+      "description": "The process where nutrients are removed from the soil faster than they are replaced",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "CONCEPT",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "A country in West Africa where the studies were conducted",
+      "source_id": "paper_10581"
+    },
+    {
+      "name": "SAHELIAN SOILS",
+      "type": "LOCATION",
+      "description": "Soils characteristic of the Sahel region of Niger",
+      "source_id": "paper_10581"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LOW-INPUT MINERAL FERTILIZER MICRODOSING",
+      "target": "YIELD",
+      "description": "increases",
+      "weight": "10",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "NUTRIENT HILL PLACEMENT",
+      "target": "TOTAL BIOMASS",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "NUTRIENT HILL PLACEMENT",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "NPK",
+      "target": "SOIL PH",
+      "description": "decreases",
+      "weight": "7",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "ORGANIC MANURE",
+      "target": "TOTAL BIOMASS",
+      "description": "reduces decrease in",
+      "weight": "8",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "ORGANIC MANURE",
+      "target": "YIELD",
+      "description": "reduces decrease in",
+      "weight": "8",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SAHELIAN SOILS",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "SAHELIAN SOILS",
+      "target": "NIGER",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "ACIDIC SOILS",
+      "target": "SAHELIAN SOILS",
+      "description": "characteristic of",
+      "weight": "9",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "LOW CARBON CONTENT",
+      "target": "SAHELIAN SOILS",
+      "description": "characteristic of",
+      "weight": "9",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "NUTRIENT MINING",
+      "description": "studied",
+      "weight": "8",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "NUTRIENT HILL PLACEMENT",
+      "target": "PEARL MILLET",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10581"
+    },
+    {
+      "source": "FERTILITY MANAGEMENT",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10581"
+    }
+  ]
+}

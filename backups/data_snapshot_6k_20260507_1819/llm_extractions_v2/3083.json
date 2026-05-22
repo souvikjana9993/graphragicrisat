@@ -1,0 +1,236 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal grain used to produce flour for composite products",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "A legume used to produce partially defatted flour for fortification",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "WATER ABSORPTION",
+      "type": "TRAIT",
+      "description": "The capacity of flour to absorb water, which increases with heat processing",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "OIL ABSORPTION",
+      "type": "TRAIT",
+      "description": "The capacity of flour to absorb oil, which increases with heat processing",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "VISCOSITY",
+      "type": "TRAIT",
+      "description": "The thickness of the flour paste, which is reduced by peanut fortification and heat processing",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "GELATION",
+      "type": "TRAIT",
+      "description": "The ability of the flour to form a gel",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "EMULSION CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of the flour to stabilize an emulsion, improved by fortification but reduced by heat processing",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "NITROGEN SOLUBILITY INDEX",
+      "type": "TRAIT",
+      "description": "A measure of protein solubility, improved by fortification but reduced by heat processing",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "PROTEIN DISPERSIBILITY INDEX",
+      "type": "TRAIT",
+      "description": "A measure of the ability of proteins to disperse in a medium",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "HEAT PROCESSING",
+      "type": "METHOD",
+      "description": "The application of heat to flour to modify its functional properties",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "FORTIFICATION",
+      "type": "METHOD",
+      "description": "The process of adding peanut flour to sorghum flour to improve nutritional and functional properties",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "COMPOSITE FLOUR",
+      "type": "CONCEPT",
+      "description": "A blend of sorghum flour and peanut flour",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "PROTEIN-ENRICHED PRODUCTS",
+      "type": "CONCEPT",
+      "description": "Food products designed with higher protein content based on sorghum flour",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "RAW STATE",
+      "type": "CONDITION",
+      "description": "The state of the flour before any heat treatment",
+      "source_id": "paper_3083"
+    },
+    {
+      "name": "PARTIALLY DEFATTED",
+      "type": "CONDITION",
+      "description": "The state of peanut flour after partial removal of fats",
+      "source_id": "paper_3083"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "COMPOSITE FLOUR",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "PEANUT",
+      "target": "COMPOSITE FLOUR",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "HEAT PROCESSING",
+      "target": "WATER ABSORPTION",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "HEAT PROCESSING",
+      "target": "OIL ABSORPTION",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "HEAT PROCESSING",
+      "target": "VISCOSITY",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "HEAT PROCESSING",
+      "target": "NITROGEN SOLUBILITY INDEX",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "HEAT PROCESSING",
+      "target": "EMULSION CAPACITY",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "FORTIFICATION",
+      "target": "VISCOSITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "FORTIFICATION",
+      "target": "NITROGEN SOLUBILITY INDEX",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "FORTIFICATION",
+      "target": "EMULSION CAPACITY",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "PEANUT",
+      "target": "FORTIFICATION",
+      "description": "is the fortifying agent in",
+      "weight": "9",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "FORTIFICATION",
+      "description": "is the base for",
+      "weight": "9",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PROTEIN-ENRICHED PRODUCTS",
+      "description": "is used as a base for",
+      "weight": "9",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "COMPOSITE FLOUR",
+      "target": "WATER ABSORPTION",
+      "description": "possesses",
+      "weight": "7",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "COMPOSITE FLOUR",
+      "target": "OIL ABSORPTION",
+      "description": "possesses",
+      "weight": "7",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "COMPOSITE FLOUR",
+      "target": "VISCOSITY",
+      "description": "possesses",
+      "weight": "7",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "COMPOSITE FLOUR",
+      "target": "GELATION",
+      "description": "possesses",
+      "weight": "7",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "COMPOSITE FLOUR",
+      "target": "EMULSION CAPACITY",
+      "description": "possesses",
+      "weight": "7",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "COMPOSITE FLOUR",
+      "target": "NITROGEN SOLUBILITY INDEX",
+      "description": "possesses",
+      "weight": "7",
+      "source_id": "paper_3083"
+    },
+    {
+      "source": "COMPOSITE FLOUR",
+      "target": "PROTEIN DISPERSIBILITY INDEX",
+      "description": "possesses",
+      "weight": "7",
+      "source_id": "paper_3083"
+    }
+  ]
+}

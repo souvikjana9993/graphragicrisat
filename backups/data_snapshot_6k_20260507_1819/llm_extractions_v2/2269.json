@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "The crop species being studied for salinity tolerance during germination",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "SALINITY TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of barley genotypes to tolerate salt stress during the germination process",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "PROTEOMIC PROFILING",
+      "type": "METHOD",
+      "description": "The technique used to analyze the protein abundance in the mature grain of barley lines",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "OREGON WOLFE BARLEY MAPPING POPULATION",
+      "type": "CONCEPT",
+      "description": "The specific genetic population (DOM X REC) used for mapping salinity tolerance",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "DOM",
+      "type": "CONCEPT",
+      "description": "A parent genotype in the Oregon Wolfe Barley mapping population displaying a specific stress response",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "REC",
+      "type": "CONCEPT",
+      "description": "A parent genotype in the Oregon Wolfe Barley mapping population displaying a divergent stress response from DOM",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "6-PHOSPHOGLUCONATE DEHYDROGENASE",
+      "type": "GENE_MARKER",
+      "description": "A protein found to be more abundant in salinity-tolerant barley lines",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "GLUCOSE/RIBITOL DEHYDROGENASE",
+      "type": "GENE_MARKER",
+      "description": "A protein (Glc/RibDH) found to be more abundant in salinity-tolerant barley lines and associated with salt tolerance in yeast",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "YEAST",
+      "type": "ORGANISM",
+      "description": "An osmo-sensitive strain used for heterologous over-expression of barley proteins",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "The salt stress condition applied during germination and in yeast growth media",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "QUANTITATIVE TRAIT LOCUS ANALYSIS",
+      "type": "METHOD",
+      "description": "The analysis used to identify chromosome regions associated with salt stress response",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "SALT STRESS RESPONSE",
+      "type": "TRAIT",
+      "description": "The physiological and genetic response of the plant to salinity",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "CHROMOSOME 5H",
+      "type": "GENE_MARKER",
+      "description": "A chromosome region identified as associated with salt stress response and co-localizing with specific proteins",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "CHROMOSOME 7H",
+      "type": "GENE_MARKER",
+      "description": "A chromosome region identified as associated with salt stress response",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "BARLEY TRANSCRIPT MAP",
+      "type": "METHOD",
+      "description": "A genomic tool used to map the location of identified proteins",
+      "source_id": "paper_2269"
+    },
+    {
+      "name": "HEAT-SHOCK PROTEIN 70",
+      "type": "GENE_MARKER",
+      "description": "A protein that co-localized with the QTL on chromosome 5H",
+      "source_id": "paper_2269"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BARLEY",
+      "target": "SALINITY TOLERANCE",
+      "description": "studied for",
+      "weight": "10",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "PROTEOMIC PROFILING",
+      "target": "BARLEY",
+      "description": "used to analyze grain proteome of",
+      "weight": "9",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "OREGON WOLFE BARLEY MAPPING POPULATION",
+      "target": "BARLEY",
+      "description": "is a mapping population of",
+      "weight": "10",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "DOM",
+      "target": "OREGON WOLFE BARLEY MAPPING POPULATION",
+      "description": "is a parent of",
+      "weight": "10",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "REC",
+      "target": "OREGON WOLFE BARLEY MAPPING POPULATION",
+      "description": "is a parent of",
+      "weight": "10",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "6-PHOSPHOGLUCONATE DEHYDROGENASE",
+      "target": "SALINITY TOLERANCE",
+      "description": "differentially expressed in tolerant lines",
+      "weight": "8",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "GLUCOSE/RIBITOL DEHYDROGENASE",
+      "target": "SALINITY TOLERANCE",
+      "description": "differentially expressed in tolerant lines",
+      "weight": "8",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "GLUCOSE/RIBITOL DEHYDROGENASE",
+      "target": "YEAST",
+      "description": "over-expressed in",
+      "weight": "9",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "YEAST",
+      "target": "SALINITY",
+      "description": "tested for growth on salt containing media",
+      "weight": "8",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCUS ANALYSIS",
+      "target": "SALT STRESS RESPONSE",
+      "description": "used to identify associated chromosome regions",
+      "weight": "10",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCUS ANALYSIS",
+      "target": "CHROMOSOME 5H",
+      "description": "identified as associated region",
+      "weight": "9",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCUS ANALYSIS",
+      "target": "CHROMOSOME 7H",
+      "description": "identified as associated region",
+      "weight": "9",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "BARLEY TRANSCRIPT MAP",
+      "target": "GLUCOSE/RIBITOL DEHYDROGENASE",
+      "description": "used to map genomic region of",
+      "weight": "8",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "BARLEY TRANSCRIPT MAP",
+      "target": "HEAT-SHOCK PROTEIN 70",
+      "description": "used to map genomic region of",
+      "weight": "8",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "GLUCOSE/RIBITOL DEHYDROGENASE",
+      "target": "CHROMOSOME 5H",
+      "description": "co-localized with",
+      "weight": "10",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "HEAT-SHOCK PROTEIN 70",
+      "target": "CHROMOSOME 5H",
+      "description": "co-localized with",
+      "weight": "10",
+      "source_id": "paper_2269"
+    },
+    {
+      "source": "SALINITY",
+      "target": "SALINITY TOLERANCE",
+      "description": "is the stress factor for",
+      "weight": "10",
+      "source_id": "paper_2269"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The plant species O.sativa used in the study to analyze miRNA expression",
+      "source_id": "paper_10463"
+    },
+    {
+      "name": "MICRORNAS",
+      "type": "GENE_MARKER",
+      "description": "Small non-coding RNAs that regulate genes involved in plant growth, development, and abiotic stress responses",
+      "source_id": "paper_10463"
+    },
+    {
+      "name": "HIGH TEMPERATURE STRESS",
+      "type": "CONDITION",
+      "description": "An abiotic stress environment used to analyze the expression of novel miRNAs in rice",
+      "source_id": "paper_10463"
+    },
+    {
+      "name": "ABIOTIC STRESSES",
+      "type": "CONDITION",
+      "description": "General environmental stresses to which plants respond via miRNA regulation",
+      "source_id": "paper_10463"
+    },
+    {
+      "name": "HOMOLOGY SEARCH",
+      "type": "METHOD",
+      "description": "A computational method used to predict novel miRNAs in rice",
+      "source_id": "paper_10463"
+    },
+    {
+      "name": "REAL TIME PCR",
+      "type": "METHOD",
+      "description": "A laboratory technique used to analyze the expression of 14 novel miRNAs in rice seedlings",
+      "source_id": "paper_10463"
+    },
+    {
+      "name": "MIR157A",
+      "type": "GENE_MARKER",
+      "description": "A novel miRNA found to be expressed in all five rice cultivars studied",
+      "source_id": "paper_10463"
+    },
+    {
+      "name": "MIR165A",
+      "type": "GENE_MARKER",
+      "description": "A novel miRNA showing differential expression between heat tolerant and susceptible rice cultivars",
+      "source_id": "paper_10463"
+    },
+    {
+      "name": "HIGH TEMPERATURE TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of specific rice cultivars to withstand high temperature stress",
+      "source_id": "paper_10463"
+    },
+    {
+      "name": "PLANT GROWTH AND DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "Biological processes regulated by microRNAs in plants",
+      "source_id": "paper_10463"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MICRORNAS",
+      "target": "RICE",
+      "description": "expressed in",
+      "weight": "9",
+      "source_id": "paper_10463"
+    },
+    {
+      "source": "MICRORNAS",
+      "target": "PLANT GROWTH AND DEVELOPMENT",
+      "description": "regulate",
+      "weight": "8",
+      "source_id": "paper_10463"
+    },
+    {
+      "source": "MICRORNAS",
+      "target": "ABIOTIC STRESSES",
+      "description": "involved in response to",
+      "weight": "8",
+      "source_id": "paper_10463"
+    },
+    {
+      "source": "HOMOLOGY SEARCH",
+      "target": "MICRORNAS",
+      "description": "used to predict",
+      "weight": "9",
+      "source_id": "paper_10463"
+    },
+    {
+      "source": "REAL TIME PCR",
+      "target": "MICRORNAS",
+      "description": "used to analyze expression of",
+      "weight": "9",
+      "source_id": "paper_10463"
+    },
+    {
+      "source": "HIGH TEMPERATURE STRESS",
+      "target": "RICE",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10463"
+    },
+    {
+      "source": "MIR157A",
+      "target": "RICE",
+      "description": "expressed in",
+      "weight": "9",
+      "source_id": "paper_10463"
+    },
+    {
+      "source": "MIR165A",
+      "target": "RICE",
+      "description": "expressed in",
+      "weight": "9",
+      "source_id": "paper_10463"
+    },
+    {
+      "source": "MIR165A",
+      "target": "HIGH TEMPERATURE TOLERANCE",
+      "description": "suggested role in",
+      "weight": "8",
+      "source_id": "paper_10463"
+    },
+    {
+      "source": "HIGH TEMPERATURE STRESS",
+      "target": "HIGH TEMPERATURE TOLERANCE",
+      "description": "is the stressor for",
+      "weight": "7",
+      "source_id": "paper_10463"
+    }
+  ]
+}

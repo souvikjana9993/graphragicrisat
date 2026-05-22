@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The legume crop being evaluated for resistance to waterlogging stress.",
+      "source_id": "paper_2427"
+    },
+    {
+      "name": "WATERLOGGING RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of a plant to withstand and survive saturated soil conditions.",
+      "source_id": "paper_2427"
+    },
+    {
+      "name": "POT TECHNIQUE",
+      "type": "METHOD",
+      "description": "A screening method involving the growth of plants in pots with specific media to evaluate stress response.",
+      "source_id": "paper_2427"
+    },
+    {
+      "name": "WATERLOGGING",
+      "type": "CONDITION",
+      "description": "An environmental condition where soil is saturated with water, depriving roots of oxygen.",
+      "source_id": "paper_2427"
+    },
+    {
+      "name": "ROOT DRY MASS",
+      "type": "TRAIT",
+      "description": "The mass of the root system after drying, used to measure the impact of waterlogging.",
+      "source_id": "paper_2427"
+    },
+    {
+      "name": "SHOOT DRY MASS",
+      "type": "TRAIT",
+      "description": "The mass of the above-ground plant parts after drying, used to measure the impact of waterlogging.",
+      "source_id": "paper_2427"
+    },
+    {
+      "name": "PLANT SURVIVAL",
+      "type": "TRAIT",
+      "description": "The ability of the plant to remain alive following a period of waterlogging.",
+      "source_id": "paper_2427"
+    },
+    {
+      "name": "MORTALITY",
+      "type": "TRAIT",
+      "description": "The percentage of plants that die under waterlogging stress.",
+      "source_id": "paper_2427"
+    },
+    {
+      "name": "GROWTH MEDIUM",
+      "type": "CONCEPT",
+      "description": "The soil or substrate used in pots to grow the plants during the screening process.",
+      "source_id": "paper_2427"
+    },
+    {
+      "name": "PRELIMINARY SCREENING",
+      "type": "METHOD",
+      "description": "The initial process of evaluating a large number of cultivars to identify those with desired traits.",
+      "source_id": "paper_2427"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POT TECHNIQUE",
+      "target": "PIGEONPEA",
+      "description": "Used to screen cultivars of",
+      "weight": "9",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "POT TECHNIQUE",
+      "target": "WATERLOGGING RESISTANCE",
+      "description": "Used to identify",
+      "weight": "9",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "PIGEONPEA",
+      "description": "Applied as a stressor to",
+      "weight": "10",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "ROOT DRY MASS",
+      "description": "Causes a significant reduction in",
+      "weight": "8",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "SHOOT DRY MASS",
+      "description": "Causes a small reduction in",
+      "weight": "7",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "PLANT SURVIVAL",
+      "description": "Negatively affects",
+      "weight": "9",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "MORTALITY",
+      "description": "Increases",
+      "weight": "9",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "GROWTH MEDIUM",
+      "target": "POT TECHNIQUE",
+      "description": "Used as a component of",
+      "weight": "8",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "GROWTH MEDIUM",
+      "target": "MORTALITY",
+      "description": "Influences the variation in",
+      "weight": "7",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "PRELIMINARY SCREENING",
+      "target": "POT TECHNIQUE",
+      "description": "Implemented via",
+      "weight": "10",
+      "source_id": "paper_2427"
+    },
+    {
+      "source": "PRELIMINARY SCREENING",
+      "target": "WATERLOGGING RESISTANCE",
+      "description": "Aims to identify",
+      "weight": "10",
+      "source_id": "paper_2427"
+    }
+  ]
+}

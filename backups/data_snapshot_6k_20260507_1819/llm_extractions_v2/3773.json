@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "MADHYA PRADESH",
+      "type": "LOCATION",
+      "description": "State in Central India where the study was conducted",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "CENTRAL INDIA",
+      "type": "LOCATION",
+      "description": "Region where Madhya Pradesh is located",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "Soils characterized by high montmorillintic clay, swelling and shrinking characteristics, and poor hydraulic conductivity",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "RAINY SEASON FALLOWS",
+      "type": "CONCEPT",
+      "description": "Lands left uncultivated during the kharif season, particularly in Vertisol areas",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONCEPT",
+      "description": "The decline in the quality and productivity of land",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "AGRICULTURE PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The total output of agricultural crops",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A short-duration pulse crop recommended for cultivation in kharif fallows",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A crop typically grown during the rabi season on lands that were fallow during the kharif season",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "PULSE CROPS",
+      "type": "CROP",
+      "description": "A category of crops, including soybean, suggested for utilization of kharif fallows",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "IRS-WIFS DATA",
+      "type": "METHOD",
+      "description": "Wide Field Sensor data from Indian Remote Sensing Satellites used for mapping fallows",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "GEO-REFERENCING",
+      "type": "METHOD",
+      "description": "A process used in the analytical approach to align multi-temporal WiFS data",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "RADIOMETRIC NORMALIZATION",
+      "type": "METHOD",
+      "description": "A process used to correct radiometric differences in multi-temporal WiFS data",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "ERDAS/IMAGINE",
+      "type": "METHOD",
+      "description": "Software used for the delineation of kharif fallows",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "GAUSSIAN MAXIMUM LIKELIHOOD ALGORITHM",
+      "type": "METHOD",
+      "description": "A per-pixel algorithm used for the delineation of kharif fallows",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "FIELD CHECK",
+      "type": "METHOD",
+      "description": "Limited ground verification used to validate the delineation of fallows",
+      "source_id": "paper_3773"
+    },
+    {
+      "name": "AGRO-ECOSYSTEM SUSTAINABILITY",
+      "type": "CONCEPT",
+      "description": "The ability of the agricultural ecosystem to maintain productivity and health over time",
+      "source_id": "paper_3773"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MADHYA PRADESH",
+      "target": "CENTRAL INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "MADHYA PRADESH",
+      "target": "VERTISOLS",
+      "description": "endowed with",
+      "weight": "9",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "VERTISOLS",
+      "target": "RAINY SEASON FALLOWS",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "IRS-WIFS DATA",
+      "target": "RAINY SEASON FALLOWS",
+      "description": "used to delineate",
+      "weight": "10",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "GEO-REFERENCING",
+      "target": "IRS-WIFS DATA",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "RADIOMETRIC NORMALIZATION",
+      "target": "IRS-WIFS DATA",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "ERDAS/IMAGINE",
+      "target": "RAINY SEASON FALLOWS",
+      "description": "used to delineate",
+      "weight": "9",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "GAUSSIAN MAXIMUM LIKELIHOOD ALGORITHM",
+      "target": "RAINY SEASON FALLOWS",
+      "description": "used to delineate",
+      "weight": "9",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "FIELD CHECK",
+      "target": "RAINY SEASON FALLOWS",
+      "description": "used to verify",
+      "weight": "8",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "WHEAT",
+      "target": "RAINY SEASON FALLOWS",
+      "description": "grown on during rabi season",
+      "weight": "7",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "PULSE CROPS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "PULSE CROPS",
+      "target": "RAINY SEASON FALLOWS",
+      "description": "suggested for utilization of",
+      "weight": "9",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "PULSE CROPS",
+      "target": "AGRICULTURE PRODUCTION",
+      "description": "boosts",
+      "weight": "8",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "PULSE CROPS",
+      "target": "AGRO-ECOSYSTEM SUSTAINABILITY",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_3773"
+    },
+    {
+      "source": "PULSE CROPS",
+      "target": "LAND DEGRADATION",
+      "description": "minimizes",
+      "weight": "8",
+      "source_id": "paper_3773"
+    }
+  ]
+}

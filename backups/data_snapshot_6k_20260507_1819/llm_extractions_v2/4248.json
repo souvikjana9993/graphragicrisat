@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "TOTAL NITROGEN",
+      "type": "CONCEPT",
+      "description": "The total amount of nitrogen present in soil samples",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "N FERTILIZER",
+      "type": "CONCEPT",
+      "description": "Nitrogen-based fertilizer applied to soil",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "LOCATION",
+      "description": "A type of calcareous clay soil",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "WATER PRETREATMENT",
+      "type": "METHOD",
+      "description": "The process of soaking soil samples with water prior to digestion",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "MACRO-KJELDAHL METHOD",
+      "type": "METHOD",
+      "description": "A method for determining total nitrogen using larger sample sizes",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "SEMIMICRO-KJELDAHL METHOD",
+      "type": "METHOD",
+      "description": "A method for determining total nitrogen using smaller sample sizes",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "DIGESTION",
+      "type": "METHOD",
+      "description": "The chemical breakdown of soil samples using heat and acids",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "H2SO4-K2SO4-CUSO4 5H2O-SE MIXTURE",
+      "type": "CONCEPT",
+      "description": "The specific chemical mixture used for soil digestion",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "N RECOVERY",
+      "type": "TRAIT",
+      "description": "The efficiency of extracting total nitrogen from soil",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "SALICYLIC ACID PRETREATMENT",
+      "type": "METHOD",
+      "description": "A pretreatment involving water addition after a nitration reaction",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "ORGANIC N",
+      "type": "CONCEPT",
+      "description": "Nitrogen contained within organic matter",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "FIXED NH4+",
+      "type": "CONCEPT",
+      "description": "Ammonium ions trapped within the soil matrix",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "LOCATION",
+      "description": "A type of soil characterized as Udic Rhodustalfs",
+      "source_id": "paper_4248"
+    },
+    {
+      "name": "BUMPING",
+      "type": "CONDITION",
+      "description": "The phenomenon of rapid, uneven boiling during digestion",
+      "source_id": "paper_4248"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER PRETREATMENT",
+      "target": "MACRO-KJELDAHL METHOD",
+      "description": "used as a modification to improve nitrogen recovery",
+      "weight": "9",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "WATER PRETREATMENT",
+      "target": "SEMIMICRO-KJELDAHL METHOD",
+      "description": "used as a modification to improve nitrogen recovery",
+      "weight": "9",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "WATER PRETREATMENT",
+      "target": "N RECOVERY",
+      "description": "increases the recovery of nitrogen in certain soils",
+      "weight": "10",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "MACRO-KJELDAHL METHOD",
+      "target": "DIGESTION",
+      "description": "utilizes digestion as a core process",
+      "weight": "10",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "SEMIMICRO-KJELDAHL METHOD",
+      "target": "DIGESTION",
+      "description": "utilizes digestion as a core process",
+      "weight": "10",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "DIGESTION",
+      "target": "H2SO4-K2SO4-CUSO4 5H2O-SE MIXTURE",
+      "description": "uses this chemical mixture for the process",
+      "weight": "10",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "WATER PRETREATMENT",
+      "target": "VERTISOL",
+      "description": "significantly improves N recovery in this soil type",
+      "weight": "9",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "WATER PRETREATMENT",
+      "target": "ALFISOL",
+      "description": "has little effect on N recovery in this soil type",
+      "weight": "7",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "SALICYLIC ACID PRETREATMENT",
+      "target": "DIGESTION",
+      "description": "permits satisfactory digestion of soil samples",
+      "weight": "8",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "WATER PRETREATMENT",
+      "target": "ORGANIC N",
+      "description": "addresses incomplete digestion of organic nitrogen",
+      "weight": "8",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "WATER PRETREATMENT",
+      "target": "BUMPING",
+      "description": "reduces the occurrence of bumping during digestion",
+      "weight": "8",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "MACRO-KJELDAHL METHOD",
+      "target": "TOTAL NITROGEN",
+      "description": "used to determine the amount of total nitrogen",
+      "weight": "10",
+      "source_id": "paper_4248"
+    },
+    {
+      "source": "SEMIMICRO-KJELDAHL METHOD",
+      "target": "TOTAL NITROGEN",
+      "description": "used to determine the amount of total nitrogen",
+      "weight": "10",
+      "source_id": "paper_4248"
+    }
+  ]
+}

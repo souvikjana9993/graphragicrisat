@@ -1,0 +1,115 @@
+{
+  "entities": [
+    {
+      "name": "GRAIN LEGUME",
+      "type": "CROP",
+      "description": "Leguminous crops grown for their seeds",
+      "source_id": "paper_11559"
+    },
+    {
+      "name": "DRYLAND CEREAL",
+      "type": "CROP",
+      "description": "Cereal crops grown in arid or semi-arid regions",
+      "source_id": "paper_11559"
+    },
+    {
+      "name": "SEED SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The set of activities and institutions that ensure the availability and delivery of seeds",
+      "source_id": "paper_11559"
+    },
+    {
+      "name": "COMMODITY VALUE CHAINS",
+      "type": "CONCEPT",
+      "description": "The full range of activities required to bring a commodity from production to final consumption",
+      "source_id": "paper_11559"
+    },
+    {
+      "name": "DRYLANDS",
+      "type": "LOCATION",
+      "description": "Arid or semi-arid regions characterized by low rainfall",
+      "source_id": "paper_11559"
+    },
+    {
+      "name": "NON-IMPROVED SEED",
+      "type": "CONCEPT",
+      "description": "Seeds that have not been genetically improved for higher yield or resistance",
+      "source_id": "paper_11559"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of output per unit of input in agricultural production",
+      "source_id": "paper_11559"
+    },
+    {
+      "name": "POVERTY LINE",
+      "type": "CONDITION",
+      "description": "The minimum level of income deemed adequate in a given country",
+      "source_id": "paper_11559"
+    },
+    {
+      "name": "GENETIC GAINS",
+      "type": "TRAIT",
+      "description": "The increase in the average performance of a crop population due to genetic improvement",
+      "source_id": "paper_11559"
+    },
+    {
+      "name": "SEED DELIVERY SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The mechanisms used to distribute seeds to farmers",
+      "source_id": "paper_11559"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SEED SYSTEMS",
+      "target": "GRAIN LEGUME",
+      "description": "Strategy focuses on seed systems for grain legumes",
+      "weight": "9",
+      "source_id": "paper_11559"
+    },
+    {
+      "source": "SEED SYSTEMS",
+      "target": "DRYLAND CEREAL",
+      "description": "Strategy focuses on seed systems for dryland cereals",
+      "weight": "9",
+      "source_id": "paper_11559"
+    },
+    {
+      "source": "SEED DELIVERY SYSTEMS",
+      "target": "COMMODITY VALUE CHAINS",
+      "description": "Seed delivery systems are driven through commodity value chains",
+      "weight": "8",
+      "source_id": "paper_11559"
+    },
+    {
+      "source": "NON-IMPROVED SEED",
+      "target": "PRODUCTIVITY",
+      "description": "Use of non-improved seed results in lower productivity",
+      "weight": "9",
+      "source_id": "paper_11559"
+    },
+    {
+      "source": "DRYLANDS",
+      "target": "NON-IMPROVED SEED",
+      "description": "Smallholders in drylands use non-improved seed",
+      "weight": "8",
+      "source_id": "paper_11559"
+    },
+    {
+      "source": "DRYLANDS",
+      "target": "POVERTY LINE",
+      "description": "Farmers in drylands often live below the poverty line",
+      "weight": "7",
+      "source_id": "paper_11559"
+    },
+    {
+      "source": "SEED SYSTEMS",
+      "target": "GENETIC GAINS",
+      "description": "Seed systems strategy aims to deliver realized genetic gains",
+      "weight": "9",
+      "source_id": "paper_11559"
+    }
+  ]
+}

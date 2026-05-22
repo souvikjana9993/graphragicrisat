@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop Arachis hypogea being studied for disease resistance.",
+      "source_id": "paper_5639"
+    },
+    {
+      "name": "RUST",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting the crop.",
+      "source_id": "paper_5639"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting the crop.",
+      "source_id": "paper_5639"
+    },
+    {
+      "name": "CERCOSPORIDIUM PERSONSTUM",
+      "type": "ORGANISM",
+      "description": "The pathogen causing late leaf spot.",
+      "source_id": "paper_5639"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of cultivars to withstand rust and late leaf spot.",
+      "source_id": "paper_5639"
+    },
+    {
+      "name": "FIELD TESTS",
+      "type": "METHOD",
+      "description": "Assessment of cultivars conducted in the field.",
+      "source_id": "paper_5639"
+    },
+    {
+      "name": "SCREENHOUSE TESTS",
+      "type": "METHOD",
+      "description": "Assessment of cultivars conducted in a screenhouse.",
+      "source_id": "paper_5639"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "RESISTANCE",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_5639"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "RUST",
+      "description": "provides protection against",
+      "weight": "9",
+      "source_id": "paper_5639"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "LATE LEAF SPOT",
+      "description": "provides protection against",
+      "weight": "9",
+      "source_id": "paper_5639"
+    },
+    {
+      "source": "CERCOSPORIDIUM PERSONSTUM",
+      "target": "LATE LEAF SPOT",
+      "description": "is the causal agent of",
+      "weight": "10",
+      "source_id": "paper_5639"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "FIELD TESTS",
+      "description": "was assessed via",
+      "weight": "8",
+      "source_id": "paper_5639"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "SCREENHOUSE TESTS",
+      "description": "was assessed via",
+      "weight": "8",
+      "source_id": "paper_5639"
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop used in sequential and intercropping systems",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used in sequential cropping with maize",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used in intercropping with maize",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "CARBON SEQUESTRATION",
+      "type": "CONCEPT",
+      "description": "The process of capturing and storing atmospheric carbon dioxide in soil",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "SOIL ORGANIC CARBON CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of organic carbon present in the soil, abbreviated as SOC",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "TILLAGE",
+      "type": "METHOD",
+      "description": "The agricultural practice of preparing soil by mechanical agitation",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "RESIDUE MANAGEMENT",
+      "type": "METHOD",
+      "description": "The practice of managing crop residues to improve soil health and carbon levels",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "SEQUENTIAL CROPPING",
+      "type": "METHOD",
+      "description": "A system where crops are grown one after another in a sequence",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "A system where two or more crops are grown simultaneously on the same field",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "APSIM MODEL",
+      "type": "METHOD",
+      "description": "A simulation tool used to predict crop growth and soil processes under different scenarios",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Long-term shifts in temperatures and weather patterns affecting agriculture",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "DRYLANDS",
+      "type": "LOCATION",
+      "description": "Arid or semi-arid regions characterized by low rainfall",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "CHEMICAL FERTILIZER USE",
+      "type": "METHOD",
+      "description": "The application of synthetic fertilizers to crops",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "CONVENTIONAL TILLAGE",
+      "type": "METHOD",
+      "description": "Standard intensive soil tillage practices",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "MINIMUM TILLAGE",
+      "type": "METHOD",
+      "description": "Reduced soil disturbance practices",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "RESIDUE ADDITION",
+      "type": "METHOD",
+      "description": "The act of adding crop residues back into the soil",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "SSP 2.6",
+      "type": "CONDITION",
+      "description": "A low-emission shared socio-economic pathway climate projection",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "SSP 4.5",
+      "type": "CONDITION",
+      "description": "An intermediate-emission shared socio-economic pathway climate projection",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "SSP 8.5",
+      "type": "CONDITION",
+      "description": "A high-emission shared socio-economic pathway climate projection",
+      "source_id": "paper_12420"
+    },
+    {
+      "name": "SOIL CARBON SINKS",
+      "type": "CONCEPT",
+      "description": "Reservoirs in the soil that accumulate and store carbon",
+      "source_id": "paper_12420"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TILLAGE",
+      "target": "CARBON SEQUESTRATION",
+      "description": "Affects the efficiency of",
+      "weight": "7",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "RESIDUE MANAGEMENT",
+      "target": "CARBON SEQUESTRATION",
+      "description": "Promotes",
+      "weight": "9",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "SEQUENTIAL CROPPING",
+      "target": "CARBON SEQUESTRATION",
+      "description": "Influences the rate of",
+      "weight": "6",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "CARBON SEQUESTRATION",
+      "description": "Influences the rate of",
+      "weight": "6",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "MAIZE",
+      "target": "SEQUENTIAL CROPPING",
+      "description": "Is a component of",
+      "weight": "10",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEQUENTIAL CROPPING",
+      "description": "Is a component of",
+      "weight": "10",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "MAIZE",
+      "target": "INTERCROPPING",
+      "description": "Is a component of",
+      "weight": "10",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "INTERCROPPING",
+      "description": "Is a component of",
+      "weight": "10",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "APSIM MODEL",
+      "target": "CARBON SEQUESTRATION",
+      "description": "Used to simulate",
+      "weight": "8",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "CROP YIELD",
+      "description": "Negatively impacts",
+      "weight": "8",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "CHEMICAL FERTILIZER USE",
+      "target": "CROP YIELD",
+      "description": "Reduces when used indiscriminately",
+      "weight": "7",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "RESIDUE ADDITION",
+      "target": "SOIL ORGANIC CARBON CONTENT",
+      "description": "Significantly increases",
+      "weight": "9",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "CONVENTIONAL TILLAGE",
+      "target": "SOIL ORGANIC CARBON CONTENT",
+      "description": "Affects",
+      "weight": "6",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "MINIMUM TILLAGE",
+      "target": "SOIL ORGANIC CARBON CONTENT",
+      "description": "Affects",
+      "weight": "6",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON CONTENT",
+      "target": "CROP YIELD",
+      "description": "Impacts stability and amount",
+      "weight": "8",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "INDIA",
+      "target": "DRYLANDS",
+      "description": "Location of the studied",
+      "weight": "10",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "SSP 2.6",
+      "target": "CLIMATE CHANGE",
+      "description": "Is a projection scenario of",
+      "weight": "9",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "SSP 4.5",
+      "target": "CLIMATE CHANGE",
+      "description": "Is a projection scenario of",
+      "weight": "9",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "SSP 8.5",
+      "target": "CLIMATE CHANGE",
+      "description": "Is a projection scenario of",
+      "weight": "9",
+      "source_id": "paper_12420"
+    },
+    {
+      "source": "SOIL CARBON SINKS",
+      "target": "CARBON SEQUESTRATION",
+      "description": "Is the mechanism for",
+      "weight": "10",
+      "source_id": "paper_12420"
+    }
+  ]
+}

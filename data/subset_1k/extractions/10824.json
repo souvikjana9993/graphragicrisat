@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "AFB1-LYS ADDUCTS",
+      "type": "CONCEPT",
+      "description": "Biomarkers in blood serum indicating exposure to aflatoxin B1",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "Country where the study was conducted",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "KASUNGU",
+      "type": "LOCATION",
+      "description": "District in Malawi where samples were collected",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "MCHINJI",
+      "type": "LOCATION",
+      "description": "District in Malawi where samples were collected",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "NKHOTAKOTA",
+      "type": "LOCATION",
+      "description": "District in Malawi where samples were collected",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "AFB1",
+      "type": "CONCEPT",
+      "description": "Aflatoxin B1, a mycotoxin contaminating crops",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Agricultural crop analyzed for aflatoxin contamination",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Agricultural crop analyzed for aflatoxin contamination",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "IC-ELISA",
+      "type": "METHOD",
+      "description": "Indirect competitive enzyme-linked immunosorbent assay used for detection of toxins and adducts",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to identify contributors to adduct levels",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "ALBUMIN",
+      "type": "CONCEPT",
+      "description": "Protein in blood used as a reference for adduct concentration",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "FEMALE",
+      "type": "CONCEPT",
+      "description": "Gender attribute identified as a significant contributor to adduct levels",
+      "source_id": "paper_10824"
+    },
+    {
+      "name": "FARMER",
+      "type": "CONCEPT",
+      "description": "Occupational attribute identified as a significant contributor to adduct levels",
+      "source_id": "paper_10824"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AFB1-LYS ADDUCTS",
+      "target": "MALAWI",
+      "description": "detected in blood samples of residents in",
+      "weight": "8",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "AFB1",
+      "target": "GROUNDNUT",
+      "description": "contaminates",
+      "weight": "9",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "AFB1",
+      "target": "MAIZE",
+      "description": "contaminates",
+      "weight": "9",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "IC-ELISA",
+      "target": "AFB1-LYS ADDUCTS",
+      "description": "used to determine levels of",
+      "weight": "10",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "IC-ELISA",
+      "target": "AFB1",
+      "description": "used to determine levels of",
+      "weight": "10",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "AFB1-LYS ADDUCTS",
+      "target": "ALBUMIN",
+      "description": "measured as concentration per mg of",
+      "weight": "7",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "REGRESSION ANALYSIS",
+      "target": "AFB1-LYS ADDUCTS",
+      "description": "used to analyze contributors to",
+      "weight": "9",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "AFB1-LYS ADDUCTS",
+      "description": "consumption frequency contributes to elevated levels of",
+      "weight": "8",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "FEMALE",
+      "target": "AFB1-LYS ADDUCTS",
+      "description": "gender attribute contributes to elevated levels of",
+      "weight": "7",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "FARMER",
+      "target": "AFB1-LYS ADDUCTS",
+      "description": "occupational status contributes to elevated levels of",
+      "weight": "7",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "KASUNGU",
+      "target": "MALAWI",
+      "description": "is a district in",
+      "weight": "10",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "MCHINJI",
+      "target": "MALAWI",
+      "description": "is a district in",
+      "weight": "10",
+      "source_id": "paper_10824"
+    },
+    {
+      "source": "NKHOTAKOTA",
+      "target": "MALAWI",
+      "description": "is a district in",
+      "weight": "10",
+      "source_id": "paper_10824"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being screened for resistance to Striga.",
+      "source_id": "paper_3419"
+    },
+    {
+      "name": "STRIGA",
+      "type": "ORGANISM",
+      "description": "A parasitic weed that affects sorghum growth.",
+      "source_id": "paper_3419"
+    },
+    {
+      "name": "RESISTANCE TO STRIGA",
+      "type": "TRAIT",
+      "description": "The ability of sorghum genotypes to withstand or resist Striga infestation.",
+      "source_id": "paper_3419"
+    },
+    {
+      "name": "CHECKER-BOARD FIELD LAYOUTS",
+      "type": "METHOD",
+      "description": "A specific field design used to screen sorghum genotypes.",
+      "source_id": "paper_3419"
+    },
+    {
+      "name": "CROP GROWTH CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environmental and growth factors being monitored during the screening trials.",
+      "source_id": "paper_3419"
+    },
+    {
+      "name": "SYSTEMATIC CHECK ENTRY",
+      "type": "METHOD",
+      "description": "A method involving check entries to monitor crop growth conditions.",
+      "source_id": "paper_3419"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHECKER-BOARD FIELD LAYOUTS",
+      "target": "SORGHUM",
+      "description": "used to screen genotypes of",
+      "weight": "9",
+      "source_id": "paper_3419"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "RESISTANCE TO STRIGA",
+      "description": "screened for",
+      "weight": "10",
+      "source_id": "paper_3419"
+    },
+    {
+      "source": "RESISTANCE TO STRIGA",
+      "target": "STRIGA",
+      "description": "is the trait for resisting",
+      "weight": "10",
+      "source_id": "paper_3419"
+    },
+    {
+      "source": "SYSTEMATIC CHECK ENTRY",
+      "target": "CROP GROWTH CONDITIONS",
+      "description": "used to monitor",
+      "weight": "9",
+      "source_id": "paper_3419"
+    }
+  ]
+}

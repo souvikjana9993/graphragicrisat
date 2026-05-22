@@ -1,0 +1,176 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea, the target crop for disease control studies",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A foliar disease of groundnut caused by Phaeoisariopsis personata",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "RUST",
+      "type": "CONDITION",
+      "description": "A foliar disease of groundnut caused by Puccinia arachidis",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "PHAEIOISARIOPSIS PERSONATA",
+      "type": "ORGANISM",
+      "description": "The fungal causal agent of late leaf spot",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "The fungal causal agent of rust",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "DATURA METEL EXTRACT",
+      "type": "METHOD",
+      "description": "Aqueous leaf extract used as a prophylactic spray to control foliar diseases",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "LAWSONIA INERMIS EXTRACT",
+      "type": "METHOD",
+      "description": "Aqueous leaf extract used as a prophylactic spray to control foliar diseases",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "CHLOROTHALONIL",
+      "type": "METHOD",
+      "description": "A fungicide used to control late leaf spot and rust",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The measure of groundnut productivity",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "ANTIFUNGAL ACTIVITY",
+      "type": "TRAIT",
+      "description": "The ability of plant extracts to inhibit fungal growth",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "Controlled environment used for initial testing of extracts",
+      "source_id": "paper_1147"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "Natural environment used for validation of disease control programs",
+      "source_id": "paper_1147"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHAEIOISARIOPSIS PERSONATA",
+      "target": "LATE LEAF SPOT",
+      "description": "causal agent of",
+      "weight": "10",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "PUCCINIA ARACHIDIS",
+      "target": "RUST",
+      "description": "causal agent of",
+      "weight": "10",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "RUST",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "DATURA METEL EXTRACT",
+      "target": "PHAEIOISARIOPSIS PERSONATA",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "DATURA METEL EXTRACT",
+      "target": "PUCCINIA ARACHIDIS",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "LAWSONIA INERMIS EXTRACT",
+      "target": "PHAEIOISARIOPSIS PERSONATA",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "LAWSONIA INERMIS EXTRACT",
+      "target": "PUCCINIA ARACHIDIS",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "DATURA METEL EXTRACT",
+      "target": "LATE LEAF SPOT",
+      "description": "reduces frequency of",
+      "weight": "8",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "DATURA METEL EXTRACT",
+      "target": "RUST",
+      "description": "reduces frequency of",
+      "weight": "8",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "CHLOROTHALONIL",
+      "target": "LATE LEAF SPOT",
+      "description": "reduces severity of",
+      "weight": "9",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "CHLOROTHALONIL",
+      "target": "RUST",
+      "description": "reduces severity of",
+      "weight": "9",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "DATURA METEL EXTRACT",
+      "target": "POD YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1147"
+    },
+    {
+      "source": "CHLOROTHALONIL",
+      "target": "POD YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1147"
+    }
+  ]
+}

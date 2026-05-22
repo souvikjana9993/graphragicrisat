@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "SOYABEAN",
+      "type": "CROP",
+      "description": "The legume crop used in the hydroponic study to test the effects of CO2 and ureide on nitrogen fixation.",
+      "source_id": "paper_1317"
+    },
+    {
+      "name": "CARBON DIOXIDE",
+      "type": "CONDITION",
+      "description": "The atmospheric gas provided at ambient (360 µmol mol-1) or elevated (700 µmol mol-1) levels.",
+      "source_id": "paper_1317"
+    },
+    {
+      "name": "UREIDE",
+      "type": "CONCEPT",
+      "description": "A nitrogen-rich compound added to the nutrient solution that inhibits N2-fixation.",
+      "source_id": "paper_1317"
+    },
+    {
+      "name": "N2-FIXATION",
+      "type": "TRAIT",
+      "description": "The biological process of converting atmospheric nitrogen into ammonia, measured via nitrogenase activity.",
+      "source_id": "paper_1317"
+    },
+    {
+      "name": "ACETYLENE REDUCTION ASSAY",
+      "type": "METHOD",
+      "description": "A technique used to measure the activity of nitrogenase and thus the rate of N2-fixation.",
+      "source_id": "paper_1317"
+    },
+    {
+      "name": "TOTAL NONSTRUCTURAL CARBOHYDRATE",
+      "type": "CONCEPT",
+      "description": "The sum of soluble sugars and starch in plant tissues, which correlates negatively with ureide levels.",
+      "source_id": "paper_1317"
+    },
+    {
+      "name": "UREIDE CATABOLISM",
+      "type": "CONCEPT",
+      "description": "The metabolic breakdown of ureides, whose products are suggested to regulate N2-fixation.",
+      "source_id": "paper_1317"
+    },
+    {
+      "name": "NODULE NITROGENASE ACTIVITY",
+      "type": "TRAIT",
+      "description": "The enzymatic activity within root nodules responsible for N2-fixation.",
+      "source_id": "paper_1317"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CARBON DIOXIDE",
+      "target": "N2-FIXATION",
+      "description": "Elevated levels alleviate the inhibition of N2-fixation caused by ureide",
+      "weight": "8",
+      "source_id": "paper_1317"
+    },
+    {
+      "source": "UREIDE",
+      "target": "N2-FIXATION",
+      "description": "Inhibits N2-fixation activity in soyabean plants",
+      "weight": "9",
+      "source_id": "paper_1317"
+    },
+    {
+      "source": "ACETYLENE REDUCTION ASSAY",
+      "target": "N2-FIXATION",
+      "description": "Used as a method to measure the rate of N2-fixation",
+      "weight": "10",
+      "source_id": "paper_1317"
+    },
+    {
+      "source": "SOYABEAN",
+      "target": "N2-FIXATION",
+      "description": "The crop species in which N2-fixation is occurring",
+      "weight": "10",
+      "source_id": "paper_1317"
+    },
+    {
+      "source": "UREIDE",
+      "target": "TOTAL NONSTRUCTURAL CARBOHYDRATE",
+      "description": "Induces a significant decrease in TNC concentrations in leaves and nodules",
+      "weight": "7",
+      "source_id": "paper_1317"
+    },
+    {
+      "source": "CARBON DIOXIDE",
+      "target": "TOTAL NONSTRUCTURAL CARBOHYDRATE",
+      "description": "Elevated levels result in consistently higher TNC concentrations",
+      "weight": "8",
+      "source_id": "paper_1317"
+    },
+    {
+      "source": "UREIDE CATABOLISM",
+      "target": "N2-FIXATION",
+      "description": "The products of this process are critical in the regulation of N2-fixation",
+      "weight": "9",
+      "source_id": "paper_1317"
+    },
+    {
+      "source": "NODULE NITROGENASE ACTIVITY",
+      "target": "N2-FIXATION",
+      "description": "The specific enzymatic activity that drives the process of N2-fixation",
+      "weight": "10",
+      "source_id": "paper_1317"
+    },
+    {
+      "source": "UREIDE",
+      "target": "NODULE NITROGENASE ACTIVITY",
+      "description": "Causes a decline in the activity of nitrogenase in nodules",
+      "weight": "9",
+      "source_id": "paper_1317"
+    }
+  ]
+}

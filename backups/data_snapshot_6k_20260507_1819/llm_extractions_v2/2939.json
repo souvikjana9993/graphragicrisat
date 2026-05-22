@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where the field study was conducted",
+      "source_id": "paper_2939"
+    },
+    {
+      "name": "TRICHOGRAMMA",
+      "type": "ORGANISM",
+      "description": "An egg parasitoid whose population was monitored in the study",
+      "source_id": "paper_2939"
+    },
+    {
+      "name": "STICKY TRAPS",
+      "type": "METHOD",
+      "description": "A tool used to monitor the population of Trichogramma",
+      "source_id": "paper_2939"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A crop used in an intercropping system with pigeon pea",
+      "source_id": "paper_2939"
+    },
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A crop used in an intercropping system with sorghum",
+      "source_id": "paper_2939"
+    },
+    {
+      "name": "INTERCROP",
+      "type": "CONCEPT",
+      "description": "A cropping system involving the simultaneous growth of sorghum and pigeon pea",
+      "source_id": "paper_2939"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pest whose population peaked in both sorghum and pigeon pea",
+      "source_id": "paper_2939"
+    },
+    {
+      "name": "PARASITOID DENSITY",
+      "type": "TRAIT",
+      "description": "The population density of the Trichogramma parasitoid",
+      "source_id": "paper_2939"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TRICHOGRAMMA",
+      "target": "STICKY TRAPS",
+      "description": "monitored using",
+      "weight": "10",
+      "source_id": "paper_2939"
+    },
+    {
+      "source": "TRICHOGRAMMA",
+      "target": "SORGHUM",
+      "description": "population peaked in",
+      "weight": "9",
+      "source_id": "paper_2939"
+    },
+    {
+      "source": "TRICHOGRAMMA",
+      "target": "PIGEON PEA",
+      "description": "population was low in",
+      "weight": "8",
+      "source_id": "paper_2939"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INTERCROP",
+      "description": "component of",
+      "weight": "10",
+      "source_id": "paper_2939"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "INTERCROP",
+      "description": "component of",
+      "weight": "10",
+      "source_id": "paper_2939"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "SORGHUM",
+      "description": "population peaked in",
+      "weight": "9",
+      "source_id": "paper_2939"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "PIGEON PEA",
+      "description": "population peaked in",
+      "weight": "9",
+      "source_id": "paper_2939"
+    },
+    {
+      "source": "PARASITOID DENSITY",
+      "target": "TRICHOGRAMMA",
+      "description": "measurement of",
+      "weight": "10",
+      "source_id": "paper_2939"
+    },
+    {
+      "source": "TRICHOGRAMMA",
+      "target": "ANDHRA PRADESH",
+      "description": "studied in",
+      "weight": "8",
+      "source_id": "paper_2939"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "entities": [
+    {
+      "name": "OAT",
+      "type": "CROP",
+      "description": "Avena sativa L., the crop evaluated for biomass yield and stability",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "BIOMASS YIELD",
+      "type": "TRAIT",
+      "description": "The amount of dry matter produced per hectare, used as the primary productivity measure",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "STABILITY",
+      "type": "TRAIT",
+      "description": "The consistency of a genotype's performance across different environments",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "ADAPTATION",
+      "type": "TRAIT",
+      "description": "The ability of a genotype to perform well across multiple environments",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "AMMI",
+      "type": "METHOD",
+      "description": "Additive main effect and multiplicative interaction analysis used for stability and yield evaluation",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "GGE BIPLOT",
+      "type": "METHOD",
+      "description": "Genotype and genotype-environment interaction biplot analysis used for genotype selection",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "The experimental design used to plant and evaluate genotypes",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "PRINCIPAL COMPONENT ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical technique used to analyze the genotype-environment interaction",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "GENOTYPE-ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The combined effect of genetic factors and environmental conditions on trait expression",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The country where the oat genotypes were evaluated",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "G6",
+      "type": "CONCEPT",
+      "description": "A high-yielding, stable, and ideal oat genotype",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "G5",
+      "type": "CONCEPT",
+      "description": "A stable and widely adapted oat genotype",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "G7",
+      "type": "CONCEPT",
+      "description": "A low-yielding and unstable oat genotype",
+      "source_id": "paper_12298"
+    },
+    {
+      "name": "MEGA-ENVIRONMENT IDENTIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of identifying environments with similar responses to genotypes",
+      "source_id": "paper_12298"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AMMI",
+      "target": "OAT",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "GGE BIPLOT",
+      "target": "OAT",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "AMMI",
+      "target": "BIOMASS YIELD",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "GGE BIPLOT",
+      "target": "BIOMASS YIELD",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "target": "OAT",
+      "description": "used to evaluate",
+      "weight": "7",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "PRINCIPAL COMPONENT ANALYSIS",
+      "target": "GENOTYPE-ENVIRONMENT INTERACTION",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "GENOTYPE-ENVIRONMENT INTERACTION",
+      "target": "BIOMASS YIELD",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "OAT",
+      "target": "ETHIOPIA",
+      "description": "evaluated in",
+      "weight": "8",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "G6",
+      "target": "OAT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "G5",
+      "target": "OAT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "G7",
+      "target": "OAT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "G6",
+      "target": "BIOMASS YIELD",
+      "description": "exhibits high",
+      "weight": "9",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "G6",
+      "target": "STABILITY",
+      "description": "exhibits high",
+      "weight": "9",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "G5",
+      "target": "STABILITY",
+      "description": "exhibits high",
+      "weight": "8",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "G7",
+      "target": "BIOMASS YIELD",
+      "description": "exhibits low",
+      "weight": "9",
+      "source_id": "paper_12298"
+    },
+    {
+      "source": "G7",
+      "target": "STABILITY",
+      "description": "exhibits low",
+      "weight": "9",
+      "source_id": "paper_12298"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A legume crop used to study the toxic effects of salinity induced by farmyard manure.",
+      "source_id": "paper_2022"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "The presence of excess salts in the growth medium, measured by electrical conductivity.",
+      "source_id": "paper_2022"
+    },
+    {
+      "name": "FARMYARD MANURE",
+      "type": "CONCEPT",
+      "description": "An organic amendment that increased the salt content of the potting mixture.",
+      "source_id": "paper_2022"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The environment where the potted plant experiment was conducted.",
+      "source_id": "paper_2022"
+    },
+    {
+      "name": "MORTALITY",
+      "type": "TRAIT",
+      "description": "The death of plants occurring 2-3 weeks after germination due to medium toxicity.",
+      "source_id": "paper_2022"
+    },
+    {
+      "name": "ELECTRICAL CONDUCTIVITY",
+      "type": "METHOD",
+      "description": "The technique used to analyze the salt content of soil, FYM, and their mixtures.",
+      "source_id": "paper_2022"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONCEPT",
+      "description": "A primary component of the potting medium mixed with FYM and sand.",
+      "source_id": "paper_2022"
+    },
+    {
+      "name": "SAND",
+      "type": "CONCEPT",
+      "description": "A component of the potting medium used in a 6:3:1 ratio with soil and FYM.",
+      "source_id": "paper_2022"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FARMYARD MANURE",
+      "target": "SALINITY",
+      "description": "increases the levels of",
+      "weight": "10",
+      "source_id": "paper_2022"
+    },
+    {
+      "source": "SALINITY",
+      "target": "PIGEON PEA",
+      "description": "causes toxicity in",
+      "weight": "10",
+      "source_id": "paper_2022"
+    },
+    {
+      "source": "SALINITY",
+      "target": "MORTALITY",
+      "description": "results in",
+      "weight": "10",
+      "source_id": "paper_2022"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "GREENHOUSE",
+      "description": "was studied under",
+      "weight": "8",
+      "source_id": "paper_2022"
+    },
+    {
+      "source": "ELECTRICAL CONDUCTIVITY",
+      "target": "SALINITY",
+      "description": "is used to measure",
+      "weight": "9",
+      "source_id": "paper_2022"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "SOIL",
+      "description": "was mixed with",
+      "weight": "8",
+      "source_id": "paper_2022"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "SAND",
+      "description": "was mixed with",
+      "weight": "8",
+      "source_id": "paper_2022"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop species Cicer arietinum in which albinism was studied",
+      "source_id": "paper_5091"
+    },
+    {
+      "name": "ALBINISM",
+      "type": "TRAIT",
+      "description": "A trait characterized by the lack of pigment, resulting in albino plants that die before seed set",
+      "source_id": "paper_5091"
+    },
+    {
+      "name": "GAMMA RAY TREATMENT",
+      "type": "METHOD",
+      "description": "A method using 30 kR of gamma rays to induce mutations in the M0 generation",
+      "source_id": "paper_5091"
+    },
+    {
+      "name": "AL-1",
+      "type": "GENE_MARKER",
+      "description": "A recessive gene that controls the albinism trait in chickpea",
+      "source_id": "paper_5091"
+    },
+    {
+      "name": "CELLULAR LEVEL",
+      "type": "CONCEPT",
+      "description": "The scale at which the phenomenon of albinism was studied",
+      "source_id": "paper_5091"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "ALBINISM",
+      "description": "Albinism was detected in chickpea",
+      "weight": "10",
+      "source_id": "paper_5091"
+    },
+    {
+      "source": "GAMMA RAY TREATMENT",
+      "target": "ALBINISM",
+      "description": "Gamma ray treatment induced the albinism trait",
+      "weight": "8",
+      "source_id": "paper_5091"
+    },
+    {
+      "source": "AL-1",
+      "target": "ALBINISM",
+      "description": "The al-1 gene controls the albinism trait",
+      "weight": "10",
+      "source_id": "paper_5091"
+    },
+    {
+      "source": "AL-1",
+      "target": "CHICKPEA",
+      "description": "The al-1 gene is present in chickpea",
+      "weight": "9",
+      "source_id": "paper_5091"
+    },
+    {
+      "source": "ALBINISM",
+      "target": "CELLULAR LEVEL",
+      "description": "Albinism was studied at the cellular level",
+      "weight": "7",
+      "source_id": "paper_5091"
+    }
+  ]
+}

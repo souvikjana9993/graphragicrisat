@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "CONSERVATION AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "An agricultural approach aimed at reducing weed pressure and increasing yield through recommended practices",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "WEED GROWTH",
+      "type": "TRAIT",
+      "description": "The development and pressure of weeds in the crop field",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the crops measured in kg/ha",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop used in monocropping and rotation sequences",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop used in rotation sequences",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used in rotation sequences",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "CLAY LOAM SOIL",
+      "type": "CONDITION",
+      "description": "The specific soil texture found at the research station",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "MATOPOS RESEARCH STATION",
+      "type": "LOCATION",
+      "description": "The site where the agricultural experiments were conducted",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "ANNUAL RAINFALL",
+      "type": "CONDITION",
+      "description": "The yearly precipitation measured at 573 mm",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "CONVENTIONAL TILLAGE",
+      "type": "METHOD",
+      "description": "Tillage practice using a mouldboard plough",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "MINIMUM TILLAGE",
+      "type": "METHOD",
+      "description": "Tillage practice using ripper tine and planting basins",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "MULCHING",
+      "type": "METHOD",
+      "description": "The application of maize residue mulch at rates of 0, 2, and 4 t/ha",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "MAIZE-COWPEA-SORGHUM ROTATION",
+      "type": "METHOD",
+      "description": "A crop rotation sequence involving maize, cowpea, and sorghum",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "MAIZE-COWPEA ROTATION",
+      "type": "METHOD",
+      "description": "A crop rotation sequence involving maize and cowpea",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "MAIZE MONOCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing maize exclusively",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "SEMI-ARID CONDITIONS",
+      "type": "CONDITION",
+      "description": "The climatic environment characterized by low rainfall",
+      "source_id": "paper_10081"
+    },
+    {
+      "name": "SOIL PHYSICAL AND CHEMICAL CONDITIONS",
+      "type": "CONDITION",
+      "description": "The state of the soil that influences crop grain yield",
+      "source_id": "paper_10081"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "WEED GROWTH",
+      "description": "reduces weed pressure from the third year of adoption",
+      "weight": "8",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "CROP YIELD",
+      "description": "increases crop yield relative to unmulched conventional tillage",
+      "weight": "7",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MINIMUM TILLAGE",
+      "target": "WEED GROWTH",
+      "description": "increased weed growth in the second year of maize monocropping",
+      "weight": "7",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MULCHING",
+      "target": "WEED GROWTH",
+      "description": "suppressed weed growth by up to 36% under conservation agriculture",
+      "weight": "9",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MAIZE-COWPEA-SORGHUM ROTATION",
+      "target": "CROP YIELD",
+      "description": "produced grain yield double that of maize monocropping",
+      "weight": "9",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MAIZE-COWPEA-SORGHUM ROTATION",
+      "target": "SOIL PHYSICAL AND CHEMICAL CONDITIONS",
+      "description": "led to improvements in soil physical and chemical conditions",
+      "weight": "8",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MAIZE-COWPEA ROTATION",
+      "target": "WEED GROWTH",
+      "description": "showed considerable weed growth due to large intrarow spacing and poor light competitiveness of cowpea",
+      "weight": "7",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MATOPOS RESEARCH STATION",
+      "target": "CLAY LOAM SOIL",
+      "description": "is the location where clay loam soil is present",
+      "weight": "10",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MATOPOS RESEARCH STATION",
+      "target": "ANNUAL RAINFALL",
+      "description": "is the location where annual rainfall is 573 mm",
+      "weight": "10",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MATOPOS RESEARCH STATION",
+      "target": "SEMI-ARID CONDITIONS",
+      "description": "is located in semi-arid conditions",
+      "weight": "10",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MAIZE",
+      "target": "MAIZE-COWPEA-SORGHUM ROTATION",
+      "description": "is a component crop of the rotation",
+      "weight": "10",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "COWPEA",
+      "target": "MAIZE-COWPEA-SORGHUM ROTATION",
+      "description": "is a component crop of the rotation",
+      "weight": "10",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MAIZE-COWPEA-SORGHUM ROTATION",
+      "description": "is a component crop of the rotation",
+      "weight": "10",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MAIZE",
+      "target": "MAIZE-COWPEA ROTATION",
+      "description": "is a component crop of the rotation",
+      "weight": "10",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "COWPEA",
+      "target": "MAIZE-COWPEA ROTATION",
+      "description": "is a component crop of the rotation",
+      "weight": "10",
+      "source_id": "paper_10081"
+    },
+    {
+      "source": "MAIZE",
+      "target": "MAIZE MONOCROPPING",
+      "description": "is the crop grown in the monocropping system",
+      "weight": "10",
+      "source_id": "paper_10081"
+    }
+  ]
+}

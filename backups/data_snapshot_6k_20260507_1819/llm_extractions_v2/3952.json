@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, a crop studied for heat tolerance at the seedling establishment stage",
+      "source_id": "paper_3952"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum (L.) R.Br., a crop studied for heat tolerance at the seedling establishment stage",
+      "source_id": "paper_3952"
+    },
+    {
+      "name": "HEAT SHOCK PROTEINS",
+      "type": "GENE_MARKER",
+      "description": "Proteins produced by plants in response to heat stress, characterized by their molecular weight",
+      "source_id": "paper_3952"
+    },
+    {
+      "name": "HEAT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of plant cultivars to withstand high temperature stress",
+      "source_id": "paper_3952"
+    },
+    {
+      "name": "SEEDLING ESTABLISHMENT",
+      "type": "TRAIT",
+      "description": "The characteristics and success of a plant's early growth stage",
+      "source_id": "paper_3952"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition of elevated temperature that affects plant physiology",
+      "source_id": "paper_3952"
+    },
+    {
+      "name": "INCUBATION TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The specific temperature range from 35 to 45°C used to induce heat shock proteins in seedlings",
+      "source_id": "paper_3952"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "HEAT TOLERANCE",
+      "description": "Sorghum cultivars exhibit differing levels of heat tolerance",
+      "weight": "8",
+      "source_id": "paper_3952"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "HEAT TOLERANCE",
+      "description": "Pearl millet cultivars exhibit differing levels of heat tolerance",
+      "weight": "8",
+      "source_id": "paper_3952"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HEAT SHOCK PROTEINS",
+      "description": "Sorghum produces heat shock proteins of 65 and 62 kDa",
+      "weight": "9",
+      "source_id": "paper_3952"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "HEAT SHOCK PROTEINS",
+      "description": "Pearl millet produces heat shock proteins ranging from 30 to 70 kDa",
+      "weight": "9",
+      "source_id": "paper_3952"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "HEAT SHOCK PROTEINS",
+      "description": "Heat stress induces the production of heat shock proteins",
+      "weight": "10",
+      "source_id": "paper_3952"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "SEEDLING ESTABLISHMENT",
+      "description": "Heat stress affects seedling establishment characteristics",
+      "weight": "9",
+      "source_id": "paper_3952"
+    },
+    {
+      "source": "INCUBATION TEMPERATURE",
+      "target": "HEAT SHOCK PROTEINS",
+      "description": "Alteration of incubation temperature triggers the production of heat shock proteins",
+      "weight": "10",
+      "source_id": "paper_3952"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEEDLING ESTABLISHMENT",
+      "description": "Sorghum genotypes differ in seedling establishment characteristics",
+      "weight": "7",
+      "source_id": "paper_3952"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SEEDLING ESTABLISHMENT",
+      "description": "Pearl millet genotypes differ in seedling establishment characteristics",
+      "weight": "7",
+      "source_id": "paper_3952"
+    }
+  ]
+}

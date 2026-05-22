@@ -1,0 +1,247 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary agricultural crop being evaluated for resistance to weevil infestation",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "SITOPHILUS ZEAMAIS",
+      "type": "ORGANISM",
+      "description": "A destructive maize weevil pest that infests maize stored in tropical regions",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "TROPICAL REGIONS",
+      "type": "LOCATION",
+      "description": "The geographical areas where maize is stored and susceptible to S. zeamais",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of maize genotypes to withstand or limit infestation by S. zeamais",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "MAIZE HYBRIDS",
+      "type": "CROP",
+      "description": "Selected maize varieties evaluated for their level of resistance to weevil infestation",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "DUMA 41",
+      "type": "CROP",
+      "description": "A maize hybrid used as a susceptible check in the resistance evaluation",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "MTP0701",
+      "type": "CROP",
+      "description": "A maize hybrid used as a resistant check in the resistance evaluation",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "type": "METHOD",
+      "description": "The experimental layout used to evaluate the maize hybrids",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "MAIZE STORAGE",
+      "type": "CONDITION",
+      "description": "The condition under which the maize hybrids were kept for assessment over 120 days",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "PERCENT WEEVIL DAMAGE",
+      "type": "TRAIT",
+      "description": "A trait measured to assess the extent of infestation by S. zeamais",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "GRAIN WEIGHT LOSS",
+      "type": "TRAIT",
+      "description": "A trait measured to quantify the damage caused by S. zeamais infestation",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "NUMBER OF LIVE AND DEAD WEEVILS",
+      "type": "TRAIT",
+      "description": "A trait measured to determine the population dynamics of the pest",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "HERITABILITY",
+      "type": "CONCEPT",
+      "description": "A concept used to estimate the proportion of trait variation due to genetic factors",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "CORRELATION",
+      "type": "CONCEPT",
+      "description": "A concept used to determine the relationship between weight loss, weevil count, and damage",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "ANALYSIS OF VARIANCE",
+      "type": "METHOD",
+      "description": "A statistical method used to determine significant differences in weight loss",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "KH631Q",
+      "type": "CROP",
+      "description": "A maize hybrid identified as the most resistant to S. zeamais",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "PH4",
+      "type": "CROP",
+      "description": "A maize hybrid identified as moderately resistant to S. zeamais",
+      "source_id": "paper_10669"
+    },
+    {
+      "name": "BREEDING PROGRAMS",
+      "type": "METHOD",
+      "description": "The method of developing improved maize varieties using resistant parents",
+      "source_id": "paper_10669"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SITOPHILUS ZEAMAIS",
+      "target": "MAIZE",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "MAIZE",
+      "target": "TROPICAL REGIONS",
+      "description": "stored in",
+      "weight": "7",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "MAIZE HYBRIDS",
+      "target": "RESISTANCE",
+      "description": "evaluated for",
+      "weight": "9",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "SITOPHILUS ZEAMAIS",
+      "target": "RESISTANCE",
+      "description": "target of",
+      "weight": "10",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "DUMA 41",
+      "target": "RESISTANCE",
+      "description": "susceptible to",
+      "weight": "8",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "MTP0701",
+      "target": "RESISTANCE",
+      "description": "resistant to",
+      "weight": "8",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "RANDOMIZED COMPLETE BLOCK DESIGN",
+      "target": "MAIZE HYBRIDS",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "MAIZE STORAGE",
+      "target": "PERCENT WEEVIL DAMAGE",
+      "description": "context for measurement",
+      "weight": "7",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "MAIZE STORAGE",
+      "target": "GRAIN WEIGHT LOSS",
+      "description": "context for measurement",
+      "weight": "7",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "MAIZE STORAGE",
+      "target": "NUMBER OF LIVE AND DEAD WEEVILS",
+      "description": "context for measurement",
+      "weight": "7",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "ANALYSIS OF VARIANCE",
+      "target": "GRAIN WEIGHT LOSS",
+      "description": "used to analyze",
+      "weight": "8",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "KH631Q",
+      "target": "RESISTANCE",
+      "description": "most resistant",
+      "weight": "9",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "PH4",
+      "target": "RESISTANCE",
+      "description": "moderately resistant",
+      "weight": "9",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "MTP0701",
+      "target": "RESISTANCE",
+      "description": "maintains resistance",
+      "weight": "9",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "GRAIN WEIGHT LOSS",
+      "target": "NUMBER OF LIVE AND DEAD WEEVILS",
+      "description": "strongly positively correlated",
+      "weight": "9",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "GRAIN WEIGHT LOSS",
+      "target": "PERCENT WEEVIL DAMAGE",
+      "description": "strongly positively correlated",
+      "weight": "9",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "NUMBER OF LIVE AND DEAD WEEVILS",
+      "target": "PERCENT WEEVIL DAMAGE",
+      "description": "strongly positively correlated",
+      "weight": "9",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "HERITABILITY",
+      "target": "RESISTANCE",
+      "description": "indicates transferability of traits",
+      "weight": "8",
+      "source_id": "paper_10669"
+    },
+    {
+      "source": "MAIZE HYBRIDS",
+      "target": "BREEDING PROGRAMS",
+      "description": "parents used in",
+      "weight": "8",
+      "source_id": "paper_10669"
+    }
+  ]
+}

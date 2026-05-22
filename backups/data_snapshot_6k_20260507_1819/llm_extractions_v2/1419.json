@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "GENERATION MEAN ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical analysis used to estimate additive and dominance effects in plant breeding.",
+      "source_id": "paper_1419"
+    },
+    {
+      "name": "SIMULTANEOUS JOINT SCALING TEST",
+      "type": "METHOD",
+      "description": "A proposed statistical test designed to analyze multiple correlated traits simultaneously.",
+      "source_id": "paper_1419"
+    },
+    {
+      "name": "CORRELATED TRAITS",
+      "type": "CONCEPT",
+      "description": "Traits that show a statistical correlation with each other.",
+      "source_id": "paper_1419"
+    },
+    {
+      "name": "SCALING TEST FOR INDIVIDUAL TRAITS",
+      "type": "METHOD",
+      "description": "A scaling test applied to a single trait independently.",
+      "source_id": "paper_1419"
+    },
+    {
+      "name": "TRAITS",
+      "type": "TRAIT",
+      "description": "Heritable characteristics of an organism used in genetic analysis.",
+      "source_id": "paper_1419"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SIMULTANEOUS JOINT SCALING TEST",
+      "target": "GENERATION MEAN ANALYSIS",
+      "description": "is proposed for",
+      "weight": "8",
+      "source_id": "paper_1419"
+    },
+    {
+      "source": "SIMULTANEOUS JOINT SCALING TEST",
+      "target": "CORRELATED TRAITS",
+      "description": "is designed for",
+      "weight": "9",
+      "source_id": "paper_1419"
+    },
+    {
+      "source": "SCALING TEST FOR INDIVIDUAL TRAITS",
+      "target": "SIMULTANEOUS JOINT SCALING TEST",
+      "description": "is compared with",
+      "weight": "7",
+      "source_id": "paper_1419"
+    },
+    {
+      "source": "SCALING TEST FOR INDIVIDUAL TRAITS",
+      "target": "CORRELATED TRAITS",
+      "description": "is less efficient for",
+      "weight": "8",
+      "source_id": "paper_1419"
+    },
+    {
+      "source": "CORRELATED TRAITS",
+      "target": "TRAITS",
+      "description": "is a specific state of",
+      "weight": "10",
+      "source_id": "paper_1419"
+    }
+  ]
+}

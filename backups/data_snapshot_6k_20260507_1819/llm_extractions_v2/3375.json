@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop (Arachis hypogaea) used in the study to assess genotype performance.",
+      "source_id": "paper_3375"
+    },
+    {
+      "name": "NITROGENASE ACTIVITY",
+      "type": "TRAIT",
+      "description": "An enzyme activity measured at different growth stages to predict relative performance.",
+      "source_id": "paper_3375"
+    },
+    {
+      "name": "NODULE MASS",
+      "type": "TRAIT",
+      "description": "The mass of root nodules measured at different growth stages to predict relative performance.",
+      "source_id": "paper_3375"
+    },
+    {
+      "name": "RELATIVE PERFORMANCE",
+      "type": "CONCEPT",
+      "description": "A measure of genotype quality based on a large number of characters spanning the entire growth phase.",
+      "source_id": "paper_3375"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "A location where twenty-one groundnut genotypes were studied.",
+      "source_id": "paper_3375"
+    },
+    {
+      "name": "DELHI",
+      "type": "LOCATION",
+      "description": "A location where seventeen groundnut genotypes were studied.",
+      "source_id": "paper_3375"
+    },
+    {
+      "name": "GROUNDNUT GENOTYPES",
+      "type": "CONCEPT",
+      "description": "Spanish, Valencia, and Virginia groups of groundnut genotypes.",
+      "source_id": "paper_3375"
+    },
+    {
+      "name": "30 DAYS AFTER FLOWERING",
+      "type": "CONDITION",
+      "description": "The specific growth stage at which nitrogenase activity and nodule mass closely matched relative performance.",
+      "source_id": "paper_3375"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT GENOTYPES",
+      "target": "GROUNDNUT",
+      "description": "belong to",
+      "weight": "10",
+      "source_id": "paper_3375"
+    },
+    {
+      "source": "GROUNDNUT GENOTYPES",
+      "target": "PATANCHERU",
+      "description": "studied at",
+      "weight": "8",
+      "source_id": "paper_3375"
+    },
+    {
+      "source": "GROUNDNUT GENOTYPES",
+      "target": "DELHI",
+      "description": "studied at",
+      "weight": "8",
+      "source_id": "paper_3375"
+    },
+    {
+      "source": "NITROGENASE ACTIVITY",
+      "target": "GROUNDNUT",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_3375"
+    },
+    {
+      "source": "NODULE MASS",
+      "target": "GROUNDNUT",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_3375"
+    },
+    {
+      "source": "NITROGENASE ACTIVITY",
+      "target": "RELATIVE PERFORMANCE",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3375"
+    },
+    {
+      "source": "NODULE MASS",
+      "target": "RELATIVE PERFORMANCE",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_3375"
+    },
+    {
+      "source": "NITROGENASE ACTIVITY",
+      "target": "30 DAYS AFTER FLOWERING",
+      "description": "measured at",
+      "weight": "8",
+      "source_id": "paper_3375"
+    },
+    {
+      "source": "NODULE MASS",
+      "target": "30 DAYS AFTER FLOWERING",
+      "description": "measured at",
+      "weight": "8",
+      "source_id": "paper_3375"
+    }
+  ]
+}

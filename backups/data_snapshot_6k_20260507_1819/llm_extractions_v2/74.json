@@ -1,0 +1,253 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop, Arachis hypogaea L., susceptible to late leaf spot and rust.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "TRAIT",
+      "description": "A foliar disease affecting groundnut, causing yield loss.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "RUST",
+      "type": "TRAIT",
+      "description": "A foliar disease affecting groundnut, causing yield loss.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "YIELD LOSS",
+      "type": "CONCEPT",
+      "description": "Reduction in crop production, quantified as 50-70% in this context.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "TAG 24",
+      "type": "GENE_MARKER",
+      "description": "A parental line used in the mapping population.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "GPBD 4",
+      "type": "GENE_MARKER",
+      "description": "A parental line used in the mapping population.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINES",
+      "type": "CONCEPT",
+      "description": "A population derived from crossing two parental lines, used for QTL analysis.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "QTL MAPPING",
+      "type": "METHOD",
+      "description": "A statistical method used to identify genomic regions associated with traits.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of observing and recording characteristics of an organism.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "ARTIFICIAL DISEASE EPIDEMICS",
+      "type": "CONDITION",
+      "description": "Controlled conditions used to induce disease development for phenotyping.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "HERITABILITY",
+      "type": "CONCEPT",
+      "description": "The proportion of phenotypic variation attributable to genetic factors.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple sequence repeat markers used for genotyping.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "LINKAGE MAP",
+      "type": "CONCEPT",
+      "description": "A genetic map showing the relative positions of markers.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "COMPOSITE INTERVAL MAPPING",
+      "type": "METHOD",
+      "description": "A QTL mapping method.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "QTLS",
+      "type": "GENE_MARKER",
+      "description": "Quantitative trait loci, genomic regions associated with traits.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "QTLRUST01",
+      "type": "GENE_MARKER",
+      "description": "A major QTL associated with rust resistance.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "IPAHM 103",
+      "type": "GENE_MARKER",
+      "description": "An SSR marker linked to the QTLrust01 QTL.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "MARKER-ASSISTED BACKCROSSING",
+      "type": "METHOD",
+      "description": "A breeding technique using markers to introgress desired genes.",
+      "source_id": "paper_74"
+    },
+    {
+      "name": "TG 26",
+      "type": "GENE_MARKER",
+      "description": "A parental line used in another mapping population.",
+      "source_id": "paper_74"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "LATE LEAF SPOT",
+      "description": "affected_by",
+      "weight": "8",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RUST",
+      "description": "affected_by",
+      "weight": "8",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "YIELD LOSS",
+      "description": "causes",
+      "weight": "7",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "RUST",
+      "target": "YIELD LOSS",
+      "description": "causes",
+      "weight": "7",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "TAG 24",
+      "target": "GPBD 4",
+      "description": "crossed_to_create",
+      "weight": "9",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "TAG 24",
+      "description": "derived_from",
+      "weight": "8",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "GPBD 4",
+      "description": "derived_from",
+      "weight": "8",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "QTL MAPPING",
+      "target": "RECOMBINANT INBRED LINES",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "PHENOTYPING",
+      "target": "RECOMBINANT INBRED LINES",
+      "description": "applied_to",
+      "weight": "8",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "LINKAGE MAP",
+      "description": "used_to_create",
+      "weight": "9",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "COMPOSITE INTERVAL MAPPING",
+      "target": "QTLS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "QTLRUST01",
+      "target": "RUST",
+      "description": "associated_with",
+      "weight": "10",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "IPAHM 103",
+      "target": "QTLRUST01",
+      "description": "linked_to",
+      "weight": "9",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "MARKER-ASSISTED BACKCROSSING",
+      "target": "QTLRUST01",
+      "description": "uses",
+      "weight": "8",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "TG 26",
+      "target": "GPBD 4",
+      "description": "crossed_to_create",
+      "weight": "9",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "QTLRUST01",
+      "target": "GROUNDNUT",
+      "description": "improves",
+      "weight": "7",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "IPAHM 103",
+      "target": "GROUNDNUT",
+      "description": "used_for_breeding",
+      "weight": "7",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "QTLS",
+      "description": "associated_with",
+      "weight": "7",
+      "source_id": "paper_74"
+    },
+    {
+      "source": "RUST",
+      "target": "QTLS",
+      "description": "associated_with",
+      "weight": "7",
+      "source_id": "paper_74"
+    }
+  ]
+}

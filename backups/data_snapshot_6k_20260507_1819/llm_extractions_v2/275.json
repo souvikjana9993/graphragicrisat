@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "PLANT POPULATION DENSITY",
+      "type": "CONDITION",
+      "description": "The number of plants per unit area in a field, which can vary from recommended levels.",
+      "source_id": "paper_275"
+    },
+    {
+      "name": "GROWTH DURATION",
+      "type": "TRAIT",
+      "description": "The length of time a plant takes to complete its growth cycle, affecting its ability to compensate for low population density.",
+      "source_id": "paper_275"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural output produced, which may be reduced by low plant population density.",
+      "source_id": "paper_275"
+    },
+    {
+      "name": "PLASTICITY",
+      "type": "TRAIT",
+      "description": "The ability of a cultivar to produce stable yields over a range of population densities.",
+      "source_id": "paper_275"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of selecting for specific traits to improve crop performance and stabilize yields.",
+      "source_id": "paper_275"
+    },
+    {
+      "name": "CULTIVAR",
+      "type": "CONCEPT",
+      "description": "A cultivated variety of a plant that exhibits varying degrees of plasticity.",
+      "source_id": "paper_275"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PLANT POPULATION DENSITY",
+      "target": "YIELD",
+      "description": "Low plant population density can lead to a reduction in yield.",
+      "weight": "8",
+      "source_id": "paper_275"
+    },
+    {
+      "source": "GROWTH DURATION",
+      "target": "PLANT POPULATION DENSITY",
+      "description": "Longer growth duration can partially overcome the negative effects of low plant population density.",
+      "weight": "7",
+      "source_id": "paper_275"
+    },
+    {
+      "source": "PLASTICITY",
+      "target": "YIELD",
+      "description": "Plasticity enables the production of stable yields across different population densities.",
+      "weight": "9",
+      "source_id": "paper_275"
+    },
+    {
+      "source": "PLASTICITY",
+      "target": "PLANT POPULATION DENSITY",
+      "description": "Plasticity is the ability to compensate for yield reduction at lower plant population densities.",
+      "weight": "9",
+      "source_id": "paper_275"
+    },
+    {
+      "source": "CULTIVAR",
+      "target": "PLASTICITY",
+      "description": "A cultivar's ability to maintain stable yields is defined as its plasticity.",
+      "weight": "8",
+      "source_id": "paper_275"
+    },
+    {
+      "source": "BREEDING",
+      "target": "PLASTICITY",
+      "description": "Breeding is used to select for plasticity to stabilize yields.",
+      "weight": "8",
+      "source_id": "paper_275"
+    },
+    {
+      "source": "BREEDING",
+      "target": "YIELD",
+      "description": "Breeding for plasticity is intended to stabilize yields at the farmer level.",
+      "weight": "7",
+      "source_id": "paper_275"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "GERMINATE",
+      "type": "METHOD",
+      "description": "An informatics platform used for managing and distributing prebreeding data for crops and their wild relatives.",
+      "source_id": "paper_11571"
+    },
+    {
+      "name": "PREBREEDING",
+      "type": "CONCEPT",
+      "description": "The process of preparing germplasm for use in breeding and research programs.",
+      "source_id": "paper_11571"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "Genetic material used in breeding and research programs.",
+      "source_id": "paper_11571"
+    },
+    {
+      "name": "CROP WILD RELATIVES",
+      "type": "ORGANISM",
+      "description": "Wild species related to cultivated crops, used for genetic diversity and adaptation.",
+      "source_id": "paper_11571"
+    },
+    {
+      "name": "CROP TRUST CROP WILD RELATIVES PROJECT",
+      "type": "CONCEPT",
+      "description": "A project titled 'Adapting Agriculture to Climate Change: Collecting, Protecting and Preparing Crop Wild Relatives'.",
+      "source_id": "paper_11571"
+    },
+    {
+      "name": "CROP TRUST",
+      "type": "ORGANISM",
+      "description": "The organization leading the Crop Trust Crop Wild Relatives project.",
+      "source_id": "paper_11571"
+    },
+    {
+      "name": "BREEDING SOFTWARE",
+      "type": "METHOD",
+      "description": "Software tools used in crop breeding programs.",
+      "source_id": "paper_11571"
+    },
+    {
+      "name": "VISUALIZATION TOOLS",
+      "type": "METHOD",
+      "description": "Tools used for the visual representation of breeding and research data.",
+      "source_id": "paper_11571"
+    },
+    {
+      "name": "ANALYSIS TOOLS",
+      "type": "METHOD",
+      "description": "Tools used for the analysis of experimental and breeding data.",
+      "source_id": "paper_11571"
+    },
+    {
+      "name": "EXPERIMENTAL DATA",
+      "type": "CONCEPT",
+      "description": "Data generated from prebreeding projects used to support breeding and research.",
+      "source_id": "paper_11571"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GERMINATE",
+      "target": "PREBREEDING",
+      "description": "supports informatics for",
+      "weight": "9",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "GERMINATE",
+      "target": "CROP WILD RELATIVES",
+      "description": "distributes data for",
+      "weight": "9",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "GERMINATE",
+      "target": "CROP TRUST CROP WILD RELATIVES PROJECT",
+      "description": "is used within",
+      "weight": "10",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "CROP TRUST CROP WILD RELATIVES PROJECT",
+      "target": "CROP WILD RELATIVES",
+      "description": "focuses on collecting and protecting",
+      "weight": "10",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "CROP TRUST",
+      "target": "CROP TRUST CROP WILD RELATIVES PROJECT",
+      "description": "leads",
+      "weight": "10",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "GERMINATE",
+      "target": "BREEDING SOFTWARE",
+      "description": "is integrated with",
+      "weight": "7",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "GERMINATE",
+      "target": "VISUALIZATION TOOLS",
+      "description": "is integrated with",
+      "weight": "7",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "GERMINATE",
+      "target": "ANALYSIS TOOLS",
+      "description": "is integrated with",
+      "weight": "7",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "PREBREEDING",
+      "target": "GERMPLASM",
+      "description": "ensures uptake of",
+      "weight": "8",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "EXPERIMENTAL DATA",
+      "target": "PREBREEDING",
+      "description": "is generated from",
+      "weight": "9",
+      "source_id": "paper_11571"
+    },
+    {
+      "source": "GERMINATE",
+      "target": "EXPERIMENTAL DATA",
+      "description": "manages and distributes",
+      "weight": "9",
+      "source_id": "paper_11571"
+    }
+  ]
+}

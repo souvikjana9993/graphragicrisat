@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench, the crop studied for its susceptibility to stalk rot under water stress.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "WATER DEFICIT STRESS",
+      "type": "CONDITION",
+      "description": "Moisture deficit occurring after flowering that predisposes the crop to disease.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "STALK ROT",
+      "type": "TRAIT",
+      "description": "A disease also known as charcoal rot, characterized by soft stalks and fungal spread.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "MACROPHOMINA PHASEOLINA",
+      "type": "ORGANISM",
+      "description": "The causal fungus of charcoal rot.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "LODGING",
+      "type": "TRAIT",
+      "description": "The collapse of the crop stem resulting from stalk rot.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "LINE SOURCE SPRINKLER IRRIGATION",
+      "type": "METHOD",
+      "description": "A technique producing a gradient of water deficit stress to study quantitative relationships.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, which decreases with increased water deficit.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "TIME OF INOCULATION",
+      "type": "CONCEPT",
+      "description": "The timing of fungal introduction used to study disease incidence.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "PERCENTAGE OF SOFT STALKS",
+      "type": "TRAIT",
+      "description": "A parameter used to measure the spread of stalk rot.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "NUMBER OF NODES CROSSED",
+      "type": "TRAIT",
+      "description": "A parameter used to measure the spread of stalk rot.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "LENGTH OF FUNGAL SPREAD",
+      "type": "TRAIT",
+      "description": "A parameter used to measure the spread of stalk rot in centimeters.",
+      "source_id": "paper_3518"
+    },
+    {
+      "name": "RAINFREE DRY SEASONS",
+      "type": "CONDITION",
+      "description": "The environmental period during which the line source irrigation method is effective for study.",
+      "source_id": "paper_3518"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER DEFICIT STRESS",
+      "target": "SORGHUM",
+      "description": "predisposes the crop to stalk rot",
+      "weight": "8",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "STALK ROT",
+      "description": "is the causal fungus of",
+      "weight": "10",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "STALK ROT",
+      "target": "LODGING",
+      "description": "results in",
+      "weight": "7",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "LINE SOURCE SPRINKLER IRRIGATION",
+      "target": "WATER DEFICIT STRESS",
+      "description": "produces a gradient of",
+      "weight": "9",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "LINE SOURCE SPRINKLER IRRIGATION",
+      "target": "STALK ROT",
+      "description": "used to study the incidence of",
+      "weight": "8",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "WATER DEFICIT STRESS",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "WATER DEFICIT STRESS",
+      "target": "STALK ROT",
+      "description": "increases the incidence of",
+      "weight": "9",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "TIME OF INOCULATION",
+      "target": "STALK ROT",
+      "description": "affects the incidence of",
+      "weight": "7",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "STALK ROT",
+      "target": "PERCENTAGE OF SOFT STALKS",
+      "description": "is measured by",
+      "weight": "9",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "STALK ROT",
+      "target": "NUMBER OF NODES CROSSED",
+      "description": "is measured by",
+      "weight": "9",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "STALK ROT",
+      "target": "LENGTH OF FUNGAL SPREAD",
+      "description": "is measured by",
+      "weight": "9",
+      "source_id": "paper_3518"
+    },
+    {
+      "source": "RAINFREE DRY SEASONS",
+      "target": "LINE SOURCE SPRINKLER IRRIGATION",
+      "description": "is the period when the method is used",
+      "weight": "6",
+      "source_id": "paper_3518"
+    }
+  ]
+}

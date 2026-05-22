@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "NUTRIENT APPLICATION",
+      "type": "METHOD",
+      "description": "The application of nutrients to mitigate the effects of iron toxicity in rice",
+      "source_id": "paper_4003"
+    },
+    {
+      "name": "IRON TOXICITY",
+      "type": "CONDITION",
+      "description": "A widespread nutrient disorder that affects rice growing in inland swamps and irrigated lowland soils",
+      "source_id": "paper_4003"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop affected by iron toxicity in lowland areas of West Africa",
+      "source_id": "paper_4003"
+    },
+    {
+      "name": "INLAND SWAMPS",
+      "type": "LOCATION",
+      "description": "Areas where rice is grown and susceptible to iron toxicity",
+      "source_id": "paper_4003"
+    },
+    {
+      "name": "IRRIGATED LOWLAND SOILS",
+      "type": "LOCATION",
+      "description": "Soils where rice is grown and susceptible to iron toxicity",
+      "source_id": "paper_4003"
+    },
+    {
+      "name": "HUMID FOREST",
+      "type": "LOCATION",
+      "description": "A zone in West Africa where iron toxicity affects rice",
+      "source_id": "paper_4003"
+    },
+    {
+      "name": "SAVANNA ZONES",
+      "type": "LOCATION",
+      "description": "A zone in West Africa where iron toxicity affects rice",
+      "source_id": "paper_4003"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The geographical region where the nutrient disorder is widespread",
+      "source_id": "paper_4003"
+    },
+    {
+      "name": "RICE YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of rice, which is reduced by iron toxicity",
+      "source_id": "paper_4003"
+    },
+    {
+      "name": "TOLERANCE",
+      "type": "TRAIT",
+      "description": "The capacity of a rice cultivar to withstand the effects of iron toxicity",
+      "source_id": "paper_4003"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NUTRIENT APPLICATION",
+      "target": "IRON TOXICITY",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_4003"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4003"
+    },
+    {
+      "source": "RICE",
+      "target": "INLAND SWAMPS",
+      "description": "grows in",
+      "weight": "8",
+      "source_id": "paper_4003"
+    },
+    {
+      "source": "RICE",
+      "target": "IRRIGATED LOWLAND SOILS",
+      "description": "grows in",
+      "weight": "8",
+      "source_id": "paper_4003"
+    },
+    {
+      "source": "INLAND SWAMPS",
+      "target": "WEST AFRICA",
+      "description": "located in",
+      "weight": "7",
+      "source_id": "paper_4003"
+    },
+    {
+      "source": "IRRIGATED LOWLAND SOILS",
+      "target": "WEST AFRICA",
+      "description": "located in",
+      "weight": "7",
+      "source_id": "paper_4003"
+    },
+    {
+      "source": "HUMID FOREST",
+      "target": "WEST AFRICA",
+      "description": "located in",
+      "weight": "8",
+      "source_id": "paper_4003"
+    },
+    {
+      "source": "SAVANNA ZONES",
+      "target": "WEST AFRICA",
+      "description": "located in",
+      "weight": "8",
+      "source_id": "paper_4003"
+    },
+    {
+      "source": "IRON TOXICITY",
+      "target": "RICE YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_4003"
+    },
+    {
+      "source": "TOLERANCE",
+      "target": "IRON TOXICITY",
+      "description": "modulates the impact of",
+      "weight": "8",
+      "source_id": "paper_4003"
+    }
+  ]
+}

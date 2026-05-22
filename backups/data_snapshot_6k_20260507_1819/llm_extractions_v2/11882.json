@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "An important oilseed crop (Glycine spp.) analyzed in the study",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "GENE PRESENCE/ABSENCE VARIATION",
+      "type": "CONCEPT",
+      "description": "Variation in gene content between individuals of the same species",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "SELECTION",
+      "type": "CONCEPT",
+      "description": "The process that alters the frequency of specific genes in a population",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "DOMESTICATION",
+      "type": "CONCEPT",
+      "description": "The process of adapting wild plants for human use, leading to genomic modifications",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "BREEDING",
+      "type": "CONCEPT",
+      "description": "The intentional mating of plants to achieve desired traits, leading to genomic modifications",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "GENOMIC LANDSCAPE",
+      "type": "CONCEPT",
+      "description": "The overall structure and content of the genome",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The total number of genetic characteristics in the genetic makeup of a species",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "PANGENOME",
+      "type": "METHOD",
+      "description": "An assembly representing the entire set of genes within a species, used here for 1,000 soybean accessions",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "USDA SOYBEAN GERMPLASM COLLECTION",
+      "type": "LOCATION",
+      "description": "The source of the soybean accessions used in the study",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "GENE AND ALLELE FREQUENCY",
+      "type": "CONCEPT",
+      "description": "The proportion of a specific gene or allele in a population",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "LEE REFERENCE GENOME ASSEMBLY",
+      "type": "METHOD",
+      "description": "The standard soybean genome assembly used for comparison",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "PROTEIN-CODING GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that encode proteins, which showed a reduction in number during domestication and breeding",
+      "source_id": "paper_11882"
+    },
+    {
+      "name": "AGRONOMIC TRAITS",
+      "type": "TRAIT",
+      "description": "Desirable characteristics of crops selected for during breeding",
+      "source_id": "paper_11882"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN",
+      "target": "PANGENOME",
+      "description": "analyzed using a",
+      "weight": "10",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "USDA SOYBEAN GERMPLASM COLLECTION",
+      "description": "accessions derived from",
+      "weight": "9",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "DOMESTICATION",
+      "target": "GENOMIC LANDSCAPE",
+      "description": "modifies the",
+      "weight": "8",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "BREEDING",
+      "target": "GENOMIC LANDSCAPE",
+      "description": "modifies the",
+      "weight": "8",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "DOMESTICATION",
+      "target": "GENETIC DIVERSITY",
+      "description": "leads to a loss of",
+      "weight": "9",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "BREEDING",
+      "target": "GENETIC DIVERSITY",
+      "description": "leads to a loss of",
+      "weight": "9",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "DOMESTICATION",
+      "target": "PROTEIN-CODING GENES",
+      "description": "reduces the average number of",
+      "weight": "8",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "BREEDING",
+      "target": "PROTEIN-CODING GENES",
+      "description": "reduces the average number of",
+      "weight": "8",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "SELECTION",
+      "target": "AGRONOMIC TRAITS",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "SELECTION",
+      "target": "GENE AND ALLELE FREQUENCY",
+      "description": "alters the",
+      "weight": "8",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "PANGENOME",
+      "target": "LEE REFERENCE GENOME ASSEMBLY",
+      "description": "used to identify genes absent from",
+      "weight": "7",
+      "source_id": "paper_11882"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "PROTEIN-CODING GENES",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11882"
+    }
+  ]
+}

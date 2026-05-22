@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being evaluated for resistance to foliar fungal diseases",
+      "source_id": "paper_2146"
+    },
+    {
+      "name": "FOLIAR FUNGAL DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut genotypes to resist foliar fungal diseases",
+      "source_id": "paper_2146"
+    },
+    {
+      "name": "FIELD SCREENING",
+      "type": "METHOD",
+      "description": "The process of testing genotypes in field trials to evaluate disease resistance",
+      "source_id": "paper_2146"
+    },
+    {
+      "name": "RUST",
+      "type": "CONDITION",
+      "description": "A foliar fungal disease affecting groundnut",
+      "source_id": "paper_2146"
+    },
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes rust in groundnut",
+      "source_id": "paper_2146"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A foliar fungal disease affecting groundnut",
+      "source_id": "paper_2146"
+    },
+    {
+      "name": "PHAEOISARIOPSIS PERSONATA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes late leaf spot in groundnut",
+      "source_id": "paper_2146"
+    },
+    {
+      "name": "MYCOSPHAERELLA BERKELEYI",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that causes late leaf spot in groundnut",
+      "source_id": "paper_2146"
+    },
+    {
+      "name": "CARBENDAZIM",
+      "type": "METHOD",
+      "description": "A fungicide used to prevent the establishment of late leaf spot",
+      "source_id": "paper_2146"
+    },
+    {
+      "name": "TRIDEMORPH",
+      "type": "METHOD",
+      "description": "A fungicide used to prevent the establishment of rust",
+      "source_id": "paper_2146"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "FOLIAR FUNGAL DISEASE RESISTANCE",
+      "description": "possesses trait",
+      "weight": "10",
+      "source_id": "paper_2146"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RUST",
+      "description": "susceptible to",
+      "weight": "10",
+      "source_id": "paper_2146"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "LATE LEAF SPOT",
+      "description": "susceptible to",
+      "weight": "10",
+      "source_id": "paper_2146"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "FOLIAR FUNGAL DISEASE RESISTANCE",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_2146"
+    },
+    {
+      "source": "RUST",
+      "target": "PUCCINIA ARACHIDIS",
+      "description": "caused by",
+      "weight": "10",
+      "source_id": "paper_2146"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "PHAEOISARIOPSIS PERSONATA",
+      "description": "caused by",
+      "weight": "10",
+      "source_id": "paper_2146"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "MYCOSPHAERELLA BERKELEYI",
+      "description": "caused by",
+      "weight": "10",
+      "source_id": "paper_2146"
+    },
+    {
+      "source": "CARBENDAZIM",
+      "target": "LATE LEAF SPOT",
+      "description": "prevents",
+      "weight": "9",
+      "source_id": "paper_2146"
+    },
+    {
+      "source": "TRIDEMORPH",
+      "target": "RUST",
+      "description": "prevents",
+      "weight": "9",
+      "source_id": "paper_2146"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "GROUNDNUT",
+      "description": "used on",
+      "weight": "9",
+      "source_id": "paper_2146"
+    }
+  ]
+}

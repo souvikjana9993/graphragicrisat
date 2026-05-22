@@ -1,0 +1,176 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop grown in northern India, subject to yield loss in cooler environments",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of grain yield to total biomass, which is lowered by low night temperatures",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "COLD TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to maintain productivity and growth under low temperature conditions",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total agricultural output of the crop, which is low in cooler environments",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "LOW TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Cooler environments and low night temperatures that induce flower shedding and pod set failure",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "NORTHERN INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where chickpea is grown in cooler environments",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "HISAR",
+      "type": "LOCATION",
+      "description": "A specific location in Haryana, India, characterized by cooler environments",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "HARYANA",
+      "type": "LOCATION",
+      "description": "A state in northern India where Hisar is located",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "SINK POTENTIAL",
+      "type": "CONCEPT",
+      "description": "The capacity of the plant to realize its potential for grain production",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "FLOWER SHEDDING",
+      "type": "TRAIT",
+      "description": "The loss of flowers induced by low night temperatures",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "POD SET FAILURE",
+      "type": "TRAIT",
+      "description": "The failure of flowers to develop into pods due to low night temperatures",
+      "source_id": "paper_2152"
+    },
+    {
+      "name": "VEGETATIVE GROWTH",
+      "type": "CONCEPT",
+      "description": "The growth of non-reproductive plant parts, which increases when assimilates are diverted from reproductive organs",
+      "source_id": "paper_2152"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "YIELD",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "HARVEST INDEX",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "LOW TEMPERATURE",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "LOW TEMPERATURE",
+      "target": "FLOWER SHEDDING",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "LOW TEMPERATURE",
+      "target": "POD SET FAILURE",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "LOW TEMPERATURE",
+      "target": "HARVEST INDEX",
+      "description": "lowers",
+      "weight": "8",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "SINK POTENTIAL",
+      "target": "HARVEST INDEX",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "FLOWER SHEDDING",
+      "target": "HARVEST INDEX",
+      "description": "lowers",
+      "weight": "7",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "POD SET FAILURE",
+      "target": "HARVEST INDEX",
+      "description": "lowers",
+      "weight": "7",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "VEGETATIVE GROWTH",
+      "target": "HARVEST INDEX",
+      "description": "lowers",
+      "weight": "7",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "COLD TOLERANCE",
+      "target": "HARVEST INDEX",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "NORTHERN INDIA",
+      "target": "LOW TEMPERATURE",
+      "description": "experiences",
+      "weight": "7",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "HISAR",
+      "target": "HARYANA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_2152"
+    },
+    {
+      "source": "HARYANA",
+      "target": "NORTHERN INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_2152"
+    }
+  ]
+}

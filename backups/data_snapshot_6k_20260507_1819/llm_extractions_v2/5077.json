@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Commonly known as peanut, the host crop for bacterial wilt",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "BACTERIAL WILT",
+      "type": "CONDITION",
+      "description": "A disease caused by Pseudomonas solanacearum affecting groundnuts",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "PSEUDOMONAS SOLANACEARUM",
+      "type": "ORGANISM",
+      "description": "The bacterial pathogen causing groundnut bacterial wilt",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "RALSTONIA SOLANACEARUM",
+      "type": "ORGANISM",
+      "description": "A synonym for the pathogen Pseudomonas solanacearum",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "WILD ARACHIS SPP",
+      "type": "CROP",
+      "description": "Wild species of the groundnut genus imported from Brazil",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "PEQIA",
+      "type": "LOCATION",
+      "description": "Post Entry Quarantine Isolation Area used for quarantine clearance",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "ICRISAT CENTER",
+      "type": "LOCATION",
+      "description": "The research center where the isolation area is located",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "PATANCHERU",
+      "type": "LOCATION",
+      "description": "The town where the ICRISAT center is situated",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where the ICRISAT center is located",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the ICRISAT center is located",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "BRAZIL",
+      "type": "LOCATION",
+      "description": "The country from which the wild Arachis spp. were imported",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "QUARANTINE CLEARANCE",
+      "type": "METHOD",
+      "description": "The process of ensuring imported plant materials are pest-free",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "HIGH TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Temperatures exceeding 30 degrees Celsius that trigger disease symptoms",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "LATENT FORM",
+      "type": "CONCEPT",
+      "description": "A state where the pathogen is present but does not express symptoms",
+      "source_id": "paper_5077"
+    },
+    {
+      "name": "TEMPERATE CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions under which the pathogen may be transmitted in latent form",
+      "source_id": "paper_5077"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PSEUDOMONAS SOLANACEARUM",
+      "target": "BACTERIAL WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "RALSTONIA SOLANACEARUM",
+      "target": "PSEUDOMONAS SOLANACEARUM",
+      "description": "is synonym of",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "WILD ARACHIS SPP",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "WILD ARACHIS SPP",
+      "target": "BRAZIL",
+      "description": "imported from",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "WILD ARACHIS SPP",
+      "target": "PEQIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "PEQIA",
+      "target": "ICRISAT CENTER",
+      "description": "located at",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "ICRISAT CENTER",
+      "target": "PATANCHERU",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "PATANCHERU",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "HIGH TEMPERATURE",
+      "description": "symptoms expressed at",
+      "weight": "9",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "LATENT FORM",
+      "description": "transmitted in",
+      "weight": "8",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "LATENT FORM",
+      "target": "TEMPERATE CONDITIONS",
+      "description": "occurs under",
+      "weight": "8",
+      "source_id": "paper_5077"
+    },
+    {
+      "source": "WILD ARACHIS SPP",
+      "target": "QUARANTINE CLEARANCE",
+      "description": "subjected to",
+      "weight": "9",
+      "source_id": "paper_5077"
+    }
+  ]
+}

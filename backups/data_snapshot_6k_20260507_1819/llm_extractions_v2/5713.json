@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Zea mays L., the crop used for the genetic map development",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "RFLP",
+      "type": "GENE_MARKER",
+      "description": "Restriction fragment length polymorphisms used as markers for mapping",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "IMMORTALIZED F2 POPULATION",
+      "type": "CONCEPT",
+      "description": "A mapping population (Tx303 X C0159 FP) that allows for unlimited marker mapping",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "GENOMIC CLONES",
+      "type": "GENE_MARKER",
+      "description": "A type of marker consisting of 159 clones used in the map",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "ISOZYMES",
+      "type": "GENE_MARKER",
+      "description": "A type of marker consisting of 16 isozymes used in the map",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "CLONED GENES",
+      "type": "GENE_MARKER",
+      "description": "A type of marker consisting of 35 cloned genes of defined function",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "CHROMOSOMES",
+      "type": "CONCEPT",
+      "description": "The 10 structures on which the markers were placed",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "CLASSICAL MAIZE GENETIC MAP",
+      "type": "CONCEPT",
+      "description": "The reference genetic map used for alignment with cloned genes and isozymes",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "U.S. CORN BELT",
+      "type": "LOCATION",
+      "description": "The geographic region from which the germplasm collection was sourced",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "The collection of maize genetic resources screened against RFLP probes",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "ECORI",
+      "type": "METHOD",
+      "description": "A restriction enzyme used to screen RFLP probes",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "HINDIII",
+      "type": "METHOD",
+      "description": "A restriction enzyme used to screen RFLP probes",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "ECORV",
+      "type": "METHOD",
+      "description": "A restriction enzyme used to screen RFLP probes",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "CORE MARKERS",
+      "type": "GENE_MARKER",
+      "description": "A set of 97 markers defined to serve as a backbone for genetic information",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "BINS",
+      "type": "CONCEPT",
+      "description": "Subdivisions of the maize genome created using core markers",
+      "source_id": "paper_5713"
+    },
+    {
+      "name": "MAIZE GENOME",
+      "type": "CONCEPT",
+      "description": "The complete genetic material of maize subdivided into bins",
+      "source_id": "paper_5713"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RFLP",
+      "target": "MAIZE",
+      "description": "used to construct a genetic map for",
+      "weight": "10",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "IMMORTALIZED F2 POPULATION",
+      "target": "MAIZE",
+      "description": "derived from maize for mapping purposes",
+      "weight": "10",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "GENOMIC CLONES",
+      "target": "RFLP",
+      "description": "are a component of the RFLP markers used",
+      "weight": "8",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "ISOZYMES",
+      "target": "RFLP",
+      "description": "are a component of the RFLP markers used",
+      "weight": "8",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "CLONED GENES",
+      "target": "RFLP",
+      "description": "are a component of the RFLP markers used",
+      "weight": "8",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "RFLP",
+      "target": "CHROMOSOMES",
+      "description": "placed on 10 chromosomes",
+      "weight": "9",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "CLONED GENES",
+      "target": "CLASSICAL MAIZE GENETIC MAP",
+      "description": "aligned with based on functional criteria",
+      "weight": "9",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "ISOZYMES",
+      "target": "CLASSICAL MAIZE GENETIC MAP",
+      "description": "aligned with based on functional criteria",
+      "weight": "9",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "CORE MARKERS",
+      "target": "RFLP",
+      "description": "defined from a set of mapped RFLP probes",
+      "weight": "10",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "CORE MARKERS",
+      "target": "GERMPLASM",
+      "description": "identified by screening against",
+      "weight": "9",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "GERMPLASM",
+      "target": "U.S. CORN BELT",
+      "description": "sourced from",
+      "weight": "8",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "ECORI",
+      "target": "CORE MARKERS",
+      "description": "used as a restriction enzyme to define",
+      "weight": "8",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "HINDIII",
+      "target": "CORE MARKERS",
+      "description": "used as a restriction enzyme to define",
+      "weight": "8",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "ECORV",
+      "target": "CORE MARKERS",
+      "description": "used as a restriction enzyme to define",
+      "weight": "8",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "CORE MARKERS",
+      "target": "BINS",
+      "description": "used to subdivide the genome into",
+      "weight": "10",
+      "source_id": "paper_5713"
+    },
+    {
+      "source": "BINS",
+      "target": "MAIZE GENOME",
+      "description": "serve as the backbone for the genome",
+      "weight": "10",
+      "source_id": "paper_5713"
+    }
+  ]
+}

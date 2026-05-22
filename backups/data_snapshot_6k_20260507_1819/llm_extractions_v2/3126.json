@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "MICROLYSIMETER METHOD",
+      "type": "METHOD",
+      "description": "A technique employing microlysimeters of various dimensions and ages to measure soil evaporation",
+      "source_id": "paper_3126"
+    },
+    {
+      "name": "EVAPORATION",
+      "type": "CONCEPT",
+      "description": "The loss of water from the soil surface to the atmosphere, a key component of water and energy balances",
+      "source_id": "paper_3126"
+    },
+    {
+      "name": "SANDY SOILS",
+      "type": "CONDITION",
+      "description": "The specific soil texture used in the study to evaluate the microlysimeter method",
+      "source_id": "paper_3126"
+    },
+    {
+      "name": "CROP WATER BALANCE",
+      "type": "CONCEPT",
+      "description": "The accounting of water inputs and outputs in a crop system",
+      "source_id": "paper_3126"
+    },
+    {
+      "name": "LAND SURFACE ENERGY BALANCE",
+      "type": "CONCEPT",
+      "description": "The equilibrium of energy fluxes at the earth's surface",
+      "source_id": "paper_3126"
+    },
+    {
+      "name": "RAIN",
+      "type": "CONDITION",
+      "description": "A weather event that triggers changes in soil evaporation rates",
+      "source_id": "paper_3126"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "Vegetation in the field whose root activity influences water extraction and evaporation measurements",
+      "source_id": "paper_3126"
+    },
+    {
+      "name": "ROOT EXTRACTION OF WATER",
+      "type": "CONCEPT",
+      "description": "The process of water uptake by plant roots from the soil profile",
+      "source_id": "paper_3126"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MICROLYSIMETER METHOD",
+      "target": "EVAPORATION",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_3126"
+    },
+    {
+      "source": "MICROLYSIMETER METHOD",
+      "target": "SANDY SOILS",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_3126"
+    },
+    {
+      "source": "EVAPORATION",
+      "target": "CROP WATER BALANCE",
+      "description": "is a major component of",
+      "weight": "9",
+      "source_id": "paper_3126"
+    },
+    {
+      "source": "EVAPORATION",
+      "target": "LAND SURFACE ENERGY BALANCE",
+      "description": "is a major component of",
+      "weight": "9",
+      "source_id": "paper_3126"
+    },
+    {
+      "source": "RAIN",
+      "target": "EVAPORATION",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_3126"
+    },
+    {
+      "source": "CROP",
+      "target": "ROOT EXTRACTION OF WATER",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_3126"
+    },
+    {
+      "source": "ROOT EXTRACTION OF WATER",
+      "target": "EVAPORATION",
+      "description": "affects the period of significant difference in measurement",
+      "weight": "7",
+      "source_id": "paper_3126"
+    },
+    {
+      "source": "MICROLYSIMETER METHOD",
+      "target": "CROP",
+      "description": "used within",
+      "weight": "7",
+      "source_id": "paper_3126"
+    }
+  ]
+}

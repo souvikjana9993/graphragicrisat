@@ -1,0 +1,240 @@
+{
+  "entities": [
+    {
+      "name": "CEPHALOSPORIUM STRIPE",
+      "type": "CONDITION",
+      "description": "A vascular wilt disease of wheat caused by Cephalosporium gramineum",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "CEPHALOSPORIUM GRAMINEUM",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Cephalosporium stripe",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "Triticum aestivum L., the crop affected by Cephalosporium stripe",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area, negatively impacted by Cephalosporium stripe",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "GRAIN QUALITY",
+      "type": "TRAIT",
+      "description": "The physical and chemical properties of wheat grains, negatively impacted by Cephalosporium stripe",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "CONSERVATION TILLAGE",
+      "type": "CONCEPT",
+      "description": "Agricultural practices that reduce soil disturbance, the adoption of which is limited by Cephalosporium stripe",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "RESISTANCE TO CEPHALOSPORIUM STRIPE",
+      "type": "TRAIT",
+      "description": "The ability of wheat cultivars to withstand or limit the impact of Cephalosporium stripe",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINES",
+      "type": "METHOD",
+      "description": "A population of lines derived from a cross between two cultivars used for genetic mapping",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "FIELD SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating plant resistance to disease under field conditions",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "MOLECULAR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "DNA sequences used to identify specific locations on a chromosome",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "WHITEHEADS",
+      "type": "TRAIT",
+      "description": "Sterile heads in wheat caused by pathogen infection, used as a measure of disease severity",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "LINKAGE MAP",
+      "type": "METHOD",
+      "description": "A representation of the relative positions of markers on a chromosome",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat markers used for constructing linkage maps",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "DART MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Diversity Arrays Technology markers used for constructing linkage maps",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "QTL ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to link phenotypic traits to specific genomic regions",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "BRUNDAGE",
+      "type": "CROP",
+      "description": "A susceptible wheat cultivar used as a parent in the RIL population",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "CODA",
+      "type": "CROP",
+      "description": "A resistant wheat cultivar used as a parent in the RIL population",
+      "source_id": "paper_5530"
+    },
+    {
+      "name": "REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to confirm the additivity of QTL effects",
+      "source_id": "paper_5530"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CEPHALOSPORIUM GRAMINEUM",
+      "target": "CEPHALOSPORIUM STRIPE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "CEPHALOSPORIUM STRIPE",
+      "target": "WHEAT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "CEPHALOSPORIUM STRIPE",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "CEPHALOSPORIUM STRIPE",
+      "target": "GRAIN QUALITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "CEPHALOSPORIUM STRIPE",
+      "target": "CONSERVATION TILLAGE",
+      "description": "limits adoption of",
+      "weight": "7",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "RESISTANCE TO CEPHALOSPORIUM STRIPE",
+      "target": "WHEAT",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "BRUNDAGE",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "CODA",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "RESISTANCE TO CEPHALOSPORIUM STRIPE",
+      "description": "used to characterize",
+      "weight": "8",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "MOLECULAR MARKERS",
+      "target": "RESISTANCE TO CEPHALOSPORIUM STRIPE",
+      "description": "used to investigate inheritance of",
+      "weight": "8",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "WHITEHEADS",
+      "target": "CEPHALOSPORIUM STRIPE",
+      "description": "is a symptom of",
+      "weight": "9",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "LINKAGE MAP",
+      "target": "SSR MARKERS",
+      "description": "created based on",
+      "weight": "9",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "LINKAGE MAP",
+      "target": "DART MARKERS",
+      "description": "created based on",
+      "weight": "9",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "QTL ANALYSIS",
+      "target": "RESISTANCE TO CEPHALOSPORIUM STRIPE",
+      "description": "identified regions associated with",
+      "weight": "10",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "QTL ANALYSIS",
+      "target": "RECOMBINANT INBRED LINES",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "BRUNDAGE",
+      "target": "QTL ANALYSIS",
+      "description": "contributed QTL to",
+      "weight": "8",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "CODA",
+      "target": "QTL ANALYSIS",
+      "description": "contributed QTL to",
+      "weight": "8",
+      "source_id": "paper_5530"
+    },
+    {
+      "source": "REGRESSION ANALYSIS",
+      "target": "QTL ANALYSIS",
+      "description": "confirmed additivity of effects in",
+      "weight": "8",
+      "source_id": "paper_5530"
+    }
+  ]
+}

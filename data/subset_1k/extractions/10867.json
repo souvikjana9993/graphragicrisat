@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "Important part of human diet and nutrition",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "GRAIN LEGUMES",
+      "type": "CROP",
+      "description": "Crops used for nutritional security and soil nitrogen fixation",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Cereal crop grown in rainy season (kharif)",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "RICE FALLOWS",
+      "type": "CONCEPT",
+      "description": "Niche areas with residual moisture after rice cultivation",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "RESIDUAL MOISTURE",
+      "type": "CONDITION",
+      "description": "Moisture remaining in soil to grow short-duration legumes",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "INTENSIFICATION",
+      "type": "CONCEPT",
+      "description": "Increasing productivity and utilization of land",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Moderate-resolution imaging spectroradiometer used for mapping",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Techniques applied to MODIS data for mapping fallows",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "SOUTH ASIA",
+      "type": "LOCATION",
+      "description": "Region where the study was conducted",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized difference vegetation index used for mapping rice systems",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "GROUND SURVEY DATA",
+      "type": "METHOD",
+      "description": "Data used for mapping and validation of rice systems",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "SUBNATIONAL-LEVEL STATISTICS",
+      "type": "CONCEPT",
+      "description": "Statistics used to compare and validate physical rice area",
+      "source_id": "paper_10867"
+    },
+    {
+      "name": "SOIL NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nutrient fixed by grain legumes",
+      "source_id": "paper_10867"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "RICE FALLOWS",
+      "description": "can be grown in",
+      "weight": "8",
+      "source_id": "paper_10867"
+    },
+    {
+      "source": "RICE FALLOWS",
+      "target": "RESIDUAL MOISTURE",
+      "description": "characterized by",
+      "weight": "9",
+      "source_id": "paper_10867"
+    },
+    {
+      "source": "MODIS",
+      "target": "RICE FALLOWS",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_10867"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUES",
+      "target": "MODIS",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_10867"
+    },
+    {
+      "source": "SOUTH ASIA",
+      "target": "RICE FALLOWS",
+      "description": "location of",
+      "weight": "10",
+      "source_id": "paper_10867"
+    },
+    {
+      "source": "NDVI",
+      "target": "RICE FALLOWS",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_10867"
+    },
+    {
+      "source": "GROUND SURVEY DATA",
+      "target": "RICE FALLOWS",
+      "description": "used to map and validate",
+      "weight": "9",
+      "source_id": "paper_10867"
+    },
+    {
+      "source": "SUBNATIONAL-LEVEL STATISTICS",
+      "target": "RICE FALLOWS",
+      "description": "used for comparison and validation",
+      "weight": "8",
+      "source_id": "paper_10867"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "SOIL NITROGEN",
+      "description": "fixes",
+      "weight": "9",
+      "source_id": "paper_10867"
+    },
+    {
+      "source": "INTENSIFICATION",
+      "target": "GRAIN LEGUMES",
+      "description": "achieved through",
+      "weight": "7",
+      "source_id": "paper_10867"
+    }
+  ]
+}

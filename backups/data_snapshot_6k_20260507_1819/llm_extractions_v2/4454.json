@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "LETTUCE",
+      "type": "CROP",
+      "description": "Lactuca sativa L., the crop studied for seed viability and chromosome damage during storage",
+      "source_id": "paper_4454"
+    },
+    {
+      "name": "SEED VIABILITY",
+      "type": "TRAIT",
+      "description": "The ability of seeds to germinate and grow, which decreases during storage",
+      "source_id": "paper_4454"
+    },
+    {
+      "name": "CHROMOSOME DAMAGE",
+      "type": "TRAIT",
+      "description": "The frequency of aberrant cells and chromosomal aberrations observed during first mitoses",
+      "source_id": "paper_4454"
+    },
+    {
+      "name": "STORAGE",
+      "type": "CONDITION",
+      "description": "The process of keeping seeds over time under various environmental conditions",
+      "source_id": "paper_4454"
+    },
+    {
+      "name": "MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "The percentage of water in seeds, which influences the rate of viability loss and chromosome damage",
+      "source_id": "paper_4454"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The thermal environment during storage affecting the rate of chromosomal aberrations",
+      "source_id": "paper_4454"
+    },
+    {
+      "name": "DIPLONTIC SELECTION",
+      "type": "METHOD",
+      "description": "A process used to reduce the frequency of chromosomal aberrations in aged seeds",
+      "source_id": "paper_4454"
+    },
+    {
+      "name": "RECESSIVE MUTATIONS",
+      "type": "TRAIT",
+      "description": "Heritable mutations analyzed in the progenies of aged seeds",
+      "source_id": "paper_4454"
+    },
+    {
+      "name": "GENETIC CONSERVATION",
+      "type": "CONCEPT",
+      "description": "The practice of preserving seeds, requiring specific moisture content for orthodox seeds",
+      "source_id": "paper_4454"
+    },
+    {
+      "name": "REGENERATION STANDARD",
+      "type": "CONCEPT",
+      "description": "The threshold of seed viability allowed during storage before the seed stock must be regenerated",
+      "source_id": "paper_4454"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LETTUCE",
+      "target": "SEED VIABILITY",
+      "description": "Lettuce seeds experience loss of viability during storage",
+      "weight": "10",
+      "source_id": "paper_4454"
+    },
+    {
+      "source": "LETTUCE",
+      "target": "CHROMOSOME DAMAGE",
+      "description": "Lettuce seeds show chromosome damage during first mitoses after storage",
+      "weight": "10",
+      "source_id": "paper_4454"
+    },
+    {
+      "source": "STORAGE",
+      "target": "SEED VIABILITY",
+      "description": "Storage leads to the loss of seed viability",
+      "weight": "9",
+      "source_id": "paper_4454"
+    },
+    {
+      "source": "STORAGE",
+      "target": "CHROMOSOME DAMAGE",
+      "description": "Storage is associated with an increase in the frequency of chromosome damage",
+      "weight": "9",
+      "source_id": "paper_4454"
+    },
+    {
+      "source": "MOISTURE CONTENT",
+      "target": "CHROMOSOME DAMAGE",
+      "description": "Moisture content affects the proportion of aberrant cells, with lower moisture generally reducing the rate of increase",
+      "weight": "8",
+      "source_id": "paper_4454"
+    },
+    {
+      "source": "MOISTURE CONTENT",
+      "target": "SEED VIABILITY",
+      "description": "Moisture content influences the rate of loss of germination/viability",
+      "weight": "8",
+      "source_id": "paper_4454"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "CHROMOSOME DAMAGE",
+      "description": "Temperature affects the increase in chromosomal aberrations per unit time",
+      "weight": "7",
+      "source_id": "paper_4454"
+    },
+    {
+      "source": "DIPLONTIC SELECTION",
+      "target": "CHROMOSOME DAMAGE",
+      "description": "Diplontic selection markedly reduces the frequency of chromosomal aberrations",
+      "weight": "9",
+      "source_id": "paper_4454"
+    },
+    {
+      "source": "GENETIC CONSERVATION",
+      "target": "MOISTURE CONTENT",
+      "description": "Genetic conservation of orthodox seeds is recommended at moisture contents of 5% or lower",
+      "weight": "8",
+      "source_id": "paper_4454"
+    },
+    {
+      "source": "REGENERATION STANDARD",
+      "target": "SEED VIABILITY",
+      "description": "The regeneration standard is defined by the percentage to which seed viability falls",
+      "weight": "9",
+      "source_id": "paper_4454"
+    }
+  ]
+}

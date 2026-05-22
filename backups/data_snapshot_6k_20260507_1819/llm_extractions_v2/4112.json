@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The primary crop for which a growth and development simulation model is being suggested.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A crop with growth and development processes similar to pearl millet.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "SORGF",
+      "type": "METHOD",
+      "description": "An existing simulation model for sorghum used as a basis for adapting subroutines for pearl millet.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "SIMULATION MODELING",
+      "type": "METHOD",
+      "description": "An effective approach to integrating various processes involved in crop growth and development.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "PHYSICAL ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "Factors that determine crop duration, water availability, pests, diseases, and ultimate yield.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "WATER AVAILABILITY",
+      "type": "CONDITION",
+      "description": "A factor of the physical environment that influences crop yield.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "PESTS AND DISEASES",
+      "type": "ORGANISM",
+      "description": "Biological factors influenced by the physical environment that affect crop yield.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The ultimate agricultural output of the crop, determined by environmental factors.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "CROP DURATION",
+      "type": "TRAIT",
+      "description": "The length of the crop's growth cycle, determined by the physical environment.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "GROWTH AND DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The biological processes of the crop that are the subject of simulation modeling.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "TILLERING HABIT",
+      "type": "TRAIT",
+      "description": "A specific growth characteristic of pearl millet that is difficult to model.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An environmental factor that affects the duration of growth stages and tillering habit.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "DAYLENGTH",
+      "type": "CONDITION",
+      "description": "An environmental factor that affects the duration of growth stages and tillering habit.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "GROWTH STAGES",
+      "type": "CONCEPT",
+      "description": "Phases of crop development whose duration is influenced by temperature and daylength.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "TOTAL DRY MATTER",
+      "type": "TRAIT",
+      "description": "The accumulated biomass of the plant computed from light interception.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "LIGHT INTERCEPTION",
+      "type": "CONDITION",
+      "description": "The amount of light intercepted by the canopy, used to compute total dry matter.",
+      "source_id": "paper_4112"
+    },
+    {
+      "name": "PARTITIONING OF DRY MATTER",
+      "type": "CONCEPT",
+      "description": "The distribution of accumulated dry matter to different plant parts.",
+      "source_id": "paper_4112"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHYSICAL ENVIRONMENT",
+      "target": "CROP DURATION",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "PHYSICAL ENVIRONMENT",
+      "target": "WATER AVAILABILITY",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "PHYSICAL ENVIRONMENT",
+      "target": "PESTS AND DISEASES",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "PHYSICAL ENVIRONMENT",
+      "target": "YIELD",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "PHYSICAL ENVIRONMENT",
+      "target": "PEARL MILLET",
+      "description": "influences growth and development of",
+      "weight": "9",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "SIMULATION MODELING",
+      "target": "GROWTH AND DEVELOPMENT",
+      "description": "integrates processes of",
+      "weight": "9",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "SORGF",
+      "target": "SORGHUM",
+      "description": "is a model for",
+      "weight": "10",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "SORGF",
+      "target": "PEARL MILLET",
+      "description": "is adapted for",
+      "weight": "7",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "GROWTH STAGES",
+      "description": "affects duration of",
+      "weight": "8",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "TILLERING HABIT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "DAYLENGTH",
+      "target": "GROWTH STAGES",
+      "description": "affects duration of",
+      "weight": "8",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "DAYLENGTH",
+      "target": "TILLERING HABIT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "LIGHT INTERCEPTION",
+      "target": "TOTAL DRY MATTER",
+      "description": "used to compute",
+      "weight": "9",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "TILLERING HABIT",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_4112"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "TOTAL DRY MATTER",
+      "description": "accumulates",
+      "weight": "10",
+      "source_id": "paper_4112"
+    }
+  ]
+}

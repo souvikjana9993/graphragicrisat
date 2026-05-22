@@ -1,0 +1,238 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop species affected by sheath blight disease and used in the study.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "SHEATH BLIGHT DISEASE",
+      "type": "CONDITION",
+      "description": "A devastating disease in rice caused by the fungal pathogen Rhizoctonia solani.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "RHIZOCTONIA SOLANI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing sheath blight disease in rice.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "THANATEPHORUS CUCUMERIS",
+      "type": "ORGANISM",
+      "description": "The teleomorph form of the fungal pathogen Rhizoctonia solani.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "TWO-DIMENSIONAL POLYACRYLAMIDE GEL ELECTROPHORESIS",
+      "type": "METHOD",
+      "description": "A technique used for proteome analysis to separate proteins.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "MASS SPECTROMETRY",
+      "type": "METHOD",
+      "description": "An analytical technique used to identify differentially expressed proteins.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED PROTEINS",
+      "type": "CONCEPT",
+      "description": "Proteins that show significant differences in expression levels between tolerant and susceptible genotypes.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "QUANTITATIVE PCR",
+      "type": "METHOD",
+      "description": "A laboratory technique used to analyze the expression levels of specific genes.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "PANKAJ",
+      "type": "CROP",
+      "description": "A moderately tolerant rice genotype used in the study.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "MICRORNAS",
+      "type": "GENE_MARKER",
+      "description": "Small non-coding RNA molecules involved in post-transcriptional gene regulation.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "PROTEOMIC APPROACHES",
+      "type": "METHOD",
+      "description": "Study of the entire set of proteins expressed by a genome, proteome, or cell.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "TRANSCRIPTOMIC APPROACHES",
+      "type": "METHOD",
+      "description": "Study of the transcriptome—the sum of all the RNA transcripts.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a rice genotype to withstand or limit the impact of sheath blight disease.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The lack of resistance to sheath blight disease in certain rice genotypes.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "PHOTOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "A biological process associated with the function of identified differentially expressed proteins.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "PATHOGENESIS",
+      "type": "CONCEPT",
+      "description": "The process by which a disease develops, associated with identified differentially expressed proteins.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "STRESS",
+      "type": "CONDITION",
+      "description": "The physiological state of the plant during infection by Rhizoctonia solani.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "CELL WALL METABOLISM",
+      "type": "CONCEPT",
+      "description": "Biological processes related to the synthesis and modification of the cell wall, associated with DEPs.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "CYTOSKELETON DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "Biological processes related to the structural framework of the cell, associated with DEPs.",
+      "source_id": "paper_10905"
+    },
+    {
+      "name": "POST-TRANSCRIPTIONAL GENE REGULATION",
+      "type": "CONCEPT",
+      "description": "The regulation of gene expression after transcription, mediated by miRNAs.",
+      "source_id": "paper_10905"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA SOLANI",
+      "target": "SHEATH BLIGHT DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "THANATEPHORUS CUCUMERIS",
+      "target": "RHIZOCTONIA SOLANI",
+      "description": "is the teleomorph of",
+      "weight": "10",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "SHEATH BLIGHT DISEASE",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "PROTEOMIC APPROACHES",
+      "target": "DIFFERENTIALLY EXPRESSED PROTEINS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "TRANSCRIPTOMIC APPROACHES",
+      "target": "MICRORNAS",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "TWO-DIMENSIONAL POLYACRYLAMIDE GEL ELECTROPHORESIS",
+      "target": "PROTEOMIC APPROACHES",
+      "description": "is a part of",
+      "weight": "9",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "MASS SPECTROMETRY",
+      "target": "DIFFERENTIALLY EXPRESSED PROTEINS",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "QUANTITATIVE PCR",
+      "target": "DIFFERENTIALLY EXPRESSED PROTEINS",
+      "description": "used to analyze genes encoding",
+      "weight": "8",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "PANKAJ",
+      "target": "RESISTANCE",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "MICRORNAS",
+      "target": "POST-TRANSCRIPTIONAL GENE REGULATION",
+      "description": "mediates",
+      "weight": "10",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED PROTEINS",
+      "target": "PHOTOSYNTHESIS",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED PROTEINS",
+      "target": "PATHOGENESIS",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED PROTEINS",
+      "target": "STRESS",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED PROTEINS",
+      "target": "CELL WALL METABOLISM",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED PROTEINS",
+      "target": "CYTOSKELETON DEVELOPMENT",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_10905"
+    },
+    {
+      "source": "SHEATH BLIGHT DISEASE",
+      "target": "STRESS",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_10905"
+    }
+  ]
+}

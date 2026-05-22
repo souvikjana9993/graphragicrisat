@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop species Zea mays L. whose germplasm is conserved in genebanks",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "GENETIC INTEGRITY",
+      "type": "CONCEPT",
+      "description": "The maintenance of the original genetic composition of conserved germplasm",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "SNP",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphisms used as molecular markers to assess genetic changes",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "SNP HAPLOTYPE",
+      "type": "GENE_MARKER",
+      "description": "Combinations of SNP alleles used to analyze genetic diversity and integrity",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variety of genetic characteristics within the maize accessions",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "ALLELE NUMBER",
+      "type": "TRAIT",
+      "description": "The average number of alleles per locus used to measure genetic diversity",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "SNP ALLELIC FREQUENCY",
+      "type": "TRAIT",
+      "description": "The frequency of specific alleles at SNP loci used to detect genetic changes",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "MAJOR ALLELIC FREQUENCY",
+      "type": "TRAIT",
+      "description": "The frequency of the most common allele at a SNP locus",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "POLYMORPHIC INFORMATION CONTENT",
+      "type": "TRAIT",
+      "description": "A measure of the informativeness of SNP haplotype markers",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "REGENERATION",
+      "type": "METHOD",
+      "description": "The process of growing out conserved seeds to maintain viability and genetic integrity",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "GENEBANK",
+      "type": "LOCATION",
+      "description": "Facilities where maize landrace accessions are conserved and regenerated",
+      "source_id": "paper_231"
+    },
+    {
+      "name": "MOLECULAR MARKER",
+      "type": "GENE_MARKER",
+      "description": "Tools used to understand the extent of genetic integrity during regeneration",
+      "source_id": "paper_231"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SNP",
+      "target": "GENETIC INTEGRITY",
+      "description": "used to detect changes in",
+      "weight": "10",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "SNP HAPLOTYPE",
+      "target": "GENETIC INTEGRITY",
+      "description": "used to detect changes in",
+      "weight": "10",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "REGENERATION",
+      "target": "GENETIC INTEGRITY",
+      "description": "can cause dynamic changes in",
+      "weight": "9",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "REGENERATION",
+      "target": "GENETIC DIVERSITY",
+      "description": "can cause significant changes in",
+      "weight": "9",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "SNP",
+      "target": "SNP ALLELIC FREQUENCY",
+      "description": "is used to determine",
+      "weight": "10",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "SNP HAPLOTYPE",
+      "target": "POLYMORPHIC INFORMATION CONTENT",
+      "description": "is used to determine",
+      "weight": "10",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "MAIZE",
+      "target": "GENEBANK",
+      "description": "is conserved in",
+      "weight": "10",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "MOLECULAR MARKER",
+      "target": "GENETIC INTEGRITY",
+      "description": "helps in understanding the extent of",
+      "weight": "9",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "SNP",
+      "target": "MOLECULAR MARKER",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "SNP HAPLOTYPE",
+      "target": "MOLECULAR MARKER",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "SNP ALLELIC FREQUENCY",
+      "target": "GENETIC INTEGRITY",
+      "description": "indicates changes in",
+      "weight": "8",
+      "source_id": "paper_231"
+    },
+    {
+      "source": "ALLELE NUMBER",
+      "target": "GENETIC DIVERSITY",
+      "description": "indicates changes in",
+      "weight": "8",
+      "source_id": "paper_231"
+    }
+  ]
+}

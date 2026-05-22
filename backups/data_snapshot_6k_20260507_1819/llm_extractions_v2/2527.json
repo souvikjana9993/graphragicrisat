@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L.",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "Trait determined by seed weight, important for trade, yield, and adaptation",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "Measurement used to determine seed size",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "Agricultural productivity of which seed size is a component",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "ADAPTATION",
+      "type": "CONCEPT",
+      "description": "Ability of the crop to adjust to its environment",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "ICC11255",
+      "type": "ORGANISM",
+      "description": "Chickpea parent with normal seed size",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "ICC 5002",
+      "type": "ORGANISM",
+      "description": "Chickpea parent with small seed size",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "BACKCROSS GENERATIONS",
+      "type": "METHOD",
+      "description": "Method used to study inheritance of seed size",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "RECIPROCAL CROSS GENERATIONS",
+      "type": "METHOD",
+      "description": "Method used to detect maternal effects on seed size",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "MATERNAL EFFECT",
+      "type": "CONCEPT",
+      "description": "Influence of maternal genotype on offspring phenotype",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "DOMINANCE EPISTASIS",
+      "type": "CONCEPT",
+      "description": "Gene interaction controlling seed size",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "SD1",
+      "type": "GENE_MARKER",
+      "description": "Gene controlling seed size, epistatic to SD2",
+      "source_id": "paper_2527"
+    },
+    {
+      "name": "SD2",
+      "type": "GENE_MARKER",
+      "description": "Gene controlling seed size",
+      "source_id": "paper_2527"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "SEED SIZE",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "SEED WEIGHT",
+      "target": "SEED SIZE",
+      "description": "determines",
+      "weight": "10",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "SEED SIZE",
+      "target": "YIELD",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "SEED SIZE",
+      "target": "ADAPTATION",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "ICC11255",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "ICC 5002",
+      "target": "CHICKPEA",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "ICC11255",
+      "target": "SEED SIZE",
+      "description": "exhibits normal",
+      "weight": "9",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "ICC 5002",
+      "target": "SEED SIZE",
+      "description": "exhibits small",
+      "weight": "9",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "BACKCROSS GENERATIONS",
+      "target": "SEED SIZE",
+      "description": "used to study inheritance of",
+      "weight": "7",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "RECIPROCAL CROSS GENERATIONS",
+      "target": "SEED SIZE",
+      "description": "used to detect maternal effect on",
+      "weight": "7",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "DOMINANCE EPISTASIS",
+      "target": "SEED SIZE",
+      "description": "controls the inheritance of",
+      "weight": "9",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "SD1",
+      "target": "SEED SIZE",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "SD2",
+      "target": "SEED SIZE",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_2527"
+    },
+    {
+      "source": "SD1",
+      "target": "SD2",
+      "description": "is epistatic to",
+      "weight": "10",
+      "source_id": "paper_2527"
+    }
+  ]
+}

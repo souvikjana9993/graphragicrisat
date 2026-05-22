@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "The primary cereal crop studied for yield and protein responses",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "YIELD GAP",
+      "type": "CONCEPT",
+      "description": "The difference between potential and actual crop yield",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "A primary nutrient driver of the wheat yield gap",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "NITROGEN USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which wheat utilizes nitrogen fertilizer",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "A nutrient co-applied with nitrogen to potentially increase NUE",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "LOW RAINFALL",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by limited precipitation",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONDITION",
+      "description": "The growth medium, varying across dune, mid-slope, and swale",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "SOUTH AUSTRALIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the field trials were conducted",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of crop production",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "PROTEIN",
+      "type": "TRAIT",
+      "description": "The protein content of the wheat grain",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "SANDY SOILS",
+      "type": "CONDITION",
+      "description": "Soil types including dune and mid-slope that showed linear yield responses",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "CLAY LOAM",
+      "type": "CONDITION",
+      "description": "Soil type (swale) that showed yield response only in high rainfall seasons",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "N FERTILISER APPLICATION",
+      "type": "METHOD",
+      "description": "The application of nitrogen at levels of 0, 10, 20, 40, and 80 kg N ha-1",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "P FERTILISER APPLICATION",
+      "type": "METHOD",
+      "description": "The application of phosphorus at levels of 0, 5, 10, and 20 kg P ha-1",
+      "source_id": "paper_11450"
+    },
+    {
+      "name": "SEMI-ARID ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "The climatic setting of the study area in South Australia",
+      "source_id": "paper_11450"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN",
+      "target": "YIELD GAP",
+      "description": "Supply of nitrogen is a primary driver of the yield gap",
+      "weight": "9",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "Nitrogen is the nutrient whose use efficiency is being measured",
+      "weight": "10",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "Co-application of phosphorus is suggested to increase nitrogen use efficiency",
+      "weight": "8",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "N FERTILISER APPLICATION",
+      "target": "YIELD",
+      "description": "Nitrogen fertilizer input affects the yield of wheat",
+      "weight": "9",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "P FERTILISER APPLICATION",
+      "target": "NITROGEN USE EFFICIENCY",
+      "description": "Phosphorus nutrition was measured for its effect on increasing NUE",
+      "weight": "7",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "WHEAT",
+      "target": "YIELD",
+      "description": "Yield is a measured trait of wheat",
+      "weight": "10",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "WHEAT",
+      "target": "PROTEIN",
+      "description": "Protein is a measured trait of wheat",
+      "weight": "10",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "WHEAT",
+      "target": "SOUTH AUSTRALIA",
+      "description": "Wheat was grown in South Australia",
+      "weight": "10",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "WHEAT",
+      "target": "SEMI-ARID ENVIRONMENT",
+      "description": "Wheat was grown in a semi-arid environment",
+      "weight": "10",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "SANDY SOILS",
+      "target": "YIELD",
+      "description": "Sandy soils produced significant and linear yield responses",
+      "weight": "8",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "CLAY LOAM",
+      "target": "YIELD",
+      "description": "Clay loam produced yield response only in high rainfall seasons",
+      "weight": "7",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "WHEAT",
+      "target": "YIELD GAP",
+      "description": "The study aims to close the yield gap for wheat",
+      "weight": "10",
+      "source_id": "paper_11450"
+    },
+    {
+      "source": "LOW RAINFALL",
+      "target": "WHEAT",
+      "description": "Wheat is grown as a low rainfall cereal crop in this context",
+      "weight": "8",
+      "source_id": "paper_11450"
+    }
+  ]
+}

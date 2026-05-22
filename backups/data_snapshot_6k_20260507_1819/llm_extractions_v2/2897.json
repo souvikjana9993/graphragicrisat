@@ -1,0 +1,206 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, the crop studied for ergot infection",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "CLAVICEPS FUSIFORMIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing ergot infection in pearl millet",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "ERGOT INFECTION",
+      "type": "CONDITION",
+      "description": "The disease caused by Claviceps fusiformis in pearl millet",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "PROTOGYNY PERIOD",
+      "type": "TRAIT",
+      "description": "The length of time between the receptivity of the stigma and the shedding of pollen",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "FP-AI PERIOD",
+      "type": "TRAIT",
+      "description": "The time interval between full protogyny and anthesis initiation",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "FLOWERING EVENT FACTORS",
+      "type": "CONCEPT",
+      "description": "Factors related to the timing of flowering, including protogyny and FP-AI period",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "CYTOPLASMIC MALE STERILITY",
+      "type": "TRAIT",
+      "description": "A condition where pollen is non-functional due to cytoplasmic factors",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "CMS LINES",
+      "type": "CONCEPT",
+      "description": "A lines characterized by cytoplasmic male sterility",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "MAINTAINER LINES",
+      "type": "CONCEPT",
+      "description": "B lines used to maintain the CMS lines",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "POLLINATOR LINES",
+      "type": "CONCEPT",
+      "description": "R lines used to pollinate CMS lines to produce hybrids",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "F1 HYBRIDS",
+      "type": "CONCEPT",
+      "description": "First generation hybrids produced from A x R and B x R crosses",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "ERGOT SEVERITY",
+      "type": "TRAIT",
+      "description": "The degree or intensity of ergot infection in the plant",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The vulnerability of a line or hybrid to ergot infection",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a line or hybrid to resist ergot infection",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "SEED SET",
+      "type": "TRAIT",
+      "description": "The successful production of seeds following pollination",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "RESTORATION ABILITY",
+      "type": "TRAIT",
+      "description": "The capacity of pollinator lines to restore fertility in CMS hybrids",
+      "source_id": "paper_2897"
+    },
+    {
+      "name": "STIGMA LENGTH",
+      "type": "TRAIT",
+      "description": "The physical length of the stigmas in the flower",
+      "source_id": "paper_2897"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "CLAVICEPS FUSIFORMIS",
+      "description": "Host plant for the pathogen",
+      "weight": "10",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "CLAVICEPS FUSIFORMIS",
+      "target": "ERGOT INFECTION",
+      "description": "Causes the disease",
+      "weight": "10",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "PROTOGYNY PERIOD",
+      "target": "ERGOT SEVERITY",
+      "description": "Positively correlated in susceptible lines",
+      "weight": "8",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "FP-AI PERIOD",
+      "target": "ERGOT SEVERITY",
+      "description": "Positively correlated in susceptible lines",
+      "weight": "8",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "FLOWERING EVENT FACTORS",
+      "target": "ERGOT INFECTION",
+      "description": "Influence the likelihood and severity of infection",
+      "weight": "7",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "CMS LINES",
+      "target": "PEARL MILLET",
+      "description": "Specific breeding lines of the crop",
+      "weight": "9",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "PEARL MILLET",
+      "description": "Specific breeding lines of the crop",
+      "weight": "9",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "POLLINATOR LINES",
+      "target": "PEARL MILLET",
+      "description": "Specific breeding lines of the crop",
+      "weight": "9",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "PEARL MILLET",
+      "description": "Hybrid offspring of the crop",
+      "weight": "9",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "SUSCEPTIBILITY",
+      "target": "ERGOT SEVERITY",
+      "description": "Associated with higher severity",
+      "weight": "9",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "ERGOT SEVERITY",
+      "description": "Associated with lower severity",
+      "weight": "9",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "STIGMA LENGTH",
+      "target": "SUSCEPTIBILITY",
+      "description": "Longer stigmas are found in susceptible lines",
+      "weight": "7",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "RESTORATION ABILITY",
+      "target": "SEED SET",
+      "description": "Poor restoration ability leads to lower seed set in A x R hybrids",
+      "weight": "8",
+      "source_id": "paper_2897"
+    },
+    {
+      "source": "FLOWERING EVENT FACTORS",
+      "target": "SUSCEPTIBILITY",
+      "description": "Susceptibility of F1 hybrids is associated with flowering factors of A lines",
+      "weight": "8",
+      "source_id": "paper_2897"
+    }
+  ]
+}

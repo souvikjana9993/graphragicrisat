@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Second most populous country in the world",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "Most populous country in the world",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "POPULATION",
+      "type": "CONCEPT",
+      "description": "The number of people in a country, causing stress on food production",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "FOOD PRODUCTION SECTOR",
+      "type": "CONCEPT",
+      "description": "The sector responsible for providing food to maintain the population",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "Industry involving crop, animal, and fish production",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "Plants grown for food or other purposes",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "ANIMAL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "Part of agriculture involving livestock",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "FISH PRODUCTION",
+      "type": "CONCEPT",
+      "description": "Part of agriculture involving aquaculture",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "POLLUTION",
+      "type": "CONDITION",
+      "description": "Environmental contamination caused by agriculture, specifically fertilizers and pesticides",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "FERTILIZERS",
+      "type": "CONCEPT",
+      "description": "Agricultural inputs that contribute to pollution",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "PESTICIDES",
+      "type": "CONCEPT",
+      "description": "Agricultural inputs that contribute to pollution",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "LAND DEGRADATION",
+      "type": "CONDITION",
+      "description": "Deterioration of land quality caused by agriculture",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "BIODIVERSITY LOSS",
+      "type": "CONDITION",
+      "description": "Reduction in biological variety caused by agriculture",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "NATURAL RESOURCES",
+      "type": "CONCEPT",
+      "description": "Environmental assets that can be deteriorated by pollution",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "HIGH YIELDS",
+      "type": "TRAIT",
+      "description": "The desired output of a new agriculture paradigm",
+      "source_id": "paper_2793"
+    },
+    {
+      "name": "AGRICULTURE PARADIGM",
+      "type": "CONCEPT",
+      "description": "A new strategic approach to ensure high yields while minimizing negative environmental impacts",
+      "source_id": "paper_2793"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POPULATION",
+      "target": "FOOD PRODUCTION SECTOR",
+      "description": "causes stress on",
+      "weight": "8",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "AGRICULTURE",
+      "target": "CROP",
+      "description": "involves production of",
+      "weight": "10",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "AGRICULTURE",
+      "target": "ANIMAL PRODUCTION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "AGRICULTURE",
+      "target": "FISH PRODUCTION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "AGRICULTURE",
+      "target": "POLLUTION",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "FERTILIZERS",
+      "target": "POLLUTION",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "PESTICIDES",
+      "target": "POLLUTION",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "AGRICULTURE",
+      "target": "LAND DEGRADATION",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "AGRICULTURE",
+      "target": "BIODIVERSITY LOSS",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "POLLUTION",
+      "target": "NATURAL RESOURCES",
+      "description": "leads to deterioration of",
+      "weight": "8",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "NATURAL RESOURCES",
+      "target": "AGRICULTURE",
+      "description": "negative effects on",
+      "weight": "7",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "AGRICULTURE PARADIGM",
+      "target": "HIGH YIELDS",
+      "description": "ensures",
+      "weight": "9",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "AGRICULTURE PARADIGM",
+      "target": "POLLUTION",
+      "description": "minimizes",
+      "weight": "9",
+      "source_id": "paper_2793"
+    },
+    {
+      "source": "AGRICULTURE PARADIGM",
+      "target": "AGRICULTURE",
+      "description": "shifts the way of",
+      "weight": "8",
+      "source_id": "paper_2793"
+    }
+  ]
+}

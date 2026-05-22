@@ -1,0 +1,206 @@
+{
+  "entities": [
+    {
+      "name": "KRISHNA RIVER BASIN",
+      "type": "LOCATION",
+      "description": "A river basin in India frequently affected by drought due to climate change",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "An abiotic stress characterized by water scarcity and failure of monsoon",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "A driver contributing to the occurrence of drought in the Krishna River Basin",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "NAGARJUNA SAGAR",
+      "type": "LOCATION",
+      "description": "A major dam and project area located within the Krishna River Basin",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "WATER IMBALANCE",
+      "type": "CONDITION",
+      "description": "A primary cause of drought conditions",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "FAILURE OF MONSOON",
+      "type": "CONDITION",
+      "description": "A primary cause of drought conditions",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "LULC",
+      "type": "CONCEPT",
+      "description": "Land use/land cover classification used to map irrigated areas and assess drought",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "IRRIGATED AREAS",
+      "type": "CONCEPT",
+      "description": "Agricultural lands receiving irrigation, used to measure drought impact on food security",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "MODIS",
+      "type": "METHOD",
+      "description": "Satellite data used for time series analysis and LULC mapping",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Technology used for assessing abiotic stress and cropland changes",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stressors including drought and water scarcity",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "WATER SCARCITY",
+      "type": "CONDITION",
+      "description": "A specific type of abiotic stress affecting cropland",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUE",
+      "type": "METHOD",
+      "description": "A technique used for the identification of LULC areas",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used to categorize drought severity",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "GROUND SURVEY",
+      "type": "METHOD",
+      "description": "Field data collection used to validate the accuracy of spatial products",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The availability and access to food, impacted by changes in irrigated areas during drought",
+      "source_id": "paper_11671"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the Krishna River Basin is located",
+      "source_id": "paper_11671"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "DROUGHT",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "WATER IMBALANCE",
+      "target": "DROUGHT",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "FAILURE OF MONSOON",
+      "target": "DROUGHT",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "KRISHNA RIVER BASIN",
+      "target": "DROUGHT",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "NAGARJUNA SAGAR",
+      "target": "KRISHNA RIVER BASIN",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "MODIS",
+      "target": "LULC",
+      "description": "used to prepare",
+      "weight": "9",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "REMOTE SENSING",
+      "target": "ABIOTIC STRESS",
+      "description": "used to assess",
+      "weight": "8",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "DROUGHT",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "WATER SCARCITY",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE",
+      "target": "LULC",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "NDVI",
+      "target": "DROUGHT",
+      "description": "used to categorize",
+      "weight": "9",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "GROUND SURVEY",
+      "target": "MODIS",
+      "description": "used to validate",
+      "weight": "8",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "IRRIGATED AREAS",
+      "target": "FOOD SECURITY",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_11671"
+    },
+    {
+      "source": "KRISHNA RIVER BASIN",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11671"
+    }
+  ]
+}

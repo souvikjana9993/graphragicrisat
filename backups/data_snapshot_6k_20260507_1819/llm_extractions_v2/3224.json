@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being screened for disease resistance",
+      "source_id": "paper_3224"
+    },
+    {
+      "name": "DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the crop to resist fungal infections",
+      "source_id": "paper_3224"
+    },
+    {
+      "name": "CERCOSPORA ARACHIDICOLA",
+      "type": "ORGANISM",
+      "description": "A leaf-spot fungus used for screening groundnut resistance",
+      "source_id": "paper_3224"
+    },
+    {
+      "name": "CERCOSPORIDIUM PERSONATUM",
+      "type": "ORGANISM",
+      "description": "A leaf-spot fungus used for screening groundnut resistance",
+      "source_id": "paper_3224"
+    },
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "A fungus causing rust in groundnut used for screening",
+      "source_id": "paper_3224"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research institution where the screening was conducted",
+      "source_id": "paper_3224"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research took place",
+      "source_id": "paper_3224"
+    },
+    {
+      "name": "FIELD SCREENING",
+      "type": "METHOD",
+      "description": "Preliminary screening method conducted during natural epiphytotics",
+      "source_id": "paper_3224"
+    },
+    {
+      "name": "GREENHOUSE INOCULATION",
+      "type": "METHOD",
+      "description": "Method used to test promising lines in a controlled environment",
+      "source_id": "paper_3224"
+    },
+    {
+      "name": "NATURAL EPIPHYTOTICS",
+      "type": "CONDITION",
+      "description": "Natural disease outbreaks used for field screening",
+      "source_id": "paper_3224"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "DISEASE RESISTANCE",
+      "description": "screened for",
+      "weight": "10",
+      "source_id": "paper_3224"
+    },
+    {
+      "source": "DISEASE RESISTANCE",
+      "target": "CERCOSPORA ARACHIDICOLA",
+      "description": "measured against",
+      "weight": "9",
+      "source_id": "paper_3224"
+    },
+    {
+      "source": "DISEASE RESISTANCE",
+      "target": "CERCOSPORIDIUM PERSONATUM",
+      "description": "measured against",
+      "weight": "9",
+      "source_id": "paper_3224"
+    },
+    {
+      "source": "DISEASE RESISTANCE",
+      "target": "PUCCINIA ARACHIDIS",
+      "description": "measured against",
+      "weight": "9",
+      "source_id": "paper_3224"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "GROUNDNUT",
+      "description": "used to screen",
+      "weight": "8",
+      "source_id": "paper_3224"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "NATURAL EPIPHYTOTICS",
+      "description": "conducted during",
+      "weight": "8",
+      "source_id": "paper_3224"
+    },
+    {
+      "source": "GREENHOUSE INOCULATION",
+      "target": "GROUNDNUT",
+      "description": "used to test",
+      "weight": "8",
+      "source_id": "paper_3224"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3224"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "GROUNDNUT",
+      "description": "conducted research on",
+      "weight": "7",
+      "source_id": "paper_3224"
+    }
+  ]
+}

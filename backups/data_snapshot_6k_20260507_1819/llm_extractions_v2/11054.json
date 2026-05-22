@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The primary crop studied for yield and performance in the experiment.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "CONSERVATION AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "A sustainable farming approach aimed at addressing soil degradation and fertility decline.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "NO-TILL",
+      "type": "METHOD",
+      "description": "A cropping system practice that avoids soil disturbance, used as a basis for the experiment.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "SOUTHERN AFRICA",
+      "type": "LOCATION",
+      "description": "The geographical region where the multi-location and multi-year experiment was conducted.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "SOIL DEGRADATION",
+      "type": "CONDITION",
+      "description": "The decline in soil quality that conservation agriculture and no-till systems aim to address.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "FERTILITY DECLINE",
+      "type": "CONDITION",
+      "description": "The reduction in soil nutrients that conservation agriculture and no-till systems aim to address.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "MAIZE RESIDUE",
+      "type": "CONCEPT",
+      "description": "Biomass from maize plants applied to the soil surface as mulch.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "NITROGEN FERTILIZER",
+      "type": "CONCEPT",
+      "description": "Mineral nitrogen applied to the soil to enhance maize performance.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of maize productivity used to assess the effects of residue and nitrogen.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "LEAF CHLOROPHYLL CONTENT",
+      "type": "TRAIT",
+      "description": "A physiological measure of maize performance used in some sites.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The seasonal precipitation pattern that influenced the effect of residue levels on grain yield.",
+      "source_id": "paper_11054"
+    },
+    {
+      "name": "AGRO-ECOLOGICAL CONDITIONS",
+      "type": "CONDITION",
+      "description": "The diverse environmental settings across the sites in southern Africa.",
+      "source_id": "paper_11054"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "SOUTHERN AFRICA",
+      "description": "implemented in",
+      "weight": "7",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "NO-TILL",
+      "target": "CONSERVATION AGRICULTURE",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "SOIL DEGRADATION",
+      "description": "addresses",
+      "weight": "8",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "CONSERVATION AGRICULTURE",
+      "target": "FERTILITY DECLINE",
+      "description": "addresses",
+      "weight": "8",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "MAIZE RESIDUE",
+      "target": "GRAIN YIELD",
+      "description": "has limited or variable effect on",
+      "weight": "6",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "NITROGEN FERTILIZER",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "GRAIN YIELD",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "MAIZE RESIDUE",
+      "description": "influences the effect of residue on yield",
+      "weight": "7",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "MAIZE",
+      "target": "GRAIN YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "MAIZE",
+      "target": "LEAF CHLOROPHYLL CONTENT",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_11054"
+    },
+    {
+      "source": "NO-TILL",
+      "target": "MAIZE",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_11054"
+    }
+  ]
+}

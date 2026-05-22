@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop Pennisetum americanum used in the study",
+      "source_id": "paper_5928"
+    },
+    {
+      "name": "A1 STERILE SYSTEM",
+      "type": "CONCEPT",
+      "description": "A system of cytoplasmic male sterility in pearl millet",
+      "source_id": "paper_5928"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease affecting pearl millet caused by Sclerospora graminicola",
+      "source_id": "paper_5928"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew",
+      "source_id": "paper_5928"
+    },
+    {
+      "name": "FIELD-SCREENING TECHNIQUE",
+      "type": "METHOD",
+      "description": "The technique used to evaluate the susceptibility of pearl millet lines to downy mildew",
+      "source_id": "paper_5928"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The reaction of pearl millet lines to downy mildew infection",
+      "source_id": "paper_5928"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "A1 STERILE SYSTEM",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_5928"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "DOWNY MILDEW",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_5928"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5928"
+    },
+    {
+      "source": "FIELD-SCREENING TECHNIQUE",
+      "target": "SUSCEPTIBILITY",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_5928"
+    },
+    {
+      "source": "A1 STERILE SYSTEM",
+      "target": "SUSCEPTIBILITY",
+      "description": "not involved in determining",
+      "weight": "7",
+      "source_id": "paper_5928"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SUSCEPTIBILITY",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_5928"
+    }
+  ]
+}

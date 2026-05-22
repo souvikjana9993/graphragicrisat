@@ -1,0 +1,226 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary agricultural crop studied for yield estimation.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "RICE YIELD",
+      "type": "TRAIT",
+      "description": "The amount of rice produced per unit area, the target of estimation.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "The use of satellite imagery and sensors to collect data on crops.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "CROP SIMULATION MODEL",
+      "type": "METHOD",
+      "description": "A mathematical model used to simulate crop growth and yield.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "APSIM-ORYZA",
+      "type": "METHOD",
+      "description": "A specific crop simulation model used for rice yield prediction.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "NALGONDA DISTRICT",
+      "type": "LOCATION",
+      "description": "The specific district in Telangana where the study was conducted.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "The Indian state where the study area is located.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "CROP YIELD FORECASTING",
+      "type": "CONCEPT",
+      "description": "The process of predicting future crop yields based on various data sources.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A dimensionless quantity that characterizes plant canopies, used for yield assessment.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "SENTINEL-1",
+      "type": "METHOD",
+      "description": "A satellite providing radar data for crop monitoring.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "SENTINEL-2",
+      "type": "METHOD",
+      "description": "A satellite providing multispectral data for crop monitoring.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "A machine learning classifier used for crop classification.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "A cloud-based platform for geospatial analysis.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "NDVI",
+      "type": "CONCEPT",
+      "description": "Normalized Difference Vegetation Index, a spectral index used to estimate vegetation health and LAI.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONDITION",
+      "description": "The monsoon cropping season in India.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "CEPTOMETER",
+      "type": "METHOD",
+      "description": "An instrument used to measure the leaf area index in the field.",
+      "source_id": "paper_12010"
+    },
+    {
+      "name": "CROP CLASSIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of identifying different crop types from remote sensing data.",
+      "source_id": "paper_12010"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REMOTE SENSING",
+      "target": "RICE YIELD",
+      "description": "Used to estimate",
+      "weight": "8",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "CROP SIMULATION MODEL",
+      "target": "RICE YIELD",
+      "description": "Used to estimate",
+      "weight": "8",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "APSIM-ORYZA",
+      "target": "CROP SIMULATION MODEL",
+      "description": "Is a specific instance of",
+      "weight": "10",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "APSIM-ORYZA",
+      "target": "RICE YIELD",
+      "description": "Used to predict",
+      "weight": "9",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "NALGONDA DISTRICT",
+      "target": "TELANGANA",
+      "description": "Located within",
+      "weight": "10",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "RICE",
+      "target": "NALGONDA DISTRICT",
+      "description": "Cultivated in",
+      "weight": "9",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "CROP YIELD FORECASTING",
+      "target": "FOOD SECURITY",
+      "description": "Crucial for",
+      "weight": "9",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "SENTINEL-1",
+      "target": "REMOTE SENSING",
+      "description": "Provides data for",
+      "weight": "10",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "SENTINEL-2",
+      "target": "REMOTE SENSING",
+      "description": "Provides data for",
+      "weight": "10",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "CROP CLASSIFICATION",
+      "description": "Used to perform",
+      "weight": "10",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "REMOTE SENSING",
+      "description": "Platform used for processing",
+      "weight": "9",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "NDVI",
+      "target": "LEAF AREA INDEX",
+      "description": "Shows significant correlation with",
+      "weight": "8",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "NDVI",
+      "target": "REMOTE SENSING",
+      "description": "Derived from",
+      "weight": "9",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "CEPTOMETER",
+      "target": "LEAF AREA INDEX",
+      "description": "Used to measure",
+      "weight": "10",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "KHARIF",
+      "target": "RICE",
+      "description": "Season of cultivation",
+      "weight": "9",
+      "source_id": "paper_12010"
+    },
+    {
+      "source": "RICE",
+      "target": "RICE YIELD",
+      "description": "Possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_12010"
+    }
+  ]
+}

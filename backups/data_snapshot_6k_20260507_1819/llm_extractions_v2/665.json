@@ -1,0 +1,158 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being studied for its popping and flaking quality",
+      "source_id": "paper_665"
+    },
+    {
+      "name": "POPPING QUALITY",
+      "type": "TRAIT",
+      "description": "The quality of sorghum grain when subjected to popping",
+      "source_id": "paper_665"
+    },
+    {
+      "name": "FLAKING QUALITY",
+      "type": "TRAIT",
+      "description": "The quality of sorghum grain when subjected to flaking",
+      "source_id": "paper_665"
+    },
+    {
+      "name": "PHYSICOCHEMICAL CHARACTERISTICS",
+      "type": "CONCEPT",
+      "description": "The physical and chemical properties of the grain",
+      "source_id": "paper_665"
+    },
+    {
+      "name": "STARCH DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "The measure of how easily starch in the grain is broken down in vitro",
+      "source_id": "paper_665"
+    },
+    {
+      "name": "PROTEIN DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "The measure of how easily protein in the grain is broken down in vitro",
+      "source_id": "paper_665"
+    },
+    {
+      "name": "POPPING",
+      "type": "METHOD",
+      "description": "A heat treatment process used to expand sorghum grains",
+      "source_id": "paper_665"
+    },
+    {
+      "name": "FLAKING",
+      "type": "METHOD",
+      "description": "A heat and pressure process used to flatten sorghum grains",
+      "source_id": "paper_665"
+    },
+    {
+      "name": "HEAT PROCESSING",
+      "type": "METHOD",
+      "description": "The general application of heat to grain, encompassing popping and flaking",
+      "source_id": "paper_665"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "POPPING QUALITY",
+      "description": "Sorghum cultivars exhibit significant genotypic differences in popping quality",
+      "weight": "9",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "FLAKING QUALITY",
+      "description": "Sorghum cultivars exhibit significant genotypic differences in flaking quality",
+      "weight": "9",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "STARCH DIGESTIBILITY",
+      "description": "Sorghum cultivars show variation in in vitro starch digestibility",
+      "weight": "8",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PROTEIN DIGESTIBILITY",
+      "description": "Sorghum cultivars show variation in in vitro protein digestibility",
+      "weight": "8",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "POPPING",
+      "target": "STARCH DIGESTIBILITY",
+      "description": "Popping causes a five-fold increase in starch digestibility",
+      "weight": "10",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "POPPING",
+      "target": "PROTEIN DIGESTIBILITY",
+      "description": "Popping causes a shift and deleterious effect on protein digestibility",
+      "weight": "8",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "FLAKING",
+      "target": "STARCH DIGESTIBILITY",
+      "description": "Flaking causes a five-fold increase in starch digestibility",
+      "weight": "10",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "FLAKING",
+      "target": "PROTEIN DIGESTIBILITY",
+      "description": "Flaking causes a shift and a more pronounced deleterious effect on protein digestibility",
+      "weight": "9",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "HEAT PROCESSING",
+      "target": "STARCH DIGESTIBILITY",
+      "description": "Heat processing increases starch digestibility",
+      "weight": "9",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "HEAT PROCESSING",
+      "target": "PROTEIN DIGESTIBILITY",
+      "description": "Heat processing has a deleterious effect on protein digestibility",
+      "weight": "9",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "POPPING",
+      "target": "HEAT PROCESSING",
+      "description": "Popping is a type of heat processing",
+      "weight": "10",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "FLAKING",
+      "target": "HEAT PROCESSING",
+      "description": "Flaking is a type of heat processing",
+      "weight": "10",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "POPPING QUALITY",
+      "target": "PHYSICOCHEMICAL CHARACTERISTICS",
+      "description": "Popping quality is related to the physicochemical characteristics of the grain",
+      "weight": "7",
+      "source_id": "paper_665"
+    },
+    {
+      "source": "FLAKING QUALITY",
+      "target": "PHYSICOCHEMICAL CHARACTERISTICS",
+      "description": "Flaking quality is related to the physicochemical characteristics of the grain",
+      "weight": "7",
+      "source_id": "paper_665"
+    }
+  ]
+}

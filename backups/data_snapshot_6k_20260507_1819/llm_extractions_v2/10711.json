@@ -1,0 +1,285 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop being studied for embryo abortion under calcium deficiency",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "LOW CALCIUM",
+      "type": "CONDITION",
+      "description": "Deficiency of Ca2+ in soil leading to embryo abortion",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "EMBRYO ABORTION",
+      "type": "TRAIT",
+      "description": "Early abortion of embryos in peanut pods",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "EMPTY PODS",
+      "type": "TRAIT",
+      "description": "Pods that are empty due to embryo abortion",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "ILL-FILLED PODS",
+      "type": "TRAIT",
+      "description": "Pods that are not fully filled with seeds",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Water stress that exacerbates the effects of calcium deficiency",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "APOPTOSIS",
+      "type": "CONCEPT",
+      "description": "Programmed cell death causing embryo abortion",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "CELL WALL DEGRADATION",
+      "type": "CONCEPT",
+      "description": "A marker of apoptosis characterized by the breakdown of cell walls",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "SSHALL",
+      "type": "METHOD",
+      "description": "SSH cDNA libraries associated with library lift used to isolate differentially expressed genes",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "CELL WALL HYDROLASES",
+      "type": "GENE_MARKER",
+      "description": "Up-regulated genes that cause cell wall degradation",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "CELLULAR SYNTHASES GENES",
+      "type": "GENE_MARKER",
+      "description": "Down-regulated genes that cause cell retardation",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "CELL RETARDATION",
+      "type": "CONCEPT",
+      "description": "Slowing of cell growth caused by down-regulated cellular synthases",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "CYP707A4",
+      "type": "GENE_MARKER",
+      "description": "Genes encoding abscisic acid 8’-hydroxylases",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "ABA 8'-HYDROXYLASES",
+      "type": "GENE_MARKER",
+      "description": "Key enzymes responsible for ABA catabolism",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "ABA CATABOLISM",
+      "type": "CONCEPT",
+      "description": "The process of breaking down abscisic acid",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "ABA LEVEL",
+      "type": "CONCEPT",
+      "description": "The concentration of abscisic acid in early embryos",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "AHCYP707A4",
+      "type": "GENE_MARKER",
+      "description": "The specific CYP707A4 gene from peanut",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "NICOTIANA BENTHAMIANA",
+      "type": "ORGANISM",
+      "description": "Plant species used for over-expression of AhCYP707A4",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "LOW ABA CONTENT",
+      "type": "CONCEPT",
+      "description": "Reduced levels of abscisic acid leading to aborted embryos",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "SMALL PODS",
+      "type": "TRAIT",
+      "description": "Phenotype of reduced pod size",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "LESS SEEDS",
+      "type": "TRAIT",
+      "description": "Phenotype of reduced seed number",
+      "source_id": "paper_10711"
+    },
+    {
+      "name": "CALCIUM STRESS",
+      "type": "CONDITION",
+      "description": "Stress induced by low calcium levels in the soil",
+      "source_id": "paper_10711"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LOW CALCIUM",
+      "target": "EMBRYO ABORTION",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "LOW CALCIUM",
+      "target": "EMPTY PODS",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "LOW CALCIUM",
+      "target": "ILL-FILLED PODS",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "LOW CALCIUM",
+      "description": "exacerbates",
+      "weight": "8",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "APOPTOSIS",
+      "target": "EMBRYO ABORTION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "CELL WALL DEGRADATION",
+      "target": "APOPTOSIS",
+      "description": "marks",
+      "weight": "9",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "SSHALL",
+      "target": "CYP707A4",
+      "description": "used to isolate",
+      "weight": "7",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "CYP707A4",
+      "target": "ABA 8'-HYDROXYLASES",
+      "description": "encodes",
+      "weight": "10",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "ABA 8'-HYDROXYLASES",
+      "target": "ABA CATABOLISM",
+      "description": "key enzymes for",
+      "weight": "10",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "LOW CALCIUM",
+      "target": "CYP707A4",
+      "description": "up-regulates",
+      "weight": "9",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "CYP707A4",
+      "target": "ABA LEVEL",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "ABA LEVEL",
+      "target": "APOPTOSIS",
+      "description": "mediates",
+      "weight": "8",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "AHCYP707A4",
+      "target": "NICOTIANA BENTHAMIANA",
+      "description": "over-expressed in",
+      "weight": "10",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "AHCYP707A4",
+      "target": "LOW ABA CONTENT",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "LOW ABA CONTENT",
+      "target": "EMBRYO ABORTION",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "LOW ABA CONTENT",
+      "target": "SMALL PODS",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "LOW ABA CONTENT",
+      "target": "LESS SEEDS",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "CELL WALL HYDROLASES",
+      "target": "CELL WALL DEGRADATION",
+      "description": "cause",
+      "weight": "9",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "CELLULAR SYNTHASES GENES",
+      "target": "CELL RETARDATION",
+      "description": "cause",
+      "weight": "9",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "PEANUT",
+      "target": "LOW CALCIUM",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_10711"
+    },
+    {
+      "source": "CALCIUM STRESS",
+      "target": "EMBRYO ABORTION",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_10711"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., a legume characterized by subterranean pod development",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "POD DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The process of peanut pod growth and maturation",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "DARK CONDITION",
+      "type": "CONDITION",
+      "description": "The light-absent environment of subterranean pod development",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "ILLUMINA SEQUENCING",
+      "type": "METHOD",
+      "description": "High-throughput sequencing technology used to analyze transcripts",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "DEVELOPMENTAL TRANSCRIPTOME",
+      "type": "CONCEPT",
+      "description": "The complete set of RNA transcripts during the development of peanut pods",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "SEED",
+      "type": "CONCEPT",
+      "description": "The reproductive tissue within the peanut pod",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "SHELL",
+      "type": "CONCEPT",
+      "description": "The outer protective tissue of the peanut pod",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED TRANSCRIPTS",
+      "type": "CONCEPT",
+      "description": "Transcripts that show significant changes in expression levels across conditions or stages",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "PHOTOSYNTHETIC GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes involved in photosynthesis that are active in aerial and subterranean pods",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "PHOTOMORPHOGENESIS GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that regulate plant growth in response to light",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "CLUSTERING ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to group transcripts with similar expression profiles",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "DNA SYNTHESIS",
+      "type": "CONCEPT",
+      "description": "The process of duplicating DNA during pod expansion",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "CELL DIVISION",
+      "type": "CONCEPT",
+      "description": "The process of cell multiplication during pod expansion",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "POD EXPANSION",
+      "type": "TRAIT",
+      "description": "The stage of pod development characterized by rapid growth",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "CELL EXPANSION",
+      "type": "CONCEPT",
+      "description": "The process of increasing cell size during seed filling",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "STORAGE ACTIVITY",
+      "type": "CONCEPT",
+      "description": "The accumulation of nutrients and reserves during seed filling",
+      "source_id": "paper_11615"
+    },
+    {
+      "name": "SEED FILLING",
+      "type": "TRAIT",
+      "description": "The stage of pod development where the seed accumulates reserves",
+      "source_id": "paper_11615"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "POD DEVELOPMENT",
+      "description": "undergoes",
+      "weight": "10",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "POD DEVELOPMENT",
+      "target": "DARK CONDITION",
+      "description": "occurs under",
+      "weight": "9",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "ILLUMINA SEQUENCING",
+      "target": "DEVELOPMENTAL TRANSCRIPTOME",
+      "description": "used to analyze",
+      "weight": "10",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "DEVELOPMENTAL TRANSCRIPTOME",
+      "target": "SEED",
+      "description": "analyzed in",
+      "weight": "8",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "DEVELOPMENTAL TRANSCRIPTOME",
+      "target": "SHELL",
+      "description": "analyzed in",
+      "weight": "8",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "DEVELOPMENTAL TRANSCRIPTOME",
+      "target": "DIFFERENTIALLY EXPRESSED TRANSCRIPTS",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "PHOTOSYNTHETIC GENES",
+      "target": "POD DEVELOPMENT",
+      "description": "play roles in",
+      "weight": "7",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "PHOTOSYNTHETIC GENES",
+      "target": "DARK CONDITION",
+      "description": "active under",
+      "weight": "7",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "PHOTOMORPHOGENESIS GENES",
+      "target": "POD DEVELOPMENT",
+      "description": "show expression profiles along",
+      "weight": "8",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "CLUSTERING ANALYSIS",
+      "target": "DEVELOPMENTAL TRANSCRIPTOME",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "DNA SYNTHESIS",
+      "target": "POD EXPANSION",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "CELL DIVISION",
+      "target": "POD EXPANSION",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "CELL EXPANSION",
+      "target": "SEED FILLING",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "STORAGE ACTIVITY",
+      "target": "SEED FILLING",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_11615"
+    },
+    {
+      "source": "POD EXPANSION",
+      "target": "SEED FILLING",
+      "description": "transitions to",
+      "weight": "8",
+      "source_id": "paper_11615"
+    }
+  ]
+}

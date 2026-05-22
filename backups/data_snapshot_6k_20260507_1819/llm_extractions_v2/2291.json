@@ -1,0 +1,167 @@
+{
+  "entities": [
+    {
+      "name": "ABIOTIC STRESSES",
+      "type": "CONDITION",
+      "description": "Environmental factors that cause stress to plants",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "ORTHOLOGOUS SEQUENCES",
+      "type": "GENE_MARKER",
+      "description": "Sequences in different species that evolved from a common ancestral gene by speciation",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "STRESS CDNA LIBRARIES",
+      "type": "METHOD",
+      "description": "Collections of complementary DNA synthesized from mRNA expressed during stress",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "STRESS RELATED GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that are activated or modified in response to abiotic stress",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "ESTS",
+      "type": "GENE_MARKER",
+      "description": "Expressed Sequence Tags, short sub-sequences of a cDNA sequence",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "CEREAL CROPS",
+      "type": "CROP",
+      "description": "A group of grasses cultivated for their edible grains",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "DICOTS",
+      "type": "CROP",
+      "description": "Flowering plants with two seed leaves",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "BIOINFORMATICS ANALYSIS",
+      "type": "METHOD",
+      "description": "Use of computational tools to analyze biological data",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "CLUSTERING",
+      "type": "METHOD",
+      "description": "Process of grouping similar sequences together",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "PROTEIN MOTIFS",
+      "type": "GENE_MARKER",
+      "description": "Short, conserved amino acid sequences",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "ANNOTATION",
+      "type": "METHOD",
+      "description": "Process of attaching biological information to sequences",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "COMPARATIVE GENOMICS",
+      "type": "CONCEPT",
+      "description": "Comparing genomic features of different organisms",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "MOLECULAR EVOLUTION",
+      "type": "CONCEPT",
+      "description": "Change in allele frequencies in a population over time at the molecular level",
+      "source_id": "paper_2291"
+    },
+    {
+      "name": "GENOMICS",
+      "type": "CONCEPT",
+      "description": "The study of the complete set of DNA within an organism",
+      "source_id": "paper_2291"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COMPARATIVE GENOMICS",
+      "target": "ORTHOLOGOUS SEQUENCES",
+      "description": "requires a dataset of",
+      "weight": "10",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "STRESS CDNA LIBRARIES",
+      "target": "STRESS RELATED GENES",
+      "description": "allow for the identification of",
+      "weight": "9",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "STRESS CDNA LIBRARIES",
+      "target": "ORTHOLOGOUS SEQUENCES",
+      "description": "allow for the identification of",
+      "weight": "9",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "ESTS",
+      "target": "STRESS CDNA LIBRARIES",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "ESTS",
+      "target": "BIOINFORMATICS ANALYSIS",
+      "description": "subjected to",
+      "weight": "8",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "BIOINFORMATICS ANALYSIS",
+      "target": "CLUSTERING",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "BIOINFORMATICS ANALYSIS",
+      "target": "ANNOTATION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "BIOINFORMATICS ANALYSIS",
+      "target": "PROTEIN MOTIFS",
+      "description": "includes identification of",
+      "weight": "10",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "ANNOTATION",
+      "target": "ABIOTIC STRESSES",
+      "description": "annotated with",
+      "weight": "8",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "ORTHOLOGOUS SEQUENCES",
+      "target": "MOLECULAR EVOLUTION",
+      "description": "valuable resource for studying",
+      "weight": "8",
+      "source_id": "paper_2291"
+    },
+    {
+      "source": "ORTHOLOGOUS SEQUENCES",
+      "target": "GENOMICS",
+      "description": "valuable resource for studying",
+      "weight": "8",
+      "source_id": "paper_2291"
+    }
+  ]
+}

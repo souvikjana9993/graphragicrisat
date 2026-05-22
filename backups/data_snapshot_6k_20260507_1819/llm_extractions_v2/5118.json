@@ -1,0 +1,148 @@
+{
+  "entities": [
+    {
+      "name": "VIABILITY",
+      "type": "TRAIT",
+      "description": "The ability of a seed to germinate and grow into a plant",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "SEED QUALITY",
+      "type": "TRAIT",
+      "description": "The overall quality and health of the seed",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "SEED",
+      "type": "ORGANISM",
+      "description": "The biological seed used in breeding and research",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "STORAGE FACILITIES",
+      "type": "CONCEPT",
+      "description": "Facilities designed for the safe storage of seeds",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "DRYING",
+      "type": "METHOD",
+      "description": "The process of reducing moisture content in seeds or plant samples",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "MOISTURE CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of water present in seeds or plant samples",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "Genetic resources preserved for breeding",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "BREEDERS' SEED",
+      "type": "CONCEPT",
+      "description": "High-quality seed produced by breeders for further multiplication",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "EXPERIMENT STATION",
+      "type": "LOCATION",
+      "description": "A facility where agricultural research and seed testing are conducted",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "YIELD TRIALS",
+      "type": "METHOD",
+      "description": "Experiments conducted to evaluate the yield of different crop varieties",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "COMPARATIVE ANALYSIS",
+      "type": "METHOD",
+      "description": "The process of comparing different samples to draw conclusions",
+      "source_id": "paper_5118"
+    },
+    {
+      "name": "PLANT SAMPLES",
+      "type": "ORGANISM",
+      "description": "Biological samples of plants collected for research analysis",
+      "source_id": "paper_5118"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DRYING",
+      "target": "MOISTURE CONTENT",
+      "description": "Drying is used to reduce moisture content",
+      "weight": "10",
+      "source_id": "paper_5118"
+    },
+    {
+      "source": "MOISTURE CONTENT",
+      "target": "VIABILITY",
+      "description": "Moisture content levels affect the viability of seeds",
+      "weight": "8",
+      "source_id": "paper_5118"
+    },
+    {
+      "source": "MOISTURE CONTENT",
+      "target": "SEED QUALITY",
+      "description": "Moisture content levels influence overall seed quality",
+      "weight": "8",
+      "source_id": "paper_5118"
+    },
+    {
+      "source": "DRYING",
+      "target": "SEED",
+      "description": "Drying is a necessary process for seeds before storage",
+      "weight": "10",
+      "source_id": "paper_5118"
+    },
+    {
+      "source": "STORAGE FACILITIES",
+      "target": "SEED",
+      "description": "Storage facilities are used to maintain seeds",
+      "weight": "9",
+      "source_id": "paper_5118"
+    },
+    {
+      "source": "EXPERIMENT STATION",
+      "target": "GERMPLASM",
+      "description": "Experiment stations manage and store germplasm",
+      "weight": "7",
+      "source_id": "paper_5118"
+    },
+    {
+      "source": "EXPERIMENT STATION",
+      "target": "BREEDERS' SEED",
+      "description": "Experiment stations manage and store breeders' seed",
+      "weight": "7",
+      "source_id": "paper_5118"
+    },
+    {
+      "source": "YIELD TRIALS",
+      "target": "COMPARATIVE ANALYSIS",
+      "description": "Yield trials provide the material and data for comparative analysis",
+      "weight": "8",
+      "source_id": "paper_5118"
+    },
+    {
+      "source": "DRYING",
+      "target": "PLANT SAMPLES",
+      "description": "Plant samples are dried for subsequent analysis",
+      "weight": "9",
+      "source_id": "paper_5118"
+    },
+    {
+      "source": "MOISTURE CONTENT",
+      "target": "STORAGE FACILITIES",
+      "description": "Proper moisture content is required for safe storage in facilities",
+      "weight": "7",
+      "source_id": "paper_5118"
+    }
+  ]
+}

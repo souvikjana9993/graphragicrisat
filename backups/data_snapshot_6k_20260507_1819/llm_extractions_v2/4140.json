@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "GINGELLY",
+      "type": "CROP",
+      "description": "An important oilseed crop (Sesamum indicum L.)",
+      "source_id": "paper_4140"
+    },
+    {
+      "name": "NORTHERN KARNATAKA",
+      "type": "LOCATION",
+      "description": "Region where the crop is grown",
+      "source_id": "paper_4140"
+    },
+    {
+      "name": "POWDERY MILDEW",
+      "type": "CONDITION",
+      "description": "A foliar disease affecting the crop from flowering stage onwards",
+      "source_id": "paper_4140"
+    },
+    {
+      "name": "OIDIUM SP",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing powdery mildew",
+      "source_id": "paper_4140"
+    },
+    {
+      "name": "FOLIAR DISEASES",
+      "type": "CONCEPT",
+      "description": "Diseases affecting the foliage of the plant",
+      "source_id": "paper_4140"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural output of the crop",
+      "source_id": "paper_4140"
+    },
+    {
+      "name": "FLOWERING STAGE",
+      "type": "CONCEPT",
+      "description": "The growth stage of the plant when it produces flowers",
+      "source_id": "paper_4140"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GINGELLY",
+      "target": "NORTHERN KARNATAKA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_4140"
+    },
+    {
+      "source": "GINGELLY",
+      "target": "POWDERY MILDEW",
+      "description": "suffers from",
+      "weight": "9",
+      "source_id": "paper_4140"
+    },
+    {
+      "source": "POWDERY MILDEW",
+      "target": "OIDIUM SP",
+      "description": "caused by",
+      "weight": "10",
+      "source_id": "paper_4140"
+    },
+    {
+      "source": "POWDERY MILDEW",
+      "target": "FOLIAR DISEASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_4140"
+    },
+    {
+      "source": "POWDERY MILDEW",
+      "target": "FLOWERING STAGE",
+      "description": "affects at",
+      "weight": "8",
+      "source_id": "paper_4140"
+    },
+    {
+      "source": "POWDERY MILDEW",
+      "target": "YIELD",
+      "description": "causes loss of",
+      "weight": "9",
+      "source_id": "paper_4140"
+    }
+  ]
+}

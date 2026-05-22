@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Cultivated groundnuts (Arachis hypogaea L.) used in the study",
+      "source_id": "paper_2501"
+    },
+    {
+      "name": "RUST RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut cultivars to resist groundnut rust",
+      "source_id": "paper_2501"
+    },
+    {
+      "name": "GROUNDNUT RUST",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen Puccinia arachidis Speg. causing rust in groundnuts",
+      "source_id": "paper_2501"
+    },
+    {
+      "name": "SINGLE CROSSES",
+      "type": "METHOD",
+      "description": "The breeding method involving crosses between susceptible and resistant cultivars",
+      "source_id": "paper_2501"
+    },
+    {
+      "name": "F2 PROGENY",
+      "type": "CONCEPT",
+      "description": "The second filial generation resulting from single crosses",
+      "source_id": "paper_2501"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research center in India where the experiment was conducted",
+      "source_id": "paper_2501"
+    },
+    {
+      "name": "KHARIF",
+      "type": "CONDITION",
+      "description": "The monsoon agricultural season in which the experiment was conducted",
+      "source_id": "paper_2501"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "RUST RESISTANCE",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_2501"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "GROUNDNUT RUST",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_2501"
+    },
+    {
+      "source": "RUST RESISTANCE",
+      "target": "GROUNDNUT RUST",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_2501"
+    },
+    {
+      "source": "SINGLE CROSSES",
+      "target": "F2 PROGENY",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_2501"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SINGLE CROSSES",
+      "description": "is the subject of",
+      "weight": "8",
+      "source_id": "paper_2501"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "SINGLE CROSSES",
+      "description": "is the location of",
+      "weight": "7",
+      "source_id": "paper_2501"
+    },
+    {
+      "source": "KHARIF",
+      "target": "SINGLE CROSSES",
+      "description": "is the timing of",
+      "weight": "7",
+      "source_id": "paper_2501"
+    }
+  ]
+}

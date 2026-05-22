@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Bunch type groundnuts grown in dry and hard soils",
+      "source_id": "paper_2144"
+    },
+    {
+      "name": "GROUNDNUT DIGGER",
+      "type": "METHOD",
+      "description": "A tool designed by ICRISAT for digging groundnuts in dry and hard soils, featuring shares inclined at 120 degrees and chisel points",
+      "source_id": "paper_2144"
+    },
+    {
+      "name": "HARD SOILS",
+      "type": "CONDITION",
+      "description": "Dry and hard soils, specifically alfisols, that require increased penetration for digging",
+      "source_id": "paper_2144"
+    },
+    {
+      "name": "OXEN",
+      "type": "ORGANISM",
+      "description": "Animals used to pull the single digger unit",
+      "source_id": "paper_2144"
+    },
+    {
+      "name": "TRACTOR",
+      "type": "CONCEPT",
+      "description": "Machinery used to pull the 2-digger unit",
+      "source_id": "paper_2144"
+    },
+    {
+      "name": "BUNCH TYPE",
+      "type": "TRAIT",
+      "description": "The growth habit of the groundnut being harvested",
+      "source_id": "paper_2144"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT DIGGER",
+      "target": "GROUNDNUT",
+      "description": "used for digging",
+      "weight": "10",
+      "source_id": "paper_2144"
+    },
+    {
+      "source": "GROUNDNUT DIGGER",
+      "target": "HARD SOILS",
+      "description": "designed for penetration into",
+      "weight": "9",
+      "source_id": "paper_2144"
+    },
+    {
+      "source": "GROUNDNUT DIGGER",
+      "target": "OXEN",
+      "description": "pulled by",
+      "weight": "8",
+      "source_id": "paper_2144"
+    },
+    {
+      "source": "GROUNDNUT DIGGER",
+      "target": "TRACTOR",
+      "description": "pulled by",
+      "weight": "8",
+      "source_id": "paper_2144"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "BUNCH TYPE",
+      "description": "characterized by",
+      "weight": "7",
+      "source_id": "paper_2144"
+    }
+  ]
+}

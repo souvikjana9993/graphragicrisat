@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where rainfall variability and Vertisol management are studied",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Atmospheric water falling in India, variable in intensity, duration, and distribution",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "RAINFALL EXCESS",
+      "type": "CONDITION",
+      "description": "Runoff resulting from high-intensity storms, especially in low-infiltration soils",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONCEPT",
+      "description": "Type of soil characterized by low infiltration rates",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "INFILTRATION RATES",
+      "type": "TRAIT",
+      "description": "The rate at which water enters the soil, which is low in Vertisols",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The process of soil degradation caused by runoff",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "CROP PRODUCTION POTENTIAL",
+      "type": "TRAIT",
+      "description": "The capacity of the soil resource to support crop production",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "GRADED BROADBEDS AND FURROWS",
+      "type": "METHOD",
+      "description": "A system developed at ICRISAT to improve surface drainage and collect runoff",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "SURFACE DRAINAGE",
+      "type": "TRAIT",
+      "description": "The movement of water across the soil surface",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "MONSOON SEASON",
+      "type": "CONDITION",
+      "description": "The seasonal period characterized by high rainfall",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "RAINY SEASON CROPPING",
+      "type": "CONCEPT",
+      "description": "The practice of growing crops during the rainy season",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "STORAGE FACILITIES",
+      "type": "CONCEPT",
+      "description": "Facilities used to collect and store runoff water for later use",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "STRESS PERIODS",
+      "type": "CONDITION",
+      "description": "Periods during the crop cycle where water is scarce",
+      "source_id": "paper_5123"
+    },
+    {
+      "name": "CROPS",
+      "type": "CROP",
+      "description": "Agricultural plants grown in Vertisols",
+      "source_id": "paper_5123"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RAINFALL",
+      "target": "INDIA",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "RAINFALL EXCESS",
+      "description": "high intensity leads to",
+      "weight": "8",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "RAINFALL EXCESS",
+      "target": "VERTISOLS",
+      "description": "occurs particularly in",
+      "weight": "7",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "VERTISOLS",
+      "target": "INFILTRATION RATES",
+      "description": "has low",
+      "weight": "9",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "RAINFALL EXCESS",
+      "target": "SOIL EROSION",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "CROP PRODUCTION POTENTIAL",
+      "description": "degrades",
+      "weight": "8",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "GRADED BROADBEDS AND FURROWS",
+      "target": "VERTISOLS",
+      "description": "manages",
+      "weight": "9",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "GRADED BROADBEDS AND FURROWS",
+      "target": "SURFACE DRAINAGE",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "SURFACE DRAINAGE",
+      "target": "RAINY SEASON CROPPING",
+      "description": "facilitates",
+      "weight": "8",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "GRADED BROADBEDS AND FURROWS",
+      "target": "RAINFALL EXCESS",
+      "description": "manages runoff velocity and collection of",
+      "weight": "8",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "RAINFALL EXCESS",
+      "target": "STORAGE FACILITIES",
+      "description": "is collected in",
+      "weight": "8",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "GRADED BROADBEDS AND FURROWS",
+      "target": "CROPS",
+      "description": "facilitates water reapplication to",
+      "weight": "8",
+      "source_id": "paper_5123"
+    },
+    {
+      "source": "CROPS",
+      "target": "STRESS PERIODS",
+      "description": "experience",
+      "weight": "7",
+      "source_id": "paper_5123"
+    }
+  ]
+}

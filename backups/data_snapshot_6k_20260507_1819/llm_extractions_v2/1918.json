@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The cereal crop studied for disease epidemiology",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "SORGHUM ANTHRACNOSE",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting sorghum",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "COLLETOTRICHUM SUBLINEOLUM",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes sorghum anthracnose",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "LEAF BLIGHT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting sorghum leaves",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "EXSEROHILUM TURCICUM",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes leaf blight",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "SETOSPHAERIA TURCICA",
+      "type": "ORGANISM",
+      "description": "An alternative name for the pathogen Exserohilum turcicum",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "ALUPE",
+      "type": "LOCATION",
+      "description": "The specific location in western Kenya where the study was conducted",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where the research took place",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "NONLINEAR LOGISTIC MODEL",
+      "type": "METHOD",
+      "description": "A statistical model used to summarize disease progress curves",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "PLANTING DATE",
+      "type": "CONCEPT",
+      "description": "The date of sowing which influences disease development",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "CULTIVAR",
+      "type": "CONCEPT",
+      "description": "Different varieties of sorghum used in the study",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "DISEASE SEVERITY",
+      "type": "TRAIT",
+      "description": "The extent of disease impact measured at various stages",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a cultivar to limit disease development",
+      "source_id": "paper_1918"
+    },
+    {
+      "name": "DISEASE SCREENING METHODOLOGIES",
+      "type": "METHOD",
+      "description": "Processes used to identify resistant cultivars",
+      "source_id": "paper_1918"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COLLETOTRICHUM SUBLINEOLUM",
+      "target": "SORGHUM ANTHRACNOSE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "EXSEROHILUM TURCICUM",
+      "target": "LEAF BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "SETOSPHAERIA TURCICA",
+      "target": "LEAF BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SORGHUM ANTHRACNOSE",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "LEAF BLIGHT",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "ALUPE",
+      "target": "KENYA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "NONLINEAR LOGISTIC MODEL",
+      "target": "SORGHUM ANTHRACNOSE",
+      "description": "used to analyze progress of",
+      "weight": "8",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "NONLINEAR LOGISTIC MODEL",
+      "target": "LEAF BLIGHT",
+      "description": "used to analyze progress of",
+      "weight": "8",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "SORGHUM ANTHRACNOSE",
+      "description": "affects development of",
+      "weight": "7",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "LEAF BLIGHT",
+      "description": "affects development of",
+      "weight": "7",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "CULTIVAR",
+      "target": "SORGHUM ANTHRACNOSE",
+      "description": "affects development of",
+      "weight": "7",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "CULTIVAR",
+      "target": "LEAF BLIGHT",
+      "description": "affects development of",
+      "weight": "7",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "SORGHUM ANTHRACNOSE",
+      "description": "reduces severity of",
+      "weight": "8",
+      "source_id": "paper_1918"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "LEAF BLIGHT",
+      "description": "reduces severity of",
+      "weight": "8",
+      "source_id": "paper_1918"
+    }
+  ]
+}

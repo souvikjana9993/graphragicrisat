@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop studied, including hybrid CSH 9 and local variety FSRP",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "LOW NITROGEN",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by low nitrogen availability",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted, specifically semi-arid tropical India",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "CONCEPT",
+      "description": "The specific soil type used for growing the sorghum plants in fields and pots",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of productivity of the sorghum plants",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "NITROGEN ABSORPTION",
+      "type": "TRAIT",
+      "description": "The process and rate of nitrogen uptake by the sorghum plants",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "ROOT ACTIVITY",
+      "type": "TRAIT",
+      "description": "The capacity of roots to absorb nitrogen, defined by specific absorption rate per unit root mass and length",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "RELATIVE GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate of plant growth relative to its size",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "RELATIVE NITROGEN ABSORPTION RATE",
+      "type": "TRAIT",
+      "description": "The rate of nitrogen absorption relative to the plant",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "SPECIFIC NITROGEN ABSORPTION RATE",
+      "type": "TRAIT",
+      "description": "The nitrogen absorption rate per unit root mass and length",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "BOOTING STAGE",
+      "type": "CONCEPT",
+      "description": "A specific growth stage of the sorghum plant",
+      "source_id": "paper_1586"
+    },
+    {
+      "name": "PHYSIOLOGICAL MATURITY",
+      "type": "CONCEPT",
+      "description": "The stage of plant development where the grain is fully formed",
+      "source_id": "paper_1586"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "LOW NITROGEN",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ALFISOL",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "LOW NITROGEN",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "NITROGEN ABSORPTION",
+      "target": "LOW NITROGEN",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "NITROGEN ABSORPTION",
+      "description": "related to",
+      "weight": "8",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "NITROGEN ABSORPTION",
+      "target": "ROOT ACTIVITY",
+      "description": "regulated by",
+      "weight": "10",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "RELATIVE GROWTH RATE",
+      "target": "RELATIVE NITROGEN ABSORPTION RATE",
+      "description": "highly correlated with",
+      "weight": "9",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "SPECIFIC NITROGEN ABSORPTION RATE",
+      "target": "ROOT ACTIVITY",
+      "description": "measure of",
+      "weight": "10",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "NITROGEN ABSORPTION",
+      "target": "BOOTING STAGE",
+      "description": "occurs after",
+      "weight": "7",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "SPECIFIC NITROGEN ABSORPTION RATE",
+      "target": "PHYSIOLOGICAL MATURITY",
+      "description": "measured at",
+      "weight": "7",
+      "source_id": "paper_1586"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "ROOT ACTIVITY",
+      "description": "ascribed to",
+      "weight": "8",
+      "source_id": "paper_1586"
+    }
+  ]
+}

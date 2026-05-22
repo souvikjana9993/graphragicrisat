@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "A legume crop (Arachis hypogaea) affected by yellow mold",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "YELLOW MOLD",
+      "type": "CONDITION",
+      "description": "A disease of peanut seedlings causing rotting and chlorosis",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A fungus that causes yellow mold and produces aflatoxins",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "SOUTH TEXAS",
+      "type": "LOCATION",
+      "description": "The region where the yellow mold outbreak was observed",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "PREEMERGENCE ROTTING",
+      "type": "CONDITION",
+      "description": "Rotting of seeds and seedlings before emergence caused by yellow mold",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "CHLOROSIS",
+      "type": "TRAIT",
+      "description": "Yellowing of plant tissue observed in diseased peanut plants",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "STUNTING",
+      "type": "TRAIT",
+      "description": "Reduced growth of diseased peanut plants",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "REDUCED LEAFLET SIZE",
+      "type": "TRAIT",
+      "description": "Decrease in the size of leaflets in infected peanut plants",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "VEIN-CLEARING",
+      "type": "TRAIT",
+      "description": "A symptom where veins in the leaves become transparent",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "AFLATOXINS",
+      "type": "CONCEPT",
+      "description": "Toxins produced by Aspergillus flavus found in infected peanut cotyledons",
+      "source_id": "paper_3596"
+    },
+    {
+      "name": "GREENHOUSE TESTS",
+      "type": "METHOD",
+      "description": "Experimental tests used to determine the pathogenicity of A. flavus isolates",
+      "source_id": "paper_3596"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "YELLOW MOLD",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "YELLOW MOLD",
+      "target": "PEANUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "YELLOW MOLD",
+      "target": "SOUTH TEXAS",
+      "description": "occurred in",
+      "weight": "8",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "YELLOW MOLD",
+      "target": "PREEMERGENCE ROTTING",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "YELLOW MOLD",
+      "target": "CHLOROSIS",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "YELLOW MOLD",
+      "target": "STUNTING",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "YELLOW MOLD",
+      "target": "REDUCED LEAFLET SIZE",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "YELLOW MOLD",
+      "target": "VEIN-CLEARING",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXINS",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "AFLATOXINS",
+      "target": "PEANUT",
+      "description": "found in",
+      "weight": "9",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "GREENHOUSE TESTS",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "used to test pathogenicity of",
+      "weight": "9",
+      "source_id": "paper_3596"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "PEANUT",
+      "description": "is pathogenic to",
+      "weight": "10",
+      "source_id": "paper_3596"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum (L.) R.Br, the crop studied for establishment and yield under wind erosion conditions",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "MILLET STOVER RESIDUE",
+      "type": "CONCEPT",
+      "description": "Crop residue applied at levels of 0, 500, and 2000 kg ha−1 to control wind erosion and stimulate growth",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "ESTABLISHMENT",
+      "type": "TRAIT",
+      "description": "The process of seedlings emerging and becoming established in the field",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development and biomass accumulation of the plant",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "WIND EROSION",
+      "type": "CONDITION",
+      "description": "The process of soil removal by wind that buries seedlings and reduces yields",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country in West Africa where the research was conducted",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The region where the research was conducted",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "BIOMASS YIELD",
+      "type": "TRAIT",
+      "description": "The total biological mass produced by the crop",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "GRAIN PRODUCTION",
+      "type": "TRAIT",
+      "description": "The amount of grain harvested per unit area",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "SAND STORMS",
+      "type": "CONDITION",
+      "description": "Severe wind events that cause soil to blow and cover seedlings",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "DRY MATTER",
+      "type": "CONCEPT",
+      "description": "Organic material left in the field to aid in erosion control",
+      "source_id": "paper_5965"
+    },
+    {
+      "name": "WIND EROSION CONTROL",
+      "type": "METHOD",
+      "description": "The implementation of measures like crop residue to prevent wind erosion",
+      "source_id": "paper_5965"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MILLET STOVER RESIDUE",
+      "target": "PEARL MILLET",
+      "description": "Affects establishment and growth",
+      "weight": "8",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "WIND EROSION",
+      "target": "PEARL MILLET",
+      "description": "Negatively impacts establishment and yield",
+      "weight": "9",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "MILLET STOVER RESIDUE",
+      "target": "WIND EROSION",
+      "description": "Used as a measure to control",
+      "weight": "9",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "SAND STORMS",
+      "target": "PEARL MILLET",
+      "description": "Buries seedlings and reduces yield",
+      "weight": "8",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "WIND EROSION",
+      "target": "BIOMASS YIELD",
+      "description": "Decreases biomass yields",
+      "weight": "7",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "WIND EROSION",
+      "target": "GRAIN PRODUCTION",
+      "description": "Decreases grain production",
+      "weight": "7",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "MILLET STOVER RESIDUE",
+      "target": "GRAIN PRODUCTION",
+      "description": "Increases grain production",
+      "weight": "8",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "MILLET STOVER RESIDUE",
+      "target": "BIOMASS YIELD",
+      "description": "Increases biomass yields",
+      "weight": "8",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "NIGER",
+      "target": "WEST AFRICA",
+      "description": "Located within",
+      "weight": "10",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "NIGER",
+      "description": "Cultivated in",
+      "weight": "7",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "WIND EROSION CONTROL",
+      "target": "WIND EROSION",
+      "description": "Aims to mitigate",
+      "weight": "10",
+      "source_id": "paper_5965"
+    },
+    {
+      "source": "DRY MATTER",
+      "target": "WIND EROSION CONTROL",
+      "description": "Contributes to the effectiveness of",
+      "weight": "7",
+      "source_id": "paper_5965"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Advanced lines of recent origin investigated for yield determinants",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The primary output measure used to evaluate genotypic differences",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Non-irrigated soil water environment causing stress",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "Provision of water to the crop to enhance growth and yield",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "PHYSIOLOGICAL MODEL",
+      "type": "METHOD",
+      "description": "A model used to determine physiological attributes and explain variation in seed yield",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "TOTAL SHOOT BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the shoot system measured in field trials",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "VEGETATIVE DURATION",
+      "type": "TRAIT",
+      "description": "The duration of the vegetative growth phase, denoted as Dv",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "REPRODUCTIVE DURATION",
+      "type": "TRAIT",
+      "description": "The duration of the reproductive growth phase, denoted as Dr",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "CROP GROWTH RATE",
+      "type": "TRAIT",
+      "description": "The rate at which the crop grows, denoted as C",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "RATE OF PARTITIONING TO SEED",
+      "type": "TRAIT",
+      "description": "The rate at which biomass is partitioned to the seeds, denoted as p",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "PENINSULAR INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where field trials were conducted",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "PATH ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to determine the contribution of model parameters to seed yield variations",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "REGRESSION TECHNIQUES",
+      "type": "METHOD",
+      "description": "Statistical methods used to obtain relationships between yield determinants and seed yield",
+      "source_id": "paper_1340"
+    },
+    {
+      "name": "BREEDING STRATEGIES",
+      "type": "CONCEPT",
+      "description": "Approaches for selecting genotypes based on soil water environments",
+      "source_id": "paper_1340"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "SEED YIELD",
+      "description": "The crop for which seed yield is being investigated",
+      "weight": "10",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "PHYSIOLOGICAL MODEL",
+      "target": "SEED YIELD",
+      "description": "Used to explain 98% of the variation in seed yield",
+      "weight": "9",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "SEED YIELD",
+      "description": "Condition under which seed yield is measured and affected",
+      "weight": "8",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "SEED YIELD",
+      "description": "Condition under which seed yield is measured and affected",
+      "weight": "8",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "PATH ANALYSIS",
+      "target": "SEED YIELD",
+      "description": "Used to determine contribution of parameters to seed yield variation",
+      "weight": "7",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "REGRESSION TECHNIQUES",
+      "target": "SEED YIELD",
+      "description": "Used to obtain relationships of yield determinants with seed yield",
+      "weight": "7",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "REPRODUCTIVE DURATION",
+      "description": "Irrigation enhanced the reproductive duration",
+      "weight": "8",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "CROP GROWTH RATE",
+      "description": "Irrigation enhanced the crop growth rate",
+      "weight": "8",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "CROP GROWTH RATE",
+      "target": "SEED YIELD",
+      "description": "Major single determinant of seed yield",
+      "weight": "9",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "CROP GROWTH RATE",
+      "target": "RATE OF PARTITIONING TO SEED",
+      "description": "Positive relationship under drought and negative relationship under irrigation",
+      "weight": "7",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "VEGETATIVE DURATION",
+      "target": "REPRODUCTIVE DURATION",
+      "description": "Exhibited a negative relationship",
+      "weight": "7",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "VEGETATIVE DURATION",
+      "target": "CROP GROWTH RATE",
+      "description": "Existence of an optimum vegetative duration for maximum crop growth rate",
+      "weight": "6",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "PENINSULAR INDIA",
+      "target": "CHICKPEA",
+      "description": "Location where chickpea field trials were conducted",
+      "weight": "8",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "BREEDING STRATEGIES",
+      "target": "DROUGHT",
+      "description": "Separate strategies needed for severe drought stress environments",
+      "weight": "7",
+      "source_id": "paper_1340"
+    },
+    {
+      "source": "BREEDING STRATEGIES",
+      "target": "IRRIGATION",
+      "description": "Separate strategies needed for irrigated environments",
+      "weight": "7",
+      "source_id": "paper_1340"
+    }
+  ]
+}

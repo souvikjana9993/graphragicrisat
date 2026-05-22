@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A fungus collected from groundnut fields and assessed for sclerotia and aflatoxin production",
+      "source_id": "paper_1555"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop from whose fields the fungal isolates were collected",
+      "source_id": "paper_1555"
+    },
+    {
+      "name": "SOIL TYPE",
+      "type": "CONDITION",
+      "description": "The environmental variable used to categorize the fields from which isolates were collected",
+      "source_id": "paper_1555"
+    },
+    {
+      "name": "SCLEROTIA PRODUCTION",
+      "type": "TRAIT",
+      "description": "The capacity of A. flavus isolates to produce sclerotia",
+      "source_id": "paper_1555"
+    },
+    {
+      "name": "AFLATOXIN PRODUCTION",
+      "type": "TRAIT",
+      "description": "The capacity of A. flavus isolates to produce aflatoxins",
+      "source_id": "paper_1555"
+    },
+    {
+      "name": "AFLATOXIN B",
+      "type": "CONCEPT",
+      "description": "The specific type of aflatoxin produced by the isolates",
+      "source_id": "paper_1555"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A specific soil type associated with lower aflatoxin production",
+      "source_id": "paper_1555"
+    },
+    {
+      "name": "RED SANDY LOAM",
+      "type": "CONDITION",
+      "description": "A specific soil type associated with higher aflatoxin production compared to vertisols",
+      "source_id": "paper_1555"
+    },
+    {
+      "name": "LIGHT SANDY",
+      "type": "CONDITION",
+      "description": "A specific soil type associated with higher aflatoxin production compared to vertisols",
+      "source_id": "paper_1555"
+    },
+    {
+      "name": "SINGLE SPORE ISOLATION",
+      "type": "METHOD",
+      "description": "The technique used to obtain pure isolates of A. flavus",
+      "source_id": "paper_1555"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "GROUNDNUT",
+      "description": "collected from fields of",
+      "weight": "8",
+      "source_id": "paper_1555"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "SCLEROTIA PRODUCTION",
+      "description": "assessed for",
+      "weight": "7",
+      "source_id": "paper_1555"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN PRODUCTION",
+      "description": "assessed for",
+      "weight": "7",
+      "source_id": "paper_1555"
+    },
+    {
+      "source": "AFLATOXIN PRODUCTION",
+      "target": "AFLATOXIN B",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_1555"
+    },
+    {
+      "source": "SOIL TYPE",
+      "target": "AFLATOXIN PRODUCTION",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_1555"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "AFLATOXIN PRODUCTION",
+      "description": "results in significantly less production",
+      "weight": "9",
+      "source_id": "paper_1555"
+    },
+    {
+      "source": "RED SANDY LOAM",
+      "target": "AFLATOXIN PRODUCTION",
+      "description": "results in higher production than vertisol",
+      "weight": "8",
+      "source_id": "paper_1555"
+    },
+    {
+      "source": "LIGHT SANDY",
+      "target": "AFLATOXIN PRODUCTION",
+      "description": "results in higher production than vertisol",
+      "weight": "8",
+      "source_id": "paper_1555"
+    },
+    {
+      "source": "SCLEROTIA PRODUCTION",
+      "target": "AFLATOXIN PRODUCTION",
+      "description": "no association",
+      "weight": "10",
+      "source_id": "paper_1555"
+    },
+    {
+      "source": "SINGLE SPORE ISOLATION",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "used to obtain isolates of",
+      "weight": "9",
+      "source_id": "paper_1555"
+    }
+  ]
+}

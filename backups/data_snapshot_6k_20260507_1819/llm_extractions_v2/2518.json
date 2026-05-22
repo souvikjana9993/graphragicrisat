@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop targeted for protection from pests",
+      "source_id": "paper_2518"
+    },
+    {
+      "name": "SORGHUM SHOOTFLY",
+      "type": "ORGANISM",
+      "description": "The pest Atherigona soccata Rondani that attacks sorghum",
+      "source_id": "paper_2518"
+    },
+    {
+      "name": "MASS TRAPPING",
+      "type": "METHOD",
+      "description": "A method of controlling pests by attracting and trapping them in large numbers",
+      "source_id": "paper_2518"
+    },
+    {
+      "name": "FISHMEAL-BAITED TRAPS",
+      "type": "METHOD",
+      "description": "Traps using fishmeal as an attractant to capture sorghum shootflies",
+      "source_id": "paper_2518"
+    },
+    {
+      "name": "BAIT SPRAYS",
+      "type": "METHOD",
+      "description": "The application of attractants combined with insecticides to control pests",
+      "source_id": "paper_2518"
+    },
+    {
+      "name": "FISHMEAL",
+      "type": "CONCEPT",
+      "description": "A protein-rich material used as a bait in traps and sprays",
+      "source_id": "paper_2518"
+    },
+    {
+      "name": "DECAMETHRIN",
+      "type": "CONCEPT",
+      "description": "A synthetic pyrethroid insecticide used in bait sprays",
+      "source_id": "paper_2518"
+    },
+    {
+      "name": "SYNTHETIC PYRETHROID",
+      "type": "CONCEPT",
+      "description": "A class of chemical insecticides to which decamethrin belongs",
+      "source_id": "paper_2518"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MASS TRAPPING",
+      "target": "SORGHUM SHOOTFLY",
+      "description": "used to control",
+      "weight": "9",
+      "source_id": "paper_2518"
+    },
+    {
+      "source": "BAIT SPRAYS",
+      "target": "SORGHUM SHOOTFLY",
+      "description": "used to control",
+      "weight": "9",
+      "source_id": "paper_2518"
+    },
+    {
+      "source": "SORGHUM SHOOTFLY",
+      "target": "SORGHUM",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_2518"
+    },
+    {
+      "source": "FISHMEAL-BAITED TRAPS",
+      "target": "MASS TRAPPING",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2518"
+    },
+    {
+      "source": "FISHMEAL",
+      "target": "FISHMEAL-BAITED TRAPS",
+      "description": "used as bait in",
+      "weight": "10",
+      "source_id": "paper_2518"
+    },
+    {
+      "source": "FISHMEAL",
+      "target": "BAIT SPRAYS",
+      "description": "used as bait in",
+      "weight": "10",
+      "source_id": "paper_2518"
+    },
+    {
+      "source": "DECAMETHRIN",
+      "target": "BAIT SPRAYS",
+      "description": "used as active ingredient in",
+      "weight": "10",
+      "source_id": "paper_2518"
+    },
+    {
+      "source": "DECAMETHRIN",
+      "target": "SYNTHETIC PYRETHROID",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2518"
+    }
+  ]
+}

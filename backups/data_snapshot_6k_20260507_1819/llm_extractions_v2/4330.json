@@ -1,0 +1,272 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The plant species Arachis hypogaea L. studied for its response to irrigation timing",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The application of water at different growth stages to the plants",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "CONTROLLED ENVIRONMENT",
+      "type": "LOCATION",
+      "description": "The setting where the groundnut plants were grown",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "SOIL MOISTURE DEFICIT",
+      "type": "CONDITION",
+      "description": "The state of water shortage imposed between sowing and pod initiation or pod initiation and harvest",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "POD INITIATION",
+      "type": "CONCEPT",
+      "description": "A specific growth stage of the groundnut plant",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "FINAL HARVEST",
+      "type": "CONCEPT",
+      "description": "The end stage of the groundnut growth cycle",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "14C-PARTITIONING",
+      "type": "METHOD",
+      "description": "The study of the distribution of 14C-labeled carbon within the plant",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "LEAVES",
+      "type": "ORGANISM",
+      "description": "Plant organs that serve as primary sites of 14CO2 fixation and sources of assimilates",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "STEMS",
+      "type": "ORGANISM",
+      "description": "Plant organs that act as sinks and sites of 14CO2 fixation",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "STEM APICES",
+      "type": "ORGANISM",
+      "description": "The growing tips of the stems that import assimilates and fix 14CO2",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "PEGS",
+      "type": "ORGANISM",
+      "description": "Specialized structures in groundnuts that fix 14CO2 and maintain high turgor",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "PODS",
+      "type": "ORGANISM",
+      "description": "The fruit-bearing structures of the groundnut that exhibit sink activity",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "14CO2 FIXATION",
+      "type": "CONCEPT",
+      "description": "The process of incorporating 14C-labeled carbon dioxide into plant tissues",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "ASSIMILATES",
+      "type": "CONCEPT",
+      "description": "Organic compounds produced by photosynthesis and translocated within the plant",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "TRANSLOCATION",
+      "type": "CONCEPT",
+      "description": "The movement of assimilates from source to sink tissues",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "SINKS",
+      "type": "CONCEPT",
+      "description": "Plant parts that consume or store assimilates",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "WATER STATUS",
+      "type": "TRAIT",
+      "description": "The physiological state of water within the plant tissues",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "TURGOR LEVELS",
+      "type": "TRAIT",
+      "description": "The internal pressure of plant cells against the cell wall",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "SOLUTE POTENTIALS",
+      "type": "TRAIT",
+      "description": "The component of water potential resulting from dissolved solutes",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "OSMOTIC ADJUSTMENT",
+      "type": "TRAIT",
+      "description": "The accumulation of solutes to maintain turgor during water stress",
+      "source_id": "paper_4330"
+    },
+    {
+      "name": "STRESS",
+      "type": "CONDITION",
+      "description": "The physiological strain caused by soil moisture deficits",
+      "source_id": "paper_4330"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "IRRIGATION",
+      "description": "Response of groundnut to timing of irrigation",
+      "weight": "10",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "CONTROLLED ENVIRONMENT",
+      "description": "Grown in a controlled environment",
+      "weight": "8",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "SOIL MOISTURE DEFICIT",
+      "description": "Timing of irrigation determines the imposition of soil moisture deficits",
+      "weight": "9",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "SOIL MOISTURE DEFICIT",
+      "target": "STRESS",
+      "description": "Soil moisture deficits cause physiological stress",
+      "weight": "10",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "14C-PARTITIONING",
+      "target": "14CO2 FIXATION",
+      "description": "Method used to track and measure carbon fixation",
+      "weight": "10",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "LEAVES",
+      "target": "14CO2 FIXATION",
+      "description": "Primary sites of 14CO2 fixation",
+      "weight": "10",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "STEMS",
+      "target": "14CO2 FIXATION",
+      "description": "Sites of 14CO2 fixation that increase upon stress release",
+      "weight": "8",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "STEM APICES",
+      "target": "14CO2 FIXATION",
+      "description": "Sites of 14CO2 fixation that increase upon stress release",
+      "weight": "8",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "PEGS",
+      "target": "14CO2 FIXATION",
+      "description": "Sites of 14CO2 fixation that increase upon stress release",
+      "weight": "8",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "LEAVES",
+      "target": "ASSIMILATES",
+      "description": "Primary source of assimilates",
+      "weight": "10",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "ASSIMILATES",
+      "target": "TRANSLOCATION",
+      "description": "Assimilates are moved via translocation",
+      "weight": "10",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "STEMS",
+      "target": "SINKS",
+      "description": "Initially the major sinks for assimilates",
+      "weight": "9",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "PODS",
+      "target": "SINKS",
+      "description": "Exhibit sink activity for assimilates",
+      "weight": "9",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "LEAVES",
+      "target": "WATER STATUS",
+      "description": "Leaf water status shows diurnal variation",
+      "weight": "10",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "PEGS",
+      "target": "TURGOR LEVELS",
+      "description": "Maintain higher turgor levels than leaves",
+      "weight": "9",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "SOLUTE POTENTIALS",
+      "target": "TURGOR LEVELS",
+      "description": "Lower solute potentials allow for higher turgor levels",
+      "weight": "10",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "OSMOTIC ADJUSTMENT",
+      "target": "TURGOR LEVELS",
+      "description": "Allows maintenance of higher turgor levels during severe stress",
+      "weight": "10",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "OSMOTIC ADJUSTMENT",
+      "target": "LEAVES",
+      "description": "Occurs specifically in expanding leaves",
+      "weight": "9",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "STRESS",
+      "target": "OSMOTIC ADJUSTMENT",
+      "description": "Severe stress triggers osmotic adjustment",
+      "weight": "9",
+      "source_id": "paper_4330"
+    },
+    {
+      "source": "STRESS",
+      "target": "14CO2 FIXATION",
+      "description": "Release of stress increases fixation in stems, apices, and pegs",
+      "weight": "8",
+      "source_id": "paper_4330"
+    }
+  ]
+}

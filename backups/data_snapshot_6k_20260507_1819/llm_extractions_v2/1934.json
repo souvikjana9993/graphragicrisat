@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop used in intercropping experiments.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop intercropped with cowpea.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "SHORT SEASON ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by a short growing season.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "SAHEL",
+      "type": "LOCATION",
+      "description": "The geographical region where the field trials were conducted.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of crop productivity.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "PLANTING DATE",
+      "type": "METHOD",
+      "description": "The timing of sowing the crops.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "PLANTING PATTERN",
+      "type": "METHOD",
+      "description": "The spatial arrangement of crops in the field.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously on the same field.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "FIELD TRIALS",
+      "type": "METHOD",
+      "description": "Experimental studies conducted in the field to test crop performance.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "EARLY MATURITY",
+      "type": "TRAIT",
+      "description": "The characteristic of a cultivar that reaches maturity quickly.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "LATE MATURITY",
+      "type": "TRAIT",
+      "description": "The characteristic of a cultivar that takes longer to reach maturity.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "CLOSELY SPACED HILLS",
+      "type": "METHOD",
+      "description": "A planting pattern where hills are placed near each other.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "WIDELY SPACED HILLS",
+      "type": "METHOD",
+      "description": "A planting pattern where hills are placed far apart.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "WEAK COMPETITIVENESS",
+      "type": "TRAIT",
+      "description": "The ability of a crop to avoid competing aggressively with another crop for resources.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced by the crop.",
+      "source_id": "paper_1934"
+    },
+    {
+      "name": "FODDER YIELD",
+      "type": "TRAIT",
+      "description": "The amount of forage produced by the crop.",
+      "source_id": "paper_1934"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COWPEA",
+      "target": "PEARL MILLET",
+      "description": "Intercropped together in field trials",
+      "weight": "9",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "COWPEA",
+      "description": "Significantly affects the yield of cowpea cultivars",
+      "weight": "8",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "PLANTING DATE",
+      "target": "PEARL MILLET",
+      "description": "Affects the yield of pearl millet depending on cowpea maturity",
+      "weight": "7",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "PLANTING PATTERN",
+      "target": "PEARL MILLET",
+      "description": "Affects the yield of pearl millet based on hill spacing",
+      "weight": "7",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "COWPEA",
+      "description": "Cowpea is one of the crops used in the intercropping system",
+      "weight": "10",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "PEARL MILLET",
+      "description": "Pearl millet is one of the crops used in the intercropping system",
+      "weight": "10",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "SHORT SEASON ENVIRONMENT",
+      "target": "SAHEL",
+      "description": "The environmental condition present in the Sahel region",
+      "weight": "8",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "EARLY MATURITY",
+      "target": "COWPEA",
+      "description": "A trait found in some cowpea cultivars",
+      "weight": "9",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "LATE MATURITY",
+      "target": "COWPEA",
+      "description": "A trait found in some cowpea cultivars",
+      "weight": "9",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "CLOSELY SPACED HILLS",
+      "target": "PLANTING PATTERN",
+      "description": "A specific type of planting pattern",
+      "weight": "10",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "WIDELY SPACED HILLS",
+      "target": "PLANTING PATTERN",
+      "description": "A specific type of planting pattern",
+      "weight": "10",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "WEAK COMPETITIVENESS",
+      "target": "COWPEA",
+      "description": "A desired trait for cowpea cultivars when intercropped with pearl millet",
+      "weight": "8",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "COWPEA",
+      "description": "A desired output of cowpea cultivars in intercropping",
+      "weight": "8",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "FODDER YIELD",
+      "target": "COWPEA",
+      "description": "A desired output of cowpea cultivars in intercropping",
+      "weight": "8",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "YIELD",
+      "target": "COWPEA",
+      "description": "The primary trait measured for cowpea",
+      "weight": "10",
+      "source_id": "paper_1934"
+    },
+    {
+      "source": "YIELD",
+      "target": "PEARL MILLET",
+      "description": "The primary trait measured for pearl millet",
+      "weight": "10",
+      "source_id": "paper_1934"
+    }
+  ]
+}

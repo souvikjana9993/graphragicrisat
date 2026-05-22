@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "The crop species for which the simulation model was developed and evaluated.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "CROPGRO-SOYBEAN",
+      "type": "METHOD",
+      "description": "A crop simulation model used to predict growth parameters and evaluate agricultural risks.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "VERTIC INCEPTISOL",
+      "type": "CONDITION",
+      "description": "A specific soil type used for the evaluation of the CROPGRO-Soybean model.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "SEMI-ARID TROPICAL CONDITION",
+      "type": "CONDITION",
+      "description": "The climatic environment where the model evaluation took place.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A growth parameter predicted by the CROPGRO-Soybean model.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "A growth parameter predicted by the CROPGRO-Soybean model.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The final productivity measure predicted by the model and influenced by ET and soil depth.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "EVAPOTRANSPIRATION",
+      "type": "TRAIT",
+      "description": "The combined process of evaporation and transpiration, linearly related to grain yield.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "SOIL WATER-STORAGE CAPACITY",
+      "type": "CONDITION",
+      "description": "A soil property assessed for its influence on grain yield.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "SOIL DEPTH",
+      "type": "CONDITION",
+      "description": "A physical soil attribute that affects yield non-linearly, with a critical threshold of 37 cm.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The overall output of the crop, which is unsustainable below a specific soil depth threshold.",
+      "source_id": "paper_2289"
+    },
+    {
+      "name": "NATURAL RESOURCE MANAGEMENT TECHNOLOGY",
+      "type": "METHOD",
+      "description": "Technologies aimed at preventing the degradation of Vertic Inceptisols.",
+      "source_id": "paper_2289"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROPGRO-SOYBEAN",
+      "target": "SOYBEAN",
+      "description": "simulates the growth and yield of",
+      "weight": "10",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "CROPGRO-SOYBEAN",
+      "target": "VERTIC INCEPTISOL",
+      "description": "was evaluated on",
+      "weight": "9",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "CROPGRO-SOYBEAN",
+      "target": "SEMI-ARID TROPICAL CONDITION",
+      "description": "was evaluated in",
+      "weight": "9",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "CROPGRO-SOYBEAN",
+      "target": "LEAF AREA INDEX",
+      "description": "predicts temporal changes in",
+      "weight": "8",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "CROPGRO-SOYBEAN",
+      "target": "BIOMASS",
+      "description": "predicts temporal changes in",
+      "weight": "8",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "CROPGRO-SOYBEAN",
+      "target": "GRAIN YIELD",
+      "description": "predicts temporal changes in",
+      "weight": "8",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "EVAPOTRANSPIRATION",
+      "description": "is linearly related to",
+      "weight": "9",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "SOIL DEPTH",
+      "description": "is reduced non-linearly as it decreases",
+      "weight": "9",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "SOIL DEPTH",
+      "target": "CROP PRODUCTIVITY",
+      "description": "determines the threshold below which it cannot be sustained",
+      "weight": "10",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "NATURAL RESOURCE MANAGEMENT TECHNOLOGY",
+      "target": "VERTIC INCEPTISOL",
+      "description": "prevents degradation of",
+      "weight": "8",
+      "source_id": "paper_2289"
+    },
+    {
+      "source": "CROPGRO-SOYBEAN",
+      "target": "NATURAL RESOURCE MANAGEMENT TECHNOLOGY",
+      "description": "is used to evaluate risks associated with adapting",
+      "weight": "7",
+      "source_id": "paper_2289"
+    }
+  ]
+}

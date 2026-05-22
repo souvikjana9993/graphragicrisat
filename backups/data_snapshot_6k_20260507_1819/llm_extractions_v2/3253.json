@@ -1,0 +1,177 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM BICOLOR",
+      "type": "CROP",
+      "description": "The host plant species Sorghum bicolor (L.) Moench. used in the study.",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "PANICLE COMPACTNESS",
+      "type": "TRAIT",
+      "description": "The physical density of the sorghum panicle.",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of the sorghum plant to resist insect pests.",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "SORGHUM MIDGE",
+      "type": "ORGANISM",
+      "description": "The insect pest Contarinia sorghicola Coq.",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "HEAD BUGS",
+      "type": "ORGANISM",
+      "description": "The insect pest Calocoris angustatus Leth.",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "HEAD CATERPILLAR",
+      "type": "ORGANISM",
+      "description": "The insect pest Helicoverpa armigera Hb.",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "CAMPYLOMMA SPP",
+      "type": "ORGANISM",
+      "description": "A genus of panicle-feeding insects.",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "POPULATION INCREASE",
+      "type": "CONCEPT",
+      "description": "The rate of growth of insect populations over time.",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "SEQUENTIAL SOWINGS",
+      "type": "METHOD",
+      "description": "The practice of planting crops in a sequence of dates.",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The environmental period during which the study was conducted (1985-86).",
+      "source_id": "paper_3253"
+    },
+    {
+      "name": "LOOSE PANICLES",
+      "type": "TRAIT",
+      "description": "A specific form of panicle compactness characterized by low density.",
+      "source_id": "paper_3253"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PANICLE COMPACTNESS",
+      "target": "POPULATION INCREASE",
+      "description": "Influences the rate of population increase of panicle-feeding insects",
+      "weight": "7",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "POPULATION INCREASE",
+      "description": "Influences the rate of population increase of sorghum midge and head bugs",
+      "weight": "9",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "LOOSE PANICLES",
+      "target": "HEAD CATERPILLAR",
+      "description": "Reduces damage caused by the insect",
+      "weight": "9",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "LOOSE PANICLES",
+      "target": "HEAD BUGS",
+      "description": "Reduces the population increase of the insect",
+      "weight": "8",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "PANICLE COMPACTNESS",
+      "target": "SORGHUM MIDGE",
+      "description": "Does not affect the damage caused by the insect",
+      "weight": "4",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "PANICLE COMPACTNESS",
+      "target": "CAMPYLOMMA SPP",
+      "description": "Does not affect the damage caused by the insect",
+      "weight": "4",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "SORGHUM MIDGE",
+      "description": "Markedly affects the rate of population increase",
+      "weight": "9",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "HEAD BUGS",
+      "description": "Markedly affects the rate of population increase",
+      "weight": "9",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "SEQUENTIAL SOWINGS",
+      "target": "POPULATION INCREASE",
+      "description": "Influences the rate of population increase based on planting date",
+      "weight": "7",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "SORGHUM BICOLOR",
+      "target": "SORGHUM MIDGE",
+      "description": "Acts as the host plant for the insect",
+      "weight": "10",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "SORGHUM BICOLOR",
+      "target": "HEAD BUGS",
+      "description": "Acts as the host plant for the insect",
+      "weight": "10",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "SORGHUM BICOLOR",
+      "target": "HEAD CATERPILLAR",
+      "description": "Acts as the host plant for the insect",
+      "weight": "10",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "SORGHUM BICOLOR",
+      "target": "CAMPYLOMMA SPP",
+      "description": "Acts as the host plant for the insect",
+      "weight": "10",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "SORGHUM BICOLOR",
+      "target": "PANICLE COMPACTNESS",
+      "description": "Possesses the trait of panicle compactness",
+      "weight": "10",
+      "source_id": "paper_3253"
+    },
+    {
+      "source": "SORGHUM BICOLOR",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "Possesses the trait of host plant resistance",
+      "weight": "10",
+      "source_id": "paper_3253"
+    }
+  ]
+}

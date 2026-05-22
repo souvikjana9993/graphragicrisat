@@ -1,0 +1,258 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal crop identified using temporal NDVI signatures in the Rabi season",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A grain legume crop identified using temporal NDVI signatures in the Rabi season",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "MUSTARD",
+      "type": "CROP",
+      "description": "An oilseed crop identified using temporal NDVI signatures in the Rabi season",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "DRYLAND CEREALS",
+      "type": "CROP",
+      "description": "Crops grown in dryland regions essential for food security",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "GRAIN LEGUMES",
+      "type": "CROP",
+      "description": "Crops grown in dryland regions essential for food security",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Tools used to improve the accuracy of assessments of cultivated areas",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "SENTINEL-2",
+      "type": "METHOD",
+      "description": "Satellite data used for crop type identification and spatial mapping",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+      "type": "METHOD",
+      "description": "A vegetation index used in time-series analysis for crop identification",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "type": "METHOD",
+      "description": "An approach based on temporal NDVI signatures and crop phenology to map cultivated areas",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "SPATIAL MAPPING",
+      "type": "METHOD",
+      "description": "The process of identifying and mapping cultivated areas and cropping patterns",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "DRYLANDS",
+      "type": "CONDITION",
+      "description": "Regions characterized by high variability in cropping and erratic weather",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "ERRATIC WEATHER CONDITIONS",
+      "type": "CONDITION",
+      "description": "Weather patterns that cause variability in cropping in drylands",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "RABI SEASON",
+      "type": "CONDITION",
+      "description": "The winter cropping season in India, characterized by non-rainy days",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "SMALL-PLOT AGRICULTURE",
+      "type": "CONDITION",
+      "description": "Agricultural practice characterized by small field sizes",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "IRRIGATED AREAS",
+      "type": "CONDITION",
+      "description": "Areas with artificial water supply where misclassifications of mustard and wheat occurred",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "CLOUD COVER",
+      "type": "CONDITION",
+      "description": "Atmospheric condition that hampers the availability of satellite images",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "Continent where remote sensing tools are used for national accounting of food production",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where the Rabi season study was conducted",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "CROP PHENOLOGY",
+      "type": "CONCEPT",
+      "description": "The study of cyclic and seasonal phenomena in crop development",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "FOOD AND NUTRITIONAL SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to sufficient, affordable, nutritious food",
+      "source_id": "paper_11558"
+    },
+    {
+      "name": "CROP TYPE IDENTIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of distinguishing between different types of crops in a given area",
+      "source_id": "paper_11558"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SENTINEL-2",
+      "target": "REMOTE SENSING",
+      "description": "is a tool of",
+      "weight": "10",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+      "target": "SENTINEL-2",
+      "description": "is derived from",
+      "weight": "9",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+      "description": "utilizes temporal signatures of",
+      "weight": "10",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "target": "CROP PHENOLOGY",
+      "description": "is based on the relationship with",
+      "weight": "9",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "target": "WHEAT",
+      "description": "is used to identify",
+      "weight": "8",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "target": "CHICKPEA",
+      "description": "is used to identify",
+      "weight": "8",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "target": "MUSTARD",
+      "description": "is used to identify",
+      "weight": "8",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "RABI SEASON",
+      "target": "INDIA",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "RABI SEASON",
+      "target": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "description": "is the best suited season for application of",
+      "weight": "8",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "CLOUD COVER",
+      "target": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "description": "hampers the availability of images for",
+      "weight": "7",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "DRYLANDS",
+      "target": "ERRATIC WEATHER CONDITIONS",
+      "description": "is affected by",
+      "weight": "8",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "DRYLAND CEREALS",
+      "target": "DRYLANDS",
+      "description": "are grown in",
+      "weight": "9",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "DRYLANDS",
+      "description": "are grown in",
+      "weight": "9",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "DRYLAND CEREALS",
+      "target": "FOOD AND NUTRITIONAL SECURITY",
+      "description": "are key to ensuring",
+      "weight": "9",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "GRAIN LEGUMES",
+      "target": "FOOD AND NUTRITIONAL SECURITY",
+      "description": "are key to ensuring",
+      "weight": "9",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "CROP TYPE IDENTIFICATION",
+      "target": "SPECTRAL MATCHING TECHNIQUE (SMT)",
+      "description": "is achieved using",
+      "weight": "10",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "SPATIAL MAPPING",
+      "target": "SENTINEL-2",
+      "description": "is performed using",
+      "weight": "9",
+      "source_id": "paper_11558"
+    },
+    {
+      "source": "REMOTE SENSING",
+      "target": "ASIA",
+      "description": "is employed in",
+      "weight": "8",
+      "source_id": "paper_11558"
+    }
+  ]
+}

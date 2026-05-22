@@ -1,0 +1,167 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Cereal crop grown in lowland, paddy, or wetland systems",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "UPLAND CROP",
+      "type": "CROP",
+      "description": "Crops grown in non-wetland, upland systems",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "SOIL ORGANIC CARBON",
+      "type": "TRAIT",
+      "description": "The organic carbon content of the soil, also referred to as SOC",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "SOIL INORGANIC CARBON",
+      "type": "TRAIT",
+      "description": "The inorganic carbon content of the soil, also referred to as SIC",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "TOTAL NITROGEN",
+      "type": "TRAIT",
+      "description": "The total nitrogen status or content of the soil",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "SOIL ORGANIC CARBON TO NITROGEN RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of soil organic carbon to total nitrogen",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "SOIL INORGANIC CARBON TO NITROGEN RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of soil inorganic carbon to total nitrogen",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "ORGANIC MATTER",
+      "type": "TRAIT",
+      "description": "Organic components of the soil",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "LOWLAND RICE DOUBLE CROPPING SYSTEM",
+      "type": "METHOD",
+      "description": "A cropping system where rice is grown twice in lowland conditions",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "ARABLE SYSTEMS",
+      "type": "METHOD",
+      "description": "Non-rice or general agricultural cropping systems",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "RICE IN ROTATION WITH UPLAND CROP",
+      "type": "METHOD",
+      "description": "A system where rice is alternated with upland crops",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "SEMI-ARID TROPICAL REGIONS",
+      "type": "CONDITION",
+      "description": "Environmental regions characterized by semi-arid tropical climates",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the soil samples were collected",
+      "source_id": "paper_1157"
+    },
+    {
+      "name": "PEDOENVIRONMENT",
+      "type": "CONCEPT",
+      "description": "The soil environment and its characteristics",
+      "source_id": "paper_1157"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LOWLAND RICE DOUBLE CROPPING SYSTEM",
+      "target": "SOIL ORGANIC CARBON",
+      "description": "increases content",
+      "weight": "9",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "LOWLAND RICE DOUBLE CROPPING SYSTEM",
+      "target": "TOTAL NITROGEN",
+      "description": "increases content",
+      "weight": "9",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "LOWLAND RICE DOUBLE CROPPING SYSTEM",
+      "target": "SOIL ORGANIC CARBON TO NITROGEN RATIO",
+      "description": "results in wider ratio",
+      "weight": "8",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "LOWLAND RICE DOUBLE CROPPING SYSTEM",
+      "target": "SOIL INORGANIC CARBON TO NITROGEN RATIO",
+      "description": "results in narrower ratio",
+      "weight": "8",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "ARABLE SYSTEMS",
+      "target": "SOIL ORGANIC CARBON TO NITROGEN RATIO",
+      "description": "results in lower ratio",
+      "weight": "8",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "RICE",
+      "target": "ORGANIC MATTER",
+      "description": "accumulates",
+      "weight": "9",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "LOWLAND RICE DOUBLE CROPPING SYSTEM",
+      "target": "PEDOENVIRONMENT",
+      "description": "indicates better status",
+      "weight": "7",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "INDIA",
+      "target": "SEMI-ARID TROPICAL REGIONS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "RICE",
+      "target": "LOWLAND RICE DOUBLE CROPPING SYSTEM",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "UPLAND CROP",
+      "target": "RICE IN ROTATION WITH UPLAND CROP",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_1157"
+    },
+    {
+      "source": "RICE",
+      "target": "RICE IN ROTATION WITH UPLAND CROP",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_1157"
+    }
+  ]
+}

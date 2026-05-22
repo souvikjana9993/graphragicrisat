@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "SAMPLING DISTRIBUTION",
+      "type": "CONCEPT",
+      "description": "The probability distribution of a statistic based on a random sample, analyzed in the context of genotypic correlation.",
+      "source_id": "paper_3508"
+    },
+    {
+      "name": "BIAS",
+      "type": "CONCEPT",
+      "description": "The difference between an estimator's expected value and the true value of the parameter being estimated.",
+      "source_id": "paper_3508"
+    },
+    {
+      "name": "MEAN SQUARE ERROR",
+      "type": "CONCEPT",
+      "description": "A measure of the average squared difference between the estimated values and the actual value of genotypic correlation.",
+      "source_id": "paper_3508"
+    },
+    {
+      "name": "GENOTYPIC CORRELATION",
+      "type": "CONCEPT",
+      "description": "The correlation between the genetic values of traits, estimated from plant breeding data.",
+      "source_id": "paper_3508"
+    },
+    {
+      "name": "PLANT BREEDING DATA",
+      "type": "CONCEPT",
+      "description": "Data collected from plant breeding experiments used for genetic and statistical analysis.",
+      "source_id": "paper_3508"
+    },
+    {
+      "name": "SIMULATION",
+      "type": "METHOD",
+      "description": "The use of computer models to obtain the distributional behavior of genotypic correlation.",
+      "source_id": "paper_3508"
+    },
+    {
+      "name": "APPROXIMATIONS",
+      "type": "METHOD",
+      "description": "Mathematical methods used to estimate bias and mean square error.",
+      "source_id": "paper_3508"
+    },
+    {
+      "name": "YIELD TRIAL",
+      "type": "METHOD",
+      "description": "A field experiment used to evaluate crop performance and provide empirical data.",
+      "source_id": "paper_3508"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The specific crop used in the yield trial to illustrate the statistical findings.",
+      "source_id": "paper_3508"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SIMULATION",
+      "target": "SAMPLING DISTRIBUTION",
+      "description": "used to obtain the distributional behavior of",
+      "weight": "8",
+      "source_id": "paper_3508"
+    },
+    {
+      "source": "APPROXIMATIONS",
+      "target": "BIAS",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_3508"
+    },
+    {
+      "source": "APPROXIMATIONS",
+      "target": "MEAN SQUARE ERROR",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_3508"
+    },
+    {
+      "source": "GENOTYPIC CORRELATION",
+      "target": "PLANT BREEDING DATA",
+      "description": "estimated from",
+      "weight": "10",
+      "source_id": "paper_3508"
+    },
+    {
+      "source": "YIELD TRIAL",
+      "target": "PEARL MILLET",
+      "description": "conducted on",
+      "weight": "10",
+      "source_id": "paper_3508"
+    },
+    {
+      "source": "YIELD TRIAL",
+      "target": "PLANT BREEDING DATA",
+      "description": "source of",
+      "weight": "9",
+      "source_id": "paper_3508"
+    },
+    {
+      "source": "SIMULATION",
+      "target": "GENOTYPIC CORRELATION",
+      "description": "used to analyze the behavior of",
+      "weight": "8",
+      "source_id": "paper_3508"
+    },
+    {
+      "source": "APPROXIMATIONS",
+      "target": "GENOTYPIC CORRELATION",
+      "description": "used to approximate errors in",
+      "weight": "8",
+      "source_id": "paper_3508"
+    }
+  ]
+}

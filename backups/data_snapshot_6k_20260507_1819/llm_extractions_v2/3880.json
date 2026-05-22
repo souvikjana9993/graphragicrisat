@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "BRADYRHIZOBIUM",
+      "type": "ORGANISM",
+      "description": "Nitrogen-fixing bacteria strains that form nodules in groundnut roots",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "VESICULAR-ARBUSCULAR MYCORRHIZAE",
+      "type": "ORGANISM",
+      "description": "Symbiotic fungi that colonize the roots of groundnuts",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the host plant used in the study",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "ROOT COLONIZATION",
+      "type": "TRAIT",
+      "description": "The process and extent of VAM infecting the plant roots",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "ROOT NODULATION",
+      "type": "TRAIT",
+      "description": "The process of Bradyrhizobium forming nodules on the plant roots",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "POT EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Controlled environment studies conducted in pots",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "FIELD EXPERIMENT",
+      "type": "METHOD",
+      "description": "Studies conducted in natural field conditions",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "NODULE NUMBERS",
+      "type": "TRAIT",
+      "description": "The quantity of nodules formed on the roots",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "AMMONIUM NITRATE",
+      "type": "CONDITION",
+      "description": "A nitrogen source supplied to plants in pot experiments",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "POTASSIUM PHOSPHATE",
+      "type": "CONDITION",
+      "description": "A phosphorus source supplied to plants in pot experiments",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "DM YIELDS",
+      "type": "TRAIT",
+      "description": "Dry matter yields of the plants",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "POD YIELDS",
+      "type": "TRAIT",
+      "description": "The yield of pods harvested from the groundnut plant",
+      "source_id": "paper_3880"
+    },
+    {
+      "name": "HAULM YIELDS",
+      "type": "TRAIT",
+      "description": "The yield of the stems and leaves harvested from the groundnut plant",
+      "source_id": "paper_3880"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "GROUNDNUT",
+      "description": "Infects roots to form nodules",
+      "weight": "9",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "VESICULAR-ARBUSCULAR MYCORRHIZAE",
+      "target": "GROUNDNUT",
+      "description": "Colonizes roots",
+      "weight": "9",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "VESICULAR-ARBUSCULAR MYCORRHIZAE",
+      "description": "Influences root colonization of the host plant",
+      "weight": "7",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "VESICULAR-ARBUSCULAR MYCORRHIZAE",
+      "target": "BRADYRHIZOBIUM",
+      "description": "Influences root nodulation of the host plant",
+      "weight": "7",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "ROOT NODULATION",
+      "description": "Responsible for the process of nodulation",
+      "weight": "10",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "VESICULAR-ARBUSCULAR MYCORRHIZAE",
+      "target": "ROOT COLONIZATION",
+      "description": "Responsible for the process of colonization",
+      "weight": "10",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "BRADYRHIZOBIUM",
+      "target": "NODULE NUMBERS",
+      "description": "Affects the number of nodules produced",
+      "weight": "8",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "VESICULAR-ARBUSCULAR MYCORRHIZAE",
+      "target": "NODULE NUMBERS",
+      "description": "Affects the number of nodules produced",
+      "weight": "8",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "AMMONIUM NITRATE",
+      "target": "DM YIELDS",
+      "description": "Increases dry matter yields in pot experiments",
+      "weight": "8",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "POTASSIUM PHOSPHATE",
+      "target": "DM YIELDS",
+      "description": "Increases dry matter yields in pot experiments",
+      "weight": "8",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "POT EXPERIMENTS",
+      "target": "BRADYRHIZOBIUM",
+      "description": "Method used to study the effects of the organism",
+      "weight": "7",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "POT EXPERIMENTS",
+      "target": "VESICULAR-ARBUSCULAR MYCORRHIZAE",
+      "description": "Method used to study the effects of the organism",
+      "weight": "7",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "BRADYRHIZOBIUM",
+      "description": "Method used to study the effects of the organism",
+      "weight": "7",
+      "source_id": "paper_3880"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "VESICULAR-ARBUSCULAR MYCORRHIZAE",
+      "description": "Method used to study the effects of the organism",
+      "weight": "7",
+      "source_id": "paper_3880"
+    }
+  ]
+}

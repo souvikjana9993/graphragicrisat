@@ -1,0 +1,314 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop important in semi-arid and subtropical regions of Africa",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "Region where sorghum is grown in semi-arid and subtropical areas",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "Country where post-flowering drought is a common constraint for sorghum",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "POST-FLOWERING DROUGHT",
+      "type": "CONDITION",
+      "description": "A constraint caused by the early cessation of rains towards the end of the rainy season",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "HEAT",
+      "type": "CONDITION",
+      "description": "Environmental stressor that, combined with drought, reduces sorghum yield",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The production output of the sorghum crop",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "HYBRID PARENTS",
+      "type": "CONCEPT",
+      "description": "Male and female parents used for the development and deployment of commercial sorghum hybrids",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "The 200 sorghum genetic variations evaluated for performance under different water regimes",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "LYSIMETERS",
+      "type": "METHOD",
+      "description": "Equipment used to evaluate genotypes under controlled water regimes",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "WELL-IRRIGATED",
+      "type": "CONDITION",
+      "description": "A water regime providing optimal water conditions",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "WATER-STRESSED",
+      "type": "CONDITION",
+      "description": "A water regime simulating drought conditions",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "Location of the ICRISAT site where genotypes were evaluated",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "PHENOLOGICAL STAGES",
+      "type": "TRAIT",
+      "description": "Agronomic traits related to the timing of growth stages",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A physiological trait measuring the efficiency of water use during transpiration",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "GREEN LEAF NUMBER",
+      "type": "TRAIT",
+      "description": "A morphological trait used to evaluate sorghum performance",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between genetic makeup and environmental conditions affecting trait expression",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of grain yield to total biomass",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "TOTAL BIOMASS",
+      "type": "TRAIT",
+      "description": "The total organic matter produced by the plant",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "GRAIN WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of the harvested grains",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "PRINCIPAL COMPONENT ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to identify groups of genotypes based on performance",
+      "source_id": "paper_13338"
+    },
+    {
+      "name": "BREEDING PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Programs aimed at developing high yield and drought tolerant sorghum hybrids",
+      "source_id": "paper_13338"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "AFRICA",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MALI",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "POST-FLOWERING DROUGHT",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "HEAT",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "POST-FLOWERING DROUGHT",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "HEAT",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "HYBRID PARENTS",
+      "target": "SORGHUM",
+      "description": "are parents of",
+      "weight": "10",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "LYSIMETERS",
+      "description": "evaluated using",
+      "weight": "8",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "WELL-IRRIGATED",
+      "description": "evaluated under",
+      "weight": "8",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "WATER-STRESSED",
+      "description": "evaluated under",
+      "weight": "8",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "GENOTYPES",
+      "target": "NIGER",
+      "description": "evaluated in",
+      "weight": "8",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PHENOLOGICAL STAGES",
+      "description": "has trait",
+      "weight": "7",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "has trait",
+      "weight": "7",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GREEN LEAF NUMBER",
+      "description": "has trait",
+      "weight": "7",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HARVEST INDEX",
+      "description": "has trait",
+      "weight": "7",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "TOTAL BIOMASS",
+      "description": "has trait",
+      "weight": "7",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN WEIGHT",
+      "description": "has trait",
+      "weight": "7",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "target": "HARVEST INDEX",
+      "description": "significant for",
+      "weight": "9",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "target": "GREEN LEAF NUMBER",
+      "description": "significant for",
+      "weight": "9",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "GENOTYPE BY ENVIRONMENT INTERACTION",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "significant for",
+      "weight": "9",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "TOTAL BIOMASS",
+      "description": "positively correlated with",
+      "weight": "9",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "HARVEST INDEX",
+      "description": "positively correlated with",
+      "weight": "9",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "GRAIN WEIGHT",
+      "description": "positively correlated with",
+      "weight": "9",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "PRINCIPAL COMPONENT ANALYSIS",
+      "target": "GENOTYPES",
+      "description": "used to group",
+      "weight": "10",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "BREEDING PROGRAMS",
+      "target": "SORGHUM",
+      "description": "develop hybrids for",
+      "weight": "9",
+      "source_id": "paper_13338"
+    },
+    {
+      "source": "BREEDING PROGRAMS",
+      "target": "POST-FLOWERING DROUGHT",
+      "description": "develop tolerance for",
+      "weight": "9",
+      "source_id": "paper_13338"
+    }
+  ]
+}

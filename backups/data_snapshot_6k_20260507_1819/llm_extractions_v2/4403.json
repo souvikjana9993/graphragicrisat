@@ -1,0 +1,254 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop used in various cropping systems",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "RAINFED SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region characterized by limited rainfall and semi-arid conditions",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "CROPPING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The pattern of crops grown on a piece of land over time",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "SOLE-CROP",
+      "type": "METHOD",
+      "description": "The practice of growing a single crop on a piece of land",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "INTERCROPPING SYSTEMS",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously on the same piece of land",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "ENVIRONMENTAL FACTORS",
+      "type": "CONDITION",
+      "description": "External variables that influence the productivity of cropping systems",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "TEMPORAL INTERCROPPING",
+      "type": "METHOD",
+      "description": "Intercropping where component crops have peak resource demands at different times",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used in temporal intercropping with groundnut",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "ENVIRONMENTAL RESOURCES",
+      "type": "CONDITION",
+      "description": "Resources such as water and nutrients available in the environment",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "SPATIAL INTERCROPPING",
+      "type": "METHOD",
+      "description": "Intercropping where component crops occupy different spatial niches",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "A cereal crop used in spatial intercropping with groundnut",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "LIGHT-ENERGY CONVERSION",
+      "type": "TRAIT",
+      "description": "The efficiency of converting light energy into biomass",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "DROUGHT-STRESS",
+      "type": "CONDITION",
+      "description": "Condition of water deficiency that affects plant growth and yield",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used in drought-stress studies with groundnut",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "DRY-MATTER YIELD",
+      "type": "TRAIT",
+      "description": "The total biomass produced by the crop",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "REPRODUCTIVE YIELD",
+      "type": "TRAIT",
+      "description": "The yield of the economically useful part of the crop",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of reproductive yield to total biomass",
+      "source_id": "paper_4403"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting atmospheric nitrogen into a usable form",
+      "source_id": "paper_4403"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "CROPPING SYSTEMS",
+      "description": "is a primary crop in",
+      "weight": "10",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "RAINFED SEMI-ARID TROPICS",
+      "target": "CROPPING SYSTEMS",
+      "description": "is the location where these are studied",
+      "weight": "8",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "INTERCROPPING SYSTEMS",
+      "description": "is used in",
+      "weight": "10",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SOLE-CROP",
+      "description": "is used in",
+      "weight": "10",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "ENVIRONMENTAL FACTORS",
+      "target": "INTERCROPPING SYSTEMS",
+      "description": "enable them to outyield sole-crop systems",
+      "weight": "7",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "TEMPORAL INTERCROPPING",
+      "description": "is a component crop in",
+      "weight": "9",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "TEMPORAL INTERCROPPING",
+      "description": "is a component crop in",
+      "weight": "9",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "TEMPORAL INTERCROPPING",
+      "target": "ENVIRONMENTAL RESOURCES",
+      "description": "allows for fuller use of",
+      "weight": "8",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SPATIAL INTERCROPPING",
+      "description": "is a component crop in",
+      "weight": "9",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "MILLET",
+      "target": "SPATIAL INTERCROPPING",
+      "description": "is a component crop in",
+      "weight": "9",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "SPATIAL INTERCROPPING",
+      "target": "LIGHT-ENERGY CONVERSION",
+      "description": "is associated with improved",
+      "weight": "8",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "DROUGHT-STRESS",
+      "description": "is studied under",
+      "weight": "8",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "DROUGHT-STRESS",
+      "description": "is studied under",
+      "weight": "8",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "MILLET",
+      "target": "DROUGHT-STRESS",
+      "description": "is studied under",
+      "weight": "8",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "DROUGHT-STRESS",
+      "target": "DRY-MATTER YIELD",
+      "description": "has no effect on relative advantages of intercropping for",
+      "weight": "7",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "DROUGHT-STRESS",
+      "target": "REPRODUCTIVE YIELD",
+      "description": "increases relative advantages of intercropping for",
+      "weight": "8",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "DROUGHT-STRESS",
+      "target": "HARVEST INDEX",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HARVEST INDEX",
+      "description": "has a measured",
+      "weight": "9",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "HARVEST INDEX",
+      "description": "has a measured",
+      "weight": "9",
+      "source_id": "paper_4403"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NITROGEN FIXATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_4403"
+    }
+  ]
+}

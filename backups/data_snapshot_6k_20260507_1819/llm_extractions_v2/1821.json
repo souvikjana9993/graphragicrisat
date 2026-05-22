@@ -1,0 +1,313 @@
+{
+  "entities": [
+    {
+      "name": "SHEEP",
+      "type": "ORGANISM",
+      "description": "Livestock used for grazing in the study",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "GOATS",
+      "type": "ORGANISM",
+      "description": "Livestock used for grazing in the study",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "GRAZING",
+      "type": "CONDITION",
+      "description": "The act of livestock feeding on pasture over a period of time",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "STOCKING RATES",
+      "type": "CONDITION",
+      "description": "The number of animals per unit area of land",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "SOIL SURFACE FEATURES",
+      "type": "TRAIT",
+      "description": "Physical characteristics of the soil surface",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "BULK DENSITY",
+      "type": "TRAIT",
+      "description": "The mass of dry soil per unit volume",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "ORGANIC CARBON",
+      "type": "TRAIT",
+      "description": "The amount of carbon in organic matter within the soil",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "TRAIT",
+      "description": "The content of nitrogen in the soil",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "TRAIT",
+      "description": "The content of phosphorus in the soil",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "PH",
+      "type": "TRAIT",
+      "description": "The acidity or alkalinity level of the soil",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "SADORE",
+      "type": "LOCATION",
+      "description": "The specific study site in Niger",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "INTENSIVE GRAZING",
+      "type": "CONDITION",
+      "description": "High-pressure grazing over a long duration, specifically 9 years in this study",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "CRUSTED SOIL",
+      "type": "CONCEPT",
+      "description": "Soil with a hard surface layer that can affect water infiltration",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "INFILTRATION INDEX",
+      "type": "TRAIT",
+      "description": "The rate at which water enters the soil",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "SHRUB CANOPY",
+      "type": "CONCEPT",
+      "description": "The area of soil sheltered by the foliage of shrubs",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "BIOLOGICAL ACTIVITY",
+      "type": "TRAIT",
+      "description": "The level of biological processes occurring in the soil",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "BARE SOIL",
+      "type": "CONCEPT",
+      "description": "Soil surface lacking vegetation cover",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "COMPACTION",
+      "type": "TRAIT",
+      "description": "The compression of soil particles reducing pore space",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "VEGETATED PATCHES",
+      "type": "CONCEPT",
+      "description": "Small areas of soil covered by vegetation",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "SANDY SOILS",
+      "type": "CONCEPT",
+      "description": "Soils characterized by a high proportion of sand particles",
+      "source_id": "paper_1821"
+    },
+    {
+      "name": "SAHELIAN RANGELANDS",
+      "type": "LOCATION",
+      "description": "The geographic region of the study",
+      "source_id": "paper_1821"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SHEEP",
+      "target": "GRAZING",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "GOATS",
+      "target": "GRAZING",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "GRAZING",
+      "target": "SOIL SURFACE FEATURES",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "GRAZING",
+      "target": "BULK DENSITY",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "GRAZING",
+      "target": "ORGANIC CARBON",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "GRAZING",
+      "target": "NITROGEN",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "GRAZING",
+      "target": "PHOSPHORUS",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "GRAZING",
+      "target": "PH",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "GRAZING",
+      "target": "CRUSTED SOIL",
+      "description": "reduces and fragments",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "STOCKING RATES",
+      "target": "INFILTRATION INDEX",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "INTENSIVE GRAZING",
+      "target": "PHOSPHORUS",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "INTENSIVE GRAZING",
+      "target": "NITROGEN",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "INTENSIVE GRAZING",
+      "target": "ORGANIC CARBON",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "INTENSIVE GRAZING",
+      "target": "COMPACTION",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "SHRUB CANOPY",
+      "target": "BULK DENSITY",
+      "description": "lowers",
+      "weight": "7",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "SHRUB CANOPY",
+      "target": "ORGANIC CARBON",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "SHRUB CANOPY",
+      "target": "NITROGEN",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "SHRUB CANOPY",
+      "target": "PHOSPHORUS",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "SHRUB CANOPY",
+      "target": "INFILTRATION INDEX",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "SHRUB CANOPY",
+      "target": "BIOLOGICAL ACTIVITY",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "BARE SOIL",
+      "target": "ORGANIC CARBON",
+      "description": "has lower content than shrub canopy",
+      "weight": "7",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "SADORE",
+      "target": "NIGER",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "SADORE",
+      "target": "SAHELIAN RANGELANDS",
+      "description": "located in",
+      "weight": "9",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "COMPACTION",
+      "target": "SHRUB CANOPY",
+      "description": "occurs beneath",
+      "weight": "7",
+      "source_id": "paper_1821"
+    },
+    {
+      "source": "COMPACTION",
+      "target": "VEGETATED PATCHES",
+      "description": "occurs under",
+      "weight": "7",
+      "source_id": "paper_1821"
+    }
+  ]
+}

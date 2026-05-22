@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Commercial groundnut products including raw groundnuts, flour, and peanut butter",
+      "source_id": "paper_10220"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONDITION",
+      "description": "A toxic contaminant found in groundnut products, measured in μg/kg",
+      "source_id": "paper_10220"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "The country where the study was performed and where regulatory limits are set",
+      "source_id": "paper_10220"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The broader region encompassing Malawi",
+      "source_id": "paper_10220"
+    },
+    {
+      "name": "FLUOROMETRIC METHOD",
+      "type": "METHOD",
+      "description": "The analytical technique used to measure aflatoxin levels",
+      "source_id": "paper_10220"
+    },
+    {
+      "name": "REGULATORY LIMIT",
+      "type": "CONCEPT",
+      "description": "The maximum allowable level of aflatoxin in food products",
+      "source_id": "paper_10220"
+    },
+    {
+      "name": "EU",
+      "type": "LOCATION",
+      "description": "The European Union, which has a regulatory limit of 4 μg/kg for aflatoxin",
+      "source_id": "paper_10220"
+    },
+    {
+      "name": "USA",
+      "type": "LOCATION",
+      "description": "The United States of America, which has a regulatory limit of 20 μg/kg for aflatoxin",
+      "source_id": "paper_10220"
+    },
+    {
+      "name": "SOCIALLY RESPONSIBLE GROUNDNUT PROCESSING INDUSTRY",
+      "type": "CONCEPT",
+      "description": "A proposed industry model focusing on consumer welfare to manage aflatoxin risk",
+      "source_id": "paper_10220"
+    },
+    {
+      "name": "CONSUMER WELFARE",
+      "type": "CONCEPT",
+      "description": "The central feature of a socially responsible groundnut processing industry",
+      "source_id": "paper_10220"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AFLATOXIN",
+      "target": "GROUNDNUT",
+      "description": "contaminates",
+      "weight": "10",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "MALAWI",
+      "target": "GROUNDNUT",
+      "description": "location of production and sampling",
+      "weight": "9",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "SUB-SAHARAN AFRICA",
+      "target": "MALAWI",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "FLUOROMETRIC METHOD",
+      "target": "AFLATOXIN",
+      "description": "used to analyze",
+      "weight": "10",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "REGULATORY LIMIT",
+      "target": "AFLATOXIN",
+      "description": "defines acceptable levels of",
+      "weight": "9",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "MALAWI",
+      "target": "REGULATORY LIMIT",
+      "description": "establishes",
+      "weight": "8",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "EU",
+      "target": "REGULATORY LIMIT",
+      "description": "establishes",
+      "weight": "8",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "USA",
+      "target": "REGULATORY LIMIT",
+      "description": "establishes",
+      "weight": "8",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "SOCIALLY RESPONSIBLE GROUNDNUT PROCESSING INDUSTRY",
+      "target": "GROUNDNUT",
+      "description": "processes",
+      "weight": "9",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "SOCIALLY RESPONSIBLE GROUNDNUT PROCESSING INDUSTRY",
+      "target": "AFLATOXIN",
+      "description": "manages risk of",
+      "weight": "8",
+      "source_id": "paper_10220"
+    },
+    {
+      "source": "SOCIALLY RESPONSIBLE GROUNDNUT PROCESSING INDUSTRY",
+      "target": "CONSUMER WELFARE",
+      "description": "prioritizes",
+      "weight": "10",
+      "source_id": "paper_10220"
+    }
+  ]
+}

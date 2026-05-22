@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A period of abnormally dry weather that threatens economic well-being and ecology.",
+      "source_id": "paper_6438"
+    },
+    {
+      "name": "DROUGHT MITIGATION",
+      "type": "CONCEPT",
+      "description": "Efforts to reduce the severity or impact of drought.",
+      "source_id": "paper_6438"
+    },
+    {
+      "name": "DROUGHT PREPAREDNESS",
+      "type": "CONCEPT",
+      "description": "The state of being ready to deal with the impacts of drought, considered more effective than relief.",
+      "source_id": "paper_6438"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics, which established the Virtual Academy.",
+      "source_id": "paper_6438"
+    },
+    {
+      "name": "VIRTUAL ACADEMY FOR THE SEMI-ARID TROPICS",
+      "type": "CONCEPT",
+      "description": "A group of activities established by ICRISAT to foster drought preparedness.",
+      "source_id": "paper_6438"
+    },
+    {
+      "name": "OPEN EDUCATIONAL RESOURCES",
+      "type": "CONCEPT",
+      "description": "Reusable learning materials used to create content for rural learners.",
+      "source_id": "paper_6438"
+    },
+    {
+      "name": "REUSABLE LEARNING OBJECTS",
+      "type": "CONCEPT",
+      "description": "The form that Open Educational Resources take for learning content creation.",
+      "source_id": "paper_6438"
+    },
+    {
+      "name": "RURAL WOMEN",
+      "type": "ORGANISM",
+      "description": "The intended group of learners with limited classroom exposure.",
+      "source_id": "paper_6438"
+    },
+    {
+      "name": "FARMERS",
+      "type": "ORGANISM",
+      "description": "Individuals who consult learners as sources of expertise to solve production problems in drought situations.",
+      "source_id": "paper_6438"
+    },
+    {
+      "name": "GEOGRAPHIC INFORMATION SYSTEM",
+      "type": "METHOD",
+      "description": "Specially developed techniques used in the process of drought mitigation support.",
+      "source_id": "paper_6438"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DROUGHT",
+      "target": "DROUGHT MITIGATION",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_6438"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "DROUGHT PREPAREDNESS",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_6438"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "VIRTUAL ACADEMY FOR THE SEMI-ARID TROPICS",
+      "description": "established",
+      "weight": "10",
+      "source_id": "paper_6438"
+    },
+    {
+      "source": "VIRTUAL ACADEMY FOR THE SEMI-ARID TROPICS",
+      "target": "DROUGHT PREPAREDNESS",
+      "description": "fosters",
+      "weight": "9",
+      "source_id": "paper_6438"
+    },
+    {
+      "source": "VIRTUAL ACADEMY FOR THE SEMI-ARID TROPICS",
+      "target": "OPEN EDUCATIONAL RESOURCES",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_6438"
+    },
+    {
+      "source": "OPEN EDUCATIONAL RESOURCES",
+      "target": "REUSABLE LEARNING OBJECTS",
+      "description": "takes the form of",
+      "weight": "10",
+      "source_id": "paper_6438"
+    },
+    {
+      "source": "OPEN EDUCATIONAL RESOURCES",
+      "target": "RURAL WOMEN",
+      "description": "is created for",
+      "weight": "9",
+      "source_id": "paper_6438"
+    },
+    {
+      "source": "RURAL WOMEN",
+      "target": "FARMERS",
+      "description": "serve as expertise sources for",
+      "weight": "8",
+      "source_id": "paper_6438"
+    },
+    {
+      "source": "FARMERS",
+      "target": "DROUGHT",
+      "description": "experience production problems during",
+      "weight": "8",
+      "source_id": "paper_6438"
+    },
+    {
+      "source": "VIRTUAL ACADEMY FOR THE SEMI-ARID TROPICS",
+      "target": "GEOGRAPHIC INFORMATION SYSTEM",
+      "description": "employs",
+      "weight": "7",
+      "source_id": "paper_6438"
+    }
+  ]
+}

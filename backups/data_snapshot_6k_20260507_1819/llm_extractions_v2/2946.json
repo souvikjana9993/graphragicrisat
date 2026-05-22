@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop studied, Arachis hypogaea L., evaluated for vegetative and reproductive growth.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental temperature regimes (22/18, 26/22, or 30/26°C) used to study growth effects.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "PHOTOPERIOD",
+      "type": "CONDITION",
+      "description": "The duration of light exposure, tested as long day (12 h) or short day (9 h).",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "TOTAL DRY MATTER PRODUCTION",
+      "type": "TRAIT",
+      "description": "The total biomass produced by the plant.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "LEAF AREA",
+      "type": "TRAIT",
+      "description": "The total surface area of the leaves.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "SHOOT AND ROOT DRY WEIGHT",
+      "type": "TRAIT",
+      "description": "The combined dry mass of the plant's shoot and root systems.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "POD WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of the developed pods.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "POD NUMBERS",
+      "type": "TRAIT",
+      "description": "The total count of pods produced.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "POD DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The biological process of pod formation and growth.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "CARBON ASSIMILATION",
+      "type": "CONCEPT",
+      "description": "The process by which the plant converts carbon dioxide into organic compounds.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "ROOT GROWTH",
+      "type": "TRAIT",
+      "description": "The development and increase in mass of the root system.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "REPRODUCTIVE DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The growth and development of the plant's reproductive organs.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "REPRODUCTIVE NODES",
+      "type": "TRAIT",
+      "description": "Nodes on the plant that produce reproductive structures.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "VEGETATIVE NODES",
+      "type": "TRAIT",
+      "description": "Nodes on the plant that produce vegetative structures.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "POD TO PEG RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of pods to pegs, used as an indicator of photoperiod sensitivity.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "GENOTYPIC SENSITIVITY",
+      "type": "CONCEPT",
+      "description": "The degree to which different genotypes respond to environmental factors like photoperiod.",
+      "source_id": "paper_2946"
+    },
+    {
+      "name": "CONTROLLED-ENVIRONMENT GROWTH CHAMBERS",
+      "type": "METHOD",
+      "description": "The experimental setup used to maintain specific temperature and photoperiod regimes.",
+      "source_id": "paper_2946"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "GROUNDNUT",
+      "description": "Affects the vegetative and reproductive growth of the crop",
+      "weight": "8",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "GROUNDNUT",
+      "description": "Affects the vegetative and reproductive growth of the crop",
+      "weight": "8",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "TOTAL DRY MATTER PRODUCTION",
+      "description": "Significant interaction effect on biomass production",
+      "weight": "7",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "TOTAL DRY MATTER PRODUCTION",
+      "description": "Higher production observed under long day conditions",
+      "weight": "8",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "LEAF AREA",
+      "description": "Greater leaf area observed under long day conditions",
+      "weight": "8",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "LEAF AREA",
+      "target": "SHOOT AND ROOT DRY WEIGHT",
+      "description": "Accounted for 76% of the variation in dry weight",
+      "weight": "9",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "LEAF AREA",
+      "target": "POD WEIGHT",
+      "description": "Lack of relationship between leaf area and pod weight",
+      "weight": "2",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "LEAF AREA",
+      "target": "POD NUMBERS",
+      "description": "Lack of relationship between leaf area and pod numbers",
+      "weight": "2",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "POD DEVELOPMENT",
+      "target": "CARBON ASSIMILATION",
+      "description": "Controlled by factors other than carbon assimilation",
+      "weight": "3",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "ROOT GROWTH",
+      "description": "Interaction with photoperiod affects root weight",
+      "weight": "7",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "ROOT GROWTH",
+      "description": "Interaction with temperature affects root weight",
+      "weight": "7",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "REPRODUCTIVE DEVELOPMENT",
+      "description": "Low temperature reduces the proportion of reproductive nodes",
+      "weight": "8",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "REPRODUCTIVE NODES",
+      "description": "Low temperature reduces the proportion of reproductive nodes in total nodes",
+      "weight": "8",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "POD TO PEG RATIO",
+      "description": "Lower ratio observed in long day than short day conditions",
+      "weight": "8",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "POD TO PEG RATIO",
+      "target": "GENOTYPIC SENSITIVITY",
+      "description": "Used as an indicator of genotypic sensitivity to photoperiod",
+      "weight": "9",
+      "source_id": "paper_2946"
+    },
+    {
+      "source": "CONTROLLED-ENVIRONMENT GROWTH CHAMBERS",
+      "target": "GROUNDNUT",
+      "description": "Used to grow cultivars under controlled temperature and photoperiod",
+      "weight": "10",
+      "source_id": "paper_2946"
+    }
+  ]
+}

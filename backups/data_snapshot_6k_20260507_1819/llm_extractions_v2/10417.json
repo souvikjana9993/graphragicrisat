@@ -1,0 +1,244 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary agricultural crop studied for production anomalies in India",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the rice production study is focused",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "MONSOON PRECIPITATION",
+      "type": "CONDITION",
+      "description": "Rainfall patterns that influence Indian rice production",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "RICE PRODUCTION ANOMALY",
+      "type": "TRAIT",
+      "description": "The deviation in rice production, specifically the record low in 2002",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "FRESHWATER LIMITATION",
+      "type": "CONDITION",
+      "description": "The lack of available surface freshwater causing yield losses",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "SOUTHEASTERN COASTAL REGIONS",
+      "type": "LOCATION",
+      "description": "Specific areas in India where freshwater limitation caused yield losses",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The implication of rice yield losses on local food availability",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "INTERNATIONAL MARKET STABILITY",
+      "type": "CONCEPT",
+      "description": "The implication of rice yield losses on global market stability",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "METEOROLOGICAL DROUGHT",
+      "type": "CONDITION",
+      "description": "Extreme weather condition characterized by lack of precipitation affecting rice yield",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "RICE YIELD",
+      "type": "TRAIT",
+      "description": "The amount of rice produced per unit area",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "HYDROLOGICAL MODEL",
+      "type": "METHOD",
+      "description": "A model used to integrate output for climate indicators",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "SURFACE OBSERVATIONS",
+      "type": "METHOD",
+      "description": "Ground-based data collection used for climate indicators",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "SATELLITE OBSERVATIONS",
+      "type": "METHOD",
+      "description": "Remote sensing data used for climate indicators and soil moisture",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "STANDARDIZED PRECIPITATION EVAPOTRANSPIRATION INDEX",
+      "type": "METHOD",
+      "description": "An indicator of drought based on local surface water balance anomalies",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "LOCAL SURFACE WATER BALANCE ANOMALIES",
+      "type": "CONDITION",
+      "description": "Anomalies in the balance between precipitation and evapotranspiration",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "PRECIPITATION",
+      "type": "CONDITION",
+      "description": "Local rainfall contributing to the surface water balance",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "EVAPOTRANSPIRATION",
+      "type": "CONDITION",
+      "description": "The process of water transfer from land to atmosphere contributing to the surface water balance",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "RENEWABLE SURFACE FRESHWATER AVAILABILITY",
+      "type": "CONCEPT",
+      "description": "The availability of freshwater from non-local sources",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "STANDARDIZED RIVER DISCHARGE INDEX",
+      "type": "METHOD",
+      "description": "An indicator of renewable surface freshwater availability based on modelled river discharge",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "SOIL MOISTURE OBSERVATIONS",
+      "type": "METHOD",
+      "description": "Data retrieved from satellites to assess soil moisture conditions",
+      "source_id": "paper_10417"
+    },
+    {
+      "name": "SOIL MOISTURE CONDITIONS",
+      "type": "CONDITION",
+      "description": "The state of water in the soil which determines rice yields",
+      "source_id": "paper_10417"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INDIA",
+      "target": "RICE",
+      "description": "is a major producer of",
+      "weight": "10",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "MONSOON PRECIPITATION",
+      "target": "RICE PRODUCTION ANOMALY",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "FRESHWATER LIMITATION",
+      "target": "RICE YIELD",
+      "description": "causes losses in",
+      "weight": "9",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "FRESHWATER LIMITATION",
+      "target": "SOUTHEASTERN COASTAL REGIONS",
+      "description": "occurred in",
+      "weight": "8",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "METEOROLOGICAL DROUGHT",
+      "target": "RICE YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "HYDROLOGICAL MODEL",
+      "target": "STANDARDIZED RIVER DISCHARGE INDEX",
+      "description": "used to calculate",
+      "weight": "8",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "SATELLITE OBSERVATIONS",
+      "target": "SOIL MOISTURE OBSERVATIONS",
+      "description": "used to obtain",
+      "weight": "10",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "STANDARDIZED PRECIPITATION EVAPOTRANSPIRATION INDEX",
+      "target": "LOCAL SURFACE WATER BALANCE ANOMALIES",
+      "description": "indicates",
+      "weight": "9",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "LOCAL SURFACE WATER BALANCE ANOMALIES",
+      "target": "PRECIPITATION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "LOCAL SURFACE WATER BALANCE ANOMALIES",
+      "target": "EVAPOTRANSPIRATION",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "STANDARDIZED RIVER DISCHARGE INDEX",
+      "target": "RENEWABLE SURFACE FRESHWATER AVAILABILITY",
+      "description": "indicates",
+      "weight": "9",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "SOIL MOISTURE CONDITIONS",
+      "target": "RICE YIELD",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "MONSOON PRECIPITATION",
+      "target": "SOIL MOISTURE CONDITIONS",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "RENEWABLE SURFACE FRESHWATER AVAILABILITY",
+      "target": "SOIL MOISTURE CONDITIONS",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "RICE YIELD",
+      "target": "FOOD SECURITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10417"
+    },
+    {
+      "source": "RICE YIELD",
+      "target": "INTERNATIONAL MARKET STABILITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10417"
+    }
+  ]
+}

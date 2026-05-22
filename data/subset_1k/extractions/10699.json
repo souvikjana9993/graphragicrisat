@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The primary cereal crop evaluated for grain yields and income in Southern Mali",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "SOUTHERN MALI",
+      "type": "LOCATION",
+      "description": "The specific region in Mali where the on-farm trials were conducted",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "The country where the research was carried out",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The quantity of sorghum grain produced per hectare",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "CASH INCOME",
+      "type": "TRAIT",
+      "description": "The monetary revenue generated from sorghum production",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "NET RETURNS",
+      "type": "TRAIT",
+      "description": "The financial profit after accounting for production costs",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "STOCHASTIC DOMINANCE ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to compare the cumulative distributions of yields and income across treatments",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "ON-FARM TRIALS",
+      "type": "METHOD",
+      "description": "The experimental method used to collect survey data from farmers' fields",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "CONTROL TREATMENT",
+      "type": "CONDITION",
+      "description": "The baseline production system without the addition of manure or mineral fertilizer",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "MANURE",
+      "type": "CONDITION",
+      "description": "The application of organic manure as a soil amendment",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "MINERAL FERTILIZER",
+      "type": "CONDITION",
+      "description": "The application of chemical mineral fertilizer as a soil amendment",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "MANURE AND MINERAL FERTILIZER",
+      "type": "CONDITION",
+      "description": "The combined application of both organic manure and chemical mineral fertilizer",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "RISK-EFFICIENT CHOICE",
+      "type": "CONCEPT",
+      "description": "The decision-making process for selecting a production system based on risk and return",
+      "source_id": "paper_10699"
+    },
+    {
+      "name": "AFRICA RISING PROJECT",
+      "type": "CONCEPT",
+      "description": "The project framework under which the sorghum production analysis was conducted",
+      "source_id": "paper_10699"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SOUTHERN MALI",
+      "description": "produced in",
+      "weight": "10",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN YIELD",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CASH INCOME",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NET RETURNS",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "STOCHASTIC DOMINANCE ANALYSIS",
+      "target": "GRAIN YIELD",
+      "description": "used to evaluate",
+      "weight": "10",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "STOCHASTIC DOMINANCE ANALYSIS",
+      "target": "CASH INCOME",
+      "description": "used to evaluate",
+      "weight": "10",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "ON-FARM TRIALS",
+      "target": "SORGHUM",
+      "description": "used to test",
+      "weight": "10",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "CONTROL TREATMENT",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "MANURE",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "MINERAL FERTILIZER",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "MANURE AND MINERAL FERTILIZER",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "MANURE AND MINERAL FERTILIZER",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "MANURE AND MINERAL FERTILIZER",
+      "target": "NET RETURNS",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "AFRICA RISING PROJECT",
+      "target": "SORGHUM",
+      "description": "focuses on",
+      "weight": "8",
+      "source_id": "paper_10699"
+    },
+    {
+      "source": "RISK-EFFICIENT CHOICE",
+      "target": "NET RETURNS",
+      "description": "influenced by",
+      "weight": "7",
+      "source_id": "paper_10699"
+    }
+  ]
+}

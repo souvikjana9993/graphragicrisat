@@ -1,0 +1,193 @@
+{
+  "entities": [
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "An emerging methodology used to select superior lines among experimental cultivars in plant breeding programs to increase productivity and genetic gains while reducing breeding cycles",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop species for which genomic selection models were implemented to improve hybrid prediction and breeding programs",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The phenotypic trait used to evaluate and compare the performance of genomic selection models",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "WHOLE GENOME SEQUENCING",
+      "type": "METHOD",
+      "description": "A technique that provides the inexpensive and dense marker information required for successful genomic selection",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "MOLECULAR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Dense genetic information used as input for genomic selection models, obtained from genotyping platforms",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "CONVENTIONAL GBS RAD-SEQ",
+      "type": "METHOD",
+      "description": "A genotyping platform (C) used to obtain dense molecular marker information for pearl millet",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "TUNABLE GBS TGBS",
+      "type": "METHOD",
+      "description": "A genotyping platform (T) used to obtain dense molecular marker information, identified as a superior strategy for genomic selection",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "CROSS-VALIDATION SCHEMES",
+      "type": "METHOD",
+      "description": "Evaluation frameworks (CV0, CV1, CV2) used to test genomic selection models by mimicking real-world breeding scenarios",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "CV2",
+      "type": "METHOD",
+      "description": "A cross-validation scheme that mimics the situation of an incomplete field trial",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "CV1",
+      "type": "METHOD",
+      "description": "A cross-validation scheme used to predict the performance of untested hybrids",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "CV0",
+      "type": "METHOD",
+      "description": "A cross-validation scheme used to predict the performance of hybrids in unobserved environments",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "INCOMPLETE FIELD TRIAL",
+      "type": "CONDITION",
+      "description": "A real-world breeding situation mimicked by the CV2 cross-validation scheme",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "UNTESTED HYBRIDS",
+      "type": "CONCEPT",
+      "description": "Hybrids whose performance is predicted using the CV1 cross-validation scheme",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "UNOBSERVED ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Environmental conditions not present in the training set, mimicked by the CV0 cross-validation scheme",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "PHENOTYPIC INFORMATION OF PARENTAL INBREDS",
+      "type": "CONCEPT",
+      "description": "Data regarding the traits of parental lines added to calibration sets to improve the predictive ability of GS models",
+      "source_id": "paper_11365"
+    },
+    {
+      "name": "GENOTYPE-BY-ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between genetic makeup and environmental factors, which, when accounted for, increases model performance",
+      "source_id": "paper_11365"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "PEARL MILLET",
+      "description": "is applied to improve selection in breeding programs for",
+      "weight": "10",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GRAIN YIELD",
+      "description": "is used to predict",
+      "weight": "9",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "MOLECULAR MARKERS",
+      "description": "requires dense information from",
+      "weight": "10",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "WHOLE GENOME SEQUENCING",
+      "target": "MOLECULAR MARKERS",
+      "description": "provides the dense information needed for",
+      "weight": "9",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "CONVENTIONAL GBS RAD-SEQ",
+      "target": "MOLECULAR MARKERS",
+      "description": "is a platform used to obtain",
+      "weight": "8",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "TUNABLE GBS TGBS",
+      "target": "MOLECULAR MARKERS",
+      "description": "is a platform used to obtain",
+      "weight": "8",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "CROSS-VALIDATION SCHEMES",
+      "target": "GENOMIC SELECTION",
+      "description": "are used to evaluate the performance of",
+      "weight": "9",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "CV2",
+      "target": "INCOMPLETE FIELD TRIAL",
+      "description": "mimics the situation of",
+      "weight": "10",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "CV1",
+      "target": "UNTESTED HYBRIDS",
+      "description": "predicts the performance of",
+      "weight": "10",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "CV0",
+      "target": "UNOBSERVED ENVIRONMENTS",
+      "description": "predicts the performance of hybrids in",
+      "weight": "10",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "PHENOTYPIC INFORMATION OF PARENTAL INBREDS",
+      "target": "GENOMIC SELECTION",
+      "description": "improves the predictive ability of",
+      "weight": "8",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "GENOTYPE-BY-ENVIRONMENT INTERACTION",
+      "target": "GENOMIC SELECTION",
+      "description": "accounting for it increases the performance of",
+      "weight": "8",
+      "source_id": "paper_11365"
+    },
+    {
+      "source": "TUNABLE GBS TGBS",
+      "target": "GENOMIC SELECTION",
+      "description": "provides superior markers for",
+      "weight": "8",
+      "source_id": "paper_11365"
+    }
+  ]
+}

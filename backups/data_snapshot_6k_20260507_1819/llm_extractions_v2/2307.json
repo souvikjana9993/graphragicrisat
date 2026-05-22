@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop variety being studied for character association and path analysis.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "HILL COUNT",
+      "type": "TRAIT",
+      "description": "The number of hills per unit area.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "BLOOM",
+      "type": "TRAIT",
+      "description": "The flowering stage or characteristic of the plant.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "The vertical measurement of the sorghum plant.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "PANICLE LENGTH",
+      "type": "TRAIT",
+      "description": "The length of the panicle.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "PANICLE COUNT",
+      "type": "TRAIT",
+      "description": "The number of panicles per plant.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "1000 SEED MASS",
+      "type": "TRAIT",
+      "description": "The mass of 1000 seeds or grains.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "HEAD WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of the sorghum head.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of grain produced.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "ASSOCIATION ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to study the relationship between different characters.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "PATH ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical method used to partition correlation into direct and indirect effects.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "PHENOTYPIC CORRELATION",
+      "type": "CONCEPT",
+      "description": "Correlation based on the observable characteristics of the plant.",
+      "source_id": "paper_2307"
+    },
+    {
+      "name": "GENOTYPIC CORRELATION",
+      "type": "CONCEPT",
+      "description": "Correlation based on the genetic makeup of the plant.",
+      "source_id": "paper_2307"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASSOCIATION ANALYSIS",
+      "target": "SORGHUM",
+      "description": "used to study characters in",
+      "weight": "8",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "PATH ANALYSIS",
+      "target": "SORGHUM",
+      "description": "used to study characters in",
+      "weight": "8",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "HEAD WEIGHT",
+      "description": "significant high positive correlation (r=0.976)",
+      "weight": "10",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "1000 SEED MASS",
+      "description": "significant high positive correlation (r=0.522)",
+      "weight": "7",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "1000 SEED MASS",
+      "target": "HEAD WEIGHT",
+      "description": "significant high positive correlation (r=0.528)",
+      "weight": "7",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "PANICLE COUNT",
+      "target": "PANICLE LENGTH",
+      "description": "significant negative correlation",
+      "weight": "6",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "HEAD WEIGHT",
+      "target": "GRAIN YIELD",
+      "description": "highest direct effect (0.961)",
+      "weight": "10",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "1000 SEED MASS",
+      "target": "GRAIN YIELD",
+      "description": "indirect effect via head weight (0.507)",
+      "weight": "6",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "PANICLE COUNT",
+      "target": "GRAIN YIELD",
+      "description": "indirect effect via head weight (0.420)",
+      "weight": "6",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "HILL COUNT",
+      "target": "PANICLE COUNT",
+      "description": "high positive phenotypic and genotypic correlation",
+      "weight": "7",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "PANICLE COUNT",
+      "target": "HEAD WEIGHT",
+      "description": "high positive phenotypic and genotypic correlation",
+      "weight": "7",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "PANICLE COUNT",
+      "target": "GRAIN YIELD",
+      "description": "high positive phenotypic and genotypic correlation",
+      "weight": "7",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "HEAD WEIGHT",
+      "target": "GRAIN YIELD",
+      "description": "high positive phenotypic and genotypic correlation",
+      "weight": "10",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "PLANT HEIGHT",
+      "target": "HEAD WEIGHT",
+      "description": "high positive phenotypic (rp=0.550) and genotypic (rg=0.881) correlation",
+      "weight": "8",
+      "source_id": "paper_2307"
+    },
+    {
+      "source": "PLANT HEIGHT",
+      "target": "GRAIN YIELD",
+      "description": "high positive phenotypic (rp=0.555) and genotypic (rg=0.904) correlation",
+      "weight": "8",
+      "source_id": "paper_2307"
+    }
+  ]
+}

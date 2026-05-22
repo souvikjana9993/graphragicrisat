@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop affected by various virus diseases in the Semi-Arid Tropics",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "VIRUS DISEASES",
+      "type": "CONDITION",
+      "description": "Diseases caused by viruses affecting groundnut, some of which are economically important",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where several groundnut virus diseases occur",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "PEANUT MOTTLE VIRUS",
+      "type": "ORGANISM",
+      "description": "A widespread virus that causes considerable yield losses in groundnut",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "YIELD LOSSES",
+      "type": "TRAIT",
+      "description": "The reduction in crop productivity caused by virus infections",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE",
+      "type": "CONDITION",
+      "description": "A virus disease of groundnut important in Africa south of the Sahara",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "The continent where groundnut rosette is an important disease",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "PEANUT CLUMP VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus causing peanut clump disease in West Africa and India",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "A region where peanut clump virus occurs",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A region where peanut clump virus and bud necrosis occur",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "BUD NECROSIS",
+      "type": "CONDITION",
+      "description": "A groundnut disease caused by tomato spotted wilt virus",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "TOMATO SPOTTED WILT VIRUS",
+      "type": "ORGANISM",
+      "description": "The virus responsible for causing bud necrosis in groundnut",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "WITCHES' BROOM",
+      "type": "CONDITION",
+      "description": "A groundnut disease associated with mycoplasma-like organisms",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "MYCOPLASMA-LIKE ORGANISMS",
+      "type": "ORGANISM",
+      "description": "Organisms associated with the cause of witches' broom disease",
+      "source_id": "paper_3617"
+    },
+    {
+      "name": "SOUTHEAST ASIA",
+      "type": "LOCATION",
+      "description": "The region where witches' broom disease occurs",
+      "source_id": "paper_3617"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "VIRUS DISEASES",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "VIRUS DISEASES",
+      "target": "SEMI-ARID TROPICS",
+      "description": "occur in",
+      "weight": "8",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "PEANUT MOTTLE VIRUS",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "PEANUT MOTTLE VIRUS",
+      "target": "YIELD LOSSES",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE",
+      "target": "AFRICA",
+      "description": "is important in",
+      "weight": "8",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "PEANUT CLUMP VIRUS",
+      "target": "GROUNDNUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "PEANUT CLUMP VIRUS",
+      "target": "WEST AFRICA",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "PEANUT CLUMP VIRUS",
+      "target": "INDIA",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "BUD NECROSIS",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "BUD NECROSIS",
+      "target": "INDIA",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "TOMATO SPOTTED WILT VIRUS",
+      "target": "BUD NECROSIS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "WITCHES' BROOM",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "WITCHES' BROOM",
+      "target": "SOUTHEAST ASIA",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_3617"
+    },
+    {
+      "source": "MYCOPLASMA-LIKE ORGANISMS",
+      "target": "WITCHES' BROOM",
+      "description": "is associated with",
+      "weight": "10",
+      "source_id": "paper_3617"
+    }
+  ]
+}

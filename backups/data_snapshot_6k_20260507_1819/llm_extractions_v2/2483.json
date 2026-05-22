@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "An important oilseed and food crop grown in Andhra Pradesh, India",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where groundnut is grown as a rainfed crop",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where Andhra Pradesh is located",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "RAINFED CONDITION",
+      "type": "CONDITION",
+      "description": "Growing conditions dependent on rainfall during the rainy season",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A major abiotic stress affecting the yield and quality of rainfed groundnut",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced, which is negatively affected by drought",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "QUALITY",
+      "type": "TRAIT",
+      "description": "The standard of the crop produced, which is affected by drought",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "IRRADIANCE",
+      "type": "CONDITION",
+      "description": "A location-specific environmental factor affecting yield losses",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A location-specific environmental factor affecting yield losses",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of crop output per unit area in the rainy season",
+      "source_id": "paper_2483"
+    },
+    {
+      "name": "ABHAYA",
+      "type": "CROP",
+      "description": "A high-yielding and drought-tolerant variety of groundnut",
+      "source_id": "paper_2483"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "ANDHRA PRADESH",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RAINFED CONDITION",
+      "description": "grown as",
+      "weight": "7",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "YIELD",
+      "description": "causes losses in",
+      "weight": "9",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "QUALITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "IRRADIANCE",
+      "target": "YIELD",
+      "description": "influences losses in",
+      "weight": "6",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "YIELD",
+      "description": "influences losses in",
+      "weight": "6",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "ABHAYA",
+      "target": "GROUNDNUT",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "ABHAYA",
+      "target": "YIELD",
+      "description": "is high-yielding",
+      "weight": "8",
+      "source_id": "paper_2483"
+    },
+    {
+      "source": "ABHAYA",
+      "target": "DROUGHT",
+      "description": "is tolerant to",
+      "weight": "9",
+      "source_id": "paper_2483"
+    }
+  ]
+}

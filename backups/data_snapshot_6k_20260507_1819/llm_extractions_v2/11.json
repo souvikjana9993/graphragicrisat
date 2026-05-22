@@ -1,0 +1,211 @@
+{
+  "entities": [
+    {
+      "name": "KABULI CHICKPEA",
+      "type": "CROP",
+      "description": "Kabuli chickpea (Cicer arietinum L.) with large seeds",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "CICER ARIETINUM L.",
+      "type": "ORGANISM",
+      "description": "Scientific name for Kabuli Chickpea",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "Important trait in kabuli chickpea, specifically 100-seed weight",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "100-SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "Weight of 100 seeds, used as a measure of seed size; >40g and >50g are significant thresholds",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of product obtained from a crop",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "MARKET PRICE",
+      "type": "CONCEPT",
+      "description": "The price at which kabuli chickpeas are sold",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "CONSUMERS",
+      "type": "ORGANISM",
+      "description": "Individuals who prefer larger-seeded chickpeas",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "LANDRACES",
+      "type": "CROP",
+      "description": "Locally adapted, traditional varieties of chickpea",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "BREEDING LINES",
+      "type": "CROP",
+      "description": "Chickpea lines developed through breeding programs",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "CULTIVARS",
+      "type": "CROP",
+      "description": "Cultivated varieties of chickpea",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "MORPHOLOGICAL TRAITS",
+      "type": "TRAIT",
+      "description": "Observable characteristics of the chickpea plants",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "ICRISAT GERMPLASM COLLECTION",
+      "type": "LOCATION",
+      "description": "A collection of chickpea genetic resources maintained by ICRISAT",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "The different growing conditions in which the chickpeas were evaluated",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "ICC 17109 (BLANCO SINALOA 92)",
+      "type": "GENE_MARKER",
+      "description": "A specific breeding line of kabuli chickpea originating from Mexico",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "ICC 17452 (CUGA 288)",
+      "type": "GENE_MARKER",
+      "description": "A specific landrace of kabuli chickpea originating from Mexico",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "MEXICO",
+      "type": "LOCATION",
+      "description": "Country of origin for ICC 17109 and ICC 17452",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "STRESS",
+      "type": "CONDITION",
+      "description": "Unfavorable environmental conditions",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "VEGETATIVE CHARACTERISTICS",
+      "type": "TRAIT",
+      "description": "Characteristics of the plant excluding reproductive parts",
+      "source_id": "paper_11"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "Yield based on the grain produced",
+      "source_id": "paper_11"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PREFERENCE",
+      "target": "CONSUMERS",
+      "description": "KABULI CHICKPEA",
+      "weight": "Consumers prefer kabuli chickpeas with larger seed size",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "AFFECTS",
+      "target": "SEED SIZE",
+      "description": "MARKET PRICE",
+      "weight": "Larger seed size leads to higher market price",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "EVALUATES",
+      "target": "ICRISAT GERMPLASM COLLECTION",
+      "description": "LANDRACES",
+      "weight": "ICRISAT germplasm collection contains landraces",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "EVALUATES",
+      "target": "ICRISAT GERMPLASM COLLECTION",
+      "description": "BREEDING LINES",
+      "weight": "ICRISAT germplasm collection contains breeding lines",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "EVALUATES",
+      "target": "ICRISAT GERMPLASM COLLECTION",
+      "description": "CULTIVARS",
+      "weight": "ICRISAT germplasm collection contains cultivars",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "EXHIBITS",
+      "target": "ICC 17109 (BLANCO SINALOA 92)",
+      "description": "YIELD",
+      "weight": "ICC 17109 exhibits high yield potential",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "EXHIBITS",
+      "target": "ICC 17452 (CUGA 288)",
+      "description": "YIELD",
+      "weight": "ICC 17452 exhibits high yield potential",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "ORIGINATES_FROM",
+      "target": "ICC 17109 (BLANCO SINALOA 92)",
+      "description": "MEXICO",
+      "weight": "ICC 17109 originates from Mexico",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "ORIGINATES_FROM",
+      "target": "ICC 17452 (CUGA 288)",
+      "description": "MEXICO",
+      "weight": "ICC 17452 originates from Mexico",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "SENSITIVE_TO",
+      "target": "VEGETATIVE CHARACTERISTICS",
+      "description": "STRESS",
+      "weight": "Vegetative characteristics are more sensitive to stress than yield",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "BASED_ON",
+      "target": "SELECTION",
+      "description": "GRAIN YIELD",
+      "weight": "Selection in unfavorable environments should be based on grain yield",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "COMPONENT_OF",
+      "target": "GRAIN YIELD",
+      "description": "YIELD COMPONENTS",
+      "weight": "Grain yield is composed of yield components",
+      "source_id": "paper_11"
+    },
+    {
+      "source": "IMPACTED_BY",
+      "target": "YIELD",
+      "description": "ENVIRONMENTS",
+      "weight": "Yield is impacted by environments",
+      "source_id": "paper_11"
+    }
+  ]
+}

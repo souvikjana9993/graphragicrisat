@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being evaluated for resistance to pod borer",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The pod borer pest that attacks chickpea leaves, flowers, and pods",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea cultivars to withstand attack by Helicoverpa armigera",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The weight of grain produced per unit area, measured in kg/ha",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "POD DAMAGE",
+      "type": "TRAIT",
+      "description": "The percentage of pods damaged by Helicoverpa armigera",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "EGG POPULATION",
+      "type": "TRAIT",
+      "description": "The number of eggs laid by Helicoverpa armigera on the crop",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "LARVAL POPULATION",
+      "type": "TRAIT",
+      "description": "The number of larvae of Helicoverpa armigera present on the crop",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating multiple cultivars to identify those with specific traits",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "DAMAGED RATING SCALE",
+      "type": "METHOD",
+      "description": "A scale used to categorize the level of damage caused by Helicoverpa armigera",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "IPM PROGRAMME",
+      "type": "METHOD",
+      "description": "Integrated Pest Management program for controlling pests at a large farm level",
+      "source_id": "paper_10333"
+    },
+    {
+      "name": "UNPROTECTED CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environmental setting where cultivars are exposed to pests without artificial protection",
+      "source_id": "paper_10333"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCREENING",
+      "target": "CHICKPEA",
+      "description": "Screening was conducted on elite chickpea cultivars",
+      "weight": "10",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "SCREENING",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "Screening was used to evaluate resistance to this pest",
+      "weight": "10",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "The pest that attacks the leaves, flowers, and pods of the crop",
+      "weight": "10",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "POD DAMAGE",
+      "description": "The pest causes damage to the pods of the crop",
+      "weight": "10",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "EGG POPULATION",
+      "description": "The population of eggs produced by the pest on the crop",
+      "weight": "9",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "LARVAL POPULATION",
+      "description": "The population of larvae produced by the pest on the crop",
+      "weight": "9",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "GRAIN YIELD",
+      "description": "The productivity of the crop measured by grain yield",
+      "weight": "10",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "RESISTANCE",
+      "description": "The trait being evaluated in chickpea cultivars against the pest",
+      "weight": "10",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "DAMAGED RATING SCALE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "The scale used to assess the damage caused by the pest",
+      "weight": "9",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "IPM PROGRAMME",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "The program used to manage the pest population",
+      "weight": "10",
+      "source_id": "paper_10333"
+    },
+    {
+      "source": "SCREENING",
+      "target": "UNPROTECTED CONDITIONS",
+      "description": "The screening process was carried out under these conditions",
+      "weight": "8",
+      "source_id": "paper_10333"
+    }
+  ]
+}

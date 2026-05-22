@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being evaluated for disease resistance",
+      "source_id": "paper_1495"
+    },
+    {
+      "name": "EARLY-FLOWERING",
+      "type": "TRAIT",
+      "description": "A flowering characteristic of the sorghum germplasm accessions",
+      "source_id": "paper_1495"
+    },
+    {
+      "name": "DOWNY MILDEW RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist infection by Peronosclerospora sorghi",
+      "source_id": "paper_1495"
+    },
+    {
+      "name": "PERONOSCLEROSPORA SORGHI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew in sorghum",
+      "source_id": "paper_1495"
+    },
+    {
+      "name": "GREENHOUSE TRIALS",
+      "type": "METHOD",
+      "description": "Controlled environment experiments used to evaluate plant resistance",
+      "source_id": "paper_1495"
+    },
+    {
+      "name": "PATANCHERU, INDIA",
+      "type": "LOCATION",
+      "description": "The site where the greenhouse trials were conducted",
+      "source_id": "paper_1495"
+    },
+    {
+      "name": "SCREENING TESTS",
+      "type": "METHOD",
+      "description": "Additional tests used to confirm the resistance of identified accessions",
+      "source_id": "paper_1495"
+    },
+    {
+      "name": "GERMPLASM ACCESSIONS",
+      "type": "CONCEPT",
+      "description": "The collection of genetic resources evaluated in the study",
+      "source_id": "paper_1495"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "DOWNY MILDEW RESISTANCE",
+      "description": "evaluated for",
+      "weight": "10",
+      "source_id": "paper_1495"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "EARLY-FLOWERING",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_1495"
+    },
+    {
+      "source": "PERONOSCLEROSPORA SORGHI",
+      "target": "DOWNY MILDEW RESISTANCE",
+      "description": "is the causal agent for",
+      "weight": "10",
+      "source_id": "paper_1495"
+    },
+    {
+      "source": "GREENHOUSE TRIALS",
+      "target": "SORGHUM",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_1495"
+    },
+    {
+      "source": "GREENHOUSE TRIALS",
+      "target": "PATANCHERU, INDIA",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_1495"
+    },
+    {
+      "source": "SCREENING TESTS",
+      "target": "DOWNY MILDEW RESISTANCE",
+      "description": "used to confirm",
+      "weight": "9",
+      "source_id": "paper_1495"
+    },
+    {
+      "source": "GERMPLASM ACCESSIONS",
+      "target": "SORGHUM",
+      "description": "consists of",
+      "weight": "10",
+      "source_id": "paper_1495"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop affected by dry root rot disease",
+      "source_id": "paper_10656"
+    },
+    {
+      "name": "DRY ROOT ROT",
+      "type": "CONDITION",
+      "description": "A soil-borne disease that causes significant yield loss in chickpea",
+      "source_id": "paper_10656"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes dry root rot",
+      "source_id": "paper_10656"
+    },
+    {
+      "name": "KARNATAKA",
+      "type": "LOCATION",
+      "description": "The region where dry root rot is becoming severe in chickpea growing areas",
+      "source_id": "paper_10656"
+    },
+    {
+      "name": "BIO-CONTROL AGENTS",
+      "type": "METHOD",
+      "description": "Biological agents used as a management strategy to control dry root rot",
+      "source_id": "paper_10656"
+    },
+    {
+      "name": "FUNGICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents used as a management strategy to control dry root rot",
+      "source_id": "paper_10656"
+    },
+    {
+      "name": "YIELDS",
+      "type": "TRAIT",
+      "description": "The productivity of the chickpea crop, which is reduced by dry root rot",
+      "source_id": "paper_10656"
+    },
+    {
+      "name": "INTEGRATED MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The combined approach of using various strategies to manage dry root rot",
+      "source_id": "paper_10656"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "DRY ROOT ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10656"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10656"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "YIELDS",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10656"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "KARNATAKA",
+      "description": "prevalent in",
+      "weight": "8",
+      "source_id": "paper_10656"
+    },
+    {
+      "source": "BIO-CONTROL AGENTS",
+      "target": "DRY ROOT ROT",
+      "description": "manages",
+      "weight": "8",
+      "source_id": "paper_10656"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "DRY ROOT ROT",
+      "description": "manages",
+      "weight": "8",
+      "source_id": "paper_10656"
+    },
+    {
+      "source": "INTEGRATED MANAGEMENT",
+      "target": "DRY ROOT ROT",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_10656"
+    }
+  ]
+}

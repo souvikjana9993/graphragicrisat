@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor, a crop showing variation in vegetative-phase duration and photoperiod sensitivity",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "VEGETATIVE-PHASE DURATION",
+      "type": "TRAIT",
+      "description": "The length of time a plant remains in the vegetative stage before flowering",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "CONDITION",
+      "description": "The date on which seeds are planted",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period of the year characterized by increased rainfall",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "PHOTOPERIOD SENSITIVITY",
+      "type": "TRAIT",
+      "description": "The response of a plant to the length of day or night",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "FLOWERING DATE",
+      "type": "TRAIT",
+      "description": "The date on which a plant begins to flower",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "TROPICAL AREAS OF THE NORTHERN HEMISPHERE",
+      "type": "LOCATION",
+      "description": "Geographic regions in the northern hemisphere characterized by tropical climates",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "CONDITION",
+      "description": "The ability of soil to sustain plant growth",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "Gossypium spp, a crop used in cropping systems in Burkina Faso and Mali",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "BURKINA FASO",
+      "type": "LOCATION",
+      "description": "A country in West Africa",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "A country in West Africa",
+      "source_id": "paper_2563"
+    },
+    {
+      "name": "BREEDING PROGRAMS",
+      "type": "METHOD",
+      "description": "Systematic efforts to improve crop varieties",
+      "source_id": "paper_2563"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "VEGETATIVE-PHASE DURATION",
+      "description": "shows variation in",
+      "weight": "10",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "VEGETATIVE-PHASE DURATION",
+      "target": "SOWING DATE",
+      "description": "depends on",
+      "weight": "8",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "VEGETATIVE-PHASE DURATION",
+      "target": "RAINY SEASON",
+      "description": "is linked with",
+      "weight": "9",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PHOTOPERIOD SENSITIVITY",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "PHOTOPERIOD SENSITIVITY",
+      "target": "FLOWERING DATE",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "FLOWERING DATE",
+      "target": "RAINY SEASON",
+      "description": "should be matched to the end of",
+      "weight": "8",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "TROPICAL AREAS OF THE NORTHERN HEMISPHERE",
+      "description": "occurs within specific dates in",
+      "weight": "7",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SOIL FERTILITY",
+      "description": "needs to respond to",
+      "weight": "7",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "SOIL FERTILITY",
+      "target": "COTTON",
+      "description": "increased in systems of",
+      "weight": "8",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "COTTON",
+      "target": "BURKINA FASO",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "COTTON",
+      "target": "MALI",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_2563"
+    },
+    {
+      "source": "BREEDING PROGRAMS",
+      "target": "SORGHUM",
+      "description": "aim to improve",
+      "weight": "9",
+      "source_id": "paper_2563"
+    }
+  ]
+}

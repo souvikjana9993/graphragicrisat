@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being improved for yield and resistance",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region where groundnut yield increase is prioritized",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the groundnut crop",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "PEST AND DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the crop to withstand pests and diseases",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of developing new crop varieties",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "A. HYPOGAEA",
+      "type": "ORGANISM",
+      "description": "The cultivated species of groundnut",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "WILD ARACHIS SPECIES",
+      "type": "ORGANISM",
+      "description": "Wild relatives of groundnut used as genetic resources",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "SOUTH AMERICA",
+      "type": "LOCATION",
+      "description": "The region from which wild Arachis species were collected",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "GENES",
+      "type": "GENE_MARKER",
+      "description": "The hereditary units providing specific traits",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The specific trait for resisting diseases provided by wild species",
+      "source_id": "paper_3527"
+    },
+    {
+      "name": "ARACHIS GERMPLASM COLLECTION",
+      "type": "CONCEPT",
+      "description": "The collection of genetic resources for the Arachis genus",
+      "source_id": "paper_3527"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BREEDING",
+      "target": "GROUNDNUT",
+      "description": "used to improve",
+      "weight": "8",
+      "source_id": "paper_3527"
+    },
+    {
+      "source": "BREEDING",
+      "target": "PEST AND DISEASE RESISTANCE",
+      "description": "used to develop",
+      "weight": "9",
+      "source_id": "paper_3527"
+    },
+    {
+      "source": "PEST AND DISEASE RESISTANCE",
+      "target": "YIELD",
+      "description": "contributes to increasing",
+      "weight": "7",
+      "source_id": "paper_3527"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEMI-ARID TROPICS",
+      "description": "grown in",
+      "weight": "6",
+      "source_id": "paper_3527"
+    },
+    {
+      "source": "A. HYPOGAEA",
+      "target": "GENES",
+      "description": "contains limited",
+      "weight": "7",
+      "source_id": "paper_3527"
+    },
+    {
+      "source": "WILD ARACHIS SPECIES",
+      "target": "GENES",
+      "description": "provides a wider range of",
+      "weight": "9",
+      "source_id": "paper_3527"
+    },
+    {
+      "source": "WILD ARACHIS SPECIES",
+      "target": "SOUTH AMERICA",
+      "description": "collected from",
+      "weight": "10",
+      "source_id": "paper_3527"
+    },
+    {
+      "source": "GENES",
+      "target": "DISEASE RESISTANCE",
+      "description": "encode for",
+      "weight": "9",
+      "source_id": "paper_3527"
+    },
+    {
+      "source": "ARACHIS GERMPLASM COLLECTION",
+      "target": "GROUNDNUT",
+      "description": "used for improvement of",
+      "weight": "8",
+      "source_id": "paper_3527"
+    }
+  ]
+}

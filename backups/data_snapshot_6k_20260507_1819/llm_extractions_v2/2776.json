@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop affected by gray mold and used for rhizosphere isolation",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "BOTRYTIS GRAY MOLD",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting chickpea",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "B. CINEREA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing gray mold",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "TRICHODERMA",
+      "type": "ORGANISM",
+      "description": "A genus of fungi used as biological control agents",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "T15",
+      "type": "ORGANISM",
+      "description": "A specific Trichoderma isolate effective against gray mold",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "PDA",
+      "type": "METHOD",
+      "description": "Potato Dextrose Agar used for screening fungi",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "BIOLOGICAL CONTROL",
+      "type": "CONCEPT",
+      "description": "The use of organisms to control pests or diseases",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "SPORE SUSPENSION",
+      "type": "METHOD",
+      "description": "The form in which the antagonist was applied",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "CARBOXYMETHYLCELLULOSE",
+      "type": "METHOD",
+      "description": "A substance used to improve the application of conidia",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "GROWTH ROOM CONDITIONS",
+      "type": "CONDITION",
+      "description": "Controlled environment where pot-grown plants were tested",
+      "source_id": "paper_2776"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "The environment for future testing of the treatment",
+      "source_id": "paper_2776"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOLOGICAL CONTROL",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "used to control",
+      "weight": "10",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "BOTRYTIS GRAY MOLD",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "B. CINEREA",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "TRICHODERMA",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "antagonist against",
+      "weight": "9",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "T15",
+      "target": "TRICHODERMA",
+      "description": "is an isolate of",
+      "weight": "10",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "T15",
+      "target": "BOTRYTIS GRAY MOLD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "PDA",
+      "target": "TRICHODERMA",
+      "description": "used to screen",
+      "weight": "8",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "SPORE SUSPENSION",
+      "target": "T15",
+      "description": "method of application",
+      "weight": "8",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "CARBOXYMETHYLCELLULOSE",
+      "target": "T15",
+      "description": "used as carrier for",
+      "weight": "7",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "T15",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "GROWTH ROOM CONDITIONS",
+      "target": "T15",
+      "description": "environment for testing",
+      "weight": "7",
+      "source_id": "paper_2776"
+    },
+    {
+      "source": "FIELD",
+      "target": "T15",
+      "description": "future testing location",
+      "weight": "7",
+      "source_id": "paper_2776"
+    }
+  ]
+}

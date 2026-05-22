@@ -1,0 +1,172 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Plant material used as a source of organic carbon in the study",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "INDO-GANGETIC PLAIN",
+      "type": "LOCATION",
+      "description": "Agricultural region where the soil samples were collected",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "NEUTRAL-TO-ALKALINE SOILS",
+      "type": "CONDITION",
+      "description": "Soil type characterized by neutral to alkaline pH levels",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "ORGANIC CARBON STABILIZATION",
+      "type": "CONCEPT",
+      "description": "The process of protecting organic carbon from decomposition",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "CARBON SEQUESTRATION POTENTIAL",
+      "type": "CONCEPT",
+      "description": "The capacity of soils to capture and store atmospheric carbon",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The biological process of converting organic carbon into CO2",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "SOIL ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "The carbon component of soil organic matter",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "ONE-YEAR INCUBATION",
+      "type": "METHOD",
+      "description": "Experimental procedure to monitor CO2 release and C fractions over time",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "PYROLYSIS-GC/MS",
+      "type": "METHOD",
+      "description": "Analytical technique used to determine organic matter molecular compositions",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "OCCLUDED PARTICULATE ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "A soil organic matter fraction denoted as oPOM",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "MINERAL-ASSOCIATED ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "A soil organic matter fraction denoted as MAOM",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "ACTIVE AL/FE",
+      "type": "CONCEPT",
+      "description": "Active aluminum and iron that facilitate soil aggregation and C stabilization",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "AGGREGATION",
+      "type": "CONCEPT",
+      "description": "The grouping of soil particles into stable aggregates",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "CLAY FRACTION",
+      "type": "CONCEPT",
+      "description": "Fine mineral particles that contribute to C stabilization",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "SILT",
+      "type": "CONCEPT",
+      "description": "Mineral particles that, along with clay, form stable aggregates",
+      "source_id": "paper_12276"
+    },
+    {
+      "name": "NEOPHYTIDIENE",
+      "type": "CONCEPT",
+      "description": "A maize-unique compound used to track the degradation of added maize",
+      "source_id": "paper_12276"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ACTIVE AL/FE",
+      "target": "MINERALIZATION",
+      "description": "Retards primary maize mineralization",
+      "weight": "8",
+      "source_id": "paper_12276"
+    },
+    {
+      "source": "ACTIVE AL/FE",
+      "target": "AGGREGATION",
+      "description": "Facilitates soil aggregation",
+      "weight": "9",
+      "source_id": "paper_12276"
+    },
+    {
+      "source": "SOIL ORGANIC CARBON",
+      "target": "MINERALIZATION",
+      "description": "High content results in more maize mineralization",
+      "weight": "7",
+      "source_id": "paper_12276"
+    },
+    {
+      "source": "CLAY FRACTION",
+      "target": "MINERAL-ASSOCIATED ORGANIC MATTER",
+      "description": "Contributes to the stabilization of maize-derived C as MAOM",
+      "weight": "9",
+      "source_id": "paper_12276"
+    },
+    {
+      "source": "ACTIVE AL/FE",
+      "target": "OCCLUDED PARTICULATE ORGANIC MATTER",
+      "description": "Contributes to the stabilization of maize-derived C as oPOM",
+      "weight": "8",
+      "source_id": "paper_12276"
+    },
+    {
+      "source": "ACTIVE AL/FE",
+      "target": "CLAY FRACTION",
+      "description": "Bonds clay particles to form stable aggregates",
+      "weight": "8",
+      "source_id": "paper_12276"
+    },
+    {
+      "source": "ACTIVE AL/FE",
+      "target": "SILT",
+      "description": "Bonds silt particles to form stable aggregates",
+      "weight": "8",
+      "source_id": "paper_12276"
+    },
+    {
+      "source": "MAIZE",
+      "target": "MINERALIZATION",
+      "description": "Undergoes mineralization process",
+      "weight": "10",
+      "source_id": "paper_12276"
+    },
+    {
+      "source": "NEUTRAL-TO-ALKALINE SOILS",
+      "target": "ORGANIC CARBON STABILIZATION",
+      "description": "Context in which organic carbon stabilization is studied",
+      "weight": "7",
+      "source_id": "paper_12276"
+    },
+    {
+      "source": "INDO-GANGETIC PLAIN",
+      "target": "NEUTRAL-TO-ALKALINE SOILS",
+      "description": "Region containing neutral-to-alkaline soils",
+      "weight": "9",
+      "source_id": "paper_12276"
+    }
+  ]
+}

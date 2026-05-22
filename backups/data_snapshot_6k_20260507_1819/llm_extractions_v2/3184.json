@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for resistance to late leaf spot disease.",
+      "source_id": "paper_3184"
+    },
+    {
+      "name": "LATE LEAF SPOT",
+      "type": "ORGANISM",
+      "description": "A fungal disease that affects groundnut plants.",
+      "source_id": "paper_3184"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental temperature ranging from 15 to 35 degrees Celsius affecting disease development.",
+      "source_id": "paper_3184"
+    },
+    {
+      "name": "LEAF WETNESS PERIOD",
+      "type": "CONDITION",
+      "description": "The duration of leaf wetness ranging from 4 to 24 hours affecting disease development.",
+      "source_id": "paper_3184"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut genotypes to resist late leaf spot infection.",
+      "source_id": "paper_3184"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The degree to which groundnut genotypes are prone to late leaf spot infection.",
+      "source_id": "paper_3184"
+    },
+    {
+      "name": "DISEASE SEVERITY",
+      "type": "CONCEPT",
+      "description": "The measure of the extent of late leaf spot infection on the plant.",
+      "source_id": "paper_3184"
+    },
+    {
+      "name": "SCREENING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Methods used to identify and evaluate groundnut genotypes for disease resistance.",
+      "source_id": "paper_3184"
+    },
+    {
+      "name": "DISEASE PREDICTION MODELS",
+      "type": "METHOD",
+      "description": "Models used to forecast the development of late leaf spot disease.",
+      "source_id": "paper_3184"
+    },
+    {
+      "name": "DEFOLIATION",
+      "type": "TRAIT",
+      "description": "The loss of leaves as a symptom of late leaf spot infection.",
+      "source_id": "paper_3184"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "LATE LEAF SPOT",
+      "description": "Affects the development and progress of the disease",
+      "weight": "9",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "LEAF WETNESS PERIOD",
+      "target": "LATE LEAF SPOT",
+      "description": "Affects the severity and development of the disease",
+      "weight": "9",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "Causes infection and disease in the crop",
+      "weight": "10",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RESISTANCE",
+      "description": "Genotypes exhibit varying levels of this trait against LLS",
+      "weight": "8",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SUSCEPTIBILITY",
+      "description": "Genotypes exhibit varying levels of this trait to LLS",
+      "weight": "8",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "RESISTANCE",
+      "description": "Influences the expression of resistance components",
+      "weight": "7",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "LEAF WETNESS PERIOD",
+      "target": "RESISTANCE",
+      "description": "Influences the expression of resistance components",
+      "weight": "7",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "DISEASE SEVERITY",
+      "description": "The extent of the disease is measured by its severity",
+      "weight": "9",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "LATE LEAF SPOT",
+      "target": "DEFOLIATION",
+      "description": "Causes leaf drop as a result of infection",
+      "weight": "8",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "SCREENING TECHNIQUES",
+      "target": "LATE LEAF SPOT",
+      "description": "Used to evaluate resistance to the disease",
+      "weight": "8",
+      "source_id": "paper_3184"
+    },
+    {
+      "source": "DISEASE PREDICTION MODELS",
+      "target": "LATE LEAF SPOT",
+      "description": "Used to predict the occurrence of the disease",
+      "weight": "8",
+      "source_id": "paper_3184"
+    }
+  ]
+}

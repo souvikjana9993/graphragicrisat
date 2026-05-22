@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L.",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "SPECIFIC LEAF AREA",
+      "type": "TRAIT",
+      "description": "A surrogate measure of transpiration efficiency",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "SPECIFIC LEAF NITROGEN",
+      "type": "TRAIT",
+      "description": "A surrogate measure of transpiration efficiency",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant uses water for photosynthesis",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "SPAD CHLOROPHYLL METRE",
+      "type": "METHOD",
+      "description": "A hand-held portable device used for rapid assessment of leaf nitrogen and specific leaf area",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "SPAD CHLOROPHYLL METRE READING",
+      "type": "METHOD",
+      "description": "The measurement value obtained from the SPAD chlorophyll metre",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "LEAF POSITION",
+      "type": "CONDITION",
+      "description": "The location of the leaf on the plant",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "TIME OF SAMPLING",
+      "type": "CONDITION",
+      "description": "The time of day when samples are taken",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "LEAF WATER STATUS",
+      "type": "CONDITION",
+      "description": "The hydration level of the leaf",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "SOLAR RADIATION",
+      "type": "CONDITION",
+      "description": "The amount of sunlight reaching the plant",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "VAPOUR PRESSURE DEFICIT",
+      "type": "CONDITION",
+      "description": "The difference between the amount of moisture in the air and how much moisture the air can hold when saturated",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions in an open field",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "GREENHOUSE CONDITIONS",
+      "type": "CONDITION",
+      "description": "Controlled environmental conditions in a greenhouse",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where trials were conducted",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where trials were conducted",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period from November to April",
+      "source_id": "paper_1828"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period from July to October",
+      "source_id": "paper_1828"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SPAD CHLOROPHYLL METRE READING",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "correlated as a surrogate measure",
+      "weight": "9",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "SPAD CHLOROPHYLL METRE READING",
+      "target": "SPECIFIC LEAF NITROGEN",
+      "description": "correlated as a surrogate measure",
+      "weight": "9",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "SPECIFIC LEAF AREA",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "surrogate measure of",
+      "weight": "10",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "SPECIFIC LEAF NITROGEN",
+      "target": "TRANSPIRATION EFFICIENCY",
+      "description": "surrogate measure of",
+      "weight": "10",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "SPECIFIC LEAF AREA",
+      "target": "SPECIFIC LEAF NITROGEN",
+      "description": "correlated",
+      "weight": "9",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "SOLAR RADIATION",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "VAPOUR PRESSURE DEFICIT",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "LEAF POSITION",
+      "target": "SPAD CHLOROPHYLL METRE READING",
+      "description": "affects correlation with SLA",
+      "weight": "7",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "TIME OF SAMPLING",
+      "target": "SPECIFIC LEAF AREA",
+      "description": "causes diurnal fluctuation",
+      "weight": "7",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "PEANUT",
+      "target": "ANDHRA PRADESH",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "PEANUT",
+      "target": "FIELD CONDITIONS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "PEANUT",
+      "target": "GREENHOUSE CONDITIONS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "PEANUT",
+      "target": "POST-RAINY SEASON",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_1828"
+    },
+    {
+      "source": "PEANUT",
+      "target": "RAINY SEASON",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_1828"
+    }
+  ]
+}

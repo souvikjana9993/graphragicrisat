@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "The cereal crop used in the monoculture study",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "CONIESTA IGNEFUSALIS",
+      "type": "ORGANISM",
+      "description": "A millet stem borer pest",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "SESAMIA CALAMISTIS",
+      "type": "ORGANISM",
+      "description": "A minor pest of millet",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "HELIOCHEILUS ALBIPUNCTELLA",
+      "type": "ORGANISM",
+      "description": "The millet head caterpillar pest",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "PLATYTELENOMUS SP",
+      "type": "ORGANISM",
+      "description": "A common parasite of Coniesta ignefusalis",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "BRACON HEBETOR",
+      "type": "ORGANISM",
+      "description": "A common parasite of Heliocheilus albipunctella",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "POPULATION DYNAMICS",
+      "type": "CONCEPT",
+      "description": "The study of changes in population size and composition over time",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "PARASITISM",
+      "type": "CONCEPT",
+      "description": "The symbiotic relationship where one organism benefits at the expense of another",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "PLANTING DATES",
+      "type": "CONDITION",
+      "description": "The timing of sowing the crop, assessed for effects on pest population densities",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "GROWTH STAGE",
+      "type": "CONDITION",
+      "description": "The developmental stage of the millet plant affecting pest populations",
+      "source_id": "paper_3121"
+    },
+    {
+      "name": "POPULATION DENSITY",
+      "type": "CONCEPT",
+      "description": "The number of individuals of a species per unit area",
+      "source_id": "paper_3121"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CONIESTA IGNEFUSALIS",
+      "target": "MILLET",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "SESAMIA CALAMISTIS",
+      "target": "MILLET",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "HELIOCHEILUS ALBIPUNCTELLA",
+      "target": "MILLET",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "PLATYTELENOMUS SP",
+      "target": "CONIESTA IGNEFUSALIS",
+      "description": "is a parasite of",
+      "weight": "10",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "BRACON HEBETOR",
+      "target": "HELIOCHEILUS ALBIPUNCTELLA",
+      "description": "is a parasite of",
+      "weight": "10",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "PLANTING DATES",
+      "target": "HELIOCHEILUS ALBIPUNCTELLA",
+      "description": "reduces population density when delayed",
+      "weight": "8",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "PLANTING DATES",
+      "target": "CONIESTA IGNEFUSALIS",
+      "description": "does not reduce population density",
+      "weight": "5",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "GROWTH STAGE",
+      "target": "CONIESTA IGNEFUSALIS",
+      "description": "affects population density",
+      "weight": "8",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "NIGER",
+      "target": "MILLET",
+      "description": "location where millet was grown for the study",
+      "weight": "7",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "POPULATION DYNAMICS",
+      "target": "CONIESTA IGNEFUSALIS",
+      "description": "was studied for",
+      "weight": "9",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "POPULATION DYNAMICS",
+      "target": "SESAMIA CALAMISTIS",
+      "description": "was studied for",
+      "weight": "9",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "POPULATION DYNAMICS",
+      "target": "HELIOCHEILUS ALBIPUNCTELLA",
+      "description": "was studied for",
+      "weight": "9",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "PARASITISM",
+      "target": "CONIESTA IGNEFUSALIS",
+      "description": "was studied for",
+      "weight": "9",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "PARASITISM",
+      "target": "SESAMIA CALAMISTIS",
+      "description": "was studied for",
+      "weight": "9",
+      "source_id": "paper_3121"
+    },
+    {
+      "source": "PARASITISM",
+      "target": "HELIOCHEILUS ALBIPUNCTELLA",
+      "description": "was studied for",
+      "weight": "9",
+      "source_id": "paper_3121"
+    }
+  ]
+}

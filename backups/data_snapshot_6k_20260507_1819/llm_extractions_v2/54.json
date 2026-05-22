@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop Pennisetum glaucum affected by downy mildew",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease affecting pearl millet caused by Sclerospora graminicola",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew in pearl millet",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "UTTAR PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where on-farm surveys were conducted",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research surveys were conducted",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "VIRULENCE DIVERSITY",
+      "type": "TRAIT",
+      "description": "The variation in the ability of pathogen isolates to cause disease",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "VIRULENCE INDEX",
+      "type": "METHOD",
+      "description": "A calculation based on percent disease incidence and latent period to determine quantitative virulence",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to determine similarity among pathogen isolates",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "AVERAGE LINKAGE METHOD",
+      "type": "METHOD",
+      "description": "The specific method used within cluster analysis to determine similarity",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "SG 492",
+      "type": "ORGANISM",
+      "description": "A highly virulent isolate of Sclerospora graminicola from Aligarh",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "SG 510",
+      "type": "ORGANISM",
+      "description": "A highly virulent isolate of Sclerospora graminicola from Badaun",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "ALIGARH",
+      "type": "LOCATION",
+      "description": "The location from which isolate Sg 492 was collected",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "BADAUN",
+      "type": "LOCATION",
+      "description": "The location from which isolate Sg 510 was collected",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "GREENHOUSE SCREENING",
+      "type": "METHOD",
+      "description": "The process of testing breeding lines for resistance or susceptibility",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "PEARL MILLET BREEDING LINES",
+      "type": "CONCEPT",
+      "description": "Lines of pearl millet used in greenhouse screening for virulence",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "LINE 7042S",
+      "type": "CONCEPT",
+      "description": "A highly susceptible pearl millet line used to establish pathogen isolates",
+      "source_id": "paper_54"
+    },
+    {
+      "name": "HOST DIFFERENTIAL LINES",
+      "type": "CONCEPT",
+      "description": "A set of lines used to characterize the virulence diversity of pathogen isolates",
+      "source_id": "paper_54"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "PEARL MILLET",
+      "description": "is a pathogen of",
+      "weight": "10",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "UTTAR PRADESH",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "VIRULENCE DIVERSITY",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "VIRULENCE INDEX",
+      "target": "VIRULENCE DIVERSITY",
+      "description": "measures",
+      "weight": "9",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "AVERAGE LINKAGE METHOD",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "SCLEROSPORA GRAMINICOLA",
+      "description": "analyzes similarity among isolates of",
+      "weight": "8",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "SG 492",
+      "target": "SCLEROSPORA GRAMINICOLA",
+      "description": "is an isolate of",
+      "weight": "10",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "SG 510",
+      "target": "SCLEROSPORA GRAMINICOLA",
+      "description": "is an isolate of",
+      "weight": "10",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "SG 492",
+      "target": "ALIGARH",
+      "description": "is from",
+      "weight": "10",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "SG 510",
+      "target": "BADAUN",
+      "description": "is from",
+      "weight": "10",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "SG 492",
+      "target": "GREENHOUSE SCREENING",
+      "description": "is used in",
+      "weight": "9",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "SG 510",
+      "target": "GREENHOUSE SCREENING",
+      "description": "is used in",
+      "weight": "9",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "GREENHOUSE SCREENING",
+      "target": "PEARL MILLET BREEDING LINES",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "LINE 7042S",
+      "description": "established on",
+      "weight": "8",
+      "source_id": "paper_54"
+    },
+    {
+      "source": "VIRULENCE DIVERSITY",
+      "target": "HOST DIFFERENTIAL LINES",
+      "description": "characterized using",
+      "weight": "9",
+      "source_id": "paper_54"
+    }
+  ]
+}

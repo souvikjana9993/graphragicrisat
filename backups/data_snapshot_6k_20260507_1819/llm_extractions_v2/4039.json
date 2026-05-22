@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for resistance to fungal invasion and aflatoxin production",
+      "source_id": "paper_4039"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The fungus responsible for seed invasion, colonization, and aflatoxin production",
+      "source_id": "paper_4039"
+    },
+    {
+      "name": "SEED INVASION",
+      "type": "CONDITION",
+      "description": "The process by which Aspergillus flavus enters the groundnut seed",
+      "source_id": "paper_4039"
+    },
+    {
+      "name": "COLONIZATION",
+      "type": "CONDITION",
+      "description": "The process by which Aspergillus flavus establishes itself within the groundnut seed",
+      "source_id": "paper_4039"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONCEPT",
+      "description": "The toxin produced by toxigenic strains of Aspergillus flavus",
+      "source_id": "paper_4039"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "The presence of aflatoxins in groundnut seeds",
+      "source_id": "paper_4039"
+    },
+    {
+      "name": "J11",
+      "type": "CROP",
+      "description": "A commercial Indian groundnut cultivar resistant to seed invasion",
+      "source_id": "paper_4039"
+    },
+    {
+      "name": "RESISTANCE TO SEED INVASION",
+      "type": "TRAIT",
+      "description": "The ability of groundnut cultivars to prevent seed invasion and colonization by Aspergillus flavus",
+      "source_id": "paper_4039"
+    },
+    {
+      "name": "FUNGAL POD ROT",
+      "type": "CONDITION",
+      "description": "A disease affecting groundnut pods caused by fungi",
+      "source_id": "paper_4039"
+    },
+    {
+      "name": "RESISTANCE TO FUNGAL POD ROT",
+      "type": "TRAIT",
+      "description": "The ability of groundnut cultivars to resist fungal pod rot",
+      "source_id": "paper_4039"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "SEED INVASION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4039"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "COLONIZATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4039"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_4039"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "leads to",
+      "weight": "10",
+      "source_id": "paper_4039"
+    },
+    {
+      "source": "RESISTANCE TO SEED INVASION",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "prevents or reduces",
+      "weight": "8",
+      "source_id": "paper_4039"
+    },
+    {
+      "source": "J11",
+      "target": "RESISTANCE TO SEED INVASION",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_4039"
+    },
+    {
+      "source": "J11",
+      "target": "GROUNDNUT",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_4039"
+    },
+    {
+      "source": "RESISTANCE TO SEED INVASION",
+      "target": "RESISTANCE TO FUNGAL POD ROT",
+      "description": "is associated with",
+      "weight": "7",
+      "source_id": "paper_4039"
+    },
+    {
+      "source": "RESISTANCE TO SEED INVASION",
+      "target": "AFLATOXIN",
+      "description": "no direct relationship found between resistance and quantity produced",
+      "weight": "5",
+      "source_id": "paper_4039"
+    }
+  ]
+}

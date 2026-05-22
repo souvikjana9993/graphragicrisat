@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "EDGEWORTH SERIES DISTRIBUTION",
+      "type": "CONCEPT",
+      "description": "A non-normal class of distribution function with three and four parameters used for dose-binary response relationships",
+      "source_id": "paper_3695"
+    },
+    {
+      "name": "DOSE-BINARY RESPONSE RELATIONSHIP",
+      "type": "CONCEPT",
+      "description": "The relationship between a dose and a binary response",
+      "source_id": "paper_3695"
+    },
+    {
+      "name": "NON-NORMALITY",
+      "type": "CONCEPT",
+      "description": "The state of not following a normal distribution, expressed in terms of skewness and kurtosis",
+      "source_id": "paper_3695"
+    },
+    {
+      "name": "SKEWNESS",
+      "type": "CONCEPT",
+      "description": "A measure of the asymmetry of the probability distribution",
+      "source_id": "paper_3695"
+    },
+    {
+      "name": "KURTOSIS",
+      "type": "CONCEPT",
+      "description": "A measure of the tailedness of the probability distribution",
+      "source_id": "paper_3695"
+    },
+    {
+      "name": "MAXIMUM LIKELIHOOD METHOD",
+      "type": "METHOD",
+      "description": "A method used for the estimation of parameters of the distribution",
+      "source_id": "paper_3695"
+    },
+    {
+      "name": "PROBIT HYPOTHESIS",
+      "type": "CONCEPT",
+      "description": "A hypothesis based on the normal distribution",
+      "source_id": "paper_3695"
+    },
+    {
+      "name": "PROBIT FIT",
+      "type": "METHOD",
+      "description": "A method of fitting data based on the probit model",
+      "source_id": "paper_3695"
+    },
+    {
+      "name": "LOGIT FIT",
+      "type": "METHOD",
+      "description": "A method of fitting data based on the logit model",
+      "source_id": "paper_3695"
+    },
+    {
+      "name": "PRENTICE MODEL",
+      "type": "CONCEPT",
+      "description": "A model used for fitting dose-binary response data",
+      "source_id": "paper_3695"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "EDGEWORTH SERIES DISTRIBUTION",
+      "target": "DOSE-BINARY RESPONSE RELATIONSHIP",
+      "description": "used for modeling",
+      "weight": "10",
+      "source_id": "paper_3695"
+    },
+    {
+      "source": "EDGEWORTH SERIES DISTRIBUTION",
+      "target": "NON-NORMALITY",
+      "description": "accounts for",
+      "weight": "9",
+      "source_id": "paper_3695"
+    },
+    {
+      "source": "NON-NORMALITY",
+      "target": "SKEWNESS",
+      "description": "expressed in terms of",
+      "weight": "10",
+      "source_id": "paper_3695"
+    },
+    {
+      "source": "NON-NORMALITY",
+      "target": "KURTOSIS",
+      "description": "expressed in terms of",
+      "weight": "10",
+      "source_id": "paper_3695"
+    },
+    {
+      "source": "MAXIMUM LIKELIHOOD METHOD",
+      "target": "EDGEWORTH SERIES DISTRIBUTION",
+      "description": "used to estimate parameters of",
+      "weight": "9",
+      "source_id": "paper_3695"
+    },
+    {
+      "source": "EDGEWORTH SERIES DISTRIBUTION",
+      "target": "PROBIT HYPOTHESIS",
+      "description": "tested against",
+      "weight": "8",
+      "source_id": "paper_3695"
+    },
+    {
+      "source": "EDGEWORTH SERIES DISTRIBUTION",
+      "target": "PROBIT FIT",
+      "description": "shows improvement over",
+      "weight": "9",
+      "source_id": "paper_3695"
+    },
+    {
+      "source": "EDGEWORTH SERIES DISTRIBUTION",
+      "target": "LOGIT FIT",
+      "description": "shows improvement over",
+      "weight": "9",
+      "source_id": "paper_3695"
+    },
+    {
+      "source": "EDGEWORTH SERIES DISTRIBUTION",
+      "target": "PRENTICE MODEL",
+      "description": "shows better fit compared to",
+      "weight": "9",
+      "source_id": "paper_3695"
+    }
+  ]
+}

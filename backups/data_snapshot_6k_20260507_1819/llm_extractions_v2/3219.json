@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A legume crop being evaluated for resistance to Heliothis armigera.",
+      "source_id": "paper_3219"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop being evaluated for resistance to Heliothis armigera.",
+      "source_id": "paper_3219"
+    },
+    {
+      "name": "HELIOTHIS ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pest insect that infests pigeon pea and chickpea.",
+      "source_id": "paper_3219"
+    },
+    {
+      "name": "FIELD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a crop to resist pest attack under field conditions.",
+      "source_id": "paper_3219"
+    },
+    {
+      "name": "GRADING METHOD BASED ON PEST DAMAGE",
+      "type": "METHOD",
+      "description": "A suggested system for rating test materials based on the area of pest damage to determine susceptibility.",
+      "source_id": "paper_3219"
+    },
+    {
+      "name": "RELATIVE SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The degree to which test materials are prone to pest damage relative to other entries.",
+      "source_id": "paper_3219"
+    },
+    {
+      "name": "INFESTATION",
+      "type": "CONDITION",
+      "description": "The occurrence and intensity of pest attack by Heliothis armigera.",
+      "source_id": "paper_3219"
+    },
+    {
+      "name": "SEASONAL AND YEARLY VARIATION",
+      "type": "CONDITION",
+      "description": "The fluctuations in pest infestation levels across different seasons and years.",
+      "source_id": "paper_3219"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "PIGEON PEA",
+      "description": "infests",
+      "weight": "9",
+      "source_id": "paper_3219"
+    },
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "infests",
+      "weight": "9",
+      "source_id": "paper_3219"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "FIELD RESISTANCE",
+      "description": "exhibits",
+      "weight": "7",
+      "source_id": "paper_3219"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "FIELD RESISTANCE",
+      "description": "exhibits",
+      "weight": "7",
+      "source_id": "paper_3219"
+    },
+    {
+      "source": "GRADING METHOD BASED ON PEST DAMAGE",
+      "target": "RELATIVE SUSCEPTIBILITY",
+      "description": "used to rate",
+      "weight": "10",
+      "source_id": "paper_3219"
+    },
+    {
+      "source": "GRADING METHOD BASED ON PEST DAMAGE",
+      "target": "FIELD RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "8",
+      "source_id": "paper_3219"
+    },
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "INFESTATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3219"
+    },
+    {
+      "source": "SEASONAL AND YEARLY VARIATION",
+      "target": "INFESTATION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3219"
+    }
+  ]
+}

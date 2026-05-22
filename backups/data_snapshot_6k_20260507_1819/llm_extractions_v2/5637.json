@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop Arachis hypogaea used in the study",
+      "source_id": "paper_5637"
+    },
+    {
+      "name": "JL 24",
+      "type": "CROP",
+      "description": "A highly susceptible variety of groundnut",
+      "source_id": "paper_5637"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus causing bud necrosis in groundnut, abbreviated as PBNV",
+      "source_id": "paper_5637"
+    },
+    {
+      "name": "TOBACCO STREAK VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus affecting groundnut, abbreviated as TSV",
+      "source_id": "paper_5637"
+    },
+    {
+      "name": "INDIAN PEANUT CLUMP VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus affecting groundnut, abbreviated as IPCV",
+      "source_id": "paper_5637"
+    },
+    {
+      "name": "VIRUS TITER",
+      "type": "CONCEPT",
+      "description": "The concentration of virus particles in a sample",
+      "source_id": "paper_5637"
+    },
+    {
+      "name": "DATE OF INOCULATION",
+      "type": "METHOD",
+      "description": "The timing of virus introduction into the plant",
+      "source_id": "paper_5637"
+    },
+    {
+      "name": "INFECTIVITY",
+      "type": "TRAIT",
+      "description": "The ability of a virus to establish an infection in the host plant",
+      "source_id": "paper_5637"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where experiments were conducted",
+      "source_id": "paper_5637"
+    },
+    {
+      "name": "PLANT GROWTH STAGE",
+      "type": "CONCEPT",
+      "description": "The developmental phase of the groundnut plant at the time of inoculation",
+      "source_id": "paper_5637"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "VIRUS TITER",
+      "target": "INFECTIVITY",
+      "description": "Affects",
+      "weight": "8",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "DATE OF INOCULATION",
+      "target": "INFECTIVITY",
+      "description": "Affects",
+      "weight": "8",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "PLANT GROWTH STAGE",
+      "target": "INFECTIVITY",
+      "description": "Affects",
+      "weight": "8",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "JL 24",
+      "target": "GROUNDNUT",
+      "description": "Is a variety of",
+      "weight": "10",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "JL 24",
+      "target": "PEANUT BUD NECROSIS VIRUS",
+      "description": "Is highly susceptible to",
+      "weight": "9",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "JL 24",
+      "target": "TOBACCO STREAK VIRUS",
+      "description": "Is highly susceptible to",
+      "weight": "9",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "JL 24",
+      "target": "INDIAN PEANUT CLUMP VIRUS",
+      "description": "Is highly susceptible to",
+      "weight": "9",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "PEANUT BUD NECROSIS VIRUS",
+      "target": "GROUNDNUT",
+      "description": "Infects",
+      "weight": "9",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "TOBACCO STREAK VIRUS",
+      "target": "GROUNDNUT",
+      "description": "Infects",
+      "weight": "9",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "INDIAN PEANUT CLUMP VIRUS",
+      "target": "GROUNDNUT",
+      "description": "Infects",
+      "weight": "9",
+      "source_id": "paper_5637"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "GREENHOUSE",
+      "description": "Grown in",
+      "weight": "7",
+      "source_id": "paper_5637"
+    }
+  ]
+}

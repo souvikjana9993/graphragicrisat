@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for disease resistance and growth promotion",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "STREPTOMYCES",
+      "type": "ORGANISM",
+      "description": "A genus of bacteria used as biological control and plant growth-promoting agents",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "BACILLUS",
+      "type": "ORGANISM",
+      "description": "A genus of bacteria used as biological control and plant growth-promoting agents",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "DRY ROOT ROT",
+      "type": "CONDITION",
+      "description": "A disease of chickpea caused by Rhizoctonia bataticola",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes dry root rot in chickpea",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A disease of chickpea caused by Fusarium oxysporum f. sp. ciceri",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. CICERI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Fusarium wilt in chickpea",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "DUAL CULTURE ASSAY",
+      "type": "METHOD",
+      "description": "An in vitro method used to evaluate the antagonistic potential of bacteria against fungi",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "BLOTTER PAPER ASSAY",
+      "type": "METHOD",
+      "description": "An in vitro method used to evaluate the antagonistic potential of bacteria against fungi",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment used to evaluate the efficacy of biocontrol agents in planta",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "BIOCONTROL",
+      "type": "CONCEPT",
+      "description": "The use of biological agents to suppress plant diseases",
+      "source_id": "paper_11044"
+    },
+    {
+      "name": "PLANT GROWTH PROMOTION",
+      "type": "CONCEPT",
+      "description": "The process of enhancing plant growth using beneficial microorganisms",
+      "source_id": "paper_11044"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "STREPTOMYCES",
+      "target": "CHICKPEA",
+      "description": "acts as a plant growth-promoting agent for",
+      "weight": "8",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "BACILLUS",
+      "target": "CHICKPEA",
+      "description": "acts as a plant growth-promoting agent for",
+      "weight": "8",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "STREPTOMYCES",
+      "target": "FUSARIUM WILT",
+      "description": "acts as a biological control agent against",
+      "weight": "9",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "BACILLUS",
+      "target": "FUSARIUM WILT",
+      "description": "acts as a biological control agent against",
+      "weight": "9",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERI",
+      "target": "FUSARIUM WILT",
+      "description": "is the causal agent of",
+      "weight": "10",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "CHICKPEA",
+      "description": "is a disease affecting",
+      "weight": "10",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "STREPTOMYCES",
+      "target": "DRY ROOT ROT",
+      "description": "shows antagonistic potential against",
+      "weight": "9",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "BACILLUS",
+      "target": "DRY ROOT ROT",
+      "description": "shows antagonistic potential against",
+      "weight": "9",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "DRY ROOT ROT",
+      "description": "is the causal agent of",
+      "weight": "10",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "CHICKPEA",
+      "description": "is a disease affecting",
+      "weight": "10",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "DUAL CULTURE ASSAY",
+      "target": "DRY ROOT ROT",
+      "description": "is used to evaluate control of",
+      "weight": "7",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "BLOTTER PAPER ASSAY",
+      "target": "DRY ROOT ROT",
+      "description": "is used to evaluate control of",
+      "weight": "7",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "DRY ROOT ROT",
+      "description": "is used to evaluate control of",
+      "weight": "7",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "STREPTOMYCES",
+      "target": "RHIZOCTONIA BATATICOLA",
+      "description": "inhibits the growth of",
+      "weight": "9",
+      "source_id": "paper_11044"
+    },
+    {
+      "source": "BACILLUS",
+      "target": "RHIZOCTONIA BATATICOLA",
+      "description": "inhibits the growth of",
+      "weight": "9",
+      "source_id": "paper_11044"
+    }
+  ]
+}

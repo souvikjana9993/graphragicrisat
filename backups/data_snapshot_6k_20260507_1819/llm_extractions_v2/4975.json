@@ -1,0 +1,196 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop species being studied for rust resistance.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "GROUNDNUT RUST",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing rust disease in groundnuts.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The environmental variable tested to observe its effect on rust components.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "INCUBATION PERIOD",
+      "type": "TRAIT",
+      "description": "The time interval between infection and the appearance of symptoms.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "INFECTION FREQUENCY",
+      "type": "TRAIT",
+      "description": "The rate or frequency of rust infection on the plant tissue.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "LESION DIAMETER",
+      "type": "TRAIT",
+      "description": "The size of the rust lesions formed on the leaves.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "LEAF AREA DAMAGE",
+      "type": "TRAIT",
+      "description": "The extent of leaf tissue destroyed by the rust infection.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "PUSTULE RUPTURE",
+      "type": "TRAIT",
+      "description": "The process of rust pustules breaking through the leaf epidermis.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "SPORULATION",
+      "type": "TRAIT",
+      "description": "The production of spores by the rust fungus.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "DETACHED LEAVES",
+      "type": "METHOD",
+      "description": "The experimental technique of using leaves separated from the plant for infection studies.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "CONCEPT",
+      "description": "The ability of a genotype to limit the development of rust.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "CONCEPT",
+      "description": "The lack of resistance to rust, allowing the pathogen to develop fully.",
+      "source_id": "paper_4975"
+    },
+    {
+      "name": "NC AC 17090",
+      "type": "CONCEPT",
+      "description": "A specific groundnut genotype mentioned for its unique response to temperature.",
+      "source_id": "paper_4975"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "INCUBATION PERIOD",
+      "description": "Influences the length of the incubation period",
+      "weight": "10",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "INFECTION FREQUENCY",
+      "description": "Influences the frequency of infection",
+      "weight": "10",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "LESION DIAMETER",
+      "description": "Influences the size of the lesions",
+      "weight": "10",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "LEAF AREA DAMAGE",
+      "description": "Influences the extent of leaf area damage",
+      "weight": "10",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "PUSTULE RUPTURE",
+      "description": "Influences the percentage of pustules that rupture",
+      "weight": "10",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "SPORULATION",
+      "description": "Influences the amount of spore production",
+      "weight": "10",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "GROUNDNUT RUST",
+      "target": "GROUNDNUT",
+      "description": "Causes rust disease in the crop",
+      "weight": "10",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "DETACHED LEAVES",
+      "target": "GROUNDNUT RUST",
+      "description": "Used as a medium to study the development of rust",
+      "weight": "8",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "INCUBATION PERIOD",
+      "description": "Associated with a longer incubation period",
+      "weight": "9",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "INFECTION FREQUENCY",
+      "description": "Associated with lower infection frequencies",
+      "weight": "9",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "LESION DIAMETER",
+      "description": "Associated with smaller lesion diameters",
+      "weight": "9",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "PUSTULE RUPTURE",
+      "description": "Associated with a reduced number of ruptured pustules",
+      "weight": "9",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "SPORULATION",
+      "description": "Associated with lower sporulation",
+      "weight": "9",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "LEAF AREA DAMAGE",
+      "description": "Associated with reduced leaf area damage",
+      "weight": "9",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "NC AC 17090",
+      "target": "GROUNDNUT",
+      "description": "Is a specific genotype of groundnut",
+      "weight": "10",
+      "source_id": "paper_4975"
+    },
+    {
+      "source": "NC AC 17090",
+      "target": "TEMPERATURE",
+      "description": "Shows an exceptional response to temperature regarding pustule rupture and sporulation",
+      "weight": "8",
+      "source_id": "paper_4975"
+    }
+  ]
+}

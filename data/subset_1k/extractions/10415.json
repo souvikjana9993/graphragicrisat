@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for aflatoxin contamination and the efficacy of GAPs.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "A qualitative issue in groundnuts that poses a threat to food safety.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "GOOD AGRICULTURAL PRACTICES",
+      "type": "METHOD",
+      "description": "A set of practices including manure, gypsum, irrigation, and proper drying to reduce aflatoxin.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "FARMYARD MANURE",
+      "type": "METHOD",
+      "description": "Application of 5 t/ha as part of GAPs.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "GYPSUM",
+      "type": "METHOD",
+      "description": "Application of 500 kg/ha as part of GAPs.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "PROTECTIVE IRRIGATION",
+      "type": "METHOD",
+      "description": "Irrigation applied at 90 days after sowing as part of GAPs.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "DRYING OF PODS ON TARPAULINS",
+      "type": "METHOD",
+      "description": "Post-harvest drying method used in farmers' fields as part of GAPs.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "ON-FARM DEMONSTRATIONS",
+      "type": "METHOD",
+      "description": "An educative tool used to demonstrate the efficacy and cost-effectiveness of GAPs.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "FARMERS' PRACTICES",
+      "type": "METHOD",
+      "description": "The traditional cultivation methods used as a control for comparison with GAPs.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The fungus responsible for pre-harvest kernel infection in groundnuts.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "KERNEL INFECTION",
+      "type": "CONDITION",
+      "description": "Infection of groundnut kernels by Aspergillus flavus.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The quantity of groundnut pods produced, used as a performance metric.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "COST OF CULTIVATION",
+      "type": "CONCEPT",
+      "description": "The economic expenditure required for growing groundnuts.",
+      "source_id": "paper_10415"
+    },
+    {
+      "name": "FOOD SAFETY",
+      "type": "CONCEPT",
+      "description": "The condition of food being safe for consumption, threatened by aflatoxins.",
+      "source_id": "paper_10415"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GOOD AGRICULTURAL PRACTICES",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "GOOD AGRICULTURAL PRACTICES",
+      "target": "GROUNDNUT",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "GOOD AGRICULTURAL PRACTICES",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "GYPSUM",
+      "target": "GOOD AGRICULTURAL PRACTICES",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "PROTECTIVE IRRIGATION",
+      "target": "GOOD AGRICULTURAL PRACTICES",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "DRYING OF PODS ON TARPAULINS",
+      "target": "GOOD AGRICULTURAL PRACTICES",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "ON-FARM DEMONSTRATIONS",
+      "target": "GOOD AGRICULTURAL PRACTICES",
+      "description": "promotes adoption of",
+      "weight": "9",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "KERNEL INFECTION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "KERNEL INFECTION",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "GOOD AGRICULTURAL PRACTICES",
+      "target": "KERNEL INFECTION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "GOOD AGRICULTURAL PRACTICES",
+      "target": "POD YIELD",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "GOOD AGRICULTURAL PRACTICES",
+      "target": "COST OF CULTIVATION",
+      "description": "improves cost-effectiveness of",
+      "weight": "8",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "FOOD SAFETY",
+      "description": "threatens",
+      "weight": "10",
+      "source_id": "paper_10415"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "susceptible to",
+      "weight": "9",
+      "source_id": "paper_10415"
+    }
+  ]
+}

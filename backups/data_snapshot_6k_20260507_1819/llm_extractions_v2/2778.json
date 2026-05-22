@@ -1,0 +1,193 @@
+{
+  "entities": [
+    {
+      "name": "STRIGA ASIATICA",
+      "type": "ORGANISM",
+      "description": "A parasitic weed that affects sorghum roots",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The host crop used in the study",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "SOIL TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature of the soil which affects Striga seed viability and germination",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The water content of the soil affecting Striga seed germination and emergence",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONDITION",
+      "description": "A nutrient whose application rate affects Striga emergence and sorghum vigor",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "SEED GERMINATION",
+      "type": "TRAIT",
+      "description": "The process by which Striga seeds sprout",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "VIABILITY",
+      "type": "TRAIT",
+      "description": "The ability of Striga seeds to remain alive and capable of germinating",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "EMERGENCE",
+      "type": "TRAIT",
+      "description": "The appearance of Striga plants above the soil surface",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "SOLARIZATION",
+      "type": "METHOD",
+      "description": "The use of clear polythene to increase soil temperature to kill seeds",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "HAY MULCH",
+      "type": "METHOD",
+      "description": "A treatment used to vary soil temperature",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "BARE SOIL",
+      "type": "METHOD",
+      "description": "A treatment used to vary soil temperature",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "The application of water to change soil moisture levels",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "NITROGEN APPLICATION",
+      "type": "METHOD",
+      "description": "The process of applying nitrogen at different rates to the soil",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "VIGOR",
+      "type": "TRAIT",
+      "description": "The overall health and growth strength of the sorghum plants",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "STRIGA INCIDENCE",
+      "type": "CONCEPT",
+      "description": "The occurrence and prevalence of Striga parasitism",
+      "source_id": "paper_2778"
+    },
+    {
+      "name": "ROOT EXUDATE",
+      "type": "CONCEPT",
+      "description": "Chemicals released by sorghum roots that trigger Striga seed germination",
+      "source_id": "paper_2778"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "SEED GERMINATION",
+      "description": "High soil temperature from solarization prevents germination",
+      "weight": "9",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "VIABILITY",
+      "description": "High soil temperature from solarization reduces seed viability",
+      "weight": "9",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "SEED GERMINATION",
+      "description": "Irrigation levels did not have significant effects on germination",
+      "weight": "3",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "VIABILITY",
+      "description": "Irrigation levels did not have significant effects on viability",
+      "weight": "3",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "EMERGENCE",
+      "description": "Higher irrigation levels slightly increased the number of emerged plants",
+      "weight": "5",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "EMERGENCE",
+      "description": "Striga emergence is directly related to the rate of nitrogen application",
+      "weight": "8",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "VIGOR",
+      "description": "Nitrogen application neutralizes the harmful effects of Striga on sorghum vigor",
+      "weight": "7",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "STRIGA ASIATICA",
+      "target": "SORGHUM",
+      "description": "Striga asiatica parasitizes sorghum roots",
+      "weight": "10",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "ROOT EXUDATE",
+      "target": "SEED GERMINATION",
+      "description": "Sorghum root exudates are required for Striga seed germination",
+      "weight": "10",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "SOLARIZATION",
+      "target": "SOIL TEMPERATURE",
+      "description": "Solarization increases the maximum soil temperature",
+      "weight": "10",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "SOIL MOISTURE",
+      "description": "Irrigation is used to change soil moisture levels",
+      "weight": "10",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "EMERGENCE",
+      "description": "Increasing nitrogen application rates increases the number of emerged Striga plants",
+      "weight": "8",
+      "source_id": "paper_2778"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "STRIGA INCIDENCE",
+      "description": "Nitrogen application does not reduce Striga incidence",
+      "weight": "6",
+      "source_id": "paper_2778"
+    }
+  ]
+}

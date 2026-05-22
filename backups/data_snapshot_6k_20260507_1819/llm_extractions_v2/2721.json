@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "SEED DRYING",
+      "type": "METHOD",
+      "description": "The process of removing excess moisture from seeds to reduce respiration and deterioration while maintaining viability",
+      "source_id": "paper_2721"
+    },
+    {
+      "name": "MOISTURE CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of water present in seeds, which is reduced during the drying process",
+      "source_id": "paper_2721"
+    },
+    {
+      "name": "RESPIRATION",
+      "type": "TRAIT",
+      "description": "The biological process in seeds that is reduced by the removal of excess moisture",
+      "source_id": "paper_2721"
+    },
+    {
+      "name": "DETERIORATION",
+      "type": "TRAIT",
+      "description": "The decline in seed quality that is reduced by seed drying",
+      "source_id": "paper_2721"
+    },
+    {
+      "name": "VIABILITY",
+      "type": "TRAIT",
+      "description": "The ability of a seed to germinate, which must be preserved during the drying process",
+      "source_id": "paper_2721"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, a crop characterized by orthodox seed nature",
+      "source_id": "paper_2721"
+    },
+    {
+      "name": "ORTHODOX SEED NATURE",
+      "type": "CONCEPT",
+      "description": "A seed classification based on behavior before and during storage, allowing safe drying to very low moisture contents",
+      "source_id": "paper_2721"
+    },
+    {
+      "name": "STORAGE",
+      "type": "CONDITION",
+      "description": "The state or period of keeping seeds, which defines the orthodox nature of the seed",
+      "source_id": "paper_2721"
+    },
+    {
+      "name": "WATER POTENTIAL",
+      "type": "CONCEPT",
+      "description": "A measure of water energy status in seeds, equivalent to specific moisture content levels",
+      "source_id": "paper_2721"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SEED DRYING",
+      "target": "MOISTURE CONTENT",
+      "description": "reduces",
+      "weight": "10",
+      "source_id": "paper_2721"
+    },
+    {
+      "source": "SEED DRYING",
+      "target": "RESPIRATION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2721"
+    },
+    {
+      "source": "SEED DRYING",
+      "target": "DETERIORATION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_2721"
+    },
+    {
+      "source": "SEED DRYING",
+      "target": "VIABILITY",
+      "description": "must not be detrimental to",
+      "weight": "8",
+      "source_id": "paper_2721"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ORTHODOX SEED NATURE",
+      "description": "belongs to",
+      "weight": "10",
+      "source_id": "paper_2721"
+    },
+    {
+      "source": "ORTHODOX SEED NATURE",
+      "target": "STORAGE",
+      "description": "based on behavior during",
+      "weight": "8",
+      "source_id": "paper_2721"
+    },
+    {
+      "source": "ORTHODOX SEED NATURE",
+      "target": "MOISTURE CONTENT",
+      "description": "allows drying to low levels",
+      "weight": "9",
+      "source_id": "paper_2721"
+    },
+    {
+      "source": "MOISTURE CONTENT",
+      "target": "WATER POTENTIAL",
+      "description": "equivalent to",
+      "weight": "10",
+      "source_id": "paper_2721"
+    }
+  ]
+}

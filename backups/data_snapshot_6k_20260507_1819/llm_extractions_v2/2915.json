@@ -1,0 +1,170 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The legume crop studied in the experiment",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "ICPL 2",
+      "type": "CROP",
+      "description": "The specific cultivar of pigeonpea used in the study",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "SRI LANKA",
+      "type": "LOCATION",
+      "description": "The country where the field experiment was conducted",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "PLANT POPULATION",
+      "type": "CONCEPT",
+      "description": "The density of plants per unit area, measured in plants/m²",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of crop produced per unit area",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "YIELD COMPONENTS",
+      "type": "TRAIT",
+      "description": "The individual factors that contribute to the overall yield",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "MAIN CROP",
+      "type": "CONCEPT",
+      "description": "The initial harvest of the pigeonpea crop",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "RATOON CROP",
+      "type": "CONCEPT",
+      "description": "The subsequent harvest grown from the stubble of the main crop",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The climatic period during which the pigeonpea was sown",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "POD PICKING",
+      "type": "METHOD",
+      "description": "The method used for harvesting the crop",
+      "source_id": "paper_2915"
+    },
+    {
+      "name": "RATOONING",
+      "type": "METHOD",
+      "description": "The process of cutting the crop to a specific height to encourage regrowth",
+      "source_id": "paper_2915"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "SRI LANKA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "ICPL 2",
+      "target": "PIGEONPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "YIELD COMPONENTS",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "YIELD",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "YIELD COMPONENTS",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "MAIN CROP",
+      "description": "produces",
+      "weight": "8",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "RATOON CROP",
+      "description": "produces",
+      "weight": "8",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "MAIN CROP",
+      "target": "YIELD",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "RATOON CROP",
+      "target": "YIELD",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "RAINY SEASON",
+      "description": "sown during",
+      "weight": "7",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "POD PICKING",
+      "description": "harvested by",
+      "weight": "8",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "RATOONING",
+      "description": "subjected to",
+      "weight": "8",
+      "source_id": "paper_2915"
+    },
+    {
+      "source": "RATOONING",
+      "target": "RATOON CROP",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_2915"
+    }
+  ]
+}

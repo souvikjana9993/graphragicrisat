@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied, including landraces and wild accessions",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "LANDRACES",
+      "type": "CONCEPT",
+      "description": "Highly dynamic populations with historical origins influenced by selection and gene flow",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variability among the populations of sorghum",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of measuring quantitative traits in plants to assess diversity",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "QUANTITATIVE TRAITS",
+      "type": "CONCEPT",
+      "description": "Economically important traits used to capture variability in sorghum populations",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "D2 STATISTICS",
+      "type": "METHOD",
+      "description": "A statistical method used for clustering accessions based on diversity",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "MATURITY",
+      "type": "TRAIT",
+      "description": "The time taken for the crop to mature, measured in days after sowing",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced, measured in grams",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "HYDERABAD",
+      "type": "LOCATION",
+      "description": "The city in India where the ICRISAT genebank is located",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the ICRISAT genebank is located",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "CROP IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The goal of utilizing genetic diversity for developing better crop varieties",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "NATURAL SELECTION",
+      "type": "CONCEPT",
+      "description": "A biological process influencing the evolution of landraces",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "GENE-FLOW",
+      "type": "CONCEPT",
+      "description": "The transfer of genetic material between populations influencing landrace evolution",
+      "source_id": "paper_11739"
+    },
+    {
+      "name": "GENETIC DRIFT",
+      "type": "CONCEPT",
+      "description": "Random changes in allele frequencies influencing landrace evolution",
+      "source_id": "paper_11739"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LANDRACES",
+      "target": "SORGHUM",
+      "description": "are populations of",
+      "weight": "10",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "PHENOTYPING",
+      "target": "SORGHUM",
+      "description": "used to assess diversity in",
+      "weight": "9",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "PHENOTYPING",
+      "target": "QUANTITATIVE TRAITS",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "D2 STATISTICS",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "D2 STATISTICS",
+      "target": "SORGHUM",
+      "description": "used to cluster accessions of",
+      "weight": "8",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "MATURITY",
+      "target": "QUANTITATIVE TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "YIELD",
+      "target": "QUANTITATIVE TRAITS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HYDERABAD",
+      "description": "conserved at genebank in",
+      "weight": "7",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "HYDERABAD",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "CROP IMPROVEMENT",
+      "description": "provides information for",
+      "weight": "9",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "NATURAL SELECTION",
+      "target": "LANDRACES",
+      "description": "influenced the evolution of",
+      "weight": "8",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "GENE-FLOW",
+      "target": "LANDRACES",
+      "description": "influenced the evolution of",
+      "weight": "8",
+      "source_id": "paper_11739"
+    },
+    {
+      "source": "GENETIC DRIFT",
+      "target": "LANDRACES",
+      "description": "influenced the evolution of",
+      "weight": "8",
+      "source_id": "paper_11739"
+    }
+  ]
+}

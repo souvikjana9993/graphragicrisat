@@ -1,0 +1,242 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Groundnut crop, specifically cultivar JL24",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "Fungus that causes pre-harvest infection and produces aflatoxin",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONCEPT",
+      "description": "Mycotoxin produced by Aspergillus flavus",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The weight or quantity of peanut pods produced",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "AFLATOXIN CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The amount of aflatoxin present in the peanut pods",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "INFECTION",
+      "type": "TRAIT",
+      "description": "The occurrence of Aspergillus flavus in the peanut pods",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "SOIL MOISTURE",
+      "type": "CONDITION",
+      "description": "The water content of the soil",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "SOIL TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature of the soil",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "SOIL MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "Condition where soil water is insufficient for the plant",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "METHOD",
+      "description": "The date on which peanut seeds are planted",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "The artificial application of water to the soil",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "Country in West Africa where the study was conducted",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "Region where the study was conducted",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "CROPGRO-PEANUT MODEL",
+      "type": "METHOD",
+      "description": "A simulation model used to predict peanut yield and moisture stress",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "FRACTION OF EXTRACTABLE SOIL WATER",
+      "type": "CONCEPT",
+      "description": "A measure of available water in the soil, denoted as FESW",
+      "source_id": "paper_3019"
+    },
+    {
+      "name": "POD-FILLING",
+      "type": "CONCEPT",
+      "description": "The growth stage of the peanut where pods develop",
+      "source_id": "paper_3019"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "NIGER",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "PEANUT",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "INFECTION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "INFECTION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "SOIL MOISTURE",
+      "target": "AFLATOXIN",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "AFLATOXIN",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "POD YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "INFECTION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "AFLATOXIN CONCENTRATION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "POD YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "INFECTION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "AFLATOXIN CONCENTRATION",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "SOIL MOISTURE STRESS",
+      "target": "INFECTION",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "SOIL MOISTURE STRESS",
+      "target": "AFLATOXIN CONCENTRATION",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "CROPGRO-PEANUT MODEL",
+      "target": "POD YIELD",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "CROPGRO-PEANUT MODEL",
+      "target": "SOIL MOISTURE STRESS",
+      "description": "simulates",
+      "weight": "8",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "FRACTION OF EXTRACTABLE SOIL WATER",
+      "target": "INFECTION",
+      "description": "negatively correlates",
+      "weight": "9",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "FRACTION OF EXTRACTABLE SOIL WATER",
+      "target": "AFLATOXIN CONCENTRATION",
+      "description": "negatively correlates",
+      "weight": "9",
+      "source_id": "paper_3019"
+    },
+    {
+      "source": "POD-FILLING",
+      "target": "SOIL MOISTURE STRESS",
+      "description": "critical period for",
+      "weight": "8",
+      "source_id": "paper_3019"
+    }
+  ]
+}

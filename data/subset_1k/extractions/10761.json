@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "SESAME",
+      "type": "CROP",
+      "description": "The target crop of the study, Sesamum indicum L.",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "GENETIC DISTANCE ANALYSIS",
+      "type": "METHOD",
+      "description": "The analysis used for the selection of suitable parents based on genetic divergence",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "HETEROSIS",
+      "type": "CONCEPT",
+      "description": "The phenomenon of hybrid superiority over parents",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "SSR",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat molecular markers used for genetic distance estimation",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "GDSSR",
+      "type": "METHOD",
+      "description": "Genetic distance estimated using SSR markers",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "SEED-STORAGE PROTEIN PROFILING",
+      "type": "METHOD",
+      "description": "The process of analyzing seed-storage proteins to estimate genetic distance",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "GDSDS",
+      "type": "METHOD",
+      "description": "Genetic distance estimated using seed-storage protein profiling",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "AGRO-MORPHOLOGICAL TRAITS",
+      "type": "TRAIT",
+      "description": "Physical and growth characteristics used to estimate genetic distance",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "GDMOR",
+      "type": "METHOD",
+      "description": "Genetic distance estimated using agro-morphological traits",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "HYBRID PERFORMANCE",
+      "type": "CONCEPT",
+      "description": "The overall performance and yield of the generated F1 hybrids",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "COMBINING ABILITY ANALYSIS",
+      "type": "METHOD",
+      "description": "The analysis used to evaluate the ability of parents to produce superior offspring",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "HALF DIALLEL",
+      "type": "METHOD",
+      "description": "A mating design used to generate crosses for combining ability analysis",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced per plant, used as a primary performance metric",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "BETTER-PARENT HETEROSIS",
+      "type": "CONCEPT",
+      "description": "Heterosis calculated as the superiority of the hybrid over the better parent",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "MID-PARENT HETEROSIS",
+      "type": "CONCEPT",
+      "description": "Heterosis calculated as the superiority of the hybrid over the average of the two parents",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "SPECIFIC COMBINING ABILITY",
+      "type": "CONCEPT",
+      "description": "The deviation of the hybrid performance from the expected value based on general combining ability",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "PER SE PERFORMANCE",
+      "type": "CONCEPT",
+      "description": "The actual observed performance of the hybrids",
+      "source_id": "paper_10761"
+    },
+    {
+      "name": "PARENTAL DIVERGENCE",
+      "type": "CONCEPT",
+      "description": "The degree of genetic difference between the selected parents",
+      "source_id": "paper_10761"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GDSSR",
+      "target": "SESAME",
+      "description": "used to estimate genetic distance in",
+      "weight": "9",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "GDSDS",
+      "target": "SESAME",
+      "description": "used to estimate genetic distance in",
+      "weight": "9",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "GDMOR",
+      "target": "SESAME",
+      "description": "used to estimate genetic distance in",
+      "weight": "9",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "SSR",
+      "target": "GDSSR",
+      "description": "used as the molecular marker for",
+      "weight": "10",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "SEED-STORAGE PROTEIN PROFILING",
+      "target": "GDSDS",
+      "description": "used as the method for",
+      "weight": "10",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "AGRO-MORPHOLOGICAL TRAITS",
+      "target": "GDMOR",
+      "description": "used as the basis for",
+      "weight": "10",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "HALF DIALLEL",
+      "target": "COMBINING ABILITY ANALYSIS",
+      "description": "used as the mating design for",
+      "weight": "10",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "SPECIFIC COMBINING ABILITY",
+      "target": "HETEROSIS",
+      "description": "important factor in the determination of",
+      "weight": "8",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "SPECIFIC COMBINING ABILITY",
+      "target": "PER SE PERFORMANCE",
+      "description": "highly significant positive correlation with",
+      "weight": "9",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "BETTER-PARENT HETEROSIS",
+      "target": "GDSSR",
+      "description": "positive non-significant correlation with",
+      "weight": "3",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "BETTER-PARENT HETEROSIS",
+      "target": "GDMOR",
+      "description": "non-significant negative correlation with",
+      "weight": "3",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "BETTER-PARENT HETEROSIS",
+      "target": "GDSDS",
+      "description": "non-significant negative correlation with",
+      "weight": "3",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "SPECIFIC COMBINING ABILITY",
+      "target": "MID-PARENT HETEROSIS",
+      "description": "significant linear regression on",
+      "weight": "8",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "SPECIFIC COMBINING ABILITY",
+      "target": "BETTER-PARENT HETEROSIS",
+      "description": "significant linear regression on",
+      "weight": "8",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "SPECIFIC COMBINING ABILITY",
+      "target": "PER SE PERFORMANCE",
+      "description": "significant linear regression on",
+      "weight": "9",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "PARENTAL DIVERGENCE",
+      "target": "HETEROSIS",
+      "description": "likely to produce high",
+      "weight": "7",
+      "source_id": "paper_10761"
+    },
+    {
+      "source": "YIELD",
+      "target": "HYBRID PERFORMANCE",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_10761"
+    }
+  ]
+}

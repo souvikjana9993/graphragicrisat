@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop Oryza sativa used in the study.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "MICRORNAS",
+      "type": "CONCEPT",
+      "description": "Small noncoding regulatory RNAs that control gene expression by mRNA degradation or translational repression.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "GENE EXPRESSION",
+      "type": "CONCEPT",
+      "description": "The process by which information from a gene is used in the synthesis of a functional gene product.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "MRNA DEGRADATION",
+      "type": "CONCEPT",
+      "description": "A mechanism by which microRNAs control gene expression.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "TRANSLATIONAL REPRESSION",
+      "type": "CONCEPT",
+      "description": "A mechanism by which microRNAs control gene expression.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "DEVELOPMENTAL TIMING",
+      "type": "TRAIT",
+      "description": "A biological process regulated by microRNAs.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "STRESS RESPONSE",
+      "type": "TRAIT",
+      "description": "A biological process regulated by microRNAs.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "RIBOSOMAL DNA",
+      "type": "GENE_MARKER",
+      "description": "The DNA sequence that codes for ribosomal RNA, found to be the origin of certain miRNAs.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "DEEP SEQUENCING",
+      "type": "METHOD",
+      "description": "A high-throughput sequencing method used to identify small RNA datasets.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "PUTATIVE MIRNAS",
+      "type": "GENE_MARKER",
+      "description": "Twelve identified miRNAs, ten of which originated from rDNA of rice chromosome 9.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "RICE CHROMOSOME 9",
+      "type": "LOCATION",
+      "description": "The specific chromosomal location in rice where the rDNA-derived miRNAs originate.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "HEAT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of rice cultivars to withstand high temperature stress.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "HIGH TEMPERATURE STRESS",
+      "type": "CONDITION",
+      "description": "The environmental condition of high temperature affecting rice seedlings.",
+      "source_id": "paper_10758"
+    },
+    {
+      "name": "EXPRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "The process of analyzing the expression levels of miRNAs and their target genes.",
+      "source_id": "paper_10758"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MICRORNAS",
+      "target": "GENE EXPRESSION",
+      "description": "control",
+      "weight": "10",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "MICRORNAS",
+      "target": "MRNA DEGRADATION",
+      "description": "control gene expression via",
+      "weight": "9",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "MICRORNAS",
+      "target": "TRANSLATIONAL REPRESSION",
+      "description": "control gene expression via",
+      "weight": "9",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "MICRORNAS",
+      "target": "DEVELOPMENTAL TIMING",
+      "description": "regulate",
+      "weight": "8",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "MICRORNAS",
+      "target": "STRESS RESPONSE",
+      "description": "regulate",
+      "weight": "8",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "DEEP SEQUENCING",
+      "target": "MICRORNAS",
+      "description": "used to discover",
+      "weight": "9",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "MICRORNAS",
+      "target": "RIBOSOMAL DNA",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "PUTATIVE MIRNAS",
+      "target": "MICRORNAS",
+      "description": "are a type of",
+      "weight": "10",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "PUTATIVE MIRNAS",
+      "target": "RICE CHROMOSOME 9",
+      "description": "originated from",
+      "weight": "10",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "EXPRESSION ANALYSIS",
+      "target": "PUTATIVE MIRNAS",
+      "description": "analyzed",
+      "weight": "9",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "HIGH TEMPERATURE STRESS",
+      "target": "MICRORNAS",
+      "description": "induces differential regulation of",
+      "weight": "8",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "RICE",
+      "target": "MICRORNAS",
+      "description": "host for",
+      "weight": "10",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "RICE",
+      "target": "HEAT TOLERANCE",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_10758"
+    },
+    {
+      "source": "HIGH TEMPERATURE STRESS",
+      "target": "RICE",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10758"
+    }
+  ]
+}

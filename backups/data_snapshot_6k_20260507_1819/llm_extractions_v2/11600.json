@@ -1,0 +1,279 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop species being studied for drought response mechanisms",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "An environmental stressor that constraints peanut production",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "WEST TEXAS",
+      "type": "LOCATION",
+      "description": "A region where peanut production is affected by drought",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "EASTERN NEW MEXICO",
+      "type": "LOCATION",
+      "description": "A region where peanut production is affected by drought",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "GROUNDWATER",
+      "type": "CONCEPT",
+      "description": "A water resource whose depletion leads to drought conditions",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "PHENOTYPIC ANALYSIS",
+      "type": "METHOD",
+      "description": "A multi-seasonal analysis used to evaluate peanut genotypes",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "C76-16",
+      "type": "ORGANISM",
+      "description": "A peanut genotype identified as a best performer under deficit irrigation",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "VALENCIA-C",
+      "type": "ORGANISM",
+      "description": "A peanut genotype identified as a poor performer under deficit irrigation",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "DEFICIT IRRIGATION",
+      "type": "CONDITION",
+      "description": "A condition of limited water supply used to simulate drought",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "RNASEQ",
+      "type": "METHOD",
+      "description": "A sequencing method used to analyze transcriptome changes",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "FULLY IRRIGATED",
+      "type": "CONDITION",
+      "description": "A control condition with adequate water supply",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "DIPLOID ANCESTORS OF PEANUT",
+      "type": "ORGANISM",
+      "description": "The reference genomes used for mapping filtered RNAseq reads",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED GENES",
+      "type": "CONCEPT",
+      "description": "Genes that show statistically significant differences in expression between conditions",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "TRANSCRIPTION FACTORS",
+      "type": "CONCEPT",
+      "description": "A specific group of genes encoding proteins that regulate the transcription of other genes",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "type": "GENE_MARKER",
+      "description": "Genetic variations at a single nucleotide position identified among DEGs",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a genotype to maintain performance under drought stress",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "ABA",
+      "type": "CONCEPT",
+      "description": "Abscisic acid, a key hormone involved in drought response pathways",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "SUCROSE METABOLIC PATHWAYS",
+      "type": "CONCEPT",
+      "description": "Metabolic pathways involved in the synthesis and breakdown of sucrose for drought response",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "F-BOX PROTEIN ARAIP.3WN1Q",
+      "type": "GENE_MARKER",
+      "description": "A specific gene coding for an F-box protein showing polymorphism between genotypes",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "LIPID TRANSFER PROTEIN ARADU.03ENG",
+      "type": "GENE_MARKER",
+      "description": "A specific gene coding for a lipid transfer protein showing polymorphism between genotypes",
+      "source_id": "paper_11600"
+    },
+    {
+      "name": "EARLY GENERATION SELECTION",
+      "type": "METHOD",
+      "description": "A breeding approach to select drought responsive genotypes using genetic markers",
+      "source_id": "paper_11600"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "DROUGHT",
+      "description": "is constrained by",
+      "weight": "9",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "PEANUT",
+      "target": "WEST TEXAS",
+      "description": "is produced in",
+      "weight": "8",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "PEANUT",
+      "target": "EASTERN NEW MEXICO",
+      "description": "is produced in",
+      "weight": "8",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "GROUNDWATER",
+      "target": "DROUGHT",
+      "description": "depletion causes",
+      "weight": "10",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "PHENOTYPIC ANALYSIS",
+      "target": "C76-16",
+      "description": "evaluated",
+      "weight": "9",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "PHENOTYPIC ANALYSIS",
+      "target": "VALENCIA-C",
+      "description": "evaluated",
+      "weight": "9",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "C76-16",
+      "target": "DEFICIT IRRIGATION",
+      "description": "best performer under",
+      "weight": "10",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "VALENCIA-C",
+      "target": "DEFICIT IRRIGATION",
+      "description": "poor performer under",
+      "weight": "10",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "RNASEQ",
+      "target": "C76-16",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "RNASEQ",
+      "target": "VALENCIA-C",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "RNASEQ",
+      "target": "DEFICIT IRRIGATION",
+      "description": "analyzed response to",
+      "weight": "9",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "RNASEQ",
+      "target": "FULLY IRRIGATED",
+      "description": "analyzed response to",
+      "weight": "9",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "RNASEQ",
+      "target": "DIFFERENTIALLY EXPRESSED GENES",
+      "description": "detected",
+      "weight": "10",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "TRANSCRIPTION FACTORS",
+      "description": "include",
+      "weight": "8",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "description": "contain",
+      "weight": "8",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "C76-16",
+      "target": "DROUGHT TOLERANCE",
+      "description": "exhibits higher",
+      "weight": "10",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "ABA",
+      "description": "mediated by activation of genes in",
+      "weight": "8",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "SUCROSE METABOLIC PATHWAYS",
+      "description": "mediated by activation of genes in",
+      "weight": "8",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "target": "F-BOX PROTEIN ARAIP.3WN1Q",
+      "description": "identified in",
+      "weight": "9",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "target": "LIPID TRANSFER PROTEIN ARADU.03ENG",
+      "description": "identified in",
+      "weight": "9",
+      "source_id": "paper_11600"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "target": "EARLY GENERATION SELECTION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11600"
+    }
+  ]
+}

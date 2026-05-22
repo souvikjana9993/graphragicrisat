@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "CROPLAND EXTENT",
+      "type": "CONCEPT",
+      "description": "The area and boundaries of land used for growing crops, including fallow areas.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "FALLOW AREAS",
+      "type": "CONCEPT",
+      "description": "Land that is plowed and tilled but left unseeded for a period.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "SATELLITE EARTH OBSERVATION",
+      "type": "METHOD",
+      "description": "The use of satellites to monitor the Earth's surface for mapping purposes.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "AUSTRALIA",
+      "type": "LOCATION",
+      "description": "The continent where the cropland mapping study was conducted.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "A machine learning algorithm used to classify cropland versus non-cropland.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "A cloud computing platform used for processing geospatial data and running algorithms.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "LANDSAT-8",
+      "type": "METHOD",
+      "description": "A satellite providing multi-spectral imagery used as the data source.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "LANDSAT BANDS",
+      "type": "METHOD",
+      "description": "Specific spectral bands including blue, green, red, NIR, SWIR1, temp, NDVI, and NDWI.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "MEAN VALUE COMPOSITING",
+      "type": "METHOD",
+      "description": "A technique used to composite multi-temporal data into a single layer.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "ACCURACY ASSESSMENT",
+      "type": "METHOD",
+      "description": "The process of evaluating the precision of the generated cropland map.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "FIELD SURVEY",
+      "type": "METHOD",
+      "description": "Ground-truth data collection used for independent validation.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "HIGH RESOLUTION IMAGERY",
+      "type": "METHOD",
+      "description": "Sub-meter to 5-m spatial resolution imagery used for validation.",
+      "source_id": "paper_10275"
+    },
+    {
+      "name": "SPATIAL RESOLUTION",
+      "type": "CONCEPT",
+      "description": "The level of detail in an image, specifically 30-m, 250-m, and 1-km in this study.",
+      "source_id": "paper_10275"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SATELLITE EARTH OBSERVATION",
+      "target": "CROPLAND EXTENT",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "CROPLAND EXTENT",
+      "description": "used to determine",
+      "weight": "10",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "RANDOM FOREST",
+      "description": "platform used to run",
+      "weight": "10",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "LANDSAT-8",
+      "target": "RANDOM FOREST",
+      "description": "provides input data for",
+      "weight": "9",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "LANDSAT BANDS",
+      "target": "RANDOM FOREST",
+      "description": "used as features for",
+      "weight": "9",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "MEAN VALUE COMPOSITING",
+      "target": "LANDSAT BANDS",
+      "description": "used to process",
+      "weight": "8",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "ACCURACY ASSESSMENT",
+      "target": "CROPLAND EXTENT",
+      "description": "used to validate",
+      "weight": "10",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "FIELD SURVEY",
+      "target": "ACCURACY ASSESSMENT",
+      "description": "provides validation data for",
+      "weight": "9",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "HIGH RESOLUTION IMAGERY",
+      "target": "ACCURACY ASSESSMENT",
+      "description": "provides validation data for",
+      "weight": "9",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "AUSTRALIA",
+      "target": "CROPLAND EXTENT",
+      "description": "location of mapping",
+      "weight": "10",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "SPATIAL RESOLUTION",
+      "target": "CROPLAND EXTENT",
+      "description": "affects precision and reliability of",
+      "weight": "8",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "CROPLAND EXTENT",
+      "target": "FOOD SECURITY",
+      "description": "crucial for analysis of",
+      "weight": "7",
+      "source_id": "paper_10275"
+    },
+    {
+      "source": "FALLOW AREAS",
+      "target": "CROPLAND EXTENT",
+      "description": "included as part of",
+      "weight": "8",
+      "source_id": "paper_10275"
+    }
+  ]
+}

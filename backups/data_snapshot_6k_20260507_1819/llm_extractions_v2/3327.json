@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop being studied for stalk strength and resistance to breakage",
+      "source_id": "paper_3327"
+    },
+    {
+      "name": "STALK STRENGTH",
+      "type": "TRAIT",
+      "description": "The general trait under genetic analysis in maize",
+      "source_id": "paper_3327"
+    },
+    {
+      "name": "RIND THICKNESS",
+      "type": "TRAIT",
+      "description": "The thickness of the rind in the second and third internodes of the maize stalk",
+      "source_id": "paper_3327"
+    },
+    {
+      "name": "CRUSHING STRENGTH",
+      "type": "TRAIT",
+      "description": "The strength of the second and third internodes of the maize stalk against crushing",
+      "source_id": "paper_3327"
+    },
+    {
+      "name": "STALK BREAKAGE",
+      "type": "TRAIT",
+      "description": "The occurrence of breakage in the maize stalk",
+      "source_id": "paper_3327"
+    },
+    {
+      "name": "RESISTANCE TO STALK BREAKAGE",
+      "type": "TRAIT",
+      "description": "The ability of the maize plant to resist stalk breakage",
+      "source_id": "paper_3327"
+    },
+    {
+      "name": "GENETIC ANALYSIS",
+      "type": "METHOD",
+      "description": "The method used to analyze the inheritance and variation of stalk strength",
+      "source_id": "paper_3327"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENETIC ANALYSIS",
+      "target": "MAIZE",
+      "description": "used to study",
+      "weight": "7",
+      "source_id": "paper_3327"
+    },
+    {
+      "source": "GENETIC ANALYSIS",
+      "target": "STALK STRENGTH",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_3327"
+    },
+    {
+      "source": "RIND THICKNESS",
+      "target": "STALK BREAKAGE",
+      "description": "highly negatively correlated with",
+      "weight": "10",
+      "source_id": "paper_3327"
+    },
+    {
+      "source": "CRUSHING STRENGTH",
+      "target": "STALK BREAKAGE",
+      "description": "highly negatively correlated with",
+      "weight": "10",
+      "source_id": "paper_3327"
+    },
+    {
+      "source": "RIND THICKNESS",
+      "target": "RESISTANCE TO STALK BREAKAGE",
+      "description": "serves as an index for",
+      "weight": "8",
+      "source_id": "paper_3327"
+    },
+    {
+      "source": "CRUSHING STRENGTH",
+      "target": "RESISTANCE TO STALK BREAKAGE",
+      "description": "serves as an index for",
+      "weight": "8",
+      "source_id": "paper_3327"
+    },
+    {
+      "source": "MAIZE",
+      "target": "STALK STRENGTH",
+      "description": "possesses trait",
+      "weight": "9",
+      "source_id": "paper_3327"
+    },
+    {
+      "source": "MAIZE",
+      "target": "STALK BREAKAGE",
+      "description": "possesses trait",
+      "weight": "9",
+      "source_id": "paper_3327"
+    }
+  ]
+}

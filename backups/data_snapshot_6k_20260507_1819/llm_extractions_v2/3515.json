@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop studied for its susceptibility to soil water deficits at different growth stages.",
+      "source_id": "paper_3515"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "The stress condition of soil water shortage imposed on the crop.",
+      "source_id": "paper_3515"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The research method used to determine crop susceptibility over a 2-year period.",
+      "source_id": "paper_3515"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of productivity used to determine the extent of loss due to water stress.",
+      "source_id": "paper_3515"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "CONCEPT",
+      "description": "A critical growth stage used to determine the timing of stress termination and its effect on yield.",
+      "source_id": "paper_3515"
+    },
+    {
+      "name": "GRAIN FILLING",
+      "type": "CONCEPT",
+      "description": "A growth stage where the relief of water stress has a minimal adverse effect on grain yield.",
+      "source_id": "paper_3515"
+    },
+    {
+      "name": "TILLERS",
+      "type": "CONCEPT",
+      "description": "Plant structures that can produce panicles to compensate for yield loss when stress is relieved early.",
+      "source_id": "paper_3515"
+    },
+    {
+      "name": "PANICLES",
+      "type": "CONCEPT",
+      "description": "The reproductive structures produced by tillers.",
+      "source_id": "paper_3515"
+    },
+    {
+      "name": "MID-SEASON DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Water deficit occurring during the middle of the crop growth cycle.",
+      "source_id": "paper_3515"
+    },
+    {
+      "name": "LATE-SEASON DROUGHT",
+      "type": "CONDITION",
+      "description": "Water deficit occurring during the late stages of crop growth.",
+      "source_id": "paper_3515"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "WATER DEFICIT",
+      "description": "Susceptibility of the crop to soil water deficits was determined.",
+      "weight": "10",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "PEARL MILLET",
+      "description": "Field experiments were conducted to study the crop.",
+      "weight": "8",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "GRAIN YIELD",
+      "description": "Water deficit leads to loss in grain yield.",
+      "weight": "10",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "FLOWERING",
+      "target": "GRAIN YIELD",
+      "description": "The time of stress termination from flowering determines the extent of grain yield loss.",
+      "weight": "8",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "GRAIN FILLING",
+      "target": "GRAIN YIELD",
+      "description": "Water stress relieved at early grain filling has little adverse effect on grain yield.",
+      "weight": "7",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "TILLERS",
+      "target": "PANICLES",
+      "description": "Additional tillers produce panicles to mitigate yield loss.",
+      "weight": "9",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "TILLERS",
+      "target": "GRAIN YIELD",
+      "description": "The response of tillers affects the overall grain yield.",
+      "weight": "7",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "MID-SEASON DROUGHT STRESS",
+      "target": "WATER DEFICIT",
+      "description": "Mid-season drought is a specific timing of water deficit.",
+      "weight": "10",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "LATE-SEASON DROUGHT",
+      "target": "WATER DEFICIT",
+      "description": "Late-season drought is a specific timing of water deficit.",
+      "weight": "10",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "MID-SEASON DROUGHT STRESS",
+      "target": "GRAIN YIELD",
+      "description": "Susceptibility to mid-season drought is related to the time stress was terminated.",
+      "weight": "8",
+      "source_id": "paper_3515"
+    },
+    {
+      "source": "LATE-SEASON DROUGHT",
+      "target": "GRAIN YIELD",
+      "description": "Susceptibility to late-season drought is related to the time stress was initiated.",
+      "weight": "8",
+      "source_id": "paper_3515"
+    }
+  ]
+}

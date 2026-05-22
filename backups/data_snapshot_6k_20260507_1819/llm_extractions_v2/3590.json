@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being collected in the mission",
+      "source_id": "paper_3590"
+    },
+    {
+      "name": "GERMPLASM",
+      "type": "CONCEPT",
+      "description": "The genetic material of the groundnut collected",
+      "source_id": "paper_3590"
+    },
+    {
+      "name": "TANZANIA",
+      "type": "LOCATION",
+      "description": "The country where the groundnut germplasm was collected",
+      "source_id": "paper_3590"
+    },
+    {
+      "name": "COLLECTING MISSION",
+      "type": "METHOD",
+      "description": "The process of gathering 96 groundnut samples in April-May 1985",
+      "source_id": "paper_3590"
+    },
+    {
+      "name": "MATURITY",
+      "type": "TRAIT",
+      "description": "The time taken for the samples to mature, approximately 120 days",
+      "source_id": "paper_3590"
+    },
+    {
+      "name": "PROVENANCE",
+      "type": "CONCEPT",
+      "description": "The origin and source details of the collected samples",
+      "source_id": "paper_3590"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COLLECTING MISSION",
+      "target": "GROUNDNUT",
+      "description": "The mission was conducted to collect samples of this crop",
+      "weight": "10",
+      "source_id": "paper_3590"
+    },
+    {
+      "source": "COLLECTING MISSION",
+      "target": "TANZANIA",
+      "description": "The mission took place in this location",
+      "weight": "10",
+      "source_id": "paper_3590"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "GERMPLASM",
+      "description": "The collected material consists of this crop's genetic resources",
+      "weight": "9",
+      "source_id": "paper_3590"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "MATURITY",
+      "description": "The collected samples of this crop showed a specific maturity period",
+      "weight": "8",
+      "source_id": "paper_3590"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "PROVENANCE",
+      "description": "The origin details were recorded for the collected samples of this crop",
+      "weight": "8",
+      "source_id": "paper_3590"
+    }
+  ]
+}

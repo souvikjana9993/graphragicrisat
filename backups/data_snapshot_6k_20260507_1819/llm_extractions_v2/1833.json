@@ -1,0 +1,210 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, the crop studied for genetic variation in grain-filling ability",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "D2 DWARFING GENE",
+      "type": "GENE_MARKER",
+      "description": "A gene in pearl millet that causes dwarfing and is associated with a reduction in individual grain mass",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "GRAIN-FILLING ABILITY",
+      "type": "TRAIT",
+      "description": "GFA, the ability of a plant to fill grains, defined as the effect on individual grain mass after adjusting for grain number",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "INDIVIDUAL GRAIN MASS",
+      "type": "TRAIT",
+      "description": "The mass of a single grain, which is reduced by the d2 dwarfing gene",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of grain produced per plant or area",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "GRAIN NUMBER",
+      "type": "TRAIT",
+      "description": "The total number of grains produced",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of grain yield to total biomass",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "RESTORER LINES",
+      "type": "CONCEPT",
+      "description": "Specific pearl millet lines used as parents in hybrid production to restore fertility",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "DWARF HYBRIDS",
+      "type": "CONCEPT",
+      "description": "Hybrid pearl millet plants exhibiting the dwarf phenotype",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "COMBINING ABILITY",
+      "type": "CONCEPT",
+      "description": "The capacity of a parent to transmit favorable traits to its offspring",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "ANALYSIS OF VARIANCE",
+      "type": "METHOD",
+      "description": "A statistical method used to analyze the differences among hybrids and R lines",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "LINEAR COVARIANCE ADJUSTMENT",
+      "type": "METHOD",
+      "description": "A statistical technique used to adjust individual grain mass for grain number to determine GFA",
+      "source_id": "paper_1833"
+    },
+    {
+      "name": "LEAST SQUARES ESTIMATE",
+      "type": "METHOD",
+      "description": "A method used to estimate the effect of R lines on individual grain mass",
+      "source_id": "paper_1833"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "D2 DWARFING GENE",
+      "target": "PEARL MILLET",
+      "description": "is present in",
+      "weight": "10",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "D2 DWARFING GENE",
+      "target": "INDIVIDUAL GRAIN MASS",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "D2 DWARFING GENE",
+      "target": "GRAIN YIELD",
+      "description": "causes a yield penalty",
+      "weight": "8",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "GRAIN-FILLING ABILITY",
+      "target": "INDIVIDUAL GRAIN MASS",
+      "description": "is related to",
+      "weight": "9",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "GRAIN-FILLING ABILITY",
+      "target": "GRAIN YIELD",
+      "description": "is related to",
+      "weight": "7",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "GRAIN-FILLING ABILITY",
+      "target": "GRAIN NUMBER",
+      "description": "is independent of",
+      "weight": "6",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "GRAIN-FILLING ABILITY",
+      "target": "HARVEST INDEX",
+      "description": "is related to",
+      "weight": "6",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "LINEAR COVARIANCE ADJUSTMENT",
+      "target": "GRAIN-FILLING ABILITY",
+      "description": "is used to calculate",
+      "weight": "10",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "LINEAR COVARIANCE ADJUSTMENT",
+      "target": "GRAIN NUMBER",
+      "description": "adjusts for",
+      "weight": "10",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "LINEAR COVARIANCE ADJUSTMENT",
+      "target": "INDIVIDUAL GRAIN MASS",
+      "description": "adjusts",
+      "weight": "10",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "ANALYSIS OF VARIANCE",
+      "target": "GRAIN-FILLING ABILITY",
+      "description": "is used to assess",
+      "weight": "8",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "LEAST SQUARES ESTIMATE",
+      "target": "GRAIN-FILLING ABILITY",
+      "description": "is used to define",
+      "weight": "9",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "RESTORER LINES",
+      "target": "PEARL MILLET",
+      "description": "are lines of",
+      "weight": "10",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "DWARF HYBRIDS",
+      "target": "PEARL MILLET",
+      "description": "are hybrids of",
+      "weight": "10",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "COMBINING ABILITY",
+      "target": "GRAIN-FILLING ABILITY",
+      "description": "is measured for",
+      "weight": "8",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "COMBINING ABILITY",
+      "target": "GRAIN YIELD",
+      "description": "is measured for",
+      "weight": "8",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "COMBINING ABILITY",
+      "target": "GRAIN NUMBER",
+      "description": "is measured for",
+      "weight": "8",
+      "source_id": "paper_1833"
+    },
+    {
+      "source": "COMBINING ABILITY",
+      "target": "INDIVIDUAL GRAIN MASS",
+      "description": "is measured for",
+      "weight": "8",
+      "source_id": "paper_1833"
+    }
+  ]
+}

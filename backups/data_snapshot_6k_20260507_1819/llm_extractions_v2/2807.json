@@ -1,0 +1,233 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the legume crop studied for nonnodulating traits",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "NONNODULATING",
+      "type": "TRAIT",
+      "description": "A trait where plants fail to form root nodules, hindering biological nitrogen fixation",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The process by which certain plants and bacteria convert atmospheric N2 into ammonia",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "LEGUME",
+      "type": "CROP",
+      "description": "A group of plants that can form symbiotic relationships with nitrogen-fixing bacteria",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "NODULATION OBSERVATION",
+      "type": "METHOD",
+      "description": "The method of inspecting roots for nodules at 22 and 112 days after sowing",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "FIELD CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environment in which the chickpea accessions were grown",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "DAYS AFTER SOWING",
+      "type": "CONDITION",
+      "description": "The specific time intervals used for nodulation checks",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "INOCULATION",
+      "type": "METHOD",
+      "description": "The process of introducing Rhizobium strain 1C 59 to confirm the nonnodulating trait",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "RHIZOBIUM STRAIN 1C 59",
+      "type": "ORGANISM",
+      "description": "The specific bacterial strain used to test for nodulation in chickpea",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "AGRONOMIC EVALUATION",
+      "type": "METHOD",
+      "description": "The study of plant performance and growth under field conditions",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "PLANT GROWTH",
+      "type": "TRAIT",
+      "description": "The overall physical development of the plant",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced by the plant",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "NITROGEN FERTILIZATION",
+      "type": "CONDITION",
+      "description": "The application of 50 to 100 kg N ha−1 to the plants",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "LOW NITROGEN FIELD",
+      "type": "CONDITION",
+      "description": "A field environment lacking nitrogen fertilizer",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "LEAF COLOR",
+      "type": "TRAIT",
+      "description": "The visual color of the leaves, which becomes light green in nonnodulating plants under low N",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "INTERNODAL DISTANCE",
+      "type": "TRAIT",
+      "description": "The length of the stem between nodes, which is short in nonnodulating plants under low N",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "LEAF SIZE",
+      "type": "TRAIT",
+      "description": "The dimensions of leaves and leaflets, which are small in nonnodulating plants under low N",
+      "source_id": "paper_2807"
+    },
+    {
+      "name": "LEAF PIGMENTATION",
+      "type": "TRAIT",
+      "description": "The presence of reddish-brown pigment on leaf margins in nonnodulating plants under low N",
+      "source_id": "paper_2807"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "NONNODULATING",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "LEGUME",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "LEGUME",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "NONNODULATING",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "lacks ability for",
+      "weight": "10",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "NODULATION OBSERVATION",
+      "target": "CHICKPEA",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "NODULATION OBSERVATION",
+      "target": "NONNODULATING",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "RHIZOBIUM STRAIN 1C 59",
+      "description": "uses",
+      "weight": "10",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "CHICKPEA",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "NONNODULATING",
+      "description": "confirms",
+      "weight": "10",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "AGRONOMIC EVALUATION",
+      "target": "CHICKPEA",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "AGRONOMIC EVALUATION",
+      "target": "NONNODULATING",
+      "description": "assesses",
+      "weight": "9",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "NITROGEN FERTILIZATION",
+      "target": "YIELD",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "LOW NITROGEN FIELD",
+      "target": "LEAF COLOR",
+      "description": "causes light green",
+      "weight": "9",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "LOW NITROGEN FIELD",
+      "target": "INTERNODAL DISTANCE",
+      "description": "causes short",
+      "weight": "9",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "LOW NITROGEN FIELD",
+      "target": "LEAF SIZE",
+      "description": "causes small",
+      "weight": "9",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "LOW NITROGEN FIELD",
+      "target": "LEAF PIGMENTATION",
+      "description": "causes reddish-brown",
+      "weight": "9",
+      "source_id": "paper_2807"
+    },
+    {
+      "source": "NONNODULATING",
+      "target": "PLANT GROWTH",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_2807"
+    }
+  ]
+}

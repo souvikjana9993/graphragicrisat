@@ -1,0 +1,241 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for growth variability and yield in Niger",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the field trials were conducted",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "ICRISAT SAHELIAN CENTER",
+      "type": "LOCATION",
+      "description": "The research center in Niger where the trials took place",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "NEMATICIDES",
+      "type": "METHOD",
+      "description": "Soil-applied chemicals used to control plant-parasitic nematodes",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "INORGANIC FERTILIZERS",
+      "type": "METHOD",
+      "description": "Nutrients applied to the soil to investigate effects on groundnut growth and yield",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "FARM YARD MANURE",
+      "type": "METHOD",
+      "description": "Organic fertilizer used to investigate effects on groundnut growth and yield",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "CROP GROWTH",
+      "type": "TRAIT",
+      "description": "The growth performance and spatial variability of the groundnut plants",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The overall productivity of the groundnut crop",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The weight or amount of pods produced by the groundnut plant",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "HAULM YIELD",
+      "type": "TRAIT",
+      "description": "The weight or amount of the stems and leaves produced by the groundnut plant",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "PLANT-PARASITIC NEMATODES",
+      "type": "ORGANISM",
+      "description": "Microscopic worms that cause stunted growth in groundnut plants",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "SCUTELLONEMA CLATHRICAUDATUM",
+      "type": "ORGANISM",
+      "description": "A specific species of plant-parasitic nematode found in the rhizosphere and geocarposphere",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "TELOTYLENCHUS INDICUS",
+      "type": "ORGANISM",
+      "description": "A specific species of plant-parasitic nematode found in the rhizosphere and geocarposphere",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "XIPHINEMA PARASETARIAE",
+      "type": "ORGANISM",
+      "description": "A specific species of plant-parasitic nematode found in the rhizosphere and geocarposphere",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "CARBOFURAN",
+      "type": "METHOD",
+      "description": "A specific nematicide used to reduce nematode population and increase yield",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "DIBROMOCHLOROPROPANE",
+      "type": "METHOD",
+      "description": "A specific nematicide effective in reducing crop growth variation and increasing yield",
+      "source_id": "paper_3050"
+    },
+    {
+      "name": "SOLARIZATION",
+      "type": "METHOD",
+      "description": "A soil treatment method using solar heat to affect crop growth and yield",
+      "source_id": "paper_3050"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NEMATICIDES",
+      "target": "GROUNDNUT",
+      "description": "used to investigate effects on growth and yield",
+      "weight": "8",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "INORGANIC FERTILIZERS",
+      "target": "GROUNDNUT",
+      "description": "used to investigate effects on growth and yield",
+      "weight": "8",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "FARM YARD MANURE",
+      "target": "GROUNDNUT",
+      "description": "used to investigate effects on growth and yield",
+      "weight": "8",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "PLANT-PARASITIC NEMATODES",
+      "target": "GROUNDNUT",
+      "description": "cause stunted growth and reduce yield",
+      "weight": "9",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "SCUTELLONEMA CLATHRICAUDATUM",
+      "target": "PLANT-PARASITIC NEMATODES",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "TELOTYLENCHUS INDICUS",
+      "target": "PLANT-PARASITIC NEMATODES",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "XIPHINEMA PARASETARIAE",
+      "target": "PLANT-PARASITIC NEMATODES",
+      "description": "is a species of",
+      "weight": "10",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "PLANT-PARASITIC NEMATODES",
+      "description": "reduces population densities in soil and roots",
+      "weight": "9",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "POD YIELD",
+      "description": "increases yield",
+      "weight": "8",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "CARBOFURAN",
+      "target": "HAULM YIELD",
+      "description": "increases yield",
+      "weight": "8",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "FARM YARD MANURE",
+      "target": "PLANT-PARASITIC NEMATODES",
+      "description": "reduces population densities when combined with Carbofuran",
+      "weight": "7",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "DIBROMOCHLOROPROPANE",
+      "target": "CROP GROWTH",
+      "description": "reduces variation in growth",
+      "weight": "9",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "DIBROMOCHLOROPROPANE",
+      "target": "POD YIELD",
+      "description": "increases yield",
+      "weight": "9",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "DIBROMOCHLOROPROPANE",
+      "target": "HAULM YIELD",
+      "description": "increases yield",
+      "weight": "9",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "SOLARIZATION",
+      "target": "CROP GROWTH",
+      "description": "no significant difference observed",
+      "weight": "3",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "SOLARIZATION",
+      "target": "POD YIELD",
+      "description": "no significant difference observed",
+      "weight": "3",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "SOLARIZATION",
+      "target": "HAULM YIELD",
+      "description": "no significant difference observed",
+      "weight": "3",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "ICRISAT SAHELIAN CENTER",
+      "target": "NIGER",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3050"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NIGER",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_3050"
+    }
+  ]
+}

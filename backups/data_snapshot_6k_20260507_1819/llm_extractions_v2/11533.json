@@ -1,0 +1,250 @@
+{
+  "entities": [
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "Legume crops, which are C3 plants",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "C3 PLANTS",
+      "type": "ORGANISM",
+      "description": "Plants that use the C3 pathway of photosynthesis",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "C4 PLANTS",
+      "type": "ORGANISM",
+      "description": "Plants that use the C4 pathway of photosynthesis",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONDITION",
+      "description": "Unprecedented changes in climatic conditions",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "ELEVATED CO2",
+      "type": "CONDITION",
+      "description": "Increased atmospheric carbon dioxide levels",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of crop productivity",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of biological material",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "PHOTOSYNTHETIC CARBON ASSIMILATION",
+      "type": "TRAIT",
+      "description": "The process of carbon fixation during photosynthesis",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "PHOTORESPIRATION",
+      "type": "TRAIT",
+      "description": "A respiratory process in plants that can reduce photosynthetic efficiency",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "GENOMICS",
+      "type": "METHOD",
+      "description": "The study of the complete set of DNA within an organism",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "SYSTEMS BIOLOGY",
+      "type": "METHOD",
+      "description": "An approach to biological research that integrates data from various levels of organization",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "PHYSIOLOGY",
+      "type": "METHOD",
+      "description": "The study of the functions and mechanisms in a living system",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "CROP MODELLING",
+      "type": "METHOD",
+      "description": "The use of mathematical models to simulate crop growth and response",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "SEQUENCING",
+      "type": "METHOD",
+      "description": "The process of determining the precise order of nucleotides within a DNA molecule",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of measuring physical or biochemical traits of an organism",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "MULTI-OMICS",
+      "type": "METHOD",
+      "description": "The integration of multiple omics data types such as genomics, proteomics, and metabolomics",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "CROP BREEDING",
+      "type": "METHOD",
+      "description": "The practice of developing plants with desirable genetic characteristics",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "INTEGRATED CROP-SOIL-CLIMATE MODELLING",
+      "type": "METHOD",
+      "description": "A combined modelling approach incorporating crop, soil, and climate data",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "ADAPTATION",
+      "type": "CONCEPT",
+      "description": "The process of adjusting to new environmental conditions",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "TRAIT IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The goal of enhancing specific characteristics of a crop",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "ECOSYSTEM SERVICES",
+      "type": "CONCEPT",
+      "description": "The benefits provided by ecosystems to humans",
+      "source_id": "paper_11533"
+    },
+    {
+      "name": "INVASIVE SPECIES",
+      "type": "ORGANISM",
+      "description": "Non-native species that cause harm to the environment",
+      "source_id": "paper_11533"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "YIELD",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "INVASIVE SPECIES",
+      "description": "favors",
+      "weight": "7",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "ECOSYSTEM SERVICES",
+      "description": "modifies provisioning of",
+      "weight": "7",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "ELEVATED CO2",
+      "target": "PHOTOSYNTHETIC CARBON ASSIMILATION",
+      "description": "positively regulates",
+      "weight": "9",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "ELEVATED CO2",
+      "target": "PHOTORESPIRATION",
+      "description": "depresses",
+      "weight": "9",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "C3 PLANTS",
+      "description": "are",
+      "weight": "10",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "ELEVATED CO2",
+      "target": "LEGUMES",
+      "description": "increases biomass and yield",
+      "weight": "8",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "GENOMICS",
+      "target": "TRAIT IMPROVEMENT",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "SYSTEMS BIOLOGY",
+      "target": "TRAIT IMPROVEMENT",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "PHYSIOLOGY",
+      "target": "TRAIT IMPROVEMENT",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "CROP MODELLING",
+      "target": "TRAIT IMPROVEMENT",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "CROP BREEDING",
+      "target": "TRAIT IMPROVEMENT",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "PHENOTYPING",
+      "target": "TRAIT IMPROVEMENT",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "MULTI-OMICS",
+      "target": "TRAIT IMPROVEMENT",
+      "description": "used for",
+      "weight": "8",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "INTEGRATED CROP-SOIL-CLIMATE MODELLING",
+      "target": "CLIMATE CHANGE",
+      "description": "cope with",
+      "weight": "9",
+      "source_id": "paper_11533"
+    },
+    {
+      "source": "CROP MODELLING",
+      "target": "ADAPTATION",
+      "description": "help in planning",
+      "weight": "8",
+      "source_id": "paper_11533"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being bred for salinity tolerance",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "SALINITY TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand high salt concentrations",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "SALINITY STRESS",
+      "type": "CONDITION",
+      "description": "The environmental stress caused by high soil salinity",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "GERMINATION/SEEDLING TOLERANCE",
+      "type": "TRAIT",
+      "description": "Salinity tolerance during the germination and seedling emergence stages",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "ADULT-PLANT TOLERANCE",
+      "type": "TRAIT",
+      "description": "Salinity tolerance during the later stages of plant growth",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "WHOLE-CROP TOLERANCE",
+      "type": "TRAIT",
+      "description": "The overall tolerance of the crop to salinity across all growth stages",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "SCREENING METHODS",
+      "type": "METHOD",
+      "description": "Techniques used to identify plants with salinity tolerance",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "SELECTION CRITERIA",
+      "type": "METHOD",
+      "description": "Standards used to choose plants for breeding based on salinity tolerance",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "CONVENTIONAL TOOLS",
+      "type": "METHOD",
+      "description": "Traditional breeding and screening tools used for genetic improvement",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "GENETIC IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The process of enhancing the genetic makeup of a crop for specific traits",
+      "source_id": "paper_4824"
+    },
+    {
+      "name": "INHERITANCE",
+      "type": "CONCEPT",
+      "description": "The process by which genetic traits are passed from parents to offspring",
+      "source_id": "paper_4824"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SALINITY TOLERANCE",
+      "description": "is bred for",
+      "weight": "10",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SALINITY STRESS",
+      "description": "is subject to",
+      "weight": "10",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "SALINITY TOLERANCE",
+      "target": "SALINITY STRESS",
+      "description": "is the ability to withstand",
+      "weight": "10",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "GERMINATION/SEEDLING TOLERANCE",
+      "target": "SALINITY TOLERANCE",
+      "description": "is a stage-specific form of",
+      "weight": "9",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "ADULT-PLANT TOLERANCE",
+      "target": "SALINITY TOLERANCE",
+      "description": "is a stage-specific form of",
+      "weight": "9",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "GERMINATION/SEEDLING TOLERANCE",
+      "target": "WHOLE-CROP TOLERANCE",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "ADULT-PLANT TOLERANCE",
+      "target": "WHOLE-CROP TOLERANCE",
+      "description": "contributes to",
+      "weight": "8",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "SCREENING METHODS",
+      "target": "SALINITY TOLERANCE",
+      "description": "are used to identify",
+      "weight": "9",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "SELECTION CRITERIA",
+      "target": "SALINITY TOLERANCE",
+      "description": "are used to select for",
+      "weight": "9",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "CONVENTIONAL TOOLS",
+      "target": "SCREENING METHODS",
+      "description": "are used in",
+      "weight": "7",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "GENETIC IMPROVEMENT",
+      "target": "SORGHUM",
+      "description": "is applied to",
+      "weight": "9",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "GENETIC IMPROVEMENT",
+      "target": "SALINITY TOLERANCE",
+      "description": "aims to enhance",
+      "weight": "9",
+      "source_id": "paper_4824"
+    },
+    {
+      "source": "INHERITANCE",
+      "target": "SALINITY TOLERANCE",
+      "description": "determines the complexity of breeding for",
+      "weight": "8",
+      "source_id": "paper_4824"
+    }
+  ]
+}

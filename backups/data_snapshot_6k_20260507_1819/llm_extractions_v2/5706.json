@@ -1,0 +1,180 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Tropical maize used in the study for resistance analysis",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "SUGARCANE BORER",
+      "type": "ORGANISM",
+      "description": "Diatraea saccharalis Fabricius, a serious pest in tropical maize production",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "AMERICAS",
+      "type": "LOCATION",
+      "description": "Region where tropical maize production areas are located",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "LEAF FEEDING RESISTANCE",
+      "type": "TRAIT",
+      "description": "Resistance to the leaf feeding generation of sugarcane borer (1SCB)",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "GRAIN YIELD UNDER PROTECTION",
+      "type": "TRAIT",
+      "description": "Grain yield (GYP) measured under protection from SCB larvae",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "GRAIN YIELD UNDER INFESTATION",
+      "type": "TRAIT",
+      "description": "Grain yield (GYI) measured under infestation with SCB larvae",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "Plant height (PITT/PHT) of maize genotypes",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "GRAIN YIELD REDUCTION",
+      "type": "TRAIT",
+      "description": "Reduction in grain yield (GYR) evaluated in field experiments",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "QUANTITATIVE TRAIT LOCI",
+      "type": "CONCEPT",
+      "description": "Genomic regions (QTL) affecting resistance and other traits",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "RFLP MARKER",
+      "type": "GENE_MARKER",
+      "description": "Restriction Fragment Length Polymorphism marker loci used in QTL analyses",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "COMPOSITE INTERVAL MAPPING",
+      "type": "METHOD",
+      "description": "Method used for detection and characterization of QTL",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "MARKER-ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "Breeding approach for improving resistance to sugarcane borer",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "TROPICAL ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Field environments where F3 lines were evaluated",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "CML131",
+      "type": "CONCEPT",
+      "description": "Susceptible maize genotype used in the cross",
+      "source_id": "paper_5706"
+    },
+    {
+      "name": "CML67",
+      "type": "CONCEPT",
+      "description": "Resistant maize genotype used in the cross",
+      "source_id": "paper_5706"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SUGARCANE BORER",
+      "target": "MAIZE",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "MAIZE",
+      "target": "AMERICAS",
+      "description": "is produced in",
+      "weight": "8",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCI",
+      "target": "LEAF FEEDING RESISTANCE",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCI",
+      "target": "GRAIN YIELD UNDER PROTECTION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCI",
+      "target": "GRAIN YIELD UNDER INFESTATION",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "QUANTITATIVE TRAIT LOCI",
+      "target": "PLANT HEIGHT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "RFLP MARKER",
+      "target": "QUANTITATIVE TRAIT LOCI",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "COMPOSITE INTERVAL MAPPING",
+      "target": "QUANTITATIVE TRAIT LOCI",
+      "description": "used to detect and characterize",
+      "weight": "10",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "MARKER-ASSISTED BREEDING",
+      "target": "LEAF FEEDING RESISTANCE",
+      "description": "used to improve",
+      "weight": "9",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "CML131",
+      "target": "MAIZE",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "CML67",
+      "target": "MAIZE",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_5706"
+    },
+    {
+      "source": "SUGARCANE BORER",
+      "target": "LEAF FEEDING RESISTANCE",
+      "description": "is the target of",
+      "weight": "10",
+      "source_id": "paper_5706"
+    }
+  ]
+}

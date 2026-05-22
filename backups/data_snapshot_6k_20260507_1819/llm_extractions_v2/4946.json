@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The main agricultural crop studied for soil pest infestation in West Africa",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study on groundnut soil pests was conducted",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "One of the West African countries where groundnut farms were surveyed",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "BURKINA-FASO",
+      "type": "LOCATION",
+      "description": "One of the West African countries where groundnut farms were surveyed",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "One of the West African countries where groundnut farms were surveyed",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "NIGERIA",
+      "type": "LOCATION",
+      "description": "One of the West African countries where groundnut farms were surveyed",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "TERMITES",
+      "type": "ORGANISM",
+      "description": "Soil arthropods, specifically of the genus Microtermes, that attack groundnut plants and kernels",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "MICROTERMES",
+      "type": "ORGANISM",
+      "description": "A genus of termites found to be the most abundant and widely distributed species of economic importance",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "WHITEGRUB",
+      "type": "ORGANISM",
+      "description": "Soil pests from the family Scarabaeidae, specifically the genus Schyzonycha, that infest groundnut farms",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "SCHYZONYCHA",
+      "type": "ORGANISM",
+      "description": "A genus of whitegrubs identified in the surveyed groundnut fields",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "MILLIPEDE",
+      "type": "ORGANISM",
+      "description": "Soil pests from the family Odontopygidae, specifically the genus Peridontopyge, that infest groundnut farms",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "PERIDONTOPYGE",
+      "type": "ORGANISM",
+      "description": "A genus of millipedes identified in the surveyed groundnut fields",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "YIELD LOSS",
+      "type": "TRAIT",
+      "description": "The reduction in groundnut harvest resulting from pest damage, particularly by termites",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "SPECIES DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variety and distribution of different soil pest species in groundnut farms",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "CEREAL CROP RESIDUES",
+      "type": "CONDITION",
+      "description": "Remnants of previous cereal crops in the fields that facilitate the spread of termites",
+      "source_id": "paper_4946"
+    },
+    {
+      "name": "PLANT MATURITY",
+      "type": "CONDITION",
+      "description": "The growth stage of the groundnut crop where pest population densities and observation frequencies change",
+      "source_id": "paper_4946"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TERMITES",
+      "target": "GROUNDNUT",
+      "description": "attack and damage plants and kernels",
+      "weight": "9",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "WHITEGRUB",
+      "target": "GROUNDNUT",
+      "description": "attack and infest plants",
+      "weight": "7",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "MILLIPEDE",
+      "target": "GROUNDNUT",
+      "description": "attack and infest plants",
+      "weight": "7",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "TERMITES",
+      "target": "YIELD LOSS",
+      "description": "cause significant reduction in yield",
+      "weight": "10",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "MICROTERMES",
+      "target": "TERMITES",
+      "description": "is a genus of",
+      "weight": "10",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "SCHYZONYCHA",
+      "target": "WHITEGRUB",
+      "description": "is a genus of",
+      "weight": "10",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "PERIDONTOPYGE",
+      "target": "MILLIPEDE",
+      "description": "is a genus of",
+      "weight": "10",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "CEREAL CROP RESIDUES",
+      "target": "TERMITES",
+      "description": "contribute to the spread of",
+      "weight": "8",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "WEST AFRICA",
+      "description": "is grown in",
+      "weight": "9",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "MALI",
+      "target": "WEST AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "BURKINA-FASO",
+      "target": "WEST AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "NIGER",
+      "target": "WEST AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "NIGERIA",
+      "target": "WEST AFRICA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_4946"
+    },
+    {
+      "source": "PLANT MATURITY",
+      "target": "TERMITES",
+      "description": "affects the frequency of observation on plants",
+      "weight": "6",
+      "source_id": "paper_4946"
+    }
+  ]
+}

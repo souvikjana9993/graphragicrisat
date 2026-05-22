@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop being bred for resistance and specific traits",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting chickpea",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "EARLINESS",
+      "type": "TRAIT",
+      "description": "The trait of early maturity in the crop",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The trait of having large kabuli-type seeds",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The trait of high productivity in the main season",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "PEDIGREE METHOD",
+      "type": "METHOD",
+      "description": "A breeding method used to advance generations until 1985",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "BULK-PEDIGREE METHOD",
+      "type": "METHOD",
+      "description": "A breeding method used to advance generations after 1985",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "BLIGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to resist Ascochyta blight",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "An outdoor environment used for evaluating blight resistance",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "A controlled indoor environment used for evaluating blight resistance",
+      "source_id": "paper_2453"
+    },
+    {
+      "name": "INOCULATION",
+      "type": "METHOD",
+      "description": "The process of using diseased debris and spore suspension to test resistance",
+      "source_id": "paper_2453"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "EARLINESS",
+      "description": "possesses trait",
+      "weight": "8",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED SIZE",
+      "description": "possesses trait",
+      "weight": "8",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "YIELD",
+      "description": "possesses trait",
+      "weight": "8",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "BLIGHT RESISTANCE",
+      "description": "possesses trait",
+      "weight": "9",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "PEDIGREE METHOD",
+      "target": "CHICKPEA",
+      "description": "used to breed",
+      "weight": "7",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "BULK-PEDIGREE METHOD",
+      "target": "CHICKPEA",
+      "description": "used to breed",
+      "weight": "7",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "BLIGHT RESISTANCE",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "provides resistance against",
+      "weight": "10",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "BLIGHT RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "FIELD",
+      "target": "BLIGHT RESISTANCE",
+      "description": "used as environment for evaluating",
+      "weight": "7",
+      "source_id": "paper_2453"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "BLIGHT RESISTANCE",
+      "description": "used as environment for evaluating",
+      "weight": "7",
+      "source_id": "paper_2453"
+    }
+  ]
+}

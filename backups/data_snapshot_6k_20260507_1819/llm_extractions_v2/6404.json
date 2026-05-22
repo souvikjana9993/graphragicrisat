@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop Arachis hypogaea L. studied for calcium nutrition in pods",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "One of the countries where field experiments were conducted",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "One of the countries where field experiments were conducted",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "RUNNER",
+      "type": "TRAIT",
+      "description": "A plant growth habit of groundnut characterized by wider pod distribution",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "BUNCH",
+      "type": "TRAIT",
+      "description": "A plant growth habit of groundnut characterized by pods concentrated near the tap root",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "CALCIUM",
+      "type": "CONDITION",
+      "description": "The essential nutrient required for groundnut pod development",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "POD DISTRIBUTION PATTERN",
+      "type": "TRAIT",
+      "description": "The spatial arrangement of pods relative to the tap root",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "SHELLING PERCENTAGE",
+      "type": "TRAIT",
+      "description": "A metric used to evaluate the efficiency of calcium exploitation",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The experimental approach used to compare runner and bunch cultivars",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "The statistical method used to analyze shelling percentage across environments",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "SOIL VOLUME PER POD",
+      "type": "CONCEPT",
+      "description": "The amount of soil available for each pod, affecting calcium competition",
+      "source_id": "paper_6404"
+    },
+    {
+      "name": "SOIL CALCIUM CONTENT",
+      "type": "CONDITION",
+      "description": "The concentration of calcium available in the soil",
+      "source_id": "paper_6404"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "INDIA",
+      "description": "studied in",
+      "weight": "10",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "NIGER",
+      "description": "studied in",
+      "weight": "10",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RUNNER",
+      "description": "has growth habit",
+      "weight": "10",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "BUNCH",
+      "description": "has growth habit",
+      "weight": "10",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "RUNNER",
+      "target": "POD DISTRIBUTION PATTERN",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "BUNCH",
+      "target": "POD DISTRIBUTION PATTERN",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "POD DISTRIBUTION PATTERN",
+      "target": "CALCIUM",
+      "description": "affects supply of",
+      "weight": "8",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "RUNNER",
+      "target": "CALCIUM",
+      "description": "more efficient in exploiting",
+      "weight": "8",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "BUNCH",
+      "target": "CALCIUM",
+      "description": "less efficient in exploiting",
+      "weight": "8",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "RUNNER",
+      "target": "SHELLING PERCENTAGE",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "BUNCH",
+      "target": "SHELLING PERCENTAGE",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "GROUNDNUT",
+      "description": "used to study",
+      "weight": "10",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "REGRESSION ANALYSIS",
+      "target": "SHELLING PERCENTAGE",
+      "description": "used to analyze",
+      "weight": "10",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "SOIL VOLUME PER POD",
+      "target": "CALCIUM",
+      "description": "affects competition for",
+      "weight": "8",
+      "source_id": "paper_6404"
+    },
+    {
+      "source": "SOIL CALCIUM CONTENT",
+      "target": "CALCIUM",
+      "description": "determines availability of",
+      "weight": "10",
+      "source_id": "paper_6404"
+    }
+  ]
+}

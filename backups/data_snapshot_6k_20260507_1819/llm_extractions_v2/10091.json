@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The main crop studied, Arachis hypogaea L., for yield loss assessment.",
+      "source_id": "paper_10091"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measured output of the crop, specifically kernel yield in kg/ha.",
+      "source_id": "paper_10091"
+    },
+    {
+      "name": "SUDAN SAVANNA OF GHANA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted.",
+      "source_id": "paper_10091"
+    },
+    {
+      "name": "FUNGICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents applied to control foliar diseases.",
+      "source_id": "paper_10091"
+    },
+    {
+      "name": "INSECTICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents applied to control soil pests and foliar insects.",
+      "source_id": "paper_10091"
+    },
+    {
+      "name": "SOIL PESTS",
+      "type": "ORGANISM",
+      "description": "Pests that attack the groundnut plant in the soil.",
+      "source_id": "paper_10091"
+    },
+    {
+      "name": "FOLIAR INSECTS",
+      "type": "ORGANISM",
+      "description": "Insects that attack the foliage of the groundnut plant.",
+      "source_id": "paper_10091"
+    },
+    {
+      "name": "FOLIAR DISEASES",
+      "type": "CONDITION",
+      "description": "Diseases affecting the leaves and foliage of the groundnut plant.",
+      "source_id": "paper_10091"
+    },
+    {
+      "name": "LEAF SPOTS",
+      "type": "CONDITION",
+      "description": "A specific type of foliar disease affecting groundnut.",
+      "source_id": "paper_10091"
+    },
+    {
+      "name": "ARTHROPOD PESTS",
+      "type": "ORGANISM",
+      "description": "General category of pests causing yield losses in groundnut.",
+      "source_id": "paper_10091"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SUDAN SAVANNA OF GHANA",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "FOLIAR DISEASES",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "INSECTICIDES",
+      "target": "SOIL PESTS",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "INSECTICIDES",
+      "target": "FOLIAR INSECTS",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "SOIL PESTS",
+      "target": "GROUNDNUT",
+      "description": "attacks",
+      "weight": "9",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "FOLIAR INSECTS",
+      "target": "GROUNDNUT",
+      "description": "attacks",
+      "weight": "9",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "FOLIAR DISEASES",
+      "target": "GROUNDNUT",
+      "description": "attacks",
+      "weight": "9",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "LEAF SPOTS",
+      "target": "FOLIAR DISEASES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "SOIL PESTS",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "FOLIAR INSECTS",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "FOLIAR DISEASES",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_10091"
+    },
+    {
+      "source": "ARTHROPOD PESTS",
+      "target": "GROUNDNUT",
+      "description": "attacks",
+      "weight": "9",
+      "source_id": "paper_10091"
+    }
+  ]
+}

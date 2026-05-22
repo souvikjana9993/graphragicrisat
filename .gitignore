@@ -1,0 +1,39 @@
+# Python Virtual Environments
+venv/
+.venv/
+env/
+.env
+
+# Environment Variables (DO NOT COMMIT SECRETS)
+.env
+.env.local
+.env.*
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+data/*.log
+
+# IDE & Editor Configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large Raw Data Directories & Backups (Keep out of source control)
+data/*
+*.zip
+*.tar.gz
+*.rar
+
+# ========================================================
+# ALLOWED EXCLUSIONS (Keep these in source control)
+# ========================================================
+# Explicitly keep the pilot study and sample data
+!data/subset_1k/
+!examples_output.txt
+!query_examples.py

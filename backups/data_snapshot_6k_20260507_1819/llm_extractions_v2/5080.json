@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for rosette disease management.",
+      "source_id": "paper_5080"
+    },
+    {
+      "name": "ROSETTE DISEASE",
+      "type": "CONDITION",
+      "description": "A disease affecting groundnut genotypes, measured by incidence.",
+      "source_id": "paper_5080"
+    },
+    {
+      "name": "CULTURAL PRACTICES",
+      "type": "METHOD",
+      "description": "Agricultural management strategies used to control disease and improve yield.",
+      "source_id": "paper_5080"
+    },
+    {
+      "name": "HOST-PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The genetic ability of groundnut genotypes to resist rosette disease.",
+      "source_id": "paper_5080"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The measure of groundnut productivity.",
+      "source_id": "paper_5080"
+    },
+    {
+      "name": "MALAWI",
+      "type": "LOCATION",
+      "description": "The country where the investigation was conducted.",
+      "source_id": "paper_5080"
+    },
+    {
+      "name": "SOWING TIME",
+      "type": "METHOD",
+      "description": "The timing of planting as a cultural practice.",
+      "source_id": "paper_5080"
+    },
+    {
+      "name": "PLANT POPULATION",
+      "type": "METHOD",
+      "description": "The density of plants as a cultural practice.",
+      "source_id": "paper_5080"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus component (GRAV) that affects pod yields of resistant genotypes.",
+      "source_id": "paper_5080"
+    },
+    {
+      "name": "PEGGING STAGE",
+      "type": "CONCEPT",
+      "description": "The growth stage of groundnut where disease incidence was measured.",
+      "source_id": "paper_5080"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CULTURAL PRACTICES",
+      "target": "ROSETTE DISEASE",
+      "description": "Affects the incidence of the disease",
+      "weight": "8",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "ROSETTE DISEASE",
+      "description": "Reduces the incidence of the disease",
+      "weight": "9",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "CULTURAL PRACTICES",
+      "target": "POD YIELD",
+      "description": "Influences the final pod yield",
+      "weight": "7",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "POD YIELD",
+      "description": "Increases pod yield under high disease pressure",
+      "weight": "8",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "SOWING TIME",
+      "target": "ROSETTE DISEASE",
+      "description": "Affects disease incidence",
+      "weight": "6",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "ROSETTE DISEASE",
+      "description": "Affects disease incidence",
+      "weight": "6",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "SOWING TIME",
+      "target": "POD YIELD",
+      "description": "Early sowing increases pod yield",
+      "weight": "7",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "PLANT POPULATION",
+      "target": "POD YIELD",
+      "description": "Optimum population increases pod yield",
+      "weight": "7",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "target": "ROSETTE DISEASE",
+      "description": "Is a component of the disease complex",
+      "weight": "9",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE ASSISTOR VIRUS",
+      "target": "POD YIELD",
+      "description": "Causes lower pod yields in resistant genotypes",
+      "weight": "8",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "MALAWI",
+      "description": "The crop was studied in this location",
+      "weight": "10",
+      "source_id": "paper_5080"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "ROSETTE DISEASE",
+      "description": "The crop is susceptible to this disease",
+      "weight": "10",
+      "source_id": "paper_5080"
+    }
+  ]
+}

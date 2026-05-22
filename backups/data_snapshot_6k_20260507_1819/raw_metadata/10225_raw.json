@@ -1,0 +1,174 @@
+{
+  "abstract": "A satellite-derived cropland extent map at high spatial resolution (30-m or better) is a must for food and water security analysis. Precise and accurate global cropland extent maps, indicating cropland and non-cropland areas, are starting points to develop higher-level products such as crop watering methods (irrigated or rainfed), cropping intensities (e.g., single, double, or continuous cropping), crop types, cropland fallows, as well as for assessment of cropland productivity (productivity per unit of land), and crop water productivity (productivity per unit of water). Uncertainties associated with the cropland extent map have cascading effects on all higher-level cropland products. However, precise and accurate cropland extent maps at high spatial resolution over large areas (e.g., continents or the globe) are challenging to produce due to the small-holder dominant agricultural systems like those found in most of Africa and Asia. Cloud-based geospatial computing platforms and multi-date, multi-sensor satellite image inventories on Google Earth Engine offer opportunities for mapping croplands with precision and accuracy over large areas that satisfy the requirements of broad range of applications. Such maps are expected to provide highly significant improvements compared to existing products, which tend to be coarser in resolution, and often fail to capture fragmented small-holder farms especially in regions with high dynamic change within and across years. To overcome these limitations, in this research we present an approach for cropland extent mapping at high spatial resolution (30-m or better) using the 10-day, 10 to 20-m, Sentinel-2 data in combination with 16-day, 30-m, Landsat-8 data on Google Earth Engine (GEE). First, nominal 30-m resolution satellite imagery composites were created from 36,924 scenes of Sentinel-2 and Landsat-8 images for the entire African continent in 2015–2016. These composites were generated using a median-mosaic of five bands (blue, green, red, near-infrared, NDVI) during each of the two periods (period 1: January–June 2016 and period 2: July–December 2015) plus a 30-m slope layer derived from the Shuttle Radar Topographic Mission (SRTM) elevation dataset. Second, we selected Cropland/Non-cropland training samples (sample size = 9791) from various sources in GEE to create pixel-based classifications. As supervised classification algorithm, Random Forest (RF) was used as the primary classifier because of its efficiency, and when over-fitting issues of RF happened due to the noise of input training data, Support Vector Machine (SVM) was applied to compensate for such defects in specific areas. Third, the Recursive Hierarchical Segmentation (RHSeg) algorithm was employed to generate an object-oriented segmentation layer based on spectral and spatial properties from the same input data. This layer was merged with the pixel-based classification to improve segmentation accuracy. Accuracies of the merged 30-m crop extent product were computed using an error matrix approach in which 1754 independent validation samples were used. In addition, a comparison was performed with other available cropland maps as well as with LULC maps to show spatial similarity. Finally, the cropland area results derived from the map were compared with UN FAO statistics. The independent accuracy assessment showed a weighted overall accuracy of 94%, with a producer’s accuracy of 85.9% (or omission error of 14.1%), and user’s accuracy of 68.5% (commission error of 31.5%) for the cropland class. The total net cropland area (TNCA) of Africa was estimated as 313 Mha for the nominal year 2015. The online product, referred to as the Global Food Security-support Analysis Data @ 30-m for the African Continent, Cropland Extent product (GFSAD30AFCE) is distributed through the NASA’s Land Processes Distributed Active Archive Center (LP DAAC) as (available for download by 10 November 2017 or earlier): https://doi.org/10.5067/MEaSUREs/GFSAD/GFSAD30AFCE.001 and can be viewed at https://croplands.org/app/map. Causes of uncertainty and limitations within the crop extent product are discussed in detail.",
+  "eprint_status": "archive",
+  "creators": [
+    {
+      "name": {
+        "given": "J",
+        "family": "Xiong",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "P S",
+        "family": "Thenkabail",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "J",
+        "family": "Tilton",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "M K",
+        "family": "Gumma",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "P",
+        "family": "Teluguntla",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "A",
+        "family": "Oliphant",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "R",
+        "family": "Congalton",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "K",
+        "family": "Yadav",
+        "lineage": null,
+        "honourific": null
+      }
+    },
+    {
+      "name": {
+        "given": "N",
+        "family": "Gorelick",
+        "lineage": null,
+        "honourific": null
+      }
+    }
+  ],
+  "full_text_status": "public",
+  "date_type": "published",
+  "dir": "disk0/00/01/02/25",
+  "rev_number": 12,
+  "funders": [
+    "NASA MEaSUREs (Making Earth System Data Records for Use in Research Environments)"
+  ],
+  "id_number": "10.3390/rs9101065",
+  "number": 1065,
+  "issn": "2072-4292",
+  "divisions": [
+    "CRPS4"
+  ],
+  "publication": "Remote Sensing",
+  "documents": [
+    {
+      "content": "published",
+      "security": "public",
+      "format": "application/pdf",
+      "formatdesc": "It is an Open access artcle",
+      "language": "en",
+      "placement": 1,
+      "mime_type": "application/pdf",
+      "main": "remotesensing-09-01065-v2.pdf",
+      "uri": "http://oar.icrisat.org/id/document/48616",
+      "docid": 48616,
+      "files": [
+        {
+          "mtime": "2017-10-24 06:48:34",
+          "hash": "83e40585d9a4c9167044717ea2b08612",
+          "objectid": 48616,
+          "fileid": 155459,
+          "datasetid": "document",
+          "mime_type": "application/pdf",
+          "uri": "http://oar.icrisat.org/id/file/155459",
+          "filename": "remotesensing-09-01065-v2.pdf",
+          "hash_type": "MD5",
+          "filesize": 13475998
+        }
+      ],
+      "pos": 1,
+      "eprintid": 10225,
+      "rev_number": 2
+    }
+  ],
+  "icrisatcreators": [
+    {
+      "name": {
+        "given": "M K",
+        "family": "Gumma",
+        "lineage": null,
+        "honourific": null
+      }
+    }
+  ],
+  "datestamp": "2017-10-24 07:06:04",
+  "lastmod": "2018-07-20 09:36:35",
+  "pagerange": "1-27",
+  "metadata_visibility": "show",
+  "userid": 1305,
+  "type": "article",
+  "uri": "http://oar.icrisat.org/id/eprint/10225",
+  "eprintid": 10225,
+  "official_url": "http://dx.doi.org/10.3390/rs9101065",
+  "subjects": [
+    "S100",
+    "s2.4",
+    "s28"
+  ],
+  "related_url": [
+    {
+      "url": "https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&q=Nominal+30-m+Cropland+Extent+Map+of+Continental+Africa+by+Integrating+Pixel-Based+and+Object-Based+Algorithms+Using+Sentinel-2+and+Landsat-8+Data+on+Google+Earth+Engine&btnG=",
+      "type": "pub"
+    }
+  ],
+  "refereed": "TRUE",
+  "affiliation": [
+    "Western Geographic Science Center, U. S. Geological Survey (USGS) (Flagstaff)",
+    "Bay Area Environmental Research Institute (BAERI) (West Sonoma)",
+    "Computational & Information Science and Technology Office, NASA Goddard Space Flight Center (Greenbelt)",
+    "ICRISAT (Patancheru)",
+    "Department of Natural Resources and the Environment, University of New Hampshire (Durham)",
+    "Google Inc (Mountain View)"
+  ],
+  "country": [
+    "USA",
+    "India"
+  ],
+  "publisher": "MDPI",
+  "keywords": "cropland mapping; cropland areas; 30-m; Landsat-8; Sentinel-2; Random Forest; Support Vector Machines; segmentation; RHSeg; Google Earth Engine; Africa",
+  "ispublished": "pub",
+  "date": "2017-10-19",
+  "note": "The research is funded by NASA MEaSUREs (Making Earth System Data Records for Use in Research Environments). The United States Geological Survey (USGS) provided supplemental funding as well as numerous other direct and indirect support through its Land Change Science (LCS), Land Remote Sensing (LRS) programs, and Climate and Land Use Change Mission Area. The NASA MEaSUREs project grant number: NNH13AV82I, the USGS Sales Order number: 29039. The authors would like to thank following persons for their support: Felix T. Portman and Stefan Siebert for providing statistics of MIRCA2000 data; Peng Gong for sharing of FROMGLC Validation Dataset (Zhao et al., 2014); Ryutaro Tateishi for sharing of CEReS Gaia validation data (Tateishi et al., 2014); Friedl Mark for sharing GRIPC500 dataset for inter-comparison, and Fabio Grita and Michela Marinelli’s help from FAO/CountrySTAT team. Special thanks to Jennifer L. Dungan and Mutlu Ozdogan for their suggestion to the manuscript. We would like to thanks the anonymous reviewers that helped improve this paper with their comments.",
+  "volume": "9(10)",
+  "title": "Nominal 30-m Cropland Extent Map of Continental Africa by Integrating Pixel-Based and Object-Based Algorithms Using Sentinel-2 and Landsat-8 Data on Google Earth Engine",
+  "status_changed": "2017-10-24 07:06:04"
+}

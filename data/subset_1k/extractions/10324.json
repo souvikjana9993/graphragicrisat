@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being evaluated for disease reaction",
+      "source_id": "paper_10324"
+    },
+    {
+      "name": "GROUNDNUT BUD NECROSIS ORTHOTOSPOVIRUS",
+      "type": "ORGANISM",
+      "description": "The virus causing bud necrosis in groundnut",
+      "source_id": "paper_10324"
+    },
+    {
+      "name": "GROUNDNUT BUD NECROSIS DISEASE",
+      "type": "CONDITION",
+      "description": "The disease caused by GBNV in groundnut",
+      "source_id": "paper_10324"
+    },
+    {
+      "name": "HYDERABAD, INDIA",
+      "type": "LOCATION",
+      "description": "The location where the field and greenhouse evaluations were conducted",
+      "source_id": "paper_10324"
+    },
+    {
+      "name": "NATURAL INFECTION",
+      "type": "METHOD",
+      "description": "Evaluation of disease reaction based on natural occurrence of the virus",
+      "source_id": "paper_10324"
+    },
+    {
+      "name": "GREENHOUSE SCREENING",
+      "type": "METHOD",
+      "description": "Controlled evaluation of disease reaction in a greenhouse environment",
+      "source_id": "paper_10324"
+    },
+    {
+      "name": "MECHANICAL SAP INOCULATION",
+      "type": "METHOD",
+      "description": "A technique used to infect plants with virus extract for screening",
+      "source_id": "paper_10324"
+    },
+    {
+      "name": "DISEASE REACTION",
+      "type": "TRAIT",
+      "description": "The level of resistance or susceptibility of groundnut genotypes to GBNV",
+      "source_id": "paper_10324"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "GROUNDNUT BUD NECROSIS DISEASE",
+      "description": "is affected by",
+      "weight": "10",
+      "source_id": "paper_10324"
+    },
+    {
+      "source": "GROUNDNUT BUD NECROSIS ORTHOTOSPOVIRUS",
+      "target": "GROUNDNUT BUD NECROSIS DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10324"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "GROUNDNUT BUD NECROSIS ORTHOTOSPOVIRUS",
+      "description": "is a host for",
+      "weight": "9",
+      "source_id": "paper_10324"
+    },
+    {
+      "source": "NATURAL INFECTION",
+      "target": "DISEASE REACTION",
+      "description": "is used to evaluate",
+      "weight": "8",
+      "source_id": "paper_10324"
+    },
+    {
+      "source": "GREENHOUSE SCREENING",
+      "target": "DISEASE REACTION",
+      "description": "is used to evaluate",
+      "weight": "8",
+      "source_id": "paper_10324"
+    },
+    {
+      "source": "MECHANICAL SAP INOCULATION",
+      "target": "GREENHOUSE SCREENING",
+      "description": "is a technique used in",
+      "weight": "9",
+      "source_id": "paper_10324"
+    },
+    {
+      "source": "HYDERABAD, INDIA",
+      "target": "NATURAL INFECTION",
+      "description": "is the location of",
+      "weight": "7",
+      "source_id": "paper_10324"
+    },
+    {
+      "source": "HYDERABAD, INDIA",
+      "target": "GREENHOUSE SCREENING",
+      "description": "is the location of",
+      "weight": "7",
+      "source_id": "paper_10324"
+    }
+  ]
+}

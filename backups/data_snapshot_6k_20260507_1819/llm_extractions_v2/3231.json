@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Grain sorghum, the host plant for the sorghum midge",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "SORGHUM MIDGE",
+      "type": "ORGANISM",
+      "description": "Contarinia sorghicola, a significant pest of grain sorghum",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "CYTOPLASMIC MALE STERILITY",
+      "type": "TRAIT",
+      "description": "A trait where plants are unable to produce functional pollen",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "MIDGE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist infestation and damage by the sorghum midge",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "MIDGE SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The lack of resistance to infestation and damage by the sorghum midge",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "A-LINES",
+      "type": "CONCEPT",
+      "description": "Genic-cytoplasmic male-sterile lines used in hybrid production",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "B-LINES",
+      "type": "CONCEPT",
+      "description": "Maintainer lines used to maintain A-lines",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "RESTORERS",
+      "type": "CONCEPT",
+      "description": "Lines used to restore fertility in A-lines to produce hybrids",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "MIDGE DAMAGE",
+      "type": "TRAIT",
+      "description": "The level of harm caused to the plant by the sorghum midge",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "ADULT EMERGENCE",
+      "type": "TRAIT",
+      "description": "The rate or number of adult midges emerging from the host plant",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "PM 7061",
+      "type": "CONCEPT",
+      "description": "A midge-resistant sorghum genotype",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "PM 7068",
+      "type": "CONCEPT",
+      "description": "A midge-resistant sorghum genotype",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "296A",
+      "type": "CONCEPT",
+      "description": "A midge-susceptible sorghum genotype",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "ICSA 42",
+      "type": "CONCEPT",
+      "description": "A midge-susceptible sorghum genotype",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "DJ6541",
+      "type": "CONCEPT",
+      "description": "A midge-resistant restorer line",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "POLLINATION",
+      "type": "METHOD",
+      "description": "The process of transferring pollen, used to study the effect of restorers",
+      "source_id": "paper_3231"
+    },
+    {
+      "name": "MIDGE-RESISTANT HYBRIDS",
+      "type": "CONCEPT",
+      "description": "Hybrids developed to be resistant to the sorghum midge",
+      "source_id": "paper_3231"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM MIDGE",
+      "target": "SORGHUM",
+      "description": "is a pest of",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "SORGHUM MIDGE",
+      "target": "MIDGE DAMAGE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "SORGHUM MIDGE",
+      "target": "ADULT EMERGENCE",
+      "description": "undergoes",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "A-LINES",
+      "target": "CYTOPLASMIC MALE STERILITY",
+      "description": "exhibit",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "B-LINES",
+      "target": "A-LINES",
+      "description": "maintain",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "RESTORERS",
+      "target": "A-LINES",
+      "description": "restore fertility to",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "PM 7061",
+      "target": "MIDGE RESISTANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "PM 7068",
+      "target": "MIDGE RESISTANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "296A",
+      "target": "MIDGE SUSCEPTIBILITY",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "ICSA 42",
+      "target": "MIDGE SUSCEPTIBILITY",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "DJ6541",
+      "target": "MIDGE RESISTANCE",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "POLLINATION",
+      "target": "ADULT EMERGENCE",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "DJ6541",
+      "target": "ADULT EMERGENCE",
+      "description": "reduces via pollination",
+      "weight": "8",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "MIDGE RESISTANCE",
+      "target": "MIDGE-RESISTANT HYBRIDS",
+      "description": "is a goal for",
+      "weight": "9",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "A-LINES",
+      "target": "MIDGE DAMAGE",
+      "description": "experience",
+      "weight": "8",
+      "source_id": "paper_3231"
+    },
+    {
+      "source": "B-LINES",
+      "target": "MIDGE DAMAGE",
+      "description": "experience",
+      "weight": "8",
+      "source_id": "paper_3231"
+    }
+  ]
+}

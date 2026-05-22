@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "VEGETABLE",
+      "type": "CROP",
+      "description": "Crops grown in urban and peri-urban production systems in Yaoundé",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "SOIL CONSERVATION PRACTICES",
+      "type": "CONCEPT",
+      "description": "Agricultural practices aimed at protecting soil health and productivity",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "URBANISATION",
+      "type": "CONDITION",
+      "description": "The process of urban growth that puts farming systems under stress",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "YAOUNDÉ",
+      "type": "LOCATION",
+      "description": "The city in Cameroon where the study on vegetable production was conducted",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "CAMEROON",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "MULTIVARIATE PROBIT MODEL",
+      "type": "METHOD",
+      "description": "A statistical model used to investigate the adoption of interdependent soil conservation practices",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "ORGANIC MANURE",
+      "type": "METHOD",
+      "description": "A soil conservation practice involving the application of organic matter to the soil",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "MULCHING",
+      "type": "METHOD",
+      "description": "A soil conservation practice of covering the soil surface to retain moisture and suppress weeds",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "CROP ROTATION",
+      "type": "METHOD",
+      "description": "A soil conservation practice of growing different crops in succession on the same land",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "FALLOW",
+      "type": "METHOD",
+      "description": "A soil conservation practice of leaving land unseeded for a period to recover fertility",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "PROXIMITY TO CITY CENTRE",
+      "type": "CONDITION",
+      "description": "The distance of agricultural land from the urban core",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "POPULATION DENSITY",
+      "type": "CONDITION",
+      "description": "The number of people living per unit area in the urbanizing region",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "CONSERVATION AGRICULTURE",
+      "type": "CONCEPT",
+      "description": "An approach to farming that is environmentally friendly and productive",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "URBAN MASTER AND ZONING PLANS",
+      "type": "CONCEPT",
+      "description": "Planning tools used by authorities to preserve productive agricultural zones",
+      "source_id": "paper_12894"
+    },
+    {
+      "name": "PROPERTY RIGHTS",
+      "type": "CONCEPT",
+      "description": "Legal ownership and rights to agricultural lands in urbanizing areas",
+      "source_id": "paper_12894"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "URBANISATION",
+      "target": "SOIL CONSERVATION PRACTICES",
+      "description": "reduces the adoption of",
+      "weight": "8",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "PROXIMITY TO CITY CENTRE",
+      "target": "CROP ROTATION",
+      "description": "reduces the adoption of",
+      "weight": "7",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "PROXIMITY TO CITY CENTRE",
+      "target": "ORGANIC MANURE",
+      "description": "reduces the adoption of",
+      "weight": "7",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "PROXIMITY TO CITY CENTRE",
+      "target": "MULCHING",
+      "description": "reduces the adoption of",
+      "weight": "7",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "PROXIMITY TO CITY CENTRE",
+      "target": "FALLOW",
+      "description": "reduces the adoption of",
+      "weight": "7",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "POPULATION DENSITY",
+      "target": "FALLOW",
+      "description": "decreases the practice of",
+      "weight": "7",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "MULTIVARIATE PROBIT MODEL",
+      "target": "SOIL CONSERVATION PRACTICES",
+      "description": "used to investigate the adoption of",
+      "weight": "9",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "SOIL CONSERVATION PRACTICES",
+      "target": "VEGETABLE",
+      "description": "applied in the production of",
+      "weight": "8",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "YAOUNDÉ",
+      "target": "VEGETABLE",
+      "description": "location of production of",
+      "weight": "9",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "CAMEROON",
+      "target": "YAOUNDÉ",
+      "description": "location of",
+      "weight": "10",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "ORGANIC MANURE",
+      "target": "SOIL CONSERVATION PRACTICES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "MULCHING",
+      "target": "SOIL CONSERVATION PRACTICES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "CROP ROTATION",
+      "target": "SOIL CONSERVATION PRACTICES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "FALLOW",
+      "target": "SOIL CONSERVATION PRACTICES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "URBAN MASTER AND ZONING PLANS",
+      "target": "SOIL CONSERVATION PRACTICES",
+      "description": "proposed to mitigate the negative effects of urbanisation on",
+      "weight": "6",
+      "source_id": "paper_12894"
+    },
+    {
+      "source": "PROPERTY RIGHTS",
+      "target": "SOIL CONSERVATION PRACTICES",
+      "description": "proposed to mitigate the negative effects of urbanisation on",
+      "weight": "6",
+      "source_id": "paper_12894"
+    }
+  ]
+}

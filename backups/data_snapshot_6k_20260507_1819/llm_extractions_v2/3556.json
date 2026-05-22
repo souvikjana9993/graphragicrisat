@@ -1,0 +1,204 @@
+{
+  "entities": [
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "Cereal crop used to evaluate yield and nitrogen use efficiency",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the barley crop",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "SOIL N DYNAMICS",
+      "type": "CONCEPT",
+      "description": "The processes governing the availability and movement of nitrogen in the soil",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "POT EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Controlled experimental setup using soil samples in pots",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "GRAY LUVISOL",
+      "type": "CONDITION",
+      "description": "A specific type of soil used in the study",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "BRETON, ALBERTA",
+      "type": "LOCATION",
+      "description": "The geographic location where the soil samples were collected",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "Grains used in the cropping rotation systems",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "FORAGE",
+      "type": "CROP",
+      "description": "Crops grown for livestock feed used in the rotation systems",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "FABABEANS",
+      "type": "CROP",
+      "description": "Leguminous crop used as green manure to improve soil nitrogen",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "GREEN MANURE",
+      "type": "METHOD",
+      "description": "The practice of incorporating crop residues into the soil to improve fertility",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "FERTILIZER N",
+      "type": "CONCEPT",
+      "description": "Nitrogen supplied to the soil via synthetic fertilizers",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "CROP RESIDUES",
+      "type": "CONCEPT",
+      "description": "Plant material left in the field after harvest",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "AN VALUE",
+      "type": "CONCEPT",
+      "description": "A measure of fertilizer nitrogen equivalent for a cropping system",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "A VALUE",
+      "type": "CONCEPT",
+      "description": "A measure of fertilizer nitrogen equivalent expressed in 15N units",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "SOIL BIOMASS",
+      "type": "CONCEPT",
+      "description": "The total mass of living organisms in the soil",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "C AND N MINERALIZATION",
+      "type": "CONCEPT",
+      "description": "The conversion of organic carbon and nitrogen into inorganic forms",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "SOIL HISTORY",
+      "type": "CONDITION",
+      "description": "The previous cropping systems and management practices applied to the soil",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "Nitrogen-fixing plants that contribute to soil fertility",
+      "source_id": "paper_3556"
+    },
+    {
+      "name": "SOIL FERTILITY",
+      "type": "TRAIT",
+      "description": "The capacity of the soil to provide essential nutrients for plant growth",
+      "source_id": "paper_3556"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BARLEY",
+      "target": "YIELD",
+      "description": "measured trait of",
+      "weight": "10",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "BARLEY",
+      "target": "SOIL N DYNAMICS",
+      "description": "influenced by",
+      "weight": "8",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "POT EXPERIMENTS",
+      "target": "BARLEY",
+      "description": "used to study",
+      "weight": "9",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "GRAY LUVISOL",
+      "target": "POT EXPERIMENTS",
+      "description": "used as substrate in",
+      "weight": "9",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "BRETON, ALBERTA",
+      "target": "GRAY LUVISOL",
+      "description": "location of soil samples",
+      "weight": "10",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "FABABEANS",
+      "target": "GREEN MANURE",
+      "description": "used as",
+      "weight": "10",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "FABABEANS",
+      "target": "SOIL FERTILITY",
+      "description": "increases through residue incorporation",
+      "weight": "8",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "FERTILIZER N",
+      "target": "BARLEY",
+      "description": "provides nutrient supply to",
+      "weight": "8",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "C AND N MINERALIZATION",
+      "target": "SOIL N DYNAMICS",
+      "description": "component of",
+      "weight": "9",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "SOIL HISTORY",
+      "target": "BARLEY",
+      "description": "affects nitrogen competition ability of",
+      "weight": "7",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "SOIL FERTILITY",
+      "description": "conserves soil nitrogen for",
+      "weight": "8",
+      "source_id": "paper_3556"
+    },
+    {
+      "source": "SOIL BIOMASS",
+      "target": "SOIL N DYNAMICS",
+      "description": "monitored as part of",
+      "weight": "7",
+      "source_id": "paper_3556"
+    }
+  ]
+}

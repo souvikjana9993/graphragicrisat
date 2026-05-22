@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "An important oilseed and cash crop cultivated worldwide",
+      "source_id": "paper_3333"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "A region accounting for 57.13% of the world's groundnut cultivation area",
+      "source_id": "paper_3333"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "A region accounting for 37.24% of the world's groundnut cultivation area",
+      "source_id": "paper_3333"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "A widespread problem in groundnut-producing countries that makes produce unfit for consumption",
+      "source_id": "paper_3333"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions under which groundnut is grown and aflatoxin contamination is prevalent",
+      "source_id": "paper_3333"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The yield of the crop, which is not affected by aflatoxin contamination",
+      "source_id": "paper_3333"
+    },
+    {
+      "name": "AFLATOXIN-PRODUCING FUNGUS",
+      "type": "ORGANISM",
+      "description": "The fungus responsible for producing aflatoxins in groundnut",
+      "source_id": "paper_3333"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "ASIA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_3333"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "AFRICA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_3333"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_3333"
+    },
+    {
+      "source": "RAINFED CONDITIONS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "associated with",
+      "weight": "7",
+      "source_id": "paper_3333"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "CROP PRODUCTIVITY",
+      "description": "does not affect",
+      "weight": "5",
+      "source_id": "paper_3333"
+    },
+    {
+      "source": "AFLATOXIN-PRODUCING FUNGUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3333"
+    }
+  ]
+}

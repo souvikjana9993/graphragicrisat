@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being evaluated for pest resistance",
+      "source_id": "paper_257"
+    },
+    {
+      "name": "HELIOTHIS ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The pest species causing damage to chickpeas",
+      "source_id": "paper_257"
+    },
+    {
+      "name": "SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The degree of vulnerability of chickpea lines to Heliothis armigera",
+      "source_id": "paper_257"
+    },
+    {
+      "name": "REPLICATED TRIALS",
+      "type": "METHOD",
+      "description": "The experimental method used to test 11,000 lines of chickpeas",
+      "source_id": "paper_257"
+    },
+    {
+      "name": "KABULI CHICKPEA",
+      "type": "CROP",
+      "description": "A specific type of chickpea noted for higher susceptibility to the pest",
+      "source_id": "paper_257"
+    },
+    {
+      "name": "DESI CHICKPEA",
+      "type": "CROP",
+      "description": "A specific type of chickpea noted for lower susceptibility to the pest",
+      "source_id": "paper_257"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "HELIOTHIS ARMIGERA",
+      "description": "is affected by",
+      "weight": "9",
+      "source_id": "paper_257"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SUSCEPTIBILITY",
+      "description": "is evaluated for",
+      "weight": "8",
+      "source_id": "paper_257"
+    },
+    {
+      "source": "HELIOTHIS ARMIGERA",
+      "target": "SUSCEPTIBILITY",
+      "description": "induces",
+      "weight": "9",
+      "source_id": "paper_257"
+    },
+    {
+      "source": "REPLICATED TRIALS",
+      "target": "CHICKPEA",
+      "description": "used to test",
+      "weight": "7",
+      "source_id": "paper_257"
+    },
+    {
+      "source": "KABULI CHICKPEA",
+      "target": "CHICKPEA",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_257"
+    },
+    {
+      "source": "DESI CHICKPEA",
+      "target": "CHICKPEA",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_257"
+    },
+    {
+      "source": "KABULI CHICKPEA",
+      "target": "SUSCEPTIBILITY",
+      "description": "shows higher",
+      "weight": "8",
+      "source_id": "paper_257"
+    },
+    {
+      "source": "DESI CHICKPEA",
+      "target": "SUSCEPTIBILITY",
+      "description": "shows lower",
+      "weight": "8",
+      "source_id": "paper_257"
+    }
+  ]
+}

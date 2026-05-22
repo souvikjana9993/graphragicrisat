@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the legume crop studied for salt stress responses",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "High salt concentration in soil, specifically NaCl, causing stress to plants",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total seed production of the chickpea plant",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "ION TOXICITY",
+      "type": "CONCEPT",
+      "description": "The harmful effect caused by the accumulation of excessive ions in plant tissues",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "SALT STRESS TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to maintain productivity under saline conditions",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "SALT STRESS SENSITIVITY",
+      "type": "TRAIT",
+      "description": "The susceptibility of chickpea genotypes to yield reduction under saline conditions",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "OUTDOOR POT EXPERIMENT",
+      "type": "METHOD",
+      "description": "The experimental setup used to grow chickpea genotypes in treated soil",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "TRAIT",
+      "description": "The phenological stage of flower development in chickpea",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "FILLED POD NUMBER",
+      "type": "TRAIT",
+      "description": "The number of pods containing developed seeds",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "SEED NUMBER",
+      "type": "TRAIT",
+      "description": "The total count of seeds produced per plant",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The physical dimensions of the produced seeds",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "REPRODUCTIVE SUCCESS",
+      "type": "TRAIT",
+      "description": "The overall efficiency of the plant in producing viable seeds",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "K+ CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of potassium ions in plant tissues, specifically seeds",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "NA+ CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of sodium ions in plant tissues, specifically leaves",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "CL- CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of chloride ions in plant tissues, specifically mature seeds",
+      "source_id": "paper_10000"
+    },
+    {
+      "name": "K+/NA+ RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of potassium to sodium ions in the laminae of young leaves",
+      "source_id": "paper_10000"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SALINITY",
+      "target": "CHICKPEA",
+      "description": "reduces yields in several regions of the world",
+      "weight": "10",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "SALINITY",
+      "target": "FLOWERING",
+      "description": "delays the flowering process",
+      "weight": "9",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "SALINITY",
+      "target": "REPRODUCTIVE SUCCESS",
+      "description": "impairs reproductive success more in sensitive lines",
+      "weight": "8",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "NA+ CONCENTRATION",
+      "target": "FLOWERING",
+      "description": "higher concentrations in leaves are associated with delayed flowering",
+      "weight": "8",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "NA+ CONCENTRATION",
+      "target": "REPRODUCTIVE SUCCESS",
+      "description": "accumulation in leaves is associated with lower reproductive success via delayed flowering",
+      "weight": "7",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "K+ CONCENTRATION",
+      "target": "YIELD",
+      "description": "higher concentration in seeds at mid-filling stage is positively correlated with higher seed yields",
+      "weight": "7",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "K+/NA+ RATIO",
+      "target": "YIELD",
+      "description": "higher ratio in laminae of young leaves is positively correlated with higher seed yields",
+      "weight": "7",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "NA+ CONCENTRATION",
+      "target": "YIELD",
+      "description": "lower concentration in old green leaves is positively correlated with higher seed yields",
+      "weight": "7",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "CL- CONCENTRATION",
+      "target": "YIELD",
+      "description": "higher concentration in mature seeds is positively correlated with higher seed yields",
+      "weight": "6",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "FILLED POD NUMBER",
+      "target": "YIELD",
+      "description": "associated with seed yield in saline conditions",
+      "weight": "9",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "SEED NUMBER",
+      "target": "YIELD",
+      "description": "associated with seed yield in saline conditions",
+      "weight": "9",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "SEED SIZE",
+      "target": "YIELD",
+      "description": "not associated with seed yield in saline conditions",
+      "weight": "2",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "OUTDOOR POT EXPERIMENT",
+      "target": "CHICKPEA",
+      "description": "used to study yield parameters and ion analysis of chickpea genotypes",
+      "weight": "8",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "SALINITY",
+      "target": "ION TOXICITY",
+      "description": "associated with ion toxicity leading to yield reductions",
+      "weight": "7",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "SALT STRESS TOLERANCE",
+      "target": "YIELD",
+      "description": "associated with phenological and yield parameters",
+      "weight": "8",
+      "source_id": "paper_10000"
+    },
+    {
+      "source": "SALT STRESS SENSITIVITY",
+      "target": "YIELD",
+      "description": "associated with phenological and yield parameters",
+      "weight": "8",
+      "source_id": "paper_10000"
+    }
+  ]
+}

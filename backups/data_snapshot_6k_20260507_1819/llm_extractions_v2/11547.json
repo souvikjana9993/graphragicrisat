@@ -1,0 +1,201 @@
+{
+  "entities": [
+    {
+      "name": "AMHARA REGION",
+      "type": "LOCATION",
+      "description": "A region in Ethiopia where grain and soil were sampled for selenium analysis.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "TEFF",
+      "type": "CROP",
+      "description": "Eragrostis tef, a grain analyzed for selenium concentration.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "Triticum aestivum, a grain analyzed for selenium concentration.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "SELENIUM CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The concentration of selenium (Se) measured in grain and soil.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "SELENIUM DEFICIENCY",
+      "type": "CONDITION",
+      "description": "A nutritional deficiency observed in the population of the Amhara Region.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "PREDICTIVE MODELS",
+      "type": "METHOD",
+      "description": "Models developed to predict the concentration of selenium in grains.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "MULTIVARIATE LINEAR MIXED MODEL",
+      "type": "METHOD",
+      "description": "A statistical model used to represent predicted and observed selenium concentrations.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "REMOTE SENSOR OBSERVATIONS",
+      "type": "METHOD",
+      "description": "Data used as fixed effects covariates in the multivariate linear mixed model.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "DIGITAL ELEVATION MODEL",
+      "type": "METHOD",
+      "description": "Data used as fixed effects covariates in the multivariate linear mixed model.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "FALSE DISCOVERY RATE CONTROL",
+      "type": "METHOD",
+      "description": "A statistical procedure used to select predictors and avoid over-fitting.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "ALPHA-INVESTMENT PROCEDURE",
+      "type": "METHOD",
+      "description": "A procedure used to maximize statistical power to detect significant relationships.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "CROSS-VALIDATION",
+      "type": "METHOD",
+      "description": "A method used to characterize uncertainties in empirical best linear unbiased predictions.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "EMPIRICAL BEST LINEAR UNBIASED PREDICTIONS",
+      "type": "METHOD",
+      "description": "A method for predicting selenium concentration in grains.",
+      "source_id": "paper_11547"
+    },
+    {
+      "name": "MAPPING",
+      "type": "METHOD",
+      "description": "The process of displaying spatial predictions of selenium concentration.",
+      "source_id": "paper_11547"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AMHARA REGION",
+      "target": "ETHIOPIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "TEFF",
+      "target": "AMHARA REGION",
+      "description": "sampled in",
+      "weight": "8",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "WHEAT",
+      "target": "AMHARA REGION",
+      "description": "sampled in",
+      "weight": "8",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "SELENIUM CONCENTRATION",
+      "target": "TEFF",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "SELENIUM CONCENTRATION",
+      "target": "WHEAT",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "SELENIUM DEFICIENCY",
+      "target": "AMHARA REGION",
+      "description": "observed in population of",
+      "weight": "9",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "PREDICTIVE MODELS",
+      "target": "SELENIUM CONCENTRATION",
+      "description": "used to predict",
+      "weight": "10",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "MULTIVARIATE LINEAR MIXED MODEL",
+      "target": "SELENIUM CONCENTRATION",
+      "description": "used to represent",
+      "weight": "9",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "REMOTE SENSOR OBSERVATIONS",
+      "target": "MULTIVARIATE LINEAR MIXED MODEL",
+      "description": "used as fixed effects in",
+      "weight": "8",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "DIGITAL ELEVATION MODEL",
+      "target": "MULTIVARIATE LINEAR MIXED MODEL",
+      "description": "used as fixed effects in",
+      "weight": "8",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "FALSE DISCOVERY RATE CONTROL",
+      "target": "PREDICTIVE MODELS",
+      "description": "used for predictor selection in",
+      "weight": "8",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "ALPHA-INVESTMENT PROCEDURE",
+      "target": "PREDICTIVE MODELS",
+      "description": "used for predictor selection in",
+      "weight": "8",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "CROSS-VALIDATION",
+      "target": "EMPIRICAL BEST LINEAR UNBIASED PREDICTIONS",
+      "description": "used to characterize uncertainties in",
+      "weight": "9",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "EMPIRICAL BEST LINEAR UNBIASED PREDICTIONS",
+      "target": "SELENIUM CONCENTRATION",
+      "description": "predicts",
+      "weight": "10",
+      "source_id": "paper_11547"
+    },
+    {
+      "source": "MAPPING",
+      "target": "SELENIUM CONCENTRATION",
+      "description": "displays spatial variation of",
+      "weight": "9",
+      "source_id": "paper_11547"
+    }
+  ]
+}

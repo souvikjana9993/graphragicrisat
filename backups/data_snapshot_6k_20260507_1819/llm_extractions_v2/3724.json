@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being evaluated for resistance to grain molds",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "GRAIN MOLD",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting the grain of sorghum",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "RESISTANCE TO GRAIN MOLD",
+      "type": "TRAIT",
+      "description": "The ability of sorghum genotypes to resist the development of grain mold",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "OVERHEAD SPRINKLER IRRIGATION",
+      "type": "METHOD",
+      "description": "A technique used to promote grain mold development by simulating rainfall on rain-free days",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "INOCULATION OF PANICLES",
+      "type": "METHOD",
+      "description": "A technique of applying mold-causing fungi to panicles to induce grain mold",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "BAGGING OF PANICLES",
+      "type": "METHOD",
+      "description": "A technique of bagging panicles to promote the development of grain mold",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "THRESHED GRAIN MOLD RATINGS",
+      "type": "METHOD",
+      "description": "A measurement system (TGMRs) used to quantify the severity of grain mold",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "Environmental precipitation that influences the natural development of grain mold",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "GRAIN GERMINATION",
+      "type": "TRAIT",
+      "description": "The capacity of sorghum seeds to germinate, which can be affected by irrigation",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "MOLD-CAUSING FUNGI",
+      "type": "ORGANISM",
+      "description": "The fungi responsible for causing grain mold in sorghum",
+      "source_id": "paper_3724"
+    },
+    {
+      "name": "FIELD SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating sorghum lines for resistance to grain molds in a field setting",
+      "source_id": "paper_3724"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FIELD SCREENING",
+      "target": "SORGHUM",
+      "description": "evaluates",
+      "weight": "10",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "RESISTANCE TO GRAIN MOLD",
+      "description": "targets",
+      "weight": "10",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "OVERHEAD SPRINKLER IRRIGATION",
+      "target": "GRAIN MOLD",
+      "description": "promotes",
+      "weight": "8",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "INOCULATION OF PANICLES",
+      "target": "GRAIN MOLD",
+      "description": "promotes",
+      "weight": "8",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "BAGGING OF PANICLES",
+      "target": "GRAIN MOLD",
+      "description": "promotes",
+      "weight": "8",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "MOLD-CAUSING FUNGI",
+      "target": "GRAIN MOLD",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "INOCULATION OF PANICLES",
+      "target": "MOLD-CAUSING FUNGI",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "GRAIN MOLD",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "OVERHEAD SPRINKLER IRRIGATION",
+      "target": "RAINFALL",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "THRESHED GRAIN MOLD RATINGS",
+      "target": "GRAIN MOLD",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "OVERHEAD SPRINKLER IRRIGATION",
+      "target": "GRAIN GERMINATION",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_3724"
+    },
+    {
+      "source": "RESISTANCE TO GRAIN MOLD",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_3724"
+    }
+  ]
+}

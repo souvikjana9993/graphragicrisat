@@ -1,0 +1,491 @@
+{
+  "entities": [
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where the study was conducted, featuring 160 million hectares of net cropland area",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "WATER SECURITY",
+      "type": "CONCEPT",
+      "description": "Assessment of water availability and use in relation to croplands",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "Assessment of food availability and production",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "NET CROPLAND AREA",
+      "type": "CONCEPT",
+      "description": "The total area of land used for cropping in India",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "CROPLAND EXTENT",
+      "type": "CONCEPT",
+      "description": "The total area covered by croplands",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "CROPPING INTENSITY",
+      "type": "CONCEPT",
+      "description": "The number of times a crop is planted on the same piece of land in a year",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "REMOTE SENSING",
+      "type": "METHOD",
+      "description": "Use of satellite data to monitor croplands",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "LANDSAT 30 M DATA",
+      "type": "METHOD",
+      "description": "Satellite data used for assessing irrigated versus rainfed croplands",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "GEE PLATFORM",
+      "type": "METHOD",
+      "description": "Google Earth Engine platform used for processing Landsat data",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "MODIS 250 M DATA",
+      "type": "METHOD",
+      "description": "Satellite data used for mapping crop types and cropping intensity",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "RF MACHINE LEARNING ALGORITHM",
+      "type": "METHOD",
+      "description": "Random Forest algorithm used for processing satellite big-data",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "IRRIGATED",
+      "type": "CONDITION",
+      "description": "Croplands provided with artificial water",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "RAINFED",
+      "type": "CONDITION",
+      "description": "Croplands relying on rainfall",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "KHARIF SEASON",
+      "type": "CONDITION",
+      "description": "Main cropping season in India from June to October",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "RABI SEASON",
+      "type": "CONDITION",
+      "description": "Post rainy season from November to February",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Major crop mapped in both Kharif and Rabi seasons",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "Irrigated crop mapped in Kharif season",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Irrigated crop mapped in both Kharif and Rabi seasons",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "SUGARCANE",
+      "type": "CROP",
+      "description": "Irrigated crop mapped in Kharif season",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "Irrigated crop mapped in Kharif season",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "PULSES",
+      "type": "CROP",
+      "description": "Rainfed crop mapped in both Kharif and Rabi seasons",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Rainfed crop mapped in Kharif season",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "Rainfed crop mapped in Kharif season",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Rainfed crop mapped in Kharif season",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "Irrigated crop mapped in Rabi season",
+      "source_id": "paper_12629"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Rainfed crop mapped in Rabi season",
+      "source_id": "paper_12629"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "REMOTE SENSING",
+      "target": "FOOD SECURITY",
+      "description": "used to address",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "REMOTE SENSING",
+      "target": "WATER SECURITY",
+      "description": "used to address",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "LANDSAT 30 M DATA",
+      "target": "IRRIGATED",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "LANDSAT 30 M DATA",
+      "target": "RAINFED",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "LANDSAT 30 M DATA",
+      "target": "GEE PLATFORM",
+      "description": "processed in",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "CROPPING INTENSITY",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RF MACHINE LEARNING ALGORITHM",
+      "target": "REMOTE SENSING",
+      "description": "used to process data",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "RICE",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "SOYBEAN",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "MAIZE",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "SUGARCANE",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "COTTON",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "PULSES",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "SORGHUM",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "MILLET",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "KHARIF SEASON",
+      "target": "GROUNDNUT",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RABI SEASON",
+      "target": "RICE",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RABI SEASON",
+      "target": "WHEAT",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RABI SEASON",
+      "target": "MAIZE",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RABI SEASON",
+      "target": "CHICKPEA",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RABI SEASON",
+      "target": "PULSES",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "RICE",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "SOYBEAN",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "MAIZE",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "SUGARCANE",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "COTTON",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "WHEAT",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RAINFED",
+      "target": "PULSES",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RAINFED",
+      "target": "SORGHUM",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RAINFED",
+      "target": "MILLET",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RAINFED",
+      "target": "GROUNDNUT",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RAINFED",
+      "target": "RICE",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "RAINFED",
+      "target": "CHICKPEA",
+      "description": "classification",
+      "weight": "8",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "INDIA",
+      "target": "WATER SECURITY",
+      "description": "location of assessment",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "INDIA",
+      "target": "FOOD SECURITY",
+      "description": "location of assessment",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "INDIA",
+      "target": "NET CROPLAND AREA",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "RICE",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "SOYBEAN",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "MAIZE",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "SUGARCANE",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "COTTON",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "PULSES",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "SORGHUM",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "MILLET",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "GROUNDNUT",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "WHEAT",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    },
+    {
+      "source": "MODIS 250 M DATA",
+      "target": "CHICKPEA",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12629"
+    }
+  ]
+}

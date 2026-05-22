@@ -1,0 +1,170 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal grain crop used in the study",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal grain crop used in the study",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "SORGF",
+      "type": "METHOD",
+      "description": "A simulation model revised for sorghum in semi-arid tropics",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "PEARL MILLET SIMULATION MODEL",
+      "type": "METHOD",
+      "description": "A simulation model developed for pearl millet",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of grain production used to evaluate model accuracy",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "A water-deficit condition simulated for sorghum",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "PLANT DENSITY",
+      "type": "CONCEPT",
+      "description": "The spacing or number of plants per unit area simulated for sorghum",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "NITROGEN FERTILIZERS",
+      "type": "CONCEPT",
+      "description": "Nutrients whose requirements were computed using the SORGF model",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "CLIMATIC DATA",
+      "type": "CONCEPT",
+      "description": "30 years of weather information used for model computations",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the four study locations are located",
+      "source_id": "paper_3715"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The climatic region for which the SORGF model was revised",
+      "source_id": "paper_3715"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGF",
+      "target": "SORGHUM",
+      "description": "simulates yields of",
+      "weight": "10",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGF",
+      "target": "GRAIN YIELD",
+      "description": "estimates",
+      "weight": "9",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGF",
+      "target": "SEMI-ARID TROPICS",
+      "description": "revised for use in",
+      "weight": "8",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "DROUGHT STRESS",
+      "description": "responds to",
+      "weight": "8",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "PLANT DENSITY",
+      "description": "responds to",
+      "weight": "8",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGF",
+      "target": "DROUGHT STRESS",
+      "description": "simulates responses to",
+      "weight": "9",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGF",
+      "target": "PLANT DENSITY",
+      "description": "simulates responses to",
+      "weight": "9",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGF",
+      "target": "NITROGEN FERTILIZERS",
+      "description": "computes requirements of",
+      "weight": "8",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGF",
+      "target": "CLIMATIC DATA",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "SORGF",
+      "target": "INDIA",
+      "description": "applied to locations in",
+      "weight": "8",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "PEARL MILLET SIMULATION MODEL",
+      "target": "PEARL MILLET",
+      "description": "simulates yields of",
+      "weight": "10",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "PEARL MILLET SIMULATION MODEL",
+      "target": "SORGF",
+      "description": "developed following similar approach to",
+      "weight": "7",
+      "source_id": "paper_3715"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GRAIN YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_3715"
+    }
+  ]
+}

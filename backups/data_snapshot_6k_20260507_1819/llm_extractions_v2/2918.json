@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop evaluated for adaptation in rice fallows in Bangladesh",
+      "source_id": "paper_2918"
+    },
+    {
+      "name": "CHITTAGONG DISTRICT",
+      "type": "LOCATION",
+      "description": "The district in Bangladesh where the study was conducted",
+      "source_id": "paper_2918"
+    },
+    {
+      "name": "BANGLADESH",
+      "type": "LOCATION",
+      "description": "The country where the research was performed",
+      "source_id": "paper_2918"
+    },
+    {
+      "name": "RICE FALLOWS",
+      "type": "CONDITION",
+      "description": "The cropping environment used for testing pigeonpea adaptation",
+      "source_id": "paper_2918"
+    },
+    {
+      "name": "HATHAZARI",
+      "type": "LOCATION",
+      "description": "The specific location of the field experiment in Bangladesh",
+      "source_id": "paper_2918"
+    },
+    {
+      "name": "FIELD EXPERIMENT",
+      "type": "METHOD",
+      "description": "The research method used to evaluate 11 pigeonpea cultivars",
+      "source_id": "paper_2918"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "CONDITION",
+      "description": "The timing of planting which significantly influenced seed yield",
+      "source_id": "paper_2918"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The productivity measure of the pigeonpea cultivars",
+      "source_id": "paper_2918"
+    },
+    {
+      "name": "PODFLY",
+      "type": "ORGANISM",
+      "description": "Melanagromyza obtusa, a pest that attacked the pigeonpea crops",
+      "source_id": "paper_2918"
+    },
+    {
+      "name": "DIMECRON",
+      "type": "METHOD",
+      "description": "A phosphamidon spray used to control podfly attack",
+      "source_id": "paper_2918"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "CHITTAGONG DISTRICT",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_2918"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "BANGLADESH",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_2918"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "RICE FALLOWS",
+      "description": "adapted to",
+      "weight": "9",
+      "source_id": "paper_2918"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "HATHAZARI",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_2918"
+    },
+    {
+      "source": "FIELD EXPERIMENT",
+      "target": "PIGEONPEA",
+      "description": "evaluated",
+      "weight": "10",
+      "source_id": "paper_2918"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "SEED YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_2918"
+    },
+    {
+      "source": "PODFLY",
+      "target": "SEED YIELD",
+      "description": "decreases",
+      "weight": "10",
+      "source_id": "paper_2918"
+    },
+    {
+      "source": "PODFLY",
+      "target": "PIGEONPEA",
+      "description": "attacks",
+      "weight": "10",
+      "source_id": "paper_2918"
+    },
+    {
+      "source": "DIMECRON",
+      "target": "PODFLY",
+      "description": "used to control",
+      "weight": "7",
+      "source_id": "paper_2918"
+    }
+  ]
+}

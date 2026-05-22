@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being studied for resistance to the sorghum shoot fly",
+      "source_id": "paper_5557"
+    },
+    {
+      "name": "SORGHUM SHOOT FLY",
+      "type": "ORGANISM",
+      "description": "The pest Atherigona soccata that attacks sorghum",
+      "source_id": "paper_5557"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the host plant to resist attack by the sorghum shoot fly",
+      "source_id": "paper_5557"
+    },
+    {
+      "name": "PHYSICO-CHEMICAL MARKERS",
+      "type": "METHOD",
+      "description": "Markers based on physical and chemical properties used to identify resistance mechanisms",
+      "source_id": "paper_5557"
+    },
+    {
+      "name": "MOLECULAR MARKERS",
+      "type": "METHOD",
+      "description": "Markers based on DNA sequences used to identify resistance mechanisms",
+      "source_id": "paper_5557"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variation in genetic characteristics among the studied sorghum genotypes",
+      "source_id": "paper_5557"
+    },
+    {
+      "name": "SIMPLE SEQUENCE REPEAT",
+      "type": "GENE_MARKER",
+      "description": "SSR primer pairs used to assess genetic diversity in sorghum",
+      "source_id": "paper_5557"
+    },
+    {
+      "name": "MORPHO-BIOCHEMICAL TRAITS",
+      "type": "TRAIT",
+      "description": "Physical and chemical traits associated with resistance to the sorghum shoot fly",
+      "source_id": "paper_5557"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SORGHUM SHOOT FLY",
+      "description": "is attacked by",
+      "weight": "9",
+      "source_id": "paper_5557"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_5557"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "SORGHUM SHOOT FLY",
+      "description": "manages",
+      "weight": "9",
+      "source_id": "paper_5557"
+    },
+    {
+      "source": "SIMPLE SEQUENCE REPEAT",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to assess",
+      "weight": "10",
+      "source_id": "paper_5557"
+    },
+    {
+      "source": "GENETIC DIVERSITY",
+      "target": "SORGHUM",
+      "description": "measured in",
+      "weight": "8",
+      "source_id": "paper_5557"
+    },
+    {
+      "source": "MORPHO-BIOCHEMICAL TRAITS",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_5557"
+    },
+    {
+      "source": "PHYSICO-CHEMICAL MARKERS",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "used to identify mechanisms of",
+      "weight": "7",
+      "source_id": "paper_5557"
+    },
+    {
+      "source": "MOLECULAR MARKERS",
+      "target": "HOST PLANT RESISTANCE",
+      "description": "used to identify mechanisms of",
+      "weight": "7",
+      "source_id": "paper_5557"
+    }
+  ]
+}

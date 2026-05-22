@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop Sorghum bicolor used in breeding programs",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "GRAIN MOLD",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting the grains of sorghum",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "GRAIN MOLD RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist infection by grain mold",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "B-LINES",
+      "type": "CONCEPT",
+      "description": "Advanced breeding lines used as female parents in hybrid seed production",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "PEDIGREE BREEDING",
+      "type": "METHOD",
+      "description": "A breeding method involving selection of progenies based on ancestry",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "SINGLE- AND THREE-WAY CROSSES",
+      "type": "METHOD",
+      "description": "Specific crossing strategies used to combine traits in breeding",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "FIELD SCREENINGS",
+      "type": "METHOD",
+      "description": "The process of evaluating plant lines under natural disease pressure in the field",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "SGMRSN",
+      "type": "CONCEPT",
+      "description": "Sorghum Grain Mold Resistance Stability Nursery, a collaborative testing framework",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the resistance stability trials were conducted",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "HIGH YIELD",
+      "type": "TRAIT",
+      "description": "The capacity of a crop to produce a large amount of grain",
+      "source_id": "paper_1454"
+    },
+    {
+      "name": "RESISTANCE STABILITY",
+      "type": "TRAIT",
+      "description": "The consistency of disease resistance across diverse geographical locations",
+      "source_id": "paper_1454"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN MOLD",
+      "description": "Sorghum is susceptible to grain mold",
+      "weight": "10",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN MOLD RESISTANCE",
+      "description": "Sorghum is bred for grain mold resistance",
+      "weight": "10",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "GRAIN MOLD RESISTANCE",
+      "target": "B-LINES",
+      "description": "B-lines are developed to possess grain mold resistance",
+      "weight": "9",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "PEDIGREE BREEDING",
+      "target": "B-LINES",
+      "description": "Pedigree breeding is used to develop B-lines",
+      "weight": "9",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "SINGLE- AND THREE-WAY CROSSES",
+      "target": "PEDIGREE BREEDING",
+      "description": "Crosses are part of the pedigree breeding process",
+      "weight": "8",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "FIELD SCREENINGS",
+      "target": "B-LINES",
+      "description": "Field screenings are used to select resistant B-lines",
+      "weight": "8",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "SGMRSN",
+      "target": "RESISTANCE STABILITY",
+      "description": "SGMRSN is used to test resistance stability",
+      "weight": "10",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "SGMRSN",
+      "target": "B-LINES",
+      "description": "SGMRSN tests the stability of elite B-lines",
+      "weight": "9",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "INDIA",
+      "target": "SGMRSN",
+      "description": "SGMRSN trials were conducted at diverse locations in India",
+      "weight": "9",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "B-LINES",
+      "target": "HIGH YIELD",
+      "description": "Developed B-lines are high-yielding",
+      "weight": "8",
+      "source_id": "paper_1454"
+    },
+    {
+      "source": "B-LINES",
+      "target": "RESISTANCE STABILITY",
+      "description": "B-lines are evaluated for resistance stability",
+      "weight": "9",
+      "source_id": "paper_1454"
+    }
+  ]
+}

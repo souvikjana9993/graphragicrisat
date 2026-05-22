@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop being studied for high-yielding genotypes",
+      "source_id": "paper_2031"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The primary trait of interest for selection in groundnut",
+      "source_id": "paper_2031"
+    },
+    {
+      "name": "IRRIGATED ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "An environmental condition used for identifying high-yielding genotypes",
+      "source_id": "paper_2031"
+    },
+    {
+      "name": "RAINFED ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "An environmental condition used for identifying high-yielding genotypes",
+      "source_id": "paper_2031"
+    },
+    {
+      "name": "SELECTION INDEX",
+      "type": "METHOD",
+      "description": "A tool used to identify high-yielding genotypes based on secondary traits",
+      "source_id": "paper_2031"
+    },
+    {
+      "name": "SECONDARY TRAITS",
+      "type": "TRAIT",
+      "description": "Traits used within a selection index that are less sensitive to genotype-by-environment interactions than yield",
+      "source_id": "paper_2031"
+    },
+    {
+      "name": "GENOTYPE-BY-ENVIRONMENT INTERACTIONS",
+      "type": "CONCEPT",
+      "description": "The interaction between genetic makeup and environment affecting trait expression",
+      "source_id": "paper_2031"
+    },
+    {
+      "name": "CORRELATED RESPONSE OF SELECTION",
+      "type": "CONCEPT",
+      "description": "A concept used to measure the relative efficiency of selection indices",
+      "source_id": "paper_2031"
+    },
+    {
+      "name": "MEDIAN AND SEMI INTER-QUARTILE RANGE INDEX",
+      "type": "METHOD",
+      "description": "A specific selection index based on median and semi inter-quartile range used to identify high yielding genotypes",
+      "source_id": "paper_2031"
+    },
+    {
+      "name": "ELSTON INDEX",
+      "type": "METHOD",
+      "description": "A specific selection index used as a benchmark for efficiency",
+      "source_id": "paper_2031"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SELECTION INDEX",
+      "target": "GROUNDNUT",
+      "description": "Used to identify high-yielding genotypes of groundnut",
+      "weight": "9",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "SELECTION INDEX",
+      "target": "YIELD",
+      "description": "Used to identify high-yielding genotypes",
+      "weight": "10",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "SELECTION INDEX",
+      "target": "SECONDARY TRAITS",
+      "description": "Based on secondary traits",
+      "weight": "9",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "SECONDARY TRAITS",
+      "target": "GENOTYPE-BY-ENVIRONMENT INTERACTIONS",
+      "description": "Less sensitive to these interactions than yield",
+      "weight": "7",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "YIELD",
+      "target": "GENOTYPE-BY-ENVIRONMENT INTERACTIONS",
+      "description": "Sensitive to these interactions",
+      "weight": "8",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "CORRELATED RESPONSE OF SELECTION",
+      "target": "SELECTION INDEX",
+      "description": "Used to measure the efficiency of selection indices",
+      "weight": "9",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "MEDIAN AND SEMI INTER-QUARTILE RANGE INDEX",
+      "target": "SELECTION INDEX",
+      "description": "Is a specific type of selection index",
+      "weight": "10",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "MEDIAN AND SEMI INTER-QUARTILE RANGE INDEX",
+      "target": "YIELD",
+      "description": "Used in identifying high yielding genotypes",
+      "weight": "9",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "ELSTON INDEX",
+      "target": "SELECTION INDEX",
+      "description": "Is a specific type of selection index",
+      "weight": "10",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "MEDIAN AND SEMI INTER-QUARTILE RANGE INDEX",
+      "target": "ELSTON INDEX",
+      "description": "Efficiency is comparable to a modification of the Elston index",
+      "weight": "7",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "IRRIGATED ENVIRONMENT",
+      "description": "Studied in this environment",
+      "weight": "8",
+      "source_id": "paper_2031"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RAINFED ENVIRONMENT",
+      "description": "Studied in this environment",
+      "weight": "8",
+      "source_id": "paper_2031"
+    }
+  ]
+}

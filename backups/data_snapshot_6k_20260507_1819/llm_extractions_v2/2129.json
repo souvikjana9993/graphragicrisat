@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Chickpea genotypes screened for resistance to blight",
+      "source_id": "paper_2129"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea genotypes to withstand blight, measured on a scale from 1 to 9",
+      "source_id": "paper_2129"
+    },
+    {
+      "name": "BLIGHT",
+      "type": "CONDITION",
+      "description": "The disease caused by Ascochyta rabiei",
+      "source_id": "paper_2129"
+    },
+    {
+      "name": "SYRIA",
+      "type": "LOCATION",
+      "description": "The location where the greenhouse screening was conducted",
+      "source_id": "paper_2129"
+    },
+    {
+      "name": "ASCOCHYTA RABIEI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen causing blight in chickpeas",
+      "source_id": "paper_2129"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of inoculating genotypes and rating them for resistance",
+      "source_id": "paper_2129"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "RESISTANCE",
+      "description": "screened for",
+      "weight": "9",
+      "source_id": "paper_2129"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "BLIGHT",
+      "description": "susceptible to",
+      "weight": "8",
+      "source_id": "paper_2129"
+    },
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2129"
+    },
+    {
+      "source": "SCREENING",
+      "target": "CHICKPEA",
+      "description": "performed on",
+      "weight": "9",
+      "source_id": "paper_2129"
+    },
+    {
+      "source": "SCREENING",
+      "target": "RESISTANCE",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_2129"
+    },
+    {
+      "source": "SCREENING",
+      "target": "SYRIA",
+      "description": "conducted in",
+      "weight": "7",
+      "source_id": "paper_2129"
+    },
+    {
+      "source": "ASCOCHYTA RABIEI",
+      "target": "CHICKPEA",
+      "description": "infects",
+      "weight": "8",
+      "source_id": "paper_2129"
+    }
+  ]
+}

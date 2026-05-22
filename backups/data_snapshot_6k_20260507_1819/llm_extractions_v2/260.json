@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop species used for the high-throughput SNP genotyping study.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "type": "GENE_MARKER",
+      "description": "Abundant and evenly distributed markers used for genetic research in crops.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "GOLDENGATE ASSAY",
+      "type": "METHOD",
+      "description": "A high-throughput genotyping platform used to score a large number of SNP markers.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINE POPULATIONS",
+      "type": "CONCEPT",
+      "description": "Genetic populations, including Zong3 x 87-1 and B73 x By804, used for genotyping.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "DIVERSITY PANEL",
+      "type": "CONCEPT",
+      "description": "A group of 154 diverse inbred lines used to test SNP scoring success.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "SIMPLE SEQUENCE REPEAT MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Markers integrated with SNPs to construct a high-density linkage map.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "LINKAGE MAP",
+      "type": "CONCEPT",
+      "description": "A genetic map constructed using SNP and simple sequence repeat markers.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "MINOR ALLELIC FREQUENCY",
+      "type": "CONCEPT",
+      "description": "The frequency of the less common allele in a population, used to characterize SNP markers.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "DIVERSITY ANALYSIS",
+      "type": "METHOD",
+      "description": "A genetic analysis application for which the GoldenGate assay SNPs are useful.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "MARKER-TRAIT ASSOCIATION STUDIES",
+      "type": "METHOD",
+      "description": "A research application for which the GoldenGate assay SNPs are useful.",
+      "source_id": "paper_260"
+    },
+    {
+      "name": "MARKER-AIDED BREEDING",
+      "type": "METHOD",
+      "description": "A breeding application for which the GoldenGate assay SNPs are useful.",
+      "source_id": "paper_260"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GOLDENGATE ASSAY",
+      "target": "MAIZE",
+      "description": "used to genotype",
+      "weight": "10",
+      "source_id": "paper_260"
+    },
+    {
+      "source": "GOLDENGATE ASSAY",
+      "target": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "description": "used to score",
+      "weight": "10",
+      "source_id": "paper_260"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "target": "MAIZE",
+      "description": "distributed throughout the genome of",
+      "weight": "10",
+      "source_id": "paper_260"
+    },
+    {
+      "source": "GOLDENGATE ASSAY",
+      "target": "RECOMBINANT INBRED LINE POPULATIONS",
+      "description": "used to genotype",
+      "weight": "9",
+      "source_id": "paper_260"
+    },
+    {
+      "source": "GOLDENGATE ASSAY",
+      "target": "DIVERSITY PANEL",
+      "description": "used to genotype",
+      "weight": "9",
+      "source_id": "paper_260"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "target": "LINKAGE MAP",
+      "description": "used to construct",
+      "weight": "9",
+      "source_id": "paper_260"
+    },
+    {
+      "source": "SIMPLE SEQUENCE REPEAT MARKERS",
+      "target": "LINKAGE MAP",
+      "description": "used to construct",
+      "weight": "9",
+      "source_id": "paper_260"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "target": "DIVERSITY ANALYSIS",
+      "description": "useful for",
+      "weight": "8",
+      "source_id": "paper_260"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "target": "MARKER-TRAIT ASSOCIATION STUDIES",
+      "description": "useful for",
+      "weight": "8",
+      "source_id": "paper_260"
+    },
+    {
+      "source": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "target": "MARKER-AIDED BREEDING",
+      "description": "useful for",
+      "weight": "8",
+      "source_id": "paper_260"
+    }
+  ]
+}

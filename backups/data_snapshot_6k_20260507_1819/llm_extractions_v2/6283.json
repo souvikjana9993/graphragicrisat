@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop species grown across various climates",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "A cereal crop species",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "A cereal crop species",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop often included in cereal-based cropping systems",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant uses water, denoted as WUE",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "SEMIARID CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions characterized by limited rainfall",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "SOUTHERN INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the maize-chickpea sequence is studied",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "NUTRIENT EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency of nutrient utilization in cropping systems",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "CEREAL-BASED CROPPING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "Agricultural systems centered around cereal crops",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "PHYSIOLOGICAL CHARACTERISTICS",
+      "type": "TRAIT",
+      "description": "Biological and functional traits of maize and chickpea",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "GENOTYPE",
+      "type": "CONCEPT",
+      "description": "The genetic constitution of the plant species",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "SOIL WATER HOLDING CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of the soil to retain water",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "METEOROLOGICAL CONDITIONS",
+      "type": "CONDITION",
+      "description": "Weather-related factors influencing crop growth",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "AGRONOMIC PRACTICES",
+      "type": "METHOD",
+      "description": "Management techniques used in crop production to optimize yield and efficiency",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "IRRIGATION METHODS",
+      "type": "METHOD",
+      "description": "Techniques used for the artificial application of water to land",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "LANDFORM MANAGEMENT",
+      "type": "METHOD",
+      "description": "The practice of managing land topography for agricultural benefit",
+      "source_id": "paper_6283"
+    },
+    {
+      "name": "FERTILIZATION",
+      "type": "METHOD",
+      "description": "The application of nutrients to soil or plants",
+      "source_id": "paper_6283"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "WATER USE EFFICIENCY",
+      "description": "WUE is a key trait of maize",
+      "weight": "10",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Chickpea inclusion in sequence affects the WUE of maize",
+      "weight": "8",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "MAIZE",
+      "target": "CHICKPEA",
+      "description": "Grown in a cropping sequence",
+      "weight": "9",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "MAIZE",
+      "target": "SOUTHERN INDIA",
+      "description": "Cultivated in this region",
+      "weight": "7",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SOUTHERN INDIA",
+      "description": "Cultivated in this region",
+      "weight": "7",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "SEMIARID CONDITIONS",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Environmental condition that influences WUE",
+      "weight": "9",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "NUTRIENT EFFICIENCY",
+      "description": "Inclusion of chickpea improves nutrient efficiency",
+      "weight": "8",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "CEREAL-BASED CROPPING SYSTEMS",
+      "description": "Included in these systems to improve efficiency",
+      "weight": "8",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "AGRONOMIC PRACTICES",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Optimizing these practices improves WUE",
+      "weight": "9",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "IRRIGATION METHODS",
+      "target": "AGRONOMIC PRACTICES",
+      "description": "A specific type of agronomic practice",
+      "weight": "10",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "LANDFORM MANAGEMENT",
+      "target": "AGRONOMIC PRACTICES",
+      "description": "A specific type of agronomic practice",
+      "weight": "10",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "FERTILIZATION",
+      "target": "AGRONOMIC PRACTICES",
+      "description": "A specific type of agronomic practice",
+      "weight": "10",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "GENOTYPE",
+      "target": "WATER USE EFFICIENCY",
+      "description": "A factor that determines WUE",
+      "weight": "8",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "SOIL WATER HOLDING CAPACITY",
+      "target": "WATER USE EFFICIENCY",
+      "description": "A soil characteristic that influences WUE",
+      "weight": "8",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "METEOROLOGICAL CONDITIONS",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Environmental factors that influence WUE",
+      "weight": "8",
+      "source_id": "paper_6283"
+    },
+    {
+      "source": "PHYSIOLOGICAL CHARACTERISTICS",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Biological factors that influence WUE",
+      "weight": "8",
+      "source_id": "paper_6283"
+    }
+  ]
+}

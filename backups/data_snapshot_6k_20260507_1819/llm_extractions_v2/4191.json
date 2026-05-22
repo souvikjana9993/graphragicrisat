@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench",
+      "source_id": "paper_4191"
+    },
+    {
+      "name": "ICRISAT GENEBANK",
+      "type": "LOCATION",
+      "description": "The facility where global sorghum germplasm collections are stored",
+      "source_id": "paper_4191"
+    },
+    {
+      "name": "GERMPLASM COLLECTIONS",
+      "type": "CONCEPT",
+      "description": "The total set of genetic resources for sorghum, exceeding 37,000 accessions",
+      "source_id": "paper_4191"
+    },
+    {
+      "name": "CORE COLLECTION",
+      "type": "CONCEPT",
+      "description": "A representative subset of 2247 accessions developed in 2001 to provide researchers access to a smaller set of germplasm",
+      "source_id": "paper_4191"
+    },
+    {
+      "name": "MINI CORE COLLECTION",
+      "type": "CONCEPT",
+      "description": "A further reduced subset of the core collection",
+      "source_id": "paper_4191"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "GERMPLASM COLLECTIONS",
+      "description": "is the crop of the",
+      "weight": "10",
+      "source_id": "paper_4191"
+    },
+    {
+      "source": "GERMPLASM COLLECTIONS",
+      "target": "ICRISAT GENEBANK",
+      "description": "are stored at",
+      "weight": "10",
+      "source_id": "paper_4191"
+    },
+    {
+      "source": "GERMPLASM COLLECTIONS",
+      "target": "CORE COLLECTION",
+      "description": "is the source for",
+      "weight": "9",
+      "source_id": "paper_4191"
+    },
+    {
+      "source": "CORE COLLECTION",
+      "target": "MINI CORE COLLECTION",
+      "description": "is the basis for",
+      "weight": "9",
+      "source_id": "paper_4191"
+    }
+  ]
+}

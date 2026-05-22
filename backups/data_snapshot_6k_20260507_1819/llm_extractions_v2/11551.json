@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "Essential element and limiting factor in ecosystems and crop production",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "ECOSYSTEMS",
+      "type": "CONCEPT",
+      "description": "Biological communities where nitrogen is often the most limiting element",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "CROP PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of growing crops for food, limited by nitrogen availability",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "SYNTHETIC FERTILIZERS",
+      "type": "CONCEPT",
+      "description": "Chemical nitrogen sources whose overuse compromises soil health and sustainability",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "SOIL HEALTH",
+      "type": "CONCEPT",
+      "description": "The biological and chemical state of soil, negatively impacted by agrochemicals",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "AGRICULTURAL SUSTAINABILITY",
+      "type": "CONCEPT",
+      "description": "The ability to maintain agricultural productivity without environmental degradation",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "METHOD",
+      "description": "A biological process that converts atmospheric nitrogen into a usable form",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "NITROGEN-FIXING MICROORGANISMS",
+      "type": "ORGANISM",
+      "description": "Microbes that possess the ability to perform biological nitrogen fixation",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "BIOFERTILIZERS",
+      "type": "CONCEPT",
+      "description": "Agricultural products formulated from efficient nitrogen-fixing microorganisms",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "NON-FIXING MICROORGANISMS",
+      "type": "ORGANISM",
+      "description": "Microbes that do not naturally fix nitrogen but could potentially acquire the ability",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "NON-LEGUMINOUS PLANTS",
+      "type": "CROP",
+      "description": "Plants that do not naturally fix nitrogen, including high-value crops",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "A category of non-leguminous plants targeted for the transfer of nitrogen fixation capacity",
+      "source_id": "paper_11551"
+    },
+    {
+      "name": "NITROGEN FIXATION CAPACITY",
+      "type": "TRAIT",
+      "description": "The biological trait allowing an organism to fix atmospheric nitrogen",
+      "source_id": "paper_11551"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN",
+      "target": "ECOSYSTEMS",
+      "description": "is the most limiting element in",
+      "weight": "10",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "CROP PRODUCTION",
+      "description": "is the most limiting element for",
+      "weight": "10",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "SYNTHETIC FERTILIZERS",
+      "target": "CROP PRODUCTION",
+      "description": "contributes to nitrogen requirements for",
+      "weight": "8",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "SYNTHETIC FERTILIZERS",
+      "target": "SOIL HEALTH",
+      "description": "overuse compromises",
+      "weight": "9",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "SYNTHETIC FERTILIZERS",
+      "target": "AGRICULTURAL SUSTAINABILITY",
+      "description": "overuse compromises",
+      "weight": "9",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION",
+      "target": "NITROGEN",
+      "description": "is a process to fix",
+      "weight": "10",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION",
+      "target": "CROP PRODUCTION",
+      "description": "is an alternative to synthetic fertilizers for",
+      "weight": "8",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "NITROGEN-FIXING MICROORGANISMS",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "perform the process of",
+      "weight": "10",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "NITROGEN-FIXING MICROORGANISMS",
+      "target": "BIOFERTILIZERS",
+      "description": "are used in the formulation of",
+      "weight": "10",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "BIOFERTILIZERS",
+      "target": "CROP PRODUCTION",
+      "description": "are used in",
+      "weight": "8",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION",
+      "target": "NON-FIXING MICROORGANISMS",
+      "description": "ability may be transferred to",
+      "weight": "7",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION",
+      "target": "NON-LEGUMINOUS PLANTS",
+      "description": "ability may be transferred to",
+      "weight": "7",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "NITROGEN FIXATION CAPACITY",
+      "target": "CEREALS",
+      "description": "is a target for transfer into",
+      "weight": "8",
+      "source_id": "paper_11551"
+    },
+    {
+      "source": "CEREALS",
+      "target": "NON-LEGUMINOUS PLANTS",
+      "description": "are a type of",
+      "weight": "10",
+      "source_id": "paper_11551"
+    }
+  ]
+}

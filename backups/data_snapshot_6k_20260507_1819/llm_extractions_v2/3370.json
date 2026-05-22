@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "PUCCINIA ARACHIDIS",
+      "type": "ORGANISM",
+      "description": "Fungal pathogen that produces uredospores on peanut leaves",
+      "source_id": "paper_3370"
+    },
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The host plant Arachis hypogaea used in the study",
+      "source_id": "paper_3370"
+    },
+    {
+      "name": "UREDOSPORE PRODUCTION",
+      "type": "TRAIT",
+      "description": "The amount of uredospores produced per unit leaf area and per unit pustule area",
+      "source_id": "paper_3370"
+    },
+    {
+      "name": "GERMINABILITY",
+      "type": "TRAIT",
+      "description": "The ability of uredospores to germinate",
+      "source_id": "paper_3370"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of peanut genotypes to limit the production and germinability of uredospores",
+      "source_id": "paper_3370"
+    },
+    {
+      "name": "HOST GENOTYPE",
+      "type": "CONCEPT",
+      "description": "The genetic makeup of the peanut plant which influences the pathogen's development",
+      "source_id": "paper_3370"
+    },
+    {
+      "name": "INOCULATED DETACHED LEAVES",
+      "type": "METHOD",
+      "description": "The experimental approach of using detached leaves for inoculation to study fungal growth",
+      "source_id": "paper_3370"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PUCCINIA ARACHIDIS",
+      "target": "PEANUT",
+      "description": "infects and produces spores on",
+      "weight": "10",
+      "source_id": "paper_3370"
+    },
+    {
+      "source": "PUCCINIA ARACHIDIS",
+      "target": "UREDOSPORE PRODUCTION",
+      "description": "is the organism that performs",
+      "weight": "10",
+      "source_id": "paper_3370"
+    },
+    {
+      "source": "HOST GENOTYPE",
+      "target": "UREDOSPORE PRODUCTION",
+      "description": "influences the level of",
+      "weight": "9",
+      "source_id": "paper_3370"
+    },
+    {
+      "source": "HOST GENOTYPE",
+      "target": "GERMINABILITY",
+      "description": "influences the level of",
+      "weight": "9",
+      "source_id": "paper_3370"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "UREDOSPORE PRODUCTION",
+      "description": "is associated with significantly lower",
+      "weight": "8",
+      "source_id": "paper_3370"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "GERMINABILITY",
+      "description": "is associated with significantly lower",
+      "weight": "8",
+      "source_id": "paper_3370"
+    },
+    {
+      "source": "INOCULATED DETACHED LEAVES",
+      "target": "UREDOSPORE PRODUCTION",
+      "description": "used as a method to study",
+      "weight": "7",
+      "source_id": "paper_3370"
+    }
+  ]
+}

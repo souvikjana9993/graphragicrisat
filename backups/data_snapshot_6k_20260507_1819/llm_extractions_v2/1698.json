@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan, the crop studied for dry matter accumulation under different moisture regimes",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "WELL-WATERED",
+      "type": "CONDITION",
+      "description": "A moisture regime where water is provided sufficiently to the crop",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "A moisture regime where water is limited from flowering until maturity",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "ICRISAT ASIA CENTER, INDIA",
+      "type": "LOCATION",
+      "description": "The research facility where the pigeonpea genotypes were grown",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "CUMULATIVE INTERCEPTED PHOTOSYNTHETICALLY ACTIVE RADIATION (CIR)",
+      "type": "TRAIT",
+      "description": "The total amount of photosynthetically active radiation intercepted by the crop canopy over time",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "BIOMASS ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The process of increasing total plant mass",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "RADIATION USE EFFICIENCY (RUE)",
+      "type": "TRAIT",
+      "description": "The efficiency with which intercepted radiation is converted into biomass",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "CANOPY ATTRIBUTES",
+      "type": "CONCEPT",
+      "description": "Physical characteristics of the crop canopy that influence growth and radiation interception",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "LEAF AREA DURATION",
+      "type": "TRAIT",
+      "description": "The integral of leaf area over the growth period",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "CROP GROWTH RATE (CGR)",
+      "type": "TRAIT",
+      "description": "The rate of increase in crop biomass over time",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "DRY MATTER ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The accumulation of organic matter in the plant excluding water content",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The overall output or yield of the pigeonpea crop",
+      "source_id": "paper_1698"
+    },
+    {
+      "name": "RAIN-OUT SHELTERS",
+      "type": "METHOD",
+      "description": "Automated structures used to control and impose specific moisture regimes",
+      "source_id": "paper_1698"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "WELL-WATERED",
+      "description": "grown under",
+      "weight": "10",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "WATER DEFICIT",
+      "description": "grown under",
+      "weight": "10",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "ICRISAT ASIA CENTER, INDIA",
+      "description": "grown at",
+      "weight": "10",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "CUMULATIVE INTERCEPTED PHOTOSYNTHETICALLY ACTIVE RADIATION (CIR)",
+      "description": "significantly decreased",
+      "weight": "8",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "BIOMASS ACCUMULATION",
+      "target": "CUMULATIVE INTERCEPTED PHOTOSYNTHETICALLY ACTIVE RADIATION (CIR)",
+      "description": "has a linear relationship with",
+      "weight": "9",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "RADIATION USE EFFICIENCY (RUE)",
+      "description": "affected the slope of the relationship",
+      "weight": "8",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "LEAF AREA DURATION",
+      "target": "CROP GROWTH RATE (CGR)",
+      "description": "significantly correlated under well-watered conditions",
+      "weight": "7",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "CUMULATIVE INTERCEPTED PHOTOSYNTHETICALLY ACTIVE RADIATION (CIR)",
+      "target": "CROP GROWTH RATE (CGR)",
+      "description": "accounted for genotypic variation",
+      "weight": "8",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "RADIATION USE EFFICIENCY (RUE)",
+      "target": "CROP GROWTH RATE (CGR)",
+      "description": "accounted for nearly 90% of genotypic variation",
+      "weight": "9",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "RADIATION USE EFFICIENCY (RUE)",
+      "target": "DRY MATTER ACCUMULATION",
+      "description": "explained more than 70% of genotypic variation",
+      "weight": "9",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "RADIATION USE EFFICIENCY (RUE)",
+      "target": "PRODUCTIVITY",
+      "description": "is critical in determining",
+      "weight": "10",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "CANOPY ATTRIBUTES",
+      "description": "exhibits genotypic variation in",
+      "weight": "8",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "RAIN-OUT SHELTERS",
+      "target": "WELL-WATERED",
+      "description": "used to maintain",
+      "weight": "9",
+      "source_id": "paper_1698"
+    },
+    {
+      "source": "RAIN-OUT SHELTERS",
+      "target": "WATER DEFICIT",
+      "description": "used to impose",
+      "weight": "9",
+      "source_id": "paper_1698"
+    }
+  ]
+}

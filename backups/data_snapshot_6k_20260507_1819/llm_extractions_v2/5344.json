@@ -1,0 +1,196 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The target crop for which a comprehensive transcriptome assembly was developed",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "TRANSCRIPTOME ASSEMBLY",
+      "type": "METHOD",
+      "description": "The process of reconstructing the complete set of RNA transcripts from sequencing data",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "ILLUMINA GA IIX",
+      "type": "METHOD",
+      "description": "A second-generation sequencing platform used to generate short single end reads",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "FLX/454",
+      "type": "METHOD",
+      "description": "A sequencing platform used to generate single end reads",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "SANGER SEQUENCING",
+      "type": "METHOD",
+      "description": "A sequencing method used to generate expressed sequence tags",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "CCTA V2",
+      "type": "CONCEPT",
+      "description": "The specific version of the pigeonpea transcriptome assembly comprising 21,434 transcript assembly contigs",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A crop whose genome build 1.0.9 was used as a reference for mapping pigeonpea transcripts",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "ISR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Intron spanning region markers designed for amplifying specific genomic regions",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "SSR LOCI",
+      "type": "GENE_MARKER",
+      "description": "Simple sequence repeat loci derived from BAC ends used for mapping",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "PIGEONPEA CHROMOSOMES",
+      "type": "CONCEPT",
+      "description": "The 11 chromosomes of pigeonpea where markers were mapped",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "PIC VALUE",
+      "type": "CONCEPT",
+      "description": "Polymorphism information content used to measure the informativeness of genetic markers",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "GENETIC RESEARCH",
+      "type": "CONCEPT",
+      "description": "The broader field of study that will benefit from the transcriptome assembly and markers",
+      "source_id": "paper_5344"
+    },
+    {
+      "name": "BREEDING APPLICATIONS",
+      "type": "CONCEPT",
+      "description": "The practical application of genetic resources to improve crop varieties",
+      "source_id": "paper_5344"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TRANSCRIPTOME ASSEMBLY",
+      "target": "PIGEONPEA",
+      "description": "developed for",
+      "weight": "10",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "ILLUMINA GA IIX",
+      "target": "TRANSCRIPTOME ASSEMBLY",
+      "description": "used to generate reads for",
+      "weight": "9",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "FLX/454",
+      "target": "TRANSCRIPTOME ASSEMBLY",
+      "description": "used to generate reads for",
+      "weight": "9",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "SANGER SEQUENCING",
+      "target": "TRANSCRIPTOME ASSEMBLY",
+      "description": "used to generate tags for",
+      "weight": "9",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "CCTA V2",
+      "target": "TRANSCRIPTOME ASSEMBLY",
+      "description": "is the resulting assembly of",
+      "weight": "10",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "CCTA V2",
+      "target": "PIGEONPEA",
+      "description": "is the transcriptome assembly of",
+      "weight": "10",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "CCTA V2",
+      "target": "SOYBEAN",
+      "description": "mapped onto the genome of",
+      "weight": "8",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "ISR MARKERS",
+      "target": "CCTA V2",
+      "description": "designed from",
+      "weight": "9",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "ISR MARKERS",
+      "target": "PIGEONPEA CHROMOSOMES",
+      "description": "mapped to",
+      "weight": "9",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "SSR LOCI",
+      "target": "PIGEONPEA CHROMOSOMES",
+      "description": "mapped to",
+      "weight": "8",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "SSR LOCI",
+      "target": "SOYBEAN",
+      "description": "mapped using as reference",
+      "weight": "7",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "ISR MARKERS",
+      "target": "PIC VALUE",
+      "description": "evaluated using",
+      "weight": "7",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "CCTA V2",
+      "target": "GENETIC RESEARCH",
+      "description": "serves as a resource for",
+      "weight": "8",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "CCTA V2",
+      "target": "BREEDING APPLICATIONS",
+      "description": "serves as a resource for",
+      "weight": "8",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "ISR MARKERS",
+      "target": "GENETIC RESEARCH",
+      "description": "serves as a resource for",
+      "weight": "8",
+      "source_id": "paper_5344"
+    },
+    {
+      "source": "ISR MARKERS",
+      "target": "BREEDING APPLICATIONS",
+      "description": "serves as a resource for",
+      "weight": "8",
+      "source_id": "paper_5344"
+    }
+  ]
+}

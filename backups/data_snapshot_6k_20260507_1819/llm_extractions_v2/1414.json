@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "HIMACHAL PRADESH",
+      "type": "LOCATION",
+      "description": "A state in India where the study was conducted",
+      "source_id": "paper_1414"
+    },
+    {
+      "name": "RHOPALOSIPHUM MAIDIS",
+      "type": "ORGANISM",
+      "description": "A pest aphid that infests maize",
+      "source_id": "paper_1414"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "The crop infested by Rhopalosiphum maidis",
+      "source_id": "paper_1414"
+    },
+    {
+      "name": "COCCINELLIDS",
+      "type": "ORGANISM",
+      "description": "Biotic agents that prey upon aphids",
+      "source_id": "paper_1414"
+    },
+    {
+      "name": "PREDATION POTENTIAL",
+      "type": "CONCEPT",
+      "description": "The capacity of coccinellids to prey on maize aphids",
+      "source_id": "paper_1414"
+    },
+    {
+      "name": "BIOTIC AGENTS",
+      "type": "CONCEPT",
+      "description": "Biological organisms used to control pests",
+      "source_id": "paper_1414"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHOPALOSIPHUM MAIDIS",
+      "target": "MAIZE",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_1414"
+    },
+    {
+      "source": "COCCINELLIDS",
+      "target": "RHOPALOSIPHUM MAIDIS",
+      "description": "limits population of",
+      "weight": "10",
+      "source_id": "paper_1414"
+    },
+    {
+      "source": "COCCINELLIDS",
+      "target": "BIOTIC AGENTS",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_1414"
+    },
+    {
+      "source": "RHOPALOSIPHUM MAIDIS",
+      "target": "HIMACHAL PRADESH",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_1414"
+    },
+    {
+      "source": "COCCINELLIDS",
+      "target": "HIMACHAL PRADESH",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_1414"
+    },
+    {
+      "source": "COCCINELLIDS",
+      "target": "PREDATION POTENTIAL",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_1414"
+    }
+  ]
+}

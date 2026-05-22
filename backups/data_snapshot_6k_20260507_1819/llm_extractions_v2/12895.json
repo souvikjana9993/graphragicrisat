@@ -1,0 +1,202 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop studied in Mali for market participation and technology adoption.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "MALI",
+      "type": "LOCATION",
+      "description": "The country where the study on sorghum household farms was conducted.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "TRIPLE HURDLE MODEL",
+      "type": "METHOD",
+      "description": "A statistical model integrating decisions on adoption, market participation, and marketed quantity to control for selection bias and endogeneity.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "MARKET PARTICIPATION",
+      "type": "CONCEPT",
+      "description": "The decision and act of engaging in the sale of agricultural produce in the market.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "type": "CONCEPT",
+      "description": "The process of adopting new agricultural technologies, such as improved crop varieties.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "IMPROVED SORGHUM VARIETIES",
+      "type": "CONCEPT",
+      "description": "Enhanced sorghum varieties developed through breeding to improve yield or other traits.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "MARKETED QUANTITY",
+      "type": "CONCEPT",
+      "description": "The volume of sorghum produce that is actually sold in the market.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "SELECTION BIAS",
+      "type": "CONCEPT",
+      "description": "A statistical bias that occurs when the sample is not representative of the population, controlled by the triple-hurdle model.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "ENDOGENEITY",
+      "type": "CONCEPT",
+      "description": "A correlation between an explanatory variable and the error term, controlled by the triple-hurdle model in the context of adoption and participation.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "SORGHUM BREEDING",
+      "type": "METHOD",
+      "description": "The scientific process of developing improved sorghum varieties.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "MARKET OPPORTUNITY",
+      "type": "CONCEPT",
+      "description": "The availability of favorable conditions for selling sorghum in the market.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "MARKET DEMAND",
+      "type": "CONCEPT",
+      "description": "The consumer demand for sorghum, which should influence breeding programs.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "MARKET ACCESS",
+      "type": "CONCEPT",
+      "description": "The ability of smallholder farmers to reach and participate in markets.",
+      "source_id": "paper_12895"
+    },
+    {
+      "name": "SMALLHOLDER FARMERS",
+      "type": "ORGANISM",
+      "description": "The farmers managing sorghum household farms in Mali.",
+      "source_id": "paper_12895"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TRIPLE HURDLE MODEL",
+      "target": "MARKET PARTICIPATION",
+      "description": "used to investigate the underlying process of",
+      "weight": "10",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "TRIPLE HURDLE MODEL",
+      "target": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "description": "used to investigate the underlying process of",
+      "weight": "10",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "TRIPLE HURDLE MODEL",
+      "target": "MARKETED QUANTITY",
+      "description": "used to investigate the underlying process of",
+      "weight": "10",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "target": "MARKET PARTICIPATION",
+      "description": "plays a key role in and precedes",
+      "weight": "9",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "target": "MARKETED QUANTITY",
+      "description": "plays a key role in and precedes",
+      "weight": "9",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "MARKET PARTICIPATION",
+      "target": "MARKETED QUANTITY",
+      "description": "precedes",
+      "weight": "9",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "TRIPLE HURDLE MODEL",
+      "target": "SELECTION BIAS",
+      "description": "consistently controls for",
+      "weight": "8",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "TRIPLE HURDLE MODEL",
+      "target": "ENDOGENEITY",
+      "description": "consistently controls for",
+      "weight": "8",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "SORGHUM BREEDING",
+      "target": "MARKET OPPORTUNITY",
+      "description": "needs to take into account",
+      "weight": "7",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "SORGHUM BREEDING",
+      "target": "MARKET DEMAND",
+      "description": "needs to take into account",
+      "weight": "7",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "MARKET ACCESS",
+      "target": "SMALLHOLDER FARMERS",
+      "description": "facilitates initiatives that enhance access for",
+      "weight": "8",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "MARKET PARTICIPATION",
+      "target": "IMPROVED SORGHUM VARIETIES",
+      "description": "facilitating participation can enhance the uptake of",
+      "weight": "7",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "MARKET DEMAND",
+      "target": "IMPROVED SORGHUM VARIETIES",
+      "description": "accounting for demand in breeding can enhance the uptake of",
+      "weight": "7",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "IMPROVED SORGHUM VARIETIES",
+      "target": "AGRICULTURAL TECHNOLOGY ADOPTION",
+      "description": "is the specific technology being adopted",
+      "weight": "10",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MALI",
+      "description": "is the crop studied in",
+      "weight": "10",
+      "source_id": "paper_12895"
+    },
+    {
+      "source": "SMALLHOLDER FARMERS",
+      "target": "SORGHUM",
+      "description": "manage household farms of",
+      "weight": "10",
+      "source_id": "paper_12895"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "entities": [
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "Two-rowed genotypes studied for genotype-by-environment interaction in the Mediterranean region",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "MEDITERRANEAN REGION",
+      "type": "LOCATION",
+      "description": "The geographical area where the barley genotypes were grown and studied",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The primary agricultural productivity measure, specifically grain yield per environment",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "GENOTYPE-BY-ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between genetic makeup and environmental factors affecting the performance of barley",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "SYRIA",
+      "type": "LOCATION",
+      "description": "One of the countries in the Mediterranean region where the study was conducted",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "NORTH AFRICA",
+      "type": "LOCATION",
+      "description": "One of the regions in the Mediterranean where the study was conducted",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "GROWTH TYPE",
+      "type": "TRAIT",
+      "description": "The classification of barley genotypes as either winter or spring types",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "HEADING DATE",
+      "type": "TRAIT",
+      "description": "The timing of the heading stage in barley genotypes, categorized by earliness",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "HIGH-YIELDING ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Environments characterized by higher average grain yields",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "LOW-YIELDING ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Environments characterized by lower average grain yields",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to classify genotypes and environments into groups",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "ADDITIVE MAIN EFFECTS AND MULTIPLICATIVE INTERACTION MODEL",
+      "type": "METHOD",
+      "description": "A statistical model used to analyze the genotype-by-environment interaction",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "SEASONAL RAINFALL",
+      "type": "CONDITION",
+      "description": "An environmental factor that influences the classification of environments into high or low yielding",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An environmental factor that influences the classification of environments into high or low yielding",
+      "source_id": "paper_4200"
+    },
+    {
+      "name": "HARSH ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Environments with large variation between seasons and locations that hamper yield selection",
+      "source_id": "paper_4200"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BARLEY",
+      "target": "MEDITERRANEAN REGION",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "BARLEY",
+      "target": "SYRIA",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "BARLEY",
+      "target": "NORTH AFRICA",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "GENOTYPE-BY-ENVIRONMENT INTERACTION",
+      "target": "BARLEY",
+      "description": "studied in",
+      "weight": "10",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "GENOTYPE-BY-ENVIRONMENT INTERACTION",
+      "target": "GROWTH TYPE",
+      "description": "affected by",
+      "weight": "7",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "GENOTYPE-BY-ENVIRONMENT INTERACTION",
+      "target": "HEADING DATE",
+      "description": "affected by",
+      "weight": "7",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "YIELD",
+      "target": "BARLEY",
+      "description": "measured in",
+      "weight": "10",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "YIELD",
+      "target": "HIGH-YIELDING ENVIRONMENTS",
+      "description": "defines",
+      "weight": "10",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "YIELD",
+      "target": "LOW-YIELDING ENVIRONMENTS",
+      "description": "defines",
+      "weight": "10",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "BARLEY",
+      "description": "used to classify genotypes",
+      "weight": "8",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "HIGH-YIELDING ENVIRONMENTS",
+      "description": "used to classify environments",
+      "weight": "8",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "CLUSTER ANALYSIS",
+      "target": "LOW-YIELDING ENVIRONMENTS",
+      "description": "used to classify environments",
+      "weight": "8",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "ADDITIVE MAIN EFFECTS AND MULTIPLICATIVE INTERACTION MODEL",
+      "target": "GENOTYPE-BY-ENVIRONMENT INTERACTION",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "SEASONAL RAINFALL",
+      "target": "HIGH-YIELDING ENVIRONMENTS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "SEASONAL RAINFALL",
+      "target": "LOW-YIELDING ENVIRONMENTS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "HIGH-YIELDING ENVIRONMENTS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "LOW-YIELDING ENVIRONMENTS",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_4200"
+    },
+    {
+      "source": "HARSH ENVIRONMENTS",
+      "target": "YIELD",
+      "description": "hampers selection for",
+      "weight": "8",
+      "source_id": "paper_4200"
+    }
+  ]
+}

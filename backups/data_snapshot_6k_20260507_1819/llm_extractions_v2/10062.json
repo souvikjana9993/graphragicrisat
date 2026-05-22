@@ -1,0 +1,226 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume species studied, including desi and kabuli accessions",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "PLANT GROWTH HABIT",
+      "type": "TRAIT",
+      "description": "A complex trait encompassing erect, semi-erect, spreading, semi-spreading, and prostrate forms",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "GWAS",
+      "type": "METHOD",
+      "description": "Genome-wide association study used to identify genomic loci associated with traits",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms used as genetic markers to explain phenotypic variation",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "GENOTYPING-BY-SEQUENCING",
+      "type": "METHOD",
+      "description": "A sequencing method used to obtain SNPs",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "RIL MAPPING",
+      "type": "METHOD",
+      "description": "Recombinant inbred line mapping used for validating PGH-associated genes",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "SELECTIVE GENOTYPING",
+      "type": "METHOD",
+      "description": "A method used to validate PGH-associated genes in specific accessions",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "SEQUENOM MASSARRAY",
+      "type": "METHOD",
+      "description": "The technology used to perform selective genotyping",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "SNF2",
+      "type": "GENE_MARKER",
+      "description": "A protein-coding gene associated with plant growth habit traits",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "B3 TRANSCRIPTION FACTOR",
+      "type": "GENE_MARKER",
+      "description": "A transcription factor associated with plant growth habit traits",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "VERNALIZATION",
+      "type": "CONDITION",
+      "description": "The process of cooling that influences specific SNP alleles",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "CHICKPEA DOMESTICATION",
+      "type": "CONCEPT",
+      "description": "The evolutionary process of transitioning from wild to cultivated chickpea",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "TAJIMA'S D",
+      "type": "METHOD",
+      "description": "A statistical test used to measure selection pressure on genomic loci",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "MARKER-ASSISTED GENETIC ENHANCEMENT",
+      "type": "METHOD",
+      "description": "The use of genetic markers to improve crop cultivars",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "PLANT ARCHITECTURE",
+      "type": "TRAIT",
+      "description": "The overall physical structure of the plant",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "EXPRESSION PROFILING",
+      "type": "METHOD",
+      "description": "The analysis of gene expression levels in specific tissues",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "ASSOCIATION ANALYSIS",
+      "type": "METHOD",
+      "description": "A method used for the quantitative dissection of complex traits",
+      "source_id": "paper_10062"
+    },
+    {
+      "name": "GENETIC MAPPING",
+      "type": "METHOD",
+      "description": "A method used for the quantitative dissection of complex traits",
+      "source_id": "paper_10062"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GWAS",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Identified genomic loci associated with",
+      "weight": "9",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "SNPS",
+      "description": "Used to obtain",
+      "weight": "10",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "SNPS",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Explain phenotypic variation for",
+      "weight": "8",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "RIL MAPPING",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Used to validate genes associated with",
+      "weight": "7",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "SELECTIVE GENOTYPING",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Used to validate genes associated with",
+      "weight": "7",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "SEQUENOM MASSARRAY",
+      "target": "SELECTIVE GENOTYPING",
+      "description": "Used to perform",
+      "weight": "10",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "SNF2",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Associated with",
+      "weight": "9",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "B3 TRANSCRIPTION FACTOR",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Associated with",
+      "weight": "9",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "VERNALIZATION",
+      "target": "SNF2",
+      "description": "Influences the response of",
+      "weight": "8",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "VERNALIZATION",
+      "target": "B3 TRANSCRIPTION FACTOR",
+      "description": "Influences the response of",
+      "weight": "8",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "TAJIMA'S D",
+      "target": "CHICKPEA DOMESTICATION",
+      "description": "Used to indicate selection pressure during",
+      "weight": "8",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "MARKER-ASSISTED GENETIC ENHANCEMENT",
+      "target": "PLANT ARCHITECTURE",
+      "description": "Used to develop cultivars with desirable",
+      "weight": "9",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Possesses the trait",
+      "weight": "10",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "EXPRESSION PROFILING",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Used for quantitative dissection of",
+      "weight": "7",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "ASSOCIATION ANALYSIS",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Used for quantitative dissection of",
+      "weight": "7",
+      "source_id": "paper_10062"
+    },
+    {
+      "source": "GENETIC MAPPING",
+      "target": "PLANT GROWTH HABIT",
+      "description": "Used for quantitative dissection of",
+      "weight": "7",
+      "source_id": "paper_10062"
+    }
+  ]
+}

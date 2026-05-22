@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop produced in semi-arid tropics.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region where pearl millet is produced.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "A heterothallic pathogen that causes Downy mildew in pearl millet.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A biotic constraint/disease caused by Sclerospora graminicola.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pearl millet to withstand virulent isolates of Sclerospora graminicola.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "GENETIC MARKER TECHNOLOGY",
+      "type": "CONCEPT",
+      "description": "Advances used to manipulate oligogenic and quantitative traits in plant breeding.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "GENOMIC SSRS",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat markers derived from genomic DNA used for linkage mapping.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "EST SSRS",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat markers derived from Expressed Sequence Tags used for linkage mapping.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "LINKAGE MAP",
+      "type": "CONCEPT",
+      "description": "A genetic map showing the relative positions of marker loci on chromosomes.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "F8 RIL PROGENIES",
+      "type": "CONCEPT",
+      "description": "A mapping population of 188 recombinant inbred lines used for map construction.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "ICMB 89111-P6",
+      "type": "CONCEPT",
+      "description": "One of the parental lines used to create the RIL population.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "ICMB 90111-P6",
+      "type": "CONCEPT",
+      "description": "One of the parental lines used to create the RIL population.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "JOINMAP",
+      "type": "METHOD",
+      "description": "Software used to construct the skeleton linkage map.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "MAPMAKER/EXP",
+      "type": "METHOD",
+      "description": "Software used to construct the skeleton linkage map.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "MAP CHART",
+      "type": "METHOD",
+      "description": "Software used to draw the constructed linkage map.",
+      "source_id": "paper_10460"
+    },
+    {
+      "name": "LOD THRESHOLD",
+      "type": "CONCEPT",
+      "description": "The statistical threshold value used in JoinMap for linkage analysis.",
+      "source_id": "paper_10460"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "PEARL MILLET",
+      "description": "is a biotic constraint for",
+      "weight": "9",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "DOWNY MILDEW",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "GENETIC MARKER TECHNOLOGY",
+      "target": "RESISTANCE",
+      "description": "used to manipulate",
+      "weight": "8",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "GENOMIC SSRS",
+      "target": "LINKAGE MAP",
+      "description": "used to construct",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "EST SSRS",
+      "target": "LINKAGE MAP",
+      "description": "used to construct",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "F8 RIL PROGENIES",
+      "target": "LINKAGE MAP",
+      "description": "used to construct",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "ICMB 89111-P6",
+      "target": "F8 RIL PROGENIES",
+      "description": "parent of",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "ICMB 90111-P6",
+      "target": "F8 RIL PROGENIES",
+      "description": "parent of",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "JOINMAP",
+      "target": "LINKAGE MAP",
+      "description": "used to construct",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "MAPMAKER/EXP",
+      "target": "LINKAGE MAP",
+      "description": "used to construct",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "MAP CHART",
+      "target": "LINKAGE MAP",
+      "description": "used to draw",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "LOD THRESHOLD",
+      "target": "JOINMAP",
+      "description": "parameter for",
+      "weight": "9",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "LINKAGE MAP",
+      "description": "subject of",
+      "weight": "10",
+      "source_id": "paper_10460"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SEMI-ARID TROPICS",
+      "description": "produced in",
+      "weight": "8",
+      "source_id": "paper_10460"
+    }
+  ]
+}

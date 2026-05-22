@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "PHYTOPHTHORA BLIGHT",
+      "type": "CONDITION",
+      "description": "An emerging disease threat affecting pigeonpea crops.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The host crop affected by Phytophthora blight.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "DIAGNOSIS",
+      "type": "METHOD",
+      "description": "The process of identifying the presence and nature of Phytophthora blight.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "SYMPTOMS AND SIGNS",
+      "type": "TRAIT",
+      "description": "The observable characteristics used for the diagnosis of Phytophthora blight.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "TAXONOMY",
+      "type": "CONCEPT",
+      "description": "The scientific classification of the causal organism of Phytophthora blight.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "GEOGRAPHIC DISTRIBUTION",
+      "type": "CONCEPT",
+      "description": "The spatial occurrence and spread of Phytophthora blight.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "ISOLATION",
+      "type": "METHOD",
+      "description": "The process of separating the causal organism Phytophthora cajani from its host or environment.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "IDENTIFICATION",
+      "type": "METHOD",
+      "description": "The process of confirming the identity of the organism Phytophthora cajani.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "STORAGE",
+      "type": "METHOD",
+      "description": "The process of preserving the organism Phytophthora cajani for future use.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "PHYTOPHTHORA CAJANI",
+      "type": "ORGANISM",
+      "description": "The causal organism responsible for causing Phytophthora blight.",
+      "source_id": "paper_10870"
+    },
+    {
+      "name": "MANAGEMENT",
+      "type": "METHOD",
+      "description": "The strategies and practices used to control Phytophthora blight in pigeonpea.",
+      "source_id": "paper_10870"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHYTOPHTHORA BLIGHT",
+      "target": "PIGEONPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10870"
+    },
+    {
+      "source": "PHYTOPHTHORA CAJANI",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10870"
+    },
+    {
+      "source": "DIAGNOSIS",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_10870"
+    },
+    {
+      "source": "SYMPTOMS AND SIGNS",
+      "target": "DIAGNOSIS",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_10870"
+    },
+    {
+      "source": "TAXONOMY",
+      "target": "PHYTOPHTHORA CAJANI",
+      "description": "classifies",
+      "weight": "8",
+      "source_id": "paper_10870"
+    },
+    {
+      "source": "GEOGRAPHIC DISTRIBUTION",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "describes spread of",
+      "weight": "8",
+      "source_id": "paper_10870"
+    },
+    {
+      "source": "ISOLATION",
+      "target": "PHYTOPHTHORA CAJANI",
+      "description": "used to extract",
+      "weight": "9",
+      "source_id": "paper_10870"
+    },
+    {
+      "source": "IDENTIFICATION",
+      "target": "PHYTOPHTHORA CAJANI",
+      "description": "used to verify",
+      "weight": "9",
+      "source_id": "paper_10870"
+    },
+    {
+      "source": "STORAGE",
+      "target": "PHYTOPHTHORA CAJANI",
+      "description": "used to preserve",
+      "weight": "9",
+      "source_id": "paper_10870"
+    },
+    {
+      "source": "MANAGEMENT",
+      "target": "PHYTOPHTHORA BLIGHT",
+      "description": "used to control",
+      "weight": "9",
+      "source_id": "paper_10870"
+    }
+  ]
+}

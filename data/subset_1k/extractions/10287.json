@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Elite breeding lines used for genomic prediction and cultivar improvement",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method that allows safe phenotyping, reduces cost, and shortens selection cycles",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "GENOMIC PREDICTION MODELS",
+      "type": "METHOD",
+      "description": "Models used to predict the performance of lines across different environments",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between genetic makeup and environmental factors that affects trait expression",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A phenotyping trait measured in elite chickpea breeding lines",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "DAYS TO MATURITY",
+      "type": "TRAIT",
+      "description": "A phenotyping trait measured in elite chickpea breeding lines",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "A phenotyping trait measured in elite chickpea breeding lines",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "DARTSEQ",
+      "type": "METHOD",
+      "description": "A genotyping platform used to obtain 1.6K markers",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "GENOTYPING-BY-SEQUENCING",
+      "type": "METHOD",
+      "description": "A genotyping platform used to obtain 89K SNPs",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphisms used as genomic information in prediction models",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "CROSS-VALIDATION SCHEMES",
+      "type": "METHOD",
+      "description": "Evaluation methods including CV0, CV1, and CV2 used to assess the predictive ability of genomic models",
+      "source_id": "paper_10287"
+    },
+    {
+      "name": "ENVIRONMENT",
+      "type": "CONDITION",
+      "description": "The external conditions and locations where phenotyping data were recorded",
+      "source_id": "paper_10287"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "CHICKPEA",
+      "description": "applied to improve",
+      "weight": "10",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "GENOMIC PREDICTION MODELS",
+      "target": "CHICKPEA",
+      "description": "used to predict performance of",
+      "weight": "10",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "target": "GENOMIC PREDICTION MODELS",
+      "description": "incorporated into to improve predictive ability",
+      "weight": "9",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "GENOMIC PREDICTION MODELS",
+      "target": "PLANT HEIGHT",
+      "description": "used to predict",
+      "weight": "8",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "GENOMIC PREDICTION MODELS",
+      "target": "DAYS TO MATURITY",
+      "description": "used to predict",
+      "weight": "8",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "GENOMIC PREDICTION MODELS",
+      "target": "SEED YIELD",
+      "description": "used to predict",
+      "weight": "8",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "DARTSEQ",
+      "target": "CHICKPEA",
+      "description": "used for genotyping",
+      "weight": "9",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "CHICKPEA",
+      "description": "used for genotyping",
+      "weight": "9",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "SNPS",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "CROSS-VALIDATION SCHEMES",
+      "target": "GENOMIC PREDICTION MODELS",
+      "description": "used to assess predictive ability of",
+      "weight": "9",
+      "source_id": "paper_10287"
+    },
+    {
+      "source": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "target": "ENVIRONMENT",
+      "description": "involves interaction with",
+      "weight": "10",
+      "source_id": "paper_10287"
+    }
+  ]
+}

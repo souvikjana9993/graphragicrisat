@@ -1,0 +1,145 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being evaluated for disease resistance.",
+      "source_id": "paper_259"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting chickpeas.",
+      "source_id": "paper_259"
+    },
+    {
+      "name": "ROOT ROTS",
+      "type": "CONDITION",
+      "description": "A disease affecting the root system of chickpeas.",
+      "source_id": "paper_259"
+    },
+    {
+      "name": "WILT",
+      "type": "CONDITION",
+      "description": "A disease causing the loss of turgidity in chickpeas.",
+      "source_id": "paper_259"
+    },
+    {
+      "name": "FUSARIUM",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for root rots and wilt.",
+      "source_id": "paper_259"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of specific chickpea entries to withstand disease.",
+      "source_id": "paper_259"
+    },
+    {
+      "name": "INTERNATIONAL CHICKPEA ASCOCHYTA BLIGHT NURSERY",
+      "type": "CONCEPT",
+      "description": "A global nursery used to identify chickpea entries resistant to Ascochyta Blight.",
+      "source_id": "paper_259"
+    },
+    {
+      "name": "INTERNATIONAL CHICKPEA ROOT ROTS AND WILT NURSERY",
+      "type": "CONCEPT",
+      "description": "A global nursery used to identify chickpea entries resistant to root rots and wilt.",
+      "source_id": "paper_259"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ROOT ROTS",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "WILT",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "FUSARIUM",
+      "target": "ROOT ROTS",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "FUSARIUM",
+      "target": "WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "trait against",
+      "weight": "9",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "ROOT ROTS",
+      "description": "trait against",
+      "weight": "9",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "WILT",
+      "description": "trait against",
+      "weight": "9",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "INTERNATIONAL CHICKPEA ASCOCHYTA BLIGHT NURSERY",
+      "target": "CHICKPEA",
+      "description": "tests",
+      "weight": "9",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "INTERNATIONAL CHICKPEA ASCOCHYTA BLIGHT NURSERY",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "evaluates",
+      "weight": "10",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "INTERNATIONAL CHICKPEA ROOT ROTS AND WILT NURSERY",
+      "target": "CHICKPEA",
+      "description": "tests",
+      "weight": "9",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "INTERNATIONAL CHICKPEA ROOT ROTS AND WILT NURSERY",
+      "target": "ROOT ROTS",
+      "description": "evaluates",
+      "weight": "10",
+      "source_id": "paper_259"
+    },
+    {
+      "source": "INTERNATIONAL CHICKPEA ROOT ROTS AND WILT NURSERY",
+      "target": "WILT",
+      "description": "evaluates",
+      "weight": "10",
+      "source_id": "paper_259"
+    }
+  ]
+}

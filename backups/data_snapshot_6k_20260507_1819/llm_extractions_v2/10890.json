@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop Cicer arietinum Linn. being studied for pest susceptibility",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "The lepidopteran pest whose larvae feed on chickpea",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "NO-CHOICE CAGED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Experimental setup where larvae are restricted to a single genotype",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "GLASSHOUSE",
+      "type": "LOCATION",
+      "description": "Controlled environment where chickpea genotypes were grown",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "FEEDING PREFERENCE",
+      "type": "TRAIT",
+      "description": "The choice or tendency of larvae to feed on specific leaf types or genotypes",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "DAMAGE RATING",
+      "type": "TRAIT",
+      "description": "Metric used to quantify the level of feeding damage on the plant",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "LARVAL SURVIVAL",
+      "type": "TRAIT",
+      "description": "The percentage of larvae that survive on a given genotype",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "LARVAL GROWTH",
+      "type": "TRAIT",
+      "description": "The rate of development and weight gain of the larvae",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "ANTIBIOSIS",
+      "type": "CONCEPT",
+      "description": "A mechanism of plant resistance that adversely affects the life cycle of the pest",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of certain chickpea genotypes to limit damage from H. armigera",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "WASHED LEAVES",
+      "type": "CONDITION",
+      "description": "Chickpea leaves where surface exudates have been removed by washing",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "UNWASHED LEAVES",
+      "type": "CONDITION",
+      "description": "Chickpea leaves with natural surface exudates intact",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "CHICKPEA GENOTYPES",
+      "type": "CROP",
+      "description": "Specific lines of chickpea such as ICC 12475, ICC 12478, ICC 12479, ICC 14876, ICC 12495 and ICC 12494 tested for resistance",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "WATER-SOLUBLE COMPOUNDS",
+      "type": "CONCEPT",
+      "description": "Chemical substances in leaf exudates that contribute to pest resistance",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "LEAF EXUDATES",
+      "type": "CONCEPT",
+      "description": "Secretions on the surface of chickpea leaves",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "MALIC ACID",
+      "type": "CONCEPT",
+      "description": "A specific water-soluble compound found in leaf exudates",
+      "source_id": "paper_10890"
+    },
+    {
+      "name": "OXALIC ACID",
+      "type": "CONCEPT",
+      "description": "A specific water-soluble compound found in leaf exudates",
+      "source_id": "paper_10890"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "host plant for",
+      "weight": "10",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "CHICKPEA GENOTYPES",
+      "target": "RESISTANCE",
+      "description": "exhibit varying levels of",
+      "weight": "9",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "FEEDING PREFERENCE",
+      "description": "demonstrates",
+      "weight": "8",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "NO-CHOICE CAGED CONDITIONS",
+      "target": "RESISTANCE",
+      "description": "used to test",
+      "weight": "7",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "GLASSHOUSE",
+      "target": "CHICKPEA",
+      "description": "location for growing",
+      "weight": "6",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "ANTIBIOSIS",
+      "description": "includes as a component",
+      "weight": "9",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "ANTIBIOSIS",
+      "target": "DAMAGE RATING",
+      "description": "leads to reduced",
+      "weight": "8",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "ANTIBIOSIS",
+      "target": "LARVAL SURVIVAL",
+      "description": "leads to low",
+      "weight": "8",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "ANTIBIOSIS",
+      "target": "LARVAL GROWTH",
+      "description": "leads to low",
+      "weight": "8",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "WASHED LEAVES",
+      "target": "FEEDING PREFERENCE",
+      "description": "increases feeding in certain genotypes",
+      "weight": "9",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "UNWASHED LEAVES",
+      "target": "FEEDING PREFERENCE",
+      "description": "decreases feeding in certain genotypes",
+      "weight": "9",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "WATER-SOLUBLE COMPOUNDS",
+      "target": "RESISTANCE",
+      "description": "primarily responsible for",
+      "weight": "10",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "LEAF EXUDATES",
+      "target": "WATER-SOLUBLE COMPOUNDS",
+      "description": "contain",
+      "weight": "9",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "MALIC ACID",
+      "target": "WATER-SOLUBLE COMPOUNDS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "OXALIC ACID",
+      "target": "WATER-SOLUBLE COMPOUNDS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10890"
+    },
+    {
+      "source": "CHICKPEA GENOTYPES",
+      "target": "WATER-SOLUBLE COMPOUNDS",
+      "description": "produce in leaf exudates",
+      "weight": "8",
+      "source_id": "paper_10890"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "NON-LINEAR MODEL",
+      "type": "CONCEPT",
+      "description": "A mathematical model where the relationship between variables is not linear, used for parameter estimation when variables have errors.",
+      "source_id": "paper_3750"
+    },
+    {
+      "name": "PARAMETER ESTIMATION",
+      "type": "METHOD",
+      "description": "The process of determining the parameters of a non-linear model given measured variables with random errors.",
+      "source_id": "paper_3750"
+    },
+    {
+      "name": "RANDOM ERRORS",
+      "type": "CONDITION",
+      "description": "The presence of random errors in both measured variables during the estimation process.",
+      "source_id": "paper_3750"
+    },
+    {
+      "name": "MAXIMUM LIKELIHOOD ESTIMATES",
+      "type": "METHOD",
+      "description": "A statistical method used to estimate the parameters of the non-linear model.",
+      "source_id": "paper_3750"
+    },
+    {
+      "name": "ASYMPTOTIC VARIANCE AND COVARIANCE MATRIX",
+      "type": "CONCEPT",
+      "description": "A matrix presented alongside maximum likelihood estimates to describe the variance and covariance.",
+      "source_id": "paper_3750"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PARAMETER ESTIMATION",
+      "target": "NON-LINEAR MODEL",
+      "description": "is used to determine the parameters of",
+      "weight": "9",
+      "source_id": "paper_3750"
+    },
+    {
+      "source": "RANDOM ERRORS",
+      "target": "PARAMETER ESTIMATION",
+      "description": "complicates the process of",
+      "weight": "8",
+      "source_id": "paper_3750"
+    },
+    {
+      "source": "MAXIMUM LIKELIHOOD ESTIMATES",
+      "target": "PARAMETER ESTIMATION",
+      "description": "is a specific method for",
+      "weight": "10",
+      "source_id": "paper_3750"
+    },
+    {
+      "source": "MAXIMUM LIKELIHOOD ESTIMATES",
+      "target": "ASYMPTOTIC VARIANCE AND COVARIANCE MATRIX",
+      "description": "are presented with",
+      "weight": "7",
+      "source_id": "paper_3750"
+    }
+  ]
+}

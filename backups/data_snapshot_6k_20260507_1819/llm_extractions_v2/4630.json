@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Legume variety ICC 4948 used to study nodulation capacities.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Crop grown following chickpea in a cropping system.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "NODULATION CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of chickpea plants to form nodules for nitrogen fixation, categorized as high or low.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The measure of grain production in chickpea.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "ATMOSPHERIC NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The process of converting atmospheric nitrogen into a usable form by plants and microbes.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "ACETYLENE REDUCTION ACTIVITY",
+      "type": "METHOD",
+      "description": "A technique used to measure the rate of atmospheric nitrogen fixation.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "LOW SOIL NITROGEN",
+      "type": "CONDITION",
+      "description": "A soil environment characterized by low levels of mineral nitrogen.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "MICROBIAL ACTIVITY",
+      "type": "CONCEPT",
+      "description": "The biological activity of microorganisms in the soil surrounding the roots.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "RHIZOSPHERE",
+      "type": "LOCATION",
+      "description": "The area of soil immediately surrounding the plant roots.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "FLUSH C:N RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of carbon to nitrogen in the soil flush, indicating nutrient availability.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "IRRIGATED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Agricultural conditions where water is artificially applied to the land.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The process by which microorganisms convert atmospheric nitrogen into ammonia.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The overall yield and efficiency of the cropping system over time.",
+      "source_id": "paper_4630"
+    },
+    {
+      "name": "CHICKPEA-SORGHUM CROPPING SYSTEM",
+      "type": "CONCEPT",
+      "description": "A sequential planting system involving chickpea followed by sorghum.",
+      "source_id": "paper_4630"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "NODULATION CAPACITY",
+      "description": "exhibits different levels of",
+      "weight": "10",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "NODULATION CAPACITY",
+      "target": "GRAIN YIELD",
+      "description": "marginally increases",
+      "weight": "3",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "NODULATION CAPACITY",
+      "target": "ATMOSPHERIC NITROGEN FIXATION",
+      "description": "increases in high nodulating selections",
+      "weight": "9",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "ATMOSPHERIC NITROGEN FIXATION",
+      "target": "ACETYLENE REDUCTION ACTIVITY",
+      "description": "is measured by",
+      "weight": "10",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "LOW SOIL NITROGEN",
+      "target": "ATMOSPHERIC NITROGEN FIXATION",
+      "description": "promotes higher fixation in high nodulating selections",
+      "weight": "8",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "NODULATION CAPACITY",
+      "target": "MICROBIAL ACTIVITY",
+      "description": "increases in high nodulating selections",
+      "weight": "8",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "MICROBIAL ACTIVITY",
+      "target": "RHIZOSPHERE",
+      "description": "occurs within the",
+      "weight": "10",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "NODULATION CAPACITY",
+      "target": "FLUSH C:N RATIO",
+      "description": "high nodulating selections result in a narrower ratio",
+      "weight": "7",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "MICROBIAL ACTIVITY",
+      "target": "SORGHUM",
+      "description": "increases nitrogen availability for",
+      "weight": "8",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "FLUSH C:N RATIO",
+      "target": "SORGHUM",
+      "description": "narrower ratio increases nitrogen availability for",
+      "weight": "8",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SORGHUM",
+      "description": "precedes in a cropping system",
+      "weight": "9",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "IRRIGATED CONDITIONS",
+      "target": "CHICKPEA",
+      "description": "provides the environment for",
+      "weight": "7",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION",
+      "target": "CROP PRODUCTIVITY",
+      "description": "contributes to long-term",
+      "weight": "7",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "CHICKPEA-SORGHUM CROPPING SYSTEM",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_4630"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CHICKPEA-SORGHUM CROPPING SYSTEM",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_4630"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where the sorghum collection is maintained",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop species being studied for core collection establishment",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "GENE BANK",
+      "type": "CONCEPT",
+      "description": "Facility where sorghum accessions are conserved",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "CORE COLLECTION",
+      "type": "CONCEPT",
+      "description": "A representative subset of the larger sorghum collection",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "PHOTOPERIOD SENSITIVITY",
+      "type": "TRAIT",
+      "description": "The response of sorghum to day length, used for stratification",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "RANDOM SAMPLING PROCEDURES",
+      "type": "METHOD",
+      "description": "Strategies used to select accessions for the core collection",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "CONSTANT PORTION SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling strategy known as Core C",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "PROPORTIONAL SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling strategy known as Core P",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "LOGARITHMIC SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling strategy known as Core L",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "LANDRACE COLLECTION",
+      "type": "CONCEPT",
+      "description": "The original large collection of sorghum accessions",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "SHANNON-WEAVER DIVERSITY INDICES",
+      "type": "METHOD",
+      "description": "Indices used to estimate global diversity",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "GLOBAL DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The overall genetic variation within the sorghum collections",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "RACE",
+      "type": "TRAIT",
+      "description": "Classification of sorghum based on specific characteristics",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "LATITUDINAL CLASSES",
+      "type": "CONDITION",
+      "description": "Geographic categories related to the origin of the accessions",
+      "source_id": "paper_1764"
+    },
+    {
+      "name": "ADAPTATION TO PHOTOPERIOD",
+      "type": "TRAIT",
+      "description": "The ability of genotypes to adapt to different photoperiods",
+      "source_id": "paper_1764"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICRISAT",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "SORGHUM",
+      "description": "maintains collection of",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "GENE BANK",
+      "target": "SORGHUM",
+      "description": "conserves",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "CORE COLLECTION",
+      "target": "SORGHUM",
+      "description": "established for",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "PHOTOPERIOD SENSITIVITY",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "RANDOM SAMPLING PROCEDURES",
+      "target": "CORE COLLECTION",
+      "description": "used to determine accessions for",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "CONSTANT PORTION SAMPLING",
+      "target": "RANDOM SAMPLING PROCEDURES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "PROPORTIONAL SAMPLING",
+      "target": "RANDOM SAMPLING PROCEDURES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "LOGARITHMIC SAMPLING",
+      "target": "RANDOM SAMPLING PROCEDURES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "CORE COLLECTION",
+      "target": "LANDRACE COLLECTION",
+      "description": "is a subset of",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "SHANNON-WEAVER DIVERSITY INDICES",
+      "target": "GLOBAL DIVERSITY",
+      "description": "used to estimate",
+      "weight": "10",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "GLOBAL DIVERSITY",
+      "target": "LANDRACE COLLECTION",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "GLOBAL DIVERSITY",
+      "target": "CORE COLLECTION",
+      "description": "measured in",
+      "weight": "9",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "LOGARITHMIC SAMPLING",
+      "target": "PHOTOPERIOD SENSITIVITY",
+      "description": "better for sampling characters related to",
+      "weight": "8",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "LOGARITHMIC SAMPLING",
+      "target": "RACE",
+      "description": "better for sampling",
+      "weight": "8",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "LOGARITHMIC SAMPLING",
+      "target": "LATITUDINAL CLASSES",
+      "description": "better for sampling",
+      "weight": "8",
+      "source_id": "paper_1764"
+    },
+    {
+      "source": "LOGARITHMIC SAMPLING",
+      "target": "ADAPTATION TO PHOTOPERIOD",
+      "description": "proposed for establishing widest range of",
+      "weight": "9",
+      "source_id": "paper_1764"
+    }
+  ]
+}

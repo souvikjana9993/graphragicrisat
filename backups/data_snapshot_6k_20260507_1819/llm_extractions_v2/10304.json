@@ -1,0 +1,238 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop studied for drought tolerance and seed weight.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "DROUGHT COMPONENT TRAITS",
+      "type": "TRAIT",
+      "description": "Traits associated with the plant's response to drought.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINE",
+      "type": "CONCEPT",
+      "description": "A population used for genetic mapping.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "GENOTYPING BY SEQUENCING",
+      "type": "METHOD",
+      "description": "A high-throughput method for genotyping using sequencing.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms used as genetic markers.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "QTL-HOTSPOT",
+      "type": "CONCEPT",
+      "description": "A genomic region containing multiple quantitative trait loci.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "QTL-HOTSPOT_A",
+      "type": "CONCEPT",
+      "description": "A specific sub-region of the QTL-hotspot measuring 139.22 kb.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "QTL-HOTSPOT_B",
+      "type": "CONCEPT",
+      "description": "A specific sub-region of the QTL-hotspot measuring 153.36 kb.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "KABULI DRAFT GENOME SEQUENCE",
+      "type": "CONCEPT",
+      "description": "The draft genome sequence of the Kabuli type of chickpea.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "FINE MAPPING",
+      "type": "METHOD",
+      "description": "A technique used to narrow down the location of a gene or QTL.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "KASPAR ASSAYS",
+      "type": "METHOD",
+      "description": "A marker-based assay used for genotyping.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of the seeds produced by the plant.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "100 SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "The weight of 100 seeds, a specific measure of seed weight.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "DROUGHT-RELATED TRAITS",
+      "type": "TRAIT",
+      "description": "Traits that are affected by or contribute to drought tolerance.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "SYNTENIC STUDY",
+      "type": "METHOD",
+      "description": "A study comparing the order of genes between two genomes.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "DESI GENOME",
+      "type": "CONCEPT",
+      "description": "The genome sequence of the Desi type of chickpea.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "WHOLE GENOME RE-SEQUENCING",
+      "type": "METHOD",
+      "description": "A method to sequence the entire genome of an individual.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "CANDIDATE GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes suspected to be responsible for a specific trait.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "DROUGHT STRESS TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand drought conditions.",
+      "source_id": "paper_10304"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by lack of water.",
+      "source_id": "paper_10304"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "DROUGHT COMPONENT TRAITS",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINE",
+      "target": "CHICKPEA",
+      "description": "population developed in",
+      "weight": "9",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "GENOTYPING BY SEQUENCING",
+      "target": "QTL-HOTSPOT",
+      "description": "used to delimit",
+      "weight": "9",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "GENOTYPING BY SEQUENCING",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "QTL-HOTSPOT",
+      "target": "QTL-HOTSPOT_A",
+      "description": "delimited into",
+      "weight": "10",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "QTL-HOTSPOT",
+      "target": "QTL-HOTSPOT_B",
+      "description": "delimited into",
+      "weight": "10",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "QTL-HOTSPOT_A",
+      "target": "KABULI DRAFT GENOME SEQUENCE",
+      "description": "located on",
+      "weight": "9",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "FINE MAPPING",
+      "target": "QTL-HOTSPOT_A",
+      "description": "used to refine",
+      "weight": "10",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "KASPAR ASSAYS",
+      "target": "FINE MAPPING",
+      "description": "used to screen population for",
+      "weight": "9",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "QTL-HOTSPOT_A",
+      "target": "SEED WEIGHT",
+      "description": "responsible for",
+      "weight": "10",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "QTL-HOTSPOT_A",
+      "target": "DROUGHT-RELATED TRAITS",
+      "description": "responsible for",
+      "weight": "10",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "SYNTENIC STUDY",
+      "target": "DESI GENOME",
+      "description": "compared refined region with",
+      "weight": "9",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "WHOLE GENOME RE-SEQUENCING",
+      "target": "CANDIDATE GENES",
+      "description": "identified",
+      "weight": "10",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "CANDIDATE GENES",
+      "target": "DROUGHT STRESS TOLERANCE",
+      "description": "decipher mechanism of",
+      "weight": "9",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "DROUGHT STRESS TOLERANCE",
+      "target": "DROUGHT STRESS",
+      "description": "response to",
+      "weight": "10",
+      "source_id": "paper_10304"
+    },
+    {
+      "source": "100 SEED WEIGHT",
+      "target": "SEED WEIGHT",
+      "description": "is a measure of",
+      "weight": "10",
+      "source_id": "paper_10304"
+    }
+  ]
+}

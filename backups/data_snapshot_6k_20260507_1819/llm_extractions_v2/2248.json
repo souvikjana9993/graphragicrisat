@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop affected by smut disease",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "SMUT",
+      "type": "CONDITION",
+      "description": "A seed-transmitted disease caused by Moesziomyces penicillariae",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "MOESZIOMYCES PENICILLARIAE",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes smut in pearl millet",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "FUNGICIDE SEED TREATMENT",
+      "type": "METHOD",
+      "description": "A treatment used to inhibit the viability of smut spores on seed surfaces",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "SODIUM HYDROXIDE",
+      "type": "METHOD",
+      "description": "A chemical treatment tested at various concentrations to prevent spore ball germination",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "POTASSIUM HYDROXIDE",
+      "type": "METHOD",
+      "description": "A chemical treatment tested at various concentrations to prevent spore ball germination",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "ETHANOL",
+      "type": "METHOD",
+      "description": "A chemical treatment used to prevent spore ball germination and as part of the seed stirring treatment",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "SPORE BALL GERMINATION",
+      "type": "TRAIT",
+      "description": "The biological process of smut spore balls growing, which the study aims to inhibit",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "SEED STIRRING TREATMENT",
+      "type": "METHOD",
+      "description": "A method of stirring infected seeds with sterilized sand and ethanol to eliminate spore balls",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "STERILIZED SAND",
+      "type": "METHOD",
+      "description": "An abrasive material used in the seed stirring treatment to remove spore balls",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "QUARANTINE PROCESSING",
+      "type": "CONCEPT",
+      "description": "The process of managing germplasm to prevent the spread of diseases",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "SEED CERTIFICATION PROGRAMMES",
+      "type": "CONCEPT",
+      "description": "Programs designed to ensure the quality and health of seeds",
+      "source_id": "paper_2248"
+    },
+    {
+      "name": "TRANSBOUNDARY MOVEMENT",
+      "type": "CONCEPT",
+      "description": "The movement of seeds across international borders",
+      "source_id": "paper_2248"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MOESZIOMYCES PENICILLARIAE",
+      "target": "SMUT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "SMUT",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "FUNGICIDE SEED TREATMENT",
+      "target": "SMUT",
+      "description": "targets",
+      "weight": "7",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "SODIUM HYDROXIDE",
+      "target": "SPORE BALL GERMINATION",
+      "description": "inhibits",
+      "weight": "8",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "POTASSIUM HYDROXIDE",
+      "target": "SPORE BALL GERMINATION",
+      "description": "inhibits",
+      "weight": "8",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "ETHANOL",
+      "target": "SPORE BALL GERMINATION",
+      "description": "inhibits",
+      "weight": "5",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "SEED STIRRING TREATMENT",
+      "target": "SMUT",
+      "description": "eliminates",
+      "weight": "10",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "SEED STIRRING TREATMENT",
+      "target": "ETHANOL",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "SEED STIRRING TREATMENT",
+      "target": "STERILIZED SAND",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "SEED STIRRING TREATMENT",
+      "target": "QUARANTINE PROCESSING",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "SEED STIRRING TREATMENT",
+      "target": "SEED CERTIFICATION PROGRAMMES",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_2248"
+    },
+    {
+      "source": "SMUT",
+      "target": "TRANSBOUNDARY MOVEMENT",
+      "description": "spread through",
+      "weight": "7",
+      "source_id": "paper_2248"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop that serves as a source of protein and micronutrients for populations in south-Asia and sub-Saharan Africa.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "PROTEIN",
+      "type": "TRAIT",
+      "description": "A grain nutrient content in chickpea.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "IRON",
+      "type": "TRAIT",
+      "description": "A micronutrient (Fe) found in chickpea grains.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "ZINC",
+      "type": "TRAIT",
+      "description": "A micronutrient (Zn) found in chickpea grains.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "SOUTH-ASIA",
+      "type": "LOCATION",
+      "description": "A region where chickpea is a dietary source for poor and vegetarian populations.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "A region where chickpea is a dietary source for poor and vegetarian populations.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "A severe lack of water during the reproductive period of the crop leading to yield losses.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "High temperature conditions during the reproductive period of the crop leading to yield losses.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The amount of seed produced by the crop.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "GENOME-WIDE MARKER-TRAIT ASSOCIATION",
+      "type": "METHOD",
+      "description": "A method used to identify associations between genetic markers and specific traits like protein, Fe, and Zn.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "ANALYSIS OF VARIANCE",
+      "type": "METHOD",
+      "description": "A statistical method used to reveal significant differences among genotypes for nutrient content.",
+      "source_id": "paper_11966"
+    },
+    {
+      "name": "GRAIN NUTRIENT CONTENT",
+      "type": "CONCEPT",
+      "description": "The accumulation of nutrients such as protein, iron, and zinc in the seeds.",
+      "source_id": "paper_11966"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "PROTEIN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "IRON",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ZINC",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SOUTH-ASIA",
+      "description": "grown and consumed in",
+      "weight": "8",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "grown and consumed in",
+      "weight": "8",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "GRAIN NUTRIENT CONTENT",
+      "description": "causes fluctuations in",
+      "weight": "8",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "GRAIN NUTRIENT CONTENT",
+      "description": "causes fluctuations in",
+      "weight": "8",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "SEED YIELD",
+      "description": "leads to losses in",
+      "weight": "9",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "SEED YIELD",
+      "description": "leads to losses in",
+      "weight": "9",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "GENOME-WIDE MARKER-TRAIT ASSOCIATION",
+      "target": "PROTEIN",
+      "description": "identifies associations for",
+      "weight": "7",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "GENOME-WIDE MARKER-TRAIT ASSOCIATION",
+      "target": "IRON",
+      "description": "identifies associations for",
+      "weight": "7",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "GENOME-WIDE MARKER-TRAIT ASSOCIATION",
+      "target": "ZINC",
+      "description": "identifies associations for",
+      "weight": "7",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "ANALYSIS OF VARIANCE",
+      "target": "GRAIN NUTRIENT CONTENT",
+      "description": "reveals differences in",
+      "weight": "7",
+      "source_id": "paper_11966"
+    },
+    {
+      "source": "SEED YIELD",
+      "target": "IRON",
+      "description": "negatively associated with",
+      "weight": "6",
+      "source_id": "paper_11966"
+    }
+  ]
+}

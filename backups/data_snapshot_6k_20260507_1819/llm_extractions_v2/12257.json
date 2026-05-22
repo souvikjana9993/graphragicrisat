@@ -1,0 +1,259 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop grown in southern Mali",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop grown in southern Mali",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "A cereal crop grown in southern Mali",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "SOUTHERN MALI",
+      "type": "LOCATION",
+      "description": "The geographic region in Mali where the study was conducted",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "YIELD VARIABILITY",
+      "type": "TRAIT",
+      "description": "The variation in crop yield over time or space",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "RISK MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The process of quantifying and mitigating production hazards to inform decision making",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "LATE ONSET OF RAINS",
+      "type": "CONDITION",
+      "description": "A weather hazard where rains start later than usual",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "INSUFFICIENT TOTAL RAINFALL",
+      "type": "CONDITION",
+      "description": "A weather hazard characterized by low overall precipitation",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "DRY SPELLS",
+      "type": "CONDITION",
+      "description": "Periods of time with little or no rainfall during the growing season",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "LOW FERTILISER QUALITY",
+      "type": "CONDITION",
+      "description": "A non-weather hazard involving poor quality of input fertilizers",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "SUDDEN LACK OF LABOUR",
+      "type": "CONDITION",
+      "description": "A non-weather hazard involving the unavailability of workforce",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "DSSAT CROP MODEL",
+      "type": "METHOD",
+      "description": "A software tool used to simulate crop growth and yield under various conditions",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "RISK MATRIX",
+      "type": "METHOD",
+      "description": "A tool used to visualize the frequency and impact of hazards",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "N APPLICATION",
+      "type": "METHOD",
+      "description": "The process of applying nitrogen fertilizer to crops",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "EARLY SOWING",
+      "type": "METHOD",
+      "description": "The practice of planting seeds earlier than the baseline date",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "SHORT DURATION VARIETIES",
+      "type": "METHOD",
+      "description": "Crop varieties that reach maturity in a shorter time",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "LONG DURATION VARIETIES",
+      "type": "METHOD",
+      "description": "Crop varieties that take longer to reach maturity",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "FARM DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The practice of growing multiple crop types to spread risk",
+      "source_id": "paper_12257"
+    },
+    {
+      "name": "OPERATIONAL FARM FLEXIBILITY",
+      "type": "CONCEPT",
+      "description": "The ability of a farm to adapt management practices to respond to risks",
+      "source_id": "paper_12257"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "SOUTHERN MALI",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SOUTHERN MALI",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "MILLET",
+      "target": "SOUTHERN MALI",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "LATE ONSET OF RAINS",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "INSUFFICIENT TOTAL RAINFALL",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "DRY SPELLS",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "LOW FERTILISER QUALITY",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "SUDDEN LACK OF LABOUR",
+      "target": "YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "DSSAT CROP MODEL",
+      "target": "YIELD",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "RISK MATRIX",
+      "target": "RISK MANAGEMENT",
+      "description": "visualizes",
+      "weight": "7",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "N APPLICATION",
+      "target": "MAIZE",
+      "description": "increases yield",
+      "weight": "9",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "N APPLICATION",
+      "target": "SORGHUM",
+      "description": "low impact",
+      "weight": "6",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "N APPLICATION",
+      "target": "MILLET",
+      "description": "increases yield",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "EARLY SOWING",
+      "target": "YIELD",
+      "description": "optimizes",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "SHORT DURATION VARIETIES",
+      "target": "YIELD",
+      "description": "optimizes",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "LONG DURATION VARIETIES",
+      "target": "MILLET",
+      "description": "beneficial",
+      "weight": "7",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "FARM DIVERSITY",
+      "target": "RISK MANAGEMENT",
+      "description": "supports",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "OPERATIONAL FARM FLEXIBILITY",
+      "target": "RISK MANAGEMENT",
+      "description": "supports",
+      "weight": "8",
+      "source_id": "paper_12257"
+    },
+    {
+      "source": "MILLET",
+      "target": "YIELD VARIABILITY",
+      "description": "low sensitivity",
+      "weight": "9",
+      "source_id": "paper_12257"
+    }
+  ]
+}

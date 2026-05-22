@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop studied for its response to fungicide, spacing, and growth habit.",
+      "source_id": "paper_3098"
+    },
+    {
+      "name": "ICCL 87322",
+      "type": "CROP",
+      "description": "A chickpea genotype with tall, erect, and compact growth habit.",
+      "source_id": "paper_3098"
+    },
+    {
+      "name": "H 208",
+      "type": "CROP",
+      "description": "A traditional chickpea genotype with a bushy, spreading growth habit.",
+      "source_id": "paper_3098"
+    },
+    {
+      "name": "PLANT GROWTH HABIT",
+      "type": "TRAIT",
+      "description": "The physical structure of the plant, which varies between genotypes.",
+      "source_id": "paper_3098"
+    },
+    {
+      "name": "INTER-ROW SPACING",
+      "type": "METHOD",
+      "description": "The distance between crop rows, tested at 30 X 10 and 60 X 5 cm.",
+      "source_id": "paper_3098"
+    },
+    {
+      "name": "BOTRYTIS GREY MOLD",
+      "type": "CONDITION",
+      "description": "A fungal disease that affects chickpea yield and health.",
+      "source_id": "paper_3098"
+    },
+    {
+      "name": "B. CINEREA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen used to artificially inoculate chickpea plants.",
+      "source_id": "paper_3098"
+    },
+    {
+      "name": "VINCLOZOLIN",
+      "type": "METHOD",
+      "description": "A fungicide spray used to reduce the severity of grey mold.",
+      "source_id": "paper_3098"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The measure of agricultural productivity of the chickpea genotypes.",
+      "source_id": "paper_3098"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICCL 87322",
+      "target": "CHICKPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "H 208",
+      "target": "CHICKPEA",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "ICCL 87322",
+      "target": "PLANT GROWTH HABIT",
+      "description": "characterized by tall, erect and compact growth",
+      "weight": "9",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "H 208",
+      "target": "PLANT GROWTH HABIT",
+      "description": "characterized by bushy, spreading growth",
+      "weight": "9",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "B. CINEREA",
+      "target": "BOTRYTIS GREY MOLD",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "VINCLOZOLIN",
+      "target": "BOTRYTIS GREY MOLD",
+      "description": "reduces severity of",
+      "weight": "9",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "VINCLOZOLIN",
+      "target": "YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "INTER-ROW SPACING",
+      "target": "BOTRYTIS GREY MOLD",
+      "description": "affects disease ratings",
+      "weight": "8",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "INTER-ROW SPACING",
+      "target": "YIELD",
+      "description": "affects productivity",
+      "weight": "8",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "ICCL 87322",
+      "target": "BOTRYTIS GREY MOLD",
+      "description": "shows lower disease ratings than H 208",
+      "weight": "8",
+      "source_id": "paper_3098"
+    },
+    {
+      "source": "ICCL 87322",
+      "target": "YIELD",
+      "description": "shows higher productivity than H 208",
+      "weight": "8",
+      "source_id": "paper_3098"
+    }
+  ]
+}

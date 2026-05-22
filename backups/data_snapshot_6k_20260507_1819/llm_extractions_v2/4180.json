@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Annual legume grown for high quality edible oil and protein",
+      "source_id": "paper_4180"
+    },
+    {
+      "name": "EDIBLE OIL",
+      "type": "TRAIT",
+      "description": "High quality oil content ranging from 36 to 54% on dry matter basis in seeds",
+      "source_id": "paper_4180"
+    },
+    {
+      "name": "PROTEIN",
+      "type": "TRAIT",
+      "description": "Easily digestible protein content ranging from 12 to 36% in seeds",
+      "source_id": "paper_4180"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "Region accounting for 57.44% of world area and 66.69% of groundnut production",
+      "source_id": "paper_4180"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "Region accounting for 37.86% area and 24.54% of groundnut production",
+      "source_id": "paper_4180"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Potential constraint for crop production, particularly at the end of the season",
+      "source_id": "paper_4180"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "Aflatoxin-producing fungus that invades groundnut crops",
+      "source_id": "paper_4180"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "Contamination of groundnut caused by Aspergillus flavus",
+      "source_id": "paper_4180"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of groundnut to resist aflatoxin contamination",
+      "source_id": "paper_4180"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The yield of groundnut, averaging 1.37 t ha-1 globally",
+      "source_id": "paper_4180"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "EDIBLE OIL",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_4180"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "PROTEIN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_4180"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "ASIA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_4180"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "AFRICA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_4180"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "GROUNDNUT",
+      "description": "constrains production of",
+      "weight": "9",
+      "source_id": "paper_4180"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "predisposes crop to invasion by",
+      "weight": "9",
+      "source_id": "paper_4180"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4180"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "susceptible to",
+      "weight": "9",
+      "source_id": "paper_4180"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RESISTANCE",
+      "description": "target for breeding",
+      "weight": "9",
+      "source_id": "paper_4180"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "PRODUCTIVITY",
+      "description": "measured by",
+      "weight": "8",
+      "source_id": "paper_4180"
+    }
+  ]
+}

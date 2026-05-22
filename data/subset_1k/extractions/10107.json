@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the target crop for resistance introgression",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A disease caused by F. oxysporum f. sp. ciceris that damages chickpea",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "F. OXYSPORUM F. SP. CICERIS",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing fusarium wilt in chickpea",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "FOC 2",
+      "type": "ORGANISM",
+      "description": "Pathogen race 2 of F. oxysporum f. sp. ciceris causing severe yield losses in central India",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "CENTRAL INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where Foc 2 causes significant damage to chickpea",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "MOLECULAR MARKER-ASSISTED BACKCROSSING",
+      "type": "METHOD",
+      "description": "A breeding method used to introgress specific traits using molecular markers",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "VIJAY",
+      "type": "CROP",
+      "description": "A desi chickpea cultivar used as the donor for resistance to Foc 2",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "PUSA 256",
+      "type": "CROP",
+      "description": "An elite desi chickpea cultivar used as the recurrent parent for introgression",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "RESISTANCE TO FUSARIUM WILT RACE 2",
+      "type": "TRAIT",
+      "description": "The trait being transferred from the donor to the recurrent parent",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "FOREGROUND SELECTION",
+      "type": "METHOD",
+      "description": "A method using markers to confirm the presence of the target trait or gene",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "BACKGROUND SELECTION",
+      "type": "METHOD",
+      "description": "A method using markers to monitor the recovery of the recurrent parent's genome",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat markers used for both foreground and background selection",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "TA 37",
+      "type": "GENE_MARKER",
+      "description": "A specific SSR marker used for foreground selection of resistance",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "TA110",
+      "type": "GENE_MARKER",
+      "description": "A specific SSR marker used for foreground selection of resistance",
+      "source_id": "paper_10107"
+    },
+    {
+      "name": "FOC 2 GENE",
+      "type": "GENE_MARKER",
+      "description": "The specific gene providing resistance to Fusarium wilt race 2",
+      "source_id": "paper_10107"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "F. OXYSPORUM F. SP. CICERIS",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "FOC 2",
+      "target": "F. OXYSPORUM F. SP. CICERIS",
+      "description": "is a race of",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "CHICKPEA",
+      "description": "causes extensive damage to",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "FOC 2",
+      "target": "CHICKPEA",
+      "description": "causes severe yield losses in",
+      "weight": "9",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "FOC 2",
+      "target": "CENTRAL INDIA",
+      "description": "is prevalent in",
+      "weight": "8",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "MOLECULAR MARKER-ASSISTED BACKCROSSING",
+      "target": "RESISTANCE TO FUSARIUM WILT RACE 2",
+      "description": "used to introgress",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "VIJAY",
+      "target": "RESISTANCE TO FUSARIUM WILT RACE 2",
+      "description": "donor of",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "PUSA 256",
+      "target": "RESISTANCE TO FUSARIUM WILT RACE 2",
+      "description": "recipient of",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "FOREGROUND SELECTION",
+      "target": "RESISTANCE TO FUSARIUM WILT RACE 2",
+      "description": "used to confirm introgression of",
+      "weight": "9",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "BACKGROUND SELECTION",
+      "target": "PUSA 256",
+      "description": "used to observe recovery of genome of",
+      "weight": "9",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "FOREGROUND SELECTION",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "SSR MARKERS",
+      "target": "BACKGROUND SELECTION",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "TA 37",
+      "target": "SSR MARKERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "TA110",
+      "target": "SSR MARKERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "FOC 2 GENE",
+      "target": "RESISTANCE TO FUSARIUM WILT RACE 2",
+      "description": "provides",
+      "weight": "10",
+      "source_id": "paper_10107"
+    },
+    {
+      "source": "FOC 2 GENE",
+      "target": "PUSA 256",
+      "description": "introgressed into",
+      "weight": "10",
+      "source_id": "paper_10107"
+    }
+  ]
+}

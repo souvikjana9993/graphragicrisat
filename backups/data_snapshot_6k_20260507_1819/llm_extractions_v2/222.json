@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "PEA LEAF ROLL VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus that causes stunt in chickpea and has a high natural incidence in Hissar, India",
+      "source_id": "paper_222"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop being screened for resistance to pea leaf roll virus",
+      "source_id": "paper_222"
+    },
+    {
+      "name": "STUNT",
+      "type": "TRAIT",
+      "description": "A growth inhibition symptom caused by pea leaf roll virus in chickpea",
+      "source_id": "paper_222"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process used to identify chickpea lines with low infection rates",
+      "source_id": "paper_222"
+    },
+    {
+      "name": "HISSAR, INDIA",
+      "type": "LOCATION",
+      "description": "The site where the screening for pea leaf roll virus resistance was conducted",
+      "source_id": "paper_222"
+    },
+    {
+      "name": "INFECTION",
+      "type": "CONDITION",
+      "description": "The state of being infected by the pea leaf roll virus",
+      "source_id": "paper_222"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEA LEAF ROLL VIRUS",
+      "target": "STUNT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_222"
+    },
+    {
+      "source": "PEA LEAF ROLL VIRUS",
+      "target": "CHICKPEA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_222"
+    },
+    {
+      "source": "SCREENING",
+      "target": "CHICKPEA",
+      "description": "used to identify resistant lines of",
+      "weight": "9",
+      "source_id": "paper_222"
+    },
+    {
+      "source": "SCREENING",
+      "target": "HISSAR, INDIA",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_222"
+    },
+    {
+      "source": "PEA LEAF ROLL VIRUS",
+      "target": "INFECTION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_222"
+    },
+    {
+      "source": "INFECTION",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_222"
+    }
+  ]
+}

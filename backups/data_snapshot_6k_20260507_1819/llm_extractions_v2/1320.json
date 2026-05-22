@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A crop used for seed and cake, found to contain high levels of aflatoxin",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A crop sample analyzed for mycotoxin levels",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A crop sample analyzed for mycotoxin levels, found to have low aflatoxin",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "SOYABEAN",
+      "type": "CROP",
+      "description": "A crop used for cake, analyzed for mycotoxin levels",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "A crop used for cake, analyzed for mycotoxin levels",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "MYCOTOXINS",
+      "type": "CONCEPT",
+      "description": "Toxic compounds produced by fungi found in food and feed",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "AFLATOXIN",
+      "type": "CONCEPT",
+      "description": "A specific type of mycotoxin found in various commodities",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "AFLATOXIN M1",
+      "type": "CONCEPT",
+      "description": "A metabolite of aflatoxin found in milk samples",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "ELISA",
+      "type": "METHOD",
+      "description": "An analytical method used to detect aflatoxin levels",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "MANAGEMENT INTERVENTIONS",
+      "type": "METHOD",
+      "description": "Strategies at preharvest, harvest, and storage to reduce aflatoxin levels",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "BUFFALO",
+      "type": "ORGANISM",
+      "description": "Animal providing milk samples analyzed for aflatoxin M1",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "COW",
+      "type": "ORGANISM",
+      "description": "Animal providing milk samples analyzed for aflatoxin M1",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the food and feed samples were collected",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "HYDERABAD",
+      "type": "LOCATION",
+      "description": "The city in Andhra Pradesh where groundnut cake was a major cattle feed",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "The state in India where Hyderabad is located",
+      "source_id": "paper_1320"
+    },
+    {
+      "name": "FOOD AND FEED",
+      "type": "CONCEPT",
+      "description": "The general category of samples collected for mycotoxin analysis",
+      "source_id": "paper_1320"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MYCOTOXINS",
+      "target": "FOOD AND FEED",
+      "description": "found in",
+      "weight": "9",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "MYCOTOXINS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "GROUNDNUT",
+      "description": "found in",
+      "weight": "9",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "MAIZE",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "SORGHUM",
+      "description": "found in low levels in",
+      "weight": "7",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "SOYABEAN",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "COTTON",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "ELISA",
+      "target": "AFLATOXIN",
+      "description": "used to analyze",
+      "weight": "10",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "AFLATOXIN",
+      "target": "AFLATOXIN M1",
+      "description": "leads to the production of",
+      "weight": "9",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "AFLATOXIN M1",
+      "target": "BUFFALO",
+      "description": "found in milk of",
+      "weight": "9",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "AFLATOXIN M1",
+      "target": "COW",
+      "description": "found in milk of",
+      "weight": "9",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "MANAGEMENT INTERVENTIONS",
+      "target": "AFLATOXIN",
+      "description": "used to reduce levels of",
+      "weight": "9",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "MANAGEMENT INTERVENTIONS",
+      "target": "GROUNDNUT",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "HYDERABAD",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "HYDERABAD",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1320"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "HYDERABAD",
+      "description": "major cattle feed ingredient in",
+      "weight": "8",
+      "source_id": "paper_1320"
+    }
+  ]
+}

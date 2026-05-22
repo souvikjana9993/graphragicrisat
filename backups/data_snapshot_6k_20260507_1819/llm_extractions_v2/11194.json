@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "GRASS SILAGE",
+      "type": "CROP",
+      "description": "Fermented grass used as a substrate for anaerobic digestion",
+      "source_id": "paper_11194"
+    },
+    {
+      "name": "NH4CL",
+      "type": "CONCEPT",
+      "description": "A macro-nutrient added to improve digestion and methane yield",
+      "source_id": "paper_11194"
+    },
+    {
+      "name": "MICRO-NUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Essential trace elements including Fe, Ni, Co, and Mo added to the digestion process",
+      "source_id": "paper_11194"
+    },
+    {
+      "name": "CHEMICAL OXYGEN DEMAND SOLUBILISATION",
+      "type": "CONCEPT",
+      "description": "The process of converting organic matter into soluble forms, measured as COD",
+      "source_id": "paper_11194"
+    },
+    {
+      "name": "ANAEROBIC MONO-DIGESTION",
+      "type": "METHOD",
+      "description": "The biological process of breaking down a single organic substrate in the absence of oxygen",
+      "source_id": "paper_11194"
+    },
+    {
+      "name": "LEACH BED REACTOR",
+      "type": "METHOD",
+      "description": "A type of reactor used for the anaerobic digestion of solid substrates",
+      "source_id": "paper_11194"
+    },
+    {
+      "name": "35°C",
+      "type": "CONDITION",
+      "description": "The temperature at which the leach bed reactor experiments were conducted",
+      "source_id": "paper_11194"
+    },
+    {
+      "name": "BIOLOGICAL METHANE POTENTIAL ASSAYS",
+      "type": "METHOD",
+      "description": "Tests used to determine the maximum amount of methane that can be produced from a substrate",
+      "source_id": "paper_11194"
+    },
+    {
+      "name": "METHANE YIELDS",
+      "type": "TRAIT",
+      "description": "The amount of methane produced per unit of volatile solids added",
+      "source_id": "paper_11194"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NH4CL",
+      "target": "CHEMICAL OXYGEN DEMAND SOLUBILISATION",
+      "description": "improved COD solubilisation by 18%",
+      "weight": "8",
+      "source_id": "paper_11194"
+    },
+    {
+      "source": "MICRO-NUTRIENTS",
+      "target": "CHEMICAL OXYGEN DEMAND SOLUBILISATION",
+      "description": "improved COD solubilisation by 7%",
+      "weight": "7",
+      "source_id": "paper_11194"
+    },
+    {
+      "source": "NH4CL",
+      "target": "METHANE YIELDS",
+      "description": "improved specific methane yields by 17%",
+      "weight": "9",
+      "source_id": "paper_11194"
+    },
+    {
+      "source": "MICRO-NUTRIENTS",
+      "target": "METHANE YIELDS",
+      "description": "improved methane yields by 15%",
+      "weight": "8",
+      "source_id": "paper_11194"
+    },
+    {
+      "source": "ANAEROBIC MONO-DIGESTION",
+      "target": "GRASS SILAGE",
+      "description": "substrate used for digestion",
+      "weight": "10",
+      "source_id": "paper_11194"
+    },
+    {
+      "source": "ANAEROBIC MONO-DIGESTION",
+      "target": "LEACH BED REACTOR",
+      "description": "process carried out in",
+      "weight": "10",
+      "source_id": "paper_11194"
+    },
+    {
+      "source": "ANAEROBIC MONO-DIGESTION",
+      "target": "35°C",
+      "description": "process temperature",
+      "weight": "9",
+      "source_id": "paper_11194"
+    },
+    {
+      "source": "BIOLOGICAL METHANE POTENTIAL ASSAYS",
+      "target": "METHANE YIELDS",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_11194"
+    },
+    {
+      "source": "BIOLOGICAL METHANE POTENTIAL ASSAYS",
+      "target": "GRASS SILAGE",
+      "description": "substrate analyzed",
+      "weight": "9",
+      "source_id": "paper_11194"
+    }
+  ]
+}

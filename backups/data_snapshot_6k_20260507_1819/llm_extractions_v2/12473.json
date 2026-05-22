@@ -1,0 +1,215 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The primary crop studied for yield estimation in Telangana, India",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "CROP YIELD",
+      "type": "TRAIT",
+      "description": "The measure of agricultural productivity used for policy and insurance assessment",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "KARIMNAGAR DISTRICT",
+      "type": "LOCATION",
+      "description": "The specific district in Telangana where the field-based study was conducted",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "The Indian state where the research was carried out",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "BIOTIC AND ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Environmental and biological factors that cause crop insurance losses",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A physiological measure used as a primary criterion for integrating remote sensing and crop models",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "REMOTE SENSING TECHNOLOGY",
+      "type": "METHOD",
+      "description": "Technology used to map crops and estimate yield via satellite data",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "CROP SIMULATION MODELS",
+      "type": "METHOD",
+      "description": "Computational tools used to predict crop yields based on management and environmental data",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "SENTINEL-2 SATELLITE DATA",
+      "type": "METHOD",
+      "description": "Satellite-derived data used for mapping the rice crop",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "GROUND DATA",
+      "type": "METHOD",
+      "description": "Field-collected data used to validate crop mapping and model inputs",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "MACHINE LEARNING ALGORITHMS",
+      "type": "METHOD",
+      "description": "Computational methods used to map rice crops with high accuracy",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "DSSAT TOOL",
+      "type": "METHOD",
+      "description": "A specific crop simulation model used to predict rice yields",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "type": "TRAIT",
+      "description": "A vegetation index used as a proxy for leaf area index",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The state of having reliable access to a sufficient quantity of affordable, nutritious food",
+      "source_id": "paper_12473"
+    },
+    {
+      "name": "CROP INSURANCE LOSSES",
+      "type": "CONCEPT",
+      "description": "Financial losses in agriculture assessed through yield estimation",
+      "source_id": "paper_12473"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "KARIMNAGAR DISTRICT",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "KARIMNAGAR DISTRICT",
+      "target": "TELANGANA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "RICE",
+      "target": "CROP YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "BIOTIC AND ABIOTIC STRESS",
+      "target": "CROP INSURANCE LOSSES",
+      "description": "causes",
+      "weight": "8",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "REMOTE SENSING TECHNOLOGY",
+      "target": "RICE",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "CROP SIMULATION MODELS",
+      "target": "CROP YIELD",
+      "description": "used to predict",
+      "weight": "9",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "SENTINEL-2 SATELLITE DATA",
+      "target": "REMOTE SENSING TECHNOLOGY",
+      "description": "is a source for",
+      "weight": "10",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "GROUND DATA",
+      "target": "MACHINE LEARNING ALGORITHMS",
+      "description": "used to train/validate",
+      "weight": "8",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "MACHINE LEARNING ALGORITHMS",
+      "target": "RICE",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "DSSAT TOOL",
+      "target": "CROP SIMULATION MODELS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "DSSAT TOOL",
+      "target": "CROP YIELD",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "LEAF AREA INDEX",
+      "description": "strongly correlated with",
+      "weight": "9",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "CROP YIELD",
+      "description": "correlated with",
+      "weight": "8",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "REMOTE SENSING TECHNOLOGY",
+      "description": "integrated with",
+      "weight": "8",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "CROP SIMULATION MODELS",
+      "description": "integrated with",
+      "weight": "8",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "CROP YIELD",
+      "target": "FOOD SECURITY",
+      "description": "informs",
+      "weight": "7",
+      "source_id": "paper_12473"
+    },
+    {
+      "source": "CROP YIELD",
+      "target": "CROP INSURANCE LOSSES",
+      "description": "used to assess",
+      "weight": "8",
+      "source_id": "paper_12473"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "WATER HYACINTH",
+      "type": "ORGANISM",
+      "description": "An invasive aquatic plant species originating from South America that causes significant concern in Lake Victoria.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "SOUTH AMERICA",
+      "type": "LOCATION",
+      "description": "The geographical region of origin for the invasive water hyacinth.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "LAKE VICTORIA",
+      "type": "LOCATION",
+      "description": "A large lake in Kenya where water hyacinth has been introduced and causes ecological concerns.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "KENYA",
+      "type": "LOCATION",
+      "description": "The country where Lake Victoria is located.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "WINAM GULF",
+      "type": "LOCATION",
+      "description": "A specific area within Lake Victoria characterized by large annual blooms of water hyacinth.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "IN SITU METHODS",
+      "type": "METHOD",
+      "description": "Ground-based monitoring techniques for water hyacinth that are expensive and challenging due to the lake's size.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "REMOTE SENSING MONITORING METHODS",
+      "type": "METHOD",
+      "description": "Satellite-based monitoring techniques that offer an alternative to in situ methods for covering vast areas.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "POLARIMETRIC SYNTHETIC APERTURE RADAR",
+      "type": "METHOD",
+      "description": "A remote sensing technology (PolSAR) used to map and monitor the spatial and temporal dynamics of water hyacinth.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "SENTINEL-1 VV-VH DATA",
+      "type": "METHOD",
+      "description": "Specific polarimetric radar data used within the PolSAR framework to monitor water hyacinth cover.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "CHANGE DETECTION METHOD",
+      "type": "METHOD",
+      "description": "A computational approach used to separate clear water from water hyacinth-infested water with high accuracy.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "OPTIMISATION OF POWER DIFFERENCE",
+      "type": "METHOD",
+      "description": "A specific technique (OPDiff) used as a basis for the change detection method.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "MINIMUM EIGENVALUE SELECTION",
+      "type": "METHOD",
+      "description": "A selection process used in the change detection method to achieve high accuracy in water hyacinth separation.",
+      "source_id": "paper_12839"
+    },
+    {
+      "name": "SPATIAL AND TEMPORAL MONITORING",
+      "type": "CONCEPT",
+      "description": "The conceptual approach of tracking the distribution and seasonal changes of water hyacinth over time and space.",
+      "source_id": "paper_12839"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER HYACINTH",
+      "target": "SOUTH AMERICA",
+      "description": "originates from",
+      "weight": "8",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "WATER HYACINTH",
+      "target": "LAKE VICTORIA",
+      "description": "introduced in",
+      "weight": "10",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "LAKE VICTORIA",
+      "target": "KENYA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "WINAM GULF",
+      "target": "LAKE VICTORIA",
+      "description": "part of",
+      "weight": "10",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "WATER HYACINTH",
+      "target": "WINAM GULF",
+      "description": "observed in",
+      "weight": "9",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "IN SITU METHODS",
+      "target": "WATER HYACINTH",
+      "description": "used to monitor",
+      "weight": "7",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "REMOTE SENSING MONITORING METHODS",
+      "target": "IN SITU METHODS",
+      "description": "alternative to",
+      "weight": "8",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "REMOTE SENSING MONITORING METHODS",
+      "target": "WATER HYACINTH",
+      "description": "used to monitor",
+      "weight": "9",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "POLARIMETRIC SYNTHETIC APERTURE RADAR",
+      "target": "REMOTE SENSING MONITORING METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "SENTINEL-1 VV-VH DATA",
+      "target": "POLARIMETRIC SYNTHETIC APERTURE RADAR",
+      "description": "utilized by",
+      "weight": "10",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "CHANGE DETECTION METHOD",
+      "target": "OPTIMISATION OF POWER DIFFERENCE",
+      "description": "based on",
+      "weight": "10",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "CHANGE DETECTION METHOD",
+      "target": "MINIMUM EIGENVALUE SELECTION",
+      "description": "based on",
+      "weight": "10",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "CHANGE DETECTION METHOD",
+      "target": "WATER HYACINTH",
+      "description": "used to map",
+      "weight": "10",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "POLARIMETRIC SYNTHETIC APERTURE RADAR",
+      "target": "SPATIAL AND TEMPORAL MONITORING",
+      "description": "enables",
+      "weight": "9",
+      "source_id": "paper_12839"
+    },
+    {
+      "source": "SPATIAL AND TEMPORAL MONITORING",
+      "target": "WATER HYACINTH",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_12839"
+    }
+  ]
+}

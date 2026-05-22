@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Selected germplasm lines used in the study",
+      "source_id": "paper_3451"
+    },
+    {
+      "name": "SEED TESTA COLOUR",
+      "type": "TRAIT",
+      "description": "The color of the seed coat of groundnut lines",
+      "source_id": "paper_3451"
+    },
+    {
+      "name": "WATER UPTAKE RATE",
+      "type": "TRAIT",
+      "description": "The rate at which seeds absorb water, also known as imbibition rate",
+      "source_id": "paper_3451"
+    },
+    {
+      "name": "SEED DAMAGE",
+      "type": "TRAIT",
+      "description": "Physical or physiological damage to the seeds",
+      "source_id": "paper_3451"
+    },
+    {
+      "name": "SEED LEACHATES",
+      "type": "TRAIT",
+      "description": "Substances that leach out of the seeds during water uptake",
+      "source_id": "paper_3451"
+    },
+    {
+      "name": "IN VITRO SEED COLONIZATION",
+      "type": "CONCEPT",
+      "description": "The process of fungal colonization of seeds in a controlled laboratory environment",
+      "source_id": "paper_3451"
+    },
+    {
+      "name": "SEED ROTS AND AFLAROOT DISEASES",
+      "type": "CONDITION",
+      "description": "Diseases affecting seeds and roots in vivo",
+      "source_id": "paper_3451"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A fungus that causes seed colonization and seed rots/aflaroot diseases",
+      "source_id": "paper_3451"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The physical size of the groundnut seeds",
+      "source_id": "paper_3451"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SEED TESTA COLOUR",
+      "target": "WATER UPTAKE RATE",
+      "description": "No evident relationship between seed coat colour and water uptake rates",
+      "weight": "1",
+      "source_id": "paper_3451"
+    },
+    {
+      "source": "WATER UPTAKE RATE",
+      "target": "SEED DAMAGE",
+      "description": "Slow water uptake is related to increased seed damage",
+      "weight": "7",
+      "source_id": "paper_3451"
+    },
+    {
+      "source": "WATER UPTAKE RATE",
+      "target": "SEED SIZE",
+      "description": "Slow water uptake is related to characteristics such as seed size",
+      "weight": "6",
+      "source_id": "paper_3451"
+    },
+    {
+      "source": "SEED TESTA COLOUR",
+      "target": "IN VITRO SEED COLONIZATION",
+      "description": "White-seeded lines are highly susceptible to in vitro seed colonization",
+      "weight": "8",
+      "source_id": "paper_3451"
+    },
+    {
+      "source": "SEED TESTA COLOUR",
+      "target": "SEED ROTS AND AFLAROOT DISEASES",
+      "description": "No correlation between seed coat colour and seed rots and aflaroot diseases",
+      "weight": "1",
+      "source_id": "paper_3451"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "IN VITRO SEED COLONIZATION",
+      "description": "Aspergillus flavus is the organism responsible for in vitro seed colonization",
+      "weight": "9",
+      "source_id": "paper_3451"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "SEED ROTS AND AFLAROOT DISEASES",
+      "description": "Aspergillus flavus causes seed rots and aflaroot diseases",
+      "weight": "9",
+      "source_id": "paper_3451"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEED TESTA COLOUR",
+      "description": "Groundnut germplasm lines possess different seed testa colours",
+      "weight": "10",
+      "source_id": "paper_3451"
+    }
+  ]
+}

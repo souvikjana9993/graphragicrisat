@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A high protein food crop discussed for its scientific and nutritional aspects and used in various recipes.",
+      "source_id": "paper_195"
+    },
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "Crops grown in semi-arid tropics and marginal environments that serve as a primary protein source for vegetarians.",
+      "source_id": "paper_195"
+    },
+    {
+      "name": "CEREALS",
+      "type": "CROP",
+      "description": "Crops that dominate the food production balance in most countries.",
+      "source_id": "paper_195"
+    },
+    {
+      "name": "PROTEIN AVAILABILITY",
+      "type": "CONCEPT",
+      "description": "The accessibility of essential food proteins for the population, particularly the poor in semi-arid tropics.",
+      "source_id": "paper_195"
+    },
+    {
+      "name": "NUTRITION",
+      "type": "CONCEPT",
+      "description": "The scientific and nutritional aspects of food consumption for human health.",
+      "source_id": "paper_195"
+    },
+    {
+      "name": "SEMI-ARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographic region where legumes are generally grown.",
+      "source_id": "paper_195"
+    },
+    {
+      "name": "MARGINAL ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Low input and risk-prone environments characterized by low and unstable yields.",
+      "source_id": "paper_195"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of crops, which is noted as low and unstable in marginal environments.",
+      "source_id": "paper_195"
+    },
+    {
+      "name": "VEGETARIANS",
+      "type": "CONCEPT",
+      "description": "People who derive their food proteins primarily from legumes.",
+      "source_id": "paper_195"
+    },
+    {
+      "name": "POPULATION GROWTH",
+      "type": "CONCEPT",
+      "description": "The continuous increase in population contributing to the decline in protein availability.",
+      "source_id": "paper_195"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LEGUMES",
+      "target": "SEMI-ARID TROPICS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_195"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "MARGINAL ENVIRONMENTS",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_195"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "YIELD",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_195"
+    },
+    {
+      "source": "VEGETARIANS",
+      "target": "LEGUMES",
+      "description": "derive protein from",
+      "weight": "10",
+      "source_id": "paper_195"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "LEGUMES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_195"
+    },
+    {
+      "source": "CEREALS",
+      "target": "PROTEIN AVAILABILITY",
+      "description": "influences the balance of",
+      "weight": "7",
+      "source_id": "paper_195"
+    },
+    {
+      "source": "POPULATION GROWTH",
+      "target": "PROTEIN AVAILABILITY",
+      "description": "decreases",
+      "weight": "8",
+      "source_id": "paper_195"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "NUTRITION",
+      "description": "provides",
+      "weight": "9",
+      "source_id": "paper_195"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "PROTEIN AVAILABILITY",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_195"
+    }
+  ]
+}

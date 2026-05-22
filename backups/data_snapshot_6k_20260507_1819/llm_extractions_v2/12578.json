@@ -1,0 +1,210 @@
+{
+  "entities": [
+    {
+      "name": "BIOSILICA ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The accumulation of silica in plant tissues, specifically leaves, related to the transpiration stream and water availability",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "TRANSPIRATION STREAM",
+      "type": "CONCEPT",
+      "description": "The movement of water through a plant from roots to leaves, which influences biosilica deposition",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "WATER AVAILABILITY",
+      "type": "CONDITION",
+      "description": "The amount of water available to plants, which affects the transpiration stream and biosilica accumulation",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor, a C4 crop well-adapted to arid environments",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum, a C4 crop well-adapted to arid environments",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "FINGER MILLET",
+      "type": "CROP",
+      "description": "Eleusine coracana, a C4 crop well-adapted to arid environments",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "SILICON",
+      "type": "CONCEPT",
+      "description": "The chemical element that forms biosilica in plant tissues",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "ARID ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Dry environmental contexts where crops are adapted to survive",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "LYSIMETERS",
+      "type": "METHOD",
+      "description": "Containers used to cultivate plants and simulate specific water scenarios like irrigated and rain-fed",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "IRRIGATED",
+      "type": "CONDITION",
+      "description": "A cultivation scenario where water is provided to the plants",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "RAIN-FED",
+      "type": "CONDITION",
+      "description": "A cultivation scenario where water availability depends on rainfall",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "A state of insufficient water availability for the plant",
+      "source_id": "paper_12578"
+    },
+    {
+      "name": "GENETICS",
+      "type": "CONCEPT",
+      "description": "The hereditary factors that influence the variability of biosilica accumulation among and within species",
+      "source_id": "paper_12578"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BIOSILICA ACCUMULATION",
+      "target": "TRANSPIRATION STREAM",
+      "description": "is related to",
+      "weight": "8",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "TRANSPIRATION STREAM",
+      "target": "WATER AVAILABILITY",
+      "description": "depends on",
+      "weight": "9",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "BIOSILICA ACCUMULATION",
+      "target": "WATER AVAILABILITY",
+      "description": "is connected to",
+      "weight": "7",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "BIOSILICA ACCUMULATION",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "BIOSILICA ACCUMULATION",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "FINGER MILLET",
+      "target": "BIOSILICA ACCUMULATION",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "ARID ENVIRONMENTS",
+      "description": "is adapted to",
+      "weight": "8",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "ARID ENVIRONMENTS",
+      "description": "is adapted to",
+      "weight": "8",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "FINGER MILLET",
+      "target": "ARID ENVIRONMENTS",
+      "description": "is adapted to",
+      "weight": "8",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "LYSIMETERS",
+      "target": "SORGHUM",
+      "description": "used to cultivate",
+      "weight": "7",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "LYSIMETERS",
+      "target": "PEARL MILLET",
+      "description": "used to cultivate",
+      "weight": "7",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "LYSIMETERS",
+      "target": "FINGER MILLET",
+      "description": "used to cultivate",
+      "weight": "7",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "IRRIGATED",
+      "target": "WATER AVAILABILITY",
+      "description": "is a scenario of",
+      "weight": "10",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "RAIN-FED",
+      "target": "WATER AVAILABILITY",
+      "description": "is a scenario of",
+      "weight": "10",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "WATER AVAILABILITY",
+      "description": "is a state of",
+      "weight": "10",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "WATER STRESS",
+      "description": "is affected by",
+      "weight": "8",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "WATER STRESS",
+      "description": "biosilica accumulation is independent of",
+      "weight": "6",
+      "source_id": "paper_12578"
+    },
+    {
+      "source": "GENETICS",
+      "target": "BIOSILICA ACCUMULATION",
+      "description": "influences variability of",
+      "weight": "9",
+      "source_id": "paper_12578"
+    }
+  ]
+}

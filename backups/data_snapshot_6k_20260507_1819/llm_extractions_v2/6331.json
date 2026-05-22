@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop being studied for downy mildew control.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "NHB-3",
+      "type": "CROP",
+      "description": "A pearl millet hybrid susceptible to downy mildew.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting pearl millet.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "METALAXYL",
+      "type": "METHOD",
+      "description": "A systemic fungicide used as a seed treatment to control downy mildew.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "METALAXYL 35 SD",
+      "type": "METHOD",
+      "description": "A specific formulation of metalaxyl used in seed treatment.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "METALAXYL 25 WP",
+      "type": "METHOD",
+      "description": "A specific formulation of metalaxyl used in seed treatment.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "SEED TREATMENT",
+      "type": "METHOD",
+      "description": "The application of fungicide to seeds before sowing.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "STORAGE TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The temperature at which treated seeds are stored before sowing.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "STORAGE DURATION",
+      "type": "CONDITION",
+      "description": "The length of time treated seeds are stored before sowing.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "SEED GERMINATION",
+      "type": "TRAIT",
+      "description": "The process by which a seed develops into a new plant.",
+      "source_id": "paper_6331"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain harvested per unit area.",
+      "source_id": "paper_6331"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "METALAXYL",
+      "target": "DOWNY MILDEW",
+      "description": "used for the control of",
+      "weight": "9",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "SEED TREATMENT",
+      "target": "METALAXYL",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "DOWNY MILDEW",
+      "description": "affected by",
+      "weight": "10",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "NHB-3",
+      "target": "PEARL MILLET",
+      "description": "is a hybrid of",
+      "weight": "10",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "NHB-3",
+      "target": "DOWNY MILDEW",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "STORAGE TEMPERATURE",
+      "target": "DOWNY MILDEW",
+      "description": "influences the effectiveness of control",
+      "weight": "7",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "STORAGE DURATION",
+      "target": "DOWNY MILDEW",
+      "description": "influences the effectiveness of control",
+      "weight": "7",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "STORAGE TEMPERATURE",
+      "target": "SEED GERMINATION",
+      "description": "did not affect",
+      "weight": "8",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "STORAGE DURATION",
+      "target": "SEED GERMINATION",
+      "description": "did not affect",
+      "weight": "8",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "METALAXYL 35 SD",
+      "target": "METALAXYL",
+      "description": "is a formulation of",
+      "weight": "10",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "METALAXYL 25 WP",
+      "target": "METALAXYL",
+      "description": "is a formulation of",
+      "weight": "10",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "METALAXYL",
+      "target": "GRAIN YIELD",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_6331"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "GRAIN YIELD",
+      "description": "decreases",
+      "weight": "9",
+      "source_id": "paper_6331"
+    }
+  ]
+}

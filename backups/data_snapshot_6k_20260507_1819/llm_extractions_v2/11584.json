@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM BICOLOR",
+      "type": "CROP",
+      "description": "The crop species for which a practical haplotype graph pangenome database was developed.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "PRACTICAL HAPLOTYPE GRAPH",
+      "type": "METHOD",
+      "description": "A pangenome database that stores haplotypes and variant information to facilitate imputation and genomic prediction.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "GENOME-WIDE VARIANTS",
+      "type": "GENE_MARKER",
+      "description": "Genetic variations across the genome identified using the PHG.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "type": "GENE_MARKER",
+      "description": "Specific single-base variations called by the PHG from sequence coverage.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "A breeding approach using genomic data to select superior genotypes.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "IMPUTATION",
+      "type": "METHOD",
+      "description": "The process of filling in missing genotypes using parental haplotypes from the PHG.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "GENOMIC PREDICTION",
+      "type": "METHOD",
+      "description": "The use of genotype data to predict the performance or traits of a cultivar.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "GENOTYPING-BY-SEQUENCING",
+      "type": "METHOD",
+      "description": "A genotyping method used as a comparison for prediction accuracies.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "TARGETED AMPLICON SEQUENCING",
+      "type": "METHOD",
+      "description": "A genotyping method (rhAmpSeq) used as a comparison for prediction accuracies.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "LOW-COVERAGE SEQUENCE DATA",
+      "type": "CONDITION",
+      "description": "Sequencing data with low depth, such as 0.01x, from which SNPs are imputed.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "BREEDING PROGRAMS",
+      "type": "CONCEPT",
+      "description": "Organized efforts to accelerate the development of crop cultivars.",
+      "source_id": "paper_11584"
+    },
+    {
+      "name": "CULTIVAR DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The process of creating and improving crop varieties.",
+      "source_id": "paper_11584"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PRACTICAL HAPLOTYPE GRAPH",
+      "target": "SORGHUM BICOLOR",
+      "description": "developed for",
+      "weight": "10",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "PRACTICAL HAPLOTYPE GRAPH",
+      "target": "GENOME-WIDE VARIANTS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "PRACTICAL HAPLOTYPE GRAPH",
+      "target": "SINGLE NUCLEOTIDE POLYMORPHISMS",
+      "description": "used to call",
+      "weight": "9",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "PRACTICAL HAPLOTYPE GRAPH",
+      "target": "IMPUTATION",
+      "description": "facilitates",
+      "weight": "10",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "PRACTICAL HAPLOTYPE GRAPH",
+      "target": "GENOMIC PREDICTION",
+      "description": "facilitates",
+      "weight": "9",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "IMPUTATION",
+      "target": "GENOMIC PREDICTION",
+      "description": "provides data for",
+      "weight": "8",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GENOMIC PREDICTION",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "PRACTICAL HAPLOTYPE GRAPH",
+      "target": "LOW-COVERAGE SEQUENCE DATA",
+      "description": "imputes SNPs from",
+      "weight": "9",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "GENOTYPING-BY-SEQUENCING",
+      "target": "GENOMIC PREDICTION",
+      "description": "used for",
+      "weight": "7",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "TARGETED AMPLICON SEQUENCING",
+      "target": "GENOMIC PREDICTION",
+      "description": "used for",
+      "weight": "7",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "BREEDING PROGRAMS",
+      "target": "CULTIVAR DEVELOPMENT",
+      "description": "accelerate",
+      "weight": "9",
+      "source_id": "paper_11584"
+    },
+    {
+      "source": "PRACTICAL HAPLOTYPE GRAPH",
+      "target": "BREEDING PROGRAMS",
+      "description": "serves as a tool for",
+      "weight": "8",
+      "source_id": "paper_11584"
+    }
+  ]
+}

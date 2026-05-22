@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "West-African sorghum (Sorghum bicolor L. Moench), including varieties Fadda, IS15401, Soumba and 621B",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "RAINFALL UNCERTAINTY",
+      "type": "CONDITION",
+      "description": "Unpredictable rainfall patterns affecting crop production in the Sahel",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "NUTRIENT DEFICIENCY",
+      "type": "CONDITION",
+      "description": "Lack of essential nutrients in the soil affecting sorghum production",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "SAHEL",
+      "type": "LOCATION",
+      "description": "The region where sorghum production is affected by rainfall uncertainty and nutrient deficiency",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "FERTILIZER",
+      "type": "CONCEPT",
+      "description": "Nutrients applied to the soil, specifically NPK and urea, to improve crop growth",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "WATER REGIME",
+      "type": "CONDITION",
+      "description": "The availability and pattern of water, including irrigated or non-irrigated conditions",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "FERTILIZATION STRATEGIES",
+      "type": "METHOD",
+      "description": "Alternative approaches to applying fertilizer based on rainfall patterns and growing stages",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "SPLIT PLOT EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The experimental design used to test the responses of sorghum varieties to fertilizer and water",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "SENEGAL",
+      "type": "LOCATION",
+      "description": "The country where the split plot experiments were conducted",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A growth parameter of sorghum affected by fertilizer timing and rate",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "LEAF NUMBER",
+      "type": "TRAIT",
+      "description": "A growth parameter of sorghum affected by fertilizer timing and rate",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area, affected by water, nitrogen, and variety interactions",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the plant, affected by fertilizer timing and rate",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "NIORO DU RIP",
+      "type": "LOCATION",
+      "description": "A specific location in Senegal where experiments were carried out",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "SINTHIOU MALÈME",
+      "type": "LOCATION",
+      "description": "A specific location in Senegal where experiments were carried out",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "CERES-SORGHUM MODEL",
+      "type": "METHOD",
+      "description": "A simulation model used to predict grain yields based on fertilization",
+      "source_id": "paper_10886"
+    },
+    {
+      "name": "WEATHER",
+      "type": "CONDITION",
+      "description": "Atmospheric conditions that should manage fertilizer application to achieve acceptable grain yield",
+      "source_id": "paper_10886"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RAINFALL UNCERTAINTY",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "NUTRIENT DEFICIENCY",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SAHEL",
+      "description": "grown in",
+      "weight": "9",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "SORGHUM",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "WATER REGIME",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "FERTILIZATION STRATEGIES",
+      "target": "SORGHUM",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "SPLIT PLOT EXPERIMENTS",
+      "target": "SORGHUM",
+      "description": "used to study",
+      "weight": "10",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "SPLIT PLOT EXPERIMENTS",
+      "target": "SENEGAL",
+      "description": "conducted in",
+      "weight": "10",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "SENEGAL",
+      "target": "NIORO DU RIP",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "SENEGAL",
+      "target": "SINTHIOU MALÈME",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "PLANT HEIGHT",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "LEAF NUMBER",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "FERTILIZER",
+      "target": "BIOMASS",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "WATER REGIME",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "CERES-SORGHUM MODEL",
+      "target": "GRAIN YIELD",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_10886"
+    },
+    {
+      "source": "WEATHER",
+      "target": "FERTILIZATION STRATEGIES",
+      "description": "influences",
+      "weight": "9",
+      "source_id": "paper_10886"
+    }
+  ]
+}

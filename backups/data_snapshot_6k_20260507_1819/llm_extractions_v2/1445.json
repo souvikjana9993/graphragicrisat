@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A crop known for its relative tolerance to soil salinity compared to other crops like maize and legumes.",
+      "source_id": "paper_1445"
+    },
+    {
+      "name": "SOIL SALINITY",
+      "type": "CONDITION",
+      "description": "A soil condition characterized by high salt concentrations that can inhibit plant growth.",
+      "source_id": "paper_1445"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A crop that is less tolerant to soil salinity than sorghum.",
+      "source_id": "paper_1445"
+    },
+    {
+      "name": "LEGUMES",
+      "type": "CROP",
+      "description": "A group of crops that are less tolerant to soil salinity than sorghum.",
+      "source_id": "paper_1445"
+    },
+    {
+      "name": "SALINITY TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant genotype to withstand and grow in saline soil conditions.",
+      "source_id": "paper_1445"
+    },
+    {
+      "name": "GENETIC VARIATION",
+      "type": "CONCEPT",
+      "description": "The interspecific and intra-specific differences in salinity tolerance among crop genotypes.",
+      "source_id": "paper_1445"
+    },
+    {
+      "name": "MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Agricultural techniques used in conjunction with tolerant genotypes to exploit saline soils.",
+      "source_id": "paper_1445"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SALINITY TOLERANCE",
+      "description": "Sorghum exhibits relative tolerance to salinity.",
+      "weight": "10",
+      "source_id": "paper_1445"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SOIL SALINITY",
+      "description": "Sorghum is more tolerant to soil salinity than maize or legumes.",
+      "weight": "9",
+      "source_id": "paper_1445"
+    },
+    {
+      "source": "MAIZE",
+      "target": "SOIL SALINITY",
+      "description": "Maize is less tolerant to soil salinity than sorghum.",
+      "weight": "7",
+      "source_id": "paper_1445"
+    },
+    {
+      "source": "LEGUMES",
+      "target": "SOIL SALINITY",
+      "description": "Legumes are less tolerant to soil salinity than sorghum.",
+      "weight": "7",
+      "source_id": "paper_1445"
+    },
+    {
+      "source": "SALINITY TOLERANCE",
+      "target": "GENETIC VARIATION",
+      "description": "Salinity tolerance exhibits significant interspecific and intra-specific variation.",
+      "weight": "8",
+      "source_id": "paper_1445"
+    },
+    {
+      "source": "GENETIC VARIATION",
+      "target": "MANAGEMENT PRACTICES",
+      "description": "Genetic variation in tolerance provides a scope for integration with management practices.",
+      "weight": "6",
+      "source_id": "paper_1445"
+    },
+    {
+      "source": "MANAGEMENT PRACTICES",
+      "target": "SOIL SALINITY",
+      "description": "Management practices are used to better exploit saline soils.",
+      "weight": "8",
+      "source_id": "paper_1445"
+    }
+  ]
+}

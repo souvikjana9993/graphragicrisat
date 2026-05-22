@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "COMMON BEAN",
+      "type": "CROP",
+      "description": "Phaseolus vulgaris L., the target crop of the study",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "BEAN COMMON MOSAIC VIRUS",
+      "type": "ORGANISM",
+      "description": "A virus that causes severe reduction in yield in common bean",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The productivity of the crop, which is reduced by BCMV infection",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "STABLE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of specific common bean genotypes to consistently resist BCMV",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "NATURAL EPIPHYTOTIC CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions where the virus is naturally present for screening",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "ARTIFICIAL INOCULATION",
+      "type": "METHOD",
+      "description": "A technique used to intentionally infect plants with BCMV for screening",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "REVERSE-TRANSCRIPTION POLYMERASE CHAIN REACTION",
+      "type": "METHOD",
+      "description": "A molecular technique used to confirm BCMV infection via gene amplification",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "COAT PROTEIN GENE",
+      "type": "GENE_MARKER",
+      "description": "The specific gene of BCMV used for amplification and identification",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "SEQUENCING",
+      "type": "METHOD",
+      "description": "The process of determining the nucleotide sequence of the amplified coat protein gene",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "UTTAR PRADESH",
+      "type": "LOCATION",
+      "description": "A region in India where similar BCMV strains were reported",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "HIMACHAL PRADESH",
+      "type": "LOCATION",
+      "description": "A region in India where similar BCMV strains were reported",
+      "source_id": "paper_13115"
+    },
+    {
+      "name": "BCMV-K",
+      "type": "ORGANISM",
+      "description": "The specific strain of bean common mosaic virus identified in the study",
+      "source_id": "paper_13115"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COMMON BEAN",
+      "target": "BEAN COMMON MOSAIC VIRUS",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "BEAN COMMON MOSAIC VIRUS",
+      "target": "YIELD",
+      "description": "causes reduction in",
+      "weight": "9",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "COMMON BEAN",
+      "target": "STABLE RESISTANCE",
+      "description": "can possess",
+      "weight": "8",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "STABLE RESISTANCE",
+      "target": "BEAN COMMON MOSAIC VIRUS",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "NATURAL EPIPHYTOTIC CONDITIONS",
+      "target": "STABLE RESISTANCE",
+      "description": "used to screen for",
+      "weight": "7",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "ARTIFICIAL INOCULATION",
+      "target": "STABLE RESISTANCE",
+      "description": "used to screen for",
+      "weight": "7",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "REVERSE-TRANSCRIPTION POLYMERASE CHAIN REACTION",
+      "target": "BEAN COMMON MOSAIC VIRUS",
+      "description": "used to confirm infection of",
+      "weight": "9",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "REVERSE-TRANSCRIPTION POLYMERASE CHAIN REACTION",
+      "target": "COAT PROTEIN GENE",
+      "description": "amplifies",
+      "weight": "10",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "SEQUENCING",
+      "target": "COAT PROTEIN GENE",
+      "description": "analyzes the sequence of",
+      "weight": "9",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "BCMV-K",
+      "target": "BEAN COMMON MOSAIC VIRUS",
+      "description": "is a strain of",
+      "weight": "10",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "BCMV-K",
+      "target": "UTTAR PRADESH",
+      "description": "shows high identity with strains from",
+      "weight": "8",
+      "source_id": "paper_13115"
+    },
+    {
+      "source": "BCMV-K",
+      "target": "HIMACHAL PRADESH",
+      "description": "shows high identity with strains from",
+      "weight": "8",
+      "source_id": "paper_13115"
+    }
+  ]
+}

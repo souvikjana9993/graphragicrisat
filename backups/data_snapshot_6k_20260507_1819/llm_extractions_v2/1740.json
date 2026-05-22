@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "ALFISOL",
+      "type": "CONCEPT",
+      "description": "A type of soil characterized by specific properties, studied in semi-arid tropical India",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "HYDERABAD, INDIA",
+      "type": "LOCATION",
+      "description": "The location of the field experiment conducted at ICRISAT",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "NO-TILL SYSTEMS",
+      "type": "METHOD",
+      "description": "Agricultural practice of planting crops without disturbing the soil through tillage",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "FARMYARD MANURE",
+      "type": "CONCEPT",
+      "description": "An organic amendment added to the soil to improve its properties",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "RICE STRAW",
+      "type": "CONCEPT",
+      "description": "Organic residue from Oryza sativa used as soil cover in no-till systems",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Oryza sativa, the crop from which the straw residue is derived",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "RUNOFF",
+      "type": "CONCEPT",
+      "description": "The flow of water that occurs when excess stormwater flows over the earth's surface",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "INFILTRATION RATE",
+      "type": "CONCEPT",
+      "description": "The rate at which water enters the soil surface",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "SURFACE CRUST",
+      "type": "CONCEPT",
+      "description": "A thin, hardened layer on the soil surface that restricts water infiltration",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "RING INFILTROMETER",
+      "type": "METHOD",
+      "description": "A tool used to measure the infiltration rate of water into the soil",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "DISC PERMEAMETER",
+      "type": "METHOD",
+      "description": "A tool used to measure the hydraulic conductivity of the soil",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "REGRESSION ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to determine significant factors affecting runoff",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "PRECIPITATION",
+      "type": "CONDITION",
+      "description": "The amount of rainfall occurring during a specific period",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "RAINFALL INTENSITY",
+      "type": "CONDITION",
+      "description": "The rate of rainfall, specifically measured over a 30-minute interval",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "SOIL COVER",
+      "type": "CONDITION",
+      "description": "The percentage of the soil surface covered by plants or organic residue",
+      "source_id": "paper_1740"
+    },
+    {
+      "name": "ORGANIC RESIDUE",
+      "type": "CONCEPT",
+      "description": "General term for organic amendments such as farmyard manure and rice straw",
+      "source_id": "paper_1740"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NO-TILL SYSTEMS",
+      "target": "ALFISOL",
+      "description": "Applied to",
+      "weight": "8",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "FARMYARD MANURE",
+      "target": "NO-TILL SYSTEMS",
+      "description": "Used as an amendment in",
+      "weight": "9",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "NO-TILL SYSTEMS",
+      "description": "Used as an amendment in",
+      "weight": "9",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "RICE",
+      "target": "RICE STRAW",
+      "description": "Source of",
+      "weight": "10",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "SURFACE CRUST",
+      "target": "INFILTRATION RATE",
+      "description": "Controls",
+      "weight": "9",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "RING INFILTROMETER",
+      "target": "INFILTRATION RATE",
+      "description": "Measures",
+      "weight": "10",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "DISC PERMEAMETER",
+      "target": "INFILTRATION RATE",
+      "description": "Measures",
+      "weight": "10",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "REGRESSION ANALYSIS",
+      "target": "RUNOFF",
+      "description": "Used to identify factors determining",
+      "weight": "9",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "PRECIPITATION",
+      "target": "RUNOFF",
+      "description": "Significant factor determining",
+      "weight": "8",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "RAINFALL INTENSITY",
+      "target": "RUNOFF",
+      "description": "Significant factor determining",
+      "weight": "8",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "SOIL COVER",
+      "target": "RUNOFF",
+      "description": "Significant factor determining",
+      "weight": "8",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "ORGANIC RESIDUE",
+      "target": "RUNOFF",
+      "description": "Lowers",
+      "weight": "9",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "HYDERABAD, INDIA",
+      "target": "ALFISOL",
+      "description": "Location where soil was studied",
+      "weight": "7",
+      "source_id": "paper_1740"
+    },
+    {
+      "source": "NO-TILL SYSTEMS",
+      "target": "RUNOFF",
+      "description": "Affects",
+      "weight": "8",
+      "source_id": "paper_1740"
+    }
+  ]
+}

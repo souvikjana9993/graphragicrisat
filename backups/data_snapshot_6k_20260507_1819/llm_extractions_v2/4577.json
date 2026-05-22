@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "POTASSIUM CHLORIDE EXTRACTION",
+      "type": "METHOD",
+      "description": "The use of 2M KCl extracts to analyze soil nitrogen content",
+      "source_id": "paper_4577"
+    },
+    {
+      "name": "HISTOSOLS",
+      "type": "CONCEPT",
+      "description": "Organic soils, specifically Tropohemists, found in tropical lowlands",
+      "source_id": "paper_4577"
+    },
+    {
+      "name": "PHILIPPINES",
+      "type": "LOCATION",
+      "description": "The country where the soil samples were collected",
+      "source_id": "paper_4577"
+    },
+    {
+      "name": "AEROBIC STATE",
+      "type": "CONDITION",
+      "description": "An oxygen-rich environment used during soil analysis",
+      "source_id": "paper_4577"
+    },
+    {
+      "name": "ANAEROBIC STATE",
+      "type": "CONDITION",
+      "description": "An oxygen-poor environment used during soil analysis",
+      "source_id": "paper_4577"
+    },
+    {
+      "name": "ORGANIC NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nitrogen in organic form extracted from soil",
+      "source_id": "paper_4577"
+    },
+    {
+      "name": "WATERLOGGED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Soil saturation with water leading to anaerobic states",
+      "source_id": "paper_4577"
+    },
+    {
+      "name": "MINERAL NITROGEN ESTIMATION",
+      "type": "METHOD",
+      "description": "The process of estimating inorganic nitrogen in soil",
+      "source_id": "paper_4577"
+    },
+    {
+      "name": "POTENTIALLY MINERALIZABLE NITROGEN",
+      "type": "CONCEPT",
+      "description": "Organic nitrogen that can be converted into mineral nitrogen",
+      "source_id": "paper_4577"
+    },
+    {
+      "name": "TROPICAL LOWLANDS",
+      "type": "LOCATION",
+      "description": "The geographic region where the Histosols are located",
+      "source_id": "paper_4577"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "POTASSIUM CHLORIDE EXTRACTION",
+      "target": "HISTOSOLS",
+      "description": "used to extract nitrogen from",
+      "weight": "9",
+      "source_id": "paper_4577"
+    },
+    {
+      "source": "POTASSIUM CHLORIDE EXTRACTION",
+      "target": "ORGANIC NITROGEN",
+      "description": "used to extract",
+      "weight": "10",
+      "source_id": "paper_4577"
+    },
+    {
+      "source": "HISTOSOLS",
+      "target": "PHILIPPINES",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_4577"
+    },
+    {
+      "source": "HISTOSOLS",
+      "target": "TROPICAL LOWLANDS",
+      "description": "located in",
+      "weight": "9",
+      "source_id": "paper_4577"
+    },
+    {
+      "source": "AEROBIC STATE",
+      "target": "HISTOSOLS",
+      "description": "condition of analysis for",
+      "weight": "8",
+      "source_id": "paper_4577"
+    },
+    {
+      "source": "ANAEROBIC STATE",
+      "target": "HISTOSOLS",
+      "description": "condition of analysis for",
+      "weight": "8",
+      "source_id": "paper_4577"
+    },
+    {
+      "source": "WATERLOGGED CONDITIONS",
+      "target": "ANAEROBIC STATE",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_4577"
+    },
+    {
+      "source": "ANAEROBIC STATE",
+      "target": "ORGANIC NITROGEN",
+      "description": "increases extracted amount of",
+      "weight": "8",
+      "source_id": "paper_4577"
+    },
+    {
+      "source": "MINERAL NITROGEN ESTIMATION",
+      "target": "POTENTIALLY MINERALIZABLE NITROGEN",
+      "description": "used to measure",
+      "weight": "9",
+      "source_id": "paper_4577"
+    },
+    {
+      "source": "POTASSIUM CHLORIDE EXTRACTION",
+      "target": "POTENTIALLY MINERALIZABLE NITROGEN",
+      "description": "should be considered for measurement of",
+      "weight": "8",
+      "source_id": "paper_4577"
+    }
+  ]
+}

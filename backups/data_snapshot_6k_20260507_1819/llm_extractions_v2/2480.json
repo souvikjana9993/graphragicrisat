@@ -1,0 +1,251 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "The primary crop analyzed for productivity in the study",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "SOYBEAN PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of soybean yield per unit area",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "LAND SIZE",
+      "type": "CONCEPT",
+      "description": "The extent of land held by the farmer",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "OWNERSHIP",
+      "type": "CONCEPT",
+      "description": "The legal or operational status of land tenure",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "OWNER-OPERATED FARMS",
+      "type": "CONCEPT",
+      "description": "Farms where the owner manages the production",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "SHARE CROPPER-OPERATED FARMS",
+      "type": "CONCEPT",
+      "description": "Farms managed by share croppers under a contract",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "MADHYA PRADESH",
+      "type": "LOCATION",
+      "description": "The Indian state where the research was conducted",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "VIDISHA DISTRICT",
+      "type": "LOCATION",
+      "description": "The specific district in Madhya Pradesh where data was collected",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "JAOTI",
+      "type": "LOCATION",
+      "description": "A village in Vidisha district used for data collection",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "KUNDHANKHEDI",
+      "type": "LOCATION",
+      "description": "A village in Vidisha district used for data collection",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "KHERKHEDI",
+      "type": "LOCATION",
+      "description": "A village in Vidisha district used for data collection",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "LALATORA",
+      "type": "LOCATION",
+      "description": "A village and micro-watershed in Vidisha district used for data collection and demonstration",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "INTERVIEW SCHEDULE",
+      "type": "METHOD",
+      "description": "The tool used for primary data collection",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "IMPROVED MANAGEMENT PRACTICE",
+      "type": "METHOD",
+      "description": "Agricultural techniques used to enhance productivity in demonstration sites",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "WATERLOGGING",
+      "type": "CONDITION",
+      "description": "The saturation of soil with water, leading to reduced crop productivity",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "HEAVY RAINS",
+      "type": "CONDITION",
+      "description": "Excessive precipitation occurring during the sowing period",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "PROFIT",
+      "type": "CONCEPT",
+      "description": "The financial gain derived from soybean farming",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "CROP SHARING CONTRACT",
+      "type": "CONCEPT",
+      "description": "The agreement governing the division of crops between landlords and share croppers",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "WATER-HOLDING CAPACITY",
+      "type": "CONDITION",
+      "description": "The ability of the soil to retain water",
+      "source_id": "paper_2480"
+    },
+    {
+      "name": "INTERMEDIATE RAINFALL ECOREGIONS",
+      "type": "CONDITION",
+      "description": "Regions characterized by moderate rainfall levels",
+      "source_id": "paper_2480"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOYBEAN",
+      "target": "SOYBEAN PRODUCTIVITY",
+      "description": "is the crop for which productivity is measured",
+      "weight": "10",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "LAND SIZE",
+      "target": "SOYBEAN PRODUCTIVITY",
+      "description": "has an inverse relationship with",
+      "weight": "8",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "OWNERSHIP",
+      "target": "SOYBEAN PRODUCTIVITY",
+      "description": "influences the level of",
+      "weight": "7",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "OWNER-OPERATED FARMS",
+      "target": "SOYBEAN PRODUCTIVITY",
+      "description": "shows marginally higher productivity than share cropped farms",
+      "weight": "7",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "SHARE CROPPER-OPERATED FARMS",
+      "target": "SOYBEAN PRODUCTIVITY",
+      "description": "shows lower productivity than owner-operated farms",
+      "weight": "7",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "WATERLOGGING",
+      "target": "SOYBEAN PRODUCTIVITY",
+      "description": "causes low productivity",
+      "weight": "9",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "HEAVY RAINS",
+      "target": "WATERLOGGING",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "IMPROVED MANAGEMENT PRACTICE",
+      "target": "SOYBEAN PRODUCTIVITY",
+      "description": "increases productivity in demonstration micro-watersheds",
+      "weight": "8",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "OWNER-OPERATED FARMS",
+      "target": "PROFIT",
+      "description": "generates higher average profit",
+      "weight": "8",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "SHARE CROPPER-OPERATED FARMS",
+      "target": "PROFIT",
+      "description": "generates lower average profit",
+      "weight": "8",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "CROP SHARING CONTRACT",
+      "target": "PROFIT",
+      "description": "determines the profitability for landlords and share croppers",
+      "weight": "7",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "VIDISHA DISTRICT",
+      "target": "MADHYA PRADESH",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "MADHYA PRADESH",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "JAOTI",
+      "target": "VIDISHA DISTRICT",
+      "description": "is a village in",
+      "weight": "10",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "KUNDHANKHEDI",
+      "target": "VIDISHA DISTRICT",
+      "description": "is a village in",
+      "weight": "10",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "KHERKHEDI",
+      "target": "VIDISHA DISTRICT",
+      "description": "is a village in",
+      "weight": "10",
+      "source_id": "paper_2480"
+    },
+    {
+      "source": "LALATORA",
+      "target": "VIDISHA DISTRICT",
+      "description": "is a village in",
+      "weight": "10",
+      "source_id": "paper_2480"
+    }
+  ]
+}

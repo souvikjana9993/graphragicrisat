@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "BULAWAYO",
+      "type": "LOCATION",
+      "description": "City in Zimbabwe where townships are experiencing food insecurity",
+      "source_id": "paper_11431"
+    },
+    {
+      "name": "ZIMBABWE",
+      "type": "LOCATION",
+      "description": "Country experiencing drought and food insecurity",
+      "source_id": "paper_11431"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "Primary crop used for survival in Bulawayo's townships",
+      "source_id": "paper_11431"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Environmental condition causing water shortage and drying up grain supply",
+      "source_id": "paper_11431"
+    },
+    {
+      "name": "GRAIN",
+      "type": "CROP",
+      "description": "Agricultural produce whose supply was dried up by drought",
+      "source_id": "paper_11431"
+    },
+    {
+      "name": "STAPLE FOODS",
+      "type": "CONCEPT",
+      "description": "Essential foods whose prices increased due to supply shortages",
+      "source_id": "paper_11431"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BULAWAYO",
+      "target": "ZIMBABWE",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_11431"
+    },
+    {
+      "source": "MAIZE",
+      "target": "GRAIN",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_11431"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "GRAIN",
+      "description": "reduces the supply of",
+      "weight": "9",
+      "source_id": "paper_11431"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "ZIMBABWE",
+      "description": "affects the region of",
+      "weight": "9",
+      "source_id": "paper_11431"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "BULAWAYO",
+      "description": "affects the city of",
+      "weight": "8",
+      "source_id": "paper_11431"
+    },
+    {
+      "source": "GRAIN",
+      "target": "STAPLE FOODS",
+      "description": "is a component of",
+      "weight": "8",
+      "source_id": "paper_11431"
+    }
+  ]
+}

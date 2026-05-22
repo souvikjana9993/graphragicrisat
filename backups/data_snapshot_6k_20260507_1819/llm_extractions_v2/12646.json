@@ -1,0 +1,212 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDWATER DROUGHTS",
+      "type": "CONDITION",
+      "description": "Spatio-temporal distribution of severity and duration of groundwater depletion in an aquifer",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "PROBABILISTIC-BASED GROUNDWATER MODEL",
+      "type": "METHOD",
+      "description": "A model developed to address the severity and duration of groundwater droughts",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "HYDROLOGICAL AND METEOROLOGICAL INDICES",
+      "type": "METHOD",
+      "description": "Indices used to analyze groundwater drought in previous studies",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "JOINT PROBABILITY DISTRIBUTION",
+      "type": "CONCEPT",
+      "description": "The statistical distribution of groundwater drought risk and return period",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "GROUNDWATER DROUGHT RISK",
+      "type": "CONCEPT",
+      "description": "A risk metric calculated to assess the impact of groundwater droughts",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "RETURN PERIOD",
+      "type": "CONCEPT",
+      "description": "The average time interval between drought events of specific severity and duration",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "DSS MODULE",
+      "type": "METHOD",
+      "description": "A Decision Support System module used to calculate groundwater drought risk and environmental hazard index",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "ENVIRONMENTAL HAZARD INDEX",
+      "type": "CONCEPT",
+      "description": "An index used to assess the vulnerability of regions to external stresses",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "PROBABILITY DISTRIBUTION METHOD",
+      "type": "METHOD",
+      "description": "The method used by the DSS module to calculate risk and hazard indices",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "COPULA METHOD",
+      "type": "METHOD",
+      "description": "A method used to calculate the return period of drought events based on joint probability",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "SINA BASIN",
+      "type": "LOCATION",
+      "description": "The study area located in Maharashtra, India",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "MAHARASHTRA",
+      "type": "LOCATION",
+      "description": "The state in India where the Sina basin is located",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study was conducted",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "STANDARDISED WATER INDEX",
+      "type": "METHOD",
+      "description": "An index used for quantifying groundwater droughts over the Sina basin",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "RELIABILITY ANALYSIS",
+      "type": "METHOD",
+      "description": "The principle used to calculate risk and hazard indices for different drought bands",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "DROUGHT BANDS",
+      "type": "CONDITION",
+      "description": "Categories of drought severity including Mild, Moderate, Severe, and Extreme",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "BEED REGION",
+      "type": "LOCATION",
+      "description": "A vulnerable area in the northeastern region of the Sina basin",
+      "source_id": "paper_12646"
+    },
+    {
+      "name": "GROUNDWATER RESISTANCE",
+      "type": "CONCEPT",
+      "description": "The capacity of the groundwater system to withstand drought conditions",
+      "source_id": "paper_12646"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PROBABILISTIC-BASED GROUNDWATER MODEL",
+      "target": "GROUNDWATER DROUGHTS",
+      "description": "addresses the distribution of",
+      "weight": "10",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "DSS MODULE",
+      "target": "GROUNDWATER DROUGHT RISK",
+      "description": "calculates",
+      "weight": "10",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "DSS MODULE",
+      "target": "ENVIRONMENTAL HAZARD INDEX",
+      "description": "calculates",
+      "weight": "10",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "PROBABILITY DISTRIBUTION METHOD",
+      "target": "DSS MODULE",
+      "description": "is the basis for",
+      "weight": "9",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "COPULA METHOD",
+      "target": "RETURN PERIOD",
+      "description": "calculates",
+      "weight": "10",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "SINA BASIN",
+      "target": "MAHARASHTRA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "MAHARASHTRA",
+      "target": "INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "STANDARDISED WATER INDEX",
+      "target": "GROUNDWATER DROUGHTS",
+      "description": "quantifies",
+      "weight": "9",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "RELIABILITY ANALYSIS",
+      "target": "GROUNDWATER DROUGHT RISK",
+      "description": "is used to calculate",
+      "weight": "9",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "RELIABILITY ANALYSIS",
+      "target": "ENVIRONMENTAL HAZARD INDEX",
+      "description": "is used to calculate",
+      "weight": "9",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "BEED REGION",
+      "target": "SINA BASIN",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "COPULA METHOD",
+      "target": "DROUGHT BANDS",
+      "description": "analyzes return periods for",
+      "weight": "8",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "ENVIRONMENTAL HAZARD INDEX",
+      "target": "BEED REGION",
+      "description": "identifies vulnerability of",
+      "weight": "8",
+      "source_id": "paper_12646"
+    },
+    {
+      "source": "RELIABILITY ANALYSIS",
+      "target": "DROUGHT BANDS",
+      "description": "calculates risk for",
+      "weight": "9",
+      "source_id": "paper_12646"
+    }
+  ]
+}

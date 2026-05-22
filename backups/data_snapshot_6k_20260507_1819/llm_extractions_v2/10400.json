@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "CROPLAND MAPPING",
+      "type": "CONCEPT",
+      "description": "The process of identifying and mapping croplands globally for agriculture monitoring and application",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "MEASURES",
+      "type": "METHOD",
+      "description": "NASA project for Making Earth System Data Records for Use in Research Environments",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "GFSAD",
+      "type": "METHOD",
+      "description": "Global food security-support analysis data project",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "GFSAD CROPLAND EXTENT PRODUCT",
+      "type": "CONCEPT",
+      "description": "A 30-m global cropland product produced through the GFSAD project",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "IN-SITU DATA",
+      "type": "CONCEPT",
+      "description": "Spatially distributed ground-truth data used for the development of cropland products",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "CROPREF",
+      "type": "METHOD",
+      "description": "A web application designed to collect crowdsourced geoTagged cropland samples",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "CROWDSOURCED GEOTAGGED CROPLAND SAMPLES",
+      "type": "CONCEPT",
+      "description": "Geo-referenced samples of croplands versus non-croplands collected via volunteers",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "GEO-REFERENCED STATISTICAL DATA",
+      "type": "CONCEPT",
+      "description": "Statistical data linked to geographic coordinates available for query and download",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "HIGH RESOLUTION SATELLITE IMAGERY",
+      "type": "METHOD",
+      "description": "Satellite imagery with spatial resolution ranging from sub-meter to 5-m",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "GOOGLE EARTH",
+      "type": "METHOD",
+      "description": "A platform providing very high spatial resolution satellite imagery",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "CROWDSOURCING",
+      "type": "METHOD",
+      "description": "A mechanism for collecting data from a network of volunteers to validate and improve spatial information",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "GLOBAL REFERENCE DATASET",
+      "type": "CONCEPT",
+      "description": "A dataset used for validating 30 m-resolution global land-cover maps",
+      "source_id": "paper_10400"
+    },
+    {
+      "name": "GFSAD30",
+      "type": "METHOD",
+      "description": "A project focused on 30 m-resolution global land-cover maps",
+      "source_id": "paper_10400"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROPREF",
+      "target": "CROWDSOURCED GEOTAGGED CROPLAND SAMPLES",
+      "description": "CROPREF is used to collect crowdsourced geoTagged cropland samples",
+      "weight": "10",
+      "source_id": "paper_10400"
+    },
+    {
+      "source": "CROWDSOURCED GEOTAGGED CROPLAND SAMPLES",
+      "target": "CROPLAND MAPPING",
+      "description": "Crowdsourced samples are used to improve global cropland mapping",
+      "weight": "9",
+      "source_id": "paper_10400"
+    },
+    {
+      "source": "GFSAD",
+      "target": "GFSAD CROPLAND EXTENT PRODUCT",
+      "description": "GFSAD produced the global 30-m cropland extent product",
+      "weight": "10",
+      "source_id": "paper_10400"
+    },
+    {
+      "source": "IN-SITU DATA",
+      "target": "GFSAD CROPLAND EXTENT PRODUCT",
+      "description": "Lack of sufficient in-situ data contributed to errors in the GFSAD cropland extent product",
+      "weight": "8",
+      "source_id": "paper_10400"
+    },
+    {
+      "source": "CROPREF",
+      "target": "HIGH RESOLUTION SATELLITE IMAGERY",
+      "description": "CROPREF integrates very high spatial resolution satellite imagery",
+      "weight": "7",
+      "source_id": "paper_10400"
+    },
+    {
+      "source": "GOOGLE EARTH",
+      "target": "HIGH RESOLUTION SATELLITE IMAGERY",
+      "description": "Google Earth provides the high resolution satellite imagery used by CROPREF",
+      "weight": "10",
+      "source_id": "paper_10400"
+    },
+    {
+      "source": "CROWDSOURCING",
+      "target": "CROWDSOURCED GEOTAGGED CROPLAND SAMPLES",
+      "description": "Crowdsourcing is the mechanism used to collect the samples",
+      "weight": "10",
+      "source_id": "paper_10400"
+    },
+    {
+      "source": "GLOBAL REFERENCE DATASET",
+      "target": "GFSAD30",
+      "description": "The global reference dataset was built for validating maps in the GFSAD30 project",
+      "weight": "9",
+      "source_id": "paper_10400"
+    },
+    {
+      "source": "CROPREF",
+      "target": "GEO-REFERENCED STATISTICAL DATA",
+      "description": "CROPREF allows users to query and browse geo-referenced statistical data",
+      "weight": "8",
+      "source_id": "paper_10400"
+    },
+    {
+      "source": "MEASURES",
+      "target": "GFSAD",
+      "description": "MEaSUREs supported the GFSAD project",
+      "weight": "9",
+      "source_id": "paper_10400"
+    }
+  ]
+}

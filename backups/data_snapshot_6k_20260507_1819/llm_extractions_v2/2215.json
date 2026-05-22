@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Cultivated groundnut, Arachis hypogaea",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "ARACHIS CARDENASII",
+      "type": "ORGANISM",
+      "description": "Wild species used for interspecific crossing",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "ICG 11558",
+      "type": "ORGANISM",
+      "description": "Specific accession of Arachis cardenasii",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "HYBRID EMBRYO DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The process of embryo growth in interspecific derivatives",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "PHYSIOLOGICAL IMMATURITY",
+      "type": "TRAIT",
+      "description": "State of seeds being small and unable to germinate naturally",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "IN VIVO",
+      "type": "CONDITION",
+      "description": "Natural growth environment",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "IN VITRO",
+      "type": "CONDITION",
+      "description": "Artificial growth environment",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "EMBRYO CULTURE",
+      "type": "METHOD",
+      "description": "Process of dissecting and culturing embryos to induce germination",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "POLLEN FERTILITY",
+      "type": "TRAIT",
+      "description": "The ability of pollen to successfully fertilize",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "BACKCROSSING",
+      "type": "METHOD",
+      "description": "Crossing a hybrid back to one of its parent species",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "SEED MATURATION",
+      "type": "CONCEPT",
+      "description": "The process of seeds reaching full maturity",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "VEGETATIVE GROWTH",
+      "type": "CONCEPT",
+      "description": "The growth phase of a plant before flowering",
+      "source_id": "paper_2215"
+    },
+    {
+      "name": "INTERSPECIFIC DERIVATIVE",
+      "type": "CONCEPT",
+      "description": "Offspring resulting from crosses between different species, specifically A. hypogaea and A. cardenasii",
+      "source_id": "paper_2215"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ARACHIS CARDENASII",
+      "target": "GROUNDNUT",
+      "description": "Crossed to produce hybrids",
+      "weight": "9",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "ICG 11558",
+      "target": "ARACHIS CARDENASII",
+      "description": "Is an accession of",
+      "weight": "10",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "ARACHIS CARDENASII",
+      "target": "INTERSPECIFIC DERIVATIVE",
+      "description": "Parent of",
+      "weight": "10",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "INTERSPECIFIC DERIVATIVE",
+      "description": "Parent of",
+      "weight": "10",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "INTERSPECIFIC DERIVATIVE",
+      "target": "PHYSIOLOGICAL IMMATURITY",
+      "description": "Exhibits",
+      "weight": "8",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "PHYSIOLOGICAL IMMATURITY",
+      "target": "IN VIVO",
+      "description": "Prevents germination in",
+      "weight": "9",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "EMBRYO CULTURE",
+      "target": "IN VITRO",
+      "description": "Performed in",
+      "weight": "10",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "EMBRYO CULTURE",
+      "target": "INTERSPECIFIC DERIVATIVE",
+      "description": "Used to obtain",
+      "weight": "9",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "INTERSPECIFIC DERIVATIVE",
+      "target": "POLLEN FERTILITY",
+      "description": "Measured trait",
+      "weight": "7",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "BACKCROSSING",
+      "target": "INTERSPECIFIC DERIVATIVE",
+      "description": "Used on",
+      "weight": "8",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "BACKCROSSING",
+      "target": "GROUNDNUT",
+      "description": "Used with",
+      "weight": "8",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "INTERSPECIFIC DERIVATIVE",
+      "target": "SEED MATURATION",
+      "description": "Requires time for",
+      "weight": "7",
+      "source_id": "paper_2215"
+    },
+    {
+      "source": "INTERSPECIFIC DERIVATIVE",
+      "target": "VEGETATIVE GROWTH",
+      "description": "Requires time for",
+      "weight": "7",
+      "source_id": "paper_2215"
+    }
+  ]
+}

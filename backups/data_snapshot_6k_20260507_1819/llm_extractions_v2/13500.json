@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "The crop being studied for genotype selection",
+      "source_id": "paper_13500"
+    },
+    {
+      "name": "OBSERVATION NURSERY",
+      "type": "METHOD",
+      "description": "A controlled environment used to raise plants for selection",
+      "source_id": "paper_13500"
+    },
+    {
+      "name": "DATA COLLECTION",
+      "type": "METHOD",
+      "description": "The process of gathering information for analysis and selection",
+      "source_id": "paper_13500"
+    },
+    {
+      "name": "ANALYSIS",
+      "type": "CONCEPT",
+      "description": "The process of examining collected data to make selections",
+      "source_id": "paper_13500"
+    },
+    {
+      "name": "SELECTION",
+      "type": "CONCEPT",
+      "description": "The process of choosing the best genotypes based on observations and data",
+      "source_id": "paper_13500"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "The genetic makeup of the millet plants being evaluated",
+      "source_id": "paper_13500"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "OBSERVATION NURSERY",
+      "target": "MILLET",
+      "description": "Used to raise millet genotypes",
+      "weight": "9",
+      "source_id": "paper_13500"
+    },
+    {
+      "source": "DATA COLLECTION",
+      "target": "ANALYSIS",
+      "description": "Provides data for analysis",
+      "weight": "10",
+      "source_id": "paper_13500"
+    },
+    {
+      "source": "ANALYSIS",
+      "target": "SELECTION",
+      "description": "Analysis leads to selection",
+      "weight": "9",
+      "source_id": "paper_13500"
+    },
+    {
+      "source": "DATA COLLECTION",
+      "target": "SELECTION",
+      "description": "Data collection is used for selection",
+      "weight": "8",
+      "source_id": "paper_13500"
+    },
+    {
+      "source": "OBSERVATION NURSERY",
+      "target": "SELECTION",
+      "description": "Nursery is used for selection of genotypes",
+      "weight": "8",
+      "source_id": "paper_13500"
+    },
+    {
+      "source": "MILLET",
+      "target": "GENOTYPES",
+      "description": "Millet has specific genotypes",
+      "weight": "10",
+      "source_id": "paper_13500"
+    }
+  ]
+}

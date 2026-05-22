@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT STRAW",
+      "type": "CROP",
+      "description": "Crop residue undergoing decomposition",
+      "source_id": "paper_3651"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "A regulative factor affecting chemical reactions and the decomposition of organic matter",
+      "source_id": "paper_3651"
+    },
+    {
+      "name": "PH",
+      "type": "CONDITION",
+      "description": "A regulative factor affecting chemical reactions and the decomposition of organic matter",
+      "source_id": "paper_3651"
+    },
+    {
+      "name": "DECOMPOSITION",
+      "type": "CONCEPT",
+      "description": "The process of breaking down organic matter",
+      "source_id": "paper_3651"
+    },
+    {
+      "name": "ORGANIC MATTER",
+      "type": "CONCEPT",
+      "description": "Material in soil and manures that undergoes break down and synthesis",
+      "source_id": "paper_3651"
+    },
+    {
+      "name": "SOIL",
+      "type": "LOCATION",
+      "description": "The medium where organic matter decomposition occurs",
+      "source_id": "paper_3651"
+    },
+    {
+      "name": "MANURES",
+      "type": "CONCEPT",
+      "description": "Organic materials used as fertilizer containing organic matter",
+      "source_id": "paper_3651"
+    },
+    {
+      "name": "CHEMICAL REACTION",
+      "type": "CONCEPT",
+      "description": "Reactions whose rate is affected by temperature and pH",
+      "source_id": "paper_3651"
+    },
+    {
+      "name": "ENZYMATIC REACTION",
+      "type": "CONCEPT",
+      "description": "Specific chemical reactions catalyzed by enzymes affected by temperature and pH",
+      "source_id": "paper_3651"
+    },
+    {
+      "name": "MICRO-ORGANISMS",
+      "type": "ORGANISM",
+      "description": "Biological entities whose development is influenced by temperature and pH",
+      "source_id": "paper_3651"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "DECOMPOSITION",
+      "description": "Affects the rate of",
+      "weight": "8",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "PH",
+      "target": "DECOMPOSITION",
+      "description": "Affects the rate of",
+      "weight": "8",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "CHEMICAL REACTION",
+      "description": "Affects the rate of",
+      "weight": "9",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "PH",
+      "target": "CHEMICAL REACTION",
+      "description": "Affects the rate of",
+      "weight": "9",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "ENZYMATIC REACTION",
+      "description": "Affects the rate of",
+      "weight": "9",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "PH",
+      "target": "ENZYMATIC REACTION",
+      "description": "Affects the rate of",
+      "weight": "9",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "MICRO-ORGANISMS",
+      "description": "Influences the development of",
+      "weight": "7",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "PH",
+      "target": "MICRO-ORGANISMS",
+      "description": "Influences the development of",
+      "weight": "7",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "ORGANIC MATTER",
+      "description": "Regulates the break down and synthesis of",
+      "weight": "8",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "PH",
+      "target": "ORGANIC MATTER",
+      "description": "Regulates the break down and synthesis of",
+      "weight": "8",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "ORGANIC MATTER",
+      "target": "SOIL",
+      "description": "Present in",
+      "weight": "10",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "ORGANIC MATTER",
+      "target": "MANURES",
+      "description": "Present in",
+      "weight": "10",
+      "source_id": "paper_3651"
+    },
+    {
+      "source": "WHEAT STRAW",
+      "target": "DECOMPOSITION",
+      "description": "Undergoes the process of",
+      "weight": "10",
+      "source_id": "paper_3651"
+    }
+  ]
+}

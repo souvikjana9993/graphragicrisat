@@ -1,0 +1,190 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume Cicer arietinum, the primary crop studied for resistance to wilt",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F.SP. CICERI",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen responsible for causing wilt disease in chickpea",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "RACE 1",
+      "type": "CONDITION",
+      "description": "A specific race of the pathogen Fusarium oxysporum f.sp. ciceri used to test resistance",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea cultivars to withstand infection by race 1 of Fusarium oxysporum f.sp. ciceri",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "WILT",
+      "type": "CONDITION",
+      "description": "The disease caused by Fusarium oxysporum f.sp. ciceri in chickpea plants",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "LATE WILTING",
+      "type": "TRAIT",
+      "description": "A specific trait where wilting symptoms appear later in the plant's development",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "RECESSIVE ALLELE",
+      "type": "GENE_MARKER",
+      "description": "A genetic variant that confers resistance when present in a homozygous state",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "LOCUS",
+      "type": "CONCEPT",
+      "description": "The specific genomic position of the genes conferring resistance",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The agricultural method of crossing cultivars to develop resistance to wilt",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "K-850",
+      "type": "CROP",
+      "description": "A chickpea cultivar carrying a recessive allele for resistance",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "C-104",
+      "type": "CROP",
+      "description": "A chickpea cultivar carrying a recessive allele for resistance at a different locus",
+      "source_id": "paper_2142"
+    },
+    {
+      "name": "JG-62",
+      "type": "CROP",
+      "description": "A chickpea cultivar used in crosses to study resistance",
+      "source_id": "paper_2142"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "FUSARIUM OXYSPORUM F.SP. CICERI",
+      "description": "is host to",
+      "weight": "8",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F.SP. CICERI",
+      "target": "RACE 1",
+      "description": "has variant",
+      "weight": "9",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F.SP. CICERI",
+      "target": "WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "RESISTANCE",
+      "description": "possesses",
+      "weight": "7",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "RACE 1",
+      "description": "is specific to",
+      "weight": "9",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "WILT",
+      "description": "provides protection against",
+      "weight": "10",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "K-850",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "C-104",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "JG-62",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "K-850",
+      "target": "RECESSIVE ALLELE",
+      "description": "carries",
+      "weight": "9",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "C-104",
+      "target": "RECESSIVE ALLELE",
+      "description": "carries",
+      "weight": "9",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "RECESSIVE ALLELE",
+      "target": "LOCUS",
+      "description": "is located at",
+      "weight": "10",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "RECESSIVE ALLELE",
+      "target": "RESISTANCE",
+      "description": "confers",
+      "weight": "10",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "RECESSIVE ALLELE",
+      "target": "LATE WILTING",
+      "description": "may contribute to",
+      "weight": "6",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "BREEDING",
+      "target": "RESISTANCE",
+      "description": "aims to develop",
+      "weight": "9",
+      "source_id": "paper_2142"
+    },
+    {
+      "source": "BREEDING",
+      "target": "CHICKPEA",
+      "description": "is performed on",
+      "weight": "8",
+      "source_id": "paper_2142"
+    }
+  ]
+}

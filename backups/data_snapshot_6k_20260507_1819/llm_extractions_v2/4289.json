@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop exhibiting variation in water-use efficiency among cultivars",
+      "source_id": "paper_4289"
+    },
+    {
+      "name": "WATER-USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A physiological trait that is difficult to measure accurately in glasshouse and field situations",
+      "source_id": "paper_4289"
+    },
+    {
+      "name": "CARBON ISOTOPE DISCRIMINATION",
+      "type": "TRAIT",
+      "description": "A measure of isotopic discrimination against carbon during photosynthesis, used as a surrogate for water-use efficiency",
+      "source_id": "paper_4289"
+    },
+    {
+      "name": "SPECIFIC LEAF AREA",
+      "type": "TRAIT",
+      "description": "A morphological trait mentioned in the context of relationships in groundnut",
+      "source_id": "paper_4289"
+    },
+    {
+      "name": "BREEDING PROGRAMS",
+      "type": "METHOD",
+      "description": "Large-scale agricultural programs aimed at selecting for specific traits",
+      "source_id": "paper_4289"
+    },
+    {
+      "name": "GLASSHOUSE",
+      "type": "LOCATION",
+      "description": "A controlled environment used for measuring plant traits",
+      "source_id": "paper_4289"
+    },
+    {
+      "name": "FIELD",
+      "type": "LOCATION",
+      "description": "An outdoor environment used for measuring plant traits",
+      "source_id": "paper_4289"
+    },
+    {
+      "name": "PHOTOSYNTHESIS",
+      "type": "CONCEPT",
+      "description": "The biological process during which carbon isotope discrimination occurs",
+      "source_id": "paper_4289"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER-USE EFFICIENCY",
+      "target": "GROUNDNUT",
+      "description": "is a trait exhibited by",
+      "weight": "10",
+      "source_id": "paper_4289"
+    },
+    {
+      "source": "CARBON ISOTOPE DISCRIMINATION",
+      "target": "GROUNDNUT",
+      "description": "is a trait exhibited by",
+      "weight": "10",
+      "source_id": "paper_4289"
+    },
+    {
+      "source": "SPECIFIC LEAF AREA",
+      "target": "GROUNDNUT",
+      "description": "is a trait exhibited by",
+      "weight": "10",
+      "source_id": "paper_4289"
+    },
+    {
+      "source": "WATER-USE EFFICIENCY",
+      "target": "CARBON ISOTOPE DISCRIMINATION",
+      "description": "is correlated with",
+      "weight": "9",
+      "source_id": "paper_4289"
+    },
+    {
+      "source": "CARBON ISOTOPE DISCRIMINATION",
+      "target": "WATER-USE EFFICIENCY",
+      "description": "serves as a surrogate measure for",
+      "weight": "9",
+      "source_id": "paper_4289"
+    },
+    {
+      "source": "WATER-USE EFFICIENCY",
+      "target": "BREEDING PROGRAMS",
+      "description": "is a target trait for selection in",
+      "weight": "8",
+      "source_id": "paper_4289"
+    },
+    {
+      "source": "CARBON ISOTOPE DISCRIMINATION",
+      "target": "BREEDING PROGRAMS",
+      "description": "is used as a selection tool in",
+      "weight": "8",
+      "source_id": "paper_4289"
+    },
+    {
+      "source": "WATER-USE EFFICIENCY",
+      "target": "GLASSHOUSE",
+      "description": "is measured in",
+      "weight": "7",
+      "source_id": "paper_4289"
+    },
+    {
+      "source": "WATER-USE EFFICIENCY",
+      "target": "FIELD",
+      "description": "is measured in",
+      "weight": "7",
+      "source_id": "paper_4289"
+    },
+    {
+      "source": "CARBON ISOTOPE DISCRIMINATION",
+      "target": "PHOTOSYNTHESIS",
+      "description": "occurs during",
+      "weight": "10",
+      "source_id": "paper_4289"
+    }
+  ]
+}

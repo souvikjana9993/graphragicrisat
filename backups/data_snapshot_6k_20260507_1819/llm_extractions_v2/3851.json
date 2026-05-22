@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "LAND EQUIVALENT RATIO",
+      "type": "CONCEPT",
+      "description": "A metric used to evaluate the efficiency of intercropping compared to sole cropping",
+      "source_id": "paper_3851"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously on the same piece of land",
+      "source_id": "paper_3851"
+    },
+    {
+      "name": "PURE STAND",
+      "type": "CONDITION",
+      "description": "The practice of growing a single crop alone, also known as sole cropping",
+      "source_id": "paper_3851"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of agricultural production harvested per unit area",
+      "source_id": "paper_3851"
+    },
+    {
+      "name": "EFFECTIVE LER",
+      "type": "CONCEPT",
+      "description": "A modified land equivalent ratio used to evaluate yield proportions based on farmer requirements",
+      "source_id": "paper_3851"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "LAND EQUIVALENT RATIO",
+      "target": "INTERCROPPING",
+      "description": "used to evaluate the efficiency of",
+      "weight": "10",
+      "source_id": "paper_3851"
+    },
+    {
+      "source": "LAND EQUIVALENT RATIO",
+      "target": "PURE STAND",
+      "description": "compares intercropping against",
+      "weight": "9",
+      "source_id": "paper_3851"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "YIELD",
+      "description": "produces yield advantages",
+      "weight": "8",
+      "source_id": "paper_3851"
+    },
+    {
+      "source": "EFFECTIVE LER",
+      "target": "LAND EQUIVALENT RATIO",
+      "description": "is a specific method of calculating",
+      "weight": "9",
+      "source_id": "paper_3851"
+    },
+    {
+      "source": "EFFECTIVE LER",
+      "target": "INTERCROPPING",
+      "description": "evaluates yield proportions in",
+      "weight": "8",
+      "source_id": "paper_3851"
+    },
+    {
+      "source": "EFFECTIVE LER",
+      "target": "YIELD",
+      "description": "indicates proportions for maximum yield advantages",
+      "weight": "8",
+      "source_id": "paper_3851"
+    }
+  ]
+}

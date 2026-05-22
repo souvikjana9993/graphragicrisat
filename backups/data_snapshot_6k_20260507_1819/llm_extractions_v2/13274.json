@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The target crop, Arachis hypogaea L., used for marker identification.",
+      "source_id": "paper_13274"
+    },
+    {
+      "name": "DDRADSEQ",
+      "type": "METHOD",
+      "description": "Double digest restriction site-associated DNA sequencing used to identify InDel markers.",
+      "source_id": "paper_13274"
+    },
+    {
+      "name": "INDEL MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Insertion-deletion markers developed to assess genetic diversity in peanut.",
+      "source_id": "paper_13274"
+    },
+    {
+      "name": "BIOINFORMATIC ANALYSIS",
+      "type": "METHOD",
+      "description": "The computational process used to analyze sequencing data and identify InDels.",
+      "source_id": "paper_13274"
+    },
+    {
+      "name": "CODING SEQUENCES",
+      "type": "CONCEPT",
+      "description": "Regions of the genome that translate into proteins, where some InDels were located.",
+      "source_id": "paper_13274"
+    },
+    {
+      "name": "GENOMICS-LED BREEDING",
+      "type": "CONCEPT",
+      "description": "A breeding strategy utilizing genomic information to improve crop traits.",
+      "source_id": "paper_13274"
+    },
+    {
+      "name": "POLYMORPHIC INFORMATION CONTENT",
+      "type": "CONCEPT",
+      "description": "A metric (PIC) used to quantify the informativeness of genetic markers.",
+      "source_id": "paper_13274"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "TRAIT",
+      "description": "The total number of genetic characteristics in the genetic makeup of a species.",
+      "source_id": "paper_13274"
+    },
+    {
+      "name": "MARKER-ASSISTED BREEDING",
+      "type": "CONCEPT",
+      "description": "The use of molecular markers to select for desired traits in breeding programs.",
+      "source_id": "paper_13274"
+    },
+    {
+      "name": "NEXT-GENERATION SEQUENCING",
+      "type": "METHOD",
+      "description": "High-throughput DNA sequencing technologies that enable rapid genome analysis.",
+      "source_id": "paper_13274"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DDRADSEQ",
+      "target": "PEANUT",
+      "description": "used to identify markers in",
+      "weight": "10",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "DDRADSEQ",
+      "target": "INDEL MARKERS",
+      "description": "used to develop",
+      "weight": "10",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "BIOINFORMATIC ANALYSIS",
+      "target": "INDEL MARKERS",
+      "description": "used to identify",
+      "weight": "9",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "INDEL MARKERS",
+      "target": "PEANUT",
+      "description": "located across the genome of",
+      "weight": "10",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "INDEL MARKERS",
+      "target": "CODING SEQUENCES",
+      "description": "located in",
+      "weight": "8",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "CODING SEQUENCES",
+      "target": "GENOMICS-LED BREEDING",
+      "description": "enhance potential utility in",
+      "weight": "8",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "INDEL MARKERS",
+      "target": "POLYMORPHIC INFORMATION CONTENT",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "POLYMORPHIC INFORMATION CONTENT",
+      "target": "GENETIC DIVERSITY",
+      "description": "demonstrates",
+      "weight": "8",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "INDEL MARKERS",
+      "target": "MARKER-ASSISTED BREEDING",
+      "description": "provide tools for",
+      "weight": "9",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "MARKER-ASSISTED BREEDING",
+      "target": "GENETIC DIVERSITY",
+      "description": "used for assessing",
+      "weight": "8",
+      "source_id": "paper_13274"
+    },
+    {
+      "source": "NEXT-GENERATION SEQUENCING",
+      "target": "DDRADSEQ",
+      "description": "category of",
+      "weight": "10",
+      "source_id": "paper_13274"
+    }
+  ]
+}

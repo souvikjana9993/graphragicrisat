@@ -1,0 +1,190 @@
+{
+  "entities": [
+    {
+      "name": "PADDY RICE",
+      "type": "CROP",
+      "description": "The crop species being evaluated for grain quality traits using non-destructive imaging.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "CHAFFINESS",
+      "type": "TRAIT",
+      "description": "A physical grain trait of rice evaluated using X-ray imaging.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "CHALKY RICE KERNEL PERCENTAGE",
+      "type": "TRAIT",
+      "description": "A physical grain trait of rice, also known as CRK%, evaluated using X-ray imaging.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "HEAD RICE RECOVERY PERCENTAGE",
+      "type": "TRAIT",
+      "description": "A physical grain trait of rice, also known as HRR%, evaluated using X-ray imaging.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "X-RAY RADIOGRAPHY",
+      "type": "METHOD",
+      "description": "A non-destructive imaging technology used for the assessment of rice grain quality traits.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "COMPUTER-VISION BASED METHODS",
+      "type": "METHOD",
+      "description": "Analytical approaches used to predict physical rice traits from X-ray images.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "X-RAY IMAGE SEGMENTATION",
+      "type": "METHOD",
+      "description": "A computer-vision technique used to isolate parts of an X-ray image for analysis.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "FEATURES-BASED MULTI-LINEAR MODELS",
+      "type": "METHOD",
+      "description": "A predictive modeling approach used to estimate rice grain traits.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "THRESHOLDING",
+      "type": "METHOD",
+      "description": "A computer-vision technique used to segment or classify image pixels based on intensity.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "PCA BASED PREDICTION MODELS",
+      "type": "METHOD",
+      "description": "Principal Component Analysis based models used for predicting traits from individual grains.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "CROP IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The process of enhancing crop characteristics for better yield and quality.",
+      "source_id": "paper_13341"
+    },
+    {
+      "name": "AGRICULTURAL PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The measure of agricultural output per unit of input, which can be improved through better breeding.",
+      "source_id": "paper_13341"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "X-RAY RADIOGRAPHY",
+      "target": "PADDY RICE",
+      "description": "used for non-destructive assessment of",
+      "weight": "10",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "X-RAY RADIOGRAPHY",
+      "target": "CHAFFINESS",
+      "description": "used to predict",
+      "weight": "9",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "X-RAY RADIOGRAPHY",
+      "target": "CHALKY RICE KERNEL PERCENTAGE",
+      "description": "used to predict",
+      "weight": "9",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "X-RAY RADIOGRAPHY",
+      "target": "HEAD RICE RECOVERY PERCENTAGE",
+      "description": "used to predict",
+      "weight": "9",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "COMPUTER-VISION BASED METHODS",
+      "target": "CHAFFINESS",
+      "description": "can predict",
+      "weight": "9",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "COMPUTER-VISION BASED METHODS",
+      "target": "CHALKY RICE KERNEL PERCENTAGE",
+      "description": "can predict",
+      "weight": "9",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "COMPUTER-VISION BASED METHODS",
+      "target": "HEAD RICE RECOVERY PERCENTAGE",
+      "description": "can predict",
+      "weight": "9",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "X-RAY IMAGE SEGMENTATION",
+      "target": "COMPUTER-VISION BASED METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "FEATURES-BASED MULTI-LINEAR MODELS",
+      "target": "COMPUTER-VISION BASED METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "THRESHOLDING",
+      "target": "COMPUTER-VISION BASED METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "PCA BASED PREDICTION MODELS",
+      "target": "COMPUTER-VISION BASED METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "PADDY RICE",
+      "target": "CHAFFINESS",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "PADDY RICE",
+      "target": "CHALKY RICE KERNEL PERCENTAGE",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "PADDY RICE",
+      "target": "HEAD RICE RECOVERY PERCENTAGE",
+      "description": "possesses the trait of",
+      "weight": "10",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "X-RAY RADIOGRAPHY",
+      "target": "CROP IMPROVEMENT",
+      "description": "accelerates",
+      "weight": "8",
+      "source_id": "paper_13341"
+    },
+    {
+      "source": "CROP IMPROVEMENT",
+      "target": "AGRICULTURAL PRODUCTIVITY",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_13341"
+    }
+  ]
+}

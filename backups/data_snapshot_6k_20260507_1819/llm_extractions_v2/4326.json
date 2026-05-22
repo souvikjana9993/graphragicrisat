@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "FOSSIL FUELS",
+      "type": "CONCEPT",
+      "description": "Energy sources derived from organic matter whose use causes environmental pollution and whose prices are soaring",
+      "source_id": "paper_4326"
+    },
+    {
+      "name": "ENVIRONMENTAL POLLUTION",
+      "type": "CONDITION",
+      "description": "Degradation of the environment associated with the use of fossil fuels",
+      "source_id": "paper_4326"
+    },
+    {
+      "name": "BIO-FUELS",
+      "type": "CONCEPT",
+      "description": "Fuels produced from biomass used as an alternative to fossil fuels to reduce pollution and increase energy security",
+      "source_id": "paper_4326"
+    },
+    {
+      "name": "BIO-FUEL CROPS",
+      "type": "CROP",
+      "description": "Crops used as feedstocks for the production of bio-fuels",
+      "source_id": "paper_4326"
+    },
+    {
+      "name": "ENERGY SECURITY",
+      "type": "CONCEPT",
+      "description": "The goal of ensuring a reliable supply of energy",
+      "source_id": "paper_4326"
+    },
+    {
+      "name": "FOOD/FODDER SECURITY",
+      "type": "CONCEPT",
+      "description": "The availability and access to sufficient food and animal feed",
+      "source_id": "paper_4326"
+    },
+    {
+      "name": "CHINA",
+      "type": "LOCATION",
+      "description": "A developing country referenced in the context of bio-fuel and food security",
+      "source_id": "paper_4326"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A developing country referenced in the context of bio-fuel and food security",
+      "source_id": "paper_4326"
+    },
+    {
+      "name": "CROP RESEARCH AND DEVELOPMENT",
+      "type": "METHOD",
+      "description": "Interventions and research aimed at generating feedstocks for bio-fuel production",
+      "source_id": "paper_4326"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FOSSIL FUELS",
+      "target": "ENVIRONMENTAL POLLUTION",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_4326"
+    },
+    {
+      "source": "FOSSIL FUELS",
+      "target": "BIO-FUELS",
+      "description": "drives interest in",
+      "weight": "8",
+      "source_id": "paper_4326"
+    },
+    {
+      "source": "BIO-FUELS",
+      "target": "ENVIRONMENTAL POLLUTION",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4326"
+    },
+    {
+      "source": "BIO-FUELS",
+      "target": "ENERGY SECURITY",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_4326"
+    },
+    {
+      "source": "BIO-FUEL CROPS",
+      "target": "BIO-FUELS",
+      "description": "provide feedstock for",
+      "weight": "10",
+      "source_id": "paper_4326"
+    },
+    {
+      "source": "CROP RESEARCH AND DEVELOPMENT",
+      "target": "BIO-FUEL CROPS",
+      "description": "generates",
+      "weight": "9",
+      "source_id": "paper_4326"
+    },
+    {
+      "source": "BIO-FUEL CROPS",
+      "target": "FOOD/FODDER SECURITY",
+      "description": "may compromise",
+      "weight": "7",
+      "source_id": "paper_4326"
+    },
+    {
+      "source": "CHINA",
+      "target": "BIO-FUEL CROPS",
+      "description": "context for implementation",
+      "weight": "6",
+      "source_id": "paper_4326"
+    },
+    {
+      "source": "INDIA",
+      "target": "BIO-FUEL CROPS",
+      "description": "context for implementation",
+      "weight": "6",
+      "source_id": "paper_4326"
+    }
+  ]
+}

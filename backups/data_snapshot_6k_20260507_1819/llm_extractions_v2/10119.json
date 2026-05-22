@@ -1,0 +1,260 @@
+{
+  "entities": [
+    {
+      "name": "DIGITAL SOIL MAPPING",
+      "type": "CONCEPT",
+      "description": "The process of using digital tools and data to map soil properties.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "REMOTE SENSING IMAGES",
+      "type": "METHOD",
+      "description": "Images captured by sensors to analyze soil properties from a distance.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "SOIL PREDICTION MODELS",
+      "type": "METHOD",
+      "description": "Models used to predict soil properties based on various data inputs.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "SOUTHERN INDIA",
+      "type": "LOCATION",
+      "description": "The geographical region where the study was conducted.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "KOTHAPALLY",
+      "type": "LOCATION",
+      "description": "A smallholder farm located in Telangana State, Southern India.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "MASUTI",
+      "type": "LOCATION",
+      "description": "A smallholder farm located in Karnataka State, Southern India.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "BAYESIAN KRIGING",
+      "type": "METHOD",
+      "description": "A geostatistical interpolation method used to characterize spatial patterns.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "EXCHANGEABLE POTASSIUM",
+      "type": "TRAIT",
+      "description": "A soil nutrient property (Kex) analyzed in the topsoil.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "TOPSOIL",
+      "type": "CONDITION",
+      "description": "The upper layer of soil, specifically 0-15 cm in this study.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "LANDSAT 8",
+      "type": "METHOD",
+      "description": "A remote sensing image source with a spatial resolution of 30 m.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "RAPIDEYE",
+      "type": "METHOD",
+      "description": "A remote sensing image source with a spatial resolution of 5 m.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "WORLDVIEW-2/GEOEYE-1/PLEIADES-1A",
+      "type": "METHOD",
+      "description": "Remote sensing image sources with a spatial resolution of 2 m.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "SPECTRAL INDICES",
+      "type": "CONCEPT",
+      "description": "Mathematical combinations of spectral bands used to identify soil properties.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "BAND REFLECTANCES",
+      "type": "CONCEPT",
+      "description": "The amount of light reflected by the soil surface at specific bands.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "BAND RATIOS",
+      "type": "CONCEPT",
+      "description": "The ratio of reflectances between two different spectral bands.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "CRUST INDEX",
+      "type": "CONCEPT",
+      "description": "A specific spectral index used to correlate with soil potassium.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "ATMOSPHERICALLY RESISTANT VEGETATION INDEX",
+      "type": "CONCEPT",
+      "description": "A specific spectral index used to correlate with soil potassium.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "SPATIAL RESOLUTION",
+      "type": "CONCEPT",
+      "description": "The size of the smallest pixel in a remote sensing image, affecting prediction performance.",
+      "source_id": "paper_10119"
+    },
+    {
+      "name": "SOIL NUTRIENT MANAGEMENT SCHEME",
+      "type": "CONCEPT",
+      "description": "A field-specific approach to managing soil nutrients for sustainable farming.",
+      "source_id": "paper_10119"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DIGITAL SOIL MAPPING",
+      "target": "REMOTE SENSING IMAGES",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "SOIL PREDICTION MODELS",
+      "target": "DIGITAL SOIL MAPPING",
+      "description": "is a component of",
+      "weight": "9",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "BAYESIAN KRIGING",
+      "target": "SOIL PREDICTION MODELS",
+      "description": "is used to create",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "BAYESIAN KRIGING",
+      "target": "EXCHANGEABLE POTASSIUM",
+      "description": "characterizes the spatial pattern of",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "EXCHANGEABLE POTASSIUM",
+      "target": "TOPSOIL",
+      "description": "is measured in",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "REMOTE SENSING IMAGES",
+      "target": "LANDSAT 8",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "REMOTE SENSING IMAGES",
+      "target": "RAPIDEYE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "REMOTE SENSING IMAGES",
+      "target": "WORLDVIEW-2/GEOEYE-1/PLEIADES-1A",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "SPECTRAL INDICES",
+      "target": "REMOTE SENSING IMAGES",
+      "description": "are derived from",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "BAND REFLECTANCES",
+      "target": "SPECTRAL INDICES",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "BAND RATIOS",
+      "target": "SPECTRAL INDICES",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "CRUST INDEX",
+      "target": "SPECTRAL INDICES",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "ATMOSPHERICALLY RESISTANT VEGETATION INDEX",
+      "target": "SPECTRAL INDICES",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "SPECTRAL INDICES",
+      "target": "EXCHANGEABLE POTASSIUM",
+      "description": "show correlations with",
+      "weight": "8",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "SPATIAL RESOLUTION",
+      "target": "REMOTE SENSING IMAGES",
+      "description": "is a characteristic of",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "SOIL PREDICTION MODELS",
+      "target": "KOTHAPALLY",
+      "description": "were evaluated in",
+      "weight": "8",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "SOIL PREDICTION MODELS",
+      "target": "MASUTI",
+      "description": "were evaluated in",
+      "weight": "8",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "KOTHAPALLY",
+      "target": "SOUTHERN INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "MASUTI",
+      "target": "SOUTHERN INDIA",
+      "description": "is located in",
+      "weight": "10",
+      "source_id": "paper_10119"
+    },
+    {
+      "source": "DIGITAL SOIL MAPPING",
+      "target": "SOIL NUTRIENT MANAGEMENT SCHEME",
+      "description": "helps implement",
+      "weight": "8",
+      "source_id": "paper_10119"
+    }
+  ]
+}

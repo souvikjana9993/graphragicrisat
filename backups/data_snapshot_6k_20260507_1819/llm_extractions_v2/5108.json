@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Cajanus cajan, the crop studied for pod characteristics and pest infestation",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "CALLOSOBRUCHUS CHINENSIS",
+      "type": "ORGANISM",
+      "description": "A pest that infests pigeonpea pods",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "POD HAIR DENSITY",
+      "type": "TRAIT",
+      "description": "The density of hairs on the pigeonpea pod, acting as a barrier to pests",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "POD WALL THICKNESS",
+      "type": "TRAIT",
+      "description": "The thickness of the pigeonpea pod wall, providing resistance to larval penetration and adult emergence",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "INFESTATION",
+      "type": "CONDITION",
+      "description": "The state of pigeonpea pods being attacked by Callosobruchus chinensis",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "SHATTERING",
+      "type": "CONDITION",
+      "description": "Damage to pods through shattering that increases susceptibility to infestation",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "POD BORERS",
+      "type": "ORGANISM",
+      "description": "Pests that cause prior damage to pods, increasing infestation by C. chinensis",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "OVIPOSITION",
+      "type": "CONCEPT",
+      "description": "The process of egg-laying by Callosobruchus chinensis",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "LARVAL PENETRATION",
+      "type": "CONCEPT",
+      "description": "The process of larvae entering the pigeonpea pod",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "ADULT EMERGENCE",
+      "type": "CONCEPT",
+      "description": "The process of adult pests emerging from the pod",
+      "source_id": "paper_5108"
+    },
+    {
+      "name": "PIGEONPEA SELECTION",
+      "type": "METHOD",
+      "description": "The process of screening pigeonpea genotypes for traits like pod hair density and wall thickness",
+      "source_id": "paper_5108"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "CALLOSOBRUCHUS CHINENSIS",
+      "description": "is infested by",
+      "weight": "8",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "POD HAIR DENSITY",
+      "target": "INFESTATION",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "POD HAIR DENSITY",
+      "target": "OVIPOSITION",
+      "description": "acts as a barrier to",
+      "weight": "9",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "POD HAIR DENSITY",
+      "target": "LARVAL PENETRATION",
+      "description": "acts as a barrier to",
+      "weight": "9",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "POD WALL THICKNESS",
+      "target": "LARVAL PENETRATION",
+      "description": "offers resistance to",
+      "weight": "8",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "POD WALL THICKNESS",
+      "target": "ADULT EMERGENCE",
+      "description": "offers resistance to",
+      "weight": "8",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "SHATTERING",
+      "target": "INFESTATION",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "POD BORERS",
+      "target": "INFESTATION",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "PIGEONPEA SELECTION",
+      "target": "POD HAIR DENSITY",
+      "description": "screens for",
+      "weight": "9",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "PIGEONPEA SELECTION",
+      "target": "POD WALL THICKNESS",
+      "description": "screens for",
+      "weight": "9",
+      "source_id": "paper_5108"
+    },
+    {
+      "source": "CALLOSOBRUCHUS CHINENSIS",
+      "target": "INFESTATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5108"
+    }
+  ]
+}

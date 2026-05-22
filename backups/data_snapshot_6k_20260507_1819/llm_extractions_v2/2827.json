@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop species studied in the research",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "WATER DEFICIT",
+      "type": "CONDITION",
+      "description": "The stress condition caused by lack of water",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "PANICLE DEVELOPMENT",
+      "type": "CONCEPT",
+      "description": "The growth stage of the plant when the panicle is forming",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "GRAIN FILLING",
+      "type": "CONCEPT",
+      "description": "The growth stage where seeds are filled with nutrients",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of grain produced",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "YIELD COMPONENTS",
+      "type": "TRAIT",
+      "description": "The individual factors that contribute to the overall grain yield",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "PROTEIN CONTENT",
+      "type": "TRAIT",
+      "description": "The percentage or amount of protein within the grains",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "TOTAL PROTEIN PER UNIT AREA",
+      "type": "TRAIT",
+      "description": "The cumulative amount of protein produced per unit of land area",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "GRAINS PER UNIT AREA",
+      "type": "TRAIT",
+      "description": "The number of grains produced per unit of land area",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "1000 GRAIN WEIGHT",
+      "type": "TRAIT",
+      "description": "The combined weight of one thousand grains",
+      "source_id": "paper_2827"
+    },
+    {
+      "name": "CARBOHYDRATE ACCUMULATION",
+      "type": "TRAIT",
+      "description": "The process of storing carbohydrates in the grain",
+      "source_id": "paper_2827"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER DEFICIT",
+      "target": "PEARL MILLET",
+      "description": "applied to genotypes of the crop",
+      "weight": "10",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "PANICLE DEVELOPMENT",
+      "description": "applied during this growth stage",
+      "weight": "8",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "GRAIN FILLING",
+      "description": "applied during this growth stage",
+      "weight": "8",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "GRAIN YIELD",
+      "description": "reduces yield when applied during grain filling",
+      "weight": "9",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "PROTEIN CONTENT",
+      "description": "increases protein percentage during grain filling and panicle development",
+      "weight": "9",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "TOTAL PROTEIN PER UNIT AREA",
+      "description": "reduces total protein when applied during grain filling",
+      "weight": "8",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "GRAINS PER UNIT AREA",
+      "description": "reduces grain count when applied during grain filling",
+      "weight": "9",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "1000 GRAIN WEIGHT",
+      "description": "reduces grain weight when applied during grain filling",
+      "weight": "9",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "WATER DEFICIT",
+      "target": "CARBOHYDRATE ACCUMULATION",
+      "description": "reduces the accumulation of carbohydrates",
+      "weight": "9",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "CARBOHYDRATE ACCUMULATION",
+      "target": "PROTEIN CONTENT",
+      "description": "reduction in accumulation leads to an apparent increase in protein percentage",
+      "weight": "7",
+      "source_id": "paper_2827"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "TOTAL PROTEIN PER UNIT AREA",
+      "description": "lower yield leads to reduced total protein per unit area",
+      "weight": "9",
+      "source_id": "paper_2827"
+    }
+  ]
+}

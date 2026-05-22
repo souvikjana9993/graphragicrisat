@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "BIODIVERSITY",
+      "type": "CONCEPT",
+      "description": "The variety of plant species to be preserved sustainably",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "COLLECTING STRATEGY",
+      "type": "METHOD",
+      "description": "The overall approach used to collect plant samples for biodiversity preservation",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "SAMPLING SIZE",
+      "type": "METHOD",
+      "description": "The number of samples taken from a population to ensure representation",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "SAMPLING METHOD",
+      "type": "METHOD",
+      "description": "The specific technique used to select samples from a population",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "CROSS-POLLINATING PLANTS",
+      "type": "ORGANISM",
+      "description": "Plant species that receive pollen from another flower",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "SELF-POLLINATING PLANTS",
+      "type": "ORGANISM",
+      "description": "Plant species that pollinate themselves",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "EXPECTED VARIATION",
+      "type": "CONCEPT",
+      "description": "The anticipated genetic or phenotypic diversity within a population",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "SPOT SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling technique used in uniform plant stands to reduce time",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "TRANSECTION",
+      "type": "METHOD",
+      "description": "A sampling technique involving a line or area across a field",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "SELECTIVE SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling technique where specific types are searched for",
+      "source_id": "paper_3174"
+    },
+    {
+      "name": "PLANT STAND",
+      "type": "CONDITION",
+      "description": "The arrangement and uniformity of plants in a field",
+      "source_id": "paper_3174"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COLLECTING STRATEGY",
+      "target": "BIODIVERSITY",
+      "description": "determines the preservation of",
+      "weight": "9",
+      "source_id": "paper_3174"
+    },
+    {
+      "source": "SAMPLING SIZE",
+      "target": "COLLECTING STRATEGY",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_3174"
+    },
+    {
+      "source": "SAMPLING METHOD",
+      "target": "COLLECTING STRATEGY",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_3174"
+    },
+    {
+      "source": "SAMPLING SIZE",
+      "target": "CROSS-POLLINATING PLANTS",
+      "description": "recommended size for",
+      "weight": "8",
+      "source_id": "paper_3174"
+    },
+    {
+      "source": "SAMPLING SIZE",
+      "target": "SELF-POLLINATING PLANTS",
+      "description": "recommended size for",
+      "weight": "8",
+      "source_id": "paper_3174"
+    },
+    {
+      "source": "EXPECTED VARIATION",
+      "target": "SAMPLING SIZE",
+      "description": "influences the required",
+      "weight": "7",
+      "source_id": "paper_3174"
+    },
+    {
+      "source": "SPOT SAMPLING",
+      "target": "SAMPLING METHOD",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_3174"
+    },
+    {
+      "source": "TRANSECTION",
+      "target": "SAMPLING METHOD",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_3174"
+    },
+    {
+      "source": "SELECTIVE SAMPLING",
+      "target": "SAMPLING METHOD",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_3174"
+    },
+    {
+      "source": "PLANT STAND",
+      "target": "SPOT SAMPLING",
+      "description": "uniformity allows for",
+      "weight": "8",
+      "source_id": "paper_3174"
+    }
+  ]
+}

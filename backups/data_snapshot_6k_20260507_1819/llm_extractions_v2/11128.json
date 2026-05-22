@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A food legume important for global food and nutritional demand.",
+      "source_id": "paper_11128"
+    },
+    {
+      "name": "MOLECULAR BREEDING",
+      "type": "METHOD",
+      "description": "Approaches used in crop improvement programs to enhance genetic traits.",
+      "source_id": "paper_11128"
+    },
+    {
+      "name": "NEXT GENERATION SEQUENCING",
+      "type": "METHOD",
+      "description": "Technology used to generate thousands of markers through large scale genome sequencing.",
+      "source_id": "paper_11128"
+    },
+    {
+      "name": "INDELS",
+      "type": "GENE_MARKER",
+      "description": "PCR-based insertion-deletions used as a co-dominant and highly polymorphic genotyping solution.",
+      "source_id": "paper_11128"
+    },
+    {
+      "name": "GENOTYPING",
+      "type": "METHOD",
+      "description": "The process of determining the genetic makeup of an organism using markers.",
+      "source_id": "paper_11128"
+    },
+    {
+      "name": "GENOMICS ASSISTED BREEDING",
+      "type": "METHOD",
+      "description": "A breeding approach utilizing genomic resources to improve crop varieties.",
+      "source_id": "paper_11128"
+    },
+    {
+      "name": "WHOLE GENOME RE-SEQUENCING",
+      "type": "METHOD",
+      "description": "The process of sequencing the entire genome of multiple lines to identify genetic markers.",
+      "source_id": "paper_11128"
+    },
+    {
+      "name": "DINDEL SOFTWARE",
+      "type": "METHOD",
+      "description": "Software used for the identification of InDels from sequencing data.",
+      "source_id": "paper_11128"
+    },
+    {
+      "name": "AGAROSE GEL",
+      "type": "METHOD",
+      "description": "A medium used for the validation of InDel markers and observation of polymorphism.",
+      "source_id": "paper_11128"
+    },
+    {
+      "name": "POLYMORPHISM RATE",
+      "type": "TRAIT",
+      "description": "The rate of genetic variation observed across parental lines for specific markers.",
+      "source_id": "paper_11128"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MOLECULAR BREEDING",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_11128"
+    },
+    {
+      "source": "NEXT GENERATION SEQUENCING",
+      "target": "INDELS",
+      "description": "used to generate",
+      "weight": "9",
+      "source_id": "paper_11128"
+    },
+    {
+      "source": "INDELS",
+      "target": "GENOTYPING",
+      "description": "used as a solution for",
+      "weight": "9",
+      "source_id": "paper_11128"
+    },
+    {
+      "source": "GENOMICS ASSISTED BREEDING",
+      "target": "CHICKPEA",
+      "description": "used for improvement of",
+      "weight": "10",
+      "source_id": "paper_11128"
+    },
+    {
+      "source": "WHOLE GENOME RE-SEQUENCING",
+      "target": "INDELS",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_11128"
+    },
+    {
+      "source": "DINDEL SOFTWARE",
+      "target": "INDELS",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_11128"
+    },
+    {
+      "source": "AGAROSE GEL",
+      "target": "INDELS",
+      "description": "used to validate",
+      "weight": "8",
+      "source_id": "paper_11128"
+    },
+    {
+      "source": "INDELS",
+      "target": "POLYMORPHISM RATE",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_11128"
+    },
+    {
+      "source": "INDELS",
+      "target": "MOLECULAR BREEDING",
+      "description": "serves as a resource for",
+      "weight": "9",
+      "source_id": "paper_11128"
+    }
+  ]
+}

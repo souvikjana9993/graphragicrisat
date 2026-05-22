@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The primary agricultural crop being evaluated for yield stability and disease resistance.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "BACTERIAL WILT",
+      "type": "CONDITION",
+      "description": "A disease caused by Ralstonia solanacearum that acts as a production constraint for groundnut.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "RALSTONIA SOLANACEARUM",
+      "type": "ORGANISM",
+      "description": "The bacterial organism that causes bacterial wilt in groundnut plants.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "The geographical region where bacterial wilt is a significant constraint for groundnut production.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "INDONESIA",
+      "type": "LOCATION",
+      "description": "The country where the research on groundnut cultivars and bacterial wilt was conducted.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "JAVA",
+      "type": "LOCATION",
+      "description": "The specific location in Indonesia where the bacterial wilt endemic areas were situated.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "POD YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural trait measuring the productivity of groundnut pods.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "RESISTANCE TO BACTERIAL WILT",
+      "type": "TRAIT",
+      "description": "The trait describing the ability of groundnut cultivars to resist infection by Ralstonia solanacearum.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "GAJAH",
+      "type": "CROP",
+      "description": "An improved groundnut cultivar that showed stable resistance to bacterial wilt across multiple locations.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "MLGG 0627",
+      "type": "CROP",
+      "description": "A groundnut cultivar used as a susceptible check in the study.",
+      "source_id": "paper_10116"
+    },
+    {
+      "name": "ICRISAT GERMPLASM",
+      "type": "CONCEPT",
+      "description": "The genetic material from ICRISAT used to develop breeding lines for groundnut.",
+      "source_id": "paper_10116"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RALSTONIA SOLANACEARUM",
+      "target": "BACTERIAL WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "ASIA",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "INDONESIA",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "BACTERIAL WILT",
+      "target": "JAVA",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "POD YIELD",
+      "description": "has trait",
+      "weight": "8",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RESISTANCE TO BACTERIAL WILT",
+      "description": "has trait",
+      "weight": "8",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "GAJAH",
+      "target": "GROUNDNUT",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "GAJAH",
+      "target": "RESISTANCE TO BACTERIAL WILT",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "MLGG 0627",
+      "target": "GROUNDNUT",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "RESISTANCE TO BACTERIAL WILT",
+      "target": "POD YIELD",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_10116"
+    },
+    {
+      "source": "ICRISAT GERMPLASM",
+      "target": "GROUNDNUT",
+      "description": "used to develop breeding lines of",
+      "weight": "7",
+      "source_id": "paper_10116"
+    }
+  ]
+}

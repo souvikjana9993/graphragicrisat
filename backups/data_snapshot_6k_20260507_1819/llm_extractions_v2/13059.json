@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop studied for its response to heat stress",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "HEAT STRESS",
+      "type": "CONDITION",
+      "description": "High temperature conditions, specifically 45 °C, that impact plant physiological and biochemical properties",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "HEAT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to maintain function and productivity under high temperature stress",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "CLIMATE CHANGE",
+      "type": "CONCEPT",
+      "description": "The long-term shift in global temperatures affecting agricultural production",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "GLOBAL FOOD SECURITY",
+      "type": "CONCEPT",
+      "description": "The goal of ensuring reliable access to sufficient and nutritious food",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINE",
+      "type": "METHOD",
+      "description": "A population, specifically JL 24 × 55–437, used to derive genotypes for study",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "CATALASE",
+      "type": "GENE_MARKER",
+      "description": "An enzyme whose activity helps plants withstand oxidative burst during heat stress",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "PEROXIDASE",
+      "type": "GENE_MARKER",
+      "description": "An enzyme whose activity helps plants withstand oxidative burst during heat stress",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "MALONDIALDEHYDE LEVELS",
+      "type": "TRAIT",
+      "description": "A biochemical marker used to indicate the extent of membrane damage",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "HEAT SHOCK PROTEINS",
+      "type": "GENE_MARKER",
+      "description": "Proteins, specifically HSP17, whose expression is associated with heat stress tolerance",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "ANTIOXIDANT ACTIVITY",
+      "type": "TRAIT",
+      "description": "The combined enzymatic and non-enzymatic activity that protects plants from oxidative stress",
+      "source_id": "paper_13059"
+    },
+    {
+      "name": "MEMBRANE DAMAGE",
+      "type": "TRAIT",
+      "description": "Physiological degradation of cell membranes caused by heat stress",
+      "source_id": "paper_13059"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "HEAT STRESS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "HEAT TOLERANCE",
+      "target": "GROUNDNUT",
+      "description": "is a desired trait in",
+      "weight": "9",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "MEMBRANE DAMAGE",
+      "description": "induces",
+      "weight": "8",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "ANTIOXIDANT ACTIVITY",
+      "description": "triggers",
+      "weight": "8",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "HEAT STRESS",
+      "target": "HEAT SHOCK PROTEINS",
+      "description": "triggers expression of",
+      "weight": "10",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "HEAT SHOCK PROTEINS",
+      "target": "HEAT TOLERANCE",
+      "description": "is associated with",
+      "weight": "9",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "ANTIOXIDANT ACTIVITY",
+      "target": "HEAT TOLERANCE",
+      "description": "is associated with",
+      "weight": "8",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "CATALASE",
+      "target": "ANTIOXIDANT ACTIVITY",
+      "description": "contributes to",
+      "weight": "10",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "PEROXIDASE",
+      "target": "ANTIOXIDANT ACTIVITY",
+      "description": "contributes to",
+      "weight": "10",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "MALONDIALDEHYDE LEVELS",
+      "target": "MEMBRANE DAMAGE",
+      "description": "indicates",
+      "weight": "10",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINE",
+      "target": "GROUNDNUT",
+      "description": "used to study genotypes of",
+      "weight": "9",
+      "source_id": "paper_13059"
+    },
+    {
+      "source": "CLIMATE CHANGE",
+      "target": "GLOBAL FOOD SECURITY",
+      "description": "impacts",
+      "weight": "8",
+      "source_id": "paper_13059"
+    }
+  ]
+}

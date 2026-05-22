@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop studied for nodulation and carbon partitioning.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "NODULATION CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of chickpea cultivars to form nodules for nitrogen fixation.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "NODULE NUMBER",
+      "type": "TRAIT",
+      "description": "The count of nodules formed on the roots of the plant.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "NODULE MASS",
+      "type": "TRAIT",
+      "description": "The total weight of the nodules formed on the roots.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "CARBON BUDGETING",
+      "type": "CONCEPT",
+      "description": "The allocation and distribution of carbon resources within the plant.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The process of converting atmospheric nitrogen into a usable form for the plant.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "MINERAL NITROGEN LEVEL",
+      "type": "CONDITION",
+      "description": "The concentration of available mineral nitrogen in the soil.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "14C-PHOTOSYNTHATE",
+      "type": "CONCEPT",
+      "description": "Carbon-14 labeled photosynthates used to track the distribution of carbon in plant parts.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "TOTAL PLANT BIOMASS",
+      "type": "TRAIT",
+      "description": "The overall mass of the chickpea plant.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "ROOT SHOOT RATIO",
+      "type": "TRAIT",
+      "description": "The ratio of the mass of the roots to the mass of the shoots.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "BIOLOGICAL NITROGEN FIXATION",
+      "type": "CONCEPT",
+      "description": "The process of nitrogen fixation carried out by biological organisms, often referred to as BNF.",
+      "source_id": "paper_3653"
+    },
+    {
+      "name": "ROOT PRODUCTION",
+      "type": "TRAIT",
+      "description": "The growth and development of the root system.",
+      "source_id": "paper_3653"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "NODULATION CAPACITY",
+      "description": "shows genetic variation for",
+      "weight": "8",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "NODULATION CAPACITY",
+      "target": "NODULE NUMBER",
+      "description": "is measured by",
+      "weight": "9",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "NODULATION CAPACITY",
+      "target": "NODULE MASS",
+      "description": "is measured by",
+      "weight": "9",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "CARBON BUDGETING",
+      "target": "NITROGEN FIXATION",
+      "description": "is examined in relation to",
+      "weight": "7",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "MINERAL NITROGEN LEVEL",
+      "target": "TOTAL PLANT BIOMASS",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "NODULATION CAPACITY",
+      "target": "TOTAL PLANT BIOMASS",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "NODULATION CAPACITY",
+      "target": "14C-PHOTOSYNTHATE",
+      "description": "decreases translocation of to roots",
+      "weight": "7",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "MINERAL NITROGEN LEVEL",
+      "target": "14C-PHOTOSYNTHATE",
+      "description": "decreases translocation of to roots",
+      "weight": "7",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION",
+      "target": "NODULATION CAPACITY",
+      "description": "is the mechanism for",
+      "weight": "9",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "MINERAL NITROGEN LEVEL",
+      "target": "BIOLOGICAL NITROGEN FIXATION",
+      "description": "low levels impact the ability to fulfill N requirements via",
+      "weight": "8",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "BIOLOGICAL NITROGEN FIXATION",
+      "target": "ROOT SHOOT RATIO",
+      "description": "low efficiency leads to higher",
+      "weight": "7",
+      "source_id": "paper_3653"
+    },
+    {
+      "source": "ROOT PRODUCTION",
+      "target": "14C-PHOTOSYNTHATE",
+      "description": "increases partitioning of to roots",
+      "weight": "8",
+      "source_id": "paper_3653"
+    }
+  ]
+}

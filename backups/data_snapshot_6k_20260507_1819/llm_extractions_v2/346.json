@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "BACILLUS THURINGIENSIS",
+      "type": "ORGANISM",
+      "description": "Bacterium that produces cry1Ab and cry1Ac delta-endotoxins used in transgenic crops",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "CRY1AB",
+      "type": "GENE_MARKER",
+      "description": "Delta-endotoxin protein/gene from Bacillus thuringiensis used to enhance insect resistance in crops",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "CRY1AC",
+      "type": "GENE_MARKER",
+      "description": "Delta-endotoxin protein/gene from Bacillus thuringiensis used to enhance insect resistance in crops",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "CHEILOMENES SEXMACULATUS",
+      "type": "ORGANISM",
+      "description": "Coccinellid beetle/ladybird beetle that acts as a natural enemy of insect pests",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "TRANSGENIC PLANTS",
+      "type": "CROP",
+      "description": "Crops genetically modified to express Bt toxins for insect resistance",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "INSECT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist attack by insect pests",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "APHIDS",
+      "type": "ORGANISM",
+      "description": "Soft bodied insects that serve as prey for Cheilomenes sexmaculatus",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "LEPIDOPTERANS",
+      "type": "ORGANISM",
+      "description": "Insects whose early instar larvae are preyed upon by Cheilomenes sexmaculatus",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "DIRECT EXPOSURE",
+      "type": "CONDITION",
+      "description": "Condition where Cheilomenes sexmaculatus larvae are fed toxins directly in a sucrose solution",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "INDIRECT EXPOSURE",
+      "type": "CONDITION",
+      "description": "Condition where Cheilomenes sexmaculatus larvae feed on prey that have ingested toxins",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "LARVAL SURVIVAL",
+      "type": "TRAIT",
+      "description": "The rate of survival of larvae during their development",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "ADULT EMERGENCE",
+      "type": "TRAIT",
+      "description": "The rate at which larvae successfully develop into adults",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "APHIS CRACCIVORA",
+      "type": "ORGANISM",
+      "description": "Specific aphid species used as a vector in indirect exposure experiments",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "Insect pest preyed upon by Cheilomenes sexmaculatus",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "NATURAL ENEMIES",
+      "type": "CONCEPT",
+      "description": "Organisms that control insect pest populations through predation or parasitism",
+      "source_id": "paper_346"
+    },
+    {
+      "name": "GENETIC MODIFICATION",
+      "type": "METHOD",
+      "description": "The process of incorporating foreign genes into a crop's genome to provide specific traits",
+      "source_id": "paper_346"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BACILLUS THURINGIENSIS",
+      "target": "CRY1AB",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "BACILLUS THURINGIENSIS",
+      "target": "CRY1AC",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "CRY1AB",
+      "target": "TRANSGENIC PLANTS",
+      "description": "incorporated into",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "CRY1AC",
+      "target": "TRANSGENIC PLANTS",
+      "description": "incorporated into",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "TRANSGENIC PLANTS",
+      "target": "INSECT RESISTANCE",
+      "description": "enhances",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "CHEILOMENES SEXMACULATUS",
+      "target": "NATURAL ENEMIES",
+      "description": "is a member of",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "CHEILOMENES SEXMACULATUS",
+      "target": "APHIDS",
+      "description": "preys on",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "CHEILOMENES SEXMACULATUS",
+      "target": "LEPIDOPTERANS",
+      "description": "preys on",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "CHEILOMENES SEXMACULATUS",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "preys on",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "DIRECT EXPOSURE",
+      "target": "LARVAL SURVIVAL",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "DIRECT EXPOSURE",
+      "target": "ADULT EMERGENCE",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "CRY1AB",
+      "target": "DIRECT EXPOSURE",
+      "description": "is the agent of",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "CRY1AC",
+      "target": "DIRECT EXPOSURE",
+      "description": "is the agent of",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "APHIS CRACCIVORA",
+      "target": "INDIRECT EXPOSURE",
+      "description": "is the vector for",
+      "weight": "10",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "INDIRECT EXPOSURE",
+      "target": "CHEILOMENES SEXMACULATUS",
+      "description": "has no adverse effects on",
+      "weight": "8",
+      "source_id": "paper_346"
+    },
+    {
+      "source": "GENETIC MODIFICATION",
+      "target": "TRANSGENIC PLANTS",
+      "description": "creates",
+      "weight": "10",
+      "source_id": "paper_346"
+    }
+  ]
+}

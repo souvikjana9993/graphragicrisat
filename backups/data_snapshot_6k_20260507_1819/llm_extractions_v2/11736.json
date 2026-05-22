@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "FLOOD VULNERABILITY ZONE",
+      "type": "CONCEPT",
+      "description": "Areas identified as susceptible to flood damage to minimize associated losses",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "FLOOD",
+      "type": "CONDITION",
+      "description": "The natural disaster event causing damage in the river basin",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "HYDRODYNAMIC MODELING",
+      "type": "METHOD",
+      "description": "A technique used to simulate water flow and identify flood vulnerability zones",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "LOWER DAMODAR RIVER",
+      "type": "LOCATION",
+      "description": "The specific river section in eastern India where the study was conducted",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "EASTERN INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region containing the lower Damodar river",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "ARCGIS",
+      "type": "METHOD",
+      "description": "The software environment used for preprocessing data and preparing input geometry",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "SATELLITE IMAGERY",
+      "type": "METHOD",
+      "description": "High resolution imagery used to prepare river network and bank line data",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "FIELD SURVEY",
+      "type": "METHOD",
+      "description": "On-site data collection used for model input and validation",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "MANNING'S COEFFICIENT OF ROUGHNESS",
+      "type": "CONCEPT",
+      "description": "A parameter used for the calibration of the hydrodynamic model",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "INDEX OF AGREEMENT",
+      "type": "METHOD",
+      "description": "A metric used to estimate the efficiency and agreement of the model with observed data",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "FLOODING HOTSPOTS",
+      "type": "CONCEPT",
+      "description": "Specific areas demarcated by the model as being highly vulnerable to flooding",
+      "source_id": "paper_11736"
+    },
+    {
+      "name": "BIFURCATION POINT",
+      "type": "LOCATION",
+      "description": "The point where the Damodar river splits, downstream of which areas are more vulnerable",
+      "source_id": "paper_11736"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HYDRODYNAMIC MODELING",
+      "target": "FLOOD VULNERABILITY ZONE",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "HYDRODYNAMIC MODELING",
+      "target": "LOWER DAMODAR RIVER",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "LOWER DAMODAR RIVER",
+      "target": "EASTERN INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "FLOOD",
+      "target": "FLOOD VULNERABILITY ZONE",
+      "description": "defines",
+      "weight": "9",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "ARCGIS",
+      "target": "HYDRODYNAMIC MODELING",
+      "description": "used for preprocessing data for",
+      "weight": "8",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "SATELLITE IMAGERY",
+      "target": "HYDRODYNAMIC MODELING",
+      "description": "used as input for",
+      "weight": "8",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "FIELD SURVEY",
+      "target": "HYDRODYNAMIC MODELING",
+      "description": "used as input for",
+      "weight": "8",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "MANNING'S COEFFICIENT OF ROUGHNESS",
+      "target": "HYDRODYNAMIC MODELING",
+      "description": "used to calibrate",
+      "weight": "9",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "INDEX OF AGREEMENT",
+      "target": "HYDRODYNAMIC MODELING",
+      "description": "used to estimate efficiency of",
+      "weight": "9",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "HYDRODYNAMIC MODELING",
+      "target": "FLOODING HOTSPOTS",
+      "description": "used to demarcate",
+      "weight": "9",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "BIFURCATION POINT",
+      "target": "FLOODING HOTSPOTS",
+      "description": "influences location of",
+      "weight": "8",
+      "source_id": "paper_11736"
+    },
+    {
+      "source": "LOWER DAMODAR RIVER",
+      "target": "BIFURCATION POINT",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11736"
+    }
+  ]
+}

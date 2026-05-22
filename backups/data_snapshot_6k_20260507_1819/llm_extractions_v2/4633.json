@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A pulse crop (Cajanus cajan Millsp.) that suffers major yield losses from pod borer attack in India.",
+      "source_id": "paper_4633"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A pulse crop (Cicer arietinum L.) that suffers major yield losses from pod borer attack in India.",
+      "source_id": "paper_4633"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pod borer pest that causes significant economic losses in pulse crops.",
+      "source_id": "paper_4633"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where pigeonpea and chickpea are grown and attacked by H. armigera.",
+      "source_id": "paper_4633"
+    },
+    {
+      "name": "CHEMICAL CONTROL",
+      "type": "METHOD",
+      "description": "The use of insecticides to manage pests, which is described as risky and unsatisfactory.",
+      "source_id": "paper_4633"
+    },
+    {
+      "name": "HOST PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The inherent ability of a plant to resist pest attack, suggested as a key component of IPM.",
+      "source_id": "paper_4633"
+    },
+    {
+      "name": "INTEGRATED PEST MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "A comprehensive pest management strategy that incorporates various control methods.",
+      "source_id": "paper_4633"
+    },
+    {
+      "name": "INSECTICIDE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of pests to survive exposure to insecticides over time.",
+      "source_id": "paper_4633"
+    },
+    {
+      "name": "ENVIRONMENTAL POLLUTION",
+      "type": "CONDITION",
+      "description": "A negative consequence resulting from the use of chemical control methods.",
+      "source_id": "paper_4633"
+    },
+    {
+      "name": "TOXICITY",
+      "type": "CONDITION",
+      "description": "A harmful effect associated with the use of insecticides in chemical control.",
+      "source_id": "paper_4633"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "PIGEONPEA",
+      "description": "causes yield losses in",
+      "weight": "10",
+      "source_id": "paper_4633"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "causes yield losses in",
+      "weight": "10",
+      "source_id": "paper_4633"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "INDIA",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_4633"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "INDIA",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_4633"
+    },
+    {
+      "source": "CHEMICAL CONTROL",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "is used to control",
+      "weight": "7",
+      "source_id": "paper_4633"
+    },
+    {
+      "source": "CHEMICAL CONTROL",
+      "target": "ENVIRONMENTAL POLLUTION",
+      "description": "leads to",
+      "weight": "8",
+      "source_id": "paper_4633"
+    },
+    {
+      "source": "CHEMICAL CONTROL",
+      "target": "TOXICITY",
+      "description": "leads to",
+      "weight": "8",
+      "source_id": "paper_4633"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "INSECTICIDE RESISTANCE",
+      "description": "develops",
+      "weight": "9",
+      "source_id": "paper_4633"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "INTEGRATED PEST MANAGEMENT",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_4633"
+    },
+    {
+      "source": "HOST PLANT RESISTANCE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "is used for the control of",
+      "weight": "9",
+      "source_id": "paper_4633"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "entities": [
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The process of wearing away of topsoil by physical forces such as water and wind",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "LAND QUALITIES",
+      "type": "CONCEPT",
+      "description": "The physical and chemical properties of land that determine its suitability for various uses",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "WATER RESOURCES",
+      "type": "CONCEPT",
+      "description": "Sources of water that are potentially useful as reservoirs or as sources of water supply",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "ETHIOPIA",
+      "type": "LOCATION",
+      "description": "A country in East Africa where the study was conducted",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "TOPOGRAPHIC FEATURES",
+      "type": "CONCEPT",
+      "description": "The physical features of an area of land, such as slope and elevation",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "LAND-USE/LAND-COVER PATTERN",
+      "type": "CONCEPT",
+      "description": "The spatial arrangement of different land uses and land cover types",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "YEZAT WATERSHED",
+      "type": "LOCATION",
+      "description": "The specific geographic area in North Western Ethiopia where the research was conducted",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "LANDSAT IMAGERIES",
+      "type": "METHOD",
+      "description": "Satellite imagery used for monitoring land cover changes",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "SUPERVISED CLASSIFICATION",
+      "type": "METHOD",
+      "description": "A process of categorizing pixels in an image into predefined classes",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "MAXIMUM LIKELIHOOD ALGORITHM",
+      "type": "METHOD",
+      "description": "A statistical method used within supervised classification to assign pixels to classes",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "BIOMASS LEVELS",
+      "type": "CONCEPT",
+      "description": "The total mass of organisms in a given area or volume",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "type": "METHOD",
+      "description": "A graphical indicator used to analyze remote sensing imagery to assess vegetation health",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "REVISED UNIVERSAL SOIL LOSS EQUATION",
+      "type": "METHOD",
+      "description": "A mathematical model used to estimate the average annual rate of soil erosion",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "GIS",
+      "type": "METHOD",
+      "description": "Geographic Information System used for capturing, storing, and analyzing spatial data",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "SOIL EROSION RISK",
+      "type": "CONCEPT",
+      "description": "The potential for soil to be eroded based on various environmental factors",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "GRASSLAND",
+      "type": "CONCEPT",
+      "description": "Land covered with grass",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "WOODLAND",
+      "type": "CONCEPT",
+      "description": "Land covered with trees",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "HOMESTEADS",
+      "type": "CONCEPT",
+      "description": "Residential areas within the watershed",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "CULTIVATED LAND",
+      "type": "CONCEPT",
+      "description": "Land used for agricultural crops",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "SHRUB/BUSHLAND",
+      "type": "CONCEPT",
+      "description": "Land covered with shrubs and bushes",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "VEGETATION COVER",
+      "type": "CONCEPT",
+      "description": "The proportion of the ground surface covered by vegetation",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "INTEGRATED WATERSHED DEVELOPMENT PROGRAM",
+      "type": "METHOD",
+      "description": "A program implemented to manage and develop watershed resources",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "SOIL LOSSES",
+      "type": "CONCEPT",
+      "description": "The amount of soil removed from a site by erosion",
+      "source_id": "paper_10068"
+    },
+    {
+      "name": "SUSTAINABLE LAND MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Approaches to land use that maintain soil health and productivity",
+      "source_id": "paper_10068"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL EROSION",
+      "target": "LAND QUALITIES",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "WATER RESOURCES",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "ETHIOPIA",
+      "target": "TOPOGRAPHIC FEATURES",
+      "description": "has",
+      "weight": "7",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "TOPOGRAPHIC FEATURES",
+      "target": "SOIL EROSION",
+      "description": "contributes to",
+      "weight": "9",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "YEZAT WATERSHED",
+      "target": "ETHIOPIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "LANDSAT IMAGERIES",
+      "target": "LAND-USE/LAND-COVER PATTERN",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "SUPERVISED CLASSIFICATION",
+      "target": "LANDSAT IMAGERIES",
+      "description": "used to classify",
+      "weight": "9",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "MAXIMUM LIKELIHOOD ALGORITHM",
+      "target": "SUPERVISED CLASSIFICATION",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "BIOMASS LEVELS",
+      "description": "used to classify",
+      "weight": "9",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "REVISED UNIVERSAL SOIL LOSS EQUATION",
+      "target": "SOIL EROSION RISK",
+      "description": "used to quantify",
+      "weight": "10",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "GIS",
+      "target": "REVISED UNIVERSAL SOIL LOSS EQUATION",
+      "description": "environment for",
+      "weight": "9",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "INTEGRATED WATERSHED DEVELOPMENT PROGRAM",
+      "target": "VEGETATION COVER",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "VEGETATION COVER",
+      "description": "indicates",
+      "weight": "8",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "SUSTAINABLE LAND MANAGEMENT PRACTICES",
+      "target": "SOIL EROSION",
+      "description": "mitigates",
+      "weight": "9",
+      "source_id": "paper_10068"
+    },
+    {
+      "source": "SOIL EROSION",
+      "target": "SOIL LOSSES",
+      "description": "measured as",
+      "weight": "10",
+      "source_id": "paper_10068"
+    }
+  ]
+}

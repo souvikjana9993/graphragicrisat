@@ -1,0 +1,259 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop used in sequential and intercrop systems",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used in sequential cropping systems",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A legume crop used in sequential and intercrop systems",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "An oilseed crop used in sequential and intercrop systems",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop used in intercrop systems",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "ENSO",
+      "type": "CONDITION",
+      "description": "El Niño-Southern Oscillation, a climate pattern affecting rainfall",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "LA-NIÑA",
+      "type": "CONDITION",
+      "description": "A phase of ENSO associated with specific rainfall patterns",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "EL NIÑO",
+      "type": "CONDITION",
+      "description": "A phase of ENSO associated with specific rainfall patterns",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "NEUTRAL YEARS",
+      "type": "CONDITION",
+      "description": "A phase of ENSO where neither El Niño nor La Niña is dominant",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount and distribution of precipitation affecting crop productivity",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "CROP SIMULATION MODELS",
+      "type": "METHOD",
+      "description": "Computational tools used to evaluate cropping system productivity and income",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "LONG-TERM WEATHER RECORDS",
+      "type": "METHOD",
+      "description": "Historical weather data used for simulation analysis",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "NET INCOME",
+      "type": "CONCEPT",
+      "description": "The financial return derived from cropping systems",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The measure of crop output per unit area",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "CROPPING SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The arrangement of crops in sequence or intercrop on a piece of land",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "CLIMATIC RISKS",
+      "type": "CONDITION",
+      "description": "Risks to crop production caused by weather variability",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "NANDYAL",
+      "type": "LOCATION",
+      "description": "A site in the Kurnool district of Andhra Pradesh",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "KURNOOL DISTRICT",
+      "type": "LOCATION",
+      "description": "A district in Andhra Pradesh",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "A state in southern India",
+      "source_id": "paper_2698"
+    },
+    {
+      "name": "SOUTHERN INDIA",
+      "type": "LOCATION",
+      "description": "The region where the study was conducted",
+      "source_id": "paper_2698"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROPPING SYSTEMS",
+      "target": "PRODUCTIVITY",
+      "description": "determines",
+      "weight": "8",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "RAINFALL",
+      "target": "PRODUCTIVITY",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "ENSO",
+      "target": "RAINFALL",
+      "description": "determines potential of rainy season",
+      "weight": "8",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "CROP SIMULATION MODELS",
+      "target": "CROPPING SYSTEMS",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "LONG-TERM WEATHER RECORDS",
+      "target": "CROP SIMULATION MODELS",
+      "description": "used as input for",
+      "weight": "9",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "CROP SIMULATION MODELS",
+      "target": "NET INCOME",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "CROP SIMULATION MODELS",
+      "target": "PRODUCTIVITY",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "MAIZE",
+      "target": "CROPPING SYSTEMS",
+      "description": "component of",
+      "weight": "10",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "CROPPING SYSTEMS",
+      "description": "component of",
+      "weight": "10",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "SOYBEAN",
+      "target": "CROPPING SYSTEMS",
+      "description": "component of",
+      "weight": "10",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "CROPPING SYSTEMS",
+      "description": "component of",
+      "weight": "10",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "CROPPING SYSTEMS",
+      "description": "component of",
+      "weight": "10",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "LA-NIÑA",
+      "target": "NET INCOME",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "EL NIÑO",
+      "target": "NET INCOME",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "NEUTRAL YEARS",
+      "target": "NET INCOME",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "NANDYAL",
+      "target": "KURNOOL DISTRICT",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "KURNOOL DISTRICT",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "ANDHRA PRADESH",
+      "target": "SOUTHERN INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2698"
+    },
+    {
+      "source": "ENSO",
+      "target": "CLIMATIC RISKS",
+      "description": "helps manage",
+      "weight": "7",
+      "source_id": "paper_2698"
+    }
+  ]
+}

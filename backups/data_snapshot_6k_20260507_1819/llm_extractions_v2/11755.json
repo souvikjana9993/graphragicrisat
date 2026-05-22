@@ -1,0 +1,240 @@
+{
+  "entities": [
+    {
+      "name": "INDIAN DILL SEED",
+      "type": "CROP",
+      "description": "An aromatic herb and seed spice (Anethum sowa Roxb. ex Fleming) used for medicinal purposes",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "APIACEAE",
+      "type": "ORGANISM",
+      "description": "The plant family to which Indian dill seed belongs",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "MEDICINAL PROPERTIES",
+      "type": "TRAIT",
+      "description": "Therapeutic attributes associated with Indian dill seed",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "BREEDING AND CROP IMPROVEMENT",
+      "type": "CONCEPT",
+      "description": "The process of enhancing the genetic traits of crops",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "MOLECULAR MARKERS",
+      "type": "CONCEPT",
+      "description": "DNA sequences used to identify specific locations on a chromosome to facilitate breeding",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "GENOMIC SSR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Simple Sequence Repeat markers developed through in-silico methods for Indian dill seed",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "NEXT-GENERATION SEQUENCING",
+      "type": "METHOD",
+      "description": "High-throughput DNA sequencing technology used for marker development",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "MISEQ NGS PLATFORM",
+      "type": "METHOD",
+      "description": "The specific sequencing hardware used to generate raw genomic data",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "SURVEY SEQUENCING",
+      "type": "METHOD",
+      "description": "A method of sequencing used to obtain a broad overview of the genome",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "SPADES ASSEMBLER",
+      "type": "METHOD",
+      "description": "A bioinformatics tool used to assemble raw sequencing reads into contigs",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "REPEAT MOTIFS",
+      "type": "GENE_MARKER",
+      "description": "Recurring DNA sequences identified within genomic contigs",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "PRIMER PAIRS",
+      "type": "GENE_MARKER",
+      "description": "Short DNA sequences designed to amplify specific repeat motifs",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "MONONUCLEOTIDES",
+      "type": "GENE_MARKER",
+      "description": "A specific type of repeat motif consisting of a single repeating nucleotide",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "AMPLICONS",
+      "type": "GENE_MARKER",
+      "description": "DNA fragments produced by the amplification of primer pairs",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "CROSS-GENERA AMPLIFICATION",
+      "type": "METHOD",
+      "description": "The process of testing markers across different but related plant genera",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "MOLECULAR BREEDING PROGRAM",
+      "type": "CONCEPT",
+      "description": "A breeding strategy utilizing molecular markers for trait selection",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "ASSOCIATION MAPPING",
+      "type": "METHOD",
+      "description": "A method used to link genetic markers to specific traits",
+      "source_id": "paper_11755"
+    },
+    {
+      "name": "EVOLUTIONARY RELATIONSHIP",
+      "type": "CONCEPT",
+      "description": "The ancestral and genetic connections between different seed spices",
+      "source_id": "paper_11755"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INDIAN DILL SEED",
+      "target": "APIACEAE",
+      "description": "belongs to",
+      "weight": "10",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "INDIAN DILL SEED",
+      "target": "MEDICINAL PROPERTIES",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "INDIAN DILL SEED",
+      "target": "BREEDING AND CROP IMPROVEMENT",
+      "description": "target of",
+      "weight": "9",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "MOLECULAR MARKERS",
+      "target": "BREEDING AND CROP IMPROVEMENT",
+      "description": "facilitate",
+      "weight": "9",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "GENOMIC SSR MARKERS",
+      "target": "MOLECULAR MARKERS",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "NEXT-GENERATION SEQUENCING",
+      "target": "GENOMIC SSR MARKERS",
+      "description": "used to develop",
+      "weight": "10",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "MISEQ NGS PLATFORM",
+      "target": "SURVEY SEQUENCING",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "SURVEY SEQUENCING",
+      "target": "NEXT-GENERATION SEQUENCING",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "SPADES ASSEMBLER",
+      "target": "SURVEY SEQUENCING",
+      "description": "used to process data from",
+      "weight": "9",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "REPEAT MOTIFS",
+      "target": "SPADES ASSEMBLER",
+      "description": "identified using",
+      "weight": "9",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "PRIMER PAIRS",
+      "target": "REPEAT MOTIFS",
+      "description": "produced from",
+      "weight": "10",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "MONONUCLEOTIDES",
+      "target": "REPEAT MOTIFS",
+      "description": "type of",
+      "weight": "10",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "AMPLICONS",
+      "target": "PRIMER PAIRS",
+      "description": "produced by",
+      "weight": "10",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "PRIMER PAIRS",
+      "target": "INDIAN DILL SEED",
+      "description": "amplified in",
+      "weight": "10",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "CROSS-GENERA AMPLIFICATION",
+      "target": "PRIMER PAIRS",
+      "description": "used to test",
+      "weight": "9",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "GENOMIC SSR MARKERS",
+      "target": "MOLECULAR BREEDING PROGRAM",
+      "description": "used to initiate",
+      "weight": "9",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "GENOMIC SSR MARKERS",
+      "target": "ASSOCIATION MAPPING",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_11755"
+    },
+    {
+      "source": "GENOMIC SSR MARKERS",
+      "target": "EVOLUTIONARY RELATIONSHIP",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_11755"
+    }
+  ]
+}

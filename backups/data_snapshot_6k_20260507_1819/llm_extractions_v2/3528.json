@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop being bred at ICRISAT to improve yield and resistance",
+      "source_id": "paper_3528"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of developing high yielding breeding lines or populations",
+      "source_id": "paper_3528"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics where the breeding program is conducted",
+      "source_id": "paper_3528"
+    },
+    {
+      "name": "HIGH YIELD",
+      "type": "TRAIT",
+      "description": "The ability of the crop to produce a large amount of harvestable product",
+      "source_id": "paper_3528"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the crop to withstand factors limiting production",
+      "source_id": "paper_3528"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BREEDING",
+      "target": "GROUNDNUT",
+      "description": "Breeding work is performed on groundnut",
+      "weight": "10",
+      "source_id": "paper_3528"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "BREEDING",
+      "description": "ICRISAT is the institution conducting the breeding program",
+      "weight": "10",
+      "source_id": "paper_3528"
+    },
+    {
+      "source": "BREEDING",
+      "target": "HIGH YIELD",
+      "description": "The objective of breeding is to produce high yielding lines",
+      "weight": "9",
+      "source_id": "paper_3528"
+    },
+    {
+      "source": "BREEDING",
+      "target": "RESISTANCE",
+      "description": "The objective of breeding is to produce resistance to limiting factors",
+      "weight": "9",
+      "source_id": "paper_3528"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "HIGH YIELD",
+      "description": "High yield is a desired trait for groundnut",
+      "weight": "8",
+      "source_id": "paper_3528"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "RESISTANCE",
+      "description": "Resistance is a desired trait for groundnut",
+      "weight": "8",
+      "source_id": "paper_3528"
+    }
+  ]
+}

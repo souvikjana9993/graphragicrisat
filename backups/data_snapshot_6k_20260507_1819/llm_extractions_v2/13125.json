@@ -1,0 +1,236 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "Groundnut (Arachis hypogaea L.), the crop studied for disease resistance and pod weight",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "EARLY LEAF SPOT",
+      "type": "CONDITION",
+      "description": "A disease caused by Cercospora arachidicola S. Hori that affects groundnut production",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "CERCOSPORA ARACHIDICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for causing early leaf spot in groundnut",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "ELS RESISTANCE",
+      "type": "TRAIT",
+      "description": "The trait of being resistant to early leaf spot disease in groundnut",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "POD WEIGHT",
+      "type": "TRAIT",
+      "description": "A phenotypic trait measuring the weight of groundnut pods",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "CONVENTIONAL BREEDING",
+      "type": "METHOD",
+      "description": "Traditional breeding methods used to develop resistant groundnut varieties",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "MARKER-TRAIT ASSOCIATIONS",
+      "type": "CONCEPT",
+      "description": "Statistical associations between genetic markers and specific phenotypic traits",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "DARTSEQ",
+      "type": "METHOD",
+      "description": "Diversity array technology used for high-throughput genotyping of groundnut accessions",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "SILICO DART MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Dominant markers generated through the DArTseq process",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Biallelic single nucleotide polymorphism markers used for genome-wide detection",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "HERITABILITY",
+      "type": "CONCEPT",
+      "description": "The measure of the proportion of phenotypic variation attributable to genetic factors for ELS and pod weight",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "CHROMOSOME B04",
+      "type": "CONCEPT",
+      "description": "A specific chromosome in the groundnut genome with a high density of markers",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "CHROMOSOME A04",
+      "type": "CONCEPT",
+      "description": "A specific chromosome in the groundnut genome with a high density of markers",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "MARKER-ASSISTED SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method using genetic markers to select for desired traits like ELS resistance",
+      "source_id": "paper_13125"
+    },
+    {
+      "name": "TRAIT INTROGRESSION",
+      "type": "METHOD",
+      "description": "The process of incorporating a specific trait from one genetic background into another",
+      "source_id": "paper_13125"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CERCOSPORA ARACHIDICOLA",
+      "target": "EARLY LEAF SPOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "EARLY LEAF SPOT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "ELS RESISTANCE",
+      "target": "GROUNDNUT",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "POD WEIGHT",
+      "target": "GROUNDNUT",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "CONVENTIONAL BREEDING",
+      "target": "ELS RESISTANCE",
+      "description": "used to develop",
+      "weight": "7",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "DARTSEQ",
+      "target": "SILICO DART MARKERS",
+      "description": "generates",
+      "weight": "10",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "DARTSEQ",
+      "target": "SNP MARKERS",
+      "description": "generates",
+      "weight": "10",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "ELS RESISTANCE",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "POD WEIGHT",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "SILICO DART MARKERS",
+      "target": "ELS RESISTANCE",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "SILICO DART MARKERS",
+      "target": "POD WEIGHT",
+      "description": "associated with",
+      "weight": "8",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "MARKER-TRAIT ASSOCIATIONS",
+      "target": "ELS RESISTANCE",
+      "description": "links markers to",
+      "weight": "9",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "MARKER-TRAIT ASSOCIATIONS",
+      "target": "POD WEIGHT",
+      "description": "links markers to",
+      "weight": "9",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "CHROMOSOME B04",
+      "description": "located on",
+      "weight": "7",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "CHROMOSOME A04",
+      "description": "located on",
+      "weight": "7",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "SILICO DART MARKERS",
+      "target": "CHROMOSOME B04",
+      "description": "located on",
+      "weight": "7",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "SILICO DART MARKERS",
+      "target": "CHROMOSOME A04",
+      "description": "located on",
+      "weight": "7",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "MARKER-ASSISTED SELECTION",
+      "target": "SNP MARKERS",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "MARKER-ASSISTED SELECTION",
+      "target": "ELS RESISTANCE",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_13125"
+    },
+    {
+      "source": "TRAIT INTROGRESSION",
+      "target": "ELS RESISTANCE",
+      "description": "targets",
+      "weight": "9",
+      "source_id": "paper_13125"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "entities": [
+    {
+      "name": "UPLAND RICE",
+      "type": "CROP",
+      "description": "A type of rice grown in non-flooded areas used in intercropping studies.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop evaluated for its canopy structure and phenology in intercropping.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A medium deep soil type used as the growth medium for the intercrop components.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "CROP PERFORMANCE RATIO",
+      "type": "CONCEPT",
+      "description": "A metric used to determine the productivity of intercrop components relative to sole crops.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "PHENOLOGY",
+      "type": "CONCEPT",
+      "description": "The timing of plant development stages, used to distinguish pigeonpea cultivars.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "CANOPY STRUCTURE",
+      "type": "TRAIT",
+      "description": "The physical architecture of the plant canopy, which influences light transmission.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "LIGHT TRANSMISSION COEFFICIENTS",
+      "type": "TRAIT",
+      "description": "A measurement (K) indicating the amount of light passing through the crop canopy.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "RELATIVE HEIGHT",
+      "type": "TRAIT",
+      "description": "The height of intercropped plants relative to each other, affecting competition.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "COMPETITIVE ABILITY",
+      "type": "CONCEPT",
+      "description": "The capacity of a crop to compete for resources, such as light, in an intercropping system.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "LOW LIGHT AND SHADING",
+      "type": "CONDITION",
+      "description": "Environmental conditions resulting from canopy overlap that can negatively affect crop yield.",
+      "source_id": "paper_2975"
+    },
+    {
+      "name": "REPRODUCTIVE PHASE",
+      "type": "CONCEPT",
+      "description": "The growth stage of the plant where it is most sensitive to light and shading.",
+      "source_id": "paper_2975"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UPLAND RICE",
+      "target": "PIGEONPEA",
+      "description": "Intercropped together to examine productivity and interactions",
+      "weight": "10",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "UPLAND RICE",
+      "target": "VERTISOL",
+      "description": "Grown on a medium deep Vertisol soil",
+      "weight": "7",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "VERTISOL",
+      "description": "Grown on a medium deep Vertisol soil",
+      "weight": "7",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "CROP PERFORMANCE RATIO",
+      "target": "UPLAND RICE",
+      "description": "Used to determine the productivity of intercropped rice",
+      "weight": "8",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "CROP PERFORMANCE RATIO",
+      "target": "PIGEONPEA",
+      "description": "Used to determine the productivity of intercropped pigeonpea",
+      "weight": "8",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "CANOPY STRUCTURE",
+      "target": "PIGEONPEA",
+      "description": "A key trait of pigeonpea that affects the productivity of the intercrop",
+      "weight": "9",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "CANOPY STRUCTURE",
+      "target": "PHENOLOGY",
+      "description": "Found to be more important than phenology in determining intercrop performance",
+      "weight": "6",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "LIGHT TRANSMISSION COEFFICIENTS",
+      "target": "PIGEONPEA",
+      "description": "A trait measured in pigeonpea to assess light availability for the understory crop",
+      "weight": "9",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "LIGHT TRANSMISSION COEFFICIENTS",
+      "target": "UPLAND RICE",
+      "description": "Affects the yield of intercropped rice",
+      "weight": "8",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "RELATIVE HEIGHT",
+      "target": "COMPETITIVE ABILITY",
+      "description": "Determines the competitive ability of the crops in the intercrop system",
+      "weight": "8",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "RELATIVE HEIGHT",
+      "target": "UPLAND RICE",
+      "description": "A factor determining the competitive ability of rice",
+      "weight": "7",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "RELATIVE HEIGHT",
+      "target": "PIGEONPEA",
+      "description": "A factor determining the competitive ability of pigeonpea",
+      "weight": "7",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "UPLAND RICE",
+      "target": "LOW LIGHT AND SHADING",
+      "description": "Highly sensitive to these conditions",
+      "weight": "9",
+      "source_id": "paper_2975"
+    },
+    {
+      "source": "LOW LIGHT AND SHADING",
+      "target": "REPRODUCTIVE PHASE",
+      "description": "Particularly impactful during this growth stage",
+      "weight": "8",
+      "source_id": "paper_2975"
+    }
+  ]
+}

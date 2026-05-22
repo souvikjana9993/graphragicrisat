@@ -1,0 +1,192 @@
+{
+  "entities": [
+    {
+      "name": "MACROPHOMINA PHASEOLINA",
+      "type": "ORGANISM",
+      "description": "A fungal pathogen that produces sclerotia in the soil",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "SCLEROTIA",
+      "type": "CONCEPT",
+      "description": "Survival structures of Macrophomina phaseolina used to measure population density",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A type of clay-rich soil used in the cropping system experiment",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics Center",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "PATANCHERU, INDIA",
+      "type": "LOCATION",
+      "description": "The specific geographic location of the research center",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop used in various cropping systems",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "COWPEA",
+      "type": "CROP",
+      "description": "A legume crop used in intercropping systems",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "A legume crop used in intercropping systems",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "SAFFLOWER",
+      "type": "CROP",
+      "description": "An oilseed crop used in crop rotations",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cicer arietinum) used in crop rotations",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "CROPPING SYSTEMS",
+      "type": "METHOD",
+      "description": "The arrangement and sequence of crops grown on a piece of land",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "INTERCROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing two or more crops simultaneously on the same field",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "SINGLE-CROPPING",
+      "type": "METHOD",
+      "description": "The practice of growing only one crop on a field",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period of high precipitation during the cropping cycle",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "POSTRAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period following the rainy season during the cropping cycle",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "FALLOW",
+      "type": "METHOD",
+      "description": "Leaving the land unseeded for a period of time",
+      "source_id": "paper_4982"
+    },
+    {
+      "name": "INOCULUM DENSITY",
+      "type": "CONCEPT",
+      "description": "The concentration of the pathogen in the soil",
+      "source_id": "paper_4982"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROPPING SYSTEMS",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "Influence the populations of the pathogen in soil",
+      "weight": "9",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "INTERCROPPING",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "Leads to higher counts of sclerotia compared to single-cropping",
+      "weight": "8",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "Associated with higher sclerotia counts when intercropped with pigeon pea",
+      "weight": "7",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "COWPEA",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "Associated with higher sclerotia counts when intercropped with pigeon pea",
+      "weight": "7",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "Associated with higher sclerotia counts when intercropped with sorghum or cowpea",
+      "weight": "7",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "SAFFLOWER",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "Associated with an increase in sclerotia populations when following rainy season sorghum",
+      "weight": "6",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "Associated with an increase in sclerotia populations when following rainy season sorghum",
+      "weight": "6",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "FALLOW",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "Stabilizes the inoculum density of the pathogen",
+      "weight": "8",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "SCLEROTIA",
+      "description": "Produces sclerotia as survival structures",
+      "weight": "10",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "INOCULUM DENSITY",
+      "description": "The population level of the pathogen in the soil",
+      "weight": "10",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "MACROPHOMINA PHASEOLINA",
+      "description": "The soil type where the pathogen populations were studied",
+      "weight": "7",
+      "source_id": "paper_4982"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "PATANCHERU, INDIA",
+      "description": "Located in Patancheru, India",
+      "weight": "10",
+      "source_id": "paper_4982"
+    }
+  ]
+}

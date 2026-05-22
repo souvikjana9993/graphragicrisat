@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "SWEET SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor L. Moench used for bio-ethanol, grain, and fodder production",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The quantity of grain produced by sweet sorghum",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "STOVER YIELD",
+      "type": "TRAIT",
+      "description": "The quantity of stover produced by sweet sorghum",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "JUICE EXTRACT YIELD",
+      "type": "TRAIT",
+      "description": "The quantity of juice extracted from stems for bio-ethanol distillation",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "BAGASSE YIELD",
+      "type": "TRAIT",
+      "description": "The quantity of bagasse produced from sweet sorghum",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "BIO-ETHANOL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of producing bio-ethanol from sweet sorghum juice",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "NITROGEN CONTENT",
+      "type": "TRAIT",
+      "description": "The percentage of nitrogen found in sweet sorghum stover",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "IN VITRO DIGESTIBILITY",
+      "type": "TRAIT",
+      "description": "The measure of how well stover and bagasse are digested in a laboratory setting",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "PALATABILITY",
+      "type": "TRAIT",
+      "description": "The degree to which cattle find bagasse and stripped leaves acceptable to eat",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "CATTLE",
+      "type": "ORGANISM",
+      "description": "Livestock used to evaluate the palatability of sorghum residues",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "DISTILLERY RESIDUES",
+      "type": "CONCEPT",
+      "description": "The materials remaining after the distillation of bio-ethanol",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "COMMERCIAL FEED BLOCK",
+      "type": "CONCEPT",
+      "description": "A processed feed product used for cattle nutrition",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "SORGHUM STOVER",
+      "type": "CROP",
+      "description": "Stover from non-sweet sorghum used as a traditional feed source",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "DRY MATTER INTAKE",
+      "type": "TRAIT",
+      "description": "The amount of dry feed consumed by bulls",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "LIVE WEIGHT GAIN",
+      "type": "TRAIT",
+      "description": "The increase in body weight of bulls during the feeding trial",
+      "source_id": "paper_340"
+    },
+    {
+      "name": "BULLS",
+      "type": "ORGANISM",
+      "description": "Male cattle used as subjects in the feeding trial",
+      "source_id": "paper_340"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SWEET SORGHUM",
+      "target": "GRAIN YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "SWEET SORGHUM",
+      "target": "STOVER YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "SWEET SORGHUM",
+      "target": "JUICE EXTRACT YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "SWEET SORGHUM",
+      "target": "BAGASSE YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "JUICE EXTRACT YIELD",
+      "target": "BIO-ETHANOL PRODUCTION",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "STOVER YIELD",
+      "target": "NITROGEN CONTENT",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "STOVER YIELD",
+      "target": "IN VITRO DIGESTIBILITY",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "BAGASSE YIELD",
+      "target": "IN VITRO DIGESTIBILITY",
+      "description": "characterized by",
+      "weight": "8",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "BAGASSE YIELD",
+      "target": "PALATABILITY",
+      "description": "evaluated for",
+      "weight": "8",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "DISTILLERY RESIDUES",
+      "target": "COMMERCIAL FEED BLOCK",
+      "description": "incorporated into",
+      "weight": "9",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "COMMERCIAL FEED BLOCK",
+      "target": "CATTLE",
+      "description": "fed to",
+      "weight": "10",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "CATTLE",
+      "target": "DRY MATTER INTAKE",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "CATTLE",
+      "target": "LIVE WEIGHT GAIN",
+      "description": "measured by",
+      "weight": "9",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "BULLS",
+      "target": "CATTLE",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "STOVER YIELD",
+      "description": "independent of",
+      "weight": "7",
+      "source_id": "paper_340"
+    },
+    {
+      "source": "JUICE EXTRACT YIELD",
+      "target": "GRAIN YIELD",
+      "description": "not significantly related to",
+      "weight": "6",
+      "source_id": "paper_340"
+    }
+  ]
+}

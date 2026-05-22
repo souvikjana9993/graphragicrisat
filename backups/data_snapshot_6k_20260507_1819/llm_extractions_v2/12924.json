@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "ISAT SYSTEM",
+      "type": "CONCEPT",
+      "description": "An ICT based Agro Advisory platform for location-specific informed decision-making",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "WEATHER ADVISORIES",
+      "type": "CONCEPT",
+      "description": "Data-driven, science-based guidance provided to farmers",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "CROP",
+      "type": "CROP",
+      "description": "Agricultural plants covered by the advisory system",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "CROP GROWTH STAGES",
+      "type": "CONCEPT",
+      "description": "Specific developmental phases of crops used to tailor advisories",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "SMS",
+      "type": "METHOD",
+      "description": "A text-based communication format for delivering advisories",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "MOBILE APP",
+      "type": "METHOD",
+      "description": "A software application for delivering detailed advisories",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "WHATSAPP",
+      "type": "METHOD",
+      "description": "A messaging platform used for advisory delivery",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "WEBSITE",
+      "type": "METHOD",
+      "description": "A web-based platform for accessing advisories",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "LOCAL LANGUAGES",
+      "type": "CONCEPT",
+      "description": "Regional languages used to translate advisories for better accessibility",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "LOCATION-SPECIFIC INFORMATION",
+      "type": "CONCEPT",
+      "description": "Data tailored to specific geographic areas incorporated via lookup tables and direct input",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "DECISION-MAKING PROCESS",
+      "type": "METHOD",
+      "description": "The refined logic used by the system to generate advisories aligned with farmers' needs",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "DATA AVAILABILITY",
+      "type": "CONDITION",
+      "description": "The availability of reliable and consistent data required for context-specific advisories",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "GOVERNMENT POLICIES",
+      "type": "CONCEPT",
+      "description": "Regulations affecting bulk SMS and data privacy",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "DATA PRIVACY",
+      "type": "CONCEPT",
+      "description": "Policies regarding the protection of user data",
+      "source_id": "paper_12924"
+    },
+    {
+      "name": "USER AWARENESS",
+      "type": "CONCEPT",
+      "description": "The capacity and knowledge of users to utilize information effectively",
+      "source_id": "paper_12924"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ISAT SYSTEM",
+      "target": "WEATHER ADVISORIES",
+      "description": "generates",
+      "weight": "10",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "ISAT SYSTEM",
+      "target": "CROP",
+      "description": "covers",
+      "weight": "9",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "WEATHER ADVISORIES",
+      "target": "CROP GROWTH STAGES",
+      "description": "tailored to",
+      "weight": "8",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "WEATHER ADVISORIES",
+      "target": "SMS",
+      "description": "delivered via",
+      "weight": "7",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "WEATHER ADVISORIES",
+      "target": "MOBILE APP",
+      "description": "delivered via",
+      "weight": "7",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "WEATHER ADVISORIES",
+      "target": "WHATSAPP",
+      "description": "delivered via",
+      "weight": "7",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "WEATHER ADVISORIES",
+      "target": "WEBSITE",
+      "description": "delivered via",
+      "weight": "7",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "WEATHER ADVISORIES",
+      "target": "LOCAL LANGUAGES",
+      "description": "translated into",
+      "weight": "8",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "ISAT SYSTEM",
+      "target": "LOCATION-SPECIFIC INFORMATION",
+      "description": "incorporates",
+      "weight": "9",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "ISAT SYSTEM",
+      "target": "DECISION-MAKING PROCESS",
+      "description": "uses",
+      "weight": "9",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "ISAT SYSTEM",
+      "target": "DATA AVAILABILITY",
+      "description": "constrained by",
+      "weight": "8",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "ISAT SYSTEM",
+      "target": "GOVERNMENT POLICIES",
+      "description": "constrained by",
+      "weight": "7",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "GOVERNMENT POLICIES",
+      "target": "DATA PRIVACY",
+      "description": "includes",
+      "weight": "9",
+      "source_id": "paper_12924"
+    },
+    {
+      "source": "ISAT SYSTEM",
+      "target": "USER AWARENESS",
+      "description": "constrained by",
+      "weight": "7",
+      "source_id": "paper_12924"
+    }
+  ]
+}

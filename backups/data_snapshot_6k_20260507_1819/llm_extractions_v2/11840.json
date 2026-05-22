@@ -1,0 +1,228 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the target crop of the study",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "DRY ROOT ROT",
+      "type": "CONDITION",
+      "description": "A disease caused by Rhizoctonia bataticola that constrains chickpea production",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "RHIZOCTONIA BATATICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes dry root rot",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "DRR RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea to resist dry root rot",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "RECOMBINANT INBRED LINES",
+      "type": "METHOD",
+      "description": "F9 derived lines developed from a cross between susceptible and resistant lines for mapping",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "BG 212",
+      "type": "CONCEPT",
+      "description": "A susceptible chickpea line used as a parent",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "ICCV 08305",
+      "type": "CONCEPT",
+      "description": "A moderately resistant chickpea breeding line used as a parent",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "RB 6 ISOLATE",
+      "type": "ORGANISM",
+      "description": "A specific isolate of R. bataticola used for screening",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "PAPER TOWEL METHOD",
+      "type": "METHOD",
+      "description": "A technique used to screen parental lines and RILs for disease resistance",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The research institution where the screening was conducted",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "SNP GENOTYPING",
+      "type": "METHOD",
+      "description": "The process of identifying single nucleotide polymorphisms using a genotyping platform",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "AFFYMETRIX AXIOM CICERSNP ARRAY",
+      "type": "METHOD",
+      "description": "The specific cost-effective SNP genotyping platform used in the study",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Genetic markers used to develop a high-density genetic map",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "QDRR-8",
+      "type": "GENE_MARKER",
+      "description": "A minor QTL identified on CaLG08 explaining 6.70% PVE for DRR resistance",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "CALG08",
+      "type": "GENE_MARKER",
+      "description": "The chromosome where the qDRR-8 QTL is located",
+      "source_id": "paper_11840"
+    },
+    {
+      "name": "MARKER-ASSISTED SELECTION",
+      "type": "METHOD",
+      "description": "The application of linked SNP markers in chickpea breeding programs to select for resistance",
+      "source_id": "paper_11840"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RHIZOCTONIA BATATICOLA",
+      "target": "DRY ROOT ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "DRY ROOT ROT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "DRR RESISTANCE",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "BG 212",
+      "description": "derived from",
+      "weight": "8",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "RECOMBINANT INBRED LINES",
+      "target": "ICCV 08305",
+      "description": "derived from",
+      "weight": "8",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "BG 212",
+      "target": "DRY ROOT ROT",
+      "description": "susceptible to",
+      "weight": "9",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "ICCV 08305",
+      "target": "DRY ROOT ROT",
+      "description": "resistant to",
+      "weight": "9",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "PAPER TOWEL METHOD",
+      "target": "RECOMBINANT INBRED LINES",
+      "description": "used to screen",
+      "weight": "8",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "RB 6 ISOLATE",
+      "target": "PAPER TOWEL METHOD",
+      "description": "used in",
+      "weight": "8",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "SNP GENOTYPING",
+      "target": "RECOMBINANT INBRED LINES",
+      "description": "used to genotype",
+      "weight": "8",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "AFFYMETRIX AXIOM CICERSNP ARRAY",
+      "target": "SNP GENOTYPING",
+      "description": "platform for",
+      "weight": "10",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "SNP GENOTYPING",
+      "target": "SNP MARKERS",
+      "description": "identifies",
+      "weight": "10",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "QDRR-8",
+      "description": "used to map",
+      "weight": "9",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "QDRR-8",
+      "target": "CALG08",
+      "description": "located on",
+      "weight": "10",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "QDRR-8",
+      "target": "DRR RESISTANCE",
+      "description": "confers",
+      "weight": "9",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "MARKER-ASSISTED SELECTION",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "MARKER-ASSISTED SELECTION",
+      "target": "DRR RESISTANCE",
+      "description": "used to improve",
+      "weight": "8",
+      "source_id": "paper_11840"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "PAPER TOWEL METHOD",
+      "description": "location of",
+      "weight": "7",
+      "source_id": "paper_11840"
+    }
+  ]
+}

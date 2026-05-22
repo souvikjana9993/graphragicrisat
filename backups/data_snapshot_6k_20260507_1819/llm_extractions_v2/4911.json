@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The crop species being analyzed for its susceptibility to ergot in relation to cytoplasmic male sterility",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "CYTOPLASMIC MALE STERILITY",
+      "type": "TRAIT",
+      "description": "A genetic trait where male sterility is controlled by the cytoplasm, used in the production of hybrid seeds",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "ERGOT SUSCEPTIBILITY",
+      "type": "TRAIT",
+      "description": "The vulnerability of the plant to infection by the ergot fungus, measured by severity",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "CLAVICEPS FUSIFORMIS",
+      "type": "ORGANISM",
+      "description": "The specific fungal organism responsible for causing ergot disease in pearl millet",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "CMS LINES",
+      "type": "CONCEPT",
+      "description": "Cytoplasmic male-sterile lines, also known as A lines, used as female parents in hybrid breeding",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "MAINTAINER LINES",
+      "type": "CONCEPT",
+      "description": "Lines, also known as B lines, that are genetically identical to CMS lines except for the cytoplasm, used to maintain CMS lines",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "POLLINATOR LINES",
+      "type": "CONCEPT",
+      "description": "Lines, also known as R lines, used as male parents to pollinate CMS lines for hybrid production",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "F1 HYBRIDS",
+      "type": "CONCEPT",
+      "description": "First-generation offspring resulting from crosses between A x R or B x R lines",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "CYTOPLASMIC FACTORS",
+      "type": "CONCEPT",
+      "description": "Genetic or physiological factors associated with the cytoplasm that influence flowering and disease susceptibility",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "NUCLEAR FACTORS",
+      "type": "CONCEPT",
+      "description": "Genetic factors located in the nucleus that influence flowering and disease susceptibility",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "FLOWERING EVENTS",
+      "type": "CONCEPT",
+      "description": "The biological processes of flowering that can be influenced by genetic factors and in turn affect ergot susceptibility",
+      "source_id": "paper_4911"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The agricultural method of developing improved plant varieties, specifically CMS-based F1 hybrids",
+      "source_id": "paper_4911"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CYTOPLASMIC MALE STERILITY",
+      "target": "ERGOT SUSCEPTIBILITY",
+      "description": "positively associated with",
+      "weight": "9",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "CLAVICEPS FUSIFORMIS",
+      "target": "ERGOT SUSCEPTIBILITY",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "ERGOT SUSCEPTIBILITY",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "CYTOPLASMIC MALE STERILITY",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "CMS LINES",
+      "target": "CYTOPLASMIC MALE STERILITY",
+      "description": "possess",
+      "weight": "10",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "CMS LINES",
+      "target": "ERGOT SUSCEPTIBILITY",
+      "description": "show higher severity",
+      "weight": "9",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "MAINTAINER LINES",
+      "target": "ERGOT SUSCEPTIBILITY",
+      "description": "show lower severity than CMS lines",
+      "weight": "7",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "F1 HYBRIDS",
+      "target": "ERGOT SUSCEPTIBILITY",
+      "description": "show susceptibility based on cytoplasmic origin",
+      "weight": "8",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "CYTOPLASMIC FACTORS",
+      "target": "FLOWERING EVENTS",
+      "description": "affect",
+      "weight": "7",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "NUCLEAR FACTORS",
+      "target": "FLOWERING EVENTS",
+      "description": "affect",
+      "weight": "7",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "FLOWERING EVENTS",
+      "target": "ERGOT SUSCEPTIBILITY",
+      "description": "influence",
+      "weight": "8",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "BREEDING",
+      "target": "F1 HYBRIDS",
+      "description": "produces",
+      "weight": "9",
+      "source_id": "paper_4911"
+    },
+    {
+      "source": "CYTOPLASMIC FACTORS",
+      "target": "ERGOT SUSCEPTIBILITY",
+      "description": "has a significant effect on",
+      "weight": "8",
+      "source_id": "paper_4911"
+    }
+  ]
+}

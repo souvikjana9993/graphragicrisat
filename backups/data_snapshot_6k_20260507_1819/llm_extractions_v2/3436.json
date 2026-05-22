@@ -1,0 +1,85 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume species (Cicer arietinum L.) studied for its nutritional quality",
+      "source_id": "paper_3436"
+    },
+    {
+      "name": "NUTRITIONAL QUALITY",
+      "type": "TRAIT",
+      "description": "The composition and value of nutrients within the crop",
+      "source_id": "paper_3436"
+    },
+    {
+      "name": "PROCESSING",
+      "type": "METHOD",
+      "description": "The methods used to treat the crop which affect its nutritional value",
+      "source_id": "paper_3436"
+    },
+    {
+      "name": "STORAGE",
+      "type": "CONDITION",
+      "description": "The conditions under which the crop is kept, affecting its nutritional value",
+      "source_id": "paper_3436"
+    },
+    {
+      "name": "ANTI-NUTRIENTS",
+      "type": "CONCEPT",
+      "description": "Substances that interfere with the absorption of nutrients",
+      "source_id": "paper_3436"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "NUTRITIONAL QUALITY",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_3436"
+    },
+    {
+      "source": "PROCESSING",
+      "target": "NUTRITIONAL QUALITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3436"
+    },
+    {
+      "source": "STORAGE",
+      "target": "NUTRITIONAL QUALITY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3436"
+    },
+    {
+      "source": "ANTI-NUTRIENTS",
+      "target": "NUTRITIONAL QUALITY",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_3436"
+    },
+    {
+      "source": "PROCESSING",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "7",
+      "source_id": "paper_3436"
+    },
+    {
+      "source": "STORAGE",
+      "target": "CHICKPEA",
+      "description": "applied to",
+      "weight": "7",
+      "source_id": "paper_3436"
+    },
+    {
+      "source": "ANTI-NUTRIENTS",
+      "target": "CHICKPEA",
+      "description": "present in",
+      "weight": "8",
+      "source_id": "paper_3436"
+    }
+  ]
+}

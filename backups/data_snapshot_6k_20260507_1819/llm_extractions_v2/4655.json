@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop for which CERES simulation models are developed",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal crop for which CERES simulation models are developed",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "MILLET",
+      "type": "CROP",
+      "description": "A cereal crop for which CERES simulation models are developed",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "CERES",
+      "type": "METHOD",
+      "description": "Crop growth simulation models used for various agricultural applications",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "SOYGKO",
+      "type": "METHOD",
+      "description": "A crop growth simulation model",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "PNUTGRO",
+      "type": "METHOD",
+      "description": "A crop growth simulation model",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "IBSNAT",
+      "type": "CONCEPT",
+      "description": "A data file structure used by various crop simulation models",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "WATERMAN",
+      "type": "METHOD",
+      "description": "An operational soil water balance model compatible with IBSNAT data files",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "SOIL WATER BALANCE",
+      "type": "CONCEPT",
+      "description": "The analysis of water movement and storage in the soil",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "WATER CONTENTS",
+      "type": "CONCEPT",
+      "description": "The amount of water present in various soil layers",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "IRRIGATION SCHEDULING",
+      "type": "METHOD",
+      "description": "The process of determining when to apply water to crops",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "RAINFALL PROBABILITIES",
+      "type": "CONCEPT",
+      "description": "The likelihood of precipitation used in irrigation scheduling",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "SAMARU",
+      "type": "LOCATION",
+      "description": "The location where test runs of the WATERMAN model were conducted",
+      "source_id": "paper_4655"
+    },
+    {
+      "name": "NIGERIA",
+      "type": "LOCATION",
+      "description": "The country where the test runs of the WATERMAN model were conducted",
+      "source_id": "paper_4655"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CERES",
+      "target": "SORGHUM",
+      "description": "CERES models are used for simulating growth of",
+      "weight": "9",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "CERES",
+      "target": "MAIZE",
+      "description": "CERES models are used for simulating growth of",
+      "weight": "9",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "CERES",
+      "target": "MILLET",
+      "description": "CERES models are used for simulating growth of",
+      "weight": "9",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "CERES",
+      "target": "IBSNAT",
+      "description": "CERES models use data files structured by",
+      "weight": "8",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "SOYGKO",
+      "target": "IBSNAT",
+      "description": "SOYGKO models use data files structured by",
+      "weight": "8",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "PNUTGRO",
+      "target": "IBSNAT",
+      "description": "PNUTGRO models use data files structured by",
+      "weight": "8",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "WATERMAN",
+      "target": "IBSNAT",
+      "description": "WATERMAN is compatible with the data format of",
+      "weight": "10",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "WATERMAN",
+      "target": "SOIL WATER BALANCE",
+      "description": "WATERMAN is a model developed for",
+      "weight": "10",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "WATERMAN",
+      "target": "WATER CONTENTS",
+      "description": "WATERMAN provides daily calculations of",
+      "weight": "8",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "WATERMAN",
+      "target": "IRRIGATION SCHEDULING",
+      "description": "WATERMAN can be used for",
+      "weight": "8",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "IRRIGATION SCHEDULING",
+      "target": "RAINFALL PROBABILITIES",
+      "description": "Irrigation scheduling can consider",
+      "weight": "7",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "WATERMAN",
+      "target": "SAMARU",
+      "description": "WATERMAN was tested at",
+      "weight": "9",
+      "source_id": "paper_4655"
+    },
+    {
+      "source": "SAMARU",
+      "target": "NIGERIA",
+      "description": "Samaru is located in",
+      "weight": "10",
+      "source_id": "paper_4655"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "RUNOFF",
+      "type": "CONCEPT",
+      "description": "The flow of water over the land surface during rainfall events.",
+      "source_id": "paper_2440"
+    },
+    {
+      "name": "SOIL LOSS",
+      "type": "CONCEPT",
+      "description": "The removal of soil from the land surface due to runoff.",
+      "source_id": "paper_2440"
+    },
+    {
+      "name": "SEDIMENT CONCENTRATION",
+      "type": "CONCEPT",
+      "description": "The amount of sediment particles present in the runoff water.",
+      "source_id": "paper_2440"
+    },
+    {
+      "name": "PARTICLE SIZE DISTRIBUTION",
+      "type": "CONCEPT",
+      "description": "The relative proportions of different grain sizes in the eroded sediment.",
+      "source_id": "paper_2440"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "Clay-rich soils characterized by shrinking and swelling properties.",
+      "source_id": "paper_2440"
+    },
+    {
+      "name": "ICRISAT CENTER, PATANCHERU, INDIA",
+      "type": "LOCATION",
+      "description": "The geographical site where the agricultural watersheds were studied.",
+      "source_id": "paper_2440"
+    },
+    {
+      "name": "STORM SIZE",
+      "type": "CONDITION",
+      "description": "The magnitude and intensity of rainfall events.",
+      "source_id": "paper_2440"
+    },
+    {
+      "name": "LAND MANAGEMENT SYSTEM",
+      "type": "METHOD",
+      "description": "Agricultural practices used to manage land and mitigate soil erosion.",
+      "source_id": "paper_2440"
+    },
+    {
+      "name": "CLAY CONTENT",
+      "type": "TRAIT",
+      "description": "The proportion of clay-sized particles within the eroded material or top soil.",
+      "source_id": "paper_2440"
+    },
+    {
+      "name": "TOP SOIL",
+      "type": "CONCEPT",
+      "description": "The uppermost layer of the soil profile in the watersheds.",
+      "source_id": "paper_2440"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RUNOFF",
+      "target": "SOIL LOSS",
+      "description": "Runoff events cause the erosion and removal of soil.",
+      "weight": "9",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "RUNOFF",
+      "target": "SEDIMENT CONCENTRATION",
+      "description": "Runoff rates influence the peak concentration of sediment.",
+      "weight": "8",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "RUNOFF",
+      "target": "PARTICLE SIZE DISTRIBUTION",
+      "description": "The process of runoff affects the size distribution of eroded sediment.",
+      "weight": "7",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "STORM SIZE",
+      "target": "SOIL LOSS",
+      "description": "The size of the storm affects the total amount of soil lost.",
+      "weight": "8",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "STORM SIZE",
+      "target": "PARTICLE SIZE DISTRIBUTION",
+      "description": "Storm size influences the size distribution of the eroded sediment.",
+      "weight": "7",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "LAND MANAGEMENT SYSTEM",
+      "target": "SOIL LOSS",
+      "description": "Land management systems significantly affect the amount of soil loss.",
+      "weight": "9",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "LAND MANAGEMENT SYSTEM",
+      "target": "RUNOFF",
+      "description": "Land management systems have a significant effect on runoff.",
+      "weight": "8",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "LAND MANAGEMENT SYSTEM",
+      "target": "PARTICLE SIZE DISTRIBUTION",
+      "description": "Land management treatments influence the particle size distribution of eroded materials.",
+      "weight": "7",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "STORM SIZE",
+      "target": "CLAY CONTENT",
+      "description": "Smaller storms generally produce eroded material with higher clay content than larger storms.",
+      "weight": "6",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "VERTISOLS",
+      "target": "RUNOFF",
+      "description": "Runoff events were measured on watersheds consisting of Vertisols.",
+      "weight": "6",
+      "source_id": "paper_2440"
+    },
+    {
+      "source": "ICRISAT CENTER, PATANCHERU, INDIA",
+      "target": "VERTISOLS",
+      "description": "The study of Vertisols was conducted at the ICRISAT Center in Patancheru, India.",
+      "weight": "7",
+      "source_id": "paper_2440"
+    }
+  ]
+}

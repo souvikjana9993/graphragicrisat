@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop grown on residual moisture",
+      "source_id": "paper_2767"
+    },
+    {
+      "name": "POD-BORER",
+      "type": "ORGANISM",
+      "description": "A pest that causes damage to chickpea pods",
+      "source_id": "paper_2767"
+    },
+    {
+      "name": "SOWING DATE",
+      "type": "METHOD",
+      "description": "The timing of planting seeds, suggested as an alternative to residual moisture cultivation",
+      "source_id": "paper_2767"
+    },
+    {
+      "name": "POD-BORER DAMAGE",
+      "type": "TRAIT",
+      "description": "The level of damage caused by pod-borers in chickpea",
+      "source_id": "paper_2767"
+    },
+    {
+      "name": "RESIDUAL MOISTURE",
+      "type": "CONDITION",
+      "description": "The moisture remaining in the soil used for growing chickpea",
+      "source_id": "paper_2767"
+    },
+    {
+      "name": "ICRISAT CENTER",
+      "type": "LOCATION",
+      "description": "The research center where the study was conducted",
+      "source_id": "paper_2767"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOWING DATE",
+      "target": "POD-BORER DAMAGE",
+      "description": "Affects the extent of",
+      "weight": "8",
+      "source_id": "paper_2767"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "RESIDUAL MOISTURE",
+      "description": "Grown using",
+      "weight": "7",
+      "source_id": "paper_2767"
+    },
+    {
+      "source": "SOWING DATE",
+      "target": "CHICKPEA",
+      "description": "Management practice for",
+      "weight": "6",
+      "source_id": "paper_2767"
+    },
+    {
+      "source": "POD-BORER",
+      "target": "POD-BORER DAMAGE",
+      "description": "Causes",
+      "weight": "10",
+      "source_id": "paper_2767"
+    },
+    {
+      "source": "POD-BORER DAMAGE",
+      "target": "CHICKPEA",
+      "description": "Occurs in",
+      "weight": "9",
+      "source_id": "paper_2767"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ICRISAT CENTER",
+      "description": "Studied at",
+      "weight": "7",
+      "source_id": "paper_2767"
+    }
+  ]
+}

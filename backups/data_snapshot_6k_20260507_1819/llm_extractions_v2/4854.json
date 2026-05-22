@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "A prolonged period of abnormally low rainfall leading to water shortages and disruption of social and economic activities",
+      "source_id": "paper_4854"
+    },
+    {
+      "name": "GIS-DERIVED PRODUCTS",
+      "type": "METHOD",
+      "description": "Tools and data generated from Geographic Information Systems used to assess spatial vulnerability",
+      "source_id": "paper_4854"
+    },
+    {
+      "name": "MICRO-LEVEL DROUGHT VULNERABILITY",
+      "type": "CONCEPT",
+      "description": "The susceptibility of specific small-scale areas to the impacts of drought",
+      "source_id": "paper_4854"
+    },
+    {
+      "name": "SOUTH CENTRAL INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region where the case study on drought preparedness was conducted",
+      "source_id": "paper_4854"
+    },
+    {
+      "name": "VILLAGE KNOWLEDGE CENTERS",
+      "type": "CONCEPT",
+      "description": "Local community hubs used to disseminate information and test the utility of drought assessment products",
+      "source_id": "paper_4854"
+    },
+    {
+      "name": "RURAL INFORMATION CENTER",
+      "type": "CONCEPT",
+      "description": "An internet-connected facility that supports and links to village knowledge centers",
+      "source_id": "paper_4854"
+    },
+    {
+      "name": "SEASONAL RAINFALL",
+      "type": "CONDITION",
+      "description": "The amount of precipitation occurring in a season, used for local-level predictions",
+      "source_id": "paper_4854"
+    },
+    {
+      "name": "DROUGHT PREPAREDNESS",
+      "type": "CONCEPT",
+      "description": "The process of using information and planning to mitigate the effects of drought",
+      "source_id": "paper_4854"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GIS-DERIVED PRODUCTS",
+      "target": "MICRO-LEVEL DROUGHT VULNERABILITY",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_4854"
+    },
+    {
+      "source": "VILLAGE KNOWLEDGE CENTERS",
+      "target": "GIS-DERIVED PRODUCTS",
+      "description": "used to test the utility of",
+      "weight": "8",
+      "source_id": "paper_4854"
+    },
+    {
+      "source": "RURAL INFORMATION CENTER",
+      "target": "VILLAGE KNOWLEDGE CENTERS",
+      "description": "linked to",
+      "weight": "10",
+      "source_id": "paper_4854"
+    },
+    {
+      "source": "GIS-DERIVED PRODUCTS",
+      "target": "DROUGHT PREPAREDNESS",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_4854"
+    },
+    {
+      "source": "SOUTH CENTRAL INDIA",
+      "target": "MICRO-LEVEL DROUGHT VULNERABILITY",
+      "description": "is the study area for",
+      "weight": "7",
+      "source_id": "paper_4854"
+    },
+    {
+      "source": "SEASONAL RAINFALL",
+      "target": "GIS-DERIVED PRODUCTS",
+      "description": "associated with local-level predictions",
+      "weight": "7",
+      "source_id": "paper_4854"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "MICRO-LEVEL DROUGHT VULNERABILITY",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_4854"
+    }
+  ]
+}

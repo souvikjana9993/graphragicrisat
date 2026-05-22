@@ -1,0 +1,184 @@
+{
+  "entities": [
+    {
+      "name": "BARLEY",
+      "type": "CROP",
+      "description": "The crop species being studied for genetic diversity.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The level of genetic variation within the barley germplasm collection.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "GSSRS",
+      "type": "GENE_MARKER",
+      "description": "Genomic microsatellites used as genetic markers to assess diversity.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "ESSRS",
+      "type": "GENE_MARKER",
+      "description": "Expressed sequence tag microsatellites used as genetic markers to assess diversity.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single nucleotide polymorphisms used as genetic markers to assess diversity.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "Geographic region from which barley accessions were sourced.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "Geographic region from which barley accessions were sourced.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "MIDDLE EAST",
+      "type": "LOCATION",
+      "description": "Geographic region from which barley accessions were sourced.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "EUROPE",
+      "type": "LOCATION",
+      "description": "Geographic region from which barley accessions were sourced.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "POLYMORPHISM INFORMATION CONTENT",
+      "type": "CONCEPT",
+      "description": "A metric used to evaluate the informativeness of genetic markers.",
+      "source_id": "paper_3027"
+    },
+    {
+      "name": "CLUSTERING",
+      "type": "METHOD",
+      "description": "The process of grouping accessions based on their genotypes.",
+      "source_id": "paper_3027"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GSSRS",
+      "target": "BARLEY",
+      "description": "used to assess genetic diversity in",
+      "weight": "9",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "ESSRS",
+      "target": "BARLEY",
+      "description": "used to assess genetic diversity in",
+      "weight": "9",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "SNPS",
+      "target": "BARLEY",
+      "description": "used to assess genetic diversity in",
+      "weight": "9",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "GSSRS",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "ESSRS",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "SNPS",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to measure",
+      "weight": "10",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "BARLEY",
+      "target": "ASIA",
+      "description": "originated from",
+      "weight": "8",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "BARLEY",
+      "target": "AFRICA",
+      "description": "originated from",
+      "weight": "8",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "BARLEY",
+      "target": "MIDDLE EAST",
+      "description": "originated from",
+      "weight": "8",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "BARLEY",
+      "target": "EUROPE",
+      "description": "originated from",
+      "weight": "8",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "ESSRS",
+      "target": "GSSRS",
+      "description": "showed strong correlation",
+      "weight": "9",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "ESSRS",
+      "target": "SNPS",
+      "description": "showed strong correlation",
+      "weight": "8",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "GSSRS",
+      "target": "SNPS",
+      "description": "showed strong correlation",
+      "weight": "7",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "POLYMORPHISM INFORMATION CONTENT",
+      "target": "ESSRS",
+      "description": "calculated for",
+      "weight": "9",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "POLYMORPHISM INFORMATION CONTENT",
+      "target": "GSSRS",
+      "description": "calculated for",
+      "weight": "9",
+      "source_id": "paper_3027"
+    },
+    {
+      "source": "CLUSTERING",
+      "target": "BARLEY",
+      "description": "used to group accessions",
+      "weight": "8",
+      "source_id": "paper_3027"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop susceptible to aflatoxin contamination",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A fungus that causes aflatoxin contamination in groundnuts",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "A qualitative problem occurring at pre- and post-harvest stages in groundnuts",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "CARCINOGENIC EFFECTS",
+      "type": "TRAIT",
+      "description": "Harmful effects of aflatoxins that can cause cancer",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "HEPATOTOXIC EFFECTS",
+      "type": "TRAIT",
+      "description": "Harmful effects of aflatoxins that damage the liver",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "TERATOGENIC EFFECTS",
+      "type": "TRAIT",
+      "description": "Harmful effects of aflatoxins that cause birth defects",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "IMMUNO-SUPPRESSIVE EFFECTS",
+      "type": "TRAIT",
+      "description": "Harmful effects of aflatoxins that suppress the immune system",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "TOXIGENIC STRAINS",
+      "type": "CONCEPT",
+      "description": "Strains of Aspergillus flavus that produce aflatoxins",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "ATOXIGENIC STRAINS",
+      "type": "CONCEPT",
+      "description": "Strains of Aspergillus flavus that do not produce aflatoxins",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "An Indian state where pod samples were collected",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "type": "LOCATION",
+      "description": "An Indian state where pod samples were collected",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "MAHABOOBNAGAR",
+      "type": "LOCATION",
+      "description": "A district in Telangana",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "RANGAREDDY",
+      "type": "LOCATION",
+      "description": "A district in Telangana",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "NIZAMABAD",
+      "type": "LOCATION",
+      "description": "A district in Telangana",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "KARIMNAGAR",
+      "type": "LOCATION",
+      "description": "A district in Telangana",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "ANANTAPUR",
+      "type": "LOCATION",
+      "description": "A district in Andhra Pradesh",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "CULTURAL DETECTION METHODS",
+      "type": "METHOD",
+      "description": "Methods used to identify toxigenic and atoxigenic strains of A. flavus",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "YEAST EXTRACT SUCROSE MEDIA",
+      "type": "METHOD",
+      "description": "A specific medium used for the cultural detection of A. flavus strains",
+      "source_id": "paper_10467"
+    },
+    {
+      "name": "COCONUT AGAR MEDIUM",
+      "type": "METHOD",
+      "description": "A specific medium used for the cultural detection of A. flavus strains",
+      "source_id": "paper_10467"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "CARCINOGENIC EFFECTS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "HEPATOTOXIC EFFECTS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "TERATOGENIC EFFECTS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "AFLATOXIN CONTAMINATION",
+      "target": "IMMUNO-SUPPRESSIVE EFFECTS",
+      "description": "causes",
+      "weight": "9",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "TOXIGENIC STRAINS",
+      "description": "has strains",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "ATOXIGENIC STRAINS",
+      "description": "has strains",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "CULTURAL DETECTION METHODS",
+      "target": "TOXIGENIC STRAINS",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "CULTURAL DETECTION METHODS",
+      "target": "ATOXIGENIC STRAINS",
+      "description": "used to detect",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "YEAST EXTRACT SUCROSE MEDIA",
+      "target": "CULTURAL DETECTION METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "COCONUT AGAR MEDIUM",
+      "target": "CULTURAL DETECTION METHODS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "TOXIGENIC STRAINS",
+      "target": "TELANGANA",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "TOXIGENIC STRAINS",
+      "target": "ANDHRA PRADESH",
+      "description": "found in",
+      "weight": "8",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "ATOXIGENIC STRAINS",
+      "target": "KARIMNAGAR",
+      "description": "found in",
+      "weight": "9",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "ATOXIGENIC STRAINS",
+      "target": "NIZAMABAD",
+      "description": "found in",
+      "weight": "9",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "MAHABOOBNAGAR",
+      "target": "TELANGANA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "RANGAREDDY",
+      "target": "TELANGANA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "NIZAMABAD",
+      "target": "TELANGANA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "KARIMNAGAR",
+      "target": "TELANGANA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10467"
+    },
+    {
+      "source": "ANANTAPUR",
+      "target": "ANDHRA PRADESH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_10467"
+    }
+  ]
+}

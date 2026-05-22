@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop studied, Sorghum bicolor",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress applied to sorghum lines in early, late, or combined stages",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "HYDERABAD",
+      "type": "LOCATION",
+      "description": "The city in India where the field experiment was conducted",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the field experiment was conducted",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Mean diurnal temperature, which was uniformly high during the experiment",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "EVAPORATION RATE",
+      "type": "CONDITION",
+      "description": "The rate of evaporation, which was uniformly high during the experiment",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, affected by the timing and severity of stress",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "BOOTING",
+      "type": "CONCEPT",
+      "description": "A growth stage of the sorghum plant",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "CONCEPT",
+      "description": "A growth stage of the sorghum plant",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "VEGETATIVE STAGE",
+      "type": "CONCEPT",
+      "description": "The growth phase of the plant before reproductive stages",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "NUMBER OF GRAINS",
+      "type": "TRAIT",
+      "description": "The number of grains per square meter, strongly correlated with grain yield",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "TOTAL DRY MATTER",
+      "type": "TRAIT",
+      "description": "The total dry mass of the plant, associated with variation in grain yield",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of grain yield to total biomass, reduced when stress occurred at flowering",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "THERMAL GROWTH RATE",
+      "type": "TRAIT",
+      "description": "Growth measured in grams per square meter per degree Celsius day",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "YIELD POTENTIAL",
+      "type": "TRAIT",
+      "description": "The maximum possible yield, determined by growth from booting to flowering",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "PHENOLOGY",
+      "type": "CONCEPT",
+      "description": "The study of plant life cycle stages and their timing",
+      "source_id": "paper_1944"
+    },
+    {
+      "name": "DROUGHT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to maintain productivity under drought stress",
+      "source_id": "paper_1944"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "DROUGHT STRESS",
+      "description": "subjected to",
+      "weight": "10",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "HYDERABAD",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "HYDERABAD",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "EVAPORATION RATE",
+      "target": "GRAIN YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "BOOTING",
+      "target": "GRAIN YIELD",
+      "description": "stress during this stage affects",
+      "weight": "9",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "FLOWERING",
+      "target": "GRAIN YIELD",
+      "description": "stress during this stage affects",
+      "weight": "9",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "VEGETATIVE STAGE",
+      "target": "GRAIN YIELD",
+      "description": "stress during this stage affects",
+      "weight": "8",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "NUMBER OF GRAINS",
+      "target": "GRAIN YIELD",
+      "description": "positively correlated with",
+      "weight": "10",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "TOTAL DRY MATTER",
+      "target": "GRAIN YIELD",
+      "description": "associated with variation in",
+      "weight": "8",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "HARVEST INDEX",
+      "target": "GRAIN YIELD",
+      "description": "reduced by stress at flowering",
+      "weight": "7",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "THERMAL GROWTH RATE",
+      "target": "YIELD POTENTIAL",
+      "description": "determinant of",
+      "weight": "9",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "YIELD POTENTIAL",
+      "target": "NUMBER OF GRAINS",
+      "description": "determines",
+      "weight": "9",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "PHENOLOGY",
+      "target": "DROUGHT RESISTANCE",
+      "description": "important for research into",
+      "weight": "8",
+      "source_id": "paper_1944"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "DROUGHT RESISTANCE",
+      "description": "target of",
+      "weight": "10",
+      "source_id": "paper_1944"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SWEET SORGHUM",
+      "type": "CROP",
+      "description": "The sweet sorghum variety ICSV 93046 used in the study",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A country where the sweet sorghum variety ICSV 93046 is commercially cultivated",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "PHILIPPINES",
+      "type": "LOCATION",
+      "description": "A country where the sweet sorghum variety ICSV 93046 is commercially cultivated",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "MICRONUTRIENT TREATMENTS",
+      "type": "METHOD",
+      "description": "Six fertilizer treatments (T1-T6) involving nitrogen, phosphorus, zinc, and boron",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "POST-RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The period from December to March 2009-2010 during which the main crop was evaluated",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "SUMMER SEASON",
+      "type": "CONDITION",
+      "description": "The period from April to July 2010 during which the ratoon crop was evaluated",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "MAIN CROP",
+      "type": "CONCEPT",
+      "description": "The initial plant crop evaluated in the study",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "RATOON CROP",
+      "type": "CONCEPT",
+      "description": "The subsequent crop grown from the stubble of the main crop",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "ANOVA",
+      "type": "METHOD",
+      "description": "The combined analysis of variance used to evaluate differences between crops and treatments",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "SUGAR YIELD",
+      "type": "TRAIT",
+      "description": "The qualitative and quantitative component traits measured in the study",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "STALK YIELD",
+      "type": "TRAIT",
+      "description": "A quantitative trait measured for both main and ratoon crops",
+      "source_id": "paper_6061"
+    },
+    {
+      "name": "TROPICAL CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environmental conditions under which the study was conducted",
+      "source_id": "paper_6061"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SWEET SORGHUM",
+      "target": "INDIA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "SWEET SORGHUM",
+      "target": "PHILIPPINES",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "MICRONUTRIENT TREATMENTS",
+      "target": "SWEET SORGHUM",
+      "description": "applied to",
+      "weight": "10",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "MICRONUTRIENT TREATMENTS",
+      "target": "STALK YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "MICRONUTRIENT TREATMENTS",
+      "target": "SUGAR YIELD",
+      "description": "affects",
+      "weight": "9",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "MAIN CROP",
+      "target": "SWEET SORGHUM",
+      "description": "is a growth stage of",
+      "weight": "10",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "RATOON CROP",
+      "target": "SWEET SORGHUM",
+      "description": "is a growth stage of",
+      "weight": "10",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "POST-RAINY SEASON",
+      "target": "MAIN CROP",
+      "description": "timing of",
+      "weight": "10",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "SUMMER SEASON",
+      "target": "RATOON CROP",
+      "description": "timing of",
+      "weight": "10",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "ANOVA",
+      "target": "SUGAR YIELD",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "ANOVA",
+      "target": "STALK YIELD",
+      "description": "used to analyze",
+      "weight": "9",
+      "source_id": "paper_6061"
+    },
+    {
+      "source": "SWEET SORGHUM",
+      "target": "TROPICAL CONDITIONS",
+      "description": "grown under",
+      "weight": "10",
+      "source_id": "paper_6061"
+    }
+  ]
+}

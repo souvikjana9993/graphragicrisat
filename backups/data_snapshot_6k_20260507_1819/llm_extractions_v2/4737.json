@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being screened for resistance to storage pests",
+      "source_id": "paper_4737"
+    },
+    {
+      "name": "RESISTANCE TO STORAGE INSECT ATTACK",
+      "type": "TRAIT",
+      "description": "The ability of the crop to withstand attack by storage insects",
+      "source_id": "paper_4737"
+    },
+    {
+      "name": "STORAGE INSECT ATTACK",
+      "type": "CONDITION",
+      "description": "The condition of being attacked by insects during storage",
+      "source_id": "paper_4737"
+    },
+    {
+      "name": "RED S-1",
+      "type": "CROP",
+      "description": "A susceptible variety of sorghum used in the screening process",
+      "source_id": "paper_4737"
+    },
+    {
+      "name": "WEEVIL",
+      "type": "ORGANISM",
+      "description": "A storage pest used for screening resistance",
+      "source_id": "paper_4737"
+    },
+    {
+      "name": "GRAIN MOTH",
+      "type": "ORGANISM",
+      "description": "Sitotroga cerealella, a storage pest used for screening resistance",
+      "source_id": "paper_4737"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating sorghum for resistance to storage pests",
+      "source_id": "paper_4737"
+    },
+    {
+      "name": "PROGENY OUTPUT",
+      "type": "CONCEPT",
+      "description": "A measurement used to evaluate the level of infestation and resistance",
+      "source_id": "paper_4737"
+    },
+    {
+      "name": "INFESTATION LEVEL",
+      "type": "CONCEPT",
+      "description": "The degree to which the grain is attacked by pests",
+      "source_id": "paper_4737"
+    },
+    {
+      "name": "GRAIN MASS",
+      "type": "CONCEPT",
+      "description": "The weight of the grain used in the screening process",
+      "source_id": "paper_4737"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "RESISTANCE TO STORAGE INSECT ATTACK",
+      "description": "is evaluated for",
+      "weight": "9",
+      "source_id": "paper_4737"
+    },
+    {
+      "source": "RESISTANCE TO STORAGE INSECT ATTACK",
+      "target": "STORAGE INSECT ATTACK",
+      "description": "is a response to",
+      "weight": "10",
+      "source_id": "paper_4737"
+    },
+    {
+      "source": "SCREENING",
+      "target": "SORGHUM",
+      "description": "is applied to",
+      "weight": "8",
+      "source_id": "paper_4737"
+    },
+    {
+      "source": "SCREENING",
+      "target": "RESISTANCE TO STORAGE INSECT ATTACK",
+      "description": "is used to identify",
+      "weight": "9",
+      "source_id": "paper_4737"
+    },
+    {
+      "source": "WEEVIL",
+      "target": "STORAGE INSECT ATTACK",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4737"
+    },
+    {
+      "source": "GRAIN MOTH",
+      "target": "STORAGE INSECT ATTACK",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4737"
+    },
+    {
+      "source": "RED S-1",
+      "target": "SORGHUM",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_4737"
+    },
+    {
+      "source": "PROGENY OUTPUT",
+      "target": "SCREENING",
+      "description": "is a metric for",
+      "weight": "7",
+      "source_id": "paper_4737"
+    },
+    {
+      "source": "INFESTATION LEVEL",
+      "target": "SCREENING",
+      "description": "is a metric for",
+      "weight": "7",
+      "source_id": "paper_4737"
+    },
+    {
+      "source": "GRAIN MASS",
+      "target": "SCREENING",
+      "description": "is a metric for",
+      "weight": "7",
+      "source_id": "paper_4737"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The crop species Arachis hypogaea L. used to evaluate varietal resistance to aflatoxin.",
+      "source_id": "paper_6495"
+    },
+    {
+      "name": "AFLATOXIN B1 PRODUCTION",
+      "type": "TRAIT",
+      "description": "The capacity of peanut genotypes to support the synthesis of aflatoxin B1 by Aspergillus flavus.",
+      "source_id": "paper_6495"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "The aflatoxigenic fungal strain used to inoculate peanut seeds.",
+      "source_id": "paper_6495"
+    },
+    {
+      "name": "INOCULATION",
+      "type": "METHOD",
+      "description": "The method of introducing Aspergillus flavus into scarified peanut seeds.",
+      "source_id": "paper_6495"
+    },
+    {
+      "name": "INCUBATION",
+      "type": "METHOD",
+      "description": "The method of maintaining inoculated seeds at a specific temperature for a set period to allow fungal growth.",
+      "source_id": "paper_6495"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The environmental condition of 25 C used during the incubation process.",
+      "source_id": "paper_6495"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The environmental condition of the rainy season affecting seed production and aflatoxin levels.",
+      "source_id": "paper_6495"
+    },
+    {
+      "name": "POSTRAINY SEASON",
+      "type": "CONDITION",
+      "description": "The environmental condition of the irrigated postrainy season affecting seed production and aflatoxin levels.",
+      "source_id": "paper_6495"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The geographic region associated with the commonly grown peanut cultivar TMV 2.",
+      "source_id": "paper_6495"
+    },
+    {
+      "name": "VARIETAL RESISTANCE",
+      "type": "CONCEPT",
+      "description": "The concept of genetic differences among peanut genotypes in their ability to limit aflatoxin B1 production.",
+      "source_id": "paper_6495"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT",
+      "target": "AFLATOXIN B1 PRODUCTION",
+      "description": "supports the production of",
+      "weight": "10",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN B1 PRODUCTION",
+      "description": "is the agent responsible for",
+      "weight": "10",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "PEANUT",
+      "description": "is used to inoculate",
+      "weight": "9",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "utilizes",
+      "weight": "9",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "INOCULATION",
+      "target": "PEANUT",
+      "description": "is performed on",
+      "weight": "9",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "INCUBATION",
+      "target": "AFLATOXIN B1 PRODUCTION",
+      "description": "facilitates",
+      "weight": "8",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "INCUBATION",
+      "description": "is a controlled parameter of",
+      "weight": "10",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "AFLATOXIN B1 PRODUCTION",
+      "description": "influences the levels of",
+      "weight": "7",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "POSTRAINY SEASON",
+      "target": "AFLATOXIN B1 PRODUCTION",
+      "description": "influences the levels of",
+      "weight": "7",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "INDIA",
+      "target": "PEANUT",
+      "description": "is the origin of specific cultivars of",
+      "weight": "6",
+      "source_id": "paper_6495"
+    },
+    {
+      "source": "VARIETAL RESISTANCE",
+      "target": "AFLATOXIN B1 PRODUCTION",
+      "description": "is characterized by differences in",
+      "weight": "9",
+      "source_id": "paper_6495"
+    }
+  ]
+}

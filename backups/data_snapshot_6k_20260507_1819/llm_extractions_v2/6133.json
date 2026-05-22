@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "CEREAL CROPS",
+      "type": "CROP",
+      "description": "Crops that are inherently low in grain Zn concentrations and are targets for bio-fortification",
+      "source_id": "paper_6133"
+    },
+    {
+      "name": "MICRONUTRIENT DEFICIENCIES",
+      "type": "CONDITION",
+      "description": "Health or plant conditions resulting from a lack of essential micronutrients",
+      "source_id": "paper_6133"
+    },
+    {
+      "name": "ZINC CONCENTRATION",
+      "type": "TRAIT",
+      "description": "The level of zinc present in the grain of cereal crops",
+      "source_id": "paper_6133"
+    },
+    {
+      "name": "ZINC DEFICIENT SOILS",
+      "type": "CONDITION",
+      "description": "Soils that lack sufficient zinc, contributing to low zinc levels in crops",
+      "source_id": "paper_6133"
+    },
+    {
+      "name": "BIO-FORTIFICATION",
+      "type": "METHOD",
+      "description": "The process of increasing the nutritional quality of food crops",
+      "source_id": "paper_6133"
+    },
+    {
+      "name": "ZINC",
+      "type": "CONCEPT",
+      "description": "A micronutrient essential for health, targeted for increase in cereal crops",
+      "source_id": "paper_6133"
+    },
+    {
+      "name": "WEST AFRICA",
+      "type": "LOCATION",
+      "description": "Region where bio-fortification actions are being implemented",
+      "source_id": "paper_6133"
+    },
+    {
+      "name": "CENTRAL AFRICA",
+      "type": "LOCATION",
+      "description": "Region mentioned in the research highlights",
+      "source_id": "paper_6133"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CEREAL CROPS",
+      "target": "ZINC CONCENTRATION",
+      "description": "Cereal crops have inherently low grain Zn concentrations",
+      "weight": "9",
+      "source_id": "paper_6133"
+    },
+    {
+      "source": "ZINC DEFICIENT SOILS",
+      "target": "ZINC CONCENTRATION",
+      "description": "Zn-deficient soils further reduce Zn concentration in grain",
+      "weight": "8",
+      "source_id": "paper_6133"
+    },
+    {
+      "source": "BIO-FORTIFICATION",
+      "target": "CEREAL CROPS",
+      "description": "Bio-fortification is applied to cereal crops to increase nutritional value",
+      "weight": "10",
+      "source_id": "paper_6133"
+    },
+    {
+      "source": "BIO-FORTIFICATION",
+      "target": "ZINC",
+      "description": "Bio-fortification targets the increase of Zn in crops",
+      "weight": "10",
+      "source_id": "paper_6133"
+    },
+    {
+      "source": "WEST AFRICA",
+      "target": "BIO-FORTIFICATION",
+      "description": "Action for bio-fortification is being taken in West Africa",
+      "weight": "7",
+      "source_id": "paper_6133"
+    },
+    {
+      "source": "CEREAL CROPS",
+      "target": "MICRONUTRIENT DEFICIENCIES",
+      "description": "Cereal crops are grown in areas with high incidence of micronutrient deficiencies",
+      "weight": "6",
+      "source_id": "paper_6133"
+    }
+  ]
+}

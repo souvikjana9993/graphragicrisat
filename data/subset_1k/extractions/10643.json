@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The primary crop studied, Sorghum bicolor (L.) Moench",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONDITION",
+      "description": "An essential nutrient for sorghum growth and development",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "WATER USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "A measure of the efficiency with which the crop uses water, denoted as WUE",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "PHYSIOLOGICAL TRAITS",
+      "type": "TRAIT",
+      "description": "Biological characteristics related to the plant's functioning",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "YIELD TRAITS",
+      "type": "TRAIT",
+      "description": "Characteristics that contribute to the overall yield of the crop",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "SUDAN SAVANNA ZONE",
+      "type": "LOCATION",
+      "description": "The geographical region in Nigeria where the study was conducted",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "NIGERIA",
+      "type": "LOCATION",
+      "description": "The country where the study took place",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "BAYERO UNIVERSITY KANO",
+      "type": "LOCATION",
+      "description": "A specific study site in the Sudan Savanna zone",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "MINJIBIR",
+      "type": "LOCATION",
+      "description": "A specific study site in the Sudan Savanna zone",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONDITION",
+      "description": "A nutrient applied at a constant level of 30 kg ha-1",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONDITION",
+      "description": "A nutrient applied at a constant level of 30 kg ha-1",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "ICSV400",
+      "type": "CROP",
+      "description": "An extra early maturing variety of sorghum",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "CSR01",
+      "type": "CROP",
+      "description": "A late maturing variety of sorghum",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "MATURITY",
+      "type": "TRAIT",
+      "description": "The time taken for the crop to reach full development",
+      "source_id": "paper_10643"
+    },
+    {
+      "name": "N FERTILIZATION",
+      "type": "METHOD",
+      "description": "The application of nitrogen at various levels from 0 to 100 kg ha-1",
+      "source_id": "paper_10643"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "N FERTILIZATION",
+      "target": "SORGHUM",
+      "description": "Applied to evaluate effects on growth and yield",
+      "weight": "10",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "N FERTILIZATION",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Increases water use efficiency",
+      "weight": "8",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "N FERTILIZATION",
+      "target": "GRAIN YIELD",
+      "description": "Increases grain yield",
+      "weight": "9",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "SUDAN SAVANNA ZONE",
+      "target": "NIGERIA",
+      "description": "Located within",
+      "weight": "10",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "BAYERO UNIVERSITY KANO",
+      "target": "SUDAN SAVANNA ZONE",
+      "description": "Located within",
+      "weight": "9",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "MINJIBIR",
+      "target": "SUDAN SAVANNA ZONE",
+      "description": "Located within",
+      "weight": "9",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "ICSV400",
+      "target": "SORGHUM",
+      "description": "Is a variety of",
+      "weight": "10",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "CSR01",
+      "target": "SORGHUM",
+      "description": "Is a variety of",
+      "weight": "10",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "MATURITY",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Has a significant effect on",
+      "weight": "7",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "PHYSIOLOGICAL TRAITS",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Has a significant effect on",
+      "weight": "7",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "ICSV400",
+      "target": "GRAIN YIELD",
+      "description": "Produced the highest mean grain yield",
+      "weight": "8",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "ICSV400",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Recorded the highest mean WUE",
+      "weight": "8",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "CSR01",
+      "target": "WATER USE EFFICIENCY",
+      "description": "Recorded the lowest WUE",
+      "weight": "8",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "SORGHUM",
+      "description": "Applied as a constant nutrient",
+      "weight": "6",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "POTASSIUM",
+      "target": "SORGHUM",
+      "description": "Applied as a constant nutrient",
+      "weight": "6",
+      "source_id": "paper_10643"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "SORGHUM",
+      "description": "Essential nutrient for growth and development",
+      "weight": "9",
+      "source_id": "paper_10643"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "name": "FISH",
+      "type": "ORGANISM",
+      "description": "The target animal for the feeds produced in the study",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "CRICKET",
+      "type": "ORGANISM",
+      "description": "Acheta domesticus, used as a source for meal substitution",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "BLACK SOLDIER FLY",
+      "type": "ORGANISM",
+      "description": "Hermetia illucens, used as a source for meal substitution",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "FISH MEAL",
+      "type": "CONCEPT",
+      "description": "An integral component of fish feeds that is being substituted",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "ADULT CRICKET MEAL",
+      "type": "CONCEPT",
+      "description": "Meal derived from adult crickets used to substitute fish meal",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "BLACK SOLDIER FLY MEAL",
+      "type": "CONCEPT",
+      "description": "Meal derived from black soldier fly larvae used to substitute fish meal",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "EXTRUDED FISH FEEDS",
+      "type": "CONCEPT",
+      "description": "The processed fish feed product analyzed for mineral content and leaching",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "MINERALS",
+      "type": "TRAIT",
+      "description": "Nutrients analyzed in the extruded fish feeds",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "TRAIT",
+      "description": "A mineral whose levels increased with fish meal substitution",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "TRAIT",
+      "description": "A mineral whose levels increased with fish meal substitution",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "IRON",
+      "type": "TRAIT",
+      "description": "A mineral whose levels decreased with fish meal substitution",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "SODIUM",
+      "type": "TRAIT",
+      "description": "A mineral whose levels decreased with fish meal substitution",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "MAGNESIUM",
+      "type": "TRAIT",
+      "description": "A mineral whose levels varied depending on whether ACM or BSFM was used",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "COPPER",
+      "type": "TRAIT",
+      "description": "A mineral not greatly influenced by fish meal substitution",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "ZINC",
+      "type": "TRAIT",
+      "description": "A mineral not greatly influenced by fish meal substitution",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "MANGANESE",
+      "type": "TRAIT",
+      "description": "A mineral not greatly influenced by fish meal substitution",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "FEED MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "The moisture levels (20% and 30%) studied for their effect on minerals",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "LEACHING EFFECT",
+      "type": "TRAIT",
+      "description": "The loss of minerals from the feed pellets",
+      "source_id": "paper_10535"
+    },
+    {
+      "name": "SUBSTITUTION",
+      "type": "METHOD",
+      "description": "The process of replacing fish meal with ACM or BSFM at levels of 0, 25, 50, and 75%",
+      "source_id": "paper_10535"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SUBSTITUTION",
+      "target": "FISH MEAL",
+      "description": "replaces",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "SUBSTITUTION",
+      "target": "ADULT CRICKET MEAL",
+      "description": "uses as substitute",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "SUBSTITUTION",
+      "target": "BLACK SOLDIER FLY MEAL",
+      "description": "uses as substitute",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "ADULT CRICKET MEAL",
+      "target": "CRICKET",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "BLACK SOLDIER FLY MEAL",
+      "target": "BLACK SOLDIER FLY",
+      "description": "derived from",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "EXTRUDED FISH FEEDS",
+      "target": "MINERALS",
+      "description": "contains",
+      "weight": "9",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "EXTRUDED FISH FEEDS",
+      "target": "LEACHING EFFECT",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "SUBSTITUTION",
+      "target": "MINERALS",
+      "description": "affects levels of",
+      "weight": "9",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "FEED MOISTURE CONTENT",
+      "target": "MINERALS",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "MINERALS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "POTASSIUM",
+      "target": "MINERALS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "IRON",
+      "target": "MINERALS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "SODIUM",
+      "target": "MINERALS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "MAGNESIUM",
+      "target": "MINERALS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "COPPER",
+      "target": "MINERALS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "ZINC",
+      "target": "MINERALS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "MANGANESE",
+      "target": "MINERALS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_10535"
+    },
+    {
+      "source": "EXTRUDED FISH FEEDS",
+      "target": "FISH",
+      "description": "intended for",
+      "weight": "10",
+      "source_id": "paper_10535"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "entities": [
+    {
+      "name": "ICRISAT",
+      "type": "CONCEPT",
+      "description": "The International Crops Research Institute for the Semi-Arid Tropics",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "SDI SERVICE",
+      "type": "CONCEPT",
+      "description": "A monthly Selective Dissemination of Information service provided to users",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "USERS",
+      "type": "CONCEPT",
+      "description": "Recipients of the SDI service across various countries",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "COUNTRIES",
+      "type": "LOCATION",
+      "description": "Geographic locations where SDI service users are based",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "CORE FUNDS",
+      "type": "CONCEPT",
+      "description": "Internal funding source for the SDI service",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "SPECIAL PROJECT",
+      "type": "CONCEPT",
+      "description": "External project-based funding source for the SDI service",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "CAPACITY TO PAY",
+      "type": "CONCEPT",
+      "description": "A criterion used to identify user segments for charging the SDI service",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "PURPOSE OF SEEKING INFORMATION",
+      "type": "CONCEPT",
+      "description": "A criterion used to identify user segments for charging the SDI service, distinguishing between profit-making and public good",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "AVAILABILITY OF INFORMATION SERVICES",
+      "type": "CONCEPT",
+      "description": "A criterion used to identify user segments for charging the SDI service based on institutional or national availability",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "PRICING OBJECTIVES",
+      "type": "CONCEPT",
+      "description": "Goals established to determine the pricing of the SDI service",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "PRICING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Methods used to calculate the price for the SDI service",
+      "source_id": "paper_3118"
+    },
+    {
+      "name": "PRIVATE SECTOR",
+      "type": "CONCEPT",
+      "description": "A specific user segment for which a pricing formula is described",
+      "source_id": "paper_3118"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICRISAT",
+      "target": "SDI SERVICE",
+      "description": "provides",
+      "weight": "10",
+      "source_id": "paper_3118"
+    },
+    {
+      "source": "SDI SERVICE",
+      "target": "USERS",
+      "description": "serves",
+      "weight": "10",
+      "source_id": "paper_3118"
+    },
+    {
+      "source": "USERS",
+      "target": "COUNTRIES",
+      "description": "located in",
+      "weight": "8",
+      "source_id": "paper_3118"
+    },
+    {
+      "source": "CORE FUNDS",
+      "target": "SDI SERVICE",
+      "description": "funds",
+      "weight": "9",
+      "source_id": "paper_3118"
+    },
+    {
+      "source": "SPECIAL PROJECT",
+      "target": "SDI SERVICE",
+      "description": "funds",
+      "weight": "9",
+      "source_id": "paper_3118"
+    },
+    {
+      "source": "CAPACITY TO PAY",
+      "target": "SDI SERVICE",
+      "description": "criterion for pricing",
+      "weight": "7",
+      "source_id": "paper_3118"
+    },
+    {
+      "source": "PURPOSE OF SEEKING INFORMATION",
+      "target": "SDI SERVICE",
+      "description": "criterion for pricing",
+      "weight": "7",
+      "source_id": "paper_3118"
+    },
+    {
+      "source": "AVAILABILITY OF INFORMATION SERVICES",
+      "target": "SDI SERVICE",
+      "description": "criterion for pricing",
+      "weight": "7",
+      "source_id": "paper_3118"
+    },
+    {
+      "source": "PRICING OBJECTIVES",
+      "target": "PRICING TECHNIQUES",
+      "description": "guides",
+      "weight": "8",
+      "source_id": "paper_3118"
+    },
+    {
+      "source": "PRICING TECHNIQUES",
+      "target": "PRIVATE SECTOR",
+      "description": "determines price for",
+      "weight": "8",
+      "source_id": "paper_3118"
+    }
+  ]
+}

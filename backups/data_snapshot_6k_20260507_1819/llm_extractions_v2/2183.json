@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum L., the host crop affected by Fusarium wilt",
+      "source_id": "paper_2183"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F.SP.CICERI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes Fusarium wilt in chickpea",
+      "source_id": "paper_2183"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A disease of chickpea caused by the pathogen Fusarium oxysporum f.sp.ciceri",
+      "source_id": "paper_2183"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country from which the pathogen isolates were collected",
+      "source_id": "paper_2183"
+    },
+    {
+      "name": "MOLECULAR MARKERS",
+      "type": "METHOD",
+      "description": "Tools used to assess genetic variability and distinctiveness of pathogen isolates",
+      "source_id": "paper_2183"
+    },
+    {
+      "name": "RAPDS",
+      "type": "GENE_MARKER",
+      "description": "Random Amplified Polymorphic DNA, a type of molecular marker used for genetic analysis",
+      "source_id": "paper_2183"
+    },
+    {
+      "name": "AFLP",
+      "type": "GENE_MARKER",
+      "description": "Amplified Fragment Length Polymorphism, a molecular marker found to be more informative than RAPDs",
+      "source_id": "paper_2183"
+    },
+    {
+      "name": "PRINCIPAL COORDINATE ANALYSIS",
+      "type": "METHOD",
+      "description": "A statistical method used to analyze similarity index data from molecular markers",
+      "source_id": "paper_2183"
+    },
+    {
+      "name": "GENETIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The degree of genetic difference among isolates of the Fusarium oxysporum f.sp.ciceri pathogen",
+      "source_id": "paper_2183"
+    },
+    {
+      "name": "DNA POLYMORPHISM",
+      "type": "CONCEPT",
+      "description": "The occurrence of two or more alternative forms of a DNA sequence, indicating rapid evolution of the pathogen",
+      "source_id": "paper_2183"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F.SP.CICERI",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2183"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F.SP.CICERI",
+      "target": "CHICKPEA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_2183"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F.SP.CICERI",
+      "target": "INDIA",
+      "description": "collected from",
+      "weight": "8",
+      "source_id": "paper_2183"
+    },
+    {
+      "source": "MOLECULAR MARKERS",
+      "target": "GENETIC VARIABILITY",
+      "description": "used to assess",
+      "weight": "9",
+      "source_id": "paper_2183"
+    },
+    {
+      "source": "RAPDS",
+      "target": "MOLECULAR MARKERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2183"
+    },
+    {
+      "source": "AFLP",
+      "target": "MOLECULAR MARKERS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_2183"
+    },
+    {
+      "source": "PRINCIPAL COORDINATE ANALYSIS",
+      "target": "MOLECULAR MARKERS",
+      "description": "analyzes data from",
+      "weight": "9",
+      "source_id": "paper_2183"
+    },
+    {
+      "source": "MOLECULAR MARKERS",
+      "target": "DNA POLYMORPHISM",
+      "description": "observed",
+      "weight": "9",
+      "source_id": "paper_2183"
+    },
+    {
+      "source": "DNA POLYMORPHISM",
+      "target": "GENETIC VARIABILITY",
+      "description": "suggests",
+      "weight": "8",
+      "source_id": "paper_2183"
+    }
+  ]
+}

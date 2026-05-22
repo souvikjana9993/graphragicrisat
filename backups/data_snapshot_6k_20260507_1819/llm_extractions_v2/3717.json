@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "MANGANESE TOXICITY",
+      "type": "CONDITION",
+      "description": "The development of harmful symptoms in plants due to excessive manganese accumulation",
+      "source_id": "paper_3717"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The physical development and increase in biomass of the plant",
+      "source_id": "paper_3717"
+    },
+    {
+      "name": "NITROGEN FIXATION",
+      "type": "TRAIT",
+      "description": "The process of converting atmospheric nitrogen into ammonia",
+      "source_id": "paper_3717"
+    },
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The plant species Arachis hypogaea",
+      "source_id": "paper_3717"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The formation of root nodules for symbiotic nitrogen fixation",
+      "source_id": "paper_3717"
+    },
+    {
+      "name": "QUARTZ-SAND/SOLUTION CULTURE SYSTEM",
+      "type": "METHOD",
+      "description": "An experimental growth system using quartz sand and nutrient solutions to control nutrient supply",
+      "source_id": "paper_3717"
+    },
+    {
+      "name": "MANGANESE",
+      "type": "CONCEPT",
+      "description": "The chemical element Mn that causes toxicity at high concentrations",
+      "source_id": "paper_3717"
+    },
+    {
+      "name": "INORGANIC NITROGEN",
+      "type": "CONCEPT",
+      "description": "A non-organic source of nitrogen provided as a nutrient",
+      "source_id": "paper_3717"
+    },
+    {
+      "name": "SYMBIOTIC FIXATION",
+      "type": "CONCEPT",
+      "description": "The process of nitrogen fixation carried out by symbiotic bacteria in root nodules",
+      "source_id": "paper_3717"
+    },
+    {
+      "name": "ICG 5394",
+      "type": "CROP",
+      "description": "A specific genotype of groundnut tested for manganese toxicity",
+      "source_id": "paper_3717"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MANGANESE TOXICITY",
+      "target": "GROUNDNUT",
+      "description": "affects the growth and nitrogen fixation of",
+      "weight": "10",
+      "source_id": "paper_3717"
+    },
+    {
+      "source": "MANGANESE TOXICITY",
+      "target": "GROWTH",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_3717"
+    },
+    {
+      "source": "MANGANESE TOXICITY",
+      "target": "NITROGEN FIXATION",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_3717"
+    },
+    {
+      "source": "MANGANESE TOXICITY",
+      "target": "NODULATION",
+      "description": "negatively impacts",
+      "weight": "9",
+      "source_id": "paper_3717"
+    },
+    {
+      "source": "QUARTZ-SAND/SOLUTION CULTURE SYSTEM",
+      "target": "GROUNDNUT",
+      "description": "used to examine the effects of manganese toxicity on",
+      "weight": "8",
+      "source_id": "paper_3717"
+    },
+    {
+      "source": "MANGANESE",
+      "target": "MANGANESE TOXICITY",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_3717"
+    },
+    {
+      "source": "ICG 5394",
+      "target": "GROUNDNUT",
+      "description": "is a genotype of",
+      "weight": "10",
+      "source_id": "paper_3717"
+    },
+    {
+      "source": "MANGANESE TOXICITY",
+      "target": "ICG 5394",
+      "description": "severely affects growth when inorganic nitrogen is used",
+      "weight": "9",
+      "source_id": "paper_3717"
+    },
+    {
+      "source": "INORGANIC NITROGEN",
+      "target": "GROWTH",
+      "description": "serves as a nitrogen source that influences response to toxicity",
+      "weight": "7",
+      "source_id": "paper_3717"
+    },
+    {
+      "source": "SYMBIOTIC FIXATION",
+      "target": "GROWTH",
+      "description": "serves as a nitrogen source that influences response to toxicity",
+      "weight": "7",
+      "source_id": "paper_3717"
+    }
+  ]
+}

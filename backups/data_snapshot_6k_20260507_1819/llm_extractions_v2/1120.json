@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "SORGHUM STOVER",
+      "type": "CONCEPT",
+      "description": "The stalks and leaves of sorghum used as dry fodder",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "DRY FODDER",
+      "type": "CONCEPT",
+      "description": "Dried plant material used for feeding livestock",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "DAIRY PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The process of producing milk from dairy animals in urban and peri-urban areas",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "HYDERABAD",
+      "type": "LOCATION",
+      "description": "A city in India where dairy production and stover trading occur",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "SORGHUM-GROWING REGIONS",
+      "type": "LOCATION",
+      "description": "Areas where sorghum is cultivated and stover is sourced",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "CULTIVAR",
+      "type": "CONCEPT",
+      "description": "Specific varieties of sorghum that affect stover price",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "CROPPING SEASON",
+      "type": "CONDITION",
+      "description": "The time of year when crops are grown, affecting stover price",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "A specific cropping season",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "POSTRAINY SEASON",
+      "type": "CONDITION",
+      "description": "A specific cropping season",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "ECONOMIC VALUE",
+      "type": "CONCEPT",
+      "description": "The monetary worth of sorghum stover in the trading market",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "FODDER TRADING",
+      "type": "CONCEPT",
+      "description": "The commercial exchange of fodder",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "STOVER PRICE",
+      "type": "CONCEPT",
+      "description": "The cost of sorghum stover",
+      "source_id": "paper_1120"
+    },
+    {
+      "name": "QUALITY",
+      "type": "TRAIT",
+      "description": "The characteristic of stover that influences its price",
+      "source_id": "paper_1120"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "SORGHUM STOVER",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "SORGHUM STOVER",
+      "target": "DRY FODDER",
+      "description": "is a source of",
+      "weight": "10",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "SORGHUM STOVER",
+      "target": "DAIRY PRODUCTION",
+      "description": "used in",
+      "weight": "10",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "DAIRY PRODUCTION",
+      "target": "HYDERABAD",
+      "description": "located in",
+      "weight": "9",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "SORGHUM STOVER",
+      "target": "SORGHUM-GROWING REGIONS",
+      "description": "transported from",
+      "weight": "9",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "SORGHUM STOVER",
+      "target": "HYDERABAD",
+      "description": "transported to",
+      "weight": "9",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "STOVER PRICE",
+      "target": "CULTIVAR",
+      "description": "influenced by",
+      "weight": "8",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "STOVER PRICE",
+      "target": "CROPPING SEASON",
+      "description": "influenced by",
+      "weight": "8",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "CROPPING SEASON",
+      "target": "RAINY SEASON",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "CROPPING SEASON",
+      "target": "POSTRAINY SEASON",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "ECONOMIC VALUE",
+      "target": "FODDER TRADING",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_1120"
+    },
+    {
+      "source": "STOVER PRICE",
+      "target": "QUALITY",
+      "description": "related to",
+      "weight": "8",
+      "source_id": "paper_1120"
+    }
+  ]
+}

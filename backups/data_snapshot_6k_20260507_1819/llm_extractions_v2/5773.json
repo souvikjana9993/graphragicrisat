@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "SOYBEAN",
+      "type": "CROP",
+      "description": "A legume crop used for inducing sterile mutants.",
+      "source_id": "paper_5773"
+    },
+    {
+      "name": "BRAGG",
+      "type": "CROP",
+      "description": "A variety of soybean used in the mutation study.",
+      "source_id": "paper_5773"
+    },
+    {
+      "name": "TYPE 49",
+      "type": "CROP",
+      "description": "A variety of soybean used in the mutation study.",
+      "source_id": "paper_5773"
+    },
+    {
+      "name": "GAMMA RAYS",
+      "type": "METHOD",
+      "description": "Ionizing radiation used to induce mutations.",
+      "source_id": "paper_5773"
+    },
+    {
+      "name": "ETHYL METHANESULPHONATE",
+      "type": "METHOD",
+      "description": "A chemical mutagen used to induce mutations.",
+      "source_id": "paper_5773"
+    },
+    {
+      "name": "MALE STERILITY",
+      "type": "TRAIT",
+      "description": "The inability of a plant to produce functional male gametes.",
+      "source_id": "paper_5773"
+    },
+    {
+      "name": "FEMALE FERTILITY",
+      "type": "TRAIT",
+      "description": "The ability of a plant to produce functional female gametes and seeds.",
+      "source_id": "paper_5773"
+    },
+    {
+      "name": "RECESSIVE GENE",
+      "type": "GENE_MARKER",
+      "description": "A gene that must be homozygous to express the male sterility trait.",
+      "source_id": "paper_5773"
+    },
+    {
+      "name": "M2 GENERATION",
+      "type": "CONCEPT",
+      "description": "The second generation of plants following mutation treatment.",
+      "source_id": "paper_5773"
+    },
+    {
+      "name": "M3 GENERATION",
+      "type": "CONCEPT",
+      "description": "The third generation of plants following mutation treatment.",
+      "source_id": "paper_5773"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BRAGG",
+      "target": "SOYBEAN",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_5773"
+    },
+    {
+      "source": "TYPE 49",
+      "target": "SOYBEAN",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_5773"
+    },
+    {
+      "source": "GAMMA RAYS",
+      "target": "BRAGG",
+      "description": "used to induce mutations in",
+      "weight": "8",
+      "source_id": "paper_5773"
+    },
+    {
+      "source": "ETHYL METHANESULPHONATE",
+      "target": "TYPE 49",
+      "description": "used to induce mutations in",
+      "weight": "8",
+      "source_id": "paper_5773"
+    },
+    {
+      "source": "GAMMA RAYS",
+      "target": "MALE STERILITY",
+      "description": "induced",
+      "weight": "9",
+      "source_id": "paper_5773"
+    },
+    {
+      "source": "ETHYL METHANESULPHONATE",
+      "target": "MALE STERILITY",
+      "description": "induced",
+      "weight": "9",
+      "source_id": "paper_5773"
+    },
+    {
+      "source": "RECESSIVE GENE",
+      "target": "MALE STERILITY",
+      "description": "controls",
+      "weight": "10",
+      "source_id": "paper_5773"
+    },
+    {
+      "source": "MALE STERILITY",
+      "target": "FEMALE FERTILITY",
+      "description": "varies in association with",
+      "weight": "7",
+      "source_id": "paper_5773"
+    },
+    {
+      "source": "M2 GENERATION",
+      "target": "MALE STERILITY",
+      "description": "generation where male sterility was observed",
+      "weight": "8",
+      "source_id": "paper_5773"
+    },
+    {
+      "source": "M3 GENERATION",
+      "target": "MALE STERILITY",
+      "description": "generation where segregation of male sterility was observed",
+      "weight": "8",
+      "source_id": "paper_5773"
+    }
+  ]
+}

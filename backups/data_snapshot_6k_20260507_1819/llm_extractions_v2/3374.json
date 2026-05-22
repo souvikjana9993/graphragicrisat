@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "SOIL CRUSTING",
+      "type": "CONDITION",
+      "description": "The formation of a hard layer on the soil surface that restricts the emergence of crop seedlings",
+      "source_id": "paper_3374"
+    },
+    {
+      "name": "ARID AND SEMIARID REGIONS",
+      "type": "LOCATION",
+      "description": "Geographic areas where soil crusting is a serious problem",
+      "source_id": "paper_3374"
+    },
+    {
+      "name": "SEEDLING EMERGENCE",
+      "type": "TRAIT",
+      "description": "The process of crop seedlings breaking through the soil surface",
+      "source_id": "paper_3374"
+    },
+    {
+      "name": "ROLLING-TYPE SOIL CRUST BREAKER",
+      "type": "METHOD",
+      "description": "A mechanical device designed to break soil crusts to improve seedling emergence",
+      "source_id": "paper_3374"
+    },
+    {
+      "name": "ANIMAL DRAFT POWER",
+      "type": "METHOD",
+      "description": "A method of pulling the soil crust breaker using animals",
+      "source_id": "paper_3374"
+    },
+    {
+      "name": "SMALL TRACTOR",
+      "type": "METHOD",
+      "description": "A method of pulling the soil crust breaker using a small tractor",
+      "source_id": "paper_3374"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL CRUSTING",
+      "target": "ARID AND SEMIARID REGIONS",
+      "description": "occurs in",
+      "weight": "9",
+      "source_id": "paper_3374"
+    },
+    {
+      "source": "SOIL CRUSTING",
+      "target": "SEEDLING EMERGENCE",
+      "description": "restricts",
+      "weight": "10",
+      "source_id": "paper_3374"
+    },
+    {
+      "source": "ROLLING-TYPE SOIL CRUST BREAKER",
+      "target": "SOIL CRUSTING",
+      "description": "breaks",
+      "weight": "10",
+      "source_id": "paper_3374"
+    },
+    {
+      "source": "ROLLING-TYPE SOIL CRUST BREAKER",
+      "target": "SEEDLING EMERGENCE",
+      "description": "improves",
+      "weight": "9",
+      "source_id": "paper_3374"
+    },
+    {
+      "source": "ANIMAL DRAFT POWER",
+      "target": "ROLLING-TYPE SOIL CRUST BREAKER",
+      "description": "powers",
+      "weight": "8",
+      "source_id": "paper_3374"
+    },
+    {
+      "source": "SMALL TRACTOR",
+      "target": "ROLLING-TYPE SOIL CRUST BREAKER",
+      "description": "powers",
+      "weight": "8",
+      "source_id": "paper_3374"
+    }
+  ]
+}

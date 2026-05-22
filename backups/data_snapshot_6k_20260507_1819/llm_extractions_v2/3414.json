@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Medium duration pigeonpeas (Cajanus cajan) grown in Peninsular India",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "PENINSULAR INDIA",
+      "type": "LOCATION",
+      "description": "Region in India where the study was conducted",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "MONSOON",
+      "type": "CONDITION",
+      "description": "Seasonal weather pattern that determines the sowing time of pigeonpeas",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "RATOONING",
+      "type": "METHOD",
+      "description": "A harvesting method where plants are cut down to encourage a second flush of pods",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "PICKING THE PODS",
+      "type": "METHOD",
+      "description": "A harvesting method where pods are manually picked",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "SECOND HARVEST YIELD",
+      "type": "TRAIT",
+      "description": "The yield obtained from the second flush of pods maturing around March",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "FIRST HARVEST YIELD",
+      "type": "TRAIT",
+      "description": "The yield obtained from the initial harvest maturing around December",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "ICRISAT CENTER",
+      "type": "LOCATION",
+      "description": "The research center where the experiments were conducted",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "VERTISOLS",
+      "type": "CONDITION",
+      "description": "A type of soil characterized by high water-holding capacity and soil cracking",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "ALFISOLS",
+      "type": "CONDITION",
+      "description": "A type of soil used in the experiments",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "METHOD",
+      "description": "The application of water to the crops to increase yield",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "WATER-HOLDING CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of soil to retain water, which is higher in Vertisols",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "SOIL CRACKING",
+      "type": "CONDITION",
+      "description": "The process of soil splitting in Vertisols which can damage root systems",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "ROOT SYSTEM",
+      "type": "CONCEPT",
+      "description": "The underground part of the pigeonpea plant",
+      "source_id": "paper_3414"
+    },
+    {
+      "name": "POD SHATTERING",
+      "type": "TRAIT",
+      "description": "The loss of seeds due to pods breaking open",
+      "source_id": "paper_3414"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "PENINSULAR INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "MONSOON",
+      "description": "sown after onset of",
+      "weight": "8",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "RATOONING",
+      "description": "harvested by",
+      "weight": "9",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "PICKING THE PODS",
+      "description": "harvested by",
+      "weight": "9",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SECOND HARVEST YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "FIRST HARVEST YIELD",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "ICRISAT CENTER",
+      "description": "studied at",
+      "weight": "10",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "SECOND HARVEST YIELD",
+      "target": "RATOONING",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "SECOND HARVEST YIELD",
+      "target": "VERTISOLS",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "SECOND HARVEST YIELD",
+      "target": "ALFISOLS",
+      "description": "affected by",
+      "weight": "9",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "SECOND HARVEST YIELD",
+      "target": "IRRIGATION",
+      "description": "increased by",
+      "weight": "8",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "VERTISOLS",
+      "target": "WATER-HOLDING CAPACITY",
+      "description": "has high",
+      "weight": "7",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "VERTISOLS",
+      "target": "SOIL CRACKING",
+      "description": "experiences",
+      "weight": "9",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "SOIL CRACKING",
+      "target": "ROOT SYSTEM",
+      "description": "damages",
+      "weight": "9",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "ROOT SYSTEM",
+      "target": "SECOND HARVEST YIELD",
+      "description": "affects",
+      "weight": "7",
+      "source_id": "paper_3414"
+    },
+    {
+      "source": "POD SHATTERING",
+      "target": "SECOND HARVEST YIELD",
+      "description": "causes loss in",
+      "weight": "7",
+      "source_id": "paper_3414"
+    }
+  ]
+}

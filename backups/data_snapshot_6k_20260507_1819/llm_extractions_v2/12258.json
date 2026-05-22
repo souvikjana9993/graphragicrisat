@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "CHILLI",
+      "type": "CROP",
+      "description": "Dry chilli pods (Capsicum annuum L.) including flakes and powder",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "AFLATOXIN CONTAMINATION",
+      "type": "CONDITION",
+      "description": "Contamination of dry chilli pods during storage rendering them unsafe for consumption and unfit for trade",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "TRADITIONAL STORAGE METHOD",
+      "type": "METHOD",
+      "description": "Conventional storage methods resulting in qualitative and quantitative losses",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "PICS TRIPLE BAGS",
+      "type": "METHOD",
+      "description": "Purdue improved crop storage based triple layer hermetic bags used for safe storage",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "UNTREATED JUTE BAG",
+      "type": "METHOD",
+      "description": "A type of storage bag used as a control in the study",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "POLYTHENE BAG",
+      "type": "METHOD",
+      "description": "A type of storage bag used as a control in the study",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "FUNGICIDE TREATED JUTE BAG",
+      "type": "METHOD",
+      "description": "A type of storage bag treated with fungicide used as a control in the study",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "ASPERGILLUS FLAVUS",
+      "type": "ORGANISM",
+      "description": "A fungus that causes aflatoxin infection in chilli pods",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "HYPOXIA",
+      "type": "CONDITION",
+      "description": "Low oxygen condition created inside PICS triple bags",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "HYPERCARBIA",
+      "type": "CONDITION",
+      "description": "High carbon dioxide condition created inside PICS triple bags",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "TEST WEIGHT",
+      "type": "TRAIT",
+      "description": "Weight of 1000 seeds used to measure quantitative loss",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "MOISTURE CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of water present in the chilli pods",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "GERMINATION PERCENTAGE",
+      "type": "TRAIT",
+      "description": "The percentage of seeds that successfully germinate after storage",
+      "source_id": "paper_12258"
+    },
+    {
+      "name": "STORAGE PERIOD",
+      "type": "CONDITION",
+      "description": "The duration of storage, specifically 2, 4, and 6 months",
+      "source_id": "paper_12258"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PICS TRIPLE BAGS",
+      "target": "CHILLI",
+      "description": "provides safe storage for",
+      "weight": "10",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "AFLATOXIN CONTAMINATION",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "ASPERGILLUS FLAVUS",
+      "target": "CHILLI",
+      "description": "infects",
+      "weight": "9",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "PICS TRIPLE BAGS",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "inhibits growth of",
+      "weight": "10",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "PICS TRIPLE BAGS",
+      "target": "HYPOXIA",
+      "description": "creates",
+      "weight": "9",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "PICS TRIPLE BAGS",
+      "target": "HYPERCARBIA",
+      "description": "creates",
+      "weight": "9",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "HYPOXIA",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "creates detrimental environment for",
+      "weight": "9",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "HYPERCARBIA",
+      "target": "ASPERGILLUS FLAVUS",
+      "description": "creates detrimental environment for",
+      "weight": "9",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "PICS TRIPLE BAGS",
+      "target": "TEST WEIGHT",
+      "description": "preserves",
+      "weight": "8",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "PICS TRIPLE BAGS",
+      "target": "MOISTURE CONTENT",
+      "description": "preserves",
+      "weight": "8",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "PICS TRIPLE BAGS",
+      "target": "GERMINATION PERCENTAGE",
+      "description": "preserves",
+      "weight": "8",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "TRADITIONAL STORAGE METHOD",
+      "target": "CHILLI",
+      "description": "causes qualitative and quantitative losses in",
+      "weight": "7",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "STORAGE PERIOD",
+      "target": "TEST WEIGHT",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "STORAGE PERIOD",
+      "target": "MOISTURE CONTENT",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_12258"
+    },
+    {
+      "source": "STORAGE PERIOD",
+      "target": "GERMINATION PERCENTAGE",
+      "description": "affects",
+      "weight": "6",
+      "source_id": "paper_12258"
+    }
+  ]
+}

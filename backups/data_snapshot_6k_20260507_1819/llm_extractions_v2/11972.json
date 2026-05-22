@@ -1,0 +1,299 @@
+{
+  "entities": [
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where crop stubble is generated",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "Agricultural crop producing straw waste",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "Agricultural crop producing stubble waste",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "RICE STRAW",
+      "type": "CONCEPT",
+      "description": "Vegetative waste from rice crops used for composting",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "WHEAT STRAW",
+      "type": "CONCEPT",
+      "description": "Vegetative waste from wheat crops",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "ORGANIC FERTILIZER",
+      "type": "CONCEPT",
+      "description": "High quality fertilizer produced from bio-conversion of waste",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "COMPOST",
+      "type": "CONCEPT",
+      "description": "Material generated from the decomposition of crop residues",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "SOIL HEALTH",
+      "type": "TRAIT",
+      "description": "Condition of the soil enhanced by residue incorporation",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "POLLUTION",
+      "type": "CONDITION",
+      "description": "Environmental degradation reduced by avoiding stubble burning",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "AEROBIC COMPOSTING",
+      "type": "METHOD",
+      "description": "Process of decomposing paddy straw using oxygen",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nutrient found in rice straw and analyzed in compost",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "Nutrient found in rice straw and analyzed in compost",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONCEPT",
+      "description": "Nutrient found in rice straw and analyzed in compost",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "SULPHUR",
+      "type": "CONCEPT",
+      "description": "Nutrient found in rice straw",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "CALCIUM",
+      "type": "CONCEPT",
+      "description": "Nutrient found in rice straw",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "MAGNESIUM",
+      "type": "CONCEPT",
+      "description": "Nutrient found in rice straw",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "SILICON",
+      "type": "CONCEPT",
+      "description": "Nutrient found in rice straw",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "COW DUNG",
+      "type": "CONCEPT",
+      "description": "Additive used in the composting process",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "BIOMASS",
+      "type": "CONCEPT",
+      "description": "Organic material used for composting",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "ORGANIC CARBON",
+      "type": "CONCEPT",
+      "description": "Parameter analyzed in compost samples",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "WALKLEY BLACK METHOD",
+      "type": "METHOD",
+      "description": "Analytical method used to determine organic carbon",
+      "source_id": "paper_11972"
+    },
+    {
+      "name": "ICPMS",
+      "type": "METHOD",
+      "description": "Analytical method used to determine N, P, and K levels",
+      "source_id": "paper_11972"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RICE",
+      "target": "RICE STRAW",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "WHEAT",
+      "target": "WHEAT STRAW",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "INDIA",
+      "target": "RICE",
+      "description": "location of production",
+      "weight": "8",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "INDIA",
+      "target": "WHEAT",
+      "description": "location of production",
+      "weight": "8",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "COMPOST",
+      "description": "used to generate",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "WHEAT STRAW",
+      "target": "COMPOST",
+      "description": "used to generate",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "COMPOST",
+      "target": "ORGANIC FERTILIZER",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "COMPOST",
+      "target": "SOIL HEALTH",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "COMPOST",
+      "target": "POLLUTION",
+      "description": "reduces",
+      "weight": "7",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "AEROBIC COMPOSTING",
+      "target": "RICE STRAW",
+      "description": "decomposes",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "NITROGEN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "PHOSPHORUS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "POTASSIUM",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "SULPHUR",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "CALCIUM",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "MAGNESIUM",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "RICE STRAW",
+      "target": "SILICON",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "COW DUNG",
+      "target": "AEROBIC COMPOSTING",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "BIOMASS",
+      "target": "AEROBIC COMPOSTING",
+      "description": "subject of",
+      "weight": "9",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "WALKLEY BLACK METHOD",
+      "target": "ORGANIC CARBON",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "ICPMS",
+      "target": "NITROGEN",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "ICPMS",
+      "target": "PHOSPHORUS",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_11972"
+    },
+    {
+      "source": "ICPMS",
+      "target": "POTASSIUM",
+      "description": "measures",
+      "weight": "10",
+      "source_id": "paper_11972"
+    }
+  ]
+}

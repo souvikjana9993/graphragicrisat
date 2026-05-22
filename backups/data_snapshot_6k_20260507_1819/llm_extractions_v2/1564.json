@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop used in the sole cropping system studied for disease incidence.",
+      "source_id": "paper_1564"
+    },
+    {
+      "name": "PLANT DENSITY",
+      "type": "CONDITION",
+      "description": "The population of plants per unit area, which was found to inversely affect disease incidence.",
+      "source_id": "paper_1564"
+    },
+    {
+      "name": "IRRIGATION",
+      "type": "CONDITION",
+      "description": "The application of water to plots, which reduced disease incidence compared to nonirrigated plots.",
+      "source_id": "paper_1564"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS TOSPOVIRUS (PBNV)",
+      "type": "ORGANISM",
+      "description": "The tospovirus responsible for causing peanut bud necrosis disease.",
+      "source_id": "paper_1564"
+    },
+    {
+      "name": "DISEASE INCIDENCE",
+      "type": "TRAIT",
+      "description": "The measure of the occurrence of peanut bud necrosis disease in the groundnut crop.",
+      "source_id": "paper_1564"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PLANT DENSITY",
+      "target": "DISEASE INCIDENCE",
+      "description": "Increased plant density significantly decreased disease incidence.",
+      "weight": "9",
+      "source_id": "paper_1564"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "DISEASE INCIDENCE",
+      "description": "Irrigation resulted in lower disease incidence compared to nonirrigated plots.",
+      "weight": "9",
+      "source_id": "paper_1564"
+    },
+    {
+      "source": "PEANUT BUD NECROSIS TOSPOVIRUS (PBNV)",
+      "target": "GROUNDNUT",
+      "description": "The virus that causes bud necrosis in the groundnut crop.",
+      "weight": "10",
+      "source_id": "paper_1564"
+    },
+    {
+      "source": "PLANT DENSITY",
+      "target": "PEANUT BUD NECROSIS TOSPOVIRUS (PBNV)",
+      "description": "Plant density affects the incidence of the virus.",
+      "weight": "8",
+      "source_id": "paper_1564"
+    },
+    {
+      "source": "IRRIGATION",
+      "target": "PEANUT BUD NECROSIS TOSPOVIRUS (PBNV)",
+      "description": "Irrigation affects the incidence of the virus.",
+      "weight": "8",
+      "source_id": "paper_1564"
+    }
+  ]
+}

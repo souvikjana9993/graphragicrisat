@@ -1,0 +1,193 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum bicolor (L.) Moench landrace collection held at ICRISAT",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "International Crops Research Institute for the Semi-Arid Tropics, the institution maintaining the sorghum landrace collection",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The overall variety of genetic characteristics within the sorghum collection",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "SAMPLING STRATEGIES",
+      "type": "METHOD",
+      "description": "Different approaches, either random or non-random, proposed to obtain subsets of reduced size",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "RANDOM SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling strategy where members are selected by chance, such as the logarithmic strategy",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "NON-RANDOM SAMPLING",
+      "type": "METHOD",
+      "description": "A sampling strategy where members are selected based on specific criteria, such as morpho-agronomic diversity or empirical knowledge",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "CORE COLLECTION",
+      "type": "CONCEPT",
+      "description": "Subsets of reduced size obtained from a larger germplasm collection to facilitate efficient utilization",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "LOGARITHMIC STRATEGY",
+      "type": "METHOD",
+      "description": "A random sampling method within a stratified collection",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "PRINCIPAL COMPONENT SCORE STRATEGY",
+      "type": "METHOD",
+      "description": "A sampling method based upon morpho-agronomic diversity",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "TAXONOMIC STRATEGY",
+      "type": "METHOD",
+      "description": "A sampling method based upon empirical knowledge of sorghum",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "MORPHO-AGRONOMIC DIVERSITY",
+      "type": "TRAIT",
+      "description": "Diversity based on morphological and agronomic characteristics used for characterization",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "PASSPORT DATA",
+      "type": "CONCEPT",
+      "description": "Documented information regarding the origin and characteristics of germplasm accessions",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "PHENOTYPIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The observable physical properties of the sorghum collection assessed through morpho-agronomic and passport data",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "SHANNON-WEAVER DIVERSITY INDICES",
+      "type": "METHOD",
+      "description": "A method used to measure and compare the overall diversity of the subsets",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "PHOTOPERIOD REACTION",
+      "type": "TRAIT",
+      "description": "A specific character associated with the stratification of the collection",
+      "source_id": "paper_1955"
+    },
+    {
+      "name": "GEOGRAPHICAL ADAPTATION",
+      "type": "TRAIT",
+      "description": "The range of adaptation to different geographical locations covered by the landraces",
+      "source_id": "paper_1955"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SAMPLING STRATEGIES",
+      "target": "CORE COLLECTION",
+      "description": "used to obtain",
+      "weight": "10",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "RANDOM SAMPLING",
+      "target": "SAMPLING STRATEGIES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "NON-RANDOM SAMPLING",
+      "target": "SAMPLING STRATEGIES",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "LOGARITHMIC STRATEGY",
+      "target": "RANDOM SAMPLING",
+      "description": "is a specific implementation of",
+      "weight": "9",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "PRINCIPAL COMPONENT SCORE STRATEGY",
+      "target": "NON-RANDOM SAMPLING",
+      "description": "is a specific implementation of",
+      "weight": "9",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "TAXONOMIC STRATEGY",
+      "target": "NON-RANDOM SAMPLING",
+      "description": "is a specific implementation of",
+      "weight": "9",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "SORGHUM",
+      "description": "maintains the collection of",
+      "weight": "10",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "SHANNON-WEAVER DIVERSITY INDICES",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to measure",
+      "weight": "9",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "MORPHO-AGRONOMIC DIVERSITY",
+      "target": "SORGHUM",
+      "description": "is a characteristic of",
+      "weight": "8",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "PASSPORT DATA",
+      "target": "SORGHUM",
+      "description": "is documented for",
+      "weight": "8",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "PHOTOPERIOD REACTION",
+      "target": "MORPHO-AGRONOMIC DIVERSITY",
+      "description": "is a character associated with",
+      "weight": "7",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "GEOGRAPHICAL ADAPTATION",
+      "target": "MORPHO-AGRONOMIC DIVERSITY",
+      "description": "is a characteristic of",
+      "weight": "7",
+      "source_id": "paper_1955"
+    },
+    {
+      "source": "PHENOTYPIC DIVERSITY",
+      "target": "MORPHO-AGRONOMIC DIVERSITY",
+      "description": "is assessed through",
+      "weight": "8",
+      "source_id": "paper_1955"
+    }
+  ]
+}

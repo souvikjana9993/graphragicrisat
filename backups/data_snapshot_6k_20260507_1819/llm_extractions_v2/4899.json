@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The legume species being studied for dwarfism and natural outcrossing.",
+      "source_id": "paper_4899"
+    },
+    {
+      "name": "DWARFISM",
+      "type": "TRAIT",
+      "description": "A recessive trait characterized by short plant stature in pigeonpea.",
+      "source_id": "paper_4899"
+    },
+    {
+      "name": "TALLNESS",
+      "type": "TRAIT",
+      "description": "A dominant trait characterized by tall plant stature in pigeonpea.",
+      "source_id": "paper_4899"
+    },
+    {
+      "name": "ICRISAT CENTER",
+      "type": "LOCATION",
+      "description": "The research facility where the genetic studies on pigeonpea were conducted.",
+      "source_id": "paper_4899"
+    },
+    {
+      "name": "TALL PLANT STATURE",
+      "type": "GENE_MARKER",
+      "description": "A phenotypic characteristic used as a genetic marker to study natural outcrossing.",
+      "source_id": "paper_4899"
+    },
+    {
+      "name": "NATURAL OUTCROSSING",
+      "type": "CONCEPT",
+      "description": "The process of pollen transfer between different genotypes in a natural environment.",
+      "source_id": "paper_4899"
+    },
+    {
+      "name": "RAINY SEASON",
+      "type": "CONDITION",
+      "description": "The environmental timing during which seeds were harvested and progenies were grown.",
+      "source_id": "paper_4899"
+    },
+    {
+      "name": "F2 GENERATION",
+      "type": "CONCEPT",
+      "description": "The second filial generation of dwarf pigeonpea plants used for seed harvesting.",
+      "source_id": "paper_4899"
+    },
+    {
+      "name": "F3 GENERATION",
+      "type": "CONCEPT",
+      "description": "The third filial generation of pigeonpea plants used to estimate outcrossing.",
+      "source_id": "paper_4899"
+    },
+    {
+      "name": "OPEN POLLINATION",
+      "type": "METHOD",
+      "description": "The method of pollination used to obtain seeds from F2 dwarf plants.",
+      "source_id": "paper_4899"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DWARFISM",
+      "target": "TALLNESS",
+      "description": "is recessive to",
+      "weight": "10",
+      "source_id": "paper_4899"
+    },
+    {
+      "source": "TALL PLANT STATURE",
+      "target": "NATURAL OUTCROSSING",
+      "description": "used as a genetic marker to study",
+      "weight": "9",
+      "source_id": "paper_4899"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "DWARFISM",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_4899"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "TALLNESS",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_4899"
+    },
+    {
+      "source": "ICRISAT CENTER",
+      "target": "PIGEONPEA",
+      "description": "location of genetic studies on",
+      "weight": "7",
+      "source_id": "paper_4899"
+    },
+    {
+      "source": "NATURAL OUTCROSSING",
+      "target": "PIGEONPEA",
+      "description": "occurs in genotypes of",
+      "weight": "8",
+      "source_id": "paper_4899"
+    },
+    {
+      "source": "F2 GENERATION",
+      "target": "F3 GENERATION",
+      "description": "precedes",
+      "weight": "10",
+      "source_id": "paper_4899"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "F2 GENERATION",
+      "description": "timing of seed harvest",
+      "weight": "7",
+      "source_id": "paper_4899"
+    },
+    {
+      "source": "RAINY SEASON",
+      "target": "F3 GENERATION",
+      "description": "timing of plant growth",
+      "weight": "7",
+      "source_id": "paper_4899"
+    },
+    {
+      "source": "OPEN POLLINATION",
+      "target": "F2 GENERATION",
+      "description": "method used to obtain seeds from",
+      "weight": "8",
+      "source_id": "paper_4899"
+    }
+  ]
+}

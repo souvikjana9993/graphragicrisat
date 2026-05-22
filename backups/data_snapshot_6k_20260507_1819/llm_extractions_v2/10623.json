@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A cultivated food legume and source of high-quality protein, scientifically known as Cicer arietinum L.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "RNA-SEQ",
+      "type": "METHOD",
+      "description": "A high-resolution sequencing method used to analyze gene expression patterns.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "GENE EXPRESSION ATLAS",
+      "type": "CONCEPT",
+      "description": "A comprehensive map (CaGEA) of gene expression across plant developmental stages and organs.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "GROWTH AND DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The programmed expression of genes across time, stage, and tissue in plants.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "ICC 4958",
+      "type": "CROP",
+      "description": "A widely used drought tolerant cultivar of chickpea.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant cultivar to maintain growth and productivity under water-limited conditions.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED GENES",
+      "type": "GENE_MARKER",
+      "description": "Genes that show statistically significant differences in expression levels across different tissue combinations.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "TRAIT",
+      "description": "The biological process of flower development in plants.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "NODULATION",
+      "type": "TRAIT",
+      "description": "The process of forming nodules on roots for nitrogen fixation.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "SEED DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The biological process of seed formation and growth.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "ROOT DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The biological process of root system growth and architecture.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "QTL-HOTSPOT",
+      "type": "GENE_MARKER",
+      "description": "A genomic region containing multiple quantitative trait loci associated with a specific trait.",
+      "source_id": "paper_10623"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental condition characterized by a deficiency of water available to the plant.",
+      "source_id": "paper_10623"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RNA-SEQ",
+      "target": "GENE EXPRESSION ATLAS",
+      "description": "used to generate",
+      "weight": "10",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "GENE EXPRESSION ATLAS",
+      "target": "CHICKPEA",
+      "description": "describes gene expression of",
+      "weight": "10",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "ICC 4958",
+      "target": "CHICKPEA",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "ICC 4958",
+      "target": "DROUGHT TOLERANCE",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "RNA-SEQ",
+      "target": "ICC 4958",
+      "description": "applied to analyze",
+      "weight": "10",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "GROWTH AND DEVELOPMENT",
+      "description": "contribute to",
+      "weight": "8",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "FLOWERING",
+      "description": "contribute to",
+      "weight": "8",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "NODULATION",
+      "description": "contribute to",
+      "weight": "8",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "SEED DEVELOPMENT",
+      "description": "contribute to",
+      "weight": "8",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "ROOT DEVELOPMENT",
+      "description": "contribute to",
+      "weight": "8",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "QTL-HOTSPOT",
+      "target": "DROUGHT STRESS",
+      "description": "associated with response to",
+      "weight": "9",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "QTL-HOTSPOT",
+      "target": "CHICKPEA",
+      "description": "located in genome of",
+      "weight": "9",
+      "source_id": "paper_10623"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED GENES",
+      "target": "QTL-HOTSPOT",
+      "description": "identified within",
+      "weight": "8",
+      "source_id": "paper_10623"
+    }
+  ]
+}

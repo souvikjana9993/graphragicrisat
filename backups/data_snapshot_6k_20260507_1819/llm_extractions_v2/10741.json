@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "A country in South Asia where the study was conducted",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "LAND TENURE",
+      "type": "CONCEPT",
+      "description": "The legal or customary system in which land is owned, occupied, or used",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "VDSA PANEL DATASET",
+      "type": "METHOD",
+      "description": "The Village Dynamics in South Asia panel dataset used for analysis from 2010 to 2015",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "PLOT SIZE",
+      "type": "CONCEPT",
+      "description": "The size of the land plots used for cultivation",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "FARM PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The measure of agricultural output per unit of input or land",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "OWNER OPERATED LANDS",
+      "type": "CONCEPT",
+      "description": "Lands that are both owned and managed by the same individual or household",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "HIERARCHICAL MIXED EFFECTS MODELS",
+      "type": "METHOD",
+      "description": "A statistical modeling approach used to account for the nested structure of the data",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "TRANSFORMATION PARAMETERS",
+      "type": "METHOD",
+      "description": "Parameters used to adjust variables to accommodate non-linear relationships",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "LAND REFORM PROCESSES",
+      "type": "CONCEPT",
+      "description": "Policies and actions aimed at redistributing land or changing land tenure systems",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "LAND CONSOLIDATION",
+      "type": "CONCEPT",
+      "description": "The process of merging small, fragmented land parcels into larger, more efficient units",
+      "source_id": "paper_10741"
+    },
+    {
+      "name": "CEILING POLICIES",
+      "type": "CONCEPT",
+      "description": "Regulations that set a maximum limit on the amount of land an individual or entity can own",
+      "source_id": "paper_10741"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PLOT SIZE",
+      "target": "FARM PRODUCTIVITY",
+      "description": "Positive relation between average plot size and agricultural productivity",
+      "weight": "9",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "OWNER OPERATED LANDS",
+      "target": "FARM PRODUCTIVITY",
+      "description": "Owner operated lands have higher farm productivity",
+      "weight": "8",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "HIERARCHICAL MIXED EFFECTS MODELS",
+      "target": "FARM PRODUCTIVITY",
+      "description": "Used to analyze the nested structure of data regarding farm productivity",
+      "weight": "7",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "TRANSFORMATION PARAMETERS",
+      "target": "FARM PRODUCTIVITY",
+      "description": "Used to accommodate non-linear relationships between variables affecting productivity",
+      "weight": "6",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "LAND CONSOLIDATION",
+      "target": "FARM PRODUCTIVITY",
+      "description": "Supports an increase in agricultural productivity",
+      "weight": "8",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "CEILING POLICIES",
+      "target": "FARM PRODUCTIVITY",
+      "description": "Supports an increase in agricultural productivity",
+      "weight": "8",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "LAND CONSOLIDATION",
+      "target": "LAND REFORM PROCESSES",
+      "description": "Key aspect of ongoing land reform processes",
+      "weight": "9",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "CEILING POLICIES",
+      "target": "LAND REFORM PROCESSES",
+      "description": "Key aspect of ongoing land reform processes",
+      "weight": "9",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "LAND REFORM PROCESSES",
+      "target": "INDIA",
+      "description": "Ongoing processes occurring within India",
+      "weight": "7",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "LAND TENURE",
+      "target": "INDIA",
+      "description": "Issues related to land tenure in India",
+      "weight": "7",
+      "source_id": "paper_10741"
+    },
+    {
+      "source": "VDSA PANEL DATASET",
+      "target": "INDIA",
+      "description": "Dataset covering households in 9 states of India",
+      "weight": "9",
+      "source_id": "paper_10741"
+    }
+  ]
+}

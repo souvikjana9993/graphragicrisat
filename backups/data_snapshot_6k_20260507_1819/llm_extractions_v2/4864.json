@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop affected by stem rot and used for bacterial strain evaluation",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "STEM ROT",
+      "type": "CONDITION",
+      "description": "A disease of groundnut caused by Sclerotium rolfsii",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "SCLEROTIUM ROLFSII",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes stem rot in groundnut",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "PSEUDOMONAS AERUGINOSA",
+      "type": "ORGANISM",
+      "description": "A biocontrol bacterial strain used to reduce stem rot and inhibit pathogen enzymes",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "SEED TREATMENT",
+      "type": "METHOD",
+      "description": "A method of applying bacterial strains to seeds",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "SOIL AMENDMENT",
+      "type": "METHOD",
+      "description": "A method of applying bacterial strains to the soil",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "SEEDLING MORTALITY",
+      "type": "TRAIT",
+      "description": "The rate of seedling death caused by stem rot",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "MYCELIAL GROWTH",
+      "type": "TRAIT",
+      "description": "The growth of the fungal mycelium of Sclerotium rolfsii",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "CELL WALL-DEGRADING ENZYMES",
+      "type": "CONCEPT",
+      "description": "Enzymes produced by Sclerotium rolfsii to break down plant cell walls",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "POLYGALACTURONASE",
+      "type": "CONCEPT",
+      "description": "A specific cell wall-degrading enzyme produced by Sclerotium rolfsii",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "CELLULASE",
+      "type": "CONCEPT",
+      "description": "A specific cell wall-degrading enzyme produced by Sclerotium rolfsii",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "THIRAM",
+      "type": "CONCEPT",
+      "description": "A commonly used seed dressing fungicide",
+      "source_id": "paper_4864"
+    },
+    {
+      "name": "INTEGRATED MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "A comprehensive approach to managing groundnut stem rot",
+      "source_id": "paper_4864"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "STEM ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "STEM ROT",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "PSEUDOMONAS AERUGINOSA",
+      "target": "STEM ROT",
+      "description": "reduces incidence of",
+      "weight": "9",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "PSEUDOMONAS AERUGINOSA",
+      "target": "SEEDLING MORTALITY",
+      "description": "reduces",
+      "weight": "8",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "PSEUDOMONAS AERUGINOSA",
+      "target": "SCLEROTIUM ROLFSII",
+      "description": "reduces mycelial growth of",
+      "weight": "8",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "PSEUDOMONAS AERUGINOSA",
+      "target": "CELL WALL-DEGRADING ENZYMES",
+      "description": "inhibits activity of",
+      "weight": "9",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "SCLEROTIUM ROLFSII",
+      "target": "CELL WALL-DEGRADING ENZYMES",
+      "description": "produces",
+      "weight": "10",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "CELL WALL-DEGRADING ENZYMES",
+      "target": "POLYGALACTURONASE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "CELL WALL-DEGRADING ENZYMES",
+      "target": "CELLULASE",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "PSEUDOMONAS AERUGINOSA",
+      "target": "THIRAM",
+      "description": "has tolerance to",
+      "weight": "7",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "SEED TREATMENT",
+      "target": "PSEUDOMONAS AERUGINOSA",
+      "description": "method of application for",
+      "weight": "8",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "SOIL AMENDMENT",
+      "target": "PSEUDOMONAS AERUGINOSA",
+      "description": "method of application for",
+      "weight": "8",
+      "source_id": "paper_4864"
+    },
+    {
+      "source": "PSEUDOMONAS AERUGINOSA",
+      "target": "INTEGRATED MANAGEMENT",
+      "description": "component of",
+      "weight": "7",
+      "source_id": "paper_4864"
+    }
+  ]
+}

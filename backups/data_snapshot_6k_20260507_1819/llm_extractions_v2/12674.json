@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop being studied for yield estimation and management strategies.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced, used as a primary metric for estimation and comparison.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A measure of leaf area per unit ground surface area, predicted by the DSSAT model.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "DSSAT",
+      "type": "METHOD",
+      "description": "Decision Support System for Agro Technology Transfer, a crop simulation model used to predict rice yields and LAI.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "CROP MODELS",
+      "type": "METHOD",
+      "description": "General simulation tools used for yield estimation and evaluating management strategies.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "REMOTE SENSING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Methodologies used for estimating crop yields.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "EMPIRICAL EQUATIONS",
+      "type": "METHOD",
+      "description": "Mathematical formulas used for estimating crop yields.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "CROP-CUTTING EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Field-based method used to obtain observed yield data for model validation.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "MANAGEMENT STRATEGIES",
+      "type": "CONCEPT",
+      "description": "Farm practices and management methods aimed at improving crop yield and resource efficiency.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "KARIMNAGAR DISTRICT",
+      "type": "LOCATION",
+      "description": "The specific district in Telangana state where the study was conducted.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "TELANGANA STATE",
+      "type": "LOCATION",
+      "description": "The state in India where the study region is located.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "BIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Biological factors that can cause discrepancies between predicted and actual crop yields.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "SOWING TIME",
+      "type": "CONDITION",
+      "description": "The timing of sowing which influences the performance of the DSSAT model and crop yield.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "NITROGEN APPLICATION",
+      "type": "CONDITION",
+      "description": "The amount of nitrogen applied which influences the performance of the DSSAT model and crop yield.",
+      "source_id": "paper_12674"
+    },
+    {
+      "name": "CROP YIELD ESTIMATION",
+      "type": "CONCEPT",
+      "description": "The process of predicting crop yields for decision-making and insurance purposes.",
+      "source_id": "paper_12674"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DSSAT",
+      "target": "RICE",
+      "description": "predicts yield for",
+      "weight": "10",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "DSSAT",
+      "target": "YIELD",
+      "description": "predicts",
+      "weight": "10",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "DSSAT",
+      "target": "LEAF AREA INDEX",
+      "description": "predicts",
+      "weight": "10",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "CROP MODELS",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "REMOTE SENSING TECHNIQUES",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "EMPIRICAL EQUATIONS",
+      "target": "CROP YIELD ESTIMATION",
+      "description": "used for",
+      "weight": "9",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "DSSAT",
+      "target": "CROP MODELS",
+      "description": "is a type of",
+      "weight": "10",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "CROP-CUTTING EXPERIMENTS",
+      "target": "YIELD",
+      "description": "used to observe",
+      "weight": "10",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "MANAGEMENT STRATEGIES",
+      "target": "YIELD",
+      "description": "aim to improve",
+      "weight": "8",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "KARIMNAGAR DISTRICT",
+      "target": "TELANGANA STATE",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "BIOTIC STRESS",
+      "target": "YIELD",
+      "description": "causes discrepancy in",
+      "weight": "7",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "SOWING TIME",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "NITROGEN APPLICATION",
+      "target": "YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_12674"
+    },
+    {
+      "source": "DSSAT",
+      "target": "MANAGEMENT STRATEGIES",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_12674"
+    }
+  ]
+}

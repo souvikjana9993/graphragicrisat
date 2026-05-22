@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "A legume crop produced for edible nuts and oil.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "SEED QUALITY",
+      "type": "TRAIT",
+      "description": "Characteristics related to the quality of the seeds, specifically for confectionery use.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "LARGE SEED SIZE",
+      "type": "TRAIT",
+      "description": "The characteristic of having larger seeds, preferred for direct consumption.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of developing improved crop varieties with desired traits.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "ICRISAT CENTER",
+      "type": "LOCATION",
+      "description": "A research center in India focused on agricultural development.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the ICRISAT Center is located.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "NORTH CAROLINA STATE UNIVERSITY",
+      "type": "LOCATION",
+      "description": "A university in the USA that provided advanced breeding lines.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "RALEIGH",
+      "type": "LOCATION",
+      "description": "The city in the USA where North Carolina State University is located.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "USA",
+      "type": "LOCATION",
+      "description": "The country where North Carolina State University is located.",
+      "source_id": "paper_3204"
+    },
+    {
+      "name": "GENETIC BASE",
+      "type": "CONCEPT",
+      "description": "The genetic diversity within a population of breeding lines.",
+      "source_id": "paper_3204"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "YIELD",
+      "description": "has trait",
+      "weight": "8",
+      "source_id": "paper_3204"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "SEED QUALITY",
+      "description": "has trait",
+      "weight": "8",
+      "source_id": "paper_3204"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "LARGE SEED SIZE",
+      "description": "has trait",
+      "weight": "9",
+      "source_id": "paper_3204"
+    },
+    {
+      "source": "BREEDING",
+      "target": "GROUNDNUT",
+      "description": "used to improve",
+      "weight": "9",
+      "source_id": "paper_3204"
+    },
+    {
+      "source": "BREEDING",
+      "target": "ICRISAT CENTER",
+      "description": "conducted at",
+      "weight": "7",
+      "source_id": "paper_3204"
+    },
+    {
+      "source": "ICRISAT CENTER",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3204"
+    },
+    {
+      "source": "BREEDING",
+      "target": "NORTH CAROLINA STATE UNIVERSITY",
+      "description": "conducted at",
+      "weight": "7",
+      "source_id": "paper_3204"
+    },
+    {
+      "source": "NORTH CAROLINA STATE UNIVERSITY",
+      "target": "RALEIGH",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3204"
+    },
+    {
+      "source": "RALEIGH",
+      "target": "USA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_3204"
+    },
+    {
+      "source": "BREEDING",
+      "target": "GENETIC BASE",
+      "description": "aims to broaden",
+      "weight": "8",
+      "source_id": "paper_3204"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "RICE",
+      "type": "CROP",
+      "description": "The crop grown in submerged fields that serves as a source of atmospheric methane",
+      "source_id": "paper_3946"
+    },
+    {
+      "name": "METHANE EMISSION",
+      "type": "CONCEPT",
+      "description": "The release of methane gas into the atmosphere from flooded or wetland soils",
+      "source_id": "paper_3946"
+    },
+    {
+      "name": "NITRIFICATION INHIBITORS",
+      "type": "METHOD",
+      "description": "Chemical agents used to retard nitrification and reduce the emission of greenhouse gases",
+      "source_id": "paper_3946"
+    },
+    {
+      "name": "SUBMERGED RICE SOILS",
+      "type": "CONDITION",
+      "description": "Flooded or wetland soil environments used for rice cultivation",
+      "source_id": "paper_3946"
+    },
+    {
+      "name": "NITRIFICATION",
+      "type": "CONCEPT",
+      "description": "The biological process of ammonia oxidation that can be retarded by inhibitors",
+      "source_id": "paper_3946"
+    },
+    {
+      "name": "NITROGEN TRANSFORMATIONS",
+      "type": "CONCEPT",
+      "description": "The various chemical changes nitrogen undergoes in soil environments",
+      "source_id": "paper_3946"
+    },
+    {
+      "name": "NITROUS OXIDE PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The generation of nitrous oxide gas, which can be reduced by nitrification inhibitors in upland soils",
+      "source_id": "paper_3946"
+    },
+    {
+      "name": "UPLAND SOILS",
+      "type": "CONDITION",
+      "description": "Non-flooded soils where nitrification inhibitors reduce nitrous oxide production",
+      "source_id": "paper_3946"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITRIFICATION INHIBITORS",
+      "target": "METHANE EMISSION",
+      "description": "inhibits or retards production and emission in submerged rice soils",
+      "weight": "8",
+      "source_id": "paper_3946"
+    },
+    {
+      "source": "NITRIFICATION INHIBITORS",
+      "target": "NITRIFICATION",
+      "description": "retards the process of",
+      "weight": "10",
+      "source_id": "paper_3946"
+    },
+    {
+      "source": "NITRIFICATION INHIBITORS",
+      "target": "NITROGEN TRANSFORMATIONS",
+      "description": "affects transformations other than nitrification",
+      "weight": "7",
+      "source_id": "paper_3946"
+    },
+    {
+      "source": "NITRIFICATION INHIBITORS",
+      "target": "NITROUS OXIDE PRODUCTION",
+      "description": "reduces production in upland soils",
+      "weight": "8",
+      "source_id": "paper_3946"
+    },
+    {
+      "source": "SUBMERGED RICE SOILS",
+      "target": "METHANE EMISSION",
+      "description": "acts as an important source of",
+      "weight": "9",
+      "source_id": "paper_3946"
+    },
+    {
+      "source": "RICE",
+      "target": "SUBMERGED RICE SOILS",
+      "description": "cultivated in",
+      "weight": "10",
+      "source_id": "paper_3946"
+    },
+    {
+      "source": "NITRIFICATION INHIBITORS",
+      "target": "SUBMERGED RICE SOILS",
+      "description": "used to reduce methane emission in",
+      "weight": "8",
+      "source_id": "paper_3946"
+    },
+    {
+      "source": "NITRIFICATION INHIBITORS",
+      "target": "UPLAND SOILS",
+      "description": "used to reduce nitrous oxide production in",
+      "weight": "7",
+      "source_id": "paper_3946"
+    }
+  ]
+}

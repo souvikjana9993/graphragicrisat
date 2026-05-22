@@ -1,0 +1,263 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "An important staple food crop in the semiarid tropics.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "SEMIARID TROPICS",
+      "type": "LOCATION",
+      "description": "The geographical region where pearl millet is a staple food crop.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease affecting pearl millet caused by Sclerospora graminicola.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The pathogen that causes downy mildew in pearl millet.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "BLAST",
+      "type": "CONDITION",
+      "description": "A disease affecting pearl millet caused by Pyricularia grisea.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "PYRICULARIA GRISEA",
+      "type": "ORGANISM",
+      "description": "The pathogen that causes blast in pearl millet.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "RUST",
+      "type": "CONDITION",
+      "description": "A disease affecting pearl millet caused by Puccinia substriata var. indica.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "PUCCINIA SUBSTRIATA VAR. INDICA",
+      "type": "ORGANISM",
+      "description": "The pathogen that causes rust in pearl millet.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "ERGOT",
+      "type": "CONDITION",
+      "description": "A disease affecting pearl millet caused by Claviceps fusiformis.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "CLAVICEPS FUSIFORMIS",
+      "type": "ORGANISM",
+      "description": "The pathogen that causes ergot in pearl millet.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "SMUT",
+      "type": "CONDITION",
+      "description": "A disease affecting pearl millet caused by Moesiziomyces penicillariae.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "MOESIZIOMYCES PENICILLARIAE",
+      "type": "ORGANISM",
+      "description": "The pathogen that causes smut in pearl millet.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced, which is reduced by diseases.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "QUALITY",
+      "type": "TRAIT",
+      "description": "The standard of the crop produced, which is reduced by diseases.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of a cultivar to resist infection by pathogens.",
+      "source_id": "paper_5527"
+    },
+    {
+      "name": "SCREENING TECHNIQUES",
+      "type": "METHOD",
+      "description": "Methods used to identify disease resistant varieties and hybrids.",
+      "source_id": "paper_5527"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "PYRICULARIA GRISEA",
+      "target": "BLAST",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "PUCCINIA SUBSTRIATA VAR. INDICA",
+      "target": "RUST",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "CLAVICEPS FUSIFORMIS",
+      "target": "ERGOT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "MOESIZIOMYCES PENICILLARIAE",
+      "target": "SMUT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "BLAST",
+      "target": "PEARL MILLET",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "RUST",
+      "target": "PEARL MILLET",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "ERGOT",
+      "target": "PEARL MILLET",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "SMUT",
+      "target": "PEARL MILLET",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SEMIARID TROPICS",
+      "description": "grown in",
+      "weight": "8",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "YIELD",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "QUALITY",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "BLAST",
+      "target": "YIELD",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "BLAST",
+      "target": "QUALITY",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "RUST",
+      "target": "YIELD",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "RUST",
+      "target": "QUALITY",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "ERGOT",
+      "target": "YIELD",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "ERGOT",
+      "target": "QUALITY",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "SMUT",
+      "target": "YIELD",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "SMUT",
+      "target": "QUALITY",
+      "description": "causes loss in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "DISEASE RESISTANCE",
+      "target": "PEARL MILLET",
+      "description": "trait for improvement in",
+      "weight": "9",
+      "source_id": "paper_5527"
+    },
+    {
+      "source": "SCREENING TECHNIQUES",
+      "target": "DISEASE RESISTANCE",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_5527"
+    }
+  ]
+}

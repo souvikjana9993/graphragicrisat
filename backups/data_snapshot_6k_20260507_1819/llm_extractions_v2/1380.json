@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "WHEAT",
+      "type": "CROP",
+      "description": "Triticum aestivum L., the crop species studied for leaf angle inheritance",
+      "source_id": "paper_1380"
+    },
+    {
+      "name": "LEAF ANGLE",
+      "type": "TRAIT",
+      "description": "The morphological character studied for its inheritance patterns",
+      "source_id": "paper_1380"
+    },
+    {
+      "name": "DIALLEL CROSS",
+      "type": "METHOD",
+      "description": "A 6x6 mating design used to analyze genetic inheritance",
+      "source_id": "paper_1380"
+    },
+    {
+      "name": "GENETIC ANALYSIS",
+      "type": "METHOD",
+      "description": "The process of analyzing diallel cross parameters and graphic data",
+      "source_id": "paper_1380"
+    },
+    {
+      "name": "DIALLEL CROSS PARAMETERS",
+      "type": "CONCEPT",
+      "description": "Metrics used within genetic analysis to determine inheritance patterns",
+      "source_id": "paper_1380"
+    },
+    {
+      "name": "GRAPHIC ANALYSIS",
+      "type": "METHOD",
+      "description": "A method used to determine the type of gene effects controlling a trait",
+      "source_id": "paper_1380"
+    },
+    {
+      "name": "ADDITIVE GENE EFFECTS",
+      "type": "CONCEPT",
+      "description": "The genetic mechanism found to control the expression of leaf angle",
+      "source_id": "paper_1380"
+    },
+    {
+      "name": "F1 ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis of the first filial generation to study trait inheritance",
+      "source_id": "paper_1380"
+    },
+    {
+      "name": "F2 ANALYSIS",
+      "type": "METHOD",
+      "description": "Analysis of the second filial generation to support F1 results",
+      "source_id": "paper_1380"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "DIALLEL CROSS",
+      "target": "WHEAT",
+      "description": "used to study inheritance in",
+      "weight": "9",
+      "source_id": "paper_1380"
+    },
+    {
+      "source": "DIALLEL CROSS",
+      "target": "LEAF ANGLE",
+      "description": "used to study inheritance of",
+      "weight": "10",
+      "source_id": "paper_1380"
+    },
+    {
+      "source": "GENETIC ANALYSIS",
+      "target": "LEAF ANGLE",
+      "description": "used to study inheritance of",
+      "weight": "10",
+      "source_id": "paper_1380"
+    },
+    {
+      "source": "GENETIC ANALYSIS",
+      "target": "DIALLEL CROSS PARAMETERS",
+      "description": "conducted using",
+      "weight": "8",
+      "source_id": "paper_1380"
+    },
+    {
+      "source": "GRAPHIC ANALYSIS",
+      "target": "ADDITIVE GENE EFFECTS",
+      "description": "indicated the control of",
+      "weight": "9",
+      "source_id": "paper_1380"
+    },
+    {
+      "source": "ADDITIVE GENE EFFECTS",
+      "target": "LEAF ANGLE",
+      "description": "controls the expression of",
+      "weight": "10",
+      "source_id": "paper_1380"
+    },
+    {
+      "source": "F1 ANALYSIS",
+      "target": "LEAF ANGLE",
+      "description": "analyzed inheritance of",
+      "weight": "9",
+      "source_id": "paper_1380"
+    },
+    {
+      "source": "F2 ANALYSIS",
+      "target": "LEAF ANGLE",
+      "description": "analyzed inheritance of",
+      "weight": "9",
+      "source_id": "paper_1380"
+    },
+    {
+      "source": "F1 ANALYSIS",
+      "target": "F2 ANALYSIS",
+      "description": "supported by",
+      "weight": "7",
+      "source_id": "paper_1380"
+    }
+  ]
+}

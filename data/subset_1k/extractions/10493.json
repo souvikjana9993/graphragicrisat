@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "The target crop for biology research and genetic improvement",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "TRAIT",
+      "type": "TRAIT",
+      "description": "Characteristics of interest in crops that are targeted for discovery and improvement",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "SEQUENCING TECHNOLOGIES",
+      "type": "METHOD",
+      "description": "Technologies used to generate sequence data, characterized by reducing costs and increasing speed",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "GENOTYPING PLATFORMS",
+      "type": "METHOD",
+      "description": "Platforms used for genotyping that may become obsolete due to low-cost sequencing",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "SINGLE GENOME SEQUENCE",
+      "type": "CONCEPT",
+      "description": "The approach of sequencing a single representative genome of a crop",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "PANGENOMES",
+      "type": "CONCEPT",
+      "description": "The assembly of multiple genomes to represent the full genetic diversity of a species",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "PHENOTYPING",
+      "type": "METHOD",
+      "description": "The process of precise measurement of traits in segregating populations and germplasm collections",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "GENETIC DIVERSITY",
+      "type": "CONCEPT",
+      "description": "The measure of genetic variation present within germplasm collections",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "GENE",
+      "type": "GENE_MARKER",
+      "description": "The genetic unit or nucleotide associated with specific traits",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "MULTI-PARENT POPULATIONS",
+      "type": "METHOD",
+      "description": "Populations derived from multiple parents used for trait discovery and haplotype identification",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "BI-PARENTAL POPULATIONS",
+      "type": "METHOD",
+      "description": "Populations derived from two parents, used as a precursor to multi-parent populations",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "HAPLOTYPES",
+      "type": "GENE_MARKER",
+      "description": "Specific combinations of alleles identified as superior for trait improvement",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "FUNCTIONAL VARIATION",
+      "type": "CONCEPT",
+      "description": "Variation in genes that controls traits of interest",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "MARKER-ASSISTED SELECTION",
+      "type": "METHOD",
+      "description": "A technology used to manipulate genes for crop improvement based on markers",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "A technology used to manipulate genes for crop improvement using genome-wide markers",
+      "source_id": "paper_10493"
+    },
+    {
+      "name": "GENOME EDITING",
+      "type": "METHOD",
+      "description": "A technology used to routinely manipulate genes for crop improvement",
+      "source_id": "paper_10493"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SEQUENCING TECHNOLOGIES",
+      "target": "GENOTYPING PLATFORMS",
+      "description": "makes obsolete",
+      "weight": "7",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "SEQUENCING TECHNOLOGIES",
+      "target": "PANGENOMES",
+      "description": "used to assemble",
+      "weight": "9",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "SEQUENCING TECHNOLOGIES",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to measure",
+      "weight": "8",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "SEQUENCING TECHNOLOGIES",
+      "target": "GENE",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "PHENOTYPING",
+      "target": "GENETIC DIVERSITY",
+      "description": "used to measure",
+      "weight": "8",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "PHENOTYPING",
+      "target": "GENE",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "GENE",
+      "target": "TRAIT",
+      "description": "associated with",
+      "weight": "10",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "MULTI-PARENT POPULATIONS",
+      "target": "TRAIT",
+      "description": "used for discovery",
+      "weight": "9",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "MULTI-PARENT POPULATIONS",
+      "target": "HAPLOTYPES",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "BI-PARENTAL POPULATIONS",
+      "target": "MULTI-PARENT POPULATIONS",
+      "description": "transitioned from",
+      "weight": "6",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "FUNCTIONAL VARIATION",
+      "target": "TRAIT",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "FUNCTIONAL VARIATION",
+      "target": "GENE",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "MARKER-ASSISTED SELECTION",
+      "target": "GENE",
+      "description": "used to manipulate",
+      "weight": "8",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GENE",
+      "description": "used to manipulate",
+      "weight": "8",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "GENOME EDITING",
+      "target": "GENE",
+      "description": "used to manipulate",
+      "weight": "9",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "SEQUENCING TECHNOLOGIES",
+      "target": "PEANUT",
+      "description": "applied to",
+      "weight": "9",
+      "source_id": "paper_10493"
+    },
+    {
+      "source": "GENOME EDITING",
+      "target": "PEANUT",
+      "description": "applied to",
+      "weight": "8",
+      "source_id": "paper_10493"
+    }
+  ]
+}

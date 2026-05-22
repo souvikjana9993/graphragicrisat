@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "name": "OZONE",
+      "type": "CONDITION",
+      "description": "Blue-colored gaseous molecule present in the stratosphere that causes oxidative stress and damage to plant health",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "STRATOSPHERE",
+      "type": "LOCATION",
+      "description": "Region of the Earth's atmosphere where ozone is naturally present",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "MOLECULAR OXYGEN",
+      "type": "CONCEPT",
+      "description": "Molecule that undergoes photolysis by UV radiations to form ozone",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "UV RADIATIONS",
+      "type": "CONDITION",
+      "description": "Solar radiations that cause the photolysis of molecular oxygen",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "OZONE SENSITIVITY",
+      "type": "TRAIT",
+      "description": "Plant characteristic linked to leaf mass per area, antioxidant levels, and stomatal conductance",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "LEAF MASS PER AREA",
+      "type": "TRAIT",
+      "description": "Physical attribute of leaves linked to ozone sensitivity",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "ANTIOXIDANT LEVELS",
+      "type": "TRAIT",
+      "description": "Leaf area-based biochemical levels linked to ozone sensitivity",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "STOMATAL CONDUCTANCE",
+      "type": "TRAIT",
+      "description": "Physiological rate of gas exchange through stomata linked to ozone sensitivity",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "VEGETABLE CROP",
+      "type": "CROP",
+      "description": "Plants that suffered severe damage from ozone in Los Angeles",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "LOS ANGELES",
+      "type": "LOCATION",
+      "description": "Location where severe vegetable crop damage due to ozone was reported in 1905",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "STOMATA",
+      "type": "CONCEPT",
+      "description": "Pores in the leaf through which ozone enters to trigger cellular responses",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "CELLULAR RESPONSE",
+      "type": "CONCEPT",
+      "description": "Biological reaction triggered within plant cells upon the entry of ozone",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The output of crops, which is damaged by ozone-induced cellular responses",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "OXIDATIVE STRESS",
+      "type": "CONDITION",
+      "description": "Stress induced by ozone leading to redox-dependent alterations in ion conductance",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "ION CONDUCTANCE",
+      "type": "TRAIT",
+      "description": "Physiological movement of ions that undergoes redox-dependent alterations under oxidative stress",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "PLANT SPECIES",
+      "type": "ORGANISM",
+      "description": "Biological entities that experience oxidative stress and ion conductance alterations",
+      "source_id": "paper_11217"
+    },
+    {
+      "name": "ECOSYSTEM",
+      "type": "CONCEPT",
+      "description": "Biological community and environment in which plants constitute a significant part",
+      "source_id": "paper_11217"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "OZONE",
+      "target": "STRATOSPHERE",
+      "description": "is naturally present in",
+      "weight": "10",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "UV RADIATIONS",
+      "target": "MOLECULAR OXYGEN",
+      "description": "causes photolysis of",
+      "weight": "9",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "MOLECULAR OXYGEN",
+      "target": "OZONE",
+      "description": "forms through chemical recombination",
+      "weight": "9",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "OZONE SENSITIVITY",
+      "target": "LEAF MASS PER AREA",
+      "description": "is linked to",
+      "weight": "8",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "OZONE SENSITIVITY",
+      "target": "ANTIOXIDANT LEVELS",
+      "description": "is linked to",
+      "weight": "8",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "OZONE SENSITIVITY",
+      "target": "STOMATAL CONDUCTANCE",
+      "description": "is linked to",
+      "weight": "8",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "OZONE",
+      "target": "VEGETABLE CROP",
+      "description": "causes damaging effects on",
+      "weight": "9",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "VEGETABLE CROP",
+      "target": "LOS ANGELES",
+      "description": "suffered damage in",
+      "weight": "7",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "OZONE",
+      "target": "STOMATA",
+      "description": "enters the leaf through",
+      "weight": "10",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "STOMATA",
+      "target": "CELLULAR RESPONSE",
+      "description": "triggers",
+      "weight": "9",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "CELLULAR RESPONSE",
+      "target": "CROP PRODUCTIVITY",
+      "description": "results in damage to",
+      "weight": "8",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "OZONE",
+      "target": "OXIDATIVE STRESS",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "OXIDATIVE STRESS",
+      "target": "ION CONDUCTANCE",
+      "description": "leads to redox-dependent alterations in",
+      "weight": "9",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "ION CONDUCTANCE",
+      "target": "PLANT SPECIES",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_11217"
+    },
+    {
+      "source": "PLANT SPECIES",
+      "target": "ECOSYSTEM",
+      "description": "constitutes a significant part of",
+      "weight": "9",
+      "source_id": "paper_11217"
+    }
+  ]
+}

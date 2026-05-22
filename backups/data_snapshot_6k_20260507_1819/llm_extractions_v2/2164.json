@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop used in the study to evaluate disease resistance and yield loss",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONDITION",
+      "description": "A fungal disease that affects chickpea yield",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "A. RABIEI",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen responsible for Ascochyta blight in chickpea",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "YIELD LOSS",
+      "type": "TRAIT",
+      "description": "The reduction in crop productivity resulting from disease infection",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "DISEASE RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of chickpea lines to withstand or limit the impact of Ascochyta blight",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "FIELD EXPERIMENTS",
+      "type": "METHOD",
+      "description": "The research methodology involving controlled trials in the field over three seasons",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "ICARDA",
+      "type": "LOCATION",
+      "description": "The International Center for Agricultural Research in the Dry Areas where the study was conducted",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "TEL HADYA",
+      "type": "LOCATION",
+      "description": "The specific location in Syria where the field experiments took place",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "SYRIA",
+      "type": "LOCATION",
+      "description": "The country where the research was conducted",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "ILC 1929",
+      "type": "CONCEPT",
+      "description": "A specific chickpea line identified as susceptible to Ascochyta blight",
+      "source_id": "paper_2164"
+    },
+    {
+      "name": "DISEASE RATING",
+      "type": "METHOD",
+      "description": "A numerical scale used to quantify the severity of Ascochyta blight infection",
+      "source_id": "paper_2164"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ASCOCHYTA BLIGHT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "A. RABIEI",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "ASCOCHYTA BLIGHT",
+      "target": "YIELD LOSS",
+      "description": "leads to",
+      "weight": "9",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "DISEASE RESISTANCE",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "mitigates",
+      "weight": "8",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "CHICKPEA",
+      "description": "used to study",
+      "weight": "7",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "FIELD EXPERIMENTS",
+      "target": "ICARDA",
+      "description": "conducted at",
+      "weight": "10",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "ICARDA",
+      "target": "TEL HADYA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "TEL HADYA",
+      "target": "SYRIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "ILC 1929",
+      "target": "CHICKPEA",
+      "description": "is a line of",
+      "weight": "10",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "ILC 1929",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "is susceptible to",
+      "weight": "10",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "DISEASE RATING",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "measures severity of",
+      "weight": "9",
+      "source_id": "paper_2164"
+    },
+    {
+      "source": "DISEASE RATING",
+      "target": "YIELD LOSS",
+      "description": "correlates with",
+      "weight": "8",
+      "source_id": "paper_2164"
+    }
+  ]
+}

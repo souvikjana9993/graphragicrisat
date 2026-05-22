@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "SEED STORAGE",
+      "type": "CONCEPT",
+      "description": "The process of preserving seeds for future use",
+      "source_id": "paper_5137"
+    },
+    {
+      "name": "VIABILITY",
+      "type": "TRAIT",
+      "description": "The ability of a seed to germinate and grow",
+      "source_id": "paper_5137"
+    },
+    {
+      "name": "REJUVENATION",
+      "type": "CONCEPT",
+      "description": "The process of restoring the vigor of stored seeds",
+      "source_id": "paper_5137"
+    },
+    {
+      "name": "ORTHODOX SEEDS",
+      "type": "CONCEPT",
+      "description": "Seeds that can be dried to low moisture levels and stored at low temperatures without losing viability",
+      "source_id": "paper_5137"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume crop used as an example of orthodox seeds",
+      "source_id": "paper_5137"
+    },
+    {
+      "name": "FABA BEAN",
+      "type": "CROP",
+      "description": "A legume crop used as an example of orthodox seeds",
+      "source_id": "paper_5137"
+    },
+    {
+      "name": "LENTIL",
+      "type": "CROP",
+      "description": "A legume crop used as an example of orthodox seeds",
+      "source_id": "paper_5137"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "An environmental factor that must be controlled for successful seed storage",
+      "source_id": "paper_5137"
+    },
+    {
+      "name": "MOISTURE REGIME",
+      "type": "CONDITION",
+      "description": "An environmental factor that must be controlled for successful seed storage",
+      "source_id": "paper_5137"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TEMPERATURE",
+      "target": "SEED STORAGE",
+      "description": "Control of temperature is key to successful storage",
+      "weight": "10",
+      "source_id": "paper_5137"
+    },
+    {
+      "source": "MOISTURE REGIME",
+      "target": "SEED STORAGE",
+      "description": "Control of moisture regime is key to successful storage",
+      "weight": "10",
+      "source_id": "paper_5137"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ORTHODOX SEEDS",
+      "description": "Chickpea is a type of orthodox seed",
+      "weight": "9",
+      "source_id": "paper_5137"
+    },
+    {
+      "source": "FABA BEAN",
+      "target": "ORTHODOX SEEDS",
+      "description": "Faba bean is a type of orthodox seed",
+      "weight": "9",
+      "source_id": "paper_5137"
+    },
+    {
+      "source": "LENTIL",
+      "target": "ORTHODOX SEEDS",
+      "description": "Lentil is a type of orthodox seed",
+      "weight": "9",
+      "source_id": "paper_5137"
+    },
+    {
+      "source": "ORTHODOX SEEDS",
+      "target": "SEED STORAGE",
+      "description": "Orthodox seeds are the subject of the storage research",
+      "weight": "8",
+      "source_id": "paper_5137"
+    },
+    {
+      "source": "SEED STORAGE",
+      "target": "VIABILITY",
+      "description": "Storage conditions directly impact seed viability",
+      "weight": "8",
+      "source_id": "paper_5137"
+    },
+    {
+      "source": "SEED STORAGE",
+      "target": "REJUVENATION",
+      "description": "Rejuvenation is a process related to the management of stored seeds",
+      "weight": "7",
+      "source_id": "paper_5137"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "Sorghum cultivar CSH6 used in the study",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONDITION",
+      "description": "Added nitrogen applied at levels of 0, 10, 25, 50, and 100 mg N kg–1 soil",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONDITION",
+      "description": "Phosphorus element whose uptake was measured in the plant",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "DRY MATTER PRODUCTION",
+      "type": "TRAIT",
+      "description": "The accumulation of dry matter in the tops and roots of the plant",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "NITROGEN UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of nitrogen absorbed by the tops and roots of the plant",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "PHOSPHORUS UPTAKE",
+      "type": "TRAIT",
+      "description": "The amount of phosphorus absorbed by the tops and roots of the plant",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONDITION",
+      "description": "A type of soil used as a growth medium in the experiment",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "ALFISOL",
+      "type": "CONDITION",
+      "description": "A type of soil used as a growth medium in the experiment",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "GREENHOUSE POT EXPERIMENT",
+      "type": "METHOD",
+      "description": "The experimental setup used to study the effects of nitrogen and phosphorus",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "TOP DRY WEIGHT",
+      "type": "TRAIT",
+      "description": "The dry weight of the upper parts of the sorghum plant",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "ROOT WEIGHT",
+      "type": "TRAIT",
+      "description": "The dry weight of the root system of the sorghum plant",
+      "source_id": "paper_3734"
+    },
+    {
+      "name": "FIELD CAPACITY SOIL MOISTURE CONTENT",
+      "type": "CONDITION",
+      "description": "The soil moisture level maintained during the experiment",
+      "source_id": "paper_3734"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NITROGEN",
+      "target": "SORGHUM",
+      "description": "Affects growth and nutrient uptake",
+      "weight": "9",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "PHOSPHORUS",
+      "target": "SORGHUM",
+      "description": "Uptake measured in the plant",
+      "weight": "7",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "GREENHOUSE POT EXPERIMENT",
+      "target": "SORGHUM",
+      "description": "Method used to evaluate growth and uptake",
+      "weight": "8",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "SORGHUM",
+      "description": "Soil medium in which sorghum was grown",
+      "weight": "8",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "SORGHUM",
+      "description": "Soil medium in which sorghum was grown",
+      "weight": "8",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "DRY MATTER PRODUCTION",
+      "description": "Increases dry matter production up to certain levels",
+      "weight": "9",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "NITROGEN UPTAKE",
+      "description": "Increases nitrogen uptake",
+      "weight": "9",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "PHOSPHORUS UPTAKE",
+      "description": "Influences phosphorus uptake",
+      "weight": "7",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "DRY MATTER PRODUCTION",
+      "description": "Resulted in higher dry matter accumulation compared to Vertisol",
+      "weight": "8",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "DRY MATTER PRODUCTION",
+      "description": "Resulted in lower dry matter accumulation compared to Alfisol",
+      "weight": "8",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "NITROGEN UPTAKE",
+      "description": "Resulted in higher nitrogen uptake compared to Vertisol",
+      "weight": "8",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "NITROGEN UPTAKE",
+      "description": "Resulted in lower nitrogen uptake compared to Alfisol",
+      "weight": "8",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "ALFISOL",
+      "target": "PHOSPHORUS UPTAKE",
+      "description": "Resulted in higher phosphorus uptake compared to Vertisol",
+      "weight": "8",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "PHOSPHORUS UPTAKE",
+      "description": "Resulted in lower phosphorus uptake compared to Alfisol",
+      "weight": "8",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "TOP DRY WEIGHT",
+      "description": "Responded to application up to 50 mg N kg–1 soil",
+      "weight": "9",
+      "source_id": "paper_3734"
+    },
+    {
+      "source": "NITROGEN",
+      "target": "ROOT WEIGHT",
+      "description": "Increased with application up to 25 mg N kg–1 soil",
+      "weight": "9",
+      "source_id": "paper_3734"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "A legume grown in spring as a rainfed crop in West Asia and North Africa regions.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "WEST ASIA AND NORTH AFRICA",
+      "type": "LOCATION",
+      "description": "Regions where chickpea is grown as a rainfed crop with variable rainfall.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "MOISTURE SUPPLY",
+      "type": "CONDITION",
+      "description": "The availability and distribution of water, which affects chickpea yield and adaptation.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area, used to measure crop productivity.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "GENETIC VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The diversity in genetic makeup among cultivars that influences their response to environmental factors.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "BREEDING STRATEGIES",
+      "type": "METHOD",
+      "description": "Approaches used to develop chickpea cultivars that are best-adapted to moisture variation.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "LINE-SOURCE SPRINKLER IRRIGATION SYSTEM",
+      "type": "METHOD",
+      "description": "An irrigation method used to create a soil moisture gradient for studying crop response.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "TEL HADYA",
+      "type": "LOCATION",
+      "description": "A site in northern Syria where the chickpea moisture supply studies were conducted.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "TEMPERATURE",
+      "type": "CONDITION",
+      "description": "Environmental factor that, along with rainfall, influences grain yield and adaptation requirements.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "RESPONSIVENESS TO MOISTURE SUPPLY",
+      "type": "TRAIT",
+      "description": "The degree to which grain yield increases in response to increased moisture supply, measured as a regression slope.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "YIELD POTENTIAL",
+      "type": "TRAIT",
+      "description": "The maximum yield achievable by a cultivar under optimal conditions.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "DROUGHT YIELD",
+      "type": "TRAIT",
+      "description": "The grain yield achieved under rainfed or low moisture conditions.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "WIDE ADAPTATION",
+      "type": "TRAIT",
+      "description": "The ability of a cultivar to maintain high yields across varying moisture supplies and environmental conditions.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "EARLY PHENOLOGY",
+      "type": "TRAIT",
+      "description": "The timing of developmental stages, specifically early maturity, which aids adaptation in high-temperature years.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of grain yield to total biomass produced by the plant.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "ROOT SYSTEM DEPTH",
+      "type": "TRAIT",
+      "description": "The depth to which the plant roots penetrate the soil to access water.",
+      "source_id": "paper_3080"
+    },
+    {
+      "name": "PRE-DAWN LEAF WATER POTENTIAL",
+      "type": "TRAIT",
+      "description": "A physiological measure of the plant's water status before sunrise.",
+      "source_id": "paper_3080"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "WEST ASIA AND NORTH AFRICA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "MOISTURE SUPPLY",
+      "description": "responds to",
+      "weight": "9",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "MOISTURE SUPPLY",
+      "description": "influenced by",
+      "weight": "9",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "GENETIC VARIABILITY",
+      "target": "RESPONSIVENESS TO MOISTURE SUPPLY",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "BREEDING STRATEGIES",
+      "target": "WIDE ADAPTATION",
+      "description": "target for development",
+      "weight": "9",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "LINE-SOURCE SPRINKLER IRRIGATION SYSTEM",
+      "target": "MOISTURE SUPPLY",
+      "description": "manipulates",
+      "weight": "10",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "TEL HADYA",
+      "target": "CHICKPEA",
+      "description": "location of study",
+      "weight": "8",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "TEMPERATURE",
+      "target": "GRAIN YIELD",
+      "description": "influences",
+      "weight": "7",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "RESPONSIVENESS TO MOISTURE SUPPLY",
+      "target": "YIELD POTENTIAL",
+      "description": "highly correlated with",
+      "weight": "9",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "RESPONSIVENESS TO MOISTURE SUPPLY",
+      "target": "DROUGHT YIELD",
+      "description": "non-significantly correlated with",
+      "weight": "3",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "WIDE ADAPTATION",
+      "target": "GRAIN YIELD",
+      "description": "associated with high",
+      "weight": "8",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "WIDE ADAPTATION",
+      "target": "YIELD POTENTIAL",
+      "description": "associated with high",
+      "weight": "8",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "WIDE ADAPTATION",
+      "target": "EARLY PHENOLOGY",
+      "description": "requires in high temperature years",
+      "weight": "7",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "WIDE ADAPTATION",
+      "target": "HARVEST INDEX",
+      "description": "requires in high temperature years",
+      "weight": "7",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "WIDE ADAPTATION",
+      "target": "ROOT SYSTEM DEPTH",
+      "description": "associated with deep",
+      "weight": "8",
+      "source_id": "paper_3080"
+    },
+    {
+      "source": "WIDE ADAPTATION",
+      "target": "PRE-DAWN LEAF WATER POTENTIAL",
+      "description": "associated with high",
+      "weight": "8",
+      "source_id": "paper_3080"
+    }
+  ]
+}

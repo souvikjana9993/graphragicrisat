@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being studied for disease resistance.",
+      "source_id": "paper_13372"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting chickpea plants.",
+      "source_id": "paper_13372"
+    },
+    {
+      "name": "FUSARIUM WILT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea cultivars to resist Fusarium wilt.",
+      "source_id": "paper_13372"
+    },
+    {
+      "name": "CDNA-SCOT",
+      "type": "METHOD",
+      "description": "A methodology for investigating differential gene expression using start codon targeted markers.",
+      "source_id": "paper_13372"
+    },
+    {
+      "name": "DIFFERENTIAL GENE EXPRESSION",
+      "type": "CONCEPT",
+      "description": "The difference in gene expression levels between resistant and susceptible cultivars.",
+      "source_id": "paper_13372"
+    },
+    {
+      "name": "DIFFERENTIALLY EXPRESSED FRAGMENTS",
+      "type": "GENE_MARKER",
+      "description": "Fragments identified through cDNA-SCoT profiling that vary between cultivars.",
+      "source_id": "paper_13372"
+    },
+    {
+      "name": "SANGER SEQUENCING",
+      "type": "METHOD",
+      "description": "A method used to determine the nucleotide sequence of the DEFs.",
+      "source_id": "paper_13372"
+    },
+    {
+      "name": "NBLAST HOMOLOGY SEARCH",
+      "type": "METHOD",
+      "description": "A program used to characterize the functional properties of DEFs by comparing them to known sequences.",
+      "source_id": "paper_13372"
+    },
+    {
+      "name": "FUNCTIONAL GENES",
+      "type": "CONCEPT",
+      "description": "Genes that perform specific biological functions, identified via DEFs.",
+      "source_id": "paper_13372"
+    },
+    {
+      "name": "MARKER-ASSISTED SELECTION",
+      "type": "METHOD",
+      "description": "A process of selecting plants for specific traits using genetic markers.",
+      "source_id": "paper_13372"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CDNA-SCOT",
+      "target": "DIFFERENTIAL GENE EXPRESSION",
+      "description": "used to investigate",
+      "weight": "10",
+      "source_id": "paper_13372"
+    },
+    {
+      "source": "CDNA-SCOT",
+      "target": "DIFFERENTIALLY EXPRESSED FRAGMENTS",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_13372"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED FRAGMENTS",
+      "target": "FUSARIUM WILT RESISTANCE",
+      "description": "associated with",
+      "weight": "9",
+      "source_id": "paper_13372"
+    },
+    {
+      "source": "FUSARIUM WILT RESISTANCE",
+      "target": "CHICKPEA",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_13372"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_13372"
+    },
+    {
+      "source": "SANGER SEQUENCING",
+      "target": "DIFFERENTIALLY EXPRESSED FRAGMENTS",
+      "description": "used to characterize",
+      "weight": "10",
+      "source_id": "paper_13372"
+    },
+    {
+      "source": "NBLAST HOMOLOGY SEARCH",
+      "target": "DIFFERENTIALLY EXPRESSED FRAGMENTS",
+      "description": "used to characterize",
+      "weight": "10",
+      "source_id": "paper_13372"
+    },
+    {
+      "source": "DIFFERENTIALLY EXPRESSED FRAGMENTS",
+      "target": "FUNCTIONAL GENES",
+      "description": "used to identify",
+      "weight": "8",
+      "source_id": "paper_13372"
+    },
+    {
+      "source": "FUNCTIONAL GENES",
+      "target": "MARKER-ASSISTED SELECTION",
+      "description": "used in",
+      "weight": "9",
+      "source_id": "paper_13372"
+    }
+  ]
+}

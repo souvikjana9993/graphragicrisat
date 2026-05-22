@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A high biomass crop used as feedstock for 2G biofuels production.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "BROWN MIDRIB",
+      "type": "TRAIT",
+      "description": "A mutation in sorghum characterized by reduced lignin content.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "LIGNIN CONTENT",
+      "type": "TRAIT",
+      "description": "The amount of lignin in biomass, which affects the efficiency of biofuel production.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "WATER-DEFICIT STRESS",
+      "type": "CONDITION",
+      "description": "Environmental stress caused by a lack of available water.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "PROGRESSIVE DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of a plant to withstand increasing levels of drought stress.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "TRANSPIRATION EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency with which a plant uses water for growth, measured under stressed and well-watered conditions.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "WATER HOLDING CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of a plant genotype to retain water for a longer period under stress.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "GLASS HOUSE STUDY",
+      "type": "METHOD",
+      "description": "A controlled environment study used for screening plant genotypes.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "SCREENING EXPERIMENT",
+      "type": "METHOD",
+      "description": "An experimental process to identify specific genotypes with desired traits.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "2G BIOFUEL PRODUCTION",
+      "type": "CONCEPT",
+      "description": "The production of second-generation biofuels from lignocellulosic biomass.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where biomass-based energy is considered a promising option.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "FOOD AND ENERGY SECURITY",
+      "type": "CONCEPT",
+      "description": "Fundamental goals for the economic development of nations.",
+      "source_id": "paper_10706"
+    },
+    {
+      "name": "WELL-WATERED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental conditions where plants have access to sufficient water.",
+      "source_id": "paper_10706"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "2G BIOFUEL PRODUCTION",
+      "description": "Used as a promising feedstock for",
+      "weight": "9",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "BROWN MIDRIB",
+      "target": "LIGNIN CONTENT",
+      "description": "Results in reduced",
+      "weight": "10",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "BROWN MIDRIB",
+      "description": "Possesses mutants with this trait",
+      "weight": "8",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "WATER-DEFICIT STRESS",
+      "description": "Evaluated under these conditions",
+      "weight": "9",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "TRANSPIRATION EFFICIENCY",
+      "target": "WATER HOLDING CAPACITY",
+      "description": "Higher efficiency is associated with higher capacity",
+      "weight": "8",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "WATER HOLDING CAPACITY",
+      "target": "PROGRESSIVE DROUGHT TOLERANCE",
+      "description": "Helps the plant adapt to drought conditions",
+      "weight": "9",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "SCREENING EXPERIMENT",
+      "target": "SORGHUM",
+      "description": "Used to evaluate 14 bmr lines of",
+      "weight": "9",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "GLASS HOUSE STUDY",
+      "target": "SCREENING EXPERIMENT",
+      "description": "The setting where the experiment was conducted",
+      "weight": "10",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "LIGNIN CONTENT",
+      "target": "2G BIOFUEL PRODUCTION",
+      "description": "High content is a major issue in enhancing production",
+      "weight": "8",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "WATER-DEFICIT STRESS",
+      "target": "2G BIOFUEL PRODUCTION",
+      "description": "A major issue in enhancing production",
+      "weight": "7",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "INDIA",
+      "target": "2G BIOFUEL PRODUCTION",
+      "description": "A promising option for production in this location",
+      "weight": "7",
+      "source_id": "paper_10706"
+    },
+    {
+      "source": "FOOD AND ENERGY SECURITY",
+      "target": "INDIA",
+      "description": "Fundamental to the economic development of nations like",
+      "weight": "6",
+      "source_id": "paper_10706"
+    }
+  ]
+}

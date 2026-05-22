@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "A pest also known as the pod borer that affects chickpea crops.",
+      "source_id": "paper_2801"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The crop Cicer arietinum L. targeted by Helicoverpa armigera.",
+      "source_id": "paper_2801"
+    },
+    {
+      "name": "NEURAL NETWORKS",
+      "type": "METHOD",
+      "description": "A computational approach used to analyze surveillance data and predict pest attack incidences.",
+      "source_id": "paper_2801"
+    },
+    {
+      "name": "PEST POPULATION DYNAMICS",
+      "type": "CONCEPT",
+      "description": "The study of how pest populations change over time.",
+      "source_id": "paper_2801"
+    },
+    {
+      "name": "PEST SURVEILLANCE DATA SETS",
+      "type": "CONCEPT",
+      "description": "Data collected from monitoring pests used as input for analytical techniques.",
+      "source_id": "paper_2801"
+    },
+    {
+      "name": "PEST ATTACK INCIDENCES",
+      "type": "CONCEPT",
+      "description": "The occurrence of pest attacks on crops.",
+      "source_id": "paper_2801"
+    },
+    {
+      "name": "PEST MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "Strategies used to control pests and reduce crop loss.",
+      "source_id": "paper_2801"
+    },
+    {
+      "name": "CROP LOSS",
+      "type": "CONCEPT",
+      "description": "The reduction in agricultural yield caused by insect pests.",
+      "source_id": "paper_2801"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "NEURAL NETWORKS",
+      "target": "PEST POPULATION DYNAMICS",
+      "description": "used to understand and predict",
+      "weight": "9",
+      "source_id": "paper_2801"
+    },
+    {
+      "source": "NEURAL NETWORKS",
+      "target": "PEST ATTACK INCIDENCES",
+      "description": "successfully predicts",
+      "weight": "10",
+      "source_id": "paper_2801"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "CHICKPEA",
+      "description": "attacks and causes damage to",
+      "weight": "10",
+      "source_id": "paper_2801"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "PEST POPULATION DYNAMICS",
+      "description": "is the subject of the population dynamics study",
+      "weight": "9",
+      "source_id": "paper_2801"
+    },
+    {
+      "source": "PEST SURVEILLANCE DATA SETS",
+      "target": "NEURAL NETWORKS",
+      "description": "serves as the input data for",
+      "weight": "8",
+      "source_id": "paper_2801"
+    },
+    {
+      "source": "PEST MANAGEMENT",
+      "target": "CROP LOSS",
+      "description": "aims to minimize",
+      "weight": "8",
+      "source_id": "paper_2801"
+    },
+    {
+      "source": "PEST POPULATION DYNAMICS",
+      "target": "PEST MANAGEMENT",
+      "description": "provides necessary information for effective",
+      "weight": "7",
+      "source_id": "paper_2801"
+    }
+  ]
+}

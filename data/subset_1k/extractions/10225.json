@@ -1,0 +1,330 @@
+{
+  "entities": [
+    {
+      "name": "CROPLAND EXTENT MAP",
+      "type": "CONCEPT",
+      "description": "A high spatial resolution map indicating cropland and non-cropland areas used for agricultural analysis",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "FOOD AND WATER SECURITY ANALYSIS",
+      "type": "CONCEPT",
+      "description": "Analysis of food and water security that requires precise cropland extent maps",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "CROP WATERING METHODS",
+      "type": "CONCEPT",
+      "description": "Methods of watering crops, such as irrigated or rainfed",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "CROPPING INTENSITIES",
+      "type": "CONCEPT",
+      "description": "The frequency of cropping on a piece of land, such as single, double, or continuous cropping",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "CROP TYPES",
+      "type": "CONCEPT",
+      "description": "The specific types of crops grown in a given area",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "CROPLAND FALLOWS",
+      "type": "CONCEPT",
+      "description": "Cropland that is left unseeded for a period of time",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "CROPLAND PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The productivity of crops per unit of land",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "CROP WATER PRODUCTIVITY",
+      "type": "CONCEPT",
+      "description": "The productivity of crops per unit of water used",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "AFRICA",
+      "type": "LOCATION",
+      "description": "The continental region focused on for the cropland extent mapping",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "A region mentioned as having small-holder dominant agricultural systems",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "GOOGLE EARTH ENGINE",
+      "type": "METHOD",
+      "description": "A cloud-based geospatial computing platform used for processing satellite imagery and mapping",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "SENTINEL-2",
+      "type": "METHOD",
+      "description": "A satellite providing high-resolution (10-20m) multi-spectral data",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "LANDSAT-8",
+      "type": "METHOD",
+      "description": "A satellite providing 30m resolution multi-spectral data",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "MEDIAN-MOSAIC",
+      "type": "METHOD",
+      "description": "A technique used to create satellite imagery composites by taking the median value of pixels",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "NDVI",
+      "type": "METHOD",
+      "description": "Normalized Difference Vegetation Index used as a band in imagery composites",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "SHUTTLE RADAR TOPOGRAPHIC MISSION",
+      "type": "METHOD",
+      "description": "An elevation dataset used to derive a 30-m slope layer",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "PIXEL-BASED CLASSIFICATION",
+      "type": "METHOD",
+      "description": "A classification approach that assigns a class to each individual pixel",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "RANDOM FOREST",
+      "type": "METHOD",
+      "description": "A supervised classification algorithm used as the primary classifier for cropland mapping",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "SUPPORT VECTOR MACHINE",
+      "type": "METHOD",
+      "description": "A classification algorithm used to compensate for over-fitting issues of Random Forest",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "RECURSIVE HIERARCHICAL SEGMENTATION",
+      "type": "METHOD",
+      "description": "An algorithm used to generate an object-oriented segmentation layer",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "OBJECT-ORIENTED SEGMENTATION",
+      "type": "METHOD",
+      "description": "A segmentation approach based on spectral and spatial properties to improve mapping accuracy",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "ERROR MATRIX APPROACH",
+      "type": "METHOD",
+      "description": "A method used to compute the accuracy of the cropland extent product using validation samples",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "LULC MAPS",
+      "type": "CONCEPT",
+      "description": "Land Use Land Cover maps used for spatial similarity comparison",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "UN FAO STATISTICS",
+      "type": "CONCEPT",
+      "description": "Statistics from the Food and Agriculture Organization of the United Nations used for area comparison",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "TOTAL NET CROPLAND AREA",
+      "type": "CONCEPT",
+      "description": "The estimated total area of cropland in Africa for a specific year",
+      "source_id": "paper_10225"
+    },
+    {
+      "name": "GFSAD30AFCE",
+      "type": "CONCEPT",
+      "description": "The Global Food Security-support Analysis Data @ 30-m for the African Continent, Cropland Extent product",
+      "source_id": "paper_10225"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CROPLAND EXTENT MAP",
+      "target": "FOOD AND WATER SECURITY ANALYSIS",
+      "description": "used for",
+      "weight": "10",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "CROPLAND EXTENT MAP",
+      "target": "CROP WATERING METHODS",
+      "description": "starting point for",
+      "weight": "8",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "CROPLAND EXTENT MAP",
+      "target": "CROPPING INTENSITIES",
+      "description": "starting point for",
+      "weight": "8",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "CROPLAND EXTENT MAP",
+      "target": "CROP TYPES",
+      "description": "starting point for",
+      "weight": "8",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "CROPLAND EXTENT MAP",
+      "target": "CROPLAND FALLOWS",
+      "description": "starting point for",
+      "weight": "8",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "CROPLAND EXTENT MAP",
+      "target": "CROPLAND PRODUCTIVITY",
+      "description": "starting point for",
+      "weight": "8",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "CROPLAND EXTENT MAP",
+      "target": "CROP WATER PRODUCTIVITY",
+      "description": "starting point for",
+      "weight": "8",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "GOOGLE EARTH ENGINE",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "platform used to create",
+      "weight": "9",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "SENTINEL-2",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "data source for",
+      "weight": "9",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "LANDSAT-8",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "data source for",
+      "weight": "9",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "MEDIAN-MOSAIC",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "used to create imagery composites for",
+      "weight": "7",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "NDVI",
+      "target": "MEDIAN-MOSAIC",
+      "description": "band used in",
+      "weight": "8",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "SHUTTLE RADAR TOPOGRAPHIC MISSION",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "used to derive slope layer for",
+      "weight": "7",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "PIXEL-BASED CLASSIFICATION",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "component of",
+      "weight": "9",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "RANDOM FOREST",
+      "target": "PIXEL-BASED CLASSIFICATION",
+      "description": "used as primary classifier in",
+      "weight": "10",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "SUPPORT VECTOR MACHINE",
+      "target": "PIXEL-BASED CLASSIFICATION",
+      "description": "used to compensate RF in",
+      "weight": "8",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "RECURSIVE HIERARCHICAL SEGMENTATION",
+      "target": "OBJECT-ORIENTED SEGMENTATION",
+      "description": "used to generate",
+      "weight": "10",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "OBJECT-ORIENTED SEGMENTATION",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "merged with pixel-based classification for",
+      "weight": "9",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "ERROR MATRIX APPROACH",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "used to compute accuracy of",
+      "weight": "10",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "LULC MAPS",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "used for spatial similarity comparison with",
+      "weight": "7",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "UN FAO STATISTICS",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "used to compare area results with",
+      "weight": "7",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "CROPLAND EXTENT MAP",
+      "target": "TOTAL NET CROPLAND AREA",
+      "description": "used to estimate",
+      "weight": "9",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "CROPLAND EXTENT MAP",
+      "target": "GFSAD30AFCE",
+      "description": "basis for",
+      "weight": "10",
+      "source_id": "paper_10225"
+    },
+    {
+      "source": "AFRICA",
+      "target": "CROPLAND EXTENT MAP",
+      "description": "geographic focus of",
+      "weight": "10",
+      "source_id": "paper_10225"
+    }
+  ]
+}

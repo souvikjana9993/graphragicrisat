@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The crop species being evaluated for disease resistance.",
+      "source_id": "paper_2962"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A fungal disease affecting pigeonpea.",
+      "source_id": "paper_2962"
+    },
+    {
+      "name": "HILL PLOTS",
+      "type": "METHOD",
+      "description": "A screening method where plants are sown in hills to reduce area and cost.",
+      "source_id": "paper_2962"
+    },
+    {
+      "name": "ROW SOWING",
+      "type": "METHOD",
+      "description": "A conventional method of sowing plants in rows.",
+      "source_id": "paper_2962"
+    },
+    {
+      "name": "WILT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The capacity of pigeonpea cultivars to withstand Fusarium wilt.",
+      "source_id": "paper_2962"
+    },
+    {
+      "name": "ICRISAT CENTRE",
+      "type": "LOCATION",
+      "description": "The research center where the field trials were conducted.",
+      "source_id": "paper_2962"
+    },
+    {
+      "name": "VERTISOL",
+      "type": "CONCEPT",
+      "description": "A type of clay-rich soil used in the wilt-sick plot.",
+      "source_id": "paper_2962"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HILL PLOTS",
+      "target": "PIGEONPEA",
+      "description": "used to screen",
+      "weight": "9",
+      "source_id": "paper_2962"
+    },
+    {
+      "source": "ROW SOWING",
+      "target": "PIGEONPEA",
+      "description": "used to screen",
+      "weight": "9",
+      "source_id": "paper_2962"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "FUSARIUM WILT",
+      "description": "susceptible to",
+      "weight": "8",
+      "source_id": "paper_2962"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "WILT RESISTANCE",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_2962"
+    },
+    {
+      "source": "HILL PLOTS",
+      "target": "WILT RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_2962"
+    },
+    {
+      "source": "ROW SOWING",
+      "target": "WILT RESISTANCE",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_2962"
+    },
+    {
+      "source": "ICRISAT CENTRE",
+      "target": "PIGEONPEA",
+      "description": "site of trial for",
+      "weight": "7",
+      "source_id": "paper_2962"
+    },
+    {
+      "source": "VERTISOL",
+      "target": "FUSARIUM WILT",
+      "description": "soil type associated with",
+      "weight": "6",
+      "source_id": "paper_2962"
+    }
+  ]
+}

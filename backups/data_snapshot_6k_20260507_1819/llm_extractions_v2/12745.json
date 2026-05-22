@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "COTTON",
+      "type": "CROP",
+      "description": "Transgenic crop expressing Bt toxin genes used to manage bollworm complex",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "CRY1AC",
+      "type": "GENE_MARKER",
+      "description": "Toxin gene from Bacillus thuringiensis used for pest control",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "CRY2AB",
+      "type": "GENE_MARKER",
+      "description": "Toxin gene from Bacillus thuringiensis used for pest control",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "BACILLUS THURINGIENSIS",
+      "type": "ORGANISM",
+      "description": "Bacterium that provides the cry toxin genes for transgenic crops",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "HELICOVERPA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "Cotton bollworm, a serious pest of cotton",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "Country where Bt-cotton is widely cultivated",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of Helicoverpa armigera to survive exposure to Cry toxins",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "CONVENTIONAL BIOASSAYS",
+      "type": "METHOD",
+      "description": "Technique used to monitor the susceptibility of cotton bollworm",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "F2 SCREEN",
+      "type": "METHOD",
+      "description": "Screening method used to determine resistance allele frequencies",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "PIGEON PEA",
+      "type": "CROP",
+      "description": "Non-Bt host crop grown alongside Bt cotton acting as a refuge",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "TELANGANA",
+      "type": "LOCATION",
+      "description": "State in India where insect populations were collected",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "RESISTANCE MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "Strategies to ensure the sustainable control of pests and delay resistance",
+      "source_id": "paper_12745"
+    },
+    {
+      "name": "REFUGE",
+      "type": "CONCEPT",
+      "description": "The use of non-Bt host crops to maintain susceptible insect populations",
+      "source_id": "paper_12745"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COTTON",
+      "target": "CRY1AC",
+      "description": "expresses",
+      "weight": "10",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "COTTON",
+      "target": "CRY2AB",
+      "description": "expresses",
+      "weight": "10",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "BACILLUS THURINGIENSIS",
+      "target": "CRY1AC",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "BACILLUS THURINGIENSIS",
+      "target": "CRY2AB",
+      "description": "source of",
+      "weight": "10",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "COTTON",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "HELICOVERPA ARMIGERA",
+      "target": "RESISTANCE",
+      "description": "develops",
+      "weight": "9",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "RESISTANCE",
+      "target": "CRY1AC",
+      "description": "targeted against",
+      "weight": "9",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "CONVENTIONAL BIOASSAYS",
+      "target": "RESISTANCE",
+      "description": "monitors",
+      "weight": "8",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "F2 SCREEN",
+      "target": "RESISTANCE",
+      "description": "measures allele frequency of",
+      "weight": "9",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "REFUGE",
+      "description": "acts as",
+      "weight": "10",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "REFUGE",
+      "target": "HELICOVERPA ARMIGERA",
+      "description": "provides sanctuary for",
+      "weight": "9",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "REFUGE",
+      "target": "RESISTANCE MANAGEMENT",
+      "description": "supports",
+      "weight": "9",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "TELANGANA",
+      "target": "INDIA",
+      "description": "located in",
+      "weight": "10",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "COTTON",
+      "target": "TELANGANA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_12745"
+    },
+    {
+      "source": "PIGEON PEA",
+      "target": "TELANGANA",
+      "description": "cultivated in",
+      "weight": "8",
+      "source_id": "paper_12745"
+    }
+  ]
+}

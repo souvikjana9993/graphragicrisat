@@ -1,0 +1,217 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop whose grain quality is being evaluated across different cultivars.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "GRAIN HARDNESS",
+      "type": "TRAIT",
+      "description": "A physical property of sorghum cultivars that influences flour quality.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "VILLAGE CHAKKI",
+      "type": "METHOD",
+      "description": "A traditional milling system used to process sorghum grains.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "LABORATORY CARBORUNDUM MILL",
+      "type": "METHOD",
+      "description": "A laboratory-scale milling system used to process sorghum grains.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "UDY CYCLONE MILL",
+      "type": "METHOD",
+      "description": "A cyclone-based milling system used to process sorghum grains.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "PARTICLE SIZE",
+      "type": "TRAIT",
+      "description": "The size of flour particles resulting from the milling process.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "STARCH DAMAGE",
+      "type": "TRAIT",
+      "description": "The percentage of starch granules damaged during the milling process.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "WATER RETENTION CAPACITY",
+      "type": "TRAIT",
+      "description": "The ability of the flour to retain water.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "VOLUME OF WATER REQUIRED TO MAKE DOUGH",
+      "type": "TRAIT",
+      "description": "The amount of water needed to form a dough from the flour.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "ROLLING QUALITY",
+      "type": "TRAIT",
+      "description": "The quality of the dough when rolled.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "GEL SPREAD",
+      "type": "TRAIT",
+      "description": "The measurement of the spread of the gel formed by the flour.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "DOUGH EXTRUSION FORCE",
+      "type": "TRAIT",
+      "description": "The force required to extrude the dough.",
+      "source_id": "paper_4139"
+    },
+    {
+      "name": "GRAIN QUALITY",
+      "type": "CONCEPT",
+      "description": "The overall quality parameters of the sorghum grain and resulting flour.",
+      "source_id": "paper_4139"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "VILLAGE CHAKKI",
+      "target": "SORGHUM",
+      "description": "Used to mill sorghum grains",
+      "weight": "10",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "LABORATORY CARBORUNDUM MILL",
+      "target": "SORGHUM",
+      "description": "Used to mill sorghum grains",
+      "weight": "10",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "UDY CYCLONE MILL",
+      "target": "SORGHUM",
+      "description": "Used to mill sorghum grains",
+      "weight": "10",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "VILLAGE CHAKKI",
+      "target": "PARTICLE SIZE",
+      "description": "Produces significantly larger particle size",
+      "weight": "8",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "VILLAGE CHAKKI",
+      "target": "ROLLING QUALITY",
+      "description": "Produces superior rolling quality",
+      "weight": "8",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "VILLAGE CHAKKI",
+      "target": "STARCH DAMAGE",
+      "description": "Produces higher starch damage",
+      "weight": "7",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "VILLAGE CHAKKI",
+      "target": "WATER RETENTION CAPACITY",
+      "description": "Produces higher water retention capacity",
+      "weight": "7",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "LABORATORY CARBORUNDUM MILL",
+      "target": "STARCH DAMAGE",
+      "description": "Produces higher starch damage",
+      "weight": "7",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "LABORATORY CARBORUNDUM MILL",
+      "target": "WATER RETENTION CAPACITY",
+      "description": "Produces higher water retention capacity",
+      "weight": "7",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "UDY CYCLONE MILL",
+      "target": "STARCH DAMAGE",
+      "description": "Produces the least amount of starch damage",
+      "weight": "8",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "UDY CYCLONE MILL",
+      "target": "WATER RETENTION CAPACITY",
+      "description": "Produces the least amount of water retention",
+      "weight": "8",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "UDY CYCLONE MILL",
+      "target": "ROLLING QUALITY",
+      "description": "Produces poor rolling quality",
+      "weight": "8",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "ROLLING QUALITY",
+      "target": "STARCH DAMAGE",
+      "description": "Positively correlated",
+      "weight": "9",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "ROLLING QUALITY",
+      "target": "WATER RETENTION CAPACITY",
+      "description": "Positively correlated",
+      "weight": "9",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "ROLLING QUALITY",
+      "target": "DOUGH EXTRUSION FORCE",
+      "description": "Negatively associated",
+      "weight": "9",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "GRAIN HARDNESS",
+      "target": "GRAIN QUALITY",
+      "description": "Correlated with quality parameters of flour",
+      "weight": "7",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "VILLAGE CHAKKI",
+      "target": "GRAIN HARDNESS",
+      "description": "Interacts with grain hardness to affect flour quality",
+      "weight": "6",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "UDY CYCLONE MILL",
+      "target": "GRAIN HARDNESS",
+      "description": "Interacts with grain hardness to affect flour quality",
+      "weight": "6",
+      "source_id": "paper_4139"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "GRAIN HARDNESS",
+      "description": "Sorghum cultivars vary in grain hardness",
+      "weight": "9",
+      "source_id": "paper_4139"
+    }
+  ]
+}

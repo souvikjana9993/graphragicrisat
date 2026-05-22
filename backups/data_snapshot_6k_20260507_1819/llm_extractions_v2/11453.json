@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "APSIM-SORGHUM",
+      "type": "METHOD",
+      "description": "A crop simulation model used for simulating growth and yield of sorghum",
+      "source_id": "paper_11453"
+    },
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A major cereal crop used for food grain and fodder, specifically Sorghum Bicolor (L.) Moench",
+      "source_id": "paper_11453"
+    },
+    {
+      "name": "GROWTH",
+      "type": "TRAIT",
+      "description": "The developmental process of the sorghum plant",
+      "source_id": "paper_11453"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_11453"
+    },
+    {
+      "name": "NIGERIA",
+      "type": "LOCATION",
+      "description": "The country where the study is conducted",
+      "source_id": "paper_11453"
+    },
+    {
+      "name": "SEMI-ARID",
+      "type": "CONDITION",
+      "description": "A climatic condition characterized by low rainfall, found in parts of Nigeria",
+      "source_id": "paper_11453"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Agricultural conditions where water is supplied only by rainfall",
+      "source_id": "paper_11453"
+    },
+    {
+      "name": "FOOD GRAIN",
+      "type": "CONCEPT",
+      "description": "The use of sorghum as a source of food",
+      "source_id": "paper_11453"
+    },
+    {
+      "name": "FODDER",
+      "type": "CONCEPT",
+      "description": "The use of sorghum as animal feed",
+      "source_id": "paper_11453"
+    },
+    {
+      "name": "CONTRASTING PRODUCTION ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Diverse environmental settings used to test sorghum adaptation",
+      "source_id": "paper_11453"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "APSIM-SORGHUM",
+      "target": "SORGHUM",
+      "description": "simulates the growth and yield of",
+      "weight": "10",
+      "source_id": "paper_11453"
+    },
+    {
+      "source": "APSIM-SORGHUM",
+      "target": "GROWTH",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_11453"
+    },
+    {
+      "source": "APSIM-SORGHUM",
+      "target": "YIELD",
+      "description": "simulates",
+      "weight": "9",
+      "source_id": "paper_11453"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "NIGERIA",
+      "description": "is produced in",
+      "weight": "10",
+      "source_id": "paper_11453"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "SEMI-ARID",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_11453"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "RAINFED CONDITIONS",
+      "description": "is predominantly grown under",
+      "weight": "9",
+      "source_id": "paper_11453"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "FOOD GRAIN",
+      "description": "is used as",
+      "weight": "10",
+      "source_id": "paper_11453"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "FODDER",
+      "description": "is used as",
+      "weight": "10",
+      "source_id": "paper_11453"
+    },
+    {
+      "source": "SORGHUM",
+      "target": "CONTRASTING PRODUCTION ENVIRONMENTS",
+      "description": "is adapted to",
+      "weight": "8",
+      "source_id": "paper_11453"
+    },
+    {
+      "source": "NIGERIA",
+      "target": "SEMI-ARID",
+      "description": "has regions that are",
+      "weight": "7",
+      "source_id": "paper_11453"
+    }
+  ]
+}

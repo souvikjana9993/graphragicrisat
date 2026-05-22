@@ -1,0 +1,261 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The crop species Arachis hypogaea L. used in the study",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "DROUGHT TOLERANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand drought stress, the primary target for breeding",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "SNP MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphism markers used for genome-wide association studies",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "DARTSEQ",
+      "type": "METHOD",
+      "description": "Diversity Array Technology sequencing used to identify genetic markers",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "MTA ANALYSIS",
+      "type": "METHOD",
+      "description": "Marker-trait association analysis used to link genomic regions to physiological traits",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "LINKAGE DISEQUILIBRIUM",
+      "type": "CONCEPT",
+      "description": "The non-random association of alleles at different loci in the genome",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "GAPIT",
+      "type": "METHOD",
+      "description": "A software package used for genome-wide association studies and MTA analysis",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "KDCOMPUTE",
+      "type": "METHOD",
+      "description": "The interface used to execute the GAPIT package",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "LEAF AREA INDEX",
+      "type": "TRAIT",
+      "description": "A physiological trait used as a surrogate for drought tolerance",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "CANOPY TEMPERATURE",
+      "type": "TRAIT",
+      "description": "A physiological trait used as a surrogate for drought tolerance",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "CHLOROPHYLL CONTENT",
+      "type": "TRAIT",
+      "description": "A physiological trait used as a surrogate for drought tolerance",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "type": "TRAIT",
+      "description": "A physiological trait used as a surrogate for drought tolerance",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "A SUBGENOME",
+      "type": "CONCEPT",
+      "description": "One of the two subgenomes in the allotetraploid groundnut genome",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "B SUBGENOME",
+      "type": "CONCEPT",
+      "description": "One of the two subgenomes in the allotetraploid groundnut genome",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "MARKER-ASSISTED SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method using genetic markers to select for desired traits",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "TRAIT INTROGRESSION",
+      "type": "METHOD",
+      "description": "The process of incorporating a specific trait from one genotype into another",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "ICRISAT",
+      "type": "LOCATION",
+      "description": "The international research organization that provided the groundnut mini core collection",
+      "source_id": "paper_11405"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "The environmental stress condition being addressed",
+      "source_id": "paper_11405"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SNP MARKERS",
+      "target": "GROUNDNUT",
+      "description": "identified in",
+      "weight": "9",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "DARTSEQ",
+      "target": "SNP MARKERS",
+      "description": "used to generate",
+      "weight": "10",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "MTA ANALYSIS",
+      "target": "SNP MARKERS",
+      "description": "used to associate markers with traits",
+      "weight": "10",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "MTA ANALYSIS",
+      "target": "LEAF AREA INDEX",
+      "description": "identified markers for",
+      "weight": "9",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "MTA ANALYSIS",
+      "target": "CANOPY TEMPERATURE",
+      "description": "identified markers for",
+      "weight": "9",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "MTA ANALYSIS",
+      "target": "CHLOROPHYLL CONTENT",
+      "description": "identified markers for",
+      "weight": "9",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "MTA ANALYSIS",
+      "target": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "description": "identified markers for",
+      "weight": "9",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "GAPIT",
+      "target": "MTA ANALYSIS",
+      "description": "software used for",
+      "weight": "10",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "KDCOMPUTE",
+      "target": "GAPIT",
+      "description": "interface used to run",
+      "weight": "10",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "A SUBGENOME",
+      "description": "located on",
+      "weight": "8",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "B SUBGENOME",
+      "description": "located on",
+      "weight": "8",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "A SUBGENOME",
+      "target": "B SUBGENOME",
+      "description": "homeologous relationship",
+      "weight": "7",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "MARKER-ASSISTED SELECTION",
+      "description": "used as resources for",
+      "weight": "9",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "SNP MARKERS",
+      "target": "TRAIT INTROGRESSION",
+      "description": "used as resources for",
+      "weight": "9",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "DROUGHT TOLERANCE",
+      "target": "GROUNDNUT",
+      "description": "target trait for breeding",
+      "weight": "10",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "LEAF AREA INDEX",
+      "target": "DROUGHT TOLERANCE",
+      "description": "surrogate trait for",
+      "weight": "8",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "CANOPY TEMPERATURE",
+      "target": "DROUGHT TOLERANCE",
+      "description": "surrogate trait for",
+      "weight": "8",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "CHLOROPHYLL CONTENT",
+      "target": "DROUGHT TOLERANCE",
+      "description": "surrogate trait for",
+      "weight": "8",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "NORMALIZED DIFFERENCE VEGETATION INDEX",
+      "target": "DROUGHT TOLERANCE",
+      "description": "surrogate trait for",
+      "weight": "8",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "ICRISAT",
+      "target": "GROUNDNUT",
+      "description": "provided mini core collection of",
+      "weight": "9",
+      "source_id": "paper_11405"
+    },
+    {
+      "source": "DROUGHT",
+      "target": "DROUGHT TOLERANCE",
+      "description": "environmental condition for",
+      "weight": "10",
+      "source_id": "paper_11405"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "Pennisetum glaucum cv. ICTP 8203, the crop studied for water-use efficiency",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "TRANSPIRATIONAL WATER-USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The efficiency of water use based on transpiration, denoted as WUET",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "PHOSPHORUS AVAILABILITY",
+      "type": "CONDITION",
+      "description": "The level of phosphorus (P) provided to the plants in the soil",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "The condition of limited water availability imposed on the plants",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "OUTDOOR POT EXPERIMENT",
+      "type": "METHOD",
+      "description": "Experiments conducted in covered pots under semiarid conditions",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "GROWTH CHAMBER EXPERIMENT",
+      "type": "METHOD",
+      "description": "Controlled environment experiments to study WUET and P levels",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "SEMIARID CONDITIONS",
+      "type": "CONDITION",
+      "description": "The environmental conditions under which outdoor pots were grown",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "BETIS SAND",
+      "type": "CONCEPT",
+      "description": "A sandy, siliceous, thermic Psammentic Paleustalf soil used in the study",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "DRY MATTER",
+      "type": "TRAIT",
+      "description": "The mass of the plant excluding water, denoted as DM",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "CUMULATIVE TRANSPIRATION",
+      "type": "TRAIT",
+      "description": "The total amount of water transpired by the plant over time",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "GAS EXCHANGE WATER-USE EFFICIENCY",
+      "type": "TRAIT",
+      "description": "The ratio of leaf net photosynthetic rate to transpiration, denoted as WUEgas",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "PHOTOSYNTHETIC PHOTON FLUX DENSITY",
+      "type": "CONDITION",
+      "description": "The intensity of light available for photosynthesis, denoted as PPFD",
+      "source_id": "paper_1469"
+    },
+    {
+      "name": "SOIL FERTILITY CONSTRAINTS",
+      "type": "CONDITION",
+      "description": "Limitations in soil nutrients that affect crop production",
+      "source_id": "paper_1469"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PHOSPHORUS AVAILABILITY",
+      "target": "TRANSPIRATIONAL WATER-USE EFFICIENCY",
+      "description": "Significant main and interactive effects on WUET",
+      "weight": "9",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "TRANSPIRATIONAL WATER-USE EFFICIENCY",
+      "description": "Significant main and interactive effects on WUET",
+      "weight": "9",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "PHOSPHORUS AVAILABILITY",
+      "target": "DRY MATTER",
+      "description": "P level increased the slope of the curve relating DM to cumulative transpiration",
+      "weight": "8",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "DRY MATTER",
+      "description": "Water stress increased the slope of the curve relating DM to cumulative transpiration",
+      "weight": "8",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "PHOSPHORUS AVAILABILITY",
+      "target": "GAS EXCHANGE WATER-USE EFFICIENCY",
+      "description": "P levels significantly increased WUEgas",
+      "weight": "9",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "PHOTOSYNTHETIC PHOTON FLUX DENSITY",
+      "target": "GAS EXCHANGE WATER-USE EFFICIENCY",
+      "description": "PPFD levels influenced the increase of WUEgas depending on P levels",
+      "weight": "8",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "OUTDOOR POT EXPERIMENT",
+      "description": "The crop used in the outdoor pot experiments",
+      "weight": "10",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "GROWTH CHAMBER EXPERIMENT",
+      "description": "The crop used in the growth chamber experiments",
+      "weight": "10",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "TRANSPIRATIONAL WATER-USE EFFICIENCY",
+      "description": "The trait measured in pearl millet",
+      "weight": "10",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "SEMIARID CONDITIONS",
+      "target": "OUTDOOR POT EXPERIMENT",
+      "description": "The environment where outdoor pot experiments were conducted",
+      "weight": "9",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "BETIS SAND",
+      "target": "OUTDOOR POT EXPERIMENT",
+      "description": "The soil type used in the outdoor pot experiments",
+      "weight": "9",
+      "source_id": "paper_1469"
+    },
+    {
+      "source": "SOIL FERTILITY CONSTRAINTS",
+      "target": "PHOSPHORUS AVAILABILITY",
+      "description": "Phosphorus availability is a key component of soil fertility constraints",
+      "weight": "9",
+      "source_id": "paper_1469"
+    }
+  ]
+}

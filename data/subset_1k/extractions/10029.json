@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "A cereal crop (Pennisetum glaucum) susceptible to downy mildew.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "DOWNY MILDEW",
+      "type": "CONDITION",
+      "description": "A disease also known as green ear, caused by Sclerospora graminicola, which causes severe loss in grain yield.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "SCLEROSPORA GRAMINICOLA",
+      "type": "ORGANISM",
+      "description": "The fungal pathogen that causes downy mildew in pearl millet.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced, which is reduced by the conversion of florets into leafy structures due to disease.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "HOST-PLANT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The most feasible method to control downy mildew disease.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "GENETIC STOCKS",
+      "type": "CONCEPT",
+      "description": "Lines developed from spontaneously occurring mutants used for pearl millet improvement.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "MUTANTS",
+      "type": "CONCEPT",
+      "description": "Spontaneously occurring variants found in the world collection of pearl millet germplasm.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "WORLD COLLECTION OF PEARL MILLET GERMPLASM",
+      "type": "CONCEPT",
+      "description": "A global repository of pearl millet genetic resources from which mutants were identified.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "MORPHOLOGICAL CHARACTERS",
+      "type": "TRAIT",
+      "description": "Physical characteristics used to describe the developed genetic stocks.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "AGRONOMICAL CHARACTERS",
+      "type": "TRAIT",
+      "description": "Agricultural performance characteristics used to describe the developed genetic stocks.",
+      "source_id": "paper_10029"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating genetic stocks for resistance to downy mildew.",
+      "source_id": "paper_10029"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SCLEROSPORA GRAMINICOLA",
+      "target": "DOWNY MILDEW",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "PEARL MILLET",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "DOWNY MILDEW",
+      "target": "GRAIN YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "HOST-PLANT RESISTANCE",
+      "target": "DOWNY MILDEW",
+      "description": "controls",
+      "weight": "9",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "GENETIC STOCKS",
+      "target": "MUTANTS",
+      "description": "developed from",
+      "weight": "8",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "MUTANTS",
+      "target": "WORLD COLLECTION OF PEARL MILLET GERMPLASM",
+      "description": "sourced from",
+      "weight": "8",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "SCREENING",
+      "target": "GENETIC STOCKS",
+      "description": "evaluates",
+      "weight": "9",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "SCREENING",
+      "target": "DOWNY MILDEW",
+      "description": "tests for resistance to",
+      "weight": "9",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "GENETIC STOCKS",
+      "target": "MORPHOLOGICAL CHARACTERS",
+      "description": "characterized by",
+      "weight": "7",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "GENETIC STOCKS",
+      "target": "AGRONOMICAL CHARACTERS",
+      "description": "characterized by",
+      "weight": "7",
+      "source_id": "paper_10029"
+    },
+    {
+      "source": "GENETIC STOCKS",
+      "target": "PEARL MILLET",
+      "description": "used for improvement of",
+      "weight": "8",
+      "source_id": "paper_10029"
+    }
+  ]
+}

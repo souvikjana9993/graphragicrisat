@@ -1,0 +1,177 @@
+{
+  "entities": [
+    {
+      "name": "FUSARIUM OXYSPORUM",
+      "type": "ORGANISM",
+      "description": "A species complex of pathogenic and putatively non-pathogenic strains ubiquitous in soil",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "type": "ORGANISM",
+      "description": "A major fungal pathogen causing Fusarium wilt in chickpeas",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A disease caused by Fusarium oxysporum f. sp. ciceris in chickpeas",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The host plant (Cicer arietinum) affected by Fusarium wilt",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "AUSTRALIA",
+      "type": "LOCATION",
+      "description": "A country where Foc is a high-priority pest of biosecurity concern",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "type": "METHOD",
+      "description": "A rapid and sensitive diagnostic assay used for detecting Foc",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "END-POINT PCR",
+      "type": "METHOD",
+      "description": "A conventional diagnostic assay used for detecting Foc",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "INDIAN FOC RACE 1",
+      "type": "ORGANISM",
+      "description": "A specific race of Fusarium oxysporum f. sp. ciceris targeted by the developed assays",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "PUTATIVE EFFECTOR GENE",
+      "type": "GENE_MARKER",
+      "description": "A gene uniquely present in the genome of Indian Foc race 1 used for detection",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "BIOSECURITY",
+      "type": "CONCEPT",
+      "description": "A control measure and concern regarding the spread of Foc",
+      "source_id": "paper_12292"
+    },
+    {
+      "name": "DISEASE MANAGEMENT",
+      "type": "CONCEPT",
+      "description": "The process of controlling Fusarium wilt on the farm",
+      "source_id": "paper_12292"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "FUSARIUM WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "FUSARIUM WILT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "CHICKPEA",
+      "description": "infects",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "AUSTRALIA",
+      "description": "is a biosecurity concern in",
+      "weight": "8",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "target": "INDIAN FOC RACE 1",
+      "description": "detects",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "END-POINT PCR",
+      "target": "INDIAN FOC RACE 1",
+      "description": "detects",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "target": "PUTATIVE EFFECTOR GENE",
+      "description": "based on",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "END-POINT PCR",
+      "target": "PUTATIVE EFFECTOR GENE",
+      "description": "based on",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "PUTATIVE EFFECTOR GENE",
+      "target": "INDIAN FOC RACE 1",
+      "description": "is uniquely present in",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "INDIAN FOC RACE 1",
+      "target": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "description": "is a race of",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F. SP. CICERIS",
+      "target": "FUSARIUM OXYSPORUM",
+      "description": "is a forma specialis of",
+      "weight": "10",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "target": "BIOSECURITY",
+      "description": "serves as a control measure for",
+      "weight": "7",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "END-POINT PCR",
+      "target": "BIOSECURITY",
+      "description": "serves as a control measure for",
+      "weight": "7",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "LOOP-MEDIATED ISOTHERMAL AMPLIFICATION",
+      "target": "DISEASE MANAGEMENT",
+      "description": "is essential for",
+      "weight": "7",
+      "source_id": "paper_12292"
+    },
+    {
+      "source": "END-POINT PCR",
+      "target": "DISEASE MANAGEMENT",
+      "description": "is essential for",
+      "weight": "7",
+      "source_id": "paper_12292"
+    }
+  ]
+}

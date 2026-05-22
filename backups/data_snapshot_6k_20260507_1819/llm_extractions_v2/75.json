@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "FOOD PRODUCTION",
+      "type": "CONCEPT",
+      "description": "Global food production, generally referring to the yield of crops and livestock.",
+      "source_id": "paper_75"
+    },
+    {
+      "name": "POPULATION GROWTH",
+      "type": "CONCEPT",
+      "description": "Increase in the number of individuals in a specific area.",
+      "source_id": "paper_75"
+    },
+    {
+      "name": "ASIA",
+      "type": "LOCATION",
+      "description": "Continent in the eastern and central parts of Eurasia.",
+      "source_id": "paper_75"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "The region of Africa south of the Sahara Desert.",
+      "source_id": "paper_75"
+    },
+    {
+      "name": "FOOD GRAINS",
+      "type": "CROP",
+      "description": "Cereal crops used for human consumption.",
+      "source_id": "paper_75"
+    },
+    {
+      "name": "PRICE RISES",
+      "type": "CONCEPT",
+      "description": "Increase in the cost of goods and services, specifically food in this context.",
+      "source_id": "paper_75"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "IMPACTS",
+      "target": "POPULATION GROWTH",
+      "description": "FOOD PRODUCTION",
+      "weight": "increased demand due to population growth necessitates increased food production",
+      "source_id": "paper_75"
+    },
+    {
+      "source": "LOCATED_IN",
+      "target": "POPULATION GROWTH",
+      "description": "ASIA",
+      "weight": "Population growth is occurring mainly in Asia",
+      "source_id": "paper_75"
+    },
+    {
+      "source": "LOCATED_IN",
+      "target": "POPULATION GROWTH",
+      "description": "SUB-SAHARAN AFRICA",
+      "weight": "Population growth is occurring in Sub-Saharan Africa",
+      "source_id": "paper_75"
+    },
+    {
+      "source": "IMPACTS",
+      "target": "FOOD GRAINS",
+      "description": "PRICE RISES",
+      "weight": "Deficiency of food grains led to unprecedented price rises",
+      "source_id": "paper_75"
+    }
+  ]
+}

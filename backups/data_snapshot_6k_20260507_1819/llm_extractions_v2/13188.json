@@ -1,0 +1,250 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "An important food crop in sub-Saharan Africa and worldwide.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "SUB-SAHARAN AFRICA",
+      "type": "LOCATION",
+      "description": "A region where groundnut is an important food crop.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The agricultural productivity of the crop, which is negatively impacted by diseases.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "GROUNDNUT ROSETTE DISEASE",
+      "type": "CONDITION",
+      "description": "A major disease causing low yields in cultivated groundnut varieties.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "LEAF SPOTS",
+      "type": "CONDITION",
+      "description": "A disease affecting groundnut varieties that contributes to low yields.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "GENOMIC SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method using models calibrated on phenotype and genotype information to predict breeding values.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "GENOMIC ESTIMATED BREEDING VALUES",
+      "type": "CONCEPT",
+      "description": "Values predicted by genomic selection to accelerate selection progress in breeding programs.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "TRADITIONAL BREEDING METHODS",
+      "type": "METHOD",
+      "description": "Conventional breeding approaches that are augmented by genomic selection to speed up genetic gains.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "GENETIC GAINS",
+      "type": "CONCEPT",
+      "description": "The improvement of desired traits in a crop population over generations.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "VECTOR-HOST INTERACTION",
+      "type": "CONCEPT",
+      "description": "The biological relationship and interaction between the disease vector and the host plant.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "GRD MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Molecular markers validated for the identification and selection of Groundnut Rosette Disease resistance.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "AFRICAN CORE SET",
+      "type": "CONCEPT",
+      "description": "A genotyped set of groundnut accessions from Africa used for genetic studies.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "GENOME-WIDE ASSOCIATION ANALYSIS",
+      "type": "METHOD",
+      "description": "An analysis used to identify loci associated with key traits in the groundnut genome.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "PREDICTION MODELS",
+      "type": "METHOD",
+      "description": "Models used to forecast GEBVs and improve the accuracy of selection.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "HIGH-DENSITY GENOTYPING",
+      "type": "METHOD",
+      "description": "A method of genotyping used to provide high-resolution data for prediction models.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "APHID SPECIES",
+      "type": "ORGANISM",
+      "description": "The insect vector responsible for transmitting Groundnut Rosette Disease.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "MARKER ASSISTED SELECTION",
+      "type": "METHOD",
+      "description": "A breeding method using molecular markers to select for specific traits like GRD resistance.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "GENOME WIDE ASSOCIATION MAPPING MARKER SET",
+      "type": "GENE_MARKER",
+      "description": "A set of markers derived from association mapping used for trait identification.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "MID-DENSITY PANEL MARKERS",
+      "type": "GENE_MARKER",
+      "description": "Markers developed for quality checks and selection panels.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "LARGE-EFFECT SNPS",
+      "type": "GENE_MARKER",
+      "description": "Single Nucleotide Polymorphisms with significant effects on the target traits.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "MULTIENVIRONMENT PREDICTION MODELS",
+      "type": "METHOD",
+      "description": "Advanced prediction models that incorporate data from multiple environments to enhance GS results.",
+      "source_id": "paper_13188"
+    },
+    {
+      "name": "PREDICTION ACCURACY",
+      "type": "CONCEPT",
+      "description": "The precision with which genomic selection models forecast breeding values.",
+      "source_id": "paper_13188"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GROUNDNUT",
+      "target": "SUB-SAHARAN AFRICA",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE DISEASE",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "LEAF SPOTS",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "GROUNDNUT ROSETTE DISEASE",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "LEAF SPOTS",
+      "target": "YIELD",
+      "description": "reduces",
+      "weight": "9",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GENOMIC ESTIMATED BREEDING VALUES",
+      "description": "predicts",
+      "weight": "10",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "GENETIC GAINS",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "GENOMIC SELECTION",
+      "target": "TRADITIONAL BREEDING METHODS",
+      "description": "augments",
+      "weight": "8",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "GRD MARKERS",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "validates",
+      "weight": "10",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "GRD MARKERS",
+      "target": "MARKER ASSISTED SELECTION",
+      "description": "enables",
+      "weight": "9",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "APHID SPECIES",
+      "target": "GROUNDNUT ROSETTE DISEASE",
+      "description": "is the vector for",
+      "weight": "10",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "APHID SPECIES",
+      "target": "GROUNDNUT",
+      "description": "interacts with",
+      "weight": "8",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "LARGE-EFFECT SNPS",
+      "target": "PREDICTION ACCURACY",
+      "description": "increases",
+      "weight": "9",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "MULTIENVIRONMENT PREDICTION MODELS",
+      "target": "GENOMIC SELECTION",
+      "description": "enhances",
+      "weight": "8",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "GENOME WIDE ASSOCIATION MAPPING MARKER SET",
+      "target": "MID-DENSITY PANEL MARKERS",
+      "description": "is a basis for",
+      "weight": "7",
+      "source_id": "paper_13188"
+    },
+    {
+      "source": "GENOME-WIDE ASSOCIATION ANALYSIS",
+      "target": "GENETIC GAINS",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_13188"
+    }
+  ]
+}

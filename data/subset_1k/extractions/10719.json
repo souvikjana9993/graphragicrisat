@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "A legume crop (Cajanus cajan) ranking fifth in importance among edible legumes globally.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "DROUGHT",
+      "type": "CONDITION",
+      "description": "Intermittent and terminal water scarcity that adversely affects crop growth.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "GRAIN YIELD",
+      "type": "TRAIT",
+      "description": "The amount of grain produced per unit area, heavily influenced by genotype x environment interactions.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "type": "CONCEPT",
+      "description": "The interaction between the genetic makeup of a plant and the environment it grows in.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "TRAIT-BASED SELECTION",
+      "type": "METHOD",
+      "description": "A breeding approach focusing on specific traits to improve drought tolerance.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "DROUGHT TOLERANCE BREEDING",
+      "type": "CONCEPT",
+      "description": "The process of developing crop varieties that can withstand drought stress.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "POST-FLOWERING DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Drought stress occurring after the flowering stage of the crop.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "NDVI",
+      "type": "TRAIT",
+      "description": "Normalized Difference Vegetation Index, a high throughput measure used as a proxy for drought tolerance.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "SPAD CHLOROPHYLL READING",
+      "type": "TRAIT",
+      "description": "A measure of chlorophyll content in leaves using a SPAD meter.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "SHOOT BIOMASS",
+      "type": "TRAIT",
+      "description": "The total mass of the shoot system of the plant at maturity.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "HARVEST INDEX",
+      "type": "TRAIT",
+      "description": "The ratio of grain yield to total above-ground biomass.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "POD NUMBER",
+      "type": "TRAIT",
+      "description": "The number of pods produced per square meter.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "SEED NUMBER",
+      "type": "TRAIT",
+      "description": "The number of seeds produced per square meter.",
+      "source_id": "paper_10719"
+    },
+    {
+      "name": "YIELD COMPONENTS",
+      "type": "CONCEPT",
+      "description": "The individual traits that contribute to the overall grain yield.",
+      "source_id": "paper_10719"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "DROUGHT",
+      "description": "is adversely affected by",
+      "weight": "9",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "GENOTYPE X ENVIRONMENT INTERACTION",
+      "description": "is heavily influenced by",
+      "weight": "8",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "TRAIT-BASED SELECTION",
+      "target": "DROUGHT TOLERANCE BREEDING",
+      "description": "is considered beneficial for",
+      "weight": "7",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "POST-FLOWERING DROUGHT STRESS",
+      "target": "GRAIN YIELD",
+      "description": "influences",
+      "weight": "8",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "NDVI",
+      "description": "is closely associated with under drought",
+      "weight": "9",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "SHOOT BIOMASS",
+      "description": "is closely associated with under drought",
+      "weight": "8",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "HARVEST INDEX",
+      "description": "is closely associated with under drought",
+      "weight": "8",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "GRAIN YIELD",
+      "target": "YIELD COMPONENTS",
+      "description": "is closely associated with under drought",
+      "weight": "8",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "NDVI",
+      "target": "SHOOT BIOMASS",
+      "description": "is significantly correlated with",
+      "weight": "9",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "NDVI",
+      "target": "HARVEST INDEX",
+      "description": "is significantly correlated with",
+      "weight": "8",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "NDVI",
+      "target": "POD NUMBER",
+      "description": "is significantly correlated with",
+      "weight": "8",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "NDVI",
+      "target": "SEED NUMBER",
+      "description": "is significantly correlated with",
+      "weight": "8",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "SPAD CHLOROPHYLL READING",
+      "target": "GRAIN YIELD",
+      "description": "has a non-significant correlation under drought",
+      "weight": "3",
+      "source_id": "paper_10719"
+    },
+    {
+      "source": "NDVI",
+      "target": "PIGEONPEA",
+      "description": "can be used as a proxy for identifying drought tolerant lines in",
+      "weight": "9",
+      "source_id": "paper_10719"
+    }
+  ]
+}

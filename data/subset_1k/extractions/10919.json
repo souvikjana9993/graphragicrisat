@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "The crop being analyzed for dis-adoption of climate smart varieties in Tanzania",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "CLIMATE SMART",
+      "type": "TRAIT",
+      "description": "A characteristic of sorghum varieties designed to withstand climate variability",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "TANZANIA",
+      "type": "LOCATION",
+      "description": "The country where the study on sorghum dis-adoption was conducted",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "CROSS-SECTIONAL DATA",
+      "type": "METHOD",
+      "description": "Farm household level data used for the analysis of dis-adoption",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "BIVARIATE PROBIT WITH SAMPLE SELECTION MODEL",
+      "type": "METHOD",
+      "description": "Statistical model used to explore the determinants of dis-adoption",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "DIS-ADOPTION",
+      "type": "CONCEPT",
+      "description": "The act of farmers stopping the use of a previously adopted technology or variety",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "BIOTIC STRESSES",
+      "type": "CONDITION",
+      "description": "Biological pressures, such as bird attacks, affecting crop production",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "BIRDS",
+      "type": "ORGANISM",
+      "description": "Organisms causing biotic stress through attacks on sorghum",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "EXTENSION SERVICES",
+      "type": "CONCEPT",
+      "description": "Services provided to farmers to improve and sustain the adoption of agricultural technologies",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "MARKETS",
+      "type": "CONCEPT",
+      "description": "Systems for buying and selling that influence the sustainability of technology adoption and food systems",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "FOOD SYSTEMS",
+      "type": "CONCEPT",
+      "description": "The complex network of activities involved in the production and consumption of food",
+      "source_id": "paper_10919"
+    },
+    {
+      "name": "TECHNOLOGY ADOPTION",
+      "type": "CONCEPT",
+      "description": "The process by which farmers start using new agricultural technologies",
+      "source_id": "paper_10919"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SORGHUM",
+      "target": "TANZANIA",
+      "description": "is grown in",
+      "weight": "10",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "CLIMATE SMART",
+      "target": "SORGHUM",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "DIS-ADOPTION",
+      "target": "SORGHUM",
+      "description": "is the process of quitting production of",
+      "weight": "10",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "BIVARIATE PROBIT WITH SAMPLE SELECTION MODEL",
+      "target": "DIS-ADOPTION",
+      "description": "is used to analyze the determinants of",
+      "weight": "9",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "CROSS-SECTIONAL DATA",
+      "target": "DIS-ADOPTION",
+      "description": "is used to analyze",
+      "weight": "8",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "BIOTIC STRESSES",
+      "target": "DIS-ADOPTION",
+      "description": "is a driver of",
+      "weight": "8",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "BIRDS",
+      "target": "BIOTIC STRESSES",
+      "description": "are a cause of",
+      "weight": "10",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "EXTENSION SERVICES",
+      "target": "TECHNOLOGY ADOPTION",
+      "description": "helps sustain",
+      "weight": "8",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "MARKETS",
+      "target": "TECHNOLOGY ADOPTION",
+      "description": "enhances the sustainability of",
+      "weight": "9",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "MARKETS",
+      "target": "FOOD SYSTEMS",
+      "description": "enhances the sustainability of",
+      "weight": "9",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "DIS-ADOPTION",
+      "target": "MARKETS",
+      "description": "is positively associated with lack of access to",
+      "weight": "8",
+      "source_id": "paper_10919"
+    },
+    {
+      "source": "TANZANIA",
+      "target": "DIS-ADOPTION",
+      "description": "is the location where dis-adoption was studied",
+      "weight": "10",
+      "source_id": "paper_10919"
+    }
+  ]
+}

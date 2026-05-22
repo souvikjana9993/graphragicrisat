@@ -1,0 +1,189 @@
+{
+  "entities": [
+    {
+      "name": "GROUNDNUT",
+      "type": "CROP",
+      "description": "The primary crop affected by peanut bud necrosis disease.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS DISEASE",
+      "type": "CONDITION",
+      "description": "A disease of groundnut caused by PBNV and transmitted by Thrips palmi.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "PEANUT BUD NECROSIS VIRUS",
+      "type": "ORGANISM",
+      "description": "The virus that causes peanut bud necrosis disease.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "THRIPS PALMI",
+      "type": "ORGANISM",
+      "description": "The insect vector that transmits peanut bud necrosis virus.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "SOUTH AND SOUTHEAST ASIA",
+      "type": "LOCATION",
+      "description": "The geographical region where peanut bud necrosis disease is an important issue.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "FIELD RESISTANCE",
+      "type": "TRAIT",
+      "description": "Low disease incidence observed under field conditions.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "ARACHIS SPECIES",
+      "type": "CROP",
+      "description": "Wild species of groundnut that show resistance to the disease.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "RESISTANCE TO THRIPS",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist infestation or transmission by Thrips palmi.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "RESISTANCE TO PBNV",
+      "type": "TRAIT",
+      "description": "The ability of a plant to resist infection by the peanut bud necrosis virus.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "CONVENTIONAL BREEDING",
+      "type": "METHOD",
+      "description": "The breeding strategy used to improve resistance levels.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "ICGV 86031",
+      "type": "CROP",
+      "description": "A high-yielding groundnut variety showing resistance to PBNV.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "JCGV 86388",
+      "type": "CROP",
+      "description": "A high-yielding groundnut variety showing resistance to PBNV.",
+      "source_id": "paper_2035"
+    },
+    {
+      "name": "MECHANICAL SAP-INOCULATION",
+      "type": "METHOD",
+      "description": "A technique used to test resistance to PBNV by introducing the virus manually.",
+      "source_id": "paper_2035"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEANUT BUD NECROSIS VIRUS",
+      "target": "PEANUT BUD NECROSIS DISEASE",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "THRIPS PALMI",
+      "target": "PEANUT BUD NECROSIS VIRUS",
+      "description": "transmits",
+      "weight": "10",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "PEANUT BUD NECROSIS DISEASE",
+      "target": "GROUNDNUT",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "PEANUT BUD NECROSIS DISEASE",
+      "target": "SOUTH AND SOUTHEAST ASIA",
+      "description": "occurs in",
+      "weight": "8",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "GROUNDNUT",
+      "target": "FIELD RESISTANCE",
+      "description": "exhibits",
+      "weight": "7",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "ARACHIS SPECIES",
+      "target": "FIELD RESISTANCE",
+      "description": "exhibits",
+      "weight": "8",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "FIELD RESISTANCE",
+      "target": "RESISTANCE TO THRIPS",
+      "description": "is composed of",
+      "weight": "9",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "FIELD RESISTANCE",
+      "target": "RESISTANCE TO PBNV",
+      "description": "is composed of",
+      "weight": "9",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "CONVENTIONAL BREEDING",
+      "target": "RESISTANCE TO THRIPS",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "CONVENTIONAL BREEDING",
+      "target": "RESISTANCE TO PBNV",
+      "description": "improves",
+      "weight": "8",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "ICGV 86031",
+      "target": "RESISTANCE TO PBNV",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "JCGV 86388",
+      "target": "RESISTANCE TO PBNV",
+      "description": "exhibits",
+      "weight": "9",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "MECHANICAL SAP-INOCULATION",
+      "target": "RESISTANCE TO PBNV",
+      "description": "tests",
+      "weight": "9",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "ICGV 86031",
+      "target": "GROUNDNUT",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_2035"
+    },
+    {
+      "source": "JCGV 86388",
+      "target": "GROUNDNUT",
+      "description": "is a variety of",
+      "weight": "10",
+      "source_id": "paper_2035"
+    }
+  ]
+}

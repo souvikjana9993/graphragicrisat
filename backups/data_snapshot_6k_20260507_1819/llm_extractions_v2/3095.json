@@ -1,0 +1,272 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "Short-duration pigeonpea [Cajanus cajan (L.) Millsp.]",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "ICPL 87",
+      "type": "CONCEPT",
+      "description": "A short-duration pigeonpea cultivar used in the study",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "ICPL 151",
+      "type": "CONCEPT",
+      "description": "A short-duration pigeonpea cultivar used in the study",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "TERMINAL DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "Water stress occurring during the terminal growth stage",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "FLOWER/POD REMOVAL",
+      "type": "METHOD",
+      "description": "Treatment involving partial removal of flowers and pods to analyze yield components",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "FOLIAR FERTILIZATION",
+      "type": "METHOD",
+      "description": "Application of nutrient solutions containing N, P, K, and S to the leaves",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "SEED YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of seed produced, specifically measured for top-3 nodes",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "RAINFED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Growing conditions relying on natural rainfall",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "IRRIGATED CONDITIONS",
+      "type": "CONDITION",
+      "description": "Growing conditions with supplemental water application",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "POD DENSITY",
+      "type": "TRAIT",
+      "description": "The number of pods per unit area or plant",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "SEED SIZE",
+      "type": "TRAIT",
+      "description": "The physical dimensions or weight of individual seeds",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "SEEDS PER POD",
+      "type": "TRAIT",
+      "description": "The number of seeds contained within a single pod",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "NITROGEN",
+      "type": "CONCEPT",
+      "description": "Nutrient N used in foliar fertilization treatments",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "PHOSPHORUS",
+      "type": "CONCEPT",
+      "description": "Nutrient P used in foliar fertilization treatments",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "POTASSIUM",
+      "type": "CONCEPT",
+      "description": "Nutrient K used in foliar fertilization treatments",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "SULFUR",
+      "type": "CONCEPT",
+      "description": "Nutrient S used in foliar fertilization treatments",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "SOIL MOISTURE CONDITION",
+      "type": "CONDITION",
+      "description": "The availability of water in the soil affecting plant growth",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "REPRODUCTIVE SINK CAPACITY",
+      "type": "TRAIT",
+      "description": "The plant's capacity to utilize resources for reproductive growth",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "NUTRIENT SUPPLY",
+      "type": "CONCEPT",
+      "description": "The availability of N, P, K, and S to the plant",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "DROUGHT RESISTANCE MECHANISM",
+      "type": "CONCEPT",
+      "description": "Biological processes that allow the plant to withstand water stress",
+      "source_id": "paper_3095"
+    },
+    {
+      "name": "WATER STRESS",
+      "type": "CONDITION",
+      "description": "General condition of insufficient water availability for the plant",
+      "source_id": "paper_3095"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "ICPL 87",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "ICPL 151",
+      "description": "is a cultivar of",
+      "weight": "10",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "SEED YIELD",
+      "description": "has trait",
+      "weight": "10",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "TERMINAL DROUGHT STRESS",
+      "target": "SEED YIELD",
+      "description": "limits",
+      "weight": "8",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "FLOWER/POD REMOVAL",
+      "target": "SEED YIELD",
+      "description": "increases yield of top-3 nodes",
+      "weight": "7",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "FLOWER/POD REMOVAL",
+      "target": "POD DENSITY",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "FLOWER/POD REMOVAL",
+      "target": "SEED SIZE",
+      "description": "increases",
+      "weight": "7",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "FLOWER/POD REMOVAL",
+      "target": "SEEDS PER POD",
+      "description": "has little change on",
+      "weight": "4",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "FOLIAR FERTILIZATION",
+      "target": "SEED YIELD",
+      "description": "has no significant effect on",
+      "weight": "3",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "FOLIAR FERTILIZATION",
+      "target": "NITROGEN",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "FOLIAR FERTILIZATION",
+      "target": "PHOSPHORUS",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "FOLIAR FERTILIZATION",
+      "target": "POTASSIUM",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "FOLIAR FERTILIZATION",
+      "target": "SULFUR",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "SOIL MOISTURE CONDITION",
+      "target": "SEED YIELD",
+      "description": "affects",
+      "weight": "8",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "REPRODUCTIVE SINK CAPACITY",
+      "target": "SEED YIELD",
+      "description": "limits",
+      "weight": "7",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "NUTRIENT SUPPLY",
+      "target": "SEED YIELD",
+      "description": "is not limiting for",
+      "weight": "5",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "WATER STRESS",
+      "target": "DROUGHT RESISTANCE MECHANISM",
+      "description": "is the basis for understanding",
+      "weight": "8",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "TERMINAL DROUGHT STRESS",
+      "target": "WATER STRESS",
+      "description": "is a specific type of",
+      "weight": "10",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "RAINFED CONDITIONS",
+      "target": "SOIL MOISTURE CONDITION",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_3095"
+    },
+    {
+      "source": "IRRIGATED CONDITIONS",
+      "target": "SOIL MOISTURE CONDITION",
+      "description": "is a type of",
+      "weight": "9",
+      "source_id": "paper_3095"
+    }
+  ]
+}

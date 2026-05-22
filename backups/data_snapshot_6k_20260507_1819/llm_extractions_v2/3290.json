@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "PEANUT",
+      "type": "CROP",
+      "description": "Arachis hypogaea L., the crop studied for its response to soil temperature",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "SOIL TEMPERATURE",
+      "type": "CONDITION",
+      "description": "The environmental temperature of the soil, specifically day/night regimes of 20/14, 26/20, 32/26, and 38/32 C",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "VEGETATIVE GROWTH",
+      "type": "TRAIT",
+      "description": "The growth phase of the plant prior to reproduction",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "REPRODUCTIVE GROWTH",
+      "type": "TRAIT",
+      "description": "The growth phase of the plant involving flower and pod development",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "DEVELOPMENT",
+      "type": "TRAIT",
+      "description": "The overall process of growth and maturation of the peanut plant",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total agricultural output of the peanut crop",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "AGRONOMIC MANAGEMENT",
+      "type": "METHOD",
+      "description": "The practice of managing crops to improve yield",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of selecting and developing improved crop genotypes",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "GREENHOUSE",
+      "type": "LOCATION",
+      "description": "The controlled environment where the study was conducted",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "SPANISH GENOTYPES",
+      "type": "CONCEPT",
+      "description": "Three specific genetic variations of peanut used in the investigation",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "PEG PENETRATION",
+      "type": "CONCEPT",
+      "description": "The developmental stage when the peg enters the soil",
+      "source_id": "paper_3290"
+    },
+    {
+      "name": "MATURITY",
+      "type": "CONCEPT",
+      "description": "The final stage of plant development",
+      "source_id": "paper_3290"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "YIELD",
+      "description": "limits yield development",
+      "weight": "9",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "VEGETATIVE GROWTH",
+      "description": "influences growth",
+      "weight": "8",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "REPRODUCTIVE GROWTH",
+      "description": "influences growth",
+      "weight": "8",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "DEVELOPMENT",
+      "description": "influences development",
+      "weight": "8",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "AGRONOMIC MANAGEMENT",
+      "target": "YIELD",
+      "description": "used to improve",
+      "weight": "7",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "BREEDING",
+      "target": "YIELD",
+      "description": "used to improve",
+      "weight": "7",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "SPANISH GENOTYPES",
+      "target": "PEANUT",
+      "description": "are specific genotypes of",
+      "weight": "10",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "SPANISH GENOTYPES",
+      "description": "influences growth and development of",
+      "weight": "8",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "GREENHOUSE",
+      "target": "SOIL TEMPERATURE",
+      "description": "location where temperature regimes were imposed",
+      "weight": "6",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "PEG PENETRATION",
+      "description": "imposed from the time of",
+      "weight": "5",
+      "source_id": "paper_3290"
+    },
+    {
+      "source": "SOIL TEMPERATURE",
+      "target": "MATURITY",
+      "description": "imposed until",
+      "weight": "5",
+      "source_id": "paper_3290"
+    }
+  ]
+}

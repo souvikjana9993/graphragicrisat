@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The legume crop being evaluated for salinity resistance.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "SALINITY RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the plant to withstand high salt concentrations in the soil.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "SALINITY",
+      "type": "CONDITION",
+      "description": "The environmental stress caused by high salt levels in the field.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "FIELD SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating plants in a field setting to identify specific traits.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "GAMMA IRRADIATION",
+      "type": "METHOD",
+      "description": "The process of using gamma rays to induce mutations in seeds.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "ICCV6",
+      "type": "CONCEPT",
+      "description": "A specific cultivar of chickpea used as the source for progeny bulks.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "H208",
+      "type": "CONCEPT",
+      "description": "A specific cultivar of chickpea used as a control in the experiment.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "SALINITY SYMPTOMS",
+      "type": "TRAIT",
+      "description": "The observable physical manifestations of salt stress on the plants.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "SEED NUMBER",
+      "type": "TRAIT",
+      "description": "The quantity of seeds produced per plant.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The total amount of crop produced.",
+      "source_id": "paper_2199"
+    },
+    {
+      "name": "STATISTICAL METHODS",
+      "type": "METHOD",
+      "description": "The mathematical techniques used to analyze the screening data.",
+      "source_id": "paper_2199"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FIELD SCREENING",
+      "target": "CHICKPEA",
+      "description": "used to evaluate",
+      "weight": "9",
+      "source_id": "paper_2199"
+    },
+    {
+      "source": "FIELD SCREENING",
+      "target": "SALINITY RESISTANCE",
+      "description": "used to identify",
+      "weight": "10",
+      "source_id": "paper_2199"
+    },
+    {
+      "source": "SALINITY",
+      "target": "SALINITY SYMPTOMS",
+      "description": "induces",
+      "weight": "10",
+      "source_id": "paper_2199"
+    },
+    {
+      "source": "SALINITY",
+      "target": "SALINITY RESISTANCE",
+      "description": "is the stressor for",
+      "weight": "10",
+      "source_id": "paper_2199"
+    },
+    {
+      "source": "GAMMA IRRADIATION",
+      "target": "ICCV6",
+      "description": "used to mutate",
+      "weight": "8",
+      "source_id": "paper_2199"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SALINITY RESISTANCE",
+      "description": "possesses",
+      "weight": "9",
+      "source_id": "paper_2199"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SEED NUMBER",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_2199"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "YIELD",
+      "description": "possesses",
+      "weight": "8",
+      "source_id": "paper_2199"
+    },
+    {
+      "source": "STATISTICAL METHODS",
+      "target": "FIELD SCREENING",
+      "description": "analyzes results of",
+      "weight": "9",
+      "source_id": "paper_2199"
+    }
+  ]
+}

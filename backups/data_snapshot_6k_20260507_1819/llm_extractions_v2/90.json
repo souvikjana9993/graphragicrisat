@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "HIERARCHICAL MULTIPLE-FACTOR ANALYSIS (HMFA)",
+      "type": "METHOD",
+      "description": "A numerical analysis approach used to combine different types of phenotypic and genetic data to create principal axes for classification.",
+      "source_id": "paper_90"
+    },
+    {
+      "name": "WARD MODIFIED LOCATION MODEL (WARD-MLM)",
+      "type": "METHOD",
+      "description": "A two-stage classification strategy used in conjunction with HMFA to partition genotypes into homogeneous subpopulations.",
+      "source_id": "paper_90"
+    },
+    {
+      "name": "GENOTYPES",
+      "type": "CONCEPT",
+      "description": "The genetic makeup of individual organisms being partitioned into homogeneous subpopulations.",
+      "source_id": "paper_90"
+    },
+    {
+      "name": "PHENOTYPIC DATA",
+      "type": "CONCEPT",
+      "description": "Observable physical or biochemical characteristics used as variables for classification.",
+      "source_id": "paper_90"
+    },
+    {
+      "name": "GENETIC DATA",
+      "type": "CONCEPT",
+      "description": "DNA-based information used as variables for classification.",
+      "source_id": "paper_90"
+    },
+    {
+      "name": "PRINCIPAL AXES",
+      "type": "CONCEPT",
+      "description": "New axes derived from HMFA that represent the contribution of original phenotypic and genetic variables.",
+      "source_id": "paper_90"
+    },
+    {
+      "name": "CORE SUBSETS",
+      "type": "CONCEPT",
+      "description": "Small, representative groups of genotypes formed for the purpose of conservation.",
+      "source_id": "paper_90"
+    },
+    {
+      "name": "GENETIC RESOURCE CONSERVATION",
+      "type": "CONCEPT",
+      "description": "The practice of preserving genetic diversity within a species.",
+      "source_id": "paper_90"
+    },
+    {
+      "name": "CLASSIFICATION",
+      "type": "METHOD",
+      "description": "The process of partitioning a heterogeneous population of genotypes into non-overlapping homogeneous subpopulations.",
+      "source_id": "paper_90"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HIERARCHICAL MULTIPLE-FACTOR ANALYSIS (HMFA)",
+      "target": "CLASSIFICATION",
+      "description": "is used as a method for",
+      "weight": "9",
+      "source_id": "paper_90"
+    },
+    {
+      "source": "WARD MODIFIED LOCATION MODEL (WARD-MLM)",
+      "target": "CLASSIFICATION",
+      "description": "is used as a strategy for",
+      "weight": "9",
+      "source_id": "paper_90"
+    },
+    {
+      "source": "HIERARCHICAL MULTIPLE-FACTOR ANALYSIS (HMFA)",
+      "target": "PHENOTYPIC DATA",
+      "description": "combines and analyzes",
+      "weight": "8",
+      "source_id": "paper_90"
+    },
+    {
+      "source": "HIERARCHICAL MULTIPLE-FACTOR ANALYSIS (HMFA)",
+      "target": "GENETIC DATA",
+      "description": "combines and analyzes",
+      "weight": "8",
+      "source_id": "paper_90"
+    },
+    {
+      "source": "HIERARCHICAL MULTIPLE-FACTOR ANALYSIS (HMFA)",
+      "target": "PRINCIPAL AXES",
+      "description": "generates",
+      "weight": "10",
+      "source_id": "paper_90"
+    },
+    {
+      "source": "PHENOTYPIC DATA",
+      "target": "PRINCIPAL AXES",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_90"
+    },
+    {
+      "source": "GENETIC DATA",
+      "target": "PRINCIPAL AXES",
+      "description": "contributes to",
+      "weight": "7",
+      "source_id": "paper_90"
+    },
+    {
+      "source": "WARD MODIFIED LOCATION MODEL (WARD-MLM)",
+      "target": "GENOTYPES",
+      "description": "is used to classify",
+      "weight": "9",
+      "source_id": "paper_90"
+    },
+    {
+      "source": "CLASSIFICATION",
+      "target": "CORE SUBSETS",
+      "description": "is used to form",
+      "weight": "8",
+      "source_id": "paper_90"
+    },
+    {
+      "source": "CORE SUBSETS",
+      "target": "GENETIC RESOURCE CONSERVATION",
+      "description": "are used for",
+      "weight": "9",
+      "source_id": "paper_90"
+    }
+  ]
+}

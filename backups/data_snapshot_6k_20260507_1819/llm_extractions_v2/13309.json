@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "WATER HYACINTH",
+      "type": "ORGANISM",
+      "description": "A dreadful invasive species that spreads and forms vast floating mats in Lake Victoria",
+      "source_id": "paper_13309"
+    },
+    {
+      "name": "LAKE VICTORIA",
+      "type": "LOCATION",
+      "description": "The body of water where water hyacinth infestation is monitored",
+      "source_id": "paper_13309"
+    },
+    {
+      "name": "POLSAR",
+      "type": "METHOD",
+      "description": "Polarimetric Synthetic Aperture Radar used to assess the temporal variability of water hyacinth",
+      "source_id": "paper_13309"
+    },
+    {
+      "name": "OPTIMIZATION OF POWER DIFFERENCE",
+      "type": "METHOD",
+      "description": "A change detection technique (OPDiff) used to separate water hyacinth from clear water",
+      "source_id": "paper_13309"
+    },
+    {
+      "name": "SENTINEL-1 IW SLC",
+      "type": "METHOD",
+      "description": "The satellite data source used for applying the OPDiff change detection technique",
+      "source_id": "paper_13309"
+    },
+    {
+      "name": "MINIMUM EIGENVALUES",
+      "type": "CONCEPT",
+      "description": "The mathematical criteria used by the detector to separate water hyacinth from clear water",
+      "source_id": "paper_13309"
+    },
+    {
+      "name": "UNPOLARIZED SCATTERING",
+      "type": "CONCEPT",
+      "description": "The scattering contribution selected to separate water hyacinth from clear water",
+      "source_id": "paper_13309"
+    },
+    {
+      "name": "TEMPORAL VARIABILITY",
+      "type": "CONCEPT",
+      "description": "The monthly and annual trends of water hyacinth amounts",
+      "source_id": "paper_13309"
+    },
+    {
+      "name": "INFESTATION",
+      "type": "CONDITION",
+      "description": "The state of water hyacinth spreading and forming mats in Lake Victoria",
+      "source_id": "paper_13309"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "WATER HYACINTH",
+      "target": "LAKE VICTORIA",
+      "description": "infests",
+      "weight": "10",
+      "source_id": "paper_13309"
+    },
+    {
+      "source": "POLSAR",
+      "target": "WATER HYACINTH",
+      "description": "assesses temporal variability of",
+      "weight": "9",
+      "source_id": "paper_13309"
+    },
+    {
+      "source": "OPTIMIZATION OF POWER DIFFERENCE",
+      "target": "SENTINEL-1 IW SLC",
+      "description": "is applied on",
+      "weight": "9",
+      "source_id": "paper_13309"
+    },
+    {
+      "source": "OPTIMIZATION OF POWER DIFFERENCE",
+      "target": "WATER HYACINTH",
+      "description": "detects",
+      "weight": "9",
+      "source_id": "paper_13309"
+    },
+    {
+      "source": "MINIMUM EIGENVALUES",
+      "target": "WATER HYACINTH",
+      "description": "separates from clear water",
+      "weight": "8",
+      "source_id": "paper_13309"
+    },
+    {
+      "source": "UNPOLARIZED SCATTERING",
+      "target": "MINIMUM EIGENVALUES",
+      "description": "is selected by",
+      "weight": "7",
+      "source_id": "paper_13309"
+    },
+    {
+      "source": "TEMPORAL VARIABILITY",
+      "target": "WATER HYACINTH",
+      "description": "quantifies trends of",
+      "weight": "9",
+      "source_id": "paper_13309"
+    },
+    {
+      "source": "INFESTATION",
+      "target": "WATER HYACINTH",
+      "description": "is caused by",
+      "weight": "10",
+      "source_id": "paper_13309"
+    },
+    {
+      "source": "INFESTATION",
+      "target": "LAKE VICTORIA",
+      "description": "occurs in",
+      "weight": "10",
+      "source_id": "paper_13309"
+    }
+  ]
+}

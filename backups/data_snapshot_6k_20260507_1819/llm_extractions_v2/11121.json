@@ -1,0 +1,327 @@
+{
+  "entities": [
+    {
+      "name": "SWEET SORGHUM",
+      "type": "CROP",
+      "description": "The target crop used to evaluate plant growth promotion effects",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "SWEET SORGHUM BAGASSE",
+      "type": "CONCEPT",
+      "description": "The agricultural byproduct used as a substrate for composting",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "COMPOSTING",
+      "type": "METHOD",
+      "description": "The process of rapidly decomposing sweet sorghum bagasse using microbes",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "PLANT GROWTH PROMOTION",
+      "type": "CONCEPT",
+      "description": "The enhancement of plant growth parameters through the use of compost",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "MYCELIOPHTHORA THERMOPHILA",
+      "type": "ORGANISM",
+      "description": "A cellulose-degrading microbe used for decomposing bagasse",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "ASPERGILLUS AWAMORI",
+      "type": "ORGANISM",
+      "description": "A cellulose-degrading microbe used for decomposing bagasse",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "BACILLUS SUBTILIS",
+      "type": "ORGANISM",
+      "description": "A cellulose-degrading microbe used for decomposing bagasse",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "INDOLE ACETIC ACID",
+      "type": "CONCEPT",
+      "description": "A plant growth promoting hormone produced by the screened microbes",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "CELLULASE",
+      "type": "CONCEPT",
+      "description": "An enzyme produced by the screened microbes for cellulose degradation",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "LIPASE",
+      "type": "CONCEPT",
+      "description": "An enzyme produced by A. awamori and B. subtilis",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "SIDEROPHORE",
+      "type": "CONCEPT",
+      "description": "A molecule produced specifically by A. awamori",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "PHOSPHOROUS SOLUBILIZATION",
+      "type": "CONCEPT",
+      "description": "The ability to solubilize phosphorous, exhibited by A. awamori and B. subtilis",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "GREENHOUSE CONDITIONS",
+      "type": "CONDITION",
+      "description": "The controlled environment where the bagasse compost was evaluated",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "PLANT HEIGHT",
+      "type": "TRAIT",
+      "description": "A growth parameter measured to evaluate plant growth promotion",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "LEAF WEIGHT",
+      "type": "TRAIT",
+      "description": "A growth parameter measured to evaluate plant growth promotion",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "SHOOT WEIGHT",
+      "type": "TRAIT",
+      "description": "A growth parameter measured to evaluate plant growth promotion",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "ROOT WEIGHT",
+      "type": "TRAIT",
+      "description": "A growth parameter measured to evaluate plant growth promotion",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "LEAF AREA",
+      "type": "TRAIT",
+      "description": "A growth parameter measured to evaluate plant growth promotion",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "ROOT LENGTH",
+      "type": "TRAIT",
+      "description": "A growth parameter measured to evaluate plant growth promotion",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "PANICLE WEIGHT",
+      "type": "TRAIT",
+      "description": "A growth parameter measured to evaluate plant growth promotion",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "SEED NUMBER",
+      "type": "TRAIT",
+      "description": "A growth parameter measured to evaluate plant growth promotion",
+      "source_id": "paper_11121"
+    },
+    {
+      "name": "SEED WEIGHT",
+      "type": "TRAIT",
+      "description": "A growth parameter measured to evaluate plant growth promotion",
+      "source_id": "paper_11121"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "COMPOSTING",
+      "target": "SWEET SORGHUM BAGASSE",
+      "description": "Method used to decompose the substrate",
+      "weight": "10",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "MYCELIOPHTHORA THERMOPHILA",
+      "target": "COMPOSTING",
+      "description": "Microbe used to facilitate decomposition",
+      "weight": "10",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "ASPERGILLUS AWAMORI",
+      "target": "COMPOSTING",
+      "description": "Microbe used to facilitate decomposition",
+      "weight": "10",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "BACILLUS SUBTILIS",
+      "target": "COMPOSTING",
+      "description": "Microbe used to facilitate decomposition",
+      "weight": "10",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "COMPOSTING",
+      "target": "PLANT GROWTH PROMOTION",
+      "description": "The resulting compost is used for growth promotion",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "SWEET SORGHUM",
+      "description": "The goal of enhancing growth in the target crop",
+      "weight": "10",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "MYCELIOPHTHORA THERMOPHILA",
+      "target": "INDOLE ACETIC ACID",
+      "description": "Produces the hormone",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "MYCELIOPHTHORA THERMOPHILA",
+      "target": "CELLULASE",
+      "description": "Produces the enzyme",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "ASPERGILLUS AWAMORI",
+      "target": "INDOLE ACETIC ACID",
+      "description": "Produces the hormone",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "ASPERGILLUS AWAMORI",
+      "target": "CELLULASE",
+      "description": "Produces the enzyme",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "ASPERGILLUS AWAMORI",
+      "target": "LIPASE",
+      "description": "Produces the enzyme",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "ASPERGILLUS AWAMORI",
+      "target": "SIDEROPHORE",
+      "description": "Produces the molecule",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "ASPERGILLUS AWAMORI",
+      "target": "PHOSPHOROUS SOLUBILIZATION",
+      "description": "Exhibits the ability",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "BACILLUS SUBTILIS",
+      "target": "INDOLE ACETIC ACID",
+      "description": "Produces the hormone",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "BACILLUS SUBTILIS",
+      "target": "CELLULASE",
+      "description": "Produces the enzyme",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "BACILLUS SUBTILIS",
+      "target": "LIPASE",
+      "description": "Produces the enzyme",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "BACILLUS SUBTILIS",
+      "target": "PHOSPHOROUS SOLUBILIZATION",
+      "description": "Exhibits the ability",
+      "weight": "8",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "PLANT HEIGHT",
+      "description": "Measured by the increase in height",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "LEAF WEIGHT",
+      "description": "Measured by the increase in leaf weight",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "SHOOT WEIGHT",
+      "description": "Measured by the increase in shoot weight",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "ROOT WEIGHT",
+      "description": "Measured by the increase in root weight",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "LEAF AREA",
+      "description": "Measured by the increase in leaf area",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "ROOT LENGTH",
+      "description": "Measured by the increase in root length",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "PANICLE WEIGHT",
+      "description": "Measured by the increase in panicle weight",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "SEED NUMBER",
+      "description": "Measured by the increase in seed number",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "PLANT GROWTH PROMOTION",
+      "target": "SEED WEIGHT",
+      "description": "Measured by the increase in seed weight",
+      "weight": "9",
+      "source_id": "paper_11121"
+    },
+    {
+      "source": "GREENHOUSE CONDITIONS",
+      "target": "PLANT GROWTH PROMOTION",
+      "description": "Environment where growth promotion was tested",
+      "weight": "7",
+      "source_id": "paper_11121"
+    }
+  ]
+}

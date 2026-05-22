@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "Cicer arietinum, the crop studied for resistance to vascular wilt",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F.SP. CICERIS RACE 1",
+      "type": "ORGANISM",
+      "description": "A race of the fungus that causes vascular wilt in chickpeas",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "FUSARIUM OXYSPORUM F.SP. CICERIS RACE 2",
+      "type": "ORGANISM",
+      "description": "A race of the fungus that causes vascular wilt in chickpeas",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "VASCULAR WILT",
+      "type": "CONDITION",
+      "description": "A disease caused by Fusarium oxysporum f.sp. ciceris",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "WILT RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of chickpea cultivars to resist vascular wilt",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "ROOT EXUDATES",
+      "type": "CONCEPT",
+      "description": "Chemicals secreted by the roots of chickpeas",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "ANTIFUNGAL ACTIVITY",
+      "type": "TRAIT",
+      "description": "The capacity of root exudates to inhibit fungal growth and germination",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "SPORE GERMINATION",
+      "type": "TRAIT",
+      "description": "The process of fungal spores initiating growth",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "HYPHAL GROWTH",
+      "type": "TRAIT",
+      "description": "The growth of fungal hyphae",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "ETHYL ACETATE EXTRACTION",
+      "type": "METHOD",
+      "description": "A chemical process used to isolate apolar components from root exudates",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "APOLAR COMPONENTS",
+      "type": "CONCEPT",
+      "description": "Non-polar chemical constituents of root exudates",
+      "source_id": "paper_1530"
+    },
+    {
+      "name": "WATER-SOLUBLE COMPONENTS",
+      "type": "CONCEPT",
+      "description": "Polar chemical constituents of root exudates",
+      "source_id": "paper_1530"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FUSARIUM OXYSPORUM F.SP. CICERIS RACE 1",
+      "target": "VASCULAR WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "FUSARIUM OXYSPORUM F.SP. CICERIS RACE 2",
+      "target": "VASCULAR WILT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "VASCULAR WILT",
+      "target": "CHICKPEA",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "WILT RESISTANCE",
+      "target": "CHICKPEA",
+      "description": "is a trait of",
+      "weight": "10",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "ROOT EXUDATES",
+      "target": "CHICKPEA",
+      "description": "are produced by",
+      "weight": "10",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "ROOT EXUDATES",
+      "target": "ANTIFUNGAL ACTIVITY",
+      "description": "possess",
+      "weight": "9",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "ANTIFUNGAL ACTIVITY",
+      "target": "SPORE GERMINATION",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "ANTIFUNGAL ACTIVITY",
+      "target": "HYPHAL GROWTH",
+      "description": "inhibits",
+      "weight": "9",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "ROOT EXUDATES",
+      "target": "FUSARIUM OXYSPORUM F.SP. CICERIS RACE 1",
+      "description": "inhibits",
+      "weight": "8",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "ROOT EXUDATES",
+      "target": "FUSARIUM OXYSPORUM F.SP. CICERIS RACE 2",
+      "description": "inhibits",
+      "weight": "8",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "ETHYL ACETATE EXTRACTION",
+      "target": "APOLAR COMPONENTS",
+      "description": "removes",
+      "weight": "10",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "APOLAR COMPONENTS",
+      "target": "ANTIFUNGAL ACTIVITY",
+      "description": "contribute to",
+      "weight": "8",
+      "source_id": "paper_1530"
+    },
+    {
+      "source": "WATER-SOLUBLE COMPONENTS",
+      "target": "ANTIFUNGAL ACTIVITY",
+      "description": "contribute to",
+      "weight": "7",
+      "source_id": "paper_1530"
+    }
+  ]
+}

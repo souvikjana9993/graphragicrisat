@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "TONGA",
+      "type": "LOCATION",
+      "description": "Kingdom of Tonga, a location in the Pacific Islands",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "PACIFIC ISLANDS",
+      "type": "LOCATION",
+      "description": "Region in the tropics where agriculture intensification is occurring",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "AGRICULTURE INTENSIFICATION",
+      "type": "CONCEPT",
+      "description": "The process of increasing agricultural productivity per unit area, putting pressure on soil",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "SOIL RESOURCE",
+      "type": "CONCEPT",
+      "description": "The soil available for agricultural production",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "MULCH",
+      "type": "METHOD",
+      "description": "Vegetative mulch used to improve crop growth and reduce soil loss",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "HEDGEROWS",
+      "type": "METHOD",
+      "description": "Rows of plants used to control soil erosion",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "GUINEA GRASS",
+      "type": "ORGANISM",
+      "description": "Megathyrsus maximus, used for mulch and hedgerows",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "TARO",
+      "type": "CROP",
+      "description": "Colocasia esculenta, an indigenous food crop",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "CORM YIELD",
+      "type": "TRAIT",
+      "description": "The weight or volume of taro corms produced",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "SOIL EROSION",
+      "type": "CONDITION",
+      "description": "The process of soil loss from sloping land",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "PAPER MULBERRY",
+      "type": "CROP",
+      "description": "Broussonetia papyrifera, an indigenous fibre crop",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "BARK YIELD",
+      "type": "TRAIT",
+      "description": "The amount of bark produced by paper mulberry",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "GRASS FALLOW",
+      "type": "METHOD",
+      "description": "A management regime involving grass fallow for crop growth",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "NET PROFIT",
+      "type": "CONCEPT",
+      "description": "The economic gain calculated for mulched treatments",
+      "source_id": "paper_10407"
+    },
+    {
+      "name": "SUSTAINABLE PRACTICE",
+      "type": "CONCEPT",
+      "description": "Recommended agricultural practice for crop production in the tropics",
+      "source_id": "paper_10407"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MULCH",
+      "target": "TARO",
+      "description": "increases corm yield",
+      "weight": "9",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "MULCH",
+      "target": "PAPER MULBERRY",
+      "description": "increases bark yield",
+      "weight": "9",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "MULCH",
+      "target": "SOIL EROSION",
+      "description": "reduces soil loss",
+      "weight": "9",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "HEDGEROWS",
+      "target": "SOIL EROSION",
+      "description": "controls soil erosion",
+      "weight": "8",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "GUINEA GRASS",
+      "target": "MULCH",
+      "description": "used as a source for",
+      "weight": "10",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "GUINEA GRASS",
+      "target": "HEDGEROWS",
+      "description": "used as a source for",
+      "weight": "10",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "TARO",
+      "target": "CORM YIELD",
+      "description": "has the trait of",
+      "weight": "10",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "PAPER MULBERRY",
+      "target": "BARK YIELD",
+      "description": "has the trait of",
+      "weight": "10",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "TONGA",
+      "target": "TARO",
+      "description": "location where crop is grown",
+      "weight": "8",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "TONGA",
+      "target": "PAPER MULBERRY",
+      "description": "location where crop is grown",
+      "weight": "8",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "PACIFIC ISLANDS",
+      "target": "TONGA",
+      "description": "contains",
+      "weight": "10",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "AGRICULTURE INTENSIFICATION",
+      "target": "SOIL RESOURCE",
+      "description": "puts pressure on",
+      "weight": "8",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "MULCH",
+      "target": "NET PROFIT",
+      "description": "increases",
+      "weight": "8",
+      "source_id": "paper_10407"
+    },
+    {
+      "source": "GRASS FALLOW",
+      "target": "PAPER MULBERRY",
+      "description": "management regime for",
+      "weight": "7",
+      "source_id": "paper_10407"
+    }
+  ]
+}

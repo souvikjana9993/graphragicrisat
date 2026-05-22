@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "TRICHOGRAMMATOIDEA ARMIGERA",
+      "type": "ORGANISM",
+      "description": "An egg parasitoid wasp used for the biological control of the millet head miner.",
+      "source_id": "paper_11622"
+    },
+    {
+      "name": "HELIOCHEILUS ALBIPUNCTELLA",
+      "type": "ORGANISM",
+      "description": "The millet head miner, a major insect pest of pearl millet.",
+      "source_id": "paper_11622"
+    },
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The agricultural crop targeted by the millet head miner.",
+      "source_id": "paper_11622"
+    },
+    {
+      "name": "SAHEL",
+      "type": "LOCATION",
+      "description": "The region in Africa where the study was conducted.",
+      "source_id": "paper_11622"
+    },
+    {
+      "name": "NIGER",
+      "type": "LOCATION",
+      "description": "The country where the on-station and on-farm trials took place.",
+      "source_id": "paper_11622"
+    },
+    {
+      "name": "AUGMENTATIVE BIOLOGICAL CONTROL",
+      "type": "METHOD",
+      "description": "The practice of releasing parasitoids to manage pest populations.",
+      "source_id": "paper_11622"
+    },
+    {
+      "name": "ON-STATION RELEASES",
+      "type": "METHOD",
+      "description": "The release of parasitoids conducted within research station conditions.",
+      "source_id": "paper_11622"
+    },
+    {
+      "name": "ON-FARM RELEASES",
+      "type": "METHOD",
+      "description": "The release of parasitoids conducted within farmers' fields.",
+      "source_id": "paper_11622"
+    },
+    {
+      "name": "EGG PARASITISM",
+      "type": "CONCEPT",
+      "description": "The process of a parasitoid attacking and developing within the eggs of a host insect.",
+      "source_id": "paper_11622"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "TRICHOGRAMMATOIDEA ARMIGERA",
+      "target": "HELIOCHEILUS ALBIPUNCTELLA",
+      "description": "controls the pest population through egg parasitism",
+      "weight": "10",
+      "source_id": "paper_11622"
+    },
+    {
+      "source": "HELIOCHEILUS ALBIPUNCTELLA",
+      "target": "PEARL MILLET",
+      "description": "acts as a major insect pest of",
+      "weight": "10",
+      "source_id": "paper_11622"
+    },
+    {
+      "source": "TRICHOGRAMMATOIDEA ARMIGERA",
+      "target": "AUGMENTATIVE BIOLOGICAL CONTROL",
+      "description": "is the agent used for",
+      "weight": "9",
+      "source_id": "paper_11622"
+    },
+    {
+      "source": "AUGMENTATIVE BIOLOGICAL CONTROL",
+      "target": "HELIOCHEILUS ALBIPUNCTELLA",
+      "description": "is used to control",
+      "weight": "9",
+      "source_id": "paper_11622"
+    },
+    {
+      "source": "TRICHOGRAMMATOIDEA ARMIGERA",
+      "target": "EGG PARASITISM",
+      "description": "performs",
+      "weight": "10",
+      "source_id": "paper_11622"
+    },
+    {
+      "source": "EGG PARASITISM",
+      "target": "HELIOCHEILUS ALBIPUNCTELLA",
+      "description": "targets the eggs of",
+      "weight": "10",
+      "source_id": "paper_11622"
+    },
+    {
+      "source": "ON-STATION RELEASES",
+      "target": "AUGMENTATIVE BIOLOGICAL CONTROL",
+      "description": "is a specific application of",
+      "weight": "8",
+      "source_id": "paper_11622"
+    },
+    {
+      "source": "ON-FARM RELEASES",
+      "target": "AUGMENTATIVE BIOLOGICAL CONTROL",
+      "description": "is a specific application of",
+      "weight": "8",
+      "source_id": "paper_11622"
+    },
+    {
+      "source": "NIGER",
+      "target": "SAHEL",
+      "description": "is located within",
+      "weight": "10",
+      "source_id": "paper_11622"
+    },
+    {
+      "source": "PEARL MILLET",
+      "target": "SAHEL",
+      "description": "is grown in",
+      "weight": "8",
+      "source_id": "paper_11622"
+    }
+  ]
+}

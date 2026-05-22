@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "BOTRYTIS CINEREA",
+      "type": "ORGANISM",
+      "description": "A fungus isolated from chickpea used for inoculum production",
+      "source_id": "paper_2139"
+    },
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The host plant Cicer arietinum used for screening lines and as a source for fungus isolation",
+      "source_id": "paper_2139"
+    },
+    {
+      "name": "SPORE PRODUCTION",
+      "type": "METHOD",
+      "description": "The procedure for producing large amounts of B. cinerea inoculum (conidia)",
+      "source_id": "paper_2139"
+    },
+    {
+      "name": "DESI CHICKPEA MEAL BROTH",
+      "type": "METHOD",
+      "description": "A culture medium used for the production of B. cinerea spores",
+      "source_id": "paper_2139"
+    },
+    {
+      "name": "SCREENING",
+      "type": "METHOD",
+      "description": "The process of evaluating chickpea lines using B. cinerea inoculum",
+      "source_id": "paper_2139"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "BOTRYTIS CINEREA",
+      "target": "CHICKPEA",
+      "description": "isolated from",
+      "weight": "9",
+      "source_id": "paper_2139"
+    },
+    {
+      "source": "SPORE PRODUCTION",
+      "target": "DESI CHICKPEA MEAL BROTH",
+      "description": "utilizes",
+      "weight": "10",
+      "source_id": "paper_2139"
+    },
+    {
+      "source": "SPORE PRODUCTION",
+      "target": "BOTRYTIS CINEREA",
+      "description": "produces inoculum of",
+      "weight": "10",
+      "source_id": "paper_2139"
+    },
+    {
+      "source": "SPORE PRODUCTION",
+      "target": "SCREENING",
+      "description": "is used for",
+      "weight": "8",
+      "source_id": "paper_2139"
+    },
+    {
+      "source": "SCREENING",
+      "target": "CHICKPEA",
+      "description": "is performed on",
+      "weight": "9",
+      "source_id": "paper_2139"
+    }
+  ]
+}

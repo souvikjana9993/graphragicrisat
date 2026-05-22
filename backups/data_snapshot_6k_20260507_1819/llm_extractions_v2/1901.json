@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "PEARL MILLET",
+      "type": "CROP",
+      "description": "The specific crop being studied for testing site stratification in the SADC region",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "SADC REGION",
+      "type": "LOCATION",
+      "description": "The Southern African Development Community region where the study is focused",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "CROP PRODUCTIVITY",
+      "type": "TRAIT",
+      "description": "The measure of crop output that needs to be maximized through accurate cultivar selection",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Specific varieties of crops targeted for appropriate production areas",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "TESTING SITES",
+      "type": "CONCEPT",
+      "description": "Locations used to evaluate cultivars, critical for breeding efficiency",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "BREEDING",
+      "type": "METHOD",
+      "description": "The process of developing improved crop varieties, affected by the number and location of testing sites",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "PRODUCTION AREAS",
+      "type": "LOCATION",
+      "description": "Target regions where crops are grown, which testing sites must represent",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "PRODUCTION ZONES",
+      "type": "LOCATION",
+      "description": "Intra-regional areas identified based on similarities in cultivar response to production conditions",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "YIELD DATA",
+      "type": "CONCEPT",
+      "description": "Long-term data from regional trials used to identify production zones",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "REGIONAL TRIALS",
+      "type": "METHOD",
+      "description": "Trials conducted across the SADC region to gather yield data",
+      "source_id": "paper_1901"
+    },
+    {
+      "name": "PRODUCTION CONDITIONS",
+      "type": "CONDITION",
+      "description": "Environmental factors that influence the response of cultivars",
+      "source_id": "paper_1901"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PEARL MILLET",
+      "target": "SADC REGION",
+      "description": "is tested in",
+      "weight": "10",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "CROP PRODUCTIVITY",
+      "target": "PEARL MILLET",
+      "description": "is a trait of",
+      "weight": "9",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "CULTIVARS",
+      "target": "PEARL MILLET",
+      "description": "are varieties of",
+      "weight": "10",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "TESTING SITES",
+      "target": "SADC REGION",
+      "description": "are located in",
+      "weight": "10",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "TESTING SITES",
+      "target": "BREEDING",
+      "description": "affect the efficiency of",
+      "weight": "8",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "TESTING SITES",
+      "target": "PRODUCTION AREAS",
+      "description": "must be representative of",
+      "weight": "9",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "PRODUCTION ZONES",
+      "target": "SADC REGION",
+      "description": "are located within",
+      "weight": "10",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "PRODUCTION ZONES",
+      "target": "TESTING SITES",
+      "description": "are identified by grouping",
+      "weight": "8",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "REGIONAL TRIALS",
+      "target": "SADC REGION",
+      "description": "are conducted in",
+      "weight": "10",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "REGIONAL TRIALS",
+      "target": "YIELD DATA",
+      "description": "provide",
+      "weight": "10",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "YIELD DATA",
+      "target": "PRODUCTION ZONES",
+      "description": "are used to identify",
+      "weight": "9",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "CULTIVARS",
+      "target": "PRODUCTION CONDITIONS",
+      "description": "respond to",
+      "weight": "8",
+      "source_id": "paper_1901"
+    },
+    {
+      "source": "CULTIVARS",
+      "target": "PRODUCTION AREAS",
+      "description": "are targeted for",
+      "weight": "8",
+      "source_id": "paper_1901"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "PIGEONPEA",
+      "type": "CROP",
+      "description": "The legume crop studied for its growth and development response to photoperiod",
+      "source_id": "paper_1772"
+    },
+    {
+      "name": "FLOWERING",
+      "type": "TRAIT",
+      "description": "The developmental stage of the plant whose timing is affected by photoperiod",
+      "source_id": "paper_1772"
+    },
+    {
+      "name": "PHOTOPERIOD",
+      "type": "CONDITION",
+      "description": "The environmental condition related to day length that influences plant development",
+      "source_id": "paper_1772"
+    },
+    {
+      "name": "SOWING-DATE EXPERIMENTS",
+      "type": "METHOD",
+      "description": "Experiments conducted to analyze the response of cultivars to photoperiod",
+      "source_id": "paper_1772"
+    },
+    {
+      "name": "CULTIVARS",
+      "type": "CONCEPT",
+      "description": "Nine different varieties of pigeonpea used in the study",
+      "source_id": "paper_1772"
+    },
+    {
+      "name": "DAYLENGTH",
+      "type": "CONDITION",
+      "description": "The duration of light in the photoperiod-inductive phase",
+      "source_id": "paper_1772"
+    },
+    {
+      "name": "MODEL",
+      "type": "METHOD",
+      "description": "A predictive tool used to estimate the range of flowering dates",
+      "source_id": "paper_1772"
+    },
+    {
+      "name": "LOCATIONS",
+      "type": "LOCATION",
+      "description": "Three geographic sites ranging from 18.300S to 27.8150N",
+      "source_id": "paper_1772"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "PIGEONPEA",
+      "target": "FLOWERING",
+      "description": "exhibits",
+      "weight": "10",
+      "source_id": "paper_1772"
+    },
+    {
+      "source": "PIGEONPEA",
+      "target": "PHOTOPERIOD",
+      "description": "responds to",
+      "weight": "9",
+      "source_id": "paper_1772"
+    },
+    {
+      "source": "PHOTOPERIOD",
+      "target": "FLOWERING",
+      "description": "influences the timing of",
+      "weight": "10",
+      "source_id": "paper_1772"
+    },
+    {
+      "source": "SOWING-DATE EXPERIMENTS",
+      "target": "PHOTOPERIOD",
+      "description": "analyzed",
+      "weight": "8",
+      "source_id": "paper_1772"
+    },
+    {
+      "source": "CULTIVARS",
+      "target": "PHOTOPERIOD",
+      "description": "show sensitivity to",
+      "weight": "9",
+      "source_id": "paper_1772"
+    },
+    {
+      "source": "CULTIVARS",
+      "target": "FLOWERING",
+      "description": "exhibit varying dates of",
+      "weight": "9",
+      "source_id": "paper_1772"
+    },
+    {
+      "source": "DAYLENGTH",
+      "target": "PHOTOPERIOD",
+      "description": "is a component of",
+      "weight": "10",
+      "source_id": "paper_1772"
+    },
+    {
+      "source": "DAYLENGTH",
+      "target": "FLOWERING",
+      "description": "delays",
+      "weight": "9",
+      "source_id": "paper_1772"
+    },
+    {
+      "source": "MODEL",
+      "target": "FLOWERING",
+      "description": "predicts",
+      "weight": "9",
+      "source_id": "paper_1772"
+    },
+    {
+      "source": "LOCATIONS",
+      "target": "SOWING-DATE EXPERIMENTS",
+      "description": "were the sites for",
+      "weight": "8",
+      "source_id": "paper_1772"
+    }
+  ]
+}

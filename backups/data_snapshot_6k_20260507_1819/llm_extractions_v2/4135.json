@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "SORGHUM",
+      "type": "CROP",
+      "description": "A cereal crop susceptible to charcoal rot",
+      "source_id": "paper_4135"
+    },
+    {
+      "name": "CHARCOAL ROT",
+      "type": "CONCEPT",
+      "description": "A root and stalk rot disease of great destructive potential",
+      "source_id": "paper_4135"
+    },
+    {
+      "name": "MACROPHOMINA PHASEOLINA",
+      "type": "ORGANISM",
+      "description": "A soilborne, nonaggressive, and plurivorous fungus that causes charcoal rot",
+      "source_id": "paper_4135"
+    },
+    {
+      "name": "DROUGHT STRESS",
+      "type": "CONDITION",
+      "description": "The primary factor that predisposes sorghum to charcoal rot",
+      "source_id": "paper_4135"
+    },
+    {
+      "name": "FUNGICIDES",
+      "type": "METHOD",
+      "description": "Chemical agents used for the control of charcoal rot",
+      "source_id": "paper_4135"
+    },
+    {
+      "name": "CULTURAL PRACTICES",
+      "type": "METHOD",
+      "description": "Agricultural management techniques used for the control of charcoal rot",
+      "source_id": "paper_4135"
+    },
+    {
+      "name": "HOST RESISTANCE",
+      "type": "TRAIT",
+      "description": "The ability of the host plant to resist charcoal rot",
+      "source_id": "paper_4135"
+    },
+    {
+      "name": "HIGH-YIELDING CULTIVARS",
+      "type": "TRAIT",
+      "description": "Improved cultivars that tend to be very susceptible to charcoal rot",
+      "source_id": "paper_4135"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MACROPHOMINA PHASEOLINA",
+      "target": "CHARCOAL ROT",
+      "description": "causes",
+      "weight": "10",
+      "source_id": "paper_4135"
+    },
+    {
+      "source": "CHARCOAL ROT",
+      "target": "SORGHUM",
+      "description": "affects",
+      "weight": "10",
+      "source_id": "paper_4135"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "SORGHUM",
+      "description": "predisposes to disease",
+      "weight": "8",
+      "source_id": "paper_4135"
+    },
+    {
+      "source": "DROUGHT STRESS",
+      "target": "CHARCOAL ROT",
+      "description": "increases susceptibility",
+      "weight": "9",
+      "source_id": "paper_4135"
+    },
+    {
+      "source": "FUNGICIDES",
+      "target": "CHARCOAL ROT",
+      "description": "used for control",
+      "weight": "7",
+      "source_id": "paper_4135"
+    },
+    {
+      "source": "CULTURAL PRACTICES",
+      "target": "CHARCOAL ROT",
+      "description": "used for control",
+      "weight": "7",
+      "source_id": "paper_4135"
+    },
+    {
+      "source": "HOST RESISTANCE",
+      "target": "CHARCOAL ROT",
+      "description": "used for control",
+      "weight": "8",
+      "source_id": "paper_4135"
+    },
+    {
+      "source": "HIGH-YIELDING CULTIVARS",
+      "target": "CHARCOAL ROT",
+      "description": "susceptible to",
+      "weight": "8",
+      "source_id": "paper_4135"
+    }
+  ]
+}

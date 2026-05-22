@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "CHICKPEA",
+      "type": "CROP",
+      "description": "The third most important pulse crop, Cicer arietinum L.",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "BIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Stress caused by living organisms, leading to yield loss in chickpea",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "ASCOCHYTA BLIGHT",
+      "type": "CONDITION",
+      "description": "A specific biotic stress disease affecting chickpea",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "FUSARIUM WILT",
+      "type": "CONDITION",
+      "description": "A specific biotic stress disease affecting chickpea",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "ABIOTIC STRESS",
+      "type": "CONDITION",
+      "description": "Non-living stress factors leading to yield loss in chickpea",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "MOISTURE STRESS",
+      "type": "CONDITION",
+      "description": "A type of abiotic stress involving water deficiency",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "HEAT",
+      "type": "CONDITION",
+      "description": "A type of abiotic stress involving high temperatures",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "COLD",
+      "type": "CONDITION",
+      "description": "A type of abiotic stress involving low temperatures",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "SOIL NUTRITIONAL STATUS",
+      "type": "CONDITION",
+      "description": "The level of nutrients available in the soil, which can be poor",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "MARGINAL LANDS",
+      "type": "LOCATION",
+      "description": "Lands with limited productivity used for cultivation",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "CROP DURATION",
+      "type": "TRAIT",
+      "description": "The length of time from planting to harvest",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "ROOT SYSTEM",
+      "type": "TRAIT",
+      "description": "The underground organ system of the plant, specifically prolific systems for water-limited environments",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "WATER-LIMITED ENVIRONMENTS",
+      "type": "CONDITION",
+      "description": "Environments characterized by restricted water availability",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "MOLECULAR MARKERS",
+      "type": "GENE_MARKER",
+      "description": "DNA sequences used to identify specific locations on a chromosome to accelerate breeding",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "PLANT BREEDING",
+      "type": "METHOD",
+      "description": "The process of improving plant traits through selective breeding",
+      "source_id": "paper_2333"
+    },
+    {
+      "name": "INTRASPECIFIC LINKAGE MAP",
+      "type": "METHOD",
+      "description": "A genetic map showing the relative positions of markers within a single species",
+      "source_id": "paper_2333"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CHICKPEA",
+      "target": "BIOTIC STRESS",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ABIOTIC STRESS",
+      "description": "affected by",
+      "weight": "8",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "BIOTIC STRESS",
+      "target": "ASCOCHYTA BLIGHT",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "BIOTIC STRESS",
+      "target": "FUSARIUM WILT",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "SOIL NUTRITIONAL STATUS",
+      "description": "affected by",
+      "weight": "7",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "MARGINAL LANDS",
+      "description": "grown in",
+      "weight": "6",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "MOISTURE STRESS",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "HEAT",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "ABIOTIC STRESS",
+      "target": "COLD",
+      "description": "includes",
+      "weight": "10",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "CROP DURATION",
+      "target": "BIOTIC STRESS",
+      "description": "reduced duration helps avoid",
+      "weight": "7",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "CROP DURATION",
+      "target": "ABIOTIC STRESS",
+      "description": "reduced duration helps avoid",
+      "weight": "7",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "ROOT SYSTEM",
+      "target": "WATER-LIMITED ENVIRONMENTS",
+      "description": "prolific system needed in",
+      "weight": "9",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "CHICKPEA",
+      "target": "ROOT SYSTEM",
+      "description": "possesses",
+      "weight": "10",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "MOLECULAR MARKERS",
+      "target": "PLANT BREEDING",
+      "description": "accelerates",
+      "weight": "9",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "INTRASPECIFIC LINKAGE MAP",
+      "target": "CHICKPEA",
+      "description": "constructed for",
+      "weight": "9",
+      "source_id": "paper_2333"
+    },
+    {
+      "source": "INTRASPECIFIC LINKAGE MAP",
+      "target": "MOLECULAR MARKERS",
+      "description": "uses",
+      "weight": "8",
+      "source_id": "paper_2333"
+    }
+  ]
+}

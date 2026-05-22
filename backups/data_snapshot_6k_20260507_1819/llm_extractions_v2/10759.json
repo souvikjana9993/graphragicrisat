@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "MAIZE",
+      "type": "CROP",
+      "description": "A cereal grain produced in India",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "INDIA",
+      "type": "LOCATION",
+      "description": "The country where the study is conducted",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "YIELD",
+      "type": "TRAIT",
+      "description": "The amount of crop produced per unit area",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "UNREALIZED YIELD POTENTIAL",
+      "type": "CONCEPT",
+      "description": "The difference between potential yield and actual yield",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "AGRO-CLIMATIC ZONES",
+      "type": "CONCEPT",
+      "description": "Homogeneous regions based on climate and soil for crop production",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "MAIZE PRODUCTION SYSTEM",
+      "type": "CONCEPT",
+      "description": "The overall system of producing maize",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "CLIMATE",
+      "type": "CONDITION",
+      "description": "Environmental factor affecting crop production",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "SOIL",
+      "type": "CONDITION",
+      "description": "Environmental factor affecting crop production",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "SEASON",
+      "type": "CONDITION",
+      "description": "Environmental factor affecting crop production",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "IRRIGATED AREA",
+      "type": "CONDITION",
+      "description": "Environmental factor affecting crop production",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "MULTIVARIATE CLUSTER ANALYSIS",
+      "type": "METHOD",
+      "description": "Statistical technique used to divide districts into zones",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "CROP MANAGEMENT PRACTICES",
+      "type": "METHOD",
+      "description": "Techniques used by farmers to manage crops",
+      "source_id": "paper_10759"
+    },
+    {
+      "name": "YIELD GAPS",
+      "type": "CONCEPT",
+      "description": "The difference between actual yield and the potential yield achievable under better management",
+      "source_id": "paper_10759"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAIZE",
+      "target": "INDIA",
+      "description": "grown in",
+      "weight": "10",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "MAIZE",
+      "target": "YIELD",
+      "description": "has",
+      "weight": "10",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "UNREALIZED YIELD POTENTIAL",
+      "target": "YIELD",
+      "description": "related to",
+      "weight": "9",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "AGRO-CLIMATIC ZONES",
+      "target": "MAIZE PRODUCTION SYSTEM",
+      "description": "delineated for",
+      "weight": "8",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "AGRO-CLIMATIC ZONES",
+      "target": "CLIMATE",
+      "description": "determined by",
+      "weight": "9",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "AGRO-CLIMATIC ZONES",
+      "target": "SOIL",
+      "description": "determined by",
+      "weight": "9",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "AGRO-CLIMATIC ZONES",
+      "target": "SEASON",
+      "description": "determined by",
+      "weight": "9",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "AGRO-CLIMATIC ZONES",
+      "target": "IRRIGATED AREA",
+      "description": "determined by",
+      "weight": "9",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "MULTIVARIATE CLUSTER ANALYSIS",
+      "target": "AGRO-CLIMATIC ZONES",
+      "description": "used to create",
+      "weight": "10",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "CROP MANAGEMENT PRACTICES",
+      "target": "YIELD GAPS",
+      "description": "used to target",
+      "weight": "8",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "YIELD GAPS",
+      "target": "YIELD",
+      "description": "measure of",
+      "weight": "9",
+      "source_id": "paper_10759"
+    },
+    {
+      "source": "MAIZE",
+      "target": "MAIZE PRODUCTION SYSTEM",
+      "description": "central crop of",
+      "weight": "10",
+      "source_id": "paper_10759"
+    }
+  ]
+}
