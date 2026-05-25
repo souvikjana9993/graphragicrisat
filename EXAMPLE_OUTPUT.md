@@ -9,81 +9,79 @@ GRAPH RAG CONTEXT INJECTION BLOCK
 [GENES, DROUGHT RESISTANCE, PEARL MILLET]
 
 ## 1. RELEVANT PAPERS (1-Hop)
-- Synteny relationships among the linkage groups of chickpea (Cicer arietinum L.) (ID: paper_100)
-- Evaluation of Sorghum [Sorghum bicolor (L.)] Reference Genes in Various Tissues and under Abiotic Stress Conditions for Quantitative Real-Time PCR Data Normalization (ID: paper_10001)
-- Molecular characterization and expression analysis of pearl millet plasma membrane proteolipid 3 (Pmp3) genes in response to abiotic stress conditions (ID: paper_10004)
-- Harnessing Opportunities for Productivity Enhancement for Sorghum & Millets (HOPE): Baseline Survey, Uganda, Series Paper Number 41 (ID: paper_10006)
-- Value Chains for Sorghum and Millets in Eastern and Southern Africa: Priorities for the CGIAR research program for Dryland Cereals, Series Paper Number 42 (ID: paper_10007)
-- Studies on the establishment of a
-core collection of pearl millet [Pennisetum glaucum (L.) R. Br.1
-germplasm (ID: paper_1001)
-- Exploiting plant growth-promoting Amycolatopsis sp. in chickpea and sorghum for improving growth and yield (ID: paper_10020)
-- Streptomyces spp., a potential biocontrol agent of charcoal rot of sorghum caused by Macrophomina phaseolina (ID: paper_10023)
+- Impact of Genetic Improvement in Sorghum and Pearl Millet: Developing Country Experiences (ID: paper_10053)
+- Phenotyping pearl millet for adaptation to drought (ID: paper_10233)
+- Response to early drought stress and identification of QTLs controlling biomass production under drought in pearl millet (ID: paper_10916)
+- Adoption and Welfare Impacts of Pearl Millet Technologies in Nigeria (ID: paper_11689)
+- Status and Utility of Pearl Millet Germplasm for Crop Improvement (ID: paper_12479)
+- Genetic diversity and linkage disequilibrium of two homologous genes to maize D8: sorghum SbD8 and pearl millet PgD8 (ID: paper_125)
 - A Comparism of the Response of Some Pearl Millest (Pennisetum glaucum (L.) R. BR) Hybrids and Their Parents to Downy Mildew (Sclerospora graminicola) Infestation in Bakura and Zaria (North-western Nigeria) (ID: paper_10025)
 - Development and characterization of genetic stocks in pearl millet (Pennisetum glaucum) resistant to downy mildew (ID: paper_10029)
-- An Economic Assessment of Sorghum Improvement in Mali, Impact Assessment Report No. 2 (ID: paper_10030)
 - Overcoming constraints to utilization of sorghum and millet (ID: paper_10035)
 - Population Improvement of Pearl Millet and Sorghum: Current Research, Impact and Issues for Implementation (ID: paper_10036)
 - Preserving genetic resources (ID: paper_10037)
 - Seedling survival of abiotic stress: Sorghum and pearl millet (ID: paper_10038)
 - Sorghum and Pearl Millet Genetic Resources Utilization (ID: paper_10039)
-- Sorghum and Millets Commodity and Research Environments (ID: paper_1004)
-- Status and Breeding Requirements for Sorghum Utilization in Beverages in Nigeria (ID: paper_10040)
 - Targeting sorghum improvement in drought-prone environments: Approaches and progress (ID: paper_10041)
-- Collaborative Sorghum Research in Asia Report of the Asian Sorghum Researchers' Consultative Meeting 27 - 29 Sep 1993 (ID: paper_1005)
+- Alternate cytoplasms and apomixis of sorghum and pearl millet (ID: paper_10050)
+- An assessment of yield gains under climate change due to genetic modification of pearl millet (ID: paper_10064)
+- Elicitation of resistance and associated defense responses in Trichoderma hamatum induced protection against pearl millet downy mildew pathogen (ID: paper_10065)
+- Inheritance of Avirulence in Sclerospora graminicola(Schroet) and Resistance in Pearl Millet to the Pathogen (ID: paper_10086)
+- “Epidemiology, virulence and molecular diversity in blast [Magnaporthe grisea (Hebert) Barr.] of pearl millet [Pennisetum glaucum (L.) R. Br.] and resistance in the host to diverse pathotypes” (ID: paper_10093)
+- Inbreeding Effects on Grain Iron and Zinc Concentrations in Pearl Millet (ID: paper_10094)
 ... and 1663 more papers.
 
 ## 2. LOCAL GRAPH RELATIONSHIPS
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_GENE_FLOW]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_BK560]
-- [paper_4965] -(STUDIES_CROP)-> [crop_3]
-- [paper_4329] -(STUDIES_CROP)-> [crop_3]
-- [paper_102] -(STUDIES_CROP)-> [crop_3]
-- [paper_1339] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [paper_3199] -(HAS_KEYWORD)-> [keyword_136]
-- [llm_DROUGHT_RESISTANCE] -(RELATES_TO)-> [llm_DESICCATION_TOLERANCE]
-- [paper_10053] -(STUDIES_CROP)-> [crop_3]
-- [paper_5576] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [paper_11638] -(STUDIES_CROP)-> [crop_3]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_ROTATION]
-- [paper_10041] -(HAS_KEYWORD)-> [keyword_209]
-- [paper_13119] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [paper_1035] -(STUDIES_CROP)-> [crop_3]
-- [llm_DROUGHT_RESISTANCE] -(RELATES_TO)-> [llm_C._CUNEATUM]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_4042R]
-- [paper_11276] -(STUDIES_CROP)-> [crop_3]
-- [paper_1572] -(STUDIES_CROP)-> [crop_3]
-- [paper_4504] -(STUDIES_CROP)-> [crop_3]
-- [paper_12613] -(HAS_KEYWORD)-> [keyword_136]
-- [paper_3496] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [paper_3930] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_CORRELATION_ANALYSIS]
-- [paper_1099] -(STUDIES_CROP)-> [crop_3]
-- [paper_12875] -(STUDIES_CROP)-> [crop_3]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_STABLE_STERILITY]
-- [paper_309] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [paper_12814] -(STUDIES_CROP)-> [crop_3]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_SELF-POLLINATION]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_HOURLY_LEAF_EXTENSION]
-- [paper_1145] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [paper_11912] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [paper_12048] -(MENTIONED_IN)-> [llm_GENES]
-- [paper_12584] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_STARCH_DIGESTION_RATE]
-- [paper_11524] -(STUDIES_CROP)-> [crop_3]
-- [paper_2667] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [llm_GENES] -(RELATES_TO)-> [llm_SORGHUM_PAN-GENOME]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_ABIOTIC_STRESSES]
-- [paper_1220] -(STUDIES_CROP)-> [crop_3]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_STRIGA_HERMONTHICA]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_PHOSPHORUS_SEED_COATING]
-- [paper_2732] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_DURATION]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_PAC_981]
-- [paper_12876] -(STUDIES_CROP)-> [crop_3]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_ICMX-207137]
-- [paper_11298] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
-- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_ATHERIGONA_SOCCATA]
+- [paper_1327] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_PENNISETUM_MOLLISSIMUM]
+- [paper_11893] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_MIDRIBLESS]
+- [paper_10035] -(STUDIES_CROP)-> [crop_3]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_BIOCLIMATIC_CONDITIONS]
+- [paper_12134] -(STUDIES_CROP)-> [crop_3]
+- [paper_12584] -(STUDIES_CROP)-> [crop_3]
+- [paper_10039] -(HAS_KEYWORD)-> [keyword_136]
+- [llm_GENES] -(RELATES_TO)-> [llm_JBROWSE]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_HIERARCHICAL_CLUSTER_ANALYSIS]
+- [paper_10689] -(HAS_KEYWORD)-> [keyword_136]
+- [paper_1465] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [paper_2858] -(HAS_KEYWORD)-> [keyword_136]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_CROP_RESIDUES]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_MALE_STERILE_F1]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_SAHEL_AREA]
+- [paper_3495] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [llm_DROUGHT_RESISTANCE] -(RELATES_TO)-> [llm_SCREENING_TECHNIQUE]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_SORUS]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_WIND_EROSION]
+- [paper_12927] -(STUDIES_CROP)-> [crop_3]
+- [paper_12336] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [paper_107] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_PYRICULARIA_GRISEA]
+- [paper_1392] -(MENTIONED_IN)-> [llm_DROUGHT_RESISTANCE]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_GOOD_SEED_SET]
+- [llm_GENES] -(RELATES_TO)-> [llm_GENETIC_ENGINEERING]
+- [paper_10326] -(HAS_KEYWORD)-> [keyword_136]
+- [paper_10840] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [paper_3032] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [paper_12846] -(STUDIES_CROP)-> [crop_3]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_NEW_GERMPLASM]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_DISEASE_SPREAD]
+- [paper_1084] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [paper_1400] -(MENTIONED_IN)-> [llm_PEARL_MILLET]
+- [paper_6] -(COVERS_TOPIC)-> [topic_27]
+- [llm_DROUGHT_RESISTANCE] -(RELATES_TO)-> [llm_SCREENING_METHODS]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_BIOMASS_POTENTIAL]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_CROP_MODELS]
+- [paper_2261] -(STUDIES_CROP)-> [crop_3]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_CROP_PRODUCTIVITY]
+- [paper_12084] -(STUDIES_CROP)-> [crop_3]
+- [paper_2920] -(STUDIES_CROP)-> [crop_3]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_GERMPLASM_DIVERSITY]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_RAPIDLY_DIGESTIBLE_STARCH]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_WHOLE_GENOME_RNA-SEQ]
+- [llm_PEARL_MILLET] -(RELATES_TO)-> [llm_ANTINUTRIENTS]
+- [paper_3841] -(STUDIES_CROP)-> [crop_3]
+- [paper_1019] -(MENTIONED_IN)-> [llm_DROUGHT_RESISTANCE]
 ... and 4186 more relationships.
 
 ## 2. GLOBAL COMMUNITY SUMMARIES & SOURCE PAPERS

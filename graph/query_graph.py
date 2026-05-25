@@ -91,6 +91,7 @@ Query: {query}
         current_frontier = set(start_nodes)
         
         all_edges = []
+        paper_hit_count = Counter()
         c = self.conn.cursor()
 
         for hop in range(hops):
@@ -121,6 +122,12 @@ Query: {query}
                     rel_str += f": {desc}"
                 
                 all_edges.append(rel_str)
+                
+                # Track paper hits for relevance sorting
+                if source.startswith("paper_"):
+                    paper_hit_count[source] += 1
+                if target.startswith("paper_"):
+                    paper_hit_count[target] += 1
                 
                 # Add unvisited neighbors to next frontier
                 if source not in visited_nodes:
@@ -163,6 +170,9 @@ Query: {query}
                 WHERE type = 'PAPER' AND id IN ({placeholders})
             """, tuple(visited_nodes))
             papers = [{"id": row["id"], "title": row["display_name"]} for row in c.fetchall()]
+            
+            # Sort papers by their graph relevance (hit count)
+            papers.sort(key=lambda p: paper_hit_count[p["id"]], reverse=True)
                     
         return {
             "relationships": all_edges,
