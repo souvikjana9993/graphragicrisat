@@ -24,10 +24,10 @@ class GraphQueryEngine:
         self.model_name = model_name
 
     @retry(
-        stop=stop_after_attempt(3),
+        stop=stop_after_attempt(7),
         wait=wait_exponential(multiplier=1, min=2, max=10),
         retry=retry_if_exception_type(Exception),
-        before_sleep=lambda retry_state: log.warning(f"LLM extraction failed, retrying in {retry_state.next_action.sleep}s...")
+        before_sleep=lambda retry_state: log.warning(f"LLM extraction failed (attempt {retry_state.attempt_number}/7), retrying in {retry_state.next_action.sleep}s...")
     )
     def extract_entities_from_query(self, query: str) -> list[str]:
         """Use LLM to extract key entities from the user's natural language query."""
@@ -67,6 +67,21 @@ Query: {query}
         if row:
             return {"title": row["title"], "report": row["report"]}
         return None
+
+    def get_papers_in_community(self, community_id: int, limit: int = 10) -> list[dict]:
+        """Fetch papers connected to entities that belong to a specific community."""
+        c = self.conn.cursor()
+        query = """
+            SELECT DISTINCT n.id, n.display_name 
+            FROM nodes n
+            JOIN edges e ON (n.id = e.source OR n.id = e.target)
+            JOIN nodes n_community ON (n_community.id = e.target OR n_community.id = e.source)
+            WHERE n.type = 'PAPER' 
+              AND json_extract(n_community.data, '$.community') = ?
+            LIMIT ?
+        """
+        c.execute(query, (community_id, limit))
+        return [{"id": row["id"], "title": row["display_name"]} for row in c.fetchall()]
 
     def local_search(self, start_nodes: list[str], hops: int = 1) -> dict:
         """Perform an N-hop traversal from the starting nodes."""
@@ -193,14 +208,26 @@ Query: {query}
                 
             report_data = self.get_community_report(cid)
             if report_data:
+                # Fetch papers connected to this community
+                community_papers = self.get_papers_in_community(cid, limit=15)
+                paper_list_str = ""
+                if community_papers:
+                    paper_list_str = "\n**Source Papers for this Community:**\n"
+                    paper_list_str += "\n".join([f"   - {p['title']} (ID: {p['id']})" for p in community_papers])
+                    paper_list_str += "\n"
+
                 ctx = f"### Community: {report_data['title']}\n"
                 ctx += f"{report_data['report']}\n"
+                ctx += paper_list_str
                 community_contexts.append(ctx)
 
         # 5. Assemble Final Context Block
         output = "==================================================\n"
         output += "GRAPH RAG CONTEXT INJECTION BLOCK\n"
         output += "==================================================\n\n"
+        
+        output += "## 0. EXTRACTED ENTITIES FROM QUERY\n"
+        output += f"[{', '.join(entities)}]\n\n"
         
         output += "## 1. RELEVANT PAPERS (" + str(hops) + "-Hop)\n"
         if local_context["papers"]:
