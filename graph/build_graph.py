@@ -91,7 +91,7 @@ def build_graph(skip_llm: bool = False, limit_extractions_dir: str = "") -> tupl
         # ── Create Paper node ──
         G.add_node(paper_node_id, **{
             "id": paper_node_id,
-            "type": "Paper",
+            "type": "PAPER",
             "eprint_id": eid,
             "title": paper.get("title", ""),
             "abstract": paper.get("abstract", "")[:500],  # truncate for viz
@@ -239,7 +239,7 @@ def build_graph(skip_llm: bool = False, limit_extractions_dir: str = "") -> tupl
 
     # ── Derive RELATED_TO edges (paper similarity) ──
     related_count = 0
-    paper_ids = [n for n, d in G.nodes(data=True) if d.get("type") == "Paper"]
+    paper_ids = [n for n, d in G.nodes(data=True) if d.get("type") == "PAPER"]
     for i, p1 in enumerate(paper_ids):
         for p2 in paper_ids[i + 1:]:
             score = 0
@@ -265,7 +265,7 @@ def build_graph(skip_llm: bool = False, limit_extractions_dir: str = "") -> tupl
     for node, degree in dict(G.degree()).items():
         ntype = G.nodes[node].get("type", "")
         # We always keep Paper nodes
-        if ntype == "Paper":
+        if ntype == "PAPER":
             continue
         
         # Prune if the node is isolated (degree 0) or only connected to 1 thing (degree 1)

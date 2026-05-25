@@ -44,8 +44,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DB_PATH = Path("data/graph.db")
-JSON_PATH = Path("data/graph_export.json")
+DB_PATH = Path("data/graph_6k.db")
+JSON_PATH = Path("data/graph_6k_export.json")
 METADATA_DIR = Path("data/raw_metadata")
 EXTRACTIONS_DIR = Path("data/llm_extractions_v2")
 
@@ -414,7 +414,7 @@ async def query_naive(req: QueryRequest):
         
         # Build context from all papers
         cursor = conn.execute(
-            "SELECT id, display_name, data FROM nodes WHERE type = 'Paper'"
+            "SELECT id, display_name, data FROM nodes WHERE type = 'PAPER'"
         )
         papers_context_lines = []
         paper_lookup = {}

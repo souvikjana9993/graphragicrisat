@@ -386,7 +386,7 @@ class NodeRegistry:
         if key not in self.nodes["author"]:
             self.nodes["author"][key] = {
                 "id": self._next_id("author"),
-                "type": "Author",
+                "type": "AUTHOR",
                 "key": key,
                 "display_name": display,
                 "given": given,
@@ -406,7 +406,7 @@ class NodeRegistry:
         if key not in self.nodes["keyword"]:
             self.nodes["keyword"][key] = {
                 "id": self._next_id("keyword"),
-                "type": "Keyword",
+                "type": "KEYWORD",
                 "key": key,
                 "display_name": display,
             }
@@ -423,7 +423,7 @@ class NodeRegistry:
         if key not in self.nodes["crop"]:
             self.nodes["crop"][key] = {
                 "id": self._next_id("crop"),
-                "type": "Crop",
+                "type": "CROP",
                 "key": key,
                 "display_name": resolved["canonical"],
                 "scientific_name": resolved["scientific"],
@@ -442,7 +442,7 @@ class NodeRegistry:
         if key not in self.nodes["topic"]:
             self.nodes["topic"][key] = {
                 "id": self._next_id("topic"),
-                "type": "Topic",
+                "type": "TOPIC",
                 "key": key,
                 "display_name": display,
             }
@@ -460,7 +460,7 @@ class NodeRegistry:
         if key not in self.nodes["journal"]:
             self.nodes["journal"][key] = {
                 "id": self._next_id("journal"),
-                "type": "Journal",
+                "type": "JOURNAL",
                 "key": key,
                 "display_name": display,
             }
@@ -478,7 +478,7 @@ class NodeRegistry:
         if key not in self.nodes["location"]:
             self.nodes["location"][key] = {
                 "id": self._next_id("location"),
-                "type": "GeoLocation",
+                "type": "LOCATION",
                 "key": key,
                 "display_name": loc["display"],
                 "location_type": loc["type"],
@@ -498,7 +498,7 @@ class NodeRegistry:
         if key not in self.nodes["funder"]:
             self.nodes["funder"][key] = {
                 "id": self._next_id("funder"),
-                "type": "Funder",
+                "type": "FUNDER",
                 "key": key,
                 "display_name": display,
             }

@@ -6,26 +6,20 @@ const API_BASE = window.location.origin;
 
 // ── Node color mapping ──
 const NODE_COLORS = {
-    Paper: '#06b6d4',
-    Author: '#8b5cf6',
-    Keyword: '#10b981',
-    Crop: '#f59e0b',
+    PAPER: '#06b6d4',
+    AUTHOR: '#8b5cf6',
+    KEYWORD: '#10b981',
     CROP: '#f59e0b',
-    Topic: '#ec4899',
-    Journal: '#6366f1',
-    Funder: '#14b8a6',
-    GeoLocation: '#f97316',
-    Method: '#a855f7',
+    TOPIC: '#ec4899',
+    JOURNAL: '#6366f1',
+    FUNDER: '#14b8a6',
+    LOCATION: '#ef4444',
     METHOD: '#a855f7',
-    Trait: '#22d3ee',
     TRAIT: '#22d3ee',
-    GeneMarker: '#e879f9',
     GENE_MARKER: '#e879f9',
-    Condition: '#fb923c',
     CONDITION: '#fb923c',
     ORGANISM: '#10b981',
     CONCEPT: '#3b82f6',
-    LOCATION: '#ef4444'
 };
 
 // ── Edge color mapping ──
@@ -49,18 +43,20 @@ const EDGE_COLORS = {
 
 // ── Node size by type ──
 const NODE_BASE_SIZE = {
-    Paper: 8,
-    Author: 5,
-    Keyword: 4,
-    Crop: 7,
-    Topic: 4,
-    Journal: 5,
-    Funder: 5,
-    GeoLocation: 4,
-    Method: 4,
-    Trait: 4,
-    GeneMarker: 3,
-    Condition: 4,
+    PAPER: 8,
+    AUTHOR: 5,
+    KEYWORD: 4,
+    CROP: 7,
+    TOPIC: 4,
+    JOURNAL: 5,
+    FUNDER: 5,
+    LOCATION: 4,
+    METHOD: 4,
+    TRAIT: 4,
+    GENE_MARKER: 3,
+    CONDITION: 4,
+    ORGANISM: 4,
+    CONCEPT: 4,
 };
 
 // ── State ──
@@ -227,10 +223,11 @@ function renderGraph() {
     
     Graph = ForceGraph()(container)
         .graphData(graphData)
+        .cooldownTicks(100) // Stop physics engine early to save CPU
         .nodeId('id')
         .nodeVal(d => Math.sqrt(d.degree || 1) * 2 + 1)
         .nodeLabel(d => {
-            let meta = d.type === 'Paper' ? `<br><i>${d.publication || d.date || ''}</i>` : '';
+            let meta = d.type === 'PAPER' ? `<br><i>${d.publication || d.date || ''}</i>` : '';
             return `<div style="background: #0f172aee; padding: 6px 10px; border-radius: 4px; font-family: Inter; font-size: 12px; border: 1px solid #334155;">
                 <span style="color: ${NODE_COLORS[d.type] || '#aaa'}; font-weight: bold; font-size: 10px; text-transform: uppercase;">${d.type}</span><br>
                 <b>${d.display_name || d.id}</b>${meta}
@@ -274,13 +271,13 @@ function renderGraph() {
         });
         
     // Customize force layout parameters
-    Graph.d3Force('charge').strength(-150);
-    Graph.d3Force('link').distance(60);
+    Graph.d3Force('charge').strength(-50); // Reduced repulsion for faster settling
+    Graph.d3Force('link').distance(40);
     
-    // Add text labels if enabled
+    // Add text labels if enabled (only when zoomed in to save CPU)
     Graph.nodeCanvasObjectMode(() => showLabels ? 'after' : undefined);
     Graph.nodeCanvasObject((node, ctx, globalScale) => {
-        if (!showLabels) return;
+        if (!showLabels || globalScale < 1.5) return; // Cull text when zoomed out
         const label = truncate(node.display_name || node.id, 20);
         const fontSize = 12/globalScale;
         ctx.font = `${fontSize}px Sans-Serif`;
@@ -352,7 +349,7 @@ async function selectNode(d) {
     }
 
     // Type-specific details
-    if (d.type === 'Paper') {
+    if (d.type === 'PAPER') {
         if (d.abstract) {
             html += `<div class="detail-section">
                 <div class="detail-label">Abstract</div>

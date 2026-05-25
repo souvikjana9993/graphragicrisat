@@ -14,6 +14,7 @@ import time
 import re
 from pathlib import Path
 from dotenv import load_dotenv
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
 load_dotenv()
 
@@ -63,6 +64,15 @@ class EntityExtractor:
         if self.request_count > 1:
             time.sleep(self.delay_seconds)
 
+    @retry(
+        stop=stop_after_attempt(5),
+        wait=wait_exponential(multiplier=2, min=4, max=30),
+        retry=retry_if_exception_type(Exception),
+        before_sleep=lambda retry_state: log.warning(
+            f"Extraction failed, retrying in {retry_state.next_action.sleep}s "
+            f"(Attempt {retry_state.attempt_number}/5): {retry_state.outcome.exception()}"
+        )
+    )
     def extract_graph(self, title: str, abstract: str, paper_id: str) -> dict | None:
         """Extract entities and relationships from a single paper."""
         if not abstract or len(abstract.strip()) < 50:
@@ -125,8 +135,8 @@ class EntityExtractor:
             return {"entities": entities, "relationships": relationships}
 
         except Exception as e:
-            log.error(f"LLM extraction failed for '{title[:50]}': {e}")
-            return None
+            # Let tenacity catch and retry it
+            raise e
 
 
 def run_extraction(file_list: list, output_dir: str, api_key: str):
@@ -159,14 +169,19 @@ def run_extraction(file_list: list, output_dir: str, api_key: str):
             continue
 
         log.info(f"Extracting graph from ID {eprint_id}: {title[:60]}...")
-        graph_data = extractor.extract_graph(title, abstract, f"paper_{eprint_id}")
+        try:
+            graph_data = extractor.extract_graph(title, abstract, f"paper_{eprint_id}")
 
-        if graph_data:
-            output_file = output_path / f"{eprint_id}.json"
-            output_file.write_text(
-                json.dumps(graph_data, indent=2, ensure_ascii=False)
-            )
-            log.info(f"  → {len(graph_data['entities'])} entities, {len(graph_data['relationships'])} relationships")
+            if graph_data:
+                output_file = output_path / f"{eprint_id}.json"
+                output_file.write_text(
+                    json.dumps(graph_data, indent=2, ensure_ascii=False)
+                )
+                log.info(f"  → {len(graph_data['entities'])} entities, {len(graph_data['relationships'])} relationships")
+        except Exception as e:
+            log.error(f"Failed to extract after 5 retries for '{title[:50]}'. Skipping paper.")
+            # Do not add to completed if it failed, so it can be retried on next run
+            continue
 
         completed.add(eprint_id)
 
