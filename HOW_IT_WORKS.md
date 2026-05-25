@@ -45,20 +45,23 @@ This is the "AI-Native" layer that goes beyond simple metadata to understand the
 
 ### 1. Database Construction (`build_graph.py`)
 We merge the **Traditional Metadata** (Authors, Journals) with the **LLM-Extracted Concepts** (Traits, Methods).
-- **SQLite**: The final graph is stored in `data/graph.db` with two tables: `nodes` and `edges`.
+- **SQLite**: The final graph is stored in `data/graph_6k.db` with three tables: `nodes`, `edges`, and `communities`.
 - **JSON Export**: A massive JSON file is generated for the web frontend.
 
-### 2. High-Performance Visualization (`viz/app.js`)
-- **WebGL Engine**: We use the `force-graph` library (Canvas/WebGL) to render the nodes. This allows us to handle 50,000+ nodes smoothly on a standard laptop.
+### 2. Hybrid GraphRAG Querying (`query_graph.py`)
+This is the bridge between the Knowledge Graph and traditional vector databases.
+- **Entity Extraction**: Uses Gemma to pull semantic entities from a user's natural language query (e.g. "drought resistance").
+- **Fault Tolerance**: Implements robust `tenacity` retry logic to automatically handle API rate limits and 500 Internal Server errors without crashing.
+- **Local Traversal**: Finds the entities in the graph and traverses out 1-hop or 2-hops to find related concepts and **source papers**.
+- **Global Context**: Identifies which community the concepts belong to and pulls the executive AI summary.
+- **Output**: Generates a unified Markdown block of graph relationships and community summaries that can be appended directly to an LLM system prompt.
+
+### 3. High-Performance Visualization (`viz/app.js`)
+- **WebGL Engine**: We use the `force-graph` library (Canvas/WebGL) to render the nodes. This allows us to handle 60,000+ nodes smoothly on a standard laptop.
 - **Physics**: A D3-based force simulation runs in the background to space the nodes out and prevent overlaps.
 - **Interactivity**: 
   - Clicking a node fetches its details from the side panel.
   - Searching zooms the camera directly to a specific coordinate in the graph.
-
-### 3. LLM Querying / RAG (`server/app.py`)
-- **The Question**: You ask a question in the UI.
-- **Context Injection**: The FastAPI backend queries the SQLite database for relevant papers/communities.
-- **The Response**: Gemma reads this context and answers your question, providing clickable links that take you directly back to the nodes in the graph.
 
 ---
 
