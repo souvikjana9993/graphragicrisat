@@ -2,7 +2,7 @@ import argparse
 import json
 import sqlite3
 import logging
-from pathlib import Path
+from collections import Counter
 from pathlib import Path
 from dotenv import load_dotenv
 from google import genai
@@ -135,8 +135,8 @@ Query: {query}
         # Deduplicate edges
         all_edges = list(set(all_edges))
         
-        # Also, find which communities these visited nodes belong to
-        communities = set()
+        # Also, find which communities these visited nodes belong to and count hits
+        community_counts = Counter()
         if visited_nodes:
             placeholders = ",".join("?" * len(visited_nodes))
             c.execute(f"""
@@ -148,7 +148,10 @@ Query: {query}
             for row in c.fetchall():
                 cid = row["cid"]
                 if cid is not None and cid != -1:
-                    communities.add(cid)
+                    community_counts[cid] += 1
+                    
+        # Sort communities by relevance (number of node hits)
+        sorted_communities = [cid for cid, count in community_counts.most_common()]
                     
         # Fetch metadata for all visited papers
         papers = []
@@ -163,7 +166,7 @@ Query: {query}
                     
         return {
             "relationships": all_edges,
-            "communities": list(communities),
+            "communities": sorted_communities,
             "papers": papers
         }
 
